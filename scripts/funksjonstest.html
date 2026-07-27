@@ -120,6 +120,28 @@ const lager = () => {
   const k1 = lager().kort?.["matematikk-3:1"];
   ok("«Ikke sikker» holder kortet i boks 1", k1?.boks === 1, `boks ${k1?.boks}`);
 
+  // ── global repetisjon ──────────────────────────────────────────────────
+  si("");
+  si("── GLOBAL REPETISJON ──");
+  d = await bytt("/repetisjon");
+  await vent(1800);
+  const harOkt = d.querySelector("#kort") !== null;
+  const harTomtSvar = /Ingen kort er forfalt/.test(d.body.textContent);
+  ok("repetisjonsøkten viser kort eller tom-melding", harOkt || harTomtSvar);
+  if (harOkt) {
+    ok("økten viser hvilket fag og kapittel kortet er fra",
+       /kap\. \d+/.test(d.body.textContent));
+    const t0 = d.querySelector(".teller")?.textContent.trim();
+    d.querySelector("#kort").click();
+    await vent(650);
+    ok("kortet kan snus i økten", d.querySelector("#kort").classList.contains("snudd"));
+    d.querySelector("#riktig").click();
+    await vent(500);
+    const t1 = d.querySelector(".teller")?.textContent.trim();
+    ok("økten går videre etter vurdering", t0 !== t1 || d.querySelector(".resultat") !== null,
+       `${t0} → ${t1 || "resultat"}`);
+  }
+
   // ── fremdrift ──────────────────────────────────────────────────────────
   si("");
   si("── FREMDRIFT ──");

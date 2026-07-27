@@ -272,11 +272,14 @@ function tegnTabbar() {
 
 /* ─────────────────────────── visning: hjem ─────────────────────────── */
 
-/* Forfalte flashcards på tvers av alle fag — «hva bør du repetere i dag» */
+/* Forfalte flashcards på tvers av alle fag — «hva bør du repetere i dag».
+   Kort i boks 1 med forfall 0 er kort du har åpnet men ikke lært ennå; de
+   regnes som forfalte, slik Leitner-systemet forutsetter. Må matche
+   utvalgsregelen i visRepetisjon(). */
 function forfalteKort() {
   const lag = lastLager(), naa = Date.now();
   let n = 0;
-  for (const t of Object.values(lag.kort)) if ((t.forfall || 0) <= naa && t.boks > 1) n++;
+  for (const t of Object.values(lag.kort)) if ((t.forfall || 0) <= naa) n++;
   return n;
 }
 
@@ -311,9 +314,17 @@ function visHjem(el) {
         <span class="chev">${svg("fram", 16)}</span>
       </a>` : ""}
 
-    ${forfalt > 0 ? `<div class="notat" style="margin-top:12px">
-      Du har <b>${forfalt}</b> ${forfalt === 1 ? "kort" : "kort"} som er klare for repetisjon.
-      Åpne «Kort» i et kapittel du har øvd på før.</div>` : ""}
+    ${forfalt > 0 ? `
+      <div class="section-label">Repetisjon i dag</div>
+      <a class="card kapkort" href="#/repetisjon"
+         style="--accent:var(--good);--track:color-mix(in srgb, var(--good) 18%, var(--grid))">
+        <span class="kapnum" style="background:color-mix(in srgb, var(--good) 22%, var(--surface-1));color:var(--good-text)">${forfalt}</span>
+        <span class="kapbody">
+          <h4>${forfalt === 1 ? "1 kort" : forfalt + " kort"} er klare</h4>
+          <div class="undertema">Flettet mellom fagene — start økten</div>
+        </span>
+        <span class="chev">${svg("fram", 16)}</span>
+      </a>` : ""}
 
     <div class="section-label">Fagene dine</div>
     <div class="fagliste">
@@ -733,6 +744,117 @@ function visKort(vert, fagId, nr, d) {
   tegn();
 }
 
+/* ── global repetisjonsøkt: alle forfalte kort på tvers av fagene ──
+   Kortene flettes mellom fagene (interleaving), som gir bedre læring enn å
+   ta ett fag ferdig av gangen. */
+async function visRepetisjon(el) {
+  tegnTopp({ tittel: "Repetisjon", under: "Alle fag", tilbake: "/" });
+  el.innerHTML = `<div class="laster">Finner kort som er klare …</div>`;
+
+  const lag = lastLager(), naa = Date.now();
+  const perFag = new Map();
+
+  for (const f of S.fag) {
+    for (const k of f.kapitler) {
+      const nokkel = kapNokkel(f.id, k.nr);
+      /* bare kapitler eleven faktisk har øvd på — nye kort hentes i kapittelet */
+      const rort = Object.keys(lag.kort).some((x) => x.startsWith(nokkel + ":"));
+      if (!rort) continue;
+      let d;
+      try { d = await hentKapittel(f.id, k.nr); } catch { continue; }
+      d.flashcards.forEach((kort, j) => {
+        const t = lag.kort[`${nokkel}:${j}`];
+        if (!t || (t.forfall || 0) > naa) return;
+        if (!perFag.has(f.id)) perFag.set(f.id, []);
+        perFag.get(f.id).push({ fag: f.id, nr: k.nr, j, kort, tittel: k.tittel });
+      });
+    }
+  }
+
+  /* flett fagene: ett kort fra hvert fag i runde-robin */
+  const bunker = [...perFag.values()];
+  const ko = [];
+  for (let i = 0; bunker.some((b) => i < b.length); i++) {
+    for (const b of bunker) if (i < b.length) ko.push(b[i]);
+  }
+
+  if (!ko.length) {
+    el.innerHTML = `
+      <div class="card resultat" style="margin-top:16px">
+        <div class="fig" style="color:var(--good-text)">${svg("hake", 46)}</div>
+        <p>Ingen kort er forfalt akkurat nå. Kom tilbake i morgen, eller åpne
+           «Kort» i et kapittel for å legge nye kort inn i repetisjonen.</p>
+      </div>
+      <button class="knapp sekundar" id="tilbakehjem">Til forsiden</button>`;
+    $("#tilbakehjem", el).onclick = () => gaTil("/");
+    return;
+  }
+
+  let p = 0, snudd = false, riktige = 0;
+
+  const tegn = () => {
+    if (p >= ko.length) {
+      el.innerHTML = `
+        <div class="card resultat" style="margin-top:16px">
+          <div class="fig">${riktige}<small> / ${ko.length}</small></div>
+          <p>${riktige === ko.length
+            ? "Alt satt. Kortene kommer tilbake med lengre mellomrom."
+            : `Kortene du bommet på kommer tilbake i morgen, resten senere.`}</p>
+        </div>
+        <button class="knapp sekundar" id="tilbakehjem">Til forsiden</button>`;
+      $("#tilbakehjem", el).onclick = () => gaTil("/");
+      return;
+    }
+    const it = ko[p];
+    const t = lag.kort[`${kapNokkel(it.fag, it.nr)}:${it.j}`];
+    el.innerHTML = `
+      <div class="quiz-head" style="margin-top:16px">
+        <span class="teller">${p + 1} / ${ko.length}</span>
+        ${meter(Math.round((p / ko.length) * 100), it.fag, true)}
+        <span class="teller">Boks ${t.boks}</span>
+      </div>
+      <div class="rad" style="margin-bottom:8px;font-size:12.5px;color:var(--text-muted)">
+        <i class="dot" style="--accent:${FAGFARGE[it.fag]}"></i>
+        <span>${esc(fagAv(it.fag).kort)} · kap. ${it.nr} ${esc(it.tittel)}</span>
+      </div>
+      <div class="kort-scene">
+        <div class="kort" id="kort" role="button" tabindex="0" aria-label="Snu kortet">
+          <div class="side"><div>${esc(it.kort.front)}</div><span class="hint">Trykk for å snu</span></div>
+          <div class="side bak"><div>${esc(it.kort.bak)}</div><span class="hint">Hvordan gikk det?</span></div>
+        </div>
+      </div>
+      <div class="kort-knapper" id="knapper" hidden>
+        <button class="knapp sekundar" id="feil">Ikke sikker</button>
+        <button class="knapp" id="riktig">Kunne det</button>
+      </div>
+      <div class="boks-info">
+        <span>Kortene er flettet mellom fagene</span>
+        <a href="#/kap/${it.fag}/${it.nr}?v=kompakt" style="color:inherit">Åpne kapittelet</a>
+      </div>`;
+    mat(el);
+
+    const kortEl = $("#kort", el);
+    const snu = () => {
+      snudd = !snudd;
+      kortEl.classList.toggle("snudd", snudd);
+      $("#knapper", el).hidden = !snudd;
+    };
+    kortEl.onclick = snu;
+    kortEl.onkeydown = (e) => { if (e.key === " " || e.key === "Enter") { e.preventDefault(); snu(); } };
+
+    const svar = (ok) => {
+      if (ok) riktige++;
+      t.boks = ok ? Math.min(5, t.boks + 1) : 1;
+      t.forfall = naa + BOKS_DAGER[t.boks] * DAG;
+      lagre();
+      p++; snudd = false; tegn();
+    };
+    $("#riktig", el).onclick = () => svar(true);
+    $("#feil", el).onclick = () => svar(false);
+  };
+  tegn();
+}
+
 /* ─────────────────────────── visning: formler ─────────────────────────── */
 
 async function visFormler(el, fagId) {
@@ -922,6 +1044,7 @@ function tegn() {
   if (rot === "kap") return visKapittel(el, a, Number(b), q.get("v"));
   if (rot === "formler") return visFormler(el, a);
   if (rot === "metoder") return visMetoder(el, a);
+  if (rot === "repetisjon") return visRepetisjon(el);
   if (rot === "sok") return visSok(el);
   return visIkkeFunnet(el);
 }
