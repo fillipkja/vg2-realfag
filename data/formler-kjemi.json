@@ -1,0 +1,191 @@
+{
+  "fag": "kjemi",
+  "kategorier": [
+    {
+      "tittel": "Atomer, isotoper og elektronkonfigurasjon",
+      "formler": [
+        { "navn": "Massetall", "latex": "A = Z + N", "forklaring": "$A$ er massetallet (protoner + nøytroner), $Z$ er atomnummeret (antall protoner) og $N$ er antall nøytroner." },
+        { "navn": "Antall nøytroner", "latex": "N = A - Z", "forklaring": "Brukes når du skal skille isotoper: samme $Z$, men ulikt $A$ og dermed ulikt antall nøytroner." },
+        { "navn": "Ladningen til et ion", "latex": "\\text{ladning} = (\\text{antall protoner}) - (\\text{antall elektroner})", "forklaring": "Positivt ion har mistet elektroner, negativt ion har tatt opp elektroner. Antall protoner endres aldri i en kjemisk reaksjon." },
+        { "navn": "Maks antall elektroner i skall nr. $n$", "latex": "2n^{2}", "forklaring": "Gir 2 i første skall, 8 i andre, 18 i tredje. Skallet har $n^{2}$ orbitaler, og hver orbital har plass til to elektroner." },
+        { "navn": "Oppfyllingsrekkefølge for orbitalene", "latex": "1s\\;2s\\;2p\\;3s\\;3p\\;4s\\;3d\\;4p\\;5s", "forklaring": "Elektronene fyller laveste energinivå først. Legg merke til at $4s$ fylles før $3d$." },
+        { "navn": "Antall elektroner i hver orbitaltype", "latex": "s: 2 \\qquad p: 6 \\qquad d: 10", "forklaring": "Én $s$-orbital, tre $p$-orbitaler og fem $d$-orbitaler, med to elektroner i hver." },
+        { "navn": "Valenselektroner fra gruppenummeret", "latex": "\\text{gruppe }1,2: \\ \\text{gruppenr.} \\qquad \\text{gruppe }13\\text{–}18: \\ \\text{gruppenr.} - 10", "forklaring": "Gjelder hovedgruppene. Klor står i gruppe 17 og har $17-10 = 7$ valenselektroner." },
+        { "navn": "Gjennomsnittlig atommasse fra isotoper", "latex": "A_r = \\sum \\frac{p_i}{100} \\cdot A_i", "forklaring": "$p_i$ er den prosentvise forekomsten av isotop $i$ og $A_i$ massen til isotopen. Dette er tallet som står i periodesystemet." }
+      ]
+    },
+    {
+      "tittel": "Kjemiske bindinger og molekylgeometri",
+      "formler": [
+        { "navn": "Oktettregelen", "latex": "8\\ \\text{elektroner i ytterste skall} \\qquad (\\ce{H}: 2)", "forklaring": "Atomer deler, gir bort eller tar opp elektroner for å få edelgasstruktur." },
+        { "navn": "Antall elektronpar i en elektronparformel", "latex": "\\text{antall par} = \\frac{\\text{sum av valenselektroner}}{2}", "forklaring": "Første steg når du tegner lewisstruktur: summer valenselektronene (juster for ladning), del på 2, og fordel parene som bindinger og frie par." },
+        { "navn": "Ladningsbalanse i en ioneforbindelse", "latex": "n_{+} \\cdot z_{+} = n_{-} \\cdot |z_{-}|", "forklaring": "Et salt er alltid nøytralt. $\\ce{Al^3+}$ og $\\ce{O^2-}$ gir formelen $\\ce{Al2O3}$ fordi $2 \\cdot 3 = 3 \\cdot 2$." },
+        { "navn": "Bindingstype ut fra elektronegativitet", "latex": "\\Delta \\text{EN} < 0{,}5:\\ \\text{upolar kovalent} \\qquad 0{,}5\\text{–}1{,}7:\\ \\text{polar kovalent} \\qquad > 1{,}7:\\ \\text{ionebinding}", "forklaring": "Grensene er veiledende og varierer litt mellom lærebøker. $\\Delta\\text{EN}$ er differansen i elektronegativitet mellom de to atomene." },
+        { "navn": "Elektrondomener og geometri (VSEPR)", "latex": "2:\\ \\text{lineær} \\qquad 3:\\ \\text{trigonal plan} \\qquad 4:\\ \\text{tetraedrisk}", "forklaring": "Tell elektrondomener rundt sentralatomet (bindinger + frie par). Frie par presser bindingene sammen, så $\\ce{NH3}$ blir trigonal pyramide og $\\ce{H2O}$ vinkelformet." },
+        { "navn": "Bindingsvinkler", "latex": "180^{\\circ} \\quad 120^{\\circ} \\quad 109{,}5^{\\circ} \\quad 107^{\\circ} \\quad 104{,}5^{\\circ}", "forklaring": "Lineær, trigonal plan, tetraedrisk, $\\ce{NH3}$ og $\\ce{H2O}$." },
+        { "navn": "Når er et molekyl polart?", "latex": "\\text{polare bindinger} + \\text{usymmetrisk bygning} \\ \\Rightarrow \\ \\text{polart molekyl}", "forklaring": "$\\ce{CO2}$ har polare bindinger, men er lineært og symmetrisk — dipolene opphever hverandre, og molekylet er upolart." },
+        { "navn": "Coulombs lov (styrken til en ionebinding)", "latex": "F = k \\cdot \\frac{Q_1 Q_2}{r^{2}}", "forklaring": "Store ladninger og liten avstand gir sterk binding og høyt smeltepunkt. Derfor smelter $\\ce{MgO}$ ved langt høyere temperatur enn $\\ce{NaCl}$." },
+        { "navn": "Styrken på kreftene mellom molekyler", "latex": "\\text{londonkrefter} < \\text{dipol–dipol} < \\text{hydrogenbinding}", "forklaring": "Bestemmer smelte- og kokepunkt. Hydrogenbinding krever $\\ce{H}$ bundet til $\\ce{N}$, $\\ce{O}$ eller $\\ce{F}$." }
+      ]
+    },
+    {
+      "tittel": "Reaksjonstyper og ionelikninger",
+      "formler": [
+        { "navn": "Salt løser seg i vann (hydratisering)", "latex": "\\ce{NaCl(s) -> Na+(aq) + Cl-(aq)}", "forklaring": "Vannmolekylene omgir ionene med negativ side mot kationet og positiv side mot anionet." },
+        { "navn": "Fellingsreaksjon (netto ionelikning)", "latex": "\\ce{Ag+(aq) + Cl-(aq) -> AgCl(s)}", "forklaring": "I netto ionelikningen skriver du bare ionene som faktisk reagerer. Tilskuerionene stryker du." },
+        { "navn": "Felling av bariumsulfat", "latex": "\\ce{Ba^2+(aq) + SO4^2-(aq) -> BaSO4(s)}", "forklaring": "Brukes som påvisning av sulfat: hvitt bunnfall som ikke løses i syre." },
+        { "navn": "Sterk syre i vann", "latex": "\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}", "forklaring": "Enkeltpil fordi protolysen er fullstendig. Syren gir et proton til vannet." },
+        { "navn": "Svak base i vann", "latex": "\\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}", "forklaring": "Dobbeltpil fordi bare en liten del av basen reagerer — det blir en likevekt." },
+        { "navn": "Autoprotolyse av vann", "latex": "\\ce{2H2O(l) <=> H3O+(aq) + OH-(aq)}", "forklaring": "Vann er både syre og base (amfotært). Denne likevekten ligger langt mot venstre." },
+        { "navn": "Nøytralisering", "latex": "\\ce{H3O+(aq) + OH-(aq) -> 2H2O(l)}", "forklaring": "Netto ionelikning for alle reaksjoner mellom sterk syre og sterk base. Reaksjonen er sterkt eksoterm." },
+        { "navn": "Karbonat og syre", "latex": "\\ce{CaCO3(s) + 2H3O+(aq) -> Ca^2+(aq) + CO2(g) + 3H2O(l)}", "forklaring": "Gassutvikling er kjennetegnet: kalk som bruser i syre. Forklarer også hvorfor kalk motvirker forsuring." },
+        { "navn": "Metall og syre", "latex": "\\ce{Zn(s) + 2H3O+(aq) -> Zn^2+(aq) + H2(g) + 2H2O(l)}", "forklaring": "En redoksreaksjon: metallet oksideres og $\\ce{H3O+}$ reduseres til hydrogengass." },
+        { "navn": "Halvreaksjoner (oksidasjon og reduksjon)", "latex": "\\ce{Zn(s) -> Zn^2+(aq) + 2e-} \\qquad \\ce{Cu^2+(aq) + 2e- -> Cu(s)}", "forklaring": "Oksidasjon avgir elektroner, reduksjon tar opp elektroner. Antall elektroner må være likt før du legger halvreaksjonene sammen." },
+        { "navn": "Samlet redoksreaksjon", "latex": "\\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}", "forklaring": "Elektronene forsvinner når halvreaksjonene summeres — de går direkte fra reduksjonsmiddel til oksidasjonsmiddel." },
+        { "navn": "Regel for oksidasjonstall", "latex": "\\sum \\text{oksidasjonstall} = \\text{ladningen til partikkelen}", "forklaring": "Grunnstoff i ren form har 0. Vanligvis er $\\ce{O} = -\\mathrm{II}$, $\\ce{H} = +\\mathrm{I}$ og $\\ce{F} = -\\mathrm{I}$. Øker tallet, er stoffet oksidert." }
+      ]
+    },
+    {
+      "tittel": "Mol, masse og støkiometri",
+      "formler": [
+        { "navn": "Stoffmengde fra masse", "latex": "n = \\frac{m}{M}", "forklaring": "$n$ i mol, $m$ i gram og $M$ i g/mol. Dette er den mest brukte formelen i hele Kjemi 1." },
+        { "navn": "Masse fra stoffmengde", "latex": "m = n \\cdot M", "forklaring": "Siste steg i nesten alle masseberegninger." },
+        { "navn": "Molar masse", "latex": "M = \\frac{m}{n} \\qquad [\\text{g/mol}]", "forklaring": "Finn $M$ ved å summere atommassene fra periodesystemet. $M(\\ce{H2O}) = 2 \\cdot 1{,}01 + 16{,}00 = 18{,}02$ g/mol." },
+        { "navn": "Antall partikler", "latex": "N = n \\cdot N_A", "forklaring": "Gir antall atomer, molekyler eller ioner. Husk å gange opp hvis du spør etter atomer i et molekyl." },
+        { "navn": "Avogadros konstant", "latex": "N_A = 6{,}022 \\cdot 10^{23}\\ \\text{mol}^{-1}", "forklaring": "Antall partikler i 1 mol." },
+        { "navn": "Molforhold fra reaksjonslikningen", "latex": "\\frac{n(\\text{B})}{n(\\text{A})} = \\frac{b}{a}", "forklaring": "$a$ og $b$ er koeffisientene foran stoffene i den balanserte likningen. Koeffisientene forteller om mol, ikke om gram." },
+        { "navn": "Masse til masse (hele regnekjeden)", "latex": "m(\\text{B}) = \\frac{m(\\text{A})}{M(\\text{A})} \\cdot \\frac{b}{a} \\cdot M(\\text{B})", "forklaring": "Gram $\\to$ mol $\\to$ mol $\\to$ gram. Gå alltid via mol; du kan ikke bruke molforholdet på masser direkte." },
+        { "navn": "Masseprosent av et element i en forbindelse", "latex": "\\%\\,\\text{masse} = \\frac{n \\cdot M(\\text{element})}{M(\\text{forbindelse})} \\cdot 100\\,\\%", "forklaring": "$n$ er antall atomer av elementet i formelen. Brukes til å kontrollere en foreslått formel." },
+        { "navn": "Empirisk formel", "latex": "n(\\text{A}) : n(\\text{B}) : n(\\text{C}) \\ \\longrightarrow \\ \\text{minste hele tall}", "forklaring": "Regn massene om til mol, del alle på det minste antallet mol, og gang opp til hele tall." },
+        { "navn": "Begrensende reaktant", "latex": "\\text{minst } \\frac{n}{\\text{koeffisient}} \\ \\Rightarrow \\ \\text{begrensende}", "forklaring": "Del stoffmengden av hver reaktant på koeffisienten. Den med lavest verdi tar slutt først og bestemmer utbyttet." },
+        { "navn": "Prosentvis utbytte", "latex": "\\text{utbytte} = \\frac{\\text{praktisk utbytte}}{\\text{teoretisk utbytte}} \\cdot 100\\,\\%", "forklaring": "Teoretisk utbytte regner du ut fra den begrensende reaktanten. Praktisk utbytte er det du faktisk får i laben." }
+      ]
+    },
+    {
+      "tittel": "Løsninger, konsentrasjon og gasser",
+      "formler": [
+        { "navn": "Stoffmengdekonsentrasjon", "latex": "c = \\frac{n}{V} \\qquad [\\text{mol/L}]", "forklaring": "$V$ er volumet av hele løsningen i liter, ikke volumet av løsemiddelet du helte opp." },
+        { "navn": "Stoffmengde i en løsning", "latex": "n = c \\cdot V", "forklaring": "Brukes hver gang du kjenner konsentrasjon og volum, for eksempel i titrering." },
+        { "navn": "Fortynning", "latex": "c_1 V_1 = c_2 V_2", "forklaring": "Stoffmengden er den samme før og etter fortynning — bare volumet endres." },
+        { "navn": "Massekonsentrasjon", "latex": "\\rho = c \\cdot M \\qquad [\\text{g/L}]", "forklaring": "Regner om fra mol/L til g/L (eller mg/L hvis du ganger med 1000). Nyttig i vannanalyse." },
+        { "navn": "Masseprosent i en løsning", "latex": "w = \\frac{m(\\text{stoff})}{m(\\text{løsning})} \\cdot 100\\,\\%", "forklaring": "Massen av løsningen er massen av stoffet pluss massen av løsemiddelet." },
+        { "navn": "Gassvolum", "latex": "V = n \\cdot V_m", "forklaring": "Gjelder for alle gasser: 1 mol gass fyller samme volum uansett hvilken gass det er." },
+        { "navn": "Molart volum", "latex": "V_m = 22{,}4\\ \\text{L/mol}\\ (0\\,^\\circ\\text{C}) \\qquad V_m = 24{,}5\\ \\text{L/mol}\\ (25\\,^\\circ\\text{C})", "forklaring": "Ved trykket 101,3 kPa. Sjekk alltid hvilken temperatur oppgaven oppgir." },
+        { "navn": "Den ideelle gasslikningen", "latex": "pV = nRT, \\qquad R = 8{,}314\\ \\text{J/(K}\\cdot\\text{mol)}", "forklaring": "Med denne $R$-verdien må $p$ være i Pa, $V$ i m³ og $T$ i kelvin. $1\\ \\text{L} = 10^{-3}\\ \\text{m}^3$." },
+        { "navn": "Avogadros lov (volumforhold for gasser)", "latex": "\\frac{V(\\text{A})}{V(\\text{B})} = \\frac{n(\\text{A})}{n(\\text{B})} = \\frac{a}{b}", "forklaring": "Ved samme trykk og temperatur er volumforholdet mellom gasser likt molforholdet i likningen." },
+        { "navn": "Tettheten til en gass", "latex": "\\rho = \\frac{m}{V} = \\frac{M}{V_m}", "forklaring": "Tunge gassmolekyler gir tett gass. Derfor synker $\\ce{CO2}$ ($M = 44$ g/mol) i luft ($M \\approx 29$ g/mol)." }
+      ]
+    },
+    {
+      "tittel": "Termokjemi og energi",
+      "formler": [
+        { "navn": "Entalpiendring", "latex": "\\Delta H = H_{\\text{produkter}} - H_{\\text{reaktanter}}", "forklaring": "$\\Delta H < 0$ betyr eksoterm reaksjon (varme frigjøres), $\\Delta H > 0$ betyr endoterm (varme tas opp)." },
+        { "navn": "Varme og temperaturendring", "latex": "q = c \\cdot m \\cdot \\Delta T", "forklaring": "$c$ er spesifikk varmekapasitet i J/(g·K), $m$ massen i gram og $\\Delta T$ temperaturendringen. For vann er $c = 4{,}18$ J/(g·K)." },
+        { "navn": "Varmen i et kalorimeter", "latex": "q_{\\text{reaksjon}} = -\\,q_{\\text{løsning}}", "forklaring": "Varmen løsningen tar opp, er varmen reaksjonen gir fra seg. Derfor fortegnsbyttet." },
+        { "navn": "Molar reaksjonsentalpi fra måling", "latex": "\\Delta H = \\frac{q_{\\text{reaksjon}}}{n}", "forklaring": "Del den målte varmen på antall mol av stoffet reaksjonslikningen er skrevet for. Svaret oppgis i kJ/mol." },
+        { "navn": "Reaksjonsentalpi fra dannelsesentalpier", "latex": "\\Delta H^\\circ = \\sum n \\Delta H_f^\\circ(\\text{produkter}) - \\sum n \\Delta H_f^\\circ(\\text{reaktanter})", "forklaring": "Husk å gange hver $\\Delta H_f^\\circ$ med koeffisienten. Grunnstoffer i sin stabile form har $\\Delta H_f^\\circ = 0$." },
+        { "navn": "Hess' lov", "latex": "\\Delta H_{\\text{total}} = \\Delta H_1 + \\Delta H_2 + \\ldots + \\Delta H_n", "forklaring": "Entalpiendringen er uavhengig av veien. Snur du en delreaksjon, skifter $\\Delta H$ fortegn; ganger du likningen, ganger du $\\Delta H$." },
+        { "navn": "Entalpi fra bindingsentalpier", "latex": "\\Delta H \\approx \\sum E_{\\text{bindinger brutt}} - \\sum E_{\\text{bindinger dannet}}", "forklaring": "Å bryte bindinger krever energi, å danne bindinger frigjør energi. Gir bare et anslag." },
+        { "navn": "Entropiendring", "latex": "\\Delta S^\\circ = \\sum n S^\\circ(\\text{produkter}) - \\sum n S^\\circ(\\text{reaktanter})", "forklaring": "$\\Delta S > 0$ betyr økt uorden. Flere gassmolekyler på produktsiden gir nesten alltid positiv $\\Delta S$. Enhet: J/(K·mol)." },
+        { "navn": "Gibbs energi", "latex": "\\Delta G = \\Delta H - T \\Delta S", "forklaring": "$T$ i kelvin. Pass på enhetene: $\\Delta H$ er oftest i kJ/mol og $\\Delta S$ i J/(K·mol) — gjør om til samme enhet før du regner." },
+        { "navn": "Spontanitet", "latex": "\\Delta G < 0:\\ \\text{spontan} \\qquad \\Delta G = 0:\\ \\text{likevekt} \\qquad \\Delta G > 0:\\ \\text{ikke spontan}", "forklaring": "Spontan betyr at reaksjonen kan gå av seg selv, ikke at den går fort." },
+        { "navn": "Grensetemperatur for spontanitet", "latex": "T = \\frac{\\Delta H}{\\Delta S} \\qquad (\\text{der } \\Delta G = 0)", "forklaring": "Når $\\Delta H$ og $\\Delta S$ har samme fortegn, avgjør temperaturen. Denne $T$ er vippepunktet." },
+        { "navn": "Celsius til kelvin", "latex": "T = \\theta + 273{,}15", "forklaring": "All bruk av $\\Delta G$ og gasslikningen krever kelvin." }
+      ]
+    },
+    {
+      "tittel": "Organisk kjemi: hydrokarboner og funksjonelle grupper",
+      "formler": [
+        { "navn": "Alkan (mettet hydrokarbon)", "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n+2}", "forklaring": "Bare enkeltbindinger. Endelsen er -an, som i propan $\\ce{C3H8}$." },
+        { "navn": "Alken (én dobbeltbinding)", "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n}", "forklaring": "Umettet. Endelsen er -en, som i propen $\\ce{C3H6}$." },
+        { "navn": "Alkyn (én trippelbinding)", "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n-2}", "forklaring": "Endelsen er -yn, som i etyn (acetylen) $\\ce{C2H2}$." },
+        { "navn": "Cykloalkan (ring)", "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n}", "forklaring": "Samme molekylformel som alkener, men ring i stedet for dobbeltbinding — et eksempel på isomeri." },
+        { "navn": "Alkohol", "latex": "\\ce{R-OH}", "forklaring": "Hydroksylgruppe. Endelse -ol. Kan danne hydrogenbindinger, så kokepunktet er høyt sammenlignet med alkanet." },
+        { "navn": "Aldehyd", "latex": "\\ce{R-CHO}", "forklaring": "Karbonylgruppe med hydrogen på. Endelse -al. Dannes ved oksidasjon av primær alkohol." },
+        { "navn": "Keton", "latex": "\\ce{R-CO-R'}", "forklaring": "Karbonylgruppe midt i kjeden. Endelse -on. Dannes ved oksidasjon av sekundær alkohol." },
+        { "navn": "Karboksylsyre", "latex": "\\ce{R-COOH}", "forklaring": "Endelse -syre. Svak syre som kan gi fra seg protonet i $\\ce{-COOH}$." },
+        { "navn": "Ester", "latex": "\\ce{R-COO-R'}", "forklaring": "Navnet bygges som «alkyl-alkanoat», f.eks. etyletanoat. Gir ofte frukt- og blomsterlukt." },
+        { "navn": "Eter", "latex": "\\ce{R-O-R'}", "forklaring": "Oksygen mellom to karbonkjeder. Ingen $\\ce{O-H}$, derfor ingen hydrogenbinding mellom molekylene og lavere kokepunkt enn alkoholen." },
+        { "navn": "Amin", "latex": "\\ce{R-NH2}", "forklaring": "Aminogruppe. Virker som svak base fordi nitrogenet har et fritt elektronpar som kan ta opp et proton." },
+        { "navn": "Halogenalkan", "latex": "\\ce{R-X} \\quad (\\ce{X} = \\ce{F}, \\ce{Cl}, \\ce{Br}, \\ce{I})", "forklaring": "Dannes ved substitusjon på et alkan. Bindingen $\\ce{C-X}$ er polar." }
+      ]
+    },
+    {
+      "tittel": "Organiske reaksjonstyper",
+      "formler": [
+        { "navn": "Fullstendig forbrenning", "latex": "\\ce{C3H8 + 5O2 -> 3CO2 + 4H2O}", "forklaring": "Med nok oksygen blir produktene alltid $\\ce{CO2}$ og $\\ce{H2O}$. Balanser i rekkefølgen C, H, O." },
+        { "navn": "Ufullstendig forbrenning", "latex": "\\ce{2CH4 + 3O2 -> 2CO + 4H2O}", "forklaring": "For lite oksygen gir giftig karbonmonoksid, og med enda mindre oksygen dannes sot ($\\ce{C}$)." },
+        { "navn": "Substitusjon (halogenering av alkan)", "latex": "\\ce{CH4 + Cl2 ->[UV] CH3Cl + HCl}", "forklaring": "Et hydrogenatom byttes ut med et halogenatom. Krever lys eller varme fordi alkaner er lite reaktive." },
+        { "navn": "Addisjon av brom", "latex": "\\ce{CH2=CH2 + Br2 -> CH2Br-CH2Br}", "forklaring": "Test på umettethet: bromvann mister den brungule fargen når det finnes en dobbelt- eller trippelbinding." },
+        { "navn": "Addisjon av hydrogen (hydrogenering)", "latex": "\\ce{CH2=CH2 + H2 ->[Ni] CH3-CH3}", "forklaring": "Brukes industrielt for å gjøre flytende umettet fett fastere." },
+        { "navn": "Addisjon av vann (hydratisering)", "latex": "\\ce{CH2=CH2 + H2O ->[H+] CH3-CH2-OH}", "forklaring": "Dobbeltbindingen brytes, og $\\ce{H}$ og $\\ce{OH}$ legges til hvert sitt karbon. Gir alkohol." },
+        { "navn": "Eliminasjon (dehydrering av alkohol)", "latex": "\\ce{CH3-CH2-OH ->[H2SO4][varme] CH2=CH2 + H2O}", "forklaring": "Motsatt av addisjon: to atomer fjernes og det dannes en dobbeltbinding." },
+        { "navn": "Kondensasjon (forestring)", "latex": "\\ce{CH3COOH + CH3CH2OH <=>[H+] CH3COOCH2CH3 + H2O}", "forklaring": "Syre + alkohol gir ester + vann. Likevekt, så svovelsyre brukes som katalysator og vannfjerner." },
+        { "navn": "Hydrolyse av ester", "latex": "\\ce{CH3COOCH2CH3 + H2O <=> CH3COOH + CH3CH2OH}", "forklaring": "Esteren spaltes tilbake til syre og alkohol. Vann er reaktant, altså motsatt av kondensasjon." },
+        { "navn": "Oksidasjon av primær alkohol", "latex": "\\ce{CH3CH2OH ->[O] CH3CHO ->[O] CH3COOH}", "forklaring": "Alkohol $\\to$ aldehyd $\\to$ karboksylsyre. Derfor smaker gammel vin surt (etanol blir eddiksyre)." },
+        { "navn": "Oksidasjon av sekundær alkohol", "latex": "\\ce{CH3-CH(OH)-CH3 ->[O] CH3-CO-CH3}", "forklaring": "Gir keton, og der stopper det: ketonet kan ikke oksideres videre. Tertiære alkoholer oksideres ikke i det hele tatt." },
+        { "navn": "Karboksylsyre som syre", "latex": "\\ce{CH3COOH + H2O <=> CH3COO- + H3O+}", "forklaring": "Bare en liten del protolyseres — eddiksyre er en svak syre med $\\text{p}K_a \\approx 4{,}8$." }
+      ]
+    },
+    {
+      "tittel": "Kjemisk likevekt",
+      "formler": [
+        { "navn": "Likevektskonstanten (massevirkningsloven)", "latex": "a\\text{A} + b\\text{B} \\rightleftharpoons c\\text{C} + d\\text{D} \\quad \\Rightarrow \\quad K = \\frac{[\\text{C}]^{c}\\,[\\text{D}]^{d}}{[\\text{A}]^{a}\\,[\\text{B}]^{b}}", "forklaring": "Produkter i telleren, reaktanter i nevneren, koeffisientene som eksponenter. Konsentrasjonene skal være likevektskonsentrasjoner." },
+        { "navn": "Reaksjonskvotienten", "latex": "Q = \\frac{[\\text{C}]^{c}\\,[\\text{D}]^{d}}{[\\text{A}]^{a}\\,[\\text{B}]^{b}}", "forklaring": "Samme uttrykk som $K$, men med de konsentrasjonene du faktisk har akkurat nå." },
+        { "navn": "Hvilken vei går reaksjonen?", "latex": "Q < K \\;\\Rightarrow\\; \\text{mot høyre} \\qquad Q = K \\;\\Rightarrow\\; \\text{likevekt} \\qquad Q > K \\;\\Rightarrow\\; \\text{mot venstre}", "forklaring": "Blandingen vil alltid endre seg i den retningen som får $Q$ til å nærme seg $K$." },
+        { "navn": "Likevektskonsentrasjon", "latex": "[\\text{A}] = c_0(\\text{A}) - x", "forklaring": "Sett opp en tabell med startkonsentrasjon, endring og likevekt. Endringene står i forhold til koeffisientene." },
+        { "navn": "Størrelsen på $K$", "latex": "K \\gg 1:\\ \\text{mest produkt} \\qquad K \\ll 1:\\ \\text{mest reaktant}", "forklaring": "$K$ sier hvor langt likevekten ligger, ikke hvor fort reaksjonen går." },
+        { "navn": "Omvendt reaksjon", "latex": "K_{\\text{omvendt}} = \\frac{1}{K}", "forklaring": "Snur du likningen, snur du brøken." },
+        { "navn": "Likningen ganget med $n$", "latex": "K_{\\text{ny}} = K^{\\,n}", "forklaring": "Dobler du alle koeffisientene, blir den nye konstanten $K^2$." },
+        { "navn": "Summen av to reaksjoner", "latex": "K_{\\text{total}} = K_1 \\cdot K_2", "forklaring": "Legger du to delreaksjoner sammen, ganger du likevektskonstantene." },
+        { "navn": "Heterogen likevekt", "latex": "\\ce{CaCO3(s) <=> CaO(s) + CO2(g)} \\quad \\Rightarrow \\quad K = [\\ce{CO2}]", "forklaring": "Faste stoffer og rene væsker har konstant «konsentrasjon» og skrives ikke inn i uttrykket." },
+        { "navn": "Le Chateliers prinsipp", "latex": "\\text{påvirkning} \\ \\Rightarrow \\ \\text{likevekten forskyves slik at påvirkningen motvirkes}", "forklaring": "Økt konsentrasjon på én side skyver likevekten bort fra den siden. Økt trykk skyver mot siden med færrest gassmolekyler. Oppvarming skyver i endoterm retning — og bare temperatur endrer selve $K$." }
+      ]
+    },
+    {
+      "tittel": "Løselighet og fellingslikevekter",
+      "formler": [
+        { "navn": "Løselighetsproduktet", "latex": "\\ce{BaSO4(s) <=> Ba^2+(aq) + SO4^2-(aq)} \\quad \\Rightarrow \\quad K_s = [\\ce{Ba^2+}]\\,[\\ce{SO4^2-}]", "forklaring": "Det faste saltet står ikke i uttrykket. Lav $K_s$ betyr tungtløselig salt." },
+        { "navn": "Løselighet av et $\\ce{AB}$-salt", "latex": "K_s = s^{2} \\quad \\Rightarrow \\quad s = \\sqrt{K_s}", "forklaring": "$s$ er løseligheten i mol/L, altså hvor mange mol salt som løser seg per liter." },
+        { "navn": "Løselighet av et $\\ce{AB2}$- eller $\\ce{A2B}$-salt", "latex": "K_s = s\\,(2s)^{2} = 4s^{3} \\quad \\Rightarrow \\quad s = \\sqrt[3]{\\frac{K_s}{4}}", "forklaring": "Koeffisienten 2 i likningen gir både faktoren 2 foran $s$ og eksponenten 2." },
+        { "navn": "Løselighet i gram per liter", "latex": "s\\,[\\text{g/L}] = s\\,[\\text{mol/L}] \\cdot M", "forklaring": "Gang med molar masse når oppgaven spør om hvor mange gram som løser seg." },
+        { "navn": "Vil det felles ut bunnfall?", "latex": "Q > K_s \\;\\Rightarrow\\; \\text{bunnfall} \\qquad Q = K_s \\;\\Rightarrow\\; \\text{mettet} \\qquad Q < K_s \\;\\Rightarrow\\; \\text{alt løser seg}", "forklaring": "Regn ut $Q$ med konsentrasjonene rett etter blanding — husk at volumet øker når du blander to løsninger." },
+        { "navn": "Felles ione-effekt", "latex": "[\\ce{A+}] \\uparrow \\ \\Rightarrow \\ s \\downarrow", "forklaring": "Et salt løser seg dårligere i en løsning som allerede inneholder ett av ionene. Le Chatelier skyver likevekten mot fast stoff." }
+      ]
+    },
+    {
+      "tittel": "Syrer, baser og pH",
+      "formler": [
+        { "navn": "pH", "latex": "\\text{pH} = -\\log[\\ce{H3O+}] \\qquad [\\ce{H3O+}] = 10^{-\\text{pH}}", "forklaring": "Konsentrasjonen i mol/L. Ett trinn på pH-skalaen er en faktor 10 i konsentrasjon." },
+        { "navn": "pOH", "latex": "\\text{pOH} = -\\log[\\ce{OH-}] \\qquad [\\ce{OH-}] = 10^{-\\text{pOH}}", "forklaring": "Samme regnemåte som for pH, men for hydroksidionene." },
+        { "navn": "Sammenhengen mellom pH og pOH", "latex": "\\text{pH} + \\text{pOH} = 14{,}00 \\qquad (25\\,^\\circ\\text{C})", "forklaring": "Regner du ut $[\\ce{OH-}]$ i en baseoppgave, finner du pH raskest via pOH." },
+        { "navn": "Vannets ioneprodukt", "latex": "K_w = [\\ce{H3O+}]\\,[\\ce{OH-}] = 1{,}0 \\cdot 10^{-14} \\qquad (25\\,^\\circ\\text{C})", "forklaring": "Gjelder i alle vannløsninger. Øker $[\\ce{H3O+}]$, må $[\\ce{OH-}]$ synke tilsvarende." },
+        { "navn": "Sterk syre og sterk base", "latex": "[\\ce{H3O+}] = c(\\text{syre}) \\qquad [\\ce{OH-}] = a \\cdot c(\\text{base})", "forklaring": "Fullstendig protolyse. $a$ er antall $\\ce{OH-}$ per formelenhet, så $\\ce{Ca(OH)2}$ gir $a = 2$." },
+        { "navn": "Syrekonstanten", "latex": "\\ce{HA + H2O <=> H3O+ + A-} \\quad \\Rightarrow \\quad K_a = \\frac{[\\ce{H3O+}]\\,[\\ce{A-}]}{[\\ce{HA}]}", "forklaring": "Stor $K_a$ betyr sterk syre. Vann står ikke i uttrykket." },
+        { "navn": "pKa", "latex": "\\text{p}K_a = -\\log K_a \\qquad K_a = 10^{-\\text{p}K_a}", "forklaring": "Lav $\\text{p}K_a$ betyr sterk syre. Praktisk fordi $K_a$-verdiene er så små tall." },
+        { "navn": "Basekonstanten", "latex": "\\ce{A- + H2O <=> HA + OH-} \\quad \\Rightarrow \\quad K_b = \\frac{[\\ce{HA}]\\,[\\ce{OH-}]}{[\\ce{A-}]}", "forklaring": "Gjelder for den korresponderende basen til syra $\\ce{HA}$." },
+        { "navn": "Korresponderende syre-basepar", "latex": "K_a \\cdot K_b = K_w \\qquad \\Longleftrightarrow \\qquad \\text{p}K_a + \\text{p}K_b = 14{,}00", "forklaring": "Sterk syre gir svak korresponderende base, og omvendt. Brukes når tabellen bare oppgir $K_a$." },
+        { "navn": "Svak syre (tilnærming)", "latex": "[\\ce{H3O+}] = \\sqrt{K_a \\cdot c}", "forklaring": "Gjelder når protolysen er liten, slik at $[\\ce{HA}] \\approx c$ (tommelfingerregel: mindre enn 5 % protolyseres)." },
+        { "navn": "Svak base (tilnærming)", "latex": "[\\ce{OH-}] = \\sqrt{K_b \\cdot c}", "forklaring": "Finn $[\\ce{OH-}]$ først, så pOH, og til slutt pH med $\\text{pH} = 14{,}00 - \\text{pOH}$." },
+        { "navn": "Protolysegrad", "latex": "\\text{protolysegrad} = \\frac{[\\ce{H3O+}]}{c_0} \\cdot 100\\,\\%", "forklaring": "Hvor stor andel av syremolekylene som har gitt fra seg protonet. Øker når løsningen fortynnes." }
+      ]
+    },
+    {
+      "tittel": "Buffere, titrering og analyse",
+      "formler": [
+        { "navn": "Henderson–Hasselbalch (bufferlikningen)", "latex": "\\text{pH} = \\text{p}K_a + \\log \\frac{c(\\text{base})}{c(\\text{syre})}", "forklaring": "En buffer er en svak syre sammen med sin korresponderende base. Forholdet mellom stoffmengdene kan brukes i stedet for konsentrasjonene, siden volumet er felles." },
+        { "navn": "Buffer med like store konsentrasjoner", "latex": "c(\\text{syre}) = c(\\text{base}) \\quad \\Rightarrow \\quad \\text{pH} = \\text{p}K_a", "forklaring": "Fordi $\\log 1 = 0$. Dette er den best mulige bufferen — velg en syre med $\\text{p}K_a$ nær ønsket pH." },
+        { "navn": "Bufferområdet", "latex": "\\text{pH} = \\text{p}K_a \\pm 1", "forklaring": "Utenfor dette området er forholdet mellom syre og base for skjevt, og bufferen virker dårlig." },
+        { "navn": "Ekvivalenspunktet ved titrering", "latex": "\\frac{n(\\text{A})}{a} = \\frac{n(\\text{B})}{b}", "forklaring": "$a$ og $b$ er koeffisientene i reaksjonslikningen. Ekvivalenspunktet er der stoffmengdene passer akkurat med likningen." },
+        { "navn": "Titrering med forhold 1:1", "latex": "c_{\\text{syre}} V_{\\text{syre}} = c_{\\text{base}} V_{\\text{base}}", "forklaring": "Gjelder for eksempel $\\ce{HCl}$ mot $\\ce{NaOH}$. Volumene kan være i mL så lenge du bruker samme enhet på begge sider." },
+        { "navn": "Konsentrasjon fra en titrering", "latex": "c(\\text{prøve}) = \\frac{b}{a} \\cdot \\frac{c_t \\cdot V_t}{V_{\\text{prøve}}}", "forklaring": "$c_t$ og $V_t$ er konsentrasjon og forbrukt volum av titranten. Bruk gjennomsnittet av parallelle titreringer." },
+        { "navn": "Fortynningsfaktor", "latex": "f = \\frac{V_{\\text{slutt}}}{V_{\\text{start}}}", "forklaring": "Har du fortynnet prøven før analysen, må resultatet ganges med $f$ til slutt." },
+        { "navn": "Fra mol/L til mg/L", "latex": "\\rho = c \\cdot M \\cdot 1000 \\qquad [\\text{mg/L}]", "forklaring": "Vannkvalitet oppgis nesten alltid i mg/L. For vannløsninger er 1 mg/L omtrent det samme som 1 ppm." },
+        { "navn": "Absorbans", "latex": "A = \\log \\frac{I_0}{I} = -\\log T", "forklaring": "$I_0$ er lysstyrken inn, $I$ ut og $T = I/I_0$ transmittansen. Absorbansen har ingen enhet." },
+        { "navn": "Beer–Lamberts lov", "latex": "A = \\varepsilon \\cdot l \\cdot c", "forklaring": "$\\varepsilon$ er molar absorptivitet i L/(mol·cm), $l$ lysveien i cm og $c$ konsentrasjonen i mol/L. Absorbansen er proporsjonal med konsentrasjonen." },
+        { "navn": "Standardkurve gjennom origo", "latex": "A = k \\cdot c \\quad \\Rightarrow \\quad c = \\frac{A}{k}", "forklaring": "Mål absorbansen til kjente standardløsninger, finn stigningstallet $k$ ved lineær regresjon, og les av den ukjente konsentrasjonen." },
+        { "navn": "Gjennomsnitt av parallelle målinger", "latex": "\\bar{x} = \\frac{x_1 + x_2 + \\ldots + x_n}{n}", "forklaring": "Ta alltid flere paralleller. Store avvik mellom dem tyder på en systematisk feil i metoden." }
+      ]
+    }
+  ]
+}

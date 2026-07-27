@@ -15,7 +15,7 @@
       "$\\lim_{x \\to \\pm\\infty} \\frac{1}{x^n} = 0$ for $n>0$ — grunnsteinen i alle grenseverdier mot uendelig.",
       "Vertikal asymptote $x=a$: nevneren blir 0 i $x=a$ mens telleren ikke blir 0. Bruk ensidige grenseverdier for å finne fortegnet.",
       "Horisontal asymptote $y=b$: $\\lim_{x \\to \\pm\\infty} f(x) = b$. For rasjonale funksjoner avgjøres den av gradene i teller og nevner.",
-      "Skrå asymptote får du når telleren har nøyaktig én grad mer enn nevneren. Polynomdivider til $f(x) = ax+b+\\frac{r}{q(x)}$; linja $y=ax+b$ er asymptoten."
+      "Skrå asymptote får du når telleren har nøyaktig én grad mer enn nevneren. Polynomdivider til $f(x) = ax+b+\\frac{r(x)}{q(x)}$; linja $y=ax+b$ er asymptoten."
     ],
     "formler": [
       { "navn": "Sum og differanse", "latex": "\\lim_{x \\to a}\\left(f(x) \\pm g(x)\\right) = \\lim_{x \\to a} f(x) \\pm \\lim_{x \\to a} g(x)" },
@@ -87,7 +87,7 @@
     "vanligeFeil": [
       "Å tro at $\\frac{0}{0}$ betyr at grenseverdien er 0, eller at den ikke finnes. $\\frac{0}{0}$ er bare et signal om at du må skrive om uttrykket — svaret kan bli hvilket som helst tall.",
       "Å forkorte bare en del av en faktor. I $\\frac{x-3}{x^2-3x}$ kan du ikke stryke $x$-ene; du må faktorisere til $\\frac{x-3}{x(x-3)}$ og forkorte hele parentesen, som gir $\\frac{1}{x}$.",
-      "Å sette nevneren lik 0 og automatisk kalle løsningen en vertikal asymptote. Blir telleren også 0 i samme punkt, forkortes faktoren bort og du får et hull i stedet.",
+      "Å sette nevneren lik 0 og automatisk kalle løsningen en vertikal asymptote. Blir telleren også 0 i samme punkt, må du forkorte den felles faktoren først; da får du oftest et hull i stedet.",
       "Å hoppe over fortegnssjekken i ensidige grenseverdier og skrive $+\\infty$ på begge sider av en vertikal asymptote. Sett inn et tall tett på fra hver side og se på fortegnet til nevneren.",
       "Å bytte om $x$ og $y$ i asymptotelikningene. Vertikale asymptoter skrives $x = \\text{tall}$, horisontale og skrå asymptoter skrives $y = \\ldots$",
       "Å konkludere med at $f$ er kontinuerlig i $x=a$ bare fordi grenseverdien finnes. $f(a)$ må også være definert, og ha nøyaktig den samme verdien som grenseverdien."
@@ -182,7 +182,7 @@
         "Alle rasjonale funksjoner er kontinuerlige for alle $x$"
       ],
       "riktig": 1,
-      "forklaring": "Grenseverdien avhenger bare av verdiene rundt $a$, aldri av $f(a)$ selv. Derfor har $\\frac{x^2-1}{x-1}$ grenseverdien 2 i $x=1$ selv om funksjonen ikke er definert der. Påstand 3 er nesten riktig, men kontinuitet krever i tillegg at $f(a)$ er definert og lik grenseverdien. Rasjonale funksjoner er bare kontinuerlige der nevneren ikke er 0."
+      "forklaring": "Grenseverdien avhenger bare av verdiene rundt $a$, aldri av $f(a)$ selv. Derfor har $\\frac{x^2-1}{x-1}$ grenseverdien 2 i $x=1$ selv om funksjonen ikke er definert der. Påstanden om at det er nok at grenseverdien finnes, er nesten riktig, men kontinuitet krever i tillegg at $f(a)$ er definert og lik grenseverdien. Rasjonale funksjoner er bare kontinuerlige der nevneren ikke er 0."
     },
     {
       "sporsmal": "Hvilke vertikale asymptoter har $f(x) = \\frac{x+2}{x^2-4}$?",
@@ -200,7 +200,7 @@
       "sporsmal": "Anta at $\\lim_{x \\to a} f(x) = 3$ og $\\lim_{x \\to a} g(x) = -2$. Hva er $\\lim_{x \\to a}\\left(f(x) \\cdot g(x) + g(x)^2\\right)$?",
       "alternativer": ["$-2$", "$-10$", "$2$", "$10$"],
       "riktig": 0,
-      "forklaring": "Regnereglene lar deg regne del for del: $3 \\cdot (-2) + (-2)^2 = -6 + 4 = -2$. Svaret $-10$ kommer av å skrive $(-2)^2 = -4$; husk at et kvadrat aldri er negativt. Svaret $2$ kommer av fortegnsfeil i produktet, der positiv ganger negativ må bli negativ."
+      "forklaring": "Regnereglene lar deg regne del for del: $3 \\cdot (-2) + (-2)^2 = -6 + 4 = -2$. Svaret $-10$ kommer av å skrive $(-2)^2 = -4$; husk at et kvadrat aldri er negativt. Svaret $10$ kommer av fortegnsfeil i produktet — positiv ganger negativ må bli negativ — og $2$ av fortegnsfeil i både produktet og kvadratet."
     }
   ],
 
@@ -212,7 +212,7 @@
     { "front": "De tre kravene for at $f$ er kontinuerlig i $x=a$", "bak": "1) $f(a)$ er definert. 2) $\\lim_{x \\to a} f(x)$ finnes. 3) $\\lim_{x \\to a} f(x) = f(a)$." },
     { "front": "$\\lim_{x \\to \\pm\\infty} \\frac{1}{x^n} = ?$", "bak": "$0$ for alle $n > 0$." },
     { "front": "Hvordan finner du vertikale asymptoter til $\\frac{p(x)}{q(x)}$?", "bak": "Løs $q(x) = 0$. Der telleren ikke også er 0, er $x = a$ en vertikal asymptote." },
-    { "front": "Både teller og nevner blir 0 i $x=a$. Asymptote eller hull?", "bak": "Hull. Forkort felles faktor først; da finnes grenseverdien, men funksjonen er udefinert i punktet." },
+    { "front": "Både teller og nevner blir 0 i $x=a$. Asymptote eller hull?", "bak": "Forkort felles faktor først og se på uttrykket som står igjen. Er nevneren da ikke lenger 0 i $x=a$, har du et hull: grenseverdien finnes, men funksjonen er udefinert i punktet. Er nevneren fortsatt 0, er $x=a$ likevel en vertikal asymptote." },
     { "front": "Horisontal asymptote til en rasjonal funksjon — hvordan?", "bak": "Sammenlign gradene: teller lavere gir $y=0$, lik grad gir forholdet mellom koeffisientene foran høyestegradsleddene, teller høyere gir ingen horisontal asymptote." },
     { "front": "Når har en rasjonal funksjon skrå asymptote?", "bak": "Når graden i telleren er nøyaktig én høyere enn graden i nevneren." },
     { "front": "Hvordan finner du den skrå asymptoten?", "bak": "Polynomdivider til $f(x) = ax+b+\\frac{r(x)}{q(x)}$. Restleddet går mot 0, så asymptoten er $y = ax+b$." },

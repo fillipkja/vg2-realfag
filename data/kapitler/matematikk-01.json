@@ -11,7 +11,7 @@
       "Røtter er brøkeksponenter: $\\sqrt[n]{a^m} = a^{\\frac{m}{n}}$. Skriv alltid om røtter til potenser før du regner.",
       "En eksponentialfunksjon $f(x) = a \\cdot k^x$ har startverdi $a = f(0)$ og vekstfaktor $k$: $k > 1$ gir vekst, $0 < k < 1$ gir forfall.",
       "Vekst på $p$ prosent per tidsenhet gir $k = 1 + \\frac{p}{100}$, nedgang på $p$ prosent gir $k = 1 - \\frac{p}{100}$.",
-      "$e \\approx 2{,}718$ er grunntallet i den naturlige eksponentialfunksjonen $e^x$, som brukes i alle vekstmodeller.",
+      "$e \\approx 2{,}718$ er grunntallet i den naturlige eksponentialfunksjonen $e^x$, som brukes i mange vekstmodeller.",
       "$\\lg x$ er eksponenten 10 må ha for å bli $x$, og $\\ln x$ er eksponenten $e$ må ha. Begge er bare definert for $x > 0$.",
       "Logaritmereglene: $\\lg(ab) = \\lg a + \\lg b$, $\\lg\\frac{a}{b} = \\lg a - \\lg b$ og $\\lg a^n = n \\lg a$. Det finnes derimot ingen regel for $\\lg(a+b)$.",
       "Står den ukjente i eksponenten, tar du logaritmen på begge sider: $a^x = b$ gir $x = \\frac{\\lg b}{\\lg a}$.",
@@ -82,7 +82,7 @@
       {
         "tittel": "Eksponentielt forfall med e: koffein i kroppen",
         "oppgave": "<p>Mengden koffein i kroppen etter en stor kopp kaffe kan modelleres med $K(t) = 120 \\cdot e^{-0{,}13t}$, der $K$ er mengden i milligram og $t$ er tiden i timer etter at du drakk kaffen.</p><p>a) Hvor mye koffein er igjen etter 5 timer?</p><p>b) Hva er halveringstiden til koffein i denne modellen?</p><p>c) Når er det mindre enn 20 mg koffein igjen?</p>",
-        "losning": "<p><strong>a)</strong> Vi setter $t = 5$ inn og regner ut eksponenten først:</p>$$K(5) = 120 \\cdot e^{-0{,}13 \\cdot 5} = 120 \\cdot e^{-0{,}65} = 120 \\cdot 0{,}5220 = 62{,}6$$<p>Det er omtrent <strong>62,6 mg</strong> koffein igjen etter 5 timer.</p><p><strong>b)</strong> Halveringstiden er tiden det tar før mengden er halvert. Startmengden er $K(0) = 120$ mg, så vi løser $K(t) = 60$:</p>$$120 \\cdot e^{-0{,}13t} = 60 \\quad \\Rightarrow \\quad e^{-0{,}13t} = \\frac{60}{120} = 0{,}5$$<p>Nå står $e$ som grunntall, så vi tar $\\ln$ på begge sider. Fordi $\\ln e^u = u$, forsvinner eksponentialfunksjonen helt:</p>$$-0{,}13t = \\ln 0{,}5 = -0{,}6931$$$$t = \\frac{-0{,}6931}{-0{,}13} = 5{,}33$$<p>Halveringstiden er omtrent <strong>5,33 timer</strong>, altså cirka 5 timer og 20 minutter. Startmengden 120 falt bort i regningen, så du får samme svar om du regner fra 60 mg ned til 30 mg.</p><p><strong>c)</strong> Vi løser først likningen $K(t) = 20$:</p>$$120 \\cdot e^{-0{,}13t} = 20 \\quad \\Rightarrow \\quad e^{-0{,}13t} = \\frac{20}{120} = \\frac{1}{6}$$$$-0{,}13t = \\ln\\frac{1}{6} = -\\ln 6 = -1{,}7918$$$$t = \\frac{-1{,}7918}{-0{,}13} = 13{,}78$$<p>Siden $K$ er en avtakende funksjon, er mengden mindre enn 20 mg for alle $t > 13{,}78$. Det er altså mindre enn 20 mg koffein igjen etter omtrent <strong>13,8 timer</strong> — nesten et helt døgn etter at du drakk kaffen er det fortsatt litt igjen.</p>"
+        "losning": "<p><strong>a)</strong> Vi setter $t = 5$ inn og regner ut eksponenten først:</p>$$K(5) = 120 \\cdot e^{-0{,}13 \\cdot 5} = 120 \\cdot e^{-0{,}65} = 120 \\cdot 0{,}5220 = 62{,}6$$<p>Det er omtrent <strong>62,6 mg</strong> koffein igjen etter 5 timer.</p><p><strong>b)</strong> Halveringstiden er tiden det tar før mengden er halvert. Startmengden er $K(0) = 120$ mg, så vi løser $K(t) = 60$:</p>$$120 \\cdot e^{-0{,}13t} = 60 \\quad \\Rightarrow \\quad e^{-0{,}13t} = \\frac{60}{120} = 0{,}5$$<p>Nå står $e$ som grunntall, så vi tar $\\ln$ på begge sider. Fordi $\\ln e^u = u$, forsvinner eksponentialfunksjonen helt:</p>$$-0{,}13t = \\ln 0{,}5 = -0{,}6931$$$$t = \\frac{-0{,}6931}{-0{,}13} = 5{,}33$$<p>Halveringstiden er omtrent <strong>5,33 timer</strong>, altså cirka 5 timer og 20 minutter. Startmengden 120 falt bort i regningen, så du får samme svar om du regner fra 60 mg ned til 30 mg.</p><p><strong>c)</strong> Vi løser først likningen $K(t) = 20$:</p>$$120 \\cdot e^{-0{,}13t} = 20 \\quad \\Rightarrow \\quad e^{-0{,}13t} = \\frac{20}{120} = \\frac{1}{6}$$$$-0{,}13t = \\ln\\frac{1}{6} = -\\ln 6 = -1{,}7918$$$$t = \\frac{-1{,}7918}{-0{,}13} = 13{,}78$$<p>Siden $K$ er en avtakende funksjon, er mengden mindre enn 20 mg for alle $t > 13{,}78$. Det er altså mindre enn 20 mg koffein igjen etter omtrent <strong>13,8 timer</strong>. Modellen gir aldri null: selv et helt døgn etter kaffen er det igjen $120 \\cdot e^{-0{,}13 \\cdot 24} \\approx 5$ mg.</p>"
       }
     ],
 
@@ -91,7 +91,7 @@
       "Å tolke en negativ eksponent som et negativt svar. $2^{-3}$ er $\\frac{1}{8}$, ikke $-8$.",
       "Å glemme dobbelt fortegn når du deler på en negativ eksponent. $\\frac{a^7}{a^{-3}} = a^{7-(-3)} = a^{10}$, ikke $a^4$.",
       "Å bruke en regel for $\\lg(a+b)$ som ikke finnes. $\\lg(a+b)$ er ikke $\\lg a + \\lg b$; det er bare produkt inni logaritmen som blir en sum utenfor.",
-      "Å forkorte en brøk mellom to logaritmer. $\\frac{\\lg 20}{\\lg 3}$ kan ikke skrives som $\\lg\\frac{20}{3}$ — regelen $\\lg a - \\lg b$ gjelder differanser, ikke brøker.",
+      "Å forkorte en brøk mellom to logaritmer. $\\frac{\\lg 20}{\\lg 3}$ kan ikke skrives som $\\lg\\frac{20}{3}$ — regelen sier at en brøk inni logaritmen blir en differanse mellom to logaritmer, $\\lg\\frac{a}{b} = \\lg a - \\lg b$, og den kan ikke brukes baklengs på en brøk mellom to logaritmer.",
       "Å svare uten å sjekke definisjonsmengden i logaritmelikninger, og dermed ta med falske løsninger der uttrykket inni logaritmen blir null eller negativt."
     ],
 
@@ -107,11 +107,11 @@
   "begreper": [
     { "begrep": "Potens", "forklaring": "Uttrykket $a^n$, som betyr grunntallet $a$ ganget med seg selv $n$ ganger når $n$ er et positivt heltall." },
     { "begrep": "Grunntall", "forklaring": "Tallet som opphøyes i $a^n$, altså $a$. Potensreglene gjelder bare når grunntallene er like." },
-    { "begrep": "Eksponent", "forklaring": "Tallet potensen opphøyes i, altså $n$ i $a^n$. Den kan være negativ, null eller en brøk." },
+    { "begrep": "Eksponent", "forklaring": "Tallet grunntallet opphøyes i, altså $n$ i $a^n$. Den kan være negativ, null eller en brøk." },
     { "begrep": "n-te rot", "forklaring": "Tallet som opphøyd i $n$ gir $a$, skrevet $\\sqrt[n]{a} = a^{\\frac{1}{n}}$." },
     { "begrep": "Eksponentialfunksjon", "forklaring": "En funksjon på formen $f(x) = a \\cdot k^x$, der den variable står i eksponenten." },
     { "begrep": "Vekstfaktor", "forklaring": "Tallet $k$ du ganger med for hver tidsenhet. $p$ % vekst gir $k = 1 + \\frac{p}{100}$, $p$ % nedgang gir $k = 1 - \\frac{p}{100}$." },
-    { "begrep": "Asymptote", "forklaring": "En linje grafen nærmer seg uten å treffe den. For $f(x) = a \\cdot k^x$ er $x$-aksen ($y = 0$) en asymptote." },
+    { "begrep": "Asymptote", "forklaring": "En rett linje som grafen nærmer seg mer og mer. For $f(x) = a \\cdot k^x$ er $x$-aksen ($y = 0$) en asymptote som grafen aldri treffer." },
     { "begrep": "Tallet e", "forklaring": "Et irrasjonalt tall, $e \\approx 2{,}718$, som er grunntallet i den naturlige eksponentialfunksjonen $e^x$." },
     { "begrep": "Logaritme", "forklaring": "Svaret på spørsmålet «hvilken eksponent må grunntallet ha for å bli dette tallet?». Bare definert for positive tall." },
     { "begrep": "Briggsk logaritme (lg)", "forklaring": "Logaritmen med grunntall 10: $\\lg x = y$ betyr $10^y = x$. Kalles også titallslogaritmen." },

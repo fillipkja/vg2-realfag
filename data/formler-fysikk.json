@@ -1,0 +1,700 @@
+{
+  "fag": "fysikk",
+  "kategorier": [
+    {
+      "tittel": "Rettlinjet bevegelse",
+      "formler": [
+        {
+          "navn": "Gjennomsnittsfart",
+          "latex": "\\bar{v} = \\frac{\\Delta s}{\\Delta t} = \\frac{s_2 - s_1}{t_2 - t_1}",
+          "forklaring": "Farten over et helt tidsintervall, målt i m/s. Grafisk er det stigningstallet til sekanten i $s$-$t$-grafen."
+        },
+        {
+          "navn": "Momentanfart",
+          "latex": "v = \\lim_{\\Delta t \\to 0}\\frac{\\Delta s}{\\Delta t} = s'(t)",
+          "forklaring": "Farten i ett bestemt øyeblikk, altså stigningstallet til tangenten i $s$-$t$-grafen."
+        },
+        {
+          "navn": "Gjennomsnittlig akselerasjon",
+          "latex": "\\bar{a} = \\frac{\\Delta v}{\\Delta t} = \\frac{v_2 - v_1}{t_2 - t_1}",
+          "forklaring": "Fartsendring per tid, målt i $\\text{m/s}^2$. Negativ verdi betyr at farten avtar i positiv retning."
+        },
+        {
+          "navn": "Momentanakselerasjon",
+          "latex": "a = v'(t) = s''(t)",
+          "forklaring": "Stigningstallet til tangenten i $v$-$t$-grafen."
+        },
+        {
+          "navn": "Fart ved konstant akselerasjon",
+          "latex": "v = v_0 + a t",
+          "forklaring": "Alle de fire bevegelseslikningene gjelder BARE når akselerasjonen er konstant."
+        },
+        {
+          "navn": "Posisjon ved konstant akselerasjon",
+          "latex": "s = s_0 + v_0 t + \\frac{1}{2} a t^{2}",
+          "forklaring": "Bruk denne når du kjenner tida og skal finne hvor gjenstanden er."
+        },
+        {
+          "navn": "Bevegelseslikning uten tid",
+          "latex": "v^{2} - v_0^{2} = 2a\\left(s - s_0\\right)",
+          "forklaring": "Bruk den når tida verken er kjent eller etterspurt, for eksempel ved bremselengder."
+        },
+        {
+          "navn": "Bevegelseslikning uten akselerasjon",
+          "latex": "\\bar{v} = \\frac{v_0 + v}{2}, \\qquad s = s_0 + \\frac{v_0 + v}{2}\\,t",
+          "forklaring": "At gjennomsnittsfarten er midt mellom start- og sluttfart gjelder kun ved konstant akselerasjon."
+        },
+        {
+          "navn": "Posisjonsendring som areal",
+          "latex": "\\Delta s = \\text{arealet mellom } v\\text{-}t\\text{-grafen og tidsaksen}",
+          "forklaring": "Areal under tidsaksen regnes negativt, siden gjenstanden da beveger seg bakover."
+        },
+        {
+          "navn": "Fartsendring som areal",
+          "latex": "\\Delta v = \\text{arealet mellom } a\\text{-}t\\text{-grafen og tidsaksen}",
+          "forklaring": "Nyttig når akselerasjonen ikke er konstant og bevegelseslikningene ikke kan brukes."
+        },
+        {
+          "navn": "Fritt fall fra ro",
+          "latex": "v = g t, \\qquad h = \\frac{1}{2} g t^{2}, \\qquad v = \\sqrt{2gh}",
+          "forklaring": "Gjelder når luftmotstanden kan neglisjeres. Massen har ingen betydning."
+        },
+        {
+          "navn": "Omregning av fart",
+          "latex": "1\\,\\text{m/s} = 3{,}6\\,\\text{km/h}",
+          "forklaring": "Alle formlene i fysikk krever fart i m/s — regn om før du setter inn."
+        }
+      ]
+    },
+    {
+      "tittel": "Krefter",
+      "formler": [
+        {
+          "navn": "Newtons 1. lov",
+          "latex": "\\sum \\vec{F} = \\vec{0} \\quad \\Leftrightarrow \\quad \\vec{v} = \\text{konstant}",
+          "forklaring": "Uten netto kraft ligger gjenstanden i ro eller beveger seg med konstant fart langs en rett linje."
+        },
+        {
+          "navn": "Newtons 2. lov",
+          "latex": "\\sum \\vec{F} = m\\vec{a}",
+          "forklaring": "Kraftsummen bestemmer akselerasjonen. Enheten er $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$."
+        },
+        {
+          "navn": "Newtons 2. lov i komponenter",
+          "latex": "\\sum F_x = ma_x, \\qquad \\sum F_y = ma_y",
+          "forklaring": "Del alltid kreftene opp langs to akser — velg én akse langs bevegelsesretningen."
+        },
+        {
+          "navn": "Newtons 3. lov",
+          "latex": "\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}",
+          "forklaring": "Kraft og motkraft virker på to ulike gjenstander, og kan derfor aldri oppheve hverandre."
+        },
+        {
+          "navn": "Tyngde",
+          "latex": "G = mg, \\qquad g = 9{,}81\\,\\text{m/s}^{2}",
+          "forklaring": "Tyngden er en kraft i newton, mens massen $m$ i kilogram er den samme overalt."
+        },
+        {
+          "navn": "Kraftkomponenter og kraftsum",
+          "latex": "F_x = F\\cos\\alpha, \\qquad F_y = F\\sin\\alpha, \\qquad F = \\sqrt{F_x^{2} + F_y^{2}}",
+          "forklaring": "$\\alpha$ er vinkelen mellom kraften og $x$-aksen."
+        },
+        {
+          "navn": "Normalkraft på vannrett flate",
+          "latex": "N = mg",
+          "forklaring": "Gjelder bare når ingen andre krefter har loddrett komponent, og gjenstanden ikke akselererer opp eller ned."
+        },
+        {
+          "navn": "Normalkraft ved loddrett akselerasjon",
+          "latex": "N = m\\left(g + a\\right)",
+          "forklaring": "$a$ regnes positiv oppover. I en heis som akselererer oppover føles du tyngre, og i fritt fall blir $N = 0$."
+        },
+        {
+          "navn": "Friksjonskraft",
+          "latex": "R = \\mu N, \\qquad R_{\\text{maks}} = \\mu_s N",
+          "forklaring": "Kinetisk friksjon er $\\mu N$ når flatene glir. Står gjenstanden stille, er friksjonen bare så stor som den må være, opp til $\\mu_s N$."
+        },
+        {
+          "navn": "Grensevinkel for gliding",
+          "latex": "\\tan\\alpha = \\mu_s",
+          "forklaring": "Den bratteste vinkelen en gjenstand kan ligge i ro på — brukes til å måle friksjonskoeffisienten."
+        },
+        {
+          "navn": "Krefter på skråplan",
+          "latex": "N = mg\\cos\\alpha, \\qquad G_x = mg\\sin\\alpha",
+          "forklaring": "Del tyngden i én komponent langs planet og én normalt på det. Bratt plan gir stor $G_x$ og liten $N$."
+        },
+        {
+          "navn": "Akselerasjon på skråplan",
+          "latex": "a = g\\sin\\alpha \\quad (\\text{uten friksjon}), \\qquad a = g\\left(\\sin\\alpha - \\mu\\cos\\alpha\\right)",
+          "forklaring": "Den siste gjelder når gjenstanden glir nedover med kinetisk friksjon. Massen faller bort i begge tilfeller."
+        }
+      ]
+    },
+    {
+      "tittel": "Mekanisk energi",
+      "formler": [
+        {
+          "navn": "Arbeid utført av en konstant kraft",
+          "latex": "W = F\\,s\\,\\cos\\alpha",
+          "forklaring": "$\\alpha$ er vinkelen mellom kraften og forflytningen. En kraft normalt på bevegelsen gjør ikke arbeid. Enhet: $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}$."
+        },
+        {
+          "navn": "Arbeid som areal",
+          "latex": "W = \\text{arealet mellom } F\\text{-}s\\text{-grafen og posisjonsaksen}",
+          "forklaring": "Bruk denne når kraften varierer med strekningen."
+        },
+        {
+          "navn": "Kinetisk energi",
+          "latex": "E_k = \\frac{1}{2}mv^{2}",
+          "forklaring": "Dobbel fart gir fire ganger så stor bevegelsesenergi — derfor blir bremselengden så lang ved høy fart."
+        },
+        {
+          "navn": "Potensiell energi (tyngdeenergi)",
+          "latex": "E_p = mgh",
+          "forklaring": "$h$ måles fra et nullnivå du velger selv. Bare høydeforskjeller har fysisk betydning."
+        },
+        {
+          "navn": "Arbeidssetningen",
+          "latex": "W_{\\text{tot}} = \\Delta E_k = \\frac{1}{2}mv^{2} - \\frac{1}{2}mv_0^{2}",
+          "forklaring": "Summen av arbeidet fra alle kreftene er lik endringen i kinetisk energi."
+        },
+        {
+          "navn": "Arbeidet tyngdekraften gjør",
+          "latex": "W_G = -\\Delta E_p = -mg\\,\\Delta h",
+          "forklaring": "Positivt når gjenstanden går nedover, negativt når den løftes."
+        },
+        {
+          "navn": "Mekanisk energi",
+          "latex": "E = E_k + E_p = \\frac{1}{2}mv^{2} + mgh",
+          "forklaring": "Summen av bevegelsesenergi og stillingsenergi."
+        },
+        {
+          "navn": "Bevaring av mekanisk energi",
+          "latex": "\\frac{1}{2}mv_1^{2} + mgh_1 = \\frac{1}{2}mv_2^{2} + mgh_2",
+          "forklaring": "Gjelder når bare tyngdekraften gjør arbeid, altså uten friksjon og luftmotstand."
+        },
+        {
+          "navn": "Fart etter fall fra høyden $h$",
+          "latex": "v = \\sqrt{2gh}",
+          "forklaring": "Følger av energibevaring for en gjenstand som starter i ro uten friksjon. Uavhengig av massen og av veien ned."
+        },
+        {
+          "navn": "Energitap til friksjon",
+          "latex": "E_2 - E_1 = W_{\\text{friksjon}} = -R\\,s",
+          "forklaring": "$s$ er hele veilengden gjenstanden glir. Energien forsvinner ikke, men går over til termisk energi."
+        },
+        {
+          "navn": "Effekt",
+          "latex": "P = \\frac{W}{t} = \\frac{\\Delta E}{\\Delta t} = F\\,v",
+          "forklaring": "Energi per tid, målt i watt: $1\\,\\text{W} = 1\\,\\text{J/s}$."
+        },
+        {
+          "navn": "Virkningsgrad",
+          "latex": "\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}} = \\frac{P_{\\text{nyttig}}}{P_{\\text{tilført}}}",
+          "forklaring": "Et forholdstall mellom 0 og 1, ofte oppgitt i prosent. Er alltid mindre enn 1 i praksis."
+        }
+      ]
+    },
+    {
+      "tittel": "Bevegelsesmengde og støt",
+      "formler": [
+        {
+          "navn": "Bevegelsesmengde",
+          "latex": "p = mv",
+          "forklaring": "En vektorstørrelse: langs én akse viser fortegnet retningen. Enhet: $1\\,\\text{kg}\\cdot\\text{m/s} = 1\\,\\text{N}\\cdot\\text{s}$."
+        },
+        {
+          "navn": "Kraftstøt (impuls)",
+          "latex": "I = F\\,\\Delta t",
+          "forklaring": "Hvor stort «dytt» en kraft gir. Samme kraftstøt kan oppnås med liten kraft i lang tid eller stor kraft i kort tid."
+        },
+        {
+          "navn": "Impulsloven",
+          "latex": "F\\,\\Delta t = \\Delta p = mv - mv_0",
+          "forklaring": "Kraftstøtet er lik endringen i bevegelsesmengde — grunnlaget for kollisjonsputer og knebeskyttere."
+        },
+        {
+          "navn": "Newtons 2. lov med bevegelsesmengde",
+          "latex": "\\sum F = \\frac{\\Delta p}{\\Delta t}",
+          "forklaring": "Gir gjennomsnittskraften i et støt når du kjenner fartsendringen og støttida."
+        },
+        {
+          "navn": "Kraftstøt som areal",
+          "latex": "I = \\text{arealet mellom } F\\text{-}t\\text{-grafen og tidsaksen}",
+          "forklaring": "Brukes når kraften varierer under støtet, som når en ball treffer en vegg."
+        },
+        {
+          "navn": "Bevaring av bevegelsesmengde",
+          "latex": "p_{\\text{før}} = p_{\\text{etter}}",
+          "forklaring": "Gjelder når summen av ytre krefter er null. I korte støt er dette nesten alltid en god tilnærming."
+        },
+        {
+          "navn": "Støt mellom to gjenstander",
+          "latex": "m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'",
+          "forklaring": "Sett opp en positiv retning først, og gi farter mot denne retningen negativt fortegn."
+        },
+        {
+          "navn": "Fullstendig uelastisk støt",
+          "latex": "m_1 v_1 + m_2 v_2 = \\left(m_1 + m_2\\right) v'",
+          "forklaring": "Gjenstandene henger sammen etterpå og har samme fart. Kinetisk energi er ikke bevart."
+        },
+        {
+          "navn": "Elastisk støt: energibevaring",
+          "latex": "\\frac{1}{2}m_1 v_1^{2} + \\frac{1}{2}m_2 v_2^{2} = \\frac{1}{2}m_1 v_1'^{2} + \\frac{1}{2}m_2 v_2'^{2}",
+          "forklaring": "I et fullstendig elastisk støt er både bevegelsesmengde og kinetisk energi bevart."
+        },
+        {
+          "navn": "Elastisk støt: relativ fart",
+          "latex": "v_1 - v_2 = -\\left(v_1' - v_2'\\right)",
+          "forklaring": "En snarvei som erstatter energilikningen og gir et lineært likningssett som er raskere å løse."
+        },
+        {
+          "navn": "Rekyl fra ro",
+          "latex": "0 = m_1 v_1' + m_2 v_2'",
+          "forklaring": "Når noe skyves fra hverandre fra ro, får de to delene bevegelsesmengder like store i motsatt retning."
+        },
+        {
+          "navn": "Kinetisk energi uttrykt ved bevegelsesmengden",
+          "latex": "E_k = \\frac{p^{2}}{2m}",
+          "forklaring": "Praktisk når du kjenner $p$ og skal sammenligne energien til to gjenstander med ulik masse."
+        }
+      ]
+    },
+    {
+      "tittel": "Termisk energi",
+      "formler": [
+        {
+          "navn": "Absolutt temperatur",
+          "latex": "T = t + 273{,}15 \\quad (T \\text{ i K}, \\; t \\text{ i } ^\\circ\\text{C})",
+          "forklaring": "En temperaturdifferanse er like stor i kelvin og i celsiusgrader, så $\\Delta T$ kan brukes direkte."
+        },
+        {
+          "navn": "Termofysikkens første lov",
+          "latex": "\\Delta U = Q + W",
+          "forklaring": "Den indre energien øker når systemet tilføres varmen $Q$, eller når det utføres arbeidet $W$ på systemet."
+        },
+        {
+          "navn": "Varme ved temperaturendring",
+          "latex": "Q = c\\,m\\,\\Delta T",
+          "forklaring": "Energien som må til for å varme massen $m$ opp $\\Delta T$ grader, uten faseovergang."
+        },
+        {
+          "navn": "Spesifikk varmekapasitet",
+          "latex": "c = \\frac{Q}{m\\,\\Delta T}",
+          "forklaring": "Måles i $\\text{J/(kg}\\cdot\\text{K)}$. Vann har den høye verdien $4180$, som er grunnen til at havet demper temperatursvingninger."
+        },
+        {
+          "navn": "Varmekapasitet til et legeme",
+          "latex": "C = c\\,m, \\qquad Q = C\\,\\Delta T",
+          "forklaring": "Brukes for eksempel om et kalorimeter der du kjenner hele beholderens varmekapasitet i J/K."
+        },
+        {
+          "navn": "Energiregnskap i isolert blanding",
+          "latex": "Q_{\\text{avgitt}} = Q_{\\text{mottatt}} \\quad \\Leftrightarrow \\quad \\sum Q = 0",
+          "forklaring": "Grunnlikningen i blandingsoppgaver: det varme stoffet mister nøyaktig den energien det kalde får."
+        },
+        {
+          "navn": "Smeltevarme",
+          "latex": "Q = L_s\\,m",
+          "forklaring": "Energien som trengs for å smelte massen $m$ ved smeltepunktet. Temperaturen står stille mens stoffet smelter."
+        },
+        {
+          "navn": "Fordampingsvarme",
+          "latex": "Q = L_f\\,m",
+          "forklaring": "Energien som trengs for å fordampe massen $m$ ved kokepunktet. For vann er $L_f$ mange ganger større enn $L_s$."
+        },
+        {
+          "navn": "Energi fra en effekt",
+          "latex": "Q = P\\,t",
+          "forklaring": "En varmekilde med effekten $P$ i watt leverer $P\\,t$ joule på $t$ sekunder."
+        },
+        {
+          "navn": "Nyttig energi med virkningsgrad",
+          "latex": "Q_{\\text{nyttig}} = \\eta\\,P\\,t",
+          "forklaring": "Bruk denne når en del av energien går tapt, for eksempel varme fra en kokeplate som ikke treffer kjelen."
+        }
+      ]
+    },
+    {
+      "tittel": "Bølger og stråling",
+      "formler": [
+        {
+          "navn": "Bølgeformelen",
+          "latex": "v = \\lambda f",
+          "forklaring": "Bølgefarten bestemmes av mediet. Øker frekvensen, må bølgelengden minke."
+        },
+        {
+          "navn": "Frekvens og periode",
+          "latex": "f = \\frac{1}{T}",
+          "forklaring": "Frekvensen måles i hertz: $1\\,\\text{Hz} = 1\\,\\text{s}^{-1}$. Perioden er tida for én hel svingning."
+        },
+        {
+          "navn": "Refleksjonsloven",
+          "latex": "\\theta_{\\text{inn}} = \\theta_{\\text{ut}}",
+          "forklaring": "Vinklene måles alltid fra normalen, altså linja som står vinkelrett på flaten."
+        },
+        {
+          "navn": "Brytningsindeks",
+          "latex": "n = \\frac{c}{v}, \\qquad c = 3{,}00\\cdot 10^{8}\\,\\text{m/s}",
+          "forklaring": "Forteller hvor mange ganger saktere lyset går i stoffet enn i vakuum. Alltid $n \\ge 1$."
+        },
+        {
+          "navn": "Snells brytningslov",
+          "latex": "\\frac{\\sin\\theta_1}{\\sin\\theta_2} = \\frac{v_1}{v_2} = \\frac{n_2}{n_1}",
+          "forklaring": "Legg merke til at $n$-ene står omvendt: går lyset inn i et tettere stoff, brytes strålen mot normalen."
+        },
+        {
+          "navn": "Bølgelengde i et stoff",
+          "latex": "\\lambda_n = \\frac{\\lambda_0}{n}",
+          "forklaring": "Frekvensen endres ikke ved brytning — det er farten og bølgelengden som endres."
+        },
+        {
+          "navn": "Grensevinkel for totalrefleksjon",
+          "latex": "\\sin\\theta_g = \\frac{n_2}{n_1}, \\qquad n_1 > n_2",
+          "forklaring": "Over grensevinkelen reflekteres alt lyset tilbake. Dette er prinsippet bak optiske fibre."
+        },
+        {
+          "navn": "Konstruktiv interferens",
+          "latex": "\\Delta s = n\\lambda, \\qquad n = 0, 1, 2, \\ldots",
+          "forklaring": "Bølgetoppene møter bølgetopper når veiforskjellen er et helt antall bølgelengder — da forsterker bølgene hverandre."
+        },
+        {
+          "navn": "Destruktiv interferens",
+          "latex": "\\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda",
+          "forklaring": "Halvtalls veiforskjell gir utslukning, fordi topp møter bunn."
+        },
+        {
+          "navn": "Gitter og dobbeltspalt",
+          "latex": "d\\sin\\theta_n = n\\lambda, \\qquad d = \\frac{1}{N}",
+          "forklaring": "$d$ er avstanden mellom spaltene og $N$ antall streker per meter. $n$ er ordenen til maksimumet."
+        },
+        {
+          "navn": "Intensitet",
+          "latex": "I = \\frac{P}{A} = \\frac{P}{4\\pi r^{2}}",
+          "forklaring": "Effekt per areal i $\\text{W/m}^2$. Den siste formen gjelder når strålingen sprer seg likt i alle retninger."
+        },
+        {
+          "navn": "Stefan-Boltzmanns strålingslov",
+          "latex": "P = \\sigma A T^{4}, \\qquad \\sigma = 5{,}67\\cdot 10^{-8}\\,\\frac{\\text{W}}{\\text{m}^2\\text{K}^4}",
+          "forklaring": "Utstrålt effekt fra en varm flate. $T$ må være i kelvin, og fjerdepotensen gjør at små temperaturøkninger betyr mye."
+        }
+      ]
+    },
+    {
+      "tittel": "Atomfysikk",
+      "formler": [
+        {
+          "navn": "Fotonenergi",
+          "latex": "E = hf = \\frac{hc}{\\lambda}",
+          "forklaring": "Lys kommer i energipakker. Kort bølgelengde betyr høy fotonenergi, derfor er UV farligere enn synlig lys."
+        },
+        {
+          "navn": "Planckkonstanten",
+          "latex": "h = 6{,}63\\cdot 10^{-34}\\,\\text{J}\\cdot\\text{s}",
+          "forklaring": "Setter $f$ i hertz for å få $E$ i joule."
+        },
+        {
+          "navn": "Elektronvolt",
+          "latex": "1\\,\\text{eV} = 1{,}60\\cdot 10^{-19}\\,\\text{J}",
+          "forklaring": "Praktisk energienhet i atom- og kjernefysikk. Regn om til joule før du blander den med andre SI-enheter."
+        },
+        {
+          "navn": "Energinivåene i hydrogen",
+          "latex": "E_n = -\\frac{13{,}6\\,\\text{eV}}{n^{2}}, \\qquad n = 1, 2, 3, \\ldots",
+          "forklaring": "Bohrs modell. Nivåene er negative fordi et bundet elektron har lavere energi enn et fritt elektron."
+        },
+        {
+          "navn": "Foton ved overgang mellom nivåer",
+          "latex": "hf = E_{\\text{start}} - E_{\\text{slutt}} = \\Delta E",
+          "forklaring": "Atomet sender ut et foton med akkurat energiforskjellen mellom nivåene. Absorpsjon er det samme baklengs."
+        },
+        {
+          "navn": "Bølgelengden til utsendt foton",
+          "latex": "\\lambda = \\frac{hc}{\\Delta E}",
+          "forklaring": "Husk å gjøre om $\\Delta E$ fra eV til joule, ellers blir svaret helt feil størrelsesorden."
+        },
+        {
+          "navn": "Praktisk snarvei",
+          "latex": "hc = 1240\\,\\text{eV}\\cdot\\text{nm} \\;\\Rightarrow\\; \\lambda\\,[\\text{nm}] = \\frac{1240}{\\Delta E\\,[\\text{eV}]}",
+          "forklaring": "Sparer deg for omregning: sett inn energien i eV og få bølgelengden rett i nanometer."
+        },
+        {
+          "navn": "Ioniseringsenergi fra grunntilstanden",
+          "latex": "E_{\\text{ion}} = 0 - E_1 = 13{,}6\\,\\text{eV}",
+          "forklaring": "Energien som må til for å rive elektronet helt løs fra et hydrogenatom i grunntilstanden."
+        },
+        {
+          "navn": "Antall mulige spektrallinjer",
+          "latex": "\\frac{n(n-1)}{2}",
+          "forklaring": "Antall ulike overganger — og dermed linjer i emisjonsspekteret — når atomet har $n$ tilgjengelige energinivåer."
+        },
+        {
+          "navn": "Antall fotoner fra en lyskilde",
+          "latex": "P = N \\cdot hf",
+          "forklaring": "$N$ er antall fotoner per sekund fra en kilde med effekten $P$."
+        }
+      ]
+    },
+    {
+      "tittel": "Kjernefysikk",
+      "formler": [
+        {
+          "navn": "Nuklidenotasjon og nøytrontall",
+          "latex": "{}^{A}_{Z}\\mathrm{X}, \\qquad N = A - Z",
+          "forklaring": "$A$ er nukleontall (protoner + nøytroner) og $Z$ er protontall. Isotoper har samme $Z$, men ulik $A$."
+        },
+        {
+          "navn": "Alfaomdanning",
+          "latex": "{}^{A}_{Z}\\mathrm{X} \\;\\longrightarrow\\; {}^{A-4}_{Z-2}\\mathrm{Y} + {}^{4}_{2}\\mathrm{He}",
+          "forklaring": "Kjernen sender ut en heliumkjerne. Alfastråling stanses av et papirark, men er farlig innvendig."
+        },
+        {
+          "navn": "Betaminusomdanning",
+          "latex": "{}^{A}_{Z}\\mathrm{X} \\;\\longrightarrow\\; {}^{A}_{Z+1}\\mathrm{Y} + {}^{0}_{-1}\\mathrm{e} + \\overline{\\nu}",
+          "forklaring": "Et nøytron blir et proton, og et elektron og et antinøytrino sendes ut. Nukleontallet er uendret."
+        },
+        {
+          "navn": "Betaplussomdanning",
+          "latex": "{}^{A}_{Z}\\mathrm{X} \\;\\longrightarrow\\; {}^{A}_{Z-1}\\mathrm{Y} + {}^{0}_{+1}\\mathrm{e} + \\nu",
+          "forklaring": "Et proton blir et nøytron, og et positron sendes ut. Brukes i PET-skanning."
+        },
+        {
+          "navn": "Gammautsending",
+          "latex": "{}^{A}_{Z}\\mathrm{X}^{*} \\;\\longrightarrow\\; {}^{A}_{Z}\\mathrm{X} + \\gamma",
+          "forklaring": "En eksitert kjerne kvitter seg med overskuddsenergi som et foton. Verken $A$ eller $Z$ endres."
+        },
+        {
+          "navn": "Fisjon (typisk reaksjon)",
+          "latex": "{}^{235}_{92}\\mathrm{U} + {}^{1}_{0}\\mathrm{n} \\;\\longrightarrow\\; {}^{141}_{56}\\mathrm{Ba} + {}^{92}_{36}\\mathrm{Kr} + 3\\,{}^{1}_{0}\\mathrm{n}",
+          "forklaring": "Sjekk alltid at summen av nukleontall og summen av protontall er lik på hver side av pila."
+        },
+        {
+          "navn": "Halveringstidsloven",
+          "latex": "N = N_0\\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}} = N_0\\,e^{-\\lambda t}",
+          "forklaring": "Antall kjerner igjen etter tida $t$. Halveringstiden er den samme uansett hvor mye du starter med."
+        },
+        {
+          "navn": "Desintegrasjonskonstant og aktivitet",
+          "latex": "\\lambda = \\frac{\\ln 2}{T_{1/2}}, \\qquad A = \\lambda N",
+          "forklaring": "Aktiviteten er antall kjerneomdanninger per sekund: $1\\,\\text{Bq} = 1\\,\\text{s}^{-1}$. Husk $T_{1/2}$ i sekunder."
+        },
+        {
+          "navn": "Aktivitet som funksjon av tida",
+          "latex": "A = A_0\\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}} = A_0\\,e^{-\\lambda t}",
+          "forklaring": "Aktiviteten avtar med samme halveringstid som antall kjerner — grunnlaget for karbondatering."
+        },
+        {
+          "navn": "Massedefekt og bindingsenergi",
+          "latex": "\\Delta m = Z m_p + N m_n - m_{\\text{kjerne}}, \\qquad E_B = \\Delta m\\,c^{2}",
+          "forklaring": "Kjernen er lettere enn delene den består av. Den manglende massen er bindingsenergien."
+        },
+        {
+          "navn": "Energi frigjort i en kjernereaksjon",
+          "latex": "E = \\Delta m\\,c^{2}, \\qquad \\Delta m = m_{\\text{før}} - m_{\\text{etter}}",
+          "forklaring": "Snarvei: $1\\,\\text{u}$ svarer til $931{,}5\\,\\text{MeV}$, så massetapet i u kan ganges rett med dette tallet."
+        },
+        {
+          "navn": "Absorbert og ekvivalent dose",
+          "latex": "D = \\frac{E}{m}\\ \\left[\\text{Gy}\\right], \\qquad H = Q\\cdot D\\ \\left[\\text{Sv}\\right]",
+          "forklaring": "$D$ er energi per kilogram kroppsvev, og kvalitetsfaktoren $Q$ (1 for beta og gamma, 20 for alfa) tar hensyn til hvor skadelig stråletypen er."
+        }
+      ]
+    },
+    {
+      "tittel": "Astrofysikk",
+      "formler": [
+        {
+          "navn": "Astronomiske avstandsenheter",
+          "latex": "1\\,\\text{AU} = 1{,}50\\cdot10^{11}\\,\\text{m}, \\qquad 1\\,\\text{ly} = 9{,}46\\cdot10^{15}\\,\\text{m}, \\qquad 1\\,\\text{pc} = 3{,}26\\,\\text{ly} = 3{,}09\\cdot10^{16}\\,\\text{m}",
+          "forklaring": "AU er avstanden jord–sol, og et lysår er strekningen lyset går på ett år."
+        },
+        {
+          "navn": "Parallakseformelen",
+          "latex": "d = \\frac{1}{p}",
+          "forklaring": "$d$ i parsec når parallaksevinkelen $p$ er i buesekunder. Gjelder for stjerner relativt nær oss."
+        },
+        {
+          "navn": "Fluks (strålingsintensitet)",
+          "latex": "F = \\frac{L}{4\\pi r^{2}}",
+          "forklaring": "Effekten vi mottar per kvadratmeter i avstanden $r$ fra en stjerne med luminositeten $L$."
+        },
+        {
+          "navn": "Stefan-Boltzmanns lov for en stjerne",
+          "latex": "L = \\sigma \\cdot 4\\pi R^{2} \\cdot T^{4}, \\qquad \\sigma = 5{,}67\\cdot10^{-8}\\,\\frac{\\text{W}}{\\text{m}^2\\text{K}^4}",
+          "forklaring": "Luminositeten er hele effekten stjernen sender ut. $4\\pi R^{2}$ er overflaten til stjerna."
+        },
+        {
+          "navn": "Wiens forskyvningslov",
+          "latex": "\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}",
+          "forklaring": "Gir overflatetemperaturen fra fargen på lyset: blå stjerner er varme, røde er kjøligere."
+        },
+        {
+          "navn": "Sola",
+          "latex": "L_{\\text{sol}} = 3{,}85\\cdot10^{26}\\,\\text{W}, \\qquad F_{\\text{jorda}} = 1{,}36\\cdot10^{3}\\,\\text{W/m}^{2}",
+          "forklaring": "Solkonstanten $1{,}36\\,\\text{kW/m}^2$ er fluksen ved jorda, og følger av luminositeten og avstanden på 1 AU."
+        },
+        {
+          "navn": "Netto fusjon i sola",
+          "latex": "4\\,{}^{1}_{1}\\mathrm{H} \\;\\longrightarrow\\; {}^{4}_{2}\\mathrm{He} + 2\\,\\mathrm{e}^{+} + 2\\,\\nu",
+          "forklaring": "Proton-proton-kjeden frigjør omtrent $26{,}7\\,\\text{MeV}$ per heliumkjerne som dannes."
+        },
+        {
+          "navn": "Masse og energi",
+          "latex": "E = \\Delta m\\,c^{2}, \\qquad c = 3{,}00\\cdot10^{8}\\,\\text{m/s}",
+          "forklaring": "Sola mister rundt 4 millioner tonn masse i sekundet fordi massen går over til strålingsenergi."
+        },
+        {
+          "navn": "Rødforskyvning",
+          "latex": "z = \\frac{\\Delta\\lambda}{\\lambda_0} = \\frac{\\lambda - \\lambda_0}{\\lambda_0}",
+          "forklaring": "$\\lambda_0$ er bølgelengden målt i laboratoriet, $\\lambda$ den vi observerer fra galaksen."
+        },
+        {
+          "navn": "Fart fra rødforskyvning",
+          "latex": "v = z\\,c",
+          "forklaring": "Gjelder for farter som er små sammenlignet med lysfarten."
+        },
+        {
+          "navn": "Hubbles lov",
+          "latex": "v = H_0\\,d, \\qquad H_0 \\approx 70\\,\\frac{\\text{km/s}}{\\text{Mpc}}",
+          "forklaring": "Fjerne galakser fjerner seg raskere enn nære — universet utvider seg. Gir også avstanden $d$ når du kjenner $v$."
+        },
+        {
+          "navn": "Hubble-alderen",
+          "latex": "t = \\frac{1}{H_0} \\approx 4{,}4\\cdot10^{17}\\,\\text{s} \\approx 14\\,\\text{milliarder år}",
+          "forklaring": "Et grovt anslag for universets alder. Regn $H_0$ om til $\\text{s}^{-1}$ før du deler."
+        }
+      ]
+    },
+    {
+      "tittel": "Elektrisitet",
+      "formler": [
+        {
+          "navn": "Elektrisk strøm",
+          "latex": "I = \\frac{Q}{t} = \\frac{\\Delta Q}{\\Delta t}",
+          "forklaring": "Ladning per tid: $1\\,\\text{A} = 1\\,\\text{C/s}$."
+        },
+        {
+          "navn": "Spenning",
+          "latex": "U = \\frac{W}{Q}",
+          "forklaring": "Energi per ladning: $1\\,\\text{V} = 1\\,\\text{J/C}$. Spenning måles alltid mellom to punkter."
+        },
+        {
+          "navn": "Ohms lov",
+          "latex": "U = R\\,I, \\qquad R = \\frac{U}{I}",
+          "forklaring": "Gjelder for ohmske komponenter med konstant temperatur. Resistansen måles i ohm."
+        },
+        {
+          "navn": "Resistansen i en leder",
+          "latex": "R = \\rho\\,\\frac{l}{A}",
+          "forklaring": "Lang og tynn ledning gir stor resistans. $\\rho$ er resistiviteten til materialet i $\\Omega\\cdot\\text{m}$."
+        },
+        {
+          "navn": "Seriekobling",
+          "latex": "R_s = R_1 + R_2 + \\dots + R_n",
+          "forklaring": "Samme strøm gjennom alle komponentene, og spenningene summerer seg til kildespenningen."
+        },
+        {
+          "navn": "Parallellkobling",
+          "latex": "\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots + \\frac{1}{R_n}",
+          "forklaring": "Samme spenning over alle greinene. $R_p$ blir alltid mindre enn den minste motstanden."
+        },
+        {
+          "navn": "To motstander i parallell",
+          "latex": "R_p = \\frac{R_1 R_2}{R_1 + R_2}",
+          "forklaring": "Rask snarvei for to motstander — husk å ta den omvendte til slutt hvis du bruker den generelle formelen."
+        },
+        {
+          "navn": "Strømmen i et knutepunkt",
+          "latex": "\\sum I_{\\text{inn}} = \\sum I_{\\text{ut}}",
+          "forklaring": "Ladning kan ikke samle seg opp i et punkt: det som kommer inn, må ut."
+        },
+        {
+          "navn": "Spenningene i en sløyfe",
+          "latex": "U_{\\text{kilde}} = U_1 + U_2 + \\dots",
+          "forklaring": "Summen av spenningsfallene rundt en lukket sløyfe er lik den påtrykte spenningen."
+        },
+        {
+          "navn": "Elektrisk effekt",
+          "latex": "P = U\\,I = R\\,I^{2} = \\frac{U^{2}}{R}",
+          "forklaring": "Bruk formen der du kjenner størrelsene. De to siste gjelder bare for en ren resistans."
+        },
+        {
+          "navn": "Elektrisk energi",
+          "latex": "W = P\\,t = U\\,I\\,t, \\qquad 1\\,\\text{kWh} = 3{,}6\\cdot 10^{6}\\,\\text{J}",
+          "forklaring": "Strømregningen måles i kilowattimer, mens fysikkoppgaver oftest vil ha svaret i joule."
+        },
+        {
+          "navn": "Klemmespenning over en reell spenningskilde",
+          "latex": "U = \\varepsilon - R_i\\,I",
+          "forklaring": "$\\varepsilon$ er den elektromotoriske spenningen og $R_i$ den indre resistansen. Spenningen ut synker når strømmen øker."
+        }
+      ]
+    },
+    {
+      "tittel": "Konstanter, enheter og usikkerhet",
+      "formler": [
+        {
+          "navn": "Tyngdeakselerasjonen",
+          "latex": "g = 9{,}81\\,\\text{m/s}^{2}",
+          "forklaring": "Bruk denne verdien i Norge om ikke annet er oppgitt."
+        },
+        {
+          "navn": "Lysfarten i vakuum",
+          "latex": "c = 3{,}00\\cdot 10^{8}\\,\\text{m/s}",
+          "forklaring": "Gjelder all elektromagnetisk stråling i vakuum, uansett bølgelengde."
+        },
+        {
+          "navn": "Planckkonstanten",
+          "latex": "h = 6{,}63\\cdot 10^{-34}\\,\\text{J}\\cdot\\text{s}",
+          "forklaring": "Brukes i $E = hf$."
+        },
+        {
+          "navn": "Elementærladningen",
+          "latex": "e = 1{,}60\\cdot 10^{-19}\\,\\text{C}",
+          "forklaring": "Ladningen til et proton. Elektronet har samme tallverdi, men negativ ladning."
+        },
+        {
+          "navn": "Stefan-Boltzmanns konstant",
+          "latex": "\\sigma = 5{,}67\\cdot 10^{-8}\\,\\frac{\\text{W}}{\\text{m}^2\\text{K}^4}",
+          "forklaring": "Brukes i $P = \\sigma A T^{4}$, alltid med temperatur i kelvin."
+        },
+        {
+          "navn": "Atommasseenheten",
+          "latex": "1\\,\\text{u} = 1{,}6605\\cdot 10^{-27}\\,\\text{kg} = 931{,}5\\ \\text{MeV}/c^{2}",
+          "forklaring": "Kjernemasser oppgis i u. Den siste sammenhengen gjør massedefekt om til energi direkte."
+        },
+        {
+          "navn": "Masse til proton, nøytron og elektron",
+          "latex": "m_p = 1{,}00728\\,\\text{u}, \\qquad m_n = 1{,}00866\\,\\text{u}, \\qquad m_e = 0{,}00055\\,\\text{u}",
+          "forklaring": "Brukes til å regne ut massedefekt. Elektronet er nesten 2000 ganger lettere enn et nukleon."
+        },
+        {
+          "navn": "Energienheter",
+          "latex": "1\\,\\text{eV} = 1{,}60\\cdot 10^{-19}\\,\\text{J}, \\qquad 1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}",
+          "forklaring": "Regn alltid om til joule før du kombinerer med andre SI-enheter."
+        },
+        {
+          "navn": "Sammensatte SI-enheter",
+          "latex": "1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^{2}, \\qquad 1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}, \\qquad 1\\,\\text{W} = 1\\,\\text{J/s}",
+          "forklaring": "Enhetssjekk er den raskeste måten å oppdage at du har brukt feil formel."
+        },
+        {
+          "navn": "Relativ usikkerhet",
+          "latex": "\\frac{\\Delta x}{x} \\cdot 100\\,\\%",
+          "forklaring": "Sier hvor stor usikkerheten er i forhold til måleverdien, og gjør det mulig å sammenligne ulike målinger."
+        },
+        {
+          "navn": "Usikkerhet i sum og differanse",
+          "latex": "\\Delta z = \\Delta x + \\Delta y",
+          "forklaring": "Når du legger sammen eller trekker fra måleverdier, legger du sammen de absolutte usikkerhetene."
+        },
+        {
+          "navn": "Usikkerhet i produkt og kvotient",
+          "latex": "\\frac{\\Delta z}{z} = \\frac{\\Delta x}{x} + \\frac{\\Delta y}{y}",
+          "forklaring": "Ved multiplikasjon og divisjon legger du sammen de relative usikkerhetene."
+        }
+      ]
+    }
+  ]
+}
