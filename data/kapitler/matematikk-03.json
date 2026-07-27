@@ -1,0 +1,220 @@
+{
+  "fag": "matematikk",
+  "nr": 3,
+  "tittel": "Derivasjon",
+  "intro": "Derivasjon handler om å måle hvor raskt en funksjon endrer seg akkurat i ett punkt. Den deriverte er stigningstallet til tangenten, og den er verktøyet du bruker i nesten alt som kommer senere i R1.",
+
+  "kompakt": {
+    "punkter": [
+      "Gjennomsnittlig vekstfart mellom to punkter er stigningstallet til sekanten: $\\frac{f(b)-f(a)}{b-a}$.",
+      "Momentan vekstfart i $x=a$ er grenseverdien av gjennomsnittlig vekstfart når intervallet krymper til null.",
+      "Definisjonen: $f'(a) = \\lim_{\\Delta x \\to 0} \\frac{f(a+\\Delta x)-f(a)}{\\Delta x}$.",
+      "$f'(a)$ er stigningstallet til tangenten til grafen i punktet $(a, f(a))$.",
+      "Potensregelen $\\left(x^n\\right)' = n x^{n-1}$ gjelder for alle reelle $n$, også negative og brøker.",
+      "Produktregelen er $(uv)' = u'v + uv'$ — ikke $u'v'$, som er den vanligste feilen i kapittelet.",
+      "Kjerneregelen: deriver den ytre funksjonen og gang med den deriverte av kjernen.",
+      "$\\left(e^x\\right)' = e^x$ og $\\left(\\ln x\\right)' = \\frac{1}{x}$ for $x>0$.",
+      "En funksjon må være kontinuerlig i et punkt for å kunne være deriverbar der, men kontinuitet alene er ikke nok (knekkpunkter).",
+      "Tangentlikningen i $x=a$ er $y = f'(a)(x-a) + f(a)$."
+    ],
+    "formler": [
+      { "navn": "Definisjonen av den deriverte", "latex": "f'(x) = \\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x) - f(x)}{\\Delta x}" },
+      { "navn": "Konstant", "latex": "(k)' = 0" },
+      { "navn": "Potensregelen", "latex": "\\left(x^{n}\\right)' = n x^{n-1}" },
+      { "navn": "Konstant faktor", "latex": "\\left(k \\cdot f(x)\\right)' = k \\cdot f'(x)" },
+      { "navn": "Sum- og differanseregelen", "latex": "(u \\pm v)' = u' \\pm v'" },
+      { "navn": "Produktregelen", "latex": "(uv)' = u'v + uv'" },
+      { "navn": "Kvotientregelen", "latex": "\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^{2}}" },
+      { "navn": "Kjerneregelen", "latex": "\\left(g(u(x))\\right)' = g'(u(x)) \\cdot u'(x)" },
+      { "navn": "Eksponentialfunksjonen", "latex": "\\left(e^{x}\\right)' = e^{x}, \\qquad \\left(a^{x}\\right)' = a^{x}\\ln a" },
+      { "navn": "Logaritmefunksjonen", "latex": "\\left(\\ln x\\right)' = \\frac{1}{x}" },
+      { "navn": "Kvadratrot", "latex": "\\left(\\sqrt{x}\\right)' = \\frac{1}{2\\sqrt{x}}" },
+      { "navn": "Tangent i punktet $(a, f(a))$", "latex": "y = f'(a)(x-a) + f(a)" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Fra gjennomsnittlig til momentan vekstfart",
+        "html": "<p>Tenk deg at du sykler, og at $s(t)$ er strekningen du har kjørt etter $t$ sekunder. Kjører du 100 meter på 20 sekunder, er <strong>gjennomsnittsfarten</strong> $\\frac{100}{20} = 5$ m/s. Men i det ene sekundet du kjørte nedoverbakke, gikk det mye fortere. Gjennomsnittsfarten sier ingenting om farten i ett bestemt øyeblikk.</p><p>Geometrisk er gjennomsnittlig vekstfart mellom $x=a$ og $x=b$ stigningstallet til <strong>sekanten</strong> gjennom de to punktene på grafen:</p>$$\\frac{f(b)-f(a)}{b-a}$$<p>Skriver vi $b = a + \\Delta x$, blir det samme uttrykket $\\frac{f(a+\\Delta x)-f(a)}{\\Delta x}$. Denne brøken kalles <strong>Newton-kvotienten</strong>.</p><p>Ideen bak derivasjon er å la $\\Delta x$ bli mindre og mindre. Da glir det andre punktet innover mot $(a, f(a))$, og sekanten nærmer seg <strong>tangenten</strong> i punktet. Grenseverdien til Newton-kvotienten er nettopp stigningstallet til tangenten, og den kaller vi den deriverte:</p>$$f'(a) = \\lim_{\\Delta x \\to 0} \\frac{f(a+\\Delta x)-f(a)}{\\Delta x}$$<p>Legg merke til hvorfor vi trenger en grenseverdi: setter du rett og slett $\\Delta x = 0$, får du $\\frac{0}{0}$, som ikke betyr noe. Grenseverdien beskriver hva brøken nærmer seg, ikke hva den er i null.</p>"
+      },
+      {
+        "tittel": "Å derivere fra definisjonen",
+        "html": "<p>På eksamen uten hjelpemidler blir du av og til bedt om å bruke definisjonen. Framgangsmåten er alltid den samme:</p><ol><li>Sett opp Newton-kvotienten $\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}$.</li><li>Regn ut telleren og trekk sammen. Leddene uten $\\Delta x$ skal alltid falle bort.</li><li>Forkort brøken med $\\Delta x$.</li><li>La $\\Delta x \\to 0$ i det som står igjen.</li></ol><p>For $f(x)=x^2$ blir telleren $(x+\\Delta x)^2 - x^2 = x^2 + 2x\\Delta x + (\\Delta x)^2 - x^2 = 2x\\Delta x + (\\Delta x)^2$. Deler vi på $\\Delta x$, får vi $2x + \\Delta x$, og når $\\Delta x \\to 0$, står vi igjen med $f'(x) = 2x$.</p><p>Har funksjonen en brøk, må du sette på fellesnevner i steg 2. Har den en kvadratrot, ganger du med den <strong>konjugerte</strong> uttrykket i teller og nevner for å bli kvitt rota i telleren.</p><p>Den deriverte finnes bare der grenseverdien finnes. En funksjon med et <strong>knekkpunkt</strong>, som $f(x)=|x|$ i $x=0$, er kontinuerlig, men ikke deriverbar: kommer du fra venstre får du $-1$, fra høyre $+1$. De ensidige grenseverdiene er ulike, altså finnes ikke grenseverdien.</p>"
+      },
+      {
+        "tittel": "Derivasjonsreglene",
+        "html": "<p>Å bruke definisjonen hver gang ville vært håpløst. Derfor har vi regler. De viktigste er:</p><table><thead><tr><th>Regel</th><th>Uttrykk</th></tr></thead><tbody><tr><td>Konstant</td><td>$(k)' = 0$</td></tr><tr><td>Potens</td><td>$\\left(x^n\\right)' = nx^{n-1}$</td></tr><tr><td>Konstant faktor</td><td>$(k f)' = k f'$</td></tr><tr><td>Sum</td><td>$(u+v)' = u' + v'$</td></tr><tr><td>Produkt</td><td>$(uv)' = u'v + uv'$</td></tr><tr><td>Kvotient</td><td>$\\left(\\frac{u}{v}\\right)' = \\frac{u'v-uv'}{v^2}$</td></tr></tbody></table><p>Potensregelen gjelder for <strong>alle</strong> reelle eksponenter. Det er nyttig, for da kan du skrive om uttrykk du ellers ikke ville visst hva du skulle gjøre med: $\\frac{1}{x^3} = x^{-3}$ gir $-3x^{-4}$, og $\\sqrt{x} = x^{1/2}$ gir $\\frac{1}{2}x^{-1/2} = \\frac{1}{2\\sqrt{x}}$.</p><p>Et godt råd: <strong>forenkl før du deriverer.</strong> Uttrykket $\\frac{x^3+2x}{x}$ kan deriveres med kvotientregelen, men det er mye enklere å først skrive det om til $x^2 + 2$ og så derivere til $2x$.</p>"
+      },
+      {
+        "tittel": "Kjerneregelen",
+        "html": "<p>Kjerneregelen brukes når en funksjon ligger <em>inni</em> en annen. I $f(x) = (3x+1)^5$ er den ytre funksjonen «noe opphøyd i 5» og <strong>kjernen</strong> er $u = 3x+1$. Regelen sier:</p>$$\\left(g(u(x))\\right)' = g'(u(x)) \\cdot u'(x)$$<p>På norsk: deriver det ytre som om kjernen var en vanlig $x$, og gang så med den deriverte av kjernen. For eksempelet over: $f'(x) = 5(3x+1)^4 \\cdot 3 = 15(3x+1)^4$.</p><p>Å <em>finne</em> kjernen er halve jobben. Spør deg: hva ville jeg regnet ut først hvis jeg satte inn et tall? Det du regner ut først, er kjernen.</p><ul><li>$e^{2x}$ — kjerne $2x$, derivert $e^{2x}\\cdot 2 = 2e^{2x}$</li><li>$\\ln(x^2+1)$ — kjerne $x^2+1$, derivert $\\frac{2x}{x^2+1}$</li><li>$\\sqrt{4x-3}$ — kjerne $4x-3$, derivert $\\frac{4}{2\\sqrt{4x-3}} = \\frac{2}{\\sqrt{4x-3}}$</li></ul><p>Er det flere lag utenpå hverandre, bruker du regelen flere ganger: $\\left(e^{(x^2)}\\right)'$ har kjerne $x^2$ og gir $2x e^{x^2}$.</p>"
+      },
+      {
+        "tittel": "Eksponential- og logaritmefunksjoner",
+        "html": "<p>Tallet $e \\approx 2{,}718$ er definert nettopp slik at $e^x$ er sin egen deriverte:</p>$$\\left(e^x\\right)' = e^x$$<p>Det gjør $e^x$ til en helt spesiell funksjon: stigningstallet i et punkt er akkurat like stort som funksjonsverdien der. For andre grunntall må du gange med en logaritme: $\\left(a^x\\right)' = a^x \\ln a$. Sjekk gjerne at dette stemmer med $a=e$: siden $\\ln e = 1$, får vi $e^x$ tilbake.</p><p>Den naturlige logaritmen deriveres slik:</p>$$\\left(\\ln x\\right)' = \\frac{1}{x}, \\qquad x > 0$$<p>Kombinert med kjerneregelen gir dette et mønster du bør kjenne igjen: $\\left(\\ln u\\right)' = \\frac{u'}{u}$. Den deriverte av kjernen havner i telleren, kjernen selv i nevneren.</p><p>Disse to funksjonene dukker opp overalt i modellering — befolkningsvekst, radioaktiv nedbryting, avkjøling og renters rente — så reglene her er blant dem du må kunne uten å tenke.</p>"
+      },
+      {
+        "tittel": "Tangenter og normaler",
+        "html": "<p>Tangenten i punktet $(a, f(a))$ er den rette linja som har samme stigningstall som grafen der. Siden stigningstallet er $f'(a)$, følger likningen direkte av ettpunktsformelen:</p>$$y = f'(a)(x-a) + f(a)$$<p>Framgangsmåten er alltid tre steg: regn ut $f(a)$, regn ut $f'(a)$, sett inn.</p><p><strong>Normalen</strong> er linja som står vinkelrett på tangenten i samme punkt. To linjer står vinkelrett på hverandre når produktet av stigningstallene er $-1$, så normalens stigningstall er $-\\frac{1}{f'(a)}$:</p>$$y = -\\frac{1}{f'(a)}(x-a) + f(a)$$<p>Er $f'(a)=0$, er tangenten vannrett, og normalen blir den loddrette linja $x=a$.</p><p>En oppgavetype som går igjen: «finn punktet der tangenten er parallell med linja $y=4x+7$». Da løser du likningen $f'(x)=4$, fordi parallelle linjer har samme stigningstall.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Derivasjon fra definisjonen",
+        "oppgave": "<p>Bruk definisjonen av den deriverte til å vise at $f(x) = 3x^2 - 5x$ har $f'(x) = 6x - 5$.</p>",
+        "losning": "<p>Vi setter opp Newton-kvotienten:</p>$$\\frac{f(x+\\Delta x) - f(x)}{\\Delta x}$$<p>Først telleren. Vi regner ut $f(x+\\Delta x)$:</p>$$f(x+\\Delta x) = 3(x+\\Delta x)^2 - 5(x+\\Delta x) = 3x^2 + 6x\\Delta x + 3(\\Delta x)^2 - 5x - 5\\Delta x$$<p>Trekker vi fra $f(x) = 3x^2 - 5x$, faller $3x^2$ og $-5x$ bort:</p>$$f(x+\\Delta x) - f(x) = 6x\\Delta x + 3(\\Delta x)^2 - 5\\Delta x$$<p>Alle leddene inneholder $\\Delta x$, så vi kan sette den utenfor og forkorte:</p>$$\\frac{\\Delta x\\left(6x + 3\\Delta x - 5\\right)}{\\Delta x} = 6x + 3\\Delta x - 5$$<p>Til slutt lar vi $\\Delta x \\to 0$. Da forsvinner leddet $3\\Delta x$:</p>$$f'(x) = \\lim_{\\Delta x \\to 0}\\left(6x + 3\\Delta x - 5\\right) = 6x - 5$$<p>Som var det vi skulle vise.</p>"
+      },
+      {
+        "tittel": "Produktregelen kombinert med kjerneregelen",
+        "oppgave": "<p>Deriver $f(x) = x^2 e^{3x}$.</p>",
+        "losning": "<p>Her er to funksjoner multiplisert sammen, så vi bruker produktregelen med</p>$$u = x^2 \\quad \\text{og} \\quad v = e^{3x}$$<p>Vi deriverer hver for seg. Den første er rett fram:</p>$$u' = 2x$$<p>Den andre krever kjerneregelen. Kjernen er $3x$, som har derivert $3$:</p>$$v' = e^{3x} \\cdot 3 = 3e^{3x}$$<p>Setter vi inn i $(uv)' = u'v + uv'$:</p>$$f'(x) = 2x \\cdot e^{3x} + x^2 \\cdot 3e^{3x}$$<p>Til slutt setter vi den felles faktoren $x e^{3x}$ utenfor. Det er nesten alltid lurt — et faktorisert svar er lettere å bruke videre når du skal finne nullpunkter til $f'$:</p>$$f'(x) = x e^{3x}\\left(2 + 3x\\right)$$"
+      },
+      {
+        "tittel": "Tangent til en logaritmefunksjon",
+        "oppgave": "<p>Funksjonen er gitt ved $f(x) = \\ln(x^2 + 3)$. Finn likningen for tangenten til grafen i punktet der $x = 1$.</p>",
+        "losning": "<p>Vi trenger tre ting: $f(1)$, $f'(x)$ og $f'(1)$.</p><p><strong>Steg 1 — funksjonsverdien.</strong></p>$$f(1) = \\ln(1^2 + 3) = \\ln 4$$<p><strong>Steg 2 — den deriverte.</strong> Dette er $\\ln$ av en kjerne, så vi bruker mønsteret $\\left(\\ln u\\right)' = \\frac{u'}{u}$ med $u = x^2+3$ og $u' = 2x$:</p>$$f'(x) = \\frac{2x}{x^2+3}$$<p><strong>Steg 3 — stigningstallet i punktet.</strong></p>$$f'(1) = \\frac{2 \\cdot 1}{1 + 3} = \\frac{2}{4} = \\frac{1}{2}$$<p><strong>Steg 4 — sett inn i tangentlikningen</strong> $y = f'(a)(x-a) + f(a)$ med $a=1$:</p>$$y = \\frac{1}{2}(x - 1) + \\ln 4$$<p>Vi kan rydde litt:</p>$$y = \\frac{1}{2}x - \\frac{1}{2} + \\ln 4$$<p>Med $\\ln 4 \\approx 1{,}386$ blir det omtrent $y \\approx 0{,}5x + 0{,}886$.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å tro at produktregelen er $(uv)' = u'v'$. Den er $u'v + uv'$ — to ledd, ikke ett.",
+      "Å glemme å gange med den deriverte av kjernen. $\\left(e^{5x}\\right)'$ er $5e^{5x}$, ikke $e^{5x}$.",
+      "Å bytte om rekkefølgen i telleren i kvotientregelen. Det skal være $u'v - uv'$; snur du, får du feil fortegn.",
+      "Å bruke kvotientregelen på uttrykk som lett kan forenkles først. $\\frac{x^4+x^2}{x^2}$ er bare $x^2+1$.",
+      "Å behandle $x^{-2}$ feil i potensregelen. Eksponenten skal fortsatt minke med 1, så svaret er $-2x^{-3}$, ikke $-2x^{-1}$.",
+      "Å tro at alle kontinuerlige funksjoner er deriverbare. $f(x)=|x|$ er kontinuerlig i $x=0$, men har ingen tangent der."
+    ],
+
+    "tips": [
+      "Skriv alltid om røtter og brøker til potenser før du deriverer. $\\sqrt[3]{x^2} = x^{2/3}$ er mye lettere å håndtere.",
+      "Faktoriser den deriverte hvis du kan. Du skal nesten alltid løse $f'(x)=0$ etterpå, og et faktorisert uttrykk gir nullpunktene gratis.",
+      "På heldagsprøve uten hjelpemidler er derivasjon fra definisjonen en klassiker. Øv på minst én med brøk og én med kvadratrot.",
+      "Sjekk svaret ditt grovt: er $f$ voksende der du plotter den, skal $f'$ være positiv der. Med hjelpemidler kan du la GeoGebra derivere og sammenligne.",
+      "Lær kjerneregelen som en fast setning du sier høyt: «derivert av det ytre, ganger derivert av det indre»."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Gjennomsnittlig vekstfart", "forklaring": "Endringen i funksjonsverdi delt på endringen i x over et intervall — stigningstallet til sekanten." },
+    { "begrep": "Momentan vekstfart", "forklaring": "Vekstfarten i ett enkelt punkt, altså den deriverte i punktet." },
+    { "begrep": "Newton-kvotienten", "forklaring": "Brøken $\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}$, som gir gjennomsnittlig vekstfart over et lite intervall." },
+    { "begrep": "Sekant", "forklaring": "En rett linje som skjærer grafen i to punkter." },
+    { "begrep": "Tangent", "forklaring": "Den rette linja som berører grafen i ett punkt og har samme stigningstall som grafen der." },
+    { "begrep": "Normal", "forklaring": "Linja som står vinkelrett på tangenten i berøringspunktet." },
+    { "begrep": "Den deriverte", "forklaring": "Funksjonen $f'$ som for hver x gir stigningstallet til tangenten i det punktet." },
+    { "begrep": "Deriverbar", "forklaring": "En funksjon er deriverbar i et punkt dersom grenseverdien i definisjonen eksisterer der." },
+    { "begrep": "Kjerne", "forklaring": "Den indre funksjonen i en sammensatt funksjon — det du ville regnet ut først med et tall satt inn." },
+    { "begrep": "Kjerneregelen", "forklaring": "Regelen for å derivere sammensatte funksjoner: derivert av det ytre ganger derivert av kjernen." },
+    { "begrep": "Produktregelen", "forklaring": "Regelen $(uv)' = u'v + uv'$ for å derivere et produkt av to funksjoner." },
+    { "begrep": "Kvotientregelen", "forklaring": "Regelen $\\left(\\frac{u}{v}\\right)' = \\frac{u'v-uv'}{v^2}$ for å derivere en brøk." },
+    { "begrep": "Knekkpunkt", "forklaring": "Et punkt der grafen har en skarp knekk, slik at de ensidige grenseverdiene i definisjonen blir ulike og funksjonen ikke er deriverbar." },
+    { "begrep": "Tallet e", "forklaring": "Grunntallet i den naturlige eksponentialfunksjonen, omtrent 2,718, definert slik at $e^x$ er sin egen deriverte." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hva er $f'(x)$ når $f(x) = 4x^3 - 2x + 7$?",
+      "alternativer": ["$12x^2 - 2$", "$12x^2 - 2x$", "$4x^2 - 2$", "$12x^2 - 2 + 7x$"],
+      "riktig": 0,
+      "forklaring": "Potensregelen gir $\\left(4x^3\\right)' = 12x^2$ og $(-2x)' = -2$. Konstantleddet 7 deriveres til 0 og forsvinner helt — det er derfor svaret ikke inneholder noe 7-ledd."
+    },
+    {
+      "sporsmal": "Hva blir den deriverte av $f(x) = (2x+1)^4$?",
+      "alternativer": ["$4(2x+1)^3$", "$8(2x+1)^3$", "$8(2x+1)^4$", "$4(2x+1)^3 \\cdot 2x$"],
+      "riktig": 1,
+      "forklaring": "Kjerneregelen: den ytre deriverte er $4(2x+1)^3$, og kjernen $2x+1$ har derivert 2. Ganger vi sammen får vi $8(2x+1)^3$. Alternativ A er den klassiske feilen der man glemmer å gange med kjernens deriverte."
+    },
+    {
+      "sporsmal": "Hvilket uttrykk er produktregelen?",
+      "alternativer": ["$(uv)' = u'v'$", "$(uv)' = u'v - uv'$", "$(uv)' = u'v + uv'$", "$(uv)' = \\frac{u'v + uv'}{v^2}$"],
+      "riktig": 2,
+      "forklaring": "Produktregelen er $u'v + uv'$: du deriverer den ene faktoren om gangen og lar den andre stå. Alternativ B er kvotientregelens teller, og alternativ A er den vanligste feilen i hele kapittelet."
+    },
+    {
+      "sporsmal": "Hva er $\\left(e^{-2x}\\right)'$?",
+      "alternativer": ["$e^{-2x}$", "$-2e^{-2x}$", "$-2xe^{-2x-1}$", "$2e^{-2x}$"],
+      "riktig": 1,
+      "forklaring": "Kjernen er $-2x$, som har derivert $-2$. Kjerneregelen gir $e^{-2x} \\cdot (-2) = -2e^{-2x}$. Alternativ C blander inn potensregelen, som ikke gjelder når $x$ står i eksponenten."
+    },
+    {
+      "sporsmal": "Grafen til $f$ har en vannrett tangent i $x = 3$. Hva vet du da?",
+      "alternativer": ["$f(3) = 0$", "$f'(3) = 0$", "$f'(3) = 3$", "$f$ er ikke deriverbar i $x=3$"],
+      "riktig": 1,
+      "forklaring": "Den deriverte er stigningstallet til tangenten. En vannrett linje har stigningstall 0, altså $f'(3)=0$. At $f(3)=0$ ville derimot betydd at grafen skjærer x-aksen der — noe helt annet."
+    },
+    {
+      "sporsmal": "Hva er den deriverte av $f(x) = \\frac{1}{x^2}$?",
+      "alternativer": ["$-\\frac{2}{x^3}$", "$\\frac{2}{x^3}$", "$-\\frac{1}{2x}$", "$-\\frac{2}{x}$"],
+      "riktig": 0,
+      "forklaring": "Skriv om til $x^{-2}$ først. Potensregelen gir $-2x^{-3} = -\\frac{2}{x^3}$. Å skrive brøker som negative potenser før du deriverer sparer deg for kvotientregelen."
+    },
+    {
+      "sporsmal": "Hva er $\\left(\\ln(3x)\\right)'$?",
+      "alternativer": ["$\\frac{3}{x}$", "$\\frac{1}{3x}$", "$\\frac{1}{x}$", "$3\\ln x$"],
+      "riktig": 2,
+      "forklaring": "Mønsteret $\\left(\\ln u\\right)' = \\frac{u'}{u}$ gir $\\frac{3}{3x} = \\frac{1}{x}$. Det stemmer også med logaritmereglene: $\\ln(3x) = \\ln 3 + \\ln x$, og $\\ln 3$ er en konstant som deriveres bort."
+    },
+    {
+      "sporsmal": "Tangenten til $f$ i punktet $(2, 5)$ har stigningstall 3. Hva er tangentlikningen?",
+      "alternativer": ["$y = 3x + 5$", "$y = 3(x-2) + 5$", "$y = 5(x-2) + 3$", "$y = 3x - 2$"],
+      "riktig": 1,
+      "forklaring": "Formelen er $y = f'(a)(x-a) + f(a)$ med $a=2$, $f(2)=5$ og $f'(2)=3$. Det gir $y = 3(x-2)+5$, altså $y = 3x - 1$. Alternativ A ville krevd at grafen gikk gjennom $(0,5)$."
+    },
+    {
+      "sporsmal": "Hvilken påstand om deriverbarhet er riktig?",
+      "alternativer": [
+        "Alle kontinuerlige funksjoner er deriverbare",
+        "Alle deriverbare funksjoner er kontinuerlige",
+        "En funksjon kan være deriverbar i et punkt der den ikke er definert",
+        "Deriverbarhet og kontinuitet er det samme"
+      ],
+      "riktig": 1,
+      "forklaring": "Deriverbarhet er strengere enn kontinuitet: er en funksjon deriverbar i et punkt, må den også være kontinuerlig der. Motsatt vei holder ikke — $f(x)=|x|$ er kontinuerlig i null, men har et knekkpunkt og dermed ingen derivert der."
+    },
+    {
+      "sporsmal": "Hva er $f'(x)$ når $f(x) = x\\sqrt{x}$?",
+      "alternativer": ["$\\frac{3}{2}\\sqrt{x}$", "$\\sqrt{x} + \\frac{1}{2\\sqrt{x}}$", "$\\frac{1}{2\\sqrt{x}}$", "$\\frac{2}{3}x^{3/2}$"],
+      "riktig": 0,
+      "forklaring": "Skriv om først: $x\\sqrt{x} = x \\cdot x^{1/2} = x^{3/2}$. Potensregelen gir $\\frac{3}{2}x^{1/2} = \\frac{3}{2}\\sqrt{x}$. Alternativ B er hva du får hvis du bruker produktregelen — som gir det samme svaret, men bare hvis du trekker sammen til slutt."
+    },
+    {
+      "sporsmal": "Newton-kvotienten $\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}$ beskriver …",
+      "alternativer": [
+        "stigningstallet til tangenten i $x$",
+        "stigningstallet til sekanten mellom $x$ og $x+\\Delta x$",
+        "funksjonsverdien i $x$",
+        "arealet under grafen"
+      ],
+      "riktig": 1,
+      "forklaring": "Brøken er gjennomsnittlig vekstfart over intervallet, altså stigningstallet til sekanten. Først når vi tar grenseverdien når $\\Delta x \\to 0$, blir det tangentens stigningstall."
+    },
+    {
+      "sporsmal": "Hva er den deriverte av $f(x) = \\frac{2x}{x+1}$?",
+      "alternativer": ["$2$", "$\\frac{2}{(x+1)^2}$", "$\\frac{2x}{(x+1)^2}$", "$\\frac{4x+2}{(x+1)^2}$"],
+      "riktig": 1,
+      "forklaring": "Kvotientregelen med $u=2x$, $u'=2$, $v=x+1$, $v'=1$ gir $\\frac{2(x+1) - 2x \\cdot 1}{(x+1)^2} = \\frac{2x+2-2x}{(x+1)^2} = \\frac{2}{(x+1)^2}$. Merk at telleren forenkles kraftig — regn den alltid ferdig ut."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Definisjonen av den deriverte", "bak": "$f'(x) = \\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}$" },
+    { "front": "Hva er den geometriske betydningen av $f'(a)$?", "bak": "Stigningstallet til tangenten til grafen i punktet $(a, f(a))$." },
+    { "front": "Potensregelen", "bak": "$\\left(x^n\\right)' = nx^{n-1}$ — gjelder for alle reelle $n$." },
+    { "front": "Produktregelen", "bak": "$(uv)' = u'v + uv'$" },
+    { "front": "Kvotientregelen", "bak": "$\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$" },
+    { "front": "Kjerneregelen", "bak": "$\\left(g(u(x))\\right)' = g'(u(x)) \\cdot u'(x)$ — derivert av det ytre ganger derivert av kjernen." },
+    { "front": "$\\left(e^x\\right)' = ?$", "bak": "$e^x$ — funksjonen er sin egen deriverte." },
+    { "front": "$\\left(a^x\\right)' = ?$", "bak": "$a^x \\ln a$" },
+    { "front": "$\\left(\\ln x\\right)' = ?$", "bak": "$\\frac{1}{x}$ for $x > 0$" },
+    { "front": "$\\left(\\ln u\\right)' = ?$ (u er en kjerne)", "bak": "$\\frac{u'}{u}$ — kjernens deriverte i telleren, kjernen i nevneren." },
+    { "front": "$\\left(\\sqrt{x}\\right)' = ?$", "bak": "$\\frac{1}{2\\sqrt{x}}$" },
+    { "front": "Likningen for tangenten i $x=a$", "bak": "$y = f'(a)(x-a) + f(a)$" },
+    { "front": "Likningen for normalen i $x=a$", "bak": "$y = -\\frac{1}{f'(a)}(x-a) + f(a)$" },
+    { "front": "Sekant kontra tangent", "bak": "Sekanten skjærer grafen i to punkter og gir gjennomsnittlig vekstfart. Tangenten berører i ett punkt og gir momentan vekstfart." },
+    { "front": "Er alle kontinuerlige funksjoner deriverbare?", "bak": "Nei. Deriverbar ⇒ kontinuerlig, men ikke motsatt. $f(x)=|x|$ er kontinuerlig i 0, men har et knekkpunkt og ingen derivert der." },
+    { "front": "Hvordan finner du hvor tangenten er parallell med $y = kx + c$?", "bak": "Løs likningen $f'(x) = k$, siden parallelle linjer har samme stigningstall." }
+  ]
+}

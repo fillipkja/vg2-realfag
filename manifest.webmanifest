@@ -1,0 +1,25 @@
+{
+  "name": "Realfag VG2 — studieverktøy",
+  "short_name": "Realfag VG2",
+  "description": "Guider, quiz, flashcards og formelsamling for Matematikk R1, Fysikk 1, Kjemi 1 og Biologi 1.",
+  "lang": "nb-NO",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f9f9f7",
+  "theme_color": "#f9f9f7",
+  "categories": ["education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Matematikk R1", "url": "./#/fag/matematikk" },
+    { "name": "Fysikk 1", "url": "./#/fag/fysikk" },
+    { "name": "Kjemi 1", "url": "./#/fag/kjemi" },
+    { "name": "Biologi 1", "url": "./#/fag/biologi" }
+  ]
+}
