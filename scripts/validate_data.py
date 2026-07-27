@@ -67,7 +67,13 @@ def sjekk_liste(fil, sti, verdi, minst, mest):
 
 
 FIGURTYPER = {"graf", "fortegnslinje", "vektor", "tallinje", "flyt",
-              "syklus", "nivaaer", "stolper"}
+              "syklus", "nivaaer", "stolper", "hierarki", "sammenlikning",
+              "atom", "molekyl", "krets", "spektrum"}
+GEOMETRIER = {"lineaer", "trigonal-plan", "tetraedrisk", "vinklet",
+              "trigonal-pyramide", "oktaedrisk"}
+# antall bindingsretninger hver geometri tegner
+GEOMETRI_PLASSER = {"lineaer": 2, "trigonal-plan": 3, "tetraedrisk": 4,
+                    "vinklet": 2, "trigonal-pyramide": 3, "oktaedrisk": 6}
 # uttrykksparseren i figurer.js kjenner bare disse navnene
 UTTRYKK_NAVN = {"x", "pi", "e", "sin", "cos", "tan", "asin", "acos", "atan",
                 "sinh", "cosh", "tanh", "exp", "ln", "log", "lg", "sqrt",
@@ -185,6 +191,75 @@ def valider_figur(fil, sti, f):
             sjekk_streng(fil, f"{sti}.data[{i}].navn", r.get("navn"))
             if not isinstance(r.get("verdi"), (int, float)):
                 err(fil, f"{sti}.data[{i}].verdi: skal være et tall")
+    elif t == "hierarki":
+        for i, n in enumerate(liste("nivaaer", 3, 8)):
+            sjekk_streng(fil, f"{sti}.nivaaer[{i}].navn", n.get("navn"))
+            if len(str(n.get("navn", ""))) > 22:
+                err(fil, f"{sti}.nivaaer[{i}].navn: for langt (maks 22 tegn)")
+            if n.get("eksempel") and len(str(n["eksempel"])) > 26:
+                err(fil, f"{sti}.nivaaer[{i}].eksempel: for langt (maks 26 tegn)")
+    elif t == "sammenlikning":
+        kol = f.get("kolonner")
+        if not (isinstance(kol, list) and len(kol) == 2):
+            err(fil, f"{sti}.kolonner: skal være to kolonnenavn")
+        for i, r in enumerate(liste("rader", 2, 7)):
+            for felt in ("venstre", "hoyre"):
+                sjekk_streng(fil, f"{sti}.rader[{i}].{felt}", r.get(felt))
+                if len(str(r.get(felt, ""))) > 90:
+                    err(fil, f"{sti}.rader[{i}].{felt}: for lang (maks 90 tegn)")
+    elif t == "atom":
+        sk = liste("skall", 1, 5)
+        for i, n in enumerate(sk):
+            if not isinstance(n, int) or not (1 <= n <= 32):
+                err(fil, f"{sti}.skall[{i}]: skal være antall elektroner 1-32, fikk {n!r}")
+        navn = f.get("skallnavn")
+        if navn is not None and (not isinstance(navn, list) or len(navn) != len(sk)):
+            err(fil, f"{sti}.skallnavn: skal ha like mange navn som skall ({len(sk)})")
+        for felt in ("protoner", "noytroner", "valens"):
+            if felt in f and not isinstance(f[felt], int):
+                err(fil, f"{sti}.{felt}: skal være et heltall")
+        if isinstance(f.get("protoner"), int) and sk and sum(sk) != f["protoner"]:
+            err(fil, f"{sti}: summen av elektroner i skallene ({sum(sk)}) er ikke lik "
+                     f"protontallet ({f['protoner']}) — et nøytralt atom skal ha like mange")
+    elif t == "molekyl":
+        g = f.get("geometri")
+        if g not in GEOMETRIER:
+            err(fil, f"{sti}.geometri: ukjent {g!r} (gyldige: {', '.join(sorted(GEOMETRIER))})")
+        sjekk_streng(fil, f"{sti}.sentral", f.get("sentral"))
+        lig = f.get("ligander")
+        if not isinstance(lig, list) or not lig:
+            err(fil, f"{sti}.ligander: skal være en liste med minst ett atom")
+        elif g in GEOMETRI_PLASSER and len(lig) > GEOMETRI_PLASSER[g]:
+            err(fil, f"{sti}.ligander: {len(lig)} ligander, men «{g}» tegner bare "
+                     f"{GEOMETRI_PLASSER[g]} plasser — de siste blir ikke tegnet")
+        b = f.get("bindinger")
+        if b is not None:
+            if not isinstance(b, list) or len(b) != len(lig or []):
+                err(fil, f"{sti}.bindinger: skal ha ett tall per ligand")
+            else:
+                for i, v in enumerate(b):
+                    if v not in (1, 2, 3):
+                        err(fil, f"{sti}.bindinger[{i}]: skal være 1, 2 eller 3")
+    elif t == "krets":
+        gr = liste("grener", 1, 3)
+        for i, g in enumerate(gr):
+            if not isinstance(g, list) or not (1 <= len(g) <= 4):
+                err(fil, f"{sti}.grener[{i}]: skal være 1-4 komponenter i serie")
+                continue
+            for j, k in enumerate(g):
+                sjekk_streng(fil, f"{sti}.grener[{i}][{j}].navn", k.get("navn"))
+    elif t == "spektrum":
+        band = liste("band", 2, 7)
+        if f.get("log") and (f.get("min", 0) <= 0):
+            err(fil, f"{sti}: med log=true må min være større enn 0")
+        for i, b in enumerate(band):
+            for felt in ("fra", "til"):
+                if not isinstance(b.get(felt), (int, float)):
+                    err(fil, f"{sti}.band[{i}].{felt}: skal være et tall")
+            sjekk_streng(fil, f"{sti}.band[{i}].navn", b.get("navn"))
+            if isinstance(b.get("fra"), (int, float)) and isinstance(b.get("til"), (int, float)) \
+                    and b["til"] < b["fra"]:
+                err(fil, f"{sti}.band[{i}]: til ({b['til']}) er mindre enn fra ({b['fra']})")
 
 
 def valider_kapittel(fil, d, fagdata):

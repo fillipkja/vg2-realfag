@@ -712,10 +712,254 @@ function tegnStolper(f) {
   return svgRamme(s, B, H, f.tittel);
 }
 
+/* ══════════════════ type: hierarki ══════════════════
+   Nivåstige: bokser som smalner nedover for å vise at hvert nivå ligger inni
+   det over. Standardfiguren for systematikk og organisasjonsnivåer. */
+
+function tegnHierarki(f) {
+  const niv = f.nivaaer || [];
+  const B = 400, radH = 34, mellom = 6;
+  const H = 12 + niv.length * (radH + mellom);
+  const maksB = B - 30, minB = 150;
+  let s = "";
+  niv.forEach((n, i) => {
+    const bredde = niv.length > 1
+      ? maksB - ((maksB - minB) * i) / (niv.length - 1)
+      : maksB;
+    const x = (B - bredde) / 2, y = 12 + i * (radH + mellom);
+    s += rute(x, y, bredde, radH, "f-hierarkiboks", 7);
+    if (n.eksempel) {
+      s += tekst(x + 12, y + radH / 2 + 4, n.navn, "f-boks-txt", "start");
+      s += tekst(x + bredde - 12, y + radH / 2 + 4, n.eksempel, "f-boks-note", "end");
+    } else {
+      s += tekst(B / 2, y + radH / 2 + 4, n.navn, "f-boks-txt");
+    }
+    if (i < niv.length - 1) {
+      s += pil(B / 2, y + radH + 0.5, B / 2, y + radH + mellom - 0.5, "f-pil", 5);
+    }
+  });
+  return svgRamme(s, B, H, f.tittel);
+}
+
+/* ══════════════════ type: spektrum ══════════════════
+   Merket bånd langs en skala. Til pH-skalaen, det elektromagnetiske
+   spekteret og andre inndelinger av et kontinuum. Fargen er en ordnet
+   tint av fagfargen, ikke kategorisk — båndene har alltid navn. */
+
+function tegnSpektrum(f) {
+  const band = f.band || [];
+  const B = 400, H = 136;
+  const M = { v: 16, h: 16 };
+  const log = !!f.log;
+  const min = f.min ?? 0, maks = f.max ?? 14;
+  const skala = (v) => {
+    const t = log
+      ? (Math.log10(v) - Math.log10(min)) / (Math.log10(maks) - Math.log10(min))
+      : (v - min) / (maks - min);
+    return M.v + Math.max(0, Math.min(1, t)) * (B - M.v - M.h);
+  };
+  const y = 42, hoyde = 30;
+  let s = "";
+  band.forEach((b, i) => {
+    const x1 = skala(b.fra), x2 = skala(b.til);
+    const bredde = Math.max(2, x2 - x1);
+    /* ordnet tint: lysere til mørkere fra venstre mot høyre */
+    const del = band.length > 1 ? i / (band.length - 1) : 0;
+    const tint = Math.round(22 + del * 56);
+    s += `<rect class="f-spektrumband" x="${N(x1 + (i ? 1 : 0))}" y="${y}"
+      width="${N(bredde - (i ? 1 : 0))}" height="${hoyde}"
+      style="fill:color-mix(in srgb, var(--f-strek) ${tint}%, var(--surface-1))"/>`;
+    const l = brytTekst(b.navn, Math.max(6, Math.floor(bredde / 5.6)));
+    s += l.slice(0, 2).map((t, k) =>
+      tekst(x1 + bredde / 2, y + hoyde + 15 + k * 11, t, "f-tick")).join("");
+    /* verdi settes bare der båndet faktisk er bredt nok til teksten */
+    if (b.verdi != null && bredde > String(b.verdi).length * 5.6 + 6) {
+      s += tekst(x1 + bredde / 2, y - 8, b.verdi, "f-boks-note");
+    }
+  });
+  s += linje(M.v, y + hoyde, B - M.h, y + hoyde, "f-akse");
+  /* enheten står over alt annet, ikke i samme rad som verdiene */
+  s += tekst(M.v, 15, f.enhet ?? "", "f-akselabel", "start");
+  s += tekst(M.v, y + hoyde + 15 + 24, tall(min, min % 1 ? 1 : 0), "f-tick", "start");
+  s += tekst(B - M.h, y + hoyde + 15 + 24, tall(maks, maks % 1 ? 1 : 0), "f-tick", "end");
+  return svgRamme(s, B, H, f.tittel);
+}
+
+/* ══════════════════ type: atom ══════════════════
+   Skallmodell: kjerne med protoner og nøytroner, og elektroner fordelt på
+   skall. Brukes til elektronkonfigurasjon i kjemi og Bohrs modell i fysikk. */
+
+function tegnAtom(f) {
+  const skall = f.skall || [];
+  const B = 400, H = 300;
+  const cx = B / 2, cy = H / 2;
+  const rKjerne = 26;
+  const maksR = 116;
+  let s = "";
+
+  skall.forEach((antall, i) => {
+    const r = rKjerne + 22 + (skall.length > 1 ? (maksR - rKjerne - 22) * i / (skall.length - 1) : 0);
+    s += `<circle class="f-skall" cx="${cx}" cy="${cy}" r="${N(r)}"/>`;
+    for (let e = 0; e < antall; e++) {
+      /* start øverst og fordel jevnt, forskjøvet per skall så de ikke står i linje */
+      const a = (e / antall) * 2 * Math.PI - Math.PI / 2 + i * 0.4;
+      s += `<circle class="f-elektron" cx="${N(cx + r * Math.cos(a))}"
+        cy="${N(cy + r * Math.sin(a))}" r="4.6"/>`;
+    }
+    /* skallnavn ute til venstre */
+    s += tekst(cx - r, cy - 7, f.skallnavn?.[i] ?? `${i + 1}`, "f-tick");
+  });
+
+  s += `<circle class="f-kjerne" cx="${cx}" cy="${cy}" r="${rKjerne}"/>`;
+  if (f.grunnstoff) s += tekst(cx, cy - 1, f.grunnstoff, "f-kjerne-txt");
+  const under = [];
+  if (f.protoner != null) under.push(`${f.protoner} p`);
+  if (f.noytroner != null) under.push(`${f.noytroner} n`);
+  if (under.length) s += tekst(cx, cy + 13, under.join(" · "), "f-boks-note");
+
+  if (f.valens != null) {
+    s += tekst(B - 8, H - 8, `${f.valens} valenselektroner`, "f-tick", "end");
+  }
+  return svgRamme(s, B, H, f.tittel);
+}
+
+/* ══════════════════ type: molekyl ══════════════════
+   VSEPR-geometri i to dimensjoner: sentralatom, bindinger i riktige vinkler,
+   og ledige elektronpar som punktpar. */
+
+const GEOMETRI = {
+  "lineaer": { vinkler: [0, 180], navn: "lineær", vinkel: "180°" },
+  "trigonal-plan": { vinkler: [-90, 30, 150], navn: "trigonal plan", vinkel: "120°" },
+  "tetraedrisk": { vinkler: [-90, -20, 160, 90], navn: "tetraedrisk", vinkel: "109,5°" },
+  "vinklet": { vinkler: [-140, -40], navn: "vinklet", vinkel: "104,5°" },
+  "trigonal-pyramide": { vinkler: [-150, -30, 90], navn: "trigonal pyramide", vinkel: "107°" },
+  "oktaedrisk": { vinkler: [-90, -30, 30, 90, 150, 210], navn: "oktaedrisk", vinkel: "90°" },
+};
+
+function tegnMolekyl(f) {
+  const g = GEOMETRI[f.geometri] || GEOMETRI["tetraedrisk"];
+  const lig = f.ligander || [];
+  const B = 400, H = 260;
+  const cx = B / 2, cy = H / 2 - 6;
+  const L = 74;
+  let s = "";
+
+  lig.slice(0, g.vinkler.length).forEach((navn, i) => {
+    const a = (g.vinkler[i] * Math.PI) / 180;
+    const x = cx + L * Math.cos(a), y = cy + L * Math.sin(a);
+    const antall = (f.bindinger && f.bindinger[i]) || 1;
+    /* enkel-, dobbelt- eller trippelbinding som parallelle streker */
+    const nx = -Math.sin(a), ny = Math.cos(a);
+    for (let b = 0; b < antall; b++) {
+      const d = (b - (antall - 1) / 2) * 4;
+      s += linje(cx + 20 * Math.cos(a) + nx * d, cy + 20 * Math.sin(a) + ny * d,
+                 x - 15 * Math.cos(a) + nx * d, y - 15 * Math.sin(a) + ny * d, "f-binding");
+    }
+    s += `<circle class="f-atom" cx="${N(x)}" cy="${N(y)}" r="15"/>`;
+    s += tekst(x, y + 4.5, navn, "f-atom-txt");
+  });
+
+  /* ledige elektronpar som to punkter på motsatt side av bindingene */
+  const ledige = f.ledigePar || 0;
+  for (let p = 0; p < ledige; p++) {
+    const a = ((ledige === 1 ? 90 : 60 + p * 60) * Math.PI) / 180;
+    for (const off of [-5, 5]) {
+      const nx = -Math.sin(a), ny = Math.cos(a);
+      s += `<circle class="f-ledigpar" cx="${N(cx + 27 * Math.cos(a) + nx * off)}"
+        cy="${N(cy + 27 * Math.sin(a) + ny * off)}" r="2.8"/>`;
+    }
+  }
+
+  s += `<circle class="f-atom sentral" cx="${cx}" cy="${cy}" r="20"/>`;
+  s += tekst(cx, cy + 5, f.sentral ?? "", "f-atom-txt sentral");
+  s += tekst(B / 2, H - 8, `${g.navn}${f.vinkel || g.vinkel ? " · bindingsvinkel " + (f.vinkel ?? g.vinkel) : ""}`,
+             "f-boks-note");
+  return svgRamme(s, B, H, f.tittel);
+}
+
+/* ══════════════════ type: krets ══════════════════
+   Enkel likestrømkrets: spenningskilde til venstre, parallelle grener til
+   høyre, hver gren med komponenter i serie. */
+
+function tegnKrets(f) {
+  const grener = f.grener || [[]];
+  const B = 400;
+  const grenH = 54;
+  const H = 40 + grener.length * grenH + 24;
+  const xV = 46, xH = B - 34;
+  const yTopp = 30, yBunn = H - 26;
+  let s = "";
+
+  /* ytre ledning */
+  s += `<path class="f-ledning" d="M ${xV} ${yTopp} H ${xH} V ${yBunn} H ${xV} Z"/>`;
+
+  /* spenningskilde midt på venstre side */
+  const yK = (yTopp + yBunn) / 2;
+  s += `<rect class="f-flate" x="${xV - 13}" y="${N(yK - 15)}" width="26" height="30"/>`;
+  s += linje(xV - 11, yK - 9, xV + 11, yK - 9, "f-akse sterk");
+  s += linje(xV - 6, yK - 3, xV + 6, yK - 3, "f-akse");
+  s += linje(xV - 11, yK + 3, xV + 11, yK + 3, "f-akse sterk");
+  s += linje(xV - 6, yK + 9, xV + 6, yK + 9, "f-akse");
+  s += tekst(xV - 18, yK + 4, f.kilde?.navn ?? "", "f-boks-txt", "end");
+
+  /* grener mellom venstre og høyre ledning */
+  const xStart = xV + 46, xSlutt = xH - 26;
+  grener.forEach((gren, gi) => {
+    const y = yTopp + 24 + gi * grenH;
+    if (grener.length > 1) {
+      s += linje(xStart - 24, yTopp, xStart - 24, y, "f-ledning");
+      s += linje(xStart - 24, y, xStart, y, "f-ledning");
+      s += linje(xSlutt, y, xSlutt + 20, y, "f-ledning");
+      s += linje(xSlutt + 20, y, xSlutt + 20, yBunn, "f-ledning");
+    }
+    const n = Math.max(1, gren.length);
+    const bredde = (xSlutt - xStart) / n;
+    gren.forEach((komp, ki) => {
+      const cx0 = xStart + ki * bredde + bredde / 2;
+      const kb = Math.min(46, bredde - 14);
+      if (ki > 0) s += linje(xStart + ki * bredde - bredde / 2 + kb / 2, y, cx0 - kb / 2, y, "f-ledning");
+      s += rute(cx0 - kb / 2, y - 10, kb, 20, "f-motstand", 3);
+      s += tekst(cx0, y - 15, komp.navn ?? "", "f-boks-txt");
+      if (komp.verdi) s += tekst(cx0, y + 24, komp.verdi, "f-boks-note");
+    });
+    if (grener.length === 1) {
+      s += linje(xStart - 24, yTopp, xStart, yTopp, "f-ledning");
+    }
+  });
+  if (f.strom) s += tekst(B / 2, yBunn + 17, f.strom, "f-tick");
+  return svgRamme(s, B, H, f.tittel);
+}
+
+/* ══════════════════ type: sammenlikning ══════════════════
+   To kolonner side om side. Rendres som HTML, ikke SVG: sammenlikninger er
+   tekstrike, og da er ekte tekstombrekking, markering og skjermleser bedre
+   enn SVG-tekst med håndregnet linjebrytning. */
+
+function tegnSammenlikning(f) {
+  const [a, b] = f.kolonner || ["", ""];
+  const rader = f.rader || [];
+  return `<div class="samlikn">
+    <div class="samlikn-hode"><span>${E(a)}</span><span>${E(b)}</span></div>
+    ${rader.map((r) => `<div class="samlikn-rad">
+      ${r.egenskap ? `<div class="samlikn-egenskap">${E(r.egenskap)}</div>` : ""}
+      <div class="samlikn-par">
+        <div class="samlikn-celle v">${E(r.venstre)}</div>
+        <div class="samlikn-celle h">${E(r.hoyre)}</div>
+      </div>
+    </div>`).join("")}
+  </div>`;
+}
+
 /* ══════════════════ dispatcher ══════════════════ */
 
 const TEGNERE = {
   graf: tegnGraf,
+  hierarki: tegnHierarki,
+  spektrum: tegnSpektrum,
+  atom: tegnAtom,
+  molekyl: tegnMolekyl,
+  krets: tegnKrets,
+  sammenlikning: tegnSammenlikning,
   fortegnslinje: tegnFortegnslinje,
   vektor: tegnVektor,
   tallinje: tegnTallinje,
@@ -731,12 +975,15 @@ function figurHTML(f, fagId) {
   if (!f || typeof f !== "object") return "";
   const tegner = TEGNERE[f.type];
   if (!tegner) { console.warn("ukjent figurtype:", f.type); return ""; }
-  let svg;
-  try { svg = tegner(f); }
+  let innhold;
+  try { innhold = tegner(f); }
   catch (e) { console.warn("figur feilet:", f.type, e.message); return ""; }
+  if (!innhold) { console.warn("figur ga tomt resultat:", f.type); return ""; }
+  /* sammenlikning rendres som HTML — da skal ikke figurflaten ha SVG-padding */
+  const erHTML = f.type === "sammenlikning";
   return `<figure class="figur${fagId ? " fag-" + fagId : ""}">
     ${f.tittel ? `<figcaption class="figur-tittel">${E(f.tittel)}</figcaption>` : ""}
-    <div class="figur-flate">${svg}</div>
+    <div class="figur-flate${erHTML ? " html" : ""}">${innhold}</div>
     ${f.forklaring ? `<figcaption class="figur-forklaring">${E(f.forklaring)}</figcaption>` : ""}
   </figure>`;
 }

@@ -195,6 +195,67 @@ Brukes både til atomfysikk og til entalpidiagram i termokjemi.
 ```
 2–6 søyler. Lange navn roteres automatisk.
 
+### `hierarki` — nivåstige
+```json
+{ "type": "hierarki", "tittel": "Klassifisering av mennesket",
+  "nivaaer": [{ "navn": "Rike", "eksempel": "Dyr" },
+              { "navn": "Rekke", "eksempel": "Ryggstrengdyr" }] }
+```
+Boksene smalner nedover for å vise at hvert nivå ligger inni det over. 3–8 nivåer.
+Til systematikk, organisasjonsnivåer og andre inndelinger i nivåer.
+
+### `sammenlikning` — to kolonner side om side
+```json
+{ "type": "sammenlikning", "tittel": "Prokaryot og eukaryot celle",
+  "kolonner": ["Prokaryot", "Eukaryot"],
+  "rader": [{ "egenskap": "Arvestoff", "venstre": "fritt i cytoplasmaet",
+              "hoyre": "inne i cellekjernen" }] }
+```
+2–7 rader. Rendres som HTML, så teksten brytes naturlig — den eneste figurtypen
+der lengre tekst er greit. Til mitose/meiose, alkan/alken, ionebinding/kovalent
+binding, elastisk/uelastisk støt.
+
+### `atom` — skallmodell
+```json
+{ "type": "atom", "tittel": "Natriumatomet", "grunnstoff": "Na",
+  "protoner": 11, "noytroner": 12, "skall": [2, 8, 1],
+  "skallnavn": ["K", "L", "M"], "valens": 1 }
+```
+1–5 skall. Til elektronkonfigurasjon i kjemi og Bohrs modell i fysikk.
+
+### `molekyl` — VSEPR-geometri
+```json
+{ "type": "molekyl", "tittel": "Vannmolekylet", "sentral": "O",
+  "ligander": ["H", "H"], "geometri": "vinklet",
+  "ledigePar": 2, "vinkel": "104,5°",
+  "bindinger": [1, 1] }
+```
+`geometri`: `lineaer` · `trigonal-plan` · `tetraedrisk` · `vinklet` ·
+`trigonal-pyramide` · `oktaedrisk`. `bindinger` gir 1, 2 eller 3 streker per
+binding (enkel, dobbel, trippel). `vinkel` kan utelates — da brukes
+standardvinkelen for geometrien.
+
+### `krets` — likestrømkrets
+```json
+{ "type": "krets", "tittel": "To motstander i parallell",
+  "kilde": { "navn": "12 V" },
+  "grener": [[{ "navn": "R₁", "verdi": "4 Ω" }],
+             [{ "navn": "R₂", "verdi": "6 Ω" }]],
+  "strom": "I = 5,0 A" }
+```
+`grener` er de parallelle grenene; hver gren er komponentene i serie i den
+grenen. Én gren = ren seriekobling. Maks 3 grener og 4 komponenter per gren.
+
+### `spektrum` — merket bånd langs en skala
+```json
+{ "type": "spektrum", "tittel": "pH-skalaen", "enhet": "pH",
+  "min": 0, "max": 14, "log": false,
+  "band": [{ "fra": 0, "til": 3, "navn": "sterkt surt", "verdi": "magesyre" }] }
+```
+2–7 bånd. Sett `log: true` for det elektromagnetiske spekteret og andre skalaer
+som går over mange tierpotenser. `verdi` er et konkret eksempel og vises bare
+der båndet er bredt nok.
+
 ## Kvalitetskrav til innholdet
 
 - Faglig korrekt. Kontroller alle formler, tall og fasitsvar to ganger.

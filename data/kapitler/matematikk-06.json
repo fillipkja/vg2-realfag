@@ -296,13 +296,25 @@
         "figur": {
           "type": "vektor",
           "tittel": "Trekanten ABC og parallellogrammet",
-          "forklaring": "Alle tre vektorene starter i A: determinanten 6·5 − 2·3 = 24 er arealet av parallellogrammet, og diagonalen fra B til C deler det i to like store trekanter, så ABC har areal 12. Legg merke til at AD legger seg oppå AB — determinanten blir 0, og da ligger D på linja gjennom A og B.",
+          "forklaring": "Alle tre vektorene starter i A. Determinanten 6·5 − 2·3 = 24 er arealet av det skraverte parallellogrammet, og en strek mellom de to pilspissene deler det i to like store trekanter — derfor er arealet av ABC 12. Legg merke til at AD legger seg oppå AB: determinanten deres er 0, og da må D ligge på linja gjennom A og B.",
           "xmin": -4.1,
           "xmax": 9.1,
           "ymin": 0,
           "ymax": 8.5,
           "rutenett": true,
           "vektorer": [
+            {
+              "fra": [
+                -2,
+                1
+              ],
+              "til": [
+                7,
+                4
+              ],
+              "navn": "AD",
+              "farge": 3
+            },
             {
               "fra": [
                 -2,
@@ -326,23 +338,11 @@
               ],
               "navn": "AC",
               "farge": 2
-            },
-            {
-              "fra": [
-                -2,
-                1
-              ],
-              "til": [
-                7,
-                4
-              ],
-              "navn": "AD",
-              "farge": 3
             }
           ],
           "parallellogram": [
-            0,
-            1
+            1,
+            2
           ]
         }
       }

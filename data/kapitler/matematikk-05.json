@@ -225,10 +225,10 @@
           "type": "graf",
           "tittel": "Speilingen snur stigningstallet",
           "forklaring": "Tangenten til x² i (2, 4) er bratt med stigningstall 4, mens speilbildet i (4, 2) er slakt med stigningstall 1/4. Det er stigningstallet i a = 2 som gir svaret, ikke det i selve punktet x = 4.",
-          "xmin": -0.4,
-          "xmax": 6.8,
-          "ymin": -0.6,
-          "ymax": 5.4,
+          "xmin": 0,
+          "xmax": 7.2,
+          "ymin": 0,
+          "ymax": 6,
           "kurver": [
             {
               "uttrykk": "x^2",
@@ -244,12 +244,12 @@
           "linjer": [
             {
               "fra": [
-                0.85,
-                -0.6
+                1,
+                0
               ],
               "til": [
-                2.35,
-                5.4
+                2.5,
+                6
               ],
               "navn": "stigning 4",
               "farge": 1,
@@ -257,12 +257,12 @@
             },
             {
               "fra": [
-                -0.4,
-                0.9
+                0,
+                1
               ],
               "til": [
-                6.8,
-                2.7
+                7.2,
+                2.8
               ],
               "navn": "stigning 1/4",
               "farge": 2,
@@ -270,12 +270,12 @@
             },
             {
               "fra": [
-                -0.6,
-                -0.6
+                0,
+                0
               ],
               "til": [
-                5.4,
-                5.4
+                6,
+                6
               ],
               "navn": "y = x",
               "farge": 3,

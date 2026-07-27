@@ -780,6 +780,77 @@ mark { background: color-mix(in srgb, var(--warning) 45%, transparent); color: i
 .figur-svg .f-stolpe { fill: var(--f-strek); stroke: none; }
 .figur-svg .f-stolpe-txt { font-size: 11px; font-weight: 650; fill: var(--text-primary); }
 
+/* hierarki (nivåstige) */
+.figur-svg .f-hierarkiboks {
+  fill: color-mix(in srgb, var(--f-aksent) 13%, var(--surface-1));
+  stroke: color-mix(in srgb, var(--f-strek) 45%, transparent); stroke-width: 1.4;
+}
+
+/* spektrum */
+.figur-svg .f-spektrumband { stroke: var(--surface-1); stroke-width: 1; }
+
+/* atom (skallmodell) */
+.figur-svg .f-skall { fill: none; stroke: var(--grid); stroke-width: 1.4; }
+.figur-svg .f-elektron { fill: var(--f-strek); stroke: var(--surface-2); stroke-width: 1.6; }
+.figur-svg .f-kjerne {
+  fill: color-mix(in srgb, var(--f-aksent) 24%, var(--surface-1));
+  stroke: var(--f-strek); stroke-width: 1.8;
+}
+.figur-svg .f-kjerne-txt { font-size: 16px; font-weight: 700; fill: var(--text-primary); }
+
+/* molekyl (VSEPR) */
+.figur-svg .f-binding { stroke: var(--text-secondary); stroke-width: 1.8; stroke-linecap: round; }
+.figur-svg .f-atom {
+  fill: var(--surface-1); stroke: var(--text-secondary); stroke-width: 1.6;
+}
+.figur-svg .f-atom.sentral {
+  fill: color-mix(in srgb, var(--f-aksent) 26%, var(--surface-1));
+  stroke: var(--f-strek); stroke-width: 2;
+}
+.figur-svg .f-atom-txt { font-size: 12.5px; font-weight: 650; fill: var(--text-primary); }
+.figur-svg .f-atom-txt.sentral { font-size: 15px; font-weight: 700; }
+.figur-svg .f-ledigpar { fill: var(--f-strek); stroke: none; }
+
+/* krets */
+.figur-svg .f-ledning { fill: none; stroke: var(--text-secondary); stroke-width: 1.8;
+  stroke-linejoin: round; }
+.figur-svg .f-motstand {
+  fill: color-mix(in srgb, var(--f-aksent) 20%, var(--surface-1));
+  stroke: var(--f-strek); stroke-width: 1.6;
+}
+.figur-svg .f-flate { fill: var(--surface-2); stroke: none; }
+
+/* sammenlikning — HTML, ikke SVG, så teksten brytes og kan markeres */
+.figur-flate.html { padding: 0; background: var(--surface-1); }
+.samlikn { font-size: 13.5px; }
+.samlikn-hode {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+  font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+}
+.samlikn-hode span {
+  padding: 9px 11px; text-align: center; color: var(--text-primary);
+}
+.samlikn-hode span:first-child {
+  background: color-mix(in srgb, var(--f-aksent) 20%, var(--surface-1));
+  border-radius: var(--r-md) 0 0 0;
+}
+.samlikn-hode span:last-child {
+  background: color-mix(in srgb, var(--f-aksent) 9%, var(--surface-1));
+  border-radius: 0 var(--r-md) 0 0;
+}
+.samlikn-egenskap {
+  font-size: 11.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--text-muted); padding: 9px 11px 3px; text-align: center;
+  border-top: 1px solid var(--grid);
+}
+.samlikn-rad:first-of-type .samlikn-egenskap { border-top: 0; }
+.samlikn-par { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+.samlikn-celle { padding: 8px 11px 11px; line-height: 1.45; color: var(--text-primary); }
+.samlikn-celle.v { background: color-mix(in srgb, var(--f-aksent) 8%, var(--surface-1)); }
+.samlikn-celle.h { background: color-mix(in srgb, var(--f-aksent) 3%, var(--surface-1)); }
+.samlikn-rad:last-child .samlikn-celle.v { border-radius: 0 0 0 var(--r-md); }
+.samlikn-rad:last-child .samlikn-celle.h { border-radius: 0 0 var(--r-md) 0; }
+
 /* metodeliste */
 .metode { padding: 14px 16px; text-decoration: none; display: block; }
 .metode h4 { font-size: 15.5px; }

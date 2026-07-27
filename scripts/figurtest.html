@@ -7,664 +7,9 @@
 <script src="../vendor/katex/katex.min.js"></script>
 <script src="../vendor/katex/contrib/mhchem.min.js"></script>
 <script src="../figurer.js"></script>
-<style>/* INJISERT-CSS fra index.html */
-
-/* ───────────────────────── tokens ───────────────────────── */
-:root {
-  color-scheme: light;
-  --surface-1: #fcfcfb;
-  --surface-2: #f3f3f0;
-  --page: #f9f9f7;
-  --text-primary: #0b0b0b;
-  --text-secondary: #52514e;
-  --text-muted: #898781;
-  --grid: #e1e0d9;
-  --axis: #c3c2b7;
-  --border: rgba(11, 11, 11, 0.10);
-  --border-strong: rgba(11, 11, 11, 0.18);
-  --good: #0ca30c;
-  --good-text: #006300;
-  --warning: #fab219;
-  --critical: #d03b3b;
-  --shadow: 0 1px 2px rgba(11,11,11,.05), 0 4px 14px rgba(11,11,11,.05);
-  --wash: rgba(11, 11, 11, 0.04);
-
-  /* validated 4-slot categorical set (blue / yellow / magenta / green) —
-     passes all-pairs CVD + normal-vision floors in both modes. */
-  --fag-matematikk: #2a78d6;
-  --fag-fysikk: #eda100;
-  --fag-kjemi: #e87ba4;
-  --fag-biologi: #008300;
-
-  --r-sm: 6px; --r-md: 10px; --r-lg: 16px;
-  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
-  --maxw: 780px;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --surface-1: #1a1a19;
-    --surface-2: #232322;
-    --page: #0d0d0d;
-    --text-primary: #ffffff;
-    --text-secondary: #c3c2b7;
-    --text-muted: #898781;
-    --grid: #2c2c2a;
-    --axis: #383835;
-    --border: rgba(255, 255, 255, 0.10);
-    --border-strong: rgba(255, 255, 255, 0.20);
-    --good: #0ca30c;
-    --good-text: #0ca30c;
-    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
-    --wash: rgba(255, 255, 255, 0.06);
-    --fag-matematikk: #3987e5;
-    --fag-fysikk: #c98500;
-    --fag-kjemi: #d55181;
-    --fag-biologi: #008300;
-  }
-}
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --surface-1: #1a1a19;
-  --surface-2: #232322;
-  --page: #0d0d0d;
-  --text-primary: #ffffff;
-  --text-secondary: #c3c2b7;
-  --text-muted: #898781;
-  --grid: #2c2c2a;
-  --axis: #383835;
-  --border: rgba(255, 255, 255, 0.10);
-  --border-strong: rgba(255, 255, 255, 0.20);
-  --good: #0ca30c;
-  --good-text: #0ca30c;
-  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
-  --wash: rgba(255, 255, 255, 0.06);
-  --fag-matematikk: #3987e5;
-  --fag-fysikk: #c98500;
-  --fag-kjemi: #d55181;
-  --fag-biologi: #008300;
-}
-
-/* ───────────────────────── base ───────────────────────── */
-* { box-sizing: border-box; }
-/* må slå .kort-knapper{display:grid} o.l. — ellers vises skjulte elementer */
-[hidden] { display: none !important; }
-html { -webkit-text-size-adjust: 100%; }
-body {
-  margin: 0;
-  font-family: var(--sans);
-  background: var(--page);
-  color: var(--text-primary);
-  font-size: 16px;
-  line-height: 1.55;
-  -webkit-font-smoothing: antialiased;
-  overflow-wrap: break-word;
-}
-a { color: inherit; }
-button { font: inherit; color: inherit; cursor: pointer; }
-h1, h2, h3, h4 { line-height: 1.25; margin: 0; font-weight: 650; letter-spacing: -0.01em; }
-p { margin: 0 0 .85em; }
-p:last-child { margin-bottom: 0; }
-
-/* ───────────────────────── layout ───────────────────────── */
-.app {
-  min-height: 100dvh;
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: calc(env(safe-area-inset-bottom) + 76px);
-}
-.wrap {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0 max(16px, env(safe-area-inset-left)) 0 max(16px, env(safe-area-inset-right));
-}
-
-header.top {
-  position: sticky; top: 0; z-index: 40;
-  background: color-mix(in srgb, var(--page) 88%, transparent);
-  backdrop-filter: saturate(180%) blur(14px);
-  -webkit-backdrop-filter: saturate(180%) blur(14px);
-  border-bottom: 1px solid var(--border);
-  padding-top: env(safe-area-inset-top);
-}
-.top-inner {
-  display: flex; align-items: center; gap: 10px;
-  min-height: 52px;
-}
-.top-title { font-size: 17px; font-weight: 650; flex: 1; min-width: 0;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.top-sub { font-size: 12.5px; color: var(--text-muted); font-weight: 500; }
-
-.iconbtn {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 38px; height: 38px; flex: none;
-  border-radius: 999px; border: 1px solid transparent;
-  background: transparent; color: var(--text-secondary);
-}
-.iconbtn:hover { background: var(--wash); }
-.iconbtn:active { transform: scale(.94); }
-.iconbtn svg { width: 20px; height: 20px; }
-
-/* ───────────────────────── bottom nav ───────────────────────── */
-nav.tabbar {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
-  background: color-mix(in srgb, var(--page) 92%, transparent);
-  backdrop-filter: saturate(180%) blur(14px);
-  -webkit-backdrop-filter: saturate(180%) blur(14px);
-  border-top: 1px solid var(--border);
-  padding-bottom: env(safe-area-inset-bottom);
-  display: flex;
-}
-nav.tabbar a {
-  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
-  padding: 8px 2px 7px; text-decoration: none;
-  color: var(--text-muted); font-size: 10.5px; font-weight: 550;
-  letter-spacing: .01em;
-}
-nav.tabbar a svg { width: 22px; height: 22px; }
-nav.tabbar a[aria-current="page"] { color: var(--text-primary); }
-
-/* ───────────────────────── cards ───────────────────────── */
-.card {
-  background: var(--surface-1);
-  border: 1px solid var(--border);
-  border-radius: var(--r-lg);
-  box-shadow: var(--shadow);
-}
-.section-label {
-  font-size: 12px; font-weight: 650; letter-spacing: .07em;
-  text-transform: uppercase; color: var(--text-muted);
-  margin: 26px 0 10px;
-}
-.section-label:first-child { margin-top: 18px; }
-
-/* subject cards */
-.fagliste { display: grid; gap: 10px; }
-.fagkort {
-  display: block; text-decoration: none;
-  padding: 14px 16px 15px; position: relative; overflow: hidden;
-}
-.fagkort::before {
-  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
-  background: var(--accent);
-}
-.fagkort-top { display: flex; align-items: baseline; gap: 8px; }
-.fagkort h3 { font-size: 17px; flex: 1; }
-.fagkort .pct { font-size: 13px; font-weight: 600; color: var(--text-secondary);
-  font-variant-numeric: tabular-nums; }
-.fagkort p { font-size: 13.5px; color: var(--text-secondary); margin: 3px 0 11px; }
-
-/* progress meter — fill = subject hue, track = same hue washed */
-.meter { height: 8px; border-radius: 999px; background: var(--track, var(--grid)); overflow: hidden; }
-.meter > i { display: block; height: 100%; border-radius: 999px; background: var(--accent);
-  transition: width .35s cubic-bezier(.4,0,.2,1); }
-.meter.thin { height: 5px; }
-
-/* hero number */
-.hero {
-  padding: 20px 18px 18px; text-align: left;
-  display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap;
-}
-.hero .fig { font-size: 52px; font-weight: 680; line-height: .95; letter-spacing: -.03em; }
-.hero .fig small { font-size: 24px; font-weight: 600; color: var(--text-secondary); }
-.hero .lbl { font-size: 13.5px; color: var(--text-secondary); flex: 1; min-width: 140px; }
-.hero .lbl b { color: var(--text-primary); font-weight: 600; }
-
-/* ───────────────────────── chapter list ───────────────────────── */
-.kaplist { display: grid; gap: 8px; }
-.kapkort {
-  display: flex; gap: 12px; align-items: center;
-  padding: 12px 14px; text-decoration: none;
-}
-.kapnum {
-  flex: none; width: 32px; height: 32px; border-radius: 9px;
-  display: grid; place-items: center; font-size: 14px; font-weight: 650;
-  background: color-mix(in srgb, var(--accent) 15%, var(--surface-1));
-  color: var(--text-primary);
-  font-variant-numeric: tabular-nums;
-}
-/* ferdig = tilstand, ikke identitet → statusfargen, ikke fagfargen.
-   Mørk hake på lys vask holder kontrasten uansett fag. */
-.kapkort.ferdig .kapnum {
-  background: color-mix(in srgb, var(--good) 22%, var(--surface-1));
-  color: var(--good-text);
-}
-.kapbody { flex: 1; min-width: 0; }
-.kapbody h4 { font-size: 15.5px; font-weight: 600; }
-.kapbody .undertema { font-size: 12.5px; color: var(--text-muted); margin-top: 2px;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.kapstat { flex: none; display: flex; align-items: center; gap: 7px; }
-.chev { color: var(--axis); flex: none; }
-.chev svg { width: 16px; height: 16px; display: block; }
-
-/* ───────────────────────── chips / segmented ───────────────────────── */
-.seg {
-  display: flex; gap: 4px; padding: 4px; margin: 14px 0 0;
-  background: var(--surface-2); border-radius: 12px;
-  overflow-x: auto; scrollbar-width: none;
-}
-.seg::-webkit-scrollbar { display: none; }
-.seg button {
-  flex: 1 1 auto; min-width: 0; white-space: nowrap; border: 0; background: transparent;
-  padding: 7px 9px; border-radius: 9px; font-size: 13px; font-weight: 550;
-  color: var(--text-secondary);
-}
-.seg button[aria-selected="true"] {
-  background: var(--surface-1); color: var(--text-primary);
-  box-shadow: 0 1px 2px rgba(11,11,11,.10); font-weight: 620;
-}
-
-.chips { display: flex; gap: 7px; flex-wrap: wrap; margin: 12px 0; }
-.chip {
-  border: 1px solid var(--border-strong); background: var(--surface-1);
-  border-radius: 999px; padding: 5px 12px; font-size: 13px; font-weight: 550;
-  color: var(--text-secondary); text-decoration: none; display: inline-flex;
-  align-items: center; gap: 6px;
-}
-.chip[aria-pressed="true"], .chip.aktiv {
-  background: var(--text-primary); color: var(--page); border-color: var(--text-primary);
-}
-.dot { width: 9px; height: 9px; border-radius: 999px; background: var(--accent); flex: none;
-  box-shadow: 0 0 0 2px var(--surface-1); }
-
-/* ───────────────────────── prose ───────────────────────── */
-.prose { font-size: 15.5px; line-height: 1.62; color: var(--text-primary); }
-.prose h4 { font-size: 15px; margin: 1.2em 0 .4em; color: var(--text-primary); }
-.prose ul, .prose ol { margin: 0 0 .9em; padding-left: 1.35em; }
-.prose li { margin-bottom: .35em; }
-.prose li::marker { color: var(--text-muted); }
-.prose strong { font-weight: 640; }
-/* Tabeller kan bli bredere enn en telefonskjerm. De skrolles vannrett, og
-   app.js legger på en «dra for å se mer»-hint når de faktisk er for brede. */
-.tabellramme { position: relative; margin: .9em 0; }
-.tabellramme > table {
-  width: 100%; border-collapse: collapse; margin: 0; font-size: 14px;
-  display: block; overflow-x: auto; -webkit-overflow-scrolling: touch;
-}
-.prose table { width: 100%; border-collapse: collapse; margin: .9em 0; font-size: 14px;
-  display: block; overflow-x: auto; }
-.prose th, .prose td {
-  border-bottom: 1px solid var(--grid); padding: 7px 9px; text-align: left;
-  vertical-align: top;
-}
-.prose th { font-weight: 620; color: var(--text-secondary); font-size: 13px; }
-.prose tbody tr:last-child td { border-bottom: 0; }
-.tabellhint {
-  font-size: 11.5px; color: var(--text-muted); font-weight: 550;
-  margin-top: 5px; display: flex; align-items: center; gap: 5px;
-}
-/* mykt hjørne som viser at det er mer til høyre */
-.tabellramme.bred::after {
-  content: ""; position: absolute; right: 0; top: 0; width: 26px;
-  height: calc(100% - 22px); pointer-events: none;
-  background: linear-gradient(to right, transparent, var(--surface-1));
-}
-
-.blokk { padding: 16px 17px; margin-bottom: 10px; }
-.blokk > h3 { font-size: 15.5px; margin-bottom: 9px; display: flex; align-items: center; gap: 8px; }
-.blokk > h3 .kicker { font-size: 11.5px; font-weight: 650; letter-spacing: .06em;
-  text-transform: uppercase; color: var(--text-muted); }
-
-/* punktliste */
-ul.punkter { list-style: none; margin: 0; padding: 0; }
-ul.punkter li {
-  position: relative; padding: 0 0 0 22px; margin-bottom: 9px; font-size: 15.5px;
-  line-height: 1.55;
-}
-ul.punkter li::before {
-  content: ""; position: absolute; left: 4px; top: .62em;
-  width: 7px; height: 7px; border-radius: 999px; background: var(--accent);
-}
-ul.punkter li:last-child { margin-bottom: 0; }
-
-/* formler — stablet på telefon (navn over formel), to kolonner fra 560px */
-.formelrad {
-  display: grid; gap: 4px 16px; padding: 11px 0;
-  border-bottom: 1px solid var(--grid);
-}
-.formelrad:last-child { border-bottom: 0; padding-bottom: 0; }
-.formelrad:first-child { padding-top: 0; }
-.formelrad .navn { font-size: 13px; color: var(--text-secondary); font-weight: 600;
-  min-width: 0; }
-.formelrad .navn em { display: block; font-style: normal; font-size: 12px;
-  color: var(--text-muted); font-weight: 450; margin-top: 1px; }
-.formelrad .ltx { min-width: 0; overflow-x: auto; overflow-y: hidden;
-  font-size: 15.5px; padding: 2px 0; }
-@media (min-width: 560px) {
-  .formelrad { grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
-    align-items: baseline; }
-  .formelrad .ltx { text-align: right; }
-}
-
-/* begreper */
-.begrep {
-  padding: 11px 0; border-bottom: 1px solid var(--grid);
-}
-.begrep:last-child { border-bottom: 0; padding-bottom: 0; }
-.begrep:first-child { padding-top: 0; }
-.begrep dt { font-weight: 620; font-size: 15px; margin-bottom: 2px; }
-.begrep dd { margin: 0; font-size: 14.5px; color: var(--text-secondary); }
-
-/* eksempel */
-.eksempel { border-left: 3px solid var(--accent); padding-left: 14px; margin: 14px 0; }
-.eksempel > h4 { font-size: 14.5px; margin: 0 0 6px; }
-.eksempel .oppg { color: var(--text-primary); }
-.losning-btn {
-  border: 1px solid var(--border-strong); background: var(--surface-1);
-  border-radius: 999px; padding: 5px 13px; font-size: 13px; font-weight: 550;
-  color: var(--text-secondary); margin-top: 8px;
-}
-.losning { margin-top: 10px; padding: 12px 14px; background: var(--surface-2);
-  border-radius: var(--r-md); font-size: 15px; }
-
-/* ───────────────────────── quiz ───────────────────────── */
-.quiz-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-.quiz-head .teller { font-size: 13px; color: var(--text-muted); font-weight: 550;
-  font-variant-numeric: tabular-nums; flex: none; }
-.quiz-head .meter { flex: 1; }
-.q-tekst { font-size: 17px; font-weight: 600; line-height: 1.4; margin: 4px 0 14px; }
-.alt-liste { display: grid; gap: 8px; }
-.alt {
-  display: flex; gap: 11px; align-items: flex-start; text-align: left; width: 100%;
-  padding: 12px 14px; border-radius: var(--r-md); font-size: 15px; line-height: 1.45;
-  background: var(--surface-1); border: 1.5px solid var(--border-strong);
-  transition: border-color .15s, background .15s;
-}
-.alt:hover:not(:disabled) { border-color: var(--text-muted); }
-.alt .bokstav {
-  flex: none; width: 22px; height: 22px; border-radius: 999px; font-size: 12px;
-  font-weight: 650; display: grid; place-items: center; margin-top: 1px;
-  background: var(--surface-2); color: var(--text-secondary);
-}
-.alt[data-svar="riktig"] { border-color: var(--good); background: color-mix(in srgb, var(--good) 10%, var(--surface-1)); }
-.alt[data-svar="riktig"] .bokstav { background: var(--good); color: #fff; }
-.alt[data-svar="galt"] { border-color: var(--critical); background: color-mix(in srgb, var(--critical) 9%, var(--surface-1)); }
-.alt[data-svar="galt"] .bokstav { background: var(--critical); color: #fff; }
-.alt:disabled { cursor: default; opacity: 1; }
-.forklaring {
-  margin-top: 12px; padding: 12px 14px; border-radius: var(--r-md);
-  background: var(--surface-2); font-size: 14.5px; line-height: 1.55;
-}
-.forklaring .fasit { display: flex; align-items: center; gap: 7px; font-weight: 620;
-  margin-bottom: 5px; font-size: 14px; }
-.forklaring .fasit svg { width: 16px; height: 16px; flex: none; }
-.fasit.ok { color: var(--good-text); }
-.fasit.feil { color: var(--critical); }
-
-.knapp {
-  border: 0; border-radius: 999px; padding: 11px 22px; font-size: 15px; font-weight: 600;
-  background: var(--text-primary); color: var(--page); width: 100%;
-  margin-top: 12px;
-}
-.knapp:active { transform: scale(.985); }
-.knapp.sekundar { background: var(--surface-2); color: var(--text-primary);
-  border: 1px solid var(--border-strong); }
-
-.resultat { text-align: center; padding: 26px 18px; }
-.resultat .fig { font-size: 54px; font-weight: 680; letter-spacing: -.03em; line-height: 1; }
-.resultat .fig small { font-size: 22px; color: var(--text-secondary); font-weight: 600; }
-.resultat p { color: var(--text-secondary); font-size: 14.5px; margin-top: 8px; }
-
-/* ───────────────────────── flashcards ───────────────────────── */
-.kort-scene { perspective: 1400px; margin: 8px 0 4px; min-height: 240px; }
-.kort {
-  position: relative; width: 100%; height: 240px;
-  transform-style: preserve-3d; transition: transform .5s cubic-bezier(.4,0,.2,1);
-  cursor: pointer;
-}
-.kort.snudd { transform: rotateY(180deg); }
-.kort .side {
-  position: absolute; inset: 0; backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  display: grid; place-items: center; text-align: center;
-  padding: 26px 22px; border-radius: var(--r-lg);
-  background: var(--surface-1); border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  font-size: 17px; line-height: 1.5;
-}
-.kort .side.bak { transform: rotateY(180deg); background: var(--surface-2); font-size: 16px; }
-.kort .side .hint {
-  position: absolute; bottom: 12px; left: 0; right: 0;
-  font-size: 11.5px; color: var(--text-muted); font-weight: 550;
-  letter-spacing: .04em; text-transform: uppercase;
-}
-.kort-knapper { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
-.kort-knapper .knapp { margin-top: 0; }
-.boks-info { display: flex; justify-content: space-between; align-items: center;
-  font-size: 12.5px; color: var(--text-muted); margin-top: 12px; font-weight: 550; }
-
-/* ───────────────────────── søk ───────────────────────── */
-.sokefelt {
-  display: flex; align-items: center; gap: 9px; padding: 10px 14px;
-  background: var(--surface-1); border: 1px solid var(--border-strong);
-  border-radius: 999px; margin: 14px 0 4px;
-}
-.sokefelt svg { width: 17px; height: 17px; color: var(--text-muted); flex: none; }
-.sokefelt input {
-  border: 0; background: transparent; font: inherit; font-size: 15px;
-  color: var(--text-primary); flex: 1; min-width: 0; outline: none;
-}
-.trefflist { display: grid; gap: 7px; margin-top: 12px; }
-.treff { padding: 11px 14px; text-decoration: none; display: block; }
-.treff .kilde { font-size: 11.5px; font-weight: 600; letter-spacing: .04em;
-  text-transform: uppercase; color: var(--text-muted); display: flex;
-  align-items: center; gap: 6px; margin-bottom: 3px; }
-.treff .tittel { font-size: 15px; font-weight: 600; }
-.treff .utdrag { font-size: 13.5px; color: var(--text-secondary); margin-top: 2px;
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-mark { background: color-mix(in srgb, var(--warning) 45%, transparent); color: inherit;
-  border-radius: 3px; padding: 0 1px; }
-
-/* ───────────────────────── misc ───────────────────────── */
-.tom { text-align: center; padding: 44px 20px; color: var(--text-muted); font-size: 14.5px; }
-.laster { text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 14px; }
-.badge {
-  display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 620;
-  padding: 2px 8px; border-radius: 999px; background: var(--surface-2);
-  color: var(--text-secondary); letter-spacing: .01em;
-}
-.badge.ok { background: color-mix(in srgb, var(--good) 15%, var(--surface-1)); color: var(--good-text); }
-.badge svg { width: 12px; height: 12px; }
-.rad { display: flex; align-items: center; gap: 10px; }
-.spacer { flex: 1; }
-.stack { display: grid; gap: 10px; }
-/* grid-elementer har min-width:auto som standard, så et nowrap-barn kan sprenge
-   kolonnen. Alle grid-listene her skal kunne krympe. */
-.stack > *, .kaplist > *, .fagliste > *, .trefflist > *, .alt-liste > * { min-width: 0; }
-.notat { font-size: 13px; color: var(--text-muted); line-height: 1.5;
-  padding: 12px 14px; background: var(--surface-2); border-radius: var(--r-md);
-  border-left: 3px solid var(--axis); }
-.katex-display { margin: .7em 0; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
-.katex { font-size: 1.03em; }
-.mono-tall { font-variant-numeric: tabular-nums; }
-
-/* ───────────────────────── figurer ───────────────────────── */
-/* To fargeroller i figurene:
-   --f-aksent  brukes til flater og tinter, der lysheten ikke er kritisk
-   --f-strek    brukes til streker, piler og punkter, og må klare 3:1 mot
-                figurflaten. På lys flate har fysikk-gult (1,95:1) og
-                kjemi-magenta (2,42:1) for lite kontrast, så de får et mørkere
-                steg av SAMME hue. I mørk modus klarer alle fire kravet. */
-.figur {
-  margin: 16px 0; padding: 0;
-  --f-aksent: var(--text-primary);
-  --f-strek: var(--text-primary);
-}
-.figur.fag-matematikk { --f-aksent: var(--fag-matematikk); --f-strek: #2a78d6; }
-.figur.fag-fysikk     { --f-aksent: var(--fag-fysikk);     --f-strek: #bb7f00; }
-.figur.fag-kjemi      { --f-aksent: var(--fag-kjemi);      --f-strek: #cc6c90; }
-.figur.fag-biologi    { --f-aksent: var(--fag-biologi);    --f-strek: #008300; }
-:root[data-theme="dark"] .figur.fag-matematikk { --f-strek: #3987e5; }
-:root[data-theme="dark"] .figur.fag-fysikk     { --f-strek: #c98500; }
-:root[data-theme="dark"] .figur.fag-kjemi      { --f-strek: #d55181; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .figur.fag-matematikk { --f-strek: #3987e5; }
-  :root:not([data-theme="light"]) .figur.fag-fysikk     { --f-strek: #c98500; }
-  :root:not([data-theme="light"]) .figur.fag-kjemi      { --f-strek: #d55181; }
-}
-
-.figur-flate {
-  background:
-    radial-gradient(120% 100% at 100% 0%,
-      color-mix(in srgb, var(--f-aksent) 9%, transparent), transparent 70%),
-    var(--surface-2);
-  border: 1px solid color-mix(in srgb, var(--f-aksent) 22%, var(--border));
-  border-radius: var(--r-md);
-  padding: 10px 8px;
-  overflow: hidden;
-}
-.figur-svg { display: block; width: 100%; height: auto; }
-.figur-tittel {
-  font-size: 12px; font-weight: 650; letter-spacing: .05em; text-transform: uppercase;
-  color: var(--text-muted); margin-bottom: 7px;
-  display: flex; align-items: center; gap: 7px;
-}
-.figur-tittel::before {
-  content: ""; width: 12px; height: 3px; border-radius: 2px;
-  background: var(--f-aksent); flex: none;
-}
-.figur-forklaring {
-  font-size: 13px; color: var(--text-secondary); margin-top: 8px; line-height: 1.5;
-}
-
-/* felles strek- og tekststiler i SVG-ene */
-.figur-svg text { font-family: var(--sans); }
-.figur-svg .f-grid { stroke: var(--grid); stroke-width: 1; }
-.figur-svg .f-akse { stroke: var(--axis); stroke-width: 1.5; fill: none; }
-.figur-svg .f-akse.sterk { stroke: var(--text-secondary); stroke-width: 2; }
-.figur-svg .f-hjelp { stroke: var(--axis); stroke-width: 1; fill: none; }
-.figur-svg .f-skravur { stroke: var(--axis); stroke-width: 1; }
-.figur-svg .stiplet { stroke-dasharray: 4 3.5; }
-.figur-svg .f-fyll { stroke: none; }
-.figur-svg .f-pil { stroke: var(--f-strek); stroke-width: 1.8; fill: var(--f-strek); }
-.figur-svg .f-asymptote { stroke: var(--text-muted); stroke-width: 1.4; stroke-dasharray: 6 4; }
-
-.figur-svg .f-tick { font-size: 10.5px; fill: var(--text-muted); }
-.figur-svg .f-txt { font-size: 11.5px; fill: var(--text-secondary); }
-.figur-svg .f-akselabel { font-size: 12px; font-weight: 600; fill: var(--text-secondary); font-style: italic; }
-.figur-svg .f-punkt-txt { font-size: 11.5px; font-weight: 600; fill: var(--text-primary); }
-.figur-svg .f-serielabel { font-size: 12px; font-weight: 650; font-style: italic; }
-
-/* kurver og serier — kun de tre validerte kategoriske slottene brukes,
-   og hver serie har alltid en direkte etikett i tillegg til fargen */
-.figur-svg .f-kurve { fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-.figur-svg .f-linje { fill: none; stroke-width: 2; stroke-linecap: round; }
-.figur-svg .s1 { stroke: #2a78d6; }
-.figur-svg .s2 { stroke: #eb6834; }
-.figur-svg .s3 { stroke: #1baf7a; }
-.figur-svg .f-fyll.s1 { fill: #2a78d6; }
-.figur-svg .f-fyll.s2 { fill: #eb6834; }
-.figur-svg .f-fyll.s3 { fill: #1baf7a; }
-:root[data-theme="dark"] .figur-svg .s1 { stroke: #3987e5; }
-:root[data-theme="dark"] .figur-svg .s2 { stroke: #d95926; }
-:root[data-theme="dark"] .figur-svg .s3 { stroke: #199e70; }
-:root[data-theme="dark"] .figur-svg .f-fyll.s1 { fill: #3987e5; }
-:root[data-theme="dark"] .figur-svg .f-fyll.s2 { fill: #d95926; }
-:root[data-theme="dark"] .figur-svg .f-fyll.s3 { fill: #199e70; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .figur-svg .s1 { stroke: #3987e5; }
-  :root:not([data-theme="light"]) .figur-svg .s2 { stroke: #d95926; }
-  :root:not([data-theme="light"]) .figur-svg .s3 { stroke: #199e70; }
-  :root:not([data-theme="light"]) .figur-svg .f-fyll.s1 { fill: #3987e5; }
-  :root:not([data-theme="light"]) .figur-svg .f-fyll.s2 { fill: #d95926; }
-  :root:not([data-theme="light"]) .figur-svg .f-fyll.s3 { fill: #199e70; }
-}
-/* seriefargen som TEKST er for lys på lys flate; etiketter får derfor ink,
-   og fargen bæres av kurven de står ved */
-.figur-svg .f-serielabel { fill: var(--text-primary); stroke: none; }
-
-.figur-svg .f-omraade { fill: color-mix(in srgb, var(--f-aksent) 18%, transparent); stroke: none; }
-.figur-svg .f-punkt { fill: var(--f-strek); stroke: var(--surface-2); stroke-width: 2; }
-.figur-svg .f-punkt.apen { fill: var(--surface-2); stroke: var(--f-strek); }
-
-/* fortegnslinje */
-.figur-svg .f-fortegn { stroke-width: 2.4; stroke-linecap: round; fill: none; }
-.figur-svg .f-fortegn.positiv { stroke: var(--f-strek); }
-.figur-svg .f-fortegn.negativ { stroke: var(--f-strek); stroke-dasharray: 5 4; opacity: .62; }
-.figur-svg .f-fortegn-txt { font-size: 13px; font-weight: 700; fill: var(--text-secondary); }
-.figur-svg .f-nullpunkt { fill: var(--surface-2); stroke: var(--text-primary); stroke-width: 1.8; }
-.figur-svg .f-rad-navn { font-size: 12px; fill: var(--text-secondary); font-style: italic; }
-.figur-svg .f-rad-navn.sterk { font-weight: 700; fill: var(--text-primary); }
-
-/* vektor / kraftdiagram */
-.figur-svg .f-vektor { stroke-width: 2.6; stroke-linecap: round; }
-.figur-svg .f-kropp { fill: color-mix(in srgb, var(--f-aksent) 26%, var(--surface-1));
-  stroke: var(--f-strek); stroke-width: 1.6; }
-.figur-svg .f-kropp-txt { font-size: 12px; font-weight: 650; fill: var(--text-primary); }
-.figur-svg .f-vinkel { fill: none; stroke: var(--text-secondary); stroke-width: 1.4; }
-
-/* tallinje */
-.figur-svg .f-intervall { stroke-width: 4; stroke-linecap: butt; }
-.figur-svg .f-intervall-ende { fill: var(--surface-2); stroke-width: 2.4; }
-.figur-svg .f-intervall-ende.fylt.s1 { fill: #2a78d6; }
-.figur-svg .f-intervall-ende.fylt.s2 { fill: #eb6834; }
-.figur-svg .f-intervall-ende.fylt.s3 { fill: #1baf7a; }
-
-/* flyt */
-.figur-svg .f-flytboks {
-  fill: color-mix(in srgb, var(--f-aksent) 13%, var(--surface-1));
-  stroke: color-mix(in srgb, var(--f-strek) 48%, transparent); stroke-width: 1.4;
-}
-.figur-svg .f-boks-txt { font-size: 12px; font-weight: 600; fill: var(--text-primary); }
-.figur-svg .f-boks-note { font-size: 10.5px; fill: var(--text-secondary); }
-.figur-svg .f-flytnr { fill: var(--f-strek); }
-.figur-svg .f-flytnr-txt { font-size: 11.5px; font-weight: 700; fill: var(--surface-1); }
-.figur-svg .f-tilbake { fill: none; stroke: var(--text-muted); stroke-width: 1.6; stroke-dasharray: 5 4; }
-.figur-svg .f-tilbake-pil { stroke: var(--text-muted); stroke-width: 1.6; fill: var(--text-muted); }
-.figur-svg .f-tilbake-txt { font-size: 10.5px; fill: var(--text-muted); font-weight: 550; }
-
-/* syklus */
-.figur-svg .f-syklusbue { fill: none; stroke: color-mix(in srgb, var(--f-strek) 70%, transparent); stroke-width: 2.2; }
-.figur-svg .f-syklusbue.f-fyll { fill: color-mix(in srgb, var(--f-strek) 70%, transparent); stroke: none; }
-.figur-svg .f-syklusnode {
-  fill: color-mix(in srgb, var(--f-aksent) 20%, var(--surface-1));
-  stroke: var(--f-strek); stroke-width: 1.8;
-}
-.figur-svg .f-syklusnode-txt { font-size: 11px; font-weight: 700; fill: var(--text-primary); }
-.figur-svg .f-syklussenter { fill: var(--surface-1); stroke: var(--grid); stroke-width: 1.4; }
-.figur-svg .f-senter-txt { font-size: 12px; font-weight: 650; fill: var(--text-secondary); }
-
-/* energinivåer */
-.figur-svg .f-niva { stroke: var(--f-strek); stroke-width: 2.2; stroke-linecap: round; }
-.figur-svg .f-niva.sterk { stroke-width: 3.2; }
-.figur-svg .f-niva-txt { font-size: 11px; fill: var(--text-secondary); }
-.figur-svg .f-overgang { stroke-width: 2; }
-
-/* stolper */
-.figur-svg .f-stolpe { fill: var(--f-strek); stroke: none; }
-.figur-svg .f-stolpe-txt { font-size: 11px; font-weight: 650; fill: var(--text-primary); }
-
-/* metodeliste */
-.metode { padding: 14px 16px; text-decoration: none; display: block; }
-.metode h4 { font-size: 15.5px; }
-.metode p { font-size: 13.5px; color: var(--text-secondary); margin: 3px 0 0; }
-
-/* fremdriftstabell (tekstalternativ til målerne) */
-details.tabellvisning { margin-top: 12px; }
-details.tabellvisning summary {
-  font-size: 13px; color: var(--text-secondary); cursor: pointer; font-weight: 550;
-  list-style: none; display: inline-flex; align-items: center; gap: 6px;
-}
-details.tabellvisning summary::-webkit-details-marker { display: none; }
-details.tabellvisning summary::before { content: "▸"; color: var(--text-muted); }
-details.tabellvisning[open] summary::before { content: "▾"; }
-details.tabellvisning table { width: 100%; border-collapse: collapse; margin-top: 8px;
-  font-size: 13.5px; }
-details.tabellvisning th, details.tabellvisning td {
-  padding: 6px 8px; border-bottom: 1px solid var(--grid); text-align: left; }
-details.tabellvisning td:last-child, details.tabellvisning th:last-child {
-  text-align: right; font-variant-numeric: tabular-nums; }
-
-@media (min-width: 720px) {
-  .fagliste { grid-template-columns: 1fr 1fr; }
-  nav.tabbar a { font-size: 11.5px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
-  .kort { transition: none !important; }
-}
-
-/* slutt */
-  body { margin: 0; font: 15px/1.5 system-ui, sans-serif; }
+<style id="egen">
+  body { margin: 0; font: 15px/1.5 system-ui, sans-serif; background: var(--page, #fff);
+         color: var(--text-primary, #000); }
   .kol { display: flex; align-items: flex-start; }
   .side { width: 393px; padding: 14px; box-sizing: border-box; }
   h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em;
@@ -674,10 +19,22 @@ details.tabellvisning td:last-child, details.tabellvisning th:last-child {
   #status { position: fixed; right: 8px; top: 8px; z-index: 9;
             background: #000; color: #0f0; font: 12px monospace; padding: 6px 10px; border-radius: 6px; }
 </style>
+<!-- Stilen hentes fra index.html ved kjoring, saa testsiden aldri kan bli
+     utdatert naar nye figurklasser legges til. -->
+<script>
+  document.write('<style id="appstil"></style>');
+</script>
 <body>
 <div id="status">…</div>
 <div class="kol"><div class="side" id="lys"></div></div>
-<script>
+<script type="module">
+const appstil = document.getElementById("appstil");
+{
+  const idx = await (await fetch("../index.html")).text();
+  const m = idx.match(/<style>([\s\S]*?)<\/style>/);
+  appstil.textContent = m ? m[1] : "";
+}
+
 const FIGURER = [
   ["matematikk", {
     type: "graf", tittel: "Tangenten til f i x = 1",
@@ -817,6 +174,67 @@ const FIGURER = [
       { navn: "Førstehånds­forbrukere", verdi: 2000 },
       { navn: "Andrehånds­forbrukere", verdi: 200 },
       { navn: "Tredjehånds­forbrukere", verdi: 20 },
+    ],
+  }],
+
+  ["biologi", {
+    type: "hierarki", tittel: "Klassifisering av mennesket",
+    forklaring: "Hvert nivå ligger inni det over: alle primater er pattedyr, alle pattedyr er ryggstrengdyr. Bare art og slekt skrives i artsnavnet.",
+    nivaaer: [
+      { navn: "Domene", eksempel: "Eukaryoter" },
+      { navn: "Rike", eksempel: "Dyr" },
+      { navn: "Rekke", eksempel: "Ryggstrengdyr" },
+      { navn: "Klasse", eksempel: "Pattedyr" },
+      { navn: "Orden", eksempel: "Primater" },
+      { navn: "Slekt", eksempel: "Homo" },
+      { navn: "Art", eksempel: "Homo sapiens" },
+    ],
+  }],
+  ["kjemi", {
+    type: "spektrum", tittel: "pH-skalaen", enhet: "pH", min: 0, max: 14,
+    forklaring: "Hvert trinn på skalaen er en tidobling av konsentrasjonen av oksoniumioner. pH 3 er altså 10 000 ganger surere enn pH 7.",
+    band: [
+      { fra: 0, til: 3, navn: "sterkt surt", verdi: "magesyre" },
+      { fra: 3, til: 6, navn: "surt", verdi: "regn" },
+      { fra: 6, til: 8, navn: "nøytralt", verdi: "blod" },
+      { fra: 8, til: 11, navn: "basisk", verdi: "såpe" },
+      { fra: 11, til: 14, navn: "sterkt basisk", verdi: "lut" },
+    ],
+  }],
+  ["kjemi", {
+    type: "atom", tittel: "Natriumatomet", grunnstoff: "Na",
+    forklaring: "Natrium har ett elektron i ytterste skall. Det er derfor det gir bort ett elektron og blir Na⁺ med edelgasstruktur.",
+    protoner: 11, noytroner: 12, skall: [2, 8, 1], valens: 1,
+    skallnavn: ["K", "L", "M"],
+  }],
+  ["kjemi", {
+    type: "molekyl", tittel: "Vannmolekylet", sentral: "O",
+    forklaring: "To ledige elektronpar på oksygen presser bindingene sammen, så vinkelen blir 104,5° og ikke 109,5°. Det gjør molekylet polart.",
+    ligander: ["H", "H"], geometri: "vinklet", ledigePar: 2, vinkel: "104,5°",
+  }],
+  ["fysikk", {
+    type: "krets", tittel: "To motstander i parallell",
+    forklaring: "Begge grenene har full spenning over seg. Den med minst resistans trekker mest strøm.",
+    kilde: { navn: "12 V" },
+    grener: [[{ navn: "R₁", verdi: "4 Ω" }], [{ navn: "R₂", verdi: "6 Ω" }]],
+    strom: "I = I₁ + I₂ = 3,0 A + 2,0 A = 5,0 A",
+  }],
+  ["fysikk", {
+    type: "krets", tittel: "Tre motstander i serie",
+    forklaring: "Samme strøm går gjennom alle tre. Spenningen deles i forhold til resistansen.",
+    kilde: { navn: "9 V" },
+    grener: [[{ navn: "R₁", verdi: "2 Ω" }, { navn: "R₂", verdi: "3 Ω" }, { navn: "R₃", verdi: "4 Ω" }]],
+    strom: "I = 9 V / 9 Ω = 1,0 A",
+  }],
+  ["biologi", {
+    type: "sammenlikning", tittel: "Prokaryot og eukaryot celle",
+    forklaring: "Den viktigste forskjellen er cellekjernen. Alt det andre følger av at eukaryoter deler cellen inn i rom med egne oppgaver.",
+    kolonner: ["Prokaryot", "Eukaryot"],
+    rader: [
+      { egenskap: "Arvestoff", venstre: "Fritt i cytoplasmaet, ett ringformet kromosom", hoyre: "Inne i cellekjernen, flere lineære kromosomer" },
+      { egenskap: "Organeller", venstre: "Ingen membranomsluttede", hoyre: "Mitokondrier, ER, Golgi og flere" },
+      { egenskap: "Størrelse", venstre: "1–5 µm", hoyre: "10–100 µm" },
+      { egenskap: "Ribosomer", venstre: "70S", hoyre: "80S i cytoplasmaet" },
     ],
   }],
 ];
