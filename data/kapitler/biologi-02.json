@@ -1,0 +1,252 @@
+{
+  "fag": "biologi",
+  "nr": 2,
+  "tittel": "Systematikk og biologisk mangfold",
+  "intro": "Systematikk handler om å gi organismene navn og plassere dem i et system som viser hvordan de er i slekt. I dette kapittelet lærer du hva en art egentlig er, hvordan de vitenskapelige navnene og nivåene fra domene til art fungerer, hvorfor DNA har endret systemet — og hvordan du bruker en bestemmelsesnøkkel og leser et fylogenetisk tre.",
+
+  "kompakt": {
+    "punkter": [
+      "Systematikk gir organismene navn og plasserer dem i et hierarki som skal gjenspeile evolusjonært slektskap.",
+      "Det biologiske artsbegrepet: en art er individer som under naturlige forhold kan formere seg med hverandre og få fruktbart avkom, og som er reproduktivt isolert fra andre slike grupper.",
+      "Artsbegrepet passer dårlig på bakterier, fossiler og arter som hybridiserer, så biologene bruker også morfologiske, økologiske og genetiske kriterier.",
+      "Variasjon innenfor en art skyldes både arv (mutasjoner, meiose og befruktning) og miljø, og gjør at individer av samme art kan se svært ulike ut.",
+      "Binomisk nomenklatur (Linné): slektsnavn med stor forbokstav pluss artsepitet med liten, skrevet i kursiv — Homo sapiens.",
+      "Nivåene i systemet er domene, rike, rekke, klasse, orden, familie, slekt, art. Jo lavere nivå to arter deler, jo nærmere er slektskapet.",
+      "Tre domener: bakterier, arker og eukaryoter. Seks riker: bakterier, arker, protister, sopp, planter og dyr.",
+      "Virus står utenfor systemet fordi de ikke er celler og ikke har eget stoffskifte eller egen formering utenfor en vertscelle.",
+      "Homologe trekk har felles opphav og viser slektskap. Analoge trekk har samme funksjon men ulikt opphav, og viser bare like krav fra miljøet.",
+      "I et fylogenetisk tre leser du slektskap ut av forgreiningspunktene (nodene), ikke ut av hvor nær hverandre artene tilfeldigvis står."
+    ],
+    "formler": []
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Hva er egentlig en art?",
+        "html": "<p>Grunnenheten i all systematikk er <strong>arten</strong>, og den er vanskeligere å definere enn du kanskje tror. Det vanligste utgangspunktet er det <strong>biologiske artsbegrepet</strong>: en art er en gruppe individer som under naturlige forhold kan formere seg med hverandre og få <em>fruktbart</em> avkom, og som er reproduktivt isolert fra andre slike grupper.</p><p>Ordet «fruktbart» er nøkkelen. Hest og esel kan parre seg og få et muldyr, men muldyret er nesten alltid sterilt. Genene føres derfor ikke videre, de to genpuljene holdes atskilt, og hest og esel er to arter.</p><p>Problemet er at definisjonen ikke passer overalt:</p><ul><li>Bakterier og arker formerer seg ved todeling, uten kjønnet formering i det hele tatt.</li><li>Fossiler kan ikke testes for om de kunne fått avkom sammen.</li><li>Mange planter, og en del dyr, får fruktbare hybrider i naturen.</li></ul><p>Derfor bruker biologene flere artsbegrep ved siden av hverandre: det <strong>morfologiske</strong> (like ytre og indre trekk), det <strong>økologiske</strong> (samme rolle og krav i naturen) og det <strong>genetiske</strong> eller fylogenetiske (egen utviklingslinje med liten DNA-forskjell internt). I praksis vurderer man flere kriterier samtidig og ser hvilken vei de fleste peker. Arten er altså en modell vi legger på naturen, ikke en ferdig eske naturen har laget selv.</p>"
+      },
+      {
+        "tittel": "Variasjon innenfor arten",
+        "html": "<p>Ingen to individer av samme art er helt like. <strong>Variasjonen</strong> har to kilder. Den ene er genetisk: mutasjoner lager nye varianter av genene, og meiose og befruktning stokker kortene på nytt i hver generasjon. Den andre er miljøet: samme arveanlegg kan gi ulik fenotype alt etter næring, lys, temperatur og plass. En løvetann på en tørr grusplass blir lav og småbladet, mens et individ med samme arveanlegg i fet jord blir stort og frodig.</p><p>Variasjonen gjør artsbestemmelse krevende, for du kan møte individer av samme art som ser helt forskjellige ut:</p><ul><li><strong>Kjønnsdimorfisme:</strong> orrhanen er blåsvart med lyrehale, orrhøna er brunspraglet — samme art.</li><li><strong>Livsstadier:</strong> rumpetroll og voksen frosk, larve og sommerfugl.</li><li><strong>Årstid og vokseplass:</strong> vinterpels og sommerpels, sol- og skyggeblad på samme tre.</li></ul><p>Motsatt finnes <strong>kryptiske arter</strong> som er nesten umulige å skille på utseende, men som DNA-analyser viser er ulike arter. Når variasjonen innenfor en art er geografisk og systematisk, kan gruppa få rang som <strong>underart</strong> og et tredje navneledd: <em>Ursus arctos arctos</em> er den europeiske brunbjørnen.</p><p>Variasjon er ikke støy. Den er råstoffet naturlig utvalg arbeider med, og den utgjør det <strong>genetiske mangfoldet</strong> — det innerste nivået av biologisk mangfold.</p>"
+      },
+      {
+        "tittel": "Binomisk nomenklatur: to navn, ett felles språk",
+        "html": "<p>Norske navn er upålitelige. Den samme planten heter hvitveis i ett distrikt og kvitsymre i et annet, og engelsk <em>elk</em> betyr elg i Europa og wapiti i Nord-Amerika. Skal forskere i ulike land snakke om samme organisme, må navnet være entydig.</p><p>Løsningen er <strong>binomisk nomenklatur</strong>, systematisert av svensken Carl von Linné (1707–1778) i verket <em>Systema Naturae</em>. Hver art får et todelt vitenskapelig navn på latinisert form:</p><ul><li><strong>Slektsnavnet</strong> først, alltid med stor forbokstav: <em>Ursus</em>.</li><li><strong>Artsepitetet</strong> etter, alltid med liten forbokstav — også når det er oppkalt etter en person eller et sted: <em>arctos</em>.</li><li>Hele navnet skrives i kursiv, eller understrekes når du skriver for hånd.</li></ul><p>Slektsnavnet kan forkortes etter at det er nevnt én gang: <em>Homo sapiens</em> blir <em>H. sapiens</em>. Artsepitetet står aldri alene, for det er ikke unikt: <em>vulgaris</em> og <em>officinalis</em> går igjen i hundrevis av navn.</p><p>Navnet gir også informasjon gratis. To arter med samme slektsnavn hører til samme slekt og er dermed nære slektninger. Ser du <em>Vulpes vulpes</em> og <em>Vulpes lagopus</em>, vet du med én gang at rødrev og fjellrev er nærmere i slekt med hverandre enn med <em>Canis lupus</em>.</p>"
+      },
+      {
+        "tittel": "Klassifikasjonsnivåene",
+        "html": "<p>Systemet er hierarkisk: hver gruppe ligger inne i en større gruppe, og gruppene overlapper aldri. Fra størst til minst er nivåene <strong>domene, rike, rekke, klasse, orden, familie, slekt og art</strong>. Lag en huskesetning, for eksempel: «Den rare reven kunne ofte fange små alliker.» En gruppe på et hvilket som helst nivå kalles et <strong>takson</strong> (flertall taksa).</p><p>Slik klassifiseres mennesket:</p><table><thead><tr><th>Nivå</th><th>Takson</th></tr></thead><tbody><tr><td>Domene</td><td>Eukaryoter</td></tr><tr><td>Rike</td><td>Dyr</td></tr><tr><td>Rekke</td><td>Ryggstrengdyr</td></tr><tr><td>Klasse</td><td>Pattedyr</td></tr><tr><td>Orden</td><td>Primater</td></tr><tr><td>Familie</td><td>Menneskeaper</td></tr><tr><td>Slekt</td><td>Homo</td></tr><tr><td>Art</td><td>Homo sapiens</td></tr></tbody></table><p>Jo lenger ned du kommer, jo færre arter rommer taksonet og jo nærmere er slektskapet. Det gir deg en enkel arbeidsregel når du skal sammenligne arter: <strong>finn det laveste nivået de deler.</strong> To arter i samme slekt er nærmere i slekt enn to arter som bare deler klasse.</p><p>For planter brukes ofte ordet divisjon i stedet for rekke, og store grupper deles videre i underrekker, overfamilier og underarter. Nivåene er merkelapper vi har laget; det som finnes «der ute», er artene og forgreiningsmønsteret i evolusjonen.</p>"
+      },
+      {
+        "tittel": "Tre domener og seks riker",
+        "html": "<p>Øverst deles alt liv i tre <strong>domener</strong>. Inndelingen kom på plass da Carl Woese på slutten av 1970-tallet sammenlignet rRNA fra ribosomene og oppdaget at de organismene vi kalte bakterier, i virkeligheten var to helt ulike grupper: <strong>bakterier</strong> og <strong>arker</strong> (arkebakterier). Den tredje gruppa er <strong>eukaryotene</strong>. Arkene har celler som ser prokaryote ut, men gener og proteinsyntese som ligner mer på eukaryotenes.</p><p>Under domenene ligger seks riker:</p><table><thead><tr><th>Rike</th><th>Celletype</th><th>Ernæring</th><th>Eksempler</th></tr></thead><tbody><tr><td>Bakterier</td><td>prokaryot, cellevegg med peptidoglykan</td><td>både autotrof og heterotrof</td><td>melkesyrebakterier, kolibakterier</td></tr><tr><td>Arker</td><td>prokaryot, cellevegg uten peptidoglykan</td><td>ofte kjemoautotrof</td><td>metanprodusenter, salt- og varmekjære arter</td></tr><tr><td>Protister</td><td>eukaryot, oftest encellet</td><td>begge deler</td><td>amøbe, tøffeldyr, alger</td></tr><tr><td>Sopp</td><td>eukaryot, cellevegg av kitin</td><td>heterotrof, tar opp oppløst næring</td><td>gjær, muggsopp, kantarell</td></tr><tr><td>Planter</td><td>eukaryot, cellevegg av cellulose</td><td>autotrof, fotosyntese</td><td>moser, bregner, gran, tusenfryd</td></tr><tr><td>Dyr</td><td>eukaryot, ingen cellevegg</td><td>heterotrof, spiser næringen</td><td>maneter, insekter, fisk, pattedyr</td></tr></tbody></table><p>Legg merke til at riket protister er en <strong>restgruppe</strong>: alle eukaryoter som ikke er sopp, planter eller dyr. Det er praktisk, men ikke en naturlig gruppe.</p><p>Virus står helt utenfor systemet. De er ikke celler, har ikke eget stoffskifte og kan ikke formere seg uten en vertscelle.</p>"
+      },
+      {
+        "tittel": "Taksonomiske kriterier i endring: fra morfologi til DNA",
+        "html": "<p>Linné klassifiserte etter ytre likhet, hundre år før Darwin. Han grupperte det som <em>så</em> likt ut. Etter Darwin fikk systemet en forklaring: likhet skyldes felles opphav, og systemet skal derfor vise <strong>slektskap</strong>.</p><p>Da blir det avgjørende å skille to slags likhet:</p><ul><li><strong>Homologe</strong> trekk har samme opprinnelse, men kan ha ulik funksjon. Forlemmet hos menneske, hval, hest og flaggermus har de samme knoklene i samme rekkefølge. Homologier viser slektskap.</li><li><strong>Analoge</strong> trekk har samme funksjon, men ulik opprinnelse. Vingen til en bie og vingen til en flaggermus, eller strømlinjeformen hos hai og delfin. Slike likheter oppstår ved <strong>konvergent evolusjon</strong> når miljøet stiller samme krav, og de sier ingenting om nært slektskap.</li></ul><p>Fra 1990-tallet ble DNA-sammenligning det viktigste kriteriet, gjerne kombinert med fossiler, embryologi og morfologi. Ved <strong>DNA-strekkoding</strong> leser man en kort, standardisert sekvens — hos dyr en bit på om lag 650 basepar av genet CO1 — og sammenligner den med en database over kjente arter.</p><p>Molekylære data har flyttet på mye: hvalene ligger inne blant klovdyrene med flodhesten som nærmeste nålevende slektning, fuglene ligger inne blant dinosaurene og dermed innenfor krypdyrene, og soppene er nærmere dyrene enn plantene. En gruppe som består av en stamform og <em>alle</em> etterkommerne, kalles <strong>monofyletisk</strong>. Er noen etterkommere holdt utenfor, som fuglene i «krypdyr», er gruppa <strong>parafyletisk</strong> — og målet i moderne systematikk er å bruke bare monofyletiske grupper.</p>"
+      },
+      {
+        "tittel": "Bestemmelsesnøkler og fylogenetiske trær",
+        "html": "<p>En <strong>bestemmelsesnøkkel</strong> er verktøyet du bruker i felt for å finne ut hvilken art du har foran deg. Den vanligste typen er <em>dikotom</em>: i hvert steg får du to alternativer som utelukker hverandre, og valget sender deg videre til et nytt nummer eller gir deg artsnavnet. Tre kjøreregler gjør at det går bra:</p><ul><li>Les <strong>begge</strong> alternativene før du velger.</li><li>Bruk stabile kjennetegn — antall og plassering av blomsterdeler, form på blad og nåler — og ikke farge, høyde eller vokseplass, som varierer.</li><li>Sjekk flere individer, og kontroller svaret mot en beskrivelse eller et bilde til slutt. Nøkkelen gir et forslag, ikke et bevis.</li></ul><p>Et <strong>fylogenetisk tre</strong> viser hypotesen om hvordan artene er i slekt. Rota er den felles stamformen. Hvert forgreiningspunkt, en <strong>node</strong>, er den siste felles stamformen til alt som ligger over. Greinspissene er artene, som oftest nålevende arter.</p><p>Slik leser du treet riktig: to arter er nære slektninger når de møtes i en <em>ung</em> node, altså langt ute i treet. To grupper som skiller lag i samme node, er <strong>søstergrupper</strong>. Rekkefølgen langs toppen betyr derimot ingenting — du kan svinge greinene rundt en node som mobiler i taket uten å endre informasjonen. Ingen greinspiss er «mer utviklet» enn en annen: alle nålevende arter har hatt like lang tid siden rota.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Case: er isbjørn og brunbjørn to arter?",
+        "oppgave": "<p>Isbjørn (<em>Ursus maritimus</em>) og brunbjørn (<em>Ursus arctos</em>) kan parre seg der leveområdene overlapper i Arktis, og noen av hybridene har vist seg å kunne få egne unger. Likevel står de i alle artslister som to arter.</p><ol><li>Hvilket problem skaper dette for det biologiske artsbegrepet?</li><li>Vurder de to bjørnene mot fem artskriterier.</li><li>Konkluder, og forklar hva casen sier om artsbegrepet generelt.</li></ol>",
+        "losning": "<p><strong>Steg 1 — problemet.</strong> Det biologiske artsbegrepet krever at to arter <em>ikke</em> kan få fruktbart avkom sammen. Her får de fruktbart avkom. Tatt helt bokstavelig skulle isbjørn og brunbjørn derfor være én art. Kriteriet svikter fordi det er formulert som et ja/nei-spørsmål, mens reproduktiv isolasjon i naturen er et spørsmål om <em>grad</em>.</p><p><strong>Steg 2 — vurdering mot fem kriterier.</strong></p><table><thead><tr><th>Kriterium</th><th>Observasjon</th><th>Peker mot</th></tr></thead><tbody><tr><td>Biologisk (fruktbart avkom?)</td><td>Ja, i noen dokumenterte tilfeller</td><td>én art</td></tr><tr><td>Reproduktiv isolasjon i praksis</td><td>Hybrider er svært sjeldne; artene parrer seg til ulik tid og på ulike steder — isbjørnen ute på havisen</td><td>to arter</td></tr><tr><td>Morfologisk</td><td>Isbjørn: hvit pels, lang hals, smalt hode, hårete såler, spisse kjøtteter-tenner. Brunbjørn: brun pels, skulderpukkel, brede kinntenner for planteføde</td><td>to arter</td></tr><tr><td>Økologisk</td><td>Isbjørnen er nesten rein kjøtteter og jakter sel på havis; brunbjørnen er altspiser i skog og fjell</td><td>to arter</td></tr><tr><td>Genetisk og fylogenetisk</td><td>Linjene skilte lag for flere hundre tusen år siden og har hatt lite genflyt siden</td><td>to arter</td></tr></tbody></table><p><strong>Steg 3 — konklusjon.</strong> Fire av fem kriterier peker på to arter, og det ene som peker motsatt, gjelder unntakstilfeller. Konklusjonen blir <em>to arter</em>: en sjelden hybridisering som nesten ikke gir genflyt, opphever ikke artsgrensa.</p><p><strong>Hva casen lærer oss.</strong> Artsbegrepet er en modell, og modeller har grenser. Sammenlign med hest og esel, der kriteriet gir et helt rent svar fordi muldyret er sterilt. Her må du bruke flere kriterier og begrunne. Merk også at grensa kan være i bevegelse: når havisen krymper, møtes de to bjørnene oftere, og da kan hybridiseringen øke.</p>"
+      },
+      {
+        "tittel": "Klassifisering og hvem som er nærmest i slekt",
+        "oppgave": "<p>Du har fire arter: rødrev (<em>Vulpes vulpes</em>), fjellrev (<em>Vulpes lagopus</em>), ulv (<em>Canis lupus</em>) og brunbjørn (<em>Ursus arctos</em>).</p><ol><li>Klassifiser rødreven gjennom alle åtte nivåene.</li><li>Rangér de tre andre artene etter hvor nært de er i slekt med rødreven, og begrunn med nivåer.</li><li>En elev skriver at fjellreven må være nær slektning av hare, siden begge skifter til hvit vinterpels. Hva er galt med argumentet?</li></ol>",
+        "losning": "<p><strong>Steg 1 — klassifisering av rødrev.</strong></p><table><thead><tr><th>Nivå</th><th>Takson</th></tr></thead><tbody><tr><td>Domene</td><td>Eukaryoter</td></tr><tr><td>Rike</td><td>Dyr</td></tr><tr><td>Rekke</td><td>Ryggstrengdyr</td></tr><tr><td>Klasse</td><td>Pattedyr</td></tr><tr><td>Orden</td><td>Rovdyr (Carnivora)</td></tr><tr><td>Familie</td><td>Hundefamilien (Canidae)</td></tr><tr><td>Slekt</td><td>Vulpes</td></tr><tr><td>Art</td><td>Vulpes vulpes</td></tr></tbody></table><p><strong>Steg 2 — rangering.</strong> Regelen er: finn det laveste nivået artene deler. Jo lenger ned i hierarkiet fellesnivået ligger, jo nærmere er slektskapet.</p><ul><li><strong>Fjellrev</strong> deler alle nivåer til og med slekt (<em>Vulpes</em>). Det ser du rett ut av navnet. Nærmest i slekt.</li><li><strong>Ulv</strong> deler til og med familie (hundefamilien), men står i slekta <em>Canis</em>. Nest nærmest.</li><li><strong>Brunbjørn</strong> deler til og med orden (rovdyr), men hører til bjørnefamilien (Ursidae). Fjernest av de tre.</li></ul><p>Rekkefølgen blir altså fjellrev, ulv, brunbjørn.</p><p><strong>Steg 3 — feilen i argumentet.</strong> Hvit vinterpels er en <em>tilpasning</em> til snødekte omgivelser, og den har oppstått uavhengig i flere pattedyrlinjer: hos fjellrev, hare, røyskatt og fjellrype blant fuglene. Det er en <strong>analogi</strong>, resultat av konvergent evolusjon. Hare hører til hareordenen og deler bare klasse (pattedyr) med fjellreven — de er altså langt fra hverandre. Slektskap må bygges på <strong>homologier</strong> og DNA, for eksempel tannsettet og skjelettbygningen, som plasserer fjellreven trygt i hundefamilien.</p>"
+      },
+      {
+        "tittel": "Bruk av dikotom bestemmelsesnøkkel på bartrær",
+        "oppgave": "<p>Bruk nøkkelen under på de to prøvene.</p><ol><li>Nålene sitter to og to i knipper på korte skudd, og er 4–7 cm lange: <strong>furu</strong> (<em>Pinus sylvestris</em>). Nålene sitter enkeltvis eller i kranser rett på skuddet: gå til 2.</li><li>Nålene sitter i kranser med tre nåler, er stive og stikkende og har en bred lys stripe på oversiden: <strong>einer</strong> (<em>Juniperus communis</em>). Nålene sitter enkeltvis: gå til 3.</li><li>Nålene er stive, spisse og nesten firkantede i tverrsnitt, og står ut på alle sider av skuddet: <strong>gran</strong> (<em>Picea abies</em>). Nålene er flate, myke og ikke stikkende, mørkegrønne over og lysere under, ordnet i to rader ut til sidene: <strong>barlind</strong> (<em>Taxus baccata</em>).</li></ol><p><strong>Prøve A:</strong> kvist med litt vridde nåler, cirka 5 cm lange, som sitter parvis på små korte skudd. Barken øverst på treet er rødgul.</p><p><strong>Prøve B:</strong> kvist med enkeltvise, flate og myke nåler i to rader ut til sidene, mørkegrønne på oversiden og lysere under. På greina sitter et frø i en rød, kjøttfull kopp.</p>",
+        "losning": "<p><strong>Prøve A.</strong></p><ul><li>Steg 1: nålene sitter <em>to og to i knipper</em> og er cirka 5 cm lange. Første alternativ passer, det andre («enkeltvis eller i kranser») passer ikke. Svaret er <strong>furu</strong>, <em>Pinus sylvestris</em>.</li><li>Vi trenger ikke gå videre — nøkkelen er ferdig ved steg 1. Den rødgule barken øverst på stammen er et typisk trekk hos furu og støtter bestemmelsen, men den er ikke en del av nøkkelen.</li></ul><p><strong>Prøve B.</strong></p><ul><li>Steg 1: nålene sitter enkeltvis, ikke i knipper på to. Alternativ to gjelder: gå til 2.</li><li>Steg 2: det er ikke kranser med tre stive, stikkende nåler. Nålene sitter enkeltvis: gå til 3.</li><li>Steg 3: nålene er flate, myke og ikke stikkende, med lysere underside og i to rader. Det utelukker gran, som har stive, firkantede nåler på alle sider av skuddet. Svaret er <strong>barlind</strong>, <em>Taxus baccata</em>.</li><li>Kontroll: den røde, kjøttfulle koppen rundt frøet er barlindens frøkappe. Bartrær ellers har kongler, så dette bekrefter bestemmelsen. Barlind er giftig i alle deler unntatt selve frøkappa, og arten er fredet i Norge — se, ikke smak, og ikke ta med hjem.</li></ul><p><strong>Tre feller å unngå.</strong> For det første: les alltid begge alternativene, ellers velger du det første som «kan passe». For det andre: sjekk flere skudd. Nåler på skyggeskudd og på toppskudd kan sitte annerledes enn de typiske. For det tredje: skriv ned hvilke steg du valgte (1b, 2b, 3b). Da kan du finne igjen hvor det gikk galt hvis svaret viser seg å være feil.</p>"
+      },
+      {
+        "tittel": "Lese et fylogenetisk tre",
+        "oppgave": "<p>Treet under er en forenklet hypotese om slektskapet mellom fire pattedyr. Innrykk viser forgreining: gruppene som står lengst inne, skilte lag sist.</p><ul><li>Rota — felles stamform for alle fire<ul><li>Sel</li><li>Klovdyr-linja<ul><li>Ku</li><li>Neste forgreining<ul><li>Flodhest</li><li>Hval</li></ul></li></ul></li></ul></li></ul><ol><li>Hvem er hvalens nærmeste nålevende slektning i treet?</li><li>Hval og sel er begge strømlinjeformede med svømmelemmer. Hva slags likhet er det?</li><li>En elev sier at kua er «mindre utviklet» enn hvalen fordi den greiner av tidligere. Kommenter.</li><li>Hva fikk forskerne til å flytte hvalen inn blant klovdyrene?</li></ol>",
+        "losning": "<p><strong>Spørsmål 1 — finn den yngste felles noden.</strong> Hval møter flodhest i den innerste, altså yngste, forgreiningen. Med ku møtes hvalen ett hakk lenger ute i tid, og med sel først helt nede ved rota. Nærmeste nålevende slektning er derfor <strong>flodhesten</strong>, og hval og flodhest er søstergrupper. Selv om sel står ved siden av hval i lista, betyr ikke det noe: rekkefølgen langs toppen kan byttes om ved å svinge greinene rundt en node.</p><p><strong>Spørsmål 2 — homologi eller analogi?</strong> Her må du dele opp. Selve forlemmet er <em>homologt</em> hos alle pattedyr; det er den samme knokkelrekka, arvet fra en felles stamform. Men at forlemmene er blitt svømmelemmer, og at kroppen er blitt strømlinjeformet, har skjedd <em>uavhengig</em> i de to linjene etter at de skilte lag. Det er en <strong>analogi</strong> — konvergent evolusjon, drevet av at vann stiller de samme kravene. Hvalens vannrette halefinne, som drives opp og ned, er dessuten en helt annen struktur enn selens bakre svømmelemmer.</p><p><strong>Spørsmål 3 — «mindre utviklet» finnes ikke.</strong> Kua og hvalen har hatt akkurat like lang tid siden rota; ingen av dem er en forgjenger for den andre. Et tre viser forgreining, ikke en rangstige. At en grein skiller lag tidlig, betyr bare at linjene har vært atskilt lenge.</p><p><strong>Spørsmål 4 — hva som endret synet.</strong> Morfologien lurte forskerne lenge, fordi hvalen ytre sett minner om andre sjødyr. Sammenligning av DNA og proteiner plasserte hvalene entydig inne blant klovdyrene, nærmest flodhest. Fossiler av tidlige hvaler med bakbein bekreftet det: de har det spesielle ankelbeinet som bare klovdyr har. Molekylære data og fossiler pekte samme vei, og systemet ble endret.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å skrive artsepitetet med stor forbokstav (Ursus Arctos) eller å bruke artsepitetet alene («sapiens»). Bare slektsnavnet har stor forbokstav, og artsepitetet betyr ingenting uten slektsnavnet foran.",
+      "Å blande rekkefølgen på nivåene, særlig å tro at rekke ligger under orden. Riktig er domene, rike, rekke, klasse, orden, familie, slekt, art.",
+      "Å bruke likhet i utseende som bevis på slektskap. Hai og delfin er strømlinjeformede av samme grunn, ikke fordi de er nære slektninger — det er en analogi, ikke en homologi.",
+      "Å lese fylogenetiske trær vannrett: å tro at arter som står ved siden av hverandre langs toppen er nærmest i slekt, eller at artene til høyre er «mer utviklede». Bare nodene bærer informasjon.",
+      "Å tro at mennesket har utviklet seg fra sjimpansen. Ingen nålevende art er stamform for en annen nålevende art — vi har en felles stamform som ikke lever i dag.",
+      "Å tro at arker bare er en slags bakterier fordi de kalles arkebakterier, og plassere dem i bakterieriket. De er et eget domene og et eget rike, og genene deres ligner mer på eukaryotenes."
+    ],
+
+    "tips": [
+      "Øv på å klassifisere to eller tre arter helt ut, fra domene til art. Det kommer nesten alltid en oppgave der du skal plassere en art i systemet eller rangere arter etter slektskap — og da er arbeidsregelen «finn det laveste felles nivået».",
+      "Får du en drøftingsoppgave om artsbegrepet, skriv alltid tre ting: definisjonen, ett eksempel som passer (hest og esel gir sterilt muldyr) og ett problemtilfelle (bakterier, fossiler eller hybridiserende planter). Da får du vist både kunnskap og drøfting.",
+      "Bruk fagordene homolog, analog, konvergent evolusjon, monofyletisk og parafyletisk når du forklarer hvorfor DNA har endret systematikken. Sensor ser etter nettopp disse ordene.",
+      "På praktisk prøve eller feltarbeid: skriv ned hvilke steg du valgte i nøkkelen (1a, 2b, 3a). Da kan du både vise framgangsmåten og spore feilen hvis bestemmelsen viser seg å være gal.",
+      "Vitenskapelige navn er gratis poeng: kursiv, stor forbokstav bare på slektsnavnet. Lær utenat 5–10 navn på arter fra kapitlene deres, gjerne norske arter som Picea abies, Homo sapiens og Ursus arctos."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Systematikk", "forklaring": "Læren om å gi organismene navn og ordne dem i grupper som viser hvordan de er i slekt med hverandre." },
+    { "begrep": "Takson", "forklaring": "En navngitt gruppe organismer på et hvilket som helst nivå i systemet, for eksempel pattedyr, hundefamilien eller Homo sapiens." },
+    { "begrep": "Biologisk artsbegrep", "forklaring": "En art er individer som under naturlige forhold kan formere seg med hverandre og få fruktbart avkom, og som er reproduktivt isolert fra andre grupper." },
+    { "begrep": "Morfologisk artsbegrep", "forklaring": "Å definere arten ut fra ytre og indre bygningstrekk. Nyttig for fossiler og organismer uten kjønnet formering, men svikter ved kryptiske arter." },
+    { "begrep": "Reproduktiv isolasjon", "forklaring": "At to grupper i praksis ikke utveksler gener, fordi de parrer seg til ulik tid eller på ulike steder, ikke gjenkjenner hverandre, eller får sterilt avkom." },
+    { "begrep": "Hybrid", "forklaring": "Avkom av to ulike arter. Hybrider er ofte sterile, som muldyret, men i noen grupper er de fruktbare." },
+    { "begrep": "Underart", "forklaring": "En geografisk avgrenset og systematisk avvikende gruppe innenfor en art. Får et tredje navneledd, som Ursus arctos arctos." },
+    { "begrep": "Binomisk nomenklatur", "forklaring": "Linnés system der hver art får et todelt vitenskapelig navn: slektsnavn med stor forbokstav pluss artsepitet med liten, skrevet i kursiv." },
+    { "begrep": "Artsepitet", "forklaring": "Det andre leddet i det vitenskapelige navnet. Det er ikke unikt og kan ikke stå alene — sapiens betyr ingenting uten Homo." },
+    { "begrep": "Domene", "forklaring": "Det øverste nivået i systemet. De tre domenene er bakterier, arker og eukaryoter." },
+    { "begrep": "Rike", "forklaring": "Nivået under domene. De seks rikene er bakterier, arker, protister, sopp, planter og dyr." },
+    { "begrep": "Homologe organer", "forklaring": "Organer med samme opprinnelse hos ulike arter, selv om funksjonen kan være ulik — som forlemmene hos menneske, hval og flaggermus. Viser slektskap." },
+    { "begrep": "Analoge organer", "forklaring": "Organer med samme funksjon men ulik opprinnelse, som vingene til en bie og en flaggermus. Oppstår ved konvergent evolusjon og viser ikke slektskap." },
+    { "begrep": "Fylogenetisk tre", "forklaring": "En figur som viser hypotesen om slektskap mellom arter. Hver node er den siste felles stamformen til greinene over." },
+    { "begrep": "Monofyletisk gruppe", "forklaring": "En gruppe som består av en stamform og alle etterkommerne av den. Er noen etterkommere holdt utenfor, er gruppa parafyletisk, som «krypdyr» uten fuglene." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hvilken formulering er det biologiske artsbegrepet?",
+      "alternativer": [
+        "Alle individer som lever i samme økosystem og konkurrerer om de samme ressursene",
+        "Alle individer som er så like i utseende at de kan skilles fra andre grupper",
+        "Alle individer som under naturlige forhold kan formere seg med hverandre og få fruktbart avkom",
+        "Alle individer som har helt identisk arvestoff"
+      ],
+      "riktig": 2,
+      "forklaring": "To ting må stå der: «under naturlige forhold» og «fruktbart avkom». Alternativ 2 er det morfologiske artsbegrepet — et annet og eldre kriterium som lurer deg både ved kryptiske arter og ved kjønnsdimorfisme. Alternativ 4 er umulig: alle arter har genetisk variasjon innenfor seg."
+    },
+    {
+      "sporsmal": "Hvilken skrivemåte av det vitenskapelige navnet på brunbjørn følger reglene?",
+      "alternativer": ["ursus arctos", "Ursus Arctos", "arctos Ursus", "Ursus arctos"],
+      "riktig": 3,
+      "forklaring": "Slektsnavnet kommer først og har stor forbokstav, artsepitetet kommer etter og har liten — i tillegg skal navnet skrives i kursiv, eller understrekes for hånd. «Ursus Arctos» er den vanligste feilen: artsepitetet får aldri stor forbokstav, ikke selv om det er oppkalt etter en person eller et sted."
+    },
+    {
+      "sporsmal": "Hvilket nivå kommer rett under klasse?",
+      "alternativer": ["Familie", "Orden", "Rekke", "Slekt"],
+      "riktig": 1,
+      "forklaring": "Rekkefølgen er domene, rike, rekke, klasse, orden, familie, slekt, art — så under klasse ligger orden. Rekke er en klassisk felle her: den ligger over klasse, ikke under. Familie kommer ett hakk under orden."
+    },
+    {
+      "sporsmal": "Hvilke to av de seks rikene består av prokaryote organismer?",
+      "alternativer": ["Bakterier og arker", "Bakterier og protister", "Arker og sopp", "Protister og sopp"],
+      "riktig": 0,
+      "forklaring": "Prokaryot betyr at cellen mangler cellekjerne og membranomsluttede organeller, og det gjelder bakteriene og arkene — som også utgjør to av de tre domenene. Fella er å blande sammen encellet og prokaryot: protister som tøffeldyr og amøbe er encellede, men har både cellekjerne og organeller og er dermed eukaryote."
+    },
+    {
+      "sporsmal": "Hest og esel kan parre seg og få et muldyr, men muldyret er nesten alltid sterilt. Hva forteller det oss?",
+      "alternativer": [
+        "At hest og esel er samme art, siden de kan få avkom sammen",
+        "At hest og esel er to arter, fordi genene ikke føres videre gjennom avkommet",
+        "At muldyret er en underart av hest",
+        "At muldyret er en ny art som har oppstått ved hybridisering"
+      ],
+      "riktig": 1,
+      "forklaring": "Kravet i det biologiske artsbegrepet er fruktbart avkom. Et sterilt muldyr gir ingen genflyt mellom de to genpuljene, så hest og esel er reproduktivt isolert og dermed to arter. Alternativ 1 hopper over ordet «fruktbart». Alternativ 4 er umulig: en art må kunne formere seg videre, og et sterilt individ kan ikke danne noen ny art."
+    },
+    {
+      "sporsmal": "Hvilket trekk skiller riket sopp fra riket planter?",
+      "alternativer": [
+        "Sopp er prokaryote, planter er eukaryote",
+        "Sopp har ingen cellevegg, planter har cellevegg av cellulose",
+        "Sopp er heterotrofe og har cellevegg av kitin, planter er autotrofe og har cellevegg av cellulose",
+        "Sopp formerer seg med sporer, planter formerer seg bare med frø"
+      ],
+      "riktig": 2,
+      "forklaring": "Sopp kan ikke drive fotosyntese. De skiller ut enzymer og tar opp oppløst næring gjennom hyfene, og celleveggen er av kitin, ikke cellulose. Alternativ 4 er den mest fristende, men feil på to måter: sopp formerer seg med sporer, men det gjør også moser og bregner blant plantene."
+    },
+    {
+      "sporsmal": "Vingene til en flaggermus og vingene til en bie er …",
+      "alternativer": [
+        "homologe, fordi de har samme funksjon",
+        "homologe, fordi begge dyrene kan fly",
+        "analoge, og viser derfor at insekter og pattedyr er nære slektninger",
+        "analoge, fordi de har oppstått uavhengig av hverandre i to ulike utviklingslinjer"
+      ],
+      "riktig": 3,
+      "forklaring": "Flaggermusvingen er et ombygd forlem med de samme knoklene som armen din, mens insektvingen har en helt annen opprinnelse. Samme funksjon uten felles opphav er en analogi, resultat av konvergent evolusjon. Alternativ 3 bruker riktig begrep men trekker gal slutning: analogier sier ingenting om slektskap. Homolog betyr felles opprinnelse, ikke felles funksjon."
+    },
+    {
+      "sporsmal": "Hva gjør man ved DNA-strekkoding?",
+      "alternativer": [
+        "Sammenligner en kort, standardisert DNA-sekvens fra prøven med sekvenser i en database over kjente arter",
+        "Leser hele arvestoffet til organismen og sammenligner det med hele genomet til alle kjente arter",
+        "Måler hvor mye DNA en celle inneholder, og bruker mengden til å bestemme arten",
+        "Teller antall kromosomer i cellen og slår tallet opp i en tabell"
+      ],
+      "riktig": 0,
+      "forklaring": "Hos dyr brukes vanligvis en bit på om lag 650 basepar av genet CO1. Poenget er nettopp at en kort standardsekvens er nok, og at den kan leses fra små eller ødelagte prøver. Alternativ 2 er teknisk mulig, men unødvendig dyrt og tregt. Kromosomtall og DNA-mengde duger ikke: vidt forskjellige arter kan ha samme kromosomtall."
+    },
+    {
+      "sporsmal": "I et fylogenetisk tre står artene i denne rekkefølgen langs toppen: ku, flodhest, hval, sel. Hval og flodhest møtes i det yngste forgreiningspunktet i treet. Hvem er hvalens nærmeste slektning?",
+      "alternativer": [
+        "Sel, fordi sel står rett ved siden av hval i figuren",
+        "Ku, fordi ku og hval begge er pattedyr",
+        "Flodhest, fordi hval og flodhest møtes i den yngste noden",
+        "Det er umulig å avgjøre ut fra et fylogenetisk tre"
+      ],
+      "riktig": 2,
+      "forklaring": "Slektskap leses av nodene: den yngste felles noden gir den nærmeste slektningen, og hval og flodhest er søstergrupper. Alternativ 1 er den klassiske lesefeilen — rekkefølgen langs toppen kan endres ved å svinge greinene rundt en node uten at treet betyr noe annet. At ku og hval begge er pattedyr, er sant, men det gjelder alle fire artene og skiller derfor ingenting."
+    },
+    {
+      "sporsmal": "Hvorfor sier biologene at protistene ikke er en naturlig, monofyletisk gruppe?",
+      "alternativer": [
+        "Fordi protistene mangler cellekjerne og egentlig hører til bakteriene",
+        "Fordi gruppa er definert som de eukaryotene som ikke er sopp, planter eller dyr, slik at stamformen til protistene også er stamform for de tre andre rikene",
+        "Fordi alle protister er encellede, og encellede organismer kan ikke danne en gruppe",
+        "Fordi protistene ikke har DNA som kan sammenlignes med DNA hos andre riker"
+      ],
+      "riktig": 1,
+      "forklaring": "En monofyletisk gruppe er en stamform pluss alle etterkommerne. Protistene er en restgruppe der sopp, planter og dyr er tatt ut, og da blir gruppa parafyletisk. Alternativ 1 er feil fordi protister er eukaryote, med kjerne og organeller. Alternativ 3 har dessuten et galt premiss: flere alger er flercellede."
+    },
+    {
+      "sporsmal": "Du skal bestemme en plante med en dikotom nøkkel. Hvilket kjennetegn er tryggest å bygge på?",
+      "alternativer": [
+        "Hvor høy planten er",
+        "Hvilken farge blomsten har på det eksemplaret du har funnet",
+        "Hvilken naturtype planten vokser i",
+        "Hvor mange kronblad blomsten har, og hvordan de sitter"
+      ],
+      "riktig": 3,
+      "forklaring": "Antall og plassering av blomsterdeler er stabilt innenfor arten, og det er derfor slike trekk nøkler bygger på. Høyde og farge varierer med lys, næring, alder og genetisk variasjon i populasjonen, så de er de mest fristende og samtidig mest upålitelige valgene. Naturtype kan være et støtteargument til slutt, men mange arter vokser på flere typer voksesteder."
+    },
+    {
+      "sporsmal": "Hvorfor plasseres ikke virus i noen av de tre domenene?",
+      "alternativer": [
+        "Fordi virus ikke er celler og verken har eget stoffskifte eller kan formere seg utenfor en vertscelle",
+        "Fordi virus er for små til å kunne studeres og sammenlignes",
+        "Fordi virus mangler arvestoff",
+        "Fordi virus er prokaryote, og prokaryotene deles bare i bakterier og arker"
+      ],
+      "riktig": 0,
+      "forklaring": "Systemet klassifiserer levende organismer, og domenene bygger på likheter i celler og gener. Virus har ingen celle og trenger vertscellens maskineri for å lage nye viruspartikler. Alternativ 3 er direkte feil: virus har arvestoff, DNA eller RNA — det er nettopp derfor de kan kopieres i en vert. Alternativ 4 misbruker ordet prokaryot, som betyr «celle uten kjerne»; virus er ikke celler i det hele tatt."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Det biologiske artsbegrepet", "bak": "Individer som under naturlige forhold kan formere seg med hverandre og få fruktbart avkom, og som er reproduktivt isolert fra andre slike grupper." },
+    { "front": "Nevn tre situasjoner der det biologiske artsbegrepet ikke fungerer", "bak": "Bakterier og arker (ingen kjønnet formering), fossiler (kan ikke testes) og arter som får fruktbare hybrider i naturen (mange planter)." },
+    { "front": "De åtte klassifikasjonsnivåene i rekkefølge", "bak": "Domene, rike, rekke, klasse, orden, familie, slekt, art. «Den rare reven kunne ofte fange små alliker.»" },
+    { "front": "Reglene for å skrive et vitenskapelig artsnavn", "bak": "Slektsnavn med stor forbokstav først, artsepitet med liten etter, alt i kursiv: Homo sapiens. Etter første gang kan slektsnavnet forkortes: H. sapiens." },
+    { "front": "De tre domenene", "bak": "Bakterier, arker (arkebakterier) og eukaryoter. Inndelingen kom fra Carl Woeses sammenligning av rRNA." },
+    { "front": "De seks rikene", "bak": "Bakterier, arker, protister, sopp, planter og dyr." },
+    { "front": "Hvilke riker er prokaryote?", "bak": "Bakterier og arker. Alle de fire andre rikene er eukaryote — også de encellede protistene." },
+    { "front": "Hva skiller sopp fra planter?", "bak": "Sopp er heterotrofe, tar opp oppløst næring gjennom hyfer og har cellevegg av kitin. Planter er autotrofe, har kloroplaster og cellevegg av cellulose." },
+    { "front": "Hvorfor er protistene ikke en naturlig gruppe?", "bak": "Gruppa er en restgruppe: alle eukaryoter som ikke er sopp, planter eller dyr. Etterkommere er tatt ut, så gruppa er parafyletisk." },
+    { "front": "Homolog eller analog?", "bak": "Homolog: samme opprinnelse, kanskje ulik funksjon (forlem hos menneske, hval, flaggermus) — viser slektskap. Analog: samme funksjon, ulik opprinnelse (vinge hos bie og flaggermus) — viser ikke slektskap." },
+    { "front": "Hvorfor står virus utenfor systemet?", "bak": "Virus er ikke celler, har ikke eget stoffskifte og kan ikke formere seg uten en vertscelle. De hører derfor ikke til noe domene." },
+    { "front": "Hva er DNA-strekkoding?", "bak": "Å lese en kort, standardisert DNA-sekvens (hos dyr cirka 650 basepar av genet CO1) og sammenligne den med en database over kjente arter." },
+    { "front": "Monofyletisk, parafyletisk og polyfyletisk", "bak": "Monofyletisk: stamform og alle etterkommerne. Parafyletisk: noen etterkommere er utelatt («krypdyr» uten fugler). Polyfyletisk: arter samlet på likhetstrekk uten nær felles stamform («sjøpattedyr»)." },
+    { "front": "Hva er en node i et fylogenetisk tre?", "bak": "Et forgreiningspunkt, som representerer den siste felles stamformen til alt som ligger over. Nærmeste slektning er den du møter i den yngste noden." },
+    { "front": "Tre kjøreregler for en dikotom bestemmelsesnøkkel", "bak": "Les begge alternativene før du velger, bruk stabile kjennetegn (ikke farge, høyde eller voksested), og kontroller svaret mot en beskrivelse eller et bilde til slutt." },
+    { "front": "Hvalens nærmeste nålevende slektning", "bak": "Flodhesten. DNA-sammenligning og fossiler med det typiske klovdyr-ankelbeinet plasserer hvalene inne blant klovdyrene, ikke sammen med sel." }
+  ]
+}

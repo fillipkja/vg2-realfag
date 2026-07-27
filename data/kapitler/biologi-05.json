@@ -1,0 +1,249 @@
+{
+  "fag": "biologi",
+  "nr": 5,
+  "tittel": "Celledeling, vekst og utvikling",
+  "intro": "Alt liv starter med én celle som deler seg, igjen og igjen, helt kontrollert. Dette kapittelet handler om hvordan cellesyklusen styres, hvordan mitose og meiose skiller seg fra hverandre, hva som skjer når kontrollen svikter og det blir kreft, og hvordan like celler blir til ulike vev og organ.",
+
+  "kompakt": {
+    "punkter": [
+      "Cellesyklusen består av interfasen (G1, S og G2) og M-fasen (mitose pluss cytokinese). DNA-et kopieres bare i S-fasen.",
+      "Etter S-fasen har en menneskecelle fortsatt 46 kromosomer, men $2 \\cdot 46 = 92$ kromatider, fordi søsterkromatidene sitter sammen i sentromeren.",
+      "Kontrollpunkter i G1, G2 og metafasen stopper syklusen hvis cellen er skadet eller ikke klar. Proteinet p53 er den viktigste «bremsen».",
+      "Mitose gir to genetisk identiske diploide celler og brukes til vekst, reparasjon og utskifting av vev.",
+      "Meiose gir fire genetisk ulike haploide celler. Kromosomtallet halveres i meiose I, ikke i meiose II, og det er ingen ny S-fase mellom de to delingene.",
+      "Genetisk variasjon i kjønnet formering kommer fra overkrysning i profase I, uavhengig fordeling i metafase I og tilfeldig befruktning.",
+      "Uavhengig fordeling alene gir $2^{23} = 8\\,388\\,608$ ulike kjønnsceller hos mennesket, og over $7 \\cdot 10^{13}$ mulige zygoter per foreldrepar.",
+      "Kreft krever flere mutasjoner i samme cellelinje: aktiverte onkogener virker som en fastlåst gasspedal, ødelagte tumorsuppressorgener som en bremse som er kuttet.",
+      "Alle kroppsceller har det samme DNA-et. Forskjellen mellom en nervecelle og en hudcelle skyldes at ulike gener er slått på — det kalles differensiering.",
+      "Planter vokser i lengden fra apikalmeristemene i skudd- og rotspiss og i tykkelsen fra kambiet. Plantehormonet auxin styrer strekningsvekst og fototropisme."
+    ],
+    "formler": [
+      { "navn": "Kromosomtall i menneskets kroppsceller", "latex": "2n = 46 \\quad (23 \\text{ par})" },
+      { "navn": "Kromosomtall i menneskets kjønnsceller", "latex": "n = 23" },
+      { "navn": "Kromatider etter S-fasen", "latex": "2 \\cdot 46 = 92 \\ \\text{kromatider}" },
+      { "navn": "Antall celler etter $k$ mitoser", "latex": "N = N_0 \\cdot 2^{k}" },
+      { "navn": "Kombinasjoner ved uavhengig fordeling", "latex": "2^{n} = 2^{23} = 8\\,388\\,608" },
+      { "navn": "Mulige zygoter fra ett foreldrepar", "latex": "2^{23} \\cdot 2^{23} = 2^{46} \\approx 7{,}0 \\cdot 10^{13}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Cellesyklusen og kontrollpunktene",
+        "html": "<p>En celle som skal dele seg, må først kopiere alt innholdet sitt. Runden med vekst, kopiering og deling kalles <strong>cellesyklusen</strong>, og den har to hoveddeler: interfasen og M-fasen.</p><p><strong>Interfasen</strong> er den lange delen. I en menneskecelle som deler seg omtrent én gang i døgnet, tar interfasen mer enn 90 prosent av tiden. Den deles i tre:</p><ul><li><strong>G1</strong>: cellen vokser, lager proteiner og nye organeller.</li><li><strong>S</strong> (syntese): DNA-et kopieres. Hvert kromosom får en identisk kopi, og de to kopiene holdes sammen i <strong>sentromeren</strong> som søsterkromatider.</li><li><strong>G2</strong>: cellen vokser videre og gjør klar delingsapparatet.</li></ul><p>Deretter kommer <strong>M-fasen</strong>, som består av mitosen (delingen av cellekjernen) og cytokinesen (delingen av cytoplasma).</p><p>Ferdig utviklede celler som normalt ikke deler seg mer, som nerveceller og hjertemuskelceller, går ut av syklusen og over i hvilefasen <strong>G0</strong>.</p><p>Syklusen er styrt av <strong>kontrollpunkter</strong> der cellen «sjekker» seg selv. I G1-kontrollpunktet: er cellen stor nok, er det nok næring, og er DNA-et uskadd? I G2-kontrollpunktet: ble kopieringen riktig? I M-kontrollpunktet, midt i metafasen: er alle kromosomene festet til spindeltråder? Er svaret nei, blir syklusen satt på pause til feilen er rettet. Er skaden for stor, setter cellen i gang <strong>apoptose</strong> — programmert celledød. Denne reguleringen er grunnen til at du ikke får kreft hver gang en celle gjør en kopieringsfeil.</p>"
+      },
+      {
+        "tittel": "Mitose: to identiske celler",
+        "html": "<p>Mitosen er kjernedelingen som sørger for at begge dattercellene får et komplett og likt sett kromosomer. Den deles tradisjonelt i fire faser:</p><ol><li><strong>Profase</strong>: kromatinet trekker seg sammen til korte, tykke kromosomer som er synlige i mikroskop. Kjernemembranen løses opp, og spindeltrådene bygges ut fra hver sin pol i cellen.</li><li><strong>Metafase</strong>: kromosomene stiller seg opp på én linje midt i cellen, i ekvatorialplanet. Spindeltrådene er festet til sentromeren på hvert kromosom, én tråd til hver søsterkromatid.</li><li><strong>Anafase</strong>: sentromerene deles, og søsterkromatidene dras fra hverandre mot hver sin pol. Fra nå av er hver kromatid et selvstendig kromosom.</li><li><strong>Telofase</strong>: kromosomene er ved polene, de pakkes ut igjen til kromatin, og det dannes to nye kjernemembraner.</li></ol><p>Til slutt kommer <strong>cytokinesen</strong>. I dyreceller trekker en ring av proteintråder cellen sammen på midten som en snor rundt en ballong. I planteceller, som har stiv cellevegg, bygges det i stedet en <strong>celleplate</strong> innenfra og ut, og den blir den nye celleveggen.</p><p>Resultatet er <strong>to genetisk identiske celler</strong> med samme kromosomtall som morcellen — hos mennesket 46. Mitose brukes til vekst, til reparasjon av skadd vev, til utskifting av celler som slites ut, og til ukjønnet formering hos mange organismer.</p>"
+      },
+      {
+        "tittel": "Meiose steg for steg",
+        "html": "<p>Kjønnsceller kan ikke lages ved mitose. Hvis både egg og sædcelle hadde hatt 46 kromosomer, ville zygoten fått 92, og kromosomtallet ville doblet seg for hver generasjon. Derfor finnes <strong>meiosen</strong>, en <em>reduksjonsdeling</em> med to delinger etter hverandre — men bare én kopiering av DNA-et først.</p><p><strong>Meiose I</strong> er den delingen som halverer kromosomtallet:</p><ul><li><strong>Profase I</strong>: de <strong>homologe kromosomene</strong> (ett fra mor og ett fra far) legger seg tett inntil hverandre parvis. Da kan de bytte biter med hverandre i en <strong>overkrysning</strong>.</li><li><strong>Metafase I</strong>: de homologe <em>parene</em> stiller seg i ekvatorialplanet, med ett kromosom på hver side.</li><li><strong>Anafase I</strong>: de homologe kromosomene skilles og går til hver sin pol. Søsterkromatidene blir sittende sammen.</li><li><strong>Telofase I og cytokinese</strong>: to celler med 23 kromosomer hver, men hvert kromosom har fortsatt to kromatider.</li></ul><p><strong>Meiose II</strong> ligner en vanlig mitose, bortsett fra at cellene nå er haploide, og at det <em>ikke</em> er noen ny S-fase i mellom. Søsterkromatidene skilles i anafase II, og resultatet er <strong>fire haploide celler</strong> med 23 kromosomer og 23 kromatider hver.</p><p>Hos menn blir alle fire til sædceller. Hos kvinner blir bare én til en eggcelle; de tre andre blir små polceller som brytes ned.</p>"
+      },
+      {
+        "tittel": "Genetisk variasjon: tre kilder",
+        "html": "<p>Poenget med kjønnet formering er ikke effektiv formering — det er <strong>variasjon</strong>. Variasjon gjør at en populasjon kan tilpasse seg endringer, og den er råstoffet naturlig utvalg jobber med. Meiosen og befruktningen gir variasjon på tre måter.</p><p><strong>1. Overkrysning i profase I.</strong> Når de homologe kromosomene ligger inntil hverandre, brekker kromatidene og skjøtes sammen igjen på kryss. Da flyttes gener fysisk fra farskromosomet til morskromosomet og omvendt. Etter en overkrysning er hvert kromatid en ny blanding som ikke fantes hos noen av foreldrene.</p><p><strong>2. Uavhengig fordeling i metafase I.</strong> For hvert av de 23 parene er det tilfeldig om morskromosomet havner på den ene eller den andre siden, og parene bestemmer seg uavhengig av hverandre. Med to muligheter per par blir det $2^{23} = 8\\,388\\,608$ ulike kombinasjoner.</p><p><strong>3. Tilfeldig befruktning.</strong> Hvilken av flere hundre millioner sædceller som treffer egget, er tilfeldig. Kombinerer vi mulighetene fra begge foreldre, får vi $2^{23} \\cdot 2^{23} \\approx 7 \\cdot 10^{13}$ mulige zygoter — og da har vi ikke engang regnet med overkrysningene.</p><p>Legg merke til at mitose <em>ikke</em> gir variasjon. Der er hele poenget å lage tro kopier. Nye varianter i kroppsceller kommer bare fra <strong>mutasjoner</strong>, og de arves ikke videre med mindre de skjer i kjønnscellene.</p>"
+      },
+      {
+        "tittel": "Når kontrollen svikter: kreft",
+        "html": "<p><strong>Kreft</strong> er ikke én sykdom, men et fellesnavn på celler som deler seg ukontrollert fordi styringen av cellesyklusen er ødelagt. To gentyper er sentrale.</p><p><strong>Protoonkogener</strong> er helt normale gener som gir signal om at cellen skal dele seg — gasspedalen. Muteres et slikt gen slik at det står permanent på, kalles det et <strong>onkogen</strong>, og cellen får delingssignal hele tiden.</p><p><strong>Tumorsuppressorgener</strong> er bremsen. Det mest kjente er genet for proteinet <strong>p53</strong>, «genomets vokter»: det stopper syklusen ved DNA-skade, gir tid til reparasjon og setter i gang apoptose hvis skaden er for stor. Er p53 ødelagt, kan celler med skadd DNA fortsette å dele seg, og nye mutasjoner hoper seg opp.</p><p>Kreft krever <strong>flere mutasjoner i samme cellelinje</strong> — typisk fem til ti. Det er derfor kreft tar tid å utvikle, og derfor risikoen øker med alderen. Én mutasjon er nesten aldri nok.</p><p>En <strong>godartet</strong> (benign) svulst vokser lokalt og er avgrenset. En <strong>ondartet</strong> (malign) svulst består av celler som bryter gjennom vevsgrensene, følger blod og lymfe og danner <strong>metastaser</strong> i andre organ. Det er metastasene som gjør kreft livsfarlig.</p><p><strong>Karsinogener</strong> er stoffer og stråling som øker mutasjonsraten: tobakksrøyk, UV-stråling fra sol og solarium, asbest og radon. Noen virus, som HPV, kan også starte prosessen — derfor virker HPV-vaksinen forebyggende mot livmorhalskreft.</p>"
+      },
+      {
+        "tittel": "Differensiering: fra celle til vev og organ",
+        "html": "<p>En nervecelle og en hudcelle ser helt ulike ut og gjør helt ulike jobber, men de har <em>nøyaktig samme DNA</em>. Cellene mister ingen gener når de spesialiserer seg. Forskjellen ligger i <strong>genregulering</strong>: i hver celletype er noen gener slått på og resten slått av, slik at cellen bare lager de proteinene den trenger. Denne spesialiseringen kalles <strong>differensiering</strong>.</p><p>Hva en celle blir, styres av hvor den ligger og hvilke signaler den får fra nabocellene og fra signalstoffer i omgivelsene. Derfor kan to celler med identisk DNA ende opp som en muskelcelle og en tarmcelle.</p><p><strong>Stamceller</strong> er celler som ennå ikke har differensiert seg, og som kan dele seg mange ganger. Embryonale stamceller kan bli alle celletyper i kroppen. Voksne stamceller er mer begrensede: stamcellene i beinmargen lager blodceller, og stamcellene i huden lager nye hudceller. De er grunnen til at et sår kan gro.</p><p>Differensierte celler av samme type organiserer seg i <strong>vev</strong>. Hos mennesket skiller vi mellom fire hovedtyper: epitelvev, bindevev og støttevev, muskelvev og nervevev. Flere vevstyper som samarbeider om en oppgave, danner et <strong>organ</strong> — magesekken har både epitel, muskellag, bindevev og nerver. Flere organ som løser en felles oppgave, utgjør et <strong>organsystem</strong>, som fordøyelsessystemet.</p>"
+      },
+      {
+        "tittel": "Vekst og utvikling hos planter og mennesket",
+        "html": "<p>Vekst er mer enn celledeling. En organisme vokser ved at celler <em>deler seg</em>, at cellene <em>vokser i størrelse</em>, og at noen celler <em>dør planlagt</em> ved apoptose. Hos et menneskefoster skilles fingrene fra hverandre nettopp fordi cellene i mellomrommene dør.</p><p><strong>Planter</strong> vokser hele livet, men bare i bestemte områder som kalles <strong>meristemer</strong>. Apikalmeristemene i skudd- og rotspissen gir lengdevekst, mens <strong>kambiet</strong> gir tykkelsesvekst — det er kambiet som lager årringene i et tre. Rett bak apikalmeristemet ligger en strekningssone der cellene blir mange ganger lengre ved at de fylles med vann.</p><p>Veksten styres av <strong>plantehormoner</strong>. Auxin lages i skuddspissen og gir strekningsvekst; gibberellin gir strekning og setter i gang spiring; cytokinin fremmer celledeling; abscisinsyre holder frø i dvale og lukker spalteåpningene ved tørke; etylen får frukt til å modne og blad til å felles.</p><p>Hos <strong>mennesket</strong> starter utviklingen med at zygoten deler seg til en cellekule som fester seg i livmorveggen etter omtrent en uke. I uke 3 til 8 anlegges alle organene, og fosteret er svært følsomt for skadelige stoffer i denne perioden. Etter fødselen er veksten kraftigst det første året, og så kommer en ny vekstspurt i puberteten, drevet av veksthormon og kjønnshormoner. Når kjønnshormonene til slutt lukker vekstsonene i knoklene, stopper lengdeveksten for godt.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Kromosomregnskap gjennom mitose og meiose",
+        "oppgave": "<p>En hudcelle fra et menneske har $2n = 46$. Sett opp antall kromosomer og antall kromatider i cellen ved slutten av G1, etter S-fasen, i metafasen og i hver dattercelle etter cytokinesen. Gjør deretter samme regnskap for en celle som gjennomfører meiose, og kontroller at totalregnskapet stemmer.</p>",
+        "losning": "<p><strong>Steg 1 — hva skal vi holde styr på?</strong> Vi teller to ulike ting, og det er hele nøkkelen til oppgaven:</p><ul><li>Antall <strong>kromosomer</strong>: hvor mange selvstendige DNA-pakker med egen sentromer.</li><li>Antall <strong>kromatider</strong>: hvor mange DNA-molekyler til sammen.</li></ul><p><strong>Steg 2 — mitosen.</strong> Ved slutten av G1 har cellen 46 kromosomer, og hvert kromosom består av ett kromatid: $46 \\cdot 1 = 46$ kromatider.</p><p>I S-fasen kopieres alt DNA. Kopiene blir sittende sammen med originalen i sentromeren, og derfor regnes de fortsatt som <em>ett</em> kromosom. Antall kromosomer er altså uendret 46, mens antall kromatider dobles:</p><p>$$46 \\cdot 2 = 92 \\ \\text{kromatider}$$</p><p>I metafasen står de samme 46 kromosomene på rekke i ekvatorialplanet: 46 kromosomer og 92 kromatider.</p><p>I anafasen deles sentromerene, og de 92 kromatidene fordeles likt: $92 : 2 = 46$ til hver pol. Hver kromatid er nå et eget kromosom.</p><p>Etter cytokinesen har vi 2 celler med 46 kromosomer og 46 kromatider hver. Kontroll: $2 \\cdot 46 = 92$ kromatider, som er nøyaktig det cellen hadde etter S-fasen. Ingenting er laget eller mistet — bare fordelt.</p><p><strong>Steg 3 — meiosen.</strong> Starten er identisk: etter S-fasen har cellen 46 kromosomer og 92 kromatider.</p><p>I metafase I stiller de homologe kromosomene seg opp <em>parvis</em>, altså $46 : 2 = 23$ par i ekvatorialplanet. I anafase I skilles parene, og hver pol får ett kromosom fra hvert par:</p><p>$$\\text{etter meiose I: } 2 \\ \\text{celler} \\times 23 \\ \\text{kromosomer} \\times 2 \\ \\text{kromatider} = 46 \\ \\text{kromatider per celle}$$</p><p>Kromosomtallet er nå halvert fra 46 til 23 — cellene er haploide. Merk at det <strong>ikke</strong> kommer noen ny S-fase her.</p><p>I meiose II skilles søsterkromatidene. Hver av de to cellene gir to nye, så vi ender med $2 \\cdot 2 = 4$ celler, hver med 23 kromosomer og 23 kromatider.</p><p><strong>Steg 4 — kontroll.</strong> Totalt antall kromatider til slutt: $4 \\cdot 23 = 92$. Det stemmer med de 92 kromatidene cellen hadde etter S-fasen.</p><table><thead><tr><th>Tidspunkt</th><th>Kromosomer</th><th>Kromatider</th></tr></thead><tbody><tr><td>Slutten av G1</td><td>46</td><td>46</td></tr><tr><td>Etter S-fasen</td><td>46</td><td>92</td></tr><tr><td>Metafase (mitose)</td><td>46</td><td>92</td></tr><tr><td>Dattercelle etter mitose</td><td>46</td><td>46</td></tr><tr><td>Celle etter meiose I</td><td>23</td><td>46</td></tr><tr><td>Celle etter meiose II</td><td>23</td><td>23</td></tr></tbody></table>"
+      },
+      {
+        "tittel": "Hvor mange genetisk ulike kjønnsceller kan du lage?",
+        "oppgave": "<p>Mennesket har 23 kromosompar. <strong>a)</strong> Hvor mange ulike kombinasjoner av mors- og farskromosomer kan én kjønnscelle få, bare på grunn av den uavhengige fordelingen i metafase I? <strong>b)</strong> Hvor mange genetisk ulike zygoter kan et foreldrepar i prinsippet lage? <strong>c)</strong> Forklar hvorfor det virkelige tallet er enda større.</p>",
+        "losning": "<p><strong>a)</strong> Se på ett kromosompar av gangen. I metafase I ligger morskromosomet og farskromosomet på hver sin side av ekvatorialplanet, og hvilken side er tilfeldig. Det gir <strong>2 muligheter per par</strong>.</p><p>Parene bestemmer seg uavhengig av hverandre, så vi multipliserer mulighetene med hverandre 23 ganger:</p><p>$$2 \\cdot 2 \\cdot 2 \\cdots = 2^{23}$$</p><p>Vi regner ut ved å dele opp potensen. Siden $2^{10} = 1024$:</p><p>$$2^{23} = 2^{10} \\cdot 2^{10} \\cdot 2^{3} = 1024 \\cdot 1024 \\cdot 8$$</p><p>$$1024 \\cdot 1024 = 1\\,048\\,576$$</p><p>$$1\\,048\\,576 \\cdot 8 = 8\\,388\\,608$$</p><p>Altså omtrent <strong>8,4 millioner</strong> ulike kjønnsceller.</p><p><strong>b)</strong> Zygoten får én tilfeldig kjønnscelle fra hver av foreldrene. Da må vi gange mulighetene fra mor med mulighetene fra far:</p><p>$$2^{23} \\cdot 2^{23} = 2^{46} = 8\\,388\\,608 \\cdot 8\\,388\\,608$$</p><p>$$= 70\\,368\\,744\\,177\\,664 \\approx 7{,}0 \\cdot 10^{13}$$</p><p>Det er omtrent <strong>70 billioner</strong> mulige barn — over 8000 ganger flere enn det finnes mennesker på jorda. To søsken som er genetisk like, er derfor praktisk talt umulig, med unntak av eneggede tvillinger, som kommer fra samme zygote.</p><p><strong>c)</strong> Regnestykket over teller bare hvordan <em>hele</em> kromosomer fordeles. I profase I skjer det i tillegg <strong>overkrysning</strong>, vanligvis flere per kromosompar. Da blir hvert enkelt kromosom en ny blanding av mors og fars DNA, og antallet mulige kjønnsceller blir i praksis ubegrenset. Kommer mutasjoner på toppen, er hvert individ helt unikt.</p>"
+      },
+      {
+        "tittel": "Case: hvordan en føflekk kan bli et melanom",
+        "oppgave": "<p>En 45 år gammel person har brukt solarium jevnlig siden ungdomstiden og har flere ganger blitt solbrent. En føflekk på ryggen har det siste halvåret blitt større, fått ujevn kant og to fargenyanser. Gå gjennom trinnene fra første DNA-skade til spredning, og forklar med fagbegreper hvorfor dette tar mange år.</p>",
+        "losning": "<p><strong>Trinn 1 — skaden.</strong> UV-stråling fra sol og solarium er et <strong>karsinogen</strong>: den treffer DNA-et i hudcellene og skader det. De fleste skadene blir reparert med en gang, men reparasjonen er ikke perfekt. Blir en feil stående når cellen går inn i S-fasen, kopieres feilen videre som en <strong>mutasjon</strong>. Jo flere solariumsturer og solforbrenninger, jo flere ganger må terningen kastes.</p><p><strong>Trinn 2 — gasspedalen låser seg.</strong> Én av mutasjonene treffer et <strong>protoonkogen</strong> i en pigmentcelle, et gen som normalt gir signal om deling bare når det er behov. Mutasjonen gjør det til et <strong>onkogen</strong> som står permanent på, og cellen deler seg oftere enn nabocellene. Dette er ennå ikke kreft: kontrollpunktene fungerer, og cellen kan fortsatt stoppes eller ryddes bort ved apoptose.</p><p><strong>Trinn 3 — bremsen kuttes.</strong> Etter noen år får en av etterkommerne til denne cellen en mutasjon i et <strong>tumorsuppressorgen</strong>, for eksempel genet for <strong>p53</strong>. Nå blir syklusen ikke lenger stoppet ved DNA-skade, og apoptosen settes ikke i gang. Konsekvensen er dobbel: cellene deler seg fritt, <em>og</em> de samler opp nye mutasjoner raskere enn før. Det er dette som får utviklingen til å akselerere.</p><p><strong>Trinn 4 — svulsten etablerer seg.</strong> Flere mutasjoner gjør at cellene kan dele seg ubegrenset i stedet for å bli gamle, og at de sender signaler som får nye blodårer til å vokse inn. Uten egen blodforsyning kan en svulst ikke bli større enn noen få millimeter. Så lenge svulsten holder seg innenfor vevsgrensen, er den <strong>godartet</strong>.</p><p><strong>Trinn 5 — spredning.</strong> Til slutt mister cellene festet til nabocellene og bryter gjennom grensen ned i huden. Da er svulsten <strong>ondartet</strong>. Enkeltceller kommer inn i lymfe og blod og danner <strong>metastaser</strong> i lymfeknuter og senere i lunger, lever og hjerne. Det er metastasene som gjør melanom farlig.</p><p><strong>Hvorfor tar det mange år?</strong> Fordi det må skje <em>flere uavhengige mutasjoner i én og samme cellelinje</em>. Sannsynligheten for at én bestemt celle skal samle fem til ti slike treff, er svært liten, men kroppen har mange milliarder celler og mange tiår til rådighet. Derfor øker krefthyppigheten kraftig med alderen, og derfor gir det stor effekt å redusere UV-dosen: du reduserer antall mutasjoner helt i starten av kjeden.</p><p><strong>Signalene i oppgaven</strong> passer med ABCDE-reglene for føflekker: asymmetri, ujevn begrensning, flere farger og økende størrelse. Slike endringer skal alltid undersøkes av lege.</p>"
+      },
+      {
+        "tittel": "Gjennomgått forsøk: fototropisme og auxin",
+        "oppgave": "<p>Du setter opp tre grupper med nyspirte havreplanter og belyser alle tre fra samme side. Gruppe 1 er urørt. På gruppe 2 klipper du av den ytterste spissen av skuddet. På gruppe 3 setter du en liten lystett hette over spissen, men lar planten være hel. Hva skjer med hver gruppe, og hva kan du konkludere?</p>",
+        "losning": "<p><strong>Observasjon, gruppe 1 (urørt).</strong> Planten bøyer seg tydelig mot lyset. Dette er <strong>fototropisme</strong>.</p><p><strong>Observasjon, gruppe 2 (spissen klippet av).</strong> Planten bøyer seg ikke, og den vokser nesten ikke i lengden heller.</p><p><strong>Observasjon, gruppe 3 (lystett hette over spissen).</strong> Planten vokser videre i lengden, men rett opp — den bøyer seg ikke.</p><p><strong>Tolkning, steg 1.</strong> Sammenlign gruppe 1 og 2. Når spissen fjernes, forsvinner både bøyingen og lengdeveksten. Da må spissen produsere noe som er nødvendig for veksten. Dette stoffet er plantehormonet <strong>auxin</strong>, som lages i apikalmeristemet.</p><p><strong>Tolkning, steg 2.</strong> Sammenlign gruppe 2 og 3. I gruppe 3 er spissen fortsatt på plass, og planten vokser normalt i lengden. Auxinet produseres altså som før. Det eneste som mangler, er informasjon om <em>hvor</em> lyset kommer fra. Konklusjon: <strong>lysretningen registreres i spissen</strong>, ikke lenger nede i stengelen.</p><p><strong>Tolkning, steg 3 — mekanismen.</strong> Auxin lages i spissen og transporteres nedover i skuddet. Når lyset kommer fra én side, forskyves auxinet mot <strong>skyggesiden</strong>. Der blir konsentrasjonen høyere, og auxin gjør celleveggene mer elastiske slik at cellene i strekningssonen kan ta opp vann og bli lengre. Cellene på skyggesiden strekker seg altså mer enn cellene på lyssiden, og resultatet er at skuddet bøyer seg <em>mot</em> lyset.</p><p><strong>Legg merke til:</strong> det er ikke cellene på lyssiden som «vokser mindre fordi lyset skader dem», og det er ikke ulik celledeling som gjør jobben. Bøyingen skyldes ulik <em>strekning</em> av celler som allerede finnes. En tilsvarende auxinforskyvning nedover i en liggende plante gir <strong>gravitropisme</strong>: skuddet vokser opp og roten ned.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å tro at antall kromosomer dobles i S-fasen. Det som dobles, er antall kromatider (fra 46 til 92). Kopiene sitter sammen i sentromeren og teller derfor fortsatt som 46 kromosomer.",
+      "Å blande sammen homologe kromosomer og søsterkromatider. I anafase I skilles de homologe kromosomene, mens søsterkromatidene skilles i anafase II — og i mitosens anafase.",
+      "Å tro at kromosomtallet halveres i meiose II. Reduksjonen fra 46 til 23 skjer allerede i meiose I. Meiose II halverer bare antall kromatider per celle.",
+      "Å tro at DNA-et kopieres på nytt mellom meiose I og meiose II. Det er ingen S-fase der, og det er nettopp derfor de fire sluttcellene blir haploide.",
+      "Å plassere overkrysning mellom søsterkromatider. Søsterkromatider er identiske, så en overkrysning der ville ikke gitt noe nytt. Overkrysningen skjer mellom homologe kromosomer i profase I.",
+      "Å tro at differensierte celler har mistet de genene de ikke bruker. En muskelcelle har hele genomet, men bare en liten del av genene er slått på."
+    ],
+
+    "tips": [
+      "Tegn alltid kromosomene når du svarer på meioseoppgaver: hvert kromosom som en X med to kromatider, og bruk to ulike farger eller skravering for mors- og farskromosom. Da ser du med én gang om det er homologe kromosomer eller søsterkromatider som skilles.",
+      "Skriv alltid om du snakker om kromosomer eller kromatider når du regner. En stor del av poengtapet i dette kapittelet kommer av at 46 og 92 byttes om.",
+      "Lag en sammenligningstabell for mitose og meiose med radene: antall delinger, antall celler, kromosomtall i sluttcellene, genetisk likhet og hvor i kroppen det skjer. Dette er den vanligste langsvarsoppgaven fra kapittelet.",
+      "Kreftoppgaver vurderes etter fagbegrepene du får med. Bruk mutasjon, protoonkogen, onkogen, tumorsuppressorgen, p53, apoptose, godartet, ondartet og metastase — og forklar at det kreves flere mutasjoner i samme cellelinje.",
+      "Øv på å kjenne igjen mitosefasene på figurer og mikroskopbilder. Huskeregelen er enkel: kromosomene på én linje i midten betyr metafase, kromosomer på vei mot polene betyr anafase."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Cellesyklus", "forklaring": "Hele runden en celle går gjennom fra én deling til den neste: interfasen (G1, S, G2) og M-fasen med mitose og cytokinese." },
+    { "begrep": "S-fase", "forklaring": "Fasen i interfasen der DNA-et kopieres. Etter S-fasen består hvert kromosom av to identiske søsterkromatider." },
+    { "begrep": "Kontrollpunkt", "forklaring": "Et sted i cellesyklusen der cellen sjekker om den er klar for neste trinn. Er noe galt, stoppes syklusen, eller cellen går i apoptose." },
+    { "begrep": "Mitose", "forklaring": "Kjernedelingen som gir to celler med samme kromosomtall og identisk DNA som morcellen. Brukes til vekst, reparasjon og utskifting av celler." },
+    { "begrep": "Meiose", "forklaring": "To celledelinger etter hverandre som lager fire genetisk ulike, haploide kjønnsceller fra én diploid celle." },
+    { "begrep": "Søsterkromatider", "forklaring": "De to identiske DNA-kopiene et kromosom består av etter S-fasen. De holdes sammen i sentromeren og skilles i anafasen." },
+    { "begrep": "Homologe kromosomer", "forklaring": "Kromosompar der det ene kommer fra mor og det andre fra far. De har de samme genene i samme rekkefølge, men kan ha ulike varianter (alleler)." },
+    { "begrep": "Diploid og haploid", "forklaring": "En diploid celle ($2n$) har kromosomene i par, som menneskets kroppsceller med 46. En haploid celle ($n$) har ett av hvert, som kjønnscellene med 23." },
+    { "begrep": "Overkrysning", "forklaring": "Bytte av tilsvarende DNA-biter mellom homologe kromosomer i profase I. Gir kromatider med helt nye genkombinasjoner." },
+    { "begrep": "Uavhengig fordeling", "forklaring": "At hvert kromosompar fordeler seg tilfeldig og uavhengig av de andre parene i metafase I. Gir $2^{23}$ kombinasjoner hos mennesket." },
+    { "begrep": "Apoptose", "forklaring": "Programmert, kontrollert celledød. Rydder bort skadde celler og former organer under utviklingen, for eksempel når fingrene skilles fra hverandre." },
+    { "begrep": "Onkogen", "forklaring": "Et mutert protoonkogen som gir cellen delingssignal hele tiden — som en gasspedal som har låst seg." },
+    { "begrep": "Tumorsuppressorgen", "forklaring": "Et gen som bremser celledelingen eller setter i gang apoptose, for eksempel genet for p53. Kreft kan oppstå når slike gener slutter å virke." },
+    { "begrep": "Metastase", "forklaring": "Dattersvulst som oppstår når celler fra en ondartet svulst sprer seg med blod eller lymfe og begynner å dele seg i et annet organ." },
+    { "begrep": "Differensiering", "forklaring": "At en celle spesialiserer seg til en bestemt celletype ved at noen gener slås på og andre av. DNA-et er det samme i alle cellene." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Når i cellesyklusen kopieres DNA-et?",
+      "alternativer": ["I G1-fasen", "I G2-fasen", "I S-fasen", "I profasen"],
+      "riktig": 2,
+      "forklaring": "S står for syntese, og det er her DNA-et kopieres, midt i interfasen. Profase er en fristelse, men der er kopieringen for lengst ferdig — da pakkes de allerede doble kromosomene bare sammen slik at de blir synlige og lette å flytte. G2 er forberedelse til delingen, ikke kopiering."
+    },
+    {
+      "sporsmal": "Hvor mange kromatider har en menneskelig kroppscelle rett før anafasen i mitosen?",
+      "alternativer": ["92", "46", "23", "184"],
+      "riktig": 0,
+      "forklaring": "Cellen har 46 kromosomer, og etter S-fasen består hvert av dem av to søsterkromatider: $46 \\cdot 2 = 92$. Svaret 46 er antall kromosomer, ikke kromatider — det er nettopp denne forvekslingen oppgaven tester. 23 er kromosomtallet i en kjønnscelle, som ikke er relevant her."
+    },
+    {
+      "sporsmal": "Hva er den viktigste forskjellen mellom anafase I i meiosen og anafasen i mitosen?",
+      "alternativer": [
+        "I anafase I deles cytoplasma, i mitosens anafase gjør den ikke det",
+        "I anafase I skilles søsterkromatidene, i mitosens anafase skilles de homologe kromosomene",
+        "I anafase I dannes det nye kjernemembraner",
+        "I anafase I skilles de homologe kromosomene, i mitosens anafase skilles søsterkromatidene"
+      ],
+      "riktig": 3,
+      "forklaring": "I anafase I dras hele homologe kromosomer med to kromatider hver til motsatte poler — det er derfor kromosomtallet halveres. I mitosens anafase deles sentromeren, og søsterkromatidene skilles, slik at dattercellene blir identiske. Alternativ B er samme påstand med rollene byttet om, og er den klassiske forvekslingen i dette kapittelet."
+    },
+    {
+      "sporsmal": "Hvor mange celler får du, og med hvilket kromosomtall, når én menneskecelle gjennomfører hele meiosen?",
+      "alternativer": ["2 celler med 46 kromosomer", "4 celler med 23 kromosomer", "4 celler med 46 kromosomer", "2 celler med 23 kromosomer"],
+      "riktig": 1,
+      "forklaring": "To delinger etter hverandre gir $2 \\cdot 2 = 4$ celler, og fordi de homologe kromosomene ble skilt i meiose I, har hver celle 23 kromosomer. «2 celler med 23» er svaret hvis du bare tenker på meiose I og glemmer at meiose II også skjer. «2 celler med 46» er resultatet av mitose."
+    },
+    {
+      "sporsmal": "Hvor skjer overkrysning?",
+      "alternativer": ["I profase I i meiosen", "I profasen i mitosen", "I metafase II i meiosen", "I anafase I i meiosen"],
+      "riktig": 0,
+      "forklaring": "Overkrysning krever at de homologe kromosomene ligger tett inntil hverandre, og det gjør de bare i profase I. I anafase I er de allerede på vei fra hverandre, så da er det for sent. I mitosen parer de homologe kromosomene seg aldri, og derfor gir mitose heller ingen ny genkombinasjon."
+    },
+    {
+      "sporsmal": "Hva er forskjellen mellom et protoonkogen og et tumorsuppressorgen?",
+      "alternativer": [
+        "Protoonkogener finnes bare i kreftceller, tumorsuppressorgener bare i friske celler",
+        "Tumorsuppressorgener lager svulster, mens protoonkogener beskytter mot dem",
+        "Protoonkogener er gasspedalen for celledeling, tumorsuppressorgener er bremsen",
+        "Protoonkogener ligger i mitokondriene, tumorsuppressorgener i cellekjernen"
+      ],
+      "riktig": 2,
+      "forklaring": "Protoonkogener gir normale delingssignaler og blir skadelige onkogener først når en mutasjon låser dem i «på»-stilling. Tumorsuppressorgener, som p53-genet, bremser delingen og kan utløse apoptose. Alternativ A er feil fordi protoonkogener er helt vanlige gener som alle friske celler har og trenger — det er mutasjonen, ikke genet, som er problemet."
+    },
+    {
+      "sporsmal": "Proteinet p53 kalles ofte «genomets vokter». Hva gjør det?",
+      "alternativer": [
+        "Kopierer DNA-et i S-fasen",
+        "Bygger spindeltrådene i profasen",
+        "Fester kromosomene til spindelen i metafasen",
+        "Stopper cellesyklusen ved DNA-skade og kan sette i gang apoptose"
+      ],
+      "riktig": 3,
+      "forklaring": "p53 virker i kontrollpunktene: det setter syklusen på pause slik at skaden kan repareres, og utløser programmert celledød hvis skaden er for stor. Derfor er en celle med ødelagt p53 farlig — den deler seg videre med feil i DNA-et. Alternativ A beskriver enzymet DNA-polymerase, som gjør en helt annen jobb."
+    },
+    {
+      "sporsmal": "Hvorfor er en hudcelle og en nervecelle så ulike når de har det samme DNA-et?",
+      "alternativer": [
+        "Fordi ulike gener er slått på i de to celletypene",
+        "Fordi cellene mister de genene de ikke trenger under differensieringen",
+        "Fordi mitosen fordeler ulike kromosomer til ulike celler",
+        "Fordi celletypene har ulikt antall kromosomer"
+      ],
+      "riktig": 0,
+      "forklaring": "Differensiering er genregulering: hele genomet er der, men bare de genene celletypen trenger, blir lest og oversatt til proteiner. Alternativ B er den vanligste misforståelsen — hvis celler kastet gener, kunne man ikke laget en hel organisme av én kroppscelle, slik man har gjort ved kloning. Alternativ C er feil fordi mitosen tvert imot gir helt like kromosomsett."
+    },
+    {
+      "sporsmal": "Hvor skjer lengdeveksten hos en plante?",
+      "alternativer": [
+        "Jevnt fordelt langs hele stengelen",
+        "I apikalmeristemene i skudd- og rotspissene",
+        "I kambiet, som ligger som en sylinder inne i stengelen",
+        "I bladene, der fotosyntesen skjer"
+      ],
+      "riktig": 1,
+      "forklaring": "Celledelingen som gir lengdevekst, skjer i apikalmeristemene, og cellene rett bak strekker seg. Derfor blir et merke du setter midt på en stengel, liggende omtrent der det er — veksten er ikke jevnt fordelt. Kambiet er også et meristem, men det gir tykkelsesvekst og årringer, ikke lengdevekst."
+    },
+    {
+      "sporsmal": "En spire belyses fra én side og bøyer seg mot lyset. Hva er forklaringen?",
+      "alternativer": [
+        "Cellene på lyssiden strekker seg mest fordi de får mest lysenergi",
+        "Cellene på lyssiden deler seg raskere enn cellene på skyggesiden",
+        "Klorofyllet i bladene trekker stengelen mot lyset",
+        "Auxin hoper seg opp på skyggesiden, der cellene strekker seg mer"
+      ],
+      "riktig": 3,
+      "forklaring": "Auxin lages i skuddspissen og forskyves bort fra lyset. Høyere auxinkonsentrasjon på skyggesiden gjør celleveggene der mer elastiske, cellene tar opp vann og blir lengre, og den lange siden bøyer stengelen mot lyset. Alternativ A snur mekanismen på hodet: hadde lyssiden strukket seg mest, ville planten bøyd seg bort fra lyset, ikke mot."
+    },
+    {
+      "sporsmal": "Hva kjennetegner en ondartet (malign) svulst sammenlignet med en godartet?",
+      "alternativer": [
+        "Den vokser langsommere enn en godartet svulst",
+        "Cellene kan bryte gjennom vevsgrenser og spre seg til andre organ",
+        "Cellene har mistet evnen til å dele seg",
+        "Den er alltid arvelig"
+      ],
+      "riktig": 1,
+      "forklaring": "Det avgjørende kjennetegnet er evnen til å invadere naboevev og danne metastaser via blod og lymfe. En godartet svulst vokser lokalt og er avgrenset. Alternativ D er feil fordi de aller fleste kreftmutasjoner er ervervet i kroppsceller gjennom livet og ikke arves; bare et mindretall av tilfellene skyldes en arvet mutasjon."
+    },
+    {
+      "sporsmal": "En nervecelle hos et voksent menneske deler seg normalt aldri. Hvor i cellesyklusen står den?",
+      "alternativer": ["I metafasen", "I S-fasen", "I G0-fasen", "I G2-fasen"],
+      "riktig": 2,
+      "forklaring": "Ferdig differensierte celler som ikke skal dele seg mer, forlater syklusen etter G1-kontrollpunktet og går inn i hvilefasen G0, der de kan gjøre jobben sin i årevis. Alternativ B er feil fordi en celle i S-fasen er midt i å kopiere DNA og altså på full fart mot en deling."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Hvilke faser består cellesyklusen av?", "bak": "Interfasen (G1, S og G2) og M-fasen, som består av mitose og cytokinese." },
+    { "front": "Hva skjer i S-fasen?", "bak": "DNA-et kopieres. Kromosomtallet er uendret, men hvert kromosom får to identiske søsterkromatider." },
+    { "front": "Hvor mange kromosomer og kromatider har en menneskecelle etter S-fasen?", "bak": "46 kromosomer og 92 kromatider." },
+    { "front": "Hva er G0-fasen?", "bak": "En hvilefase utenfor cellesyklusen for celler som ikke skal dele seg mer, for eksempel nerveceller og hjertemuskelceller." },
+    { "front": "Fasene i mitosen i riktig rekkefølge", "bak": "Profase, metafase, anafase, telofase — og deretter cytokinese." },
+    { "front": "Hva skjer i anafasen i mitosen?", "bak": "Sentromerene deles, og søsterkromatidene trekkes til hver sin pol. Hver kromatid blir nå et selvstendig kromosom." },
+    { "front": "Resultat av mitose kontra meiose", "bak": "Mitose: 2 genetisk identiske diploide celler. Meiose: 4 genetisk ulike haploide celler." },
+    { "front": "Når halveres kromosomtallet i meiosen?", "bak": "I anafase I, når de homologe kromosomene skilles. Meiose II skiller bare søsterkromatidene." },
+    { "front": "Søsterkromatider eller homologe kromosomer?", "bak": "Søsterkromatider er to identiske kopier av samme kromosom, laget i S-fasen. Homologe kromosomer er ett fra mor og ett fra far med samme gener, men mulig ulike alleler." },
+    { "front": "Tre kilder til genetisk variasjon ved kjønnet formering", "bak": "Overkrysning i profase I, uavhengig fordeling i metafase I og tilfeldig befruktning." },
+    { "front": "Hvor mange kombinasjoner gir uavhengig fordeling hos mennesket?", "bak": "$2^{23} = 8\\,388\\,608$ ulike kjønnsceller — og $2^{46} \\approx 7 \\cdot 10^{13}$ mulige zygoter per foreldrepar." },
+    { "front": "Hva gjør p53?", "bak": "Stopper cellesyklusen ved DNA-skade, gir tid til reparasjon og setter i gang apoptose hvis skaden er for stor. Genet er et tumorsuppressorgen." },
+    { "front": "Onkogen eller tumorsuppressorgen?", "bak": "Onkogen = mutert gen som stadig gir delingssignal (gasspedal låst i bunn). Tumorsuppressorgen = gen som bremser deling eller utløser apoptose (bremsen)." },
+    { "front": "Hva er en stamcelle?", "bak": "En udifferensiert celle som kan dele seg mange ganger og bli ulike celletyper. Embryonale stamceller kan bli alle typer; voksne stamceller, som i beinmarg og hud, er mer begrensede." },
+    { "front": "Hvor vokser en plante i lengden, og hvor i tykkelsen?", "bak": "I lengden fra apikalmeristemene i skudd- og rotspiss, i tykkelsen fra kambiet — som lager årringene." },
+    { "front": "Hva gjør plantehormonet auxin?", "bak": "Lages i skuddspissen og gir strekningsvekst i cellene bak. Forskyves til skyggesiden ved sidelys og gir fototropisme." }
+  ]
+}
