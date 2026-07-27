@@ -1,0 +1,259 @@
+{
+  "fag": "matematikk",
+  "nr": 7,
+  "tittel": "Anvendelser og modeller",
+  "intro": "Her setter du sammen alt du har lært til å beskrive virkeligheten med funksjoner: du finner en modell ut fra måledata, tolker den deriverte med enheter, og beskriver bevegelse langs en kurve med vektorfunksjoner. Dette er kapittelet der matematikken får et svar med enhet på slutten.",
+
+  "kompakt": {
+    "punkter": [
+      "En matematisk modell er en funksjon som beskriver en sammenheng i virkeligheten. Den er alltid en forenkling, og den gjelder bare i et bestemt definisjonsområde.",
+      "Regresjon er å finne den funksjonen av en valgt type som passer best til et sett målepunkter. Du velger typen, verktøyet finner koeffisientene.",
+      "Konstant differanse mellom målingene peker mot lineær modell, konstant forholdstall mot eksponentiell modell, og utflating mot et tak mot logistisk modell.",
+      "Lineær vekst: $f(x) = ax + b$ med konstant vekstfart $f'(x) = a$. Eksponentiell vekst: $f(x) = a \\cdot b^x$ med konstant prosentvis endring.",
+      "Vekstfaktoren $b$ og den prosentvise endringen $p$ henger sammen som $b = 1 + \\frac{p}{100}$. Doblingstiden finner du ved å løse $b^x = 2$.",
+      "Logistisk vekst starter nesten eksponentielt og flater ut mot bærekapasiteten $B$: $f(x) = \\frac{B}{1 + Ce^{-kx}}$. Veksten er raskest når $f(x) = \\frac{B}{2}$.",
+      "$f'(x)$ er vekstfarten, og enheten er «enhet for $f$ per enhet for $x$». Nullpunktene til $f'$ gir topp- og bunnpunkter.",
+      "En parameterframstilling gir $x$ og $y$ hver for seg som funksjoner av en parameter $t$: $\\vec{r}(t) = [x(t),\\; y(t)]$.",
+      "Fartsvektoren er $\\vec{v}(t) = \\vec{r}\\,'(t)$ og peker langs banen. Banefarten er lengden $|\\vec{v}(t)| = \\sqrt{x'(t)^2 + y'(t)^2}$.",
+      "Akselerasjonsvektoren er $\\vec{a}(t) = \\vec{v}\\,'(t) = \\vec{r}\\,''(t)$ og forteller hvordan fartsvektoren endrer seg."
+    ],
+    "formler": [
+      { "navn": "Lineær modell", "latex": "f(x) = ax + b, \\qquad f'(x) = a" },
+      { "navn": "Eksponentiell modell", "latex": "f(x) = a \\cdot b^{x}, \\qquad b > 0" },
+      { "navn": "Vekstfaktor og prosent", "latex": "b = 1 + \\frac{p}{100}" },
+      { "navn": "Eksponentiell modell med grunntall $e$", "latex": "f(x) = a e^{kx}, \\qquad k = \\ln b" },
+      { "navn": "Vekstfart i eksponentiell modell", "latex": "f'(x) = a b^{x} \\ln b = f(x) \\cdot \\ln b" },
+      { "navn": "Doblingstid", "latex": "b^{x} = 2 \\;\\Longrightarrow\\; x = \\frac{\\ln 2}{\\ln b}" },
+      { "navn": "Halveringstid", "latex": "b^{x} = 0{,}5 \\;\\Longrightarrow\\; x = \\frac{\\ln 0{,}5}{\\ln b}" },
+      { "navn": "Logistisk modell", "latex": "f(x) = \\frac{B}{1 + Ce^{-kx}}, \\qquad f(0) = \\frac{B}{1+C}, \\qquad f(x) \\to B" },
+      { "navn": "Raskest logistisk vekst", "latex": "f(x) = \\frac{B}{2} \\;\\text{ når }\\; x = \\frac{\\ln C}{k}, \\qquad f'_{\\max} = \\frac{kB}{4}" },
+      { "navn": "Gjennomsnittlig vekstfart", "latex": "\\frac{f(b) - f(a)}{b - a}" },
+      { "navn": "Parameterframstilling for en linje", "latex": "\\vec{r}(t) = [\\,x_0 + at,\\; y_0 + bt\\,]" },
+      { "navn": "Vektorfunksjon (posisjon)", "latex": "\\vec{r}(t) = [\\,x(t),\\; y(t)\\,]" },
+      { "navn": "Fartsvektor og banefart", "latex": "\\vec{v}(t) = [\\,x'(t),\\; y'(t)\\,], \\qquad |\\vec{v}(t)| = \\sqrt{\\left(x'(t)\\right)^2 + \\left(y'(t)\\right)^2}" },
+      { "navn": "Akselerasjonsvektor", "latex": "\\vec{a}(t) = [\\,x''(t),\\; y''(t)\\,]" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Matematiske modeller og regresjon",
+        "html": "<p>En <strong>matematisk modell</strong> er en funksjon vi bruker til å beskrive noe i virkeligheten: antall bakterier i en kultur, prisen på en vare, høyden til en ball. Modellen er alltid en forenkling. Den treffer godt i det området vi har data fra, og den kan bli helt meningsløs utenfor. Derfor hører to ting alltid sammen med en modell: et <strong>definisjonsområde</strong> og en vurdering av hvor godt den passer.</p><p><strong>Regresjon</strong> er metoden for å finne modellen. Du har et sett målepunkter, du velger hvilken <em>type</em> funksjon du tror passer, og så finner verktøyet de koeffisientene som gir minst mulig samlet avvik fra punktene. I GeoGebra legger du punktene i en liste og bruker kommandoer som <strong>RegLin</strong> (lineær), <strong>RegPoly</strong> (polynom av valgt grad), <strong>RegEksp</strong> (eksponentiell), <strong>RegPot</strong> (potensfunksjon) eller <strong>RegLogist</strong> (logistisk).</p><p>Hvordan velger du type? Se på tallene før du trykker på noe:</p><ul><li>Konstant <em>differanse</em> når $x$ øker med 1 — lineær modell.</li><li>Konstant <em>forholdstall</em> når $x$ øker med 1 — eksponentiell modell.</li><li>Verdiene stiger, snur og synker igjen — polynom av andre eller tredje grad.</li><li>Rask vekst først, så tydelig utflating mot et tak — logistisk modell.</li></ul><p>Til slutt en språkbruk du må kunne: å regne <strong>innenfor</strong> dataområdet kalles interpolasjon og er rimelig trygt. Å regne <strong>utenfor</strong> kalles ekstrapolasjon, og der må du alltid skrive en setning om at svaret er usikkert.</p>"
+      },
+      {
+        "tittel": "Fire veksttyper",
+        "html": "<p><strong>Lineær vekst</strong> — $f(x) = ax + b$. Like store tillegg per tidsenhet. Den deriverte er konstant, $f'(x) = a$, så vekstfarten endrer seg aldri. Eksempel: en fast månedspris pluss et startgebyr.</p><p><strong>Polynomisk vekst</strong> — $f(x) = ax^2 + bx + c$ eller en tredjegradsfunksjon. Her endrer vekstfarten seg, og grafen kan snu. En andregradsmodell har nøyaktig ett topp- eller bunnpunkt; en tredjegradsmodell har høyst to. Passer til det som stiger og deretter faller, som høyden til et kast.</p><p><strong>Eksponentiell vekst</strong> — $f(x) = a \\cdot b^x$. Like stor <em>prosentvis</em> endring per tidsenhet. Vekstfarten er proporsjonal med selve verdien: $f'(x) = f(x) \\ln b$. Er $b > 1$, vokser modellen; er $0 < b < 1$, avtar den. Kjennetegnet er at doblingstiden (eller halveringstiden) er den samme uansett hvor du starter.</p><p><strong>Logistisk vekst</strong> — $f(x) = \\frac{B}{1 + Ce^{-kx}}$. Starter nesten eksponentielt, men flater ut mot en <strong>bærekapasitet</strong> $B$. Grafen er S-formet, og vendepunktet, der veksten er raskest, ligger i høyden $\\frac{B}{2}$. Denne modellen passer på alt som ikke kan vokse i det uendelige: en bestand med begrenset mat, et rykte i en skole, en ny app i et marked med et fast antall kunder.</p><p>Legg merke til de to holdepunktene i den logistiske modellen: $f(0) = \\frac{B}{1+C}$, og $f(x)$ nærmer seg $B$ når $x$ blir stor.</p>"
+      },
+      {
+        "tittel": "Modellering med derivasjon",
+        "html": "<p>Når du først har en modell, er den deriverte verktøyet som svarer på «hvor fort», «når er det størst» og «når snur det».</p><p><strong>Tolke $f'$ med enheter.</strong> Enheten til $f'(x)$ er enheten til $f$ delt på enheten til $x$. Er $V(t)$ vannmengde i liter og $t$ tid i minutter, betyr $V'(30) = -8$ at vannmengden synker med omtrent 8 liter per minutt 30 minutter etter start. Svar alltid i en hel setning med enhet — det er der poengene ligger.</p><p><strong>Gjennomsnittlig eller momentan?</strong> Uttrykket $\\frac{f(b)-f(a)}{b-a}$ er gjennomsnittlig vekstfart over et helt intervall, mens $f'(a)$ er vekstfarten i ett enkelt øyeblikk. Les nøye hvilken av dem oppgaven spør om.</p><p><strong>Optimering.</strong> Framgangsmåten er fast:</p><ol><li>Sett opp funksjonen ut fra teksten, og få den ned til én variabel.</li><li>Finn definisjonsområdet — hvilke verdier er fysisk mulige?</li><li>Deriver og løs likningen $f'(x) = 0$.</li><li>Sett opp fortegnslinje for $f'$, og avgjør om løsningen er et toppunkt eller et bunnpunkt.</li><li>Sjekk også endepunktene i definisjonsområdet.</li><li>Svar på det oppgaven faktisk spør om, med enhet.</li></ol><p>Den andrederiverte $f''$ sier hvordan vekstfarten selv endrer seg. Er $f'(x) > 0$ og $f''(x) < 0$, vokser funksjonen fortsatt, men saktere og saktere. Der $f''$ skifter fortegn, har grafen et <strong>vendepunkt</strong>, og det er der vekstfarten er størst eller minst.</p>"
+      },
+      {
+        "tittel": "Parameterframstillinger",
+        "html": "<p>Så langt har grafene vært på formen $y = f(x)$: én $y$-verdi for hver $x$. Men en bane i planet kan gå i ring eller krysse seg selv, og da holder ikke den formen. Løsningen er å beskrive $x$ og $y$ hver for seg som funksjoner av en <strong>parameter</strong> $t$, som oftest tiden:</p>$$\\vec{r}(t) = [\\,x(t),\\; y(t)\\,]$$<p>Vektoren $\\vec{r}(t)$ kalles <strong>posisjonsvektoren</strong>. Setter du inn verdier for $t$, får du punkter som til sammen tegner en kurve. I tillegg får du gratis informasjon som en vanlig graf ikke gir: hvor på kurven du er til hvilket tidspunkt, og hvilken vei du beveger deg.</p><p>Den enkleste parameterframstillingen er en rett linje. Linja gjennom punktet $(x_0, y_0)$ med retningsvektor $[a, b]$ er</p>$$\\vec{r}(t) = [\\,x_0 + at,\\; y_0 + bt\\,]$$<p>Linja gjennom $(1, 2)$ med retningsvektor $[3, -1]$ blir altså $\\vec{r}(t) = [\\,1 + 3t,\\; 2 - t\\,]$.</p><p>Vil du tilbake til vanlig funksjonsform, <strong>eliminerer du parameteren</strong>: løs den ene likningen for $t$ og sett inn i den andre. Fra $x = 1 + 3t$ får du $t = \\frac{x-1}{3}$, og satt inn i $y = 2 - t$ gir det $y = 2 - \\frac{x-1}{3}$.</p><p>Men det er ikke alltid mulig. Sirkelen med radius 3 om origo har parameterframstillingen $\\vec{r}(t) = [\\,3\\cos t,\\; 3\\sin t\\,]$, og den treffer samme $x$-verdi to ganger — derfor kan den ikke skrives som én funksjon $y = f(x)$.</p>"
+      },
+      {
+        "tittel": "Fart og akselerasjon langs kurver",
+        "html": "<p>Når $\\vec{r}(t)$ beskriver posisjonen til noe som beveger seg, finner du farten ved å derivere hver koordinat for seg:</p>$$\\vec{v}(t) = \\vec{r}\\,'(t) = [\\,x'(t),\\; y'(t)\\,]$$<p><strong>Fartsvektoren</strong> $\\vec{v}(t)$ er en tangentvektor til banen: den peker i den retningen bevegelsen går akkurat da. Lengden av den er <strong>banefarten</strong>, altså hvor fort du faktisk flytter deg:</p>$$|\\vec{v}(t)| = \\sqrt{\\left(x'(t)\\right)^2 + \\left(y'(t)\\right)^2}$$<p>Merk forskjellen godt: $\\vec{v}(t)$ er en vektor med retning, mens $|\\vec{v}(t)|$ er et positivt tall. Spør oppgaven om «farten» som ett tall, er det lengden du skal regne ut med Pytagoras — ikke summen av komponentene.</p><p>Deriverer du én gang mer, får du <strong>akselerasjonsvektoren</strong>:</p>$$\\vec{a}(t) = \\vec{v}\\,'(t) = \\vec{r}\\,''(t) = [\\,x''(t),\\; y''(t)\\,]$$<p>Den forteller hvordan fartsvektoren endrer seg, både i størrelse og retning. For et fritt kast er $\\vec{a}(t)$ konstant og peker rett nedover, selv om farten hele tiden endrer seg.</p><p>To oppgavetyper går igjen. <em>Når er banefarten minst?</em> Da setter du opp $|\\vec{v}(t)|$ og finner minimum av uttrykket under rottegnet — det er nok, for kvadratrota vokser når innholdet vokser. <em>Når står fartsvektoren vinkelrett på en gitt vektor?</em> Da bruker du at skalarproduktet skal være null.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Eksponentiell modell: vekstfaktor, doblingstid og vekstfart",
+        "oppgave": "<p>En bakteriekultur blir målt hver andre time:</p><table><thead><tr><th>Tid $t$ (timer)</th><th>0</th><th>2</th><th>4</th><th>6</th></tr></thead><tbody><tr><td>Antall bakterier $N$</td><td>500</td><td>1010</td><td>1980</td><td>4000</td></tr></tbody></table><p>a) Vis at en eksponentiell modell passer, og finn modellen $N(t) = a \\cdot b^t$ ved å bruke den første og den siste målingen.</p><p>b) Hva er den prosentvise veksten per time, og hva er doblingstiden?</p><p>c) Finn gjennomsnittlig vekstfart fra $t = 0$ til $t = 6$, og den momentane vekstfarten ved $t = 6$.</p><p>d) Når er det 10 000 bakterier i kulturen?</p>",
+        "losning": "<p><strong>a) Passer en eksponentiell modell?</strong> Vi regner ut forholdstallet mellom nabomålingene:</p>$$\\frac{1010}{500} = 2{,}02 \\qquad \\frac{1980}{1010} \\approx 1{,}96 \\qquad \\frac{4000}{1980} \\approx 2{,}02$$<p>Forholdstallet er omtrent det samme hele veien, altså omtrent en dobling per to timer. Det er kjennetegnet på eksponentiell vekst. (Differansene, $510$, $970$ og $2020$, er derimot slett ikke konstante, så en lineær modell er utelukket.)</p><p>Startverdien gir $a = N(0) = 500$. Målingen ved $t = 6$ gir</p>$$500 \\cdot b^{6} = 4000 \\quad \\Longrightarrow \\quad b^{6} = \\frac{4000}{500} = 8$$<p>Vi løser for $b$ ved å opphøye i $\\frac{1}{6}$:</p>$$b = 8^{1/6} = \\left(2^{3}\\right)^{1/6} = 2^{1/2} = \\sqrt{2} \\approx 1{,}4142$$<p>Modellen blir</p>$$N(t) = 500 \\cdot \\left(\\sqrt{2}\\right)^{t} = 500 \\cdot 2^{t/2}$$<p>Sjekk: $N(2) = 500 \\cdot 2 = 1000$ og $N(4) = 500 \\cdot 4 = 2000$ — svært nær målingene 1010 og 1980. Kjører du <strong>RegEksp</strong> på alle fire punktene i GeoGebra, får du en modell som er nesten identisk med denne.</p><p><strong>b) Prosentvis vekst og doblingstid.</strong> Vekstfaktoren per time er $b \\approx 1{,}4142$. Siden $b = 1 + \\frac{p}{100}$, blir</p>$$p = 100(b - 1) = 100 \\cdot 0{,}4142 = 41{,}4$$<p>Kulturen vokser altså med omtrent 41,4 % per time. Doblingstiden finner vi ved å løse $b^{t} = 2$:</p>$$t = \\frac{\\ln 2}{\\ln b} = \\frac{\\ln 2}{\\ln \\sqrt{2}} = \\frac{\\ln 2}{\\tfrac{1}{2}\\ln 2} = 2$$<p>Doblingstiden er nøyaktig 2 timer, som stemmer med at $b^6 = 8 = 2^3$: tre doblinger på seks timer.</p><p><strong>c) Vekstfart.</strong> Gjennomsnittlig vekstfart fra $t = 0$ til $t = 6$:</p>$$\\frac{N(6) - N(0)}{6 - 0} = \\frac{4000 - 500}{6} = \\frac{3500}{6} \\approx 583 \\;\\text{bakterier per time}$$<p>Den momentane vekstfarten krever derivasjon. Vi bruker $\\left(b^{t}\\right)' = b^{t}\\ln b$:</p>$$N'(t) = 500 \\cdot \\left(\\sqrt{2}\\right)^{t} \\ln \\sqrt{2} = N(t) \\cdot \\ln\\sqrt{2}$$<p>Med $\\ln\\sqrt{2} = \\frac{1}{2}\\ln 2 \\approx 0{,}3466$ og $N(6) = 4000$ får vi</p>$$N'(6) = 4000 \\cdot 0{,}3466 \\approx 1386 \\;\\text{bakterier per time}$$<p>Altså: seks timer etter start vokser kulturen med omtrent 1390 bakterier per time — mer enn dobbelt så fort som gjennomsnittet over hele perioden. Det er typisk for eksponentiell vekst.</p><p><strong>d) Når er $N = 10\\,000$?</strong></p>$$500 \\cdot 2^{t/2} = 10\\,000 \\quad \\Longrightarrow \\quad 2^{t/2} = 20$$<p>Vi tar $\\ln$ på begge sider og bruker at $\\ln\\left(2^{t/2}\\right) = \\frac{t}{2}\\ln 2$:</p>$$\\frac{t}{2}\\ln 2 = \\ln 20 \\quad \\Longrightarrow \\quad t = \\frac{2\\ln 20}{\\ln 2} = \\frac{2 \\cdot 2{,}9957}{0{,}6931} \\approx 8{,}64$$<p>Det er 10 000 bakterier etter omtrent 8,6 timer, altså 8 timer og 39 minutter. Merk at dette ligger utenfor måleområdet $0 \\le t \\le 6$ — svaret er en ekstrapolasjon, og i praksis vil veksten flate ut når næringen tar slutt.</p>"
+      },
+      {
+        "tittel": "Logistisk modell for et rykte på en skole",
+        "oppgave": "<p>På en skole med 800 elever sprer et rykte seg. Ved starten ($t = 0$ dager) kjenner 40 elever ryktet, og etter 2 dager kjenner 200 elever det. Antall elever som kjenner ryktet, modelleres med</p>$$N(t) = \\frac{800}{1 + Ce^{-kt}}$$<p>a) Bestem $C$ og $k$.</p><p>b) Hvor mange kjenner ryktet etter 5 dager?</p><p>c) Når kjenner halvparten av elevene ryktet, og hvor fort sprer det seg da?</p><p>d) Hva skjer med modellen når $t$ blir stor?</p>",
+        "losning": "<p><strong>a) Bestemme $C$.</strong> Vi bruker at $N(0) = 40$. Siden $e^{0} = 1$:</p>$$\\frac{800}{1 + C} = 40 \\quad \\Longrightarrow \\quad 1 + C = \\frac{800}{40} = 20 \\quad \\Longrightarrow \\quad C = 19$$<p><strong>Bestemme $k$.</strong> Vi bruker at $N(2) = 200$:</p>$$\\frac{800}{1 + 19e^{-2k}} = 200 \\quad \\Longrightarrow \\quad 1 + 19e^{-2k} = \\frac{800}{200} = 4$$$$19e^{-2k} = 3 \\quad \\Longrightarrow \\quad e^{-2k} = \\frac{3}{19}$$<p>Vi tar $\\ln$ på begge sider:</p>$$-2k = \\ln\\frac{3}{19} = \\ln 3 - \\ln 19 = 1{,}0986 - 2{,}9444 = -1{,}8458$$$$k = \\frac{1{,}8458}{2} \\approx 0{,}923$$<p>Modellen er</p>$$N(t) = \\frac{800}{1 + 19e^{-0{,}923t}}$$<p><strong>b) Etter 5 dager.</strong> Vi setter inn $t = 5$:</p>$$e^{-0{,}923 \\cdot 5} = e^{-4{,}615} \\approx 0{,}00990$$$$N(5) = \\frac{800}{1 + 19 \\cdot 0{,}00990} = \\frac{800}{1 + 0{,}1882} = \\frac{800}{1{,}1882} \\approx 673$$<p>Omtrent 673 elever kjenner ryktet etter 5 dager.</p><p><strong>c) Halvparten, og vekstfarten der.</strong> Halvparten er $\\frac{800}{2} = 400$ elever:</p>$$\\frac{800}{1 + 19e^{-kt}} = 400 \\quad \\Longrightarrow \\quad 1 + 19e^{-kt} = 2 \\quad \\Longrightarrow \\quad e^{-kt} = \\frac{1}{19}$$$$-kt = -\\ln 19 \\quad \\Longrightarrow \\quad t = \\frac{\\ln 19}{k} = \\frac{2{,}9444}{0{,}923} \\approx 3{,}19$$<p>Halvparten kjenner ryktet etter omtrent 3,2 dager. For å finne vekstfarten deriverer vi. Vi skriver $N(t) = 800\\left(1 + 19e^{-kt}\\right)^{-1}$ og bruker kjerneregelen to ganger:</p>$$N'(t) = -800\\left(1 + 19e^{-kt}\\right)^{-2} \\cdot 19 \\cdot (-k)e^{-kt} = \\frac{800 \\cdot 19k\\,e^{-kt}}{\\left(1 + 19e^{-kt}\\right)^{2}}$$<p>Ved $t \\approx 3{,}19$ er $19e^{-kt} = 1$, så telleren blir $800k$ og nevneren $(1+1)^2 = 4$:</p>$$N'(3{,}19) = \\frac{800 \\cdot 0{,}923}{4} \\approx 185 \\;\\text{elever per dag}$$<p>Dette er det raskeste ryktet noen gang sprer seg. Punktet er vendepunktet til grafen: før det øker spredningsfarten, etter det avtar den, rett og slett fordi det begynner å bli få elever igjen som ikke har hørt ryktet.</p><p><strong>d) Grenseverdien.</strong> Når $t$ blir stor, går $e^{-0{,}923t}$ mot 0, og dermed</p>$$N(t) \\to \\frac{800}{1 + 0} = 800$$<p>Modellen sier at ryktet til slutt når alle 800 elevene, men aldri helt: $N(t)$ nærmer seg 800 uten å komme dit. Tallet 800 er <strong>bærekapasiteten</strong> i modellen.</p>"
+      },
+      {
+        "tittel": "Optimering: største volum av en eske",
+        "oppgave": "<p>Du har en kvadratisk metallplate med sider 60 cm. Du skjærer bort et kvadrat med side $x$ cm i hvert hjørne og bretter opp sidene, slik at du får en eske uten lokk.</p><p>a) Vis at volumet er $V(x) = x(60 - 2x)^2$, og finn definisjonsområdet.</p><p>b) Finn den verdien av $x$ som gir størst volum, og regn ut dette volumet.</p>",
+        "losning": "<p><strong>a) Sette opp modellen.</strong> Når du skjærer bort $x$ cm i begge ender av en side på 60 cm, blir bunnen et kvadrat med side</p>$$60 - 2x \\;\\text{(cm)}$$<p>Høyden i esken er nettopp $x$ cm, det du brettet opp. Volumet blir grunnflate ganger høyde:</p>$$V(x) = x(60 - 2x)^{2} \\;\\text{cm}^3$$<p>For at esken skal finnes, må $x > 0$, og bunnen må ha positiv side: $60 - 2x > 0$, altså $x < 30$. Definisjonsområdet er $0 < x < 30$.</p><p><strong>b) Optimering.</strong> Vi ganger ut først, så slipper vi produktregelen:</p>$$(60-2x)^{2} = 3600 - 240x + 4x^{2}$$$$V(x) = x\\left(3600 - 240x + 4x^{2}\\right) = 4x^{3} - 240x^{2} + 3600x$$<p>Deriverer vi ledd for ledd:</p>$$V'(x) = 12x^{2} - 480x + 3600 = 12\\left(x^{2} - 40x + 300\\right)$$<p>Vi løser $V'(x) = 0$ med abc-formelen på parentesen:</p>$$x = \\frac{40 \\pm \\sqrt{40^{2} - 4 \\cdot 1 \\cdot 300}}{2} = \\frac{40 \\pm \\sqrt{1600 - 1200}}{2} = \\frac{40 \\pm 20}{2}$$<p>Det gir $x = 30$ eller $x = 10$. Løsningen $x = 30$ ligger utenfor definisjonsområdet (da er bunnen borte og volumet 0), så bare $x = 10$ er aktuell.</p><p>Vi setter opp fortegnslinje for $V'(x) = 12(x-10)(x-30)$ på intervallet:</p><ul><li>$V'(5) = 12 \\cdot (-5) \\cdot (-25) = 1500 > 0$ — $V$ vokser</li><li>$V'(20) = 12 \\cdot 10 \\cdot (-10) = -1200 < 0$ — $V$ avtar</li></ul><p>Den deriverte skifter fra positiv til negativ i $x = 10$, så der har $V$ et toppunkt. Volumet blir</p>$$V(10) = 10 \\cdot (60 - 20)^{2} = 10 \\cdot 40^{2} = 10 \\cdot 1600 = 16\\,000 \\;\\text{cm}^3$$<p>Du får størst volum når du skjærer bort kvadrater med side 10 cm. Esken blir da 40 cm $\\times$ 40 cm $\\times$ 10 cm, og volumet er 16 000 cm³, altså 16 liter.</p>"
+      },
+      {
+        "tittel": "Vektorfunksjon: bane, fart og akselerasjon",
+        "oppgave": "<p>En ball kastes, og posisjonen i planet er gitt ved vektorfunksjonen</p>$$\\vec{r}(t) = [\\,2t,\\; 6t - t^{2}\\,]$$<p>der $t$ er tiden i sekunder og koordinatene er i meter, $t \\ge 0$.</p><p>a) Finn $\\vec{v}(t)$ og $\\vec{a}(t)$.</p><p>b) Hvor stor er banefarten etter 1 sekund?</p><p>c) Når er banefarten minst, og hvor er ballen da?</p><p>d) Eliminer parameteren og finn banen som en funksjon $y$ av $x$.</p><p>e) Når treffer ballen bakken ($y = 0$ igjen), hvor langt unna, og hvor fort går den da?</p>",
+        "losning": "<p><strong>a) Derivere komponentvis.</strong> Vi deriverer hver koordinat med hensyn på $t$:</p>$$x(t) = 2t \\;\\Rightarrow\\; x'(t) = 2 \\qquad y(t) = 6t - t^{2} \\;\\Rightarrow\\; y'(t) = 6 - 2t$$$$\\vec{v}(t) = [\\,2,\\; 6 - 2t\\,] \\;\\text{(m/s)}$$<p>Én derivasjon mer gir akselerasjonen:</p>$$x''(t) = 0 \\qquad y''(t) = -2$$$$\\vec{a}(t) = [\\,0,\\; -2\\,] \\;\\text{(m/s}^2\\text{)}$$<p>Akselerasjonen er konstant og peker rett nedover, med størrelse 2 m/s². Det er tyngdekraften i denne modellen.</p><p><strong>b) Banefarten etter 1 sekund.</strong> Først fartsvektoren:</p>$$\\vec{v}(1) = [\\,2,\\; 6 - 2 \\cdot 1\\,] = [\\,2,\\; 4\\,]$$<p>Banefarten er lengden av den:</p>$$|\\vec{v}(1)| = \\sqrt{2^{2} + 4^{2}} = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5} \\approx 4{,}47 \\;\\text{m/s}$$<p><strong>c) Minst banefart.</strong> Generelt er</p>$$|\\vec{v}(t)| = \\sqrt{2^{2} + (6-2t)^{2}} = \\sqrt{4 + (6-2t)^{2}}$$<p>Uttrykket under rottegnet er minst når $(6-2t)^{2}$ er minst, og et kvadrat er minst når det er 0:</p>$$6 - 2t = 0 \\quad \\Longrightarrow \\quad t = 3$$<p>Etter 3 sekunder er banefarten</p>$$|\\vec{v}(3)| = \\sqrt{4 + 0} = 2 \\;\\text{m/s}$$<p>Posisjonen da er</p>$$\\vec{r}(3) = [\\,2 \\cdot 3,\\; 6 \\cdot 3 - 3^{2}\\,] = [\\,6,\\; 9\\,]$$<p>Ballen er 6 m fram og 9 m opp. Det er toppen av banen: der er den loddrette farten null, og bare den vannrette farten på 2 m/s er igjen.</p><p><strong>d) Eliminere parameteren.</strong> Fra $x = 2t$ får vi $t = \\frac{x}{2}$. Satt inn i $y = 6t - t^{2}$:</p>$$y = 6 \\cdot \\frac{x}{2} - \\left(\\frac{x}{2}\\right)^{2} = 3x - \\frac{x^{2}}{4}$$<p>Banen er altså en parabel. Kontroll med punktet fra c): $x = 6$ gir $y = 18 - \\frac{36}{4} = 18 - 9 = 9$. Det stemmer.</p><p><strong>e) Nedslaget.</strong> Vi løser $y(t) = 0$:</p>$$6t - t^{2} = 0 \\quad \\Longrightarrow \\quad t(6 - t) = 0 \\quad \\Longrightarrow \\quad t = 0 \\;\\text{ eller }\\; t = 6$$<p>Ballen er tilbake i bakken etter 6 sekunder. Den vannrette avstanden er</p>$$x(6) = 2 \\cdot 6 = 12 \\;\\text{m}$$<p>Farten ved nedslaget:</p>$$\\vec{v}(6) = [\\,2,\\; 6 - 12\\,] = [\\,2,\\; -6\\,]$$$$|\\vec{v}(6)| = \\sqrt{2^{2} + (-6)^{2}} = \\sqrt{4 + 36} = \\sqrt{40} = 2\\sqrt{10} \\approx 6{,}32 \\;\\text{m/s}$$<p>Ballen treffer bakken 12 m unna, 6 sekunder etter kastet, med en banefart på omtrent 6,3 m/s.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å blande prosent og vekstfaktor. En nedgang på 6 % per år gir vekstfaktoren $b = 0{,}94$ — ikke $1{,}06$ og ikke $0{,}06$. Tilsvarende: $b = 1{,}25$ betyr 25 % vekst, ikke 125 % vekst.",
+      "Å bruke doblingstidsformelen med startverdien inne i regnestykket. Doblingstiden er $\\frac{\\ln 2}{\\ln b}$ og er helt uavhengig av $a$; å løse $b^x = 2a$ gir feil svar.",
+      "Å svare med $x$-verdien når oppgaven spør om maksimalverdien. I eskeoppgaven er svaret 16 000 cm³, mens $x = 10$ cm bare er stedet der maksimumet ligger. Og motsatt: å glemme å sjekke definisjonsområdet, slik at en løsning som $x = 30$ blir med selv om den er umulig.",
+      "Å oppgi den deriverte som et nakent tall uten enhet og uten tolkning. $N'(6) = 1386$ betyr «1386 bakterier per time etter 6 timer» — enheten er enheten til $N$ delt på enheten til $t$.",
+      "Å regne banefarten som summen av komponentene i $\\vec{v}$, eller å regne ut $|\\vec{r}(t)|$ i stedet for $|\\vec{v}(t)|$. Banefarten er $\\sqrt{x'(t)^2 + y'(t)^2}$, altså den pytagoreiske lengden av fartsvektoren.",
+      "Å tro at akselerasjonen er null når banefarten er på sitt minste. I toppen av en kastebane er den loddrette farten 0, men akselerasjonen er fortsatt $[\\,0,\\;-2\\,]$ og trekker ballen nedover."
+    ],
+
+    "tips": [
+      "På del 2 med hjelpemidler: skriv alltid ned hvilken regresjonstype du valgte og hvorfor, og oppgi modellen med minst tre–fire gjeldende siffer før du regner videre. Runder du av for tidlig, blir svarene lenger ute i oppgaven feil.",
+      "Les av enhetene til $x$ og $f(x)$ før du tolker $f'$, og svar i en hel setning: «Etter 6 timer vokser kulturen med omtrent 1390 bakterier per time.» Tolkningsspørsmål gir like mange poeng som regningen.",
+      "Lær de tre holdepunktene i den logistiske modellen $f(x) = \\frac{B}{1+Ce^{-kx}}$: $B$ er grenseverdien, $f(0) = \\frac{B}{1+C}$, og veksten er raskest i vendepunktet der $f(x) = \\frac{B}{2}$. Da løser du de fleste slike oppgaver på minutter.",
+      "Ved optimering: skriv definisjonsområdet med én gang, og sett alltid opp fortegnslinje for $f'$. Fortegnslinja gir uttelling selv om regningen glipper, og den fanger opp løsninger som må forkastes.",
+      "I vektoroppgaver: begynn med å skrive opp $\\vec{r}(t)$, $\\vec{v}(t) = \\vec{r}\\,'(t)$ og $\\vec{a}(t) = \\vec{v}\\,'(t)$ under hverandre før du leser deloppgavene. Da har du alt du trenger, og du unngår å blande posisjon, fart og akselerasjon."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Matematisk modell", "forklaring": "En funksjon som beskriver en sammenheng i virkeligheten. Den er alltid en forenkling og gjelder bare i et bestemt definisjonsområde." },
+    { "begrep": "Regresjon", "forklaring": "Å finne den funksjonen av en valgt type som passer best til et sett målepunkter, slik at det samlede avviket blir minst mulig." },
+    { "begrep": "Interpolasjon", "forklaring": "Å bruke modellen til å regne ut verdier inne i det området målingene dekker. Da er svaret rimelig pålitelig." },
+    { "begrep": "Ekstrapolasjon", "forklaring": "Å bruke modellen utenfor måleområdet. Svaret er usikkert, og du bør alltid kommentere gyldigheten." },
+    { "begrep": "Vekstfaktor", "forklaring": "Tallet $b$ du multipliserer med for hver enhet $x$ øker. Sammenhengen med prosent er $b = 1 + \\frac{p}{100}$." },
+    { "begrep": "Doblingstid", "forklaring": "Tiden det tar før en eksponentiell modell dobler seg: $\\frac{\\ln 2}{\\ln b}$. Den er den samme uansett startverdi." },
+    { "begrep": "Halveringstid", "forklaring": "Tiden det tar før en avtakende eksponentiell modell halveres: $\\frac{\\ln 0{,}5}{\\ln b}$, der $0 < b < 1$." },
+    { "begrep": "Logistisk vekst", "forklaring": "Vekst som starter nesten eksponentielt og flater ut mot et tak. Modellen er $f(x) = \\frac{B}{1 + Ce^{-kx}}$, og grafen er S-formet." },
+    { "begrep": "Bærekapasitet", "forklaring": "Grenseverdien $B$ i en logistisk modell — den største verdien modellen nærmer seg, men aldri når." },
+    { "begrep": "Vendepunkt", "forklaring": "Punktet der grafen skifter mellom å krumme oppover og nedover. Der er vekstfarten $f'$ størst eller minst, og $f''$ skifter fortegn." },
+    { "begrep": "Parameterframstilling", "forklaring": "En beskrivelse av en kurve der $x$ og $y$ hver for seg er funksjoner av en hjelpevariabel (parameter) $t$." },
+    { "begrep": "Vektorfunksjon", "forklaring": "En funksjon som til hver verdi av $t$ gir en vektor, $\\vec{r}(t) = [x(t),\\; y(t)]$. Brukes som posisjonsvektor for et punkt i bevegelse." },
+    { "begrep": "Fartsvektor", "forklaring": "Den deriverte av posisjonsvektoren, $\\vec{v}(t) = [x'(t),\\; y'(t)]$. Den er tangent til banen og peker i bevegelsesretningen." },
+    { "begrep": "Banefart", "forklaring": "Lengden av fartsvektoren, $|\\vec{v}(t)| = \\sqrt{x'(t)^2 + y'(t)^2}$. Et positivt tall uten retning." },
+    { "begrep": "Akselerasjonsvektor", "forklaring": "Den deriverte av fartsvektoren, altså den andrederiverte av posisjonen: $\\vec{a}(t) = [x''(t),\\; y''(t)]$." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "En tabell viser at $f$ blir multiplisert med omtrent 1,15 hver gang $x$ øker med 1. Hvilken modelltype passer best?",
+      "alternativer": [
+        "Lineær: $f(x) = 1{,}15x + b$",
+        "Eksponentiell: $f(x) = a \\cdot 1{,}15^{x}$",
+        "Logistisk: $f(x) = \\frac{B}{1 + Ce^{-kx}}$",
+        "Andregrads: $f(x) = 1{,}15x^{2} + bx + c$"
+      ],
+      "riktig": 1,
+      "forklaring": "Konstant forholdstall mellom nabomålinger er kjennetegnet på eksponentiell vekst, og forholdstallet er nettopp vekstfaktoren $b = 1{,}15$. En lineær modell ville hatt konstant differanse, ikke konstant forholdstall — det er den vanligste forvekslingen. En logistisk modell vokser også med omtrent samme faktor helt i starten, men forholdstallet synker etter hvert som verdien nærmer seg taket, så det ville ikke holdt seg på 1,15 gjennom hele tabellen."
+    },
+    {
+      "sporsmal": "Mengden av et stoff avtar med 6 % per år. Hva er vekstfaktoren per år?",
+      "alternativer": ["$1{,}06$", "$0{,}06$", "$0{,}94$", "$-0{,}06$"],
+      "riktig": 2,
+      "forklaring": "Vekstfaktoren er $b = 1 + \\frac{p}{100}$, og en nedgang betyr $p = -6$, altså $b = 1 - 0{,}06 = 0{,}94$. Sjekk med et tall: 100 g minus 6 % er 94 g, og $100 \\cdot 0{,}94 = 94$. Alternativet $1{,}06$ ville gitt 6 % vekst i stedet, mens $0{,}06$ ville betydd at det bare var 6 % av stoffet igjen etter ett år — altså 94 % nedgang."
+    },
+    {
+      "sporsmal": "Hva er doblingstiden til modellen $f(x) = 200 \\cdot 1{,}25^{x}$?",
+      "alternativer": [
+        "$\\frac{\\ln 2}{\\ln 1{,}25} \\approx 3{,}1$",
+        "$\\frac{\\ln 1{,}25}{\\ln 2} \\approx 0{,}32$",
+        "$\\frac{2}{1{,}25} = 1{,}6$",
+        "$\\frac{\\ln 400}{\\ln 1{,}25} \\approx 26{,}8$"
+      ],
+      "riktig": 0,
+      "forklaring": "Doblingstid betyr at verdien blir dobbelt så stor: $200 \\cdot 1{,}25^{x} = 400$, som forkortes til $1{,}25^{x} = 2$ og gir $x = \\frac{\\ln 2}{\\ln 1{,}25} \\approx 3{,}1$. Legg merke til at startverdien 200 faller bort — doblingstiden er uavhengig av $a$. Alternativ D er feilen der man glemmer å dele på 200 og i stedet løser $1{,}25^{x} = 400$."
+    },
+    {
+      "sporsmal": "En bestand modelleres med $N(t) = \\frac{5000}{1 + 49e^{-0{,}3t}}$. Hva er bærekapasiteten og startverdien?",
+      "alternativer": [
+        "Bærekapasitet 49, $N(0) = 100$",
+        "Bærekapasitet 5000, $N(0) = 5000$",
+        "Bærekapasitet 100, $N(0) = 5000$",
+        "Bærekapasitet 5000, $N(0) = 100$"
+      ],
+      "riktig": 3,
+      "forklaring": "Når $t$ blir stor, går $e^{-0{,}3t}$ mot 0, og $N(t)$ nærmer seg $\\frac{5000}{1} = 5000$. Det er bærekapasiteten. Startverdien får du ved å sette $t = 0$, der $e^{0} = 1$: $N(0) = \\frac{5000}{1 + 49} = \\frac{5000}{50} = 100$. Den vanligste feilen er å tro at telleren 5000 også er startverdien — men nevneren er 50 ved $t = 0$, ikke 1."
+    },
+    {
+      "sporsmal": "$V(t)$ er vannmengden i et basseng i liter, og $t$ er tiden i minutter. Hva betyr $V'(20) = -12$?",
+      "alternativer": [
+        "Det er 12 liter mindre vann i bassenget etter 20 minutter.",
+        "20 minutter etter start synker vannmengden med omtrent 12 liter per minutt.",
+        "Vannmengden i bassenget er $-12$ liter etter 20 minutter.",
+        "Det tar 12 minutter før bassenget er tomt."
+      ],
+      "riktig": 1,
+      "forklaring": "Den deriverte er momentan vekstfart, og enheten er enheten til $V$ delt på enheten til $t$, altså liter per minutt. Negativt fortegn betyr at mengden avtar. Alternativ A beskriver en endring i mengde, $V(20) - V(0)$, ikke en endringsfart — det er den klassiske sammenblandingen av $V$ og $V'$. Tallet $-12$ er en fart, ikke en vannmengde."
+    },
+    {
+      "sporsmal": "En lineær modell er tilpasset data fra 2010 til 2020. Hva er den viktigste innvendingen mot å bruke den til å anslå verdien i 2060?",
+      "alternativer": [
+        "Ingen — en lineær modell gjelder for alle verdier av $x$.",
+        "Lineære modeller kan bare brukes bakover i tid.",
+        "Å regne så langt utenfor måleområdet er ekstrapolasjon, og modellen kan ha sluttet å gjelde.",
+        "Man må kjøre regresjonen på nytt for hvert enkelt år."
+      ],
+      "riktig": 2,
+      "forklaring": "Regresjonen sier bare noe om hvor godt funksjonen passer der du har data. Utenfor dette området — ekstrapolasjon — kan virkeligheten oppføre seg helt annerledes, for eksempel flate ut mot en øvre grense. Alternativ A er den vanligste tenkefeilen: funksjonen er matematisk definert for alle $x$, men selve modellen er bare gyldig i sitt definisjonsområde. Det er forskjell på at et regnestykke går opp og at svaret betyr noe."
+    },
+    {
+      "sporsmal": "En kurve er gitt ved $x(t) = 2t + 1$ og $y(t) = t^{2}$. Hva blir $y$ uttrykt ved $x$?",
+      "alternativer": [
+        "$y = (x-1)^{2}$",
+        "$y = \\frac{x^{2}-1}{4}$",
+        "$y = 4(x-1)^{2}$",
+        "$y = \\frac{(x-1)^{2}}{4}$"
+      ],
+      "riktig": 3,
+      "forklaring": "Løs den enkleste likningen for $t$: $x = 2t + 1$ gir $t = \\frac{x-1}{2}$. Sett dette inn i $y = t^{2}$: $y = \\left(\\frac{x-1}{2}\\right)^{2} = \\frac{(x-1)^{2}}{4}$. Alternativ A er hva du får hvis du glemmer å dele på 2, og alternativ B kommer av å kvadrere teller og nevner hver for seg uten å ta hensyn til at hele parentesen skal kvadreres. Kontroll: $t = 1$ gir punktet $(3, 1)$, og $\\frac{(3-1)^2}{4} = 1$."
+    },
+    {
+      "sporsmal": "En partikkel har posisjon $\\vec{r}(t) = [\\,t^{2},\\; 4t\\,]$, med meter og sekunder. Hvor stor er banefarten ved $t = 2$?",
+      "alternativer": ["$5{,}7$ m/s", "$8{,}0$ m/s", "$8{,}9$ m/s", "$4{,}0$ m/s"],
+      "riktig": 0,
+      "forklaring": "Først deriverer du: $\\vec{v}(t) = [\\,2t,\\; 4\\,]$, så $\\vec{v}(2) = [\\,4,\\; 4\\,]$. Banefarten er lengden: $\\sqrt{4^2 + 4^2} = \\sqrt{32} \\approx 5{,}7$ m/s. Alternativ B er feilen der man legger sammen komponentene ($4 + 4$) i stedet for å bruke Pytagoras. Alternativ C er $|\\vec{r}(2)| = \\sqrt{4^2 + 8^2} = \\sqrt{80} \\approx 8{,}9$, altså avstanden fra origo — man har glemt å derivere."
+    },
+    {
+      "sporsmal": "Hva er akselerasjonsvektoren til $\\vec{r}(t) = [\\,3t,\\; 5 - t^{2}\\,]$?",
+      "alternativer": [
+        "$[\\,3,\\; -2t\\,]$",
+        "$[\\,0,\\; -2t\\,]$",
+        "$[\\,0,\\; -2\\,]$",
+        "$[\\,3,\\; -2\\,]$"
+      ],
+      "riktig": 2,
+      "forklaring": "Akselerasjonen er den andrederiverte av posisjonen. Første derivasjon gir $\\vec{v}(t) = [\\,3,\\; -2t\\,]$, andre derivasjon gir $\\vec{a}(t) = [\\,0,\\; -2\\,]$: konstanten 3 deriveres til 0, og $-2t$ til $-2$. Alternativ A er fartsvektoren, ikke akselerasjonen — den vanligste feilen er å stoppe etter én derivasjon. Alternativ D har beholdt 3-eren, men en konstant hastighetskomponent gir ingen akselerasjon i den retningen."
+    },
+    {
+      "sporsmal": "Når vokser en logistisk modell $f(x) = \\frac{B}{1 + Ce^{-kx}}$ raskest?",
+      "alternativer": [
+        "Helt i starten, ved $x = 0$",
+        "Når $f(x)$ nærmer seg bærekapasiteten $B$",
+        "Når $f(x) = B$",
+        "Når $f(x) = \\frac{B}{2}$"
+      ],
+      "riktig": 3,
+      "forklaring": "Grafen er S-formet, og vekstfarten $f'$ er størst i vendepunktet midt på S-en, der $f(x) = \\frac{B}{2}$. Der er $f'_{\\max} = \\frac{kB}{4}$. Alternativ A er fristende fordi kurven ser bratt ut i starten sammenlignet med sin egen verdi, men i absolutte tall er veksten liten så lenge $f(x)$ er liten. Nær bærekapasiteten er det motsatt: verdien er stor, men veksten går mot 0."
+    },
+    {
+      "sporsmal": "Hvilken parameterframstilling beskriver linja gjennom $(1, 2)$ med retningsvektor $[\\,3,\\; -1\\,]$?",
+      "alternativer": [
+        "$\\vec{r}(t) = [\\,3 + t,\\; -1 + 2t\\,]$",
+        "$\\vec{r}(t) = [\\,1 + 3t,\\; 2 - t\\,]$",
+        "$\\vec{r}(t) = [\\,1 + t,\\; 2 + 3t\\,]$",
+        "$\\vec{r}(t) = [\\,3 - t,\\; 1 + 2t\\,]$"
+      ],
+      "riktig": 1,
+      "forklaring": "Formen er $\\vec{r}(t) = [\\,x_0 + at,\\; y_0 + bt\\,]$: punktet gir konstantleddene, retningsvektoren gir tallene som ganges med $t$. Her blir det $[\\,1 + 3t,\\; 2 - t\\,]$. Kontroll: $t = 0$ gir punktet $(1, 2)$. Alternativ A har byttet om rollene til punkt og retningsvektor, en feil som er lett å gjøre hvis du bare setter tallene inn i rekkefølge."
+    },
+    {
+      "sporsmal": "Hvor mange topp- og bunnpunkter kan en tredjegradsmodell $f(x) = ax^{3} + bx^{2} + cx + d$ med $a \\ne 0$ ha til sammen?",
+      "alternativer": ["Høyst to", "Alltid nøyaktig to", "Høyst tre", "Alltid nøyaktig ett"],
+      "riktig": 0,
+      "forklaring": "$f'(x) = 3ax^{2} + 2bx + c$ er en andregradsfunksjon, og den har høyst to nullpunkter. Derfor kan $f$ ha høyst to topp-/bunnpunkter. Men den kan også ha færre: er diskriminanten til $f'$ negativ, har $f'$ ingen nullpunkter, og $f$ er monoton hele veien — $f(x) = x^{3} + x$ er et eksempel. Det er derfor «alltid nøyaktig to» er galt: det gjelder ofte, men ikke alltid."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Hva er en matematisk modell?", "bak": "En funksjon som beskriver en sammenheng i virkeligheten. Den er en forenkling og gjelder bare innenfor et bestemt definisjonsområde." },
+    { "front": "Hvordan ser du på en tabell om modellen bør være lineær eller eksponentiell?", "bak": "Konstant differanse mellom nabomålingene gir lineær modell. Konstant forholdstall gir eksponentiell modell." },
+    { "front": "GeoGebra-kommandoer for regresjon", "bak": "RegLin (lineær), RegPoly (polynom av valgt grad), RegEksp (eksponentiell), RegPot (potensfunksjon), RegLogist (logistisk)." },
+    { "front": "Vekstfaktor ved $p$ % endring", "bak": "$b = 1 + \\frac{p}{100}$. En nedgang på 6 % gir $b = 0{,}94$; en vekst på 25 % gir $b = 1{,}25$." },
+    { "front": "Doblingstid for $f(x) = a \\cdot b^{x}$", "bak": "$x = \\frac{\\ln 2}{\\ln b}$ — helt uavhengig av startverdien $a$." },
+    { "front": "Halveringstid for $f(x) = a \\cdot b^{x}$ når $0 < b < 1$", "bak": "$x = \\frac{\\ln 0{,}5}{\\ln b}$" },
+    { "front": "Den deriverte av $f(x) = a \\cdot b^{x}$", "bak": "$f'(x) = a b^{x} \\ln b = f(x) \\cdot \\ln b$ — vekstfarten er proporsjonal med funksjonsverdien." },
+    { "front": "Den logistiske modellen", "bak": "$f(x) = \\frac{B}{1 + Ce^{-kx}}$, der $B$ er bærekapasiteten og $f(0) = \\frac{B}{1+C}$. Grafen er S-formet." },
+    { "front": "Når vokser en logistisk modell raskest?", "bak": "I vendepunktet, der $f(x) = \\frac{B}{2}$. Da er vekstfarten $\\frac{kB}{4}$." },
+    { "front": "Interpolasjon eller ekstrapolasjon?", "bak": "Interpolasjon: regne inne i måleområdet, rimelig trygt. Ekstrapolasjon: regne utenfor, usikkert — kommenter alltid gyldigheten." },
+    { "front": "Hva er enheten til $f'(x)$?", "bak": "Enheten til $f$ delt på enheten til $x$. Er $f$ i liter og $x$ i minutter, er $f'$ i liter per minutt." },
+    { "front": "Framgangsmåte i en optimeringsoppgave", "bak": "Sett opp funksjonen med én variabel, finn definisjonsområdet, deriver, løs $f'(x) = 0$, sett opp fortegnslinje for $f'$, sjekk endepunktene, svar med enhet." },
+    { "front": "Parameterframstilling for linja gjennom $(x_0, y_0)$ med retningsvektor $[\\,a,\\; b\\,]$", "bak": "$\\vec{r}(t) = [\\,x_0 + at,\\; y_0 + bt\\,]$" },
+    { "front": "Hvordan eliminerer du parameteren?", "bak": "Løs den ene likningen for $t$ og sett uttrykket inn i den andre. Da får du $y$ som funksjon av $x$." },
+    { "front": "Fartsvektor og banefart", "bak": "$\\vec{v}(t) = \\vec{r}\\,'(t) = [\\,x'(t),\\; y'(t)\\,]$ er tangent til banen. Banefarten er lengden $|\\vec{v}(t)| = \\sqrt{x'(t)^2 + y'(t)^2}$, et positivt tall." },
+    { "front": "Akselerasjonsvektor", "bak": "$\\vec{a}(t) = \\vec{v}\\,'(t) = \\vec{r}\\,''(t) = [\\,x''(t),\\; y''(t)\\,]$ — den andrederiverte av posisjonen." }
+  ]
+}

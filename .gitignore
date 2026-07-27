@@ -1,3 +1,4 @@
 logs/
 _*.html
 .DS_Store
+.claude/

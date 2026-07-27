@@ -1,0 +1,218 @@
+{
+  "fag": "matematikk",
+  "nr": 6,
+  "tittel": "Vektorer",
+  "intro": "Vektorer er språket for størrelser som har både lengde og retning — forflytning, fart og kraft. I dette kapittelet lærer du å regne med vektorer på koordinatform og å bruke skalarprodukt og determinant til å finne vinkler, avgjøre om vektorer står normalt på hverandre, og regne ut arealer.",
+
+  "kompakt": {
+    "punkter": [
+      "En vektor har lengde og retning, men ingen fast plassering. To vektorer er like når de har samme lengde og samme retning.",
+      "Vektoren mellom to punkter er slutt minus start: $\\overrightarrow{AB} = [x_B - x_A,\\; y_B - y_A]$.",
+      "Lengden til $\\vec{a} = [a_1, a_2]$ finner du med Pytagoras: $|\\vec{a}| = \\sqrt{a_1^2 + a_2^2}$.",
+      "Du adderer, subtraherer og ganger med tall komponentvis: $\\vec a + \\vec b = [a_1+b_1,\\; a_2+b_2]$ og $t\\vec a = [ta_1,\\; ta_2]$.",
+      "Skalarproduktet gir et tall, ikke en vektor: $\\vec a\\cdot\\vec b = a_1b_1 + a_2b_2$.",
+      "Det samme tallet kan skrives $\\vec a\\cdot\\vec b = |\\vec a|\\,|\\vec b|\\cos\\alpha$, der $\\alpha$ er vinkelen mellom vektorene. Setter du de to uttrykkene lik hverandre, finner du vinkelen.",
+      "Fortegnet til skalarproduktet avgjør vinkeltypen: positivt gir spiss vinkel, null gir rett vinkel, negativt gir butt vinkel.",
+      "To vektorer ulik $\\vec 0$ er ortogonale når $\\vec a\\cdot\\vec b = 0$, og parallelle når $\\vec b = t\\vec a$ for et tall $t$.",
+      "Determinanten $\\det(\\vec a, \\vec b) = a_1b_2 - a_2b_1$ er null nøyaktig når vektorene er parallelle.",
+      "Arealet av parallellogrammet utspent av $\\vec a$ og $\\vec b$ er $|\\det(\\vec a,\\vec b)|$, og trekanten er halvparten så stor."
+    ],
+    "formler": [
+      { "navn": "Vektor mellom to punkter", "latex": "\\overrightarrow{AB} = [x_B - x_A,\\; y_B - y_A]" },
+      { "navn": "Lengden av en vektor", "latex": "|\\vec a| = \\sqrt{a_1^2 + a_2^2}" },
+      { "navn": "Sum og differanse", "latex": "\\vec a \\pm \\vec b = [a_1 \\pm b_1,\\; a_2 \\pm b_2]" },
+      { "navn": "Multiplikasjon med et tall", "latex": "t\\vec a = [t a_1,\\; t a_2], \\qquad |t\\vec a| = |t|\\,|\\vec a|" },
+      { "navn": "Skalarproduktet på koordinatform", "latex": "\\vec a \\cdot \\vec b = a_1 b_1 + a_2 b_2" },
+      { "navn": "Skalarproduktet med vinkelen", "latex": "\\vec a \\cdot \\vec b = |\\vec a|\\,|\\vec b|\\cos\\alpha" },
+      { "navn": "Vinkelen mellom to vektorer", "latex": "\\cos\\alpha = \\frac{\\vec a\\cdot\\vec b}{|\\vec a|\\,|\\vec b|}" },
+      { "navn": "Ortogonalitet", "latex": "\\vec a \\perp \\vec b \\iff \\vec a\\cdot\\vec b = 0" },
+      { "navn": "Parallellitet", "latex": "\\vec a \\parallel \\vec b \\iff \\vec b = t\\vec a \\iff a_1b_2 - a_2b_1 = 0" },
+      { "navn": "Lengden i annen", "latex": "\\vec a \\cdot \\vec a = |\\vec a|^2" },
+      { "navn": "Enhetsvektor", "latex": "\\vec e = \\frac{1}{|\\vec a|}\\,\\vec a" },
+      { "navn": "Vektor normalt på $\\vec a$", "latex": "\\vec a = [a_1, a_2] \\;\\Longrightarrow\\; [-a_2,\\, a_1] \\perp \\vec a" },
+      { "navn": "Determinanten", "latex": "\\det(\\vec a, \\vec b) = \\begin{vmatrix} a_1 & b_1 \\\\ a_2 & b_2 \\end{vmatrix} = a_1b_2 - a_2b_1" },
+      { "navn": "Areal av parallellogram og trekant", "latex": "A_{\\square} = \\left|\\det(\\vec a, \\vec b)\\right|, \\qquad A_{\\triangle} = \\frac{1}{2}\\left|\\det(\\vec a, \\vec b)\\right|" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Hva er en vektor?",
+        "html": "<p>Noen størrelser er ferdig beskrevet med et tall og en enhet: massen 70 kg, temperaturen 18 °C, tiden 12 s. Slike størrelser kaller vi <strong>skalarer</strong>. Andre størrelser trenger mer informasjon. Skal du beskrive en forflytning, en fart eller en kraft, må du også si <em>hvilken vei</em> den går. Da bruker vi en <strong>vektor</strong>.</p><p>En vektor tegnes som en pil. Lengden av pila viser hvor stor vektoren er, og retningen viser hvilken vei den peker. Det avgjørende — og det som overrasker mange — er at pila ikke er bundet til et sted: to piler som er like lange og peker samme vei, er <strong>samme vektor</strong>, selv om de er tegnet i ulike deler av planet. Derfor kan du alltid flytte en vektor parallelt med seg selv, og det er nettopp dette som gjør regning med vektorer så praktisk.</p><p>Vi skriver vektorer med pil over: $\\vec a$, $\\vec u$. Går vektoren fra punktet $A$ til punktet $B$, skriver vi $\\overrightarrow{AB}$. Lengden skrives med absoluttverditegn, $|\\vec a|$, og er alltid et tall større enn eller lik null.</p><p>To spesielle vektorer bør du kjenne. Den <strong>motsatte vektoren</strong> $-\\vec a$ har samme lengde som $\\vec a$, men peker stikk motsatt vei, så $\\overrightarrow{BA} = -\\overrightarrow{AB}$. <strong>Nullvektoren</strong> $\\vec 0$ har lengde null og ingen bestemt retning. Den dukker opp når du legger sammen vektorer som til sammen tar deg tilbake dit du startet.</p>"
+      },
+      {
+        "tittel": "Regning med vektorer",
+        "html": "<p>To vektorer legges sammen ved å sette dem etter hverandre. Flytt $\\vec b$ slik at den starter der $\\vec a$ slutter. Da er $\\vec a + \\vec b$ vektoren fra starten av $\\vec a$ til slutten av $\\vec b$. Dette gir en regel du kommer til å bruke hele tiden:</p>$$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$$<p>Tegner du i stedet begge vektorene ut fra samme punkt, blir summen diagonalen i parallellogrammet de utspenner. Derfor kalles addisjonen <strong>parallellogramloven</strong>, og derfor betyr rekkefølgen ingenting: $\\vec a + \\vec b = \\vec b + \\vec a$.</p><p>Subtraksjon er addisjon av den motsatte vektoren:</p>$$\\vec a - \\vec b = \\vec a + (-\\vec b)$$<p>Geometrisk: tegner du $\\vec a$ og $\\vec b$ ut fra samme punkt, går $\\vec a - \\vec b$ fra spissen av $\\vec b$ til spissen av $\\vec a$. Et nyttig spesialtilfelle er $\\overrightarrow{AB} = \\overrightarrow{OB} - \\overrightarrow{OA}$, som er selve begrunnelsen for regelen «slutt minus start».</p><p>Å gange en vektor med et tall $t$ kalles <strong>skalarmultiplikasjon</strong>. Vektoren $t\\vec a$ er $|t|$ ganger så lang som $\\vec a$. Er $t > 0$, beholder den retningen; er $t < 0$, snur den. Så $2\\vec a$ er dobbelt så lang og peker samme vei, mens $-\\tfrac{1}{2}\\vec a$ er halvparten så lang og peker motsatt vei.</p><p>Et uttrykk som $3\\vec a - 2\\vec b$ kalles en <strong>lineærkombinasjon</strong> av $\\vec a$ og $\\vec b$. Regnereglene er stort sett som for tall, med ett viktig unntak: du kan aldri dividere med en vektor.</p>"
+      },
+      {
+        "tittel": "Vektorer på koordinatform",
+        "html": "<p>Legger vi et koordinatsystem over planet, kan hver vektor beskrives med to tall. Vektoren som flytter deg $a_1$ mot høyre og $a_2$ oppover, skriver vi</p>$$\\vec a = [a_1, a_2]$$<p>Tallene $a_1$ og $a_2$ kalles <strong>komponentene</strong> til vektoren. En <strong>stedvektor</strong> er en vektor som starter i origo; da er komponentene rett og slett koordinatene til endepunktet.</p><p>Skal du finne vektoren mellom to punkter, tar du <strong>slutt minus start</strong>:</p>$$\\overrightarrow{AB} = [x_B - x_A,\\; y_B - y_A]$$<p>Rekkefølgen er avgjørende. Bytter du om, får du $\\overrightarrow{BA}$, som peker stikk motsatt vei.</p><p>All regning blir nå komponentvis, én komponent om gangen:</p><ul><li>$\\vec a + \\vec b = [a_1+b_1,\\; a_2+b_2]$</li><li>$\\vec a - \\vec b = [a_1-b_1,\\; a_2-b_2]$</li><li>$t\\vec a = [ta_1,\\; ta_2]$</li></ul><p>Lengden finner du med Pytagoras, fordi komponentene er katetene i en rettvinklet trekant der vektoren selv er hypotenusen:</p>$$|\\vec a| = \\sqrt{a_1^2 + a_2^2}$$<p>Trenger du en vektor som peker samme vei som $\\vec a$, men har lengde 1, deler du på lengden. Denne <strong>enhetsvektoren</strong> er $\\vec e = \\frac{1}{|\\vec a|}\\vec a$. For $\\vec a = [3,4]$ er $|\\vec a| = 5$, og da blir $\\vec e = \\left[\\frac{3}{5}, \\frac{4}{5}\\right]$. Enhetsvektorer er nyttige når du bare er interessert i retningen.</p>"
+      },
+      {
+        "tittel": "Skalarproduktet",
+        "html": "<p>Skalarproduktet er en måte å gange sammen to vektorer på, men resultatet er ikke en ny vektor — det er et <strong>tall</strong>. Navnet kommer nettopp av det: et tall kalles en skalar. På koordinatform er definisjonen enkel:</p>$$\\vec a\\cdot\\vec b = a_1b_1 + a_2b_2$$<p>Du ganger første komponent med første, andre med andre, og legger sammen. Med $\\vec a = [3,-1]$ og $\\vec b = [2,5]$ blir $\\vec a\\cdot\\vec b = 3\\cdot 2 + (-1)\\cdot 5 = 6 - 5 = 1$.</p><p>Det samme tallet kan uttrykkes med lengdene og vinkelen $\\alpha$ mellom vektorene:</p>$$\\vec a\\cdot\\vec b = |\\vec a|\\,|\\vec b|\\cos\\alpha$$<p>At de to uttrykkene gir samme svar, kan vises med cosinussetningen på trekanten som $\\vec a$, $\\vec b$ og $\\vec a - \\vec b$ danner. At vi har to formler for det samme tallet, er selve nøkkelen i kapittelet: den første regner du ut fra koordinatene, den andre inneholder vinkelen. Setter du dem lik hverandre, kan du finne vinkelen uten å måle noe som helst.</p><p>Regnereglene minner om vanlig multiplikasjon:</p><ul><li>$\\vec a\\cdot\\vec b = \\vec b\\cdot\\vec a$</li><li>$\\vec a\\cdot(\\vec b + \\vec c) = \\vec a\\cdot\\vec b + \\vec a\\cdot\\vec c$</li><li>$(t\\vec a)\\cdot\\vec b = t\\,(\\vec a\\cdot\\vec b)$</li><li>$\\vec a\\cdot\\vec a = |\\vec a|^2$</li></ul><p>Den siste er verdt å pugge: skalarproduktet av en vektor med seg selv er lengden i annen, fordi vinkelen da er $0^\\circ$ og $\\cos 0^\\circ = 1$.</p>"
+      },
+      {
+        "tittel": "Vinkel, parallellitet og ortogonalitet",
+        "html": "<p>Løser vi $\\vec a\\cdot\\vec b = |\\vec a|\\,|\\vec b|\\cos\\alpha$ for cosinus, får vi kapittelets mest brukte formel:</p>$$\\cos\\alpha = \\frac{\\vec a\\cdot\\vec b}{|\\vec a|\\,|\\vec b|}$$<p>Vinkelen mellom to vektorer måles alltid når vektorene er tegnet ut fra samme punkt, og den ligger mellom $0^\\circ$ og $180^\\circ$. Du finner $\\alpha$ ved å bruke $\\cos^{-1}$ på kalkulatoren — pass på at den står i gradmodus.</p><p>Siden $|\\vec a|$ og $|\\vec b|$ alltid er positive, er det $\\cos\\alpha$ som bestemmer fortegnet til skalarproduktet. Det gir denne sammenhengen:</p><table><thead><tr><th>Skalarprodukt</th><th>Vinkelen</th></tr></thead><tbody><tr><td>$\\vec a\\cdot\\vec b > 0$</td><td>spiss, $\\alpha < 90^\\circ$</td></tr><tr><td>$\\vec a\\cdot\\vec b = 0$</td><td>rett, $\\alpha = 90^\\circ$</td></tr><tr><td>$\\vec a\\cdot\\vec b < 0$</td><td>butt, $\\alpha > 90^\\circ$</td></tr></tbody></table><p>Midterste rad er så viktig at den har eget navn: to vektorer ulik $\\vec 0$ er <strong>ortogonale</strong>, altså står normalt på hverandre, nøyaktig når skalarproduktet er null. Det gir deg en test som bare krever to multiplikasjoner. Den forklarer også et triks du bør kunne: $[-a_2, a_1]$ står alltid normalt på $[a_1, a_2]$, siden $a_1\\cdot(-a_2) + a_2\\cdot a_1 = 0$.</p><p><strong>Parallelle</strong> vektorer peker samme vei eller stikk motsatt vei, og da finnes det et tall $t$ slik at $\\vec b = t\\vec a$. Skal du finne en vinkel i en trekant, må begge vektorene peke <em>ut fra</em> hjørnet: i vinkelen $A$ bruker du $\\overrightarrow{AB}$ og $\\overrightarrow{AC}$.</p>"
+      },
+      {
+        "tittel": "Determinanter og areal",
+        "html": "<p>Determinanten til to vektorer $\\vec a = [a_1, a_2]$ og $\\vec b = [b_1, b_2]$ er tallet</p>$$\\det(\\vec a, \\vec b) = \\begin{vmatrix} a_1 & b_1 \\\\ a_2 & b_2 \\end{vmatrix} = a_1b_2 - a_2b_1$$<p>Du setter vektorene opp som søyler og ganger kryssvis: produktet langs hoveddiagonalen minus produktet langs den andre diagonalen.</p><p>Determinanten har en flott geometrisk tolkning. Tegner du $\\vec a$ og $\\vec b$ ut fra samme punkt, utspenner de et parallellogram, og arealet er</p>$$A_{\\square} = \\left|\\det(\\vec a, \\vec b)\\right|$$<p>Diagonalen deler parallellogrammet i to like store trekanter, så trekanten som $\\vec a$ og $\\vec b$ utspenner, har halvparten så stort areal:</p>$$A_{\\triangle} = \\frac{1}{2}\\left|\\det(\\vec a, \\vec b)\\right|$$<p>Absoluttverdien er nødvendig, for determinanten kan godt bli negativ. Fortegnet forteller bare om $\\vec b$ ligger til venstre eller til høyre for $\\vec a$, altså om orienteringen. Et areal er aldri negativt.</p><p>Blir determinanten null, er parallellogrammet klemt helt flatt, og da er vektorene parallelle. Dermed har du to tester i én formel. Den samme regningen avgjør om tre punkter ligger på én rett linje: regn ut $\\det(\\overrightarrow{AB}, \\overrightarrow{AC})$, og er svaret null, ligger $A$, $B$ og $C$ på samme linje.</p><p>Skal du finne arealet av en firkant $ABCD$, deler du den i trekantene $ABC$ og $ACD$ og legger sammen de to arealene.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Vektorer mellom punkter, lengde og enhetsvektor",
+        "oppgave": "<p>Punktene $A(-1, 2)$, $B(3, 5)$ og $C(4, -2)$ er gitt.</p><ol><li>Finn $\\overrightarrow{AB}$ og $\\overrightarrow{AC}$ på koordinatform.</li><li>Regn ut $|\\overrightarrow{AB}|$, og finn enhetsvektoren som peker samme vei som $\\overrightarrow{AB}$.</li><li>Vis ved regning at $\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$.</li><li>Regn ut $2\\overrightarrow{AB} - \\overrightarrow{AC}$ og finn lengden av denne vektoren.</li></ol>",
+        "losning": "<p><strong>1) Vektorene.</strong> Vi bruker slutt minus start:</p>$$\\overrightarrow{AB} = [3 - (-1),\\; 5 - 2] = [4, 3]$$$$\\overrightarrow{AC} = [4 - (-1),\\; -2 - 2] = [5, -4]$$<p>Legg merke til at $-(-1) = +1$. Dette fortegnsbyttet er der de fleste feilene skjer.</p><p><strong>2) Lengde og enhetsvektor.</strong></p>$$|\\overrightarrow{AB}| = \\sqrt{4^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5$$<p>Lengden er altså 5 lengdeenheter. Enhetsvektoren får vi ved å dele hver komponent på lengden:</p>$$\\vec e = \\frac{1}{5}[4, 3] = \\left[\\frac{4}{5}, \\frac{3}{5}\\right] = [0{,}8,\\; 0{,}6]$$<p>Kontroll: $|\\vec e| = \\sqrt{0{,}8^2 + 0{,}6^2} = \\sqrt{0{,}64 + 0{,}36} = \\sqrt{1} = 1$. Riktig.</p><p><strong>3) Sammenhengen mellom vektorene.</strong> Først trenger vi $\\overrightarrow{BC}$:</p>$$\\overrightarrow{BC} = [4 - 3,\\; -2 - 5] = [1, -7]$$<p>Så legger vi sammen komponentvis:</p>$$\\overrightarrow{AB} + \\overrightarrow{BC} = [4 + 1,\\; 3 + (-7)] = [5, -4] = \\overrightarrow{AC}$$<p>Det stemmer med regelen $\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$: går du fra $A$ til $B$ og videre til $C$, har du til sammen flyttet deg fra $A$ til $C$.</p><p><strong>4) Lineærkombinasjon.</strong> Vi ganger først med 2, og trekker så fra:</p>$$2\\overrightarrow{AB} = 2[4, 3] = [8, 6]$$$$2\\overrightarrow{AB} - \\overrightarrow{AC} = [8 - 5,\\; 6 - (-4)] = [3, 10]$$<p>Lengden blir</p>$$\\left|[3, 10]\\right| = \\sqrt{3^2 + 10^2} = \\sqrt{9 + 100} = \\sqrt{109} \\approx 10{,}44$$<p>altså omtrent 10,4 lengdeenheter.</p>"
+      },
+      {
+        "tittel": "Vinkelen mellom to vektorer",
+        "oppgave": "<p>Vektorene $\\vec u = [-2, 3]$ og $\\vec v = [4, 1]$ er gitt. Finn vinkelen $\\alpha$ mellom $\\vec u$ og $\\vec v$. Oppgi svaret i grader med én desimal.</p>",
+        "losning": "<p><strong>Steg 1 — skalarproduktet.</strong></p>$$\\vec u\\cdot\\vec v = (-2)\\cdot 4 + 3\\cdot 1 = -8 + 3 = -5$$<p>Skalarproduktet er negativt. Da vet vi allerede før vi regner videre at vinkelen må bli større enn $90^\\circ$. Det er en gratis kontroll på slutten.</p><p><strong>Steg 2 — lengdene.</strong></p>$$|\\vec u| = \\sqrt{(-2)^2 + 3^2} = \\sqrt{4 + 9} = \\sqrt{13}$$$$|\\vec v| = \\sqrt{4^2 + 1^2} = \\sqrt{16 + 1} = \\sqrt{17}$$<p><strong>Steg 3 — sett inn i vinkelformelen.</strong> Vi beholder røttene eksakt så lenge vi kan:</p>$$\\cos\\alpha = \\frac{\\vec u\\cdot\\vec v}{|\\vec u|\\,|\\vec v|} = \\frac{-5}{\\sqrt{13}\\cdot\\sqrt{17}} = \\frac{-5}{\\sqrt{221}}$$<p>Nå regner vi ut desimaltallet. Siden $\\sqrt{221} \\approx 14{,}866$, får vi</p>$$\\cos\\alpha \\approx \\frac{-5}{14{,}866} \\approx -0{,}3363$$<p><strong>Steg 4 — finn vinkelen.</strong> Bruk $\\cos^{-1}$ med kalkulatoren i gradmodus:</p>$$\\alpha = \\cos^{-1}(-0{,}3363) \\approx 109{,}7^\\circ$$<p><strong>Kontroll.</strong> Vinkelen er butt, akkurat som det negative skalarproduktet varslet i steg 1. Hadde du fått $70{,}3^\\circ$, ville du sannsynligvis mistet minustegnet underveis, for $70{,}3^\\circ + 109{,}7^\\circ = 180^\\circ$.</p>"
+      },
+      {
+        "tittel": "Ortogonale og parallelle vektorer med en ukjent",
+        "oppgave": "<p>Vektorene $\\vec a = [t, 2]$ og $\\vec b = [t + 3, -2]$ er gitt, der $t$ er et tall.</p><ol><li>For hvilke verdier av $t$ er $\\vec a$ og $\\vec b$ ortogonale?</li><li>For hvilken verdi av $t$ er $\\vec a$ og $\\vec b$ parallelle?</li></ol>",
+        "losning": "<p><strong>1) Ortogonale.</strong> To vektorer står normalt på hverandre nøyaktig når skalarproduktet er null. Vi regner ut skalarproduktet med $t$ som en vanlig bokstav:</p>$$\\vec a\\cdot\\vec b = t(t+3) + 2\\cdot(-2) = t^2 + 3t - 4$$<p>Så setter vi uttrykket lik null og løser andregradslikningen:</p>$$t^2 + 3t - 4 = 0$$$$t = \\frac{-3 \\pm \\sqrt{3^2 - 4\\cdot 1\\cdot(-4)}}{2} = \\frac{-3 \\pm \\sqrt{9 + 16}}{2} = \\frac{-3 \\pm 5}{2}$$<p>Det gir to løsninger:</p>$$t = \\frac{-3 + 5}{2} = 1 \\qquad \\text{eller} \\qquad t = \\frac{-3 - 5}{2} = -4$$<p>Kontroll for $t = 1$: da er $\\vec a = [1, 2]$ og $\\vec b = [4, -2]$, og $1\\cdot 4 + 2\\cdot(-2) = 4 - 4 = 0$. Kontroll for $t = -4$: da er $\\vec a = [-4, 2]$ og $\\vec b = [-1, -2]$, og $(-4)(-1) + 2\\cdot(-2) = 4 - 4 = 0$. Begge stemmer.</p><p><strong>2) Parallelle.</strong> Nå bruker vi determinanten, som skal være null:</p>$$\\det(\\vec a, \\vec b) = t\\cdot(-2) - 2\\cdot(t+3) = -2t - 2t - 6 = -4t - 6$$$$-4t - 6 = 0 \\quad \\Longrightarrow \\quad t = -\\frac{6}{4} = -\\frac{3}{2}$$<p>Kontroll: med $t = -\\frac{3}{2}$ er $\\vec a = \\left[-\\frac{3}{2},\\, 2\\right]$ og $\\vec b = \\left[\\frac{3}{2},\\, -2\\right]$. Her er $\\vec b = -1\\cdot\\vec a$, så vektorene er parallelle, men peker motsatt vei. Det regnes som parallelt.</p><p>Merk hvor lett de to deloppgavene forveksles: ortogonalitet gir en likning fra <em>skalarproduktet</em>, parallellitet en likning fra <em>determinanten</em>.</p>"
+      },
+      {
+        "tittel": "Areal av trekant og punkter på samme linje",
+        "oppgave": "<p>Trekanten $ABC$ har hjørnene $A(-2, 1)$, $B(4, 3)$ og $C(1, 6)$.</p><ol><li>Regn ut arealet av trekanten $ABC$.</li><li>Hvor stort er arealet av parallellogrammet som $\\overrightarrow{AB}$ og $\\overrightarrow{AC}$ utspenner?</li><li>Undersøk om punktene $A$, $B$ og $D(7, 4)$ ligger på samme rette linje.</li></ol>",
+        "losning": "<p><strong>1) Arealet av trekanten.</strong> Først finner vi de to sidevektorene ut fra $A$:</p>$$\\overrightarrow{AB} = [4 - (-2),\\; 3 - 1] = [6, 2]$$$$\\overrightarrow{AC} = [1 - (-2),\\; 6 - 1] = [3, 5]$$<p>Så regner vi determinanten:</p>$$\\det(\\overrightarrow{AB}, \\overrightarrow{AC}) = \\begin{vmatrix} 6 & 3 \\\\ 2 & 5 \\end{vmatrix} = 6\\cdot 5 - 2\\cdot 3 = 30 - 6 = 24$$<p>Arealet av trekanten er halve absoluttverdien:</p>$$A_{\\triangle} = \\frac{1}{2}\\left|24\\right| = 12$$<p>Trekanten har altså areal 12 arealenheter.</p><p><strong>Kontroll med skalarproduktet.</strong> Vi kan sjekke svaret med formelen $A = \\frac{1}{2}|\\overrightarrow{AB}|\\,|\\overrightarrow{AC}|\\sin A$. Vinkelen ved $A$ finner vi slik:</p>$$\\overrightarrow{AB}\\cdot\\overrightarrow{AC} = 6\\cdot 3 + 2\\cdot 5 = 18 + 10 = 28$$$$|\\overrightarrow{AB}| = \\sqrt{40} \\approx 6{,}325, \\qquad |\\overrightarrow{AC}| = \\sqrt{34} \\approx 5{,}831$$$$\\cos A = \\frac{28}{\\sqrt{40}\\cdot\\sqrt{34}} = \\frac{28}{\\sqrt{1360}} \\approx 0{,}7593 \\quad \\Longrightarrow \\quad A \\approx 40{,}6^\\circ$$$$A_{\\triangle} \\approx \\frac{1}{2}\\cdot 6{,}325\\cdot 5{,}831\\cdot \\sin(40{,}6^\\circ) \\approx \\frac{1}{2}\\cdot 36{,}878\\cdot 0{,}651 \\approx 12{,}0$$<p>Samme svar, men mye mer regning. Bruk determinanten når du kan.</p><p><strong>2) Parallellogrammet.</strong> Parallellogrammet er dobbelt så stort som trekanten:</p>$$A_{\\square} = \\left|\\det(\\overrightarrow{AB}, \\overrightarrow{AC})\\right| = 24$$<p>altså 24 arealenheter.</p><p><strong>3) Ligger $A$, $B$ og $D$ på samme linje?</strong> Vi finner $\\overrightarrow{AD}$ og sammenligner med $\\overrightarrow{AB}$:</p>$$\\overrightarrow{AD} = [7 - (-2),\\; 4 - 1] = [9, 3]$$$$\\det(\\overrightarrow{AB}, \\overrightarrow{AD}) = 6\\cdot 3 - 2\\cdot 9 = 18 - 18 = 0$$<p>Determinanten er null, så vektorene er parallelle, og da må $D$ ligge på linja gjennom $A$ og $B$. Vi ser det også direkte: $\\overrightarrow{AD} = \\frac{3}{2}\\overrightarrow{AB}$, siden $\\frac{3}{2}\\cdot[6, 2] = [9, 3]$. Trekanten $ABD$ har areal $\\frac{1}{2}\\cdot 0 = 0$ — den er klemt helt flat.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å regne $\\overrightarrow{AB}$ som start minus slutt. Med $A(1, 2)$ og $B(5, 3)$ er $\\overrightarrow{AB} = [4, 1]$, ikke $[-4, -1]$ — det siste er $\\overrightarrow{BA}$. Feil retning ødelegger både vinkler og fortegn videre i oppgaven.",
+      "Å gange komponentvis i skalarproduktet og svare $[a_1b_1,\\; a_2b_2]$. Skalarproduktet er summen $a_1b_1 + a_2b_2$, og svaret er alltid ett tall — aldri en vektor.",
+      "Å bytte om de to betingelsene: bruke $\\vec a\\cdot\\vec b = 0$ når man skal undersøke parallellitet, eller determinant lik null når man skal undersøke om vektorene står normalt på hverandre.",
+      "Å regne $|\\vec a + \\vec b| = |\\vec a| + |\\vec b|$. Du må legge sammen komponentene først og deretter ta lengden av summen. $[3,0] + [0,4] = [3,4]$ har lengde 5, ikke 7.",
+      "Å glemme absoluttverdien rundt determinanten og svare at et areal er negativt. Fortegnet sier bare noe om orienteringen, og for en trekant må du i tillegg huske faktoren $\\frac{1}{2}$.",
+      "Å bruke en vektor som peker inn mot hjørnet når du skal finne en vinkel i en trekant. I vinkelen $A$ må begge vektorene peke ut fra $A$: $\\overrightarrow{AB}$ og $\\overrightarrow{AC}$. Bruker du $\\overrightarrow{BA}$ og $\\overrightarrow{AC}$, får du $180^\\circ$ minus riktig vinkel."
+    ],
+
+    "tips": [
+      "Tegn alltid punktene og vektorene i et koordinatsystem før du regner. En rask skisse avslører med en gang om vinkelen skal være spiss eller butt, og om arealet er i riktig størrelsesorden.",
+      "Se på fortegnet til skalarproduktet før du regner ut vinkelen, og bruk det som kontroll etterpå. Negativt skalarprodukt og en vinkel under $90^\\circ$ kan ikke opptre samtidig.",
+      "Behold kvadratrøtter eksakt gjennom hele utregningen og avrund først i siste linje. Runder du av $|\\vec a|$ og $|\\vec b|$ tidlig, kan vinkelen bli feil på første desimal. Oppgi vinkler med én desimal.",
+      "Uten hjelpemidler: husk at $[-a_2, a_1]$ alltid står normalt på $[a_1, a_2]$. Skal du finne en normalvektor eller vise ortogonalitet, sparer det deg for en hel likning.",
+      "Med hjelpemidler kan GeoGebra gjøre regnearbeidet: skriv u=Vektor((3,4)) og v=Vektor((-2,1)) i inntastingsfeltet, u*v gir skalarproduktet og Vinkel(u,v) gir vinkelen. Skriv likevel opp formelen du bruker, for framgangsmåten gir poeng."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Vektor", "forklaring": "En størrelse med både lengde og retning, men uten fast plassering. Tegnes som en pil og kan flyttes parallelt med seg selv." },
+    { "begrep": "Skalar", "forklaring": "En størrelse som er fullstendig beskrevet med et tall og en enhet, for eksempel masse eller temperatur." },
+    { "begrep": "Like vektorer", "forklaring": "To vektorer med samme lengde og samme retning. De er like selv om de er tegnet på ulike steder i planet." },
+    { "begrep": "Motsatt vektor", "forklaring": "Vektoren $-\\vec a$, som har samme lengde som $\\vec a$, men peker stikk motsatt vei. Det gir $\\overrightarrow{BA} = -\\overrightarrow{AB}$." },
+    { "begrep": "Nullvektoren", "forklaring": "Vektoren $\\vec 0$ med lengde null og ingen bestemt retning." },
+    { "begrep": "Koordinatform", "forklaring": "Skrivemåten $\\vec a = [a_1, a_2]$, der $a_1$ og $a_2$ er komponentene til vektoren langs $x$- og $y$-aksen." },
+    { "begrep": "Stedvektor", "forklaring": "En vektor som starter i origo. Komponentene er da de samme som koordinatene til endepunktet." },
+    { "begrep": "Lengden av en vektor", "forklaring": "Tallet $|\\vec a| = \\sqrt{a_1^2 + a_2^2}$, også kalt absoluttverdien til vektoren. Den er aldri negativ." },
+    { "begrep": "Enhetsvektor", "forklaring": "En vektor med lengde 1. Du får den ved å dele en vektor på sin egen lengde: $\\vec e = \\frac{1}{|\\vec a|}\\vec a$." },
+    { "begrep": "Lineærkombinasjon", "forklaring": "Et uttrykk av formen $s\\vec a + t\\vec b$, der $s$ og $t$ er tall." },
+    { "begrep": "Skalarprodukt", "forklaring": "Produktet $\\vec a\\cdot\\vec b = a_1b_1 + a_2b_2 = |\\vec a||\\vec b|\\cos\\alpha$. Resultatet er et tall, ikke en vektor." },
+    { "begrep": "Ortogonale vektorer", "forklaring": "Vektorer som står normalt på hverandre. For vektorer ulik $\\vec 0$ skjer det nøyaktig når $\\vec a\\cdot\\vec b = 0$." },
+    { "begrep": "Parallelle vektorer", "forklaring": "Vektorer som peker samme vei eller stikk motsatt vei. Da finnes et tall $t$ slik at $\\vec b = t\\vec a$." },
+    { "begrep": "Normalvektor", "forklaring": "En vektor som står normalt på en gitt vektor eller linje. $[-a_2, a_1]$ er alltid en normalvektor til $[a_1, a_2]$." },
+    { "begrep": "Determinant", "forklaring": "Tallet $\\det(\\vec a, \\vec b) = a_1b_2 - a_2b_1$. Absoluttverdien er arealet av parallellogrammet vektorene utspenner." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Punktene $A(2, -3)$ og $B(-1, 4)$ er gitt. Hva er $\\overrightarrow{AB}$?",
+      "alternativer": ["$[3, -7]$", "$[1, 1]$", "$[-3, 7]$", "$[-3, -7]$"],
+      "riktig": 2,
+      "forklaring": "Du regner slutt minus start: $[-1 - 2,\\; 4 - (-3)] = [-3, 7]$. Alternativ A er $\\overrightarrow{BA}$ — samme lengde, men motsatt retning. Alternativ B kommer av å legge sammen koordinatene i stedet for å trekke fra."
+    },
+    {
+      "sporsmal": "Hvor lang er vektoren $\\vec a = [-6, 8]$?",
+      "alternativer": ["$2$", "$10$", "$14$", "$-10$"],
+      "riktig": 1,
+      "forklaring": "$|\\vec a| = \\sqrt{(-6)^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$. Fortegnet forsvinner når du kvadrerer, så en lengde kan aldri bli negativ — det utelukker alternativ D. Alternativ C er $6 + 8$; komponentene skal settes inn i Pytagoras, ikke bare legges sammen."
+    },
+    {
+      "sporsmal": "Hva er $[3, -2]\\cdot[4, 5]$?",
+      "alternativer": ["$[12, -10]$", "$22$", "$2$", "$-2$"],
+      "riktig": 2,
+      "forklaring": "$3\\cdot 4 + (-2)\\cdot 5 = 12 - 10 = 2$. Skalarproduktet er et tall, aldri en vektor, så alternativ A er galt uansett tallene. Alternativ B får du hvis du legger sammen $12 + 10$ og mister minustegnet på $-10$."
+    },
+    {
+      "sporsmal": "Når er to vektorer $\\vec a$ og $\\vec b$, begge ulik $\\vec 0$, ortogonale?",
+      "alternativer": ["Når $a_1b_2 - a_2b_1 = 0$", "Når $\\vec a\\cdot\\vec b = 0$", "Når $|\\vec a| = |\\vec b|$", "Når $\\vec b = t\\vec a$ for et tall $t$"],
+      "riktig": 1,
+      "forklaring": "Ortogonal betyr at vinkelen er $90^\\circ$, og siden $\\cos 90^\\circ = 0$, blir $\\vec a\\cdot\\vec b = |\\vec a||\\vec b|\\cos\\alpha$ lik null. Alternativ A og D er derimot betingelsene for at vektorene er parallelle — determinanten hører til parallellitet, skalarproduktet til ortogonalitet."
+    },
+    {
+      "sporsmal": "For to vektorer ulik $\\vec 0$ er $\\vec u\\cdot\\vec v < 0$. Hva vet du om vinkelen $\\alpha$ mellom dem?",
+      "alternativer": ["$\\alpha = 90^\\circ$", "$\\alpha < 90^\\circ$", "$\\alpha = 0^\\circ$", "$\\alpha > 90^\\circ$"],
+      "riktig": 3,
+      "forklaring": "Lengdene $|\\vec u|$ og $|\\vec v|$ er alltid positive, så fortegnet til $\\vec u\\cdot\\vec v = |\\vec u||\\vec v|\\cos\\alpha$ bestemmes helt av $\\cos\\alpha$. Negativt skalarprodukt betyr $\\cos\\alpha < 0$, altså butt vinkel. Et positivt skalarprodukt ville gitt spiss vinkel, som er alternativ B."
+    },
+    {
+      "sporsmal": "Hvilken vektor er parallell med $\\vec a = [4, -6]$?",
+      "alternativer": ["$[3, 2]$", "$[6, -4]$", "$[-2, 3]$", "$[4, 6]$"],
+      "riktig": 2,
+      "forklaring": "$[-2, 3] = -\\frac{1}{2}\\cdot[4, -6]$, altså et tall ganger $\\vec a$. Determinanten bekrefter det: $4\\cdot 3 - (-6)\\cdot(-2) = 12 - 12 = 0$. Alternativ A er fella: $[3, 2]$ gir skalarprodukt $12 - 12 = 0$ og står dermed normalt på $\\vec a$ — det motsatte av parallell."
+    },
+    {
+      "sporsmal": "Vektorene $\\vec a = [5, 1]$ og $\\vec b = [2, 3]$ utspenner et parallellogram. Hvor stort er arealet?",
+      "alternativer": ["$13$", "$6{,}5$", "$26$", "$17$"],
+      "riktig": 0,
+      "forklaring": "Determinanten er $5\\cdot 3 - 1\\cdot 2 = 15 - 2 = 13$, og arealet av parallellogrammet er $|\\det| = 13$ arealenheter. Alternativ B er arealet av trekanten vektorene utspenner, altså halvparten. Les nøye hvilken av de to figurene oppgaven spør om."
+    },
+    {
+      "sporsmal": "Hva er $\\vec a\\cdot\\vec a$?",
+      "alternativer": ["$0$", "$2|\\vec a|$", "$|\\vec a|^2$", "$\\vec a$"],
+      "riktig": 2,
+      "forklaring": "Vinkelen mellom $\\vec a$ og seg selv er $0^\\circ$, og $\\cos 0^\\circ = 1$, så $\\vec a\\cdot\\vec a = |\\vec a|\\,|\\vec a|\\cdot 1 = |\\vec a|^2$. På koordinatform ser du det samme: $a_1^2 + a_2^2$, som er lengden i annen. Alternativ A gjelder bare i det spesielle tilfellet $\\vec a = \\vec 0$."
+    },
+    {
+      "sporsmal": "For to vektorer er $\\vec u\\cdot\\vec v = -6$, $|\\vec u| = 3$ og $|\\vec v| = 4$. Hvor stor er vinkelen mellom dem?",
+      "alternativer": ["$60^\\circ$", "$120^\\circ$", "$30^\\circ$", "$150^\\circ$"],
+      "riktig": 1,
+      "forklaring": "$\\cos\\alpha = \\frac{\\vec u\\cdot\\vec v}{|\\vec u||\\vec v|} = \\frac{-6}{3\\cdot 4} = -0{,}5$, og $\\cos^{-1}(-0{,}5) = 120^\\circ$. Alternativ A er svaret du får hvis du glemmer minustegnet, men et negativt skalarprodukt må gi butt vinkel, så $60^\\circ$ er umulig."
+    },
+    {
+      "sporsmal": "Punktene $P$, $Q$ og $R$ ligger på samme rette linje. Hva må da gjelde?",
+      "alternativer": ["$\\overrightarrow{PQ}\\cdot\\overrightarrow{PR} = 0$", "$|\\overrightarrow{PQ}| = |\\overrightarrow{PR}|$", "$\\det(\\overrightarrow{PQ},\\, \\overrightarrow{PR}) = 0$", "$\\overrightarrow{PQ} + \\overrightarrow{PR} = \\vec 0$"],
+      "riktig": 2,
+      "forklaring": "Ligger punktene på linje, er $\\overrightarrow{PQ}$ og $\\overrightarrow{PR}$ parallelle, og da er determinanten null. Det henger sammen med areal: trekanten $PQR$ er klemt flat og har areal $\\frac{1}{2}|\\det| = 0$. Alternativ A ville betydd at vinkelen i $P$ er $90^\\circ$ — det motsatte av å ligge på linje."
+    },
+    {
+      "sporsmal": "Vektorene $\\vec a = [3, 0]$ og $\\vec b = [0, 4]$ er gitt. Hva er $|\\vec a + \\vec b|$?",
+      "alternativer": ["$7$", "$12$", "$1$", "$5$"],
+      "riktig": 3,
+      "forklaring": "Regn ut summen først: $[3 + 0,\\; 0 + 4] = [3, 4]$. Så lengden: $\\sqrt{3^2 + 4^2} = \\sqrt{25} = 5$. Alternativ A er $|\\vec a| + |\\vec b| = 3 + 4$, som bare hadde vært riktig om vektorene pekte samme vei. Her står de normalt på hverandre, og Pytagoras gir 5."
+    },
+    {
+      "sporsmal": "Hva er enhetsvektoren som peker samme vei som $\\vec a = [3, 4]$?",
+      "alternativer": ["$\\left[\\frac{4}{5}, \\frac{3}{5}\\right]$", "$\\left[\\frac{1}{3}, \\frac{1}{4}\\right]$", "$[15, 20]$", "$\\left[\\frac{3}{5}, \\frac{4}{5}\\right]$"],
+      "riktig": 3,
+      "forklaring": "Lengden er $|\\vec a| = \\sqrt{9 + 16} = 5$, og du deler hver komponent på lengden: $\\frac{1}{5}[3, 4] = \\left[\\frac{3}{5}, \\frac{4}{5}\\right]$. Alternativ A har riktig lengde 1, men komponentene er byttet om, så den peker en annen vei. Alternativ B kommer av å ta den omvendte av hver komponent, noe som ikke har med lengde å gjøre."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Hva kjennetegner en vektor?", "bak": "Den har lengde og retning, men ingen fast plassering. To vektorer er like når lengden og retningen er lik." },
+    { "front": "$\\overrightarrow{AB}$ på koordinatform", "bak": "$\\overrightarrow{AB} = [x_B - x_A,\\; y_B - y_A]$ — slutt minus start." },
+    { "front": "Lengden av $\\vec a = [a_1, a_2]$", "bak": "$|\\vec a| = \\sqrt{a_1^2 + a_2^2}$ (Pytagoras)." },
+    { "front": "Skalarproduktet på koordinatform", "bak": "$\\vec a\\cdot\\vec b = a_1b_1 + a_2b_2$ — resultatet er et tall." },
+    { "front": "Skalarproduktet uttrykt med vinkelen", "bak": "$\\vec a\\cdot\\vec b = |\\vec a|\\,|\\vec b|\\cos\\alpha$" },
+    { "front": "Formelen for vinkelen mellom to vektorer", "bak": "$\\cos\\alpha = \\frac{\\vec a\\cdot\\vec b}{|\\vec a|\\,|\\vec b|}$, der $0^\\circ \\le \\alpha \\le 180^\\circ$." },
+    { "front": "Når er $\\vec a \\perp \\vec b$?", "bak": "Når $\\vec a\\cdot\\vec b = 0$, og ingen av vektorene er nullvektoren." },
+    { "front": "Når er $\\vec a \\parallel \\vec b$?", "bak": "Når $\\vec b = t\\vec a$ for et tall $t$, altså når $a_1b_2 - a_2b_1 = 0$." },
+    { "front": "Hva sier fortegnet til skalarproduktet?", "bak": "Positivt: spiss vinkel. Null: rett vinkel. Negativt: butt vinkel." },
+    { "front": "Determinanten til $\\vec a$ og $\\vec b$", "bak": "$\\det(\\vec a, \\vec b) = a_1b_2 - a_2b_1$ — vektorene som søyler, kryssvis multiplikasjon." },
+    { "front": "Areal av parallellogrammet utspent av $\\vec a$ og $\\vec b$", "bak": "$A = \\left|\\det(\\vec a, \\vec b)\\right|$ — husk absoluttverdien." },
+    { "front": "Areal av trekanten utspent av $\\vec a$ og $\\vec b$", "bak": "$A = \\frac{1}{2}\\left|\\det(\\vec a, \\vec b)\\right|$" },
+    { "front": "En vektor som står normalt på $[a_1, a_2]$", "bak": "$[-a_2, a_1]$ (eller $[a_2, -a_1]$). Kontroll: $a_1(-a_2) + a_2a_1 = 0$." },
+    { "front": "Enhetsvektor med samme retning som $\\vec a$", "bak": "$\\vec e = \\frac{1}{|\\vec a|}\\vec a$ — den har lengde 1." },
+    { "front": "$\\vec a\\cdot\\vec a = ?$", "bak": "$|\\vec a|^2$, siden vinkelen er $0^\\circ$ og $\\cos 0^\\circ = 1$." },
+    { "front": "Hvordan viser du at $A$, $B$ og $C$ ligger på samme rette linje?", "bak": "Vis at $\\det(\\overrightarrow{AB}, \\overrightarrow{AC}) = 0$, altså at vektorene er parallelle og trekanten har areal 0." }
+  ]
+}
