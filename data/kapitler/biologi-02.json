@@ -61,7 +61,35 @@
     "seksjoner": [
       {
         "tittel": "Hva er egentlig en art?",
-        "html": "<p>Grunnenheten i all systematikk er <strong>arten</strong>, og den er vanskeligere å definere enn du kanskje tror. Det vanligste utgangspunktet er det <strong>biologiske artsbegrepet</strong>: en art er en gruppe individer som under naturlige forhold kan formere seg med hverandre og få <em>fruktbart</em> avkom, og som er reproduktivt isolert fra andre slike grupper.</p><p>Ordet «fruktbart» er nøkkelen. Hest og esel kan parre seg og få et muldyr, men muldyret er nesten alltid sterilt. Genene føres derfor ikke videre, de to genpuljene holdes atskilt, og hest og esel er to arter.</p><p>Problemet er at definisjonen ikke passer overalt:</p><ul><li>Bakterier og arker formerer seg ved todeling, uten kjønnet formering i det hele tatt.</li><li>Fossiler kan ikke testes for om de kunne fått avkom sammen.</li><li>Mange planter, og en del dyr, får fruktbare hybrider i naturen.</li></ul><p>Derfor bruker biologene flere artsbegrep ved siden av hverandre: det <strong>morfologiske</strong> (like ytre og indre trekk), det <strong>økologiske</strong> (samme rolle og krav i naturen) og det <strong>genetiske</strong> eller fylogenetiske (egen utviklingslinje med liten DNA-forskjell internt). I praksis vurderer man flere kriterier samtidig og ser hvilken vei de fleste peker. Arten er altså en modell vi legger på naturen, ikke en ferdig eske naturen har laget selv.</p>"
+        "html": "<p>Grunnenheten i all systematikk er <strong>arten</strong>, og den er vanskeligere å definere enn du kanskje tror. Det vanligste utgangspunktet er det <strong>biologiske artsbegrepet</strong>: en art er en gruppe individer som under naturlige forhold kan formere seg med hverandre og få <em>fruktbart</em> avkom, og som er reproduktivt isolert fra andre slike grupper.</p><p>Ordet «fruktbart» er nøkkelen. Hest og esel kan parre seg og få et muldyr, men muldyret er nesten alltid sterilt. Genene føres derfor ikke videre, de to genpuljene holdes atskilt, og hest og esel er to arter.</p><p>Problemet er at definisjonen ikke passer overalt:</p><ul><li>Bakterier og arker formerer seg ved todeling, uten kjønnet formering i det hele tatt.</li><li>Fossiler kan ikke testes for om de kunne fått avkom sammen.</li><li>Mange planter, og en del dyr, får fruktbare hybrider i naturen.</li></ul><p>Derfor bruker biologene flere artsbegrep ved siden av hverandre: det <strong>morfologiske</strong> (like ytre og indre trekk), det <strong>økologiske</strong> (samme rolle og krav i naturen) og det <strong>genetiske</strong> eller fylogenetiske (egen utviklingslinje med liten DNA-forskjell internt). I praksis vurderer man flere kriterier samtidig og ser hvilken vei de fleste peker. Arten er altså en modell vi legger på naturen, ikke en ferdig eske naturen har laget selv.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik prøver du om to bestander er to arter",
+          "forklaring": "Legg merke til at ingen av de fire første stegene avgjør alene. Isbjørn og brunbjørn gir «ja» i første steg og er likevel to arter, fordi steg 2–4 peker motsatt vei — det er summen i det siste steget som gir konklusjonen.",
+          "steg": [
+            {
+              "tekst": "Kan de få fruktbart avkom?",
+              "note": "det biologiske kriteriet"
+            },
+            {
+              "tekst": "Skjer krysningen i naturen, og ofte?",
+              "note": "graden av genflyt teller"
+            },
+            {
+              "tekst": "Sammenlikn bygningstrekk og økologi",
+              "note": "utseende, føde, levested"
+            },
+            {
+              "tekst": "Sammenlikn DNA og utviklingslinjer",
+              "note": "når skilte linjene lag?"
+            },
+            {
+              "tekst": "Vei kriteriene mot hverandre",
+              "note": "hvilken vei peker flest?"
+            }
+          ]
+        }
       },
       {
         "tittel": "Variasjon innenfor arten",
@@ -77,11 +105,93 @@
       },
       {
         "tittel": "Tre domener og seks riker",
-        "html": "<p>Øverst deles alt liv i tre <strong>domener</strong>. Inndelingen kom på plass da Carl Woese på slutten av 1970-tallet sammenlignet rRNA fra ribosomene og oppdaget at de organismene vi kalte bakterier, i virkeligheten var to helt ulike grupper: <strong>bakterier</strong> og <strong>arker</strong> (arkebakterier). Den tredje gruppa er <strong>eukaryotene</strong>. Arkene har celler som ser prokaryote ut, men gener og proteinsyntese som ligner mer på eukaryotenes.</p><p>Under domenene ligger seks riker:</p><table><thead><tr><th>Rike</th><th>Celletype</th><th>Ernæring</th><th>Eksempler</th></tr></thead><tbody><tr><td>Bakterier</td><td>prokaryot, cellevegg med peptidoglykan</td><td>både autotrof og heterotrof</td><td>melkesyrebakterier, kolibakterier</td></tr><tr><td>Arker</td><td>prokaryot, cellevegg uten peptidoglykan</td><td>ofte kjemoautotrof</td><td>metanprodusenter, salt- og varmekjære arter</td></tr><tr><td>Protister</td><td>eukaryot, oftest encellet</td><td>begge deler</td><td>amøbe, tøffeldyr, alger</td></tr><tr><td>Sopp</td><td>eukaryot, cellevegg av kitin</td><td>heterotrof, tar opp oppløst næring</td><td>gjær, muggsopp, kantarell</td></tr><tr><td>Planter</td><td>eukaryot, cellevegg av cellulose</td><td>autotrof, fotosyntese</td><td>moser, bregner, gran, tusenfryd</td></tr><tr><td>Dyr</td><td>eukaryot, ingen cellevegg</td><td>heterotrof, spiser næringen</td><td>maneter, insekter, fisk, pattedyr</td></tr></tbody></table><p>Legg merke til at riket protister er en <strong>restgruppe</strong>: alle eukaryoter som ikke er sopp, planter eller dyr. Det er praktisk, men ikke en naturlig gruppe.</p><p>Virus står helt utenfor systemet. De er ikke celler, har ikke eget stoffskifte og kan ikke formere seg uten en vertscelle.</p>"
+        "html": "<p>Øverst deles alt liv i tre <strong>domener</strong>. Inndelingen kom på plass da Carl Woese på slutten av 1970-tallet sammenlignet rRNA fra ribosomene og oppdaget at de organismene vi kalte bakterier, i virkeligheten var to helt ulike grupper: <strong>bakterier</strong> og <strong>arker</strong> (arkebakterier). Den tredje gruppa er <strong>eukaryotene</strong>. Arkene har celler som ser prokaryote ut, men gener og proteinsyntese som ligner mer på eukaryotenes.</p><p>Under domenene ligger seks riker:</p><table><thead><tr><th>Rike</th><th>Celletype</th><th>Ernæring</th><th>Eksempler</th></tr></thead><tbody><tr><td>Bakterier</td><td>prokaryot, cellevegg med peptidoglykan</td><td>både autotrof og heterotrof</td><td>melkesyrebakterier, kolibakterier</td></tr><tr><td>Arker</td><td>prokaryot, cellevegg uten peptidoglykan</td><td>ofte kjemoautotrof</td><td>metanprodusenter, salt- og varmekjære arter</td></tr><tr><td>Protister</td><td>eukaryot, oftest encellet</td><td>begge deler</td><td>amøbe, tøffeldyr, alger</td></tr><tr><td>Sopp</td><td>eukaryot, cellevegg av kitin</td><td>heterotrof, tar opp oppløst næring</td><td>gjær, muggsopp, kantarell</td></tr><tr><td>Planter</td><td>eukaryot, cellevegg av cellulose</td><td>autotrof, fotosyntese</td><td>moser, bregner, gran, tusenfryd</td></tr><tr><td>Dyr</td><td>eukaryot, ingen cellevegg</td><td>heterotrof, spiser næringen</td><td>maneter, insekter, fisk, pattedyr</td></tr></tbody></table><p>Legg merke til at riket protister er en <strong>restgruppe</strong>: alle eukaryoter som ikke er sopp, planter eller dyr. Det er praktisk, men ikke en naturlig gruppe.</p><p>Virus står helt utenfor systemet. De er ikke celler, har ikke eget stoffskifte og kan ikke formere seg uten en vertscelle.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Bakterier og arker: to domener som ser like ut",
+          "forklaring": "De to øverste radene forklarer hvorfor arkene lenge ble regnet som bakterier — cellen ser prokaryot ut. Det er radene under som skiller domenene, og nettopp likheten med eukaryotene i gener og proteinsyntese er grunnen til at arkene fikk sitt eget domene.",
+          "kolonner": [
+            "Bakterier",
+            "Arker"
+          ],
+          "rader": [
+            {
+              "egenskap": "I mikroskopet",
+              "venstre": "liten prokaryot celle uten cellekjerne og uten membranorganeller",
+              "hoyre": "ser like prokaryot ut — derfor het de lenge arkebakterier"
+            },
+            {
+              "egenskap": "Cellevegg",
+              "venstre": "inneholder peptidoglykan",
+              "hoyre": "aldri peptidoglykan; veggen er bygd av andre stoffer"
+            },
+            {
+              "egenskap": "Cellemembran",
+              "venstre": "lipider med rette fettsyrekjeder",
+              "hoyre": "greinete lipidkjeder som tåler høy temperatur og lav pH"
+            },
+            {
+              "egenskap": "Gener og proteinsyntese",
+              "venstre": "eget bakterielt mønster",
+              "hoyre": "likner eukaryotenes; det var rRNA-likheten Woese oppdaget"
+            },
+            {
+              "egenskap": "Typiske levesteder",
+              "venstre": "nesten overalt: jord, vann, mat, hud og tarm",
+              "hoyre": "ofte ekstreme: varme kilder, saltsjøer, oksygenfri gjørme"
+            },
+            {
+              "egenskap": "Eksempler",
+              "venstre": "melkesyrebakterier, kolibakterien E. coli",
+              "hoyre": "metanprodusentene i vomma til kua, saltkjære arter"
+            }
+          ]
+        }
       },
       {
         "tittel": "Taksonomiske kriterier i endring: fra morfologi til DNA",
-        "html": "<p>Linné klassifiserte etter ytre likhet, hundre år før Darwin. Han grupperte det som <em>så</em> likt ut. Etter Darwin fikk systemet en forklaring: likhet skyldes felles opphav, og systemet skal derfor vise <strong>slektskap</strong>.</p><p>Da blir det avgjørende å skille to slags likhet:</p><ul><li><strong>Homologe</strong> trekk har samme opprinnelse, men kan ha ulik funksjon. Forlemmet hos menneske, hval, hest og flaggermus har de samme knoklene i samme rekkefølge. Homologier viser slektskap.</li><li><strong>Analoge</strong> trekk har samme funksjon, men ulik opprinnelse. Vingen til en bie og vingen til en flaggermus, eller strømlinjeformen hos hai og delfin. Slike likheter oppstår ved <strong>konvergent evolusjon</strong> når miljøet stiller samme krav, og de sier ingenting om nært slektskap.</li></ul><p>Fra 1990-tallet ble DNA-sammenligning det viktigste kriteriet, gjerne kombinert med fossiler, embryologi og morfologi. Ved <strong>DNA-strekkoding</strong> leser man en kort, standardisert sekvens — hos dyr en bit på om lag 650 basepar av genet CO1 — og sammenligner den med en database over kjente arter.</p><p>Molekylære data har flyttet på mye: hvalene ligger inne blant klovdyrene med flodhesten som nærmeste nålevende slektning, fuglene ligger inne blant dinosaurene og dermed innenfor krypdyrene, og soppene er nærmere dyrene enn plantene. En gruppe som består av en stamform og <em>alle</em> etterkommerne, kalles <strong>monofyletisk</strong>. Er noen etterkommere holdt utenfor, som fuglene i «krypdyr», er gruppa <strong>parafyletisk</strong> — og målet i moderne systematikk er å bruke bare monofyletiske grupper.</p>"
+        "html": "<p>Linné klassifiserte etter ytre likhet, hundre år før Darwin. Han grupperte det som <em>så</em> likt ut. Etter Darwin fikk systemet en forklaring: likhet skyldes felles opphav, og systemet skal derfor vise <strong>slektskap</strong>.</p><p>Da blir det avgjørende å skille to slags likhet:</p><ul><li><strong>Homologe</strong> trekk har samme opprinnelse, men kan ha ulik funksjon. Forlemmet hos menneske, hval, hest og flaggermus har de samme knoklene i samme rekkefølge. Homologier viser slektskap.</li><li><strong>Analoge</strong> trekk har samme funksjon, men ulik opprinnelse. Vingen til en bie og vingen til en flaggermus, eller strømlinjeformen hos hai og delfin. Slike likheter oppstår ved <strong>konvergent evolusjon</strong> når miljøet stiller samme krav, og de sier ingenting om nært slektskap.</li></ul><p>Fra 1990-tallet ble DNA-sammenligning det viktigste kriteriet, gjerne kombinert med fossiler, embryologi og morfologi. Ved <strong>DNA-strekkoding</strong> leser man en kort, standardisert sekvens — hos dyr en bit på om lag 650 basepar av genet CO1 — og sammenligner den med en database over kjente arter.</p><p>Molekylære data har flyttet på mye: hvalene ligger inne blant klovdyrene med flodhesten som nærmeste nålevende slektning, fuglene ligger inne blant dinosaurene og dermed innenfor krypdyrene, og soppene er nærmere dyrene enn plantene. En gruppe som består av en stamform og <em>alle</em> etterkommerne, kalles <strong>monofyletisk</strong>. Er noen etterkommere holdt utenfor, som fuglene i «krypdyr», er gruppa <strong>parafyletisk</strong> — og målet i moderne systematikk er å bruke bare monofyletiske grupper.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Homologe og analoge trekk",
+          "forklaring": "Se særlig på raden om innvendig bygning: den, og ikke hva trekket brukes til, avgjør hvilken av kolonnene et trekk hører i. Flaggermusvingen har de samme knoklene som armen din, mens bievingen bare gjør samme jobb — derfor bygges fylogenetiske trær på homologier alene.",
+          "kolonner": [
+            "Homologt trekk",
+            "Analogt trekk"
+          ],
+          "rader": [
+            {
+              "egenskap": "Opphav",
+              "venstre": "arvet fra en felles stamform",
+              "hoyre": "oppstått uavhengig i to atskilte linjer"
+            },
+            {
+              "egenskap": "Funksjon",
+              "venstre": "kan være helt ulik: gripe, gå, fly, svømme",
+              "hoyre": "den samme, fordi miljøet stiller samme krav"
+            },
+            {
+              "egenskap": "Innvendig bygning",
+              "venstre": "samme deler i samme rekkefølge, men ulik form og størrelse",
+              "hoyre": "helt ulike deler bygd om til samme oppgave"
+            },
+            {
+              "egenskap": "Eksempel",
+              "venstre": "forlemmet hos menneske, hval, hest og flaggermus",
+              "hoyre": "vingen til bie og flaggermus; kroppsformen hos hai og delfin"
+            },
+            {
+              "egenskap": "Årsak",
+              "venstre": "felles avstamning",
+              "hoyre": "konvergent evolusjon"
+            },
+            {
+              "egenskap": "Bruk i systematikk",
+              "venstre": "viser slektskap — treet bygges på slike trekk",
+              "hoyre": "sier ingenting om slektskap; den klassiske fella"
+            }
+          ]
+        }
       },
       {
         "tittel": "Bestemmelsesnøkler og fylogenetiske trær",

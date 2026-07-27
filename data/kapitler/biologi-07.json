@@ -99,7 +99,48 @@
       },
       {
         "tittel": "Gassutvekslingsorganer hos dyr og mennesket",
-        "html": "<p><strong>Insekter</strong> har et <strong>trakésystem</strong>: luftfylte rør som åpner seg i <strong>åndehull</strong> (spirakler) langs kroppssidene og forgrener seg i stadig tynnere trakeoler helt inn til cellene. Gassene leveres altså direkte, uten hjelp av blod.</p><p><strong>Fisk</strong> bruker <strong>gjeller</strong> med gjellebuer, gjellefilamenter og tynne lameller — enorm overflate i en hinne som er få celler tykk. Blodet strømmer motsatt vei av vannet. Dette <strong>motstrømsprinsippet</strong> gjør at blodet hele veien møter vann med litt høyere oksygenpartialtrykk enn blodet selv har, slik at gradienten holdes langs hele lamellen. Fisken kan hente ut opp mot 80 % av oksygenet i vannet — og det trenger den, for vann inneholder bare rundt en trettiendel så mye oksygen som samme volum luft.</p><p><strong>Amfibier</strong> kombinerer enkle, sekkeformede lunger med hudånding gjennom fuktig, godt gjennomblødd hud. <strong>Fugler</strong> har luftsekker som virker som blåsebelger og gir ensrettet luftstrøm gjennom tynne <strong>parabronkier</strong>. Luften byttes derfor nesten helt ut, noe som gjør flukt i tynn høydeluft mulig.</p><p>Hos <strong>mennesket</strong> går luften gjennom nese, svelg, strupe, luftrør, bronkier og bronkioler til rundt 300 millioner <strong>alveoler</strong>. Til sammen har de en overflate på 70–100 m², og veggen mellom alveoleluft og kapillærblod er bare omtrent 0,5 µm tykk. Innånding er aktiv: mellomgulvet (diafragma) trekker seg sammen og flater ut, brystkassen utvides, trykket i lungene synker, og luft strømmer inn. Utånding i hvile er passiv tilbakefjæring. I hvile puster du ca. 0,5 L luft 12–15 ganger i minuttet, altså rundt 6–7 L per minutt.</p>"
+        "html": "<p><strong>Insekter</strong> har et <strong>trakésystem</strong>: luftfylte rør som åpner seg i <strong>åndehull</strong> (spirakler) langs kroppssidene og forgrener seg i stadig tynnere trakeoler helt inn til cellene. Gassene leveres altså direkte, uten hjelp av blod.</p><p><strong>Fisk</strong> bruker <strong>gjeller</strong> med gjellebuer, gjellefilamenter og tynne lameller — enorm overflate i en hinne som er få celler tykk. Blodet strømmer motsatt vei av vannet. Dette <strong>motstrømsprinsippet</strong> gjør at blodet hele veien møter vann med litt høyere oksygenpartialtrykk enn blodet selv har, slik at gradienten holdes langs hele lamellen. Fisken kan hente ut opp mot 80 % av oksygenet i vannet — og det trenger den, for vann inneholder bare rundt en trettiendel så mye oksygen som samme volum luft.</p><p><strong>Amfibier</strong> kombinerer enkle, sekkeformede lunger med hudånding gjennom fuktig, godt gjennomblødd hud. <strong>Fugler</strong> har luftsekker som virker som blåsebelger og gir ensrettet luftstrøm gjennom tynne <strong>parabronkier</strong>. Luften byttes derfor nesten helt ut, noe som gjør flukt i tynn høydeluft mulig.</p><p>Hos <strong>mennesket</strong> går luften gjennom nese, svelg, strupe, luftrør, bronkier og bronkioler til rundt 300 millioner <strong>alveoler</strong>. Til sammen har de en overflate på 70–100 m², og veggen mellom alveoleluft og kapillærblod er bare omtrent 0,5 µm tykk. Innånding er aktiv: mellomgulvet (diafragma) trekker seg sammen og flater ut, brystkassen utvides, trykket i lungene synker, og luft strømmer inn. Utånding i hvile er passiv tilbakefjæring. I hvile puster du ca. 0,5 L luft 12–15 ganger i minuttet, altså rundt 6–7 L per minutt.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Motstrøm mot medstrøm i fiskens gjelle",
+          "forklaring": "Sammenlign radene «gradient» og «uttak»: høyre kolonne er et tenkt gjelle der vann og blod går samme vei. Da møtes de i likevekt et stykke inn, og diffusjonen stopper der — motstrømmen har ingen pumpe, den plasserer bare strømmene slik at det alltid finnes en gradient.",
+          "kolonner": [
+            "Motstrøm (fisken)",
+            "Medstrøm (tenkt gjelle)"
+          ],
+          "rader": [
+            {
+              "egenskap": "Retning",
+              "venstre": "vannet og blodet strømmer motsatt vei forbi lamellen",
+              "hoyre": "vannet og blodet strømmer samme vei"
+            },
+            {
+              "egenskap": "Gradient langs lamellen",
+              "venstre": "blodet møter hele veien vann med litt høyere p(O₂)",
+              "hoyre": "gradienten krymper og blir null når de to når likevekt"
+            },
+            {
+              "egenskap": "Hvor O₂ diffunderer",
+              "venstre": "langs hele lamellen, fra start til slutt",
+              "hoyre": "bare første del av lamellen, så stopper opptaket"
+            },
+            {
+              "egenskap": "Uttak av O₂ fra vannet",
+              "venstre": "opp mot 80 %",
+              "hoyre": "høyst rundt 50 %"
+            },
+            {
+              "egenskap": "Blodet som forlater gjellen",
+              "venstre": "kan bli nesten like O₂-rikt som vannet som kommer inn",
+              "hoyre": "kan aldri bli mer O₂-rikt enn vannet som går ut"
+            },
+            {
+              "egenskap": "Energibruk",
+              "venstre": "ingen — ren passiv diffusjon, bare geometri",
+              "hoyre": "ingen, men mye av oksygenet i vannet går tapt"
+            }
+          ]
+        }
       },
       {
         "tittel": "Transport i planter: vedvev, silvev og transpirasjon",
@@ -135,7 +176,48 @@
       },
       {
         "tittel": "Sirkulasjonssystemer hos dyr",
-        "html": "<p>Et sirkulasjonssystem har tre deler: en pumpe, et sett rør og en væske. Vi skiller mellom <strong>åpent</strong> og <strong>lukket</strong> kretsløp. I et åpent kretsløp — insekter og de fleste bløtdyr — pumper hjertet <strong>hemolymfe</strong> ut i åpne kroppshulrom, der væsken skyller direkte rundt organene før den siler tilbake. Trykket er lavt, strømmen langsom og fordelingen dårlig regulert. Hos insekter frakter hemolymfen næring og avfall, men nesten ikke oksygen — det ordner trakéene.</p><p>I et lukket kretsløp, som hos meitemark, blekksprut og alle virveldyr, holdes blodet inne i årer hele veien. Da kan trykket være høyt, strømmen rask, og kroppen kan styre hvor mye blod hvert enkelt organ får.</p><p>Blant virveldyrene ser vi en tydelig linje. <strong>Fisk</strong> har <strong>enkelt kretsløp</strong> og et hjerte med ett forkammer og ett hjertekammer: blodet går hjerte, gjeller, kropp og tilbake til hjertet i én runde. Ulempen er at trykket faller kraftig i de trange gjellekapillærene, så blodet fortsetter til kroppen med lavt trykk.</p><p><strong>Amfibier</strong> har <strong>dobbelt kretsløp</strong> med to forkamre og ett felles hjertekammer, der oksygenrikt og oksygenfattig blod delvis blandes. <strong>Krypdyr</strong> har delvis skillevegg i kammeret, og krokodillene har full skillevegg. <strong>Fugler og pattedyr</strong> har fire helt atskilte kamre. Dermed er lungekretsløpet (det lille kretsløpet) og kroppskretsløpet (det store) helt separert: lungene får lavt trykk som ikke presser væske ut i alveolene, mens kroppen får høyt trykk og rask levering. Det er en forutsetning for det høye stoffskiftet hos varmblodige dyr.</p>"
+        "html": "<p>Et sirkulasjonssystem har tre deler: en pumpe, et sett rør og en væske. Vi skiller mellom <strong>åpent</strong> og <strong>lukket</strong> kretsløp. I et åpent kretsløp — insekter og de fleste bløtdyr — pumper hjertet <strong>hemolymfe</strong> ut i åpne kroppshulrom, der væsken skyller direkte rundt organene før den siler tilbake. Trykket er lavt, strømmen langsom og fordelingen dårlig regulert. Hos insekter frakter hemolymfen næring og avfall, men nesten ikke oksygen — det ordner trakéene.</p><p>I et lukket kretsløp, som hos meitemark, blekksprut og alle virveldyr, holdes blodet inne i årer hele veien. Da kan trykket være høyt, strømmen rask, og kroppen kan styre hvor mye blod hvert enkelt organ får.</p><p>Blant virveldyrene ser vi en tydelig linje. <strong>Fisk</strong> har <strong>enkelt kretsløp</strong> og et hjerte med ett forkammer og ett hjertekammer: blodet går hjerte, gjeller, kropp og tilbake til hjertet i én runde. Ulempen er at trykket faller kraftig i de trange gjellekapillærene, så blodet fortsetter til kroppen med lavt trykk.</p><p><strong>Amfibier</strong> har <strong>dobbelt kretsløp</strong> med to forkamre og ett felles hjertekammer, der oksygenrikt og oksygenfattig blod delvis blandes. <strong>Krypdyr</strong> har delvis skillevegg i kammeret, og krokodillene har full skillevegg. <strong>Fugler og pattedyr</strong> har fire helt atskilte kamre. Dermed er lungekretsløpet (det lille kretsløpet) og kroppskretsløpet (det store) helt separert: lungene får lavt trykk som ikke presser væske ut i alveolene, mens kroppen får høyt trykk og rask levering. Det er en forutsetning for det høye stoffskiftet hos varmblodige dyr.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Enkelt og dobbelt kretsløp",
+          "forklaring": "Se på trykkradene: hos fisken er trykket brukt opp i de trange gjellekapillærene før blodet når kroppen, mens et dobbelt kretsløp gir blodet nytt trykk i venstre kammer etter lungene. Det er denne ekstra pumpingen som gjør høyt stoffskifte mulig.",
+          "kolonner": [
+            "Enkelt (fisk)",
+            "Dobbelt (fugl og pattedyr)"
+          ],
+          "rader": [
+            {
+              "egenskap": "Veien rundt",
+              "venstre": "hjerte → gjeller → kropp → hjerte, én runde",
+              "hoyre": "hjerte → lunger → hjerte → kropp → hjerte"
+            },
+            {
+              "egenskap": "Hjertepassasjer per runde",
+              "venstre": "blodet innom hjertet én gang",
+              "hoyre": "blodet innom hjertet to ganger"
+            },
+            {
+              "egenskap": "Hjertekamre",
+              "venstre": "ett forkammer og ett hjertekammer",
+              "hoyre": "to forkamre og to hjertekamre, helt atskilte"
+            },
+            {
+              "egenskap": "Trykk ut til kroppen",
+              "venstre": "lavt: trykket er tapt i gjellekapillærene",
+              "hoyre": "høyt: venstre kammer pumper blodet på nytt"
+            },
+            {
+              "egenskap": "Trykk i utvekslingsorganet",
+              "venstre": "gjellene får hele hjertetrykket",
+              "hoyre": "lungene får lavt trykk, så alveolene holdes tørre"
+            },
+            {
+              "egenskap": "Hva det tillater",
+              "venstre": "moderat stoffskifte hos et vekselvarmt dyr i vann",
+              "hoyre": "høyt stoffskifte og rask levering hos varmblodige"
+            }
+          ]
+        }
       },
       {
         "tittel": "Hjertet, blodårene og blodet",
@@ -175,7 +257,26 @@
       },
       {
         "tittel": "Ekskresjon og nitrogenholdig avfall",
-        "html": "<p><strong>Ekskresjon</strong> er utskilling av avfallsstoffer som har vært inne i kroppens stoffskifte. Det er ikke det samme som avføring: ufordøyd mat har aldri vært tatt opp i cellene. Hos mennesket skiller nyrene ut vann, salter og nitrogenavfall, lungene skiller ut $\\ce{CO2}$ og vanndamp, huden litt vann og salt, og leveren leverer nedbrytingsprodukter av hemoglobin til gallen.</p><p>Problemet melder seg når aminosyrer brukes som energi. Aminogruppen fjernes (<strong>deaminering</strong>), og det dannes <strong>ammoniakk</strong>, $\\ce{NH3}$, som er svært giftig fordi den forstyrrer pH og nervefunksjon. Dyr håndterer dette på tre måter:</p><ul><li><strong>Ammoniakk</strong> — billigst i energi, men giftigst og krever mye vann. Brukes av ferskvannsfisk og mange vannlevende virvelløse dyr, som lar den diffundere rett ut over gjeller og hud.</li><li><strong>Urinstoff</strong> (urea), $\\ce{CO(NH2)2}$ — lages i leveren, er langt mindre giftig og kan konsentreres opp. Koster ATP. Brukes av pattedyr, amfibier og haier.</li><li><strong>Urinsyre</strong> — nesten uløselig i vann og skilles ut som en hvit, halvfast pasta eller som krystaller. Dyrest i energi, men sparer nesten alt vann. Brukes av fugler, krypdyr, insekter og landsnegler.</li></ul><p>Mønsteret følger vanntilgang og formering. Et fugleegg med skall må lagre avfallet trygt inne i egget gjennom hele utviklingen, og da er uløselig urinsyre den ideelle løsningen. Andre ekskresjonsorganer finnes også: protister har <strong>kontraktile vakuoler</strong>, meitemarken har <strong>nefridier</strong> i hvert segment, og insekter har <strong>malpighiske rør</strong> som tømmer seg i tarmen. Planter har ikke noe utskillingsorgan; de lagrer avfallsstoffer i vakuolene eller feller løvet.</p>"
+        "html": "<p><strong>Ekskresjon</strong> er utskilling av avfallsstoffer som har vært inne i kroppens stoffskifte. Det er ikke det samme som avføring: ufordøyd mat har aldri vært tatt opp i cellene. Hos mennesket skiller nyrene ut vann, salter og nitrogenavfall, lungene skiller ut $\\ce{CO2}$ og vanndamp, huden litt vann og salt, og leveren leverer nedbrytingsprodukter av hemoglobin til gallen.</p><p>Problemet melder seg når aminosyrer brukes som energi. Aminogruppen fjernes (<strong>deaminering</strong>), og det dannes <strong>ammoniakk</strong>, $\\ce{NH3}$, som er svært giftig fordi den forstyrrer pH og nervefunksjon. Dyr håndterer dette på tre måter:</p><ul><li><strong>Ammoniakk</strong> — billigst i energi, men giftigst og krever mye vann. Brukes av ferskvannsfisk og mange vannlevende virvelløse dyr, som lar den diffundere rett ut over gjeller og hud.</li><li><strong>Urinstoff</strong> (urea), $\\ce{CO(NH2)2}$ — lages i leveren, er langt mindre giftig og kan konsentreres opp. Koster ATP. Brukes av pattedyr, amfibier og haier.</li><li><strong>Urinsyre</strong> — nesten uløselig i vann og skilles ut som en hvit, halvfast pasta eller som krystaller. Dyrest i energi, men sparer nesten alt vann. Brukes av fugler, krypdyr, insekter og landsnegler.</li></ul><p>Mønsteret følger vanntilgang og formering. Et fugleegg med skall må lagre avfallet trygt inne i egget gjennom hele utviklingen, og da er uløselig urinsyre den ideelle løsningen. Andre ekskresjonsorganer finnes også: protister har <strong>kontraktile vakuoler</strong>, meitemarken har <strong>nefridier</strong> i hvert segment, og insekter har <strong>malpighiske rør</strong> som tømmer seg i tarmen. Planter har ikke noe utskillingsorgan; de lagrer avfallsstoffer i vakuolene eller feller løvet.</p>",
+        "figur": {
+          "type": "molekyl",
+          "tittel": "Urinstoff, CO(NH₂)₂ — pattedyrenes kompromiss",
+          "forklaring": "Tell nitrogenatomene: de to aminogruppene bærer nitrogenet fra to deamineringer, så leveren pakker to giftige NH₃ inn i ett ufarlig molekyl. Molekylet er nøytralt og løser seg godt i vann, og derfor kan nyren konsentrere det 60 ganger opp i urinen uten å skade cellene.",
+          "sentral": "C",
+          "ligander": [
+            "O",
+            "NH₂",
+            "NH₂"
+          ],
+          "geometri": "trigonal-plan",
+          "ledigePar": 0,
+          "vinkel": "ca. 120°",
+          "bindinger": [
+            2,
+            1,
+            1
+          ]
+        }
       },
       {
         "tittel": "Nyrene og væskebalansen",

@@ -92,7 +92,48 @@
     "seksjoner": [
       {
         "tittel": "Hva kjennetegner liv?",
-        "html": "<p>Biologi er vitenskapen om det levende, men det finnes ingen enkeltegenskap som alene definerer liv. I stedet bruker biologene en liste med <strong>kjennetegn</strong>. Noe regnes som levende når kjennetegnene er der samtidig:</p><ul><li><strong>Cellulær oppbygning</strong> — alt levende består av én eller flere celler.</li><li><strong>Stoffskifte</strong> (metabolisme) — organismen tar opp stoffer og energi og bygger dem om.</li><li><strong>Vekst og utvikling</strong> etter en oppskrift som ligger i arvestoffet.</li><li><strong>Reproduksjon</strong> — arvestoffet gis videre til nye individer.</li><li><strong>Arvestoff</strong> — informasjonen ligger i DNA.</li><li><strong>Homeostase</strong> — organismen holder et stabilt indre miljø, som temperatur, vannmengde og pH.</li><li><strong>Respons på stimuli</strong> — reaksjon på lys, berøring, kjemiske signaler.</li><li><strong>Tilpasning over tid</strong> — populasjoner endrer seg gjennom evolusjon ved naturlig seleksjon.</li></ul><p>Grensetilfellene er de mest lærerike. Et <strong>virus</strong> har arvestoff og kan formere seg, men mangler celle og eget stoffskifte og må bruke maskineriet i en vertscelle. Derfor plasseres virus vanligvis utenfor det levende. Et <strong>frø</strong> eller en bakteriespore har nesten stanset stoffskifte, men evnen ligger der og starter opp igjen. En <strong>flamme</strong> vokser, bruker energi og «formerer seg», men har verken celler eller arvestoff — den er derfor ikke levende.</p><p>Legg merke til at kjennetegnene gjelder liv som system, ikke hvert individ i hvert øyeblikk. En steril arbeidsbie formerer seg ikke selv, men arten gjør det. En muldvarp i dyp søvn responderer dårlig på stimuli, men evnen er der.</p>"
+        "html": "<p>Biologi er vitenskapen om det levende, men det finnes ingen enkeltegenskap som alene definerer liv. I stedet bruker biologene en liste med <strong>kjennetegn</strong>. Noe regnes som levende når kjennetegnene er der samtidig:</p><ul><li><strong>Cellulær oppbygning</strong> — alt levende består av én eller flere celler.</li><li><strong>Stoffskifte</strong> (metabolisme) — organismen tar opp stoffer og energi og bygger dem om.</li><li><strong>Vekst og utvikling</strong> etter en oppskrift som ligger i arvestoffet.</li><li><strong>Reproduksjon</strong> — arvestoffet gis videre til nye individer.</li><li><strong>Arvestoff</strong> — informasjonen ligger i DNA.</li><li><strong>Homeostase</strong> — organismen holder et stabilt indre miljø, som temperatur, vannmengde og pH.</li><li><strong>Respons på stimuli</strong> — reaksjon på lys, berøring, kjemiske signaler.</li><li><strong>Tilpasning over tid</strong> — populasjoner endrer seg gjennom evolusjon ved naturlig seleksjon.</li></ul><p>Grensetilfellene er de mest lærerike. Et <strong>virus</strong> har arvestoff og kan formere seg, men mangler celle og eget stoffskifte og må bruke maskineriet i en vertscelle. Derfor plasseres virus vanligvis utenfor det levende. Et <strong>frø</strong> eller en bakteriespore har nesten stanset stoffskifte, men evnen ligger der og starter opp igjen. En <strong>flamme</strong> vokser, bruker energi og «formerer seg», men har verken celler eller arvestoff — den er derfor ikke levende.</p><p>Legg merke til at kjennetegnene gjelder liv som system, ikke hvert individ i hvert øyeblikk. En steril arbeidsbie formerer seg ikke selv, men arten gjør det. En muldvarp i dyp søvn responderer dårlig på stimuli, men evnen er der.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Bakteriecelle og virus — hva mangler viruset?",
+          "forklaring": "Se hvilke rader viruset treffer på: det har arvestoff og blir formert, men bommer på celle, stoffskifte og homeostase. Kjennetegnene må være oppfylt samtidig, og derfor havner virus utenfor det levende.",
+          "kolonner": [
+            "Bakteriecelle",
+            "Virus"
+          ],
+          "rader": [
+            {
+              "egenskap": "Cellulær oppbygning",
+              "venstre": "én celle med cellemembran, cytoplasma og ribosomer",
+              "hoyre": "ingen celle — bare arvestoff i en proteinkappe (kapsid)"
+            },
+            {
+              "egenskap": "Stoffskifte",
+              "venstre": "eget stoffskifte: tar opp stoffer og bygger egne proteiner",
+              "hoyre": "ingen egen metabolisme; låner maskineriet i en vertscelle"
+            },
+            {
+              "egenskap": "Arvestoff",
+              "venstre": "DNA fritt i cytoplasmaet, kopieres av cellen selv",
+              "hoyre": "DNA eller RNA, men kopieres bare inne i en vert"
+            },
+            {
+              "egenskap": "Formering",
+              "venstre": "deler seg selv ved todeling",
+              "hoyre": "styrer vertscellen til å lage nye viruspartikler"
+            },
+            {
+              "egenskap": "Homeostase og respons",
+              "venstre": "regulerer vannmengde og pH, svarer på stimuli",
+              "hoyre": "ingen regulering og ingen aktivitet utenfor en vert"
+            },
+            {
+              "egenskap": "Regnes som levende?",
+              "venstre": "ja — alle kjennetegnene er der samtidig",
+              "hoyre": "nei — mangler celle og eget stoffskifte"
+            }
+          ]
+        }
       },
       {
         "tittel": "Organisasjonsnivåer fra celle til biosfære",
@@ -143,7 +184,48 @@
       },
       {
         "tittel": "Feltarbeid og artsbestemmelse",
-        "html": "<p>Feltarbeid gir data ingen lærebok kan gi, men bare hvis det er planlagt. Før du går ut, må du bestemme problemstilling, hvilke arter og faktorer du skal registrere, og hvordan du velger ut hvor du måler.</p><p>To standardmetoder går igjen. I en <strong>ruteanalyse</strong> legger du ut ruter på for eksempel $0{,}5\\,\\text{m} \\times 0{,}5\\,\\text{m}$ og teller individer eller anslår <strong>dekningsgrad</strong> i prosent. Rutene bør plasseres <strong>tilfeldig</strong>, ellers velger du ubevisst de frodigste flekkene. I en <strong>transektanalyse</strong> legger du en målesnor langs en gradient — for eksempel fra fjærakanten og oppover — og registrerer langs linja for å se hvordan artene skifter.</p><p>I feltboka skal det alltid stå dato, klokkeslett, sted med koordinater, vær, metode og hvem som registrerte. Abiotiske faktorer måler du samtidig: temperatur, pH i jord eller vann, lysmengde og fuktighet.</p><p><strong>Artsbestemmelse</strong> gjør du med en <strong>dikotom bestemmelsesnøkkel</strong>: for hvert trinn velger du mellom to utsagn, og valget sender deg videre til et nytt trinn til du ender på en art. Bruk flere kjennetegn enn ett, og velg stabile kjennetegn som bladstilling, bladrand og hårvekst framfor størrelse og farge, som varierer med voksestedet.</p><p>Hver art har et <strong>vitenskapelig navn</strong> med to ledd: slektsnavn med stor forbokstav og artsepitet med liten, skrevet i kursiv — <em>Vaccinium myrtillus</em> for blåbær. Apper og AI-verktøy kan foreslå art, men forslaget må kontrolleres mot nøkkel og gjerne mot Artsdatabanken. Husk hensynsreglene: tråkk minst mulig, ta ikke ut mer materiale enn du trenger, og la fredede og rødlistede arter stå.</p>"
+        "html": "<p>Feltarbeid gir data ingen lærebok kan gi, men bare hvis det er planlagt. Før du går ut, må du bestemme problemstilling, hvilke arter og faktorer du skal registrere, og hvordan du velger ut hvor du måler.</p><p>To standardmetoder går igjen. I en <strong>ruteanalyse</strong> legger du ut ruter på for eksempel $0{,}5\\,\\text{m} \\times 0{,}5\\,\\text{m}$ og teller individer eller anslår <strong>dekningsgrad</strong> i prosent. Rutene bør plasseres <strong>tilfeldig</strong>, ellers velger du ubevisst de frodigste flekkene. I en <strong>transektanalyse</strong> legger du en målesnor langs en gradient — for eksempel fra fjærakanten og oppover — og registrerer langs linja for å se hvordan artene skifter.</p><p>I feltboka skal det alltid stå dato, klokkeslett, sted med koordinater, vær, metode og hvem som registrerte. Abiotiske faktorer måler du samtidig: temperatur, pH i jord eller vann, lysmengde og fuktighet.</p><p><strong>Artsbestemmelse</strong> gjør du med en <strong>dikotom bestemmelsesnøkkel</strong>: for hvert trinn velger du mellom to utsagn, og valget sender deg videre til et nytt trinn til du ender på en art. Bruk flere kjennetegn enn ett, og velg stabile kjennetegn som bladstilling, bladrand og hårvekst framfor størrelse og farge, som varierer med voksestedet.</p><p>Hver art har et <strong>vitenskapelig navn</strong> med to ledd: slektsnavn med stor forbokstav og artsepitet med liten, skrevet i kursiv — <em>Vaccinium myrtillus</em> for blåbær. Apper og AI-verktøy kan foreslå art, men forslaget må kontrolleres mot nøkkel og gjerne mot Artsdatabanken. Husk hensynsreglene: tråkk minst mulig, ta ikke ut mer materiale enn du trenger, og la fredede og rødlistede arter stå.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "pH du typisk måler i norsk natur",
+          "enhet": "pH",
+          "min": 3,
+          "max": 9,
+          "log": false,
+          "forklaring": "pH-skalaen er logaritmisk: myrvann på pH 4 har ti ganger så mye H₃O⁺ som granskogsjord på pH 5. Nesten all norsk natur ligger mellom pH 4 og 8 — sjøvann holder seg stabilt på 8,1 — så måleren må leses med én desimal.",
+          "band": [
+            {
+              "fra": 3,
+              "til": 4.5,
+              "navn": "myrvann",
+              "verdi": "torvmose"
+            },
+            {
+              "fra": 4.5,
+              "til": 5.5,
+              "navn": "granskog",
+              "verdi": "blåbær"
+            },
+            {
+              "fra": 5.5,
+              "til": 6.5,
+              "navn": "lauvskog",
+              "verdi": "gråor"
+            },
+            {
+              "fra": 6.5,
+              "til": 7.5,
+              "navn": "ferskvann",
+              "verdi": "innsjø"
+            },
+            {
+              "fra": 7.9,
+              "til": 8.3,
+              "navn": "sjøvann",
+              "verdi": "8,1"
+            }
+          ]
+        }
       },
       {
         "tittel": "Databehandling, feilkilder og kildekritikk",
@@ -260,7 +342,31 @@
       {
         "tittel": "Artsbestemmelse med dikotom nøkkel",
         "oppgave": "<p>På feltarbeid finner du et lauvtre med disse kjennetegnene: bladene sitter spredt (vekselvis) på greina, bladranden er dobbelt sagtannet, bladet er nesten trekantet med lang spiss, barken er hvit med svarte flekker, og de unge kvistene er hårløse med små vorter. En app på mobilen foreslår «osp». Bruk nøkkelen under, bestem treet, og vurder appens forslag.</p><table><thead><tr><th>Trinn</th><th>Kjennetegn</th><th>Videre</th></tr></thead><tbody><tr><td>1a</td><td>Bladene sitter parvis motsatt på greina</td><td>gå til 2</td></tr><tr><td>1b</td><td>Bladene sitter spredt (vekselvis)</td><td>gå til 3</td></tr><tr><td>2a</td><td>Bladet er håndnervet med 5 spisse fliker</td><td>spisslønn</td></tr><tr><td>2b</td><td>Bladet er sammensatt av 7–13 småblad</td><td>ask</td></tr><tr><td>3a</td><td>Bladranden dobbelt sagtannet, barken hvit</td><td>gå til 4</td></tr><tr><td>3b</td><td>Bladranden grovt bølgetannet, bladstilken lang og flattrykt</td><td>osp</td></tr><tr><td>4a</td><td>Unge kvister hårløse, ofte med små vorter; bladet nesten trekantet med lang spiss</td><td>hengebjørk</td></tr><tr><td>4b</td><td>Unge kvister mykt hårete; bladet mer rundovalt med kortere spiss</td><td>dunbjørk</td></tr></tbody></table>",
-        "losning": "<p><strong>Trinn 1.</strong> Vi sjekker bladstillingen først, fordi den er lett å se og deler nøkkelen i to store greiner. Bladene sitter spredt, ikke parvis, så vi velger <strong>1b</strong> og går til trinn 3. Da er både spisslønn og ask utelukket, siden begge har motsatt bladstilling.</p><p><strong>Trinn 3.</strong> Bladranden er dobbelt sagtannet — det vil si at det sitter små tenner på de store tennene — og barken er hvit. Det er <strong>3a</strong>, og vi går til trinn 4. Alternativ 3b passer ikke: vårt blad er trekantet med sagtannet rand, ikke rundt med grove, bølgete tenner.</p><p><strong>Trinn 4.</strong> Kvistene er hårløse med små vorter, og bladet er trekantet med lang spiss. Det er <strong>4a</strong>.</p><p><strong>Konklusjon:</strong> treet er <strong>hengebjørk</strong>, <em>Betula pendula</em>. Slektsnavnet skrives med stor forbokstav og artsepitetet med liten, begge i kursiv.</p><p><strong>Vurdering av appens forslag.</strong> «Osp» (<em>Populus tremula</em>) er galt, og det er lett å kontrollere med kjennetegn i stedet for å stole på forslaget:</p><ul><li>Osp har nesten runde blad med grove, bølgete tenner — ikke dobbelt sagtannet rand.</li><li>Osp har en lang, flattrykt bladstilk, som er grunnen til at bladene skjelver i minste vindpust. Bjørk har rund bladstilk — se etter dette neste gang du er i felt.</li><li>Osp har grågrønn, glatt bark, ikke hvit bark med svarte flekker.</li></ul><p>Appen bommet sannsynligvis fordi begge trærne har spredt bladstilling og blad av lignende størrelse, og fordi et enkelt bilde sjelden viser bladrand, bark og kvist godt nok. Lærdommen er metodisk: bruk <strong>flere</strong> kjennetegn, og velg de stabile (bladstilling, bladrand, hårvekst) framfor størrelse og farge, som varierer med voksestedet. Et digitalt forslag er en hypotese om arten — nøkkelen er testen.</p><p><strong>Dokumentasjon.</strong> Før inn i feltboka: dato, koordinater, voksested, hvilke kjennetegn du brukte, og et foto av både blad, kvist og bark med noe kjent som målestokk. Er du fortsatt usikker, sammenligner du med Artsdatabankens beskrivelser før du bestemmer arten endelig.</p>"
+        "losning": "<p><strong>Trinn 1.</strong> Vi sjekker bladstillingen først, fordi den er lett å se og deler nøkkelen i to store greiner. Bladene sitter spredt, ikke parvis, så vi velger <strong>1b</strong> og går til trinn 3. Da er både spisslønn og ask utelukket, siden begge har motsatt bladstilling.</p><p><strong>Trinn 3.</strong> Bladranden er dobbelt sagtannet — det vil si at det sitter små tenner på de store tennene — og barken er hvit. Det er <strong>3a</strong>, og vi går til trinn 4. Alternativ 3b passer ikke: vårt blad er trekantet med sagtannet rand, ikke rundt med grove, bølgete tenner.</p><p><strong>Trinn 4.</strong> Kvistene er hårløse med små vorter, og bladet er trekantet med lang spiss. Det er <strong>4a</strong>.</p><p><strong>Konklusjon:</strong> treet er <strong>hengebjørk</strong>, <em>Betula pendula</em>. Slektsnavnet skrives med stor forbokstav og artsepitetet med liten, begge i kursiv.</p><p><strong>Vurdering av appens forslag.</strong> «Osp» (<em>Populus tremula</em>) er galt, og det er lett å kontrollere med kjennetegn i stedet for å stole på forslaget:</p><ul><li>Osp har nesten runde blad med grove, bølgete tenner — ikke dobbelt sagtannet rand.</li><li>Osp har en lang, flattrykt bladstilk, som er grunnen til at bladene skjelver i minste vindpust. Bjørk har rund bladstilk — se etter dette neste gang du er i felt.</li><li>Osp har grågrønn, glatt bark, ikke hvit bark med svarte flekker.</li></ul><p>Appen bommet sannsynligvis fordi begge trærne har spredt bladstilling og blad av lignende størrelse, og fordi et enkelt bilde sjelden viser bladrand, bark og kvist godt nok. Lærdommen er metodisk: bruk <strong>flere</strong> kjennetegn, og velg de stabile (bladstilling, bladrand, hårvekst) framfor størrelse og farge, som varierer med voksestedet. Et digitalt forslag er en hypotese om arten — nøkkelen er testen.</p><p><strong>Dokumentasjon.</strong> Før inn i feltboka: dato, koordinater, voksested, hvilke kjennetegn du brukte, og et foto av både blad, kvist og bark med noe kjent som målestokk. Er du fortsatt usikker, sammenligner du med Artsdatabankens beskrivelser før du bestemmer arten endelig.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Veien gjennom den dikotome nøkkelen",
+          "forklaring": "Følg valgene nedover, og les i notatene hva hvert trinn utelukker: fra fem mulige arter står bare én igjen. Appens forslag «osp» ryker alt i trinn 3, fordi bladranden er dobbelt sagtannet.",
+          "steg": [
+            {
+              "tekst": "Trinn 1b: bladene sitter spredt",
+              "note": "spisslønn og ask er ute"
+            },
+            {
+              "tekst": "Trinn 3a: dobbelt sagtannet rand",
+              "note": "hvit bark — osp er ute"
+            },
+            {
+              "tekst": "Trinn 4a: hårløs kvist med vorter",
+              "note": "dunbjørk har hårete kvist"
+            },
+            {
+              "tekst": "Art: hengebjørk, Betula pendula",
+              "note": "slekt stor, artsepitet liten"
+            }
+          ]
+        }
       }
     ],
     "vanligeFeil": [

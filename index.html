@@ -620,7 +620,15 @@ mark { background: color-mix(in srgb, var(--warning) 45%, transparent); color: i
 .notat { font-size: 13px; color: var(--text-muted); line-height: 1.5;
   padding: 12px 14px; background: var(--surface-2); border-radius: var(--r-md);
   border-left: 3px solid var(--axis); }
-.katex-display { margin: .7em 0; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
+.katex-display { margin: .7em 0; overflow-x: auto; overflow-y: hidden; padding: 2px 0;
+  /* app.js krymper for brede formler til de passer; blir de fortsatt for brede,
+     får de denne klassen og skrolles med en synlig hint under */
+  scrollbar-width: none; }
+.katex-display::-webkit-scrollbar { display: none; }
+.katex-display.matte-bred {
+  border-right: 2px solid color-mix(in srgb, var(--axis) 60%, transparent);
+  border-radius: 0 3px 3px 0;
+}
 .katex { font-size: 1.03em; }
 .mono-tall { font-variant-numeric: tabular-nums; }
 

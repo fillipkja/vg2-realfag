@@ -75,7 +75,37 @@
     "seksjoner": [
       {
         "tittel": "Membranens oppbygning og fluid mosaikk-modellen",
-        "html": "<p>Cellemembranen er bare omtrent 7–8 nm tykk, men den avgjør hva som kommer inn i cellen og hva som slipper ut. Grunnmuren er et <strong>dobbelt lag av fosfolipider</strong>. Hvert fosfolipid har et <strong>hydrofilt</strong> hode med en fosfatgruppe og to <strong>hydrofobe</strong> fettsyrehaler. I vann ordner molekylene seg helt av seg selv slik at hodene vender ut mot vannet på begge sider, mens halene gjemmer seg inn mot midten. Dette gir membranen sin viktigste egenskap: den indre delen er fettaktig, så små fettløselige molekyler går rett gjennom, mens ioner og store vannløselige molekyler stanser.</p><p>Membranen er ingen stiv plate. Fosfolipidene glir sideveis forbi hverandre, og i dette «havet» flyter proteinene rundt som brikker i en mosaikk. Nettopp dette bildet beskriver <strong>fluid mosaikk-modellen</strong> (Singer og Nicolson, 1972): <em>fluid</em> betyr flytende, <em>mosaikk</em> at membranen består av mange ulike biter side om side.</p><p>Tre byggesteiner i tillegg til fosfolipidene må du kunne:</p><ul><li><strong>Membranproteiner.</strong> Noen går tvers gjennom hele membranen — kanaler, bærerproteiner, pumper og reseptorer. Andre sitter bare på overflaten eller er festet til cytoskjelettet.</li><li><strong>Kolesterol</strong> ligger inne mellom fosfolipidene i dyrecellers membraner og virker som en støtdemper: det hindrer at membranen blir for flytende når det er varmt, og at den stivner når det er kaldt.</li><li><strong>Karbohydratkjeder</strong> på utsiden, festet til proteiner (glykoproteiner) eller til lipider (glykolipider). De er cellens navneskilt: immunforsvaret kjenner igjen «egne» celler, og blodtypene i ABO-systemet er nettopp slike karbohydratkjeder.</li></ul><p>Membranen er <strong>asymmetrisk</strong>. Karbohydratene sitter alltid på utsiden, og innsiden har andre proteiner enn utsiden. Umettede fettsyrer, som har en knekk i halen, gjør membranen mer flytende; mettede fettsyrer pakkes tettere og gjør den fastere.</p>"
+        "html": "<p>Cellemembranen er bare omtrent 7–8 nm tykk, men den avgjør hva som kommer inn i cellen og hva som slipper ut. Grunnmuren er et <strong>dobbelt lag av fosfolipider</strong>. Hvert fosfolipid har et <strong>hydrofilt</strong> hode med en fosfatgruppe og to <strong>hydrofobe</strong> fettsyrehaler. I vann ordner molekylene seg helt av seg selv slik at hodene vender ut mot vannet på begge sider, mens halene gjemmer seg inn mot midten. Dette gir membranen sin viktigste egenskap: den indre delen er fettaktig, så små fettløselige molekyler går rett gjennom, mens ioner og store vannløselige molekyler stanser.</p><p>Membranen er ingen stiv plate. Fosfolipidene glir sideveis forbi hverandre, og i dette «havet» flyter proteinene rundt som brikker i en mosaikk. Nettopp dette bildet beskriver <strong>fluid mosaikk-modellen</strong> (Singer og Nicolson, 1972): <em>fluid</em> betyr flytende, <em>mosaikk</em> at membranen består av mange ulike biter side om side.</p><p>Tre byggesteiner i tillegg til fosfolipidene må du kunne:</p><ul><li><strong>Membranproteiner.</strong> Noen går tvers gjennom hele membranen — kanaler, bærerproteiner, pumper og reseptorer. Andre sitter bare på overflaten eller er festet til cytoskjelettet.</li><li><strong>Kolesterol</strong> ligger inne mellom fosfolipidene i dyrecellers membraner og virker som en støtdemper: det hindrer at membranen blir for flytende når det er varmt, og at den stivner når det er kaldt.</li><li><strong>Karbohydratkjeder</strong> på utsiden, festet til proteiner (glykoproteiner) eller til lipider (glykolipider). De er cellens navneskilt: immunforsvaret kjenner igjen «egne» celler, og blodtypene i ABO-systemet er nettopp slike karbohydratkjeder.</li></ul><p>Membranen er <strong>asymmetrisk</strong>. Karbohydratene sitter alltid på utsiden, og innsiden har andre proteiner enn utsiden. Umettede fettsyrer, som har en knekk i halen, gjør membranen mer flytende; mettede fettsyrer pakkes tettere og gjør den fastere.</p>",
+        "figur": {
+          "type": "hierarki",
+          "tittel": "Zoom inn på cellemembranen",
+          "forklaring": "Følg boksene nedover: hvert nivå ligger inni det over, og skalaen krymper hele veien fra vevet til én fettsyrehale. Legg merke til forholdet mellom nivå 2 og 3 — cellen er flere tusen ganger bredere enn membranen er tykk, så barrieren rundt cellen er bare to molekyler tykk.",
+          "nivaaer": [
+            {
+              "navn": "Vev",
+              "eksempel": "celler koblet sammen"
+            },
+            {
+              "navn": "Celle",
+              "eksempel": "ca. 20 µm tvers over"
+            },
+            {
+              "navn": "Cellemembran",
+              "eksempel": "7–8 nm tykk"
+            },
+            {
+              "navn": "Lipiddobbeltlag",
+              "eksempel": "to lag lipider"
+            },
+            {
+              "navn": "Fosfolipid",
+              "eksempel": "hode + 2 haler"
+            },
+            {
+              "navn": "Fettsyrehale"
+            }
+          ]
+        }
       },
       {
         "tittel": "Passiv transport: diffusjon, osmose og fasilitert diffusjon",
@@ -141,7 +171,48 @@
       },
       {
         "tittel": "Endocytose og eksocytose",
-        "html": "<p>Store molekyler, partikler og hele bakterier kommer ikke gjennom noen kanal. Da må membranen selv flytte seg, og cellen bruker <strong>vesikkeltransport</strong>. Dette koster alltid ATP.</p><p>Ved <strong>endocytose</strong> bøyer membranen seg innover rundt det som skal tas opp og klemmer av en <strong>vesikkel</strong> inne i cytoplasmaet. Det finnes tre varianter:</p><ul><li><strong>Fagocytose</strong> («cellespising»): cellen strekker ut membranutløpere rundt en stor partikkel. Hvite blodceller tar bakterier på denne måten, og vesikkelen smelter etterpå sammen med et lysosom som bryter innholdet ned.</li><li><strong>Pinocytose</strong> («celledrikking»): små vesikler tar inn væske med det som tilfeldigvis er oppløst i den.</li><li><strong>Reseptormediert endocytose</strong>: reseptorer på utsiden binder <em>bestemte</em> molekyler, og bare de tas inn. Slik henter cellene kolesterol som er pakket i LDL-partikler i blodet. Ved en arvelig feil i LDL-reseptoren blir kolesterolet igjen i blodet, og risikoen for åreforkalkning stiger kraftig.</li></ul><p><strong>Eksocytose</strong> er den samme prosessen baklengs. En vesikkel fra Golgi-apparatet vandrer ut til cellemembranen, membranene smelter sammen, og innholdet tømmes ut av cellen. Slik skiller bukspyttkjertelen ut insulin, nerveceller signalstoff i synapsen og slimhinneceller slim. Eksocytose brukes også til å kvitte seg med avfallsstoffer.</p><p>Én ting er lett å glemme: hver gang en vesikkel smelter sammen med cellemembranen, blir vesikkelens membran <em>en del av</em> cellemembranen — og ved endocytose går det motsatt vei. Eksocytose og endocytose er derfor også måten cellen reparerer og bytter ut membranen sin, og måten nye membranproteiner, som reseptorer og transportproteiner, kommer på plass i overflaten.</p>"
+        "html": "<p>Store molekyler, partikler og hele bakterier kommer ikke gjennom noen kanal. Da må membranen selv flytte seg, og cellen bruker <strong>vesikkeltransport</strong>. Dette koster alltid ATP.</p><p>Ved <strong>endocytose</strong> bøyer membranen seg innover rundt det som skal tas opp og klemmer av en <strong>vesikkel</strong> inne i cytoplasmaet. Det finnes tre varianter:</p><ul><li><strong>Fagocytose</strong> («cellespising»): cellen strekker ut membranutløpere rundt en stor partikkel. Hvite blodceller tar bakterier på denne måten, og vesikkelen smelter etterpå sammen med et lysosom som bryter innholdet ned.</li><li><strong>Pinocytose</strong> («celledrikking»): små vesikler tar inn væske med det som tilfeldigvis er oppløst i den.</li><li><strong>Reseptormediert endocytose</strong>: reseptorer på utsiden binder <em>bestemte</em> molekyler, og bare de tas inn. Slik henter cellene kolesterol som er pakket i LDL-partikler i blodet. Ved en arvelig feil i LDL-reseptoren blir kolesterolet igjen i blodet, og risikoen for åreforkalkning stiger kraftig.</li></ul><p><strong>Eksocytose</strong> er den samme prosessen baklengs. En vesikkel fra Golgi-apparatet vandrer ut til cellemembranen, membranene smelter sammen, og innholdet tømmes ut av cellen. Slik skiller bukspyttkjertelen ut insulin, nerveceller signalstoff i synapsen og slimhinneceller slim. Eksocytose brukes også til å kvitte seg med avfallsstoffer.</p><p>Én ting er lett å glemme: hver gang en vesikkel smelter sammen med cellemembranen, blir vesikkelens membran <em>en del av</em> cellemembranen — og ved endocytose går det motsatt vei. Eksocytose og endocytose er derfor også måten cellen reparerer og bytter ut membranen sin, og måten nye membranproteiner, som reseptorer og transportproteiner, kommer på plass i overflaten.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Endocytose og eksocytose",
+          "forklaring": "Les radvis: retningen, innholdet og virkningen på membranarealet er speilvendt. Men de to nederste radene viser det som er lett å glemme — begge prosessene koster ATP fordi hele membranen må flytte seg, og begge bytter samtidig ut proteiner i celleoverflaten.",
+          "kolonner": [
+            "Endocytose",
+            "Eksocytose"
+          ],
+          "rader": [
+            {
+              "egenskap": "Retning",
+              "venstre": "Inn: membranen bøyer seg innover og klemmer av en vesikkel inne i cytoplasmaet.",
+              "hoyre": "Ut: en vesikkel smelter sammen med cellemembranen og tømmes utenfor cellen."
+            },
+            {
+              "egenskap": "Hva flyttes",
+              "venstre": "Store partikler, væske og bestemte molekyler: bakterier, LDL-kolesterol.",
+              "hoyre": "Stoffer cellen har laget: insulin, signalstoff i synapsen, slim, avfall."
+            },
+            {
+              "egenskap": "Varianter",
+              "venstre": "Fagocytose, pinocytose og reseptormediert endocytose.",
+              "hoyre": "Vesikler fra Golgi-apparatet vandrer ut til cellemembranen."
+            },
+            {
+              "egenskap": "Membranarealet",
+              "venstre": "Blir mindre: membran flyttes inn i cellen som vesikkelvegg.",
+              "hoyre": "Blir større: vesikkelmembranen blir en del av cellemembranen."
+            },
+            {
+              "egenskap": "Membranproteiner",
+              "venstre": "Reseptorer hentes inn og brukes om igjen eller brytes ned.",
+              "hoyre": "Nye reseptorer og transportører, som GLUT4, kommer opp i overflaten."
+            },
+            {
+              "egenskap": "Bruker ATP?",
+              "venstre": "Ja — hele membranen må formes om.",
+              "hoyre": "Ja — hele membranen må formes om."
+            }
+          ]
+        }
       },
       {
         "tittel": "Reseptorer og signaloverføring",
@@ -236,7 +307,39 @@
       {
         "tittel": "Natrium-kalium-pumpa — regnskap for ioner, ATP og ladning",
         "oppgave": "<p>Typiske konsentrasjoner for en nervecelle er:</p><table><thead><tr><th>Ion</th><th>Utenfor cellen</th><th>Inne i cellen</th></tr></thead><tbody><tr><td>$\\ce{Na+}$</td><td>145 mmol/L</td><td>12 mmol/L</td></tr><tr><td>$\\ce{K+}$</td><td>4 mmol/L</td><td>140 mmol/L</td></tr></tbody></table><ol><li>Hvilken vei vil hvert ion diffundere av seg selv, og hvor mange ganger større er konsentrasjonen på den rike siden?</li><li>Cellen har $8{,}0 \\cdot 10^{5}$ natrium-kalium-pumper, og hver pumpe går 90 runder i sekundet. Hvor mange $\\ce{Na+}$ og $\\ce{K+}$ flyttes per sekund, og hvor mange ATP-molekyler brukes?</li><li>Hvor mange ATP-molekyler går til disse pumpene i løpet av ett minutt?</li><li>Hva gjør pumpa med ladningen inne i cellen?</li></ol>",
-        "losning": "<p><strong>Deloppgave 1 — gradientene.</strong> Diffusjon går alltid fra høy til lav konsentrasjon. Det er mest natrium utenfor, så $\\ce{Na+}$ vil lekke <em>inn</em>; det er mest kalium inne, så $\\ce{K+}$ vil lekke <em>ut</em>. Forholdstallene:</p>$$\\ce{Na+}: \\quad \\frac{145\\,\\text{mmol/L}}{12\\,\\text{mmol/L}} \\approx 12$$$$\\ce{K+}: \\quad \\frac{140\\,\\text{mmol/L}}{4\\,\\text{mmol/L}} = 35$$<p>Det er altså omtrent 12 ganger mer natrium ute og 35 ganger mer kalium inne. Pumpa flytter begge ionene <em>mot</em> gradienten sin, og derfor er dette aktiv transport som må drives av ATP.</p><p><strong>Deloppgave 2 — ioner og ATP per sekund.</strong> Først antall pumperunder (sykluser) i cellen per sekund:</p>$$8{,}0 \\cdot 10^{5}\\,\\text{pumper} \\cdot 90\\,\\text{runder/s} = 7{,}2 \\cdot 10^{7}\\,\\text{runder per sekund}$$<p>Hver runde flytter 3 $\\ce{Na+}$ ut, 2 $\\ce{K+}$ inn og bruker 1 ATP:</p>$$\\ce{Na+}: \\quad 3 \\cdot 7{,}2 \\cdot 10^{7} = 2{,}16 \\cdot 10^{8} \\approx 2{,}2 \\cdot 10^{8}\\ \\text{ioner ut per sekund}$$$$\\ce{K+}: \\quad 2 \\cdot 7{,}2 \\cdot 10^{7} = 1{,}44 \\cdot 10^{8} \\approx 1{,}4 \\cdot 10^{8}\\ \\text{ioner inn per sekund}$$$$\\text{ATP}: \\quad 1 \\cdot 7{,}2 \\cdot 10^{7} = 7{,}2 \\cdot 10^{7}\\ \\text{ATP per sekund}$$<p><strong>Deloppgave 3 — per minutt.</strong> Ett minutt er 60 sekunder:</p>$$7{,}2 \\cdot 10^{7}\\,\\text{ATP/s} \\cdot 60\\,\\text{s} = 4{,}32 \\cdot 10^{9} \\approx 4{,}3 \\cdot 10^{9}\\ \\text{ATP}$$<p>Over fire milliarder ATP i ett minutt, i én enkelt celle, bare for å holde orden på to ioner. Det er derfor natrium-kalium-pumpa står for en så stor del av kroppens energibruk i hvile.</p><p><strong>Deloppgave 4 — ladningen.</strong> Per runde går 3 positive ladninger ut og 2 inn:</p>$$(+3) - (+2) = +1 \\ \\text{ladning ut per runde}$$$$1 \\cdot 7{,}2 \\cdot 10^{7} = 7{,}2 \\cdot 10^{7}\\ \\text{positive ladninger ut per sekund}$$<p>Innsiden blir dermed litt mer negativ enn utsiden. Pumpa er <em>elektrogen</em>, og bidrar sammen med kaliumlekkasjen til hvilepotensialet på om lag $-70$ mV. Hadde pumpa flyttet like mange ioner hver vei, ville den ikke hatt noen slik virkning på ladningen.</p>"
+        "losning": "<p><strong>Deloppgave 1 — gradientene.</strong> Diffusjon går alltid fra høy til lav konsentrasjon. Det er mest natrium utenfor, så $\\ce{Na+}$ vil lekke <em>inn</em>; det er mest kalium inne, så $\\ce{K+}$ vil lekke <em>ut</em>. Forholdstallene:</p>$$\\ce{Na+}: \\quad \\frac{145\\,\\text{mmol/L}}{12\\,\\text{mmol/L}} \\approx 12$$$$\\ce{K+}: \\quad \\frac{140\\,\\text{mmol/L}}{4\\,\\text{mmol/L}} = 35$$<p>Det er altså omtrent 12 ganger mer natrium ute og 35 ganger mer kalium inne. Pumpa flytter begge ionene <em>mot</em> gradienten sin, og derfor er dette aktiv transport som må drives av ATP.</p><p><strong>Deloppgave 2 — ioner og ATP per sekund.</strong> Først antall pumperunder (sykluser) i cellen per sekund:</p>$$8{,}0 \\cdot 10^{5}\\,\\text{pumper} \\cdot 90\\,\\text{runder/s} = 7{,}2 \\cdot 10^{7}\\,\\text{runder per sekund}$$<p>Hver runde flytter 3 $\\ce{Na+}$ ut, 2 $\\ce{K+}$ inn og bruker 1 ATP:</p>$$\\ce{Na+}: \\quad 3 \\cdot 7{,}2 \\cdot 10^{7} = 2{,}16 \\cdot 10^{8} \\approx 2{,}2 \\cdot 10^{8}\\ \\text{ioner ut per sekund}$$$$\\ce{K+}: \\quad 2 \\cdot 7{,}2 \\cdot 10^{7} = 1{,}44 \\cdot 10^{8} \\approx 1{,}4 \\cdot 10^{8}\\ \\text{ioner inn per sekund}$$$$\\text{ATP}: \\quad 1 \\cdot 7{,}2 \\cdot 10^{7} = 7{,}2 \\cdot 10^{7}\\ \\text{ATP per sekund}$$<p><strong>Deloppgave 3 — per minutt.</strong> Ett minutt er 60 sekunder:</p>$$7{,}2 \\cdot 10^{7}\\,\\text{ATP/s} \\cdot 60\\,\\text{s} = 4{,}32 \\cdot 10^{9} \\approx 4{,}3 \\cdot 10^{9}\\ \\text{ATP}$$<p>Over fire milliarder ATP i ett minutt, i én enkelt celle, bare for å holde orden på to ioner. Det er derfor natrium-kalium-pumpa står for en så stor del av kroppens energibruk i hvile.</p><p><strong>Deloppgave 4 — ladningen.</strong> Per runde går 3 positive ladninger ut og 2 inn:</p>$$(+3) - (+2) = +1 \\ \\text{ladning ut per runde}$$$$1 \\cdot 7{,}2 \\cdot 10^{7} = 7{,}2 \\cdot 10^{7}\\ \\text{positive ladninger ut per sekund}$$<p>Innsiden blir dermed litt mer negativ enn utsiden. Pumpa er <em>elektrogen</em>, og bidrar sammen med kaliumlekkasjen til hvilepotensialet på om lag $-70$ mV. Hadde pumpa flyttet like mange ioner hver vei, ville den ikke hatt noen slik virkning på ladningen.</p>",
+        "figur": {
+          "type": "syklus",
+          "tittel": "Én runde i natrium-kalium-pumpa",
+          "senter": "Na⁺/K⁺-pumpa",
+          "forklaring": "Følg runden med klokka: pumpa binder hvert ion på den siden der det er minst av det (Na⁺ inne, K⁺ ute) og slipper det ut på den rike siden — derfor går transporten mot gradienten. ATP-en i fase 2 er det som får proteinet til å snu formen. Én runde = 1 ATP, 3 Na⁺ ut og 2 K⁺ inn, altså tallene du regner med i oppgaven.",
+          "faser": [
+            {
+              "navn": "3 Na⁺",
+              "note": "binder inne i cellen"
+            },
+            {
+              "navn": "ATP",
+              "note": "fosfat festes på pumpa"
+            },
+            {
+              "navn": "Na⁺ ut",
+              "note": "pumpa endrer form"
+            },
+            {
+              "navn": "2 K⁺",
+              "note": "binder på utsiden"
+            },
+            {
+              "navn": "Fosfat",
+              "note": "løsner fra pumpa"
+            },
+            {
+              "navn": "K⁺ inn",
+              "note": "pumpa er klar igjen"
+            }
+          ]
+        }
       },
       {
         "tittel": "Hvilken transportmekanisme? Seks situasjoner analysert",

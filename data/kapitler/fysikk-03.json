@@ -166,11 +166,87 @@
       },
       {
         "tittel": "Når mekanisk energi ikke er bevart",
-        "html": "<p>I virkeligheten er nesten alltid friksjon og luftmotstand med. Disse kreftene peker motsatt vei av bevegelsen, så de gjør <strong>negativt arbeid</strong>, og den mekaniske energien avtar:</p>$$E_2 = E_1 + W_{\\text{friksjon}}$$<p>Siden $W_{\\text{friksjon}}$ er negativt, betyr dette at $E_2 < E_1$. Energien er ikke borte — den er gjort om til <strong>termisk energi</strong> (indre energi) i legemet, underlaget og lufta. Derfor blir bremseskiver glovarme nedover en lang bakke.</p><p><strong>Energiloven</strong> gjelder alltid: den totale energien i et lukket system er konstant. Det er bare den <em>mekaniske</em> energien som kan forsvinne. Derfor må du alltid spørre deg: gjør andre krefter enn tyngdekraften arbeid her? Er svaret ja, kan du ikke sette $E_1 = E_2$.</p><p>Motsatt kan den mekaniske energien også øke, hvis noe tilfører arbeid utenfra — en motor, en muskel eller en fjær som spretter tilbake. Generelt er</p>$$E_2 = E_1 + W_{\\text{ytre}}$$<p>Et poeng som går igjen i Fysikk 1, er <strong>energikvalitet</strong>. Mekanisk og elektrisk energi kan gjøres nesten fullstendig om til andre energiformer, mens termisk energi ved lav temperatur er spredt og vanskelig å bruke til noe nyttig. Energi «forbrukes» ikke, men den forringes.</p>"
+        "html": "<p>I virkeligheten er nesten alltid friksjon og luftmotstand med. Disse kreftene peker motsatt vei av bevegelsen, så de gjør <strong>negativt arbeid</strong>, og den mekaniske energien avtar:</p>$$E_2 = E_1 + W_{\\text{friksjon}}$$<p>Siden $W_{\\text{friksjon}}$ er negativt, betyr dette at $E_2 < E_1$. Energien er ikke borte — den er gjort om til <strong>termisk energi</strong> (indre energi) i legemet, underlaget og lufta. Derfor blir bremseskiver glovarme nedover en lang bakke.</p><p><strong>Energiloven</strong> gjelder alltid: den totale energien i et lukket system er konstant. Det er bare den <em>mekaniske</em> energien som kan forsvinne. Derfor må du alltid spørre deg: gjør andre krefter enn tyngdekraften arbeid her? Er svaret ja, kan du ikke sette $E_1 = E_2$.</p><p>Motsatt kan den mekaniske energien også øke, hvis noe tilfører arbeid utenfra — en motor, en muskel eller en fjær som spretter tilbake. Generelt er</p>$$E_2 = E_1 + W_{\\text{ytre}}$$<p>Et poeng som går igjen i Fysikk 1, er <strong>energikvalitet</strong>. Mekanisk og elektrisk energi kan gjøres nesten fullstendig om til andre energiformer, mens termisk energi ved lav temperatur er spredt og vanskelig å bruke til noe nyttig. Energi «forbrukes» ikke, men den forringes.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Glatt bane og bane med friksjon",
+          "forklaring": "Sammenlign rad for rad: det eneste som endrer selve regningen, er at du må legge til et negativt friksjonsarbeid i stedet for å sette E₁ = E₂. Legg merke til at den nederste raden er like i begge kolonnene — den totale energien er alltid bevart, det er bare den mekaniske delen som krymper.",
+          "kolonner": [
+            "Uten friksjon",
+            "Med friksjon"
+          ],
+          "rader": [
+            {
+              "egenskap": "Krefter som gjør arbeid",
+              "venstre": "bare tyngdekraften — normalkraften står normalt på bevegelsen",
+              "hoyre": "tyngdekraften, og friksjonen som peker mot bevegelsen"
+            },
+            {
+              "egenskap": "Likningen du bruker",
+              "venstre": "E₁ = E₂",
+              "hoyre": "E₂ = E₁ + W, der friksjonsarbeidet W er negativt"
+            },
+            {
+              "egenskap": "Mekanisk energi",
+              "venstre": "konstant hele veien",
+              "hoyre": "avtar underveis, så E₂ blir mindre enn E₁"
+            },
+            {
+              "egenskap": "Hvor energien blir av",
+              "venstre": "flyttes bare mellom Ek og Ep",
+              "hoyre": "en del blir termisk energi i legemet, underlaget og lufta"
+            },
+            {
+              "egenskap": "Fart nederst etter fall fra ro",
+              "venstre": "v = √(2gh), uavhengig av massen og av veien ned",
+              "hoyre": "mindre enn √(2gh) — hvor mye mindre avhenger av friksjonen og veilengden"
+            },
+            {
+              "egenskap": "Total energi",
+              "venstre": "bevart (energiloven)",
+              "hoyre": "bevart (energiloven)"
+            }
+          ]
+        }
       },
       {
         "tittel": "Effekt",
-        "html": "<p><strong>Effekt</strong> er arbeid eller energioverføring per tid — hvor <em>fort</em> energien blir overført:</p>$$P = \\frac{W}{t} = \\frac{\\Delta E}{\\Delta t}$$<p>Enheten er <strong>watt</strong>, og $1\\,\\text{W} = 1\\,\\text{J/s}$. En godt trent sykkelrytter holder rundt $300\\,\\text{W}$ over lang tid, mens en elbilmotor gjerne leverer $100\\,000\\,\\text{W} = 100\\,\\text{kW}$.</p><p>To personer som løfter samme kasse opp i samme hylle, gjør akkurat like stort arbeid. Den som gjør det på halve tida, har dobbelt så stor effekt. Effekt sier altså ingenting om hvor mye energi som blir overført i alt, bare om tempoet.</p><p>Snur vi formelen, får vi energien: $W = P \\, t$. Det er slik strømregningen regnes ut, med <strong>kilowattime</strong> som enhet: $1\\,\\text{kWh} = 1000\\,\\text{W}\\cdot 3600\\,\\text{s} = 3{,}6\\cdot 10^{6}\\,\\text{J} = 3{,}6\\,\\text{MJ}$.</p><p>Virker en konstant kraft $F$ langs bevegelsen mens farten er $v$, kan effekten skrives på en svært nyttig måte:</p>$$P = \\frac{F \\, s}{t} = F \\, v$$<p>En bil som holder konstant fart $25\\,\\text{m/s}$ mot en samlet motstand på $600\\,\\text{N}$, trenger da $P = 600\\,\\text{N}\\cdot 25\\,\\text{m/s} = 15\\,000\\,\\text{W} = 15\\,\\text{kW}$ ut til hjulene.</p>"
+        "html": "<p><strong>Effekt</strong> er arbeid eller energioverføring per tid — hvor <em>fort</em> energien blir overført:</p>$$P = \\frac{W}{t} = \\frac{\\Delta E}{\\Delta t}$$<p>Enheten er <strong>watt</strong>, og $1\\,\\text{W} = 1\\,\\text{J/s}$. En godt trent sykkelrytter holder rundt $300\\,\\text{W}$ over lang tid, mens en elbilmotor gjerne leverer $100\\,000\\,\\text{W} = 100\\,\\text{kW}$.</p><p>To personer som løfter samme kasse opp i samme hylle, gjør akkurat like stort arbeid. Den som gjør det på halve tida, har dobbelt så stor effekt. Effekt sier altså ingenting om hvor mye energi som blir overført i alt, bare om tempoet.</p><p>Snur vi formelen, får vi energien: $W = P \\, t$. Det er slik strømregningen regnes ut, med <strong>kilowattime</strong> som enhet: $1\\,\\text{kWh} = 1000\\,\\text{W}\\cdot 3600\\,\\text{s} = 3{,}6\\cdot 10^{6}\\,\\text{J} = 3{,}6\\,\\text{MJ}$.</p><p>Virker en konstant kraft $F$ langs bevegelsen mens farten er $v$, kan effekten skrives på en svært nyttig måte:</p>$$P = \\frac{F \\, s}{t} = F \\, v$$<p>En bil som holder konstant fart $25\\,\\text{m/s}$ mot en samlet motstand på $600\\,\\text{N}$, trenger da $P = 600\\,\\text{N}\\cdot 25\\,\\text{m/s} = 15\\,000\\,\\text{W} = 15\\,\\text{kW}$ ut til hjulene.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Effektskalaen, fra lyspære til kraftverk",
+          "forklaring": "Skalaen er logaritmisk, så hvert hakk mot høyre er ti ganger så stor effekt. En bilmotor overfører energi omtrent 300 ganger så fort som en syklist, men båndene sier ingenting om hvor mye energi som blir overført i alt — bare om tempoet.",
+          "enhet": "P (W)",
+          "min": 1,
+          "max": 1000000000,
+          "log": true,
+          "band": [
+            {
+              "fra": 1,
+              "til": 100,
+              "navn": "Lyspære",
+              "verdi": "10 W"
+            },
+            {
+              "fra": 100,
+              "til": 10000,
+              "navn": "Syklist og vannkoker",
+              "verdi": "300 W"
+            },
+            {
+              "fra": 10000,
+              "til": 1000000,
+              "navn": "Bilmotor",
+              "verdi": "100 kW"
+            },
+            {
+              "fra": 1000000,
+              "til": 1000000000,
+              "navn": "Kraftverk",
+              "verdi": "1 GW"
+            }
+          ]
+        }
       },
       {
         "tittel": "Virkningsgrad",
@@ -274,7 +350,31 @@
       {
         "tittel": "Berg-og-dalbane med og uten friksjon",
         "oppgave": "<p>En vogn i en berg-og-dalbane har samlet masse $400\\,\\text{kg}$. Den starter i ro på toppen, $32\\,\\text{m}$ over det laveste punktet i banen.</p><ul><li>a) Hvor stor fart har vogna i det laveste punktet dersom vi ser bort fra friksjon?</li><li>b) Hvor stor er farten der banen er $12\\,\\text{m}$ over det laveste punktet?</li><li>c) I virkeligheten måles farten i det laveste punktet til $23{,}0\\,\\text{m/s}$. Hvor mye mekanisk energi er gjort om til termisk energi?</li></ul>",
-        "losning": "<p>Vi legger <strong>nullnivået</strong> i det laveste punktet i banen, slik at $h = 0$ der. Tilstand 1 er toppen, med $v_1 = 0$ og $h_1 = 32\\,\\text{m}$.</p><p><strong>a)</strong> Uten friksjon er den mekaniske energien bevart:</p>$$\\frac{1}{2}mv_1^{2} + mgh_1 = \\frac{1}{2}mv_2^{2} + mgh_2$$<p>Med $v_1 = 0$ og $h_2 = 0$ står vi igjen med $mgh_1 = \\frac{1}{2}mv_2^{2}$. Massen forkortes bort på begge sider:</p>$$v_2 = \\sqrt{2gh_1} = \\sqrt{2\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 32\\,\\text{m}} = \\sqrt{627{,}8\\,\\text{m}^2/\\text{s}^2} = 25{,}1\\,\\text{m/s}$$<p>Det er omtrent $90\\,\\text{km/h}$. At massen forsvant, betyr at svaret er det samme enten vogna er full eller tom.</p><p><strong>b)</strong> Nå er $h_2 = 12\\,\\text{m}$, så bare høydeforskjellen $32\\,\\text{m} - 12\\,\\text{m} = 20\\,\\text{m}$ er gjort om til kinetisk energi:</p>$$mgh_1 = \\frac{1}{2}mv_2^{2} + mgh_2 \\quad \\Rightarrow \\quad v_2 = \\sqrt{2g\\left(h_1 - h_2\\right)}$$$$v_2 = \\sqrt{2\\cdot 9{,}81\\cdot 20}\\,\\text{m/s} = \\sqrt{392{,}4}\\,\\text{m/s} = 19{,}8\\,\\text{m/s}$$<p><strong>c)</strong> Nå må massen med, for energiene skal sammenlignes i joule. Mekanisk energi på toppen, der all energien er potensiell:</p>$$E_1 = mgh_1 = 400\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 32\\,\\text{m} = 125\\,568\\,\\text{J} \\approx 125{,}6\\,\\text{kJ}$$<p>Mekanisk energi nederst, der all energien er kinetisk:</p>$$E_2 = \\frac{1}{2}mv^{2} = \\frac{1}{2}\\cdot 400\\,\\text{kg}\\cdot\\left(23{,}0\\,\\text{m/s}\\right)^{2} = 200\\cdot 529\\,\\text{J} = 105\\,800\\,\\text{J} = 105{,}8\\,\\text{kJ}$$<p>Differansen er den energien friksjonen har tatt:</p>$$E_2 - E_1 = 105{,}8\\,\\text{kJ} - 125{,}6\\,\\text{kJ} = -19{,}8\\,\\text{kJ}$$<p>Altså er $19{,}8\\,\\text{kJ}$ blitt termisk energi i hjul, skinner og luft. Friksjonsarbeidet er $W_{\\text{friksjon}} = -19{,}8\\,\\text{kJ}$ — negativt, som det skal være. Merk at den totale energien er bevart hele veien; det er bare den mekaniske delen som er blitt mindre.</p>"
+        "losning": "<p>Vi legger <strong>nullnivået</strong> i det laveste punktet i banen, slik at $h = 0$ der. Tilstand 1 er toppen, med $v_1 = 0$ og $h_1 = 32\\,\\text{m}$.</p><p><strong>a)</strong> Uten friksjon er den mekaniske energien bevart:</p>$$\\frac{1}{2}mv_1^{2} + mgh_1 = \\frac{1}{2}mv_2^{2} + mgh_2$$<p>Med $v_1 = 0$ og $h_2 = 0$ står vi igjen med $mgh_1 = \\frac{1}{2}mv_2^{2}$. Massen forkortes bort på begge sider:</p>$$v_2 = \\sqrt{2gh_1} = \\sqrt{2\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 32\\,\\text{m}} = \\sqrt{627{,}8\\,\\text{m}^2/\\text{s}^2} = 25{,}1\\,\\text{m/s}$$<p>Det er omtrent $90\\,\\text{km/h}$. At massen forsvant, betyr at svaret er det samme enten vogna er full eller tom.</p><p><strong>b)</strong> Nå er $h_2 = 12\\,\\text{m}$, så bare høydeforskjellen $32\\,\\text{m} - 12\\,\\text{m} = 20\\,\\text{m}$ er gjort om til kinetisk energi:</p>$$mgh_1 = \\frac{1}{2}mv_2^{2} + mgh_2 \\quad \\Rightarrow \\quad v_2 = \\sqrt{2g\\left(h_1 - h_2\\right)}$$$$v_2 = \\sqrt{2\\cdot 9{,}81\\cdot 20}\\,\\text{m/s} = \\sqrt{392{,}4}\\,\\text{m/s} = 19{,}8\\,\\text{m/s}$$<p><strong>c)</strong> Nå må massen med, for energiene skal sammenlignes i joule. Mekanisk energi på toppen, der all energien er potensiell:</p>$$E_1 = mgh_1 = 400\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 32\\,\\text{m} = 125\\,568\\,\\text{J} \\approx 125{,}6\\,\\text{kJ}$$<p>Mekanisk energi nederst, der all energien er kinetisk:</p>$$E_2 = \\frac{1}{2}mv^{2} = \\frac{1}{2}\\cdot 400\\,\\text{kg}\\cdot\\left(23{,}0\\,\\text{m/s}\\right)^{2} = 200\\cdot 529\\,\\text{J} = 105\\,800\\,\\text{J} = 105{,}8\\,\\text{kJ}$$<p>Differansen er den energien friksjonen har tatt:</p>$$E_2 - E_1 = 105{,}8\\,\\text{kJ} - 125{,}6\\,\\text{kJ} = -19{,}8\\,\\text{kJ}$$<p>Altså er $19{,}8\\,\\text{kJ}$ blitt termisk energi i hjul, skinner og luft. Friksjonsarbeidet er $W_{\\text{friksjon}} = -19{,}8\\,\\text{kJ}$ — negativt, som det skal være. Merk at den totale energien er bevart hele veien; det er bare den mekaniske delen som er blitt mindre.</p>",
+        "figur": {
+          "type": "syklus",
+          "tittel": "Energien rundt i banen (uten friksjon)",
+          "senter": "E = Ek + Ep er konstant",
+          "forklaring": "Summen i midten er den samme i alle fire fasene; det er bare fordelingen mellom Ek og Ep som endrer seg, og massen forkortes bort når du regner farten. I spørsmål c) tar friksjonen 19,8 kJ ut av denne summen, og da kommer vogna aldri like høyt opp igjen.",
+          "faser": [
+            {
+              "navn": "Topp",
+              "note": "v = 0, Ep = 125,6 kJ"
+            },
+            {
+              "navn": "Ned",
+              "note": "Ep → Ek, farten øker"
+            },
+            {
+              "navn": "Bunn",
+              "note": "Ep = 0, v = 25,1 m/s"
+            },
+            {
+              "navn": "Opp",
+              "note": "Ek → Ep, farten avtar"
+            }
+          ]
+        }
       },
       {
         "tittel": "Effekt og virkningsgrad for en heis",

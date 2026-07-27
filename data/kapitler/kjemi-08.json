@@ -111,7 +111,48 @@
     "seksjoner": [
       {
         "tittel": "Kvalitativ og kvantitativ analyse",
-        "html": "<p>All analyse starter med et spørsmål, og spørsmålet bestemmer metoden. <strong>Kvalitativ analyse</strong> svarer på <em>hva</em> prøven inneholder: finnes det klorid i brønnvannet? <strong>Kvantitativ analyse</strong> svarer på <em>hvor mye</em>: hvor mange milligram klorid per liter? Les oppgaveteksten nøye — «påvis» betyr kvalitativt, «bestem konsentrasjonen» betyr kvantitativt.</p><p>Stoffet du er ute etter, kalles <strong>analytten</strong>. Alt det andre i prøven — vann, humus, leirpartikler, andre ioner — er <strong>matriksen</strong>. Matriksen er sjelden uskyldig: den kan gi farge som forstyrrer en spektrofotometrisk måling, eller inneholde ioner som feller ut sammen med analytten.</p><p>Kvalitative metoder du bør kunne:</p><ul><li><strong>Fellingsreaksjoner.</strong> Klorid gir hvitt bunnfall med sølvioner: $\\ce{Ag+ + Cl- -> AgCl(s)}$. Sulfat gir hvitt bunnfall med bariumioner: $\\ce{Ba^2+ + SO4^2- -> BaSO4(s)}$.</li><li><strong>Gassutvikling.</strong> Karbonat bobler når du tilsetter syre: $\\ce{CO3^2- + 2H3O+ -> 3H2O + CO2}$.</li><li><strong>Flammeprøve.</strong> Natrium gir gul flamme, kalium fiolett, kalsium teglrød og kopper grønn.</li></ul><p>Kvantitative metoder er blant annet titrering, spektrofotometri og gravimetri, der du veier et tørket bunnfall. Felles for dem er at de må <strong>kalibreres</strong> mot noe kjent — en standardløsning eller en standardkurve.</p><p>Hver metode har en <strong>deteksjonsgrense</strong>: den minste konsentrasjonen den klarer å skille sikkert fra null. Står det «under deteksjonsgrensen» i en analyserapport, betyr det ikke at stoffet er borte, bare at det er mindre enn metoden kan måle.</p>"
+        "html": "<p>All analyse starter med et spørsmål, og spørsmålet bestemmer metoden. <strong>Kvalitativ analyse</strong> svarer på <em>hva</em> prøven inneholder: finnes det klorid i brønnvannet? <strong>Kvantitativ analyse</strong> svarer på <em>hvor mye</em>: hvor mange milligram klorid per liter? Les oppgaveteksten nøye — «påvis» betyr kvalitativt, «bestem konsentrasjonen» betyr kvantitativt.</p><p>Stoffet du er ute etter, kalles <strong>analytten</strong>. Alt det andre i prøven — vann, humus, leirpartikler, andre ioner — er <strong>matriksen</strong>. Matriksen er sjelden uskyldig: den kan gi farge som forstyrrer en spektrofotometrisk måling, eller inneholde ioner som feller ut sammen med analytten.</p><p>Kvalitative metoder du bør kunne:</p><ul><li><strong>Fellingsreaksjoner.</strong> Klorid gir hvitt bunnfall med sølvioner: $\\ce{Ag+ + Cl- -> AgCl(s)}$. Sulfat gir hvitt bunnfall med bariumioner: $\\ce{Ba^2+ + SO4^2- -> BaSO4(s)}$.</li><li><strong>Gassutvikling.</strong> Karbonat bobler når du tilsetter syre: $\\ce{CO3^2- + 2H3O+ -> 3H2O + CO2}$.</li><li><strong>Flammeprøve.</strong> Natrium gir gul flamme, kalium fiolett, kalsium teglrød og kopper grønn.</li></ul><p>Kvantitative metoder er blant annet titrering, spektrofotometri og gravimetri, der du veier et tørket bunnfall. Felles for dem er at de må <strong>kalibreres</strong> mot noe kjent — en standardløsning eller en standardkurve.</p><p>Hver metode har en <strong>deteksjonsgrense</strong>: den minste konsentrasjonen den klarer å skille sikkert fra null. Står det «under deteksjonsgrensen» i en analyserapport, betyr det ikke at stoffet er borte, bare at det er mindre enn metoden kan måle.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Kvalitativ og kvantitativ analyse",
+          "forklaring": "Signalordet i oppgaveteksten avgjør hvilken kolonne du står i, og kolonnen avgjør hva du må ha med av utstyr: bare den høyre krever noe med kjent konsentrasjon. Merk nederste rad — begge kolonnene har en nedre grense, så «ikke påvist» betyr bare «mindre enn metoden kan se».",
+          "kolonner": [
+            "Kvalitativ analyse",
+            "Kvantitativ analyse"
+          ],
+          "rader": [
+            {
+              "egenskap": "Spørsmålet",
+              "venstre": "hvilke stoffer er i prøven?",
+              "hoyre": "hvor mye er det av analytten?"
+            },
+            {
+              "egenskap": "Signalord i oppgaven",
+              "venstre": "«påvis», «finnes det», «hvilket ion»",
+              "hoyre": "«bestem konsentrasjonen», «hvor mange mg/L»"
+            },
+            {
+              "egenskap": "Typiske metoder",
+              "venstre": "felling med Ag⁺ eller Ba²⁺, gassutvikling, flammeprøve",
+              "hoyre": "titrering, spektrofotometri, gravimetri"
+            },
+            {
+              "egenskap": "Trengs kalibrering?",
+              "venstre": "nei, du ser bunnfallet, boblene eller flammefargen",
+              "hoyre": "ja, mot standardløsning eller standardkurve"
+            },
+            {
+              "egenskap": "Svaret ser slik ut",
+              "venstre": "klorid påvist — hvitt bunnfall av AgCl",
+              "hoyre": "3,79 · 10³ mg/L, med gjeldende siffer og usikkerhet"
+            },
+            {
+              "egenskap": "Nedre grense",
+              "venstre": "bunnfallet blir usynlig i svært tynne løsninger",
+              "hoyre": "deteksjonsgrensen nedad, lineært område oppad"
+            }
+          ]
+        }
       },
       {
         "tittel": "Vannanalyse og vannkvalitet",
@@ -124,7 +165,7 @@
           "type": "stolper",
           "tittel": "Titrervolum for tre ulike syrer",
           "enhet": "V(NaOH) ved ekvivalens (mL)",
-          "forklaring": "Alle tre prøvene er 25,00 mL 0,0500 mol/L syre, titrert med 0,100 mol/L NaOH. Eddiksyra er svak, men bruker like mye base som saltsyra: styrken bestemmer pH underveis og valget av indikator, mens antall protoner bestemmer volumet. Glemmer du 2-tallet for svovelsyra, blir svaret dobbelt for høyt.",
+          "forklaring": "Alle tre prøvene er 25,00 mL 0,0500 mol/L syre, titrert med 0,100 mol/L NaOH. Eddiksyra er svak, men bruker like mye base som saltsyra: styrken bestemmer pH underveis, mens antall protoner bestemmer volumet. Glemmer du 2-tallet for svovelsyra, venter du 12,5 mL og får dobbelt for høy konsentrasjon.",
           "data": [
             {
               "navn": "HCl (1 H⁺)",
@@ -143,7 +184,50 @@
       },
       {
         "tittel": "Kolorimetri og spektrofotometri",
-        "html": "<p>Mange ioner er fargeløse i vann, men kan omdannes til et farget stoff med et reagens. Måler du fargestyrken, måler du indirekte konsentrasjonen. Det er ideen bak <strong>kolorimetri</strong>, der du sammenligner med fargestandarder, og <strong>spektrofotometri</strong>, der et instrument måler nøyaktig ved én bølgelengde.</p><p>Instrumentet sender lys med intensitet $I_0$ inn i kyvetten og måler intensiteten $I$ som slipper ut. <strong>Absorbansen</strong> er</p>$$A = \\log\\frac{I_0}{I}$$<p>og Beer-Lamberts lov knytter den til konsentrasjonen:</p>$$A = \\varepsilon \\cdot l \\cdot c$$<p>Her er $l$ lysveien gjennom kyvetten og $\\varepsilon$ den molare absorpsjonskoeffisienten, en konstant for stoffet ved den bølgelengden du bruker. Siden $\\varepsilon$ og $l$ er faste, er $A$ rett proporsjonal med $c$: dobler du konsentrasjonen, dobler du absorbansen.</p><p>Slik gjør du en bestemmelse:</p><ol><li>Velg bølgelengden der stoffet absorberer mest — da blir metoden mest følsom.</li><li>Nullstill instrumentet med en <strong>blindprøve</strong>: alle reagenser, men ingen analytt.</li><li>Mål absorbansen til minst fire standardløsninger med kjent konsentrasjon, og tegn <strong>standardkurven</strong> med $A$ langs den loddrette aksen og $c$ langs den vannrette.</li><li>Mål prøven, og finn konsentrasjonen ved å lese av eller regne med likningen for linja.</li></ol><p>To fallgruver: loven er bare lineær i et begrenset område, i praksis omtrent opp til $A = 1$, så sterke løsninger må fortynnes — og da må fortynningsfaktoren inn til slutt. Prøven må dessuten leses av <em>innenfor</em> standardene. Ekstrapolerer du over den høyeste standarden, vet du ikke om linja fortsatt er rett.</p>"
+        "html": "<p>Mange ioner er fargeløse i vann, men kan omdannes til et farget stoff med et reagens. Måler du fargestyrken, måler du indirekte konsentrasjonen. Det er ideen bak <strong>kolorimetri</strong>, der du sammenligner med fargestandarder, og <strong>spektrofotometri</strong>, der et instrument måler nøyaktig ved én bølgelengde.</p><p>Instrumentet sender lys med intensitet $I_0$ inn i kyvetten og måler intensiteten $I$ som slipper ut. <strong>Absorbansen</strong> er</p>$$A = \\log\\frac{I_0}{I}$$<p>og Beer-Lamberts lov knytter den til konsentrasjonen:</p>$$A = \\varepsilon \\cdot l \\cdot c$$<p>Her er $l$ lysveien gjennom kyvetten og $\\varepsilon$ den molare absorpsjonskoeffisienten, en konstant for stoffet ved den bølgelengden du bruker. Siden $\\varepsilon$ og $l$ er faste, er $A$ rett proporsjonal med $c$: dobler du konsentrasjonen, dobler du absorbansen.</p><p>Slik gjør du en bestemmelse:</p><ol><li>Velg bølgelengden der stoffet absorberer mest — da blir metoden mest følsom.</li><li>Nullstill instrumentet med en <strong>blindprøve</strong>: alle reagenser, men ingen analytt.</li><li>Mål absorbansen til minst fire standardløsninger med kjent konsentrasjon, og tegn <strong>standardkurven</strong> med $A$ langs den loddrette aksen og $c$ langs den vannrette.</li><li>Mål prøven, og finn konsentrasjonen ved å lese av eller regne med likningen for linja.</li></ol><p>To fallgruver: loven er bare lineær i et begrenset område, i praksis omtrent opp til $A = 1$, så sterke løsninger må fortynnes — og da må fortynningsfaktoren inn til slutt. Prøven må dessuten leses av <em>innenfor</em> standardene. Ekstrapolerer du over den høyeste standarden, vet du ikke om linja fortsatt er rett.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Bølgelengden du måler ved, og fargen du ser",
+          "forklaring": "Fargen du ser, er komplementærfargen til lyset løsningen slipper minst gjennom: rosa permanganat absorberer grønt lys midt på skalaen, mens det blå fosfatkomplekset absorberer helt ute ved 880 nm. Mål alltid der absorbansen er størst — der er metoden mest følsom.",
+          "enhet": "λ (nm)",
+          "min": 380,
+          "max": 900,
+          "band": [
+            {
+              "fra": 380,
+              "til": 450,
+              "navn": "fiolett"
+            },
+            {
+              "fra": 450,
+              "til": 500,
+              "navn": "blå"
+            },
+            {
+              "fra": 500,
+              "til": 570,
+              "navn": "grønn",
+              "verdi": "rosa"
+            },
+            {
+              "fra": 570,
+              "til": 620,
+              "navn": "gul og oransje"
+            },
+            {
+              "fra": 620,
+              "til": 750,
+              "navn": "rød",
+              "verdi": "blå løsning"
+            },
+            {
+              "fra": 750,
+              "til": 900,
+              "navn": "nær-infrarødt",
+              "verdi": "fosfat: 880 nm"
+            }
+          ]
+        }
       },
       {
         "tittel": "Forurensning: næringssalter og forsuring",
@@ -179,7 +263,48 @@
       },
       {
         "tittel": "Feltarbeid og usikkerhet",
-        "html": "<p>Et feltarbeid begynner ved skrivebordet. Bestem hva du vil finne ut, hvilke parametere som svarer på det, hvor mange prøvepunkter du trenger, og når prøvene skal tas. Ta alltid med et <strong>referansepunkt</strong>, for eksempel oppstrøms et utslipp, så du har noe å sammenligne med. Uten referanse kan du ikke si om en verdi er høy.</p><p>Alle målinger har <strong>usikkerhet</strong>, og du må skille to typer:</p><ul><li><strong>Tilfeldige feil</strong> gir spredning rundt riktig verdi — du leser av byretten litt ulikt hver gang. De blir mindre når du gjentar målingen og bruker gjennomsnittet.</li><li><strong>Systematiske feil</strong> trekker alle målingene samme vei: en byrette som er feil kalibrert, et pH-meter som ikke er kalibrert, eller et reagens som har stått for lenge. Gjentakelse hjelper ikke; feilen forsvinner bare hvis du finner årsaken.</li></ul><p>Derfor er <strong>presisjon</strong> (liten spredning) og <strong>nøyaktighet</strong> (nær sann verdi) to forskjellige ting. Tre titreringer som gir 18,35 mL, 18,40 mL og 18,45 mL er presise, men alle tre kan være gale hvis standardløsningen har feil konsentrasjon.</p><p>To kontroller bør alltid være med: en <strong>blindprøve</strong>, som viser hva reagenser og utstyr bidrar med av seg selv, og en <strong>kontrollprøve</strong> med kjent konsentrasjon, som viser om metoden treffer.</p><p>Til slutt: oppgi svaret med et rimelig antall <strong>gjeldende siffer</strong>. Har du målt volumet til 18,40 mL med fire siffer, kan ikke svaret ha ni. Kalkulatoren holder ikke orden på usikkerheten for deg.</p>"
+        "html": "<p>Et feltarbeid begynner ved skrivebordet. Bestem hva du vil finne ut, hvilke parametere som svarer på det, hvor mange prøvepunkter du trenger, og når prøvene skal tas. Ta alltid med et <strong>referansepunkt</strong>, for eksempel oppstrøms et utslipp, så du har noe å sammenligne med. Uten referanse kan du ikke si om en verdi er høy.</p><p>Alle målinger har <strong>usikkerhet</strong>, og du må skille to typer:</p><ul><li><strong>Tilfeldige feil</strong> gir spredning rundt riktig verdi — du leser av byretten litt ulikt hver gang. De blir mindre når du gjentar målingen og bruker gjennomsnittet.</li><li><strong>Systematiske feil</strong> trekker alle målingene samme vei: en byrette som er feil kalibrert, et pH-meter som ikke er kalibrert, eller et reagens som har stått for lenge. Gjentakelse hjelper ikke; feilen forsvinner bare hvis du finner årsaken.</li></ul><p>Derfor er <strong>presisjon</strong> (liten spredning) og <strong>nøyaktighet</strong> (nær sann verdi) to forskjellige ting. Tre titreringer som gir 18,35 mL, 18,40 mL og 18,45 mL er presise, men alle tre kan være gale hvis standardløsningen har feil konsentrasjon.</p><p>To kontroller bør alltid være med: en <strong>blindprøve</strong>, som viser hva reagenser og utstyr bidrar med av seg selv, og en <strong>kontrollprøve</strong> med kjent konsentrasjon, som viser om metoden treffer.</p><p>Til slutt: oppgi svaret med et rimelig antall <strong>gjeldende siffer</strong>. Har du målt volumet til 18,40 mL med fire siffer, kan ikke svaret ha ni. Kalkulatoren holder ikke orden på usikkerheten for deg.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Tilfeldig og systematisk feil",
+          "forklaring": "Det er raden om gjentakelse som skiller de to i praksis: tre titreringer som avviker 0,05 mL fra gjennomsnittet, er presise uansett, men er standardløsningen feil standardisert, er alle tre like gale. Bare kontrollprøven med kjent konsentrasjon avslører den skjevheten.",
+          "kolonner": [
+            "Tilfeldig feil",
+            "Systematisk feil"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hva den gjør med målingene",
+              "venstre": "sprer dem i begge retninger rundt riktig verdi",
+              "hoyre": "trekker alle samme vei, omtrent like mye hver gang"
+            },
+            {
+              "egenskap": "Typisk årsak",
+              "venstre": "menisken leses litt ulikt, siste dråpe blir litt for stor",
+              "hoyre": "ukalibrert byrette eller pH-meter, for gammelt reagens"
+            },
+            {
+              "egenskap": "Hjelper det å gjenta?",
+              "venstre": "ja, gjennomsnittet av flere paralleller blir bedre",
+              "hoyre": "nei, gjennomsnittet blir like skjevt som hver måling"
+            },
+            {
+              "egenskap": "Rammer",
+              "venstre": "presisjonen, altså spredningen mellom parallellene",
+              "hoyre": "nøyaktigheten, altså avstanden til sann verdi"
+            },
+            {
+              "egenskap": "Slik ser du den",
+              "venstre": "parallellene spriker: 18,35 / 18,40 / 18,45 mL",
+              "hoyre": "kontrollprøven med kjent konsentrasjon treffer ikke"
+            },
+            {
+              "egenskap": "Tiltak",
+              "venstre": "flere paralleller og roligere avlesning",
+              "hoyre": "kalibrer på nytt, eller korriger for avviket"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [

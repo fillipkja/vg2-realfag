@@ -107,7 +107,43 @@
     "seksjoner": [
       {
         "tittel": "Krefter inne i og mellom molekyler",
-        "html": "<p>Bindingene <em>inne i</em> et molekyl er kovalente og sterke: å bryte en O–H-binding i vann krever omtrent 460 kJ per mol. Kreftene <strong>mellom</strong> molekylene er mye svakere — en hydrogenbinding mellom to vannmolekyler ligger på rundt 20 kJ per mol. Det er disse svake, <strong>intermolekylære kreftene</strong> som ryker når et stoff smelter eller koker. Derfor er det de, og ikke bindingene inne i molekylet, som bestemmer smeltepunkt, kokepunkt, overflatespenning og løselighet. Når vann koker, blir molekylene revet fra hverandre, men de er fortsatt hele $\\ce{H2O}$-molekyler i dampen.</p><p><strong>Londonkrefter</strong> (dispersjonskrefter) finnes mellom <em>alle</em> molekyler. Elektronene i en elektronsky er i stadig bevegelse, og i et gitt øyeblikk kan de ligge litt skjevt. Da har molekylet en kortvarig dipol, og den påvirker elektronskyen i nabomolekylet slik at også det blir en dipol, med motsatt delladning vendt inn mot den første — og de to tiltrekker hverandre. Kreftene blir sterkere når molekylet har <strong>flere elektroner</strong> og når formen er <strong>langstrakt</strong>, slik at kontaktflaten blir stor. Derfor er $\\ce{F2}$ (18 elektroner) gass, $\\ce{Br2}$ (70 elektroner) væske og $\\ce{I2}$ (106 elektroner) fast stoff ved romtemperatur. Og derfor koker pentan ved 36 °C, mens 2,2-dimetylpropan — samme molekylformel $\\ce{C5H12}$, men nesten kulerund — koker alt ved 9,5 °C.</p><p><strong>Dipol-dipol-krefter</strong> kommer i tillegg når molekylet har en <strong>permanent dipol</strong>. Det krever to ting: polare bindinger <em>og</em> en usymmetrisk oppbygning slik at bindingsdipolene ikke opphever hverandre. Positiv ende møter negativ ende, og stoffet får høyere kokepunkt enn et upolart stoff med samme masse.</p>"
+        "html": "<p>Bindingene <em>inne i</em> et molekyl er kovalente og sterke: å bryte en O–H-binding i vann krever omtrent 460 kJ per mol. Kreftene <strong>mellom</strong> molekylene er mye svakere — en hydrogenbinding mellom to vannmolekyler ligger på rundt 20 kJ per mol. Det er disse svake, <strong>intermolekylære kreftene</strong> som ryker når et stoff smelter eller koker. Derfor er det de, og ikke bindingene inne i molekylet, som bestemmer smeltepunkt, kokepunkt, overflatespenning og løselighet. Når vann koker, blir molekylene revet fra hverandre, men de er fortsatt hele $\\ce{H2O}$-molekyler i dampen.</p><p><strong>Londonkrefter</strong> (dispersjonskrefter) finnes mellom <em>alle</em> molekyler. Elektronene i en elektronsky er i stadig bevegelse, og i et gitt øyeblikk kan de ligge litt skjevt. Da har molekylet en kortvarig dipol, og den påvirker elektronskyen i nabomolekylet slik at også det blir en dipol, med motsatt delladning vendt inn mot den første — og de to tiltrekker hverandre. Kreftene blir sterkere når molekylet har <strong>flere elektroner</strong> og når formen er <strong>langstrakt</strong>, slik at kontaktflaten blir stor. Derfor er $\\ce{F2}$ (18 elektroner) gass, $\\ce{Br2}$ (70 elektroner) væske og $\\ce{I2}$ (106 elektroner) fast stoff ved romtemperatur. Og derfor koker pentan ved 36 °C, mens 2,2-dimetylpropan — samme molekylformel $\\ce{C5H12}$, men nesten kulerund — koker alt ved 9,5 °C.</p><p><strong>Dipol-dipol-krefter</strong> kommer i tillegg når molekylet har en <strong>permanent dipol</strong>. Det krever to ting: polare bindinger <em>og</em> en usymmetrisk oppbygning slik at bindingsdipolene ikke opphever hverandre. Positiv ende møter negativ ende, og stoffet får høyere kokepunkt enn et upolart stoff med samme masse.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Bindingen inne i molekylet og kreftene mellom molekylene",
+          "forklaring": "Se på styrkeraden: kraften mellom to vannmolekyler er drøyt 20 ganger svakere enn O–H-bindingen inne i molekylet. Derfor er det bare høyre kolonne som ryker ved koking, og det er høyre kolonne som bestemmer alt du måler på stoffet i lab.",
+          "kolonner": [
+            "Kovalent binding (inne i)",
+            "Krefter mellom molekyler"
+          ],
+          "rader": [
+            {
+              "egenskap": "Holder sammen",
+              "venstre": "atomene inne i ett molekyl, som O–H i H₂O",
+              "hoyre": "hele molekyler mot hverandre"
+            },
+            {
+              "egenskap": "Hva den er",
+              "venstre": "et elektronpar som deles mellom to atomkjerner",
+              "hoyre": "londonkrefter, dipol-dipol-krefter og hydrogenbinding"
+            },
+            {
+              "egenskap": "Styrke i vann",
+              "venstre": "ca. 460 kJ/mol for én O–H-binding",
+              "hoyre": "ca. 20 kJ/mol for én hydrogenbinding"
+            },
+            {
+              "egenskap": "Når vannet koker",
+              "venstre": "urørt — dampen består av hele H₂O-molekyler",
+              "hoyre": "brytes — molekylene rives fra hverandre"
+            },
+            {
+              "egenskap": "Bestemmer",
+              "venstre": "molekylformel, geometri og polaritet",
+              "hoyre": "smeltepunkt, kokepunkt, overflatespenning, løselighet"
+            }
+          ]
+        }
       },
       {
         "tittel": "Hydrogenbinding",
@@ -116,11 +152,11 @@
           "type": "stolper",
           "tittel": "Kokepunkt for fire hydrider med nesten samme masse",
           "enhet": "kokepunkt (K)",
-          "forklaring": "Molar masse øker jevnt fra 16 til 20 g/mol fra venstre mot høyre, men kokepunktet følger ikke med. Metan har bare londonkrefter og koker ved 112 K (−162 °C), mens vann kan danne fire hydrogenbindinger per molekyl og henger sammen til 373 K (100 °C).",
+          "forklaring": "Molar masse øker jevnt fra 16 til 20 g/mol fra venstre mot høyre, men kokepunktet følger ikke med. Metan har bare londonkrefter og koker ved 111 K (−162 °C), mens vann kan danne fire hydrogenbindinger per molekyl og henger sammen til 373 K (100 °C).",
           "data": [
             {
               "navn": "CH₄",
-              "verdi": 112
+              "verdi": 111
             },
             {
               "navn": "NH₃",
@@ -179,7 +215,43 @@
       },
       {
         "tittel": "Syrer, baser og redoksreaksjoner",
-        "html": "<p>To reaksjonstyper går igjen i hele kjemien, og begge handler om at noe blir overført fra ett stoff til et annet.</p><p><strong>Syre-basereaksjoner overfører protoner.</strong> Etter Brønsted er en <strong>syre</strong> et stoff som gir fra seg $\\ce{H+}$ (et proton), og en <strong>base</strong> et stoff som tar opp $\\ce{H+}$. Løser du hydrogenklorid i vann, gir $\\ce{HCl}$ fra seg protonet og vannet tar det imot:</p>$$\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$$<p>Her er $\\ce{HCl}$ syra og vann basen. Med ammoniakk går det motsatt vei — da er det vannet som gir fra seg protonet:</p>$$\\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}$$<p>Vann kan altså være både syre og base; slike stoffer kalles <strong>amfotære</strong>. Syra og basen den blir til når protonet er gitt bort, hører sammen som et <strong>korresponderende syre-basepar</strong>: $\\ce{HCl}$ og $\\ce{Cl-}$, $\\ce{H2O}$ og $\\ce{OH-}$. En sur løsning har overskudd av $\\ce{H3O+}$ (pH under 7), en basisk løsning overskudd av $\\ce{OH-}$ (pH over 7).</p><p><strong>Redoksreaksjoner overfører elektroner.</strong> <strong>Oksidasjon</strong> er å avgi elektroner, <strong>reduksjon</strong> er å ta opp elektroner, og de skjer alltid samtidig: noen må ta imot det den andre gir. Legger du en sinkspiker i koppersulfatløsning, blir spikeren dekket av kopper:</p>$$\\ce{Zn(s) -> Zn^2+(aq) + 2e-} \\qquad \\text{(oksidasjon)}$$$$\\ce{Cu^2+(aq) + 2e- -> Cu(s)} \\qquad \\text{(reduksjon)}$$$$\\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}$$<p>Sink avgir elektronene og er <strong>reduksjonsmiddel</strong> — det er sink som reduserer den andre. Kopperionet tar imot og er <strong>oksidasjonsmiddel</strong>. For å holde orden bruker vi <strong>oksidasjonstall</strong>: et grunnstoff har 0, oksygen har vanligvis -II, hydrogen +I, og summen av oksidasjonstallene er lik ladningen til partikkelen. Øker oksidasjonstallet, er atomet oksidert.</p>"
+        "html": "<p>To reaksjonstyper går igjen i hele kjemien, og begge handler om at noe blir overført fra ett stoff til et annet.</p><p><strong>Syre-basereaksjoner overfører protoner.</strong> Etter Brønsted er en <strong>syre</strong> et stoff som gir fra seg $\\ce{H+}$ (et proton), og en <strong>base</strong> et stoff som tar opp $\\ce{H+}$. Løser du hydrogenklorid i vann, gir $\\ce{HCl}$ fra seg protonet og vannet tar det imot:</p>$$\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$$<p>Her er $\\ce{HCl}$ syra og vann basen. Med ammoniakk går det motsatt vei — da er det vannet som gir fra seg protonet:</p>$$\\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}$$<p>Vann kan altså være både syre og base; slike stoffer kalles <strong>amfotære</strong>. Syra og basen den blir til når protonet er gitt bort, hører sammen som et <strong>korresponderende syre-basepar</strong>: $\\ce{HCl}$ og $\\ce{Cl-}$, $\\ce{H2O}$ og $\\ce{OH-}$. En sur løsning har overskudd av $\\ce{H3O+}$ (pH under 7), en basisk løsning overskudd av $\\ce{OH-}$ (pH over 7).</p><p><strong>Redoksreaksjoner overfører elektroner.</strong> <strong>Oksidasjon</strong> er å avgi elektroner, <strong>reduksjon</strong> er å ta opp elektroner, og de skjer alltid samtidig: noen må ta imot det den andre gir. Legger du en sinkspiker i koppersulfatløsning, blir spikeren dekket av kopper:</p>$$\\ce{Zn(s) -> Zn^2+(aq) + 2e-} \\qquad \\text{(oksidasjon)}$$$$\\ce{Cu^2+(aq) + 2e- -> Cu(s)} \\qquad \\text{(reduksjon)}$$$$\\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}$$<p>Sink avgir elektronene og er <strong>reduksjonsmiddel</strong> — det er sink som reduserer den andre. Kopperionet tar imot og er <strong>oksidasjonsmiddel</strong>. For å holde orden bruker vi <strong>oksidasjonstall</strong>: et grunnstoff har 0, oksygen har vanligvis -II, hydrogen +I, og summen av oksidasjonstallene er lik ladningen til partikkelen. Øker oksidasjonstallet, er atomet oksidert.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "To reaksjonstyper: proton flyttes eller elektron flyttes",
+          "forklaring": "Les radene parvis — rollene er bygd helt likt opp, det er bare partikkelen som overføres som er ulik. Nederste rad er poenget: en syre kommer ingen vei uten en base som tar imot protonet, akkurat som oksidasjon aldri skjer uten en samtidig reduksjon.",
+          "kolonner": [
+            "Syre-base: H⁺ overføres",
+            "Redoks: e⁻ overføres"
+          ],
+          "rader": [
+            {
+              "egenskap": "Det som flyttes",
+              "venstre": "ett proton, H⁺",
+              "hoyre": "ett eller flere elektroner, e⁻"
+            },
+            {
+              "egenskap": "Den som gir",
+              "venstre": "syra er protondonor: HCl gir fra seg H⁺",
+              "hoyre": "reduksjonsmidlet avgir e⁻: Zn → Zn²⁺ + 2e⁻"
+            },
+            {
+              "egenskap": "Den som tar imot",
+              "venstre": "basen er protonakseptor: H₂O blir H₃O⁺",
+              "hoyre": "oksidasjonsmidlet tar opp e⁻: Cu²⁺ blir Cu"
+            },
+            {
+              "egenskap": "Bokføringen",
+              "venstre": "korresponderende par syre/base: HCl/Cl⁻ og H₃O⁺/H₂O",
+              "hoyre": "oksidasjonstall: øker = oksidert, synker = redusert"
+            },
+            {
+              "egenskap": "Skjer alltid parvis",
+              "venstre": "ingen syre uten en base som tar protonet",
+              "hoyre": "ingen oksidasjon uten en samtidig reduksjon"
+            }
+          ]
+        }
       },
       {
         "tittel": "Navnsetting av uorganiske forbindelser",
@@ -190,7 +262,24 @@
       {
         "tittel": "Krefter mellom molekyler og rangering av kokepunkt",
         "oppgave": "<p>Du får tre stoffer: propan $\\ce{C3H8}$, dimetyleter $\\ce{CH3OCH3}$ og etanol $\\ce{CH3CH2OH}$.</p><ol><li>Regn ut molar masse for hvert stoff.</li><li>Avgjør hvilke krefter som virker mellom molekylene i hvert stoff.</li><li>Rangér stoffene etter økende kokepunkt, og begrunn svaret.</li></ol>",
-        "losning": "<p><strong>Del 1 — molare masser.</strong> Vi bruker atommassene $M(\\ce{C}) = 12{,}01$ g/mol, $M(\\ce{H}) = 1{,}008$ g/mol og $M(\\ce{O}) = 16{,}00$ g/mol.</p>$$M(\\ce{C3H8}) = 3 \\cdot 12{,}01 + 8 \\cdot 1{,}008 = 36{,}03 + 8{,}06 = 44{,}09\\,\\text{g/mol}$$<p>Dimetyleter og etanol har samme molekylformel, $\\ce{C2H6O}$ — de er isomerer:</p>$$M(\\ce{C2H6O}) = 2 \\cdot 12{,}01 + 6 \\cdot 1{,}008 + 16{,}00 = 24{,}02 + 6{,}05 + 16{,}00 = 46{,}07\\,\\text{g/mol}$$<p>De tre stoffene har altså nesten helt like molare masser. Da kan ikke masse alene forklare forskjeller i kokepunkt.</p><p><strong>Del 2 — kreftene.</strong></p><ul><li><strong>Propan:</strong> bare C–H- og C–C-bindinger. For C–H er $\\Delta \\text{EN} = 2{,}55 - 2{,}20 = 0{,}35$, altså praktisk talt upolart, og molekylet er dessuten symmetrisk. Konklusjon: bare <strong>londonkrefter</strong>.</li><li><strong>Dimetyleter:</strong> C–O-bindingene er polare, $\\Delta \\text{EN} = 3{,}44 - 2{,}55 = 0{,}89$, og molekylet er bøyd ved oksygenatomet, så dipolene opphever ikke hverandre. Molekylet er en permanent dipol: <strong>londonkrefter + dipol-dipol-krefter</strong>. Hydrogenatomene sitter på karbon, ikke på oksygen, så det blir <em>ingen</em> hydrogenbinding.</li><li><strong>Etanol:</strong> her sitter ett hydrogenatom direkte på oksygen i $\\ce{-OH}$-gruppa, og oksygenet har frie elektronpar. Da får vi <strong>hydrogenbinding</strong> i tillegg til dipol-dipol- og londonkrefter.</li></ul><p><strong>Del 3 — rangering.</strong> Sterkere krefter mellom molekylene krever mer energi for å rive dem fra hverandre, altså høyere kokepunkt. Rekkefølgen etter økende kokepunkt blir:</p><p>propan $<$ dimetyleter $<$ etanol</p><p>Målte verdier bekrefter dette: propan koker ved -42 °C, dimetyleter ved -24 °C og etanol ved 78 °C. Legg merke til hvor stort spranget fra dimetyleter til etanol er, over 100 grader, selv om de har <em>identisk</em> molar masse. Det er hydrogenbindingen alene som står for hele forskjellen.</p>"
+        "losning": "<p><strong>Del 1 — molare masser.</strong> Vi bruker atommassene $M(\\ce{C}) = 12{,}01$ g/mol, $M(\\ce{H}) = 1{,}008$ g/mol og $M(\\ce{O}) = 16{,}00$ g/mol.</p>$$M(\\ce{C3H8}) = 3 \\cdot 12{,}01 + 8 \\cdot 1{,}008 = 36{,}03 + 8{,}06 = 44{,}09\\,\\text{g/mol}$$<p>Dimetyleter og etanol har samme molekylformel, $\\ce{C2H6O}$ — de er isomerer:</p>$$M(\\ce{C2H6O}) = 2 \\cdot 12{,}01 + 6 \\cdot 1{,}008 + 16{,}00 = 24{,}02 + 6{,}05 + 16{,}00 = 46{,}07\\,\\text{g/mol}$$<p>De tre stoffene har altså nesten helt like molare masser. Da kan ikke masse alene forklare forskjeller i kokepunkt.</p><p><strong>Del 2 — kreftene.</strong></p><ul><li><strong>Propan:</strong> bare C–H- og C–C-bindinger. For C–H er $\\Delta \\text{EN} = 2{,}55 - 2{,}20 = 0{,}35$, altså praktisk talt upolart, og molekylet er dessuten symmetrisk. Konklusjon: bare <strong>londonkrefter</strong>.</li><li><strong>Dimetyleter:</strong> C–O-bindingene er polare, $\\Delta \\text{EN} = 3{,}44 - 2{,}55 = 0{,}89$, og molekylet er bøyd ved oksygenatomet, så dipolene opphever ikke hverandre. Molekylet er en permanent dipol: <strong>londonkrefter + dipol-dipol-krefter</strong>. Hydrogenatomene sitter på karbon, ikke på oksygen, så det blir <em>ingen</em> hydrogenbinding.</li><li><strong>Etanol:</strong> her sitter ett hydrogenatom direkte på oksygen i $\\ce{-OH}$-gruppa, og oksygenet har frie elektronpar. Da får vi <strong>hydrogenbinding</strong> i tillegg til dipol-dipol- og londonkrefter.</li></ul><p><strong>Del 3 — rangering.</strong> Sterkere krefter mellom molekylene krever mer energi for å rive dem fra hverandre, altså høyere kokepunkt. Rekkefølgen etter økende kokepunkt blir:</p><p>propan $<$ dimetyleter $<$ etanol</p><p>Målte verdier bekrefter dette: propan koker ved -42 °C, dimetyleter ved -24 °C og etanol ved 78 °C. Legg merke til hvor stort spranget fra dimetyleter til etanol er, over 100 grader, selv om de har <em>identisk</em> molar masse. Det er hydrogenbindingen alene som står for hele forskjellen.</p>",
+        "figur": {
+          "type": "molekyl",
+          "tittel": "OH-gruppa i etanol, CH₃CH₂OH",
+          "forklaring": "Hydrogenet sitter direkte på oksygen, og oksygenet har i tillegg to frie elektronpar (prikkene) — etanol har altså begge halvdelene av en hydrogenbinding. Isomeren dimetyleter, CH₃OCH₃, har ingen H på oksygen og danner derfor ingen.",
+          "sentral": "O",
+          "ligander": [
+            "H",
+            "C₂H₅"
+          ],
+          "geometri": "vinklet",
+          "ledigePar": 2,
+          "vinkel": "ca. 109°",
+          "bindinger": [
+            1,
+            1
+          ]
+        }
       },
       {
         "tittel": "Hvilke blandinger gir bunnfall?",

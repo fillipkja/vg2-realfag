@@ -71,7 +71,36 @@
     "seksjoner": [
       {
         "tittel": "Fire grupper sykdomsframkallende mikrober",
-        "html": "<p>De fleste mikroorganismer er harmløse, og mange er livsnødvendige for oss. Bare et lite mindretall er <strong>patogene</strong>, altså sykdomsframkallende. De hører til fire grupper med helt ulik biologi — og nettopp derfor må de behandles på helt ulike måter.</p><p><strong>Bakterier</strong> er prokaryote celler på 0,5–5 µm, uten cellekjerne og uten membrankledde organeller. De har cellevegg av peptidoglykan og formerer seg ved todeling. Under gode forhold kan generasjonstiden være så kort som 20 minutter. Sykdom oppstår enten fordi bakteriene ødelegger vev direkte, eller fordi de skiller ut <strong>toksiner</strong> (giftstoffer). Stivkrampe og difteri er nesten ren toksinforgiftning.</p><p><strong>Virus</strong> er 20–300 nm, altså 10–100 ganger mindre enn en bakterie. Et virus er arvestoff — DNA eller RNA — pakket inn i et proteinkapsid, av og til med en lipidkappe utenpå. Det har ikke eget stoffskifte og kan bare formere seg inne i en vertscelle, der det kaprer cellens egen proteinfabrikk. Derfor regner vi vanligvis ikke virus som levende.</p><p><strong>Sopp</strong> er eukaryote, heterotrofe og har cellevegg av kitin. De vokser som encellede gjærsopper eller som tråder (hyfer) i et mycel. Fotsopp og <em>Candida</em>-infeksjoner er vanlige, og de blir alvorlige først når immunforsvaret er svekket. Slike mikrober kaller vi <strong>opportunistiske</strong>.</p><p><strong>Parasitter</strong> lever på eller i en vert og skader den. De encellede kalles protozoer, som malariaparasitten <em>Plasmodium</em> og tarmparasitten <em>Giardia</em>. I tillegg finnes flercellede parasitter: innvollsorm, lus og flått.</p>"
+        "html": "<p>De fleste mikroorganismer er harmløse, og mange er livsnødvendige for oss. Bare et lite mindretall er <strong>patogene</strong>, altså sykdomsframkallende. De hører til fire grupper med helt ulik biologi — og nettopp derfor må de behandles på helt ulike måter.</p><p><strong>Bakterier</strong> er prokaryote celler på 0,5–5 µm, uten cellekjerne og uten membrankledde organeller. De har cellevegg av peptidoglykan og formerer seg ved todeling. Under gode forhold kan generasjonstiden være så kort som 20 minutter. Sykdom oppstår enten fordi bakteriene ødelegger vev direkte, eller fordi de skiller ut <strong>toksiner</strong> (giftstoffer). Stivkrampe og difteri er nesten ren toksinforgiftning.</p><p><strong>Virus</strong> er 20–300 nm, altså 10–100 ganger mindre enn en bakterie. Et virus er arvestoff — DNA eller RNA — pakket inn i et proteinkapsid, av og til med en lipidkappe utenpå. Det har ikke eget stoffskifte og kan bare formere seg inne i en vertscelle, der det kaprer cellens egen proteinfabrikk. Derfor regner vi vanligvis ikke virus som levende.</p><p><strong>Sopp</strong> er eukaryote, heterotrofe og har cellevegg av kitin. De vokser som encellede gjærsopper eller som tråder (hyfer) i et mycel. Fotsopp og <em>Candida</em>-infeksjoner er vanlige, og de blir alvorlige først når immunforsvaret er svekket. Slike mikrober kaller vi <strong>opportunistiske</strong>.</p><p><strong>Parasitter</strong> lever på eller i en vert og skader den. De encellede kalles protozoer, som malariaparasitten <em>Plasmodium</em> og tarmparasitten <em>Giardia</em>. I tillegg finnes flercellede parasitter: innvollsorm, lus og flått.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Størrelsen på de sykdomsframkallende mikrobene",
+          "forklaring": "Skalaen er logaritmisk, så hvert hakk mot høyre er ti ganger større. Se hvor langt til venstre virusbåndet ligger: et virus er 10–100 ganger mindre enn en bakterie, mens sopp- og protozocellene er eukaryote og på størrelse med kroppens egne celler.",
+          "enhet": "diameter (nm), logaritmisk skala",
+          "min": 10,
+          "max": 100000,
+          "log": true,
+          "band": [
+            {
+              "fra": 20,
+              "til": 300,
+              "navn": "Virus",
+              "verdi": "influensavirus"
+            },
+            {
+              "fra": 500,
+              "til": 5000,
+              "navn": "Bakterier",
+              "verdi": "E. coli 2 µm"
+            },
+            {
+              "fra": 5000,
+              "til": 50000,
+              "navn": "Sopp og protozoer",
+              "verdi": "Giardia 12 µm"
+            }
+          ]
+        }
       },
       {
         "tittel": "Smitteveier, epidemier og zoonoser",
@@ -112,7 +141,39 @@
       },
       {
         "tittel": "Det medfødte immunforsvaret",
-        "html": "<p>Det medfødte, uspesifikke immunforsvaret virker mot alle inntrengere, er på plass fra du blir født, og reagerer i løpet av sekunder til timer. Det har ingen hukommelse: det virker like godt — og like dårlig — den tiende gangen som den første.</p><p><strong>Ytre barrierer</strong> er første linje. Huden er et tett lag av døde, keratinfylte celler med lav pH. Slimhinnene i luftveiene fanger partikler i slim som flimmerhårene frakter opp mot svelget. Tårer og spytt inneholder enzymet lysozym, som bryter ned bakterienes cellevegg. Magesyra, $\\ce{HCl}$, gir pH rundt 2 og dreper det aller meste du svelger. Og <strong>normalfloraen</strong> — de bakteriene som allerede bor på og i deg — okkuperer både plassen og næringa, slik at patogener ikke får feste.</p><p>Kommer noe gjennom, starter <strong>betennelsesreaksjonen</strong>. Skadde celler og mastceller frigjør <strong>histamin</strong>, som utvider blodårene og gjør kapillarveggene mer gjennomtrengelige. Da strømmer blod, plasmaproteiner og hvite blodceller til stedet, og du får de fire klassiske tegnene: rødt, varmt, hovent og ømt.</p><p><strong>Fagocyttene</strong> spiser inntrengerne ved fagocytose. Nøytrofile granulocytter kommer først og i stort antall, og døde nøytrofile blir puss. Makrofagene er langlivde storspisere som også rydder opp etterpå, mens dendrittiske celler tar med seg biter av inntrengeren til nærmeste lymfeknute — de er bindeleddet til det tilpassede forsvaret.</p><p>I tillegg har vi <strong>komplementsystemet</strong>, plasmaproteiner som merker mikrober for fagocytose, tilkaller flere hvite blodceller og kan lage porer i bakterieveggen. Virusinfiserte celler sender ut <strong>interferon</strong> som advarer nabocellene, og <strong>NK-celler</strong> dreper celler som ser unormale ut. <strong>Feber</strong> er også forsvar: signalstoffer flytter kroppens termostat i hypotalamus oppover, og den høyere temperaturen hemmer mikrobene samtidig som immuncellene jobber raskere.</p>"
+        "html": "<p>Det medfødte, uspesifikke immunforsvaret virker mot alle inntrengere, er på plass fra du blir født, og reagerer i løpet av sekunder til timer. Det har ingen hukommelse: det virker like godt — og like dårlig — den tiende gangen som den første.</p><p><strong>Ytre barrierer</strong> er første linje. Huden er et tett lag av døde, keratinfylte celler med lav pH. Slimhinnene i luftveiene fanger partikler i slim som flimmerhårene frakter opp mot svelget. Tårer og spytt inneholder enzymet lysozym, som bryter ned bakterienes cellevegg. Magesyra, $\\ce{HCl}$, gir pH rundt 2 og dreper det aller meste du svelger. Og <strong>normalfloraen</strong> — de bakteriene som allerede bor på og i deg — okkuperer både plassen og næringa, slik at patogener ikke får feste.</p><p>Kommer noe gjennom, starter <strong>betennelsesreaksjonen</strong>. Skadde celler og mastceller frigjør <strong>histamin</strong>, som utvider blodårene og gjør kapillarveggene mer gjennomtrengelige. Da strømmer blod, plasmaproteiner og hvite blodceller til stedet, og du får de fire klassiske tegnene: rødt, varmt, hovent og ømt.</p><p><strong>Fagocyttene</strong> spiser inntrengerne ved fagocytose. Nøytrofile granulocytter kommer først og i stort antall, og døde nøytrofile blir puss. Makrofagene er langlivde storspisere som også rydder opp etterpå, mens dendrittiske celler tar med seg biter av inntrengeren til nærmeste lymfeknute — de er bindeleddet til det tilpassede forsvaret.</p><p>I tillegg har vi <strong>komplementsystemet</strong>, plasmaproteiner som merker mikrober for fagocytose, tilkaller flere hvite blodceller og kan lage porer i bakterieveggen. Virusinfiserte celler sender ut <strong>interferon</strong> som advarer nabocellene, og <strong>NK-celler</strong> dreper celler som ser unormale ut. <strong>Feber</strong> er også forsvar: signalstoffer flytter kroppens termostat i hypotalamus oppover, og den høyere temperaturen hemmer mikrobene samtidig som immuncellene jobber raskere.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Betennelsesreaksjonen — fra skade til lymfeknute",
+          "forklaring": "Følg notatene og se hvor de fire tegnene kommer fra: utvidede blodårer gjør huden rød og varm, og væske som lekker ut i vevet gjør det hovent og ømt. Siste steg er koplingen videre — dendrittiske celler bærer antigenet til lymfeknuten.",
+          "steg": [
+            {
+              "tekst": "Skade: mastceller frigjør histamin",
+              "note": "sekunder etter skaden"
+            },
+            {
+              "tekst": "Blodårene utvides, kapillarene lekker",
+              "note": "gir rødt og varmt"
+            },
+            {
+              "tekst": "Plasma og komplement ut i vevet",
+              "note": "gir hovent og ømt"
+            },
+            {
+              "tekst": "Nøytrofile spiser bakteriene",
+              "note": "1–4 timer: dette blir puss"
+            },
+            {
+              "tekst": "Makrofager rydder opp i vevet",
+              "note": "6–24 timer"
+            },
+            {
+              "tekst": "Dendrittisk celle til lymfeknuten",
+              "note": "starter 3. forsvarslinje"
+            }
+          ]
+        }
       },
       {
         "tittel": "Det tilpassede immunforsvaret",
@@ -170,7 +231,48 @@
       },
       {
         "tittel": "Vaksiner og flokkimmunitet",
-        "html": "<p>En vaksine lurer immunforsvaret til å lage hukommelsesceller uten at du blir syk. Du får en ufarlig versjon av antigenet, kroppen kjører en primærrespons, og neste gang det ekte smittestoffet kommer, får du en lynrask sekundærrespons.</p><p>Vaksinetypene skiller seg i hva antigenet er:</p><ul><li><strong>Levende, svekket:</strong> mikroben er avsvekket, men formerer seg litt. Gir sterk og langvarig immunitet, men brukes ikke ved kraftig svekket immunforsvar. Eksempel: MMR mot meslinger, kusma og røde hunder.</li><li><strong>Inaktivert (drept):</strong> mikroben er drept. Trygg, men krever ofte flere doser. Eksempel: poliovaksine og influensavaksine.</li><li><strong>Subenhets- og toksoidvaksiner:</strong> bare en bit av mikroben, eller et avgiftet toksin. Eksempel: HPV-vaksine, difteri og stivkrampe.</li><li><strong>mRNA-vaksiner:</strong> oppskriften på antigenet, slik at dine egne celler lager det. Eksempel: koronavaksinene.</li></ul><p>Vaksinasjon gir <strong>aktiv immunitet</strong>: du lager antistoffene og hukommelsescellene selv, og beskyttelsen varer lenge. <strong>Passiv immunitet</strong> er å få ferdige antistoffer — over placenta, i morsmelka eller som en immunglobulinsprøyte. Det virker med én gang, men gir ingen hukommelsesceller, og beskyttelsen forsvinner når antistoffene brytes ned etter uker eller måneder.</p><p><strong>Flokkimmunitet</strong> oppstår når så mange er immune at smittestoffet ikke finner nok nye verter. Terskelen er $H_c = 1-\\frac{1}{R_0}$. Er $R_0 = 15$, som for meslinger, må over 93 % være immune, mens en sykdom med $R_0 = 2$ klarer seg med 50 %. Flokkimmunitet er den eneste beskyttelsen for dem som ikke kan vaksineres: nyfødte, kreftpasienter og andre med svekket immunforsvar. Derfor sikter Folkehelseinstituttet mot minst 95 % dekning i barnevaksinasjonsprogrammet.</p>"
+        "html": "<p>En vaksine lurer immunforsvaret til å lage hukommelsesceller uten at du blir syk. Du får en ufarlig versjon av antigenet, kroppen kjører en primærrespons, og neste gang det ekte smittestoffet kommer, får du en lynrask sekundærrespons.</p><p>Vaksinetypene skiller seg i hva antigenet er:</p><ul><li><strong>Levende, svekket:</strong> mikroben er avsvekket, men formerer seg litt. Gir sterk og langvarig immunitet, men brukes ikke ved kraftig svekket immunforsvar. Eksempel: MMR mot meslinger, kusma og røde hunder.</li><li><strong>Inaktivert (drept):</strong> mikroben er drept. Trygg, men krever ofte flere doser. Eksempel: poliovaksine og influensavaksine.</li><li><strong>Subenhets- og toksoidvaksiner:</strong> bare en bit av mikroben, eller et avgiftet toksin. Eksempel: HPV-vaksine, difteri og stivkrampe.</li><li><strong>mRNA-vaksiner:</strong> oppskriften på antigenet, slik at dine egne celler lager det. Eksempel: koronavaksinene.</li></ul><p>Vaksinasjon gir <strong>aktiv immunitet</strong>: du lager antistoffene og hukommelsescellene selv, og beskyttelsen varer lenge. <strong>Passiv immunitet</strong> er å få ferdige antistoffer — over placenta, i morsmelka eller som en immunglobulinsprøyte. Det virker med én gang, men gir ingen hukommelsesceller, og beskyttelsen forsvinner når antistoffene brytes ned etter uker eller måneder.</p><p><strong>Flokkimmunitet</strong> oppstår når så mange er immune at smittestoffet ikke finner nok nye verter. Terskelen er $H_c = 1-\\frac{1}{R_0}$. Er $R_0 = 15$, som for meslinger, må over 93 % være immune, mens en sykdom med $R_0 = 2$ klarer seg med 50 %. Flokkimmunitet er den eneste beskyttelsen for dem som ikke kan vaksineres: nyfødte, kreftpasienter og andre med svekket immunforsvar. Derfor sikter Folkehelseinstituttet mot minst 95 % dekning i barnevaksinasjonsprogrammet.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Aktiv og passiv immunitet",
+          "forklaring": "Les nederste rad sammen med raden om hukommelsesceller: passiv immunitet virker med én gang, men fordi du aldri lager egne hukommelsesceller, forsvinner beskyttelsen når antistoffene brytes ned. En vaksine er treg første gang, men varer.",
+          "kolonner": [
+            "Aktiv immunitet",
+            "Passiv immunitet"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hvordan du får den",
+              "venstre": "du møter antigenet selv, i sykdom eller vaksine",
+              "hoyre": "du får ferdige antistoffer utenfra"
+            },
+            {
+              "egenskap": "Hvem lager antistoffene",
+              "venstre": "dine egne B-celler blir plasmaceller",
+              "hoyre": "en annen: mor via placenta og morsmelk, eller et donorserum"
+            },
+            {
+              "egenskap": "Tid før beskyttelse",
+              "venstre": "1–2 uker første gang; primærresponsen må kjøres",
+              "hoyre": "virker med én gang"
+            },
+            {
+              "egenskap": "Hukommelsesceller",
+              "venstre": "ja — neste møte gir sekundærrespons på 1–3 døgn",
+              "hoyre": "nei, ingen dannes"
+            },
+            {
+              "egenskap": "Varighet",
+              "venstre": "år, ofte livet ut",
+              "hoyre": "uker til måneder, til antistoffene er brutt ned"
+            },
+            {
+              "egenskap": "Eksempel",
+              "venstre": "MMR-vaksine eller gjennomgått vannkopper",
+              "hoyre": "nyfødtes antistoffer, immunglobulin etter stikkskade"
+            }
+          ]
+        }
       },
       {
         "tittel": "Antibiotika og resistens",

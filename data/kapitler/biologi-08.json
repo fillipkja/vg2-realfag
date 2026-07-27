@@ -142,7 +142,33 @@
       },
       {
         "tittel": "Sentralt og perifert nervesystem",
-        "html": "<p>Nervesystemet deles i to. <strong>Sentralnervesystemet</strong> er hjernen og ryggmargen — der signalene tolkes og beslutningene tas. <strong>Det perifere nervesystemet</strong> er alle nervene ut i kroppen: 12 par hjernenerver og 31 par ryggmargsnerver, med <em>sensoriske</em> fibre inn til sentrum og <em>motoriske</em> fibre ut til musklene og kjertlene.</p><p>Viktige deler av hjernen:</p><ul><li><strong>Storhjernen</strong> med hjernebarken: bevisste sanseinntrykk, viljestyrte bevegelser, språk, hukommelse.</li><li><strong>Lillehjernen</strong>: koordinering, balanse og finmotorikk — den finpusser bevegelsene storhjernen bestiller.</li><li><strong>Hjernestammen</strong>: livsviktige, automatiske funksjoner som pust, hjerterytme og blodtrykk.</li><li><strong>Hypothalamus</strong>: kroppens homeostase-sentral for temperatur, sult, tørste og døgnrytme, og bindeleddet mellom nervesystemet og hormonsystemet via hypofysen.</li></ul><p>Den motoriske delen av det perifere nervesystemet deles videre i det <strong>somatiske</strong> systemet, som du styrer med viljen ut til skjelettmusklene, og det <strong>autonome</strong> systemet, som går automatisk ut til hjertet, glatt muskulatur og kjertler. Det autonome har to motsatt virkende grener: <strong>sympatikus</strong> gir «kjemp eller flykt» (raskere puls, utvidede bronkier og pupiller, glukose ut i blodet, bremset fordøyelse), mens <strong>parasympatikus</strong> gir «hvil og fordøy» (lavere puls, økt tarmbevegelse, sammentrukne pupiller).</p><p>En <strong>refleks</strong> er en fast, rask respons som kobles i ryggmargen uten å vente på hjernen. Refleksbuen har fem ledd: reseptor, sensorisk nevron, ryggmargen (ofte via et interneuron), motorisk nevron og effektor. Hjernen får beskjed i etterkant — derfor rekker du å trekke bort hånda før du kjenner at det gjør vondt.</p>"
+        "html": "<p>Nervesystemet deles i to. <strong>Sentralnervesystemet</strong> er hjernen og ryggmargen — der signalene tolkes og beslutningene tas. <strong>Det perifere nervesystemet</strong> er alle nervene ut i kroppen: 12 par hjernenerver og 31 par ryggmargsnerver, med <em>sensoriske</em> fibre inn til sentrum og <em>motoriske</em> fibre ut til musklene og kjertlene.</p><p>Viktige deler av hjernen:</p><ul><li><strong>Storhjernen</strong> med hjernebarken: bevisste sanseinntrykk, viljestyrte bevegelser, språk, hukommelse.</li><li><strong>Lillehjernen</strong>: koordinering, balanse og finmotorikk — den finpusser bevegelsene storhjernen bestiller.</li><li><strong>Hjernestammen</strong>: livsviktige, automatiske funksjoner som pust, hjerterytme og blodtrykk.</li><li><strong>Hypothalamus</strong>: kroppens homeostase-sentral for temperatur, sult, tørste og døgnrytme, og bindeleddet mellom nervesystemet og hormonsystemet via hypofysen.</li></ul><p>Den motoriske delen av det perifere nervesystemet deles videre i det <strong>somatiske</strong> systemet, som du styrer med viljen ut til skjelettmusklene, og det <strong>autonome</strong> systemet, som går automatisk ut til hjertet, glatt muskulatur og kjertler. Det autonome har to motsatt virkende grener: <strong>sympatikus</strong> gir «kjemp eller flykt» (raskere puls, utvidede bronkier og pupiller, glukose ut i blodet, bremset fordøyelse), mens <strong>parasympatikus</strong> gir «hvil og fordøy» (lavere puls, økt tarmbevegelse, sammentrukne pupiller).</p><p>En <strong>refleks</strong> er en fast, rask respons som kobles i ryggmargen uten å vente på hjernen. Refleksbuen har fem ledd: reseptor, sensorisk nevron, ryggmargen (ofte via et interneuron), motorisk nevron og effektor. Hjernen får beskjed i etterkant — derfor rekker du å trekke bort hånda før du kjenner at det gjør vondt.</p>",
+        "figur": {
+          "type": "hierarki",
+          "tittel": "Nervesystemet delt inn nivå for nivå",
+          "forklaring": "Hver boks ligger inni den over. Se særlig at det autonome ikke er en tredje hoveddel, men en del av den motoriske delen av det perifere nervesystemet — og at parasympatikus står på nederste nivå ved siden av sympatikus. Sentralnervesystemet (hjerne og ryggmarg) er den andre halvparten av nivå to.",
+          "nivaaer": [
+            {
+              "navn": "Nervesystemet",
+              "eksempel": "alle nerveceller"
+            },
+            {
+              "navn": "Perifert nervesystem",
+              "eksempel": "nerver utenfor SNS"
+            },
+            {
+              "navn": "Motorisk del",
+              "eksempel": "signal ut til effektor"
+            },
+            {
+              "navn": "Autonom del",
+              "eksempel": "går automatisk"
+            },
+            {
+              "navn": "Sympatikus"
+            }
+          ]
+        }
       },
       {
         "tittel": "Hormonsystemet",
@@ -190,7 +216,43 @@
       },
       {
         "tittel": "Temperaturregulering",
-        "html": "<p>Kjernetemperaturen din holdes rundt 37 °C. Sensorene er termoreseptorer i huden, som kjenner omgivelsene, og reseptorer i hypothalamus, som måler temperaturen på blodet. Hypothalamus er kontrollsenteret — kroppens termostat.</p><p>Blir du for varm, settes to responser i gang. Blodårene i huden <strong>utvider seg</strong> (vasodilatasjon), så mer varmt blod går ut til overflaten og gir bort varme ved stråling og strømning. Samtidig øker <strong>svettingen</strong>, og det er fordampningen som kjøler: å fordampe én liter svette tar med seg omtrent 2,4 MJ varme. Blir du for kald, skjer det motsatte: blodårene i huden <strong>trekker seg sammen</strong> (vasokonstriksjon) slik at varmen holdes i kjernen, hårene reiser seg, og hvis det ikke er nok, begynner musklene å <strong>skjelve</strong>. Skjelving kan mangedoble varmeproduksjonen. Ved langvarig kulde øker også tyroksinnivået og dermed stoffskiftet.</p><p>Legg merke til rekkefølgen: kroppen bruker alltid de billigste tiltakene først. Å flytte blod koster nesten ingen energi, å svette koster vann, og å skjelve koster mye energi.</p><p>Dyr deles i <strong>endoterme</strong>, som lager varmen selv med eget stoffskifte (fugler og pattedyr), og <strong>ektoterme</strong>, som får varmen fra omgivelsene (fisk, amfibier, krypdyr, insekter). Ektoterme dyr regulerer med atferd — de solbader eller søker skygge — og sparer mye energi, men blir trege når det er kaldt.</p><p><strong>Feber</strong> er ikke en svikt i reguleringen. Signalstoffer fra immunforsvaret hever setpunktet i hypothalamus, og kroppen regulerer helt riktig mot den nye, høyere verdien. Derfor fryser du og skjelver mens temperaturen stiger.</p>"
+        "html": "<p>Kjernetemperaturen din holdes rundt 37 °C. Sensorene er termoreseptorer i huden, som kjenner omgivelsene, og reseptorer i hypothalamus, som måler temperaturen på blodet. Hypothalamus er kontrollsenteret — kroppens termostat.</p><p>Blir du for varm, settes to responser i gang. Blodårene i huden <strong>utvider seg</strong> (vasodilatasjon), så mer varmt blod går ut til overflaten og gir bort varme ved stråling og strømning. Samtidig øker <strong>svettingen</strong>, og det er fordampningen som kjøler: å fordampe én liter svette tar med seg omtrent 2,4 MJ varme. Blir du for kald, skjer det motsatte: blodårene i huden <strong>trekker seg sammen</strong> (vasokonstriksjon) slik at varmen holdes i kjernen, hårene reiser seg, og hvis det ikke er nok, begynner musklene å <strong>skjelve</strong>. Skjelving kan mangedoble varmeproduksjonen. Ved langvarig kulde øker også tyroksinnivået og dermed stoffskiftet.</p><p>Legg merke til rekkefølgen: kroppen bruker alltid de billigste tiltakene først. Å flytte blod koster nesten ingen energi, å svette koster vann, og å skjelve koster mye energi.</p><p>Dyr deles i <strong>endoterme</strong>, som lager varmen selv med eget stoffskifte (fugler og pattedyr), og <strong>ektoterme</strong>, som får varmen fra omgivelsene (fisk, amfibier, krypdyr, insekter). Ektoterme dyr regulerer med atferd — de solbader eller søker skygge — og sparer mye energi, men blir trege når det er kaldt.</p><p><strong>Feber</strong> er ikke en svikt i reguleringen. Signalstoffer fra immunforsvaret hever setpunktet i hypothalamus, og kroppen regulerer helt riktig mot den nye, høyere verdien. Derfor fryser du og skjelver mens temperaturen stiger.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Kroppens svar når du blir for varm og for kald",
+          "forklaring": "Sensorene og kontrollsenteret er de samme i begge kolonnene; det er effektorene som gjør stikk motsatt ting. Les nederste rad som svar på «hva skjer først»: blodstrømmen justeres alltid før de dyre tiltakene settes inn.",
+          "kolonner": [
+            "For varm",
+            "For kald"
+          ],
+          "rader": [
+            {
+              "egenskap": "Blodårer i huden",
+              "venstre": "utvider seg (vasodilatasjon), så varmt blod går ut til overflaten",
+              "hoyre": "trekker seg sammen (vasokonstriksjon), så varmen holdes i kjernen"
+            },
+            {
+              "egenskap": "Svettekjertler",
+              "venstre": "svetter mer; 1 L svette som fordamper tar med seg ca. 2,4 MJ",
+              "hoyre": "svetter nesten ikke, og hårene reiser seg"
+            },
+            {
+              "egenskap": "Skjelettmuskler",
+              "venstre": "holdes i ro, så det ikke lages mer varme",
+              "hoyre": "skjelver, og varmeproduksjonen kan mangedobles"
+            },
+            {
+              "egenskap": "Stoffskiftet over tid",
+              "venstre": "uendret",
+              "hoyre": "mer tyroksin gir høyere stoffskifte ved langvarig kulde"
+            },
+            {
+              "egenskap": "Rekkefølge: billigst først",
+              "venstre": "1) blodårene (gratis), 2) svetting (koster vann)",
+              "hoyre": "1) blodårene (gratis), 2) skjelving (koster mye energi)"
+            }
+          ]
+        }
       },
       {
         "tittel": "Tropismer, plantehormoner og bevegelse",
@@ -309,7 +371,35 @@
       {
         "tittel": "Hvor lang tid tar en refleks?",
         "oppgave": "<p>Du tråkker på en tegnestift med høyre fot og trekker foten til deg.</p><p>Bruk disse tallene: avstanden fra foten til ryggmargen er 1,0 m, det sensoriske aksonet er myelinisert med ledningshastighet 60 m/s, det motoriske aksonet tilbake til leggmuskelen er 1,0 m langt med ledningshastighet 80 m/s, og hver synapse gir 0,5 ms forsinkelse. Signalet går gjennom tre synapser: sensorisk nevron til interneuron, interneuron til motorisk nevron, og motorisk nevron til muskelen.</p><ol><li>Hvor lang tid bruker signalet inn til ryggmargen, og hvor lang tid ut til muskelen?</li><li>Hvor lang tid tar hele refleksen?</li><li>Smertefølelsen går til hjernen i umyeliniserte fibre med hastighet 1,0 m/s, en strekning på 1,5 m. Hvor lang tid tar det, og hvor mange ganger lengre er det enn refleksen?</li><li>Forklar biologisk hvorfor tallene blir så forskjellige.</li></ol>",
-        "losning": "<p><strong>1 — ledningstidene.</strong> Vi bruker $t = \\dfrac{s}{v}$.</p><p>Inn til ryggmargen:</p>$$t_1 = \\frac{1{,}0\\,\\text{m}}{60\\,\\text{m/s}} = 0{,}0167\\,\\text{s} = 16{,}7\\,\\text{ms}$$<p>Ut til muskelen:</p>$$t_2 = \\frac{1{,}0\\,\\text{m}}{80\\,\\text{m/s}} = 0{,}0125\\,\\text{s} = 12{,}5\\,\\text{ms}$$<p><strong>2 — hele refleksen.</strong> Synapsene:</p>$$t_{\\text{synapser}} = 3 \\cdot 0{,}5\\,\\text{ms} = 1{,}5\\,\\text{ms}$$<p>Til sammen:</p>$$t_{\\text{total}} = 16{,}7\\,\\text{ms} + 12{,}5\\,\\text{ms} + 1{,}5\\,\\text{ms} = 30{,}7\\,\\text{ms} \\approx 0{,}031\\,\\text{s}$$<p>Refleksen er altså ferdig etter omtrent tre hundredels sekund.</p><p><strong>3 — smertesignalet.</strong></p>$$t_{\\text{smerte}} = \\frac{1{,}5\\,\\text{m}}{1{,}0\\,\\text{m/s}} = 1{,}5\\,\\text{s}$$<p>Forholdet mellom de to tidene:</p>$$\\frac{1{,}5\\,\\text{s}}{0{,}0307\\,\\text{s}} \\approx 49$$<p>Smertefølelsen bruker altså rundt 50 ganger så lang tid som refleksen. Det stemmer med erfaringen: foten er alt trukket til seg før du kjenner at det gjør vondt.</p><p><strong>4 — biologisk forklaring.</strong> To ting gjør refleksen rask. For det første kobles den i <strong>ryggmargen</strong>, ikke i hjernen, så veien er kort og det er få synapser. Legg merke til at synapsene bare står for 1,5 ms av de 30,7 ms — her er det ledningstiden langs de lange aksonene som betyr mest. For det andre er både det sensoriske og det motoriske aksonet <strong>myelinisert</strong> og tykt. Signalet hopper fra node til node i saltatorisk ledning, mens de tynne, umyeliniserte smertefibrene må la aksjonspotensialet gjenskapes langs hele membranen. Poenget med denne arbeidsdelingen er beskyttelse: kroppen fjerner foten fra skaden med en gang, og informerer bevisstheten etterpå.</p><p><strong>Rimelighetssjekk.</strong> Målte senerefleks-tider hos mennesker ligger på 30–50 ms, så svaret i deloppgave 2 er realistisk.</p>"
+        "losning": "<p><strong>1 — ledningstidene.</strong> Vi bruker $t = \\dfrac{s}{v}$.</p><p>Inn til ryggmargen:</p>$$t_1 = \\frac{1{,}0\\,\\text{m}}{60\\,\\text{m/s}} = 0{,}0167\\,\\text{s} = 16{,}7\\,\\text{ms}$$<p>Ut til muskelen:</p>$$t_2 = \\frac{1{,}0\\,\\text{m}}{80\\,\\text{m/s}} = 0{,}0125\\,\\text{s} = 12{,}5\\,\\text{ms}$$<p><strong>2 — hele refleksen.</strong> Synapsene:</p>$$t_{\\text{synapser}} = 3 \\cdot 0{,}5\\,\\text{ms} = 1{,}5\\,\\text{ms}$$<p>Til sammen:</p>$$t_{\\text{total}} = 16{,}7\\,\\text{ms} + 12{,}5\\,\\text{ms} + 1{,}5\\,\\text{ms} = 30{,}7\\,\\text{ms} \\approx 0{,}031\\,\\text{s}$$<p>Refleksen er altså ferdig etter omtrent tre hundredels sekund.</p><p><strong>3 — smertesignalet.</strong></p>$$t_{\\text{smerte}} = \\frac{1{,}5\\,\\text{m}}{1{,}0\\,\\text{m/s}} = 1{,}5\\,\\text{s}$$<p>Forholdet mellom de to tidene:</p>$$\\frac{1{,}5\\,\\text{s}}{0{,}0307\\,\\text{s}} \\approx 49$$<p>Smertefølelsen bruker altså rundt 50 ganger så lang tid som refleksen. Det stemmer med erfaringen: foten er alt trukket til seg før du kjenner at det gjør vondt.</p><p><strong>4 — biologisk forklaring.</strong> To ting gjør refleksen rask. For det første kobles den i <strong>ryggmargen</strong>, ikke i hjernen, så veien er kort og det er få synapser. Legg merke til at synapsene bare står for 1,5 ms av de 30,7 ms — her er det ledningstiden langs de lange aksonene som betyr mest. For det andre er både det sensoriske og det motoriske aksonet <strong>myelinisert</strong> og tykt. Signalet hopper fra node til node i saltatorisk ledning, mens de tynne, umyeliniserte smertefibrene må la aksjonspotensialet gjenskapes langs hele membranen. Poenget med denne arbeidsdelingen er beskyttelse: kroppen fjerner foten fra skaden med en gang, og informerer bevisstheten etterpå.</p><p><strong>Rimelighetssjekk.</strong> Målte senerefleks-tider hos mennesker ligger på 30–50 ms, så svaret i deloppgave 2 er realistisk.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Refleksbuen — veien signalet faktisk går",
+          "forklaring": "Følg tallene i notene: nesten all tida går med til ledning langs de to lange aksonene, mens de tre synapsene bare står for 1,5 av 30,7 ms. Legg merke til at signalet snur i ryggmargen — beskjeden videre opp til hjernen går i tynne, umyeliniserte fibre og kommer rundt femti ganger seinere.",
+          "steg": [
+            {
+              "tekst": "Reseptor i huden fyrer",
+              "note": "tegnestiften er stimulusen"
+            },
+            {
+              "tekst": "Sensorisk nevron inn til ryggmargen",
+              "note": "1,0 m ved 60 m/s: 16,7 ms"
+            },
+            {
+              "tekst": "Interneuron kobler om i ryggmargen",
+              "note": "hver synapse: 0,5 ms"
+            },
+            {
+              "tekst": "Motorisk nevron ut til leggmuskelen",
+              "note": "1,0 m ved 80 m/s: 12,5 ms"
+            },
+            {
+              "tekst": "Muskelen trekker foten bort",
+              "note": "hele refleksen: 30,7 ms"
+            }
+          ]
+        }
       },
       {
         "tittel": "Varmebalanse under hard trening",

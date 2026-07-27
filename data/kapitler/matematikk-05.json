@@ -212,7 +212,48 @@
       },
       {
         "tittel": "Rotfunksjoner",
-        "html": "<p>Kvadratrotfunksjonen er definert som den omvendte til potensfunksjonen $x^2$ — men først etter en innskrenking. $f(x) = x^2$ er ikke en-entydig på hele $\\mathbb{R}$, så vi begrenser oss til $x \\ge 0$. Der er $f$ strengt voksende med $V_f = [0, \\to\\rangle$, og den omvendte er</p>$$f^{-1}(x) = \\sqrt{x}, \\qquad D_{f^{-1}} = [0, \\to\\rangle$$<p>Definisjonen av $\\sqrt{a}$ er «det <em>ikke-negative</em> tallet som gir $a$ når det kvadreres». Derfor er $\\sqrt{9} = 3$ og ikke $\\pm 3$, og derfor gjelder</p>$$\\sqrt{x^2} = |x|, \\qquad \\left(\\sqrt{x}\\right)^2 = x \\quad \\text{for } x \\ge 0$$<p>Grafen til $\\sqrt{x}$ er speilbildet om $y=x$ av høyre halvdel av parabelen — en halv parabel som ligger på siden, bratt nær origo og flatere og flatere utover.</p><p>Generelt er $n$-te rot den omvendte til $x^n$, og for $x \\ge 0$ kan du skrive den som en potens: $\\sqrt[n]{x} = x^{\\frac{1}{n}}$. Er $n$ et partall, må $x \\ge 0$, fordi $x^n$ da ikke er en-entydig og aldri blir negativ. Er $n$ et oddetall, er $x^n$ en-entydig på hele $\\mathbb{R}$, og roten er definert for alle reelle tall — for eksempel er $\\sqrt[3]{-8} = -2$.</p><p>Skal du finne definisjonsmengden til et uttrykk med rot, krever du at det som står under rottegnet, er $\\ge 0$. For $g(x) = \\sqrt{2x-6}$ gir ulikheten $2x - 6 \\ge 0$ at $x \\ge 3$.</p>"
+        "html": "<p>Kvadratrotfunksjonen er definert som den omvendte til potensfunksjonen $x^2$ — men først etter en innskrenking. $f(x) = x^2$ er ikke en-entydig på hele $\\mathbb{R}$, så vi begrenser oss til $x \\ge 0$. Der er $f$ strengt voksende med $V_f = [0, \\to\\rangle$, og den omvendte er</p>$$f^{-1}(x) = \\sqrt{x}, \\qquad D_{f^{-1}} = [0, \\to\\rangle$$<p>Definisjonen av $\\sqrt{a}$ er «det <em>ikke-negative</em> tallet som gir $a$ når det kvadreres». Derfor er $\\sqrt{9} = 3$ og ikke $\\pm 3$, og derfor gjelder</p>$$\\sqrt{x^2} = |x|, \\qquad \\left(\\sqrt{x}\\right)^2 = x \\quad \\text{for } x \\ge 0$$<p>Grafen til $\\sqrt{x}$ er speilbildet om $y=x$ av høyre halvdel av parabelen — en halv parabel som ligger på siden, bratt nær origo og flatere og flatere utover.</p><p>Generelt er $n$-te rot den omvendte til $x^n$, og for $x \\ge 0$ kan du skrive den som en potens: $\\sqrt[n]{x} = x^{\\frac{1}{n}}$. Er $n$ et partall, må $x \\ge 0$, fordi $x^n$ da ikke er en-entydig og aldri blir negativ. Er $n$ et oddetall, er $x^n$ en-entydig på hele $\\mathbb{R}$, og roten er definert for alle reelle tall — for eksempel er $\\sqrt[3]{-8} = -2$.</p><p>Skal du finne definisjonsmengden til et uttrykk med rot, krever du at det som står under rottegnet, er $\\ge 0$. For $g(x) = \\sqrt{2x-6}$ gir ulikheten $2x - 6 \\ge 0$ at $x \\ge 3$.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Partallsrot og oddetallsrot",
+          "forklaring": "Se hvorfor bare den venstre kolonnen trenger en innskrenking: x² gir samme verdi for −3 og 3, mens x³ treffer hver verdi bare én gang. Det er derfor ∛x er definert for negative tall, mens √x ikke er.",
+          "kolonner": [
+            "Partallsrot: √x",
+            "Oddetallsrot: ∛x"
+          ],
+          "rader": [
+            {
+              "egenskap": "Omvendt til",
+              "venstre": "x², men bare etter innskrenking til x ≥ 0",
+              "hoyre": "x³ på hele ℝ — ingen innskrenking trengs"
+            },
+            {
+              "egenskap": "Er xⁿ en-entydig?",
+              "venstre": "Nei: (−3)² = 3² = 9, så to x-verdier gir 9",
+              "hoyre": "Ja: x³ er strengt voksende på hele ℝ"
+            },
+            {
+              "egenskap": "Definisjonsmengde",
+              "venstre": "[0, →⟩ — tallet under rottegnet må være ≥ 0",
+              "hoyre": "ℝ — også negative tall er lovlige"
+            },
+            {
+              "egenskap": "Verdimengde",
+              "venstre": "[0, →⟩ — roten er aldri negativ",
+              "hoyre": "ℝ — roten har samme fortegn som tallet"
+            },
+            {
+              "egenskap": "Regneeksempel",
+              "venstre": "√9 = 3, ikke ±3. √(−9) er ikke definert",
+              "hoyre": "∛(−8) = −2, fordi (−2)³ = −8"
+            },
+            {
+              "egenskap": "Skrevet som potens",
+              "venstre": "√x = x^(1/2), gyldig for x ≥ 0",
+              "hoyre": "∛x = x^(1/3); potensformen krever x ≥ 0"
+            }
+          ]
+        }
       },
       {
         "tittel": "Sammenhengen mellom $e^x$ og $\\ln x$",
@@ -298,7 +339,67 @@
       {
         "tittel": "Innskrenk definisjonsmengden og finn den omvendte",
         "oppgave": "<p>En funksjon er gitt ved $f(x) = x^2 - 6x + 5$.</p><ul><li>Vis at $f$ ikke er en-entydig på $\\mathbb{R}$.</li><li>Innskrenk definisjonsmengden til $D_f = [3, \\to\\rangle$, og finn $f^{-1}$ med definisjonsmengde og verdimengde.</li><li>Kontroller svaret i ett punkt.</li></ul>",
-        "losning": "<p><strong>Steg 1 — er $f$ en-entydig?</strong> Vi prøver to tall:</p>$$f(1) = 1 - 6 + 5 = 0, \\qquad f(5) = 25 - 30 + 5 = 0$$<p>To ulike x-verdier gir samme funksjonsverdi, så $f$ er ikke en-entydig på $\\mathbb{R}$. Det stemmer med grafen: parabelen har et bunnpunkt, og en vannrett linje over bunnpunktet treffer den to ganger.</p><p><strong>Steg 2 — fullfør kvadratet.</strong> Det gjør likningen mye lettere å løse for $x$ senere:</p>$$f(x) = x^2 - 6x + 5 = (x-3)^2 - 9 + 5 = (x-3)^2 - 4$$<p>Bunnpunktet ligger i $(3, -4)$. På $D_f = [3, \\to\\rangle$ er $f'(x) = 2x - 6 \\ge 0$, med likhet bare i endepunktet $x = 3$, så $f$ er strengt voksende der — og dermed en-entydig. Den minste verdien er $f(3) = -4$, så $V_f = [-4, \\to\\rangle$.</p><p><strong>Steg 3 — løs $y = f(x)$ for $x$.</strong></p>$$y = (x-3)^2 - 4$$<p>Vi flytter $-4$ over på andre siden:</p>$$(x-3)^2 = y + 4$$<p>Nå tar vi kvadratroten. Vanligvis ville vi fått $x - 3 = \\pm\\sqrt{y+4}$, men siden $x \\ge 3$, er $x - 3 \\ge 0$, og bare plussfortegnet er mulig:</p>$$x - 3 = \\sqrt{y+4} \\quad \\Rightarrow \\quad x = 3 + \\sqrt{y+4}$$<p><strong>Steg 4 — bytt navn og oppgi mengdene.</strong></p>$$f^{-1}(x) = 3 + \\sqrt{x+4}, \\qquad D_{f^{-1}} = [-4, \\to\\rangle, \\qquad V_{f^{-1}} = [3, \\to\\rangle$$<p>Mengdene har byttet plass med $D_f$ og $V_f$, som de skal.</p><p><strong>Steg 5 — kontroll.</strong> Vi regner ut $f(6) = 36 - 36 + 5 = 5$. Da må $f^{-1}(5) = 6$:</p>$$f^{-1}(5) = 3 + \\sqrt{5+4} = 3 + \\sqrt{9} = 3 + 3 = 6$$<p>Det stemmer. Punktet $(6,5)$ på grafen til $f$ svarer til punktet $(5,6)$ på grafen til $f^{-1}$, speilet om linja $y=x$.</p><p>Til slutt et poeng om regnereglene: setter vi $f$ inn i $f^{-1}$, får vi $f^{-1}(f(x)) = 3 + \\sqrt{(x-3)^2 - 4 + 4} = 3 + \\sqrt{(x-3)^2} = 3 + |x-3|$. Dette er lik $x$ bare når $x \\ge 3$ — nettopp derfor var innskrenkingen nødvendig.</p>"
+        "losning": "<p><strong>Steg 1 — er $f$ en-entydig?</strong> Vi prøver to tall:</p>$$f(1) = 1 - 6 + 5 = 0, \\qquad f(5) = 25 - 30 + 5 = 0$$<p>To ulike x-verdier gir samme funksjonsverdi, så $f$ er ikke en-entydig på $\\mathbb{R}$. Det stemmer med grafen: parabelen har et bunnpunkt, og en vannrett linje over bunnpunktet treffer den to ganger.</p><p><strong>Steg 2 — fullfør kvadratet.</strong> Det gjør likningen mye lettere å løse for $x$ senere:</p>$$f(x) = x^2 - 6x + 5 = (x-3)^2 - 9 + 5 = (x-3)^2 - 4$$<p>Bunnpunktet ligger i $(3, -4)$. På $D_f = [3, \\to\\rangle$ er $f'(x) = 2x - 6 \\ge 0$, med likhet bare i endepunktet $x = 3$, så $f$ er strengt voksende der — og dermed en-entydig. Den minste verdien er $f(3) = -4$, så $V_f = [-4, \\to\\rangle$.</p><p><strong>Steg 3 — løs $y = f(x)$ for $x$.</strong></p>$$y = (x-3)^2 - 4$$<p>Vi flytter $-4$ over på andre siden:</p>$$(x-3)^2 = y + 4$$<p>Nå tar vi kvadratroten. Vanligvis ville vi fått $x - 3 = \\pm\\sqrt{y+4}$, men siden $x \\ge 3$, er $x - 3 \\ge 0$, og bare plussfortegnet er mulig:</p>$$x - 3 = \\sqrt{y+4} \\quad \\Rightarrow \\quad x = 3 + \\sqrt{y+4}$$<p><strong>Steg 4 — bytt navn og oppgi mengdene.</strong></p>$$f^{-1}(x) = 3 + \\sqrt{x+4}, \\qquad D_{f^{-1}} = [-4, \\to\\rangle, \\qquad V_{f^{-1}} = [3, \\to\\rangle$$<p>Mengdene har byttet plass med $D_f$ og $V_f$, som de skal.</p><p><strong>Steg 5 — kontroll.</strong> Vi regner ut $f(6) = 36 - 36 + 5 = 5$. Da må $f^{-1}(5) = 6$:</p>$$f^{-1}(5) = 3 + \\sqrt{5+4} = 3 + \\sqrt{9} = 3 + 3 = 6$$<p>Det stemmer. Punktet $(6,5)$ på grafen til $f$ svarer til punktet $(5,6)$ på grafen til $f^{-1}$, speilet om linja $y=x$.</p><p>Til slutt et poeng om regnereglene: setter vi $f$ inn i $f^{-1}$, får vi $f^{-1}(f(x)) = 3 + \\sqrt{(x-3)^2 - 4 + 4} = 3 + \\sqrt{(x-3)^2} = 3 + |x-3|$. Dette er lik $x$ bare når $x \\ge 3$ — nettopp derfor var innskrenkingen nødvendig.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "f på [3, →⟩ og den omvendte f⁻¹",
+          "forklaring": "Grafen til f er tegnet bare der f er en-entydig, altså for x ≥ 3. Kontrollpunktet (6, 5) på f svarer til (5, 6) på f⁻¹, og endepunktet (3, −4) blir (−4, 3) — det er slik definisjonsmengden og verdimengden bytter plass.",
+          "xmin": -5,
+          "xmax": 14,
+          "ymin": -4.8,
+          "ymax": 7.02,
+          "kurver": [
+            {
+              "uttrykk": "(x-3)^2-4+0*sqrt(x-3)",
+              "navn": "f",
+              "farge": 1
+            },
+            {
+              "uttrykk": "3+sqrt(x+4)",
+              "navn": "f⁻¹",
+              "farge": 2
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                -4.8,
+                -4.8
+              ],
+              "til": [
+                7.02,
+                7.02
+              ],
+              "navn": "y = x",
+              "farge": 3,
+              "merkeplass": 0.28
+            }
+          ],
+          "punkter": [
+            {
+              "x": 3,
+              "y": -4,
+              "navn": "(3, −4)",
+              "plassering": "under"
+            },
+            {
+              "x": -4,
+              "y": 3,
+              "navn": "(−4, 3)"
+            },
+            {
+              "x": 6,
+              "y": 5,
+              "navn": "(6, 5)",
+              "plassering": "under"
+            },
+            {
+              "x": 5,
+              "y": 6,
+              "navn": "(5, 6)"
+            }
+          ]
+        }
       },
       {
         "tittel": "Omvendt funksjon til en logaritmefunksjon",
@@ -308,7 +409,31 @@
       {
         "tittel": "Derivasjon av en omvendt funksjon du ikke kan skrive ut",
         "oppgave": "<p>La $f(x) = x^3 + x + 1$, og la $g$ være den omvendte funksjonen til $f$.</p><ul><li>Vis at $f$ har en omvendt funksjon.</li><li>Finn $g(3)$ og $g'(3)$.</li><li>Finn likningen for tangenten til grafen til $g$ i punktet der $x = 3$.</li></ul>",
-        "losning": "<p><strong>Steg 1 — finnes den omvendte?</strong> Vi deriverer:</p>$$f'(x) = 3x^2 + 1$$<p>Siden $3x^2 \\ge 0$ for alle $x$, er $f'(x) \\ge 1 > 0$ overalt. Da er $f$ strengt voksende på hele $\\mathbb{R}$, altså en-entydig, og den omvendte funksjonen $g = f^{-1}$ finnes.</p><p><strong>Steg 2 — finn $g(3)$.</strong> Å løse $x^3 + x + 1 = y$ for $x$ generelt er håpløst i R1, men vi trenger heldigvis bare ett punkt. Tallet $g(3)$ er den x-verdien $a$ som gir $f(a) = 3$:</p>$$a^3 + a + 1 = 3 \\quad \\Rightarrow \\quad a^3 + a - 2 = 0$$<p>Vi prøver $a = 1$ og får $1 + 1 - 2 = 0$. Det stemmer, så $a=1$ er en løsning — og siden $f$ er strengt voksende, kan det ikke finnes flere. Dermed er</p>$$g(3) = 1$$<p><strong>Steg 3 — finn $g'(3)$.</strong> Regelen er $g'(x) = \\frac{1}{f'(g(x))}$. Med $x = 3$ og $g(3) = 1$:</p>$$g'(3) = \\frac{1}{f'(1)} = \\frac{1}{3 \\cdot 1^2 + 1} = \\frac{1}{4}$$<p>Merk nøye at det er $f'(1)$ som skal brukes, ikke $f'(3) = 3 \\cdot 9 + 1 = 28$. Å sette 3 rett inn i $f'$ er den klassiske feilen her.</p><p><strong>Steg 4 — tangenten.</strong> Vi bruker tangentformelen $y = g'(a)(x-a) + g(a)$ med $a = 3$, $g(3) = 1$ og $g'(3) = \\frac{1}{4}$:</p>$$y = \\frac{1}{4}(x - 3) + 1 = \\frac{1}{4}x - \\frac{3}{4} + 1 = \\frac{1}{4}x + \\frac{1}{4}$$<p><strong>Kontroll ved speiling.</strong> Tangenten til $f$ i punktet $(1, 3)$ er $y = f'(1)(x-1) + f(1) = 4(x-1) + 3 = 4x - 1$. Speiler vi denne linja om $y=x$, bytter vi $x$ og $y$: $x = 4y - 1$, som gir $y = \\frac{x+1}{4} = \\frac{1}{4}x + \\frac{1}{4}$. Nøyaktig samme linje som vi fant over.</p>"
+        "losning": "<p><strong>Steg 1 — finnes den omvendte?</strong> Vi deriverer:</p>$$f'(x) = 3x^2 + 1$$<p>Siden $3x^2 \\ge 0$ for alle $x$, er $f'(x) \\ge 1 > 0$ overalt. Da er $f$ strengt voksende på hele $\\mathbb{R}$, altså en-entydig, og den omvendte funksjonen $g = f^{-1}$ finnes.</p><p><strong>Steg 2 — finn $g(3)$.</strong> Å løse $x^3 + x + 1 = y$ for $x$ generelt er håpløst i R1, men vi trenger heldigvis bare ett punkt. Tallet $g(3)$ er den x-verdien $a$ som gir $f(a) = 3$:</p>$$a^3 + a + 1 = 3 \\quad \\Rightarrow \\quad a^3 + a - 2 = 0$$<p>Vi prøver $a = 1$ og får $1 + 1 - 2 = 0$. Det stemmer, så $a=1$ er en løsning — og siden $f$ er strengt voksende, kan det ikke finnes flere. Dermed er</p>$$g(3) = 1$$<p><strong>Steg 3 — finn $g'(3)$.</strong> Regelen er $g'(x) = \\frac{1}{f'(g(x))}$. Med $x = 3$ og $g(3) = 1$:</p>$$g'(3) = \\frac{1}{f'(1)} = \\frac{1}{3 \\cdot 1^2 + 1} = \\frac{1}{4}$$<p>Merk nøye at det er $f'(1)$ som skal brukes, ikke $f'(3) = 3 \\cdot 9 + 1 = 28$. Å sette 3 rett inn i $f'$ er den klassiske feilen her.</p><p><strong>Steg 4 — tangenten.</strong> Vi bruker tangentformelen $y = g'(a)(x-a) + g(a)$ med $a = 3$, $g(3) = 1$ og $g'(3) = \\frac{1}{4}$:</p>$$y = \\frac{1}{4}(x - 3) + 1 = \\frac{1}{4}x - \\frac{3}{4} + 1 = \\frac{1}{4}x + \\frac{1}{4}$$<p><strong>Kontroll ved speiling.</strong> Tangenten til $f$ i punktet $(1, 3)$ er $y = f'(1)(x-1) + f(1) = 4(x-1) + 3 = 4x - 1$. Speiler vi denne linja om $y=x$, bytter vi $x$ og $y$: $x = 4y - 1$, som gir $y = \\frac{x+1}{4} = \\frac{1}{4}x + \\frac{1}{4}$. Nøyaktig samme linje som vi fant over.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik finner du g′(b) uten å kjenne g",
+          "forklaring": "Følg hvilket tall som går hvor: b settes inn i g, men a settes inn i f′. Hopper du rett fra 3 til f′(3) = 28, får du 1/28 i stedet for det riktige svaret 1/4.",
+          "steg": [
+            {
+              "tekst": "Løs f(a) = b for a",
+              "note": "a³ + a − 2 = 0 gir a = 1"
+            },
+            {
+              "tekst": "Nå er g(b) = a",
+              "note": "g(3) = 1"
+            },
+            {
+              "tekst": "Regn ut f′(a), ikke f′(b)",
+              "note": "f′(1) = 3 · 1² + 1 = 4"
+            },
+            {
+              "tekst": "Snu brøken: g′(b) = 1 / f′(a)",
+              "note": "g′(3) = 1/4"
+            }
+          ]
+        }
       },
       {
         "tittel": "Rotfunksjon som omvendt funksjon — fritt fall",

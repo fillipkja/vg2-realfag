@@ -119,7 +119,43 @@
     "seksjoner": [
       {
         "tittel": "Syrer og baser etter Brønsted",
-        "html": "<p>På ungdomsskolen lærte du at en syre gir $\\ce{H+}$ i vann og en base gir $\\ce{OH-}$. Det er <strong>Arrhenius-definisjonen</strong>, og den er litt for trang: den forklarer ikke hvorfor ammoniakk, $\\ce{NH3}$, gjør vann basisk selv om molekylet ikke inneholder noen OH-gruppe i det hele tatt.</p><p>I Kjemi 1 bruker vi derfor <strong>Brønsteds definisjon</strong>:</p><ul><li>En <strong>syre</strong> er en <strong>protondonor</strong> — den kan avgi et proton, altså et $\\ce{H+}$.</li><li>En <strong>base</strong> er en <strong>protonakseptor</strong> — den kan ta opp et proton.</li></ul><p>Selve overføringen av protonet kalles en <strong>protolyse</strong>. Poenget med definisjonen er at en syre aldri kan avgi protonet alene; det må finnes en base som tar imot. I vannløsning er det oftest vannet selv som gjør jobben:</p>$$\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$$$$\\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}$$<p>Her er vann base i den første likningen og syre i den andre. Stoffer som kan opptre som både syre og base, kalles <strong>amfotære</strong>. Andre eksempler er $\\ce{HCO3-}$ og $\\ce{H2PO4-}$.</p><p>Legg merke til at stoffene henger sammen i par. $\\ce{HCl}$ og $\\ce{Cl-}$ er et <strong>korresponderende syre-base-par</strong>, og det samme er $\\ce{NH4+}$ og $\\ce{NH3}$. Du går fra syra til basen ved å fjerne ett proton, og motsatt vei ved å legge til ett. Et fritt proton finnes for øvrig aldri alene i vann — det binder seg straks til et vannmolekyl og danner et <strong>hydroniumion</strong>, $\\ce{H3O+}$. Derfor skriver vi $\\ce{H3O+}$ og ikke $\\ce{H+}$ i likningene.</p>"
+        "html": "<p>På ungdomsskolen lærte du at en syre gir $\\ce{H+}$ i vann og en base gir $\\ce{OH-}$. Det er <strong>Arrhenius-definisjonen</strong>, og den er litt for trang: den forklarer ikke hvorfor ammoniakk, $\\ce{NH3}$, gjør vann basisk selv om molekylet ikke inneholder noen OH-gruppe i det hele tatt.</p><p>I Kjemi 1 bruker vi derfor <strong>Brønsteds definisjon</strong>:</p><ul><li>En <strong>syre</strong> er en <strong>protondonor</strong> — den kan avgi et proton, altså et $\\ce{H+}$.</li><li>En <strong>base</strong> er en <strong>protonakseptor</strong> — den kan ta opp et proton.</li></ul><p>Selve overføringen av protonet kalles en <strong>protolyse</strong>. Poenget med definisjonen er at en syre aldri kan avgi protonet alene; det må finnes en base som tar imot. I vannløsning er det oftest vannet selv som gjør jobben:</p>$$\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$$$$\\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}$$<p>Her er vann base i den første likningen og syre i den andre. Stoffer som kan opptre som både syre og base, kalles <strong>amfotære</strong>. Andre eksempler er $\\ce{HCO3-}$ og $\\ce{H2PO4-}$.</p><p>Legg merke til at stoffene henger sammen i par. $\\ce{HCl}$ og $\\ce{Cl-}$ er et <strong>korresponderende syre-base-par</strong>, og det samme er $\\ce{NH4+}$ og $\\ce{NH3}$. Du går fra syra til basen ved å fjerne ett proton, og motsatt vei ved å legge til ett. Et fritt proton finnes for øvrig aldri alene i vann — det binder seg straks til et vannmolekyl og danner et <strong>hydroniumion</strong>, $\\ce{H3O+}$. Derfor skriver vi $\\ce{H3O+}$ og ikke $\\ce{H+}$ i likningene.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Vann som base og vann som syre",
+          "forklaring": "Følg vannmolekylet i de to kolonnene: i saltsyre tar det imot protonet og blir H₃O⁺, i ammoniakk gir det bort et proton og blir OH⁻. Samme molekyl, motsatt rolle — det er dette som menes med at vann er amfotært, og det er grunnen til at NH₃ gjør løsningen basisk uten å inneholde en eneste OH-gruppe.",
+          "kolonner": [
+            "H₂O tar imot protonet",
+            "H₂O avgir protonet"
+          ],
+          "rader": [
+            {
+              "egenskap": "Rollen etter Brønsted",
+              "venstre": "base — protonakseptor",
+              "hoyre": "syre — protondonor"
+            },
+            {
+              "egenskap": "Reaksjonen",
+              "venstre": "HCl + H₂O → H₃O⁺ + Cl⁻",
+              "hoyre": "NH₃ + H₂O ⇌ NH₄⁺ + OH⁻"
+            },
+            {
+              "egenskap": "Vannet blir",
+              "venstre": "hydroniumion, H₃O⁺",
+              "hoyre": "hydroksidion, OH⁻"
+            },
+            {
+              "egenskap": "Løsningen blir",
+              "venstre": "sur — pH under 7",
+              "hoyre": "basisk — pH over 7"
+            },
+            {
+              "egenskap": "I egenprotolysen 2H₂O ⇌ H₃O⁺ + OH⁻",
+              "venstre": "det ene vannmolekylet spiller denne rollen",
+              "hoyre": "det andre spiller denne — begge skjer samtidig"
+            }
+          ]
+        }
       },
       {
         "tittel": "Vannets egenprotolyse og pH-skalaen",
@@ -187,7 +223,31 @@
       },
       {
         "tittel": "Buffere",
-        "html": "<p>En <strong>buffer</strong> er en løsning som holder pH nesten konstant selv om du tilsetter litt syre eller litt base. Oppskriften er alltid den samme: <strong>en svak syre sammen med sin korresponderende base</strong>, begge i rimelig store mengder. Eddiksyre og natriumacetat er skoleeksempelet.</p><p>Bufferen virker fordi begge formene, syra og den korresponderende basen, finnes i løsningen samtidig. Tilsetter du hydroksid, blir det spist opp av syra:</p>$$\\ce{CH3COOH + OH- -> CH3COO- + H2O}$$<p>Tilsetter du hydronium, blir det spist opp av basen:</p>$$\\ce{CH3COO- + H3O+ -> CH3COOH + H2O}$$<p>I begge tilfeller endres forholdet mellom syre og base litt, men ingen av dem forsvinner. Skriver du $K_a$-uttrykket på logaritmeform, får du <strong>Henderson–Hasselbalch-likningen</strong>:</p>$$\\text{pH} = \\text{p}K_a + \\log \\frac{c(\\text{base})}{c(\\text{syre})}$$<p>Tre ting er verdt å merke seg. For det <strong>første</strong>: er konsentrasjonene like store, er brøken 1, logaritmen 0, og pH er nøyaktig lik $\\text{p}K_a$. For det <strong>andre</strong>: siden syra og basen er i samme løsning og dermed samme volum, kan du sette inn stoffmengder i mol i stedet for konsentrasjoner — volumet forkortes bort. For det <strong>tredje</strong>: bufferen virker best når forholdet ligger mellom 0,1 og 10, altså i området $\\text{p}K_a \\pm 1$. Derfor velger du bufferpar etter hvilken pH du trenger.</p><p>Blodet ditt bruker hydrogenkarbonatbufferen $\\ce{CO2 + 2H2O <=> HCO3- + H3O+}$ for å holde pH mellom 7,35 og 7,45. Men <strong>bufferkapasiteten</strong> er ikke uendelig: tilsetter du mer syre enn det finnes base til å ta imot, bryter bufferen sammen og pH endrer seg brått.</p>"
+        "html": "<p>En <strong>buffer</strong> er en løsning som holder pH nesten konstant selv om du tilsetter litt syre eller litt base. Oppskriften er alltid den samme: <strong>en svak syre sammen med sin korresponderende base</strong>, begge i rimelig store mengder. Eddiksyre og natriumacetat er skoleeksempelet.</p><p>Bufferen virker fordi begge formene, syra og den korresponderende basen, finnes i løsningen samtidig. Tilsetter du hydroksid, blir det spist opp av syra:</p>$$\\ce{CH3COOH + OH- -> CH3COO- + H2O}$$<p>Tilsetter du hydronium, blir det spist opp av basen:</p>$$\\ce{CH3COO- + H3O+ -> CH3COOH + H2O}$$<p>I begge tilfeller endres forholdet mellom syre og base litt, men ingen av dem forsvinner. Skriver du $K_a$-uttrykket på logaritmeform, får du <strong>Henderson–Hasselbalch-likningen</strong>:</p>$$\\text{pH} = \\text{p}K_a + \\log \\frac{c(\\text{base})}{c(\\text{syre})}$$<p>Tre ting er verdt å merke seg. For det <strong>første</strong>: er konsentrasjonene like store, er brøken 1, logaritmen 0, og pH er nøyaktig lik $\\text{p}K_a$. For det <strong>andre</strong>: siden syra og basen er i samme løsning og dermed samme volum, kan du sette inn stoffmengder i mol i stedet for konsentrasjoner — volumet forkortes bort. For det <strong>tredje</strong>: bufferen virker best når forholdet ligger mellom 0,1 og 10, altså i området $\\text{p}K_a \\pm 1$. Derfor velger du bufferpar etter hvilken pH du trenger.</p><p>Blodet ditt bruker hydrogenkarbonatbufferen $\\ce{CO2 + 2H2O <=> HCO3- + H3O+}$ for å holde pH mellom 7,35 og 7,45. Men <strong>bufferkapasiteten</strong> er ikke uendelig: tilsetter du mer syre enn det finnes base til å ta imot, bryter bufferen sammen og pH endrer seg brått.</p>",
+        "figur": {
+          "type": "syklus",
+          "tittel": "Bufferen veksler mellom syra og basen",
+          "forklaring": "Følg rundgangen: tilsatt OH⁻ gjør litt av syra HA om til basen A⁻, og tilsatt H₃O⁺ gjør like mye tilbake igjen. Begge formene er til stede hele tiden, så det er bare forholdet mellom dem som endrer seg — og siden forholdet står inne i en logaritme, flytter pH seg bare noen hundredeler. Bufferen bryter først sammen når den ene formen er brukt opp.",
+          "senter": "Buffer",
+          "faser": [
+            {
+              "navn": "HA",
+              "note": "svak syre på lager"
+            },
+            {
+              "navn": "+ OH⁻",
+              "note": "HA + OH⁻ → A⁻ + H₂O"
+            },
+            {
+              "navn": "A⁻",
+              "note": "korresponderende base"
+            },
+            {
+              "navn": "+ H₃O⁺",
+              "note": "A⁻ + H₃O⁺ → HA + H₂O"
+            }
+          ]
+        }
       },
       {
         "tittel": "Titrering og indikatorer",
@@ -228,7 +288,25 @@
       {
         "tittel": "pH og protolysegrad i en svak syre",
         "oppgave": "<p>Eddiksyre, $\\ce{CH3COOH}$, har $K_a = 1{,}8 \\cdot 10^{-5}$. Finn pH og protolysegraden i en eddiksyreløsning med konsentrasjon 0,100 mol/L, og sammenlikn med pH i saltsyre med samme konsentrasjon.</p>",
-        "losning": "<p><strong>Steg 1 — skriv likningen.</strong> Eddiksyre er en svak syre, så dette er en likevekt:</p>$$\\ce{CH3COOH(aq) + H2O(l) <=> H3O+(aq) + CH3COO-(aq)}$$<p><strong>Steg 2 — sett opp konsentrasjonene.</strong> Kall $[\\ce{H3O+}]$ ved likevekt for $x$. Molforholdet er 1:1, så det dannes like mye acetat, og det brukes opp $x$ av syra:</p><table><thead><tr><th>Stoff</th><th>Start (mol/L)</th><th>Ved likevekt (mol/L)</th></tr></thead><tbody><tr><td>$\\ce{CH3COOH}$</td><td>0,100</td><td>$0{,}100 - x$</td></tr><tr><td>$\\ce{H3O+}$</td><td>$\\approx 0$</td><td>$x$</td></tr><tr><td>$\\ce{CH3COO-}$</td><td>0</td><td>$x$</td></tr></tbody></table><p><strong>Steg 3 — sett inn i uttrykket for $K_a$.</strong></p>$$K_a = \\frac{[\\ce{H3O+}][\\ce{CH3COO-}]}{[\\ce{CH3COOH}]} = \\frac{x^2}{0{,}100 - x} = 1{,}8 \\cdot 10^{-5}$$<p><strong>Steg 4 — bruk tilnærmingen.</strong> Syra er svak, så $x$ er mye mindre enn 0,100, og vi setter $0{,}100 - x \\approx 0{,}100$:</p>$$x^2 = 1{,}8 \\cdot 10^{-5} \\cdot 0{,}100 = 1{,}8 \\cdot 10^{-6}$$$$x = \\sqrt{1{,}8 \\cdot 10^{-6}} = 1{,}34 \\cdot 10^{-3}\\ \\text{mol/L}$$<p><strong>Steg 5 — regn ut pH.</strong></p>$$\\text{pH} = -\\log\\left(1{,}34 \\cdot 10^{-3}\\right) = 2{,}87$$<p><strong>Steg 6 — protolysegrad, og kontroll av tilnærmingen.</strong></p>$$\\text{protolysegrad} = \\frac{x}{c_0} \\cdot 100\\,\\% = \\frac{1{,}34 \\cdot 10^{-3}}{0{,}100} \\cdot 100\\,\\% = 1{,}3\\,\\%$$<p>1,3 % er godt under 5 %, så tilnærmingen holder. Løser du andregradslikningen eksakt, får du $x = 1{,}33 \\cdot 10^{-3}$ mol/L og pH $= 2{,}88$ — forskjellen er uten praktisk betydning.</p><p><strong>Sammenlikning.</strong> I saltsyre med konsentrasjon 0,100 mol/L er $[\\ce{H3O+}] = 0{,}100$ mol/L, altså</p>$$\\text{pH} = -\\log(0{,}100) = 1{,}00$$<p>Eddiksyra gir nesten to pH-enheter høyere pH selv om konsentrasjonen er den samme, nettopp fordi bare 1,3 % av molekylene har gitt fra seg protonet. Dette er hele forskjellen mellom styrke og konsentrasjon i ett regnestykke.</p>"
+        "losning": "<p><strong>Steg 1 — skriv likningen.</strong> Eddiksyre er en svak syre, så dette er en likevekt:</p>$$\\ce{CH3COOH(aq) + H2O(l) <=> H3O+(aq) + CH3COO-(aq)}$$<p><strong>Steg 2 — sett opp konsentrasjonene.</strong> Kall $[\\ce{H3O+}]$ ved likevekt for $x$. Molforholdet er 1:1, så det dannes like mye acetat, og det brukes opp $x$ av syra:</p><table><thead><tr><th>Stoff</th><th>Start (mol/L)</th><th>Ved likevekt (mol/L)</th></tr></thead><tbody><tr><td>$\\ce{CH3COOH}$</td><td>0,100</td><td>$0{,}100 - x$</td></tr><tr><td>$\\ce{H3O+}$</td><td>$\\approx 0$</td><td>$x$</td></tr><tr><td>$\\ce{CH3COO-}$</td><td>0</td><td>$x$</td></tr></tbody></table><p><strong>Steg 3 — sett inn i uttrykket for $K_a$.</strong></p>$$K_a = \\frac{[\\ce{H3O+}][\\ce{CH3COO-}]}{[\\ce{CH3COOH}]} = \\frac{x^2}{0{,}100 - x} = 1{,}8 \\cdot 10^{-5}$$<p><strong>Steg 4 — bruk tilnærmingen.</strong> Syra er svak, så $x$ er mye mindre enn 0,100, og vi setter $0{,}100 - x \\approx 0{,}100$:</p>$$x^2 = 1{,}8 \\cdot 10^{-5} \\cdot 0{,}100 = 1{,}8 \\cdot 10^{-6}$$$$x = \\sqrt{1{,}8 \\cdot 10^{-6}} = 1{,}34 \\cdot 10^{-3}\\ \\text{mol/L}$$<p><strong>Steg 5 — regn ut pH.</strong></p>$$\\text{pH} = -\\log\\left(1{,}34 \\cdot 10^{-3}\\right) = 2{,}87$$<p><strong>Steg 6 — protolysegrad, og kontroll av tilnærmingen.</strong></p>$$\\text{protolysegrad} = \\frac{x}{c_0} \\cdot 100\\,\\% = \\frac{1{,}34 \\cdot 10^{-3}}{0{,}100} \\cdot 100\\,\\% = 1{,}3\\,\\%$$<p>1,3 % er godt under 5 %, så tilnærmingen holder. Løser du andregradslikningen eksakt, får du $x = 1{,}33 \\cdot 10^{-3}$ mol/L og pH $= 2{,}88$ — forskjellen er uten praktisk betydning.</p><p><strong>Sammenlikning.</strong> I saltsyre med konsentrasjon 0,100 mol/L er $[\\ce{H3O+}] = 0{,}100$ mol/L, altså</p>$$\\text{pH} = -\\log(0{,}100) = 1{,}00$$<p>Eddiksyra gir nesten to pH-enheter høyere pH selv om konsentrasjonen er den samme, nettopp fordi bare 1,3 % av molekylene har gitt fra seg protonet. Dette er hele forskjellen mellom styrke og konsentrasjon i ett regnestykke.</p>",
+        "figur": {
+          "type": "molekyl",
+          "tittel": "Karboksylgruppa i eddiksyre, CH₃COOH",
+          "forklaring": "Se hvilket hydrogen som kan gis bort: bare det ene som sitter på oksygenet i OH-gruppa. De tre i CH₃-gruppa sitter på karbon og er ikke sure, så eddiksyre avgir bare ett proton — derfor er molforholdet 1:1 i regnestykket. Når protonet er borte, fordeles den negative ladningen på begge oksygenatomene i acetationet CH₃COO⁻.",
+          "sentral": "C",
+          "ligander": [
+            "O",
+            "OH",
+            "CH₃"
+          ],
+          "geometri": "trigonal-plan",
+          "ledigePar": 0,
+          "bindinger": [
+            2,
+            1,
+            1
+          ]
+        }
       },
       {
         "tittel": "Buffer: pH før og etter tilsatt base",

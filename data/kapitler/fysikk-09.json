@@ -119,8 +119,8 @@
           "xmax": 2.2,
           "ymin": 0,
           "ymax": 24,
-          "xlabel": "T / T_sol",
-          "ylabel": "L / L_sol",
+          "xlabel": "T (solenheter)",
+          "ylabel": "L (solenheter)",
           "kurver": [
             {
               "uttrykk": "x^4",
@@ -249,7 +249,36 @@
       },
       {
         "tittel": "Universets utvikling og big bang",
-        "html": "<p>Hvis universet utvider seg, må det ha vært mindre, tettere og varmere før. Spoler vi filmen bakover, ender vi i en tilstand der alt vi kan observere, var samlet på et ekstremt lite område. Det er <strong>big bang</strong>, for omtrent 13,8 milliarder år siden.</p><p>Et grovt anslag på alderen får du gratis fra Hubbles lov. Har en galakse hatt farten $v = H_0 d$ hele tiden, brukte den tiden</p>$$t = \\frac{d}{v} = \\frac{d}{H_0\\,d} = \\frac{1}{H_0}$$<p>Avstanden faller ut, så alle galakser gir samme svar: cirka 14 milliarder år. Det er forbausende nær den verdien vi kommer fram til med bedre metoder.</p><p>Tre uavhengige observasjoner er hovedgrunnlaget for modellen:</p><ol><li><strong>Ekspansjonen.</strong> Rødforskyvningen til galaksene, slik Hubbles lov beskriver den.</li><li><strong>Den kosmiske bakgrunnsstrålingen.</strong> Da universet var rundt 380 000 år gammelt og hadde kjølt seg ned til cirka 3000 K, kunne kjerner og elektroner bli nøytrale atomer, og lyset slapp fritt. Denne strålingen kommer helt jevnt fra alle retninger og er i dag strukket ut til mikrobølger som svarer til en temperatur på 2,7 K.</li><li><strong>Forholdet mellom hydrogen og helium.</strong> I de første minuttene ble det dannet omtrent 75 % hydrogen og 25 % helium, akkurat som vi måler i de eldste stjernene. Alt tyngre er laget senere, inne i stjerner.</li></ol><p>Big bang var ikke en eksplosjon <em>i</em> rommet — det var rommet, tiden og materien som begynte å utvide seg. Det finnes ikke noe punkt du kan reise til for å se hvor det skjedde. Målinger av fjerne supernovaer viser i tillegg at ekspansjonen i dag går stadig raskere, drevet av noe vi kaller <strong>mørk energi</strong>.</p>"
+        "html": "<p>Hvis universet utvider seg, må det ha vært mindre, tettere og varmere før. Spoler vi filmen bakover, ender vi i en tilstand der alt vi kan observere, var samlet på et ekstremt lite område. Det er <strong>big bang</strong>, for omtrent 13,8 milliarder år siden.</p><p>Et grovt anslag på alderen får du gratis fra Hubbles lov. Har en galakse hatt farten $v = H_0 d$ hele tiden, brukte den tiden</p>$$t = \\frac{d}{v} = \\frac{d}{H_0\\,d} = \\frac{1}{H_0}$$<p>Avstanden faller ut, så alle galakser gir samme svar: cirka 14 milliarder år. Det er forbausende nær den verdien vi kommer fram til med bedre metoder.</p><p>Tre uavhengige observasjoner er hovedgrunnlaget for modellen:</p><ol><li><strong>Ekspansjonen.</strong> Rødforskyvningen til galaksene, slik Hubbles lov beskriver den.</li><li><strong>Den kosmiske bakgrunnsstrålingen.</strong> Da universet var rundt 380 000 år gammelt og hadde kjølt seg ned til cirka 3000 K, kunne kjerner og elektroner bli nøytrale atomer, og lyset slapp fritt. Denne strålingen kommer helt jevnt fra alle retninger og er i dag strukket ut til mikrobølger som svarer til en temperatur på 2,7 K.</li><li><strong>Forholdet mellom hydrogen og helium.</strong> I de første minuttene ble det dannet omtrent 75 % hydrogen og 25 % helium, akkurat som vi måler i de eldste stjernene. Alt tyngre er laget senere, inne i stjerner.</li></ol><p>Big bang var ikke en eksplosjon <em>i</em> rommet — det var rommet, tiden og materien som begynte å utvide seg. Det finnes ikke noe punkt du kan reise til for å se hvor det skjedde. Målinger av fjerne supernovaer viser i tillegg at ekspansjonen i dag går stadig raskere, drevet av noe vi kaller <strong>mørk energi</strong>.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Universets historie på logaritmisk tidsskala",
+          "forklaring": "Aksen viser eksponenten n i t = 10ⁿ sekunder, så hvert hakk mot høyre er ti ganger så lang tid — de første minuttene får like stor plass som milliarder av år. Grensen ved n ≈ 13 er 380 000 år: der ble plasmaet nøytrale atomer, og lyset slapp fritt.",
+          "enhet": "alder: t = 10ⁿ s (n på aksen)",
+          "min": 0,
+          "max": 17.6,
+          "log": false,
+          "band": [
+            {
+              "fra": 0,
+              "til": 3,
+              "navn": "Kjerner dannes",
+              "verdi": "75 % H"
+            },
+            {
+              "fra": 3,
+              "til": 13.1,
+              "navn": "Ugjennomsiktig plasma",
+              "verdi": "kjøles til 3000 K"
+            },
+            {
+              "fra": 13.1,
+              "til": 17.6,
+              "navn": "Stjerner og galakser",
+              "verdi": "13,8 mrd år"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [
@@ -261,12 +290,94 @@
       {
         "tittel": "Solas luminositet, masseforbruk og levetid",
         "oppgave": "<p>Solkonstanten, altså strålingsfluksen ved jordas avstand, er 1360 W/m². Avstanden jord–sol er $1{,}50\\cdot10^{11}$ m.</p><ol><li>Beregn solas luminositet.</li><li>Hvor mye masse omdannes til energi i sola per sekund?</li><li>Hver heliumkjerne som dannes, frigjør $4{,}3\\cdot10^{-12}$ J. Hvor mange heliumkjerner dannes per sekund, og hvor mange kilo hydrogen bruker sola opp i samme tid?</li></ol><p>Bruk $c = 3{,}00\\cdot10^{8}$ m/s og protonmassen $m_p = 1{,}67\\cdot10^{-27}$ kg.</p>",
-        "losning": "<p><strong>a) Luminositeten.</strong> All strålingen fra sola passerer gjennom en tenkt kuleflate med radius lik avstanden jord–sol. Arealet er</p>$$A = 4\\pi r^{2} = 4\\pi\\left(1{,}50\\cdot10^{11}\\,\\text{m}\\right)^{2} = 4\\pi \\cdot 2{,}25\\cdot10^{22}\\,\\text{m}^2 = 2{,}83\\cdot10^{23}\\,\\text{m}^2$$<p>Fluksen er $F = \\frac{L}{A}$, så vi løser for $L$:</p>$$L = F \\cdot A = 1360\\,\\frac{\\text{W}}{\\text{m}^2} \\cdot 2{,}83\\cdot10^{23}\\,\\text{m}^2 = 3{,}85\\cdot10^{26}\\,\\text{W}$$<p><strong>b) Massen som blir energi.</strong> Hvert sekund stråler sola ut $E = 3{,}85\\cdot10^{26}$ J. Vi løser $E = \\Delta m c^{2}$ for massen:</p>$$\\Delta m = \\frac{E}{c^{2}} = \\frac{3{,}85\\cdot10^{26}\\,\\text{J}}{\\left(3{,}00\\cdot10^{8}\\,\\text{m/s}\\right)^{2}} = \\frac{3{,}85\\cdot10^{26}}{9{,}00\\cdot10^{16}}\\,\\text{kg} = 4{,}3\\cdot10^{9}\\,\\text{kg}$$<p>Sola blir 4,3 millioner tonn lettere hvert sekund. Det høres voldsomt ut, men solas masse er $2{,}0\\cdot10^{30}$ kg, så på 4,6 milliarder år har sola bare mistet rundt 0,03 % av massen sin.</p><p><strong>c) Antall heliumkjerner og hydrogenforbruket.</strong> Vi deler energien per sekund på energien per heliumkjerne:</p>$$N = \\frac{E}{E_{\\text{He}}} = \\frac{3{,}85\\cdot10^{26}\\,\\text{J}}{4{,}3\\cdot10^{-12}\\,\\text{J}} = 9{,}0\\cdot10^{37}$$<p>Det dannes altså cirka $9\\cdot10^{37}$ heliumkjerner hvert sekund. Hver av dem krever fire hydrogenkjerner:</p>$$N_{\\text{H}} = 4 \\cdot 9{,}0\\cdot10^{37} = 3{,}6\\cdot10^{38}$$$$m_{\\text{H}} = 3{,}6\\cdot10^{38} \\cdot 1{,}67\\cdot10^{-27}\\,\\text{kg} = 6{,}0\\cdot10^{11}\\,\\text{kg}$$<p>Sola bruker opp omtrent 600 millioner tonn hydrogen i sekundet. Sammenlign svarene i b) og c): av $6{,}0\\cdot10^{11}$ kg hydrogen inn blir $4{,}3\\cdot10^{9}$ kg omdannet til energi, og resten kommer ut som helium. Forholdet er</p>$$\\frac{4{,}3\\cdot10^{9}}{6{,}0\\cdot10^{11}} = 0{,}0072 = 0{,}72\\,\\%$$<p>som er nettopp de 0,7 % vi snakket om i teorien.</p>"
+        "losning": "<p><strong>a) Luminositeten.</strong> All strålingen fra sola passerer gjennom en tenkt kuleflate med radius lik avstanden jord–sol. Arealet er</p>$$A = 4\\pi r^{2} = 4\\pi\\left(1{,}50\\cdot10^{11}\\,\\text{m}\\right)^{2} = 4\\pi \\cdot 2{,}25\\cdot10^{22}\\,\\text{m}^2 = 2{,}83\\cdot10^{23}\\,\\text{m}^2$$<p>Fluksen er $F = \\frac{L}{A}$, så vi løser for $L$:</p>$$L = F \\cdot A = 1360\\,\\frac{\\text{W}}{\\text{m}^2} \\cdot 2{,}83\\cdot10^{23}\\,\\text{m}^2 = 3{,}85\\cdot10^{26}\\,\\text{W}$$<p><strong>b) Massen som blir energi.</strong> Hvert sekund stråler sola ut $E = 3{,}85\\cdot10^{26}$ J. Vi løser $E = \\Delta m c^{2}$ for massen:</p>$$\\Delta m = \\frac{E}{c^{2}} = \\frac{3{,}85\\cdot10^{26}\\,\\text{J}}{\\left(3{,}00\\cdot10^{8}\\,\\text{m/s}\\right)^{2}} = \\frac{3{,}85\\cdot10^{26}}{9{,}00\\cdot10^{16}}\\,\\text{kg} = 4{,}3\\cdot10^{9}\\,\\text{kg}$$<p>Sola blir 4,3 millioner tonn lettere hvert sekund. Det høres voldsomt ut, men solas masse er $2{,}0\\cdot10^{30}$ kg, så på 4,6 milliarder år har sola bare mistet rundt 0,03 % av massen sin.</p><p><strong>c) Antall heliumkjerner og hydrogenforbruket.</strong> Vi deler energien per sekund på energien per heliumkjerne:</p>$$N = \\frac{E}{E_{\\text{He}}} = \\frac{3{,}85\\cdot10^{26}\\,\\text{J}}{4{,}3\\cdot10^{-12}\\,\\text{J}} = 9{,}0\\cdot10^{37}$$<p>Det dannes altså cirka $9\\cdot10^{37}$ heliumkjerner hvert sekund. Hver av dem krever fire hydrogenkjerner:</p>$$N_{\\text{H}} = 4 \\cdot 9{,}0\\cdot10^{37} = 3{,}6\\cdot10^{38}$$$$m_{\\text{H}} = 3{,}6\\cdot10^{38} \\cdot 1{,}67\\cdot10^{-27}\\,\\text{kg} = 6{,}0\\cdot10^{11}\\,\\text{kg}$$<p>Sola bruker opp omtrent 600 millioner tonn hydrogen i sekundet. Sammenlign svarene i b) og c): av $6{,}0\\cdot10^{11}$ kg hydrogen inn blir $4{,}3\\cdot10^{9}$ kg omdannet til energi, og resten kommer ut som helium. Forholdet er</p>$$\\frac{4{,}3\\cdot10^{9}}{6{,}0\\cdot10^{11}} = 0{,}0072 = 0{,}72\\,\\%$$<p>som er nettopp de 0,7 % vi snakket om i teorien.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Sola mot en stjerne på 20 solmasser",
+          "forklaring": "Les de to øverste radene sammen: den tunge stjerna har 20 ganger så mye drivstoff, men bruker det opp nesten 40 000 ganger så fort. Det er derfor levetiden blir kort, og nederste rad viser at slutten også blir en helt annen.",
+          "kolonner": [
+            "Sola (1 solmasse)",
+            "Tung stjerne (20 solmasser)"
+          ],
+          "rader": [
+            {
+              "egenskap": "Drivstoff",
+              "venstre": "1 solmasse, altså 2,0·10³⁰ kg hydrogen og helium",
+              "hoyre": "20 ganger så mye å ta av"
+            },
+            {
+              "egenskap": "Luminositet",
+              "venstre": "3,85·10²⁶ W, som i punkt a",
+              "hoyre": "rundt 40 000 ganger solas"
+            },
+            {
+              "egenskap": "Hydrogenforbruk",
+              "venstre": "6,0·10¹¹ kg per sekund, som i punkt c",
+              "hoyre": "titusenvis av ganger mer per sekund"
+            },
+            {
+              "egenskap": "Levetid på hovedserien",
+              "venstre": "cirka 10 milliarder år",
+              "hoyre": "20/40 000 av solas levetid: noen få millioner år"
+            },
+            {
+              "egenskap": "Overflatetemperatur",
+              "venstre": "5800 K, gul stjerne",
+              "hoyre": "rundt 30 000 K, blå stjerne øverst til venstre i HR-diagrammet"
+            },
+            {
+              "egenskap": "Slutten",
+              "venstre": "rød kjempe, planetarisk tåke og en hvit dverg igjen",
+              "hoyre": "supernova, og igjen ligger en nøytronstjerne eller et svart hull"
+            }
+          ]
+        }
       },
       {
         "tittel": "Temperatur og radius til en rød kjempe",
         "oppgave": "<p>En rød kjempe stråler kraftigst ved bølgelengden 828 nm, og luminositeten er 1000 ganger solas ($L_{\\text{sol}} = 3{,}85\\cdot10^{26}$ W).</p><ol><li>Finn overflatetemperaturen.</li><li>Finn radien til stjerna.</li><li>Hvor mange ganger større er radien enn solas ($R_{\\text{sol}} = 6{,}96\\cdot10^{8}$ m)?</li></ol>",
-        "losning": "<p><strong>a) Temperaturen.</strong> Vi bruker Wiens forskyvningslov. Først gjør vi om bølgelengden til meter: $828\\,\\text{nm} = 8{,}28\\cdot10^{-7}$ m.</p>$$T = \\frac{2{,}90\\cdot10^{-3}\\,\\text{m}\\cdot\\text{K}}{\\lambda_{\\text{maks}}} = \\frac{2{,}90\\cdot10^{-3}}{8{,}28\\cdot10^{-7}}\\,\\text{K} = 3{,}50\\cdot10^{3}\\,\\text{K}$$<p>Overflaten er altså rundt 3500 K, mye kaldere enn solas 5800 K. Derfor ser stjerna rød ut.</p><p><strong>b) Radien.</strong> Luminositeten er $L = 1000 \\cdot 3{,}85\\cdot10^{26}\\,\\text{W} = 3{,}85\\cdot10^{29}$ W. Vi løser Stefan-Boltzmanns lov for radien:</p>$$L = \\sigma \\cdot 4\\pi R^{2} \\cdot T^{4} \\quad \\Rightarrow \\quad R = \\sqrt{\\frac{L}{4\\pi\\sigma T^{4}}}$$<p>Nevneren tar vi i to steg. Først fjerdepotensen av temperaturen:</p>$$T^{4} = \\left(3{,}50\\cdot10^{3}\\right)^{4} = 1{,}50\\cdot10^{14}\\,\\text{K}^4$$$$4\\pi\\sigma T^{4} = 4\\pi \\cdot 5{,}67\\cdot10^{-8} \\cdot 1{,}50\\cdot10^{14} = 1{,}07\\cdot10^{8}\\,\\frac{\\text{W}}{\\text{m}^2}$$<p>Så setter vi inn:</p>$$R = \\sqrt{\\frac{3{,}85\\cdot10^{29}}{1{,}07\\cdot10^{8}}}\\,\\text{m} = \\sqrt{3{,}60\\cdot10^{21}}\\,\\text{m} = 6{,}0\\cdot10^{10}\\,\\text{m}$$<p><strong>c) Sammenlignet med sola.</strong></p>$$\\frac{R}{R_{\\text{sol}}} = \\frac{6{,}0\\cdot10^{10}\\,\\text{m}}{6{,}96\\cdot10^{8}\\,\\text{m}} = 86$$<p>Radien er 86 ganger solas. Det er $\\frac{6{,}0\\cdot10^{10}}{1{,}50\\cdot10^{11}} = 0{,}40$ AU: sto stjerna der sola står, ville overflaten strukket seg ut til omtrent Merkurs bane.</p><p>Legg merke til logikken i svaret. Hver kvadratmeter av den kalde overflaten stråler ut $\\sigma T^{4} = 8{,}5\\cdot10^{6}$ W/m², mens sola stråler $6{,}4\\cdot10^{7}$ W/m² — altså 7,5 ganger mer per kvadratmeter. Men arealet er $86^{2} \\approx 7400$ ganger større, og $\\frac{7400}{7{,}5} \\approx 1000$. Det er slik en kald stjerne likevel kan bli 1000 ganger så lyssterk som sola.</p>"
+        "losning": "<p><strong>a) Temperaturen.</strong> Vi bruker Wiens forskyvningslov. Først gjør vi om bølgelengden til meter: $828\\,\\text{nm} = 8{,}28\\cdot10^{-7}$ m.</p>$$T = \\frac{2{,}90\\cdot10^{-3}\\,\\text{m}\\cdot\\text{K}}{\\lambda_{\\text{maks}}} = \\frac{2{,}90\\cdot10^{-3}}{8{,}28\\cdot10^{-7}}\\,\\text{K} = 3{,}50\\cdot10^{3}\\,\\text{K}$$<p>Overflaten er altså rundt 3500 K, mye kaldere enn solas 5800 K. Derfor ser stjerna rød ut.</p><p><strong>b) Radien.</strong> Luminositeten er $L = 1000 \\cdot 3{,}85\\cdot10^{26}\\,\\text{W} = 3{,}85\\cdot10^{29}$ W. Vi løser Stefan-Boltzmanns lov for radien:</p>$$L = \\sigma \\cdot 4\\pi R^{2} \\cdot T^{4} \\quad \\Rightarrow \\quad R = \\sqrt{\\frac{L}{4\\pi\\sigma T^{4}}}$$<p>Nevneren tar vi i to steg. Først fjerdepotensen av temperaturen:</p>$$T^{4} = \\left(3{,}50\\cdot10^{3}\\right)^{4} = 1{,}50\\cdot10^{14}\\,\\text{K}^4$$$$4\\pi\\sigma T^{4} = 4\\pi \\cdot 5{,}67\\cdot10^{-8} \\cdot 1{,}50\\cdot10^{14} = 1{,}07\\cdot10^{8}\\,\\frac{\\text{W}}{\\text{m}^2}$$<p>Så setter vi inn:</p>$$R = \\sqrt{\\frac{3{,}85\\cdot10^{29}}{1{,}07\\cdot10^{8}}}\\,\\text{m} = \\sqrt{3{,}60\\cdot10^{21}}\\,\\text{m} = 6{,}0\\cdot10^{10}\\,\\text{m}$$<p><strong>c) Sammenlignet med sola.</strong></p>$$\\frac{R}{R_{\\text{sol}}} = \\frac{6{,}0\\cdot10^{10}\\,\\text{m}}{6{,}96\\cdot10^{8}\\,\\text{m}} = 86$$<p>Radien er 86 ganger solas. Det er $\\frac{6{,}0\\cdot10^{10}}{1{,}50\\cdot10^{11}} = 0{,}40$ AU: sto stjerna der sola står, ville overflaten strukket seg ut til omtrent Merkurs bane.</p><p>Legg merke til logikken i svaret. Hver kvadratmeter av den kalde overflaten stråler ut $\\sigma T^{4} = 8{,}5\\cdot10^{6}$ W/m², mens sola stråler $6{,}4\\cdot10^{7}$ W/m² — altså 7,5 ganger mer per kvadratmeter. Men arealet er $86^{2} \\approx 7400$ ganger større, og $\\frac{7400}{7{,}5} \\approx 1000$. Det er slik en kald stjerne likevel kan bli 1000 ganger så lyssterk som sola.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Sola mot den røde kjempen i oppgaven",
+          "forklaring": "Følg de tre nederste radene: hver kvadratmeter av den kalde kjempen stråler 7,5 ganger svakere enn solas overflate, men arealet er 7400 ganger større. 7400 delt på 7,5 er nettopp de 1000 gangene i luminositet.",
+          "kolonner": [
+            "Sola",
+            "Den røde kjempen"
+          ],
+          "rader": [
+            {
+              "egenskap": "Bølgelengde ved maksimum",
+              "venstre": "500 nm, gult synlig lys",
+              "hoyre": "828 nm, infrarødt"
+            },
+            {
+              "egenskap": "Overflatetemperatur fra Wien",
+              "venstre": "5800 K",
+              "hoyre": "3500 K, altså kaldere overflate"
+            },
+            {
+              "egenskap": "Radius",
+              "venstre": "6,96·10⁸ m",
+              "hoyre": "6,0·10¹⁰ m, 86 ganger solas radius"
+            },
+            {
+              "egenskap": "Utstrålt effekt per m² (σT⁴)",
+              "venstre": "6,4·10⁷ W/m²",
+              "hoyre": "8,5·10⁶ W/m², 7,5 ganger mindre"
+            },
+            {
+              "egenskap": "Overflateareal 4πR²",
+              "venstre": "6,1·10¹⁸ m²",
+              "hoyre": "4,5·10²² m², 7400 ganger større"
+            },
+            {
+              "egenskap": "Luminositet",
+              "venstre": "3,85·10²⁶ W",
+              "hoyre": "3,85·10²⁹ W, 1000 ganger solas"
+            }
+          ]
+        }
       },
       {
         "tittel": "Rødforskyvning, Hubbles lov og universets alder",

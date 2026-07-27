@@ -76,7 +76,7 @@
     ],
     "figur": {
       "type": "vektor",
-      "tittel": "Skalarprodukt og determinant",
+      "tittel": "Vinkel og areal fra to vektorer",
       "forklaring": "Begge vektorene er tegnet ut fra samme punkt — det er alltid slik vinkelen mellom dem måles. Skalarproduktet 3·1 + 1·3 = 6, og siden |a|·|b| = 10 blir cos α = 6/10, altså α ≈ 53,1°, mens determinanten 3·3 − 1·1 = 8 er arealet av det skraverte parallellogrammet.",
       "xmin": -2.3,
       "xmax": 6.3,
@@ -126,7 +126,43 @@
     "seksjoner": [
       {
         "tittel": "Hva er en vektor?",
-        "html": "<p>Noen størrelser er ferdig beskrevet med et tall og en enhet: massen 70 kg, temperaturen 18 °C, tiden 12 s. Slike størrelser kaller vi <strong>skalarer</strong>. Andre størrelser trenger mer informasjon. Skal du beskrive en forflytning, en fart eller en kraft, må du også si <em>hvilken vei</em> den går. Da bruker vi en <strong>vektor</strong>.</p><p>En vektor tegnes som en pil. Lengden av pila viser hvor stor vektoren er, og retningen viser hvilken vei den peker. Det avgjørende — og det som overrasker mange — er at pila ikke er bundet til et sted: to piler som er like lange og peker samme vei, er <strong>samme vektor</strong>, selv om de er tegnet i ulike deler av planet. Derfor kan du alltid flytte en vektor parallelt med seg selv, og det er nettopp dette som gjør regning med vektorer så praktisk.</p><p>Vi skriver vektorer med pil over: $\\vec a$, $\\vec u$. Går vektoren fra punktet $A$ til punktet $B$, skriver vi $\\overrightarrow{AB}$. Lengden skrives med absoluttverditegn, $|\\vec a|$, og er alltid et tall større enn eller lik null.</p><p>To spesielle vektorer bør du kjenne. Den <strong>motsatte vektoren</strong> $-\\vec a$ har samme lengde som $\\vec a$, men peker stikk motsatt vei, så $\\overrightarrow{BA} = -\\overrightarrow{AB}$. <strong>Nullvektoren</strong> $\\vec 0$ har lengde null og ingen bestemt retning. Den dukker opp når du legger sammen vektorer som til sammen tar deg tilbake dit du startet.</p>"
+        "html": "<p>Noen størrelser er ferdig beskrevet med et tall og en enhet: massen 70 kg, temperaturen 18 °C, tiden 12 s. Slike størrelser kaller vi <strong>skalarer</strong>. Andre størrelser trenger mer informasjon. Skal du beskrive en forflytning, en fart eller en kraft, må du også si <em>hvilken vei</em> den går. Da bruker vi en <strong>vektor</strong>.</p><p>En vektor tegnes som en pil. Lengden av pila viser hvor stor vektoren er, og retningen viser hvilken vei den peker. Det avgjørende — og det som overrasker mange — er at pila ikke er bundet til et sted: to piler som er like lange og peker samme vei, er <strong>samme vektor</strong>, selv om de er tegnet i ulike deler av planet. Derfor kan du alltid flytte en vektor parallelt med seg selv, og det er nettopp dette som gjør regning med vektorer så praktisk.</p><p>Vi skriver vektorer med pil over: $\\vec a$, $\\vec u$. Går vektoren fra punktet $A$ til punktet $B$, skriver vi $\\overrightarrow{AB}$. Lengden skrives med absoluttverditegn, $|\\vec a|$, og er alltid et tall større enn eller lik null.</p><p>To spesielle vektorer bør du kjenne. Den <strong>motsatte vektoren</strong> $-\\vec a$ har samme lengde som $\\vec a$, men peker stikk motsatt vei, så $\\overrightarrow{BA} = -\\overrightarrow{AB}$. <strong>Nullvektoren</strong> $\\vec 0$ har lengde null og ingen bestemt retning. Den dukker opp når du legger sammen vektorer som til sammen tar deg tilbake dit du startet.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Skalar og vektor",
+          "forklaring": "Sammenlikn radene «Når er to like?» og «Regning»: en vektor er den samme selv om pila flyttes, og derfor kan du legge vektorer sammen ved å sette dem etter hverandre — men du kan aldri dele på en.",
+          "kolonner": [
+            "Skalar",
+            "Vektor"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hva som trengs",
+              "venstre": "bare en størrelse: et tall med enhet",
+              "hoyre": "både størrelse og retning"
+            },
+            {
+              "egenskap": "Eksempler",
+              "venstre": "masse 70 kg, tid 12 s, temperatur 18 °C",
+              "hoyre": "forflytning, fart og kraft"
+            },
+            {
+              "egenskap": "Tegnes som",
+              "venstre": "et punkt på en tallinje",
+              "hoyre": "en pil: lengden viser størrelsen, spissen retningen"
+            },
+            {
+              "egenskap": "Når er to like?",
+              "venstre": "når tallene er like",
+              "hoyre": "når lengden og retningen er lik — pila kan stå hvor som helst i planet"
+            },
+            {
+              "egenskap": "Regning",
+              "venstre": "som med vanlige tall, divisjon inkludert",
+              "hoyre": "komponentvis, men du kan aldri dividere med en vektor"
+            }
+          ]
+        }
       },
       {
         "tittel": "Regning med vektorer",
@@ -270,7 +306,43 @@
       },
       {
         "tittel": "Determinanter og areal",
-        "html": "<p>Determinanten til to vektorer $\\vec a = [a_1, a_2]$ og $\\vec b = [b_1, b_2]$ er tallet</p>$$\\det(\\vec a, \\vec b) = \\begin{vmatrix} a_1 & b_1 \\\\ a_2 & b_2 \\end{vmatrix} = a_1b_2 - a_2b_1$$<p>Du setter vektorene opp som søyler og ganger kryssvis: produktet langs hoveddiagonalen minus produktet langs den andre diagonalen.</p><p>Determinanten har en flott geometrisk tolkning. Tegner du $\\vec a$ og $\\vec b$ ut fra samme punkt, utspenner de et parallellogram, og arealet er</p>$$A_{\\square} = \\left|\\det(\\vec a, \\vec b)\\right|$$<p>Diagonalen deler parallellogrammet i to like store trekanter, så trekanten som $\\vec a$ og $\\vec b$ utspenner, har halvparten så stort areal:</p>$$A_{\\triangle} = \\frac{1}{2}\\left|\\det(\\vec a, \\vec b)\\right|$$<p>Absoluttverdien er nødvendig, for determinanten kan godt bli negativ. Fortegnet forteller bare om $\\vec b$ ligger til venstre eller til høyre for $\\vec a$, altså om orienteringen. Et areal er aldri negativt.</p><p>Blir determinanten null, er parallellogrammet klemt helt flatt, og da er vektorene parallelle. Dermed har du to tester i én formel. Den samme regningen avgjør om tre punkter ligger på én rett linje: regn ut $\\det(\\overrightarrow{AB}, \\overrightarrow{AC})$, og er svaret null, ligger $A$, $B$ og $C$ på samme linje.</p><p>Skal du finne arealet av en firkant $ABCD$, deler du den i trekantene $ABC$ og $ACD$ og legger sammen de to arealene.</p>"
+        "html": "<p>Determinanten til to vektorer $\\vec a = [a_1, a_2]$ og $\\vec b = [b_1, b_2]$ er tallet</p>$$\\det(\\vec a, \\vec b) = \\begin{vmatrix} a_1 & b_1 \\\\ a_2 & b_2 \\end{vmatrix} = a_1b_2 - a_2b_1$$<p>Du setter vektorene opp som søyler og ganger kryssvis: produktet langs hoveddiagonalen minus produktet langs den andre diagonalen.</p><p>Determinanten har en flott geometrisk tolkning. Tegner du $\\vec a$ og $\\vec b$ ut fra samme punkt, utspenner de et parallellogram, og arealet er</p>$$A_{\\square} = \\left|\\det(\\vec a, \\vec b)\\right|$$<p>Diagonalen deler parallellogrammet i to like store trekanter, så trekanten som $\\vec a$ og $\\vec b$ utspenner, har halvparten så stort areal:</p>$$A_{\\triangle} = \\frac{1}{2}\\left|\\det(\\vec a, \\vec b)\\right|$$<p>Absoluttverdien er nødvendig, for determinanten kan godt bli negativ. Fortegnet forteller bare om $\\vec b$ ligger til venstre eller til høyre for $\\vec a$, altså om orienteringen. Et areal er aldri negativt.</p><p>Blir determinanten null, er parallellogrammet klemt helt flatt, og da er vektorene parallelle. Dermed har du to tester i én formel. Den samme regningen avgjør om tre punkter ligger på én rett linje: regn ut $\\det(\\overrightarrow{AB}, \\overrightarrow{AC})$, og er svaret null, ligger $A$, $B$ og $C$ på samme linje.</p><p>Skal du finne arealet av en firkant $ABCD$, deler du den i trekantene $ABC$ og $ACD$ og legger sammen de to arealene.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Skalarprodukt og determinant",
+          "forklaring": "Se på raden «Null betyr»: null i venstre kolonne gir rett vinkel, null i høyre gir parallelle vektorer. Legg også merke til regnestykkene — pluss hører til skalarproduktet, minus til determinanten.",
+          "kolonner": [
+            "Skalarprodukt",
+            "Determinant"
+          ],
+          "rader": [
+            {
+              "egenskap": "Regnestykke",
+              "venstre": "a₁b₁ + a₂b₂ — komponent mot samme komponent",
+              "hoyre": "a₁b₂ − a₂b₁ — kryssvis, med minus mellom"
+            },
+            {
+              "egenskap": "Geometrisk",
+              "venstre": "er lik |a|·|b|·cos α, så den kjenner vinkelen",
+              "hoyre": "|det| er arealet av parallellogrammet a og b utspenner"
+            },
+            {
+              "egenskap": "Null betyr",
+              "venstre": "vektorene er ortogonale, α = 90°",
+              "hoyre": "vektorene er parallelle, og arealet er 0"
+            },
+            {
+              "egenskap": "Fortegnet sier",
+              "venstre": "positivt: spiss vinkel, negativt: butt vinkel",
+              "hoyre": "bare om b ligger til venstre eller høyre for a"
+            },
+            {
+              "egenskap": "Bruk den til",
+              "venstre": "vinkler, ortogonalitet og lengde, siden a·a = |a|²",
+              "hoyre": "areal, parallellitet og tre punkter på samme linje"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [
@@ -282,7 +354,35 @@
       {
         "tittel": "Vinkelen mellom to vektorer",
         "oppgave": "<p>Vektorene $\\vec u = [-2, 3]$ og $\\vec v = [4, 1]$ er gitt. Finn vinkelen $\\alpha$ mellom $\\vec u$ og $\\vec v$. Oppgi svaret i grader med én desimal.</p>",
-        "losning": "<p><strong>Steg 1 — skalarproduktet.</strong></p>$$\\vec u\\cdot\\vec v = (-2)\\cdot 4 + 3\\cdot 1 = -8 + 3 = -5$$<p>Skalarproduktet er negativt. Da vet vi allerede før vi regner videre at vinkelen må bli større enn $90^\\circ$. Det er en gratis kontroll på slutten.</p><p><strong>Steg 2 — lengdene.</strong></p>$$|\\vec u| = \\sqrt{(-2)^2 + 3^2} = \\sqrt{4 + 9} = \\sqrt{13}$$$$|\\vec v| = \\sqrt{4^2 + 1^2} = \\sqrt{16 + 1} = \\sqrt{17}$$<p><strong>Steg 3 — sett inn i vinkelformelen.</strong> Vi beholder røttene eksakt så lenge vi kan:</p>$$\\cos\\alpha = \\frac{\\vec u\\cdot\\vec v}{|\\vec u|\\,|\\vec v|} = \\frac{-5}{\\sqrt{13}\\cdot\\sqrt{17}} = \\frac{-5}{\\sqrt{221}}$$<p>Nå regner vi ut desimaltallet. Siden $\\sqrt{221} \\approx 14{,}866$, får vi</p>$$\\cos\\alpha \\approx \\frac{-5}{14{,}866} \\approx -0{,}3363$$<p><strong>Steg 4 — finn vinkelen.</strong> Bruk $\\cos^{-1}$ med kalkulatoren i gradmodus:</p>$$\\alpha = \\cos^{-1}(-0{,}3363) \\approx 109{,}7^\\circ$$<p><strong>Kontroll.</strong> Vinkelen er butt, akkurat som det negative skalarproduktet varslet i steg 1. Hadde du fått $70{,}3^\\circ$, ville du sannsynligvis mistet minustegnet underveis, for $70{,}3^\\circ + 109{,}7^\\circ = 180^\\circ$.</p>"
+        "losning": "<p><strong>Steg 1 — skalarproduktet.</strong></p>$$\\vec u\\cdot\\vec v = (-2)\\cdot 4 + 3\\cdot 1 = -8 + 3 = -5$$<p>Skalarproduktet er negativt. Da vet vi allerede før vi regner videre at vinkelen må bli større enn $90^\\circ$. Det er en gratis kontroll på slutten.</p><p><strong>Steg 2 — lengdene.</strong></p>$$|\\vec u| = \\sqrt{(-2)^2 + 3^2} = \\sqrt{4 + 9} = \\sqrt{13}$$$$|\\vec v| = \\sqrt{4^2 + 1^2} = \\sqrt{16 + 1} = \\sqrt{17}$$<p><strong>Steg 3 — sett inn i vinkelformelen.</strong> Vi beholder røttene eksakt så lenge vi kan:</p>$$\\cos\\alpha = \\frac{\\vec u\\cdot\\vec v}{|\\vec u|\\,|\\vec v|} = \\frac{-5}{\\sqrt{13}\\cdot\\sqrt{17}} = \\frac{-5}{\\sqrt{221}}$$<p>Nå regner vi ut desimaltallet. Siden $\\sqrt{221} \\approx 14{,}866$, får vi</p>$$\\cos\\alpha \\approx \\frac{-5}{14{,}866} \\approx -0{,}3363$$<p><strong>Steg 4 — finn vinkelen.</strong> Bruk $\\cos^{-1}$ med kalkulatoren i gradmodus:</p>$$\\alpha = \\cos^{-1}(-0{,}3363) \\approx 109{,}7^\\circ$$<p><strong>Kontroll.</strong> Vinkelen er butt, akkurat som det negative skalarproduktet varslet i steg 1. Hadde du fått $70{,}3^\\circ$, ville du sannsynligvis mistet minustegnet underveis, for $70{,}3^\\circ + 109{,}7^\\circ = 180^\\circ$.</p>",
+        "figur": {
+          "type": "flyt",
+          "tittel": "Slik finner du vinkelen mellom to vektorer",
+          "forklaring": "Rekkefølgen er poenget: skalarproduktet i steg 1 gir både telleren i brøken og fortegnet du kontrollerer svaret mot i steg 5.",
+          "retning": "ned",
+          "steg": [
+            {
+              "tekst": "Regn ut a·b = a₁b₁ + a₂b₂",
+              "note": "fortegnet varsler vinkeltypen"
+            },
+            {
+              "tekst": "Finn |a| og |b| med Pytagoras",
+              "note": "behold kvadratrøttene eksakt"
+            },
+            {
+              "tekst": "cos α = (a·b) / (|a| · |b|)",
+              "note": "sett inn de tre tallene"
+            },
+            {
+              "tekst": "Bruk cos⁻¹ med kalkulator i gradmodus",
+              "note": "α ligger mellom 0° og 180°"
+            },
+            {
+              "tekst": "Sjekk at vinkeltypen passer fortegnet",
+              "note": "negativt tall gir butt vinkel"
+            }
+          ]
+        }
       },
       {
         "tittel": "Ortogonale og parallelle vektorer med en ukjent",

@@ -151,7 +151,43 @@
       },
       {
         "tittel": "Newtons tre lover",
-        "html": "<p><strong>Newtons 1. lov (treghetsloven).</strong> Er kraftsummen på et legeme null, holder legemet farten sin: det står i ro, eller det beveger seg rettlinjet med konstant fart. Motsatt: ser du at et legeme beveger seg rettlinjet med konstant fart, vet du at kraftsummen er null. Dette er det vanskeligste å godta, for hverdagen lurer oss — en ball som ruller, stopper. Men det er fordi friksjon og luftmotstand virker på den, ikke fordi bevegelse «trenger» en kraft.</p><p><strong>Newtons 2. lov.</strong> Er kraftsummen ikke null, får legemet en akselerasjon:</p>$$\\sum \\vec{F} = m\\vec{a}$$<p>Akselerasjonen peker samme vei som kraftsummen, og for samme kraft blir den mindre når massen øker. Merk at loven kobler kraft til <em>akselerasjon</em>, ikke til fart. Et legeme kan ha stor fart og null akselerasjon, eller fart null og stor akselerasjon — som en ball i det øyeblikket den snur på toppen av kastet.</p><p><strong>Newtons 3. lov.</strong> Virker legeme A med en kraft på legeme B, virker B med en like stor og motsatt rettet kraft på A:</p>$$\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}$$<p>Det avgjørende er at de to kreftene virker på <strong>ulike</strong> legemer. Derfor opphever de aldri hverandre for ett av legemene, og derfor skal de aldri inn i samme frilegemediagram. Når du hopper, skyver du jorda nedover og jorda skyver deg oppover med like stor kraft — men jorda har så enorm masse at akselerasjonen blir umerkelig.</p>"
+        "html": "<p><strong>Newtons 1. lov (treghetsloven).</strong> Er kraftsummen på et legeme null, holder legemet farten sin: det står i ro, eller det beveger seg rettlinjet med konstant fart. Motsatt: ser du at et legeme beveger seg rettlinjet med konstant fart, vet du at kraftsummen er null. Dette er det vanskeligste å godta, for hverdagen lurer oss — en ball som ruller, stopper. Men det er fordi friksjon og luftmotstand virker på den, ikke fordi bevegelse «trenger» en kraft.</p><p><strong>Newtons 2. lov.</strong> Er kraftsummen ikke null, får legemet en akselerasjon:</p>$$\\sum \\vec{F} = m\\vec{a}$$<p>Akselerasjonen peker samme vei som kraftsummen, og for samme kraft blir den mindre når massen øker. Merk at loven kobler kraft til <em>akselerasjon</em>, ikke til fart. Et legeme kan ha stor fart og null akselerasjon, eller fart null og stor akselerasjon — som en ball i det øyeblikket den snur på toppen av kastet.</p><p><strong>Newtons 3. lov.</strong> Virker legeme A med en kraft på legeme B, virker B med en like stor og motsatt rettet kraft på A:</p>$$\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}$$<p>Det avgjørende er at de to kreftene virker på <strong>ulike</strong> legemer. Derfor opphever de aldri hverandre for ett av legemene, og derfor skal de aldri inn i samme frilegemediagram. Når du hopper, skyver du jorda nedover og jorda skyver deg oppover med like stor kraft — men jorda har så enorm masse at akselerasjonen blir umerkelig.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Kraft/motkraft-par eller krefter i likevekt?",
+          "forklaring": "Begge tilfellene gir to like store og motsatt rettede krefter — se derfor på hvor mange legemer kreftene virker på. Bare kreftene i høyre kolonne kan stå i samme frilegemediagram og oppheve hverandre.",
+          "kolonner": [
+            "Kraft og motkraft (3. lov)",
+            "Krefter i likevekt (1. lov)"
+          ],
+          "rader": [
+            {
+              "egenskap": "Virker på",
+              "venstre": "to ulike legemer, én kraft på hvert av dem",
+              "hoyre": "ett og samme legeme"
+            },
+            {
+              "egenskap": "Avsendere",
+              "venstre": "A virker på B, og B virker tilbake på A",
+              "hoyre": "to ulike omgivelser, for eksempel jorda og bordet"
+            },
+            {
+              "egenskap": "Alltid like store?",
+              "venstre": "Ja, uansett fart, akselerasjon og masse",
+              "hoyre": "Nei, bare når akselerasjonen er null"
+            },
+            {
+              "egenskap": "Samme frilegemediagram?",
+              "venstre": "Nei, bare den ene av dem virker på legemet du ser på",
+              "hoyre": "Ja, alle kreftene på legemet skal inn"
+            },
+            {
+              "egenskap": "Bok i ro på et bord",
+              "venstre": "jorda drar boka ned, boka drar jorda opp",
+              "hoyre": "tyngden ned og normalkraften opp, begge på boka"
+            }
+          ]
+        }
       },
       {
         "tittel": "Frilegemediagram — start alltid her",
@@ -187,7 +223,48 @@
       },
       {
         "tittel": "Tyngde, normalkraft og snordrag",
-        "html": "<p>Tyngden $G$ er kraften jorda drar på legemet med:</p>$$G = mg, \\qquad g = 9{,}81\\,\\text{m/s}^2$$<p>Tyngden peker alltid rett ned, uansett hvordan legemet ligger eller beveger seg. Masse og tyngde er ikke det samme: massen din er 60 kg både på jorda og på månen, mens tyngden er $60 \\cdot 9{,}81 = 589$ N på jorda og bare rundt 97 N på månen, der $g \\approx 1{,}62\\,\\text{m/s}^2$.</p><p>Normalkraften $N$ er kraften fra et underlag, og den står alltid vinkelrett — «normalt» — på flaten. På et vannrett gulv der ingen andre loddrette krefter virker, gir Newtons 2. lov $N - G = 0$, altså $N = mg$. Men dette er et <em>resultat</em>, ikke en definisjon. Drar du en kasse skrått oppover, hjelper snorkraften til å bære, og normalkraften blir mindre. Trykker du skrått nedover, blir den større. På et skråplan er den $mg\\cos\\alpha$. Regn derfor alltid ut $N$ på nytt fra likevekten i normalretningen.</p><p><strong>Snordrag</strong> $S$ er kraften i et tau. En snor kan bare dra, aldri skyve, og kraften virker langs snora. I en snor vi regner som masseløs, er snordraget like stort overalt, og en friksjonsfri trinse endrer bare retningen på kraften, ikke størrelsen.</p><p>Til slutt en viktig presisering: tyngde og normalkraft er <strong>ikke</strong> et kraft/motkraft-par etter Newtons 3. lov, selv om de ofte er like store. De virker nemlig på samme legeme. Motkraften til normalkraften er kraften legemet trykker på underlaget med.</p>"
+        "html": "<p>Tyngden $G$ er kraften jorda drar på legemet med:</p>$$G = mg, \\qquad g = 9{,}81\\,\\text{m/s}^2$$<p>Tyngden peker alltid rett ned, uansett hvordan legemet ligger eller beveger seg. Masse og tyngde er ikke det samme: massen din er 60 kg både på jorda og på månen, mens tyngden er $60 \\cdot 9{,}81 = 589$ N på jorda og bare rundt 97 N på månen, der $g \\approx 1{,}62\\,\\text{m/s}^2$.</p><p>Normalkraften $N$ er kraften fra et underlag, og den står alltid vinkelrett — «normalt» — på flaten. På et vannrett gulv der ingen andre loddrette krefter virker, gir Newtons 2. lov $N - G = 0$, altså $N = mg$. Men dette er et <em>resultat</em>, ikke en definisjon. Drar du en kasse skrått oppover, hjelper snorkraften til å bære, og normalkraften blir mindre. Trykker du skrått nedover, blir den større. På et skråplan er den $mg\\cos\\alpha$. Regn derfor alltid ut $N$ på nytt fra likevekten i normalretningen.</p><p><strong>Snordrag</strong> $S$ er kraften i et tau. En snor kan bare dra, aldri skyve, og kraften virker langs snora. I en snor vi regner som masseløs, er snordraget like stort overalt, og en friksjonsfri trinse endrer bare retningen på kraften, ikke størrelsen.</p><p>Til slutt en viktig presisering: tyngde og normalkraft er <strong>ikke</strong> et kraft/motkraft-par etter Newtons 3. lov, selv om de ofte er like store. De virker nemlig på samme legeme. Motkraften til normalkraften er kraften legemet trykker på underlaget med.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Masse og tyngde",
+          "forklaring": "Sammenlign de to nederste radene: massen er den samme overalt, mens tyngden følger tyngdeakselerasjonen på stedet. Derfor må du gange med g før du kan sette massen inn i et kraftregnestykke.",
+          "kolonner": [
+            "Masse m",
+            "Tyngde G"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hva det er",
+              "venstre": "mål på stoffmengde, og dermed på tregheten",
+              "hoyre": "kraften jorda drar legemet med"
+            },
+            {
+              "egenskap": "Type størrelse",
+              "venstre": "skalar, bare et tall",
+              "hoyre": "vektor, peker alltid rett ned"
+            },
+            {
+              "egenskap": "Enhet",
+              "venstre": "kilogram (kg)",
+              "hoyre": "newton (N)"
+            },
+            {
+              "egenskap": "Sammenheng",
+              "venstre": "m = G/g",
+              "hoyre": "G = mg, med g = 9,81 m/s² på jorda"
+            },
+            {
+              "egenskap": "En person på jorda",
+              "venstre": "60 kg",
+              "hoyre": "60 · 9,81 = 589 N"
+            },
+            {
+              "egenskap": "Samme person på månen",
+              "venstre": "60 kg, helt uendret",
+              "hoyre": "60 · 1,62 = 97 N"
+            }
+          ]
+        }
       },
       {
         "tittel": "Friksjon",
@@ -256,7 +333,7 @@
         "html": "<p>Skråplanet er den klassiske oppgavetypen, og trikset er å velge koordinatsystemet smart: legg x-aksen <em>langs</em> planet og y-aksen normalt på planet. Da har både normalkraften og friksjonen retning langs en akse, og bare tyngden må dekomponeres.</p><p>Med helningsvinkel $\\alpha$ blir tyngdens komponenter</p>$$G_x = mg\\sin\\alpha \\quad \\text{(langs planet, nedover)}$$$$G_y = mg\\cos\\alpha \\quad \\text{(inn i planet)}$$<p>Vinkelen mellom tyngden og normalen på planet er nemlig like stor som helningsvinkelen. Kontroller med grensetilfellene: er $\\alpha = 0$, blir $G_x = 0$ og $G_y = mg$, som stemmer for et vannrett gulv. Nærmer $\\alpha$ seg $90^\\circ$, blir $G_x \\to mg$ og $G_y \\to 0$, altså fritt fall.</p><p>Normalt på planet er akselerasjonen null, så</p>$$N = mg\\cos\\alpha$$<p>For et legeme som glir nedover, gir Newtons 2. lov langs planet</p>$$mg\\sin\\alpha - \\mu N = ma$$<p>Setter vi inn $N = mg\\cos\\alpha$ og deler på $m$:</p>$$a = g\\left(\\sin\\alpha - \\mu\\cos\\alpha\\right)$$<p>Massen faller ut. Uten friksjon blir det enda enklere: $a = g\\sin\\alpha$. To klosser med helt ulik masse glir altså nedover med samme akselerasjon.</p><p>Skal du finne når et legeme <em>begynner</em> å gli, setter du kraftsummen langs planet lik null i grenseøyeblikket: $mg\\sin\\alpha = \\mu_s mg\\cos\\alpha$, som gir</p>$$\\tan\\alpha = \\mu_s$$<p>Grensevinkelen avhenger bare av friksjonstallet, ikke av massen. Det gir en enkel måling: vipp planet til klossen glir, og les av vinkelen.</p>",
         "figur": {
           "type": "vektor",
-          "tittel": "Kreftene på en kloss på skråplan (α = 30°)",
+          "tittel": "Kreftene på en kloss på skråplan (30°)",
           "forklaring": "Tyngden er diagonalen i rektangelet: Gx = mg·sin α langs planet og Gy = mg·cos α inn i planet, og vinkelen α mellom G og Gy er den samme som helningsvinkelen. N er like lang som Gy og opphever den, mens R er kortere enn Gx — det som blir igjen langs planet, gir akselerasjonen nedover.",
           "xmin": -2.57,
           "xmax": 2.57,
@@ -358,7 +435,27 @@
       {
         "tittel": "Badevekt i en heis",
         "oppgave": "<p>En person med masse $m = 70$ kg står på en badevekt inne i en heis. Vekta måler i praksis normalkraften den skyver personen opp med, og viser tallet omregnet til kilogram ved å dele på $g$.</p><ul><li>a) Hva viser vekta når heisen akselererer oppover med $1{,}5\\,\\text{m/s}^2$?</li><li>b) Hva viser den når heisen går oppover med konstant fart?</li><li>c) Hva viser den når heisen bremser med $1{,}5\\,\\text{m/s}^2$ på vei oppover?</li></ul>",
-        "losning": "<p><strong>Frilegemediagram for personen.</strong> Bare to krefter virker: tyngden $G = mg$ nedover og normalkraften $N$ fra vekta oppover. Luftmotstand og lignende ser vi bort fra. Vi velger oppover som positiv retning, og Newtons 2. lov blir</p>$$N - mg = ma \\quad \\Rightarrow \\quad N = m(g + a)$$<p><strong>a) Akselerasjon oppover</strong> betyr $a = +1{,}5\\,\\text{m/s}^2$:</p>$$N = 70\\,\\text{kg}\\left(9{,}81 + 1{,}5\\right)\\text{m/s}^2 = 70 \\cdot 11{,}31 = 791{,}7\\,\\text{N}$$<p>Vekta deler på $g$ og viser</p>$$\\frac{791{,}7\\,\\text{N}}{9{,}81\\,\\text{m/s}^2} = 80{,}7\\,\\text{kg}$$<p><strong>b) Konstant fart</strong> betyr $a = 0$, og da er kraftsummen null:</p>$$N = mg = 70 \\cdot 9{,}81 = 686{,}7\\,\\text{N} \\quad \\Rightarrow \\quad 70{,}0\\,\\text{kg}$$<p>Vekta viser altså akkurat det samme som når heisen står stille. Det er Newtons 1. lov i praksis: farten betyr ingenting, bare akselerasjonen.</p><p><strong>c) Nedbremsing på vei oppover</strong> betyr at akselerasjonen peker nedover, altså $a = -1{,}5\\,\\text{m/s}^2$:</p>$$N = 70\\,\\text{kg}\\left(9{,}81 - 1{,}5\\right)\\text{m/s}^2 = 70 \\cdot 8{,}31 = 581{,}7\\,\\text{N}$$$$\\frac{581{,}7\\,\\text{N}}{9{,}81\\,\\text{m/s}^2} = 59{,}3\\,\\text{kg}$$<p>Du kjenner deg lettere — men tyngden din har ikke endret seg. Den er $686{,}7$ N i alle tre tilfellene. Det er <strong>normalkraften</strong> som varierer. Etter Newtons 3. lov trykker du samtidig på vekta med like stor kraft som den trykker på deg.</p>"
+        "losning": "<p><strong>Frilegemediagram for personen.</strong> Bare to krefter virker: tyngden $G = mg$ nedover og normalkraften $N$ fra vekta oppover. Luftmotstand og lignende ser vi bort fra. Vi velger oppover som positiv retning, og Newtons 2. lov blir</p>$$N - mg = ma \\quad \\Rightarrow \\quad N = m(g + a)$$<p><strong>a) Akselerasjon oppover</strong> betyr $a = +1{,}5\\,\\text{m/s}^2$:</p>$$N = 70\\,\\text{kg}\\left(9{,}81 + 1{,}5\\right)\\text{m/s}^2 = 70 \\cdot 11{,}31 = 791{,}7\\,\\text{N}$$<p>Vekta deler på $g$ og viser</p>$$\\frac{791{,}7\\,\\text{N}}{9{,}81\\,\\text{m/s}^2} = 80{,}7\\,\\text{kg}$$<p><strong>b) Konstant fart</strong> betyr $a = 0$, og da er kraftsummen null:</p>$$N = mg = 70 \\cdot 9{,}81 = 686{,}7\\,\\text{N} \\quad \\Rightarrow \\quad 70{,}0\\,\\text{kg}$$<p>Vekta viser altså akkurat det samme som når heisen står stille. Det er Newtons 1. lov i praksis: farten betyr ingenting, bare akselerasjonen.</p><p><strong>c) Nedbremsing på vei oppover</strong> betyr at akselerasjonen peker nedover, altså $a = -1{,}5\\,\\text{m/s}^2$:</p>$$N = 70\\,\\text{kg}\\left(9{,}81 - 1{,}5\\right)\\text{m/s}^2 = 70 \\cdot 8{,}31 = 581{,}7\\,\\text{N}$$$$\\frac{581{,}7\\,\\text{N}}{9{,}81\\,\\text{m/s}^2} = 59{,}3\\,\\text{kg}$$<p>Du kjenner deg lettere — men tyngden din har ikke endret seg. Den er $686{,}7$ N i alle tre tilfellene. Det er <strong>normalkraften</strong> som varierer. Etter Newtons 3. lov trykker du samtidig på vekta med like stor kraft som den trykker på deg.</p>",
+        "figur": {
+          "type": "stolper",
+          "tittel": "Hva badevekta viser i heisen",
+          "enhet": "vist masse (kg)",
+          "forklaring": "Tyngden er 687 N i alle tre tilfellene — det er normalkraften fra vekta som endrer seg, og den følger fortegnet til akselerasjonen. Søylen for konstant fart er like høy som i ro, for da er kraftsummen null.",
+          "data": [
+            {
+              "navn": "Bremser oppover",
+              "verdi": 59.3
+            },
+            {
+              "navn": "Konstant fart",
+              "verdi": 70.0
+            },
+            {
+              "navn": "Akselererer opp",
+              "verdi": 80.7
+            }
+          ]
+        }
       },
       {
         "tittel": "To legemer koblet med snor over en trinse",

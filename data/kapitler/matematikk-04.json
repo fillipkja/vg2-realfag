@@ -181,7 +181,48 @@
       },
       {
         "tittel": "Topp-, bunn- og terrassepunkter",
-        "html": "<p>Et punkt der $f'(x) = 0$ kalles et <strong>stasjonært punkt</strong>, og tangenten er vannrett der. Men vannrett tangent betyr ikke automatisk topp eller bunn. Det finnes tre typer, og fortegnslinja til $f'$ skiller mellom dem:</p><table><thead><tr><th>Type</th><th>Fortegn til $f'$ (før, i, etter)</th></tr></thead><tbody><tr><td>Toppunkt</td><td>$+$, $0$, $-$</td></tr><tr><td>Bunnpunkt</td><td>$-$, $0$, $+$</td></tr><tr><td>Terrassepunkt</td><td>$+$, $0$, $+$ eller $-$, $0$, $-$</td></tr></tbody></table><p>Språkbruken gir ofte tapte poeng. Har $f$ toppunkt for $x = -1$ med $f(-1) = 10$, sier vi at $x = -1$ er <strong>maksimalpunktet</strong>, at $10$ er <strong>maksimalverdien</strong>, og at $(-1, 10)$ er <strong>toppunktet</strong> på grafen. Spør oppgaven om verdien, svarer du $10$. Spør den om punktet, gir du begge koordinatene.</p><p>Et <strong>terrassepunkt</strong> får du når $f'$ har et dobbelt nullpunkt, typisk $f'(x) = 3(x-2)^2$. Grafen flater ut et øyeblikk og fortsetter i samme retning som før.</p><p>Til slutt en viktig presisering: ekstremalpunkter trenger ikke å være stasjonære. På et lukket intervall kan den største verdien ligge i et endepunkt, og en funksjon med knekkpunkt, som $f(x) = |x|$, har bunnpunkt i $x=0$ der den ikke er deriverbar. $f'(x) = 0$ er altså en god ledetråd, men ingen garanti.</p>"
+        "html": "<p>Et punkt der $f'(x) = 0$ kalles et <strong>stasjonært punkt</strong>, og tangenten er vannrett der. Men vannrett tangent betyr ikke automatisk topp eller bunn. Det finnes tre typer, og fortegnslinja til $f'$ skiller mellom dem:</p><table><thead><tr><th>Type</th><th>Fortegn til $f'$ (før, i, etter)</th></tr></thead><tbody><tr><td>Toppunkt</td><td>$+$, $0$, $-$</td></tr><tr><td>Bunnpunkt</td><td>$-$, $0$, $+$</td></tr><tr><td>Terrassepunkt</td><td>$+$, $0$, $+$ eller $-$, $0$, $-$</td></tr></tbody></table><p>Språkbruken gir ofte tapte poeng. Har $f$ toppunkt for $x = -1$ med $f(-1) = 10$, sier vi at $x = -1$ er <strong>maksimalpunktet</strong>, at $10$ er <strong>maksimalverdien</strong>, og at $(-1, 10)$ er <strong>toppunktet</strong> på grafen. Spør oppgaven om verdien, svarer du $10$. Spør den om punktet, gir du begge koordinatene.</p><p>Et <strong>terrassepunkt</strong> får du når $f'$ har et dobbelt nullpunkt, typisk $f'(x) = 3(x-2)^2$. Grafen flater ut et øyeblikk og fortsetter i samme retning som før.</p><p>Til slutt en viktig presisering: ekstremalpunkter trenger ikke å være stasjonære. På et lukket intervall kan den største verdien ligge i et endepunkt, og en funksjon med knekkpunkt, som $f(x) = |x|$, har bunnpunkt i $x=0$ der den ikke er deriverbar. $f'(x) = 0$ er altså en god ledetråd, men ingen garanti.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Toppunkt eller bunnpunkt i x = a?",
+          "forklaring": "I begge tilfellene er f'(a) = 0, så det er fortegnene rundt punktet som skiller dem — les kolonnene loddrett og se at alle radene peker samme vei. Har f' samme fortegn på begge sider, passer ingen av kolonnene, og punktet er et terrassepunkt.",
+          "kolonner": [
+            "Toppunkt",
+            "Bunnpunkt"
+          ],
+          "rader": [
+            {
+              "egenskap": "f' rett før a",
+              "venstre": "positiv, så f vokser opp mot punktet",
+              "hoyre": "negativ, så f avtar ned mot punktet"
+            },
+            {
+              "egenskap": "f' rett etter a",
+              "venstre": "negativ, så f avtar videre",
+              "hoyre": "positiv, så f vokser videre"
+            },
+            {
+              "egenskap": "Fortegnslinja for f'",
+              "venstre": "heltrukken strek, ring, stiplet strek",
+              "hoyre": "stiplet strek, ring, heltrukken strek"
+            },
+            {
+              "egenskap": "Andrederiverttesten",
+              "venstre": "f''(a) < 0, grafen krummer nedover",
+              "hoyre": "f''(a) > 0, grafen krummer oppover"
+            },
+            {
+              "egenskap": "Formen på grafen",
+              "venstre": "en bakketopp: f(a) er størst i nærheten",
+              "hoyre": "en dal: f(a) er minst i nærheten"
+            },
+            {
+              "egenskap": "Eksempel",
+              "venstre": "f(x) = 4 − x² har toppunkt (0, 4)",
+              "hoyre": "f(x) = x² − 4 har bunnpunkt (0, −4)"
+            }
+          ]
+        }
       },
       {
         "tittel": "Den andrederiverte, krumning og vendepunkter",
@@ -190,10 +231,10 @@
           "type": "graf",
           "tittel": "x³ og x⁴: f''(0) = 0 i begge tilfeller",
           "forklaring": "Følg krumningen fra venstre: x⁴ er hul opp på begge sider av null, så (0, 0) er et bunnpunkt der. x³ er hul ned til venstre og hul opp til høyre, så der skifter krumningen — og bare da har du et vendepunkt.",
-          "xmin": -1.25,
-          "xmax": 1.25,
-          "ymin": -2.2,
-          "ymax": 2.6,
+          "xmin": -1.5,
+          "xmax": 1.5,
+          "ymin": -3.5,
+          "ymax": 5.5,
           "kurver": [
             {
               "uttrykk": "x^3",
@@ -217,7 +258,39 @@
       },
       {
         "tittel": "Funksjonsdrøfting steg for steg",
-        "html": "<p>Å <strong>drøfte</strong> en funksjon vil si å finne alle egenskapene du trenger for å kunne skissere grafen uten å regne ut punkt etter punkt. Bruk samme rekkefølge hver gang:</p><ol><li><strong>Definisjonsmengde.</strong> Nevner kan ikke være null, uttrykk under kvadratrot må være $\\ge 0$, og argumentet i $\\ln$ må være positivt.</li><li><strong>Skjæring med aksene.</strong> $f(0)$ gir skjæringen med $y$-aksen, og $f(x) = 0$ gir nullpunktene.</li><li><strong>Monotoni og ekstremalpunkter.</strong> Regn ut $f'$, faktoriser, lag fortegnslinje, klassifiser de stasjonære punktene og regn ut $f$-verdiene deres.</li><li><strong>Krumning og vendepunkter.</strong> Regn ut $f''$, lag fortegnslinje, finn koordinatene.</li><li><strong>Oppførsel i randen.</strong> Grenseverdier når $x$ går mot uendelig og mot eventuelle bruddpunkter, altså asymptotene fra kapittel 2.</li><li><strong>Skisse.</strong> Merk av punktene du har regnet ut, og trekk kurven gjennom dem med riktig krumning.</li></ol><p>Denne tabellen oppsummerer hva hver av de tre gir deg:</p><table><thead><tr><th>Størrelse</th><th>Forteller</th></tr></thead><tbody><tr><td>$f(a)$</td><td>hvor høyt grafen ligger i $x=a$</td></tr><tr><td>$f'(a)$</td><td>hvor bratt, og om den stiger eller synker</td></tr><tr><td>$f''(a)$</td><td>hvilken vei grafen krummer</td></tr></tbody></table><p>Et godt kontrolltriks: opplysningene skal henge sammen. Har du funnet toppunkt i $x = -1$, må $f'$ være positiv til venstre, negativ til høyre, og $f''(-1)$ kan ikke være positiv. Stemmer det ikke, ligger det en regnefeil et sted.</p>"
+        "html": "<p>Å <strong>drøfte</strong> en funksjon vil si å finne alle egenskapene du trenger for å kunne skissere grafen uten å regne ut punkt etter punkt. Bruk samme rekkefølge hver gang:</p><ol><li><strong>Definisjonsmengde.</strong> Nevner kan ikke være null, uttrykk under kvadratrot må være $\\ge 0$, og argumentet i $\\ln$ må være positivt.</li><li><strong>Skjæring med aksene.</strong> $f(0)$ gir skjæringen med $y$-aksen, og $f(x) = 0$ gir nullpunktene.</li><li><strong>Monotoni og ekstremalpunkter.</strong> Regn ut $f'$, faktoriser, lag fortegnslinje, klassifiser de stasjonære punktene og regn ut $f$-verdiene deres.</li><li><strong>Krumning og vendepunkter.</strong> Regn ut $f''$, lag fortegnslinje, finn koordinatene.</li><li><strong>Oppførsel i randen.</strong> Grenseverdier når $x$ går mot uendelig og mot eventuelle bruddpunkter, altså asymptotene fra kapittel 2.</li><li><strong>Skisse.</strong> Merk av punktene du har regnet ut, og trekk kurven gjennom dem med riktig krumning.</li></ol><p>Denne tabellen oppsummerer hva hver av de tre gir deg:</p><table><thead><tr><th>Størrelse</th><th>Forteller</th></tr></thead><tbody><tr><td>$f(a)$</td><td>hvor høyt grafen ligger i $x=a$</td></tr><tr><td>$f'(a)$</td><td>hvor bratt, og om den stiger eller synker</td></tr><tr><td>$f''(a)$</td><td>hvilken vei grafen krummer</td></tr></tbody></table><p>Et godt kontrolltriks: opplysningene skal henge sammen. Har du funnet toppunkt i $x = -1$, må $f'$ være positiv til venstre, negativ til høyre, og $f''(-1)$ kan ikke være positiv. Stemmer det ikke, ligger det en regnefeil et sted.</p>",
+        "figur": {
+          "type": "flyt",
+          "tittel": "Rekkefølgen i en funksjonsdrøfting",
+          "forklaring": "Stegene er de samme som i lista over, og hvert steg bruker svaret fra det forrige. Steg 3 gir topp- og bunnpunktene, steg 4 vendepunktene, og først når alle punktene er regnet ut, tegner du skissen.",
+          "retning": "ned",
+          "steg": [
+            {
+              "tekst": "Finn definisjonsmengden Df",
+              "note": "nevner ≠ 0, rot ≥ 0, ln av positivt"
+            },
+            {
+              "tekst": "Finn skjæring med aksene",
+              "note": "f(0) og løsningene av f(x) = 0"
+            },
+            {
+              "tekst": "Monotoni og ekstremalpunkter",
+              "note": "faktoriser f', lag fortegnslinje"
+            },
+            {
+              "tekst": "Krumning og vendepunkter",
+              "note": "f''(x) = 0 og fortegnsskifte"
+            },
+            {
+              "tekst": "Oppførsel i randen",
+              "note": "grenseverdier og asymptoter"
+            },
+            {
+              "tekst": "Skisser grafen",
+              "note": "merk av punktene, riktig krumning"
+            }
+          ]
+        }
       },
       {
         "tittel": "Største og minste verdi på et intervall",
@@ -275,7 +348,43 @@
       },
       {
         "tittel": "Optimering av praktiske problemer",
-        "html": "<p>Optimering er derivasjon brukt på virkeligheten: størst mulig volum, minst mulig materialbruk, størst mulig overskudd. Oppskriften er alltid den samme:</p><ol><li>Lag en skisse, og gi navn til størrelsene.</li><li>Skriv opp et uttrykk for det som skal bli størst eller minst. Dette kalles <strong>målfunksjonen</strong>.</li><li>Har du to ukjente, bruker du <strong>bibetingelsen</strong> — den faste opplysningen i oppgaven — til å uttrykke den ene ved den andre, slik at målfunksjonen bare har én variabel.</li><li>Finn definisjonsmengden ut fra situasjonen. Lengder, tider og antall må være positive.</li><li>Deriver, løs likningen $f'(x) = 0$, og forkast løsninger som ligger utenfor definisjonsmengden.</li><li>Begrunn at du har funnet et maksimum eller minimum, med fortegnslinje eller $f''$.</li><li>Svar på det som faktisk ble spurt om, med enhet.</li></ol><p>Steg 3 er der de fleste stopper. Trikset er å lete etter setningen som gir en fast sammenheng: «omkretsen er 40 cm» betyr $2x + 2y = 40$, altså $y = 20 - x$, og «volumet er 1 liter» betyr $\\pi r^2 h = 1000$, altså $h = \\frac{1000}{\\pi r^2}$.</p><p>Steg 6 og 7 er der poengene forsvinner. At den deriverte er null viser bare at <em>noe</em> skjer i punktet — du må vise hva. Og «$x = 5$» er ikke et svar på spørsmålet «hvor stort blir volumet?».</p>"
+        "html": "<p>Optimering er derivasjon brukt på virkeligheten: størst mulig volum, minst mulig materialbruk, størst mulig overskudd. Oppskriften er alltid den samme:</p><ol><li>Lag en skisse, og gi navn til størrelsene.</li><li>Skriv opp et uttrykk for det som skal bli størst eller minst. Dette kalles <strong>målfunksjonen</strong>.</li><li>Har du to ukjente, bruker du <strong>bibetingelsen</strong> — den faste opplysningen i oppgaven — til å uttrykke den ene ved den andre, slik at målfunksjonen bare har én variabel.</li><li>Finn definisjonsmengden ut fra situasjonen. Lengder, tider og antall må være positive.</li><li>Deriver, løs likningen $f'(x) = 0$, og forkast løsninger som ligger utenfor definisjonsmengden.</li><li>Begrunn at du har funnet et maksimum eller minimum, med fortegnslinje eller $f''$.</li><li>Svar på det som faktisk ble spurt om, med enhet.</li></ol><p>Steg 3 er der de fleste stopper. Trikset er å lete etter setningen som gir en fast sammenheng: «omkretsen er 40 cm» betyr $2x + 2y = 40$, altså $y = 20 - x$, og «volumet er 1 liter» betyr $\\pi r^2 h = 1000$, altså $h = \\frac{1000}{\\pi r^2}$.</p><p>Steg 6 og 7 er der poengene forsvinner. At den deriverte er null viser bare at <em>noe</em> skjer i punktet — du må vise hva. Og «$x = 5$» er ikke et svar på spørsmålet «hvor stort blir volumet?».</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Målfunksjon og bibetingelse",
+          "forklaring": "Se på eksempelraden: bibetingelsen gjør to ukjente om til én, slik at A = x·y blir A(x) = x(20 − x) — og først da kan du derivere. Det er nettopp dette byttet steg 3 i oppskriften handler om.",
+          "kolonner": [
+            "Målfunksjon",
+            "Bibetingelse"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hva den er",
+              "venstre": "uttrykket for det som skal bli størst eller minst",
+              "hoyre": "den faste opplysningen som knytter de ukjente sammen"
+            },
+            {
+              "egenskap": "Form",
+              "venstre": "en funksjon du kan derivere, som A(x) eller V(x)",
+              "hoyre": "en likning mellom to ukjente"
+            },
+            {
+              "egenskap": "Gjerde på 40 m",
+              "venstre": "arealet A = x·y skal bli størst mulig",
+              "hoyre": "omkretsen 2x + 2y = 40 gir y = 20 − x"
+            },
+            {
+              "egenskap": "Slik bruker du den",
+              "venstre": "deriver, løs f'(x) = 0, og begrunn maks eller min",
+              "hoyre": "sett den inn i målfunksjonen, så bare x står igjen"
+            },
+            {
+              "egenskap": "Glemmer du den",
+              "venstre": "du optimerer feil størrelse",
+              "hoyre": "to ukjente står igjen, og ingenting kan deriveres"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [

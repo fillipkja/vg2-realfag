@@ -129,7 +129,43 @@
     "seksjoner": [
       {
         "tittel": "Fra gjennomsnittlig til momentan vekstfart",
-        "html": "<p>Tenk deg at du sykler, og at $s(t)$ er strekningen du har kjørt etter $t$ sekunder. Kjører du 100 meter på 20 sekunder, er <strong>gjennomsnittsfarten</strong> $\\frac{100}{20} = 5$ m/s. Men i det ene sekundet du kjørte nedoverbakke, gikk det mye fortere. Gjennomsnittsfarten sier ingenting om farten i ett bestemt øyeblikk.</p><p>Geometrisk er gjennomsnittlig vekstfart mellom $x=a$ og $x=b$ stigningstallet til <strong>sekanten</strong> gjennom de to punktene på grafen:</p>$$\\frac{f(b)-f(a)}{b-a}$$<p>Skriver vi $b = a + \\Delta x$, blir det samme uttrykket $\\frac{f(a+\\Delta x)-f(a)}{\\Delta x}$. Denne brøken kalles <strong>Newton-kvotienten</strong>.</p><p>Ideen bak derivasjon er å la $\\Delta x$ bli mindre og mindre. Da glir det andre punktet innover mot $(a, f(a))$, og sekanten nærmer seg <strong>tangenten</strong> i punktet. Grenseverdien til Newton-kvotienten er nettopp stigningstallet til tangenten, og den kaller vi den deriverte:</p>$$f'(a) = \\lim_{\\Delta x \\to 0} \\frac{f(a+\\Delta x)-f(a)}{\\Delta x}$$<p>Legg merke til hvorfor vi trenger en grenseverdi: setter du rett og slett $\\Delta x = 0$, får du $\\frac{0}{0}$, som ikke betyr noe. Grenseverdien beskriver hva brøken nærmer seg, ikke hva den er i null.</p>"
+        "html": "<p>Tenk deg at du sykler, og at $s(t)$ er strekningen du har kjørt etter $t$ sekunder. Kjører du 100 meter på 20 sekunder, er <strong>gjennomsnittsfarten</strong> $\\frac{100}{20} = 5$ m/s. Men i det ene sekundet du kjørte nedoverbakke, gikk det mye fortere. Gjennomsnittsfarten sier ingenting om farten i ett bestemt øyeblikk.</p><p>Geometrisk er gjennomsnittlig vekstfart mellom $x=a$ og $x=b$ stigningstallet til <strong>sekanten</strong> gjennom de to punktene på grafen:</p>$$\\frac{f(b)-f(a)}{b-a}$$<p>Skriver vi $b = a + \\Delta x$, blir det samme uttrykket $\\frac{f(a+\\Delta x)-f(a)}{\\Delta x}$. Denne brøken kalles <strong>Newton-kvotienten</strong>.</p><p>Ideen bak derivasjon er å la $\\Delta x$ bli mindre og mindre. Da glir det andre punktet innover mot $(a, f(a))$, og sekanten nærmer seg <strong>tangenten</strong> i punktet. Grenseverdien til Newton-kvotienten er nettopp stigningstallet til tangenten, og den kaller vi den deriverte:</p>$$f'(a) = \\lim_{\\Delta x \\to 0} \\frac{f(a+\\Delta x)-f(a)}{\\Delta x}$$<p>Legg merke til hvorfor vi trenger en grenseverdi: setter du rett og slett $\\Delta x = 0$, får du $\\frac{0}{0}$, som ikke betyr noe. Grenseverdien beskriver hva brøken nærmer seg, ikke hva den er i null.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Gjennomsnittlig og momentan vekstfart",
+          "forklaring": "Legg merke til at begge kolonnene bruker den samme brøken. Det er bare grenseovergangen Δx → 0 som skiller dem, og den flytter oss fra et helt intervall til ett enkelt punkt.",
+          "kolonner": [
+            "Gjennomsnittlig vekstfart",
+            "Momentan vekstfart"
+          ],
+          "rader": [
+            {
+              "egenskap": "Linje på grafen",
+              "venstre": "sekanten gjennom (a, f(a)) og (b, f(b))",
+              "hoyre": "tangenten som berører grafen i (a, f(a))"
+            },
+            {
+              "egenskap": "Regnes ut som",
+              "venstre": "(f(b) − f(a)) / (b − a), altså Δy/Δx",
+              "hoyre": "grenseverdien av den samme brøken når Δx → 0"
+            },
+            {
+              "egenskap": "Gjelder for",
+              "venstre": "et helt intervall fra a til b",
+              "hoyre": "ett enkelt punkt x = a"
+            },
+            {
+              "egenskap": "På sykkelturen",
+              "venstre": "5 m/s i snitt over hele turen",
+              "hoyre": "farten speedometeret viser i ett øyeblikk"
+            },
+            {
+              "egenskap": "Skrivemåte",
+              "venstre": "Δy/Δx, vekstfarten i [a, b]",
+              "hoyre": "f′(a), den deriverte i punktet"
+            }
+          ]
+        }
       },
       {
         "tittel": "Å derivere fra definisjonen",
@@ -189,7 +225,43 @@
       },
       {
         "tittel": "Eksponential- og logaritmefunksjoner",
-        "html": "<p>Tallet $e \\approx 2{,}718$ er definert nettopp slik at $e^x$ er sin egen deriverte:</p>$$\\left(e^x\\right)' = e^x$$<p>Det gjør $e^x$ til en helt spesiell funksjon: stigningstallet i et punkt er akkurat like stort som funksjonsverdien der. For andre grunntall må du gange med en logaritme: $\\left(a^x\\right)' = a^x \\ln a$. Sjekk gjerne at dette stemmer med $a=e$: siden $\\ln e = 1$, får vi $e^x$ tilbake.</p><p>Den naturlige logaritmen deriveres slik:</p>$$\\left(\\ln x\\right)' = \\frac{1}{x}, \\qquad x > 0$$<p>Kombinert med kjerneregelen gir dette et mønster du bør kjenne igjen: $\\left(\\ln u\\right)' = \\frac{u'}{u}$. Den deriverte av kjernen havner i telleren, kjernen selv i nevneren.</p><p>Disse to funksjonene dukker opp overalt i modellering — befolkningsvekst, radioaktiv nedbryting, avkjøling og renters rente — så reglene her er blant dem du må kunne uten å tenke.</p>"
+        "html": "<p>Tallet $e \\approx 2{,}718$ er definert nettopp slik at $e^x$ er sin egen deriverte:</p>$$\\left(e^x\\right)' = e^x$$<p>Det gjør $e^x$ til en helt spesiell funksjon: stigningstallet i et punkt er akkurat like stort som funksjonsverdien der. For andre grunntall må du gange med en logaritme: $\\left(a^x\\right)' = a^x \\ln a$. Sjekk gjerne at dette stemmer med $a=e$: siden $\\ln e = 1$, får vi $e^x$ tilbake.</p><p>Den naturlige logaritmen deriveres slik:</p>$$\\left(\\ln x\\right)' = \\frac{1}{x}, \\qquad x > 0$$<p>Kombinert med kjerneregelen gir dette et mønster du bør kjenne igjen: $\\left(\\ln u\\right)' = \\frac{u'}{u}$. Den deriverte av kjernen havner i telleren, kjernen selv i nevneren.</p><p>Disse to funksjonene dukker opp overalt i modellering — befolkningsvekst, radioaktiv nedbryting, avkjøling og renters rente — så reglene her er blant dem du må kunne uten å tenke.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Å derivere eˣ og ln x",
+          "forklaring": "Se hvor motsatt de to oppfører seg: stigningstallet til eˣ vokser i takt med funksjonsverdien, mens stigningstallet til ln x krymper mot null når x blir stor.",
+          "kolonner": [
+            "f(x) = eˣ",
+            "f(x) = ln x"
+          ],
+          "rader": [
+            {
+              "egenskap": "Den deriverte",
+              "venstre": "eˣ, altså funksjonen selv",
+              "hoyre": "1/x, gyldig for x > 0"
+            },
+            {
+              "egenskap": "Stigningstall i x = 1",
+              "venstre": "f′(1) = e ≈ 2,72",
+              "hoyre": "f′(1) = 1"
+            },
+            {
+              "egenskap": "Stigningstall i x = 4",
+              "venstre": "f′(4) = e⁴ ≈ 54,6, altså mye brattere",
+              "hoyre": "f′(4) = 1/4 = 0,25, altså slakere"
+            },
+            {
+              "egenskap": "Med en kjerne u",
+              "venstre": "e opphøyd i u ganges med u′",
+              "hoyre": "1/u ganges med u′, altså u′/u"
+            },
+            {
+              "egenskap": "Eksempel med kjerne",
+              "venstre": "(e³ˣ)′ = 3e³ˣ",
+              "hoyre": "(ln 5x)′ = 5/(5x) = 1/x"
+            }
+          ]
+        }
       },
       {
         "tittel": "Tangenter og normaler",
@@ -216,8 +288,8 @@
                 -1.2
               ],
               "til": [
-                3.6,
-                5.2
+                3.2,
+                4.4
               ],
               "navn": "tangent",
               "farge": 2
@@ -254,7 +326,30 @@
       {
         "tittel": "Produktregelen kombinert med kjerneregelen",
         "oppgave": "<p>Deriver $f(x) = x^2 e^{3x}$.</p>",
-        "losning": "<p>Her er to funksjoner multiplisert sammen, så vi bruker produktregelen med</p>$$u = x^2 \\quad \\text{og} \\quad v = e^{3x}$$<p>Vi deriverer hver for seg. Den første er rett fram:</p>$$u' = 2x$$<p>Den andre krever kjerneregelen. Kjernen er $3x$, som har derivert $3$:</p>$$v' = e^{3x} \\cdot 3 = 3e^{3x}$$<p>Setter vi inn i $(uv)' = u'v + uv'$:</p>$$f'(x) = 2x \\cdot e^{3x} + x^2 \\cdot 3e^{3x}$$<p>Til slutt setter vi den felles faktoren $x e^{3x}$ utenfor. Det er nesten alltid lurt — et faktorisert svar er lettere å bruke videre når du skal finne nullpunkter til $f'$:</p>$$f'(x) = x e^{3x}\\left(2 + 3x\\right)$$"
+        "losning": "<p>Her er to funksjoner multiplisert sammen, så vi bruker produktregelen med</p>$$u = x^2 \\quad \\text{og} \\quad v = e^{3x}$$<p>Vi deriverer hver for seg. Den første er rett fram:</p>$$u' = 2x$$<p>Den andre krever kjerneregelen. Kjernen er $3x$, som har derivert $3$:</p>$$v' = e^{3x} \\cdot 3 = 3e^{3x}$$<p>Setter vi inn i $(uv)' = u'v + uv'$:</p>$$f'(x) = 2x \\cdot e^{3x} + x^2 \\cdot 3e^{3x}$$<p>Til slutt setter vi den felles faktoren $x e^{3x}$ utenfor. Det er nesten alltid lurt — et faktorisert svar er lettere å bruke videre når du skal finne nullpunkter til $f'$:</p>$$f'(x) = x e^{3x}\\left(2 + 3x\\right)$$",
+        "figur": {
+          "type": "hierarki",
+          "tittel": "Lagene i x² · e³ˣ",
+          "forklaring": "Les nedover: hvert lag ligger inni det over. Det ytterste laget er et produkt, så du starter med produktregelen — og siden faktoren v selv er sammensatt, må kjerneregelen brukes inne i den, der kjernen 3x har derivert 3.",
+          "nivaaer": [
+            {
+              "navn": "Hele uttrykket",
+              "eksempel": "produkt: x² · e³ˣ"
+            },
+            {
+              "navn": "Faktorene",
+              "eksempel": "u = x², v = e³ˣ"
+            },
+            {
+              "navn": "Faktoren v",
+              "eksempel": "sammensatt funksjon"
+            },
+            {
+              "navn": "Kjernen i v",
+              "eksempel": "3x"
+            }
+          ]
+        }
       },
       {
         "tittel": "Tangent til en logaritmefunksjon",
@@ -280,12 +375,12 @@
           "linjer": [
             {
               "fra": [
-                -1,
-                0.4
+                -0.4,
+                0.686
               ],
               "til": [
-                5,
-                3.4
+                3.5,
+                2.636
               ],
               "navn": "tangent",
               "farge": 2

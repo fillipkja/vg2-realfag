@@ -132,7 +132,36 @@
       },
       {
         "tittel": "Likevektskonstanten",
-        "html": "<p>Hvor langt mot høyre en likevekt ligger, beskriver vi med <strong>likevektskonstanten</strong> $K$. For en generell reaksjon</p>$$a\\text{A} + b\\text{B} \\rightleftharpoons c\\text{C} + d\\text{D}$$<p>er den definert slik:</p>$$K = \\frac{[\\text{C}]^{c} \\cdot [\\text{D}]^{d}}{[\\text{A}]^{a} \\cdot [\\text{B}]^{b}}$$<p>Dette kalles <strong>massevirkningsloven</strong>. Tre regler må sitte:</p><ul><li><strong>Produktene i telleren</strong>, reaktantene i nevneren.</li><li>Koeffisientene fra den balanserte likningen blir <strong>eksponenter</strong>, ikke faktorer.</li><li>Tallene du setter inn, er likevektskonsentrasjoner i mol/L.</li></ul><p>Formelt deles hver konsentrasjon på standardkonsentrasjonen 1 mol/L. Derfor er $K$ et tall uten enhet — men verdiene du setter inn, må likevel være i mol/L.</p><p>I en <strong>heterogen likevekt</strong> er stoffene i ulike faser. Da tar vi ikke med faste stoffer eller rene væsker, og heller ikke vann når vannet er løsemiddel, fordi «konsentrasjonen» deres ikke endrer seg merkbart når reaksjonen går. For kalk blir uttrykket derfor bare</p>$$\\ce{CaCO3(s) <=> CaO(s) + CO2(g)} \\qquad K = [\\ce{CO2}]$$<p>Størrelsen på $K$ forteller hvor likevekten ligger. Er $K \\gg 1$, er det nesten bare produkter igjen. Er $K \\ll 1$, har det knapt skjedd noe. Er $K$ i nærheten av 1, finnes det mye av alle stoffene.</p><p>To omskrivinger er greie å kunne: snur du likningen, blir den nye konstanten $\\frac{1}{K}$, og ganger du hele likningen med $n$, blir den $K^n$. Og aller viktigst: <strong>$K$ endrer verdi bare når temperaturen endres.</strong></p>"
+        "html": "<p>Hvor langt mot høyre en likevekt ligger, beskriver vi med <strong>likevektskonstanten</strong> $K$. For en generell reaksjon</p>$$a\\text{A} + b\\text{B} \\rightleftharpoons c\\text{C} + d\\text{D}$$<p>er den definert slik:</p>$$K = \\frac{[\\text{C}]^{c} \\cdot [\\text{D}]^{d}}{[\\text{A}]^{a} \\cdot [\\text{B}]^{b}}$$<p>Dette kalles <strong>massevirkningsloven</strong>. Tre regler må sitte:</p><ul><li><strong>Produktene i telleren</strong>, reaktantene i nevneren.</li><li>Koeffisientene fra den balanserte likningen blir <strong>eksponenter</strong>, ikke faktorer.</li><li>Tallene du setter inn, er likevektskonsentrasjoner i mol/L.</li></ul><p>Formelt deles hver konsentrasjon på standardkonsentrasjonen 1 mol/L. Derfor er $K$ et tall uten enhet — men verdiene du setter inn, må likevel være i mol/L.</p><p>I en <strong>heterogen likevekt</strong> er stoffene i ulike faser. Da tar vi ikke med faste stoffer eller rene væsker, og heller ikke vann når vannet er løsemiddel, fordi «konsentrasjonen» deres ikke endrer seg merkbart når reaksjonen går. For kalk blir uttrykket derfor bare</p>$$\\ce{CaCO3(s) <=> CaO(s) + CO2(g)} \\qquad K = [\\ce{CO2}]$$<p>Størrelsen på $K$ forteller hvor likevekten ligger. Er $K \\gg 1$, er det nesten bare produkter igjen. Er $K \\ll 1$, har det knapt skjedd noe. Er $K$ i nærheten av 1, finnes det mye av alle stoffene.</p><p>To omskrivinger er greie å kunne: snur du likningen, blir den nye konstanten $\\frac{1}{K}$, og ganger du hele likningen med $n$, blir den $K^n$. Og aller viktigst: <strong>$K$ endrer verdi bare når temperaturen endres.</strong></p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Hva størrelsen på K forteller",
+          "forklaring": "Aksen viser eksponenten n i K = 10ⁿ, så hvert hakk mot høyre er ti ganger så stor K. Hydrogenjodidlikevekten med K = 50 havner i midtfeltet, der det finnes mye av både reaktanter og produkter, mens løselighetsproduktet til CaF₂ ligger helt ute til venstre — der løser bare 17 mg salt seg per liter. K sier altså hvor blandingen ender, ikke hvor fort den kommer dit.",
+          "enhet": "K = 10ⁿ (n på aksen)",
+          "min": -12,
+          "max": 12,
+          "log": false,
+          "band": [
+            {
+              "fra": -12,
+              "til": -3,
+              "navn": "K ≪ 1: nesten bare reaktanter",
+              "verdi": "Ks(CaF₂) = 4·10⁻¹¹"
+            },
+            {
+              "fra": -3,
+              "til": 3,
+              "navn": "K rundt 1: mye av begge",
+              "verdi": "K(HI) = 50"
+            },
+            {
+              "fra": 3,
+              "til": 12,
+              "navn": "K ≫ 1: nesten bare produkter",
+              "verdi": "går nesten til ende"
+            }
+          ]
+        }
       },
       {
         "tittel": "Reaksjonskvotienten og regning på likevekter",
@@ -211,7 +240,43 @@
       },
       {
         "tittel": "Løselighetslikevekter",
-        "html": "<p>Selv «uløselige» salter løser seg litt. Legger du fast $\\ce{BaSO4}$ i vann, går noen ioner i løsning, samtidig som andre felles ut igjen. Etter en stund er farten like stor begge veier, og du har en <strong>mettet løsning</strong> i likevekt med bunnfallet:</p>$$\\ce{BaSO4(s) <=> Ba^2+(aq) + SO4^2-(aq)}$$<p>Det faste stoffet skal ikke med i uttrykket, så bare ionene står igjen. Denne likevektskonstanten kalles <strong>løselighetsproduktet</strong>. Her skriver vi den $K_s$, men i tabeller finner du den ofte som $K_{sp}$:</p>$$K_s = [\\ce{Ba^2+}] \\cdot [\\ce{SO4^2-}]$$<p><strong>Løseligheten</strong> $s$ er hvor mange mol salt som løser seg per liter. For et salt av typen $\\ce{AB}$ blir $[\\ce{Ba^2+}] = [\\ce{SO4^2-}] = s$, altså $K_s = s^2$ og $s = \\sqrt{K_s}$. Men støkiometrien må følges nøye. For $\\ce{CaF2}$ gir hver formelenhet <em>to</em> fluoridioner, og da må 2-en både stå som faktor og kvadreres:</p>$$K_s = [\\ce{Ca^2+}] \\cdot [\\ce{F-}]^2 = s \\cdot (2s)^2 = 4s^3$$<p>$K_s$ brukes til to ting. Det ene er å regne ut løselighet, som over. Det andre er å avgjøre om et <strong>bunnfall</strong> dannes når du blander to løsninger: regn ut ioneproduktet $Q$ med konsentrasjonene rett etter blanding. Er $Q$ større enn $K_s$, felles det ut bunnfall til $Q = K_s$. Er $Q$ mindre enn $K_s$, blir alt liggende i løsning.</p><p>Til slutt <strong>fellesioneffekten</strong>: tilfører du et av ionene fra en annen kilde, forskyves likevekten mot venstre etter Le Chatelier, og saltet blir mindre løselig. $K_s$ er fortsatt den samme — det er løseligheten som synker.</p>"
+        "html": "<p>Selv «uløselige» salter løser seg litt. Legger du fast $\\ce{BaSO4}$ i vann, går noen ioner i løsning, samtidig som andre felles ut igjen. Etter en stund er farten like stor begge veier, og du har en <strong>mettet løsning</strong> i likevekt med bunnfallet:</p>$$\\ce{BaSO4(s) <=> Ba^2+(aq) + SO4^2-(aq)}$$<p>Det faste stoffet skal ikke med i uttrykket, så bare ionene står igjen. Denne likevektskonstanten kalles <strong>løselighetsproduktet</strong>. Her skriver vi den $K_s$, men i tabeller finner du den ofte som $K_{sp}$:</p>$$K_s = [\\ce{Ba^2+}] \\cdot [\\ce{SO4^2-}]$$<p><strong>Løseligheten</strong> $s$ er hvor mange mol salt som løser seg per liter. For et salt av typen $\\ce{AB}$ blir $[\\ce{Ba^2+}] = [\\ce{SO4^2-}] = s$, altså $K_s = s^2$ og $s = \\sqrt{K_s}$. Men støkiometrien må følges nøye. For $\\ce{CaF2}$ gir hver formelenhet <em>to</em> fluoridioner, og da må 2-en både stå som faktor og kvadreres:</p>$$K_s = [\\ce{Ca^2+}] \\cdot [\\ce{F-}]^2 = s \\cdot (2s)^2 = 4s^3$$<p>$K_s$ brukes til to ting. Det ene er å regne ut løselighet, som over. Det andre er å avgjøre om et <strong>bunnfall</strong> dannes når du blander to løsninger: regn ut ioneproduktet $Q$ med konsentrasjonene rett etter blanding. Er $Q$ større enn $K_s$, felles det ut bunnfall til $Q = K_s$. Er $Q$ mindre enn $K_s$, blir alt liggende i løsning.</p><p>Til slutt <strong>fellesioneffekten</strong>: tilfører du et av ionene fra en annen kilde, forskyves likevekten mot venstre etter Le Chatelier, og saltet blir mindre løselig. $K_s$ er fortsatt den samme — det er løseligheten som synker.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "CaF₂ i rent vann og i 0,10 mol/L NaF",
+          "forklaring": "Følg den nederste raden: Ks er nøyaktig den samme i begge kolonnene. Det er fluoridionene fra NaF som gjør at det trengs mye mindre Ca²⁺ før produktet er lik Ks, og løseligheten faller til om lag 1/55 000 av verdien i rent vann.",
+          "kolonner": [
+            "Rent vann",
+            "0,10 mol/L NaF"
+          ],
+          "rader": [
+            {
+              "egenskap": "Ioner i vannet fra før",
+              "venstre": "ingen — alt kommer fra saltet",
+              "hoyre": "0,10 mol/L F⁻ fra NaF"
+            },
+            {
+              "egenskap": "Ionekonsentrasjoner",
+              "venstre": "[Ca²⁺] = s og [F⁻] = 2s",
+              "hoyre": "[Ca²⁺] = s og [F⁻] ≈ 0,10 mol/L"
+            },
+            {
+              "egenskap": "Uttrykket for Ks",
+              "venstre": "Ks = s · (2s)² = 4s³",
+              "hoyre": "Ks = s · (0,10)²"
+            },
+            {
+              "egenskap": "Løselighet s",
+              "venstre": "2,1 · 10⁻⁴ mol/L, altså 17 mg/L",
+              "hoyre": "3,9 · 10⁻⁹ mol/L"
+            },
+            {
+              "egenskap": "Verdien av Ks (25 °C)",
+              "venstre": "3,9 · 10⁻¹¹",
+              "hoyre": "3,9 · 10⁻¹¹ — helt uendret"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [
@@ -228,7 +293,43 @@
       {
         "tittel": "Reaksjonskvotient og Le Chatelier på ammoniakksyntesen",
         "oppgave": "<p>For reaksjonen</p>$$\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} \\qquad \\Delta H = -92\\,\\text{kJ/mol}$$<p>er likevektskonstanten $K = 0{,}50$ ved temperaturen i beholderen.</p><p><strong>a)</strong> En beholder inneholder $[\\ce{N2}] = 0{,}80$ mol/L, $[\\ce{H2}] = 0{,}40$ mol/L og $[\\ce{NH3}] = 0{,}10$ mol/L. Er blandingen i likevekt? Hvis ikke, hvilken vei går reaksjonen?</p><p><strong>b)</strong> Blandingen får komme til likevekt. Deretter halverer du volumet ved samme temperatur. Vis med en utregning hvilken vei likevekten forskyves.</p><p><strong>c)</strong> Hva skjer med utbyttet av $\\ce{NH3}$ og med $K$ hvis du i stedet øker temperaturen?</p>",
-        "losning": "<p><strong>a)</strong> Vi regner ut reaksjonskvotienten med de konsentrasjonene vi faktisk har. Koeffisientene 2 og 3 blir eksponenter:</p>$$Q = \\frac{[\\ce{NH3}]^2}{[\\ce{N2}] \\cdot [\\ce{H2}]^3} = \\frac{(0{,}10)^2}{0{,}80 \\cdot (0{,}40)^3}$$<p>Teller: $(0{,}10)^2 = 0{,}010$. Nevner: $(0{,}40)^3 = 0{,}064$ og $0{,}80 \\cdot 0{,}064 = 0{,}0512$. Da blir</p>$$Q = \\frac{0{,}010}{0{,}0512} = 0{,}195 \\approx 0{,}20$$<p>$Q = 0{,}20$ er mindre enn $K = 0{,}50$. Blandingen er altså <em>ikke</em> i likevekt, og det er for lite produkt i forhold til likevektsblandingen. Reaksjonen går <strong>mot høyre</strong> og danner mer $\\ce{NH3}$ helt til $Q$ har vokst til $0{,}50$.</p><p><strong>b)</strong> Halveres volumet, dobles alle konsentrasjonene, siden $c = \\frac{n}{V}$. Vi setter inn det dobbelte av hver likevektskonsentrasjon:</p>$$Q_{\\text{ny}} = \\frac{(2[\\ce{NH3}])^2}{(2[\\ce{N2}]) \\cdot (2[\\ce{H2}])^3} = \\frac{4\\,[\\ce{NH3}]^2}{2 \\cdot 8 \\cdot [\\ce{N2}][\\ce{H2}]^3}$$<p>Tallfaktorene gir $\\frac{4}{16} = 0{,}25$, og resten er nettopp $K$:</p>$$Q_{\\text{ny}} = 0{,}25 \\cdot K = 0{,}25 \\cdot 0{,}50 = 0{,}125$$<p>$Q_{\\text{ny}} = 0{,}125$ er mindre enn $K = 0{,}50$, så likevekten forskyves <strong>mot høyre</strong> — det dannes mer ammoniakk.</p><p>Dette stemmer med Le Chatelier: venstre side har $1 + 3 = 4$ mol gass, høyre side har 2 mol. Systemet motvirker trykkøkningen ved å gå mot siden med færrest gassmolekyler. Legg merke til at $K$ fortsatt er $0{,}50$ — det er blandingen som flytter seg, ikke konstanten.</p><p><strong>c)</strong> Reaksjonen er eksoterm, så vi kan skrive varmen som et produkt:</p>$$\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} + 92\\,\\text{kJ}$$<p>Øker du temperaturen, tilfører du «mer produkt», og likevekten forskyves <strong>mot venstre</strong>. Utbyttet av $\\ce{NH3}$ blir dårligere, og $K$ blir mindre enn $0{,}50$. Dette er den eneste av endringene i oppgaven som faktisk forandrer verdien av $K$.</p>"
+        "losning": "<p><strong>a)</strong> Vi regner ut reaksjonskvotienten med de konsentrasjonene vi faktisk har. Koeffisientene 2 og 3 blir eksponenter:</p>$$Q = \\frac{[\\ce{NH3}]^2}{[\\ce{N2}] \\cdot [\\ce{H2}]^3} = \\frac{(0{,}10)^2}{0{,}80 \\cdot (0{,}40)^3}$$<p>Teller: $(0{,}10)^2 = 0{,}010$. Nevner: $(0{,}40)^3 = 0{,}064$ og $0{,}80 \\cdot 0{,}064 = 0{,}0512$. Da blir</p>$$Q = \\frac{0{,}010}{0{,}0512} = 0{,}195 \\approx 0{,}20$$<p>$Q = 0{,}20$ er mindre enn $K = 0{,}50$. Blandingen er altså <em>ikke</em> i likevekt, og det er for lite produkt i forhold til likevektsblandingen. Reaksjonen går <strong>mot høyre</strong> og danner mer $\\ce{NH3}$ helt til $Q$ har vokst til $0{,}50$.</p><p><strong>b)</strong> Halveres volumet, dobles alle konsentrasjonene, siden $c = \\frac{n}{V}$. Vi setter inn det dobbelte av hver likevektskonsentrasjon:</p>$$Q_{\\text{ny}} = \\frac{(2[\\ce{NH3}])^2}{(2[\\ce{N2}]) \\cdot (2[\\ce{H2}])^3} = \\frac{4\\,[\\ce{NH3}]^2}{2 \\cdot 8 \\cdot [\\ce{N2}][\\ce{H2}]^3}$$<p>Tallfaktorene gir $\\frac{4}{16} = 0{,}25$, og resten er nettopp $K$:</p>$$Q_{\\text{ny}} = 0{,}25 \\cdot K = 0{,}25 \\cdot 0{,}50 = 0{,}125$$<p>$Q_{\\text{ny}} = 0{,}125$ er mindre enn $K = 0{,}50$, så likevekten forskyves <strong>mot høyre</strong> — det dannes mer ammoniakk.</p><p>Dette stemmer med Le Chatelier: venstre side har $1 + 3 = 4$ mol gass, høyre side har 2 mol. Systemet motvirker trykkøkningen ved å gå mot siden med færrest gassmolekyler. Legg merke til at $K$ fortsatt er $0{,}50$ — det er blandingen som flytter seg, ikke konstanten.</p><p><strong>c)</strong> Reaksjonen er eksoterm, så vi kan skrive varmen som et produkt:</p>$$\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} + 92\\,\\text{kJ}$$<p>Øker du temperaturen, tilfører du «mer produkt», og likevekten forskyves <strong>mot venstre</strong>. Utbyttet av $\\ce{NH3}$ blir dårligere, og $K$ blir mindre enn $0{,}50$. Dette er den eneste av endringene i oppgaven som faktisk forandrer verdien av $K$.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Temperatur på eksoterm og endoterm likevekt",
+          "forklaring": "Skriv varmen som et ledd i likningen, så blir temperatur et vanlig Le Chatelier-spørsmål. Venstre kolonne er oppgave c): oppvarming tilfører noe som står på produktsiden, så likevekten går tilbake mot N₂ og H₂. Legg merke til at K skifter verdi her, men ikke i a) og b).",
+          "kolonner": [
+            "Eksoterm, ΔH < 0",
+            "Endoterm, ΔH > 0"
+          ],
+          "rader": [
+            {
+              "egenskap": "Varmen som ledd i likningen",
+              "venstre": "på produktsiden: A + B ⇌ C + varme",
+              "hoyre": "på reaktantsiden: A + B + varme ⇌ C"
+            },
+            {
+              "egenskap": "Høyere temperatur",
+              "venstre": "forskyves mot venstre, mindre produkt",
+              "hoyre": "forskyves mot høyre, mer produkt"
+            },
+            {
+              "egenskap": "K når temperaturen øker",
+              "venstre": "K blir mindre",
+              "hoyre": "K blir større"
+            },
+            {
+              "egenskap": "Lavere temperatur",
+              "venstre": "forskyves mot høyre, K blir større",
+              "hoyre": "forskyves mot venstre, K blir mindre"
+            },
+            {
+              "egenskap": "Eksempel",
+              "venstre": "N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ/mol",
+              "hoyre": "CaCO₃ ⇌ CaO + CO₂, ΔH = +178 kJ/mol"
+            }
+          ]
+        }
       },
       {
         "tittel": "Løselighetsprodukt og fellesioneffekt",

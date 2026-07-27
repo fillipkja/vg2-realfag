@@ -114,7 +114,44 @@
     "seksjoner": [
       {
         "tittel": "Matematiske modeller og regresjon",
-        "html": "<p>En <strong>matematisk modell</strong> er en funksjon vi bruker til å beskrive noe i virkeligheten: antall bakterier i en kultur, prisen på en vare, høyden til en ball. Modellen er alltid en forenkling. Den treffer godt i det området vi har data fra, og den kan bli helt meningsløs utenfor. Derfor hører to ting alltid sammen med en modell: et <strong>definisjonsområde</strong> og en vurdering av hvor godt den passer.</p><p><strong>Regresjon</strong> er metoden for å finne modellen. Du har et sett målepunkter, du velger hvilken <em>type</em> funksjon du tror passer, og så finner verktøyet de koeffisientene som gir minst mulig samlet avvik fra punktene. I GeoGebra legger du punktene i en liste og bruker kommandoer som <strong>RegLin</strong> (lineær), <strong>RegPoly</strong> (polynom av valgt grad), <strong>RegEksp</strong> (eksponentiell), <strong>RegPot</strong> (potensfunksjon) eller <strong>RegLogist</strong> (logistisk).</p><p>Hvordan velger du type? Se på tallene før du trykker på noe:</p><ul><li>Konstant <em>differanse</em> når $x$ øker med 1 — lineær modell.</li><li>Konstant <em>forholdstall</em> når $x$ øker med 1 — eksponentiell modell.</li><li>Verdiene stiger, snur og synker igjen — polynom av andre eller tredje grad.</li><li>Rask vekst først, så tydelig utflating mot et tak — logistisk modell.</li></ul><p>Til slutt en språkbruk du må kunne: å regne <strong>innenfor</strong> dataområdet kalles interpolasjon og er rimelig trygt. Å regne <strong>utenfor</strong> kalles ekstrapolasjon, og der må du alltid skrive en setning om at svaret er usikkert.</p>"
+        "html": "<p>En <strong>matematisk modell</strong> er en funksjon vi bruker til å beskrive noe i virkeligheten: antall bakterier i en kultur, prisen på en vare, høyden til en ball. Modellen er alltid en forenkling. Den treffer godt i det området vi har data fra, og den kan bli helt meningsløs utenfor. Derfor hører to ting alltid sammen med en modell: et <strong>definisjonsområde</strong> og en vurdering av hvor godt den passer.</p><p><strong>Regresjon</strong> er metoden for å finne modellen. Du har et sett målepunkter, du velger hvilken <em>type</em> funksjon du tror passer, og så finner verktøyet de koeffisientene som gir minst mulig samlet avvik fra punktene. I GeoGebra legger du punktene i en liste og bruker kommandoer som <strong>RegLin</strong> (lineær), <strong>RegPoly</strong> (polynom av valgt grad), <strong>RegEksp</strong> (eksponentiell), <strong>RegPot</strong> (potensfunksjon) eller <strong>RegLogist</strong> (logistisk).</p><p>Hvordan velger du type? Se på tallene før du trykker på noe:</p><ul><li>Konstant <em>differanse</em> når $x$ øker med 1 — lineær modell.</li><li>Konstant <em>forholdstall</em> når $x$ øker med 1 — eksponentiell modell.</li><li>Verdiene stiger, snur og synker igjen — polynom av andre eller tredje grad.</li><li>Rask vekst først, så tydelig utflating mot et tak — logistisk modell.</li></ul><p>Til slutt en språkbruk du må kunne: å regne <strong>innenfor</strong> dataområdet kalles interpolasjon og er rimelig trygt. Å regne <strong>utenfor</strong> kalles ekstrapolasjon, og der må du alltid skrive en setning om at svaret er usikkert.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Fra måledata til brukbar modell",
+          "forklaring": "Legg merke til at du velger funksjonstypen selv, før verktøyet gjør noe: det er tallmønsteret i tabellen som bestemmer, ikke GeoGebra. Treffer ikke kurven punktene, går sløyfa tilbake til typevalget, og det siste steget minner deg på at svar utenfor dataområdet alltid er usikre.",
+          "steg": [
+            {
+              "tekst": "Plott målepunktene",
+              "note": "se formen før du regner"
+            },
+            {
+              "tekst": "Se på differanse og forholdstall",
+              "note": "konstant differanse: lineær"
+            },
+            {
+              "tekst": "Velg funksjonstype",
+              "note": "lineær, poly, eksp, logistisk"
+            },
+            {
+              "tekst": "Kjør regresjonen i GeoGebra",
+              "note": "RegLin, RegEksp, RegLogist"
+            },
+            {
+              "tekst": "Vurder om kurven treffer punktene",
+              "note": "og sett definisjonsområdet"
+            },
+            {
+              "tekst": "Bruk modellen, og nevn usikkerheten",
+              "note": "ekstrapolasjon: usikkert svar"
+            }
+          ],
+          "tilbakekopling": {
+            "fra": 4,
+            "til": 2,
+            "tekst": "treffer dårlig: ny type"
+          }
+        }
       },
       {
         "tittel": "Fire veksttyper",
@@ -122,7 +159,48 @@
       },
       {
         "tittel": "Modellering med derivasjon",
-        "html": "<p>Når du først har en modell, er den deriverte verktøyet som svarer på «hvor fort», «når er det størst» og «når snur det».</p><p><strong>Tolke $f'$ med enheter.</strong> Enheten til $f'(x)$ er enheten til $f$ delt på enheten til $x$. Er $V(t)$ vannmengde i liter og $t$ tid i minutter, betyr $V'(30) = -8$ at vannmengden synker med omtrent 8 liter per minutt 30 minutter etter start. Svar alltid i en hel setning med enhet — det er der poengene ligger.</p><p><strong>Gjennomsnittlig eller momentan?</strong> Uttrykket $\\frac{f(b)-f(a)}{b-a}$ er gjennomsnittlig vekstfart over et helt intervall, mens $f'(a)$ er vekstfarten i ett enkelt øyeblikk. Les nøye hvilken av dem oppgaven spør om.</p><p><strong>Optimering.</strong> Framgangsmåten er fast:</p><ol><li>Sett opp funksjonen ut fra teksten, og få den ned til én variabel.</li><li>Finn definisjonsområdet — hvilke verdier er fysisk mulige?</li><li>Deriver og løs likningen $f'(x) = 0$.</li><li>Sett opp fortegnslinje for $f'$, og avgjør om løsningen er et toppunkt eller et bunnpunkt.</li><li>Sjekk også endepunktene i definisjonsområdet.</li><li>Svar på det oppgaven faktisk spør om, med enhet.</li></ol><p>Den andrederiverte $f''$ sier hvordan vekstfarten selv endrer seg. Er $f'(x) > 0$ og $f''(x) < 0$, vokser funksjonen fortsatt, men saktere og saktere. Der $f''$ skifter fortegn, har grafen et <strong>vendepunkt</strong>, og det er der vekstfarten er størst eller minst.</p>"
+        "html": "<p>Når du først har en modell, er den deriverte verktøyet som svarer på «hvor fort», «når er det størst» og «når snur det».</p><p><strong>Tolke $f'$ med enheter.</strong> Enheten til $f'(x)$ er enheten til $f$ delt på enheten til $x$. Er $V(t)$ vannmengde i liter og $t$ tid i minutter, betyr $V'(30) = -8$ at vannmengden synker med omtrent 8 liter per minutt 30 minutter etter start. Svar alltid i en hel setning med enhet — det er der poengene ligger.</p><p><strong>Gjennomsnittlig eller momentan?</strong> Uttrykket $\\frac{f(b)-f(a)}{b-a}$ er gjennomsnittlig vekstfart over et helt intervall, mens $f'(a)$ er vekstfarten i ett enkelt øyeblikk. Les nøye hvilken av dem oppgaven spør om.</p><p><strong>Optimering.</strong> Framgangsmåten er fast:</p><ol><li>Sett opp funksjonen ut fra teksten, og få den ned til én variabel.</li><li>Finn definisjonsområdet — hvilke verdier er fysisk mulige?</li><li>Deriver og løs likningen $f'(x) = 0$.</li><li>Sett opp fortegnslinje for $f'$, og avgjør om løsningen er et toppunkt eller et bunnpunkt.</li><li>Sjekk også endepunktene i definisjonsområdet.</li><li>Svar på det oppgaven faktisk spør om, med enhet.</li></ol><p>Den andrederiverte $f''$ sier hvordan vekstfarten selv endrer seg. Er $f'(x) > 0$ og $f''(x) < 0$, vokser funksjonen fortsatt, men saktere og saktere. Der $f''$ skifter fortegn, har grafen et <strong>vendepunkt</strong>, og det er der vekstfarten er størst eller minst.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Verdi eller vekstfart? f(t) eller f′(t)",
+          "forklaring": "Se nederste rad: samme modell og samme tidspunkt gir 4000 og 1386 — to helt ulike tall med to ulike enheter. Ordlyden i oppgaven avgjør hvilken kolonne du skal bruke, og enheten i svaret avslører om du valgte rett.",
+          "kolonner": [
+            "Verdien f(t)",
+            "Vekstfarten f′(t)"
+          ],
+          "rader": [
+            {
+              "egenskap": "Ordlyd i oppgaven",
+              "venstre": "«hvor mange er det etter 4 timer», «hvor høyt», «hvor mye»",
+              "hoyre": "«hvor fort vokser det», «hvor mange per time», «øker med»"
+            },
+            {
+              "egenskap": "Regnemåte",
+              "venstre": "sett tallet rett inn i f",
+              "hoyre": "deriver først, sett så tallet inn i f′"
+            },
+            {
+              "egenskap": "Enhet i svaret",
+              "venstre": "enheten til f, for eksempel liter",
+              "hoyre": "enhet for f per enhet for t, for eksempel liter per minutt"
+            },
+            {
+              "egenskap": "Null betyr",
+              "venstre": "funksjonsverdien er 0, for eksempel at tanken er tom",
+              "hoyre": "vekstfarten er 0 — kandidat til topp- eller bunnpunkt"
+            },
+            {
+              "egenskap": "Negativt tall betyr",
+              "venstre": "verdien er under 0, som ofte er urimelig i modellen",
+              "hoyre": "størrelsen avtar akkurat da"
+            },
+            {
+              "egenskap": "Bakteriekulturen ved t = 6",
+              "venstre": "N(6) = 4000 bakterier",
+              "hoyre": "N′(6) ≈ 1386 bakterier per time"
+            }
+          ]
+        }
       },
       {
         "tittel": "Parameterframstillinger",
@@ -178,7 +256,27 @@
       },
       {
         "tittel": "Fart og akselerasjon langs kurver",
-        "html": "<p>Når $\\vec{r}(t)$ beskriver posisjonen til noe som beveger seg, finner du farten ved å derivere hver koordinat for seg:</p>$$\\vec{v}(t) = \\vec{r}\\,{}'(t) = [\\,x'(t),\\; y'(t)\\,]$$<p><strong>Fartsvektoren</strong> $\\vec{v}(t)$ er en tangentvektor til banen: den peker i den retningen bevegelsen går akkurat da. Lengden av den er <strong>banefarten</strong>, altså hvor fort du faktisk flytter deg:</p>$$|\\vec{v}(t)| = \\sqrt{\\left(x'(t)\\right)^2 + \\left(y'(t)\\right)^2}$$<p>Merk forskjellen godt: $\\vec{v}(t)$ er en vektor med retning, mens $|\\vec{v}(t)|$ er et tall uten retning, og det er aldri negativt. Spør oppgaven om «farten» som ett tall, er det lengden du skal regne ut med Pytagoras — ikke summen av komponentene.</p><p>Deriverer du én gang mer, får du <strong>akselerasjonsvektoren</strong>:</p>$$\\vec{a}(t) = \\vec{v}\\,{}'(t) = \\vec{r}\\,{}''(t) = [\\,x''(t),\\; y''(t)\\,]$$<p>Den forteller hvordan fartsvektoren endrer seg, både i størrelse og retning. For et fritt kast er $\\vec{a}(t)$ konstant og peker rett nedover, selv om farten hele tiden endrer seg.</p><p>To oppgavetyper går igjen. <em>Når er banefarten minst?</em> Da setter du opp $|\\vec{v}(t)|$ og finner minimum av uttrykket under rottegnet — det er nok, for kvadratrota vokser når innholdet vokser. <em>Når står fartsvektoren vinkelrett på en gitt vektor?</em> Da bruker du at skalarproduktet skal være null.</p>"
+        "html": "<p>Når $\\vec{r}(t)$ beskriver posisjonen til noe som beveger seg, finner du farten ved å derivere hver koordinat for seg:</p>$$\\vec{v}(t) = \\vec{r}\\,{}'(t) = [\\,x'(t),\\; y'(t)\\,]$$<p><strong>Fartsvektoren</strong> $\\vec{v}(t)$ er en tangentvektor til banen: den peker i den retningen bevegelsen går akkurat da. Lengden av den er <strong>banefarten</strong>, altså hvor fort du faktisk flytter deg:</p>$$|\\vec{v}(t)| = \\sqrt{\\left(x'(t)\\right)^2 + \\left(y'(t)\\right)^2}$$<p>Merk forskjellen godt: $\\vec{v}(t)$ er en vektor med retning, mens $|\\vec{v}(t)|$ er et tall uten retning, og det er aldri negativt. Spør oppgaven om «farten» som ett tall, er det lengden du skal regne ut med Pytagoras — ikke summen av komponentene.</p><p>Deriverer du én gang mer, får du <strong>akselerasjonsvektoren</strong>:</p>$$\\vec{a}(t) = \\vec{v}\\,{}'(t) = \\vec{r}\\,{}''(t) = [\\,x''(t),\\; y''(t)\\,]$$<p>Den forteller hvordan fartsvektoren endrer seg, både i størrelse og retning. For et fritt kast er $\\vec{a}(t)$ konstant og peker rett nedover, selv om farten hele tiden endrer seg.</p><p>To oppgavetyper går igjen. <em>Når er banefarten minst?</em> Da setter du opp $|\\vec{v}(t)|$ og finner minimum av uttrykket under rottegnet — det er nok, for kvadratrota vokser når innholdet vokser. <em>Når står fartsvektoren vinkelrett på en gitt vektor?</em> Da bruker du at skalarproduktet skal være null.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "hoyre",
+          "tittel": "Derivasjonskjeden langs en bane",
+          "forklaring": "Hvert steg er den forrige derivert komponent for komponent — én derivasjon gir retning og fart, to gir hvordan farten endrer seg. Banefarten |v(t)| = √(x′(t)² + y′(t)²) er lengden av vektoren i det midterste steget, altså ett tall uten retning, ikke et nytt steg i kjeden.",
+          "steg": [
+            {
+              "tekst": "Posisjon r(t) = [x(t), y(t)]",
+              "note": "hvor den er, i meter"
+            },
+            {
+              "tekst": "Deriver: v(t) = [x′(t), y′(t)]",
+              "note": "tangent til banen (m/s)"
+            },
+            {
+              "tekst": "Deriver igjen: a(t) = v′(t)",
+              "note": "endrer fartsvektoren (m/s²)"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [

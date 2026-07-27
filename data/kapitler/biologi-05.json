@@ -111,7 +111,48 @@
       },
       {
         "tittel": "Meiose steg for steg",
-        "html": "<p>Kjønnsceller kan ikke lages ved mitose. Hvis både egg og sædcelle hadde hatt 46 kromosomer, ville zygoten fått 92, og kromosomtallet ville doblet seg for hver generasjon. Derfor finnes <strong>meiosen</strong>, en <em>reduksjonsdeling</em> med to delinger etter hverandre — men bare én kopiering av DNA-et først.</p><p><strong>Meiose I</strong> er den delingen som halverer kromosomtallet:</p><ul><li><strong>Profase I</strong>: de <strong>homologe kromosomene</strong> (ett fra mor og ett fra far) legger seg tett inntil hverandre parvis. Da kan de bytte biter med hverandre i en <strong>overkrysning</strong>.</li><li><strong>Metafase I</strong>: de homologe <em>parene</em> stiller seg i ekvatorialplanet, med ett kromosom på hver side.</li><li><strong>Anafase I</strong>: de homologe kromosomene skilles og går til hver sin pol. Søsterkromatidene blir sittende sammen.</li><li><strong>Telofase I og cytokinese</strong>: to celler med 23 kromosomer hver, men hvert kromosom har fortsatt to kromatider.</li></ul><p><strong>Meiose II</strong> ligner en vanlig mitose, bortsett fra at cellene nå er haploide, og at det <em>ikke</em> er noen ny S-fase i mellom. Søsterkromatidene skilles i anafase II, og resultatet er <strong>fire haploide celler</strong> med 23 kromosomer og 23 kromatider hver.</p><p>Hos menn blir alle fire til sædceller. Hos kvinner blir bare én til en eggcelle; de tre andre blir små polceller som brytes ned.</p>"
+        "html": "<p>Kjønnsceller kan ikke lages ved mitose. Hvis både egg og sædcelle hadde hatt 46 kromosomer, ville zygoten fått 92, og kromosomtallet ville doblet seg for hver generasjon. Derfor finnes <strong>meiosen</strong>, en <em>reduksjonsdeling</em> med to delinger etter hverandre — men bare én kopiering av DNA-et først.</p><p><strong>Meiose I</strong> er den delingen som halverer kromosomtallet:</p><ul><li><strong>Profase I</strong>: de <strong>homologe kromosomene</strong> (ett fra mor og ett fra far) legger seg tett inntil hverandre parvis. Da kan de bytte biter med hverandre i en <strong>overkrysning</strong>.</li><li><strong>Metafase I</strong>: de homologe <em>parene</em> stiller seg i ekvatorialplanet, med ett kromosom på hver side.</li><li><strong>Anafase I</strong>: de homologe kromosomene skilles og går til hver sin pol. Søsterkromatidene blir sittende sammen.</li><li><strong>Telofase I og cytokinese</strong>: to celler med 23 kromosomer hver, men hvert kromosom har fortsatt to kromatider.</li></ul><p><strong>Meiose II</strong> ligner en vanlig mitose, bortsett fra at cellene nå er haploide, og at det <em>ikke</em> er noen ny S-fase i mellom. Søsterkromatidene skilles i anafase II, og resultatet er <strong>fire haploide celler</strong> med 23 kromosomer og 23 kromatider hver.</p><p>Hos menn blir alle fire til sædceller. Hos kvinner blir bare én til en eggcelle; de tre andre blir små polceller som brytes ned.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Mitose og meiose side om side",
+          "forklaring": "Se særlig på raden for metafasen: det er fordi homologe par — og ikke enkeltkromosomer — stiller seg opp i meiosen, at kromosomtallet halveres.",
+          "kolonner": [
+            "Mitose",
+            "Meiose"
+          ],
+          "rader": [
+            {
+              "egenskap": "Antall delinger",
+              "venstre": "én deling etter S-fasen",
+              "hoyre": "to delinger etter hverandre, men bare én S-fase først"
+            },
+            {
+              "egenskap": "I metafasen",
+              "venstre": "hvert kromosom for seg, på én linje",
+              "hoyre": "de homologe parene, ett kromosom på hver side av linja"
+            },
+            {
+              "egenskap": "Kromosomtall",
+              "venstre": "46 → 46, cellene blir diploide",
+              "hoyre": "46 → 23, cellene blir haploide"
+            },
+            {
+              "egenskap": "Overkrysning",
+              "venstre": "skjer ikke",
+              "hoyre": "skjer i profase I, mellom homologe kromosomer"
+            },
+            {
+              "egenskap": "Resultat",
+              "venstre": "2 celler, genetisk identiske med morcellen",
+              "hoyre": "4 celler, alle genetisk ulike"
+            },
+            {
+              "egenskap": "Funksjon",
+              "venstre": "vekst, reparasjon og utskifting av celler i kroppsvev",
+              "hoyre": "lager kjønnsceller i testikler og eggstokker, og gir variasjon"
+            }
+          ]
+        }
       },
       {
         "tittel": "Genetisk variasjon: tre kilder",
@@ -154,7 +195,36 @@
       },
       {
         "tittel": "Vekst og utvikling hos planter og mennesket",
-        "html": "<p>Vekst er mer enn celledeling. En organisme vokser ved at celler <em>deler seg</em>, at cellene <em>vokser i størrelse</em>, og at noen celler <em>dør planlagt</em> ved apoptose. Hos et menneskefoster skilles fingrene fra hverandre nettopp fordi cellene i mellomrommene dør.</p><p><strong>Planter</strong> vokser hele livet, men bare i bestemte områder som kalles <strong>meristemer</strong>. Apikalmeristemene i skudd- og rotspissen gir lengdevekst, mens <strong>kambiet</strong> gir tykkelsesvekst — det er kambiet som lager årringene i et tre. Rett bak apikalmeristemet ligger en strekningssone der cellene blir mange ganger lengre ved at de fylles med vann.</p><p>Veksten styres av <strong>plantehormoner</strong>. Auxin lages i skuddspissen og gir strekningsvekst; gibberellin gir strekning og setter i gang spiring; cytokinin fremmer celledeling; abscisinsyre holder frø i dvale og lukker spalteåpningene ved tørke; etylen får frukt til å modne og blad til å felles.</p><p>Hos <strong>mennesket</strong> starter utviklingen med at zygoten deler seg til en cellekule som fester seg i livmorveggen etter omtrent en uke. I uke 3 til 8 anlegges alle organene, og fosteret er svært følsomt for skadelige stoffer i denne perioden. Etter fødselen er veksten kraftigst det første året, og så kommer en ny vekstspurt i puberteten, drevet av veksthormon og kjønnshormoner. Når kjønnshormonene til slutt lukker vekstsonene i knoklene, stopper lengdeveksten for godt.</p>"
+        "html": "<p>Vekst er mer enn celledeling. En organisme vokser ved at celler <em>deler seg</em>, at cellene <em>vokser i størrelse</em>, og at noen celler <em>dør planlagt</em> ved apoptose. Hos et menneskefoster skilles fingrene fra hverandre nettopp fordi cellene i mellomrommene dør.</p><p><strong>Planter</strong> vokser hele livet, men bare i bestemte områder som kalles <strong>meristemer</strong>. Apikalmeristemene i skudd- og rotspissen gir lengdevekst, mens <strong>kambiet</strong> gir tykkelsesvekst — det er kambiet som lager årringene i et tre. Rett bak apikalmeristemet ligger en strekningssone der cellene blir mange ganger lengre ved at de fylles med vann.</p><p>Veksten styres av <strong>plantehormoner</strong>. Auxin lages i skuddspissen og gir strekningsvekst; gibberellin gir strekning og setter i gang spiring; cytokinin fremmer celledeling; abscisinsyre holder frø i dvale og lukker spalteåpningene ved tørke; etylen får frukt til å modne og blad til å felles.</p><p>Hos <strong>mennesket</strong> starter utviklingen med at zygoten deler seg til en cellekule som fester seg i livmorveggen etter omtrent en uke. I uke 3 til 8 anlegges alle organene, og fosteret er svært følsomt for skadelige stoffer i denne perioden. Etter fødselen er veksten kraftigst det første året, og så kommer en ny vekstspurt i puberteten, drevet av veksthormon og kjønnshormoner. Når kjønnshormonene til slutt lukker vekstsonene i knoklene, stopper lengdeveksten for godt.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Menneskets utvikling før fødselen",
+          "enhet": "uker etter befruktning",
+          "min": 0,
+          "max": 40,
+          "log": false,
+          "forklaring": "Legg merke til hvor kort og tidlig vinduet for organanlegg er: skadelige stoffer gjør mest skade i uke 3–8, da mange ennå ikke vet at de er gravide.",
+          "band": [
+            {
+              "fra": 0,
+              "til": 3,
+              "navn": "Celledeling og feste",
+              "verdi": "fester seg i livmorveggen"
+            },
+            {
+              "fra": 3,
+              "til": 8,
+              "navn": "Organanlegg",
+              "verdi": "alle organ anlegges, mest sårbar periode"
+            },
+            {
+              "fra": 8,
+              "til": 40,
+              "navn": "Vekst og modning",
+              "verdi": "organene vokser og modnes ferdig"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [
@@ -204,7 +274,39 @@
       {
         "tittel": "Gjennomgått forsøk: fototropisme og auxin",
         "oppgave": "<p>Du setter opp tre grupper med nyspirte havreplanter og belyser alle tre fra samme side. Gruppe 1 er urørt. På gruppe 2 klipper du av den ytterste spissen av skuddet. På gruppe 3 setter du en liten lystett hette over spissen, men lar planten være hel. Hva skjer med hver gruppe, og hva kan du konkludere?</p>",
-        "losning": "<p><strong>Observasjon, gruppe 1 (urørt).</strong> Planten bøyer seg tydelig mot lyset. Dette er <strong>fototropisme</strong>.</p><p><strong>Observasjon, gruppe 2 (spissen klippet av).</strong> Planten bøyer seg ikke, og den vokser nesten ikke i lengden heller.</p><p><strong>Observasjon, gruppe 3 (lystett hette over spissen).</strong> Planten vokser videre i lengden, men rett opp — den bøyer seg ikke.</p><p><strong>Tolkning, steg 1.</strong> Sammenlign gruppe 1 og 2. Når spissen fjernes, forsvinner både bøyingen og lengdeveksten. Da må spissen produsere noe som er nødvendig for veksten. Dette stoffet er plantehormonet <strong>auxin</strong>, som lages i apikalmeristemet.</p><p><strong>Tolkning, steg 2.</strong> Sammenlign gruppe 2 og 3. I gruppe 3 er spissen fortsatt på plass, og planten vokser normalt i lengden. Auxinet produseres altså som før. Det eneste som mangler, er informasjon om <em>hvor</em> lyset kommer fra. Konklusjon: <strong>lysretningen registreres i spissen</strong>, ikke lenger nede i stengelen.</p><p><strong>Tolkning, steg 3 — mekanismen.</strong> Auxin lages i spissen og transporteres nedover i skuddet. Når lyset kommer fra én side, forskyves auxinet mot <strong>skyggesiden</strong>. Der blir konsentrasjonen høyere, og auxin gjør celleveggene mer elastiske slik at cellene i strekningssonen kan ta opp vann og bli lengre. Cellene på skyggesiden strekker seg altså mer enn cellene på lyssiden, og resultatet er at skuddet bøyer seg <em>mot</em> lyset.</p><p><strong>Legg merke til:</strong> det er ikke cellene på lyssiden som «vokser mindre fordi lyset skader dem», og det er ikke ulik celledeling som gjør jobben. Bøyingen skyldes ulik <em>strekning</em> av celler som allerede finnes. En tilsvarende auxinforskyvning nedover i en liggende plante gir <strong>gravitropisme</strong>: skuddet vokser opp og roten ned.</p>"
+        "losning": "<p><strong>Observasjon, gruppe 1 (urørt).</strong> Planten bøyer seg tydelig mot lyset. Dette er <strong>fototropisme</strong>.</p><p><strong>Observasjon, gruppe 2 (spissen klippet av).</strong> Planten bøyer seg ikke, og den vokser nesten ikke i lengden heller.</p><p><strong>Observasjon, gruppe 3 (lystett hette over spissen).</strong> Planten vokser videre i lengden, men rett opp — den bøyer seg ikke.</p><p><strong>Tolkning, steg 1.</strong> Sammenlign gruppe 1 og 2. Når spissen fjernes, forsvinner både bøyingen og lengdeveksten. Da må spissen produsere noe som er nødvendig for veksten. Dette stoffet er plantehormonet <strong>auxin</strong>, som lages i apikalmeristemet.</p><p><strong>Tolkning, steg 2.</strong> Sammenlign gruppe 2 og 3. I gruppe 3 er spissen fortsatt på plass, og planten vokser normalt i lengden. Auxinet produseres altså som før. Det eneste som mangler, er informasjon om <em>hvor</em> lyset kommer fra. Konklusjon: <strong>lysretningen registreres i spissen</strong>, ikke lenger nede i stengelen.</p><p><strong>Tolkning, steg 3 — mekanismen.</strong> Auxin lages i spissen og transporteres nedover i skuddet. Når lyset kommer fra én side, forskyves auxinet mot <strong>skyggesiden</strong>. Der blir konsentrasjonen høyere, og auxin gjør celleveggene mer elastiske slik at cellene i strekningssonen kan ta opp vann og bli lengre. Cellene på skyggesiden strekker seg altså mer enn cellene på lyssiden, og resultatet er at skuddet bøyer seg <em>mot</em> lyset.</p><p><strong>Legg merke til:</strong> det er ikke cellene på lyssiden som «vokser mindre fordi lyset skader dem», og det er ikke ulik celledeling som gjør jobben. Bøyingen skyldes ulik <em>strekning</em> av celler som allerede finnes. En tilsvarende auxinforskyvning nedover i en liggende plante gir <strong>gravitropisme</strong>: skuddet vokser opp og roten ned.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik bøyer auxin skuddet mot lyset",
+          "forklaring": "Følg auxinet nedover: det er forskyvningen i steg 3 som gjør at bare den ene siden strekker seg. Bøyingen skyldes strekning av celler som alt finnes, ikke ulik celledeling.",
+          "steg": [
+            {
+              "tekst": "Auxin lages i skuddspissen",
+              "note": "i apikalmeristemet"
+            },
+            {
+              "tekst": "Lyset kommer inn fra én side",
+              "note": "retningen merkes i spissen"
+            },
+            {
+              "tekst": "Auxinet forskyves mot skyggesiden",
+              "note": "høyere konsentrasjon der"
+            },
+            {
+              "tekst": "Auxin gjør celleveggene elastiske",
+              "note": "cellene tar opp mer vann"
+            },
+            {
+              "tekst": "Cellene på skyggesiden strekker seg mest",
+              "note": "ingen ekstra celledeling"
+            },
+            {
+              "tekst": "Skuddet bøyer seg mot lyset",
+              "note": "= fototropisme"
+            }
+          ]
+        }
       }
     ],
     "vanligeFeil": [

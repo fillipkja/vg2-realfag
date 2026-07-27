@@ -120,7 +120,43 @@
     "seksjoner": [
       {
         "tittel": "Fra rosinbollen til Bohrs modell",
-        "html": "<p>Da Thomson oppdaget elektronet i 1897, tenkte man seg atomet som en jevn, positivt ladd kule med elektroner strødd inni — <strong>rosinbollemodellen</strong>. Rutherford satte modellen på prøve i 1911: han skjøt alfapartikler mot en svært tynn gullfolie. Nesten alle gikk rett igjennom, men noen få ble slått kraftig tilbake. Konklusjonen var dramatisk: atomet er nesten tomt, og hele den positive ladningen og nesten all massen er samlet i en <strong>bitte liten kjerne</strong> i midten, med elektronene langt utenfor.</p><p>Men Rutherfords modell hadde et alvorlig problem. Etter klassisk fysikk vil et elektron som går i bane sende ut stråling hele tiden, miste energi og spiralere inn i kjernen på et lite brøkdels sekund. I tillegg ville strålingen ha alle mulige bølgelengder. Ingen av delene stemmer med virkeligheten: atomer er stabile, og gasser sender ut lys i skarpe, bestemte linjer.</p><p><strong>Niels Bohr</strong> løste dette i 1913 med to nye antakelser: elektronet kan bare befinne seg i visse tillatte tilstander med bestemte energier, og i en slik tilstand stråler det <em>ikke</em>. Stråling sendes bare ut når elektronet hopper fra en tilstand til en annen. Med dette klarte Bohr å regne ut hydrogenspekteret helt riktig.</p><p>I dag beskriver vi elektronene med kvantemekanikk, som «skyer» av sannsynlighet i stedet for baner. Men Bohrs bilde av <em>energinivåer</em> er fortsatt det vi bruker når vi skal forstå spektre.</p>"
+        "html": "<p>Da Thomson oppdaget elektronet i 1897, tenkte man seg atomet som en jevn, positivt ladd kule med elektroner strødd inni — <strong>rosinbollemodellen</strong>. Rutherford satte modellen på prøve i 1911: han skjøt alfapartikler mot en svært tynn gullfolie. Nesten alle gikk rett igjennom, men noen få ble slått kraftig tilbake. Konklusjonen var dramatisk: atomet er nesten tomt, og hele den positive ladningen og nesten all massen er samlet i en <strong>bitte liten kjerne</strong> i midten, med elektronene langt utenfor.</p><p>Men Rutherfords modell hadde et alvorlig problem. Etter klassisk fysikk vil et elektron som går i bane sende ut stråling hele tiden, miste energi og spiralere inn i kjernen på et lite brøkdels sekund. I tillegg ville strålingen ha alle mulige bølgelengder. Ingen av delene stemmer med virkeligheten: atomer er stabile, og gasser sender ut lys i skarpe, bestemte linjer.</p><p><strong>Niels Bohr</strong> løste dette i 1913 med to nye antakelser: elektronet kan bare befinne seg i visse tillatte tilstander med bestemte energier, og i en slik tilstand stråler det <em>ikke</em>. Stråling sendes bare ut når elektronet hopper fra en tilstand til en annen. Med dette klarte Bohr å regne ut hydrogenspekteret helt riktig.</p><p>I dag beskriver vi elektronene med kvantemekanikk, som «skyer» av sannsynlighet i stedet for baner. Men Bohrs bilde av <em>energinivåer</em> er fortsatt det vi bruker når vi skal forstå spektre.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Rutherfords og Bohrs atommodell",
+          "forklaring": "Les radvis: venstre kolonne er hva klassisk fysikk krever av Rutherfords modell, høyre kolonne er Bohrs to nye antakelser. Bare høyre kolonne kan forklare at atomer er stabile og at gasser lyser i skarpe linjer.",
+          "kolonner": [
+            "Rutherford (1911)",
+            "Bohr (1913)"
+          ],
+          "rader": [
+            {
+              "egenskap": "Elektronets tilstand",
+              "venstre": "kan gå i alle baner, som en planet rundt sola",
+              "hoyre": "bare visse tillatte tilstander med bestemte energier"
+            },
+            {
+              "egenskap": "Energien til atomet",
+              "venstre": "kan ha alle verdier — en sammenhengende skala",
+              "hoyre": "kvantisert: −13,6 eV/n² for hydrogen, n = 1, 2, 3 …"
+            },
+            {
+              "egenskap": "Utstråling",
+              "venstre": "elektronet stråler hele tiden fordi det akselererer",
+              "hoyre": "stråler bare når elektronet hopper mellom to nivåer"
+            },
+            {
+              "egenskap": "Stabilitet",
+              "venstre": "mister energi og spiralerer inn i kjernen på et blunk",
+              "hoyre": "fra grunntilstanden n = 1 kan atomet ikke stråle mer"
+            },
+            {
+              "egenskap": "Spekteret modellen gir",
+              "venstre": "alle bølgelengder, altså et sammenhengende spektrum",
+              "hoyre": "skarpe linjer med hf = ΔE, slik vi faktisk måler"
+            }
+          ]
+        }
       },
       {
         "tittel": "Energinivåer og energinivådiagram",
@@ -128,7 +164,31 @@
       },
       {
         "tittel": "Eksitasjon, de-eksitasjon og ionisering",
-        "html": "<p>Et atom kan <strong>eksiteres</strong> på to måter, og forskjellen mellom dem er en klassisk eksamensfelle.</p><p><strong>1. Ved å absorbere et foton.</strong> Da må fotonenergien passe <em>nøyaktig</em> til differansen mellom to nivåer. Et hydrogenatom i grunntilstanden kan absorbere et foton på 10,2 eV og hoppe til $n=2$, men et foton på 11,0 eV går rett igjennom uten å bli absorbert — det finnes ikke noe nivå 11,0 eV over grunntilstanden. Atomet kan ikke «bruke litt og kaste resten».</p><p><strong>2. Ved kollisjon</strong> med for eksempel et fritt elektron. Her holder det at den kinetiske energien er <em>minst</em> så stor som energidifferansen. Overskuddet beholder det innkommende elektronet som kinetisk energi. Dette er grunnen til at gass i et lysrør lyser når vi sender strøm gjennom den.</p><p>Et eksitert atom er ustabilt. Etter typisk $10^{-8}$ sekunder faller elektronet ned igjen — <strong>de-eksitasjon</strong> — og differansen sendes ut som et foton:</p>$$hf = E_{\\text{start}} - E_{\\text{slutt}}$$<p>Fallet kan skje i ett sprang eller i flere trinn via mellomliggende nivåer. Faller atomet i to trinn, får du to fotoner med lavere energi i stedet for ett med høy.</p><p>Får atomet tilført minst <strong>ioniseringsenergien</strong> (13,6 eV for hydrogen i grunntilstanden), rives elektronet helt løs. Alt over det som trengs, blir kinetisk energi til det frie elektronet.</p>"
+        "html": "<p>Et atom kan <strong>eksiteres</strong> på to måter, og forskjellen mellom dem er en klassisk eksamensfelle.</p><p><strong>1. Ved å absorbere et foton.</strong> Da må fotonenergien passe <em>nøyaktig</em> til differansen mellom to nivåer. Et hydrogenatom i grunntilstanden kan absorbere et foton på 10,2 eV og hoppe til $n=2$, men et foton på 11,0 eV går rett igjennom uten å bli absorbert — det finnes ikke noe nivå 11,0 eV over grunntilstanden. Atomet kan ikke «bruke litt og kaste resten».</p><p><strong>2. Ved kollisjon</strong> med for eksempel et fritt elektron. Her holder det at den kinetiske energien er <em>minst</em> så stor som energidifferansen. Overskuddet beholder det innkommende elektronet som kinetisk energi. Dette er grunnen til at gass i et lysrør lyser når vi sender strøm gjennom den.</p><p>Et eksitert atom er ustabilt. Etter typisk $10^{-8}$ sekunder faller elektronet ned igjen — <strong>de-eksitasjon</strong> — og differansen sendes ut som et foton:</p>$$hf = E_{\\text{start}} - E_{\\text{slutt}}$$<p>Fallet kan skje i ett sprang eller i flere trinn via mellomliggende nivåer. Faller atomet i to trinn, får du to fotoner med lavere energi i stedet for ett med høy.</p><p>Får atomet tilført minst <strong>ioniseringsenergien</strong> (13,6 eV for hydrogen i grunntilstanden), rives elektronet helt løs. Alt over det som trengs, blir kinetisk energi til det frie elektronet.</p>",
+        "figur": {
+          "type": "syklus",
+          "tittel": "Eksitasjon og de-eksitasjon",
+          "forklaring": "Følg runden med klokka: energien må inn før elektronet hopper opp, atomet blir værende oppe bare i ca. 10⁻⁸ s, og like mye energi kommer ut igjen som ett foton med hf = ΔE.",
+          "senter": "Atomet",
+          "faser": [
+            {
+              "navn": "n = 1",
+              "note": "grunntilstand, stabil"
+            },
+            {
+              "navn": "Opptak",
+              "note": "foton eller kollisjon"
+            },
+            {
+              "navn": "n = 2",
+              "note": "eksitert i ca. 10⁻⁸ s"
+            },
+            {
+              "navn": "Foton",
+              "note": "hf = ΔE sendes ut"
+            }
+          ]
+        }
       },
       {
         "tittel": "Fotoner og fotonenergien $E = hf$",

@@ -141,7 +141,43 @@
       },
       {
         "tittel": "Økosystem, habitat og nisje",
-        "html": "<p>Et <strong>økosystem</strong> er alle organismene i et område pluss de abiotiske omgivelsene, sett på som en enhet med stoffkretsløp og energistrøm. Grensene setter vi selv, ut fra hva vi vil undersøke: en tjern, en myr, en tareskog eller hele Barentshavet. Et økosystem er sjelden lukket — trekkfugler, elvevann og næringssalter krysser grensene hele tiden.</p><p>Innenfor økosystemet har hver art både et habitat og en nisje. <strong>Habitatet</strong> er stedet arten lever: strandsonen, en død furustokk, de ytterste kvistene øverst i grantrærne. <strong>Nisjen</strong> er summen av alt arten trenger og gjør: hva den spiser, når på døgnet den er aktiv, hvilke temperaturer og pH-verdier den tåler, hvor den hekker, og hvem som spiser den. Huskeregelen er at habitatet er adressen, mens nisjen er yrket.</p><p>Vi skiller videre mellom <strong>fundamentalnisjen</strong>, alt arten kunne utnyttet hvis den var alene, og den <strong>realiserte nisjen</strong>, det den faktisk bruker når konkurrenter, predatorer og parasitter er til stede. Den realiserte nisjen er derfor alltid mindre enn eller lik fundamentalnisjen.</p><p><strong>Konkurranseeksklusjonsprinsippet</strong> sier at to arter med helt identisk nisje ikke kan leve stabilt side om side på samme sted: den ene vil før eller siden utkonkurrere den andre. Derfor ser vi <strong>nisjedeling</strong> overalt i naturen. Blåmeis og kjøttmeis lever i samme skog, men blåmeisa leter mest etter mat i tynne ytterkvister, kjøttmeisa lenger inn på grovere greiner og nede på bakken. Nisjene overlapper bare delvis, og begge artene får plass.</p><p>Fjellreven viser det samme fra motsatt side: rødreven er større, tar fjellrevvalper og overtar hiene. Fjellrevens realiserte nisje krymper derfor når et mildere klima og matavfall fra oss lar rødreven trekke høyere opp i fjellet.</p>"
+        "html": "<p>Et <strong>økosystem</strong> er alle organismene i et område pluss de abiotiske omgivelsene, sett på som en enhet med stoffkretsløp og energistrøm. Grensene setter vi selv, ut fra hva vi vil undersøke: en tjern, en myr, en tareskog eller hele Barentshavet. Et økosystem er sjelden lukket — trekkfugler, elvevann og næringssalter krysser grensene hele tiden.</p><p>Innenfor økosystemet har hver art både et habitat og en nisje. <strong>Habitatet</strong> er stedet arten lever: strandsonen, en død furustokk, de ytterste kvistene øverst i grantrærne. <strong>Nisjen</strong> er summen av alt arten trenger og gjør: hva den spiser, når på døgnet den er aktiv, hvilke temperaturer og pH-verdier den tåler, hvor den hekker, og hvem som spiser den. Huskeregelen er at habitatet er adressen, mens nisjen er yrket.</p><p>Vi skiller videre mellom <strong>fundamentalnisjen</strong>, alt arten kunne utnyttet hvis den var alene, og den <strong>realiserte nisjen</strong>, det den faktisk bruker når konkurrenter, predatorer og parasitter er til stede. Den realiserte nisjen er derfor alltid mindre enn eller lik fundamentalnisjen.</p><p><strong>Konkurranseeksklusjonsprinsippet</strong> sier at to arter med helt identisk nisje ikke kan leve stabilt side om side på samme sted: den ene vil før eller siden utkonkurrere den andre. Derfor ser vi <strong>nisjedeling</strong> overalt i naturen. Blåmeis og kjøttmeis lever i samme skog, men blåmeisa leter mest etter mat i tynne ytterkvister, kjøttmeisa lenger inn på grovere greiner og nede på bakken. Nisjene overlapper bare delvis, og begge artene får plass.</p><p>Fjellreven viser det samme fra motsatt side: rødreven er større, tar fjellrevvalper og overtar hiene. Fjellrevens realiserte nisje krymper derfor når et mildere klima og matavfall fra oss lar rødreven trekke høyere opp i fjellet.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Habitat og nisje — adressen og yrket",
+          "forklaring": "Bare høyre kolonne sier noe om hva arten gjør; venstre sier bare hvor den er. De to nederste radene er poenget: to arter kan godt dele et habitat, men aldri en helt identisk nisje — og konkurrenter krymper nisjen.",
+          "kolonner": [
+            "Habitat",
+            "Økologisk nisje"
+          ],
+          "rader": [
+            {
+              "egenskap": "Kort sagt",
+              "venstre": "adressen: det fysiske stedet arten lever",
+              "hoyre": "yrket: alt arten trenger av miljøet og all bruk den gjør av det"
+            },
+            {
+              "egenskap": "Omfatter",
+              "venstre": "et sted du kan peke på i terrenget",
+              "hoyre": "mat, aktivitetstid, toleransegrenser, hekkeplass og fiender"
+            },
+            {
+              "egenskap": "Blåmeis",
+              "venstre": "skog med hulrom å hekke i",
+              "hoyre": "insekter i tynne ytterkvister, hekker i hull, bytte for spurvehauk"
+            },
+            {
+              "egenskap": "Kan to arter dele det?",
+              "venstre": "ja — blåmeis og kjøttmeis lever i samme skog",
+              "hoyre": "nei, ikke helt identisk: konkurranseeksklusjon gir nisjedeling"
+            },
+            {
+              "egenskap": "Med konkurrenter til stede",
+              "venstre": "rødreven overtar hi og terreng nedover i fjellet",
+              "hoyre": "fjellrevens realiserte nisje krymper: alltid ≤ fundamentalnisjen"
+            }
+          ]
+        }
       },
       {
         "tittel": "Næringskjeder, næringsnett og energistrøm",
@@ -204,11 +240,80 @@
       },
       {
         "tittel": "Klimaendringer og arealbruk",
-        "html": "<p>CO<sub>2</sub>-innholdet i atmosfæren har økt fra om lag 280 ppm før industrialiseringen til over 425 ppm i dag, og den globale middeltemperaturen har steget rundt 1,3 °C siden perioden 1850–1900 målt som langtidstrend — enkeltår har alt ligget rundt 1,5 °C over. I Arktis går oppvarmingen flere ganger raskere enn det globale gjennomsnittet.</p><p>For artene betyr klimaendringene fire ting. <strong>Utbredelsene flytter seg</strong> nordover og oppover i høyden. <strong>Tidspunktene forskyves</strong>, slik at plantene blomstrer før insektene som skal pollinere dem er klekt — en feilkobling i tid som rammer begge parter. <strong>Havet forsures</strong> når CO<sub>2</sub> løses i vann, og det gjør det vanskeligere for kalkdannende organismer å bygge skall. Og <strong>fjellarter og arktiske arter mister habitat</strong>, fordi de ikke har noe sted å flytte når de alt er på toppen. I Norge påvirkes 211 truede arter negativt av klimaendringer, mot 87 i 2015.</p><p>Den <em>største</em> trusselen er likevel fortsatt <strong>arealendringer</strong>: nedbygging til boliger, veier, hytter og næring, oppdyrking og drenering av myr, hogst, gjengroing av kulturlandskap når beitedyra forsvinner, og utbygging av vann- og vindkraft. Arealendringer påvirker 2 456 av de 2 752 truede artene i Norge negativt, altså 89 %. FNs naturpanel (IPBES) konkluderer med det samme globalt.</p><p>Mekanismene bør du kunne navnet på: habitatet forsvinner helt, eller det blir <strong>fragmentert</strong>, slik at bestandene blir små, isolerte og genetisk fattige. I tillegg kommer forurensning, fremmede arter som stillehavsøsters og pukkellaks, og høsting. Klima og arealbruk forsterker hverandre: en art som må flytte nordover, klarer det ikke hvis landskapet på veien er bygget ned.</p>"
+        "html": "<p>CO<sub>2</sub>-innholdet i atmosfæren har økt fra om lag 280 ppm før industrialiseringen til over 425 ppm i dag, og den globale middeltemperaturen har steget rundt 1,3 °C siden perioden 1850–1900 målt som langtidstrend — enkeltår har alt ligget rundt 1,5 °C over. I Arktis går oppvarmingen flere ganger raskere enn det globale gjennomsnittet.</p><p>For artene betyr klimaendringene fire ting. <strong>Utbredelsene flytter seg</strong> nordover og oppover i høyden. <strong>Tidspunktene forskyves</strong>, slik at plantene blomstrer før insektene som skal pollinere dem er klekt — en feilkobling i tid som rammer begge parter. <strong>Havet forsures</strong> når CO<sub>2</sub> løses i vann, og det gjør det vanskeligere for kalkdannende organismer å bygge skall. Og <strong>fjellarter og arktiske arter mister habitat</strong>, fordi de ikke har noe sted å flytte når de alt er på toppen. I Norge påvirkes 211 truede arter negativt av klimaendringer, mot 87 i 2015.</p><p>Den <em>største</em> trusselen er likevel fortsatt <strong>arealendringer</strong>: nedbygging til boliger, veier, hytter og næring, oppdyrking og drenering av myr, hogst, gjengroing av kulturlandskap når beitedyra forsvinner, og utbygging av vann- og vindkraft. Arealendringer påvirker 2 456 av de 2 752 truede artene i Norge negativt, altså 89 %. FNs naturpanel (IPBES) konkluderer med det samme globalt.</p><p>Mekanismene bør du kunne navnet på: habitatet forsvinner helt, eller det blir <strong>fragmentert</strong>, slik at bestandene blir små, isolerte og genetisk fattige. I tillegg kommer forurensning, fremmede arter som stillehavsøsters og pukkellaks, og høsting. Klima og arealbruk forsterker hverandre: en art som må flytte nordover, klarer det ikke hvis landskapet på veien er bygget ned.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Fra nedbygging til lokal utdøing",
+          "forklaring": "Følg pilene: tapet fortsetter lenge etter at maskinene er borte, fordi det ikke bare er arealet som forsvinner, men sammenhengen mellom restene. Sløyfa til høyre er utdøingsvirvelen, der en liten bestand mister genetisk variasjon og derfor blir enda mindre.",
+          "steg": [
+            {
+              "tekst": "Naturtypen bygges ned",
+              "note": "vei, hytter, drenering, hogst"
+            },
+            {
+              "tekst": "Habitatet fragmenteres",
+              "note": "restene blir små og spredte"
+            },
+            {
+              "tekst": "Små, isolerte bestander",
+              "note": "ingen ny innvandring"
+            },
+            {
+              "tekst": "Innavl og tapt genvariasjon",
+              "note": "dårligere tilpasning"
+            },
+            {
+              "tekst": "Lokal utdøing, bit for bit",
+              "note": "samlet belastning, § 10"
+            }
+          ],
+          "tilbakekopling": {
+            "fra": 3,
+            "til": 2,
+            "tekst": "utdøingsvirvel"
+          }
+        }
       },
       {
         "tittel": "Naturforvaltning i Norge",
-        "html": "<p><strong>Naturmangfoldloven</strong> fra 2009 er hovedloven. Formålet er at naturen med sitt mangfold skal tas vare på ved bærekraftig bruk og vern (§ 1), og loven gir prinsipper som må brukes i alle vedtak som berører natur: kunnskapsgrunnlaget skal være godt (§ 8), <strong>føre-var-prinsippet</strong> gjelder når kunnskapen mangler (§ 9), den <strong>samlede belastningen</strong> på økosystemet skal vurderes (§ 10), og tiltakshaveren skal dekke kostnadene ved miljøforringelse (§ 11).</p><p>Verktøykassa inneholder fire hovedgrupper tiltak:</p><ul><li><strong>Områdevern</strong>: nasjonalpark (§ 35), landskapsvernområde (§ 36), naturreservat (§ 37, den strengeste formen), biotopvernområde (§ 38) og marint verneområde (§ 39). Norge har 48 nasjonalparker medregnet Svalbard, og 17,8 % av fastlandsarealet og 4,6 % av sjøarealet er vernet.</li><li><strong>Artsforvaltning</strong>: fredning, prioriterte arter, utvalgte naturtyper, handlingsplaner og aktive tiltak. Avlsprogrammet for fjellrev er det tydeligste eksempelet: utsetting av valper, støttefôring og felling av rødrev har fått den norske bestanden opp til om lag 300 voksne individer, og arten ble i 2021 flyttet fra kritisk truet (CR) til sterkt truet (EN).</li><li><strong>Kunnskap og overvåking</strong>: Artsdatabankens rødlister for arter og naturtyper og Fremmedartslista, og Naturindeks for Norge, som Miljødirektoratet har ansvaret for. Merk at <em>rødlistet</em> ikke betyr det samme som <em>truet</em>: truet er kategoriene CR (kritisk truet), EN (sterkt truet) og VU (sårbar).</li><li><strong>Bærekraftig høsting</strong>: kvoter bygget på bestandsberegninger og råd fra Havforskningsinstituttet og ICES, minstemål, maskevidde og sorteringsrist. Kollapsen i norsk vårgytende sild sist på 1960-tallet og den senere oppbyggingen av bestanden er skoleeksempelet.</li></ul><p>Rovviltforvaltningen viser interessekonfliktene tydeligst. Stortinget har fastsatt bestandsmål på 65 årlige familiegrupper av gaupe, 39 ynglinger av jerv, 13 av bjørn og 4–6 ulvekull der 3 skal være helnorske. Internasjonalt er Norge bundet av naturavtalen fra 2022, med mål om å verne 30 % av arealene og restaurere 30 % av forringet natur innen 2030.</p>"
+        "html": "<p><strong>Naturmangfoldloven</strong> fra 2009 er hovedloven. Formålet er at naturen med sitt mangfold skal tas vare på ved bærekraftig bruk og vern (§ 1), og loven gir prinsipper som må brukes i alle vedtak som berører natur: kunnskapsgrunnlaget skal være godt (§ 8), <strong>føre-var-prinsippet</strong> gjelder når kunnskapen mangler (§ 9), den <strong>samlede belastningen</strong> på økosystemet skal vurderes (§ 10), og tiltakshaveren skal dekke kostnadene ved miljøforringelse (§ 11).</p><p>Verktøykassa inneholder fire hovedgrupper tiltak:</p><ul><li><strong>Områdevern</strong>: nasjonalpark (§ 35), landskapsvernområde (§ 36), naturreservat (§ 37, den strengeste formen), biotopvernområde (§ 38) og marint verneområde (§ 39). Norge har 48 nasjonalparker medregnet Svalbard, og 17,8 % av fastlandsarealet og 4,6 % av sjøarealet er vernet.</li><li><strong>Artsforvaltning</strong>: fredning, prioriterte arter, utvalgte naturtyper, handlingsplaner og aktive tiltak. Avlsprogrammet for fjellrev er det tydeligste eksempelet: utsetting av valper, støttefôring og felling av rødrev har fått den norske bestanden opp til om lag 300 voksne individer, og arten ble i 2021 flyttet fra kritisk truet (CR) til sterkt truet (EN).</li><li><strong>Kunnskap og overvåking</strong>: Artsdatabankens rødlister for arter og naturtyper og Fremmedartslista, og Naturindeks for Norge, som Miljødirektoratet har ansvaret for. Merk at <em>rødlistet</em> ikke betyr det samme som <em>truet</em>: truet er kategoriene CR (kritisk truet), EN (sterkt truet) og VU (sårbar).</li><li><strong>Bærekraftig høsting</strong>: kvoter bygget på bestandsberegninger og råd fra Havforskningsinstituttet og ICES, minstemål, maskevidde og sorteringsrist. Kollapsen i norsk vårgytende sild sist på 1960-tallet og den senere oppbyggingen av bestanden er skoleeksempelet.</li></ul><p>Rovviltforvaltningen viser interessekonfliktene tydeligst. Stortinget har fastsatt bestandsmål på 65 årlige familiegrupper av gaupe, 39 ynglinger av jerv, 13 av bjørn og 4–6 ulvekull der 3 skal være helnorske. Internasjonalt er Norge bundet av naturavtalen fra 2022, med mål om å verne 30 % av arealene og restaurere 30 % av forringet natur innen 2030.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Nasjonalpark og naturreservat",
+          "forklaring": "Les radene som en skala for hvor strengt vernet er: nasjonalparken tar vare på et helt landskap der tradisjonell bruk kan fortsette, mens naturreservatet verner en liten, spesiell naturtype nesten helt fra inngrep. Areal og antall går motsatt vei.",
+          "kolonner": [
+            "Nasjonalpark",
+            "Naturreservat"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hjemmel",
+              "venstre": "naturmangfoldloven § 35",
+              "hoyre": "naturmangfoldloven § 37 — den strengeste verneformen"
+            },
+            {
+              "egenskap": "Verner",
+              "venstre": "store, sammenhengende naturområder uten tyngre inngrep",
+              "hoyre": "areal med truet, sjelden eller særlig sårbar natur"
+            },
+            {
+              "egenskap": "Areal og antall",
+              "venstre": "stort areal; 48 nasjonalparker medregnet Svalbard",
+              "hoyre": "ofte små areal, men over 2 000 i Norge — flest av alle verneområder"
+            },
+            {
+              "egenskap": "Bruk som kan fortsette",
+              "venstre": "friluftsliv, og beite, jakt og fiske slik verneforskriften åpner for",
+              "hoyre": "som regel forbud mot hogst og inngrep; ferdselen kan være forbudt i hekketida"
+            },
+            {
+              "egenskap": "Typisk eksempel",
+              "venstre": "Hardangervidda, Jotunheimen",
+              "hoyre": "gammel granskog, rikmyr, sjøfuglkoloni"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [

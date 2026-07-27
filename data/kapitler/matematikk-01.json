@@ -176,11 +176,77 @@
       },
       {
         "tittel": "Logaritmer: lg og ln",
-        "html": "<p>Likningen $10^x = 1000$ er lett — svaret er $x = 3$. Men hva med $10^x = 500$? Svaret ligger et sted mellom 2 og 3, og for å kunne skrive det ned trenger vi et nytt verktøy. En <strong>logaritme</strong> er nemlig svaret på spørsmålet «hvilken eksponent?».</p><p>Den <strong>briggske logaritmen</strong> $\\lg x$ er eksponenten 10 må ha for å bli $x$:</p>$$\\lg x = y \\quad \\Leftrightarrow \\quad 10^y = x$$<p>Dermed er $\\lg 1000 = 3$, $\\lg 100 = 2$, $\\lg 10 = 1$, $\\lg 1 = 0$ og $\\lg 0{,}01 = -2$. Med kalkulator (tasten «log») finner du $\\lg 500 \\approx 2{,}699$.</p><p>Legg merke til en viktig begrensning: $10^y$ er alltid positiv, så det finnes ingen eksponent som gir 0 eller et negativt tall. Derfor er $\\lg x$ bare definert for $x > 0$. Det samme gjelder alle logaritmer, og det er nettopp derfor du må sjekke definisjonsmengden i logaritmelikninger.</p><p>Den <strong>naturlige logaritmen</strong> $\\ln x$ gjør akkurat det samme, men med $e$ som grunntall:</p>$$\\ln x = y \\quad \\Leftrightarrow \\quad e^y = x$$<p>Her er $\\ln 1 = 0$, $\\ln e = 1$ og $\\ln e^5 = 5$. Logaritmen og eksponentialfunksjonen er <strong>motsatte operasjoner</strong> som nuller ut hverandre:</p>$$10^{\\lg x} = x, \\qquad \\lg 10^x = x, \\qquad e^{\\ln x} = x, \\qquad \\ln e^x = x$$<p>Bruk $\\lg$ når grunntallet i oppgaven er 10, og $\\ln$ når grunntallet er $e$. Ellers kan du bruke hvilken som helst av dem — begge gir samme svar.</p>"
+        "html": "<p>Likningen $10^x = 1000$ er lett — svaret er $x = 3$. Men hva med $10^x = 500$? Svaret ligger et sted mellom 2 og 3, og for å kunne skrive det ned trenger vi et nytt verktøy. En <strong>logaritme</strong> er nemlig svaret på spørsmålet «hvilken eksponent?».</p><p>Den <strong>briggske logaritmen</strong> $\\lg x$ er eksponenten 10 må ha for å bli $x$:</p>$$\\lg x = y \\quad \\Leftrightarrow \\quad 10^y = x$$<p>Dermed er $\\lg 1000 = 3$, $\\lg 100 = 2$, $\\lg 10 = 1$, $\\lg 1 = 0$ og $\\lg 0{,}01 = -2$. Med kalkulator (tasten «log») finner du $\\lg 500 \\approx 2{,}699$.</p><p>Legg merke til en viktig begrensning: $10^y$ er alltid positiv, så det finnes ingen eksponent som gir 0 eller et negativt tall. Derfor er $\\lg x$ bare definert for $x > 0$. Det samme gjelder alle logaritmer, og det er nettopp derfor du må sjekke definisjonsmengden i logaritmelikninger.</p><p>Den <strong>naturlige logaritmen</strong> $\\ln x$ gjør akkurat det samme, men med $e$ som grunntall:</p>$$\\ln x = y \\quad \\Leftrightarrow \\quad e^y = x$$<p>Her er $\\ln 1 = 0$, $\\ln e = 1$ og $\\ln e^5 = 5$. Logaritmen og eksponentialfunksjonen er <strong>motsatte operasjoner</strong> som nuller ut hverandre:</p>$$10^{\\lg x} = x, \\qquad \\lg 10^x = x, \\qquad e^{\\ln x} = x, \\qquad \\ln e^x = x$$<p>Bruk $\\lg$ når grunntallet i oppgaven er 10, og $\\ln$ når grunntallet er $e$. Ellers kan du bruke hvilken som helst av dem — begge gir samme svar.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "lg x teller tierpotenser",
+          "forklaring": "Over hvert bånd står et eksempel på formen x → lg x. Alle fire båndene er like brede, men x ganges med 10 fra ett bånd til det neste — derfor øker lg x med nøyaktig 1 hver gang, fra −0,30 for 0,5 til 2,70 for 500. Skalaen starter aldri i 0, for lg finnes bare for x > 0.",
+          "enhet": "x (logaritmisk skala)",
+          "min": 0.1,
+          "max": 1000,
+          "log": true,
+          "band": [
+            {
+              "fra": 0.1,
+              "til": 1,
+              "navn": "lg x: −1 til 0",
+              "verdi": "0,5 → −0,30"
+            },
+            {
+              "fra": 1,
+              "til": 10,
+              "navn": "lg x: 0 til 1",
+              "verdi": "5 → 0,70"
+            },
+            {
+              "fra": 10,
+              "til": 100,
+              "navn": "lg x: 1 til 2",
+              "verdi": "50 → 1,70"
+            },
+            {
+              "fra": 100,
+              "til": 1000,
+              "navn": "lg x: 2 til 3",
+              "verdi": "500 → 2,70"
+            }
+          ]
+        }
       },
       {
         "tittel": "Logaritmereglene",
-        "html": "<p>Logaritmereglene er potensreglene sett fra den andre siden. Fordi $10^{\\lg a} \\cdot 10^{\\lg b} = 10^{\\lg a + \\lg b}$, og produktet samtidig er $a \\cdot b$, må eksponenten $\\lg a + \\lg b$ være nettopp $\\lg(ab)$. Slik får vi de tre reglene:</p>$$\\lg(ab) = \\lg a + \\lg b, \\qquad \\lg\\frac{a}{b} = \\lg a - \\lg b, \\qquad \\lg a^n = n \\lg a$$<p>Multiplikasjon inni logaritmen blir addisjon utenfor, divisjon blir subtraksjon, og en eksponent kan flyttes ned som faktor. Eksempler: $\\lg 6 = \\lg 2 + \\lg 3$, $\\lg\\frac{7}{100} = \\lg 7 - 2$ og $\\lg x^3 = 3 \\lg x$. Nøyaktig de samme reglene gjelder for $\\ln$.</p><p>Den siste regelen er den viktigste i hele kapittelet, for den er nøkkelen til alle eksponentiallikninger: den flytter en ukjent eksponent ned på bakkenivå, der du kan regne med den som et vanlig tall.</p><p>Vær like nøye med hva reglene <em>ikke</em> sier. Det finnes ingen regel for logaritmen av en sum. $\\lg(a+b)$ kan ikke skrives om, og er definitivt ikke $\\lg a + \\lg b$. Sjekk selv: $\\lg(10 + 90) = \\lg 100 = 2$, mens $\\lg 10 + \\lg 90 \\approx 1 + 1{,}954 = 2{,}954$. En brøk <em>mellom</em> to logaritmer kan heller ikke slås sammen: $\\frac{\\lg 8}{\\lg 2} = 3$, mens $\\lg\\frac{8}{2} = \\lg 4 \\approx 0{,}602$.</p><p>Trenger du en logaritme med et annet grunntall enn 10 eller $e$, bytter du basis med $\\log_a b = \\frac{\\lg b}{\\lg a}$.</p>"
+        "html": "<p>Logaritmereglene er potensreglene sett fra den andre siden. Fordi $10^{\\lg a} \\cdot 10^{\\lg b} = 10^{\\lg a + \\lg b}$, og produktet samtidig er $a \\cdot b$, må eksponenten $\\lg a + \\lg b$ være nettopp $\\lg(ab)$. Slik får vi de tre reglene:</p>$$\\lg(ab) = \\lg a + \\lg b, \\qquad \\lg\\frac{a}{b} = \\lg a - \\lg b, \\qquad \\lg a^n = n \\lg a$$<p>Multiplikasjon inni logaritmen blir addisjon utenfor, divisjon blir subtraksjon, og en eksponent kan flyttes ned som faktor. Eksempler: $\\lg 6 = \\lg 2 + \\lg 3$, $\\lg\\frac{7}{100} = \\lg 7 - 2$ og $\\lg x^3 = 3 \\lg x$. Nøyaktig de samme reglene gjelder for $\\ln$.</p><p>Den siste regelen er den viktigste i hele kapittelet, for den er nøkkelen til alle eksponentiallikninger: den flytter en ukjent eksponent ned på bakkenivå, der du kan regne med den som et vanlig tall.</p><p>Vær like nøye med hva reglene <em>ikke</em> sier. Det finnes ingen regel for logaritmen av en sum. $\\lg(a+b)$ kan ikke skrives om, og er definitivt ikke $\\lg a + \\lg b$. Sjekk selv: $\\lg(10 + 90) = \\lg 100 = 2$, mens $\\lg 10 + \\lg 90 \\approx 1 + 1{,}954 = 2{,}954$. En brøk <em>mellom</em> to logaritmer kan heller ikke slås sammen: $\\frac{\\lg 8}{\\lg 2} = 3$, mens $\\lg\\frac{8}{2} = \\lg 4 \\approx 0{,}602$.</p><p>Trenger du en logaritme med et annet grunntall enn 10 eller $e$, bytter du basis med $\\log_a b = \\frac{\\lg b}{\\lg a}$.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Regelen som gjelder, og feilen som ligner",
+          "forklaring": "Les radene parvis: bare produkt, brøk og potens inni logaritmen kan skrives om. Hver feil i høyre kolonne kan avsløres med tall du regner i hodet — prøv alltid et talleksempel når du er i tvil om en omskriving er lov.",
+          "kolonner": [
+            "Regelen som gjelder",
+            "Feilen som ligner"
+          ],
+          "rader": [
+            {
+              "egenskap": "Produkt inni",
+              "venstre": "lg(ab) = lg a + lg b",
+              "hoyre": "lg(ab) = lg a · lg b. Prøv: lg(10 · 100) = 3, mens lg 10 · lg 100 = 2"
+            },
+            {
+              "egenskap": "Brøk inni",
+              "venstre": "lg(a/b) = lg a − lg b",
+              "hoyre": "lg a / lg b = lg(a/b). Prøv: lg 8 / lg 2 = 3, mens lg 4 ≈ 0,60"
+            },
+            {
+              "egenskap": "Potens inni",
+              "venstre": "lg aⁿ = n · lg a",
+              "hoyre": "lg aⁿ = (lg a)ⁿ. Prøv: lg 100³ = 6, mens (lg 100)³ = 8"
+            },
+            {
+              "egenskap": "Sum inni",
+              "venstre": "Ingen regel — lg(a + b) må stå urørt",
+              "hoyre": "lg(a + b) = lg a + lg b. Prøv: lg(10 + 90) = 2, mens lg 10 + lg 90 ≈ 2,95"
+            }
+          ]
+        }
       },
       {
         "tittel": "Eksponentiallikninger",
@@ -212,7 +278,35 @@
       },
       {
         "tittel": "Logaritmelikninger og falske løsninger",
-        "html": "<p>I en <strong>logaritmelikning</strong> står den ukjente inni logaritmen. Da bruker du definisjonen baklengs: $\\lg x = y$ betyr $x = 10^y$. Enkleste tilfelle er $\\lg x = 2{,}5$, som gir $x = 10^{2{,}5} \\approx 316$, og $\\ln x = 3$, som gir $x = e^3 \\approx 20{,}1$.</p><p>Er det flere logaritmer i likningen, må du først bruke logaritmereglene til å samle alt i <strong>én</strong> logaritme:</p>$$\\lg(x+1) + \\lg(x-1) = \\lg\\left((x+1)(x-1)\\right)$$<p>Deretter kvitter du deg med logaritmen. Står det $\\lg(\\ldots) = \\lg(\\ldots)$ på begge sider, kan du stryke logaritmen og sette innmaten lik hverandre.</p><p>Her kommer den store fellen. Logaritmen er bare definert for positive tall, så løsningene du finner, må gi et positivt uttrykk inni <em>alle</em> logaritmene i den opprinnelige likningen. En løsning som bryter dette, kalles en <strong>falsk løsning</strong> og skal forkastes. Skriv derfor opp definisjonsmengden før du regner, eller sett svaret inn til slutt og kontroller.</p><p>Se på $\\lg(x-2) = 1 - \\lg x$. Både $x - 2 > 0$ og $x > 0$ må gjelde, altså $x > 2$. Vi samler logaritmene på én side:</p>$$\\lg(x-2) + \\lg x = 1 \\quad \\Rightarrow \\quad \\lg\\left(x(x-2)\\right) = 1 \\quad \\Rightarrow \\quad x^2 - 2x = 10$$<p>Andregradsformelen gir $x = 1 \\pm \\sqrt{11}$, det vil si $x \\approx 4{,}32$ eller $x \\approx -2{,}32$. Bare den første er større enn 2, så $x = 1 + \\sqrt{11}$ er den eneste løsningen.</p>"
+        "html": "<p>I en <strong>logaritmelikning</strong> står den ukjente inni logaritmen. Da bruker du definisjonen baklengs: $\\lg x = y$ betyr $x = 10^y$. Enkleste tilfelle er $\\lg x = 2{,}5$, som gir $x = 10^{2{,}5} \\approx 316$, og $\\ln x = 3$, som gir $x = e^3 \\approx 20{,}1$.</p><p>Er det flere logaritmer i likningen, må du først bruke logaritmereglene til å samle alt i <strong>én</strong> logaritme:</p>$$\\lg(x+1) + \\lg(x-1) = \\lg\\left((x+1)(x-1)\\right)$$<p>Deretter kvitter du deg med logaritmen. Står det $\\lg(\\ldots) = \\lg(\\ldots)$ på begge sider, kan du stryke logaritmen og sette innmaten lik hverandre.</p><p>Her kommer den store fellen. Logaritmen er bare definert for positive tall, så løsningene du finner, må gi et positivt uttrykk inni <em>alle</em> logaritmene i den opprinnelige likningen. En løsning som bryter dette, kalles en <strong>falsk løsning</strong> og skal forkastes. Skriv derfor opp definisjonsmengden før du regner, eller sett svaret inn til slutt og kontroller.</p><p>Se på $\\lg(x-2) = 1 - \\lg x$. Både $x - 2 > 0$ og $x > 0$ må gjelde, altså $x > 2$. Vi samler logaritmene på én side:</p>$$\\lg(x-2) + \\lg x = 1 \\quad \\Rightarrow \\quad \\lg\\left(x(x-2)\\right) = 1 \\quad \\Rightarrow \\quad x^2 - 2x = 10$$<p>Andregradsformelen gir $x = 1 \\pm \\sqrt{11}$, det vil si $x \\approx 4{,}32$ eller $x \\approx -2{,}32$. Bare den første er større enn 2, så $x = 1 + \\sqrt{11}$ er den eneste løsningen.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik løser du en logaritmelikning",
+          "forklaring": "Legg merke til at steg 1 og steg 5 hører sammen: definisjonsmengden du skriver opp først, er den du forkaster falske løsninger med til slutt. Steg 3 er det motsatte av eksponentiallikningen — der tok du logaritmen, her fjerner du den.",
+          "steg": [
+            {
+              "tekst": "Skriv opp definisjonsmengden",
+              "note": "alt inni lg må være > 0"
+            },
+            {
+              "tekst": "Samle til én logaritme",
+              "note": "lg a + lg b = lg(ab)"
+            },
+            {
+              "tekst": "Bruk definisjonen av lg",
+              "note": "lg u = k gir u = 10ᵏ"
+            },
+            {
+              "tekst": "Løs likningen som står igjen",
+              "note": "ofte en andregradslikning"
+            },
+            {
+              "tekst": "Forkast løsninger utenfor Df",
+              "note": "sett svaret inn og kontroller"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [
@@ -233,8 +327,8 @@
         "figur": {
           "type": "graf",
           "tittel": "Venstre side finnes bare for x > 0",
-          "forklaring": "Grafen krysser linja y = 1 nøyaktig én gang, i x = 2. Ved x = −5 finnes det ingen graf i det hele tatt, for da er begge uttrykkene inni logaritmene negative — kandidaten er en falsk løsning som dukket opp da vi gikk over til andregradslikningen.",
-          "xmin": -6,
+          "forklaring": "Grafen finnes bare til høyre for y-aksen, og den krysser linja y = 1 nøyaktig én gang — i x = 2. Kandidaten x = −5 ligger langt utenfor bildet, der verken lg(x + 3) eller lg x er definert, så den er en falsk løsning.",
+          "xmin": -1,
           "xmax": 6,
           "ymin": -1.5,
           "ymax": 2,
@@ -248,7 +342,7 @@
           "linjer": [
             {
               "fra": [
-                -6,
+                -1,
                 1
               ],
               "til": [
@@ -257,7 +351,7 @@
               ],
               "navn": "y = 1",
               "farge": 2,
-              "merkeplass": 0.12
+              "merkeplass": 0.18
             }
           ],
           "punkter": [
@@ -266,11 +360,6 @@
               "y": 1,
               "navn": "(2, 1)",
               "hjelpelinjer": true
-            },
-            {
-              "x": -5,
-              "y": 0,
-              "navn": "x = −5 er falsk"
             }
           ]
         }

@@ -120,7 +120,48 @@
       },
       {
         "tittel": "Akselerasjon",
-        "html": "<p><strong>Akselerasjon</strong> forteller hvor raskt farten endrer seg. Definisjonen ligner helt på definisjonen av fart, men nå er det $v$ som endrer seg i stedet for $s$:</p>$$\\bar{a} = \\frac{\\Delta v}{\\Delta t} = \\frac{v_2 - v_1}{t_2 - t_1}, \\qquad a = v'(t)$$<p>Enheten blir meter per sekund, per sekund, altså $\\text{m/s}^2$. At en bil har $a = 3{,}0\\,\\text{m/s}^2$, betyr at farten øker med 3,0 m/s for hvert sekund som går: fra 0 til 3,0 m/s det første sekundet, videre til 6,0 m/s det neste, og så videre.</p><p>Fortegnet på $a$ sier hvilken vei fartsendringen peker — ikke om gjenstanden «gir gass» eller «bremser». Regelen du bør kunne utenat:</p><ul><li>Har $v$ og $a$ <strong>samme</strong> fortegn, øker farten.</li><li>Har de <strong>motsatt</strong> fortegn, minker farten. Det er dette vi til daglig kaller retardasjon.</li></ul><p>En bil som rygger stadig raskere, har altså negativ fart og negativ akselerasjon samtidig.</p><p>To situasjoner er verdt å merke seg, fordi de bryter med intuisjonen. En gjenstand kan ha stor fart og null akselerasjon — en bil i jevn marsjfart på motorveien. Og den kan ha fart null og stor akselerasjon — en ball akkurat i det høyeste punktet av et loddrett kast. I ett gitt øyeblikk er fart og akselerasjon to helt uavhengige størrelser.</p>"
+        "html": "<p><strong>Akselerasjon</strong> forteller hvor raskt farten endrer seg. Definisjonen ligner helt på definisjonen av fart, men nå er det $v$ som endrer seg i stedet for $s$:</p>$$\\bar{a} = \\frac{\\Delta v}{\\Delta t} = \\frac{v_2 - v_1}{t_2 - t_1}, \\qquad a = v'(t)$$<p>Enheten blir meter per sekund, per sekund, altså $\\text{m/s}^2$. At en bil har $a = 3{,}0\\,\\text{m/s}^2$, betyr at farten øker med 3,0 m/s for hvert sekund som går: fra 0 til 3,0 m/s det første sekundet, videre til 6,0 m/s det neste, og så videre.</p><p>Fortegnet på $a$ sier hvilken vei fartsendringen peker — ikke om gjenstanden «gir gass» eller «bremser». Regelen du bør kunne utenat:</p><ul><li>Har $v$ og $a$ <strong>samme</strong> fortegn, øker farten.</li><li>Har de <strong>motsatt</strong> fortegn, minker farten. Det er dette vi til daglig kaller retardasjon.</li></ul><p>En bil som rygger stadig raskere, har altså negativ fart og negativ akselerasjon samtidig.</p><p>To situasjoner er verdt å merke seg, fordi de bryter med intuisjonen. En gjenstand kan ha stor fart og null akselerasjon — en bil i jevn marsjfart på motorveien. Og den kan ha fart null og stor akselerasjon — en ball akkurat i det høyeste punktet av et loddrett kast. I ett gitt øyeblikk er fart og akselerasjon to helt uavhengige størrelser.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Fart og akselerasjon",
+          "forklaring": "De to størrelsene har ulike enheter og leses av i ulike grafer. Nederste rad er poenget: den ene kan være null i samme øyeblikk som den andre er stor.",
+          "kolonner": [
+            "Fart v",
+            "Akselerasjon a"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hva den forteller",
+              "venstre": "hvor raskt posisjonen endrer seg",
+              "hoyre": "hvor raskt farten endrer seg"
+            },
+            {
+              "egenskap": "Regnes ut som",
+              "venstre": "endring i posisjon delt på tidsrommet",
+              "hoyre": "endring i fart delt på tidsrommet"
+            },
+            {
+              "egenskap": "Enhet",
+              "venstre": "m/s",
+              "hoyre": "m/s²"
+            },
+            {
+              "egenskap": "Grafisk",
+              "venstre": "stigningstallet til tangenten i s-t-grafen",
+              "hoyre": "stigningstallet til v-t-grafen"
+            },
+            {
+              "egenskap": "Fortegnet viser",
+              "venstre": "hvilken vei gjenstanden beveger seg",
+              "hoyre": "hvilken vei fartsendringen peker"
+            },
+            {
+              "egenskap": "Er null når",
+              "venstre": "bilen står stille i startøyeblikket, selv om a er 3,0 m/s²",
+              "hoyre": "bilen holder jevn marsjfart, selv om v er 28 m/s"
+            }
+          ]
+        }
       },
       {
         "tittel": "Bevegelsesgrafer: s-t, v-t og a-t",
@@ -212,11 +253,75 @@
       },
       {
         "tittel": "Fritt fall",
-        "html": "<p>En gjenstand er i <strong>fritt fall</strong> når tyngdekraften er den eneste kraften som virker, altså når vi kan se bort fra luftmotstanden. Da har alle gjenstander nøyaktig samme akselerasjon nedover, uavhengig av masse og form. Det var dette Galilei innså: en blykule og en liten stein treffer bakken samtidig, så lenge luftmotstanden ikke rekker å bety noe.</p><p>Akselerasjonen kaller vi <strong>tyngdeakselerasjonen</strong> $g$, og vi regner med $g = 9{,}81\\,\\text{m/s}^2$. Verdien varierer litt med breddegrad og høyde: omtrent $9{,}78\\,\\text{m/s}^2$ ved ekvator og $9{,}83\\,\\text{m/s}^2$ ved polene.</p><p>Fritt fall er ikke noe annet enn konstant akselerasjon, så du bruker de samme fire likningene. Det eneste som krever omtanke, er fortegnene. Velger du <strong>oppover</strong> som positiv retning, er $a = -g$:</p>$$v = v_0 - gt, \\qquad s = s_0 + v_0 t - \\frac{1}{2}gt^2$$<p>Velger du nedover som positiv retning, blir $a = +g$. For en gjenstand som slippes fra ro ($v_0 = 0$), forenkles det da til $v = gt$ og fallhøyden $h = \\frac{1}{2}gt^2$.</p><p>Et loddrett kast oppover er fritt fall hele veien — på vei opp, i det høyeste punktet og på vei ned. I toppunktet er farten null et kort øyeblikk, men akselerasjonen er fortsatt $9{,}81\\,\\text{m/s}^2$ nedover. Bevegelsen er symmetrisk: det tar like lang tid opp som ned, og gjenstanden passerer utgangspunktet med like stor fart som den ble kastet med.</p><p>I virkeligheten bremser luftmotstanden. En fallskjermhopper når til slutt en konstant <strong>grensefart</strong>, der luftmotstanden er like stor som tyngden.</p>"
+        "html": "<p>En gjenstand er i <strong>fritt fall</strong> når tyngdekraften er den eneste kraften som virker, altså når vi kan se bort fra luftmotstanden. Da har alle gjenstander nøyaktig samme akselerasjon nedover, uavhengig av masse og form. Det var dette Galilei innså: en blykule og en liten stein treffer bakken samtidig, så lenge luftmotstanden ikke rekker å bety noe.</p><p>Akselerasjonen kaller vi <strong>tyngdeakselerasjonen</strong> $g$, og vi regner med $g = 9{,}81\\,\\text{m/s}^2$. Verdien varierer litt med breddegrad og høyde: omtrent $9{,}78\\,\\text{m/s}^2$ ved ekvator og $9{,}83\\,\\text{m/s}^2$ ved polene.</p><p>Fritt fall er ikke noe annet enn konstant akselerasjon, så du bruker de samme fire likningene. Det eneste som krever omtanke, er fortegnene. Velger du <strong>oppover</strong> som positiv retning, er $a = -g$:</p>$$v = v_0 - gt, \\qquad s = s_0 + v_0 t - \\frac{1}{2}gt^2$$<p>Velger du nedover som positiv retning, blir $a = +g$. For en gjenstand som slippes fra ro ($v_0 = 0$), forenkles det da til $v = gt$ og fallhøyden $h = \\frac{1}{2}gt^2$.</p><p>Et loddrett kast oppover er fritt fall hele veien — på vei opp, i det høyeste punktet og på vei ned. I toppunktet er farten null et kort øyeblikk, men akselerasjonen er fortsatt $9{,}81\\,\\text{m/s}^2$ nedover. Bevegelsen er symmetrisk: det tar like lang tid opp som ned, og gjenstanden passerer utgangspunktet med like stor fart som den ble kastet med.</p><p>I virkeligheten bremser luftmotstanden. En fallskjermhopper når til slutt en konstant <strong>grensefart</strong>, der luftmotstanden er like stor som tyngden.</p>",
+        "figur": {
+          "type": "flyt",
+          "tittel": "Loddrett kast, fase for fase",
+          "forklaring": "Oppover er valgt som positiv retning, så a er −9,81 m/s² i alle fem stegene — også i toppunktet, der farten er null. Det er bare fortegnet på farten som skifter, og derfor er turen opp og ned til samme høyde symmetrisk.",
+          "retning": "ned",
+          "steg": [
+            {
+              "tekst": "Kast oppover med v₀ = +12 m/s",
+              "note": "a = −9,81 m/s² hele veien"
+            },
+            {
+              "tekst": "Opp: farten minker 9,81 m/s per s",
+              "note": "v og a har motsatt fortegn"
+            },
+            {
+              "tekst": "Toppunkt: v = 0",
+              "note": "men a er fortsatt −9,81 m/s²"
+            },
+            {
+              "tekst": "Ned: farten øker 9,81 m/s per s",
+              "note": "nå samme fortegn på v og a"
+            },
+            {
+              "tekst": "Tilbake i utkasthøyden: v = −12 m/s",
+              "note": "like stor fart, motsatt vei"
+            }
+          ]
+        }
       },
       {
         "tittel": "Måling og usikkerhet",
-        "html": "<p>Ingen måling er eksakt. Derfor er et måleresultat ikke ferdig før du har sagt hvor sikkert det er, på formen $x \\pm \\Delta x$ — for eksempel $(1{,}500 \\pm 0{,}005)\\,\\text{m}$.</p><p>Vi skiller mellom to typer feil. <strong>Tilfeldige feil</strong> spriker like mye i begge retninger: reaksjonstiden din på stoppeklokka, avlesning mellom to streker på en linjal. De blir mindre hvis du måler flere ganger og bruker middelverdien. <strong>Systematiske feil</strong> drar alltid samme vei: en linjal som er slitt i enden, en vekt som ikke er nullstilt, en stoppeklokke som starter for sent. Å måle mange ganger hjelper ikke i det hele tatt mot slike feil — du må finne årsaken og korrigere for den.</p><p><strong>Absolutt usikkerhet</strong> $\\Delta x$ har samme enhet som målingen. <strong>Relativ usikkerhet</strong> $\\frac{\\Delta x}{x}$ sier mer om hvor god målingen er, og oppgis gjerne i prosent: $\\frac{0{,}005}{1{,}500} = 0{,}33\\,\\%$.</p><p>Når du regner videre med måletall, forplanter usikkerheten seg:</p><ul><li>Sum og differanse: legg sammen de <strong>absolutte</strong> usikkerhetene.</li><li>Produkt og kvotient: legg sammen de <strong>relative</strong> usikkerhetene.</li><li>Potens $x^n$: gang den relative usikkerheten med $n$.</li></ul><p>Til slutt: svaret skal ikke ha flere <strong>gjeldende siffer</strong> enn måledataene tillater. Deler du $3{,}0\\,\\text{m}$ på $1{,}7\\,\\text{s}$, er svaret $1{,}8\\,\\text{m/s}$ — ikke $1{,}7647\\,\\text{m/s}$. Regn med fulle desimaler underveis, og rund av først helt til slutt.</p>"
+        "html": "<p>Ingen måling er eksakt. Derfor er et måleresultat ikke ferdig før du har sagt hvor sikkert det er, på formen $x \\pm \\Delta x$ — for eksempel $(1{,}500 \\pm 0{,}005)\\,\\text{m}$.</p><p>Vi skiller mellom to typer feil. <strong>Tilfeldige feil</strong> spriker like mye i begge retninger: reaksjonstiden din på stoppeklokka, avlesning mellom to streker på en linjal. De blir mindre hvis du måler flere ganger og bruker middelverdien. <strong>Systematiske feil</strong> drar alltid samme vei: en linjal som er slitt i enden, en vekt som ikke er nullstilt, en stoppeklokke som starter for sent. Å måle mange ganger hjelper ikke i det hele tatt mot slike feil — du må finne årsaken og korrigere for den.</p><p><strong>Absolutt usikkerhet</strong> $\\Delta x$ har samme enhet som målingen. <strong>Relativ usikkerhet</strong> $\\frac{\\Delta x}{x}$ sier mer om hvor god målingen er, og oppgis gjerne i prosent: $\\frac{0{,}005}{1{,}500} = 0{,}33\\,\\%$.</p><p>Når du regner videre med måletall, forplanter usikkerheten seg:</p><ul><li>Sum og differanse: legg sammen de <strong>absolutte</strong> usikkerhetene.</li><li>Produkt og kvotient: legg sammen de <strong>relative</strong> usikkerhetene.</li><li>Potens $x^n$: gang den relative usikkerheten med $n$.</li></ul><p>Til slutt: svaret skal ikke ha flere <strong>gjeldende siffer</strong> enn måledataene tillater. Deler du $3{,}0\\,\\text{m}$ på $1{,}7\\,\\text{s}$, er svaret $1{,}8\\,\\text{m/s}$ — ikke $1{,}7647\\,\\text{m/s}$. Regn med fulle desimaler underveis, og rund av først helt til slutt.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Tilfeldig og systematisk feil",
+          "forklaring": "Se på raden om flere målinger: bare den tilfeldige feilen blir mindre av å gjenta målingen. Spredningen mellom målingene avslører den ene feiltypen, men ikke den andre.",
+          "kolonner": [
+            "Tilfeldig feil",
+            "Systematisk feil"
+          ],
+          "rader": [
+            {
+              "egenskap": "Retning på avviket",
+              "venstre": "spriker like mye i begge retninger",
+              "hoyre": "drar alle målingene samme vei"
+            },
+            {
+              "egenskap": "Typisk årsak",
+              "venstre": "reaksjonstid på stoppeklokka, avlesning mellom to streker",
+              "hoyre": "linjal slitt i enden, vekt som ikke er nullstilt"
+            },
+            {
+              "egenskap": "Flere målinger?",
+              "venstre": "ja, middelverdien blir bedre for hver måling",
+              "hoyre": "nei, middelverdien blir like skjev som hver enkelt måling"
+            },
+            {
+              "egenskap": "Slik blir den mindre",
+              "venstre": "mål mange ganger og bruk middelverdien",
+              "hoyre": "finn årsaken og korriger, eller kalibrer utstyret"
+            },
+            {
+              "egenskap": "Synes den i dataene?",
+              "venstre": "ja, som spredning mellom målingene",
+              "hoyre": "nei, målingene kan se helt like ut"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [

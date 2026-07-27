@@ -158,15 +158,102 @@
       },
       {
         "tittel": "Kontinuitet",
-        "html": "<p>Uformelt er en funksjon <strong>kontinuerlig</strong> hvis du kan tegne grafen uten å løfte blyanten. Presist krever kontinuitet i $x=a$ tre ting samtidig:</p><ol><li>$f(a)$ er definert.</li><li>$\\lim_{x \\to a} f(x)$ finnes, altså er venstre og høyre grenseverdi like.</li><li>Grenseverdien er lik funksjonsverdien: $\\lim_{x \\to a} f(x) = f(a)$.</li></ol><p>Faller ett av kravene, er funksjonen <strong>diskontinuerlig</strong> i punktet. De tre typiske bruddene er et <strong>hull</strong> (grenseverdien finnes, men $f(a)$ mangler eller har en annen verdi), et <strong>sprang</strong> (de ensidige grenseverdiene er ulike) og en <strong>vertikal asymptote</strong> (verdiene går mot $\\pm\\infty$).</p><p>Polynomer er kontinuerlige for alle $x$. En rasjonal funksjon er kontinuerlig i hele definisjonsområdet sitt, altså for alle $x$ der nevneren ikke er 0. $\\sqrt{x}$ er kontinuerlig for $x \\ge 0$, og $\\ln x$ for $x > 0$.</p><p>Den vanligste oppgavetypen er en funksjon som er gitt med to uttrykk, ett på hver side av et skjøtepunkt, og der du skal bestemme en konstant slik at funksjonen blir kontinuerlig. Framgangsmåten er alltid den samme: regn ut venstre grenseverdi, regn ut høyre grenseverdi, sett dem lik hverandre og løs likningen.</p><p>Til slutt en kobling framover: kontinuitet er en forutsetning for deriverbarhet. Er $f$ deriverbar i $x=a$, er den også kontinuerlig der — men det motsatte gjelder ikke, slik $f(x) = |x|$ i $x=0$ viser.</p>"
+        "html": "<p>Uformelt er en funksjon <strong>kontinuerlig</strong> hvis du kan tegne grafen uten å løfte blyanten. Presist krever kontinuitet i $x=a$ tre ting samtidig:</p><ol><li>$f(a)$ er definert.</li><li>$\\lim_{x \\to a} f(x)$ finnes, altså er venstre og høyre grenseverdi like.</li><li>Grenseverdien er lik funksjonsverdien: $\\lim_{x \\to a} f(x) = f(a)$.</li></ol><p>Faller ett av kravene, er funksjonen <strong>diskontinuerlig</strong> i punktet. De tre typiske bruddene er et <strong>hull</strong> (grenseverdien finnes, men $f(a)$ mangler eller har en annen verdi), et <strong>sprang</strong> (de ensidige grenseverdiene er ulike) og en <strong>vertikal asymptote</strong> (verdiene går mot $\\pm\\infty$).</p><p>Polynomer er kontinuerlige for alle $x$. En rasjonal funksjon er kontinuerlig i hele definisjonsområdet sitt, altså for alle $x$ der nevneren ikke er 0. $\\sqrt{x}$ er kontinuerlig for $x \\ge 0$, og $\\ln x$ for $x > 0$.</p><p>Den vanligste oppgavetypen er en funksjon som er gitt med to uttrykk, ett på hver side av et skjøtepunkt, og der du skal bestemme en konstant slik at funksjonen blir kontinuerlig. Framgangsmåten er alltid den samme: regn ut venstre grenseverdi, regn ut høyre grenseverdi, sett dem lik hverandre og løs likningen.</p><p>Til slutt en kobling framover: kontinuitet er en forutsetning for deriverbarhet. Er $f$ deriverbar i $x=a$, er den også kontinuerlig der — men det motsatte gjelder ikke, slik $f(x) = |x|$ i $x=0$ viser.</p>",
+        "figur": {
+          "type": "hierarki",
+          "tittel": "Fra definert til deriverbar i x = a",
+          "forklaring": "Hvert nivå krever alt i nivået over pluss ett nytt krav, derfor smalner boksene. Les nedover: en deriverbar funksjon er alltid kontinuerlig, men en kontinuerlig funksjon behøver ikke være deriverbar — f(x) = |x| stopper på tredje nivå i x = 0.",
+          "nivaaer": [
+            {
+              "navn": "Definert i punktet",
+              "eksempel": "f(a) finnes"
+            },
+            {
+              "navn": "Har grenseverdi",
+              "eksempel": "venstre = høyre"
+            },
+            {
+              "navn": "Kontinuerlig",
+              "eksempel": "lim = f(a)"
+            },
+            {
+              "navn": "Deriverbar"
+            }
+          ]
+        }
       },
       {
         "tittel": "Grenseverdier mot uendelig og horisontale asymptoter",
-        "html": "<p>Nå spør vi hva som skjer langt ute på $x$-aksen. Grunnbyggesteinen er</p>$$\\lim_{x \\to \\pm\\infty} \\frac{1}{x^n} = 0 \\qquad (n > 0)$$<p>Deler du 1 på et enormt tall, blir resultatet nesten 0.</p><p>Har $f$ en endelig grenseverdi $b$ når $x \\to \\infty$ eller $x \\to -\\infty$, sier vi at linja $y = b$ er en <strong>horisontal asymptote</strong>. Grafen legger seg inntil linja, men behøver ikke holde seg på én side — den kan godt krysse asymptoten et sted.</p><p>For rasjonale funksjoner finnes en rask regel. Sammenlign graden i teller og nevner:</p><table><thead><tr><th>Grader</th><th>Grenseverdi når $x \\to \\pm\\infty$</th></tr></thead><tbody><tr><td>Teller lavere grad enn nevner</td><td>$0$, asymptoten er $y=0$</td></tr><tr><td>Lik grad</td><td>Forholdet mellom koeffisientene foran høyestegradsleddene</td></tr><tr><td>Teller høyere grad enn nevner</td><td>Ingen horisontal asymptote, verdiene går mot $\\pm\\infty$</td></tr></tbody></table><p>Skal du vise regningen, deler du alle ledd på den høyeste potensen av $x$ i nevneren:</p>$$\\lim_{x \\to \\infty} \\frac{3x^2 - x}{2x^2 + 5} = \\lim_{x \\to \\infty} \\frac{3 - \\frac{1}{x}}{2 + \\frac{5}{x^2}} = \\frac{3 - 0}{2 + 0} = \\frac{3}{2}$$<p>Merk at en funksjon kan ha ulik grenseverdi på de to sidene, og dermed to horisontale asymptoter. Det skjer for eksempel med $f(x) = \\frac{x}{\\sqrt{x^2+1}}$, som går mot 1 når $x \\to \\infty$ og mot $-1$ når $x \\to -\\infty$.</p>"
+        "html": "<p>Nå spør vi hva som skjer langt ute på $x$-aksen. Grunnbyggesteinen er</p>$$\\lim_{x \\to \\pm\\infty} \\frac{1}{x^n} = 0 \\qquad (n > 0)$$<p>Deler du 1 på et enormt tall, blir resultatet nesten 0.</p><p>Har $f$ en endelig grenseverdi $b$ når $x \\to \\infty$ eller $x \\to -\\infty$, sier vi at linja $y = b$ er en <strong>horisontal asymptote</strong>. Grafen legger seg inntil linja, men behøver ikke holde seg på én side — den kan godt krysse asymptoten et sted.</p><p>For rasjonale funksjoner finnes en rask regel. Sammenlign graden i teller og nevner:</p><table><thead><tr><th>Grader</th><th>Grenseverdi når $x \\to \\pm\\infty$</th></tr></thead><tbody><tr><td>Teller lavere grad enn nevner</td><td>$0$, asymptoten er $y=0$</td></tr><tr><td>Lik grad</td><td>Forholdet mellom koeffisientene foran høyestegradsleddene</td></tr><tr><td>Teller høyere grad enn nevner</td><td>Ingen horisontal asymptote, verdiene går mot $\\pm\\infty$</td></tr></tbody></table><p>Skal du vise regningen, deler du alle ledd på den høyeste potensen av $x$ i nevneren:</p>$$\\lim_{x \\to \\infty} \\frac{3x^2 - x}{2x^2 + 5} = \\lim_{x \\to \\infty} \\frac{3 - \\frac{1}{x}}{2 + \\frac{5}{x^2}} = \\frac{3 - 0}{2 + 0} = \\frac{3}{2}$$<p>Merk at en funksjon kan ha ulik grenseverdi på de to sidene, og dermed to horisontale asymptoter. Det skjer for eksempel med $f(x) = \\frac{x}{\\sqrt{x^2+1}}$, som går mot 1 når $x \\to \\infty$ og mot $-1$ når $x \\to -\\infty$.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik regner du ut grenseverdien når x → ±∞",
+          "forklaring": "Følg pilene: leddene på formen 1/xⁿ faller bort, og tallet som står igjen, er høyden grafen legger seg inntil. Står det fortsatt x igjen i telleren etter divisjonen, har grafen ingen horisontal asymptote — verdiene går mot ±∞.",
+          "steg": [
+            {
+              "tekst": "Finn høyeste x-potens i nevneren",
+              "note": "for eksempel x²"
+            },
+            {
+              "tekst": "Del hvert ledd oppe og nede på den",
+              "note": "brøkverdien endres ikke"
+            },
+            {
+              "tekst": "Sett 1/xⁿ = 0 i leddene som er igjen",
+              "note": "de går mot 0 når x vokser"
+            },
+            {
+              "tekst": "Les av tallet b du står igjen med",
+              "note": "y = b, hvis ingen x er igjen"
+            }
+          ]
+        }
       },
       {
         "tittel": "Rasjonale funksjoner: vertikale og skrå asymptoter",
-        "html": "<p>En <strong>rasjonal funksjon</strong> er en brøk med polynom i teller og nevner, $f(x) = \\frac{p(x)}{q(x)}$. Definisjonsmengden er alle $x$ der $q(x) \\neq 0$.</p><p><strong>Vertikale asymptoter.</strong> Løs $q(x) = 0$. Er $x=a$ en løsning der telleren <em>ikke</em> også blir 0, har grafen en vertikal asymptote $x=a$, og $f(x) \\to \\pm\\infty$ når $x \\to a$. Blir både teller og nevner 0, må du forkorte felles faktor først. Da får du oftest et hull i stedet, som i $\\frac{x+2}{x^2-4} = \\frac{x+2}{(x-2)(x+2)} = \\frac{1}{x-2}$: her er det hull i $x=-2$ og vertikal asymptote bare i $x=2$.</p><p><strong>Skrå asymptote.</strong> Er graden i telleren nøyaktig én høyere enn i nevneren, har grafen en skrå asymptote. Bruk <strong>polynomdivisjon</strong> og skriv funksjonen som</p>$$f(x) = ax + b + \\frac{r(x)}{q(x)}$$<p>Restleddet $\\frac{r(x)}{q(x)}$ går mot 0 når tallverdien til $x$ blir stor, så grafen nærmer seg linja $y = ax+b$. Det er den skrå asymptoten. En rasjonal funksjon kan ikke ha både horisontal og skrå asymptote — gradene bestemmer hvilken av dem du får, om noen.</p><p>Skal du drøfte en rasjonal funksjon, tar du punktene i denne rekkefølgen: definisjonsmengde, nullpunkter (der $p(x)=0$), skjæring med $y$-aksen ($f(0)$), vertikale asymptoter med ensidige grenseverdier, og til slutt horisontal eller skrå asymptote.</p>"
+        "html": "<p>En <strong>rasjonal funksjon</strong> er en brøk med polynom i teller og nevner, $f(x) = \\frac{p(x)}{q(x)}$. Definisjonsmengden er alle $x$ der $q(x) \\neq 0$.</p><p><strong>Vertikale asymptoter.</strong> Løs $q(x) = 0$. Er $x=a$ en løsning der telleren <em>ikke</em> også blir 0, har grafen en vertikal asymptote $x=a$, og $f(x) \\to \\pm\\infty$ når $x \\to a$. Blir både teller og nevner 0, må du forkorte felles faktor først. Da får du oftest et hull i stedet, som i $\\frac{x+2}{x^2-4} = \\frac{x+2}{(x-2)(x+2)} = \\frac{1}{x-2}$: her er det hull i $x=-2$ og vertikal asymptote bare i $x=2$.</p><p><strong>Skrå asymptote.</strong> Er graden i telleren nøyaktig én høyere enn i nevneren, har grafen en skrå asymptote. Bruk <strong>polynomdivisjon</strong> og skriv funksjonen som</p>$$f(x) = ax + b + \\frac{r(x)}{q(x)}$$<p>Restleddet $\\frac{r(x)}{q(x)}$ går mot 0 når tallverdien til $x$ blir stor, så grafen nærmer seg linja $y = ax+b$. Det er den skrå asymptoten. En rasjonal funksjon kan ikke ha både horisontal og skrå asymptote — gradene bestemmer hvilken av dem du får, om noen.</p><p>Skal du drøfte en rasjonal funksjon, tar du punktene i denne rekkefølgen: definisjonsmengde, nullpunkter (der $p(x)=0$), skjæring med $y$-aksen ($f(0)$), vertikale asymptoter med ensidige grenseverdier, og til slutt horisontal eller skrå asymptote.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Hull eller vertikal asymptote?",
+          "forklaring": "Nevneren er 0 i begge kolonnene, så se på raden for telleren — den avgjør alt. Blir bare nevneren 0, stikker grafen av mot ±∞; blir begge 0, forsvinner den felles faktoren ved forkorting, og du får bare et hull.",
+          "kolonner": [
+            "Hull i x = a",
+            "Vertikal asymptote x = a"
+          ],
+          "rader": [
+            {
+              "egenskap": "Nevneren q(a)",
+              "venstre": "0",
+              "hoyre": "0"
+            },
+            {
+              "egenskap": "Telleren p(a)",
+              "venstre": "også 0, så teller og nevner har den felles faktoren (x − a)",
+              "hoyre": "ikke 0"
+            },
+            {
+              "egenskap": "Etter forkorting",
+              "venstre": "faktoren (x − a) er borte, og nevneren er ikke lenger 0 i x = a",
+              "hoyre": "ingenting å forkorte, nevneren er fortsatt 0 i x = a"
+            },
+            {
+              "egenskap": "Grenseverdien i a",
+              "venstre": "finnes som et vanlig tall",
+              "hoyre": "verdiene går mot +∞ eller −∞, med ulikt fortegn fra hver side"
+            },
+            {
+              "egenskap": "Grafen",
+              "venstre": "mangler ett eneste punkt, ellers henger den sammen",
+              "hoyre": "grenene følger den loddrette linja x = a oppover og nedover"
+            },
+            {
+              "egenskap": "Eksempel",
+              "venstre": "(x + 2)/(x² − 4) har hull i x = −2, der grenseverdien er −1/4",
+              "hoyre": "(x + 2)/(x² − 4) = 1/(x − 2) har asymptote x = 2"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [

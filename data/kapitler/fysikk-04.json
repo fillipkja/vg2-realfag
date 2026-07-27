@@ -103,7 +103,48 @@
     "seksjoner": [
       {
         "tittel": "Bevegelsesmengde — masse ganger fart",
-        "html": "<p>En trailer som triller sakte mot deg og en pistolkule i høy fart har én ting felles: begge er svært vanskelige å stoppe. <strong>Bevegelsesmengden</strong> er størrelsen som fanger opp nettopp dette, og den er rett og slett masse ganger fart:</p>$$p = mv$$<p>Enheten følger av definisjonen: $\\text{kg}\\cdot\\text{m/s}$. Litt senere skal du se at dette er nøyaktig det samme som $\\text{N}\\cdot\\text{s}$, og begge skrivemåtene er tillatt. På nynorsk kalles den «rørslemengd», og i engelske bøker «momentum».</p><p>Bevegelsesmengde er en <strong>vektorstørrelse</strong>. Retningen er den samme som fartsretningen, og det betyr at fortegnet er en del av svaret. I dette kapittelet holder vi oss til bevegelser langs en rett linje, så du trenger ikke vektorpiler: velg en positiv retning, og gi $v$ og $p$ fortegn etter den. En ball som spretter tilbake fra en vegg, har byttet fortegn på $p$, og derfor er endringen mye større enn du kanskje tror.</p><p>Legg merke til forskjellen fra kinetisk energi, $E_k = \\frac{1}{2}mv^2$, som du møtte i forrige kapittel. Energien er en skalar og alltid positiv, mens bevegelsesmengden har retning. To like biler som kjører rett mot hverandre med samme fart, har til sammen bevegelsesmengde null, men de har absolutt ikke energi null. Dobler du farten, dobles $p$, mens $E_k$ blir fire ganger så stor. De to størrelsene henger sammen gjennom $E_k = \\frac{p^2}{2m}$.</p>"
+        "html": "<p>En trailer som triller sakte mot deg og en pistolkule i høy fart har én ting felles: begge er svært vanskelige å stoppe. <strong>Bevegelsesmengden</strong> er størrelsen som fanger opp nettopp dette, og den er rett og slett masse ganger fart:</p>$$p = mv$$<p>Enheten følger av definisjonen: $\\text{kg}\\cdot\\text{m/s}$. Litt senere skal du se at dette er nøyaktig det samme som $\\text{N}\\cdot\\text{s}$, og begge skrivemåtene er tillatt. På nynorsk kalles den «rørslemengd», og i engelske bøker «momentum».</p><p>Bevegelsesmengde er en <strong>vektorstørrelse</strong>. Retningen er den samme som fartsretningen, og det betyr at fortegnet er en del av svaret. I dette kapittelet holder vi oss til bevegelser langs en rett linje, så du trenger ikke vektorpiler: velg en positiv retning, og gi $v$ og $p$ fortegn etter den. En ball som spretter tilbake fra en vegg, har byttet fortegn på $p$, og derfor er endringen mye større enn du kanskje tror.</p><p>Legg merke til forskjellen fra kinetisk energi, $E_k = \\frac{1}{2}mv^2$, som du møtte i forrige kapittel. Energien er en skalar og alltid positiv, mens bevegelsesmengden har retning. To like biler som kjører rett mot hverandre med samme fart, har til sammen bevegelsesmengde null, men de har absolutt ikke energi null. Dobler du farten, dobles $p$, mens $E_k$ blir fire ganger så stor. De to størrelsene henger sammen gjennom $E_k = \\frac{p^2}{2m}$.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Bevegelsesmengde eller kinetisk energi?",
+          "forklaring": "Se særlig på radene «Retning» og «Bevart i et støt». Det er de to forskjellene som avgjør hvilken av de to størrelsene du skal regne med i en oppgave.",
+          "kolonner": [
+            "Bevegelsesmengde p",
+            "Kinetisk energi Eₖ"
+          ],
+          "rader": [
+            {
+              "egenskap": "Formel og enhet",
+              "venstre": "p = mv, med enheten kg·m/s (= N·s)",
+              "hoyre": "Eₖ = ½mv², med enheten J"
+            },
+            {
+              "egenskap": "Retning",
+              "venstre": "Vektor: får fortegn etter den positive retningen du velger",
+              "hoyre": "Skalar: alltid positiv, uansett hvilken vei kroppen går"
+            },
+            {
+              "egenskap": "To like biler rett mot hverandre",
+              "venstre": "Summen er null — like store tall med motsatt fortegn",
+              "hoyre": "Summen er dobbelt så stor som for én bil"
+            },
+            {
+              "egenskap": "Dobbelt så stor fart",
+              "venstre": "Dobbelt så stor verdi (v i første potens)",
+              "hoyre": "Fire ganger så stor verdi (v er kvadrert)"
+            },
+            {
+              "egenskap": "Bevart i et støt",
+              "venstre": "Alltid, så lenge summen av de ytre kreftene er null",
+              "hoyre": "Bare når støtet er elastisk"
+            },
+            {
+              "egenskap": "Endres av",
+              "venstre": "Kraftstøt: F·Δt = Δp",
+              "hoyre": "Arbeid: F·s = ΔEₖ"
+            }
+          ]
+        }
       },
       {
         "tittel": "Impuls og kraftstøt",
@@ -158,7 +199,35 @@
       },
       {
         "tittel": "Bevaring av bevegelsesmengde",
-        "html": "<p>Se på to gjenstander som støter sammen. Under støtet virker de på hverandre med krefter, og etter <strong>Newtons 3. lov</strong> er disse to kreftene like store og motsatt rettet. De virker dessuten i akkurat like lang tid: kontakten begynner og slutter samtidig for begge. Da er også kraftstøtene like store og motsatt rettede:</p>$$F_{1\\to 2}\\,\\Delta t = -F_{2\\to 1}\\,\\Delta t \\quad \\Longrightarrow \\quad \\Delta p_2 = -\\Delta p_1$$<p>Det den ene mister av bevegelsesmengde, får den andre. Til sammen endrer seg altså ingenting, og vi har <strong>loven om bevaring av bevegelsesmengde</strong>:</p>$$m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$$<p>Fartene uten apostrof er fra før støtet, de med apostrof er etter. Alle fartene skal settes inn <strong>med fortegn</strong> etter den positive retningen du har valgt.</p><p>Loven gjelder for et <strong>lukket system</strong>, det vil si når summen av de <em>ytre</em> kreftene er null. Kreftene gjenstandene utøver på hverandre, er indre krefter og opphever hverandre alltid. Ytre krefter som friksjon eller et snordrag kan derimot endre systemets bevegelsesmengde. I et støt varer kontakten så kort tid at kraftstøtet fra tyngde og friksjon blir helt ubetydelig mot de enorme støtkreftene — derfor kan vi bruke loven selv på biler som kolliderer på asfalt.</p><p>Bevaringen gjelder også når gjenstander skyver seg fra hverandre. Står du i ro på skøyter og kaster en ball, er $p$ null før kastet, og da må summen være null etterpå også: du triller bakover. Det samme prinsippet er <strong>rekylen</strong> i et gevær og det som driver en rakett framover.</p>"
+        "html": "<p>Se på to gjenstander som støter sammen. Under støtet virker de på hverandre med krefter, og etter <strong>Newtons 3. lov</strong> er disse to kreftene like store og motsatt rettet. De virker dessuten i akkurat like lang tid: kontakten begynner og slutter samtidig for begge. Da er også kraftstøtene like store og motsatt rettede:</p>$$F_{1\\to 2}\\,\\Delta t = -F_{2\\to 1}\\,\\Delta t \\quad \\Longrightarrow \\quad \\Delta p_2 = -\\Delta p_1$$<p>Det den ene mister av bevegelsesmengde, får den andre. Til sammen endrer seg altså ingenting, og vi har <strong>loven om bevaring av bevegelsesmengde</strong>:</p>$$m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$$<p>Fartene uten apostrof er fra før støtet, de med apostrof er etter. Alle fartene skal settes inn <strong>med fortegn</strong> etter den positive retningen du har valgt.</p><p>Loven gjelder for et <strong>lukket system</strong>, det vil si når summen av de <em>ytre</em> kreftene er null. Kreftene gjenstandene utøver på hverandre, er indre krefter og opphever hverandre alltid. Ytre krefter som friksjon eller et snordrag kan derimot endre systemets bevegelsesmengde. I et støt varer kontakten så kort tid at kraftstøtet fra tyngde og friksjon blir helt ubetydelig mot de enorme støtkreftene — derfor kan vi bruke loven selv på biler som kolliderer på asfalt.</p><p>Bevaringen gjelder også når gjenstander skyver seg fra hverandre. Står du i ro på skøyter og kaster en ball, er $p$ null før kastet, og da må summen være null etterpå også: du triller bakover. Det samme prinsippet er <strong>rekylen</strong> i et gevær og det som driver en rakett framover.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Fra Newtons 3. lov til bevaring av p",
+          "forklaring": "Følg kjeden nedover: hvert steg er begrunnelsen for det neste. Legg merke til at det er den like kontakttiden i steg 3 som gjør at like store krefter også gir like store kraftstøt.",
+          "steg": [
+            {
+              "tekst": "Støtet: bare indre krefter virker",
+              "note": "ytre krefter kan neglisjeres"
+            },
+            {
+              "tekst": "Newtons 3. lov: F₁₂ = −F₂₁",
+              "note": "like store, motsatt rettede"
+            },
+            {
+              "tekst": "Kontakten varer like lenge for begge",
+              "note": "samme Δt i F·Δt"
+            },
+            {
+              "tekst": "Motsatte kraftstøt: Δp₂ = −Δp₁",
+              "note": "det én mister, får den andre"
+            },
+            {
+              "tekst": "p før = p etter for de to til sammen",
+              "note": "også når Eₖ går tapt"
+            }
+          ]
+        }
       },
       {
         "tittel": "Uelastiske støt",
@@ -166,7 +235,48 @@
       },
       {
         "tittel": "Elastiske støt",
-        "html": "<p>I et <strong>elastisk</strong> støt er både bevegelsesmengden og den kinetiske energien bevart. Gjenstandene deformeres under sammenstøtet, men fjærer helt tilbake og gir all energien tilbake til bevegelsen. Perfekt elastiske støt er en idealisering, men biljardkuler, harde stålkuler og ikke minst molekyler og atomer kommer svært nær.</p><p>Nå har du to likninger og kan finne to ukjente farter:</p>$$m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$$$$\\frac{1}{2}m_1 v_1^2 + \\frac{1}{2}m_2 v_2^2 = \\frac{1}{2}m_1 v_1'^2 + \\frac{1}{2}m_2 v_2'^2$$<p>Energilikningen er andregrads, så regningen blir litt tung. Et nyttig triks er at de to likningene til sammen gir en enkel sammenheng: <strong>den relative farten snur, men beholder tallverdien.</strong></p>$$v_1 - v_2 = -\\left(v_1' - v_2'\\right)$$<p>Nærmer kulene seg hverandre med 5 m/s før støtet, fjerner de seg fra hverandre med 5 m/s etterpå. Denne likningen er lineær, så kombinerer du den med bevaringsloven, slipper du andregradslikningen helt. Bruk den i det minste som kontroll av svaret.</p><p>Tre spesialtilfeller er verdt å kjenne:</p><ul><li><strong>Like masser, den ene i ro:</strong> den som traff, stopper helt, og den andre går videre med hele farten. Slik ser du det på biljardbordet.</li><li><strong>Lett gjenstand mot svært tung:</strong> den lette spretter tilbake med nesten uendret fart, som en ball mot en vegg.</li><li><strong>Tung gjenstand mot svært lett:</strong> den tunge fortsetter nesten upåvirket, og den lette skytes av gårde med nesten dobbelt så stor fart som den tunge hadde.</li></ul>"
+        "html": "<p>I et <strong>elastisk</strong> støt er både bevegelsesmengden og den kinetiske energien bevart. Gjenstandene deformeres under sammenstøtet, men fjærer helt tilbake og gir all energien tilbake til bevegelsen. Perfekt elastiske støt er en idealisering, men biljardkuler, harde stålkuler og ikke minst molekyler og atomer kommer svært nær.</p><p>Nå har du to likninger og kan finne to ukjente farter:</p>$$m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$$$$\\frac{1}{2}m_1 v_1^2 + \\frac{1}{2}m_2 v_2^2 = \\frac{1}{2}m_1 v_1'^2 + \\frac{1}{2}m_2 v_2'^2$$<p>Energilikningen er andregrads, så regningen blir litt tung. Et nyttig triks er at de to likningene til sammen gir en enkel sammenheng: <strong>den relative farten snur, men beholder tallverdien.</strong></p>$$v_1 - v_2 = -\\left(v_1' - v_2'\\right)$$<p>Nærmer kulene seg hverandre med 5 m/s før støtet, fjerner de seg fra hverandre med 5 m/s etterpå. Denne likningen er lineær, så kombinerer du den med bevaringsloven, slipper du andregradslikningen helt. Bruk den i det minste som kontroll av svaret.</p><p>Tre spesialtilfeller er verdt å kjenne:</p><ul><li><strong>Like masser, den ene i ro:</strong> den som traff, stopper helt, og den andre går videre med hele farten. Slik ser du det på biljardbordet.</li><li><strong>Lett gjenstand mot svært tung:</strong> den lette spretter tilbake med nesten uendret fart, som en ball mot en vegg.</li><li><strong>Tung gjenstand mot svært lett:</strong> den tunge fortsetter nesten upåvirket, og den lette skytes av gårde med nesten dobbelt så stor fart som den tunge hadde.</li></ul>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Elastisk og fullstendig uelastisk støt",
+          "forklaring": "Øverste rad er felles: bevegelsesmengden er bevart i begge kolonnene. Alt under skiller, og raden «Likninger du trenger» sier hvorfor et elastisk støt krever mer regning.",
+          "kolonner": [
+            "Elastisk støt",
+            "Fullstendig uelastisk"
+          ],
+          "rader": [
+            {
+              "egenskap": "Bevegelsesmengde",
+              "venstre": "Bevart: m₁v₁ + m₂v₂ = m₁v₁′ + m₂v₂′",
+              "hoyre": "Bevart: m₁v₁ + m₂v₂ = (m₁ + m₂)v′"
+            },
+            {
+              "egenskap": "Kinetisk energi",
+              "venstre": "Bevart — deformasjonen fjærer helt tilbake til bevegelse",
+              "hoyre": "Størst mulig tap — til deformasjon, indre energi og lyd"
+            },
+            {
+              "egenskap": "Farten etterpå",
+              "venstre": "To ulike farter, kroppene skilles igjen",
+              "hoyre": "Én felles fart v′, kroppene henger sammen"
+            },
+            {
+              "egenskap": "Likninger du trenger",
+              "venstre": "To: bevaring av p og av Eₖ (eller relativ fart)",
+              "hoyre": "Én: bevaring av p er nok, siden v₁′ = v₂′"
+            },
+            {
+              "egenskap": "Relativ fart etter støtet",
+              "venstre": "Snur, men beholder tallverdien: v₁ − v₂ = −(v₁′ − v₂′)",
+              "hoyre": "Null — kroppene fjerner seg ikke fra hverandre"
+            },
+            {
+              "egenskap": "Typiske eksempler",
+              "venstre": "Biljardkuler, harde stålkuler, molekyler i en gass",
+              "hoyre": "Togvogner som kobles, pil i blink, kule i trekloss"
+            }
+          ]
+        }
       },
       {
         "tittel": "Slik løser du støtoppgaver",

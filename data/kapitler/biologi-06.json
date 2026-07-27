@@ -91,7 +91,43 @@
     "seksjoner": [
       {
         "tittel": "Autotrofe og heterotrofe organismer",
-        "html": "<p>Alt liv trenger to ting: <strong>energi</strong> til å drive prosesser, og <strong>karbon</strong> til å bygge kroppen av. Forskjellen mellom organismegruppene ligger i hvor de henter dette fra.</p><p><strong>Autotrofe</strong> organismer («selvernærende») lager sine egne organiske molekyler fra uorganiske stoffer — først og fremst karbondioksid og vann. De aller fleste er <strong>fotoautotrofe</strong> og bruker lysenergi: planter, alger og cyanobakterier. Noen få er <strong>kjemoautotrofe</strong> og henter energien fra kjemiske reaksjoner med uorganiske stoffer i stedet for fra lys. Nitrifiserende bakterier i jorda oksiderer ammonium, og svovelbakterier ved varme kilder på havbunnen oksiderer hydrogensulfid. Der nede finnes det økosystemer som aldri har fått en solstråle.</p><p><strong>Heterotrofe</strong> organismer («andreernærende») kan ikke binde karbon fra CO<sub>2</sub> selv, og må ta opp ferdige organiske molekyler: dyr, sopp, de fleste bakterier og alle mennesker. I økologien deler vi dem i <em>konsumenter</em>, som lever av andre organismer, og <em>nedbrytere</em>, som lever av dødt organisk materiale.</p><p>De autotrofe kalles <strong>produsenter</strong> i et økosystem, fordi de er inngangsporten for både energi og karbon. Energien kommer inn som lys, går gjennom næringskjeden og forsvinner til slutt som varme. Karbonet går derimot i kretsløp mellom organismene og atmosfæren.</p><p>Den viktigste presiseringen i hele kapittelet: autotrof handler om <em>hvordan organismen skaffer karbon og energi</em> — ikke om hvorvidt den driver celleånding. Planteceller har mitokondrier og driver celleånding hele døgnet, akkurat som du. Om dagen går fotosyntesen så mye raskere at planten netto avgir oksygen, men om natten forbruker den oksygen og avgir CO<sub>2</sub>.</p>"
+        "html": "<p>Alt liv trenger to ting: <strong>energi</strong> til å drive prosesser, og <strong>karbon</strong> til å bygge kroppen av. Forskjellen mellom organismegruppene ligger i hvor de henter dette fra.</p><p><strong>Autotrofe</strong> organismer («selvernærende») lager sine egne organiske molekyler fra uorganiske stoffer — først og fremst karbondioksid og vann. De aller fleste er <strong>fotoautotrofe</strong> og bruker lysenergi: planter, alger og cyanobakterier. Noen få er <strong>kjemoautotrofe</strong> og henter energien fra kjemiske reaksjoner med uorganiske stoffer i stedet for fra lys. Nitrifiserende bakterier i jorda oksiderer ammonium, og svovelbakterier ved varme kilder på havbunnen oksiderer hydrogensulfid. Der nede finnes det økosystemer som aldri har fått en solstråle.</p><p><strong>Heterotrofe</strong> organismer («andreernærende») kan ikke binde karbon fra CO<sub>2</sub> selv, og må ta opp ferdige organiske molekyler: dyr, sopp, de fleste bakterier og alle mennesker. I økologien deler vi dem i <em>konsumenter</em>, som lever av andre organismer, og <em>nedbrytere</em>, som lever av dødt organisk materiale.</p><p>De autotrofe kalles <strong>produsenter</strong> i et økosystem, fordi de er inngangsporten for både energi og karbon. Energien kommer inn som lys, går gjennom næringskjeden og forsvinner til slutt som varme. Karbonet går derimot i kretsløp mellom organismene og atmosfæren.</p><p>Den viktigste presiseringen i hele kapittelet: autotrof handler om <em>hvordan organismen skaffer karbon og energi</em> — ikke om hvorvidt den driver celleånding. Planteceller har mitokondrier og driver celleånding hele døgnet, akkurat som du. Om dagen går fotosyntesen så mye raskere at planten netto avgir oksygen, men om natten forbruker den oksygen og avgir CO<sub>2</sub>.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Autotrof og heterotrof ernæring",
+          "forklaring": "Bare de to øverste radene skiller gruppene: hvor karbonet og hvor energien kommer fra. Nederste rad er den vanligste fella — begge driver celleånding hele døgnet, så en plante forbruker O₂ og avgir CO₂ om natten akkurat som du gjør.",
+          "kolonner": [
+            "Autotrof",
+            "Heterotrof"
+          ],
+          "rader": [
+            {
+              "egenskap": "Karbonkilde",
+              "venstre": "CO₂ — binder uorganisk karbon selv",
+              "hoyre": "ferdige organiske molekyler fra andre"
+            },
+            {
+              "egenskap": "Energikilde",
+              "venstre": "lys (fotoautotrof) eller reaksjoner med uorganiske stoffer (kjemoautotrof)",
+              "hoyre": "den kjemiske energien i maten"
+            },
+            {
+              "egenskap": "Rolle i økosystemet",
+              "venstre": "produsent — inngangsporten for energi og karbon",
+              "hoyre": "konsument eller nedbryter"
+            },
+            {
+              "egenskap": "Eksempler",
+              "venstre": "planter, alger, cyanobakterier, svovelbakterier",
+              "hoyre": "dyr, sopp, de fleste bakterier, mennesket"
+            },
+            {
+              "egenskap": "Celleånding",
+              "venstre": "ja, hele døgnet — planteceller har mitokondrier",
+              "hoyre": "ja, hele døgnet — eneste vei til ATP"
+            }
+          ]
+        }
       },
       {
         "tittel": "Fotosyntesen i hovedtrekk",
@@ -183,7 +219,34 @@
       },
       {
         "tittel": "Næringsstoffer og fordøyelse hos mennesket",
-        "html": "<p>Maten inneholder <strong>energigivende næringsstoffer</strong> — karbohydrat, fett og protein — pluss vann, vitaminer, mineraler og kostfiber, som ikke er energikilder for kroppen på samme måte, men er nødvendige likevel. Kostfiberet gir riktignok et lite energibidrag indirekte, fordi tarmbakteriene i tykktarmen gjærer en del av det. Byggesteiner kroppen ikke kan lage selv, kalles <strong>essensielle</strong>: ni aminosyrer, to fettsyrer og alle vitaminer og mineraler.</p><table><thead><tr><th>Næringsstoff</th><th>Byggesteiner</th><th>Energi</th></tr></thead><tbody><tr><td>Karbohydrat</td><td>Monosakkarider: glukose, fruktose, galaktose</td><td>17 kJ/g</td></tr><tr><td>Protein</td><td>Aminosyrer</td><td>17 kJ/g</td></tr><tr><td>Fett</td><td>Fettsyrer og glyserol</td><td>37 kJ/g</td></tr></tbody></table><p>Molekylene i maten er for store til å slippe gjennom tarmveggen. <strong>Fordøyelsen</strong> er hydrolyse: enzymer klipper polymerene i biter ved hjelp av vann.</p><ul><li><strong>Munnen:</strong> amylase i spyttet begynner på stivelsen, og tyggingen øker overflaten.</li><li><strong>Magesekken:</strong> saltsyre gir pH rundt 2, som dreper mikrober og folder ut proteinene. Pepsin klipper protein til kortere peptider. Amylasen slutter å virke i det sure miljøet.</li><li><strong>Tolvfingertarmen:</strong> bukspyttet tilfører bikarbonat som nøytraliserer syra, pluss amylase, lipase og proteaser. <strong>Galle</strong> fra leveren emulgerer fettet til små dråper slik at lipasen får mye større angrepsflate — men galle inneholder ingen enzymer.</li><li><strong>Tynntarmen:</strong> enzymer i tarmveggen fullfører nedbrytingen, og byggesteinene tas opp. Veggen er foldet og dekket av <strong>tarmtotter</strong> og <strong>mikrovilli</strong>; nyere målinger anslår opptaksflaten til rundt 30 m<sup>2</sup>, mot omtrent 2 m<sup>2</sup> hud.</li><li><strong>Tykktarmen:</strong> vann og salter tas opp, og tarmbakteriene arbeider videre på resten.</li></ul><p>Monosakkarider og aminosyrer går rett inn i blodet og føres gjennom <strong>portvenen til leveren</strong>. Fettet tar en annen vei: det settes sammen igjen i tarmcellene, pakkes i partikler og sendes ut i <strong>lymfen</strong> før det når blodet.</p>"
+        "html": "<p>Maten inneholder <strong>energigivende næringsstoffer</strong> — karbohydrat, fett og protein — pluss vann, vitaminer, mineraler og kostfiber, som ikke er energikilder for kroppen på samme måte, men er nødvendige likevel. Kostfiberet gir riktignok et lite energibidrag indirekte, fordi tarmbakteriene i tykktarmen gjærer en del av det. Byggesteiner kroppen ikke kan lage selv, kalles <strong>essensielle</strong>: ni aminosyrer, to fettsyrer og alle vitaminer og mineraler.</p><table><thead><tr><th>Næringsstoff</th><th>Byggesteiner</th><th>Energi</th></tr></thead><tbody><tr><td>Karbohydrat</td><td>Monosakkarider: glukose, fruktose, galaktose</td><td>17 kJ/g</td></tr><tr><td>Protein</td><td>Aminosyrer</td><td>17 kJ/g</td></tr><tr><td>Fett</td><td>Fettsyrer og glyserol</td><td>37 kJ/g</td></tr></tbody></table><p>Molekylene i maten er for store til å slippe gjennom tarmveggen. <strong>Fordøyelsen</strong> er hydrolyse: enzymer klipper polymerene i biter ved hjelp av vann.</p><ul><li><strong>Munnen:</strong> amylase i spyttet begynner på stivelsen, og tyggingen øker overflaten.</li><li><strong>Magesekken:</strong> saltsyre gir pH rundt 2, som dreper mikrober og folder ut proteinene. Pepsin klipper protein til kortere peptider. Amylasen slutter å virke i det sure miljøet.</li><li><strong>Tolvfingertarmen:</strong> bukspyttet tilfører bikarbonat som nøytraliserer syra, pluss amylase, lipase og proteaser. <strong>Galle</strong> fra leveren emulgerer fettet til små dråper slik at lipasen får mye større angrepsflate — men galle inneholder ingen enzymer.</li><li><strong>Tynntarmen:</strong> enzymer i tarmveggen fullfører nedbrytingen, og byggesteinene tas opp. Veggen er foldet og dekket av <strong>tarmtotter</strong> og <strong>mikrovilli</strong>; nyere målinger anslår opptaksflaten til rundt 30 m<sup>2</sup>, mot omtrent 2 m<sup>2</sup> hud.</li><li><strong>Tykktarmen:</strong> vann og salter tas opp, og tarmbakteriene arbeider videre på resten.</li></ul><p>Monosakkarider og aminosyrer går rett inn i blodet og føres gjennom <strong>portvenen til leveren</strong>. Fettet tar en annen vei: det settes sammen igjen i tarmcellene, pakkes i partikler og sendes ut i <strong>lymfen</strong> før det når blodet.</p>",
+        "figur": {
+          "type": "hierarki",
+          "tittel": "Foldingen som gir tynntarmen 30 m² opptaksflate",
+          "forklaring": "Hvert nivå ligger inni det over, og hver folding ganger opp arealet: et rør som glatt ville hatt under 1 m² vegg, ender på rundt 30 m². Merk nivå fire — næringsstoffene har bare ett cellelag å komme gjennom før de er i blodet.",
+          "nivaaer": [
+            {
+              "navn": "Tynntarm",
+              "eksempel": "ca. 6 m langt rør"
+            },
+            {
+              "navn": "Ringfolder",
+              "eksempel": "tverrfolder i veggen"
+            },
+            {
+              "navn": "Tarmtotter",
+              "eksempel": "villi, ca. 1 mm"
+            },
+            {
+              "navn": "Epitelceller",
+              "eksempel": "ett cellelag"
+            },
+            {
+              "navn": "Mikrovilli",
+              "eksempel": "1 µm"
+            }
+          ]
+        }
       },
       {
         "tittel": "Tarmfloraen",
@@ -252,7 +315,34 @@
       {
         "tittel": "Én brødskive med ost — hele veien til ATP",
         "oppgave": "<p>Du spiser en brødskive med ost. Brødet består i hovedsak av stivelse, osten av protein og fett. Følg maten gjennom fordøyelseskanalen, og forklar for hvert sted hvilket stoff som brytes ned, hvilket enzym som gjør jobben, og hva produktet blir. Avslutt med hva som skjer med byggesteinene inne i en muskelcelle.</p>",
-        "losning": "<p><strong>Munnen.</strong> Tyggingen deler maten opp og øker overflaten enzymene kan angripe. <strong>Amylase</strong> i spyttet hydrolyserer stivelsen i brødet til kortere kjeder og disakkaridet maltose. Verken protein eller fett røres her.</p><p><strong>Spiserøret.</strong> Ingen kjemisk fordøyelse. Ringmuskulaturen presser maten nedover med bølgebevegelser (peristaltikk), og det virker også om du står på hodet.</p><p><strong>Magesekken.</strong> Saltsyre gir pH rundt 2. Det dreper de fleste mikrobene i osten, og det folder ut proteinmolekylene slik at enzymet kommer til. <strong>Pepsin</strong> klipper proteinene fra osten i kortere <em>peptider</em>. Samtidig slutter spyttamylasen å virke, fordi den ikke tåler så lav pH — stivelsesnedbrytingen tar altså pause her.</p><p><strong>Tolvfingertarmen.</strong> Tre bidrag kommer inn samtidig. Bukspytt tilfører bikarbonat som nøytraliserer syra opp til pH rundt 7–8, slik at enzymene under kan virke. <strong>Galle</strong> fra leveren emulgerer fettet i osten til bittesmå dråper — den bryter ikke ned noe, men mangedobler overflaten. Så gjør bukspyttets enzymer jobben: amylase på resten av stivelsen, <strong>lipase</strong> på fettdråpene (til fettsyrer og monoglyserider), og <strong>proteaser</strong> som trypsin på peptidene.</p><p><strong>Tynntarmen.</strong> Enzymer i selve tarmveggen fullfører: maltase spalter maltose til to glukose, og peptidaser klipper de siste peptidene til frie <em>aminosyrer</em>. Nå er alt lite nok til å tas opp gjennom mikrovilli på tarmtottene.</p><p><strong>Transporten.</strong> Glukose og aminosyrer går inn i blodet og føres via portvenen til leveren, som jevner ut blodsukkeret og fordeler videre. Fettet settes sammen til fett igjen inne i tarmcellene, pakkes i partikler og sendes ut i lymfen — det når blodet først ved venen under kragebeinet.</p><p><strong>Tykktarmen.</strong> Fiberet i brødet kommer hit uten å være rørt, for du har ingen enzymer som spalter det. Tarmbakteriene gjærer det til kortkjedede fettsyrer som tarmcellene bruker som brennstoff, og vann og salter tas opp.</p><p><strong>Inne i muskelcellen.</strong> Glukosen fra blodet går gjennom glykolysen i cytosol til 2 pyruvat. Er det nok oksygen, føres pyruvatet inn i mitokondriet, blir acetyl-CoA, går gjennom sitronsyresyklusen, og NADH leverer elektronene til elektrontransportkjeden — omtrent 30–32 ATP i alt, og CO<sub>2</sub> som du puster ut. Aminosyrene brukes helst til å bygge protein, ikke til brennstoff. Fettsyrene gir mye ATP per gram, men bare aerobt.</p>"
+        "losning": "<p><strong>Munnen.</strong> Tyggingen deler maten opp og øker overflaten enzymene kan angripe. <strong>Amylase</strong> i spyttet hydrolyserer stivelsen i brødet til kortere kjeder og disakkaridet maltose. Verken protein eller fett røres her.</p><p><strong>Spiserøret.</strong> Ingen kjemisk fordøyelse. Ringmuskulaturen presser maten nedover med bølgebevegelser (peristaltikk), og det virker også om du står på hodet.</p><p><strong>Magesekken.</strong> Saltsyre gir pH rundt 2. Det dreper de fleste mikrobene i osten, og det folder ut proteinmolekylene slik at enzymet kommer til. <strong>Pepsin</strong> klipper proteinene fra osten i kortere <em>peptider</em>. Samtidig slutter spyttamylasen å virke, fordi den ikke tåler så lav pH — stivelsesnedbrytingen tar altså pause her.</p><p><strong>Tolvfingertarmen.</strong> Tre bidrag kommer inn samtidig. Bukspytt tilfører bikarbonat som nøytraliserer syra opp til pH rundt 7–8, slik at enzymene under kan virke. <strong>Galle</strong> fra leveren emulgerer fettet i osten til bittesmå dråper — den bryter ikke ned noe, men mangedobler overflaten. Så gjør bukspyttets enzymer jobben: amylase på resten av stivelsen, <strong>lipase</strong> på fettdråpene (til fettsyrer og monoglyserider), og <strong>proteaser</strong> som trypsin på peptidene.</p><p><strong>Tynntarmen.</strong> Enzymer i selve tarmveggen fullfører: maltase spalter maltose til to glukose, og peptidaser klipper de siste peptidene til frie <em>aminosyrer</em>. Nå er alt lite nok til å tas opp gjennom mikrovilli på tarmtottene.</p><p><strong>Transporten.</strong> Glukose og aminosyrer går inn i blodet og føres via portvenen til leveren, som jevner ut blodsukkeret og fordeler videre. Fettet settes sammen til fett igjen inne i tarmcellene, pakkes i partikler og sendes ut i lymfen — det når blodet først ved venen under kragebeinet.</p><p><strong>Tykktarmen.</strong> Fiberet i brødet kommer hit uten å være rørt, for du har ingen enzymer som spalter det. Tarmbakteriene gjærer det til kortkjedede fettsyrer som tarmcellene bruker som brennstoff, og vann og salter tas opp.</p><p><strong>Inne i muskelcellen.</strong> Glukosen fra blodet går gjennom glykolysen i cytosol til 2 pyruvat. Er det nok oksygen, føres pyruvatet inn i mitokondriet, blir acetyl-CoA, går gjennom sitronsyresyklusen, og NADH leverer elektronene til elektrontransportkjeden — omtrent 30–32 ATP i alt, og CO<sub>2</sub> som du puster ut. Aminosyrene brukes helst til å bygge protein, ikke til brennstoff. Fettsyrene gir mye ATP per gram, men bare aerobt.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "pH der maten passerer",
+          "enhet": "pH",
+          "min": 0,
+          "max": 10,
+          "log": false,
+          "forklaring": "Se spranget fra pH 2 i magesekken til pH 7–8 i tynntarmen: bikarbonatet fra bukspyttet må nøytralisere syra før lipase og trypsin kan virke. Samme sprang forklarer at spyttamylasen tar pause i magesekken, og tykktarmen ligger litt surt fordi bakteriene lager syrer av fiberet.",
+          "band": [
+            {
+              "fra": 1,
+              "til": 3,
+              "navn": "magesekk",
+              "verdi": "pepsin"
+            },
+            {
+              "fra": 5.5,
+              "til": 6.5,
+              "navn": "tykktarm"
+            },
+            {
+              "fra": 7,
+              "til": 8,
+              "navn": "tynntarm"
+            }
+          ]
+        }
       },
       {
         "tittel": "Energiinnholdet i et måltid — og hvor mye ATP det blir",

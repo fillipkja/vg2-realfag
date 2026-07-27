@@ -106,7 +106,42 @@
     "seksjoner": [
       {
         "tittel": "Strøm, spenning og resistans",
-        "html": "<p>Elektrisk strøm er <strong>ladning i bevegelse</strong>. I en metalltråd er det de frie elektronene som flytter seg. Strømmen forteller hvor mye ladning som passerer et tverrsnitt av lederen per sekund:</p>$$I = \\frac{Q}{t}$$<p>Enheten er ampere: $1\\,\\text{A} = 1\\,\\text{C/s}$. Ladning måles i coulomb, og den minste ladningen vi finner fritt, er elementærladningen $e = 1{,}60\\cdot 10^{-19}\\,\\text{C}$.</p><p>Strømretningen ble historisk definert som retningen <em>positiv</em> ladning ville beveget seg, altså fra pluss til minus gjennom den ytre kretsen. I metaller går elektronene faktisk motsatt vei, men vi bruker likevel denne <strong>konvensjonelle strømretningen</strong> i alle beregninger. Elektronene selv driver overraskende sakte, gjerne under en millimeter i sekundet, mens selve påvirkningen forplanter seg gjennom lederen nesten momentant. Derfor lyser lampa i samme øyeblikk du slår på bryteren.</p><p><strong>Spenning</strong> er energi per ladning:</p>$$U = \\frac{W}{Q}$$<p>Volt er altså joule per coulomb: $1\\,\\text{V} = 1\\,\\text{J/C}$. En spenning på 9 V betyr at hver coulomb som går gjennom kretsen, får 9 J med seg fra batteriet og gir energien fra seg i komponentene underveis.</p><p><strong>Resistans</strong> forteller hvor vanskelig det er å drive strøm gjennom en komponent, og er definert som</p>$$R = \\frac{U}{I}$$<p>Enheten er ohm: $1\\,\\Omega = 1\\,\\text{V/A}$. Stor resistans gir liten strøm ved samme spenning.</p>"
+        "html": "<p>Elektrisk strøm er <strong>ladning i bevegelse</strong>. I en metalltråd er det de frie elektronene som flytter seg. Strømmen forteller hvor mye ladning som passerer et tverrsnitt av lederen per sekund:</p>$$I = \\frac{Q}{t}$$<p>Enheten er ampere: $1\\,\\text{A} = 1\\,\\text{C/s}$. Ladning måles i coulomb, og den minste ladningen vi finner fritt, er elementærladningen $e = 1{,}60\\cdot 10^{-19}\\,\\text{C}$.</p><p>Strømretningen ble historisk definert som retningen <em>positiv</em> ladning ville beveget seg, altså fra pluss til minus gjennom den ytre kretsen. I metaller går elektronene faktisk motsatt vei, men vi bruker likevel denne <strong>konvensjonelle strømretningen</strong> i alle beregninger. Elektronene selv driver overraskende sakte, gjerne under en millimeter i sekundet, mens selve påvirkningen forplanter seg gjennom lederen nesten momentant. Derfor lyser lampa i samme øyeblikk du slår på bryteren.</p><p><strong>Spenning</strong> er energi per ladning:</p>$$U = \\frac{W}{Q}$$<p>Volt er altså joule per coulomb: $1\\,\\text{V} = 1\\,\\text{J/C}$. En spenning på 9 V betyr at hver coulomb som går gjennom kretsen, får 9 J med seg fra batteriet og gir energien fra seg i komponentene underveis.</p><p><strong>Resistans</strong> forteller hvor vanskelig det er å drive strøm gjennom en komponent, og er definert som</p>$$R = \\frac{U}{I}$$<p>Enheten er ohm: $1\\,\\Omega = 1\\,\\text{V/A}$. Stor resistans gir liten strøm ved samme spenning.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Resistanser fra kopperledning til voltmeter",
+          "forklaring": "Skalaen er logaritmisk, og hvert bånd dekker to tierpotenser. Med 12 V over seg går det 21 A gjennom kopperledningen helt til venstre, men bare 1,2 µA gjennom voltmeteret helt til høyre — stor resistans gir liten strøm ved samme spenning.",
+          "enhet": "R (Ω)",
+          "min": 0.1,
+          "max": 10000000,
+          "log": true,
+          "band": [
+            {
+              "fra": 0.1,
+              "til": 10,
+              "navn": "ledning og amperemeter",
+              "verdi": "0,57 Ω"
+            },
+            {
+              "fra": 10,
+              "til": 1000,
+              "navn": "varmeelement",
+              "verdi": "26 Ω"
+            },
+            {
+              "fra": 1000,
+              "til": 100000,
+              "navn": "elektronikk",
+              "verdi": "4,7 kΩ"
+            },
+            {
+              "fra": 100000,
+              "til": 10000000,
+              "navn": "voltmeter",
+              "verdi": "10 MΩ"
+            }
+          ]
+        }
       },
       {
         "tittel": "Ohms lov og resistansen i en leder",
@@ -155,7 +190,48 @@
       },
       {
         "tittel": "Parallellkobling",
-        "html": "<p>Komponenter er koblet i <strong>parallell</strong> når de sitter mellom de samme to punktene, slik at strømmen deler seg i flere grener. Da gjelder:</p><ul><li>Spenningen er <strong>den samme</strong> over alle grenene, siden alle sitter mellom de samme to punktene.</li><li>Strømmene summeres: $I = I_1 + I_2 + \\dots$ Dette er <strong>knutepunktsregelen</strong> — like mye ladning går inn i et knutepunkt som ut av det.</li></ul><p>Setter vi $I = \\frac{U}{R}$ inn i strømsummen, får vi $\\frac{U}{R_p} = \\frac{U}{R_1} + \\frac{U}{R_2}$. Den felles spenningen $U$ forkortes bort:</p>$$\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots + \\frac{1}{R_n}$$<p>For nøyaktig to motstander er det raskere å bruke</p>$$R_p = \\frac{R_1 R_2}{R_1 + R_2}$$<p>Legg merke til at $R_p$ alltid blir <strong>mindre</strong> enn den minste av motstandene: flere grener gir strømmen flere veier å gå. Kobler du $6{,}0\\,\\Omega$ og $3{,}0\\,\\Omega$ parallelt over 12 V, går det $\\frac{12}{6{,}0} = 2{,}0\\,\\text{A}$ i den ene grenen og $\\frac{12}{3{,}0} = 4{,}0\\,\\text{A}$ i den andre, til sammen $6{,}0\\,\\text{A}$. Det stemmer med $R_p = \\frac{6{,}0\\cdot 3{,}0}{9{,}0} = 2{,}0\\,\\Omega$.</p><p>Stikkontaktene hjemme er parallellkoblet. Derfor får hvert apparat full spenning på 230 V, og du kan skru av ett uten at resten slukker.</p>"
+        "html": "<p>Komponenter er koblet i <strong>parallell</strong> når de sitter mellom de samme to punktene, slik at strømmen deler seg i flere grener. Da gjelder:</p><ul><li>Spenningen er <strong>den samme</strong> over alle grenene, siden alle sitter mellom de samme to punktene.</li><li>Strømmene summeres: $I = I_1 + I_2 + \\dots$ Dette er <strong>knutepunktsregelen</strong> — like mye ladning går inn i et knutepunkt som ut av det.</li></ul><p>Setter vi $I = \\frac{U}{R}$ inn i strømsummen, får vi $\\frac{U}{R_p} = \\frac{U}{R_1} + \\frac{U}{R_2}$. Den felles spenningen $U$ forkortes bort:</p>$$\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots + \\frac{1}{R_n}$$<p>For nøyaktig to motstander er det raskere å bruke</p>$$R_p = \\frac{R_1 R_2}{R_1 + R_2}$$<p>Legg merke til at $R_p$ alltid blir <strong>mindre</strong> enn den minste av motstandene: flere grener gir strømmen flere veier å gå. Kobler du $6{,}0\\,\\Omega$ og $3{,}0\\,\\Omega$ parallelt over 12 V, går det $\\frac{12}{6{,}0} = 2{,}0\\,\\text{A}$ i den ene grenen og $\\frac{12}{3{,}0} = 4{,}0\\,\\text{A}$ i den andre, til sammen $6{,}0\\,\\text{A}$. Det stemmer med $R_p = \\frac{6{,}0\\cdot 3{,}0}{9{,}0} = 2{,}0\\,\\Omega$.</p><p>Stikkontaktene hjemme er parallellkoblet. Derfor får hvert apparat full spenning på 230 V, og du kan skru av ett uten at resten slukker.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Seriekobling og parallellkobling",
+          "forklaring": "Se etter hvilken størrelse som er felles i hver kolonne — den bestemmer alt det andre. Rad fire er samme to motstander koblet på de to måtene, og strømmen fra kilden blir nesten fem ganger så stor i parallell.",
+          "kolonner": [
+            "Seriekobling",
+            "Parallellkobling"
+          ],
+          "rader": [
+            {
+              "egenskap": "Felles størrelse",
+              "venstre": "Strømmen: I er den samme gjennom alle komponentene",
+              "hoyre": "Spenningen: U er den samme over alle grenene"
+            },
+            {
+              "egenskap": "Den andre størrelsen",
+              "venstre": "Spenningene summeres: U = U₁ + U₂",
+              "hoyre": "Strømmene summeres: I = I₁ + I₂ (knutepunktsregelen)"
+            },
+            {
+              "egenskap": "Erstatningsresistans",
+              "venstre": "Rs = R₁ + R₂, alltid større enn den største",
+              "hoyre": "1/Rp = 1/R₁ + 1/R₂, alltid mindre enn den minste"
+            },
+            {
+              "egenskap": "6,0 Ω og 3,0 Ω over 12 V",
+              "venstre": "Rs = 9,0 Ω, og det går 1,3 A gjennom begge",
+              "hoyre": "Rp = 2,0 Ω, og 2,0 A + 4,0 A = 6,0 A i alt"
+            },
+            {
+              "egenskap": "Hvis én komponent brytes",
+              "venstre": "Alt slukner — strømmen har bare én vei å gå",
+              "hoyre": "De andre grenene går uendret videre"
+            },
+            {
+              "egenskap": "Typisk bruk",
+              "venstre": "Spenningsdeling og celler i serie i et batteri",
+              "hoyre": "Stikkontakter: hvert apparat får 230 V"
+            }
+          ]
+        }
       },
       {
         "tittel": "Elektrisk energi og effekt",
@@ -163,7 +239,34 @@
       },
       {
         "tittel": "Målinger i kretser",
-        "html": "<p>Et <strong>amperemeter</strong> måler strømmen gjennom en komponent og må derfor kobles <strong>i serie</strong>, slik at hele strømmen går gjennom det. Skal det ikke forstyrre kretsen, må det ha svært liten resistans. Et <strong>voltmeter</strong> måler spenningen mellom to punkter og kobles <strong>parallelt</strong> med komponenten. Det må ha svært stor resistans, ellers stjeler det strøm fra grenen det måler over. Kobler du et amperemeter parallelt over et batteri, lager du en kortslutning — det er den vanligste labfeilen i dette kapittelet.</p><p>En typisk øvelse er å variere spenningen med en regulerbar spenningskilde, lese av flere par $(I, U)$ og plotte $U$ mot $I$. Ligger punktene på en rett linje gjennom origo, er komponenten ohmsk, og stigningstallet til den beste rette linja er resistansen. Krummer grafen, endrer resistansen seg — typisk fordi komponenten blir varm.</p><p>Et reelt batteri har også en <strong>indre resistans</strong> $R_i$. Den elektromotoriske spenningen $\\varepsilon$ er energien per ladning kilden gir, men noe av den brukes opp inne i batteriet. Spenningen du måler mellom polene, <strong>klemmespenningen</strong>, blir</p>$$U = \\varepsilon - R_i\\,I$$<p>Måler du $U$ for flere strømmer, gir skjæringen med $U$-aksen $\\varepsilon$, og stigningstallet er $-R_i$. Et gammelt batteri har stor $R_i$, og da faller spenningen mye så snart du kobler til en last.</p>"
+        "html": "<p>Et <strong>amperemeter</strong> måler strømmen gjennom en komponent og må derfor kobles <strong>i serie</strong>, slik at hele strømmen går gjennom det. Skal det ikke forstyrre kretsen, må det ha svært liten resistans. Et <strong>voltmeter</strong> måler spenningen mellom to punkter og kobles <strong>parallelt</strong> med komponenten. Det må ha svært stor resistans, ellers stjeler det strøm fra grenen det måler over. Kobler du et amperemeter parallelt over et batteri, lager du en kortslutning — det er den vanligste labfeilen i dette kapittelet.</p><p>En typisk øvelse er å variere spenningen med en regulerbar spenningskilde, lese av flere par $(I, U)$ og plotte $U$ mot $I$. Ligger punktene på en rett linje gjennom origo, er komponenten ohmsk, og stigningstallet til den beste rette linja er resistansen. Krummer grafen, endrer resistansen seg — typisk fordi komponenten blir varm.</p><p>Et reelt batteri har også en <strong>indre resistans</strong> $R_i$. Den elektromotoriske spenningen $\\varepsilon$ er energien per ladning kilden gir, men noe av den brukes opp inne i batteriet. Spenningen du måler mellom polene, <strong>klemmespenningen</strong>, blir</p>$$U = \\varepsilon - R_i\\,I$$<p>Måler du $U$ for flere strømmer, gir skjæringen med $U$-aksen $\\varepsilon$, og stigningstallet er $-R_i$. Et gammelt batteri har stor $R_i$, og da faller spenningen mye så snart du kobler til en last.</p>",
+        "figur": {
+          "type": "krets",
+          "tittel": "Amperemeter i serie, voltmeter parallelt",
+          "forklaring": "Hele strømmen må gjennom amperemeteret, så det står i samme gren som motstanden — derfor må resistansen i det være nær null. Voltmeteret har sin egen gren og får de samme 12 V, men med 10 MΩ inni seg trekker det bare 1,2 µA, en hundretusendel av de 0,12 A gjennom motstanden.",
+          "kilde": {
+            "navn": "12 V"
+          },
+          "grener": [
+            [
+              {
+                "navn": "A",
+                "verdi": "amperemeter"
+              },
+              {
+                "navn": "R = 100 Ω",
+                "verdi": "U = 12 V"
+              }
+            ],
+            [
+              {
+                "navn": "V",
+                "verdi": "voltmeter, 10 MΩ"
+              }
+            ]
+          ],
+          "strom": "I = 0,12 A · 1,2 µA gjennom V"
+        }
       }
     ],
     "eksempler": [

@@ -83,7 +83,9 @@
             0
           ],
           "farge": 1,
-          "stiplet": false
+          "stiplet": false,
+          "navn": "is",
+          "merkeplass": 0.5
         },
         {
           "fra": [
@@ -133,11 +135,81 @@
     "seksjoner": [
       {
         "tittel": "Temperatur, termisk likevekt og indre energi",
-        "html": "<p>Alle stoffer er bygd opp av partikler — atomer, molekyler eller ioner — som er i stadig bevegelse. I en gass flyr partiklene fritt omkring, i en væske sklir de rundt hverandre, og i et fast stoff vibrerer de om faste plasser. <strong>Temperatur</strong> er et mål på den <em>gjennomsnittlige</em> kinetiske energien til disse partiklene. Høy temperatur betyr at partiklene i gjennomsnitt beveger seg raskt.</p><p>Legg merke til ordet «gjennomsnittlig». Temperaturen sier ingenting om <em>hvor mange</em> partikler du har. En tekopp på 90 °C har mye høyere temperatur enn Mjøsa i juli, men Mjøsa inneholder umåtelig mye mer energi, rett og slett fordi den har så uendelig mange flere partikler.</p><p>Setter du to legemer med ulik temperatur i kontakt, blir det varmeste kaldere og det kaldeste varmere — helt til de har samme temperatur. Da er de i <strong>termisk likevekt</strong>, og det går ikke lenger noen netto energi mellom dem.</p><p>Celsiusskalaen har nullpunktet der vann fryser, altså et praktisk, men tilfeldig valgt sted. <strong>Kelvinskalaen</strong> legger nullpunktet der partikkelbevegelsen er minst mulig, i det <strong>absolutte nullpunktet</strong>:</p>$$T = t + 273{,}15$$<p>Her er $t$ temperaturen i celsiusgrader og $T$ den absolutte temperaturen i kelvin (K). Fordi de to skalaene har like store grader, blir en temperatur<em>differanse</em> tallmessig helt lik i begge: $\\Delta T = 20\\ ^\\circ\\text{C} = 20\\ \\text{K}$.</p><p>Den totale energien partiklene har — både kinetisk energi fra bevegelsen og potensiell energi i bindingene mellom dem — kaller vi den <strong>indre energien</strong> $U$ til legemet. Indre energi avhenger av temperaturen, av hvor mye stoff du har, av hvilket stoff det er, og av hvilken fase stoffet er i.</p>"
+        "html": "<p>Alle stoffer er bygd opp av partikler — atomer, molekyler eller ioner — som er i stadig bevegelse. I en gass flyr partiklene fritt omkring, i en væske sklir de rundt hverandre, og i et fast stoff vibrerer de om faste plasser. <strong>Temperatur</strong> er et mål på den <em>gjennomsnittlige</em> kinetiske energien til disse partiklene. Høy temperatur betyr at partiklene i gjennomsnitt beveger seg raskt.</p><p>Legg merke til ordet «gjennomsnittlig». Temperaturen sier ingenting om <em>hvor mange</em> partikler du har. En tekopp på 90 °C har mye høyere temperatur enn Mjøsa i juli, men Mjøsa inneholder umåtelig mye mer energi, rett og slett fordi den har så uendelig mange flere partikler.</p><p>Setter du to legemer med ulik temperatur i kontakt, blir det varmeste kaldere og det kaldeste varmere — helt til de har samme temperatur. Da er de i <strong>termisk likevekt</strong>, og det går ikke lenger noen netto energi mellom dem.</p><p>Celsiusskalaen har nullpunktet der vann fryser, altså et praktisk, men tilfeldig valgt sted. <strong>Kelvinskalaen</strong> legger nullpunktet der partikkelbevegelsen er minst mulig, i det <strong>absolutte nullpunktet</strong>:</p>$$T = t + 273{,}15$$<p>Her er $t$ temperaturen i celsiusgrader og $T$ den absolutte temperaturen i kelvin (K). Fordi de to skalaene har like store grader, blir en temperatur<em>differanse</em> tallmessig helt lik i begge: $\\Delta T = 20\\ ^\\circ\\text{C} = 20\\ \\text{K}$.</p><p>Den totale energien partiklene har — både kinetisk energi fra bevegelsen og potensiell energi i bindingene mellom dem — kaller vi den <strong>indre energien</strong> $U$ til legemet. Indre energi avhenger av temperaturen, av hvor mye stoff du har, av hvilket stoff det er, og av hvilken fase stoffet er i.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Temperaturskalaen i kelvin",
+          "forklaring": "Båndene viser hvilken fase vann er i ved hver temperatur ved normalt lufttrykk. Skalaen har en bunn — det finnes ingenting til venstre for 0 K — og 0 °C ligger så høyt oppe som 273 K.",
+          "enhet": "T (K)",
+          "min": 0,
+          "max": 500,
+          "log": false,
+          "band": [
+            {
+              "fra": 0,
+              "til": 273,
+              "navn": "is",
+              "verdi": "−273 til 0 °C"
+            },
+            {
+              "fra": 273,
+              "til": 373,
+              "navn": "flytende vann",
+              "verdi": "0–100 °C"
+            },
+            {
+              "fra": 373,
+              "til": 500,
+              "navn": "damp",
+              "verdi": "over 100 °C"
+            }
+          ]
+        }
       },
       {
         "tittel": "Varme og arbeid — to måter å endre indre energi",
-        "html": "<p>Det finnes bare to måter å endre den indre energien til et system: du kan overføre <strong>varme</strong>, eller det kan utføres <strong>arbeid</strong>.</p><p><strong>Varme</strong> $Q$ er energi som overføres mellom to systemer <em>fordi de har ulik temperatur</em>. Varme går alltid av seg selv fra høy mot lav temperatur, aldri motsatt vei. Dette er det viktigste og samtidig vanskeligste begrepet i kapittelet, for i dagligtalen bruker vi ordet «varme» om nesten hva som helst. I fysikken er varme <em>energi under overføring</em> — noe som skjer, ikke noe et legeme har. Et glødende jernstykke inneholder ikke «mye varme»; det har høy temperatur og stor indre energi, og det kan <em>avgi</em> varme.</p><p>Fordi varme drives av temperaturforskjell og ikke av energimengde, kan energi godt gå fra et lite, varmt legeme til et stort, kaldt: kaffekoppen på 90 °C avgir varme til rommet på 20 °C, selv om rommet har enormt mye større indre energi enn kaffen.</p><p><strong>Arbeid</strong> $W$ kan også endre indre energi, helt uten at det finnes en temperaturforskjell i nærheten. Gnir du hendene mot hverandre, blir de varme fordi du utfører mekanisk arbeid mot friksjon. Trykker du raskt sammen luften i en sykkelpumpe, stiger temperaturen i pumpa. Rører du kraftig nok i vann lenge nok, stiger temperaturen — nettopp et slikt forsøk brukte James Joule for å vise at mekanisk energi og varme er to former for det samme.</p><p>Både $Q$ og $W$ måles i joule (J). Forskjellen ligger ikke i enheten, men i mekanismen: varme skyldes temperaturforskjell, arbeid skyldes en kraft som virker over en strekning.</p>"
+        "html": "<p>Det finnes bare to måter å endre den indre energien til et system: du kan overføre <strong>varme</strong>, eller det kan utføres <strong>arbeid</strong>.</p><p><strong>Varme</strong> $Q$ er energi som overføres mellom to systemer <em>fordi de har ulik temperatur</em>. Varme går alltid av seg selv fra høy mot lav temperatur, aldri motsatt vei. Dette er det viktigste og samtidig vanskeligste begrepet i kapittelet, for i dagligtalen bruker vi ordet «varme» om nesten hva som helst. I fysikken er varme <em>energi under overføring</em> — noe som skjer, ikke noe et legeme har. Et glødende jernstykke inneholder ikke «mye varme»; det har høy temperatur og stor indre energi, og det kan <em>avgi</em> varme.</p><p>Fordi varme drives av temperaturforskjell og ikke av energimengde, kan energi godt gå fra et lite, varmt legeme til et stort, kaldt: kaffekoppen på 90 °C avgir varme til rommet på 20 °C, selv om rommet har enormt mye større indre energi enn kaffen.</p><p><strong>Arbeid</strong> $W$ kan også endre indre energi, helt uten at det finnes en temperaturforskjell i nærheten. Gnir du hendene mot hverandre, blir de varme fordi du utfører mekanisk arbeid mot friksjon. Trykker du raskt sammen luften i en sykkelpumpe, stiger temperaturen i pumpa. Rører du kraftig nok i vann lenge nok, stiger temperaturen — nettopp et slikt forsøk brukte James Joule for å vise at mekanisk energi og varme er to former for det samme.</p><p>Både $Q$ og $W$ måles i joule (J). Forskjellen ligger ikke i enheten, men i mekanismen: varme skyldes temperaturforskjell, arbeid skyldes en kraft som virker over en strekning.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "To måter å endre indre energi",
+          "forklaring": "Se på enhetsraden: begge er energi målt i joule, og begge ender opp i U. Forskjellen ligger bare i mekanismen — varme krever en temperaturforskjell, arbeid krever en kraft.",
+          "kolonner": [
+            "Varme Q",
+            "Arbeid W"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hva det er",
+              "venstre": "energi på vei mellom to systemer, ikke noe et legeme har",
+              "hoyre": "energi på vei inn eller ut fordi en kraft flytter noe"
+            },
+            {
+              "egenskap": "Drivkraft",
+              "venstre": "temperaturforskjell",
+              "hoyre": "kraft som virker over en strekning"
+            },
+            {
+              "egenskap": "Retning",
+              "venstre": "alltid fra varmt til kaldt av seg selv",
+              "hoyre": "inn eller ut, alt etter hvilken vei kraften virker"
+            },
+            {
+              "egenskap": "Fortegn i ΔU = Q + W",
+              "venstre": "Q > 0: systemet får varme. Q < 0: systemet avgir varme",
+              "hoyre": "W > 0: gassen presses sammen. W < 0: gassen utvider seg"
+            },
+            {
+              "egenskap": "Enhet",
+              "venstre": "joule (J)",
+              "hoyre": "joule (J)"
+            },
+            {
+              "egenskap": "Eksempel",
+              "venstre": "kaffe på 90 °C kjøles ned i et rom på 20 °C",
+              "hoyre": "sykkelpumpa blir varm når luften presses sammen"
+            }
+          ]
+        }
       },
       {
         "tittel": "Termofysikkens første lov",
@@ -177,7 +249,35 @@
       },
       {
         "tittel": "Blandingsoppgaver og energiregnskap",
-        "html": "<p>En klassisk oppgavetype: du blander to stoffer med ulik temperatur i en godt isolert beholder — et <strong>kalorimeter</strong> — og skal finne sluttemperaturen. Siden beholderen er isolert, forsvinner ingen energi ut. Alt det varme stoffet gir fra seg, tar det kalde imot:</p>$$Q_{\\text{avgitt}} = Q_{\\text{mottatt}}$$<p>Skriver du i stedet alle bidragene med fortegn, blir regnskapet $\\sum Q = 0$: det som avgis er negativt, det som mottas er positivt. De to skrivemåtene gir samme svar, men velg én og hold deg til den.</p><p>Framgangsmåten er alltid den samme:</p><ol><li>Kall den ukjente sluttemperaturen $T$. Begge stoffene ender på samme $T$, for de havner i termisk likevekt.</li><li>Skriv $Q = cm\\Delta T$ for hvert stoff, og pass på at begge $\\Delta T$ blir positive: for det varme stoffet $\\left(T_{\\text{varm}} - T\\right)$, for det kalde $\\left(T - T_{\\text{kald}}\\right)$.</li><li>Sett uttrykkene lik hverandre og løs likningen for $T$.</li></ol><p>Kontroller alltid til slutt at svaret ligger <em>mellom</em> de to starttemperaturene. Får du en sluttemperatur som er høyere enn den varmeste eller lavere enn den kaldeste, har du gjort en fortegnsfeil.</p><p>Legg merke til at det er produktet $cm$ som avgjør hvem som «vinner» dragkampen om sluttemperaturen. Dette produktet kalles legemets <strong>varmekapasitet</strong>, $C = cm$, med enhet J/K. Et lite metallstykke med lav $c$ flytter sluttemperaturen i et vannbad svært lite, selv om metallet var glovarmt — vannets $C$ er mye større.</p>"
+        "html": "<p>En klassisk oppgavetype: du blander to stoffer med ulik temperatur i en godt isolert beholder — et <strong>kalorimeter</strong> — og skal finne sluttemperaturen. Siden beholderen er isolert, forsvinner ingen energi ut. Alt det varme stoffet gir fra seg, tar det kalde imot:</p>$$Q_{\\text{avgitt}} = Q_{\\text{mottatt}}$$<p>Skriver du i stedet alle bidragene med fortegn, blir regnskapet $\\sum Q = 0$: det som avgis er negativt, det som mottas er positivt. De to skrivemåtene gir samme svar, men velg én og hold deg til den.</p><p>Framgangsmåten er alltid den samme:</p><ol><li>Kall den ukjente sluttemperaturen $T$. Begge stoffene ender på samme $T$, for de havner i termisk likevekt.</li><li>Skriv $Q = cm\\Delta T$ for hvert stoff, og pass på at begge $\\Delta T$ blir positive: for det varme stoffet $\\left(T_{\\text{varm}} - T\\right)$, for det kalde $\\left(T - T_{\\text{kald}}\\right)$.</li><li>Sett uttrykkene lik hverandre og løs likningen for $T$.</li></ol><p>Kontroller alltid til slutt at svaret ligger <em>mellom</em> de to starttemperaturene. Får du en sluttemperatur som er høyere enn den varmeste eller lavere enn den kaldeste, har du gjort en fortegnsfeil.</p><p>Legg merke til at det er produktet $cm$ som avgjør hvem som «vinner» dragkampen om sluttemperaturen. Dette produktet kalles legemets <strong>varmekapasitet</strong>, $C = cm$, med enhet J/K. Et lite metallstykke med lav $c$ flytter sluttemperaturen i et vannbad svært lite, selv om metallet var glovarmt — vannets $C$ er mye større.</p>",
+        "figur": {
+          "type": "flyt",
+          "tittel": "Slik løser du en blandingsoppgave",
+          "forklaring": "Rekkefølgen er alltid den samme. Trinn 2 er der det pleier å gå galt: begge temperaturdifferansene skal bli positive. Siste trinn er en kontroll som avslører fortegnsfeil på ett sekund.",
+          "retning": "ned",
+          "steg": [
+            {
+              "tekst": "Kall den ukjente sluttemperaturen T",
+              "note": "begge stoffer ender på T"
+            },
+            {
+              "tekst": "Skriv Q = cmΔT for hvert stoff",
+              "note": "begge ΔT skal bli positive"
+            },
+            {
+              "tekst": "Sett varmen avgitt = varmen mottatt",
+              "note": "isolert: ingenting slipper ut"
+            },
+            {
+              "tekst": "Løs likningen for T",
+              "note": "regn ut C = cm først"
+            },
+            {
+              "tekst": "Sjekk svaret mot starttemperaturene",
+              "note": "T skal ligge mellom dem"
+            }
+          ]
+        }
       },
       {
         "tittel": "Faseoverganger, smeltevarme og fordampingsvarme",

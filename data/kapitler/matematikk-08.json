@@ -107,7 +107,29 @@
     "seksjoner": [
       {
         "tittel": "Slik er eksamen i R1 bygd opp",
-        "html": "<p>Skriftlig eksamen i R1 varer <strong>5 timer</strong> og er delt i to. <strong>Del 1</strong> løser du uten hjelpemidler — du har bare vanlige skrivesaker, passer, linjal og vinkelmåler. Den skal leveres inn før du får ta fram noe digitalt. <strong>Del 2</strong> løser du med alle hjelpemidler unntatt internett og andre verktøy som gir mulighet for kommunikasjon. På de siste eksamenene har oppdelingen vært tre timer på Del 1 og to timer på Del 2, men klokkeslettene står alltid på forsiden av oppgavesettet, så les den først.</p><p>De to delene måler ulike ting. Del 1 handler om <em>håndverk</em>: potens- og logaritmeregler, faktorisering, derivasjonsreglene, fortegnslinjer og vektorregning på koordinatform. Svarene skal være eksakte, som $\\ln 2$ eller $2\\sqrt{5}$. Del 2 handler om <em>problemløsning</em>: modellering av måledata, drøfting av funksjoner, optimering og praktiske situasjoner der du selv velger verktøy — og begrunner valget.</p><p>Sensor vurderer ikke bare fasiten. Framgangsmåte, forklaring og evnen til å kommunisere matematikk teller med i helhetsvurderingen. Det har to praktiske konsekvenser: du kan få god uttelling på en oppgave du ikke fullfører, og du kan få svært lite uttelling for et riktig tall som står helt alene uten utregning.</p>"
+        "html": "<p>Skriftlig eksamen i R1 varer <strong>5 timer</strong> og er delt i to. <strong>Del 1</strong> løser du uten hjelpemidler — du har bare vanlige skrivesaker, passer, linjal og vinkelmåler. Den skal leveres inn før du får ta fram noe digitalt. <strong>Del 2</strong> løser du med alle hjelpemidler unntatt internett og andre verktøy som gir mulighet for kommunikasjon. På de siste eksamenene har oppdelingen vært tre timer på Del 1 og to timer på Del 2, men klokkeslettene står alltid på forsiden av oppgavesettet, så les den først.</p><p>De to delene måler ulike ting. Del 1 handler om <em>håndverk</em>: potens- og logaritmeregler, faktorisering, derivasjonsreglene, fortegnslinjer og vektorregning på koordinatform. Svarene skal være eksakte, som $\\ln 2$ eller $2\\sqrt{5}$. Del 2 handler om <em>problemløsning</em>: modellering av måledata, drøfting av funksjoner, optimering og praktiske situasjoner der du selv velger verktøy — og begrunner valget.</p><p>Sensor vurderer ikke bare fasiten. Framgangsmåte, forklaring og evnen til å kommunisere matematikk teller med i helhetsvurderingen. Det har to praktiske konsekvenser: du kan få god uttelling på en oppgave du ikke fullfører, og du kan få svært lite uttelling for et riktig tall som står helt alene uten utregning.</p>",
+        "figur": {
+          "type": "hierarki",
+          "tittel": "Slik er oppgavesettet bygd opp",
+          "forklaring": "Boksene smalner nedover fordi hvert nivå ligger inni det over. Nederste nivå er det viktigste å legge merke til: deloppgavene kan løses uavhengig, så du kan bruke det oppgitte svaret fra a) i b) selv om du ikke fikk til a).",
+          "nivaaer": [
+            {
+              "navn": "Eksamenssett",
+              "eksempel": "5 timer i alt"
+            },
+            {
+              "navn": "Del",
+              "eksempel": "Del 1: 3 t, Del 2: 2 t"
+            },
+            {
+              "navn": "Oppgave",
+              "eksempel": "typisk 4–6 i hver del"
+            },
+            {
+              "navn": "Deloppgave a), b), c)"
+            }
+          ]
+        }
       },
       {
         "tittel": "Tidsbruk og rekkefølge",
@@ -162,7 +184,35 @@
       },
       {
         "tittel": "Slik fører du en god besvarelse",
-        "html": "<p>Besvarelsen er en tekst en sensor skal lese, ikke en kladd du selv skal forstå. Fire vaner gjør stor forskjell:</p><ol><li><strong>Si hva du gjør før du gjør det.</strong> «Jeg deriverer og løser $f'(x)=0$ for å finne ekstremalpunktene.» Én setning er nok, og den viser at du vet hvorfor du regner.</li><li><strong>Definer alt du innfører.</strong> Kaller du sidekanten $x$, skriver du «la $x$ være sidekanten målt i cm». Uten det henger ikke resten av besvarelsen sammen.</li><li><strong>Én likhet per linje, med likhetstegnene under hverandre.</strong> Aldri to likhetstegn som betyr forskjellige ting på samme linje.</li><li><strong>Avslutt med en svarsetning med enhet.</strong> «Boksen bruker minst materiale når radien er 4,3 cm og høyden 8,6 cm.»</li></ol><p>Legg merke til hva oppgaveordet krever. «Vis at» betyr at svaret er oppgitt, og at du må regne hele veien fram til nøyaktig det uttrykket. «Bestem» og «regn ut» betyr at du finner svaret selv og viser metoden. «Forklar», «vurder» og «drøft» krever hele setninger med faglige begrunnelser — her taper mange elever mest, fordi de svarer med utregning der det skulle stått tekst.</p><p>Til slutt: ikke visk ut. Alt som står i besvarelsen blir vurdert, bortsett fra det du stryker over. Har du to forsøk på samme oppgave, stryker du over det du ikke vil ha vurdert. En ryddig skisse med navngitte punkter og akser regnes også som en del av forklaringen.</p>"
+        "html": "<p>Besvarelsen er en tekst en sensor skal lese, ikke en kladd du selv skal forstå. Fire vaner gjør stor forskjell:</p><ol><li><strong>Si hva du gjør før du gjør det.</strong> «Jeg deriverer og løser $f'(x)=0$ for å finne ekstremalpunktene.» Én setning er nok, og den viser at du vet hvorfor du regner.</li><li><strong>Definer alt du innfører.</strong> Kaller du sidekanten $x$, skriver du «la $x$ være sidekanten målt i cm». Uten det henger ikke resten av besvarelsen sammen.</li><li><strong>Én likhet per linje, med likhetstegnene under hverandre.</strong> Aldri to likhetstegn som betyr forskjellige ting på samme linje.</li><li><strong>Avslutt med en svarsetning med enhet.</strong> «Boksen bruker minst materiale når radien er 4,3 cm og høyden 8,6 cm.»</li></ol><p>Legg merke til hva oppgaveordet krever. «Vis at» betyr at svaret er oppgitt, og at du må regne hele veien fram til nøyaktig det uttrykket. «Bestem» og «regn ut» betyr at du finner svaret selv og viser metoden. «Forklar», «vurder» og «drøft» krever hele setninger med faglige begrunnelser — her taper mange elever mest, fordi de svarer med utregning der det skulle stått tekst.</p><p>Til slutt: ikke visk ut. Alt som står i besvarelsen blir vurdert, bortsett fra det du stryker over. Har du to forsøk på samme oppgave, stryker du over det du ikke vil ha vurdert. En ryddig skisse med navngitte punkter og akser regnes også som en del av forklaringen.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik bygger du opp én deloppgave",
+          "forklaring": "Tre av de fem stegene er ren tekst og ikke regning: definisjonen, setningen om hvilken metode du velger, og svarsetningen til slutt. De koster noen sekunder hver, og er ofte det som skiller full uttelling fra halv. Merk også at avrundingen hører til helt nederst.",
+          "steg": [
+            {
+              "tekst": "Definer det du innfører",
+              "note": "«la x være siden i cm»"
+            },
+            {
+              "tekst": "Si hvilken metode du skal bruke",
+              "note": "én setning før regningen"
+            },
+            {
+              "tekst": "Regn med én likhet per linje",
+              "note": "likhetstegn under hverandre"
+            },
+            {
+              "tekst": "Sjekk hva oppgaveordet krever",
+              "note": "«vis at» må treffe uttrykket"
+            },
+            {
+              "tekst": "Svarsetning med enhet",
+              "note": "rund av først her"
+            }
+          ]
+        }
       },
       {
         "tittel": "Dokumentasjon når du bruker hjelpemidler",
@@ -170,7 +220,43 @@
       },
       {
         "tittel": "Kjenn igjen oppgavetypen",
-        "html": "<p>De fleste eksamensoppgaver er varianter av et lite antall typer. Øver du på å oversette formuleringen til en metode, sparer du minutter på hver oppgave — og du slipper å lete i formelsamlingen.</p><table><thead><tr><th>Står det i oppgaven …</th><th>… så skal du</th></tr></thead><tbody><tr><td>«gjennomsnittlig vekstfart»</td><td>regne ut $\\frac{f(b)-f(a)}{b-a}$</td></tr><tr><td>«momentan vekstfart», «hvor raskt»</td><td>derivere og sette inn: $f'(a)$</td></tr><tr><td>«vis at $f'(x) = \\ldots$»</td><td>derivere og forenkle til nøyaktig det oppgitte uttrykket</td></tr><tr><td>«topp-, bunn- eller vendepunkt»</td><td>løse $f'(x)=0$ eller $f''(x)=0$ og bruke fortegnslinje</td></tr><tr><td>«største eller minste verdi»</td><td>drøfte $f'$ og i tillegg sjekke endepunktene i definisjonsområdet</td></tr><tr><td>«asymptote»</td><td>regne grenseverdier, og bruke polynomdivisjon ved skrå asymptote</td></tr><tr><td>«tangenten», «parallell med linja»</td><td>bruke $y=f'(a)(x-a)+f(a)$, eller løse $f'(x)=k$</td></tr><tr><td>«rettvinklet», «ortogonale»</td><td>vise at skalarproduktet er $0$</td></tr><tr><td>«vinkelen mellom»</td><td>bruke $\\cos\\alpha = \\frac{\\vec u\\cdot\\vec v}{|\\vec u|\\,|\\vec v|}$</td></tr><tr><td>«arealet av trekanten»</td><td>bruke halve determinanten i absoluttverdi</td></tr><tr><td>«finn en modell som passer»</td><td>gjøre regresjon i Del 2 og begrunne modelltypen</td></tr><tr><td>«har $f$ en omvendt funksjon?»</td><td>vise at $f$ er strengt voksende eller strengt avtagende</td></tr></tbody></table><p>Ingen av metodene hører til bare ett kapittel. En typisk eksamensoppgave henter uttrykket fra kapittel 1, deriverer det med reglene fra kapittel 3 og drøfter resultatet med verktøyene fra kapittel 4.</p>"
+        "html": "<p>De fleste eksamensoppgaver er varianter av et lite antall typer. Øver du på å oversette formuleringen til en metode, sparer du minutter på hver oppgave — og du slipper å lete i formelsamlingen.</p><table><thead><tr><th>Står det i oppgaven …</th><th>… så skal du</th></tr></thead><tbody><tr><td>«gjennomsnittlig vekstfart»</td><td>regne ut $\\frac{f(b)-f(a)}{b-a}$</td></tr><tr><td>«momentan vekstfart», «hvor raskt»</td><td>derivere og sette inn: $f'(a)$</td></tr><tr><td>«vis at $f'(x) = \\ldots$»</td><td>derivere og forenkle til nøyaktig det oppgitte uttrykket</td></tr><tr><td>«topp-, bunn- eller vendepunkt»</td><td>løse $f'(x)=0$ eller $f''(x)=0$ og bruke fortegnslinje</td></tr><tr><td>«største eller minste verdi»</td><td>drøfte $f'$ og i tillegg sjekke endepunktene i definisjonsområdet</td></tr><tr><td>«asymptote»</td><td>regne grenseverdier, og bruke polynomdivisjon ved skrå asymptote</td></tr><tr><td>«tangenten», «parallell med linja»</td><td>bruke $y=f'(a)(x-a)+f(a)$, eller løse $f'(x)=k$</td></tr><tr><td>«rettvinklet», «ortogonale»</td><td>vise at skalarproduktet er $0$</td></tr><tr><td>«vinkelen mellom»</td><td>bruke $\\cos\\alpha = \\frac{\\vec u\\cdot\\vec v}{|\\vec u|\\,|\\vec v|}$</td></tr><tr><td>«arealet av trekanten»</td><td>bruke halve determinanten i absoluttverdi</td></tr><tr><td>«finn en modell som passer»</td><td>gjøre regresjon i Del 2 og begrunne modelltypen</td></tr><tr><td>«har $f$ en omvendt funksjon?»</td><td>vise at $f$ er strengt voksende eller strengt avtagende</td></tr></tbody></table><p>Ingen av metodene hører til bare ett kapittel. En typisk eksamensoppgave henter uttrykket fra kapittel 1, deriverer det med reglene fra kapittel 3 og drøfter resultatet med verktøyene fra kapittel 4.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Samme oppgavetype uten og med hjelpemidler",
+          "forklaring": "Metoden i venstre kolonne er den du må kunne for hånd, og den er ofte raskest også i Del 2. Legg merke til at høyre kolonne aldri bare er et svar: kommandoen og en tolkende setning må stå i besvarelsen.",
+          "kolonner": [
+            "Del 1 – uten hjelpemidler",
+            "Del 2 – med hjelpemidler"
+          ],
+          "rader": [
+            {
+              "egenskap": "Løs 2ˣ = 10",
+              "venstre": "ta ln på begge sider og la svaret stå eksakt: x = ln 10 / ln 2",
+              "hoyre": "CAS-kommandoen Løs; oppgi kommandoen og svaret x ≈ 3,32"
+            },
+            {
+              "egenskap": "Finn toppunktet",
+              "venstre": "løs f′(x) = 0 og avgjør typen med fortegnslinje",
+              "hoyre": "CAS-kommandoen Ekstremalpunkt, og en setning om hvilket punkt som er toppunkt"
+            },
+            {
+              "egenskap": "Grenseverdi når x → ∞",
+              "venstre": "del teller og nevner på høyeste potens av x",
+              "hoyre": "CAS-kommandoen Grenseverdi, eller les av at grafen flater ut mot en asymptote"
+            },
+            {
+              "egenskap": "Arealet av trekant ABC",
+              "venstre": "halve determinanten i absoluttverdi gir et eksakt tall",
+              "hoyre": "samme formel, eller konstruér trekanten og bruk Areal-kommandoen"
+            },
+            {
+              "egenskap": "Finn en modell for måledata",
+              "venstre": "kommer ikke — i Del 1 er modellen alltid oppgitt",
+              "hoyre": "regresjon; oppgi modelltypen du valgte, og begrunn valget med formen på dataene"
+            }
+          ]
+        }
       },
       {
         "tittel": "Ferdighetene Del 1 alltid tester",
@@ -233,7 +319,7 @@
         "figur": {
           "type": "graf",
           "tittel": "Måledataene og modellen N(t) = 250 · 1,18ᵗ",
-          "forklaring": "De fire målepunktene ligger praktisk talt på grafen — det er begrunnelsen for å velge en eksponentiell modell. Den stiplede vinkelen er doblingstiden fra b): de 250 bakteriene har blitt 500 etter 4,2 timer.",
+          "forklaring": "De fire målepunktene ligger praktisk talt på grafen — det er begrunnelsen for å velge en eksponentiell modell. De stiplede linjene viser doblingstiden fra b): de 250 bakteriene har blitt 500 etter 4,2 timer.",
           "xmin": 0,
           "xmax": 12.5,
           "ymin": 0,

@@ -160,6 +160,35 @@ function figur(f, fagId) {
   return window.VG2Figur.figurHTML(f, fagId);
 }
 
+/* Lange formler — særlig reaksjonslikninger i kjemi — er bredere enn et kort
+   på en telefon, og ble klippet på høyre kant. De krympes til de passer, ned
+   til 72 %; er de fortsatt for brede, skrolles de, og da sier vi det. */
+function tilpassMatte(rot, paaNytt = false) {
+  for (const d of rot.querySelectorAll(".katex-display")) {
+    if (d.dataset.tilpasset && !paaNytt) continue;
+    if (paaNytt) {
+      d.classList.remove("matte-bred");
+      if (d.nextElementSibling?.classList.contains("tabellhint")) d.nextElementSibling.remove();
+    }
+    d.dataset.tilpasset = "1";
+    d.style.fontSize = "";
+    /* KaTeX setter det indre .katex til display:block, så offsetWidth der er
+       alltid lik containerens. Overflyten må måles på containeren selv. */
+    const plass = d.clientWidth;
+    if (!plass || d.scrollWidth <= plass + 1) continue;
+    const faktor = Math.max(0.72, (plass - 3) / d.scrollWidth);
+    d.style.fontSize = `${(faktor * 100).toFixed(1)}%`;
+    /* under 72 % blir formelen uleselig — da skrolles den, og vi sier det */
+    if (d.scrollWidth > d.clientWidth + 1) {
+      d.classList.add("matte-bred");
+      const hint = document.createElement("div");
+      hint.className = "tabellhint";
+      hint.textContent = "Dra formelen sidelengs for å se resten";
+      d.after(hint);
+    }
+  }
+}
+
 /* Tabeller i fagstoffet kan bli bredere enn skjermen. Pakk dem i en ramme og
    si det tydelig når de må skrolles vannrett — ellers ser eleven bare en
    kolonne som er kuttet. */
@@ -198,8 +227,31 @@ function mat(rot) {
     });
   } catch (e) { console.warn("KaTeX:", e); }
   /* etter matematikken, siden formler endrer kolonnebreddene */
+  try { tilpassMatte(rot); } catch (e) { console.warn("matte-tilpasning:", e); }
   try { tabeller(rot); } catch (e) { console.warn("tabeller:", e); }
+  /* KaTeX-fontene lastes asynkront, og breddene endrer seg når de kommer.
+     Første måling skjer derfor på feil metrikk — vi måler en gang til. */
+  if (document.fonts?.ready) {
+    document.fonts.ready.then(() => {
+      if (!rot.isConnected) return;
+      try { tilpassMatte(rot, true); } catch { /* ignorer */ }
+      try { tabeller(rot); } catch { /* ignorer */ }
+    });
+  }
+  sisteMatteRot = rot;
 }
+
+/* Ved endret bredde (rotasjon, delt skjerm, endret vindu) må formlene måles
+   på nytt — en formel som passet i landskap gjør det ikke i portrett. */
+let sisteMatteRot = null;
+let maalePaaNytt;
+addEventListener("resize", () => {
+  clearTimeout(maalePaaNytt);
+  maalePaaNytt = setTimeout(() => {
+    if (!sisteMatteRot?.isConnected) return;
+    try { tilpassMatte(sisteMatteRot, true); } catch { /* ignorer */ }
+  }, 180);
+});
 function latex(kode, display = false) {
   if (!window.katex) return esc(kode);
   try {

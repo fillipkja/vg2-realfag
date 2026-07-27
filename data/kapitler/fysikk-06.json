@@ -266,7 +266,43 @@
       },
       {
         "tittel": "Bøyning og interferens",
-        "html": "<p><strong>Bøyning</strong> (diffraksjon) er at bølger sprer seg rundt hindringer og ut fra åpninger i stedet for å gå rett fram. Effekten er tydeligst når åpningen er omtrent like stor som bølgelengden — derfor hører du lyd rundt et hjørne (bølgelengde noen desimeter), mens lys (bølgelengde noen hundre nanometer) gir skarpe skygger.</p><p>Møtes to bølger i samme punkt, legger utslagene seg sammen. Det kalles <strong>interferens</strong>. Er bølgene i fase, forsterker de hverandre (<strong>konstruktiv</strong> interferens); er de i motfase, svekker eller slukker de hverandre (<strong>destruktiv</strong> interferens). Kommer bølgene fra to kilder som svinger i takt, avgjør <strong>veiforskjellen</strong> $\\Delta s$ hva som skjer:</p>$$\\Delta s = n\\lambda \\quad \\text{(forsterkning)}, \\qquad \\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda \\quad \\text{(utslokning)}$$<p>der $n$ er et helt tall. Sender du laserlys mot to smale spalter med avstand $d$, bøyes lyset ut fra hver spalte, og på en skjerm bak får du et mønster av lyse og mørke striper. De lyse ligger i retninger gitt av</p>$$d\\sin\\theta_n = n\\lambda$$<p>Et <strong>gitter</strong> er tusenvis av slike spalter. Formelen er den samme, men stripene blir mye skarpere. Har gitteret $N$ streker per meter, er gitterkonstanten $d = \\frac{1}{N}$.</p><p>Fordi vinkelen avhenger av $\\lambda$, splittes hvitt lys i farger: rødt lys har lengst bølgelengde og bøyes mest. Derfor bruker fysikere gitter til å måle bølgelengder og finne ut hvilke stoffer en lyskilde inneholder.</p>"
+        "html": "<p><strong>Bøyning</strong> (diffraksjon) er at bølger sprer seg rundt hindringer og ut fra åpninger i stedet for å gå rett fram. Effekten er tydeligst når åpningen er omtrent like stor som bølgelengden — derfor hører du lyd rundt et hjørne (bølgelengde noen desimeter), mens lys (bølgelengde noen hundre nanometer) gir skarpe skygger.</p><p>Møtes to bølger i samme punkt, legger utslagene seg sammen. Det kalles <strong>interferens</strong>. Er bølgene i fase, forsterker de hverandre (<strong>konstruktiv</strong> interferens); er de i motfase, svekker eller slukker de hverandre (<strong>destruktiv</strong> interferens). Kommer bølgene fra to kilder som svinger i takt, avgjør <strong>veiforskjellen</strong> $\\Delta s$ hva som skjer:</p>$$\\Delta s = n\\lambda \\quad \\text{(forsterkning)}, \\qquad \\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda \\quad \\text{(utslokning)}$$<p>der $n$ er et helt tall. Sender du laserlys mot to smale spalter med avstand $d$, bøyes lyset ut fra hver spalte, og på en skjerm bak får du et mønster av lyse og mørke striper. De lyse ligger i retninger gitt av</p>$$d\\sin\\theta_n = n\\lambda$$<p>Et <strong>gitter</strong> er tusenvis av slike spalter. Formelen er den samme, men stripene blir mye skarpere. Har gitteret $N$ streker per meter, er gitterkonstanten $d = \\frac{1}{N}$.</p><p>Fordi vinkelen avhenger av $\\lambda$, splittes hvitt lys i farger: rødt lys har lengst bølgelengde og bøyes mest. Derfor bruker fysikere gitter til å måle bølgelengder og finne ut hvilke stoffer en lyskilde inneholder.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Konstruktiv og destruktiv interferens",
+          "forklaring": "Det eneste som skiller kolonnene, er veiforskjellen: legger du på en halv bølgelengde, går du fra lys til mørk stripe. Legg merke til at energien ikke blir borte der bølgene slukker hverandre — den er flyttet til maksimaene.",
+          "kolonner": [
+            "Konstruktiv interferens",
+            "Destruktiv interferens"
+          ],
+          "rader": [
+            {
+              "egenskap": "Slik møtes bølgene",
+              "venstre": "i fase — topp treffer topp, bunn treffer bunn",
+              "hoyre": "i motfase — topp treffer bunn"
+            },
+            {
+              "egenskap": "Veiforskjell Δs",
+              "venstre": "et helt tall bølgelengder: 0, λ, 2λ, 3λ …",
+              "hoyre": "(n + ½)λ — altså ½λ, 1½λ, 2½λ …"
+            },
+            {
+              "egenskap": "Utslaget i punktet",
+              "venstre": "utslagene legges sammen til dobbel amplitude",
+              "hoyre": "utslagene opphever hverandre, utslag null"
+            },
+            {
+              "egenskap": "På skjermen bak spaltene",
+              "venstre": "lys stripe: maksimum av orden n, der d sin θ = nλ",
+              "hoyre": "mørk stripe midt mellom to lyse striper"
+            },
+            {
+              "egenskap": "To høyttalere i takt",
+              "venstre": "kraftig lyd der veiforskjellen er 0, λ eller 2λ",
+              "hoyre": "stille punkt der veiforskjellen er en halv λ"
+            }
+          ]
+        }
       },
       {
         "tittel": "Det elektromagnetiske spekteret",
@@ -274,7 +310,43 @@
       },
       {
         "tittel": "Stråling fra sola",
-        "html": "<p>Alle legemer med temperatur over det absolutte nullpunktet sender ut elektromagnetisk stråling. Et idealisert legeme som absorberer og sender ut all stråling, kalles et <strong>svart legeme</strong>, og sola er en god tilnærming til et slikt.</p><p>Hvor mye et legeme stråler ut, gir <strong>Stefan-Boltzmanns lov</strong>:</p>$$P = \\sigma A T^{4}, \\qquad \\sigma = 5{,}67\\cdot 10^{-8}\\,\\frac{\\text{W}}{\\text{m}^2\\text{K}^4}$$<p>Her er $A$ overflaten og $T$ den absolutte temperaturen i <strong>kelvin</strong>. Fjerdepotensen gjør loven brutal: dobler du temperaturen, blir utstrålt effekt $2^4 = 16$ ganger større.</p><p>Hvilken bølgelengde det stråles mest på, gir <strong>Wiens forskyvningslov</strong>:</p>$$\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot 10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}$$<p>Her er sammenhengen omvendt proporsjonal: varmere legeme gir kortere bølgelengde. Sola, med overflatetemperatur omkring 5800 K, har maksimum rundt 500 nm — midt i det synlige området, som er grunnen til at øyet vårt er følsomt nettopp der. Jorda, med rundt 288 K, stråler derimot på omtrent 10 000 nm, altså <strong>langbølget infrarød</strong> varmestråling.</p><p>Strålingen fordeler seg over stadig større kuleflater når den brer seg utover, så <strong>intensiteten</strong> avtar:</p>$$I = \\frac{P}{A} = \\frac{P}{4\\pi r^{2}}$$<p>Ved jordas avstand fra sola gir dette omtrent 1360 W/m². Dette tallet kalles <strong>solkonstanten</strong>, og det er energibudsjettet hele klimasystemet må balansere mot.</p>"
+        "html": "<p>Alle legemer med temperatur over det absolutte nullpunktet sender ut elektromagnetisk stråling. Et idealisert legeme som absorberer og sender ut all stråling, kalles et <strong>svart legeme</strong>, og sola er en god tilnærming til et slikt.</p><p>Hvor mye et legeme stråler ut, gir <strong>Stefan-Boltzmanns lov</strong>:</p>$$P = \\sigma A T^{4}, \\qquad \\sigma = 5{,}67\\cdot 10^{-8}\\,\\frac{\\text{W}}{\\text{m}^2\\text{K}^4}$$<p>Her er $A$ overflaten og $T$ den absolutte temperaturen i <strong>kelvin</strong>. Fjerdepotensen gjør loven brutal: dobler du temperaturen, blir utstrålt effekt $2^4 = 16$ ganger større.</p><p>Hvilken bølgelengde det stråles mest på, gir <strong>Wiens forskyvningslov</strong>:</p>$$\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot 10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}$$<p>Her er sammenhengen omvendt proporsjonal: varmere legeme gir kortere bølgelengde. Sola, med overflatetemperatur omkring 5800 K, har maksimum rundt 500 nm — midt i det synlige området, som er grunnen til at øyet vårt er følsomt nettopp der. Jorda, med rundt 288 K, stråler derimot på omtrent 10 000 nm, altså <strong>langbølget infrarød</strong> varmestråling.</p><p>Strålingen fordeler seg over stadig større kuleflater når den brer seg utover, så <strong>intensiteten</strong> avtar:</p>$$I = \\frac{P}{A} = \\frac{P}{4\\pi r^{2}}$$<p>Ved jordas avstand fra sola gir dette omtrent 1360 W/m². Dette tallet kalles <strong>solkonstanten</strong>, og det er energibudsjettet hele klimasystemet må balansere mot.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Sola og jorda som strålingskilder",
+          "forklaring": "Se på de to øverste radene: en temperaturforskjell på faktor 20 flytter strålingstoppen fra synlig lys til infrarødt, og nettopp denne bølgelengdeforskjellen er det drivhuseffekten bygger på. Fjerdepotensen i σT⁴ gir samtidig 165 000 ganger mer utstrålt effekt per kvadratmeter fra sola.",
+          "kolonner": [
+            "Sola, 5800 K",
+            "Jorda, 288 K"
+          ],
+          "rader": [
+            {
+              "egenskap": "Bølgelengden det stråles mest på",
+              "venstre": "λmaks = 2,90·10⁻³/5800 = 500 nm",
+              "hoyre": "λmaks = 2,90·10⁻³/288 = 10 000 nm"
+            },
+            {
+              "egenskap": "Hvor i spekteret",
+              "venstre": "kortbølget: synlig lys, toppen i det grønne",
+              "hoyre": "langbølget infrarødt, usynlig varmestråling"
+            },
+            {
+              "egenskap": "Utstrålt effekt per m² (σT⁴)",
+              "venstre": "6,4·10⁷ W/m², altså 64 MW per kvadratmeter",
+              "hoyre": "390 W/m², rundt 165 000 ganger mindre"
+            },
+            {
+              "egenskap": "Gjennom atmosfæren",
+              "venstre": "slipper nesten uhindret ned til bakken",
+              "hoyre": "absorberes av H₂O, CO₂ og CH₄ på vei ut"
+            },
+            {
+              "egenskap": "Rollen i strålingsbalansen",
+              "venstre": "tilfører energi: 1360 W/m² ved jordas avstand",
+              "hoyre": "kvitter seg med energi, og holder balansen"
+            }
+          ]
+        }
       },
       {
         "tittel": "Drivhuseffekten",
@@ -323,7 +395,35 @@
       {
         "tittel": "Brytning i glass og grensevinkel",
         "oppgave": "<p>En laserstråle med bølgelengde 589 nm i luft treffer en glassplate med brytningsindeks $n = 1{,}52$. Innfallsvinkelen er $35^\\circ$. Luft har $n = 1{,}00$.</p><ol><li>Finn brytningsvinkelen i glasset.</li><li>Finn lysfarten i glasset.</li><li>Finn frekvensen og bølgelengden til lyset inne i glasset.</li><li>Finn grensevinkelen for lys som går fra dette glasset ut i luft.</li></ol>",
-        "losning": "<p><strong>1) Brytningsvinkelen.</strong> Snells lov med stoff 1 = luft og stoff 2 = glass:</p>$$\\frac{\\sin\\theta_1}{\\sin\\theta_2} = \\frac{n_2}{n_1} \\quad \\Rightarrow \\quad \\sin\\theta_2 = \\frac{n_1 \\sin\\theta_1}{n_2}$$$$\\sin\\theta_2 = \\frac{1{,}00 \\cdot \\sin 35^\\circ}{1{,}52} = \\frac{0{,}5736}{1{,}52} = 0{,}3774$$$$\\theta_2 = \\sin^{-1}(0{,}3774) = 22{,}2^\\circ$$<p>Rimelighetssjekk: glasset er tettere enn luft, så strålen skal brytes <em>mot</em> normalen. $22{,}2^\\circ < 35^\\circ$, altså stemmer det.</p><p><strong>2) Farten i glasset.</strong> Fra $n = \\frac{c}{v}$ får vi</p>$$v = \\frac{c}{n} = \\frac{3{,}00\\cdot 10^{8}\\,\\text{m/s}}{1{,}52} = 1{,}97\\cdot 10^{8}\\,\\text{m/s}$$<p><strong>3) Frekvens og bølgelengde.</strong> Frekvensen regner vi ut i luft, der vi kjenner både fart og bølgelengde. Husk $589\\ \\text{nm} = 589\\cdot 10^{-9}\\,\\text{m}$:</p>$$f = \\frac{c}{\\lambda_0} = \\frac{3{,}00\\cdot 10^{8}\\,\\text{m/s}}{5{,}89\\cdot 10^{-7}\\,\\text{m}} = 5{,}09\\cdot 10^{14}\\,\\text{Hz}$$<p>Frekvensen er bestemt av lyskilden og endres <strong>ikke</strong> ved brytning. Bølgelengden i glasset blir derfor</p>$$\\lambda_n = \\frac{v}{f} = \\frac{1{,}97\\cdot 10^{8}\\,\\text{m/s}}{5{,}09\\cdot 10^{14}\\,\\text{s}^{-1}} = 3{,}87\\cdot 10^{-7}\\,\\text{m} = 387\\,\\text{nm}$$<p>Samme svar får du raskere med $\\lambda_n = \\frac{\\lambda_0}{n} = \\frac{589\\,\\text{nm}}{1{,}52} = 388\\,\\text{nm}$ (liten avrundingsforskjell).</p><p><strong>4) Grensevinkelen.</strong> Nå går lyset fra glass ($n_1 = 1{,}52$) til luft ($n_2 = 1{,}00$):</p>$$\\sin\\theta_g = \\frac{n_2}{n_1} = \\frac{1{,}00}{1{,}52} = 0{,}6579$$$$\\theta_g = \\sin^{-1}(0{,}6579) = 41{,}1^\\circ$$<p>Treffer strålen glassoverflaten innenfra med en vinkel større enn $41{,}1^\\circ$ fra normalen, kommer ingenting ut — alt blir reflektert tilbake i glasset.</p>"
+        "losning": "<p><strong>1) Brytningsvinkelen.</strong> Snells lov med stoff 1 = luft og stoff 2 = glass:</p>$$\\frac{\\sin\\theta_1}{\\sin\\theta_2} = \\frac{n_2}{n_1} \\quad \\Rightarrow \\quad \\sin\\theta_2 = \\frac{n_1 \\sin\\theta_1}{n_2}$$$$\\sin\\theta_2 = \\frac{1{,}00 \\cdot \\sin 35^\\circ}{1{,}52} = \\frac{0{,}5736}{1{,}52} = 0{,}3774$$$$\\theta_2 = \\sin^{-1}(0{,}3774) = 22{,}2^\\circ$$<p>Rimelighetssjekk: glasset er tettere enn luft, så strålen skal brytes <em>mot</em> normalen. $22{,}2^\\circ < 35^\\circ$, altså stemmer det.</p><p><strong>2) Farten i glasset.</strong> Fra $n = \\frac{c}{v}$ får vi</p>$$v = \\frac{c}{n} = \\frac{3{,}00\\cdot 10^{8}\\,\\text{m/s}}{1{,}52} = 1{,}97\\cdot 10^{8}\\,\\text{m/s}$$<p><strong>3) Frekvens og bølgelengde.</strong> Frekvensen regner vi ut i luft, der vi kjenner både fart og bølgelengde. Husk $589\\ \\text{nm} = 589\\cdot 10^{-9}\\,\\text{m}$:</p>$$f = \\frac{c}{\\lambda_0} = \\frac{3{,}00\\cdot 10^{8}\\,\\text{m/s}}{5{,}89\\cdot 10^{-7}\\,\\text{m}} = 5{,}09\\cdot 10^{14}\\,\\text{Hz}$$<p>Frekvensen er bestemt av lyskilden og endres <strong>ikke</strong> ved brytning. Bølgelengden i glasset blir derfor</p>$$\\lambda_n = \\frac{v}{f} = \\frac{1{,}97\\cdot 10^{8}\\,\\text{m/s}}{5{,}09\\cdot 10^{14}\\,\\text{s}^{-1}} = 3{,}87\\cdot 10^{-7}\\,\\text{m} = 387\\,\\text{nm}$$<p>Samme svar får du raskere med $\\lambda_n = \\frac{\\lambda_0}{n} = \\frac{589\\,\\text{nm}}{1{,}52} = 388\\,\\text{nm}$ (liten avrundingsforskjell).</p><p><strong>4) Grensevinkelen.</strong> Nå går lyset fra glass ($n_1 = 1{,}52$) til luft ($n_2 = 1{,}00$):</p>$$\\sin\\theta_g = \\frac{n_2}{n_1} = \\frac{1{,}00}{1{,}52} = 0{,}6579$$$$\\theta_g = \\sin^{-1}(0{,}6579) = 41{,}1^\\circ$$<p>Treffer strålen glassoverflaten innenfra med en vinkel større enn $41{,}1^\\circ$ fra normalen, kommer ingenting ut — alt blir reflektert tilbake i glasset.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik oppstår totalrefleksjon",
+          "forklaring": "Følg hva som skjer når vinkelen inne i glasset vokser: den brutte strålen legger seg nærmere og nærmere overflaten, og i det den når 90°, finnes det ingen vei ut. Rekkefølgen virker bare fra tett mot tynt stoff — går lyset fra luft inn i glasset, finnes det ingen grensevinkel.",
+          "steg": [
+            {
+              "tekst": "Lyset går fra glasset ut mot luft",
+              "note": "tett stoff → tynt: n₁ = 1,52, n₂ = 1,00"
+            },
+            {
+              "tekst": "Strålen brytes fra normalen: θ₂ > θ₁",
+              "note": "farten er større i lufta"
+            },
+            {
+              "tekst": "Ved θ₁ = 41,1° blir θ₂ = 90°",
+              "note": "sin θg = 1,00/1,52 = 0,658"
+            },
+            {
+              "tekst": "Større vinkel gir sin θ₂ > 1",
+              "note": "umulig — ingen brutt stråle finnes"
+            },
+            {
+              "tekst": "Alt lyset reflekteres tilbake",
+              "note": "inn i glasset — slik leder optiske fibre lys"
+            }
+          ]
+        }
       },
       {
         "tittel": "Gitter: vinkler og antall ordener",

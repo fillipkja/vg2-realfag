@@ -103,7 +103,48 @@
     "seksjoner": [
       {
         "tittel": "System, omgivelser, eksoterm og endoterm",
-        "html": "<p>I termokjemi deler vi verden i to. <strong>Systemet</strong> er det vi studerer — stoffene som reagerer i begerglasset. <strong>Omgivelsene</strong> er alt annet: glasset, lufta rundt, vannet stoffene er løst i, og hånda di på utsiden. Energi kan ikke bli borte, den kan bare flyttes mellom system og omgivelser. Det er termodynamikkens første lov, og den er hele grunnlaget for regnestykkene i dette kapittelet.</p><p>En <strong>eksoterm</strong> reaksjon avgir energi fra systemet til omgivelsene. Termometeret i begerglasset stiger, fordi løsningen rundt blir varmet opp. Forbrenning, nøytralisering av en syre med en base og oppløsning av natriumhydroksid i vann er alle eksoterme.</p><p>En <strong>endoterm</strong> reaksjon tar opp energi fra omgivelsene. Da synker temperaturen i begerglasset. Fotosyntesen, oppløsning av ammoniumnitrat i vann (prinsippet bak kjølepakker) og spalting av kalkstein er endoterme.</p><p>Fortegnsregelen blir enkel hvis du alltid setter deg <em>inne i systemet</em>: mister systemet energi, er $\\Delta H$ negativ; får systemet energi, er $\\Delta H$ positiv.</p><p>Én advarsel: at en reaksjon er eksoterm, betyr ikke at den starter av seg selv. En blanding av metan og oksygen ligger helt rolig til du tilfører aktiveringsenergi med en fyrstikk. Energiregnskapet og reaksjonsfarten er to forskjellige spørsmål.</p>"
+        "html": "<p>I termokjemi deler vi verden i to. <strong>Systemet</strong> er det vi studerer — stoffene som reagerer i begerglasset. <strong>Omgivelsene</strong> er alt annet: glasset, lufta rundt, vannet stoffene er løst i, og hånda di på utsiden. Energi kan ikke bli borte, den kan bare flyttes mellom system og omgivelser. Det er termodynamikkens første lov, og den er hele grunnlaget for regnestykkene i dette kapittelet.</p><p>En <strong>eksoterm</strong> reaksjon avgir energi fra systemet til omgivelsene. Termometeret i begerglasset stiger, fordi løsningen rundt blir varmet opp. Forbrenning, nøytralisering av en syre med en base og oppløsning av natriumhydroksid i vann er alle eksoterme.</p><p>En <strong>endoterm</strong> reaksjon tar opp energi fra omgivelsene. Da synker temperaturen i begerglasset. Fotosyntesen, oppløsning av ammoniumnitrat i vann (prinsippet bak kjølepakker) og spalting av kalkstein er endoterme.</p><p>Fortegnsregelen blir enkel hvis du alltid setter deg <em>inne i systemet</em>: mister systemet energi, er $\\Delta H$ negativ; får systemet energi, er $\\Delta H$ positiv.</p><p>Én advarsel: at en reaksjon er eksoterm, betyr ikke at den starter av seg selv. En blanding av metan og oksygen ligger helt rolig til du tilfører aktiveringsenergi med en fyrstikk. Energiregnskapet og reaksjonsfarten er to forskjellige spørsmål.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Eksoterm og endoterm reaksjon",
+          "forklaring": "Les nedover i én kolonne: fortegnet, termometeret, energinivåene og bindingsregnskapet er fire sider av samme sak. Radene er speilbilder av hverandre, så snur du reaksjonen, bytter du kolonne.",
+          "kolonner": [
+            "Eksoterm",
+            "Endoterm"
+          ],
+          "rader": [
+            {
+              "egenskap": "Energien går",
+              "venstre": "fra systemet ut til omgivelsene",
+              "hoyre": "fra omgivelsene inn i systemet"
+            },
+            {
+              "egenskap": "Fortegn på ΔH",
+              "venstre": "ΔH < 0",
+              "hoyre": "ΔH > 0"
+            },
+            {
+              "egenskap": "Termometeret i begerglasset",
+              "venstre": "stiger, fordi løsningen rundt blir varmet opp",
+              "hoyre": "synker, fordi løsningen rundt gir fra seg varme"
+            },
+            {
+              "egenskap": "Energinivåene",
+              "venstre": "produktene ligger lavere enn reaktantene",
+              "hoyre": "produktene ligger høyere enn reaktantene"
+            },
+            {
+              "egenskap": "Bindingsregnskap",
+              "venstre": "de nye bindingene er til sammen sterkere enn de gamle",
+              "hoyre": "de nye bindingene er til sammen svakere enn de gamle"
+            },
+            {
+              "egenskap": "Eksempler",
+              "venstre": "forbrenning, nøytralisering, NaOH som løses i vann",
+              "hoyre": "fotosyntese, kjølepakke med NH₄NO₃, kalkbrenning"
+            }
+          ]
+        }
       },
       {
         "tittel": "Entalpi og entalpidiagram",
@@ -156,7 +197,52 @@
       },
       {
         "tittel": "Bindinger og energi",
-        "html": "<p>Hvorfor avgir noen reaksjoner energi og andre ikke? Svaret ligger i bindingene. Å <strong>bryte</strong> en binding krever alltid energi — du må dra atomer fra hverandre mot en tiltrekning. Å <strong>danne</strong> en binding frigjør alltid energi. En reaksjon er derfor et regnestykke mellom det du bruker på å rive i stykker reaktantene og det du får igjen når produktene bygges opp:</p>$$\\Delta H \\approx \\sum E_{\\text{brutt}} - \\sum E_{\\text{dannet}}$$<p>Se på $\\ce{H2(g) + Cl2(g) -> 2HCl(g)}$. Vi bryter én H–H-binding (436 kJ/mol) og én Cl–Cl-binding (243 kJ/mol), til sammen 679 kJ. Vi danner to H–Cl-bindinger (432 kJ/mol hver), til sammen 864 kJ. Da blir</p>$$\\Delta H \\approx 679\\ \\text{kJ} - 864\\ \\text{kJ} = -185\\ \\text{kJ}$$<p>Reaksjonen er eksoterm fordi de nye bindingene til sammen er <em>sterkere</em> enn de gamle. Tabellverdien er $-184{,}6$ kJ, så overslaget treffer godt.</p><p>Merk ordet «omtrent». Bindingsentalpier i tabeller er gjennomsnitt over mange forskjellige forbindelser, og de gjelder bare for gasser. Har du dannelsesentalpier tilgjengelig, gir de et mer nøyaktig svar.</p>"
+        "html": "<p>Hvorfor avgir noen reaksjoner energi og andre ikke? Svaret ligger i bindingene. Å <strong>bryte</strong> en binding krever alltid energi — du må dra atomer fra hverandre mot en tiltrekning. Å <strong>danne</strong> en binding frigjør alltid energi. En reaksjon er derfor et regnestykke mellom det du bruker på å rive i stykker reaktantene og det du får igjen når produktene bygges opp:</p>$$\\Delta H \\approx \\sum E_{\\text{brutt}} - \\sum E_{\\text{dannet}}$$<p>Se på $\\ce{H2(g) + Cl2(g) -> 2HCl(g)}$. Vi bryter én H–H-binding (436 kJ/mol) og én Cl–Cl-binding (243 kJ/mol), til sammen 679 kJ. Vi danner to H–Cl-bindinger (432 kJ/mol hver), til sammen 864 kJ. Da blir</p>$$\\Delta H \\approx 679\\ \\text{kJ} - 864\\ \\text{kJ} = -185\\ \\text{kJ}$$<p>Reaksjonen er eksoterm fordi de nye bindingene til sammen er <em>sterkere</em> enn de gamle. Tabellverdien er $-184{,}6$ kJ, så overslaget treffer godt.</p><p>Merk ordet «omtrent». Bindingsentalpier i tabeller er gjennomsnitt over mange forskjellige forbindelser, og de gjelder bare for gasser. Har du dannelsesentalpier tilgjengelig, gir de et mer nøyaktig svar.</p>",
+        "figur": {
+          "type": "nivaaer",
+          "tittel": "Bindingsregnskapet for H₂ + Cl₂ → 2HCl",
+          "enhet": "H (kJ/mol)",
+          "desimaler": 0,
+          "forklaring": "Ta veien om frie atomer: å bryte H–H og Cl–Cl koster 679 kJ, mens de to nye H–Cl-bindingene gir 864 kJ tilbake. Differansen er ΔH ≈ −185 kJ, og den er negativ fordi de nye bindingene er sterkest.",
+          "nivaaer": [
+            {
+              "verdi": 0,
+              "navn": "H₂(g) + Cl₂(g)",
+              "grunn": true
+            },
+            {
+              "verdi": 679,
+              "navn": "2H(g) + 2Cl(g)"
+            },
+            {
+              "verdi": -185,
+              "navn": "2HCl(g)"
+            }
+          ],
+          "overganger": [
+            {
+              "fra": 0,
+              "til": 1,
+              "navn": "+679 brutt",
+              "farge": 3,
+              "x": 0
+            },
+            {
+              "fra": 1,
+              "til": 2,
+              "navn": "−864 dannet",
+              "farge": 1,
+              "x": 2
+            },
+            {
+              "fra": 0,
+              "til": 2,
+              "navn": "ΔH = −185",
+              "farge": 2,
+              "x": 3
+            }
+          ]
+        }
       },
       {
         "tittel": "Energiberegninger med kalorimeter",
@@ -262,7 +348,30 @@
       {
         "tittel": "Reaksjonsentalpi målt i kalorimeter",
         "oppgave": "<p>Du blander 50,0 mL saltsyre, $\\ce{HCl(aq)}$, med konsentrasjon 1,00 mol/L og 50,0 mL natriumhydroksidløsning, $\\ce{NaOH(aq)}$, med konsentrasjon 1,00 mol/L i et enkelt kalorimeter av isopor. Begge løsningene har temperaturen 21,0 °C før blandingen. Etter blandingen stiger temperaturen til 27,7 °C.</p><p>Anta at løsningen har tettheten 1,00 g/mL og spesifikk varmekapasitet 4,18 J/(g·K), og at kalorimeteret ikke tar opp varme.</p><ol><li>Hvor mye varme har løsningen tatt opp?</li><li>Beregn reaksjonsentalpien for $\\ce{H+(aq) + OH-(aq) -> H2O(l)}$.</li></ol>",
-        "losning": "<p><strong>Steg 1 — massen av løsningen.</strong> Det er hele blandingen som varmes opp:</p>$$V = 50{,}0\\ \\text{mL} + 50{,}0\\ \\text{mL} = 100{,}0\\ \\text{mL}$$$$m = 100{,}0\\ \\text{mL} \\cdot 1{,}00\\ \\text{g/mL} = 100{,}0\\ \\text{g}$$<p><strong>Steg 2 — temperaturendringen.</strong> En differanse er like stor i °C og K:</p>$$\\Delta T = 27{,}7\\ ^\\circ\\text{C} - 21{,}0\\ ^\\circ\\text{C} = 6{,}7\\ ^\\circ\\text{C} = 6{,}7\\ \\text{K}$$<p><strong>Steg 3 — varmen løsningen tar opp.</strong></p>$$q_{\\text{løsning}} = c \\cdot m \\cdot \\Delta T = 4{,}18\\ \\frac{\\text{J}}{\\text{g}\\cdot\\text{K}} \\cdot 100{,}0\\ \\text{g} \\cdot 6{,}7\\ \\text{K}$$$$q_{\\text{løsning}} = 2801\\ \\text{J} = 2{,}80\\ \\text{kJ}$$<p><strong>Steg 4 — stoffmengden vann som dannes.</strong></p>$$n(\\ce{HCl}) = 1{,}00\\ \\text{mol/L} \\cdot 0{,}0500\\ \\text{L} = 0{,}0500\\ \\text{mol}$$$$n(\\ce{NaOH}) = 1{,}00\\ \\text{mol/L} \\cdot 0{,}0500\\ \\text{L} = 0{,}0500\\ \\text{mol}$$<p>Ingen av dem er i overskudd, og forholdet i likningen er 1:1. Det dannes altså 0,0500 mol vann.</p><p><strong>Steg 5 — fortegn og molar entalpi.</strong> Temperaturen steg, så reaksjonen har <em>avgitt</em> varmen som løsningen tok opp:</p>$$q_{\\text{reaksjon}} = -2{,}80\\ \\text{kJ}$$$$\\Delta H = \\frac{q_{\\text{reaksjon}}}{n} = \\frac{-2{,}80\\ \\text{kJ}}{0{,}0500\\ \\text{mol}} = -56{,}0\\ \\text{kJ/mol}$$<p>Med to gjeldende siffer i $\\Delta T$ svarer vi $\\Delta H \\approx -56$ kJ/mol. Nøytraliseringen er eksoterm.</p><p><strong>Kontroll:</strong> tabellverdien er $-57{,}3$ kJ/mol. At vi får litt lavere tallverdi er forventet — litt varme forsvinner til begeret, termometeret og lufta, så $\\Delta T$ blir målt litt for lav.</p>"
+        "losning": "<p><strong>Steg 1 — massen av løsningen.</strong> Det er hele blandingen som varmes opp:</p>$$V = 50{,}0\\ \\text{mL} + 50{,}0\\ \\text{mL} = 100{,}0\\ \\text{mL}$$$$m = 100{,}0\\ \\text{mL} \\cdot 1{,}00\\ \\text{g/mL} = 100{,}0\\ \\text{g}$$<p><strong>Steg 2 — temperaturendringen.</strong> En differanse er like stor i °C og K:</p>$$\\Delta T = 27{,}7\\ ^\\circ\\text{C} - 21{,}0\\ ^\\circ\\text{C} = 6{,}7\\ ^\\circ\\text{C} = 6{,}7\\ \\text{K}$$<p><strong>Steg 3 — varmen løsningen tar opp.</strong></p>$$q_{\\text{løsning}} = c \\cdot m \\cdot \\Delta T = 4{,}18\\ \\frac{\\text{J}}{\\text{g}\\cdot\\text{K}} \\cdot 100{,}0\\ \\text{g} \\cdot 6{,}7\\ \\text{K}$$$$q_{\\text{løsning}} = 2801\\ \\text{J} = 2{,}80\\ \\text{kJ}$$<p><strong>Steg 4 — stoffmengden vann som dannes.</strong></p>$$n(\\ce{HCl}) = 1{,}00\\ \\text{mol/L} \\cdot 0{,}0500\\ \\text{L} = 0{,}0500\\ \\text{mol}$$$$n(\\ce{NaOH}) = 1{,}00\\ \\text{mol/L} \\cdot 0{,}0500\\ \\text{L} = 0{,}0500\\ \\text{mol}$$<p>Ingen av dem er i overskudd, og forholdet i likningen er 1:1. Det dannes altså 0,0500 mol vann.</p><p><strong>Steg 5 — fortegn og molar entalpi.</strong> Temperaturen steg, så reaksjonen har <em>avgitt</em> varmen som løsningen tok opp:</p>$$q_{\\text{reaksjon}} = -2{,}80\\ \\text{kJ}$$$$\\Delta H = \\frac{q_{\\text{reaksjon}}}{n} = \\frac{-2{,}80\\ \\text{kJ}}{0{,}0500\\ \\text{mol}} = -56{,}0\\ \\text{kJ/mol}$$<p>Med to gjeldende siffer i $\\Delta T$ svarer vi $\\Delta H \\approx -56$ kJ/mol. Nøytraliseringen er eksoterm.</p><p><strong>Kontroll:</strong> tabellverdien er $-57{,}3$ kJ/mol. At vi får litt lavere tallverdi er forventet — litt varme forsvinner til begeret, termometeret og lufta, så $\\Delta T$ blir målt litt for lav.</p>",
+        "figur": {
+          "type": "hierarki",
+          "tittel": "System og omgivelser i kalorimeteret",
+          "forklaring": "Varmen fra reaksjonen i det innerste nivået går rett ut i løsningen rundt — derfor er m i q = c · m · ΔT massen av HELE løsningen, 100,0 g. Det som lekker videre ut til beger og luft, er grunnen til at målt ΔH blir litt for lav.",
+          "nivaaer": [
+            {
+              "navn": "Universet",
+              "eksempel": "energien er bevart"
+            },
+            {
+              "navn": "Omgivelsene",
+              "eksempel": "isoporbeger og luft"
+            },
+            {
+              "navn": "Løsningen",
+              "eksempel": "100,0 g, 4,18 J/(g·K)"
+            },
+            {
+              "navn": "Systemet",
+              "eksempel": "H⁺ + OH⁻"
+            }
+          ]
+        }
       },
       {
         "tittel": "Forbrenningsentalpi fra dannelsesentalpier",

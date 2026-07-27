@@ -99,7 +99,24 @@
     "seksjoner": [
       {
         "tittel": "Hydrokarboner: alkaner, alkener og alkyner",
-        "html": "<p>Organisk kjemi er kjemien til karbonforbindelsene. Karbon er et helt spesielt grunnstoff fordi hvert karbonatom danner <strong>fire</strong> kovalente bindinger, og fordi karbonatomer binder seg villig til hverandre i lange kjeder, forgreninger og ringer.</p><p>De enkleste organiske stoffene kalles <strong>hydrokarboner</strong> og inneholder bare karbon og hydrogen. De deles i tre familier:</p><ul><li><strong>Alkaner</strong> har bare enkeltbindinger og er <strong>mettede</strong>: $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$. Butan har $n = 4$, altså $\\ce{C4H10}$.</li><li><strong>Alkener</strong> har én dobbeltbinding: $\\mathrm{C}_{n}\\mathrm{H}_{2n}$. Eten er $\\ce{CH2=CH2}$.</li><li><strong>Alkyner</strong> har én trippelbinding: $\\mathrm{C}_{n}\\mathrm{H}_{2n-2}$. Etyn (acetylen) er $\\ce{CH#CH}$.</li></ul><p>Alkener og alkyner er <strong>umettede</strong> — de har plass til flere atomer. Rask kontroll: har et hydrokarbon med $n$ karbon færre enn $2n+2$ hydrogen, må det inneholde en dobbeltbinding, en trippelbinding eller en ring.</p><p>Alle hydrokarboner er nonpolare. Derfor er de nesten uløselige i vann, men løses lett i hverandre og i bensin. Molekylene holdes bare sammen av svake London-krefter, og siden disse kreftene vokser med molekylstørrelsen, stiger kokepunktet nedover den <strong>homologe rekka</strong>:</p><table><thead><tr><th>Navn</th><th>Formel</th><th>Kokepunkt</th></tr></thead><tbody><tr><td>metan</td><td>$\\ce{CH4}$</td><td>-162 °C</td></tr><tr><td>propan</td><td>$\\ce{C3H8}$</td><td>-42 °C</td></tr><tr><td>butan</td><td>$\\ce{C4H10}$</td><td>-0,5 °C</td></tr><tr><td>pentan</td><td>$\\ce{C5H12}$</td><td>36 °C</td></tr><tr><td>heksan</td><td>$\\ce{C6H14}$</td><td>69 °C</td></tr></tbody></table><p>De fire første alkanene er gasser ved romtemperatur, resten er væsker eller faste stoffer. Ved fullstendig forbrenning gir alle hydrokarboner karbondioksid og vann:</p>$$\\ce{2C4H10 + 13O2 -> 8CO2 + 10H2O}$$<p>Er det for lite oksygen, blir forbrenningen ufullstendig, og du får giftig karbonmonoksid $\\ce{CO}$ og sot i tillegg.</p>"
+        "html": "<p>Organisk kjemi er kjemien til karbonforbindelsene. Karbon er et helt spesielt grunnstoff fordi hvert karbonatom danner <strong>fire</strong> kovalente bindinger, og fordi karbonatomer binder seg villig til hverandre i lange kjeder, forgreninger og ringer.</p><p>De enkleste organiske stoffene kalles <strong>hydrokarboner</strong> og inneholder bare karbon og hydrogen. De deles i tre familier:</p><ul><li><strong>Alkaner</strong> har bare enkeltbindinger og er <strong>mettede</strong>: $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$. Butan har $n = 4$, altså $\\ce{C4H10}$.</li><li><strong>Alkener</strong> har én dobbeltbinding: $\\mathrm{C}_{n}\\mathrm{H}_{2n}$. Eten er $\\ce{CH2=CH2}$.</li><li><strong>Alkyner</strong> har én trippelbinding: $\\mathrm{C}_{n}\\mathrm{H}_{2n-2}$. Etyn (acetylen) er $\\ce{CH#CH}$.</li></ul><p>Alkener og alkyner er <strong>umettede</strong> — de har plass til flere atomer. Rask kontroll: har et hydrokarbon med $n$ karbon færre enn $2n+2$ hydrogen, må det inneholde en dobbeltbinding, en trippelbinding eller en ring.</p><p>Alle hydrokarboner er nonpolare. Derfor er de nesten uløselige i vann, men løses lett i hverandre og i bensin. Molekylene holdes bare sammen av svake London-krefter, og siden disse kreftene vokser med molekylstørrelsen, stiger kokepunktet nedover den <strong>homologe rekka</strong>:</p><table><thead><tr><th>Navn</th><th>Formel</th><th>Kokepunkt</th></tr></thead><tbody><tr><td>metan</td><td>$\\ce{CH4}$</td><td>-162 °C</td></tr><tr><td>propan</td><td>$\\ce{C3H8}$</td><td>-42 °C</td></tr><tr><td>butan</td><td>$\\ce{C4H10}$</td><td>-0,5 °C</td></tr><tr><td>pentan</td><td>$\\ce{C5H12}$</td><td>36 °C</td></tr><tr><td>heksan</td><td>$\\ce{C6H14}$</td><td>69 °C</td></tr></tbody></table><p>De fire første alkanene er gasser ved romtemperatur, resten er væsker eller faste stoffer. Ved fullstendig forbrenning gir alle hydrokarboner karbondioksid og vann:</p>$$\\ce{2C4H10 + 13O2 -> 8CO2 + 10H2O}$$<p>Er det for lite oksygen, blir forbrenningen ufullstendig, og du får giftig karbonmonoksid $\\ce{CO}$ og sot i tillegg.</p>",
+        "figur": {
+          "type": "atom",
+          "tittel": "Karbonatomet: fire elektroner i ytterste skall",
+          "forklaring": "Tell elektronene i L-skallet — det er fire, og det er fire for lite til full oktett. Derfor deler hvert karbonatom fire elektronpar med naboene, og det er grunnen til at hvert karbon i alle strukturformlene i kapittelet har nøyaktig fire bindingsstreker, enten de går til hydrogen eller til andre karbonatomer.",
+          "grunnstoff": "C",
+          "protoner": 6,
+          "noytroner": 6,
+          "skall": [
+            2,
+            4
+          ],
+          "skallnavn": [
+            "K",
+            "L"
+          ],
+          "valens": 4
+        }
       },
       {
         "tittel": "Navnsetting av organiske forbindelser",
@@ -131,7 +148,48 @@
       },
       {
         "tittel": "Funksjonelle grupper",
-        "html": "<p>En <strong>funksjonell gruppe</strong> er en liten gruppe atomer som gir molekylet bestemte kjemiske egenskaper. Karbonkjeden er stort sett passiv — det er den funksjonelle gruppa som reagerer, lukter, løser seg og bestemmer kokepunktet. Derfor sorterer vi organiske stoffer etter gruppe:</p><table><thead><tr><th>Stoffklasse</th><th>Gruppe</th><th>Endelse</th><th>Eksempel</th></tr></thead><tbody><tr><td>Alkohol</td><td>$\\ce{-OH}$</td><td>-ol</td><td>etanol, $\\ce{CH3CH2OH}$</td></tr><tr><td>Aldehyd</td><td>$\\ce{-CHO}$</td><td>-al</td><td>etanal, $\\ce{CH3CHO}$</td></tr><tr><td>Keton</td><td>$\\ce{-CO-}$</td><td>-on</td><td>propanon, $\\ce{CH3COCH3}$</td></tr><tr><td>Karboksylsyre</td><td>$\\ce{-COOH}$</td><td>-syre</td><td>etansyre, $\\ce{CH3COOH}$</td></tr><tr><td>Ester</td><td>$\\ce{-COO-}$</td><td>-oat</td><td>etyletanoat, $\\ce{CH3COOCH2CH3}$</td></tr><tr><td>Amin</td><td>$\\ce{-NH2}$</td><td>-amin</td><td>metylamin, $\\ce{CH3NH2}$</td></tr></tbody></table><p>Aldehyder og ketoner har den samme <strong>karbonylgruppa</strong> $\\ce{C=O}$, men plassert ulikt: i et aldehyd sitter den ytterst i kjeden og har et hydrogen på seg, i et keton sitter den mellom to karbonatomer. Karboksylsyra har to oksygenatomer på det samme karbonet ($\\ce{C=O}$ og $\\ce{-OH}$) og er en svak syre som kan avgi $\\ce{H+}$.</p><p>Alkoholer deles etter hvor mange karbonatomer $\\ce{-OH}$-karbonet er bundet til: <strong>primær</strong> (ett), <strong>sekundær</strong> (to) og <strong>tertiær</strong> (tre). Denne inndelingen bestemmer hva du får ved oksidasjon.</p><p>Aminer er organiske slektninger av ammoniakk $\\ce{NH3}$, der ett eller flere hydrogen er byttet ut med karbonkjeder. Det frie elektronparet på nitrogen gjør aminer basiske: $\\ce{CH3NH2 + H2O <=> CH3NH3+ + OH-}$.</p>"
+        "html": "<p>En <strong>funksjonell gruppe</strong> er en liten gruppe atomer som gir molekylet bestemte kjemiske egenskaper. Karbonkjeden er stort sett passiv — det er den funksjonelle gruppa som reagerer, lukter, løser seg og bestemmer kokepunktet. Derfor sorterer vi organiske stoffer etter gruppe:</p><table><thead><tr><th>Stoffklasse</th><th>Gruppe</th><th>Endelse</th><th>Eksempel</th></tr></thead><tbody><tr><td>Alkohol</td><td>$\\ce{-OH}$</td><td>-ol</td><td>etanol, $\\ce{CH3CH2OH}$</td></tr><tr><td>Aldehyd</td><td>$\\ce{-CHO}$</td><td>-al</td><td>etanal, $\\ce{CH3CHO}$</td></tr><tr><td>Keton</td><td>$\\ce{-CO-}$</td><td>-on</td><td>propanon, $\\ce{CH3COCH3}$</td></tr><tr><td>Karboksylsyre</td><td>$\\ce{-COOH}$</td><td>-syre</td><td>etansyre, $\\ce{CH3COOH}$</td></tr><tr><td>Ester</td><td>$\\ce{-COO-}$</td><td>-oat</td><td>etyletanoat, $\\ce{CH3COOCH2CH3}$</td></tr><tr><td>Amin</td><td>$\\ce{-NH2}$</td><td>-amin</td><td>metylamin, $\\ce{CH3NH2}$</td></tr></tbody></table><p>Aldehyder og ketoner har den samme <strong>karbonylgruppa</strong> $\\ce{C=O}$, men plassert ulikt: i et aldehyd sitter den ytterst i kjeden og har et hydrogen på seg, i et keton sitter den mellom to karbonatomer. Karboksylsyra har to oksygenatomer på det samme karbonet ($\\ce{C=O}$ og $\\ce{-OH}$) og er en svak syre som kan avgi $\\ce{H+}$.</p><p>Alkoholer deles etter hvor mange karbonatomer $\\ce{-OH}$-karbonet er bundet til: <strong>primær</strong> (ett), <strong>sekundær</strong> (to) og <strong>tertiær</strong> (tre). Denne inndelingen bestemmer hva du får ved oksidasjon.</p><p>Aminer er organiske slektninger av ammoniakk $\\ce{NH3}$, der ett eller flere hydrogen er byttet ut med karbonkjeder. Det frie elektronparet på nitrogen gjør aminer basiske: $\\ce{CH3NH2 + H2O <=> CH3NH3+ + OH-}$.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Aldehyd og keton: samme gruppe, ulik plassering",
+          "forklaring": "Les radene som svar på ett eneste spørsmål: sitter det et hydrogen på karbonylkarbonet? Gjør det det, kan oksygen ta tak i det og lage en karboksylsyre av stoffet — mangler det, stopper oksidasjonen, og det er også derfor det minste ketonet må ha tre karbonatomer.",
+          "kolonner": [
+            "Aldehyd",
+            "Keton"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hvor karbonylgruppa C=O sitter",
+              "venstre": "ytterst i kjeden, på karbon nr. 1",
+              "hoyre": "inne i kjeden, mellom to karbonatomer"
+            },
+            {
+              "egenskap": "Naboer til karbonylkarbonet",
+              "venstre": "hydrogen på karbonylkarbonet — gruppa skrives −CHO",
+              "hoyre": "bare karbon på hver side — gruppa skrives −CO−"
+            },
+            {
+              "egenskap": "Endelse og eksempel",
+              "venstre": "-al: etanal, CH₃CHO",
+              "hoyre": "-on: propanon (aceton), CH₃COCH₃"
+            },
+            {
+              "egenskap": "Dannes ved oksidasjon av",
+              "venstre": "primær alkohol: etanol → etanal",
+              "hoyre": "sekundær alkohol: propan-2-ol → propanon"
+            },
+            {
+              "egenskap": "Kan oksideres videre?",
+              "venstre": "ja, til karboksylsyre: etanal → etansyre",
+              "hoyre": "nei, karbonylkarbonet har ikke noe hydrogen å gi fra seg"
+            },
+            {
+              "egenskap": "Minste medlem i stoffklassen",
+              "venstre": "metanal, HCHO, med bare ett karbon",
+              "hoyre": "propanon — et keton trenger minst tre karbon"
+            }
+          ]
+        }
       },
       {
         "tittel": "Isomeri",
@@ -192,7 +250,27 @@
       },
       {
         "tittel": "Egenskaper og oksidasjon av alkoholer",
-        "html": "<p>Den funksjonelle gruppa styrer både kokepunkt og løselighet. Sammenlign etanol $\\ce{CH3CH2OH}$ ($M = 46{,}07$ g/mol, koker ved 78 °C) med propan $\\ce{C3H8}$ ($M = 44{,}10$ g/mol, koker ved -42 °C). Molekylene er nesten like store, men $\\ce{-OH}$-gruppa lar etanolmolekylene danne <strong>hydrogenbindinger</strong> med hverandre, og da kreves det mye mer energi for å rive dem fra hverandre. Karboksylsyrer har både $\\ce{C=O}$ og $\\ce{-OH}$ og danner hydrogenbindinger enda lettere: etansyre koker ved 118 °C.</p><p>Samme gruppe gir vannløselighet. Metanol, etanol og etansyre blandes med vann i alle forhold, fordi $\\ce{-OH}$ danner hydrogenbindinger med vannmolekylene. Men jo lenger den nonpolare karbonkjeden blir, desto dårligere blir løseligheten: pentan-1-ol løses bare litt, oktan-1-ol nesten ikke. Molekylet får et polart «hode» og en lang nonpolar «hale».</p><p><strong>Oksidasjon av alkoholer</strong> er verdt å pugge, og henger direkte sammen med om alkoholen er primær, sekundær eller tertiær:</p><ul><li>Primær alkohol gir først aldehyd, så karboksylsyre: $\\ce{CH3CH2OH ->[O] CH3CHO ->[O] CH3COOH}$</li><li>Sekundær alkohol gir keton: propan-2-ol gir propanon</li><li>Tertiær alkohol oksideres ikke, fordi $\\ce{-OH}$-karbonet ikke har noe hydrogen å gi fra seg</li></ul><p>Det er derfor vin blir sur når flaska står åpen: etanolen oksideres av oksygenet i lufta til etansyre.</p>"
+        "html": "<p>Den funksjonelle gruppa styrer både kokepunkt og løselighet. Sammenlign etanol $\\ce{CH3CH2OH}$ ($M = 46{,}07$ g/mol, koker ved 78 °C) med propan $\\ce{C3H8}$ ($M = 44{,}10$ g/mol, koker ved -42 °C). Molekylene er nesten like store, men $\\ce{-OH}$-gruppa lar etanolmolekylene danne <strong>hydrogenbindinger</strong> med hverandre, og da kreves det mye mer energi for å rive dem fra hverandre. Karboksylsyrer har både $\\ce{C=O}$ og $\\ce{-OH}$ og danner hydrogenbindinger enda lettere: etansyre koker ved 118 °C.</p><p>Samme gruppe gir vannløselighet. Metanol, etanol og etansyre blandes med vann i alle forhold, fordi $\\ce{-OH}$ danner hydrogenbindinger med vannmolekylene. Men jo lenger den nonpolare karbonkjeden blir, desto dårligere blir løseligheten: pentan-1-ol løses bare litt, oktan-1-ol nesten ikke. Molekylet får et polart «hode» og en lang nonpolar «hale».</p><p><strong>Oksidasjon av alkoholer</strong> er verdt å pugge, og henger direkte sammen med om alkoholen er primær, sekundær eller tertiær:</p><ul><li>Primær alkohol gir først aldehyd, så karboksylsyre: $\\ce{CH3CH2OH ->[O] CH3CHO ->[O] CH3COOH}$</li><li>Sekundær alkohol gir keton: propan-2-ol gir propanon</li><li>Tertiær alkohol oksideres ikke, fordi $\\ce{-OH}$-karbonet ikke har noe hydrogen å gi fra seg</li></ul><p>Det er derfor vin blir sur når flaska står åpen: etanolen oksideres av oksygenet i lufta til etansyre.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "hoyre",
+          "tittel": "Oksidasjonstrappa for en primær alkohol",
+          "forklaring": "Følg hydrogenet og oksygenet: i det første trinnet fjernes to hydrogen fra alkoholen, i det andre tas det opp ett oksygen. En sekundær alkohol kommer bare ett trinn, til ketonet, og en tertiær alkohol kommer ikke i gang i det hele tatt — der finnes det ikke noe hydrogen på −OH-karbonet å ta fra.",
+          "steg": [
+            {
+              "tekst": "Propan-1-ol, CH₃CH₂CH₂OH",
+              "note": "primær: 2 H på OH-karbonet"
+            },
+            {
+              "tekst": "Propanal, CH₃CH₂CHO",
+              "note": "aldehyd: to H fjernet"
+            },
+            {
+              "tekst": "Propansyre, CH₃CH₂COOH",
+              "note": "syre: ett O lagt til"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [

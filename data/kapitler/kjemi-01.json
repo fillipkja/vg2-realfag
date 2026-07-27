@@ -122,7 +122,31 @@
       },
       {
         "tittel": "Ionebinding",
-        "html": "<p>Når et metall møter et ikkemetall, er forskjellen i elektronegativitet så stor at elektronene ikke deles — de blir <strong>overført</strong>. Metallatomet gir fra seg valenselektronene sine og blir et positivt ion (kation), og ikkemetallatomet tar dem opp og blir et negativt ion (anion). Begge ender opp med edelgasstruktur:</p>$$\\ce{Na -> Na+ + e-} \\qquad \\ce{Cl + e- -> Cl-}$$<p>$\\ce{Na+}$ har mistet elektronet i $3s$, altså hele det ytterste skallet, og er derfor mye mindre enn natriumatomet, mens $\\ce{Cl-}$ er større enn kloratomet, fordi det ekstra elektronet gir sterkere frastøting mellom elektronene.</p><p><strong>Ionebindingen</strong> er den elektrostatiske tiltrekningen mellom motsatt ladde ioner. Den virker like sterkt i alle retninger, og derfor pakker ionene seg i et regelmessig <strong>ionegitter</strong>, der hvert $\\ce{Na+}$ er omgitt av seks $\\ce{Cl-}$ og omvendt. Det finnes ingen $\\ce{NaCl}$-molekyler. Formelen er en <strong>formelenhet</strong> som bare viser forholdstallet mellom ionene.</p><p>Formelen finner du med ladningsbalanse: summen av ladningene må bli null. $\\ce{Mg^2+}$ og $\\ce{Cl-}$ gir $\\ce{MgCl2}$, og $\\ce{Al^3+}$ og $\\ce{O^2-}$ gir $\\ce{Al2O3}$, fordi $2 \\cdot (+3) + 3 \\cdot (-2) = 0$.</p><p>Styrken øker med ladningene og avtar med avstanden mellom ionene. Det forklarer at $\\ce{MgO}$, med ladninger 2+ og 2−, smelter ved 2852 °C, mens $\\ce{NaCl}$, med 1+ og 1−, smelter ved 801 °C. Salter er harde, men sprø, og de leder strøm først når ionene kan bevege seg — altså i smelte eller løsning, aldri i fast form.</p>"
+        "html": "<p>Når et metall møter et ikkemetall, er forskjellen i elektronegativitet så stor at elektronene ikke deles — de blir <strong>overført</strong>. Metallatomet gir fra seg valenselektronene sine og blir et positivt ion (kation), og ikkemetallatomet tar dem opp og blir et negativt ion (anion). Begge ender opp med edelgasstruktur:</p>$$\\ce{Na -> Na+ + e-} \\qquad \\ce{Cl + e- -> Cl-}$$<p>$\\ce{Na+}$ har mistet elektronet i $3s$, altså hele det ytterste skallet, og er derfor mye mindre enn natriumatomet, mens $\\ce{Cl-}$ er større enn kloratomet, fordi det ekstra elektronet gir sterkere frastøting mellom elektronene.</p><p><strong>Ionebindingen</strong> er den elektrostatiske tiltrekningen mellom motsatt ladde ioner. Den virker like sterkt i alle retninger, og derfor pakker ionene seg i et regelmessig <strong>ionegitter</strong>, der hvert $\\ce{Na+}$ er omgitt av seks $\\ce{Cl-}$ og omvendt. Det finnes ingen $\\ce{NaCl}$-molekyler. Formelen er en <strong>formelenhet</strong> som bare viser forholdstallet mellom ionene.</p><p>Formelen finner du med ladningsbalanse: summen av ladningene må bli null. $\\ce{Mg^2+}$ og $\\ce{Cl-}$ gir $\\ce{MgCl2}$, og $\\ce{Al^3+}$ og $\\ce{O^2-}$ gir $\\ce{Al2O3}$, fordi $2 \\cdot (+3) + 3 \\cdot (-2) = 0$.</p><p>Styrken øker med ladningene og avtar med avstanden mellom ionene. Det forklarer at $\\ce{MgO}$, med ladninger 2+ og 2−, smelter ved 2852 °C, mens $\\ce{NaCl}$, med 1+ og 1−, smelter ved 801 °C. Salter er harde, men sprø, og de leder strøm først når ionene kan bevege seg — altså i smelte eller løsning, aldri i fast form.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Fra natrium og klor til ionegitter",
+          "forklaring": "Elektronet flytter seg bare i de to første stegene; etter det er alt elektrostatisk tiltrekning. Legg merke til at kraften virker like sterkt i alle retninger, og at resultatet derfor blir et gitter og ikke enkeltvise NaCl-molekyler.",
+          "steg": [
+            {
+              "tekst": "Na gir bort valenselektronet i 3s",
+              "note": "blir Na⁺ med [Ne]-struktur"
+            },
+            {
+              "tekst": "Cl tar imot elektronet i 3p",
+              "note": "blir Cl⁻ med [Ar]-struktur"
+            },
+            {
+              "tekst": "Motsatt ladde ioner trekkes sammen",
+              "note": "kraften virker alle veier"
+            },
+            {
+              "tekst": "Ionene stabler seg i et ionegitter",
+              "note": "hvert Na⁺ har 6 Cl⁻ rundt"
+            }
+          ]
+        }
       },
       {
         "tittel": "Kovalent binding og elektronparformler",
@@ -162,14 +186,76 @@
       },
       {
         "tittel": "Metallbinding og de tre bindingstypene",
-        "html": "<p>Metallatomer har lav elektronegativitet og få valenselektroner. Når mange av dem ligger tett sammen, er det ingen som kan vinne elektronene, og løsningen blir at valenselektronene blir felles for alle atomene. Resultatet er positive metallioner i et regelmessig gitter, omgitt av en <strong>sky av frie elektroner</strong> som kan bevege seg gjennom hele metallstykket. Tiltrekningen mellom de positive ionene og elektronskyen er <strong>metallbindingen</strong>.</p><p>Modellen forklarer egenskapene direkte:</p><ul><li><strong>Leder elektrisk strøm.</strong> De frie elektronene flytter seg når du kobler på en spenning. Merk at det er elektronene som beveger seg, ikke ionene.</li><li><strong>Leder varme godt.</strong> De frie elektronene frakter energi raskt gjennom materialet.</li><li><strong>Formbart.</strong> Bindingen er ikke retningsbestemt, så lagene av ioner kan gli forbi hverandre uten at bindingen brytes. Derfor kan metaller hamres og trekkes til tråd, mens salter knuses.</li><li><strong>Metallglans og ofte høyt smeltepunkt.</strong> Elektronskyen reflekterer lys, og bindingene er gjerne sterke.</li></ul><p>Styrken øker med antall valenselektroner som gis til skyen: natrium (1 valenselektron) smelter ved 98 °C, magnesium (2) ved 650 °C og aluminium (3) ved 660 °C. Kvikksølv er flytende ved romtemperatur, mens wolfram smelter først ved 3422 °C. I en <strong>legering</strong> er et metall blandet med ett eller flere andre grunnstoffer — oftest andre metaller, som i bronse (kobber og tinn), men det kan også være et ikkemetall, som i stål (jern med litt karbon). Atomer med ulik størrelse gjør det vanskeligere for lagene å gli, og derfor er legeringer hardere enn de rene metallene.</p><p>Kort oppsummert: ionebinding gir gitter av ioner, kovalent binding gir molekyler eller nettverk, og metallbinding gir gitter av ioner i en elektronsky.</p>"
+        "html": "<p>Metallatomer har lav elektronegativitet og få valenselektroner. Når mange av dem ligger tett sammen, er det ingen som kan vinne elektronene, og løsningen blir at valenselektronene blir felles for alle atomene. Resultatet er positive metallioner i et regelmessig gitter, omgitt av en <strong>sky av frie elektroner</strong> som kan bevege seg gjennom hele metallstykket. Tiltrekningen mellom de positive ionene og elektronskyen er <strong>metallbindingen</strong>.</p><p>Modellen forklarer egenskapene direkte:</p><ul><li><strong>Leder elektrisk strøm.</strong> De frie elektronene flytter seg når du kobler på en spenning. Merk at det er elektronene som beveger seg, ikke ionene.</li><li><strong>Leder varme godt.</strong> De frie elektronene frakter energi raskt gjennom materialet.</li><li><strong>Formbart.</strong> Bindingen er ikke retningsbestemt, så lagene av ioner kan gli forbi hverandre uten at bindingen brytes. Derfor kan metaller hamres og trekkes til tråd, mens salter knuses.</li><li><strong>Metallglans og ofte høyt smeltepunkt.</strong> Elektronskyen reflekterer lys, og bindingene er gjerne sterke.</li></ul><p>Styrken øker med antall valenselektroner som gis til skyen: natrium (1 valenselektron) smelter ved 98 °C, magnesium (2) ved 650 °C og aluminium (3) ved 660 °C. Kvikksølv er flytende ved romtemperatur, mens wolfram smelter først ved 3422 °C. I en <strong>legering</strong> er et metall blandet med ett eller flere andre grunnstoffer — oftest andre metaller, som i bronse (kobber og tinn), men det kan også være et ikkemetall, som i stål (jern med litt karbon). Atomer med ulik størrelse gjør det vanskeligere for lagene å gli, og derfor er legeringer hardere enn de rene metallene.</p><p>Kort oppsummert: ionebinding gir gitter av ioner, kovalent binding gir molekyler eller nettverk, og metallbinding gir gitter av ioner i en elektronsky.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Ionegitter og metallgitter",
+          "forklaring": "Begge strukturene er regelmessige gitre som holdes sammen av motsatte ladninger, men bare i metallet kan elektronene flytte seg. Se hvordan de to nederste radene følger direkte av raden om elektronene.",
+          "kolonner": [
+            "Ionegitter (salt)",
+            "Metallgitter (metall)"
+          ],
+          "rader": [
+            {
+              "egenskap": "Byggesteiner",
+              "venstre": "Positive og negative ioner om hverandre",
+              "hoyre": "Positive metallioner i en sky av frie elektroner"
+            },
+            {
+              "egenskap": "Bindingen",
+              "venstre": "Tiltrekning mellom motsatt ladde ioner, låst til bestemte plasser",
+              "hoyre": "Tiltrekning mellom ionene og elektronskyen, ikke retningsbestemt"
+            },
+            {
+              "egenskap": "Elektronene",
+              "venstre": "Hører til hvert enkelt ion og kan ikke bevege seg",
+              "hoyre": "Er felles for alle atomene og beveger seg fritt"
+            },
+            {
+              "egenskap": "Leder strøm",
+              "venstre": "Bare som smelte eller løsning, når ionene kan flytte seg",
+              "hoyre": "Også i fast form, fordi elektronene flytter seg"
+            },
+            {
+              "egenskap": "Slag med hammer",
+              "venstre": "Sprøtt: forskjøvne lag setter like ladninger mot hverandre",
+              "hoyre": "Formbart: lagene glir uten at bindingen brytes"
+            },
+            {
+              "egenskap": "Smeltepunkt",
+              "venstre": "801 °C for NaCl (1+/1−), 2852 °C for MgO (2+/2−)",
+              "hoyre": "98 °C for Na med 1 valenselektron, 660 °C for Al med 3"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [
       {
         "tittel": "Fra atomnummer til ioneforbindelse",
         "oppgave": "<p>Grunnstoff A har atomnummer $Z = 20$, og grunnstoff B har atomnummer $Z = 17$.</p><ol><li>Skriv elektronkonfigurasjonene, og finn periode og gruppe for begge.</li><li>Hvilke ioner danner de?</li><li>Finn formelen for forbindelsen mellom dem, og avgjør bindingstypen. Bruk EN-verdiene 1,0 for A og 3,0 for B.</li></ol>",
-        "losning": "<p><strong>1) Elektronkonfigurasjon.</strong> Vi fyller orbitalene i rekkefølge og holder styr på hvor mange elektroner vi har brukt underveis.</p><p>Grunnstoff A, 20 elektroner: $1s^2$ (2), $2s^2$ (4), $2p^6$ (10), $3s^2$ (12), $3p^6$ (18), $4s^2$ (20).</p>$$\\text{A}: \\; 1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6\\,4s^2$$<p>Kontroll: $2+2+6+2+6+2 = 20$. Ytterste skall er $n = 4$, altså <strong>periode 4</strong>. Det er 2 valenselektroner ($4s^2$), altså <strong>gruppe 2</strong>. Dette er kalsium, $\\ce{Ca}$.</p><p>Grunnstoff B, 17 elektroner: $1s^2$ (2), $2s^2$ (4), $2p^6$ (10), $3s^2$ (12), $3p^5$ (17).</p>$$\\text{B}: \\; 1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$$<p>Kontroll: $2+2+6+2+5 = 17$. Ytterste skall er $n = 3$, altså <strong>periode 3</strong>. Valenselektronene er $3s^2\\,3p^5$, det vil si 7, altså <strong>gruppe 17</strong> (siden $17 - 10 = 7$). Dette er klor, $\\ce{Cl}$.</p><p><strong>2) Ionene.</strong> Kalsium kommer raskest til edelgasstruktur ved å gi bort de to $4s$-elektronene:</p>$$\\ce{Ca -> Ca^2+ + 2e-}$$<p>$\\ce{Ca^2+}$ har $20 - 2 = 18$ elektroner, som er samme konfigurasjon som argon: $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6$. Klor mangler bare ett elektron på fullt skall:</p>$$\\ce{Cl + e- -> Cl-}$$<p>$\\ce{Cl-}$ har $17 + 1 = 18$ elektroner, også argonstruktur.</p><p><strong>3) Formel og bindingstype.</strong> Ett kalsiumatom gir bort 2 elektroner, og hvert kloratom tar imot 1. Da trengs det to kloratomer per kalsiumatom. Ladningsbalansen bekrefter dette:</p>$$1 \\cdot (+2) + 2 \\cdot (-1) = 0$$<p>Formelen blir $\\ce{CaCl2}$. Elektronegativitetsforskjellen er</p>$$\\Delta \\text{EN} = 3{,}0 - 1{,}0 = 2{,}0$$<p>Dette er større enn 1,7, og vi har et metall sammen med et ikkemetall. Bindingen er derfor en <strong>ionebinding</strong>, og stoffet bygger et ionegitter — det finnes ingen $\\ce{CaCl2}$-molekyler.</p>"
+        "losning": "<p><strong>1) Elektronkonfigurasjon.</strong> Vi fyller orbitalene i rekkefølge og holder styr på hvor mange elektroner vi har brukt underveis.</p><p>Grunnstoff A, 20 elektroner: $1s^2$ (2), $2s^2$ (4), $2p^6$ (10), $3s^2$ (12), $3p^6$ (18), $4s^2$ (20).</p>$$\\text{A}: \\; 1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6\\,4s^2$$<p>Kontroll: $2+2+6+2+6+2 = 20$. Ytterste skall er $n = 4$, altså <strong>periode 4</strong>. Det er 2 valenselektroner ($4s^2$), altså <strong>gruppe 2</strong>. Dette er kalsium, $\\ce{Ca}$.</p><p>Grunnstoff B, 17 elektroner: $1s^2$ (2), $2s^2$ (4), $2p^6$ (10), $3s^2$ (12), $3p^5$ (17).</p>$$\\text{B}: \\; 1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$$<p>Kontroll: $2+2+6+2+5 = 17$. Ytterste skall er $n = 3$, altså <strong>periode 3</strong>. Valenselektronene er $3s^2\\,3p^5$, det vil si 7, altså <strong>gruppe 17</strong> (siden $17 - 10 = 7$). Dette er klor, $\\ce{Cl}$.</p><p><strong>2) Ionene.</strong> Kalsium kommer raskest til edelgasstruktur ved å gi bort de to $4s$-elektronene:</p>$$\\ce{Ca -> Ca^2+ + 2e-}$$<p>$\\ce{Ca^2+}$ har $20 - 2 = 18$ elektroner, som er samme konfigurasjon som argon: $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6$. Klor mangler bare ett elektron på fullt skall:</p>$$\\ce{Cl + e- -> Cl-}$$<p>$\\ce{Cl-}$ har $17 + 1 = 18$ elektroner, også argonstruktur.</p><p><strong>3) Formel og bindingstype.</strong> Ett kalsiumatom gir bort 2 elektroner, og hvert kloratom tar imot 1. Da trengs det to kloratomer per kalsiumatom. Ladningsbalansen bekrefter dette:</p>$$1 \\cdot (+2) + 2 \\cdot (-1) = 0$$<p>Formelen blir $\\ce{CaCl2}$. Elektronegativitetsforskjellen er</p>$$\\Delta \\text{EN} = 3{,}0 - 1{,}0 = 2{,}0$$<p>Dette er større enn 1,7, og vi har et metall sammen med et ikkemetall. Bindingen er derfor en <strong>ionebinding</strong>, og stoffet bygger et ionegitter — det finnes ingen $\\ce{CaCl2}$-molekyler.</p>",
+        "figur": {
+          "type": "atom",
+          "tittel": "Kalsiumatomet, Z = 20",
+          "grunnstoff": "Ca",
+          "protoner": 20,
+          "noytroner": 20,
+          "skall": [
+            2,
+            8,
+            8,
+            2
+          ],
+          "skallnavn": [
+            "K",
+            "L",
+            "M",
+            "N"
+          ],
+          "valens": 2,
+          "forklaring": "Skallene rommer 2 + 8 + 8 + 2 = 20 elektroner, like mange som protonene, og de to ytterste (4s²) er dem kalsium gir bort når det blir Ca²⁺. Legg merke til at M-skallet stopper på 8: 4s fylles før 3d, og derfor er ytterste skall n = 4, altså periode 4."
+        }
       },
       {
         "tittel": "Elektronparformel for $\\ce{CO2}$ steg for steg",

@@ -116,11 +116,69 @@
     "seksjoner": [
       {
         "tittel": "Atomkjernen, nuklider og isotoper",
-        "html": "<p>Nesten all massen i et atom sitter i <strong>kjernen</strong>, som er bygd opp av <strong>protoner</strong> og <strong>nøytroner</strong>. Med et fellesnavn kaller vi dem <strong>nukleoner</strong>. Protonet har ladning $+e$, nøytronet er uladd, og de to har nesten samme masse.</p><p>To tall beskriver kjernen:</p><ul><li><strong>Atomnummeret</strong> $Z$ — antall protoner. Det bestemmer hvilket element vi har.</li><li><strong>Massetallet</strong> $A$ — antall nukleoner til sammen.</li></ul><p>Antall nøytroner er differansen, $N = A - Z$. En bestemt kombinasjon av protoner og nøytroner kalles en <strong>nuklide</strong> og skrives ${}^{A}_{Z}\\mathrm{X}$. I $\\ce{^{238}_{92}U}$ er det altså 92 protoner og $238 - 92 = 146$ nøytroner.</p><p><strong>Isotoper</strong> er nuklider av samme element, altså med samme $Z$, men med ulikt antall nøytroner. Karbon finnes som $\\ce{^{12}_{6}C}$, $\\ce{^{13}_{6}C}$ og $\\ce{^{14}_{6}C}$. Alle tre har 6 protoner og oppfører seg kjemisk helt likt, men bare karbon-14 er radioaktiv. Det er kjernen, ikke elektronskyen, som avgjør om et stoff er radioaktivt.</p><p>Hvorfor faller ikke kjernen fra hverandre når alle protonene frastøter hverandre elektrisk? Fordi <strong>den sterke kjernekraften</strong> virker mellom alle nukleoner og er mye kraftigere enn den elektriske frastøtningen — men bare på avstander omtrent på størrelse med kjernen selv. I store kjerner rekker den derfor ikke over hele kjernen, mens den elektriske frastøtningen virker overalt. Det er hovedgrunnen til at alle kjerner med mer enn 83 protoner er radioaktive.</p><p>Masser i kjernefysikk oppgis i <strong>atomære masseenheter</strong>: $1\\,\\text{u} = 1{,}6605\\cdot 10^{-27}\\ \\text{kg}$, valgt slik at et $\\ce{^{12}C}$-atom veier nøyaktig 12 u.</p>"
+        "html": "<p>Nesten all massen i et atom sitter i <strong>kjernen</strong>, som er bygd opp av <strong>protoner</strong> og <strong>nøytroner</strong>. Med et fellesnavn kaller vi dem <strong>nukleoner</strong>. Protonet har ladning $+e$, nøytronet er uladd, og de to har nesten samme masse.</p><p>To tall beskriver kjernen:</p><ul><li><strong>Atomnummeret</strong> $Z$ — antall protoner. Det bestemmer hvilket element vi har.</li><li><strong>Massetallet</strong> $A$ — antall nukleoner til sammen.</li></ul><p>Antall nøytroner er differansen, $N = A - Z$. En bestemt kombinasjon av protoner og nøytroner kalles en <strong>nuklide</strong> og skrives ${}^{A}_{Z}\\mathrm{X}$. I $\\ce{^{238}_{92}U}$ er det altså 92 protoner og $238 - 92 = 146$ nøytroner.</p><p><strong>Isotoper</strong> er nuklider av samme element, altså med samme $Z$, men med ulikt antall nøytroner. Karbon finnes som $\\ce{^{12}_{6}C}$, $\\ce{^{13}_{6}C}$ og $\\ce{^{14}_{6}C}$. Alle tre har 6 protoner og oppfører seg kjemisk helt likt, men bare karbon-14 er radioaktiv. Det er kjernen, ikke elektronskyen, som avgjør om et stoff er radioaktivt.</p><p>Hvorfor faller ikke kjernen fra hverandre når alle protonene frastøter hverandre elektrisk? Fordi <strong>den sterke kjernekraften</strong> virker mellom alle nukleoner og er mye kraftigere enn den elektriske frastøtningen — men bare på avstander omtrent på størrelse med kjernen selv. I store kjerner rekker den derfor ikke over hele kjernen, mens den elektriske frastøtningen virker overalt. Det er hovedgrunnen til at alle kjerner med mer enn 83 protoner er radioaktive.</p><p>Masser i kjernefysikk oppgis i <strong>atomære masseenheter</strong>: $1\\,\\text{u} = 1{,}6605\\cdot 10^{-27}\\ \\text{kg}$, valgt slik at et $\\ce{^{12}C}$-atom veier nøyaktig 12 u.</p>",
+        "figur": {
+          "type": "atom",
+          "tittel": "Oppbygningen av karbon-14",
+          "forklaring": "Tell i kjernen: massetallet A = 14 er summen av de 6 protonene og de 8 nøytronene, mens Z = 6 er protontallet alene. Karbon-12 har akkurat samme kjerneladning og de samme to elektronskallene — bare to nøytroner mindre — og derfor helt lik kjemi.",
+          "grunnstoff": "C",
+          "protoner": 6,
+          "noytroner": 8,
+          "skall": [
+            2,
+            4
+          ],
+          "skallnavn": [
+            "K",
+            "L"
+          ],
+          "valens": 4
+        }
       },
       {
         "tittel": "Radioaktiv stråling: alfa, beta og gamma",
-        "html": "<p>En ustabil kjerne omdannes spontant og sender ut stråling. Vi kan ikke forutsi <em>når</em> en enkelt kjerne omdannes — bare hvor stor sannsynligheten er. Tre typer stråling er sentrale.</p><p><strong>Alfastråling</strong> ($\\alpha$) er heliumkjerner: to protoner og to nøytroner. Massetallet synker med 4 og atomnummeret med 2:</p>$$\\ce{^{226}_{88}Ra -> ^{222}_{86}Rn + ^{4}_{2}He}$$<p><strong>Betaminusstråling</strong> ($\\beta^-$) er elektroner. Elektronet ligger ikke og venter i kjernen — det <em>dannes</em> i det øyeblikket et nøytron blir et proton. Antall nukleoner er derfor uendret, mens $Z$ øker med 1. Sammen med elektronet sendes det ut et antinøytrino:</p>$$\\ce{^{14}_{6}C -> ^{14}_{7}N + ^{0}_{-1}e + \\overline{\\nu}}$$<p>Ved <strong>betaplusstråling</strong> ($\\beta^+$) går det motsatt vei: et proton blir et nøytron, og det sendes ut et positron. Reaksjonen $\\ce{^{18}_{9}F -> ^{18}_{8}O + ^{0}_{+1}e + \\nu}$ er grunnlaget for PET-undersøkelser på sykehus.</p><p><strong>Gammastråling</strong> ($\\gamma$) er ikke partikler, men fotoner med svært høy energi. En kjerne som sitter igjen i en eksitert tilstand etter en alfa- eller betaomdanning, kvitter seg med overskuddsenergien som et gammafoton — akkurat som et eksitert atom sender ut lys. Verken $A$ eller $Z$ endres.</p><p>Strålingstypene har svært ulik <strong>rekkevidde</strong>: alfapartikler stoppes av et papirark eller av de døde hudcellene dine, betapartikler av noen millimeter aluminium, mens gammastråling krever flere centimeter bly. Men rekkevidde og skadeevne er ikke det samme. Nettopp fordi alfapartikkelen bremses opp på så kort strekning, gir den svært mange ioniseringer per millimeter — og blir farlig hvis kilden havner <em>inne</em> i kroppen.</p>"
+        "html": "<p>En ustabil kjerne omdannes spontant og sender ut stråling. Vi kan ikke forutsi <em>når</em> en enkelt kjerne omdannes — bare hvor stor sannsynligheten er. Tre typer stråling er sentrale.</p><p><strong>Alfastråling</strong> ($\\alpha$) er heliumkjerner: to protoner og to nøytroner. Massetallet synker med 4 og atomnummeret med 2:</p>$$\\ce{^{226}_{88}Ra -> ^{222}_{86}Rn + ^{4}_{2}He}$$<p><strong>Betaminusstråling</strong> ($\\beta^-$) er elektroner. Elektronet ligger ikke og venter i kjernen — det <em>dannes</em> i det øyeblikket et nøytron blir et proton. Antall nukleoner er derfor uendret, mens $Z$ øker med 1. Sammen med elektronet sendes det ut et antinøytrino:</p>$$\\ce{^{14}_{6}C -> ^{14}_{7}N + ^{0}_{-1}e + \\overline{\\nu}}$$<p>Ved <strong>betaplusstråling</strong> ($\\beta^+$) går det motsatt vei: et proton blir et nøytron, og det sendes ut et positron. Reaksjonen $\\ce{^{18}_{9}F -> ^{18}_{8}O + ^{0}_{+1}e + \\nu}$ er grunnlaget for PET-undersøkelser på sykehus.</p><p><strong>Gammastråling</strong> ($\\gamma$) er ikke partikler, men fotoner med svært høy energi. En kjerne som sitter igjen i en eksitert tilstand etter en alfa- eller betaomdanning, kvitter seg med overskuddsenergien som et gammafoton — akkurat som et eksitert atom sender ut lys. Verken $A$ eller $Z$ endres.</p><p>Strålingstypene har svært ulik <strong>rekkevidde</strong>: alfapartikler stoppes av et papirark eller av de døde hudcellene dine, betapartikler av noen millimeter aluminium, mens gammastråling krever flere centimeter bly. Men rekkevidde og skadeevne er ikke det samme. Nettopp fordi alfapartikkelen bremses opp på så kort strekning, gir den svært mange ioniseringer per millimeter — og blir farlig hvis kilden havner <em>inne</em> i kroppen.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Alfaomdanning mot betaminusomdanning",
+          "forklaring": "Se hva som skjer med A og Z i hver av de to prosessene: alfa river løs fire nukleoner samlet, mens beta bare gjør om et nøytron til et proton inne i kjernen, slik at nukleontallet står stille. De to nederste radene viser at det er den korte rekkevidden som gjør alfa ekstra skadelig når kilden er inne i kroppen.",
+          "kolonner": [
+            "Alfa",
+            "Betaminus"
+          ],
+          "rader": [
+            {
+              "egenskap": "Hva sendes ut",
+              "venstre": "en heliumkjerne He-4: 2 protoner og 2 nøytroner",
+              "hoyre": "et elektron som dannes idet et nøytron blir et proton"
+            },
+            {
+              "egenskap": "Massetallet A",
+              "venstre": "synker med 4",
+              "hoyre": "uendret — like mange nukleoner"
+            },
+            {
+              "egenskap": "Atomnummeret Z",
+              "venstre": "synker med 2",
+              "hoyre": "øker med 1"
+            },
+            {
+              "egenskap": "Eksempel",
+              "venstre": "Ra-226 → Rn-222 + He-4",
+              "hoyre": "C-14 → N-14 + elektron + antinøytrino"
+            },
+            {
+              "egenskap": "Stoppes av",
+              "venstre": "et papirark eller de døde hudcellene",
+              "hoyre": "noen millimeter aluminium"
+            },
+            {
+              "egenskap": "Kvalitetsfaktor Q",
+              "venstre": "20 — ioniserer svært tett langs et kort spor",
+              "hoyre": "1"
+            }
+          ]
+        }
       },
       {
         "tittel": "Halveringstid og aktivitet",
@@ -248,7 +306,48 @@
       {
         "tittel": "Fra absorbert dose til ekvivalent dose",
         "oppgave": "<p>Under en røntgenundersøkelse absorberer en pasient på 70 kg 1,4 mJ strålingsenergi, jevnt fordelt i kroppen.</p><ol><li>Finn den absorberte dosen i gray.</li><li>Finn den ekvivalente dosen i sievert. Røntgenstråling har $Q = 1$.</li><li>Sammenlign med den gjennomsnittlige årsdosen i Norge, om lag 5 mSv.</li><li>En annen person puster inn radon og får akkurat de samme 1,4 mJ absorbert, men som alfastråling og bare i lungene, som til sammen har massen 1,0 kg. Hvor stor blir den ekvivalente dosen der? Alfastråling har $Q = 20$.</li></ol>",
-        "losning": "<p><strong>1) Absorbert dose.</strong> Definisjonen er energi per masse:</p>$$D = \\frac{E}{m} = \\frac{1{,}4\\cdot 10^{-3}\\ \\text{J}}{70\\ \\text{kg}} = 2{,}0\\cdot 10^{-5}\\ \\text{Gy} = 20\\ \\mu\\text{Gy}$$<p><strong>2) Ekvivalent dose.</strong></p>$$H = Q \\cdot D = 1 \\cdot 2{,}0\\cdot 10^{-5}\\ \\text{Gy} = 2{,}0\\cdot 10^{-5}\\ \\text{Sv} = 0{,}020\\ \\text{mSv}$$<p>Tallverdien er den samme som i gray, siden $Q = 1$, men enheten skifter til sievert. Skriv aldri gray når du mener sievert — det er to ulike størrelser, selv når tallet er likt.</p><p><strong>3) Sammenligning med årsdosen.</strong></p>$$\\frac{5\\ \\text{mSv}}{0{,}020\\ \\text{mSv}} = 250$$<p>Du måtte tatt 250 slike røntgenbilder for å få like stor dose som naturen gir deg gratis på ett år. Det setter risikoen i perspektiv.</p><p><strong>4) Radon i lungene.</strong> Samme energi, men fordelt på 1,0 kg i stedet for 70 kg:</p>$$D = \\frac{1{,}4\\cdot 10^{-3}\\ \\text{J}}{1{,}0\\ \\text{kg}} = 1{,}4\\cdot 10^{-3}\\ \\text{Gy} = 1{,}4\\ \\text{mGy}$$<p>Og alfastråling har kvalitetsfaktor 20:</p>$$H = Q \\cdot D = 20 \\cdot 1{,}4\\cdot 10^{-3}\\ \\text{Gy} = 2{,}8\\cdot 10^{-2}\\ \\text{Sv} = 28\\ \\text{mSv}$$<p>Det er $\\frac{28}{0{,}020} = 1400$ ganger mer enn i punkt 2 — med presis like mye absorbert energi. To ting gjorde forskjellen: energien ble konsentrert i en liten masse, og strålingstypen ioniserer mye tettere. Nettopp derfor er radon innendørs et reelt helseproblem i Norge, mens en alfakilde du holder i hånda er nokså harmløs.</p>"
+        "losning": "<p><strong>1) Absorbert dose.</strong> Definisjonen er energi per masse:</p>$$D = \\frac{E}{m} = \\frac{1{,}4\\cdot 10^{-3}\\ \\text{J}}{70\\ \\text{kg}} = 2{,}0\\cdot 10^{-5}\\ \\text{Gy} = 20\\ \\mu\\text{Gy}$$<p><strong>2) Ekvivalent dose.</strong></p>$$H = Q \\cdot D = 1 \\cdot 2{,}0\\cdot 10^{-5}\\ \\text{Gy} = 2{,}0\\cdot 10^{-5}\\ \\text{Sv} = 0{,}020\\ \\text{mSv}$$<p>Tallverdien er den samme som i gray, siden $Q = 1$, men enheten skifter til sievert. Skriv aldri gray når du mener sievert — det er to ulike størrelser, selv når tallet er likt.</p><p><strong>3) Sammenligning med årsdosen.</strong></p>$$\\frac{5\\ \\text{mSv}}{0{,}020\\ \\text{mSv}} = 250$$<p>Du måtte tatt 250 slike røntgenbilder for å få like stor dose som naturen gir deg gratis på ett år. Det setter risikoen i perspektiv.</p><p><strong>4) Radon i lungene.</strong> Samme energi, men fordelt på 1,0 kg i stedet for 70 kg:</p>$$D = \\frac{1{,}4\\cdot 10^{-3}\\ \\text{J}}{1{,}0\\ \\text{kg}} = 1{,}4\\cdot 10^{-3}\\ \\text{Gy} = 1{,}4\\ \\text{mGy}$$<p>Og alfastråling har kvalitetsfaktor 20:</p>$$H = Q \\cdot D = 20 \\cdot 1{,}4\\cdot 10^{-3}\\ \\text{Gy} = 2{,}8\\cdot 10^{-2}\\ \\text{Sv} = 28\\ \\text{mSv}$$<p>Det er $\\frac{28}{0{,}020} = 1400$ ganger mer enn i punkt 2 — med presis like mye absorbert energi. To ting gjorde forskjellen: energien ble konsentrert i en liten masse, og strålingstypen ioniserer mye tettere. Nettopp derfor er radon innendørs et reelt helseproblem i Norge, mens en alfakilde du holder i hånda er nokså harmløs.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Ekvivalente doser i størrelsesorden",
+          "forklaring": "Skalaen er logaritmisk: hvert bånd er ti ganger mer enn det forrige. Finn igjen svaret fra punkt 4 — de 28 mSv fra radon havner i samme bånd som yrkesgrensen på 20 mSv, mens røntgenbildet i punkt 2 på 0,020 mSv ligger utenfor skalaen til venstre.",
+          "enhet": "H (mSv)",
+          "min": 0.1,
+          "max": 10000,
+          "log": true,
+          "band": [
+            {
+              "fra": 0.1,
+              "til": 1,
+              "navn": "mammografi",
+              "verdi": "0,4 mSv"
+            },
+            {
+              "fra": 1,
+              "til": 10,
+              "navn": "årsdose i Norge",
+              "verdi": "5 mSv"
+            },
+            {
+              "fra": 10,
+              "til": 100,
+              "navn": "yrkesgrense per år",
+              "verdi": "20 mSv"
+            },
+            {
+              "fra": 100,
+              "til": 1000,
+              "navn": "kreftrisiko øker",
+              "verdi": "100 mSv"
+            },
+            {
+              "fra": 1000,
+              "til": 10000,
+              "navn": "akutt strålesyke",
+              "verdi": "1000 mSv"
+            }
+          ]
+        }
       }
     ],
     "vanligeFeil": [

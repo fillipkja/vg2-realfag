@@ -127,7 +127,48 @@
       },
       {
         "tittel": "Organellene i plante- og dyreceller",
-        "html": "<p>Organellene er «rommene» i den eukaryote cellen. Poenget med å dele cellen opp er at prosesser som ikke passer sammen kan skje samtidig: sterke fordøyelsesenzymer får arbeide inne i lysosomet uten å ødelegge resten av cellen.</p><table><thead><tr><th>Organell</th><th>Oppgave</th></tr></thead><tbody><tr><td>Cellekjerne</td><td>Oppbevarer DNA og styrer proteinsyntesen; kjernelegemet lager ribosomdeler</td></tr><tr><td>Ribosom</td><td>Setter sammen aminosyrer til protein (ikke membranomsluttet)</td></tr><tr><td>Ru ER</td><td>Lager proteiner som skal ut av cellen eller inn i membraner</td></tr><tr><td>Glatt ER</td><td>Lager lipider og steroidhormoner, avgifter stoffer, lagrer kalsium</td></tr><tr><td>Golgi-apparat</td><td>Modifiserer, sorterer og pakker proteiner i blærer</td></tr><tr><td>Lysosom</td><td>Bryter ned makromolekyler og utslitte organeller</td></tr><tr><td>Mitokondrie</td><td>Celleånding: lager ATP av næringsstoffer og oksygen</td></tr><tr><td>Kloroplast</td><td>Fotosyntese (bare planter og alger)</td></tr><tr><td>Sentralvakuole</td><td>Lagring, avfall og turgortrykk (bare planteceller)</td></tr><tr><td>Cytoskjelett</td><td>Form, transport inne i cellen og celledeling</td></tr></tbody></table><p>Kjernemembran, ER, Golgi, blærer og cellemembran henger sammen i <strong>endomembransystemet</strong>, som fungerer som cellens postgang.</p><p>Forskjellen på plante- og dyrecelle er enkel å huske: planteceller har cellevegg av cellulose, kloroplaster og en sentralvakuole som kan fylle 90 % av cellen. Dyreceller mangler alle tre, men har sentrioler og tydelige lysosomer.</p>"
+        "html": "<p>Organellene er «rommene» i den eukaryote cellen. Poenget med å dele cellen opp er at prosesser som ikke passer sammen kan skje samtidig: sterke fordøyelsesenzymer får arbeide inne i lysosomet uten å ødelegge resten av cellen.</p><table><thead><tr><th>Organell</th><th>Oppgave</th></tr></thead><tbody><tr><td>Cellekjerne</td><td>Oppbevarer DNA og styrer proteinsyntesen; kjernelegemet lager ribosomdeler</td></tr><tr><td>Ribosom</td><td>Setter sammen aminosyrer til protein (ikke membranomsluttet)</td></tr><tr><td>Ru ER</td><td>Lager proteiner som skal ut av cellen eller inn i membraner</td></tr><tr><td>Glatt ER</td><td>Lager lipider og steroidhormoner, avgifter stoffer, lagrer kalsium</td></tr><tr><td>Golgi-apparat</td><td>Modifiserer, sorterer og pakker proteiner i blærer</td></tr><tr><td>Lysosom</td><td>Bryter ned makromolekyler og utslitte organeller</td></tr><tr><td>Mitokondrie</td><td>Celleånding: lager ATP av næringsstoffer og oksygen</td></tr><tr><td>Kloroplast</td><td>Fotosyntese (bare planter og alger)</td></tr><tr><td>Sentralvakuole</td><td>Lagring, avfall og turgortrykk (bare planteceller)</td></tr><tr><td>Cytoskjelett</td><td>Form, transport inne i cellen og celledeling</td></tr></tbody></table><p>Kjernemembran, ER, Golgi, blærer og cellemembran henger sammen i <strong>endomembransystemet</strong>, som fungerer som cellens postgang.</p><p>Forskjellen på plante- og dyrecelle er enkel å huske: planteceller har cellevegg av cellulose, kloroplaster og en sentralvakuole som kan fylle 90 % av cellen. Dyreceller mangler alle tre, men har sentrioler og tydelige lysosomer.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Plantecelle og dyrecelle",
+          "forklaring": "De fem øverste radene er forskjellene, den nederste alt de har felles. Legg merke til hvor lite som egentlig skiller dem: cellevegg, kloroplast og sentralvakuole. Selve maskineriet for proteinsyntese og celleånding er det samme.",
+          "kolonner": [
+            "Plantecelle",
+            "Dyrecelle"
+          ],
+          "rader": [
+            {
+              "egenskap": "Cellevegg",
+              "venstre": "stiv vegg av cellulose utenpå cellemembranen",
+              "hoyre": "ingen — bare cellemembran"
+            },
+            {
+              "egenskap": "Kloroplaster",
+              "venstre": "ja, driver fotosyntese og gjør cellen grønn",
+              "hoyre": "nei, cellen må få ferdig næring utenfra"
+            },
+            {
+              "egenskap": "Vakuole",
+              "venstre": "én sentralvakuole, opptil 90 % av volumet, gir turgortrykk",
+              "hoyre": "bare små blærer"
+            },
+            {
+              "egenskap": "Sentrioler",
+              "venstre": "mangler hos de fleste",
+              "hoyre": "ja, brukes ved celledeling"
+            },
+            {
+              "egenskap": "Lagret næring",
+              "venstre": "stivelse i korn",
+              "hoyre": "glykogen"
+            },
+            {
+              "egenskap": "Felles",
+              "venstre": "kjerne, mitokondrier, ru og glatt ER, Golgi, ribosomer, cytoskjelett",
+              "hoyre": "nøyaktig det samme — grunnplanet er eukaryot i begge"
+            }
+          ]
+        }
       },
       {
         "tittel": "Sammenhengen mellom struktur og funksjon",
@@ -197,7 +238,39 @@
       },
       {
         "tittel": "Mikroskopering i praksis",
-        "html": "<p>Et lysmikroskop forstørrer i to trinn: objektivet lager et forstørret bilde, og okularet forstørrer dette bildet én gang til. <strong>Total forstørrelse</strong> er derfor produktet:</p>$$M = M_{\\text{okular}} \\cdot M_{\\text{objektiv}}$$<p>Med et vanlig 10×-okular og objektivene 4×, 10× og 40× får du 40×, 100× og 400×. Et oljeimmersjonsobjektiv på 100× gir 1000×, og der stopper det.</p><p>Grensen settes av <strong>oppløsningsevnen</strong>: den minste avstanden mellom to punkter som fortsatt kan sees som to punkter. Fordi synlig lys har bølgelengder rundt 400–700 nm, klarer et lysmikroskop omtrent 0,2 µm. Forstørrer du mer enn ca. 1000 ganger, blir bildet bare større og uskarpere — det kalles tom forstørrelse. Et elektronmikroskop bruker elektroner i stedet for lys og kommer ned på nanometernivå. Det er derfor all kunnskap om organellenes finstruktur er yngre enn 1950.</p><p>Slik gjør du det i praksis: lag et tynt preparat, legg på en dråpe vann eller farge, og senk dekkglasset ned skrått for å unngå luftbobler. Start alltid med det minste objektivet, finn objektet og still skarpt med grovinnstillingen. Bytt så til sterkere objektiv og bruk <strong>bare</strong> fininnstillingen. Husk at bildet er snudd: flytter du preparatet mot høyre, går bildet mot venstre. Metylenblått farger kjerner i kinnhudceller, og Lugols løsning farger stivelseskorn blåsvarte.</p>"
+        "html": "<p>Et lysmikroskop forstørrer i to trinn: objektivet lager et forstørret bilde, og okularet forstørrer dette bildet én gang til. <strong>Total forstørrelse</strong> er derfor produktet:</p>$$M = M_{\\text{okular}} \\cdot M_{\\text{objektiv}}$$<p>Med et vanlig 10×-okular og objektivene 4×, 10× og 40× får du 40×, 100× og 400×. Et oljeimmersjonsobjektiv på 100× gir 1000×, og der stopper det.</p><p>Grensen settes av <strong>oppløsningsevnen</strong>: den minste avstanden mellom to punkter som fortsatt kan sees som to punkter. Fordi synlig lys har bølgelengder rundt 400–700 nm, klarer et lysmikroskop omtrent 0,2 µm. Forstørrer du mer enn ca. 1000 ganger, blir bildet bare større og uskarpere — det kalles tom forstørrelse. Et elektronmikroskop bruker elektroner i stedet for lys og kommer ned på nanometernivå. Det er derfor all kunnskap om organellenes finstruktur er yngre enn 1950.</p><p>Slik gjør du det i praksis: lag et tynt preparat, legg på en dråpe vann eller farge, og senk dekkglasset ned skrått for å unngå luftbobler. Start alltid med det minste objektivet, finn objektet og still skarpt med grovinnstillingen. Bytt så til sterkere objektiv og bruk <strong>bare</strong> fininnstillingen. Husk at bildet er snudd: flytter du preparatet mot høyre, går bildet mot venstre. Metylenblått farger kjerner i kinnhudceller, og Lugols løsning farger stivelseskorn blåsvarte.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik mikroskoperer du et preparat",
+          "forklaring": "Rekkefølgen er ikke tilfeldig: synsfeltet krymper når du bytter objektiv, så objektet må være funnet og sentrert før du forstørrer mer. Fra steg 5 er grovinnstillingen forbudt — den kan presse objektivet ned i dekkglasset.",
+          "steg": [
+            {
+              "tekst": "Lag et tynt preparat på objektglasset",
+              "note": "tykt preparat slipper ikke lys"
+            },
+            {
+              "tekst": "Dryp på vann eller farge, senk dekkglasset skrått",
+              "note": "skrått gir ingen luftbobler"
+            },
+            {
+              "tekst": "Start med det svakeste objektivet, 4×",
+              "note": "størst synsfelt"
+            },
+            {
+              "tekst": "Finn objektet og still skarpt med grovhjulet",
+              "note": "sentrer det i synsfeltet"
+            },
+            {
+              "tekst": "Bytt til sterkere objektiv, 10× og 40×",
+              "note": "objektet blir liggende i fokus"
+            },
+            {
+              "tekst": "Etterjuster med fininnstillingen alene",
+              "note": "grovhjulet knuser dekkglass"
+            }
+          ]
+        }
       }
     ],
     "eksempler": [
@@ -251,7 +324,53 @@
       {
         "tittel": "Vurder holdepunktene for endosymbioseteorien",
         "oppgave": "<p>Under står fire observasjoner om mitokondrier. Forklar for hver av dem hvordan den støtter endosymbioseteorien, og avgjør hvilken som er det sterkeste enkeltargumentet.</p><ul><li>A: Mitokondriet er omgitt av to membraner.</li><li>B: Mitokondriet har sitt eget sirkulære DNA uten histoner.</li><li>C: Mitokondriet har egne ribosomer som ligner bakteriers, og de hemmes av antibiotika som tetrasyklin.</li><li>D: Mitokondrier deler seg ved todeling, uavhengig av cellens egen deling.</li></ul>",
-        "losning": "<p><strong>A — to membraner.</strong> Når en celle tar opp noe ved fagocytose, blir det pakket inn i en blære laget av vertens egen cellemembran. Den opprinnelige bakterien hadde allerede sin egen membran. Resultatet er nøyaktig to membraner, og den indre ligner faktisk mest på en bakteriemembran i sammensetning. Støtten er god, men indirekte: også kjernen har to membraner uten å ha vært en bakterie.</p><p><strong>B — eget sirkulært DNA.</strong> Vanlige organeller har ikke arvestoff i det hele tatt. At mitokondriet har sitt eget, og at det er ringformet og uten histoner slik bakteriekromosomer er, er vanskelig å forklare på noen annen måte enn at det en gang var en selvstendig organisme.</p><p><strong>C — egne ribosomer.</strong> Resten av cellen bruker 80S-ribosomer. At mitokondriet har sitt eget proteinapparat av bakterietype, og at antibiotika som er laget for å stoppe bakterier også påvirker det, peker samme vei.</p><p><strong>D — egen todeling.</strong> Cellen kan ikke bygge et nytt mitokondrium fra bunnen av; nye oppstår bare ved at eksisterende deler seg — akkurat som bakterier formerer seg.</p><p><strong>Sterkest?</strong> B er det sterkeste enkeltargumentet, særlig når man tar det ett skritt videre og sammenligner sekvensene. Da viser mitokondrie-DNA seg å ligne mest på DNA hos α-proteobakterier. Det er ikke bare en likhet i byggemåte, men et målbart slektskap. A alene ville vært for svakt, mens B, C og D til sammen beskriver en organell som fortsatt oppfører seg som en bakterie.</p>"
+        "losning": "<p><strong>A — to membraner.</strong> Når en celle tar opp noe ved fagocytose, blir det pakket inn i en blære laget av vertens egen cellemembran. Den opprinnelige bakterien hadde allerede sin egen membran. Resultatet er nøyaktig to membraner, og den indre ligner faktisk mest på en bakteriemembran i sammensetning. Støtten er god, men indirekte: også kjernen har to membraner uten å ha vært en bakterie.</p><p><strong>B — eget sirkulært DNA.</strong> Vanlige organeller har ikke arvestoff i det hele tatt. At mitokondriet har sitt eget, og at det er ringformet og uten histoner slik bakteriekromosomer er, er vanskelig å forklare på noen annen måte enn at det en gang var en selvstendig organisme.</p><p><strong>C — egne ribosomer.</strong> Resten av cellen bruker 80S-ribosomer. At mitokondriet har sitt eget proteinapparat av bakterietype, og at antibiotika som er laget for å stoppe bakterier også påvirker det, peker samme vei.</p><p><strong>D — egen todeling.</strong> Cellen kan ikke bygge et nytt mitokondrium fra bunnen av; nye oppstår bare ved at eksisterende deler seg — akkurat som bakterier formerer seg.</p><p><strong>Sterkest?</strong> B er det sterkeste enkeltargumentet, særlig når man tar det ett skritt videre og sammenligner sekvensene. Da viser mitokondrie-DNA seg å ligne mest på DNA hos α-proteobakterier. Det er ikke bare en likhet i byggemåte, men et målbart slektskap. A alene ville vært for svakt, mens B, C og D til sammen beskriver en organell som fortsatt oppfører seg som en bakterie.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Mitokondrium mot frittlevende bakterie",
+          "forklaring": "Les hver rad som et holdepunkt: de fem øverste er nesten identiske, og det er nettopp de som er argumentene i oppgaven. De to nederste viser hva samlivet har endret — én membran er blitt to, og de fleste genene er flyttet til kjernen.",
+          "kolonner": [
+            "Bakterie",
+            "Mitokondrium"
+          ],
+          "rader": [
+            {
+              "egenskap": "Arvestoff",
+              "venstre": "ett ringformet DNA-molekyl, uten histoner",
+              "hoyre": "eget ringformet DNA, uten histoner"
+            },
+            {
+              "egenskap": "Ribosomer",
+              "venstre": "egne ribosomer av bakterietype (70S)",
+              "hoyre": "egne ribosomer, av samme bakterietype"
+            },
+            {
+              "egenskap": "Antibiotika",
+              "venstre": "tetrasyklin stopper proteinsyntesen",
+              "hoyre": "de samme stoffene hemmer den også her"
+            },
+            {
+              "egenskap": "Formering",
+              "venstre": "todeling",
+              "hoyre": "todeling, uavhengig av cellens egen deling"
+            },
+            {
+              "egenskap": "Størrelse",
+              "venstre": "1–5 µm",
+              "hoyre": "0,5–1 µm tykt — samme størrelsesorden"
+            },
+            {
+              "egenskap": "Membraner",
+              "venstre": "én cellemembran, oftest cellevegg utenpå",
+              "hoyre": "to membraner, ingen cellevegg"
+            },
+            {
+              "egenskap": "Selvstendig",
+              "venstre": "ja, har alle genene sine selv",
+              "hoyre": "nei, de fleste genene ligger i kjernen"
+            }
+          ]
+        }
       }
     ],
     "vanligeFeil": [
