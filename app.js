@@ -239,10 +239,12 @@ function tegnTopp({ tittel, under, tilbake }) {
   $("#temabryter").onclick = byttTema;
 }
 
+/* Leser hva som FAKTISK vises, ikke bare hva som er lagret — ?theme= kan
+   overstyre lagret valg, og da må ikonet vise riktig neste tilstand. */
 function erMork() {
-  const t = lastLager().tema;
-  if (t === "dark") return true;
-  if (t === "light") return false;
+  const attr = document.documentElement.dataset.theme;
+  if (attr === "dark") return true;
+  if (attr === "light") return false;
   return matchMedia("(prefers-color-scheme: dark)").matches;
 }
 function settTema() {
@@ -251,8 +253,11 @@ function settTema() {
   else document.documentElement.dataset.theme = t;
 }
 function byttTema() {
-  lastLager().tema = erMork() ? "light" : "dark";
-  lagre(); settTema(); tegn();
+  const nytt = erMork() ? "light" : "dark";
+  lastLager().tema = nytt;
+  lagre();
+  document.documentElement.dataset.theme = nytt;
+  tegn();
 }
 
 function tegnTabbar() {
