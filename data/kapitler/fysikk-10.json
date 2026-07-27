@@ -1,0 +1,248 @@
+{
+  "fag": "fysikk",
+  "nr": 10,
+  "tittel": "Elektrisitet",
+  "intro": "Elektrisitet handler om hvordan ladning, energi og resistans henger sammen i en krets. Med Ohms lov, reglene for serie- og parallellkobling og uttrykkene for effekt kan du regne ut strøm, spenning og energibruk i nesten alle kretsene du møter i Fysikk 1 — og på laben forstå hva instrumentene egentlig måler.",
+
+  "kompakt": {
+    "punkter": [
+      "Strøm er ladning per tid: $I = \\frac{Q}{t}$. Enheten er ampere, $1\\,\\text{A} = 1\\,\\text{C/s}$.",
+      "Spenning er energi per ladning: $U = \\frac{W}{Q}$. Enheten er volt, $1\\,\\text{V} = 1\\,\\text{J/C}$.",
+      "Resistans er definert som $R = \\frac{U}{I}$, med enheten ohm, $1\\,\\Omega = 1\\,\\text{V/A}$.",
+      "Ohms lov $U = RI$ gjelder for ohmske ledere ved konstant temperatur. En glødelampe er ikke ohmsk — resistansen øker når tråden blir varm.",
+      "Resistansen i en ledning er $R = \\rho\\frac{l}{A}$: lang og tynn ledning gir stor resistans.",
+      "I en seriekobling er strømmen den samme gjennom alle komponentene, spenningene summeres, og $R_s = R_1 + R_2 + \\dots$",
+      "I en parallellkobling er spenningen den samme over alle grenene, strømmene summeres, og $\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots$",
+      "Erstatningsresistansen i en parallellkobling er alltid mindre enn den minste enkeltresistansen. I en seriekobling er den alltid større enn den største.",
+      "Effekt: $P = UI = RI^2 = \\frac{U^2}{R}$. Energi: $W = Pt = UIt$, og $1\\,\\text{kWh} = 3{,}6\\cdot 10^{6}\\,\\text{J}$.",
+      "Amperemeter kobles i serie og skal ha liten resistans. Voltmeter kobles parallelt og skal ha stor resistans. For en reell spenningskilde er klemmespenningen $U = \\varepsilon - R_i I$."
+    ],
+    "formler": [
+      { "navn": "Elektrisk strøm", "latex": "I = \\frac{Q}{t}" },
+      { "navn": "Spenning (energi per ladning)", "latex": "U = \\frac{W}{Q}" },
+      { "navn": "Resistans (definisjon)", "latex": "R = \\frac{U}{I}" },
+      { "navn": "Ohms lov", "latex": "U = R\\,I" },
+      { "navn": "Resistansen i en leder", "latex": "R = \\rho\\,\\frac{l}{A}" },
+      { "navn": "Seriekobling", "latex": "R_s = R_1 + R_2 + \\dots + R_n" },
+      { "navn": "Parallellkobling", "latex": "\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots + \\frac{1}{R_n}" },
+      { "navn": "To motstander i parallell", "latex": "R_p = \\frac{R_1 R_2}{R_1 + R_2}" },
+      { "navn": "Elektrisk effekt", "latex": "P = U\\,I" },
+      { "navn": "Effekt uttrykt ved resistansen", "latex": "P = R\\,I^{2} = \\frac{U^{2}}{R}" },
+      { "navn": "Elektrisk energi", "latex": "W = P\\,t = U\\,I\\,t" },
+      { "navn": "Kilowattime", "latex": "1\\,\\text{kWh} = 3{,}6\\cdot 10^{6}\\,\\text{J}" },
+      { "navn": "Klemmespenning over en reell spenningskilde", "latex": "U = \\varepsilon - R_i\\,I" },
+      { "navn": "Elementærladningen", "latex": "e = 1{,}60\\cdot 10^{-19}\\,\\text{C}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Strøm, spenning og resistans",
+        "html": "<p>Elektrisk strøm er <strong>ladning i bevegelse</strong>. I en metalltråd er det de frie elektronene som flytter seg. Strømmen forteller hvor mye ladning som passerer et tverrsnitt av lederen per sekund:</p>$$I = \\frac{Q}{t}$$<p>Enheten er ampere: $1\\,\\text{A} = 1\\,\\text{C/s}$. Ladning måles i coulomb, og den minste ladningen vi finner fritt, er elementærladningen $e = 1{,}60\\cdot 10^{-19}\\,\\text{C}$.</p><p>Strømretningen ble historisk definert som retningen <em>positiv</em> ladning ville beveget seg, altså fra pluss til minus gjennom den ytre kretsen. I metaller går elektronene faktisk motsatt vei, men vi bruker likevel denne <strong>konvensjonelle strømretningen</strong> i alle beregninger. Elektronene selv driver overraskende sakte, gjerne under en millimeter i sekundet, mens selve påvirkningen forplanter seg gjennom lederen nesten momentant. Derfor lyser lampa i samme øyeblikk du slår på bryteren.</p><p><strong>Spenning</strong> er energi per ladning:</p>$$U = \\frac{W}{Q}$$<p>Volt er altså joule per coulomb: $1\\,\\text{V} = 1\\,\\text{J/C}$. En spenning på 9 V betyr at hver coulomb som går gjennom kretsen, får 9 J med seg fra batteriet og gir energien fra seg i komponentene underveis.</p><p><strong>Resistans</strong> forteller hvor vanskelig det er å drive strøm gjennom en komponent, og er definert som</p>$$R = \\frac{U}{I}$$<p>Enheten er ohm: $1\\,\\Omega = 1\\,\\text{V/A}$. Stor resistans gir liten strøm ved samme spenning.</p>"
+      },
+      {
+        "tittel": "Ohms lov og resistansen i en leder",
+        "html": "<p>For mange ledere er resistansen tilnærmet konstant så lenge temperaturen holder seg uendret. Da kan definisjonen $R = \\frac{U}{I}$ snus til <strong>Ohms lov</strong>:</p>$$U = R\\,I$$<p>Ohms lov er ingen naturlov som gjelder alltid — den er en modell som passer for <strong>ohmske ledere</strong>. Plotter du $U$ mot $I$ for en slik leder, får du en rett linje gjennom origo, og stigningstallet er resistansen.</p><p>En glødelampe er et godt moteksempel. Når tråden varmes opp, øker resistansen kraftig, og $U$-$I$-grafen krummer oppover. Forholdet $\\frac{U}{I}$ er fortsatt resistansen i hvert enkelt målepunkt, men den er ikke konstant, så lampa er ikke ohmsk. Det samme gjelder dioder.</p><p>Resistansen i en metalltråd avhenger av både materialet og formen:</p>$$R = \\rho\\,\\frac{l}{A}$$<p>Her er $l$ lengden, $A$ tverrsnittsarealet og $\\rho$ (ro) <strong>resistiviteten</strong> til materialet. Lang og tynn tråd gir stor resistans, kort og tykk gir liten. Kopper har $\\rho = 1{,}7\\cdot 10^{-8}\\,\\Omega\\text{m}$, så 50 m kopperledning med tverrsnitt $1{,}5\\,\\text{mm}^2 = 1{,}5\\cdot 10^{-6}\\,\\text{m}^2$ får</p>$$R = 1{,}7\\cdot 10^{-8}\\,\\Omega\\text{m}\\cdot\\frac{50\\,\\text{m}}{1{,}5\\cdot 10^{-6}\\,\\text{m}^2} = 0{,}57\\,\\Omega$$<p>Det er lite, men ikke null — og i lange strekk er det nettopp denne resistansen som gir varmetap.</p>"
+      },
+      {
+        "tittel": "Seriekobling",
+        "html": "<p>Komponenter er koblet i <strong>serie</strong> når de står etter hverandre, slik at strømmen bare har én vei å gå. To ting følger av det:</p><ul><li>Strømmen er <strong>den samme</strong> gjennom alle komponentene. Ladning hopper ikke av underveis.</li><li>Spenningen fra kilden fordeler seg på komponentene: $U = U_1 + U_2 + \\dots$ Hver coulomb gir fra seg litt energi i hver motstand, og til sammen gir den fra seg alt den fikk.</li></ul><p>Setter vi inn Ohms lov i spenningssummen, får vi $R_s I = R_1 I + R_2 I$, og siden $I$ er felles, kan vi forkorte den bort:</p>$$R_s = R_1 + R_2 + \\dots + R_n$$<p>Erstatningsresistansen blir altså større enn den største enkeltmotstanden. Legger du til flere motstander i serie, synker strømmen.</p><p>Spenningen fordeler seg i samme forhold som resistansene: den største motstanden får den største spenningen. Kobler du $2{,}0\\,\\Omega$ og $4{,}0\\,\\Omega$ i serie over 12 V, blir $R_s = 6{,}0\\,\\Omega$ og $I = \\frac{12\\,\\text{V}}{6{,}0\\,\\Omega} = 2{,}0\\,\\text{A}$. Da er $U_1 = 2{,}0\\,\\Omega \\cdot 2{,}0\\,\\text{A} = 4{,}0\\,\\text{V}$ og $U_2 = 4{,}0\\,\\Omega\\cdot 2{,}0\\,\\text{A} = 8{,}0\\,\\text{V}$, som til sammen blir 12 V.</p><p>Ulempen med serie er at brytes kretsen ett sted, stopper alt. Det er derfor en gammeldags lysslynge blir helt mørk når én lampe ryker.</p>"
+      },
+      {
+        "tittel": "Parallellkobling",
+        "html": "<p>Komponenter er koblet i <strong>parallell</strong> når de sitter mellom de samme to punktene, slik at strømmen deler seg i flere grener. Da gjelder:</p><ul><li>Spenningen er <strong>den samme</strong> over alle grenene, siden alle sitter mellom de samme to punktene.</li><li>Strømmene summeres: $I = I_1 + I_2 + \\dots$ Dette er <strong>knutepunktsregelen</strong> — like mye ladning går inn i et knutepunkt som ut av det.</li></ul><p>Setter vi $I = \\frac{U}{R}$ inn i strømsummen, får vi $\\frac{U}{R_p} = \\frac{U}{R_1} + \\frac{U}{R_2}$. Den felles spenningen $U$ forkortes bort:</p>$$\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots + \\frac{1}{R_n}$$<p>For nøyaktig to motstander er det raskere å bruke</p>$$R_p = \\frac{R_1 R_2}{R_1 + R_2}$$<p>Legg merke til at $R_p$ alltid blir <strong>mindre</strong> enn den minste av motstandene: flere grener gir strømmen flere veier å gå. Kobler du $6{,}0\\,\\Omega$ og $3{,}0\\,\\Omega$ parallelt over 12 V, går det $\\frac{12}{6{,}0} = 2{,}0\\,\\text{A}$ i den ene grenen og $\\frac{12}{3{,}0} = 4{,}0\\,\\text{A}$ i den andre, til sammen $6{,}0\\,\\text{A}$. Det stemmer med $R_p = \\frac{6{,}0\\cdot 3{,}0}{9{,}0} = 2{,}0\\,\\Omega$.</p><p>Stikkontaktene hjemme er parallellkoblet. Derfor får hvert apparat full spenning på 230 V, og du kan skru av ett uten at resten slukker.</p>"
+      },
+      {
+        "tittel": "Elektrisk energi og effekt",
+        "html": "<p>Når ladningen $Q$ går gjennom en komponent med spenningen $U$ over, blir energien $W = UQ$ omdannet. Med $Q = It$ gir det</p>$$W = U\\,I\\,t$$<p>Effekt er energi per tid, så</p>$$P = \\frac{W}{t} = U\\,I$$<p>Enheten er watt: $1\\,\\text{W} = 1\\,\\text{J/s}$. Kombinerer vi med Ohms lov, får vi to former som ofte er mer praktiske:</p>$$P = R\\,I^{2} = \\frac{U^{2}}{R}$$<p>Alle tre uttrykkene gir samme svar for en ohmsk motstand — velg det som passer opplysningene du har. Er strømmen felles, som i en seriekobling eller en overføringsledning, er $P = RI^2$ mest nyttig. Er spenningen felles, som i en parallellkobling, bruker du $P = \\frac{U^2}{R}$.</p><p>Nettopp derfor overføres elektrisk energi på høyspentledninger. Skal en effekt $P$ fram, er strømmen $I = \\frac{P}{U}$. Tidobler du spenningen, blir strømmen en tidel, og varmetapet $RI^2$ i ledningen bare en hundredel.</p><p>Strømregningen måles i <strong>kilowattimer</strong>, som er energi og ikke effekt:</p>$$1\\,\\text{kWh} = 1000\\,\\text{W}\\cdot 3600\\,\\text{s} = 3{,}6\\cdot 10^{6}\\,\\text{J}$$<p>Et apparat på 2,0 kW som står på i en halv time, bruker $2{,}0\\cdot 0{,}50 = 1{,}0$ kWh.</p>"
+      },
+      {
+        "tittel": "Målinger i kretser",
+        "html": "<p>Et <strong>amperemeter</strong> måler strømmen gjennom en komponent og må derfor kobles <strong>i serie</strong>, slik at hele strømmen går gjennom det. Skal det ikke forstyrre kretsen, må det ha svært liten resistans. Et <strong>voltmeter</strong> måler spenningen mellom to punkter og kobles <strong>parallelt</strong> med komponenten. Det må ha svært stor resistans, ellers stjeler det strøm fra grenen det måler over. Kobler du et amperemeter parallelt over et batteri, lager du en kortslutning — det er den vanligste laberroren i dette kapittelet.</p><p>En typisk øvelse er å variere spenningen med et reguleringsapparat, lese av flere par $(I, U)$ og plotte $U$ mot $I$. Ligger punktene på en rett linje gjennom origo, er komponenten ohmsk, og stigningstallet til den beste rette linja er resistansen. Krummer grafen, endrer resistansen seg — typisk fordi komponenten blir varm.</p><p>Et reelt batteri har også en <strong>indre resistans</strong> $R_i$. Den elektromotoriske spenningen $\\varepsilon$ er energien per ladning kilden gir, men noe av den brukes opp inne i batteriet. Spenningen du måler mellom polene, <strong>klemmespenningen</strong>, blir</p>$$U = \\varepsilon - R_i\\,I$$<p>Måler du $U$ for flere strømmer, gir skjæringen med $U$-aksen $\\varepsilon$, og stigningstallet er $-R_i$. Et gammelt batteri har stor $R_i$, og da faller spenningen mye så snart du kobler til en last.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Fra strøm til ladning, elektroner og energi",
+        "oppgave": "<p>Gjennom en lyspære går det en strøm på $0{,}50\\,\\text{A}$ i $2{,}0$ minutter. Spenningen over pæra er $9{,}0\\,\\text{V}$.</p><ul><li>a) Hvor stor ladning har passert gjennom pæra?</li><li>b) Hvor mange elektroner svarer dette til?</li><li>c) Hvor mye energi er omdannet i pæra i løpet av de to minuttene?</li></ul>",
+        "losning": "<p><strong>a) Ladningen.</strong> Først må tiden gjøres om til sekunder, siden ampere er coulomb per sekund:</p>$$t = 2{,}0\\,\\text{min} = 2{,}0\\cdot 60\\,\\text{s} = 120\\,\\text{s}$$<p>Definisjonen $I = \\frac{Q}{t}$ løses for $Q$:</p>$$Q = I\\,t = 0{,}50\\,\\text{A}\\cdot 120\\,\\text{s} = 60\\,\\text{C}$$<p><strong>b) Antall elektroner.</strong> Hvert elektron har ladningen $e = 1{,}60\\cdot 10^{-19}\\,\\text{C}$. Antallet blir total ladning delt på ladningen til ett elektron:</p>$$n = \\frac{Q}{e} = \\frac{60\\,\\text{C}}{1{,}60\\cdot 10^{-19}\\,\\text{C}} = 3{,}75\\cdot 10^{20}$$<p>Altså omtrent $3{,}8\\cdot 10^{20}$ elektroner — et enormt tall, som viser hvorfor vi regner med coulomb og ikke med enkeltelektroner.</p><p><strong>c) Energien.</strong> Spenning er energi per ladning, $U = \\frac{W}{Q}$, så</p>$$W = U\\,Q = 9{,}0\\,\\text{V}\\cdot 60\\,\\text{C} = 540\\,\\text{J}$$<p>Vi kan kontrollere svaret med effekten. Effekten er</p>$$P = U\\,I = 9{,}0\\,\\text{V}\\cdot 0{,}50\\,\\text{A} = 4{,}5\\,\\text{W}$$<p>og da blir energien</p>$$W = P\\,t = 4{,}5\\,\\text{W}\\cdot 120\\,\\text{s} = 540\\,\\text{J}$$<p>Samme svar, som det skal være — $W = UQ$ og $W = UIt$ er to skrivemåter for det samme.</p>"
+      },
+      {
+        "tittel": "Blandet krets med serie- og parallellkobling",
+        "oppgave": "<p>Et batteri med spenningen $12\\,\\text{V}$ og uten indre resistans er koblet til $R_1 = 40\\,\\Omega$. I serie med $R_1$ ligger $R_2 = 60\\,\\Omega$ og $R_3 = 30\\,\\Omega$, som er koblet i parallell med hverandre.</p><ul><li>a) Finn erstatningsresistansen for hele kretsen.</li><li>b) Hvor stor strøm går gjennom $R_1$?</li><li>c) Finn spenningen over $R_1$ og over parallellkoblingen.</li><li>d) Hvor stor strøm går gjennom $R_2$ og $R_3$?</li><li>e) Kontroller svarene med en effektberegning.</li></ul>",
+        "losning": "<p><strong>a) Erstatningsresistansen.</strong> Vi begynner innerst, med parallellkoblingen. Med bare to motstander er snarveien raskest:</p>$$R_p = \\frac{R_2 R_3}{R_2 + R_3} = \\frac{60\\,\\Omega \\cdot 30\\,\\Omega}{60\\,\\Omega + 30\\,\\Omega} = \\frac{1800}{90}\\,\\Omega = 20\\,\\Omega$$<p>Legg merke til at $20\\,\\Omega$ er mindre enn den minste av de to — slik skal det være. Nå ligger $R_1$ og $R_p$ i serie:</p>$$R_{\\text{tot}} = R_1 + R_p = 40\\,\\Omega + 20\\,\\Omega = 60\\,\\Omega$$<p><strong>b) Strømmen fra batteriet.</strong> Hele strømmen går gjennom $R_1$, siden den ligger alene i serie:</p>$$I = \\frac{U}{R_{\\text{tot}}} = \\frac{12\\,\\text{V}}{60\\,\\Omega} = 0{,}20\\,\\text{A}$$<p><strong>c) Spenningene.</strong> Ohms lov på hver del:</p>$$U_1 = R_1 I = 40\\,\\Omega\\cdot 0{,}20\\,\\text{A} = 8{,}0\\,\\text{V}$$$$U_p = R_p I = 20\\,\\Omega\\cdot 0{,}20\\,\\text{A} = 4{,}0\\,\\text{V}$$<p>Kontroll: $8{,}0\\,\\text{V} + 4{,}0\\,\\text{V} = 12\\,\\text{V}$, som er batterispenningen.</p><p><strong>d) Strømmene i grenene.</strong> Begge grenene har samme spenning, $U_p = 4{,}0\\,\\text{V}$:</p>$$I_2 = \\frac{4{,}0\\,\\text{V}}{60\\,\\Omega} = 0{,}067\\,\\text{A} = 67\\,\\text{mA}$$$$I_3 = \\frac{4{,}0\\,\\text{V}}{30\\,\\Omega} = 0{,}13\\,\\text{A}$$<p>Knutepunktsregelen stemmer: $0{,}067\\,\\text{A} + 0{,}133\\,\\text{A} = 0{,}20\\,\\text{A}$. Den minste motstanden får den største strømmen — dobbelt så stor her, siden $R_3$ er halvparten av $R_2$.</p><p><strong>e) Effektkontroll.</strong> Batteriet leverer</p>$$P = U I = 12\\,\\text{V}\\cdot 0{,}20\\,\\text{A} = 2{,}4\\,\\text{W}$$<p>I motstandene utvikles</p>$$P_1 = R_1 I^2 = 40\\,\\Omega\\cdot (0{,}20\\,\\text{A})^2 = 1{,}6\\,\\text{W}$$$$P_2 = \\frac{U_p^2}{R_2} = \\frac{(4{,}0\\,\\text{V})^2}{60\\,\\Omega} = 0{,}27\\,\\text{W}$$$$P_3 = \\frac{U_p^2}{R_3} = \\frac{(4{,}0\\,\\text{V})^2}{30\\,\\Omega} = 0{,}53\\,\\text{W}$$<p>Summen er $1{,}6 + 0{,}27 + 0{,}53 = 2{,}4\\,\\text{W}$, altså like mye som batteriet leverer. Denne kontrollen avslører nesten alle regnefeil i kretsoppgaver.</p>"
+      },
+      {
+        "tittel": "Vannkoker: strøm, resistans, energi og strømpris",
+        "oppgave": "<p>En vannkoker er merket $230\\,\\text{V}$ og $2000\\,\\text{W}$.</p><ul><li>a) Hvor stor strøm går gjennom kokeren når den er i bruk?</li><li>b) Hvor stor er resistansen i varmeelementet?</li><li>c) Kokeren står på i $5{,}0$ minutter. Hvor mye energi bruker den, i joule og i kilowattimer? Hva koster det når strømmen koster $1{,}50$ kr/kWh?</li><li>d) Kursen kokeren står på, har en sikring på $10\\,\\text{A}$. Går det bra å bruke to slike kokere samtidig på samme kurs?</li></ul>",
+        "losning": "<p><strong>a) Strømmen.</strong> Vi bruker $P = UI$ og løser for $I$:</p>$$I = \\frac{P}{U} = \\frac{2000\\,\\text{W}}{230\\,\\text{V}} = 8{,}7\\,\\text{A}$$<p><strong>b) Resistansen.</strong> Her er både $U$ og $P$ oppgitt, så $P = \\frac{U^2}{R}$ er det direkte valget:</p>$$R = \\frac{U^2}{P} = \\frac{(230\\,\\text{V})^2}{2000\\,\\text{W}} = \\frac{52900}{2000}\\,\\Omega = 26\\,\\Omega$$<p>Kontroll med Ohms lov: $R = \\frac{U}{I} = \\frac{230\\,\\text{V}}{8{,}70\\,\\text{A}} = 26\\,\\Omega$. Samme svar.</p><p><strong>c) Energi og pris.</strong> Tiden i sekunder er $t = 5{,}0\\cdot 60\\,\\text{s} = 300\\,\\text{s}$, og</p>$$W = P\\,t = 2000\\,\\text{W}\\cdot 300\\,\\text{s} = 6{,}0\\cdot 10^{5}\\,\\text{J}$$<p>For å få kilowattimer regner vi effekten i kilowatt og tiden i timer:</p>$$W = 2{,}0\\,\\text{kW}\\cdot \\frac{300}{3600}\\,\\text{h} = 2{,}0\\,\\text{kW}\\cdot 0{,}0833\\,\\text{h} = 0{,}17\\,\\text{kWh}$$<p>Kontroll: $0{,}167\\,\\text{kWh}\\cdot 3{,}6\\cdot 10^{6}\\,\\text{J/kWh} = 6{,}0\\cdot 10^{5}\\,\\text{J}$. Prisen blir</p>$$0{,}167\\,\\text{kWh}\\cdot 1{,}50\\,\\text{kr/kWh} = 0{,}25\\,\\text{kr}$$<p><strong>d) Sikringen.</strong> Én koker trekker $8{,}7\\,\\text{A}$, som er under 10 A. To kokere er parallellkoblet på kursen, så de får full spenning hver og trekker hver sin strøm. Strømmene summeres:</p>$$I_{\\text{tot}} = 2\\cdot 8{,}7\\,\\text{A} = 17{,}4\\,\\text{A}$$<p>Det er langt over $10\\,\\text{A}$, så sikringen ryker. Poenget er at parallellkobling reduserer den samlede resistansen og dermed øker den samlede strømmen.</p>"
+      },
+      {
+        "tittel": "Måleserie: emk og indre resistans i et batteri",
+        "oppgave": "<p>Du kobler et batteri til et reguleringsapparat, måler strømmen med et amperemeter i serie og klemmespenningen med et voltmeter parallelt over polene. Du får disse målingene:</p><table><thead><tr><th>$I$ (A)</th><th>$U$ (V)</th></tr></thead><tbody><tr><td>$0{,}20$</td><td>$4{,}40$</td></tr><tr><td>$0{,}50$</td><td>$4{,}10$</td></tr><tr><td>$1{,}00$</td><td>$3{,}60$</td></tr></tbody></table><ul><li>a) Vis at målingene passer med $U = \\varepsilon - R_i I$, og finn $\\varepsilon$ og $R_i$.</li><li>b) Hvilken ytre resistans var koblet til da strømmen var $0{,}50\\,\\text{A}$?</li><li>c) Hvor stor effekt går til den ytre kretsen ved $I = 1{,}00\\,\\text{A}$, og hvor mye blir varme inne i batteriet?</li><li>d) Hvor stor blir strømmen hvis batteriet kortsluttes?</li></ul>",
+        "losning": "<p><strong>a) Emk og indre resistans.</strong> Sammenhengen $U = \\varepsilon - R_i I$ er en rett linje med $I$ på førsteaksen. Stigningstallet finner vi fra det første og det siste målepunktet:</p>$$a = \\frac{3{,}60\\,\\text{V} - 4{,}40\\,\\text{V}}{1{,}00\\,\\text{A} - 0{,}20\\,\\text{A}} = \\frac{-0{,}80\\,\\text{V}}{0{,}80\\,\\text{A}} = -1{,}00\\,\\text{V/A}$$<p>Siden stigningstallet er $-R_i$, får vi $R_i = 1{,}00\\,\\Omega$. Emk finner vi ved å sette ett målepunkt inn i formelen:</p>$$\\varepsilon = U + R_i I = 4{,}40\\,\\text{V} + 1{,}00\\,\\Omega\\cdot 0{,}20\\,\\text{A} = 4{,}60\\,\\text{V}$$<p>Kontroll med midterste måling: $4{,}60\\,\\text{V} - 1{,}00\\,\\Omega\\cdot 0{,}50\\,\\text{A} = 4{,}10\\,\\text{V}$. Det stemmer, så alle tre punktene ligger på samme rette linje.</p><p><strong>b) Den ytre resistansen.</strong> Klemmespenningen ligger over den ytre motstanden, så</p>$$R = \\frac{U}{I} = \\frac{4{,}10\\,\\text{V}}{0{,}50\\,\\text{A}} = 8{,}2\\,\\Omega$$<p>Du kan også se hele kretsen som $R$ og $R_i$ i serie: $\\varepsilon = (R + R_i)I$ gir $R = \\frac{4{,}60}{0{,}50} - 1{,}00 = 9{,}2 - 1{,}0 = 8{,}2\\,\\Omega$. Samme svar.</p><p><strong>c) Effektfordelingen ved $I = 1{,}00\\,\\text{A}$.</strong> Til den ytre kretsen går</p>$$P_{\\text{ytre}} = U I = 3{,}60\\,\\text{V}\\cdot 1{,}00\\,\\text{A} = 3{,}60\\,\\text{W}$$<p>Inne i batteriet utvikles</p>$$P_i = R_i I^2 = 1{,}00\\,\\Omega\\cdot (1{,}00\\,\\text{A})^2 = 1{,}00\\,\\text{W}$$<p>Til sammen $4{,}60\\,\\text{W}$, som er nøyaktig $\\varepsilon I = 4{,}60\\,\\text{V}\\cdot 1{,}00\\,\\text{A}$. Batteriet varmes altså opp av sin egen indre resistans.</p><p><strong>d) Kortslutning.</strong> Ved kortslutning er den ytre resistansen tilnærmet null, så bare $R_i$ begrenser strømmen:</p>$$I_{\\text{k}} = \\frac{\\varepsilon}{R_i} = \\frac{4{,}60\\,\\text{V}}{1{,}00\\,\\Omega} = 4{,}6\\,\\text{A}$$<p>Klemmespenningen faller da til null, og all effekten, $\\varepsilon I_k \\approx 21\\,\\text{W}$, blir varme i batteriet. Derfor blir kortsluttede batterier brennende varme.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å legge sammen resistansene i en parallellkobling, eller å regne ut $\\frac{1}{R_1} + \\frac{1}{R_2}$ og glemme å ta den omvendte til slutt. Med $6\\,\\Omega$ og $3\\,\\Omega$ blir summen $\\frac{1}{2}$, men svaret er $R_p = 2\\,\\Omega$ — ikke $0{,}5\\,\\Omega$.",
+      "Å tro at strømmen «brukes opp» underveis, slik at det går mindre strøm ut av en lampe enn inn. Strømmen er den samme på begge sider; det er energien per ladning, altså spenningen, som synker.",
+      "Å bruke hele batterispenningen på én enkelt motstand i en seriekobling. Hver motstand får bare sin andel, i forhold til sin egen resistans.",
+      "Å blande sammen $P = RI^2$ og $P = \\frac{U^2}{R}$ til feilaktige varianter som $P = RU^2$ eller $P = \\frac{I^2}{R}$. Sjekk enhetene hvis du er i tvil.",
+      "Å koble voltmeteret i serie og amperemeteret parallelt. Et amperemeter parallelt over en komponent er en kortslutning, og et voltmeter i serie stopper nesten all strøm.",
+      "Å glemme prefikser og tidsenheter: $250\\,\\text{mA}$ er $0{,}250\\,\\text{A}$, $4{,}7\\,\\text{k}\\Omega$ er $4700\\,\\Omega$, og i $W = Pt$ må tiden være i sekunder når svaret skal bli i joule."
+    ],
+
+    "tips": [
+      "Tegn kretsen om steg for steg. Regn innerst og utover: slå først sammen parallellkoblinger til én erstatningsmotstand, finn totalstrømmen, og gå så tilbake for å finne spenning og strøm i hver enkelt del.",
+      "Bruk rimelighetssjekken hver gang: $R_p$ skal alltid være mindre enn den minste motstanden i parallellkoblingen, og $R_s$ større enn den største. Får du noe annet, har du snudd en formel.",
+      "Kontroller svaret med effektbalanse. Summen av effekten i alle komponentene skal bli lik effekten kilden leverer, $P = UI$ (eller $\\varepsilon I$ hvis indre resistans er med).",
+      "På forsøksoppgaver med en $U$-$I$-tabell: plott punktene, legg inn beste rette linje og tolk stigningstallet. Det er $R$ for en motstand og $-R_i$ for klemmespenningen til et batteri. Nevn alltid at målingene har usikkerhet, og at oppvarming kan endre resistansen.",
+      "Skriv opp hva som er felles før du regner: strøm i serie, spenning i parallell. Halvparten av oppgavene i dette kapittelet løser seg selv når du har bestemt hvilken av de to størrelsene som er lik overalt."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Elektrisk strøm", "forklaring": "Ladning som passerer et tverrsnitt per tid, $I = \\frac{Q}{t}$. Måles i ampere, der $1\\,\\text{A} = 1\\,\\text{C/s}$." },
+    { "begrep": "Konvensjonell strømretning", "forklaring": "Den avtalte strømretningen, fra pluss til minus gjennom den ytre kretsen. I metaller går elektronene motsatt vei." },
+    { "begrep": "Elementærladning", "forklaring": "Den minste ladningen vi finner fritt i naturen, $e = 1{,}60\\cdot 10^{-19}\\,\\text{C}$. Et elektron har ladningen $-e$." },
+    { "begrep": "Spenning", "forklaring": "Energi per ladning mellom to punkter, $U = \\frac{W}{Q}$. Måles i volt, der $1\\,\\text{V} = 1\\,\\text{J/C}$." },
+    { "begrep": "Resistans", "forklaring": "Et mål på hvor mye en komponent motsetter seg strømmen, definert som $R = \\frac{U}{I}$ og målt i ohm." },
+    { "begrep": "Ohms lov", "forklaring": "Sammenhengen $U = RI$ for en leder der resistansen er konstant." },
+    { "begrep": "Ohmsk leder", "forklaring": "En leder med konstant resistans ved konstant temperatur, slik at $U$-$I$-grafen er en rett linje gjennom origo." },
+    { "begrep": "Resistivitet", "forklaring": "Materialkonstanten $\\rho$ i $R = \\rho\\frac{l}{A}$, som forteller hvor godt et materiale leder strøm." },
+    { "begrep": "Seriekobling", "forklaring": "Komponenter etter hverandre, med samme strøm gjennom alle. Erstatningsresistansen er $R_s = R_1 + R_2 + \\dots$" },
+    { "begrep": "Parallellkobling", "forklaring": "Komponenter mellom de samme to punktene, med samme spenning over alle. Erstatningsresistansen følger av $\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots$" },
+    { "begrep": "Knutepunktsregelen", "forklaring": "Summen av strømmene inn i et knutepunkt er lik summen av strømmene ut. Ladning kan ikke samle seg opp i et punkt." },
+    { "begrep": "Elektrisk effekt", "forklaring": "Energi omdannet per tid i en komponent, $P = UI = RI^2 = \\frac{U^2}{R}$. Måles i watt." },
+    { "begrep": "Kilowattime", "forklaring": "En energienhet brukt på strømregningen: $1\\,\\text{kWh} = 3{,}6\\cdot 10^{6}\\,\\text{J}$, altså 1 kW i én time." },
+    { "begrep": "Elektromotorisk spenning (emk)", "forklaring": "Energien per ladning en spenningskilde gir, symbol $\\varepsilon$. Lik klemmespenningen når strømmen er null." },
+    { "begrep": "Indre resistans og klemmespenning", "forklaring": "Spenningskilden har en resistans $R_i$ inni seg, så spenningen mellom polene blir $U = \\varepsilon - R_i I$ og synker når strømmen øker." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "To motstander på $6{,}0\\,\\Omega$ og $3{,}0\\,\\Omega$ er koblet i parallell. Hva er erstatningsresistansen?",
+      "alternativer": ["$9{,}0\\,\\Omega$", "$4{,}5\\,\\Omega$", "$2{,}0\\,\\Omega$", "$0{,}50\\,\\Omega$"],
+      "riktig": 2,
+      "forklaring": "For to motstander i parallell er $R_p = \\frac{R_1R_2}{R_1+R_2} = \\frac{6{,}0\\cdot 3{,}0}{9{,}0} = 2{,}0\\,\\Omega$. Det mest fristende feilsvaret er $0{,}50\\,\\Omega$: da har du regnet ut $\\frac{1}{6}+\\frac{1}{3} = \\frac{1}{2}$ og glemt at dette er $\\frac{1}{R_p}$, ikke $R_p$. Svaret $9{,}0\\,\\Omega$ er summen, som bare gjelder i serie. Husk kontrollen: $R_p$ må alltid være mindre enn den minste motstanden."
+    },
+    {
+      "sporsmal": "Du dobler spenningen over en ohmsk motstand og holder temperaturen konstant. Hva skjer med strømmen?",
+      "alternativer": ["Den dobles", "Den halveres", "Den er uendret", "Den firedobles"],
+      "riktig": 0,
+      "forklaring": "Ohms lov gir $I = \\frac{U}{R}$, og siden $R$ er konstant, er strømmen proporsjonal med spenningen: dobbel spenning gir dobbel strøm. Alternativet «firedobles» er fristende fordi effekten faktisk firedobles ($P = \\frac{U^2}{R}$), men det er energi per tid, ikke strøm."
+    },
+    {
+      "sporsmal": "En lyspære er merket $60\\,\\text{W}$ ved $230\\,\\text{V}$. Hvor stor er resistansen i pæra når den er i bruk?",
+      "alternativer": ["$3{,}8\\,\\Omega$", "$8{,}8\\cdot 10^{2}\\,\\Omega$", "$0{,}26\\,\\Omega$", "$1{,}4\\cdot 10^{4}\\,\\Omega$"],
+      "riktig": 1,
+      "forklaring": "Bruk $P = \\frac{U^2}{R}$, som gir $R = \\frac{U^2}{P} = \\frac{230^2}{60}\\,\\Omega = 8{,}8\\cdot 10^{2}\\,\\Omega$. Feilsvaret $3{,}8\\,\\Omega$ kommer av å regne $\\frac{U}{P}$ i stedet for $\\frac{U^2}{P}$ — sjekk enhetene, V/W er ikke ohm. Tallet $0{,}26$ er strømmen i ampere, $\\frac{P}{U}$, ikke resistansen."
+    },
+    {
+      "sporsmal": "To ulike motstander er koblet i serie. Hvilken påstand er riktig?",
+      "alternativer": [
+        "Spenningen er den samme over begge",
+        "Erstatningsresistansen er mindre enn den minste av dem",
+        "Strømmen er størst gjennom den minste motstanden",
+        "Strømmen er den samme gjennom begge"
+      ],
+      "riktig": 3,
+      "forklaring": "I en seriekobling finnes det bare én vei for ladningen, så strømmen må være like stor overalt. Det er spenningen som fordeler seg, og størst spenning faller over den største motstanden. Påstanden om at strømmen er størst gjennom den minste motstanden gjelder i parallellkobling, der spenningen er felles."
+    },
+    {
+      "sporsmal": "Hvordan skal et amperemeter kobles inn, og hvilken resistans bør det ideelt ha?",
+      "alternativer": [
+        "I parallell, med svært stor resistans",
+        "I parallell, med svært liten resistans",
+        "I serie, med svært stor resistans",
+        "I serie, med svært liten resistans"
+      ],
+      "riktig": 3,
+      "forklaring": "Amperemeteret måler strømmen gjennom en komponent, så hele strømmen må gå gjennom instrumentet: det kobles i serie. Resistansen må være minimal, ellers reduserer instrumentet den strømmen det skal måle. Alternativet «parallell, stor resistans» er fristende fordi det er riktig for et voltmeter. Amperemeter i parallell med liten resistans er direkte farlig — det er en kortslutning."
+    },
+    {
+      "sporsmal": "Hvor mye energi er $1{,}0\\,\\text{kWh}$?",
+      "alternativer": ["$3600\\,\\text{J}$", "$1000\\,\\text{J}$", "$3{,}6\\cdot 10^{6}\\,\\text{J}$", "$3{,}6\\cdot 10^{9}\\,\\text{J}$"],
+      "riktig": 2,
+      "forklaring": "En kilowattime er $1000\\,\\text{W}\\cdot 3600\\,\\text{s} = 3{,}6\\cdot 10^{6}\\,\\text{J}$, siden $1\\,\\text{W}\\cdot 1\\,\\text{s} = 1\\,\\text{J}$. Svaret $3600\\,\\text{J}$ er én wattime, altså tusen ganger for lite — den vanligste feilen er å glemme kilo-prefikset. Merk også at kWh er energi, mens kW er effekt."
+    },
+    {
+      "sporsmal": "En strøm på $250\\,\\text{mA}$ går i $4{,}0$ minutter. Hvor stor ladning har passert?",
+      "alternativer": ["$1{,}0\\,\\text{C}$", "$60\\,\\text{C}$", "$1{,}0\\cdot 10^{3}\\,\\text{C}$", "$6{,}0\\cdot 10^{4}\\,\\text{C}$"],
+      "riktig": 1,
+      "forklaring": "Gjør om begge enhetene først: $250\\,\\text{mA} = 0{,}250\\,\\text{A}$ og $4{,}0\\,\\text{min} = 240\\,\\text{s}$. Da blir $Q = It = 0{,}250\\cdot 240 = 60\\,\\text{C}$. Feilsvaret $1{,}0\\,\\text{C}$ får du hvis du ganger $0{,}250$ med 4 og glemmer å gjøre minutter om til sekunder. Ampere er per sekund, ikke per minutt."
+    },
+    {
+      "sporsmal": "Tre like lamper er koblet i parallell over et batteri. Vi ser bort fra indre resistans. Hva skjer med de to andre lampene hvis den ene skrus ut?",
+      "alternativer": [
+        "De slukker også",
+        "De lyser svakere",
+        "De lyser like sterkt som før",
+        "De lyser dobbelt så sterkt"
+      ],
+      "riktig": 2,
+      "forklaring": "Hver gren i en parallellkobling har full batterispenning over seg. Fjerner du én gren, er spenningen over de andre uendret, og dermed er både strømmen $\\frac{U}{R}$ og effekten $\\frac{U^2}{R}$ i hver av dem den samme. Totalstrømmen fra batteriet synker, fordi erstatningsresistansen øker — men det er ikke det samme som at lampene lyser svakere. «De slukker også» ville vært riktig i en seriekobling."
+    },
+    {
+      "sporsmal": "Gjennom en motstand på $25\\,\\Omega$ går det en strøm på $0{,}40\\,\\text{A}$. Hvor stor effekt utvikles i motstanden?",
+      "alternativer": ["$62{,}5\\,\\text{W}$", "$10\\,\\text{W}$", "$4{,}0\\,\\text{W}$", "$0{,}16\\,\\text{W}$"],
+      "riktig": 2,
+      "forklaring": "Med $R$ og $I$ oppgitt bruker vi $P = RI^2 = 25\\cdot (0{,}40)^2 = 25\\cdot 0{,}16 = 4{,}0\\,\\text{W}$. Feilsvaret $10\\,\\text{W}$ kommer av $RI$ uten kvadrat — men $RI = 10$ er spenningen over motstanden i volt. Vil du regne den veien, må du gange videre: $P = UI = 10\\,\\text{V}\\cdot 0{,}40\\,\\text{A} = 4{,}0\\,\\text{W}$."
+    },
+    {
+      "sporsmal": "Hvorfor overføres elektrisk energi over lange avstander med høy spenning?",
+      "alternativer": [
+        "Fordi høy spenning gjør resistansen i ledningene mindre",
+        "Fordi høy spenning gir mindre strøm for samme effekt, og varmetapet $RI^2$ dermed blir mindre",
+        "Fordi forbrukeren da får større effekt tilgjengelig",
+        "Fordi elektronene beveger seg raskere ved høy spenning"
+      ],
+      "riktig": 1,
+      "forklaring": "Skal effekten $P$ overføres, er strømmen $I = \\frac{P}{U}$. Tidobler du spenningen, blir strømmen en tidel og varmetapet $RI^2$ i ledningen en hundredel. Resistansen i ledningen endres ikke av spenningen — den er gitt av $\\rho\\frac{l}{A}$, altså av materiale, lengde og tverrsnitt."
+    },
+    {
+      "sporsmal": "Målinger av klemmespenningen $U$ mot strømmen $I$ for et batteri gir en rett linje som skjærer $U$-aksen i $4{,}5\\,\\text{V}$ og har stigningstall $-0{,}60\\,\\text{V/A}$. Hva er emk og indre resistans?",
+      "alternativer": [
+        "$\\varepsilon = 4{,}5\\,\\text{V}$ og $R_i = 0{,}60\\,\\Omega$",
+        "$\\varepsilon = 4{,}5\\,\\text{V}$ og $R_i = -0{,}60\\,\\Omega$",
+        "$\\varepsilon = 0{,}60\\,\\text{V}$ og $R_i = 4{,}5\\,\\Omega$",
+        "$\\varepsilon = 3{,}9\\,\\text{V}$ og $R_i = 0{,}60\\,\\Omega$"
+      ],
+      "riktig": 0,
+      "forklaring": "Sammenlign med $U = \\varepsilon - R_i I$: konstantleddet er emk, og stigningstallet er $-R_i$. Skjæringen $4{,}5\\,\\text{V}$ gir $\\varepsilon = 4{,}5\\,\\text{V}$, og stigningstallet $-0{,}60$ gir $R_i = 0{,}60\\,\\Omega$. Minustegnet hører til formelen, ikke til resistansen — en resistans er aldri negativ. Emk er nettopp spenningen når $I = 0$, altså skjæringspunktet."
+    },
+    {
+      "sporsmal": "Hvilken påstand om Ohms lov er riktig?",
+      "alternativer": [
+        "Den gjelder for alle elektriske komponenter",
+        "Den gjelder bare for parallellkoblinger",
+        "Den gjelder bare når spenningen er under $12\\,\\text{V}$",
+        "Den gjelder for ohmske ledere, altså når resistansen er konstant"
+      ],
+      "riktig": 3,
+      "forklaring": "$R = \\frac{U}{I}$ er alltid definisjonen av resistans, men Ohms lov er påstanden om at dette forholdet er konstant. Det holder bare for ohmske ledere ved konstant temperatur. En glødelampe får større resistans når tråden blir varm, så $U$-$I$-grafen krummer, og en diode leder nesten bare i én retning. At loven skulle gjelde for alle komponenter, er derfor feil — og den har ingenting med koblingsmåte eller spenningsnivå å gjøre."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Definisjonen av elektrisk strøm", "bak": "$I = \\frac{Q}{t}$ — ladning per tid. $1\\,\\text{A} = 1\\,\\text{C/s}$." },
+    { "front": "Definisjonen av spenning", "bak": "$U = \\frac{W}{Q}$ — energi per ladning. $1\\,\\text{V} = 1\\,\\text{J/C}$." },
+    { "front": "Definisjonen av resistans", "bak": "$R = \\frac{U}{I}$, med enheten ohm: $1\\,\\Omega = 1\\,\\text{V/A}$." },
+    { "front": "Ohms lov — og når gjelder den?", "bak": "$U = RI$. Gjelder for ohmske ledere, der resistansen er konstant (konstant temperatur)." },
+    { "front": "Resistansen i en ledning", "bak": "$R = \\rho\\frac{l}{A}$ — stor for lang og tynn ledning, liten for kort og tykk." },
+    { "front": "Erstatningsresistans i serie", "bak": "$R_s = R_1 + R_2 + \\dots + R_n$ — alltid større enn den største enkeltmotstanden." },
+    { "front": "Erstatningsresistans i parallell", "bak": "$\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots$ For to motstander: $R_p = \\frac{R_1R_2}{R_1+R_2}$. Alltid mindre enn den minste." },
+    { "front": "Hva er felles i en seriekobling?", "bak": "Strømmen. Spenningene summeres: $U = U_1 + U_2 + \\dots$" },
+    { "front": "Hva er felles i en parallellkobling?", "bak": "Spenningen. Strømmene summeres: $I = I_1 + I_2 + \\dots$ (knutepunktsregelen)." },
+    { "front": "Tre uttrykk for elektrisk effekt", "bak": "$P = UI = RI^2 = \\frac{U^2}{R}$. Bruk $RI^2$ når strømmen er felles, $\\frac{U^2}{R}$ når spenningen er felles." },
+    { "front": "Elektrisk energi", "bak": "$W = Pt = UIt$. Tiden i sekunder gir svaret i joule." },
+    { "front": "$1\\,\\text{kWh}$ i joule", "bak": "$1\\,\\text{kWh} = 1000\\,\\text{W}\\cdot 3600\\,\\text{s} = 3{,}6\\cdot 10^{6}\\,\\text{J}$." },
+    { "front": "Elementærladningen", "bak": "$e = 1{,}60\\cdot 10^{-19}\\,\\text{C}$. Antall elektroner: $n = \\frac{Q}{e}$." },
+    { "front": "Hvordan kobles amperemeter og voltmeter?", "bak": "Amperemeter i serie, med liten resistans. Voltmeter parallelt, med stor resistans." },
+    { "front": "Klemmespenning over en reell spenningskilde", "bak": "$U = \\varepsilon - R_i I$. I en $U$-$I$-graf er skjæringen med $U$-aksen $\\varepsilon$, og stigningstallet er $-R_i$." },
+    { "front": "Er en glødelampe en ohmsk leder?", "bak": "Nei. Resistansen øker når tråden blir varm, så $U$-$I$-grafen krummer i stedet for å være rett." }
+  ]
+}

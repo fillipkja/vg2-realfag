@@ -1,0 +1,257 @@
+{
+  "fag": "fysikk",
+  "nr": 9,
+  "tittel": "Astrofysikk",
+  "intro": "Astrofysikk handler om å bruke den samme fysikken du kjenner fra jorda på sola, stjernene og hele universet. Du lærer hvordan vi måler avstander vi aldri kan reise, hvor sola får energien sin fra, hvordan stjerner blir født og dør, og hvordan rødforskyvningen i galaksenes lys viser at universet utvider seg.",
+
+  "kompakt": {
+    "punkter": [
+      "Avstandsenheter: $1\\,\\text{AU} = 1{,}50\\cdot10^{11}$ m (jord–sol), $1$ lysår $= 9{,}46\\cdot10^{15}$ m, $1\\,\\text{pc} = 3{,}26$ lysår $= 3{,}09\\cdot10^{16}$ m. Et lysår er en avstand, ikke en tid.",
+      "Parallaksemetoden: $d = \\frac{1}{p}$ gir avstanden i parsec når parallaksen $p$ er målt i buesekunder. Jo nærmere stjerna, jo større parallakse.",
+      "Luminositeten $L$ er den totale effekten stjerna stråler ut (watt). Det vi måler herfra, er fluksen $F = \\frac{L}{4\\pi r^2}$, som avtar med kvadratet av avstanden.",
+      "Wiens forskyvningslov $\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}$ gir overflatetemperaturen ut fra fargen: blå stjerner er varme, røde er kalde.",
+      "Stefan-Boltzmanns lov for en stjerne: $L = \\sigma \\cdot 4\\pi R^2 \\cdot T^4$. Både temperaturen og radien bestemmer lysstyrken, og $T$ er opphøyd i fjerde.",
+      "I HR-diagrammet ligger rundt 90 % av stjernene på hovedserien og fusjonerer hydrogen. Røde kjemper ligger oppe til høyre, hvite dverger nede til venstre.",
+      "Sola får energi fra fusjon i proton-proton-kjeden: fire hydrogenkjerner blir én heliumkjerne, og masseunderskuddet blir energi etter $E = \\Delta m c^2$ — ca. 26,7 MeV per heliumkjerne.",
+      "Massen bestemmer stjernens levetid og slutt: tunge stjerner lever kortest og ender som supernova med nøytronstjerne eller svart hull, lette stjerner som planetarisk tåke med en hvit dverg.",
+      "Rødforskyvning: $z = \\frac{\\lambda - \\lambda_0}{\\lambda_0}$, og for farter langt under lysfarten er $v = zc$.",
+      "Hubbles lov $v = H_0 d$ med $H_0 \\approx 70$ km/s per Mpc viser at rommet utvider seg. $t = \\frac{1}{H_0} \\approx 14$ milliarder år anslår universets alder; big bang støttes av ekspansjonen, bakgrunnsstrålingen på 2,7 K og forholdet 75 % hydrogen / 25 % helium."
+    ],
+    "formler": [
+      { "navn": "Astronomisk enhet", "latex": "1\\,\\text{AU} = 1{,}50\\cdot10^{11}\\,\\text{m}" },
+      { "navn": "Lysår", "latex": "1\\,\\text{ly} = c \\cdot 1\\,\\text{år} = 9{,}46\\cdot10^{15}\\,\\text{m}" },
+      { "navn": "Parsec", "latex": "1\\,\\text{pc} = 3{,}26\\,\\text{ly} = 3{,}09\\cdot10^{16}\\,\\text{m}" },
+      { "navn": "Parallakseformelen ($d$ i pc, $p$ i buesekunder)", "latex": "d = \\frac{1}{p}" },
+      { "navn": "Fluks (strålingsintensitet)", "latex": "F = \\frac{L}{4\\pi r^{2}}" },
+      { "navn": "Stefan-Boltzmanns lov for en stjerne", "latex": "L = \\sigma \\cdot 4\\pi R^{2} \\cdot T^{4}, \\qquad \\sigma = 5{,}67\\cdot10^{-8}\\,\\frac{\\text{W}}{\\text{m}^2\\text{K}^4}" },
+      { "navn": "Wiens forskyvningslov", "latex": "\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}" },
+      { "navn": "Masse og energi", "latex": "E = \\Delta m\\,c^{2}, \\qquad c = 3{,}00\\cdot10^{8}\\,\\text{m/s}" },
+      { "navn": "Netto fusjon i sola", "latex": "4\\,{}^{1}_{1}\\text{H} \\rightarrow {}^{4}_{2}\\text{He} + 2\\,\\text{e}^{+} + 2\\,\\nu" },
+      { "navn": "Rødforskyvning", "latex": "z = \\frac{\\Delta\\lambda}{\\lambda_0} = \\frac{\\lambda - \\lambda_0}{\\lambda_0}" },
+      { "navn": "Fart fra rødforskyvning (små farter)", "latex": "v = z\\,c" },
+      { "navn": "Hubbles lov", "latex": "v = H_0\\,d, \\qquad H_0 \\approx 70\\,\\frac{\\text{km/s}}{\\text{Mpc}}" },
+      { "navn": "Hubble-alderen", "latex": "t = \\frac{1}{H_0} \\approx 4{,}4\\cdot10^{17}\\,\\text{s} \\approx 14\\,\\text{milliarder år}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Avstander og størrelser i universet",
+        "html": "<p>Universet er så stort at meter blir en ubrukelig enhet. Derfor bruker astronomene tre andre.</p><p>Den <strong>astronomiske enheten</strong> (AU) er middelavstanden fra jorda til sola, $1\\,\\text{AU} = 1{,}50\\cdot10^{11}$ m. Den passer til avstander inne i solsystemet: Jupiter ligger 5,2 AU fra sola.</p><p>Et <strong>lysår</strong> (ly) er avstanden lyset går i vakuum i løpet av ett år. Du kan regne den ut selv:</p>$$s = c\\,t = 3{,}00\\cdot10^{8}\\,\\frac{\\text{m}}{\\text{s}} \\cdot 3{,}16\\cdot10^{7}\\,\\text{s} = 9{,}46\\cdot10^{15}\\,\\text{m}$$<p>Legg merke til at et lysår er en <em>avstand</em>. Samtidig sier den noe om tid: ser du en galakse 200 millioner lysår unna, ser du den slik den var for 200 millioner år siden. Du ser bakover i tid.</p><p><strong>Parsec</strong> (pc) er enheten astronomene selv bruker mest, fordi den henger direkte sammen med målemetoden. Når jorda går rundt sola, ser en nær stjerne ut til å vippe litt fram og tilbake mot bakgrunnsstjernene. Halve denne vinkelen kalles <strong>parallaksen</strong> $p$, og da er</p>$$d = \\frac{1}{p}$$<p>der $d$ kommer ut i parsec og $p$ må være i buesekunder — ett buesekund er $\\frac{1}{3600}$ grad. Én parsec er 3,26 lysår, altså $3{,}09\\cdot10^{16}$ m.</p><p>Noen størrelsesordener det lønner seg å ha i hodet: sola har radius $7\\cdot10^{8}$ m, den nærmeste stjerna ligger 4,2 lysår unna, Melkeveien er rundt 100 000 lysår tvers over, og det observerbare universet strekker seg over milliarder av lysår.</p>"
+      },
+      {
+        "tittel": "Stjernenes lys: temperatur, luminositet og HR-diagrammet",
+        "html": "<p>To størrelser beskriver en stjerne nesten helt: <strong>overflatetemperaturen</strong> $T$ og <strong>luminositeten</strong> $L$, som er den totale effekten stjerna stråler ut, målt i watt. Sola har $L = 3{,}85\\cdot10^{26}$ W.</p><p>Det vi måler her på jorda, er ikke $L$, men <strong>fluksen</strong>: effekten per kvadratmeter. Strålingen fordeler seg over en kuleflate som vokser med avstanden, så</p>$$F = \\frac{L}{4\\pi r^{2}}$$<p>Derfor kan en svært lyssterk stjerne se svak ut — den ligger bare langt unna.</p><p>Fargen forteller om temperaturen. <strong>Wiens forskyvningslov</strong> sier at bølgelengden der strålingen er sterkest, blir kortere når stjerna blir varmere:</p>$$\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}$$<p>Blå stjerner er derfor de varmeste (over 10 000 K) og røde de kaldeste (rundt 3000 K). Sola har maksimum ved cirka 500 nm, som svarer til 5800 K.</p><p><strong>Stefan-Boltzmanns lov</strong> knytter $L$, $T$ og radien $R$ sammen. Overflaten til en kule er $4\\pi R^2$, så</p>$$L = \\sigma \\cdot 4\\pi R^{2} \\cdot T^{4}$$<p>med $\\sigma = 5{,}67\\cdot10^{-8}$ W/(m²K⁴). Siden $T$ er opphøyd i fjerde, gir små temperaturforskjeller store utslag i lysstyrke.</p><p>Plotter vi stjernene med temperaturen langs x-aksen — som avtar mot høyre — og luminositeten langs y-aksen, får vi <strong>HR-diagrammet</strong>. Stjernene fordeler seg ikke tilfeldig: rundt 90 % ligger på en diagonal stripe, <strong>hovedserien</strong>, der de fusjonerer hydrogen i kjernen. Oppe til høyre ligger <strong>røde kjemper</strong>, som er kalde, men enorme og derfor lyssterke. Nede til venstre ligger <strong>hvite dverger</strong>: varme, men bittesmå.</p>"
+      },
+      {
+        "tittel": "Energiproduksjonen i sola",
+        "html": "<p>Sola sender ut $3{,}85\\cdot10^{26}$ J hvert sekund, og har gjort det i 4,6 milliarder år. Ingen kjemisk forbrenning kan holde det gående så lenge, og det finnes ikke oksygen der heller. Svaret er <strong>fusjon</strong>: lette atomkjerner smelter sammen til tyngre.</p><p>To protoner frastøter hverandre elektrisk, så de må ha enorm fart for å komme nær nok til at den sterke kjernekraften tar over. I solas kjerne er temperaturen rundt 15 millioner kelvin og trykket ekstremt høyt, og der skjer det. Prosessen kalles <strong>proton-proton-kjeden</strong>:</p>$${}^{1}_{1}\\text{H} + {}^{1}_{1}\\text{H} \\rightarrow {}^{2}_{1}\\text{H} + \\text{e}^{+} + \\nu$$$${}^{2}_{1}\\text{H} + {}^{1}_{1}\\text{H} \\rightarrow {}^{3}_{2}\\text{He} + \\gamma$$$${}^{3}_{2}\\text{He} + {}^{3}_{2}\\text{He} \\rightarrow {}^{4}_{2}\\text{He} + 2\\,{}^{1}_{1}\\text{H}$$<p>De to første trinnene må skje to ganger før det siste kan skje. Netto blir fire hydrogenkjerner til én heliumkjerne:</p>$$4\\,{}^{1}_{1}\\text{H} \\rightarrow {}^{4}_{2}\\text{He} + 2\\,\\text{e}^{+} + 2\\,\\nu$$<p>Og her er poenget: heliumkjernen har mindre masse enn de fire protonene til sammen. Dette <strong>masseunderskuddet</strong> er blitt energi, etter $E = \\Delta m c^{2}$. Per heliumkjerne frigjøres omtrent 26,7 MeV, altså $4{,}3\\cdot10^{-12}$ J. Det svarer til at cirka 0,7 % av massen blir energi.</p><p>Energien forlater kjernen som gammafotoner og nøytrinoer. Fotonene bruker svært lang tid på å arbeide seg ut gjennom de tette lagene og taper energi underveis, slik at det som slipper ut fra overflaten, i hovedsak er synlig lys. Nøytrinoene går rett gjennom.</p><p>Sola er i <strong>likevekt</strong>: gravitasjonen presser innover, gass- og strålingstrykket utover. Denne balansen virker som en termostat på fusjonen, og den holder sola stabil i rundt 10 milliarder år.</p>"
+      },
+      {
+        "tittel": "Stjerners fødsel, liv og død",
+        "html": "<p>Stjerner blir til i kalde, tette <strong>molekylskyer</strong> av gass og støv. Blir en del av skya tett nok, trekker gravitasjonen den sammen. Gassen faller innover, potensiell energi går over til termisk energi, og temperaturen i midten stiger. Vi har en <strong>protostjerne</strong>. Når kjernetemperaturen kommer opp mot 10 millioner kelvin, tenner hydrogenfusjonen, trykket utover balanserer gravitasjonen, og stjerna er født. Nå har den tatt plass på <strong>hovedserien</strong>.</p><p><strong>Massen bestemmer alt.</strong> En tung stjerne har mer drivstoff, men kjernen blir så mye varmere at den bruker det opp langt raskere. Derfor lever en stjerne på 20 solmasser bare noen få millioner år, sola omtrent 10 milliarder år, og en liten stjerne på 0,5 solmasser mer enn 50 milliarder år.</p><p>Når hydrogenet i kjernen er brukt opp, mister kjernen støtten fra fusjonen, trekker seg sammen og blir varmere. Fusjonen fortsetter i et skall rundt kjernen, de ytre lagene blåses opp og kjøles ned, og stjerna blir en <strong>rød kjempe</strong>. Nå kan helium fusjonere videre til karbon.</p><p>Slutten avhenger av massen:</p><ul><li><strong>Lette stjerner, under omtrent 8 solmasser, som sola:</strong> de ytre lagene drives av som en planetarisk tåke, og den nakne kjernen står igjen som en <strong>hvit dverg</strong> — omtrent på størrelse med jorda, glødende varm, men uten fusjon. Den kjøles langsomt ned.</li><li><strong>Tunge stjerner:</strong> fusjonen fortsetter mot stadig tyngre grunnstoffer, men stopper ved jern, som ikke gir energi ved fusjon. Kjernen kollapser i løpet av sekunder, og stjerna eksploderer som en <strong>supernova</strong>. Igjen ligger en <strong>nøytronstjerne</strong>, eller for de aller tyngste et <strong>svart hull</strong>.</li></ul><p>Supernovaene sprer de tunge grunnstoffene ut i rommet, der de blir råstoff for nye stjerner og planeter. Kalsiumet i beina dine og jernet i blodet ditt ble laget inne i stjerner som døde før sola fantes.</p>"
+      },
+      {
+        "tittel": "Rødforskyvning og Hubbles lov",
+        "html": "<p>En ambulansesirene høres lysere når bilen kommer mot deg og dypere når den kjører fra deg. Lys oppfører seg likt: nærmer kilden seg, blir bølgelengdene kortere (<strong>blåforskyvning</strong>), fjerner den seg, blir de lengre (<strong>rødforskyvning</strong>).</p><p>Vi måler dette på spektrallinjene. Hvert grunnstoff gir linjer ved helt bestemte bølgelengder, som vi kjenner fra laboratoriet ($\\lambda_0$). Finner vi de samme linjene forskjøvet til $\\lambda$ i lyset fra en galakse, definerer vi rødforskyvningen som</p>$$z = \\frac{\\Delta\\lambda}{\\lambda_0} = \\frac{\\lambda - \\lambda_0}{\\lambda_0}$$<p>Så lenge farten er liten sammenlignet med lysfarten, er</p>$$v = z\\,c$$<p>Edwin Hubble oppdaget i 1929 at nesten alle galakser er rødforskjøvet, og at farten øker proporsjonalt med avstanden:</p>$$v = H_0\\,d$$<p><strong>Hubble-konstanten</strong> er $H_0 \\approx 70\\,\\frac{\\text{km/s}}{\\text{Mpc}}$: for hver megaparsec lenger ut øker fluktfarten med 70 km/s. Formelen brukes begge veier — måler du $z$, får du $v$, og fra $v$ får du avstanden til galaksen.</p><p>Det er lett å misforstå hva dette betyr. Galaksene farer ikke gjennom rommet bort fra oss, og vi ligger ikke i sentrum. Det er <strong>rommet selv som utvider seg</strong>, overalt samtidig. Tenk på en rosinbolle som hever seg: alle rosinene fjerner seg fra alle de andre, og de som ligger langt fra hverandre, skiller seg raskest. En observatør i en annen galakse måler nøyaktig samme lov. Derfor er den kosmologiske rødforskyvningen strengt tatt ikke en dopplereffekt, men en følge av at bølgelengden strekkes mens lyset er underveis.</p>"
+      },
+      {
+        "tittel": "Universets utvikling og big bang",
+        "html": "<p>Hvis universet utvider seg, må det ha vært mindre, tettere og varmere før. Spoler vi filmen bakover, ender vi i en tilstand der alt vi kan observere, var samlet på et ekstremt lite område. Det er <strong>big bang</strong>, for omtrent 13,8 milliarder år siden.</p><p>Et grovt anslag på alderen får du gratis fra Hubbles lov. Har en galakse hatt farten $v = H_0 d$ hele tiden, brukte den tiden</p>$$t = \\frac{d}{v} = \\frac{d}{H_0\\,d} = \\frac{1}{H_0}$$<p>Avstanden faller ut, så alle galakser gir samme svar: cirka 14 milliarder år. Det er forbausende nær den verdien vi kommer fram til med bedre metoder.</p><p>Tre uavhengige observasjoner er hovedgrunnlaget for modellen:</p><ol><li><strong>Ekspansjonen.</strong> Rødforskyvningen til galaksene, slik Hubbles lov beskriver den.</li><li><strong>Den kosmiske bakgrunnsstrålingen.</strong> Da universet var rundt 380 000 år gammelt og hadde kjølt seg ned til cirka 3000 K, kunne kjerner og elektroner bli nøytrale atomer, og lyset slapp fritt. Denne strålingen kommer helt jevnt fra alle retninger og er i dag strukket ut til mikrobølger som svarer til en temperatur på 2,7 K.</li><li><strong>Forholdet mellom hydrogen og helium.</strong> I de første minuttene ble det dannet omtrent 75 % hydrogen og 25 % helium, akkurat som vi måler i de eldste stjernene. Alt tyngre er laget senere, inne i stjerner.</li></ol><p>Big bang var ikke en eksplosjon <em>i</em> rommet — det var rommet, tiden og materien som begynte å utvide seg. Det finnes ikke noe punkt du kan reise til for å se hvor det skjedde. Målinger av fjerne supernovaer viser i tillegg at ekspansjonen i dag går stadig raskere, drevet av noe vi kaller <strong>mørk energi</strong>.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Avstanden til Sirius fra parallaksen",
+        "oppgave": "<p>Stjerna Sirius har målt parallakse $p = 0{,}379$ buesekunder.</p><ol><li>Hvor langt unna er Sirius, i parsec og i lysår?</li><li>Hvor mange meter er det?</li><li>Hvor mange ganger lenger er det til Sirius enn fra jorda til sola?</li></ol><p>Bruk $1\\,\\text{pc} = 3{,}26$ ly, $1$ ly $= 9{,}46\\cdot10^{15}$ m og $1\\,\\text{AU} = 1{,}50\\cdot10^{11}$ m.</p>",
+        "losning": "<p><strong>a) Avstanden.</strong> Parallakseformelen gir avstanden direkte i parsec, forutsatt at parallaksen er i buesekunder:</p>$$d = \\frac{1}{p} = \\frac{1}{0{,}379} = 2{,}64\\,\\text{pc}$$<p>Så gjør vi om til lysår:</p>$$d = 2{,}64\\,\\text{pc} \\cdot 3{,}26\\,\\frac{\\text{ly}}{\\text{pc}} = 8{,}60\\,\\text{ly}$$<p>Lyset fra Sirius er altså 8,60 år gammelt når det treffer øyet ditt.</p><p><strong>b) I meter.</strong></p>$$d = 8{,}60\\,\\text{ly} \\cdot 9{,}46\\cdot10^{15}\\,\\frac{\\text{m}}{\\text{ly}} = 8{,}14\\cdot10^{16}\\,\\text{m}$$<p><strong>c) Sammenlignet med avstanden til sola.</strong> Vi deler de to avstandene på hverandre; enhetene forkortes bort, så forholdstallet blir uten enhet:</p>$$\\frac{8{,}14\\cdot10^{16}\\,\\text{m}}{1{,}50\\cdot10^{11}\\,\\text{m}} = 5{,}4\\cdot10^{5}$$<p>Sirius ligger 540 000 ganger lenger unna enn sola.</p><p>Legg merke til hvor liten vinkelen er: 0,379 buesekunder er $\\frac{0{,}379}{3600} = 1{,}05\\cdot10^{-4}$ grader, altså omtrent en titusendel av en grad — og Sirius er blant de nærmeste stjernene vi har. Det er derfor parallaksemetoden bare virker for stjerner i vårt eget nabolag i Melkeveien.</p>"
+      },
+      {
+        "tittel": "Solas luminositet, masseforbruk og levetid",
+        "oppgave": "<p>Solkonstanten, altså strålingsfluksen ved jordas avstand, er 1360 W/m². Avstanden jord–sol er $1{,}50\\cdot10^{11}$ m.</p><ol><li>Beregn solas luminositet.</li><li>Hvor mye masse omdannes til energi i sola per sekund?</li><li>Hver heliumkjerne som dannes, frigjør $4{,}3\\cdot10^{-12}$ J. Hvor mange heliumkjerner dannes per sekund, og hvor mange kilo hydrogen bruker sola opp i samme tid?</li></ol><p>Bruk $c = 3{,}00\\cdot10^{8}$ m/s og protonmassen $m_p = 1{,}67\\cdot10^{-27}$ kg.</p>",
+        "losning": "<p><strong>a) Luminositeten.</strong> All strålingen fra sola passerer gjennom en tenkt kuleflate med radius lik avstanden jord–sol. Arealet er</p>$$A = 4\\pi r^{2} = 4\\pi\\left(1{,}50\\cdot10^{11}\\,\\text{m}\\right)^{2} = 4\\pi \\cdot 2{,}25\\cdot10^{22}\\,\\text{m}^2 = 2{,}83\\cdot10^{23}\\,\\text{m}^2$$<p>Fluksen er $F = \\frac{L}{A}$, så vi løser for $L$:</p>$$L = F \\cdot A = 1360\\,\\frac{\\text{W}}{\\text{m}^2} \\cdot 2{,}83\\cdot10^{23}\\,\\text{m}^2 = 3{,}85\\cdot10^{26}\\,\\text{W}$$<p><strong>b) Massen som blir energi.</strong> Hvert sekund stråler sola ut $E = 3{,}85\\cdot10^{26}$ J. Vi løser $E = \\Delta m c^{2}$ for massen:</p>$$\\Delta m = \\frac{E}{c^{2}} = \\frac{3{,}85\\cdot10^{26}\\,\\text{J}}{\\left(3{,}00\\cdot10^{8}\\,\\text{m/s}\\right)^{2}} = \\frac{3{,}85\\cdot10^{26}}{9{,}00\\cdot10^{16}}\\,\\text{kg} = 4{,}3\\cdot10^{9}\\,\\text{kg}$$<p>Sola blir 4,3 millioner tonn lettere hvert sekund. Det høres voldsomt ut, men solas masse er $2{,}0\\cdot10^{30}$ kg, så på 4,6 milliarder år har sola bare mistet rundt 0,03 % av massen sin.</p><p><strong>c) Antall heliumkjerner og hydrogenforbruket.</strong> Vi deler energien per sekund på energien per heliumkjerne:</p>$$N = \\frac{E}{E_{\\text{He}}} = \\frac{3{,}85\\cdot10^{26}\\,\\text{J}}{4{,}3\\cdot10^{-12}\\,\\text{J}} = 9{,}0\\cdot10^{37}$$<p>Det dannes altså cirka $9\\cdot10^{37}$ heliumkjerner hvert sekund. Hver av dem krever fire hydrogenkjerner:</p>$$N_{\\text{H}} = 4 \\cdot 9{,}0\\cdot10^{37} = 3{,}6\\cdot10^{38}$$$$m_{\\text{H}} = 3{,}6\\cdot10^{38} \\cdot 1{,}67\\cdot10^{-27}\\,\\text{kg} = 6{,}0\\cdot10^{11}\\,\\text{kg}$$<p>Sola bruker opp omtrent 600 millioner tonn hydrogen i sekundet. Sammenlign svarene i b) og c): av $6{,}0\\cdot10^{11}$ kg hydrogen inn blir det $4{,}3\\cdot10^{9}$ kg energi, og resten kommer ut som helium. Forholdet er</p>$$\\frac{4{,}3\\cdot10^{9}}{6{,}0\\cdot10^{11}} = 0{,}0072 = 0{,}72\\,\\%$$<p>som er nettopp de 0,7 % vi snakket om i teorien.</p>"
+      },
+      {
+        "tittel": "Temperatur og radius til en rød kjempe",
+        "oppgave": "<p>En rød kjempe stråler kraftigst ved bølgelengden 828 nm, og luminositeten er 1000 ganger solas ($L_{\\text{sol}} = 3{,}85\\cdot10^{26}$ W).</p><ol><li>Finn overflatetemperaturen.</li><li>Finn radien til stjerna.</li><li>Hvor mange ganger større er radien enn solas ($R_{\\text{sol}} = 6{,}96\\cdot10^{8}$ m)?</li></ol>",
+        "losning": "<p><strong>a) Temperaturen.</strong> Vi bruker Wiens forskyvningslov. Først gjør vi om bølgelengden til meter: $828\\,\\text{nm} = 8{,}28\\cdot10^{-7}$ m.</p>$$T = \\frac{2{,}90\\cdot10^{-3}\\,\\text{m}\\cdot\\text{K}}{\\lambda_{\\text{maks}}} = \\frac{2{,}90\\cdot10^{-3}}{8{,}28\\cdot10^{-7}}\\,\\text{K} = 3{,}50\\cdot10^{3}\\,\\text{K}$$<p>Overflaten er altså rundt 3500 K, mye kaldere enn solas 5800 K. Derfor ser stjerna rød ut.</p><p><strong>b) Radien.</strong> Luminositeten er $L = 1000 \\cdot 3{,}85\\cdot10^{26}\\,\\text{W} = 3{,}85\\cdot10^{29}$ W. Vi løser Stefan-Boltzmanns lov for radien:</p>$$L = \\sigma \\cdot 4\\pi R^{2} \\cdot T^{4} \\quad \\Rightarrow \\quad R = \\sqrt{\\frac{L}{4\\pi\\sigma T^{4}}}$$<p>Nevneren tar vi i to steg. Først fjerdepotensen av temperaturen:</p>$$T^{4} = \\left(3{,}50\\cdot10^{3}\\right)^{4} = 1{,}50\\cdot10^{14}\\,\\text{K}^4$$$$4\\pi\\sigma T^{4} = 4\\pi \\cdot 5{,}67\\cdot10^{-8} \\cdot 1{,}50\\cdot10^{14} = 1{,}07\\cdot10^{8}\\,\\frac{\\text{W}}{\\text{m}^2}$$<p>Så setter vi inn:</p>$$R = \\sqrt{\\frac{3{,}85\\cdot10^{29}}{1{,}07\\cdot10^{8}}}\\,\\text{m} = \\sqrt{3{,}60\\cdot10^{21}}\\,\\text{m} = 6{,}0\\cdot10^{10}\\,\\text{m}$$<p><strong>c) Sammenlignet med sola.</strong></p>$$\\frac{R}{R_{\\text{sol}}} = \\frac{6{,}0\\cdot10^{10}\\,\\text{m}}{6{,}96\\cdot10^{8}\\,\\text{m}} = 86$$<p>Radien er 86 ganger solas. Det er $\\frac{6{,}0\\cdot10^{10}}{1{,}50\\cdot10^{11}} = 0{,}40$ AU: sto stjerna der sola står, ville overflaten strukket seg ut til omtrent Merkurs bane.</p><p>Legg merke til logikken i svaret. Hver kvadratmeter av den kalde overflaten stråler ut $\\sigma T^{4} = 8{,}5\\cdot10^{6}$ W/m², mens sola stråler $6{,}4\\cdot10^{7}$ W/m² — altså 7,5 ganger mer per kvadratmeter. Men arealet er $86^{2} \\approx 7400$ ganger større, og $\\frac{7400}{7{,}5} \\approx 1000$. Det er slik en kald stjerne likevel kan bli 1000 ganger så lyssterk som sola.</p>"
+      },
+      {
+        "tittel": "Rødforskyvning, Hubbles lov og universets alder",
+        "oppgave": "<p>I spekteret til en fjern galakse finner du hydrogenlinjen som i laboratoriet ligger ved 656,3 nm. I galaksens spekter måles den til 669,0 nm.</p><ol><li>Finn rødforskyvningen $z$.</li><li>Hvor fort fjerner galaksen seg fra oss?</li><li>Hvor langt unna ligger den, i Mpc og i lysår? Bruk $H_0 = 70$ km/s per Mpc.</li><li>Bruk $H_0$ til å anslå universets alder.</li></ol>",
+        "losning": "<p><strong>a) Rødforskyvningen.</strong> Først forskyvningen av linja:</p>$$\\Delta\\lambda = \\lambda - \\lambda_0 = 669{,}0\\,\\text{nm} - 656{,}3\\,\\text{nm} = 12{,}7\\,\\text{nm}$$$$z = \\frac{\\Delta\\lambda}{\\lambda_0} = \\frac{12{,}7\\,\\text{nm}}{656{,}3\\,\\text{nm}} = 0{,}0193$$<p>Her er det viktig at nevneren er laboratoriebølgelengden. Siden vi deler nm på nm, blir $z$ et forholdstall uten enhet.</p><p><strong>b) Farten.</strong> Rødforskyvningen er langt mindre enn 1, så vi kan bruke $v = zc$:</p>$$v = 0{,}0193 \\cdot 3{,}00\\cdot10^{5}\\,\\frac{\\text{km}}{\\text{s}} = 5{,}8\\cdot10^{3}\\,\\frac{\\text{km}}{\\text{s}}$$<p><strong>c) Avstanden.</strong> Hubbles lov $v = H_0 d$ løst for $d$:</p>$$d = \\frac{v}{H_0} = \\frac{5{,}8\\cdot10^{3}\\,\\text{km/s}}{70\\,\\text{km/s per Mpc}} = 83\\,\\text{Mpc}$$<p>Her forkortes km/s bort, og Mpc blir stående. Gjort om til lysår:</p>$$d = 83\\cdot10^{6}\\,\\text{pc} \\cdot 3{,}26\\,\\frac{\\text{ly}}{\\text{pc}} = 2{,}7\\cdot10^{8}\\,\\text{ly}$$<p>Galaksen ligger 270 millioner lysår unna, og lyset du ser, forlot den for 270 millioner år siden.</p><p><strong>d) Universets alder.</strong> Nå må $H_0$ over i SI-enheter, ellers får du tull. Én megaparsec er $10^{6} \\cdot 3{,}09\\cdot10^{16}\\,\\text{m} = 3{,}09\\cdot10^{22}$ m, og 70 km/s er $7{,}0\\cdot10^{4}$ m/s:</p>$$H_0 = \\frac{7{,}0\\cdot10^{4}\\,\\text{m/s}}{3{,}09\\cdot10^{22}\\,\\text{m}} = 2{,}27\\cdot10^{-18}\\,\\text{s}^{-1}$$<p>Legg merke til at enheten ble ren $\\text{s}^{-1}$, slik den må være når vi skal ha tid ut av $\\frac{1}{H_0}$:</p>$$t = \\frac{1}{H_0} = \\frac{1}{2{,}27\\cdot10^{-18}\\,\\text{s}^{-1}} = 4{,}4\\cdot10^{17}\\,\\text{s}$$<p>Til slutt gjør vi om til år, med $1\\,\\text{år} = 3{,}16\\cdot10^{7}$ s:</p>$$t = \\frac{4{,}4\\cdot10^{17}}{3{,}16\\cdot10^{7}}\\,\\text{år} = 1{,}4\\cdot10^{10}\\,\\text{år}$$<p>Altså cirka 14 milliarder år. Det er litt mer enn den beste verdien i dag, 13,8 milliarder år, og grunnen er at regningen antar at ekspansjonsfarten har vært helt konstant hele veien.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å behandle lysår som en tidsenhet. Et lysår er en avstand, $9{,}46\\cdot10^{15}$ m — det er avstanden lyset går på ett år, ikke en tid.",
+      "Å sette parallaksen inn i grader i $d = \\frac{1}{p}$, eller å tro at svaret kommer i lysår. Parallaksen må være i buesekunder, og svaret kommer i parsec. Deretter må du gange med 3,26 for å få lysår.",
+      "Å si at sola «brenner» hydrogen som en kjemisk forbrenning, eller å blande fusjon og fisjon. Sola smelter sammen lette kjerner (fusjon); fisjon er spalting av tunge kjerner som uran, og slike finnes praktisk talt ikke i sola.",
+      "Å regne med celsius i Wiens lov eller i Stefan-Boltzmanns lov, og å glemme at $T$ er opphøyd i fjerde. Begge lovene krever kelvin, og dobler du temperaturen, blir utstrålt effekt 16 ganger større, ikke dobbelt.",
+      "Å bruke $\\pi R^{2}$ i stedet for $4\\pi R^{2}$ i Stefan-Boltzmanns lov for en stjerne. Det er hele kuleflata som stråler, ikke tverrsnittet.",
+      "Å dele på den målte bølgelengden når du regner rødforskyvning. Definisjonen er $z = \\frac{\\lambda - \\lambda_0}{\\lambda_0}$, med laboratoriebølgelengden i nevneren."
+    ],
+
+    "tips": [
+      "Astrofysikkoppgaver er stort sett innsetting i få formler — nesten alle feilene er enhets- og tierpotensfeil. Gjør om til SI før du regner (nm til m, km/s til m/s, Mpc til m), og skriv enhetene med i hele utregningen så du ser at de stemmer.",
+      "Skal du bruke $t = \\frac{1}{H_0}$, må $H_0$ først skrives om til $\\text{s}^{-1}$: 70 km/s per Mpc blir $2{,}3\\cdot10^{-18}\\,\\text{s}^{-1}$. Skal du bare finne avstand fra fart, kan du derimot beholde km/s og Mpc og la enhetene forkorte hverandre.",
+      "Sjekk alltid størrelsesordenen mot sola: $R = 7\\cdot10^{8}$ m, $L = 3{,}85\\cdot10^{26}$ W, $T = 5800$ K, $M = 2\\cdot10^{30}$ kg. Får du en stjerneradius på $10^{20}$ m, har du gjort en regnefeil, ikke oppdaget en rekordstjerne.",
+      "Langsvarsoppgavene her er ofte forklaringsoppgaver. Øv på to av dem skriftlig før prøven: stjernens livsløp som funksjon av massen, og de tre observasjonene som støtter big bang.",
+      "Lær å lese HR-diagrammet på forhånd: temperaturen avtar mot høyre, luminositeten øker oppover. Da ser du med én gang at en stjerne oppe til høyre må være kald og stor, mens en nede til venstre er varm og liten."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Lysår", "forklaring": "Avstanden lyset går i vakuum i løpet av ett år, $9{,}46\\cdot10^{15}$ m. Det er en avstandsenhet, ikke en tidsenhet." },
+    { "begrep": "Parallakse", "forklaring": "Den lille vinkelen en nær stjerne ser ut til å flytte seg med mot bakgrunnsstjernene når jorda beveger seg rundt sola. Måles i buesekunder." },
+    { "begrep": "Parsec", "forklaring": "Avstanden til en stjerne med parallakse ett buesekund: 3,26 lysår, eller $3{,}09\\cdot10^{16}$ m." },
+    { "begrep": "Luminositet", "forklaring": "Den totale strålingseffekten en stjerne sender ut, målt i watt. Solas luminositet er $3{,}85\\cdot10^{26}$ W." },
+    { "begrep": "HR-diagrammet", "forklaring": "Et diagram med overflatetemperatur (avtakende mot høyre) mot luminositet, der stjernene grupperer seg i hovedserien, kjempegrenene og hvite dverger." },
+    { "begrep": "Hovedserien", "forklaring": "Den diagonale stripa i HR-diagrammet der stjerner ligger så lenge de fusjonerer hydrogen til helium i kjernen. Rundt 90 % av stjernene er der." },
+    { "begrep": "Protostjerne", "forklaring": "En sammentrekkende gassky som er blitt varm av gravitasjonssammentrekningen, men ennå ikke har startet hydrogenfusjonen." },
+    { "begrep": "Proton-proton-kjeden", "forklaring": "Rekkefølgen av fusjonsreaksjoner som gjør fire hydrogenkjerner til én heliumkjerne i sola og andre lette stjerner." },
+    { "begrep": "Masseunderskudd", "forklaring": "Differansen mellom massen til utgangskjernene og massen til produktkjernene i en kjernereaksjon. Denne massen blir energi etter $E = \\Delta m c^2$." },
+    { "begrep": "Rød kjempe", "forklaring": "En stjerne som er ferdig med hydrogenfusjonen i kjernen og har blåst opp de ytre lagene, slik at overflaten er kald og rød, men arealet enormt." },
+    { "begrep": "Hvit dverg", "forklaring": "Den varme, kompakte kjernerest en lett stjerne etterlater seg. Omtrent på størrelse med jorda, uten fusjon, og kjøles langsomt ned." },
+    { "begrep": "Supernova", "forklaring": "Den voldsomme eksplosjonen når kjernen i en tung stjerne kollapser. Den sprer tunge grunnstoffer ut i rommet og etterlater en nøytronstjerne eller et svart hull." },
+    { "begrep": "Rødforskyvning", "forklaring": "At spektrallinjene i lyset fra en fjern galakse er forskjøvet mot lengre bølgelengder, $z = \\frac{\\lambda - \\lambda_0}{\\lambda_0}$." },
+    { "begrep": "Hubbles lov", "forklaring": "Sammenhengen $v = H_0 d$ mellom fluktfarten til en galakse og avstanden til den, med $H_0 \\approx 70$ km/s per Mpc." },
+    { "begrep": "Kosmisk bakgrunnsstråling", "forklaring": "Varmestrålingen som ble frigjort da universet var rundt 380 000 år gammelt, i dag strukket ut til mikrobølger som svarer til 2,7 K." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hva kjennetegner stjernene som ligger på hovedserien i HR-diagrammet?",
+      "alternativer": [
+        "De fusjonerer hydrogen til helium i kjernen, og det er her stjernene tilbringer størstedelen av livet",
+        "De har brukt opp hydrogenet i kjernen og fusjonerer helium",
+        "Det er de kaldeste og svakeste stjernene i universet",
+        "Det er stjerner med nøyaktig samme masse som sola"
+      ],
+      "riktig": 0,
+      "forklaring": "Hovedserien er den diagonale stripa i HR-diagrammet, og en stjerne ligger der så lenge den fusjonerer hydrogen i kjernen — omtrent 90 % av levetiden. Stjerner som har begynt på heliumfusjonen (alternativ B), har forlatt hovedserien og ligger blant de røde kjempene oppe til høyre. Hovedserien dekker hele spennet fra kalde, svake røde dverger nede til høyre til varme, lyssterke blå stjerner oppe til venstre, så den handler ikke om én bestemt masse."
+    },
+    {
+      "sporsmal": "En stjerne har parallaksen 0,25 buesekunder. Hvor langt unna er den?",
+      "alternativer": ["4 pc, altså cirka 13 lysår", "0,25 pc", "4 lysår", "13 pc"],
+      "riktig": 0,
+      "forklaring": "Parallakseformelen $d = \\frac{1}{p}$ gir avstanden i parsec når $p$ er i buesekunder: $d = \\frac{1}{0{,}25} = 4$ pc. Siden 1 pc er 3,26 lysår, blir det 13 lysår. Den vanligste feilen er å svare «4 lysår» — riktig tall, men feil enhet, og det gjør avstanden mer enn tre ganger for liten. Svaret 0,25 pc er å bruke formelen opp ned."
+    },
+    {
+      "sporsmal": "En stjerne stråler kraftigst ved 290 nm. Hva er overflatetemperaturen?",
+      "alternativer": ["5800 K", "1000 K", "10 000 K", "100 000 K"],
+      "riktig": 2,
+      "forklaring": "Wiens forskyvningslov gir $T = \\frac{2{,}90\\cdot10^{-3}}{\\lambda_{\\text{maks}}}$. Med $290\\,\\text{nm} = 2{,}90\\cdot10^{-7}$ m blir $T = \\frac{2{,}90\\cdot10^{-3}}{2{,}90\\cdot10^{-7}} = 1{,}0\\cdot10^{4}$ K. Pass på omregningen fra nanometer til meter — det er der de andre svarene kommer fra. Svaret 5800 K hører til sola, som har maksimum rundt 500 nm; en stjerne med maksimum i ultrafiolett må være mye varmere enn sola, ikke kaldere."
+    },
+    {
+      "sporsmal": "Hvilken prosess gir sola energien sin?",
+      "alternativer": [
+        "Kjemisk forbrenning av hydrogen",
+        "Fisjon av tunge atomkjerner",
+        "Fusjon av hydrogenkjerner til helium",
+        "Gravitasjonssammentrekning som fortsetter i dag"
+      ],
+      "riktig": 2,
+      "forklaring": "Sola består nesten bare av hydrogen og helium, og fusjon av lette kjerner frigjør energi fordi produktet har mindre masse enn utgangskjernene. Fisjon (alternativ B) gir bare energi for tunge kjerner som uran, og de finnes praktisk talt ikke i sola. Kjemisk forbrenning er utelukket både fordi det ikke er oksygen der, og fordi kjemiske reaksjoner frigjør rundt en million ganger mindre energi per kilo — sola ville vart noen få tusen år. Gravitasjonssammentrekning varmet opp protostjerna, men er ikke energikilden i dag."
+    },
+    {
+      "sporsmal": "Solas luminositet er $3{,}85\\cdot10^{26}$ W. Hvor mye masse omdannes til energi hvert sekund?",
+      "alternativer": ["$1{,}3\\cdot10^{18}$ kg", "$4{,}3\\cdot10^{9}$ kg", "$3{,}5\\cdot10^{43}$ kg", "$4{,}3\\cdot10^{-9}$ kg"],
+      "riktig": 1,
+      "forklaring": "Vi løser $E = \\Delta m c^{2}$ for massen: $\\Delta m = \\frac{3{,}85\\cdot10^{26}}{\\left(3{,}00\\cdot10^{8}\\right)^{2}} = \\frac{3{,}85\\cdot10^{26}}{9{,}00\\cdot10^{16}} = 4{,}3\\cdot10^{9}$ kg, altså 4,3 millioner tonn per sekund. Svaret $1{,}3\\cdot10^{18}$ kg får du hvis du deler på $c$ i stedet for $c^{2}$ — sjekk alltid at lysfarten er kvadrert. Merk også at dette ikke er hydrogenforbruket: sola bruker opp cirka $6\\cdot10^{11}$ kg hydrogen per sekund, men bare 0,7 % av den massen blir energi."
+    },
+    {
+      "sporsmal": "Hva skjer med en stjerne som sola når hydrogenet i kjernen er brukt opp?",
+      "alternativer": [
+        "Den kollapser direkte til et svart hull",
+        "Den eksploderer som en supernova og etterlater en nøytronstjerne",
+        "Den slutter å lyse med én gang og blir mørk",
+        "Den blåser seg opp til en rød kjempe og ender som en hvit dverg"
+      ],
+      "riktig": 3,
+      "forklaring": "Kjernen mister støtten fra fusjonen, trekker seg sammen og blir varmere, mens hydrogenfusjonen fortsetter i et skall rundt kjernen. De ytre lagene blåses opp og kjøles ned, og stjerna blir en rød kjempe. Til slutt drives de ytre lagene av som en planetarisk tåke, og den nakne kjernen blir en hvit dverg. Supernova (alternativ B) er sluttstadiet for stjerner over cirka 8 solmasser; sola har altfor liten masse til å fusjonere seg oppover mot jern og kollapse."
+    },
+    {
+      "sporsmal": "Hvilken av disse stjernene har kortest levetid på hovedserien?",
+      "alternativer": [
+        "En stjerne med 0,5 solmasser",
+        "En stjerne med 1 solmasse",
+        "En stjerne med 20 solmasser",
+        "Alle hovedseriestjerner lever like lenge"
+      ],
+      "riktig": 2,
+      "forklaring": "Levetiden bestemmes av forholdet mellom drivstoffet (massen) og hvor fort det brukes (luminositeten). En tung stjerne har mer drivstoff, men kjernen blir så mye varmere at fusjonen går tusenvis av ganger raskere. En stjerne på 20 solmasser lyser rundt 40 000 ganger sterkere enn sola og lever bare noen millioner år, mens en stjerne på 0,5 solmasser holder det gående i mer enn 50 milliarder år. Tanken «mer masse gir lengre liv» er altså feil."
+    },
+    {
+      "sporsmal": "En spektrallinje som i laboratoriet ligger ved 500,0 nm, måles til 505,0 nm i lyset fra en galakse. Hva er $z$ og farten?",
+      "alternativer": [
+        "$z = 0{,}010$ og $v = 3000$ km/s",
+        "$z = 0{,}010$ og $v = 3{,}0\\cdot10^{6}$ km/s",
+        "$z = 1{,}01$ og $v = 3000$ km/s",
+        "$z = 0{,}0099$ og $v = 2970$ km/s"
+      ],
+      "riktig": 0,
+      "forklaring": "$\\Delta\\lambda = 505{,}0 - 500{,}0 = 5{,}0$ nm, så $z = \\frac{5{,}0}{500{,}0} = 0{,}010$, og $v = zc = 0{,}010 \\cdot 3{,}00\\cdot10^{5}\\,\\text{km/s} = 3000$ km/s. Alternativ D kommer av å dele på den målte bølgelengden 505,0 nm i stedet for laboratorieverdien, og alternativ C av å regne $\\frac{\\lambda}{\\lambda_0}$ i stedet for $\\frac{\\Delta\\lambda}{\\lambda_0}$. Alternativ B er umulig: ingenting kan bevege seg raskere enn lyset."
+    },
+    {
+      "sporsmal": "Hva forteller Hubbles lov $v = H_0 d$ oss?",
+      "alternativer": [
+        "At alle galakser beveger seg mot oss med samme fart",
+        "At jorda ligger i sentrum av universet",
+        "At lyset taper energi på veien og derfor blir rødere",
+        "At de fjerneste galaksene fjerner seg raskest, fordi rommet mellom oss utvider seg"
+      ],
+      "riktig": 3,
+      "forklaring": "Fluktfarten er proporsjonal med avstanden: dobbelt så langt unna gir dobbelt så stor fart. Forklaringen er at rommet mellom galaksene utvider seg overalt samtidig, slik at avstanden mellom to punkter vokser i takt med hvor stor den er fra før. Alternativ B er en klassisk misforståelse — en observatør i en hvilken som helst annen galakse måler nøyaktig samme lov, så vi kan ikke slutte at vi er i sentrum. Alternativ C beskriver en forkastet idé: bølgelengden strekkes sammen med rommet, fotonene taper ikke energi til noe underveis."
+    },
+    {
+      "sporsmal": "Hva er den kosmiske bakgrunnsstrålingen?",
+      "alternativer": [
+        "Samlet lys fra alle stjernene i Melkeveien",
+        "Restvarmen fra big bang, i dag en nesten perfekt varmestråling som svarer til 2,7 K",
+        "Radiostråling fra svarte hull i fjerne galakser",
+        "Stråling som sendes ut av mørk materie"
+      ],
+      "riktig": 1,
+      "forklaring": "Strålingen ble sendt ut da universet var rundt 380 000 år gammelt og hadde kjølt seg ned til cirka 3000 K, slik at kjerner og elektroner kunne bli nøytrale atomer og lyset slapp fritt. Ekspansjonen har siden strukket bølgelengdene helt inn i mikrobølgeområdet, som svarer til 2,7 K. Lys fra stjernene i Melkeveien (alternativ A) ville kommet konsentrert fra Melkeveiens plan, ikke helt jevnt fra alle retninger — og nettopp at strålingen er så jevn, var det avgjørende funnet."
+    },
+    {
+      "sporsmal": "Hvordan kan Hubble-konstanten brukes til å anslå universets alder?",
+      "alternativer": [
+        "Alderen kan ikke anslås fra $H_0$",
+        "$t = H_0 \\cdot d$",
+        "$t = \\frac{1}{H_0} \\approx 14$ milliarder år",
+        "$t = \\frac{H_0}{c}$"
+      ],
+      "riktig": 2,
+      "forklaring": "Har en galakse hatt konstant fart, er tiden siden alt var samlet $t = \\frac{d}{v}$, og med $v = H_0 d$ blir $t = \\frac{d}{H_0 d} = \\frac{1}{H_0}$. Avstanden faller ut, så alle galakser gir samme svar — det er nettopp derfor tallet betyr noe. Regner du om $H_0 = 70$ km/s per Mpc til $2{,}3\\cdot10^{-18}\\,\\text{s}^{-1}$, får du $4{,}4\\cdot10^{17}$ s, altså cirka 14 milliarder år. Alternativ B har enhet fart, ikke tid, så det kan ikke være riktig uansett."
+    },
+    {
+      "sporsmal": "To stjerner har samme radius, men stjerne B har dobbelt så høy overflatetemperatur som stjerne A. Hvor mye større er luminositeten til B?",
+      "alternativer": ["2 ganger", "4 ganger", "8 ganger", "16 ganger"],
+      "riktig": 3,
+      "forklaring": "Stefan-Boltzmanns lov er $L = \\sigma \\cdot 4\\pi R^{2} \\cdot T^{4}$. Radien er den samme, så arealet er likt, og bare temperaturleddet endrer seg: $(2T)^{4} = 2^{4}T^{4} = 16T^{4}$. Luminositeten blir altså 16 ganger større. Svarene 2 og 4 kommer av å glemme at eksponenten er 4 og ikke 1 eller 2, og 8 av å forveksle med $T^{3}$."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Hvor langt er ett lysår i meter?", "bak": "$9{,}46\\cdot10^{15}$ m — avstanden lyset går i vakuum på ett år. Et lysår er en avstand, ikke en tid." },
+    { "front": "1 parsec = ?", "bak": "3,26 lysår, altså $3{,}09\\cdot10^{16}$ m. Det er avstanden til en stjerne med parallakse ett buesekund." },
+    { "front": "Parallakseformelen", "bak": "$d = \\frac{1}{p}$, der $d$ kommer ut i parsec og $p$ må være i buesekunder." },
+    { "front": "Hva er luminositet?", "bak": "Den totale effekten en stjerne stråler ut, målt i watt. Solas luminositet er $3{,}85\\cdot10^{26}$ W." },
+    { "front": "Fluksen i avstanden $r$ fra en stjerne", "bak": "$F = \\frac{L}{4\\pi r^{2}}$ — effekten fordeles over en kuleflate, så fluksen avtar med kvadratet av avstanden." },
+    { "front": "Wiens forskyvningslov", "bak": "$\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}$ — varm stjerne gir kort bølgelengde (blå), kald stjerne lang (rød)." },
+    { "front": "Stefan-Boltzmanns lov for en stjerne", "bak": "$L = \\sigma \\cdot 4\\pi R^{2} \\cdot T^{4}$ med $\\sigma = 5{,}67\\cdot10^{-8}$ W/(m²K⁴). Hele kuleflata stråler." },
+    { "front": "Hva er hovedserien i HR-diagrammet?", "bak": "Den diagonale stripa der stjernene ligger så lenge de fusjonerer hydrogen i kjernen. Rundt 90 % av alle stjerner er der, sola inkludert." },
+    { "front": "Netto fusjonsreaksjon i sola — og hvor kommer energien fra?", "bak": "$4\\,{}^{1}_{1}\\text{H} \\rightarrow {}^{4}_{2}\\text{He} + 2\\,\\text{e}^{+} + 2\\,\\nu$. Heliumkjernen har mindre masse enn de fire protonene, og masseunderskuddet blir energi etter $E = \\Delta m c^{2}$: cirka 26,7 MeV $= 4{,}3\\cdot10^{-12}$ J per heliumkjerne, altså 0,7 % av massen." },
+    { "front": "Hvorfor kreves det så høy temperatur for fusjon?", "bak": "Protonene frastøter hverandre elektrisk. Bare ved rundt 15 millioner kelvin er farten stor nok til at de kommer innenfor rekkevidden til den sterke kjernekraften." },
+    { "front": "Hvordan ender en stjerne som sola?", "bak": "Rød kjempe, deretter planetarisk tåke, og kjernen står igjen som en hvit dverg på størrelse med jorda." },
+    { "front": "Hvordan ender en stjerne på mer enn cirka 8 solmasser?", "bak": "Fusjon opp til jern, deretter kjernekollaps og supernova. Det som blir igjen, er en nøytronstjerne eller et svart hull." },
+    { "front": "Hvilke stjerner lever kortest, og hvorfor?", "bak": "De tyngste. Større masse gir mye varmere kjerne og enormt høyere luminositet, så drivstoffet brukes opp raskere: 20 solmasser gir noen millioner år, sola 10 milliarder." },
+    { "front": "Definisjonen av rødforskyvning", "bak": "$z = \\frac{\\lambda - \\lambda_0}{\\lambda_0}$, der $\\lambda_0$ er laboratoriebølgelengden. For små farter er $v = zc$." },
+    { "front": "Hubbles lov og universets alder", "bak": "$v = H_0 d$ med $H_0 \\approx 70$ km/s per Mpc. $t = \\frac{1}{H_0} \\approx 14$ milliarder år, mens beste verdi for alderen er 13,8 milliarder år." },
+    { "front": "Tre observasjoner som støtter big bang", "bak": "1) Galaksenes rødforskyvning, altså ekspansjonen. 2) Den kosmiske bakgrunnsstrålingen på 2,7 K. 3) At universet består av cirka 75 % hydrogen og 25 % helium." }
+  ]
+}

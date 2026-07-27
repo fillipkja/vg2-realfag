@@ -1,0 +1,267 @@
+{
+  "fag": "matematikk",
+  "nr": 8,
+  "tittel": "Oppgavesamling",
+  "intro": "Dette kapittelet er ikke nytt pensum, men treningsleiren: her setter du sammen stoffet fra kapittel 1 til 7 i blandede oppgaver, lærer å kjenne igjen oppgavetypene som går igjen på eksamen, og øver på å føre en besvarelse som gir full uttelling.",
+
+  "kompakt": {
+    "punkter": [
+      "Eksamen i R1 varer 5 timer og er delt i to: Del 1 uten hjelpemidler leveres inn før du får bruke digitale verktøy, og Del 2 løses med alle hjelpemidler unntatt internett og kommunikasjon.",
+      "Lag et tidsbudsjett de første minuttene: tilgjengelig tid delt på antall oppgaver, minus et kvarter til gjennomlesing.",
+      "Sensor vurderer framgangsmåten, ikke bare svaret. Et riktig tall uten utregning gir lite uttelling, mens en oppgave du bare kommer halvveis i, gir noe.",
+      "Del 1 krever eksakte svar: la det stå $\\ln 2$ og $2\\sqrt{5}$ i stedet for $0{,}69$ og $4{,}47$.",
+      "I Del 2 må hver bruk av CAS eller graftegner dokumenteres: verktøy, kommando, resultat og en setning som tolker svaret.",
+      "Signalordene styrer metoden: «momentan vekstfart» betyr $f'(a)$, «største verdi» betyr $f'(x)=0$ pluss fortegnslinje, «vinkelen mellom» betyr skalarprodukt, «finn en modell» betyr regresjon.",
+      "Sjekk alltid definisjonsmengden når du har løst en logaritme- eller rotlikning, og forkast løsninger som faller utenfor.",
+      "Rund av bare i det endelige svaret, og gi alltid svaret med enhet i en hel setning.",
+      "«Vis at» betyr at svaret er oppgitt: du må regne hele veien fram til nøyaktig det uttrykket, og du kan bruke resultatet videre selv om du ikke klarte å vise det.",
+      "Blandede oppgaver kombinerer få og forutsigbare par av kapitler — logaritmer med derivasjon, grenseverdier med drøfting, vektorer med parameterframstilling."
+    ],
+    "formler": [
+      { "navn": "Potensregler", "latex": "a^{m}\\cdot a^{n} = a^{m+n}, \\qquad \\frac{a^{m}}{a^{n}} = a^{m-n}, \\qquad \\left(a^{m}\\right)^{n} = a^{mn}" },
+      { "navn": "Logaritmeregler", "latex": "\\ln(ab) = \\ln a + \\ln b, \\qquad \\ln\\frac{a}{b} = \\ln a - \\ln b, \\qquad \\ln a^{k} = k\\ln a" },
+      { "navn": "Eksponentiallikning", "latex": "a^{x} = b \\quad \\Longrightarrow \\quad x = \\frac{\\ln b}{\\ln a}" },
+      { "navn": "Andregradsformelen", "latex": "x = \\frac{-b \\pm \\sqrt{b^{2}-4ac}}{2a}" },
+      { "navn": "Faktorisering av andregradsuttrykk", "latex": "ax^{2}+bx+c = a(x-x_1)(x-x_2)" },
+      { "navn": "Produkt-, kvotient- og kjerneregelen", "latex": "(uv)' = u'v+uv', \\qquad \\left(\\frac{u}{v}\\right)' = \\frac{u'v-uv'}{v^{2}}, \\qquad \\left(g(u)\\right)' = g'(u)\\cdot u'" },
+      { "navn": "Standardderiverte", "latex": "\\left(x^{n}\\right)' = nx^{n-1}, \\quad \\left(e^{kx}\\right)' = ke^{kx}, \\quad \\left(a^{x}\\right)' = a^{x}\\ln a, \\quad \\left(\\ln u\\right)' = \\frac{u'}{u}" },
+      { "navn": "Tangent i $x=a$", "latex": "y = f'(a)(x-a)+f(a)" },
+      { "navn": "Voksende, avtagende og krumning", "latex": "f'(x) > 0 \\Rightarrow \\text{voksende}, \\quad f'(x) < 0 \\Rightarrow \\text{avtagende}, \\quad f''(x) > 0 \\Rightarrow \\text{krummer oppover}" },
+      { "navn": "Vektor mellom to punkter", "latex": "\\overrightarrow{AB} = [x_B - x_A,\\; y_B - y_A]" },
+      { "navn": "Lengde og skalarprodukt", "latex": "|\\vec a| = \\sqrt{a_1^{2}+a_2^{2}}, \\qquad \\vec a\\cdot\\vec b = a_1b_1 + a_2b_2 = |\\vec a|\\,|\\vec b|\\cos\\alpha" },
+      { "navn": "Ortogonalitet og parallellitet", "latex": "\\vec a \\perp \\vec b \\iff \\vec a\\cdot\\vec b = 0, \\qquad \\vec a \\parallel \\vec b \\iff a_1b_2-a_2b_1 = 0" },
+      { "navn": "Areal av trekant", "latex": "A_{\\triangle} = \\frac{1}{2}\\left|a_1b_2 - a_2b_1\\right|" },
+      { "navn": "Eksponentiell modell og doblingstid", "latex": "N(t) = N_0\\cdot a^{t}, \\qquad t_2 = \\frac{\\ln 2}{\\ln a}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Slik er eksamen i R1 bygd opp",
+        "html": "<p>Skriftlig eksamen i R1 varer <strong>5 timer</strong> og er delt i to. <strong>Del 1</strong> løser du uten hjelpemidler — du har bare vanlige skrivesaker, passer, linjal og vinkelmåler. Den skal leveres inn før du får ta fram noe digitalt. <strong>Del 2</strong> løser du med alle hjelpemidler unntatt internett og andre verktøy som gir mulighet for kommunikasjon. På de siste eksamenene har oppdelingen vært tre timer på Del 1 og to timer på Del 2, men klokkeslettene står alltid på forsiden av oppgavesettet, så les den først.</p><p>De to delene måler ulike ting. Del 1 handler om <em>håndverk</em>: potens- og logaritmeregler, faktorisering, derivasjonsreglene, fortegnslinjer og vektorregning på koordinatform. Svarene skal være eksakte, som $\\ln 2$ eller $2\\sqrt{5}$. Del 2 handler om <em>problemløsning</em>: modellering av måledata, drøfting av funksjoner, optimering og praktiske situasjoner der du selv velger verktøy — og begrunner valget.</p><p>Sensor vurderer ikke bare fasiten. Framgangsmåte, forklaring og evnen til å kommunisere matematikk teller med i helhetsvurderingen. Det har to praktiske konsekvenser: du kan få god uttelling på en oppgave du ikke fullfører, og du kan få svært lite uttelling for et riktig tall som står helt alene uten utregning.</p>"
+      },
+      {
+        "tittel": "Tidsbruk og rekkefølge",
+        "html": "<p>300 minutter høres mye ut, men settet er laget for at du skal jobbe jevnt hele tiden. Bruk de første fem minuttene på et budsjett i stedet for å kaste deg over oppgave 1.</p><p><strong>Slik lager du budsjettet:</strong> bla gjennom hele delen, tell oppgavene og del tiden du har på antall oppgaver. Har du 180 minutter og seks oppgaver i Del 1, er 25 minutter per oppgave et fornuftig tak — da har du en halvtime igjen til det som tar lengre tid enn planlagt, og til kontroll. Skriv klokkeslettene i margen: «oppgave 3 senest 10.20». Da ser du selv når du sakker av, i stedet for å oppdage det når det er 20 minutter igjen.</p><p>Jobb i tre runder:</p><ol><li><strong>Runde 1:</strong> alt du kan løse nesten uten å tenke. Det gir uttelling raskt og roer nervene.</li><li><strong>Runde 2:</strong> oppgavene der du selv må sette opp noe, som optimering og modellering.</li><li><strong>Runde 3:</strong> kontroll av enheter, avrundinger, svarsetninger og «vis at»-oppgavene.</li></ol><p>Regelen når du står fast: har du ikke gjort framgang på tre til fire minutter, skriver du ned hva du <em>ville</em> gjort, setter et merke i margen og går videre. Husk også at deloppgaver kan løses uavhengig av hverandre. Klarer du ikke a), kan du fortsatt bruke det oppgitte resultatet fra a) i b).</p>"
+      },
+      {
+        "tittel": "Slik fører du en god besvarelse",
+        "html": "<p>Besvarelsen er en tekst en sensor skal lese, ikke en kladd du selv skal forstå. Fire vaner gjør stor forskjell:</p><ol><li><strong>Si hva du gjør før du gjør det.</strong> «Jeg deriverer og løser $f'(x)=0$ for å finne ekstremalpunktene.» Én setning er nok, og den viser at du vet hvorfor du regner.</li><li><strong>Definer alt du innfører.</strong> Kaller du sidekanten $x$, skriver du «la $x$ være sidekanten målt i cm». Uten det henger ikke resten av besvarelsen sammen.</li><li><strong>Én likhet per linje, med likhetstegnene under hverandre.</strong> Aldri to likhetstegn som betyr forskjellige ting på samme linje.</li><li><strong>Avslutt med en svarsetning med enhet.</strong> «Boksen bruker minst materiale når radien er 4,3 cm og høyden 8,6 cm.»</li></ol><p>Legg merke til hva oppgaveordet krever. «Vis at» betyr at svaret er oppgitt, og at du må regne hele veien fram til nøyaktig det uttrykket. «Bestem» og «regn ut» betyr at du finner svaret selv og viser metoden. «Forklar», «vurder» og «drøft» krever hele setninger med faglige begrunnelser — her taper mange elever mest, fordi de svarer med utregning der det skulle stått tekst.</p><p>Til slutt: ikke visk ut. Alt som står i besvarelsen blir vurdert, bortsett fra det du stryker over. Har du to forsøk på samme oppgave, stryker du over det du ikke vil ha vurdert. En ryddig skisse med navngitte punkter og akser regnes også som en del av forklaringen.</p>"
+      },
+      {
+        "tittel": "Dokumentasjon når du bruker hjelpemidler",
+        "html": "<p>I Del 2 er ikke svaret nok — sensor må se hva du har gjort. Dokumenter fire ting hver gang du bruker et digitalt verktøy: <strong>hvilket verktøy</strong>, <strong>hva du skrev inn</strong>, <strong>hva du fikk ut</strong> og <strong>hva det betyr</strong>.</p><p>Slik ser god dokumentasjon ut: «Jeg definerte $f(x)=x^{3}-6x^{2}+9x$ i CAS og brukte kommandoen Ekstremalpunkt. CAS gir punktene $(1, 4)$ og $(3, 0)$. Siden grafen stiger før $x=1$, er $(1,4)$ toppunktet, og $(3,0)$ er bunnpunktet.» Et innlimt skjermbilde av CAS-vinduet er helt greit, men det må stå en setning i klartekst som tolker resultatet. Et skjermbilde uten forklaring er ikke en besvarelse.</p><p>Har du brukt regresjon, skriver du hvilken modelltype du valgte og hvorfor. I regresjonsverktøyet i GeoGebra gir modelltypen «Vekst» et uttrykk på formen $a\\cdot b^{x}$, mens «Eksponentiell» gir formen $a\\cdot e^{bx}$. De to gir samme graf, men ser helt ulike ut i besvarelsen, så oppgi hvilken du brukte.</p><p>Og husk: <strong>rund av bare i svaret.</strong> Regn videre med eksakte uttrykk eller med full nøyaktighet i verktøyet. Runder du $\\ln 1{,}18 \\approx 0{,}17$ midt i en utregning, kan svaret bli feil allerede i andre siffer. Velg til slutt et antall desimaler som passer situasjonen: antall bakterier bør være et helt tall, en pengesum to desimaler.</p>"
+      },
+      {
+        "tittel": "Kjenn igjen oppgavetypen",
+        "html": "<p>De fleste eksamensoppgaver er varianter av et lite antall typer. Øver du på å oversette formuleringen til en metode, sparer du minutter på hver oppgave — og du slipper å lete i formelsamlingen.</p><table><thead><tr><th>Står det i oppgaven …</th><th>… så skal du</th></tr></thead><tbody><tr><td>«gjennomsnittlig vekstfart»</td><td>regne ut $\\frac{f(b)-f(a)}{b-a}$</td></tr><tr><td>«momentan vekstfart», «hvor raskt»</td><td>derivere og sette inn: $f'(a)$</td></tr><tr><td>«vis at $f'(x) = \\ldots$»</td><td>derivere og forenkle til nøyaktig det oppgitte uttrykket</td></tr><tr><td>«topp-, bunn- eller vendepunkt»</td><td>løse $f'(x)=0$ eller $f''(x)=0$ og bruke fortegnslinje</td></tr><tr><td>«største eller minste verdi»</td><td>drøfte $f'$ og i tillegg sjekke endepunktene i definisjonsområdet</td></tr><tr><td>«asymptote»</td><td>regne grenseverdier, og bruke polynomdivisjon ved skrå asymptote</td></tr><tr><td>«tangenten», «parallell med linja»</td><td>bruke $y=f'(a)(x-a)+f(a)$, eller løse $f'(x)=k$</td></tr><tr><td>«rettvinklet», «ortogonale»</td><td>vise at skalarproduktet er $0$</td></tr><tr><td>«vinkelen mellom»</td><td>bruke $\\cos\\alpha = \\frac{\\vec u\\cdot\\vec v}{|\\vec u|\\,|\\vec v|}$</td></tr><tr><td>«arealet av trekanten»</td><td>bruke halve determinanten i absoluttverdi</td></tr><tr><td>«finn en modell som passer»</td><td>gjøre regresjon i Del 2 og begrunne modelltypen</td></tr><tr><td>«har $f$ en omvendt funksjon?»</td><td>vise at $f$ er strengt voksende eller strengt avtagende</td></tr></tbody></table><p>Ingen av metodene hører til bare ett kapittel. En typisk eksamensoppgave henter uttrykket fra kapittel 1, deriverer det med reglene fra kapittel 3 og drøfter resultatet med verktøyene fra kapittel 4.</p>"
+      },
+      {
+        "tittel": "Ferdighetene Del 1 alltid tester",
+        "html": "<p>Del 1 er forutsigbar. Nesten alle oppgavene bygger på seks ferdigheter, og de bør sitte så godt at du ikke bruker tenketid på dem:</p><ul><li><strong>Potens- og logaritmeregler.</strong> Skriv om $\\sqrt[3]{x^{2}}$ til $x^{2/3}$, og løs $3^{x+1}=81$ ved å se at $81 = 3^{4}$.</li><li><strong>Andregradslikninger og faktorisering.</strong> $x^{2}-3x-4 = (x-4)(x+1)$. Faktoriser før du forkorter en brøk.</li><li><strong>Derivasjonsreglene, særlig kjerneregelen.</strong> At $\\left(e^{-x}\\right)' = -e^{-x}$ må komme uten at du tenker.</li><li><strong>Fortegnslinje.</strong> Faktoriser $f'$, marker nullpunktene og sjekk fortegnet til hver faktor for seg.</li><li><strong>Vektorregning på koordinatform.</strong> $\\overrightarrow{AB}$, lengde, skalarprodukt og determinant — alt uten kalkulator.</li><li><strong>Eksakte verdier.</strong> $\\sqrt{20} = 2\\sqrt{5}$ og $\\frac{1}{2}\\ln 4 = \\ln 2$. I Del 1 skal du ikke runde av.</li></ul><p>Den beste treningen er å ta gamle Del 1-sett på tid, uten hjelpemidler, og rette dem mot løsningsforslaget etterpå. Da oppdager du forskjellen mellom det du kjenner igjen når du ser det, og det du faktisk klarer å produsere selv. Skriv hver feil du gjør inn i en egen liste. Den listen er pensumet ditt de siste dagene før eksamen.</p>"
+      },
+      {
+        "tittel": "Slik henger kapitlene sammen i blandede oppgaver",
+        "html": "<p>Blandede oppgaver er ikke vanskeligere enn vanlige oppgaver. De krever bare at du henter fra flere kapitler i samme oppgave. Noen kombinasjoner går igjen på eksamen:</p><ul><li><strong>Kapittel 1 og 3:</strong> en funksjon med $e^{kx}$ eller $\\ln x$ som skal deriveres, og der du må bruke logaritmereglene for å løse $f'(x)=0$ eksakt.</li><li><strong>Kapittel 2 og 4:</strong> en rasjonal funksjon der du både skal finne asymptotene med grenseverdier og ekstremalpunktene med den deriverte.</li><li><strong>Kapittel 3 og 5:</strong> vis at $f'(x) > 0$ for alle $x$, og bruk det til å begrunne at $f$ er en-entydig og dermed har en omvendt funksjon.</li><li><strong>Kapittel 4 og 7:</strong> en praktisk modell der du skal finne når veksten er størst, altså toppunktet til $N'(t)$ — eller vendepunktet til $N$.</li><li><strong>Kapittel 6 og 7:</strong> en parameterframstilling der du deriverer koordinatfunksjonene for å finne fart og bevegelsesretning.</li></ul><p>Et lurt grep når du møter en slik oppgave: skriv i margen hvilket kapittel hver deloppgave hører til. Da ser du med én gang hvilke formler som er aktuelle, og du oppdager ofte at deloppgave d) bare er svaret fra c) satt inn i en ny sammenheng.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Del 1: to likninger og en definisjonsmengde",
+        "oppgave": "<p>Løs likningene uten hjelpemidler.</p><ol><li>$2^{2x} - 5\\cdot 2^{x} + 4 = 0$</li><li>$\\ln x + \\ln(x-3) = \\ln 4$</li></ol>",
+        "losning": "<p><strong>a)</strong> Nøkkelen er potensregelen $2^{2x} = \\left(2^{x}\\right)^{2}$. Da er likningen en andregradslikning i $2^{x}$. Vi setter $u = 2^{x}$ og merker oss at $u > 0$ for alle $x$:</p>$$u^{2} - 5u + 4 = 0$$<p>Andregradsformelen gir</p>$$u = \\frac{5 \\pm \\sqrt{25 - 16}}{2} = \\frac{5 \\pm 3}{2}$$<p>altså $u = 4$ eller $u = 1$. Begge er positive, så begge er mulige verdier for $2^{x}$. Vi går tilbake til $x$:</p>$$2^{x} = 4 = 2^{2} \\;\\Longrightarrow\\; x = 2, \\qquad 2^{x} = 1 = 2^{0} \\;\\Longrightarrow\\; x = 0$$<p><strong>Svar:</strong> $x = 0$ eller $x = 2$.</p><p><strong>b)</strong> Her må definisjonsmengden på plass <em>først</em>. Begge logaritmene krever positivt argument: $x > 0$ og $x - 3 > 0$, altså $x > 3$.</p><p>Logaritmeregelen $\\ln a + \\ln b = \\ln(ab)$ gir</p>$$\\ln\\left(x(x-3)\\right) = \\ln 4$$<p>Siden $\\ln$ gir samme verdi bare for samme argument, kan vi sette argumentene lik hverandre:</p>$$x(x-3) = 4 \\quad \\Longrightarrow \\quad x^{2} - 3x - 4 = 0$$$$x = \\frac{3 \\pm \\sqrt{9 + 16}}{2} = \\frac{3 \\pm 5}{2}$$<p>Det gir $x = 4$ eller $x = -1$. Men $x = -1$ ligger utenfor definisjonsmengden $x > 3$ og må forkastes — $\\ln(-1)$ finnes ikke. Andregradslikningen «vet» ingenting om logaritmene, så denne kontrollen er du nødt til å gjøre selv.</p><p>Kontroll med $x = 4$:</p>$$\\ln 4 + \\ln(4-3) = \\ln 4 + \\ln 1 = \\ln 4 + 0 = \\ln 4$$<p><strong>Svar:</strong> $x = 4$.</p>"
+      },
+      {
+        "tittel": "Del 1: derivasjon, fortegnslinje og grenseverdi i samme oppgave",
+        "oppgave": "<p>Funksjonen $f$ er gitt ved $f(x) = x^{2}e^{-x}$.</p><ol><li>Vis at $f'(x) = x(2-x)e^{-x}$.</li><li>Bestem eventuelle topp- og bunnpunkter på grafen til $f$.</li><li>Bestem $\\lim_{x \\to \\infty} f(x)$, og forklar hva grenseverdien betyr for grafen.</li></ol>",
+        "losning": "<p><strong>a)</strong> Uttrykket er et produkt, så vi bruker produktregelen med</p>$$u = x^{2} \\quad \\text{og} \\quad v = e^{-x}$$<p>Vi deriverer hver faktor. Den første er rett fram, $u' = 2x$. Den andre krever kjerneregelen: kjernen er $-x$, som har derivert $-1$, så $v' = e^{-x}\\cdot(-1) = -e^{-x}$. Produktregelen $(uv)' = u'v + uv'$ gir</p>$$f'(x) = 2x\\cdot e^{-x} + x^{2}\\cdot\\left(-e^{-x}\\right) = e^{-x}\\left(2x - x^{2}\\right)$$<p>Til slutt setter vi $x$ utenfor parentesen: $2x - x^{2} = x(2-x)$. Dermed er</p>$$f'(x) = x(2-x)e^{-x}$$<p>som var det vi skulle vise.</p><p><strong>b)</strong> Vi løser $f'(x) = 0$. Siden $e^{-x} > 0$ for alle $x$, kan aldri denne faktoren gjøre produktet null. Da er</p>$$f'(x) = 0 \\iff x(2-x) = 0 \\iff x = 0 \\;\\text{ eller }\\; x = 2$$<p>Fortegnslinja avgjør hvilken type punktene er. Vi ser på fortegnet til hver faktor:</p><table><thead><tr><th>Faktor</th><th>$x < 0$</th><th>$x = 0$</th><th>$0 < x < 2$</th><th>$x = 2$</th><th>$x > 2$</th></tr></thead><tbody><tr><td>$x$</td><td>$-$</td><td>$0$</td><td>$+$</td><td>$+$</td><td>$+$</td></tr><tr><td>$2-x$</td><td>$+$</td><td>$+$</td><td>$+$</td><td>$0$</td><td>$-$</td></tr><tr><td>$e^{-x}$</td><td>$+$</td><td>$+$</td><td>$+$</td><td>$+$</td><td>$+$</td></tr><tr><td>$f'(x)$</td><td>$-$</td><td>$0$</td><td>$+$</td><td>$0$</td><td>$-$</td></tr></tbody></table><p>Fortegnet til $f'$ går fra $-$ til $+$ i $x=0$, altså bunnpunkt, og fra $+$ til $-$ i $x=2$, altså toppunkt. Vi regner ut funksjonsverdiene:</p>$$f(0) = 0^{2}\\cdot e^{0} = 0, \\qquad f(2) = 2^{2}e^{-2} = \\frac{4}{e^{2}}$$<p><strong>Svar:</strong> bunnpunkt $(0,\\, 0)$ og toppunkt $\\left(2,\\, \\frac{4}{e^{2}}\\right)$. Med $e^{2} \\approx 7{,}389$ er $\\frac{4}{e^{2}} \\approx 0{,}54$, så toppunktet ligger omtrent i $(2;\\, 0{,}54)$.</p><p><strong>c)</strong> Skriv om til en brøk:</p>$$f(x) = \\frac{x^{2}}{e^{x}}$$<p>Både teller og nevner går mot uendelig, men $e^{x}$ vokser mye raskere enn $x^{2}$. Grenseverdien er derfor</p>$$\\lim_{x \\to \\infty} \\frac{x^{2}}{e^{x}} = 0$$<p>Du kan overbevise deg med tall: $f(10) = 100\\cdot e^{-10} \\approx 100\\cdot 0{,}0000454 = 0{,}0045$, og $f(20) = 400\\cdot e^{-20} \\approx 8{,}2\\cdot 10^{-7}$.</p><p>For grafen betyr dette at linja $y = 0$ er en <strong>horisontal asymptote</strong> når $x$ vokser. Siden $f(x) > 0$ for alle $x \\neq 0$, nærmer grafen seg asymptoten ovenfra. Mot venstre skjer det motsatte: når $x \\to -\\infty$, vokser både $x^{2}$ og $e^{-x}$, så $f(x) \\to \\infty$.</p>"
+      },
+      {
+        "tittel": "Vektorer: parameter, areal og vinkel",
+        "oppgave": "<p>Vektorene er $\\vec u = [2,\\; t]$ og $\\vec v = [t+1,\\; 3]$.</p><ol><li>Bestem $t$ slik at $\\vec u$ og $\\vec v$ er ortogonale.</li><li>Bestem $t$ slik at $\\vec u$ og $\\vec v$ er parallelle.</li><li>Punktene $A(1,1)$, $B(5,2)$ og $C(3,6)$ er gitt. Bestem arealet av trekanten $ABC$ eksakt, og finn vinkelen $A$ med hjelpemidler.</li></ol>",
+        "losning": "<p><strong>a)</strong> Ortogonale vektorer har skalarprodukt $0$:</p>$$\\vec u\\cdot\\vec v = 2(t+1) + t\\cdot 3 = 2t + 2 + 3t = 5t + 2$$$$5t + 2 = 0 \\quad \\Longrightarrow \\quad t = -\\frac{2}{5}$$<p>Kontroll: med $t = -\\frac{2}{5}$ er $\\vec u = \\left[2,\\, -\\frac{2}{5}\\right]$ og $\\vec v = \\left[\\frac{3}{5},\\, 3\\right]$, og</p>$$\\vec u \\cdot \\vec v = 2\\cdot\\frac{3}{5} + \\left(-\\frac{2}{5}\\right)\\cdot 3 = \\frac{6}{5} - \\frac{6}{5} = 0$$<p><strong>b)</strong> To vektorer er parallelle når determinanten er $0$:</p>$$a_1b_2 - a_2b_1 = 2\\cdot 3 - t(t+1) = 6 - t^{2} - t$$<p>Vi setter uttrykket lik $0$ og ganger med $-1$ for å få positiv $t^{2}$-koeffisient:</p>$$t^{2} + t - 6 = 0$$$$t = \\frac{-1 \\pm \\sqrt{1 + 24}}{2} = \\frac{-1 \\pm 5}{2}$$<p>Det gir $t = 2$ eller $t = -3$. Kontroll: for $t=2$ er $\\vec u = [2,2]$ og $\\vec v = [3,3] = 1{,}5\\,\\vec u$, og for $t=-3$ er $\\vec u = [2,-3]$ og $\\vec v = [-2,3] = -\\vec u$. Begge er altså parallelle, den ene med samme retning og den andre med motsatt.</p><p><strong>c)</strong> Først sidevektorene ut fra $A$:</p>$$\\overrightarrow{AB} = [5-1,\\; 2-1] = [4,\\; 1], \\qquad \\overrightarrow{AC} = [3-1,\\; 6-1] = [2,\\; 5]$$<p>Arealet av trekanten er halve determinanten i absoluttverdi:</p>$$A_{\\triangle} = \\frac{1}{2}\\left|4\\cdot 5 - 1\\cdot 2\\right| = \\frac{1}{2}\\cdot 18 = 9$$<p>Arealet er altså $9$ arealenheter — et eksakt svar du kunne funnet i Del 1.</p><p>Vinkelen $A$ er vinkelen mellom de samme to vektorene. Vi bruker skalarproduktet:</p>$$\\overrightarrow{AB}\\cdot\\overrightarrow{AC} = 4\\cdot 2 + 1\\cdot 5 = 13$$$$\\left|\\overrightarrow{AB}\\right| = \\sqrt{4^{2}+1^{2}} = \\sqrt{17}, \\qquad \\left|\\overrightarrow{AC}\\right| = \\sqrt{2^{2}+5^{2}} = \\sqrt{29}$$$$\\cos A = \\frac{13}{\\sqrt{17}\\cdot\\sqrt{29}} = \\frac{13}{\\sqrt{493}} \\approx 0{,}5855$$$$A \\approx 54{,}2^\\circ$$<p>Kontroll av at de to svarene henger sammen: arealet kan også regnes som $\\frac{1}{2}\\left|\\overrightarrow{AB}\\right|\\left|\\overrightarrow{AC}\\right|\\sin A \\approx \\frac{1}{2}\\cdot 22{,}20\\cdot 0{,}811 \\approx 9{,}0$. Det stemmer med determinantsvaret.</p>"
+      },
+      {
+        "tittel": "Del 2: eksponentiell modell for en bakteriekultur",
+        "oppgave": "<p>I et forsøk måles antall bakterier $N$ i en kultur:</p><table><thead><tr><th>Tid $t$ (timer)</th><th>$0$</th><th>$4$</th><th>$8$</th><th>$12$</th></tr></thead><tbody><tr><td>Antall $N$</td><td>$250$</td><td>$485$</td><td>$940$</td><td>$1820$</td></tr></tbody></table><ol><li>Forklar hvorfor en eksponentiell modell passer, og bestem modellen.</li><li>Hva er doblingstiden?</li><li>Hvor raskt vokser bestanden etter 10 timer?</li><li>Vurder modellen. Hva sier den om antallet etter to døgn?</li></ol>",
+        "losning": "<p><strong>a)</strong> Se på forholdet mellom nabomålingene, som ligger fire timer fra hverandre:</p>$$\\frac{485}{250} = 1{,}94, \\qquad \\frac{940}{485} \\approx 1{,}94, \\qquad \\frac{1820}{940} \\approx 1{,}94$$<p>Antallet blir ganget med omtrent det samme tallet for hvert like store tidssteg. Det er nettopp kjennetegnet på eksponentiell vekst, og derfor passer modellen $N(t) = N_0\\cdot a^{t}$.</p><p>Vekstfaktoren per time finner vi ved å ta fjerderoten, siden 1,94 gjelder for fire timer:</p>$$a = 1{,}94^{1/4} \\approx 1{,}18$$<p>Startverdien leser vi av ved $t=0$: $N_0 = 250$. Regresjon bekrefter dette. (I GeoGebra: legg punktene i regnearket, marker dem og velg Regresjonsanalyse med modelltypen «Vekst», som gir formen $a\\cdot b^{x}$.) Modellen blir</p>$$N(t) = 250\\cdot 1{,}18^{t}$$<p>Siden $\\ln 1{,}18 \\approx 0{,}1655$, er dette det samme som $N(t) = 250\\,e^{0{,}166t}$ — velger du modelltypen «Eksponentiell» i stedet, er det dette uttrykket du får.</p><p><strong>b)</strong> Doblingstiden er den $t$ som gir dobbelt så mange bakterier som ved start:</p>$$250\\cdot 1{,}18^{t} = 500 \\quad \\Longrightarrow \\quad 1{,}18^{t} = 2$$<p>Vi tar $\\ln$ på begge sider og bruker $\\ln a^{t} = t\\ln a$:</p>$$t\\ln 1{,}18 = \\ln 2 \\quad \\Longrightarrow \\quad t = \\frac{\\ln 2}{\\ln 1{,}18} = \\frac{0{,}6931}{0{,}1655} \\approx 4{,}19$$<p>Legg merke til at startverdien $250$ forkortet bort — doblingstiden er uavhengig av hvor mange bakterier du starter med. Siden $0{,}19\\cdot 60 \\approx 11$, er svaret <strong>omtrent 4 timer og 11 minutter</strong>.</p><p><strong>c)</strong> «Hvor raskt» betyr vekstfart, altså den deriverte. Med $\\left(a^{t}\\right)' = a^{t}\\ln a$ får vi</p>$$N'(t) = 250\\cdot 1{,}18^{t}\\cdot \\ln 1{,}18$$<p>Vi setter inn $t = 10$. Først $1{,}18^{10} \\approx 5{,}234$, som gir $N(10) = 250\\cdot 5{,}234 \\approx 1308$ bakterier. Da er</p>$$N'(10) = 250\\cdot 5{,}234\\cdot 0{,}1655 \\approx 216{,}6$$<p><strong>Svar:</strong> etter 10 timer vokser bestanden med omtrent 217 bakterier per time.</p><p><strong>d)</strong> Modellen treffer måledataene godt, siden forholdstallene i a) var nesten identiske. Men eksponentiell vekst forutsetter ubegrenset plass og næring. To døgn er $t = 48$, og da gir modellen</p>$$N(48) = 250\\cdot 1{,}18^{48} \\approx 7\\cdot 10^{5}$$<p>altså rundt 700 000 bakterier — og etter en uke ville tallet vært astronomisk. I virkeligheten flater veksten ut når næringen tar slutt, slik en logistisk modell beskriver. Konklusjonen er derfor at modellen er god innenfor de 12 timene som er målt, men usikker når du ekstrapolerer langt utenfor måleområdet.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å skrive bare svaret i Del 1. Selv om tallet er riktig, gir en oppgave uten mellomregning lite uttelling, fordi sensor vurderer framgangsmåten.",
+      "Å bruke CAS i Del 2 uten dokumentasjon. «GeoGebra gir $x = 3$» er ikke nok — funksjonsuttrykket, kommandoen og en tolkning av svaret må være med.",
+      "Å runde av underveis. Regner du videre med $\\ln 1{,}18 \\approx 0{,}17$, blir doblingstiden $4{,}1$ i stedet for $4{,}19$ timer, og feilen vokser gjennom oppgaven.",
+      "Å glemme definisjonsmengden i logaritme- og rotlikninger, slik at en falsk løsning som $x = -1$ blir stående i svaret.",
+      "Å levere nakne tall i praktiske oppgaver. «$x = 4{,}3$» er ikke et svar; «radien er 4,3 cm» er.",
+      "Å bruke 30 minutter på den vanskeligste deloppgaven og la den siste oppgaven stå urørt. To halvferdige oppgaver gir mer uttelling enn én perfekt og én blank."
+    ],
+
+    "tips": [
+      "Ta gamle Del 1-sett som ekte prøver: sett klokka på tre timer, legg bort kalkulator og formelsamling, og rett mot løsningsforslaget etterpå. Det avslører forskjellen mellom å kjenne igjen og å kunne.",
+      "Lag et «Del 1-kort» med de 15 formlene du oftest glemmer, og skriv det ned fra hukommelsen hver morgen i eksamensuka. I Del 1 har du ingen formelsamling.",
+      "Skriv et tidsbudsjett med klokkeslett i margen på oppgavearket før du begynner å regne, og sett av det siste kvarteret av hver del til kontroll.",
+      "Står du fast, skriv metoden likevel: «her ville jeg løst $f'(x)=0$ og satt opp fortegnslinje for å finne toppunktet». Det viser at du har forstått framgangsmåten.",
+      "Gjør de tre samme kontrollene på hver oppgave før du leverer: har svaret enhet og svarsetning, ender hver «vis at» i nøyaktig det oppgitte uttrykket, og er størrelsen på svaret rimelig?"
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Del 1", "forklaring": "Den delen av eksamen du løser uten hjelpemidler, med bare skrivesaker, passer, linjal og vinkelmåler. Den leveres inn før du får bruke digitale verktøy." },
+    { "begrep": "Del 2", "forklaring": "Den delen der alle hjelpemidler er tillatt bortsett fra internett og andre verktøy som gir mulighet for kommunikasjon." },
+    { "begrep": "CAS", "forklaring": "Symbolregning på datamaskin (Computer Algebra System), for eksempel CAS-vinduet i GeoGebra, som kan løse likninger og derivere med bokstaver." },
+    { "begrep": "Dokumentasjon", "forklaring": "Det du skriver i besvarelsen om hvilket verktøy du brukte, hva du skrev inn, hva du fikk, og hva resultatet betyr." },
+    { "begrep": "«Vis at»", "forklaring": "Oppgaveformulering der svaret er oppgitt. Du må regne hele veien fram til nøyaktig det uttrykket; å kontrollere én tallverdi er ikke nok." },
+    { "begrep": "«Bestem»", "forklaring": "Oppgaveformulering der du selv skal finne svaret og vise metoden du brukte. Brukes ofte om både eksakte og tilnærmede svar." },
+    { "begrep": "«Drøft» og «vurder»", "forklaring": "Formuleringer som krever tekst: du skal begrunne, sammenligne eller ta stilling til noe med faglige argumenter, ikke bare regne." },
+    { "begrep": "Eksakt svar", "forklaring": "Et svar uten avrunding, som $\\ln 2$, $\\frac{4}{e^{2}}$ eller $2\\sqrt{5}$. Dette er normalen i Del 1." },
+    { "begrep": "Signalord", "forklaring": "Ord i oppgaveteksten som peker rett på metoden, som «vekstfart» (derivasjon), «ortogonal» (skalarprodukt) og «modell» (regresjon)." },
+    { "begrep": "Rimelighetsvurdering", "forklaring": "Å sjekke om svaret er fornuftig i størrelse, fortegn og enhet før du går videre — en negativ lengde eller en fart på 500 m/s er et varsel." },
+    { "begrep": "Fortegnslinje", "forklaring": "Skjema der du markerer fortegnet til hver faktor i et uttrykk, oftest $f'$, for å avgjøre hvor funksjonen vokser og avtar." },
+    { "begrep": "Definisjonsmengde", "forklaring": "Alle $x$-verdiene funksjonen er definert for. Må sjekkes særlig i brøker, kvadratrøtter og logaritmer, og brukes til å forkaste falske løsninger." },
+    { "begrep": "Regresjon", "forklaring": "Å tilpasse en funksjon av en valgt type til måledata med et digitalt verktøy. Modelltypen må begrunnes ut fra hvordan punktene ligger." },
+    { "begrep": "Interpolering og ekstrapolering", "forklaring": "Å bruke en modell innenfor måleområdet (interpolering) er trygt; å bruke den langt utenfor (ekstrapolering) gir fort urealistiske svar." },
+    { "begrep": "Helhetsvurdering", "forklaring": "Sensor vurderer besvarelsen samlet ut fra kjennetegn på måloppnåelse, der framgangsmåte, forklaring og kommunikasjon teller sammen med riktige svar." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Du har levert inn Del 1 på eksamen i R1. Hvilke hjelpemidler kan du bruke i Del 2?",
+      "alternativer": [
+        "Bare kalkulator og formelsamling",
+        "Skrivesaker, passer, linjal og vinkelmåler",
+        "Alle hjelpemidler, også internett, så lenge du oppgir kilden",
+        "Alle hjelpemidler unntatt internett og andre verktøy for kommunikasjon"
+      ],
+      "riktig": 3,
+      "forklaring": "I Del 2 er alle hjelpemidler tillatt bortsett fra internett og verktøy som gjør det mulig å kommunisere med andre. Alternativ B er nettopp hjelpemidlene som gjelder i Del 1, og som mange blander sammen med Del 2-reglene."
+    },
+    {
+      "sporsmal": "Hva er løsningen av likningen $\\ln x + \\ln(x-3) = \\ln 4$?",
+      "alternativer": ["$x = 4$ og $x = -1$", "$x = 7$", "$x = 4$", "$x = -1$"],
+      "riktig": 2,
+      "forklaring": "Likningen blir $x(x-3) = 4$, altså $x^{2}-3x-4=0$ med røttene $4$ og $-1$. Bare $x=4$ ligger i definisjonsmengden $x > 3$; $\\ln(-1)$ finnes ikke, så $x=-1$ er en falsk løsning. Alternativ A er den klassiske feilen: å svare med begge røttene fra andregradslikningen uten å sjekke definisjonsmengden."
+    },
+    {
+      "sporsmal": "Vektorene er $\\vec u = [3,\\, -2]$ og $\\vec v = [4,\\, 6]$. Hva kan du si om dem?",
+      "alternativer": [
+        "De er parallelle",
+        "De er ortogonale",
+        "De har samme lengde",
+        "Vinkelen mellom dem er $45^\\circ$"
+      ],
+      "riktig": 1,
+      "forklaring": "Skalarproduktet er $3\\cdot 4 + (-2)\\cdot 6 = 12 - 12 = 0$, og da står vektorene normalt på hverandre. Parallellitet ville krevd at determinanten var null, men $3\\cdot 6 - (-2)\\cdot 4 = 26$. Lengdene er $\\sqrt{13}$ og $\\sqrt{52} = 2\\sqrt{13}$, altså ulike."
+    },
+    {
+      "sporsmal": "En oppgave sier: «Vis at $f'(x) = \\frac{2}{(x+1)^{2}}$». Hva er en fullgod besvarelse?",
+      "alternativer": [
+        "Å kontrollere at de to uttrykkene gir samme verdi for $x = 1$",
+        "Å derivere med kvotientregelen og regne ut telleren helt til uttrykket står slik oppgaven sier",
+        "Å skrive at dette stemmer, siden svaret allerede er oppgitt",
+        "Å plotte begge uttrykkene og se at grafene ligner"
+      ],
+      "riktig": 1,
+      "forklaring": "En «vis at»-oppgave krever en fullstendig utregning som ender i nøyaktig det oppgitte uttrykket. At to uttrykk er like i ett punkt, eller at grafene ser like ut på skjermen, utelukker ikke at de er ulike andre steder — det er en sjekk, ikke et bevis. Merk at du gjerne kan bruke det oppgitte uttrykket videre i neste deloppgave selv om du ikke fikk vist det."
+    },
+    {
+      "sporsmal": "Du har brukt 25 minutter på én deloppgave i Del 1 og står fortsatt fast. Hva er lurest?",
+      "alternativer": [
+        "Fortsette til du får det til, siden halvferdige svar ikke gir uttelling",
+        "Stryke over alt du har skrevet, så det ikke trekker ned",
+        "Hoppe over resten av oppgaven også, siden deloppgavene bygger på hverandre",
+        "Skrive ned metoden du ville brukt, gå videre i settet, og komme tilbake hvis du får tid"
+      ],
+      "riktig": 3,
+      "forklaring": "Delvise løsninger og riktig metode gir uttelling, så det du har, skal bli stående — og resten av settet er ofte lettere. Å stryke over arbeidet fjerner det fra vurderingen, og å hoppe over hele oppgaven er unødvendig, for du kan bruke et oppgitt resultat fra a) i b) uten å ha løst a)."
+    },
+    {
+      "sporsmal": "Funksjonen er $f(x) = x^{2}e^{-x}$. Hva er $f'(x)$?",
+      "alternativer": ["$2xe^{-x}$", "$-2xe^{-x}$", "$x(2-x)e^{-x}$", "$(2x - x^{2})e^{x}$"],
+      "riktig": 2,
+      "forklaring": "Produktregelen gir $2x\\cdot e^{-x} + x^{2}\\cdot\\left(-e^{-x}\\right) = e^{-x}(2x-x^{2}) = x(2-x)e^{-x}$. Alternativ A er feilen der man glemmer det andre leddet, altså at $e^{-x}$ også skal deriveres. Alternativ D har riktig parentes, men feil fortegn i eksponenten."
+    },
+    {
+      "sporsmal": "En bestand vokser etter modellen $N(t) = 250\\cdot 1{,}18^{t}$, der $t$ er tiden i timer. Hva er doblingstiden?",
+      "alternativer": [
+        "$\\frac{\\ln 2}{\\ln 1{,}18} \\approx 4{,}2$ timer",
+        "$\\frac{\\ln 1{,}18}{\\ln 2} \\approx 0{,}24$ timer",
+        "$\\frac{500}{250} = 2$ timer",
+        "$\\frac{\\ln 500}{\\ln 1{,}18} \\approx 37{,}6$ timer"
+      ],
+      "riktig": 0,
+      "forklaring": "Sett $1{,}18^{t} = 2$ og ta logaritmen: $t\\ln 1{,}18 = \\ln 2$, altså $t = \\frac{\\ln 2}{\\ln 1{,}18} \\approx 4{,}19$. Startverdien forkortes bort, så doblingstiden er uavhengig av de 250 bakteriene. Alternativ D er det du får hvis du glemmer å dele på $250$ først og løser $1{,}18^{t} = 500$."
+    },
+    {
+      "sporsmal": "I Del 1 finner du at tangentens stigningstall er $\\frac{1}{2}\\ln 4$. Hva bør du skrive som svar?",
+      "alternativer": [
+        "$0{,}69$, siden svar skal oppgis som desimaltall",
+        "$\\ln 16$, fordi $\\frac{1}{2}\\ln 4 = \\ln 4^{2}$",
+        "$\\frac{1}{2}\\ln 4$, gjerne forenklet til $\\ln 2$",
+        "$\\frac{\\ln 4}{\\ln 2}$, fordi $2$-en kan skrives som $\\ln 2$"
+      ],
+      "riktig": 2,
+      "forklaring": "Uten hjelpemidler skal svaret være eksakt, og logaritmeregelen $k\\ln a = \\ln a^{k}$ med $k = \\frac{1}{2}$ gir $\\ln 4^{1/2} = \\ln 2$. Alternativ B bruker eksponenten $2$ i stedet for $\\frac{1}{2}$, og alternativ D forveksler det å dele på tallet $2$ med å dele på $\\ln 2$ — den brøken er faktisk lik $2$."
+    },
+    {
+      "sporsmal": "Du har funnet at $f'(x) = 3x^{2} - 12$. Hvor er $f$ voksende?",
+      "alternativer": [
+        "For $-2 < x < 2$",
+        "For $x < -2$ eller $x > 2$",
+        "For $x > 0$",
+        "Bare for $x > 2$"
+      ],
+      "riktig": 1,
+      "forklaring": "Faktoriser: $f'(x) = 3(x-2)(x+2)$, med nullpunkter $x = \\pm 2$. En andregradsfunksjon med positiv koeffisient foran $x^{2}$ er positiv utenfor nullpunktene, så $f' > 0$ der. Alternativ A er intervallet der $f'$ er negativ og $f$ altså avtar, og alternativ D glemmer den venstre grenen."
+    },
+    {
+      "sporsmal": "Du får en tabell med måledata i Del 2 og skal «finne en modell som passer». Hva må besvarelsen inneholde?",
+      "alternativer": [
+        "Hvilken regresjonstype du valgte, funksjonsuttrykket du fikk, og en begrunnelse for valget",
+        "Bare funksjonsuttrykket, med koeffisientene avrundet til to desimaler",
+        "Alle måledataene skrevet opp på nytt i en tabell",
+        "Et skjermbilde av grafen, uten forklarende tekst"
+      ],
+      "riktig": 0,
+      "forklaring": "Modellvalget er selve faget her, så det må begrunnes — for eksempel med at forholdet mellom nabomålingene er tilnærmet konstant, noe som peker mot eksponentiell vekst. Et skjermbilde eller et bart funksjonsuttrykk viser ikke at du har vurdert noe, og gir derfor lav uttelling selv om uttrykket er riktig."
+    },
+    {
+      "sporsmal": "Punktene er $A(1,1)$, $B(5,2)$ og $C(3,6)$. Hva er arealet av trekanten $ABC$?",
+      "alternativer": ["$9$", "$18$", "$4{,}5$", "$13$"],
+      "riktig": 0,
+      "forklaring": "Med $\\overrightarrow{AB} = [4,1]$ og $\\overrightarrow{AC} = [2,5]$ er determinanten $4\\cdot 5 - 1\\cdot 2 = 18$. Det er arealet av parallellogrammet, og trekanten er halvparten: $9$. Alternativ B er den vanligste feilen, at man glemmer faktoren $\\frac{1}{2}$, mens $13$ er skalarproduktet $\\overrightarrow{AB}\\cdot\\overrightarrow{AC}$."
+    },
+    {
+      "sporsmal": "Hvorfor har $f(x) = x^{3} + 2x$ en omvendt funksjon for alle reelle $x$?",
+      "alternativer": [
+        "Fordi $f(0) = 0$",
+        "Fordi $f'(x) = 3x^{2} + 2 > 0$ for alle $x$, så $f$ er strengt voksende og dermed en-entydig",
+        "Fordi grafen er symmetrisk om linja $y = x$",
+        "Fordi $f$ er et polynom, og alle polynomer har en omvendt funksjon"
+      ],
+      "riktig": 1,
+      "forklaring": "En funksjon har omvendt funksjon når den er en-entydig, og det viser du enklest ved at den deriverte har fast fortegn i hele definisjonsmengden. Her er $3x^{2} \\ge 0$, så $f'(x) \\ge 2 > 0$. Alternativ D er galt: $f(x) = x^{2}$ er et polynom, men gir samme verdi for $x$ og $-x$. Symmetri om $y=x$ er en egenskap ved grafen til $f$ og $f^{-1}$ sammen, ikke et krav til $f$."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Hvor lang tid har du på eksamen i R1, og hvordan er den delt?", "bak": "5 timer i alt. Del 1 løses uten hjelpemidler og leveres inn før du får bruke verktøy, deretter Del 2 med hjelpemidler. Klokkeslettene står på forsiden av settet; de siste årene har delingen vært 3 + 2 timer." },
+    { "front": "Hvilke hjelpemidler er tillatt i Del 1?", "bak": "Vanlige skrivesaker, passer, linjal og vinkelmåler. Ingen kalkulator og ingen formelsamling." },
+    { "front": "Hva betyr «Vis at» i en oppgavetekst?", "bak": "Svaret er oppgitt, og du må vise en fullstendig utregning som ender i nøyaktig det uttrykket. Å sette inn én tallverdi er ikke nok. Du kan bruke resultatet videre selv om du ikke klarte å vise det." },
+    { "front": "Hva må følge med når du bruker CAS i Del 2?", "bak": "Hvilket verktøy du brukte, hva du skrev inn (funksjon og kommando), hva du fikk ut, og en setning som tolker svaret i oppgavens sammenheng." },
+    { "front": "Signalord: «momentan vekstfart» eller «hvor raskt»", "bak": "Deriver og sett inn: regn ut $f'(a)$. Husk enhet, for eksempel bakterier per time." },
+    { "front": "Signalord: «største eller minste verdi»", "bak": "Løs $f'(x) = 0$, sett opp fortegnslinje for $f'$, og sjekk i tillegg endepunktene i definisjonsområdet." },
+    { "front": "Signalord: «vinkelen mellom»", "bak": "Skalarproduktet: $\\cos\\alpha = \\frac{\\vec u\\cdot\\vec v}{|\\vec u|\\,|\\vec v|}$." },
+    { "front": "Signalord: «vis at trekanten er rettvinklet»", "bak": "Regn skalarproduktet av to sidevektorer og vis at det er $0$." },
+    { "front": "Signalord: «arealet av trekanten $ABC$»", "bak": "$A_{\\triangle} = \\frac{1}{2}\\left|a_1b_2 - a_2b_1\\right|$ med $\\vec a = \\overrightarrow{AB}$ og $\\vec b = \\overrightarrow{AC}$ — halve determinanten i absoluttverdi." },
+    { "front": "Doblingstid i modellen $N(t) = N_0\\cdot a^{t}$", "bak": "$t_2 = \\frac{\\ln 2}{\\ln a}$. Startverdien $N_0$ forkortes bort, så doblingstiden er uavhengig av den." },
+    { "front": "Hva må du alltid sjekke etter å ha løst en logaritmelikning?", "bak": "Definisjonsmengden. Argumentet i $\\ln$ må være positivt, så løsninger som gir logaritme av $0$ eller av et negativt tall må forkastes." },
+    { "front": "Når skal du runde av?", "bak": "Helt til slutt. Regn videre med eksakte uttrykk eller full nøyaktighet i verktøyet, og oppgi så svaret med et fornuftig antall desimaler og riktig enhet." },
+    { "front": "Hva gjør du hvis du står fast på en deloppgave?", "bak": "Skriv ned metoden du ville brukt, sett et merke i margen og gå videre. Metode gir uttelling, og du kan bruke et oppgitt resultat fra a) videre i b)." },
+    { "front": "Hvordan viser du at $f$ har en omvendt funksjon?", "bak": "Vis at $f$ er strengt voksende eller strengt avtagende, typisk ved at $f'(x) > 0$ (eller $f'(x) < 0$) i hele definisjonsmengden. Da er $f$ en-entydig." },
+    { "front": "Tre kontroller før du leverer", "bak": "1) Har hvert svar enhet og en svarsetning? 2) Ender hver «vis at» i nøyaktig det oppgitte uttrykket? 3) Er svaret rimelig i størrelse og fortegn?" },
+    { "front": "Hvorfor bør du ikke viske ut i besvarelsen?", "bak": "Alt som står, blir vurdert, bortsett fra det du stryker over. Delvise utregninger kan gi uttelling, så la dem stå — og stryk bare over det du selv vil at sensor skal se bort fra." }
+  ]
+}

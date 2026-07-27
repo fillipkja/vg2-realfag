@@ -1,0 +1,240 @@
+{
+  "fag": "kjemi",
+  "nr": 1,
+  "tittel": "Kjemiske bindinger",
+  "intro": "Kapittelet handler om hvorfor atomer holder sammen, og hvordan elektronene er fordelt når de gjør det. Får du grep om elektronkonfigurasjon og de tre bindingstypene, kan du forutsi form, smeltepunkt og løselighet for stoffene resten av Kjemi 1 dreier seg om.",
+
+  "kompakt": {
+    "punkter": [
+      "Kjernen inneholder protoner og nøytroner, elektronene ligger utenfor. Atomnummeret $Z$ er antall protoner, og massetallet er $A = Z + N$.",
+      "Elektronene fyller orbitalene fra lavest energi: $1s\\,2s\\,2p\\,3s\\,3p\\,4s\\,3d\\,4p$. Legg merke til at $4s$ fylles før $3d$.",
+      "Hver orbital har plass til to elektroner. Det gir plass til 2 elektroner i $s$, 6 i $p$ og 10 i $d$.",
+      "Valenselektronene er elektronene i ytterste skall, og de bestemmer nesten all kjemi til atomet.",
+      "I periodesystemet gir periodenummeret ytterste skall, og gruppenummeret gir antall valenselektroner: gruppe 1–2 har 1–2, gruppe 13–18 har gruppenummer minus 10.",
+      "Elektronegativitet og ioniseringsenergi øker mot høyre og oppover i periodesystemet, mens atomradien øker mot venstre og nedover.",
+      "Ionebinding: et metall gir elektroner til et ikkemetall, og de motsatt ladde ionene bygger et ionegitter. Formelen er en formelenhet som bare viser forholdstallet.",
+      "Kovalent binding: to ikkemetallatomer deler elektronpar til hvert atom har åtte elektroner i ytterste skall (oktettregelen). Hydrogen nøyer seg med to.",
+      "Formen på et molekyl følger av at elektronparene rundt sentralatomet frastøter hverandre (VSEPR). Frie elektronpar tar mer plass enn bindende og presser vinkelen ned.",
+      "Et molekyl er polart bare hvis det både har polare bindinger og en usymmetrisk form. $\\ce{CO2}$ har polare bindinger, men er upolart fordi dipolene opphever hverandre."
+    ],
+    "formler": [
+      { "navn": "Massetall", "latex": "A = Z + N" },
+      { "navn": "Maks antall elektroner i skall nr. $n$", "latex": "2n^{2}" },
+      { "navn": "Oppfyllingsrekkefølge for orbitalene", "latex": "1s\\;2s\\;2p\\;3s\\;3p\\;4s\\;3d\\;4p\\;5s" },
+      { "navn": "Plass i orbitaltypene", "latex": "s: 2 \\qquad p: 6 \\qquad d: 10" },
+      { "navn": "Ladningen til et ion", "latex": "\\text{ladning} = (\\text{antall protoner}) - (\\text{antall elektroner})" },
+      { "navn": "Antall elektronpar i en elektronparformel", "latex": "\\text{antall par} = \\frac{\\text{sum av valenselektroner}}{2}" },
+      { "navn": "Oktettregelen", "latex": "8\\ \\text{elektroner i ytterste skall} \\quad (\\ce{H}: 2)" },
+      { "navn": "Ladningsbalanse i en ioneforbindelse", "latex": "n_{+} \\cdot z_{+} = n_{-} \\cdot |z_{-}|" },
+      { "navn": "Bindingstype ut fra elektronegativitet", "latex": "\\Delta \\text{EN} < 0{,}4:\\ \\text{upolar} \\quad 0{,}4-1{,}7:\\ \\text{polar} \\quad > 1{,}7:\\ \\text{ionebinding}" },
+      { "navn": "Styrken til en ionebinding (Coulomb)", "latex": "F = k \\cdot \\frac{Q_{1} Q_{2}}{r^{2}}" },
+      { "navn": "Bindingsvinkler i VSEPR", "latex": "180^{\\circ} \\quad 120^{\\circ} \\quad 109{,}5^{\\circ} \\quad 107^{\\circ} \\quad 104{,}5^{\\circ}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Atomets oppbygning og elektronkonfigurasjon",
+        "html": "<p>Et atom består av en kjerne med <strong>protoner</strong> (positive) og <strong>nøytroner</strong> (uladde), og av elektroner i området rundt kjernen. Atomnummeret $Z$ er antall protoner og bestemmer hvilket grunnstoff det er. Massetallet er summen av protoner og nøytroner:</p>$$A = Z + N$$<p>Atomer av samme grunnstoff med ulikt antall nøytroner kalles <strong>isotoper</strong>. Et nøytralt atom har like mange elektroner som protoner.</p><p>Elektronene kan ikke ligge hvor som helst. De fyller <strong>orbitaler</strong>, og hver orbital har plass til nøyaktig to elektroner (Paulis prinsipp). Det finnes én $s$-orbital per skall (plass til 2 elektroner), tre $p$-orbitaler (6 elektroner) og fem $d$-orbitaler (10 elektroner). Elektronene fyller orbitalene fra lavest energi og oppover:</p>$$1s \\;\\; 2s \\;\\; 2p \\;\\; 3s \\;\\; 3p \\;\\; 4s \\;\\; 3d \\;\\; 4p$$<p>Legg spesielt merke til at $4s$ har lavere energi enn $3d$ og derfor fylles først. Innenfor orbitaler med samme energi fordeler elektronene seg ett i hver orbital før de går sammen i par (Hunds regel).</p><p>For klor ($Z = 17$) blir konfigurasjonen $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$. Teller du opp, får du $2+2+6+2+5 = 17$ elektroner, som det skal være. De sju elektronene i ytterste skall, $3s^2\\,3p^5$, kalles <strong>valenselektroner</strong>, og bare disse deltar i kjemiske bindinger. Vi kan forkorte skrivemåten med edelgassnotasjon: $[\\ce{Ne}]\\,3s^2\\,3p^5$.</p>"
+      },
+      {
+        "tittel": "Periodesystemet",
+        "html": "<p>Periodesystemet er ordnet etter økende atomnummer, men det geniale er hvordan radene og kolonnene henger sammen med elektronkonfigurasjonen.</p><ul><li><strong>Periode</strong> (vannrett rad) forteller hvilket skall som er det ytterste. Kalium i periode 4 har ytterste elektron i $4s$.</li><li><strong>Gruppe</strong> (loddrett kolonne) forteller antall valenselektroner. Gruppe 1 og 2 har henholdsvis 1 og 2 valenselektroner. For gruppe 13–18 tar du gruppenummeret minus 10.</li></ul><p>Grunnstoffer i samme gruppe har like mange valenselektroner og dermed liknende kjemiske egenskaper. Derfor har flere grupper egne navn: alkalimetaller (gruppe 1), jordalkalimetaller (gruppe 2), halogener (gruppe 17) og edelgasser (gruppe 18). Edelgassene har fullt ytterste skall og reagerer nesten ikke — og det er nettopp denne stabiliteten alle andre atomer nærmer seg når de danner bindinger.</p><p>Metallene ligger til venstre og i midten, ikkemetallene øverst til høyre, og halvmetallene (bor, silisium, germanium, arsen) langs skillelinja mellom dem.</p><p>Tre trender må du kunne forklare, ikke bare huske:</p><ul><li><strong>Atomradius</strong> øker nedover en gruppe, fordi det kommer et nytt skall lenger ut. Den avtar mot høyre i en periode, fordi flere protoner trekker det samme skallet tettere inn.</li><li><strong>Ioniseringsenergi</strong>, energien som må til for å rive løs det ytterste elektronet, øker mot høyre og oppover.</li><li><strong>Elektronegativitet (EN)</strong>, evnen til å trekke på elektronene i en binding, øker også mot høyre og oppover. Fluor er høyest med $\\text{EN} = 4{,}0$.</li></ul>"
+      },
+      {
+        "tittel": "Ionebinding",
+        "html": "<p>Når et metall møter et ikkemetall, er forskjellen i elektronegativitet så stor at elektronene ikke deles — de blir <strong>overført</strong>. Metallatomet gir fra seg valenselektronene sine og blir et positivt ion (kation), og ikkemetallatomet tar dem opp og blir et negativt ion (anion). Begge ender opp med edelgasstruktur:</p>$$\\ce{Na -> Na+ + e-} \\qquad \\ce{Cl + e- -> Cl-}$$<p>$\\ce{Na+}$ har mistet hele $3s$-skallet og er derfor mye mindre enn natriumatomet, mens $\\ce{Cl-}$ er større enn kloratomet, fordi det ekstra elektronet gir sterkere frastøting mellom elektronene.</p><p><strong>Ionebindingen</strong> er den elektrostatiske tiltrekningen mellom motsatt ladde ioner. Den virker like sterkt i alle retninger, og derfor pakker ionene seg i et regelmessig <strong>ionegitter</strong>, der hvert $\\ce{Na+}$ er omgitt av seks $\\ce{Cl-}$ og omvendt. Det finnes ingen $\\ce{NaCl}$-molekyler. Formelen er en <strong>formelenhet</strong> som bare viser forholdstallet mellom ionene.</p><p>Formelen finner du med ladningsbalanse: summen av ladningene må bli null. $\\ce{Mg^2+}$ og $\\ce{Cl-}$ gir $\\ce{MgCl2}$, og $\\ce{Al^3+}$ og $\\ce{O^2-}$ gir $\\ce{Al2O3}$, fordi $2 \\cdot (+3) + 3 \\cdot (-2) = 0$.</p><p>Styrken øker med ladningene og avtar med avstanden mellom ionene. Det forklarer at $\\ce{MgO}$, med ladninger 2+ og 2−, smelter ved 2852 °C, mens $\\ce{NaCl}$, med 1+ og 1−, smelter ved 801 °C. Salter er harde, men sprø, og de leder strøm først når ionene kan bevege seg — altså i smelte eller løsning, aldri i fast form.</p>"
+      },
+      {
+        "tittel": "Kovalent binding og elektronparformler",
+        "html": "<p>To ikkemetallatomer har begge stor elektronegativitet, og ingen av dem klarer å rive elektroner løs fra den andre. I stedet <strong>deler</strong> de et elektronpar, slik at begge kan regne paret som sitt. Et delt par kalles et <strong>bindende elektronpar</strong>, mens par som hører til bare ett atom, kalles <strong>frie elektronpar</strong>.</p><p>I en <strong>elektronparformel</strong> (lewisstruktur) tegner du alle valenselektronene som par. Oppskriften er fast:</p><ol><li>Legg sammen valenselektronene til alle atomene, og del på 2 for å finne antall elektronpar.</li><li>Sett opp et skjelett med det minst elektronegative atomet i midten.</li><li>Bruk ett par per binding.</li><li>Fordel resten som frie par, først på de ytterste atomene.</li><li>Kontroller oktetten: alle atomer skal ha åtte elektroner rundt seg, hydrogen bare to. Mangler sentralatomet elektroner, lager du dobbelt- eller trippelbinding.</li></ol><p>Slik ender $\\ce{N2}$ med en trippelbinding, $\\ce{N#N}$, og ett fritt par på hvert nitrogenatom. Flere delte par gir kortere og sterkere binding.</p><p>Bindingen er <strong>upolar</strong> når atomene er like, som i $\\ce{Cl2}$, og <strong>polar</strong> når EN-forskjellen er merkbar. Da får det mest elektronegative atomet delladningen $\\delta^-$ og det andre $\\delta^+$.</p><p>De fleste kovalente stoffene danner små <strong>molekyler</strong>, men noen bygger sammenhengende nettverk der alle atomene er bundet kovalent, som diamant og $\\ce{SiO2}$ (kvarts). Slike nettverksstoffer er ekstremt harde og har svært høye smeltepunkter, fordi du må bryte kovalente bindinger for å smelte dem.</p>"
+      },
+      {
+        "tittel": "Molekylgeometri og polaritet",
+        "html": "<p>Elektronparene rundt et sentralatom er negative og frastøter hverandre, så de plasserer seg så langt fra hverandre som mulig. Det er hele ideen bak <strong>VSEPR</strong>-modellen (elektronparfrastøting). Framgangsmåten: tegn elektronparformelen, tell antall <em>elektrongrupper</em> rundt sentralatomet — hver binding teller som én uansett om den er enkel, dobbel eller trippel, og hvert frie par teller som én — og les av formen.</p><table><thead><tr><th>Grupper</th><th>Frie par</th><th>Form</th><th>Vinkel</th><th>Eksempel</th></tr></thead><tbody><tr><td>2</td><td>0</td><td>Lineær</td><td>$180^{\\circ}$</td><td>$\\ce{CO2}$</td></tr><tr><td>3</td><td>0</td><td>Plan trekant</td><td>$120^{\\circ}$</td><td>$\\ce{SO3}$</td></tr><tr><td>4</td><td>0</td><td>Tetraeder</td><td>$109{,}5^{\\circ}$</td><td>$\\ce{CH4}$</td></tr><tr><td>4</td><td>1</td><td>Trigonal pyramide</td><td>$107^{\\circ}$</td><td>$\\ce{NH3}$</td></tr><tr><td>4</td><td>2</td><td>Vinklet</td><td>$104{,}5^{\\circ}$</td><td>$\\ce{H2O}$</td></tr></tbody></table><p>Frie elektronpar tar mer plass enn bindende, fordi de bare holdes fast av én kjerne. Derfor krymper vinkelen med omtrent $2{,}5^{\\circ}$ for hvert frie par.</p><p><strong>Polaritet</strong> avgjør du i to trinn. Først: er bindingene polare? Det ser du på EN-forskjellen. Deretter: er formen symmetrisk? Dipolene er vektorer, og i et symmetrisk molekyl opphever de hverandre. $\\ce{CO2}$ har to sterkt polare bindinger, men fordi molekylet er lineært, peker dipolene motsatt vei, og summen blir null — molekylet er upolart. $\\ce{H2O}$ har samme type polare bindinger, men den vinklede formen gjør at dipolene forsterker hverandre, og vannmolekylet blir polart.</p>"
+      },
+      {
+        "tittel": "Metallbinding og de tre bindingstypene",
+        "html": "<p>Metallatomer har lav elektronegativitet og få valenselektroner. Når mange av dem ligger tett sammen, er det ingen som kan vinne elektronene, og løsningen blir at valenselektronene gis opp til fellesskapet. Resultatet er positive metallioner i et regelmessig gitter, omgitt av en <strong>sky av frie elektroner</strong> som kan bevege seg gjennom hele metallstykket. Tiltrekningen mellom de positive ionene og elektronskyen er <strong>metallbindingen</strong>.</p><p>Modellen forklarer egenskapene direkte:</p><ul><li><strong>Leder elektrisk strøm.</strong> De frie elektronene flytter seg når du kobler på en spenning. Merk at det er elektronene som beveger seg, ikke ionene.</li><li><strong>Leder varme godt.</strong> De frie elektronene frakter energi raskt gjennom materialet.</li><li><strong>Formbart.</strong> Bindingen er ikke retningsbestemt, så lagene av ioner kan gli forbi hverandre uten at bindingen brytes. Derfor kan metaller hamres og trekkes til tråd, mens salter knuses.</li><li><strong>Metallglans og ofte høyt smeltepunkt.</strong> Elektronskyen reflekterer lys, og bindingene er gjerne sterke.</li></ul><p>Styrken øker med antall valenselektroner som gis til skyen: natrium (1 valenselektron) smelter ved 98 °C, magnesium (2) ved 650 °C og aluminium (3) ved 660 °C. Kvikksølv er flytende ved romtemperatur, mens wolfram smelter først ved 3422 °C. I en <strong>legering</strong> blandes flere metaller; atomer med ulik størrelse gjør det vanskeligere for lagene å gli, og derfor er stål og bronse hardere enn de rene metallene.</p><p>Kort oppsummert: ionebinding gir gitter av ioner, kovalent binding gir molekyler eller nettverk, og metallbinding gir gitter av ioner i en elektronsky.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Fra atomnummer til ioneforbindelse",
+        "oppgave": "<p>Grunnstoff A har atomnummer $Z = 20$, og grunnstoff B har atomnummer $Z = 17$.</p><ol><li>Skriv elektronkonfigurasjonene, og finn periode og gruppe for begge.</li><li>Hvilke ioner danner de?</li><li>Finn formelen for forbindelsen mellom dem, og avgjør bindingstypen. Bruk EN-verdiene 1,0 for A og 3,0 for B.</li></ol>",
+        "losning": "<p><strong>1) Elektronkonfigurasjon.</strong> Vi fyller orbitalene i rekkefølge og holder styr på hvor mange elektroner vi har brukt underveis.</p><p>Grunnstoff A, 20 elektroner: $1s^2$ (2), $2s^2$ (4), $2p^6$ (10), $3s^2$ (12), $3p^6$ (18), $4s^2$ (20).</p>$$\\text{A}: \\; 1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6\\,4s^2$$<p>Kontroll: $2+2+6+2+6+2 = 20$. Ytterste skall er $n = 4$, altså <strong>periode 4</strong>. Det er 2 valenselektroner ($4s^2$), altså <strong>gruppe 2</strong>. Dette er kalsium, $\\ce{Ca}$.</p><p>Grunnstoff B, 17 elektroner: $1s^2$ (2), $2s^2$ (4), $2p^6$ (10), $3s^2$ (12), $3p^5$ (17).</p>$$\\text{B}: \\; 1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$$<p>Kontroll: $2+2+6+2+5 = 17$. Ytterste skall er $n = 3$, altså <strong>periode 3</strong>. Valenselektronene er $3s^2\\,3p^5$, det vil si 7, altså <strong>gruppe 17</strong> (siden $17 - 10 = 7$). Dette er klor, $\\ce{Cl}$.</p><p><strong>2) Ionene.</strong> Kalsium kommer raskest til edelgasstruktur ved å gi bort de to $4s$-elektronene:</p>$$\\ce{Ca -> Ca^2+ + 2e-}$$<p>$\\ce{Ca^2+}$ har $20 - 2 = 18$ elektroner, som er samme konfigurasjon som argon: $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6$. Klor mangler bare ett elektron på fullt skall:</p>$$\\ce{Cl + e- -> Cl-}$$<p>$\\ce{Cl-}$ har $17 + 1 = 18$ elektroner, også argonstruktur.</p><p><strong>3) Formel og bindingstype.</strong> Ett kalsiumatom gir bort 2 elektroner, og hvert kloratom tar imot 1. Da trengs det to kloratomer per kalsiumatom. Ladningsbalansen bekrefter dette:</p>$$1 \\cdot (+2) + 2 \\cdot (-1) = 0$$<p>Formelen blir $\\ce{CaCl2}$. Elektronegativitetsforskjellen er</p>$$\\Delta \\text{EN} = 3{,}0 - 1{,}0 = 2{,}0$$<p>Dette er større enn 1,7, og vi har et metall sammen med et ikkemetall. Bindingen er derfor en <strong>ionebinding</strong>, og stoffet bygger et ionegitter — det finnes ingen $\\ce{CaCl2}$-molekyler.</p>"
+      },
+      {
+        "tittel": "Elektronparformel for $\\ce{CO2}$ steg for steg",
+        "oppgave": "<p>Sett opp elektronparformelen for karbondioksid, $\\ce{CO2}$. Vis regnestykket for antall elektronpar, og kontroller til slutt at alle atomene oppfyller oktettregelen.</p>",
+        "losning": "<p><strong>Steg 1 — tell valenselektroner.</strong> Karbon står i gruppe 14 og har $14 - 10 = 4$ valenselektroner. Oksygen står i gruppe 16 og har $16 - 10 = 6$. Molekylet har ett karbonatom og to oksygenatomer:</p>$$4 + 2 \\cdot 6 = 16 \\text{ valenselektroner}$$<p>Elektronene opptrer i par, så antall elektronpar blir</p>$$\\frac{16}{2} = 8 \\text{ elektronpar}$$<p><strong>Steg 2 — skjelett.</strong> Karbon har lavest elektronegativitet og blir sentralatom: $\\ce{O-C-O}$.</p><p><strong>Steg 3 — første forsøk.</strong> To enkeltbindinger bruker 2 par. Da har vi $8 - 2 = 6$ par igjen, og vi gir tre frie par til hvert oksygenatom, som bruker $2 \\cdot 3 = 6$ par. Nå er alle 8 parene brukt opp. Hvert oksygenatom har $2 + 6 = 8$ elektroner, men karbon har bare de to bindende parene, altså $2 \\cdot 2 = 4$ elektroner. <strong>Oktetten til karbon er ikke oppfylt</strong>, så strukturen kan ikke være riktig.</p><p><strong>Steg 4 — lag dobbeltbindinger.</strong> Vi flytter ett fritt par fra hvert oksygenatom inn i bindingen. Da blir begge bindingene dobbeltbindinger:</p>$$\\ce{O=C=O}$$<p>Hvert oksygenatom har nå to bindende par i dobbeltbindingen og to frie par.</p><p><strong>Steg 5 — kontroll av oktetten.</strong> Karbon: fire bindende par, altså $4 \\cdot 2 = 8$ elektroner. Riktig. Hvert oksygen: to bindende par og to frie par, altså $4 + 4 = 8$ elektroner. Riktig.</p><p><strong>Steg 6 — kontroll av elektronregnskapet.</strong> Vi bruker 4 bindende par og 4 frie par, i alt $4 + 4 = 8$ par, som svarer til $8 \\cdot 2 = 16$ elektroner. Det er nøyaktig like mange som vi startet med, så regnskapet stemmer.</p>"
+      },
+      {
+        "tittel": "Geometri og bindingsvinkel i $\\ce{CH4}$, $\\ce{NH3}$ og $\\ce{H2O}$",
+        "oppgave": "<p>Bestem molekylform og bindingsvinkel for $\\ce{CH4}$, $\\ce{NH3}$ og $\\ce{H2O}$. Forklar hvorfor vinkelen blir mindre for hvert steg.</p>",
+        "losning": "<p>Vi må først finne antall elektronpar rundt sentralatomet i hvert molekyl.</p><p><strong>Metan, $\\ce{CH4}$.</strong> Karbon (gruppe 14) har 4 valenselektroner, hvert hydrogen har 1:</p>$$4 + 4 \\cdot 1 = 8 \\text{ elektroner} = 4 \\text{ par}$$<p>Alle fire parene brukes til $\\ce{C-H}$-bindinger, så karbon har 4 elektrongrupper og 0 frie par. Fire grupper som skyver hverandre maksimalt fra hverandre i rommet gir et <strong>tetraeder</strong> med vinkel $109{,}5^{\\circ}$.</p><p><strong>Ammoniakk, $\\ce{NH3}$.</strong> Nitrogen (gruppe 15) har 5 valenselektroner:</p>$$5 + 3 \\cdot 1 = 8 \\text{ elektroner} = 4 \\text{ par}$$<p>Tre par går til $\\ce{N-H}$-bindinger, og $4 - 3 = 1$ par blir liggende igjen som fritt par. Nitrogen har fortsatt 4 elektrongrupper, så grunnformen er tetraedrisk, men bare tre av hjørnene har et atom. Formen kalles derfor <strong>trigonal pyramide</strong>, og vinkelen er målt til omtrent $107^{\\circ}$.</p><p><strong>Vann, $\\ce{H2O}$.</strong> Oksygen (gruppe 16) har 6 valenselektroner:</p>$$6 + 2 \\cdot 1 = 8 \\text{ elektroner} = 4 \\text{ par}$$<p>To par er bindende og $4 - 2 = 2$ par er frie. Formen blir <strong>vinklet</strong> med en vinkel på omtrent $104{,}5^{\\circ}$.</p><p><strong>Hvorfor synker vinkelen?</strong> Alle tre molekylene har fire elektrongrupper og samme tetraedriske grunnform. Forskjellen er antall frie par. Et fritt par holdes bare av én kjerne og brer seg derfor mer utover enn et bindende par som holdes av to. De frie parene presser bindingene sammen, og vinkelen faller med omtrent $2{,}5^{\\circ}$ per frie par:</p>$$109{,}5^{\\circ} \\;\\to\\; 107^{\\circ} \\;\\to\\; 104{,}5^{\\circ}$$"
+      },
+      {
+        "tittel": "Er molekylet polart?",
+        "oppgave": "<p>Avgjør om $\\ce{CCl4}$, $\\ce{CH3Cl}$ og $\\ce{CO2}$ er polare molekyler. Bruk EN-verdiene $\\ce{H}$ 2,1, $\\ce{C}$ 2,5, $\\ce{Cl}$ 3,0 og $\\ce{O}$ 3,5.</p>",
+        "losning": "<p>Framgangsmåten er alltid den samme: (1) regn ut EN-forskjellen for bindingene, (2) finn formen med VSEPR, (3) legg dipolene sammen som vektorer.</p><p><strong>Tetraklormetan, $\\ce{CCl4}$.</strong> Bindingene:</p>$$\\Delta \\text{EN} = 3{,}0 - 2{,}5 = 0{,}5$$<p>Det er over 0,4, så $\\ce{C-Cl}$-bindingene er svakt polare. Antall elektronpar: $4 + 4 \\cdot 7 = 32$ elektroner, altså $32/2 = 16$ par. Fire av dem er bindende, og de tolv andre er frie par på kloratomene (tre på hvert). Karbon har 4 elektrongrupper og 0 frie par, altså tetraeder. De fire dipolene er like store og peker symmetrisk ut mot hjørnene i et tetraeder, så vektorsummen blir null. Molekylet er <strong>upolart</strong>.</p><p><strong>Klormetan, $\\ce{CH3Cl}$.</strong> Her er det to slags bindinger:</p>$$\\ce{C-H}: \\Delta \\text{EN} = 2{,}5 - 2{,}1 = 0{,}4 \\qquad \\ce{C-Cl}: \\Delta \\text{EN} = 3{,}0 - 2{,}5 = 0{,}5$$<p>Formen er også her tetraedrisk, men nå er ikke hjørnene like: tre hydrogenatomer og ett kloratom. Dipolen mot klor blir ikke motvirket av en tilsvarende dipol på motsatt side, så det blir en netto dipol med $\\delta^-$ på klorsiden. Molekylet er <strong>polart</strong>.</p><p><strong>Karbondioksid, $\\ce{CO2}$.</strong> Bindingene:</p>$$\\Delta \\text{EN} = 3{,}5 - 2{,}5 = 1{,}0$$<p>Det er klart polare bindinger, sterkere polare enn i de to andre molekylene. Men karbon har bare 2 elektrongrupper (to dobbeltbindinger) og ingen frie par, så molekylet er lineært med vinkel $180^{\\circ}$. De to dipolene er like store og peker rett motsatt vei:</p>$$\\vec{\\mu}_1 + \\vec{\\mu}_2 = \\vec{0}$$<p>Molekylet er <strong>upolart</strong>.</p><p><strong>Konklusjon:</strong> polare bindinger er nødvendig, men ikke nok. Det er symmetrien i formen som avgjør om molekylet blir polart.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å fylle $3d$ før $4s$. Rekkefølgen er $3p$, $4s$, $3d$, så kalsium slutter på $4s^2$ — ikke $3d^2$.",
+      "Å lese antall valenselektroner rett av gruppenummeret for gruppe 13–18. Svovel står i gruppe 16, men har 6 valenselektroner, siden $16 - 10 = 6$.",
+      "Å glemme de frie elektronparene i elektronparformelen. De teller med i oktetten, og de er ofte det som bestemmer molekylformen.",
+      "Å tro at $\\ce{CO2}$ er polart fordi bindingene er polare. Molekylet er lineært og symmetrisk, så dipolene opphever hverandre.",
+      "Å snakke om «$\\ce{NaCl}$-molekyler». En ioneforbindelse er et gitter av ioner, og formelen er bare en formelenhet som viser forholdet 1 : 1.",
+      "Å gi hydrogen åtte elektroner eller en dobbeltbinding. Hydrogen har plass til to elektroner og danner derfor alltid bare én enkeltbinding."
+    ],
+
+    "tips": [
+      "Bruk periodesystemet du får utdelt aktivt. Gruppenummeret gir deg valenselektroner og forventet ionladning, og EN-verdiene står ofte i tabellen — du trenger ikke pugge dem.",
+      "Gjør elektronparformler som en fast oppskrift: tell valenselektroner, del på 2, sett opp skjelettet, fyll på frie par, kontroller oktetten. Skriv alltid ned totalsummen først, så oppdager du feil med én gang.",
+      "Blir du spurt om polaritet, svar alltid i to trinn: er bindingene polare (EN-forskjell), og er formen symmetrisk? Hopper du over trinn to, mister du poeng.",
+      "Lær de fem VSEPR-formene med vinkler utenat ($180^{\\circ}$, $120^{\\circ}$, $109{,}5^{\\circ}$, $107^{\\circ}$, $104{,}5^{\\circ}$). De går igjen på nesten hver prøve i dette kapittelet.",
+      "På «forklar egenskapen»-oppgaver må du alltid koble egenskapen til partiklene og bindingstypen: høyt smeltepunkt betyr sterke krefter i et gitter, og strømledning betyr frie ladningsbærere (elektroner i metaller, ioner i smelte og løsning)."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Atomnummer", "forklaring": "Antall protoner i kjernen, symbol $Z$. Atomnummeret bestemmer hvilket grunnstoff atomet er, og i et nøytralt atom er det også antall elektroner." },
+    { "begrep": "Elektronkonfigurasjon", "forklaring": "Oversikten over hvilke orbitaler elektronene i et atom befinner seg i, for eksempel $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$ for klor." },
+    { "begrep": "Valenselektroner", "forklaring": "Elektronene i ytterste skall. De er de eneste som deltar i kjemiske bindinger, og antallet leser du av gruppenummeret." },
+    { "begrep": "Oktettregelen", "forklaring": "Atomer danner bindinger slik at de får åtte elektroner i ytterste skall, altså edelgasstruktur. Hydrogen nøyer seg med to." },
+    { "begrep": "Periode", "forklaring": "En vannrett rad i periodesystemet. Periodenummeret forteller hvilket skall som er det ytterste hos atomet." },
+    { "begrep": "Gruppe", "forklaring": "En loddrett kolonne i periodesystemet. Grunnstoffene i en gruppe har like mange valenselektroner og derfor liknende kjemiske egenskaper." },
+    { "begrep": "Elektronegativitet", "forklaring": "Et mål på hvor sterkt et atom trekker på elektronene i en binding. Verdien øker mot høyre og oppover i periodesystemet, og fluor har den høyeste ($4{,}0$)." },
+    { "begrep": "Ioniseringsenergi", "forklaring": "Energien som må tilføres for å rive løs det ytterste elektronet fra et atom. Den øker mot høyre og oppover i periodesystemet." },
+    { "begrep": "Ion", "forklaring": "Et atom eller en atomgruppe med elektrisk ladning, fordi antall elektroner ikke er likt antall protoner. Positive ioner kalles kationer, negative kalles anioner." },
+    { "begrep": "Ionebinding", "forklaring": "Den elektrostatiske tiltrekningen mellom motsatt ladde ioner i et ionegitter, som oppstår når et metall overfører elektroner til et ikkemetall." },
+    { "begrep": "Formelenhet", "forklaring": "Den minste formelen som gir riktig forholdstall mellom ionene i et ionegitter, for eksempel $\\ce{CaCl2}$. Den beskriver ikke et molekyl." },
+    { "begrep": "Kovalent binding", "forklaring": "En binding der to atomer deler ett eller flere elektronpar. Den oppstår mellom ikkemetallatomer og kan være polar eller upolar." },
+    { "begrep": "Fritt elektronpar", "forklaring": "Et elektronpar som hører til bare ett atom og ikke deltar i en binding. Det teller likevel med i oktetten og påvirker molekylformen." },
+    { "begrep": "Polart molekyl", "forklaring": "Et molekyl med en netto dipol, fordi det har polare bindinger og en usymmetrisk form slik at dipolene ikke opphever hverandre." },
+    { "begrep": "Metallbinding", "forklaring": "Tiltrekningen mellom positive metallioner i et gitter og en sky av frie valenselektroner som er felles for hele metallet." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hvor mange valenselektroner har et svovelatom ($Z = 16$)?",
+      "alternativer": ["4", "6", "8", "16"],
+      "riktig": 1,
+      "forklaring": "Konfigurasjonen er $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^4$, og ytterste skall inneholder $3s^2\\,3p^4$, altså 6 elektroner. Det stemmer med at svovel står i gruppe 16: $16 - 10 = 6$. Å svare 16 er den vanligste feilen — gruppenummeret gir bare valenselektronene direkte for gruppe 1 og 2."
+    },
+    {
+      "sporsmal": "Hvilken elektronkonfigurasjon har kalsium ($Z = 20$)?",
+      "alternativer": [
+        "$1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6\\,3d^2$",
+        "$1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^8$",
+        "$1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6\\,4s^2$",
+        "$1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6\\,4s^1\\,3d^1$"
+      ],
+      "riktig": 2,
+      "forklaring": "Etter $3p^6$ er 18 elektroner plassert, og de to siste går i $4s$, fordi $4s$ har lavere energi enn $3d$. Alternativet med $3d^2$ er den klassiske feilen. Alternativet med $3p^8$ er umulig: $p$-nivået har tre orbitaler og dermed plass til maksimalt 6 elektroner."
+    },
+    {
+      "sporsmal": "Hvilken bindingstype har $\\ce{MgO}$? Bruk EN-verdiene $\\ce{Mg}$ 1,3 og $\\ce{O}$ 3,5.",
+      "alternativer": ["Upolar kovalent binding", "Polar kovalent binding", "Metallbinding", "Ionebinding"],
+      "riktig": 3,
+      "forklaring": "$\\Delta \\text{EN} = 3{,}5 - 1{,}3 = 2{,}2$, som er større enn grensen på 1,7. I tillegg er magnesium et metall og oksygen et ikkemetall, så elektronene overføres og vi får $\\ce{Mg^2+}$ og $\\ce{O^2-}$ i et ionegitter. Svarer du «polar kovalent», har du glemt 1,7-grensen — den gjelder for EN-forskjeller opp til 1,7."
+    },
+    {
+      "sporsmal": "Hva blir formelen for forbindelsen mellom $\\ce{Al^3+}$ og $\\ce{O^2-}$?",
+      "alternativer": ["$\\ce{Al2O3}$", "$\\ce{Al3O2}$", "$\\ce{AlO}$", "$\\ce{AlO2}$"],
+      "riktig": 0,
+      "forklaring": "Summen av ladningene må bli null: $2 \\cdot (+3) + 3 \\cdot (-2) = +6 - 6 = 0$, altså to aluminiumioner per tre oksidioner. Alternativet $\\ce{Al3O2}$ er den vanlige feilen der man bytter om tallene: det ville gitt $3 \\cdot (+3) + 2 \\cdot (-2) = +5$, altså et ladd stoff, som ikke går."
+    },
+    {
+      "sporsmal": "Hvor mange elektronpar er det rundt oksygenatomet i $\\ce{H2O}$, og hvor mange av dem er frie?",
+      "alternativer": ["3 par, 1 fritt", "4 par, 1 fritt", "4 par, 2 frie", "2 par, 0 frie"],
+      "riktig": 2,
+      "forklaring": "Til sammen har molekylet $6 + 2 \\cdot 1 = 8$ valenselektroner, altså $8/2 = 4$ par. To par binder hydrogenatomene, og de $4 - 2 = 2$ som er igjen, er frie par på oksygen. Svarer du «2 par, 0 frie», har du bare tellet bindingene — men de frie parene er nettopp grunnen til at vannmolekylet er vinklet."
+    },
+    {
+      "sporsmal": "Rundt nitrogenatomet i $\\ce{NH3}$ er det tre bindende elektronpar og ett fritt par. Hvilken form og bindingsvinkel har molekylet?",
+      "alternativer": ["Plan trekant, $120^{\\circ}$", "Trigonal pyramide, ca. $107^{\\circ}$", "Lineær, $180^{\\circ}$", "Tetraeder, $109{,}5^{\\circ}$"],
+      "riktig": 1,
+      "forklaring": "Fire elektrongrupper gir tetraedrisk grunnform, men bare tre av hjørnene har et hydrogenatom, så formen er en trigonal pyramide. Det frie paret tar mer plass enn de bindende og presser vinkelen ned fra $109{,}5^{\\circ}$ til omtrent $107^{\\circ}$. «Plan trekant» er fellen hvis du bare teller de tre bindingene og glemmer det frie paret."
+    },
+    {
+      "sporsmal": "Hvilket av molekylene er upolart, selv om bindingene i det er polare?",
+      "alternativer": ["$\\ce{H2O}$", "$\\ce{NH3}$", "$\\ce{HCl}$", "$\\ce{CO2}$"],
+      "riktig": 3,
+      "forklaring": "$\\ce{CO2}$ er lineært, og de to like store dipolene peker rett motsatt vei, så vektorsummen blir null. $\\ce{H2O}$ og $\\ce{NH3}$ har frie elektronpar som gjør formen usymmetrisk, og $\\ce{HCl}$ har bare én binding som dermed ikke kan motvirkes av noe. Poenget er at polare bindinger ikke er nok — formen må også være symmetrisk."
+    },
+    {
+      "sporsmal": "Hvorfor leder metaller elektrisk strøm?",
+      "alternativer": [
+        "Fordi metallionene beveger seg gjennom gitteret",
+        "Fordi valenselektronene er felles for hele metallet og kan bevege seg fritt",
+        "Fordi metallatomene deler elektronpar i sterke, retningsbestemte bindinger",
+        "Fordi metaller har høy elektronegativitet og trekker elektroner til seg"
+      ],
+      "riktig": 1,
+      "forklaring": "I metallbindingen har atomene gitt valenselektronene til en felles elektronsky, og disse elektronene kan flytte seg gjennom hele metallstykket. Ionene sitter fast i gitteret og beveger seg ikke — det er ioner som beveger seg i en saltsmelte, ikke i et metall. Metaller har dessuten lav, ikke høy, elektronegativitet."
+    },
+    {
+      "sporsmal": "Hvilket ion har samme elektronkonfigurasjon som neon?",
+      "alternativer": ["$\\ce{K+}$", "$\\ce{Cl-}$", "$\\ce{Mg^2+}$", "$\\ce{Ca^2+}$"],
+      "riktig": 2,
+      "forklaring": "Magnesium har 12 elektroner, og $\\ce{Mg^2+}$ har $12 - 2 = 10$ elektroner, altså $1s^2\\,2s^2\\,2p^6$ — samme som neon. De tre andre ionene har alle 18 elektroner ($19 - 1$, $17 + 1$ og $20 - 2$) og har argonstruktur, ikke neonstruktur."
+    },
+    {
+      "sporsmal": "Hva skjer med radien når et natriumatom blir til et natriumion?",
+      "alternativer": [
+        "Den blir mindre, fordi hele det ytterste skallet ($3s$) tømmes",
+        "Den blir større, fordi ionet har positiv ladning",
+        "Den er uendret, fordi antall protoner ikke endrer seg",
+        "Den blir mindre, fordi ionet mister protoner"
+      ],
+      "riktig": 0,
+      "forklaring": "Natrium har konfigurasjonen $1s^2\\,2s^2\\,2p^6\\,3s^1$, og $\\ce{Na+}$ har $1s^2\\,2s^2\\,2p^6$. Hele det ytterste skallet forsvinner, og de 11 protonene trekker nå på bare 10 elektroner. Ionet blir derfor tydelig mindre. Merk at et ion aldri mister protoner — bare elektroner flyttes i kjemiske reaksjoner."
+    },
+    {
+      "sporsmal": "Hvilken påstand om ioneforbindelser er riktig?",
+      "alternativer": [
+        "$\\ce{NaCl}$ består av $\\ce{NaCl}$-molekyler som holdes sammen av kovalente bindinger",
+        "Ioneforbindelser leder strøm i fast form, fordi ionene er ladde",
+        "Formelen $\\ce{CaCl2}$ viser forholdet mellom ionene i gitteret, ikke et molekyl",
+        "Ionebindinger er svake, og derfor har salter lave smeltepunkter"
+      ],
+      "riktig": 2,
+      "forklaring": "En ioneforbindelse er et gitter der hvert ion er omgitt av flere motsatt ladde ioner, så formelen er en formelenhet som bare gir forholdstallet. Ioner i et fast gitter kan ikke bevege seg og leder derfor ikke strøm; det skjer først i smelte eller løsning. Ionebindinger er dessuten sterke — $\\ce{NaCl}$ smelter ved 801 °C."
+    },
+    {
+      "sporsmal": "$\\ce{HCl}$ har EN-verdiene 2,1 for $\\ce{H}$ og 3,0 for $\\ce{Cl}$. Hva slags binding er det, og hvor sitter den negative delladningen?",
+      "alternativer": [
+        "Ionebinding, med negativ ladning på $\\ce{Cl}$",
+        "Upolar kovalent binding, uten delladninger",
+        "Polar kovalent binding, med $\\delta^-$ på $\\ce{H}$",
+        "Polar kovalent binding, med $\\delta^-$ på $\\ce{Cl}$"
+      ],
+      "riktig": 3,
+      "forklaring": "$\\Delta \\text{EN} = 3{,}0 - 2{,}1 = 0{,}9$, som ligger mellom 0,4 og 1,7, altså en polar kovalent binding. Klor er mest elektronegativt og trekker elektronparet mot seg, så $\\delta^-$ havner på klor og $\\delta^+$ på hydrogen. Ionebinding krever $\\Delta \\text{EN}$ over 1,7 og et metall — begge deler mangler her."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Rekkefølgen orbitalene fylles i", "bak": "$1s\\,2s\\,2p\\,3s\\,3p\\,4s\\,3d\\,4p$ — merk at $4s$ fylles før $3d$." },
+    { "front": "Hvor mange elektroner er det plass til i $s$-, $p$- og $d$-nivåene?", "bak": "$s$: 2 (én orbital), $p$: 6 (tre orbitaler), $d$: 10 (fem orbitaler). Hver orbital tar to elektroner." },
+    { "front": "Elektronkonfigurasjonen til klor ($Z = 17$)", "bak": "$1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$, altså 7 valenselektroner og gruppe 17." },
+    { "front": "Hvordan finner du antall valenselektroner fra gruppenummeret?", "bak": "Gruppe 1–2: gruppenummeret. Gruppe 13–18: gruppenummer minus 10. Svovel i gruppe 16 har $16-10 = 6$." },
+    { "front": "Trend: elektronegativitet", "bak": "Øker mot høyre og oppover i periodesystemet. Fluor er høyest med $4{,}0$." },
+    { "front": "Trend: atomradius", "bak": "Øker nedover en gruppe (nytt skall) og mot venstre i en periode (færre protoner trekker på det samme skallet)." },
+    { "front": "Hva skjer i en ionebinding?", "bak": "Et metall gir elektroner til et ikkemetall. De motsatt ladde ionene holdes sammen elektrostatisk i et ionegitter." },
+    { "front": "Hvorfor leder salter strøm i smelte og løsning, men ikke i fast form?", "bak": "Ladningsbærerne er ionene, og de må kunne bevege seg. I gitteret sitter de låst på plass." },
+    { "front": "Oktettregelen", "bak": "Atomer deler eller overfører elektroner til de har åtte elektroner i ytterste skall (edelgasstruktur). Hydrogen nøyer seg med to." },
+    { "front": "Antall elektronpar i en elektronparformel", "bak": "Sum av alle valenselektronene delt på 2. For $\\ce{CO2}$: $(4 + 2 \\cdot 6)/2 = 8$ par." },
+    { "front": "VSEPR: 4 elektrongrupper, 0 frie par", "bak": "Tetraeder med vinkel $109{,}5^{\\circ}$, for eksempel $\\ce{CH4}$." },
+    { "front": "VSEPR: 4 elektrongrupper med 1 eller 2 frie par", "bak": "1 fritt par: trigonal pyramide, ca. $107^{\\circ}$ ($\\ce{NH3}$). 2 frie par: vinklet, ca. $104{,}5^{\\circ}$ ($\\ce{H2O}$)." },
+    { "front": "Når er et molekyl polart?", "bak": "Når det har polare bindinger OG en usymmetrisk form, slik at bindingsdipolene ikke opphever hverandre." },
+    { "front": "Hvorfor er $\\ce{CO2}$ upolart, mens $\\ce{H2O}$ er polart?", "bak": "$\\ce{CO2}$ er lineært ($180^{\\circ}$), så de to dipolene summerer til null. $\\ce{H2O}$ er vinklet ($104{,}5^{\\circ}$), så dipolene forsterker hverandre til en netto dipol." },
+    { "front": "Metallbinding", "bak": "Positive metallioner i et gitter, omgitt av en sky av frie valenselektroner. Forklarer strømledning, varmeledning, formbarhet og metallglans." },
+    { "front": "Tommelfingerregel for bindingstype ut fra $\\Delta \\text{EN}$", "bak": "Under 0,4: upolar kovalent. 0,4–1,7: polar kovalent. Over 1,7 (og metall + ikkemetall): ionebinding." }
+  ]
+}
