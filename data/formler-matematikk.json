@@ -1,0 +1,183 @@
+{
+  "fag": "matematikk",
+  "kategorier": [
+    {
+      "tittel": "Algebra, likninger og rette linjer",
+      "formler": [
+        { "navn": "Andregradsformelen", "latex": "x = \\frac{-b \\pm \\sqrt{b^{2} - 4ac}}{2a}", "forklaring": "Løser likningen $ax^{2}+bx+c=0$ når $a \\neq 0$. Husk fortegnet på $b$ og $c$ før du setter inn." },
+        { "navn": "Diskriminanten", "latex": "D = b^{2} - 4ac", "forklaring": "$D>0$ gir to løsninger, $D=0$ gir én (dobbel) løsning, $D<0$ gir ingen reelle løsninger." },
+        { "navn": "Faktorisering av andregradsuttrykk", "latex": "ax^{2}+bx+c = a\\,(x-x_1)(x-x_2)", "forklaring": "Gjelder når $x_1$ og $x_2$ er løsningene av $ax^{2}+bx+c=0$. Brukes til å forkorte brøker." },
+        { "navn": "Kvadratsetningene", "latex": "(a \\pm b)^{2} = a^{2} \\pm 2ab + b^{2}", "forklaring": "Midtleddet $2ab$ glemmes ofte — $(a+b)^{2}$ er ikke $a^{2}+b^{2}$." },
+        { "navn": "Konjugatsetningen", "latex": "(a+b)(a-b) = a^{2} - b^{2}", "forklaring": "Brukes til å bli kvitt kvadratrøtter i en teller eller nevner." },
+        { "navn": "Fullstendig kvadrat", "latex": "x^{2} + bx = \\left(x + \\frac{b}{2}\\right)^{2} - \\frac{b^{2}}{4}", "forklaring": "Skriver et andregradsuttrykk om til formen $a(x-h)^{2}+k$, der $(h,k)$ er topp- eller bunnpunktet." },
+        { "navn": "Faktorteoremet (nullpunktsetningen)", "latex": "f(a) = 0 \\quad \\Longleftrightarrow \\quad (x-a) \\text{ er en faktor i } f(x)", "forklaring": "Finn ett nullpunkt ved prøving, og del deretter polynomet med $(x-a)$ for å finne resten." },
+        { "navn": "Polynomdivisjon", "latex": "P(x) = Q(x) \\cdot S(x) + R(x)", "forklaring": "$S$ er svaret og $R$ er resten. Divisjonen går opp når $R(x)=0$, og graden til $R$ er alltid lavere enn graden til $Q$." },
+        { "navn": "Brøklikning", "latex": "\\frac{u(x)}{v(x)} = 0 \\quad \\Longleftrightarrow \\quad u(x) = 0 \\ \\text{ og } \\ v(x) \\neq 0", "forklaring": "Sjekk alltid til slutt at løsningene ikke gjør nevneren null." },
+        { "navn": "Stigningstallet til en linje", "latex": "a = \\frac{y_2 - y_1}{x_2 - x_1}", "forklaring": "Endring i $y$ delt på endring i $x$ mellom to punkter på linja." },
+        { "navn": "Ettpunktsformelen", "latex": "y - y_1 = a\\,(x - x_1)", "forklaring": "Likningen for linja med stigningstall $a$ gjennom punktet $(x_1, y_1)$." },
+        { "navn": "Parallelle og vinkelrette linjer", "latex": "a_1 = a_2 \\quad (\\parallel), \\qquad a_1 \\cdot a_2 = -1 \\quad (\\perp)", "forklaring": "Parallelle linjer har samme stigningstall; for vinkelrette linjer er produktet av stigningstallene $-1$." }
+      ]
+    },
+    {
+      "tittel": "Potenser og røtter",
+      "formler": [
+        { "navn": "Multiplikasjon av potenser", "latex": "a^{m} \\cdot a^{n} = a^{m+n}", "forklaring": "Samme grunntall: legg sammen eksponentene." },
+        { "navn": "Divisjon av potenser", "latex": "\\frac{a^{m}}{a^{n}} = a^{m-n}", "forklaring": "Samme grunntall: trekk eksponenten i nevneren fra eksponenten i telleren." },
+        { "navn": "Potens av potens", "latex": "\\left(a^{m}\\right)^{n} = a^{m \\cdot n}" },
+        { "navn": "Potens av produkt og brøk", "latex": "(ab)^{n} = a^{n}b^{n}, \\qquad \\left(\\frac{a}{b}\\right)^{n} = \\frac{a^{n}}{b^{n}}", "forklaring": "Gjelder bare for produkt og brøk — ikke for sum: $(a+b)^{n} \\neq a^{n}+b^{n}$." },
+        { "navn": "Eksponent 0 og 1", "latex": "a^{0} = 1, \\qquad a^{1} = a \\qquad (a \\neq 0)" },
+        { "navn": "Negativ eksponent", "latex": "a^{-n} = \\frac{1}{a^{n}}, \\qquad \\frac{1}{a^{-n}} = a^{n} \\qquad (a \\neq 0)", "forklaring": "Negativ eksponent betyr «snu brøken» — ikke at svaret blir negativt." },
+        { "navn": "Røtter som potenser", "latex": "a^{\\frac{1}{n}} = \\sqrt[n]{a}, \\qquad a^{\\frac{m}{n}} = \\sqrt[n]{a^{m}}", "forklaring": "Skriv alltid røtter om til potenser før du deriverer." },
+        { "navn": "Regning med kvadratrøtter", "latex": "\\sqrt{a}\\cdot\\sqrt{b} = \\sqrt{ab}, \\qquad \\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}} \\qquad (a \\ge 0,\\ b > 0)", "forklaring": "Merk at $\\sqrt{a+b} \\neq \\sqrt{a}+\\sqrt{b}$." },
+        { "navn": "Kvadratrot av et kvadrat", "latex": "\\sqrt{a^{2}} = |a|", "forklaring": "Kvadratrota er aldri negativ, så du må bruke absoluttverdi når $a$ kan være negativ." }
+      ]
+    },
+    {
+      "tittel": "Logaritmer og eksponentiallikninger",
+      "formler": [
+        { "navn": "Definisjonen av lg", "latex": "\\lg x = y \\quad \\Longleftrightarrow \\quad 10^{y} = x \\qquad (x > 0)", "forklaring": "$\\lg x$ er eksponenten du må gi 10 for å få $x$." },
+        { "navn": "Definisjonen av ln", "latex": "\\ln x = y \\quad \\Longleftrightarrow \\quad e^{y} = x \\qquad (x > 0)", "forklaring": "Den naturlige logaritmen har grunntall $e \\approx 2{,}718$. Du kan aldri ta logaritmen av 0 eller et negativt tall." },
+        { "navn": "Logaritmen av et produkt", "latex": "\\ln(ab) = \\ln a + \\ln b, \\qquad \\lg(ab) = \\lg a + \\lg b" },
+        { "navn": "Logaritmen av en brøk", "latex": "\\ln\\frac{a}{b} = \\ln a - \\ln b, \\qquad \\ln\\frac{1}{a} = -\\ln a" },
+        { "navn": "Logaritmen av en potens", "latex": "\\ln a^{k} = k \\ln a", "forklaring": "Den viktigste logaritmeregelen: den flytter en ukjent ned fra eksponenten." },
+        { "navn": "Kjente logaritmeverdier", "latex": "\\ln 1 = 0, \\quad \\ln e = 1, \\quad \\lg 1 = 0, \\quad \\lg 10 = 1, \\quad \\lg 10^{n} = n" },
+        { "navn": "Motsatte operasjoner", "latex": "e^{\\ln x} = x \\ (x>0), \\qquad \\ln e^{x} = x, \\qquad 10^{\\lg x} = x, \\qquad \\lg 10^{x} = x", "forklaring": "Logaritme og eksponentialfunksjon opphever hverandre." },
+        { "navn": "Eksponentiallikning", "latex": "a^{x} = b \\quad \\Longleftrightarrow \\quad x = \\frac{\\ln b}{\\ln a} = \\frac{\\lg b}{\\lg a} \\qquad (a>0,\\ a \\neq 1,\\ b>0)", "forklaring": "Ta logaritmen på begge sider og bruk $\\ln a^{x} = x \\ln a$." },
+        { "navn": "Eksponentiallikning med grunntall e", "latex": "e^{kx} = c \\quad \\Longleftrightarrow \\quad x = \\frac{\\ln c}{k} \\qquad (c > 0)" },
+        { "navn": "Logaritmelikning", "latex": "\\ln x = c \\quad \\Longleftrightarrow \\quad x = e^{c}", "forklaring": "Sett prøve på svaret: løsninger som gir logaritme av et tall $\\le 0$ er falske løsninger." },
+        { "navn": "Skifte av grunntall", "latex": "a^{x} = e^{x \\ln a}", "forklaring": "Alle eksponentialfunksjoner kan skrives med grunntall $e$. Nyttig før derivasjon." }
+      ]
+    },
+    {
+      "tittel": "Grenseverdier og kontinuitet",
+      "formler": [
+        { "navn": "Sum og differanse", "latex": "\\lim_{x \\to a}\\left(f(x) \\pm g(x)\\right) = \\lim_{x \\to a} f(x) \\pm \\lim_{x \\to a} g(x)" },
+        { "navn": "Konstant faktor", "latex": "\\lim_{x \\to a} \\left(k \\cdot f(x)\\right) = k \\cdot \\lim_{x \\to a} f(x)" },
+        { "navn": "Produkt", "latex": "\\lim_{x \\to a}\\left(f(x) \\cdot g(x)\\right) = \\lim_{x \\to a} f(x) \\cdot \\lim_{x \\to a} g(x)" },
+        { "navn": "Kvotient", "latex": "\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x \\to a} f(x)}{\\lim_{x \\to a} g(x)}, \\qquad \\lim_{x \\to a} g(x) \\neq 0" },
+        { "navn": "Ensidige grenseverdier", "latex": "\\lim_{x \\to a} f(x) = L \\quad \\Longleftrightarrow \\quad \\lim_{x \\to a^{-}} f(x) = \\lim_{x \\to a^{+}} f(x) = L", "forklaring": "Grenseverdien finnes bare når du får samme svar fra venstre og fra høyre." },
+        { "navn": "Kontinuitet i $x=a$", "latex": "\\lim_{x \\to a^{-}} f(x) = \\lim_{x \\to a^{+}} f(x) = f(a)", "forklaring": "Tre krav i ett: $f(a)$ må finnes, grenseverdien må finnes, og de må være like." },
+        { "navn": "Grenseverdi på formen $\\frac{0}{0}$", "latex": "\\lim_{x \\to a} \\frac{(x-a)\\,g(x)}{(x-a)\\,h(x)} = \\lim_{x \\to a} \\frac{g(x)}{h(x)}", "forklaring": "Faktoriser teller og nevner og forkort felles faktor $(x-a)$ før du setter inn." },
+        { "navn": "Konjugatknepet", "latex": "\\frac{\\sqrt{u} - c}{w} = \\frac{u - c^{2}}{w\\left(\\sqrt{u} + c\\right)}", "forklaring": "Gang teller og nevner med det konjugerte uttrykket når en kvadratrot gir $\\frac{0}{0}$." },
+        { "navn": "Grenseverdi mot uendelig", "latex": "\\lim_{x \\to \\pm\\infty} \\frac{1}{x^{n}} = 0 \\qquad (n > 0)", "forklaring": "Del teller og nevner på den høyeste $x$-potensen, og bruk denne regelen på leddene som står igjen." },
+        { "navn": "Skjæringssetningen", "latex": "f \\text{ kontinuerlig på } [a,b] \\ \\text{ og } \\ f(a) \\cdot f(b) < 0 \\ \\Rightarrow \\ f \\text{ har minst ett nullpunkt i } \\langle a, b \\rangle", "forklaring": "Skifter en sammenhengende graf fortegn, må den ha krysset $x$-aksen underveis." }
+      ]
+    },
+    {
+      "tittel": "Asymptoter og rasjonale funksjoner",
+      "formler": [
+        { "navn": "Vertikal asymptote", "latex": "x = a \\quad \\text{når} \\quad \\lim_{x \\to a^{\\pm}} f(x) = \\pm\\infty", "forklaring": "Finnes der nevneren er null og telleren ikke er null samtidig." },
+        { "navn": "Horisontal asymptote", "latex": "y = b \\quad \\text{når} \\quad \\lim_{x \\to \\pm\\infty} f(x) = b" },
+        { "navn": "Lik grad i teller og nevner", "latex": "\\lim_{x \\to \\pm\\infty} \\frac{a_n x^{n} + \\cdots}{b_n x^{n} + \\cdots} = \\frac{a_n}{b_n}", "forklaring": "Asymptoten er forholdet mellom koeffisientene foran de høyeste potensene." },
+        { "navn": "Lavere grad i telleren", "latex": "\\text{grad(teller)} < \\text{grad(nevner)} \\quad \\Rightarrow \\quad y = 0", "forklaring": "Nevneren vokser raskest, så brøken går mot null." },
+        { "navn": "Skrå asymptote", "latex": "f(x) = ax + b + \\frac{r(x)}{q(x)} \\quad \\Rightarrow \\quad y = ax + b", "forklaring": "Oppstår når telleren har én grad høyere enn nevneren. Finn $ax+b$ med polynomdivisjon; restleddet går mot 0." },
+        { "navn": "Hull i grafen", "latex": "f(x) = \\frac{(x-a)\\,g(x)}{(x-a)\\,h(x)} \\quad \\Rightarrow \\quad \\text{hull i } x = a", "forklaring": "Går faktoren i nevneren opp i telleren, får du et hull istedenfor en asymptote." }
+      ]
+    },
+    {
+      "tittel": "Derivasjonsregler",
+      "formler": [
+        { "navn": "Definisjonen av den deriverte", "latex": "f'(x) = \\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x) - f(x)}{\\Delta x}", "forklaring": "Grenseverdien av gjennomsnittlig vekstfart når intervallet krymper mot null." },
+        { "navn": "Konstant", "latex": "(k)' = 0", "forklaring": "En vannrett linje har stigningstall 0, så konstantleddet forsvinner." },
+        { "navn": "Potensregelen", "latex": "\\left(x^{n}\\right)' = n\\,x^{n-1}", "forklaring": "Gjelder for alle reelle $n$, også negative og brøker." },
+        { "navn": "Konstant faktor", "latex": "\\left(k \\cdot f(x)\\right)' = k \\cdot f'(x)" },
+        { "navn": "Sum- og differanseregelen", "latex": "(u \\pm v)' = u' \\pm v'" },
+        { "navn": "Produktregelen", "latex": "(uv)' = u'v + uv'", "forklaring": "To ledd, ikke ett: deriver én faktor om gangen og la den andre stå." },
+        { "navn": "Kvotientregelen", "latex": "\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^{2}}", "forklaring": "Rekkefølgen i telleren er avgjørende — snur du, får du feil fortegn." },
+        { "navn": "Kjerneregelen", "latex": "\\left(g(u(x))\\right)' = g'(u(x)) \\cdot u'(x)", "forklaring": "Derivert av det ytre ganger derivert av kjernen." },
+        { "navn": "Eksponentialfunksjonen med grunntall $e$", "latex": "\\left(e^{x}\\right)' = e^{x}, \\qquad \\left(e^{kx}\\right)' = k\\,e^{kx}, \\qquad \\left(e^{u}\\right)' = u' \\cdot e^{u}", "forklaring": "$e^{x}$ er sin egen deriverte." },
+        { "navn": "Eksponentialfunksjonen med grunntall $a$", "latex": "\\left(a^{x}\\right)' = a^{x} \\ln a \\qquad (a > 0)" },
+        { "navn": "Logaritmefunksjonen", "latex": "\\left(\\ln x\\right)' = \\frac{1}{x} \\ (x>0), \\qquad \\left(\\ln u\\right)' = \\frac{u'}{u}", "forklaring": "Kjernens deriverte i telleren, kjernen selv i nevneren." },
+        { "navn": "Kvadratrot", "latex": "\\left(\\sqrt{x}\\right)' = \\frac{1}{2\\sqrt{x}}, \\qquad \\left(\\sqrt{u}\\right)' = \\frac{u'}{2\\sqrt{u}}" }
+      ]
+    },
+    {
+      "tittel": "Vekstfart, tangent og normal",
+      "formler": [
+        { "navn": "Gjennomsnittlig vekstfart", "latex": "\\frac{f(b) - f(a)}{b - a}", "forklaring": "Stigningstallet til sekanten gjennom $(a,f(a))$ og $(b,f(b))$." },
+        { "navn": "Momentan vekstfart", "latex": "f'(a)", "forklaring": "Vekstfarten i ett punkt — stigningstallet til tangenten i $(a, f(a))$." },
+        { "navn": "Tangent i $x=a$", "latex": "y = f'(a)(x-a) + f(a)", "forklaring": "Tre steg: regn ut $f(a)$, regn ut $f'(a)$, sett inn." },
+        { "navn": "Normal i $x=a$", "latex": "y = -\\frac{1}{f'(a)}(x-a) + f(a)", "forklaring": "Normalen står vinkelrett på tangenten, så stigningstallene har produkt $-1$. Krever $f'(a) \\neq 0$." },
+        { "navn": "Vannrett tangent", "latex": "f'(a) = 0" },
+        { "navn": "Tangent parallell med linja $y = kx + c$", "latex": "f'(x) = k", "forklaring": "Parallelle linjer har samme stigningstall, så løs denne likningen for å finne $x$-verdien." }
+      ]
+    },
+    {
+      "tittel": "Funksjonsdrøfting",
+      "formler": [
+        { "navn": "Voksende funksjon", "latex": "f'(x) > 0 \\ \\text{ i } \\ \\langle a, b \\rangle \\quad \\Rightarrow \\quad f \\text{ er voksende i } \\langle a, b \\rangle" },
+        { "navn": "Avtagende funksjon", "latex": "f'(x) < 0 \\ \\text{ i } \\ \\langle a, b \\rangle \\quad \\Rightarrow \\quad f \\text{ er avtagende i } \\langle a, b \\rangle" },
+        { "navn": "Stasjonært punkt", "latex": "f'(a) = 0", "forklaring": "Kandidat til topp-, bunn- eller terrassepunkt. Bruk fortegnslinje eller $f''$ for å avgjøre hvilket." },
+        { "navn": "Den andrederiverte", "latex": "f''(x) = \\left(f'(x)\\right)'", "forklaring": "Forteller hvor raskt stigningstallet endrer seg, altså hvordan grafen krummer." },
+        { "navn": "Toppunkt", "latex": "f'(a) = 0 \\ \\text{ og } \\ f''(a) < 0", "forklaring": "$f'$ skifter fra positiv til negativ i $x=a$." },
+        { "navn": "Bunnpunkt", "latex": "f'(a) = 0 \\ \\text{ og } \\ f''(a) > 0", "forklaring": "$f'$ skifter fra negativ til positiv i $x=a$." },
+        { "navn": "Terrassepunkt", "latex": "f'(a) = 0 \\ \\text{ og } \\ f' \\text{ skifter ikke fortegn i } a", "forklaring": "Vannrett tangent, men grafen fortsetter i samme retning." },
+        { "navn": "Krumning", "latex": "f''(x) > 0 \\Rightarrow \\text{krummer oppover}, \\qquad f''(x) < 0 \\Rightarrow \\text{krummer nedover}" },
+        { "navn": "Vendepunkt", "latex": "f''(a) = 0 \\ \\text{ og } \\ f'' \\text{ skifter fortegn i } a", "forklaring": "Der grafen skifter krumning. At $f''(a)=0$ alene er ikke nok." },
+        { "navn": "Vendetangent", "latex": "y = f'(a)(x-a) + f(a), \\qquad a = \\text{vendepunktets } x\\text{-verdi}", "forklaring": "Tangenten i vendepunktet — der grafen er brattest eller flatest lokalt." },
+        { "navn": "Største og minste verdi på $[a, b]$", "latex": "\\max/\\min \\ \\text{blant} \\ f(a),\\ f(b) \\ \\text{og} \\ f(x_i) \\ \\text{der} \\ f'(x_i) = 0", "forklaring": "Husk endepunktene — de er ofte svaret i optimeringsoppgaver." },
+        { "navn": "Fart og akselerasjon", "latex": "v(t) = s'(t) \\ \\left[\\text{m/s}\\right], \\qquad a(t) = v'(t) = s''(t) \\ \\left[\\text{m/s}^{2}\\right]", "forklaring": "Deriverer du posisjonen $s(t)$ i meter med hensyn på tiden i sekunder, får du fart i m/s og akselerasjon i m/s²." }
+      ]
+    },
+    {
+      "tittel": "Omvendte funksjoner og rotfunksjoner",
+      "formler": [
+        { "navn": "En-entydig (injektiv) funksjon", "latex": "f(x_1) = f(x_2) \\quad \\Rightarrow \\quad x_1 = x_2", "forklaring": "Bare en-entydige funksjoner har en omvendt funksjon. Strengt voksende eller strengt avtagende funksjoner er alltid en-entydige." },
+        { "navn": "Omvendt funksjon", "latex": "f^{-1}\\left(f(x)\\right) = x, \\qquad f\\left(f^{-1}(x)\\right) = x", "forklaring": "$f^{-1}$ gjør om igjen det $f$ gjorde. Merk at $f^{-1}$ ikke betyr $\\frac{1}{f}$." },
+        { "navn": "Finne uttrykket for $f^{-1}$", "latex": "y = f(x) \\ \\longrightarrow \\ \\text{løs for } x \\ \\longrightarrow \\ \\text{bytt navn på } x \\text{ og } y", "forklaring": "Standardoppskriften: løs likningen for $x$, og bytt så bokstavene." },
+        { "navn": "Definisjons- og verdimengde", "latex": "D_{f^{-1}} = V_f, \\qquad V_{f^{-1}} = D_f", "forklaring": "Definisjonsmengde og verdimengde bytter plass." },
+        { "navn": "Speiling om linja $y = x$", "latex": "f(a) = b \\quad \\Longleftrightarrow \\quad f^{-1}(b) = a", "forklaring": "Grafen til $f^{-1}$ er speilbildet av grafen til $f$ om linja $y=x$." },
+        { "navn": "$e^{x}$ og $\\ln x$ er omvendte", "latex": "\\ln\\left(e^{x}\\right) = x, \\qquad e^{\\ln x} = x \\qquad (x > 0)" },
+        { "navn": "n-te rot som potens", "latex": "\\sqrt[n]{x} = x^{\\frac{1}{n}}", "forklaring": "Rotfunksjonen er den omvendte av potensfunksjonen $y = x^{n}$." },
+        { "navn": "Definisjonsmengde for rotfunksjon", "latex": "f(x) = \\sqrt{g(x)} \\quad \\Rightarrow \\quad g(x) \\ge 0", "forklaring": "Du må løse ulikheten $g(x) \\ge 0$ for å finne definisjonsmengden." },
+        { "navn": "Derivert av rotfunksjon", "latex": "\\left(\\sqrt{x}\\right)' = \\frac{1}{2\\sqrt{x}}, \\qquad \\left(x^{\\frac{1}{n}}\\right)' = \\frac{1}{n}\\,x^{\\frac{1}{n}-1}" },
+        { "navn": "Derivert av omvendt funksjon", "latex": "\\left(f^{-1}\\right)'(x) = \\frac{1}{f'\\left(f^{-1}(x)\\right)}", "forklaring": "Speilingen snur stigningstallet: i punktet der $f(a) = b$ er $\\left(f^{-1}\\right)'(b) = \\frac{1}{f'(a)}$, forutsatt $f'(a) \\neq 0$." }
+      ]
+    },
+    {
+      "tittel": "Vektorer i planet",
+      "formler": [
+        { "navn": "Vektor mellom to punkter", "latex": "\\overrightarrow{AB} = [\\,x_B - x_A,\\; y_B - y_A\\,]", "forklaring": "Sluttpunkt minus startpunkt." },
+        { "navn": "Lengden av en vektor", "latex": "\\left|\\vec{a}\\right| = \\sqrt{a_1^{2} + a_2^{2}}", "forklaring": "Pytagoras. Lengden av $\\overrightarrow{AB}$ er avstanden mellom punktene $A$ og $B$." },
+        { "navn": "Sum og differanse", "latex": "\\vec{a} \\pm \\vec{b} = [\\,a_1 \\pm b_1,\\; a_2 \\pm b_2\\,]" },
+        { "navn": "Multiplikasjon med et tall", "latex": "t\\,\\vec{a} = [\\,t a_1,\\; t a_2\\,], \\qquad \\left|t\\vec{a}\\right| = |t|\\,\\left|\\vec{a}\\right|", "forklaring": "Negativ $t$ snur retningen." },
+        { "navn": "Enhetsvektor", "latex": "\\vec{e} = \\frac{1}{\\left|\\vec{a}\\right|}\\,\\vec{a}", "forklaring": "Vektor med lengde 1 og samme retning som $\\vec{a}$." },
+        { "navn": "Skalarproduktet på koordinatform", "latex": "\\vec{a} \\cdot \\vec{b} = a_1 b_1 + a_2 b_2", "forklaring": "Svaret er et tall, ikke en vektor." },
+        { "navn": "Skalarproduktet med vinkelen", "latex": "\\vec{a} \\cdot \\vec{b} = \\left|\\vec{a}\\right|\\left|\\vec{b}\\right|\\cos\\alpha", "forklaring": "$\\alpha$ er vinkelen mellom vektorene når de har samme startpunkt." },
+        { "navn": "Vinkelen mellom to vektorer", "latex": "\\cos\\alpha = \\frac{\\vec{a} \\cdot \\vec{b}}{\\left|\\vec{a}\\right|\\left|\\vec{b}\\right|}", "forklaring": "Setter du de to uttrykkene for skalarproduktet lik hverandre, får du vinkelen. Svaret ligger mellom $0^\\circ$ og $180^\\circ$." },
+        { "navn": "Ortogonale vektorer", "latex": "\\vec{a} \\perp \\vec{b} \\quad \\Longleftrightarrow \\quad \\vec{a} \\cdot \\vec{b} = 0", "forklaring": "Fordi $\\cos 90^\\circ = 0$. Brukes til å vise at to linjer eller sider står vinkelrett på hverandre." },
+        { "navn": "Parallelle vektorer", "latex": "\\vec{a} \\parallel \\vec{b} \\quad \\Longleftrightarrow \\quad \\vec{b} = t\\,\\vec{a} \\quad \\Longleftrightarrow \\quad a_1 b_2 - a_2 b_1 = 0" },
+        { "navn": "Determinanten", "latex": "\\det(\\vec{a}, \\vec{b}) = \\begin{vmatrix} a_1 & b_1 \\\\ a_2 & b_2 \\end{vmatrix} = a_1 b_2 - a_2 b_1" },
+        { "navn": "Areal av parallellogram og trekant", "latex": "A_{\\square} = \\left|\\det(\\vec{a}, \\vec{b})\\right|, \\qquad A_{\\triangle} = \\frac{1}{2}\\left|\\det(\\vec{a}, \\vec{b})\\right|", "forklaring": "$\\vec{a}$ og $\\vec{b}$ er to sider som går ut fra samme hjørne. Husk absoluttverdien — areal er aldri negativt." }
+      ]
+    },
+    {
+      "tittel": "Vekstmodeller",
+      "formler": [
+        { "navn": "Lineær modell", "latex": "f(x) = ax + b, \\qquad f'(x) = a", "forklaring": "Konstant vekstfart: like stor endring per tidsenhet." },
+        { "navn": "Eksponentiell modell", "latex": "f(x) = a \\cdot b^{x} \\qquad (b > 0)", "forklaring": "$a$ er startverdien og $b$ er vekstfaktoren per tidsenhet. Vekst når $b>1$, nedgang når $0<b<1$." },
+        { "navn": "Vekstfaktor og prosent", "latex": "b = 1 + \\frac{p}{100}", "forklaring": "10 % vekst gir $b = 1{,}10$; 10 % nedgang gir $b = 0{,}90$." },
+        { "navn": "Eksponentiell modell med grunntall $e$", "latex": "f(x) = a\\,e^{kx}, \\qquad k = \\ln b", "forklaring": "Samme funksjon skrevet på to måter. $k>0$ betyr vekst, $k<0$ betyr nedgang." },
+        { "navn": "Vekstfarten i en eksponentiell modell", "latex": "f'(x) = a\\,b^{x}\\ln b = f(x) \\cdot \\ln b", "forklaring": "Vekstfarten er proporsjonal med funksjonsverdien — det er kjennetegnet på eksponentiell vekst." },
+        { "navn": "Doblingstid", "latex": "b^{x} = 2 \\quad \\Rightarrow \\quad x = \\frac{\\ln 2}{\\ln b}", "forklaring": "Tiden det tar før verdien er dobbelt så stor. Uavhengig av startverdien." },
+        { "navn": "Halveringstid", "latex": "b^{x} = 0{,}5 \\quad \\Rightarrow \\quad x = \\frac{\\ln 0{,}5}{\\ln b}" },
+        { "navn": "Potensmodell", "latex": "f(x) = a\\,x^{b}", "forklaring": "Passer data der forholdstall vokser jevnt, for eksempel sammenhengen mellom lengde og masse." },
+        { "navn": "Logistisk modell", "latex": "f(x) = \\frac{B}{1 + C\\,e^{-kx}}, \\qquad f(0) = \\frac{B}{1+C}, \\qquad f(x) \\to B", "forklaring": "$B$ er bæreevnen, altså den øvre grensa modellen nærmer seg." },
+        { "navn": "Raskest vekst i en logistisk modell", "latex": "x = \\frac{\\ln C}{k}, \\qquad f(x) = \\frac{B}{2}, \\qquad f'_{\\max} = \\frac{kB}{4}", "forklaring": "Vendepunktet ligger halvveis opp mot bæreevnen — der er veksten på topp." }
+      ]
+    },
+    {
+      "tittel": "Parameterframstillinger og vektorfunksjoner",
+      "formler": [
+        { "navn": "Parameterframstilling for en rett linje", "latex": "\\vec{r}(t) = [\\,x_0 + a t,\\; y_0 + b t\\,]", "forklaring": "$(x_0, y_0)$ er et punkt på linja og $[a, b]$ er en retningsvektor." },
+        { "navn": "Parameterframstilling på koordinatform", "latex": "x = x_0 + a t, \\qquad y = y_0 + b t" },
+        { "navn": "Fra parameterframstilling til likning", "latex": "t = \\frac{x - x_0}{a} \\quad \\Rightarrow \\quad y = y_0 + b \\cdot \\frac{x - x_0}{a}", "forklaring": "Løs den ene likningen for $t$ og sett inn i den andre." },
+        { "navn": "Posisjonsvektor (vektorfunksjon)", "latex": "\\vec{r}(t) = [\\,x(t),\\; y(t)\\,]", "forklaring": "Beskriver hvor et punkt er ved tiden $t$. Kurven punktet følger, kalles banen." },
+        { "navn": "Fartsvektor", "latex": "\\vec{v}(t) = \\vec{r}\\,'(t) = [\\,x'(t),\\; y'(t)\\,]", "forklaring": "Deriver hver koordinat for seg. Fartsvektoren har retning langs tangenten til banen." },
+        { "navn": "Banefart", "latex": "\\left|\\vec{v}(t)\\right| = \\sqrt{\\left(x'(t)\\right)^{2} + \\left(y'(t)\\right)^{2}}", "forklaring": "Farten langs banen. Er koordinatene i meter og $t$ i sekunder, blir enheten m/s." },
+        { "navn": "Akselerasjonsvektor", "latex": "\\vec{a}(t) = \\vec{v}\\,'(t) = [\\,x''(t),\\; y''(t)\\,]", "forklaring": "Deriver fartsvektoren komponentvis. Enhet m/s² når posisjonen er i meter og tiden i sekunder." },
+        { "navn": "Skjæring og kollisjon mellom to baner", "latex": "\\vec{r}_1(t) = \\vec{r}_2(s)", "forklaring": "Løs likningssettet. Får du samme parameterverdi ($t = s$), er punktene på samme sted til samme tid — da kolliderer de." }
+      ]
+    }
+  ]
+}

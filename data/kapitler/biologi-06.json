@@ -1,0 +1,270 @@
+{
+  "fag": "biologi",
+  "nr": 6,
+  "tittel": "Næringsopptak og energiomsetning",
+  "intro": "Alt liv trenger energi og byggemateriale, og dette kapittelet handler om hvordan organismene skaffer seg begge deler. Du lærer hvordan fotosyntesen fanger lysenergi i sukker, hvordan celleåndingen henter energien ut igjen som ATP med og uten oksygen, og hvordan maten du spiser brytes ned og tas opp i tarmen — med god hjelp fra bakteriene som bor der.",
+
+  "kompakt": {
+    "punkter": [
+      "Autotrofe organismer bygger sine egne organiske molekyler fra uorganiske stoffer, først og fremst CO$_2$ og vann. Heterotrofe organismer må ta opp ferdige organiske molekyler laget av andre.",
+      "Fotosyntesen samlet: $\\ce{6CO2 + 6H2O ->[lys] C6H12O6 + 6O2}$. Den skjer i kloroplasten og er inngangsporten for energi til nesten alle økosystemer.",
+      "Lysreaksjonene i tylakoidmembranen spalter vann, avgir O$_2$ og lager ATP og NADPH. Karbonfikseringen i stromaet bruker ATP og NADPH til å bygge karbohydrat av CO$_2$. Oksygenet som avgis, kommer fra vannet — ikke fra CO$_2$.",
+      "Aerob celleånding: $\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}$. Ett mol glukose frigjør omtrent 2870 kJ, og cellen får ut rundt 30–32 ATP.",
+      "Celleåndingen har fire trinn: glykolysen i cytosol, overgangen pyruvat til acetyl-CoA og sitronsyresyklusen i mitokondriematriksen, og elektrontransportkjeden i den indre mitokondriemembranen. Oksygen reagerer ikke direkte med glukosen — det står sist i kjeden som endelig elektronmottaker og blir vann.",
+      "Alle levende celler driver celleånding — også plantecellene, hele døgnet. Om natten bruker planten oksygen og avgir CO$_2$.",
+      "Gjæring foregår uten oksygen, gir bare de 2 ATP-ene fra glykolysen, og har som hovedpoeng å regenerere NAD$^+$. Melkesyregjæring: $\\ce{C6H12O6 -> 2C3H6O3}$. Alkoholgjæring: $\\ce{C6H12O6 -> 2C2H5OH + 2CO2}$.",
+      "Anaerob celleånding er ikke det samme som gjæring: den bruker en elektrontransportkjede, men med nitrat, sulfat eller CO$_2$ som endelig elektronmottaker. Bare prokaryoter kan dette.",
+      "Fordøyelsen er hydrolyse: karbohydrat blir monosakkarider, protein blir aminosyrer, fett blir fettsyrer og glyserol. Nedbrytingen fullføres og alt opptaket skjer i tynntarmen, over tarmtotter og mikrovilli.",
+      "Tarmfloraen i tykktarmen gjærer kostfiber til kortkjedede fettsyrer, lager vitamin K og B-vitaminer, hindrer sykdomsbakterier i å få fotfeste og trener immunforsvaret."
+    ],
+    "formler": [
+      { "navn": "Fotosyntesen (samlet)", "latex": "\\ce{6CO2 + 6H2O ->[lys] C6H12O6 + 6O2}" },
+      { "navn": "Vannspaltingen i lysreaksjonene", "latex": "\\ce{2H2O -> 4H+ + 4e- + O2}" },
+      { "navn": "Aerob celleånding", "latex": "\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}" },
+      { "navn": "Energien i ett mol glukose", "latex": "\\Delta G \\approx -2870\\,\\text{kJ/mol}" },
+      { "navn": "ATP som energivaluta", "latex": "\\text{ATP} + \\text{H}_2\\text{O} \\longrightarrow \\text{ADP} + \\text{P}_\\text{i}, \\qquad \\Delta G \\approx -30{,}5\\,\\text{kJ/mol}" },
+      { "navn": "Melkesyregjæring", "latex": "\\ce{C6H12O6 -> 2C3H6O3} \\quad (\\text{netto } 2\\ \\text{ATP})" },
+      { "navn": "Alkoholgjæring", "latex": "\\ce{C6H12O6 -> 2C2H5OH + 2CO2} \\quad (\\text{netto } 2\\ \\text{ATP})" },
+      { "navn": "Bruttofotosyntese", "latex": "B = N + R \\quad (\\text{netto} + \\text{respirasjon})" },
+      { "navn": "Energiinnhold i næringsstoffer", "latex": "\\text{karbohydrat } 17\\,\\text{kJ/g}, \\quad \\text{protein } 17\\,\\text{kJ/g}, \\quad \\text{fett } 37\\,\\text{kJ/g}, \\quad \\text{alkohol } 29\\,\\text{kJ/g}" },
+      { "navn": "Virkningsgrad", "latex": "\\eta = \\frac{E_{\\text{ATP}}}{E_{\\text{glukose}}} \\cdot 100\\,\\%" },
+      { "navn": "Omregning mellom energienheter", "latex": "1\\,\\text{kcal} = 4{,}184\\,\\text{kJ}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Autotrofe og heterotrofe organismer",
+        "html": "<p>Alt liv trenger to ting: <strong>energi</strong> til å drive prosesser, og <strong>karbon</strong> til å bygge kroppen av. Forskjellen mellom organismegruppene ligger i hvor de henter dette fra.</p><p><strong>Autotrofe</strong> organismer («selvernærende») lager sine egne organiske molekyler fra uorganiske stoffer — først og fremst karbondioksid og vann. De aller fleste er <strong>fotoautotrofe</strong> og bruker lysenergi: planter, alger og cyanobakterier. Noen få er <strong>kjemoautotrofe</strong> og henter energien fra kjemiske reaksjoner med uorganiske stoffer i stedet for fra lys. Nitrifiserende bakterier i jorda oksiderer ammonium, og svovelbakterier ved varme kilder på havbunnen oksiderer hydrogensulfid. Der nede finnes det økosystemer som aldri har fått en solstråle.</p><p><strong>Heterotrofe</strong> organismer («andreernærende») kan ikke binde karbon fra CO<sub>2</sub> selv, og må ta opp ferdige organiske molekyler: dyr, sopp, de fleste bakterier og alle mennesker. I økologien deler vi dem i <em>konsumenter</em>, som lever av andre organismer, og <em>nedbrytere</em>, som lever av dødt organisk materiale.</p><p>De autotrofe kalles <strong>produsenter</strong> i et økosystem, fordi de er inngangsporten for både energi og karbon. Energien kommer inn som lys, går gjennom næringskjeden og forsvinner til slutt som varme. Karbonet går derimot i kretsløp mellom organismene og atmosfæren.</p><p>Den viktigste presiseringen i hele kapittelet: autotrof handler om <em>hvordan organismen skaffer karbon og energi</em> — ikke om hvorvidt den driver celleånding. Planteceller har mitokondrier og driver celleånding hele døgnet, akkurat som du. Om dagen går fotosyntesen så mye raskere at planten netto avgir oksygen, men om natten forbruker den oksygen og avgir CO<sub>2</sub>.</p>"
+      },
+      {
+        "tittel": "Fotosyntesen i hovedtrekk",
+        "html": "<p>Fotosyntesen skjer i <strong>kloroplastene</strong>, som ligger tettest i de midtre cellelagene i bladet. CO<sub>2</sub> kommer inn gjennom <strong>spalteåpningene</strong>, og vannet kommer opp fra røttene. Samlet kan prosessen skrives slik:</p>$$\\ce{6CO2 + 6H2O ->[lys] C6H12O6 + 6O2}$$<p>Men denne likningen er summen av to delprosesser som er koblet sammen.</p><p><strong>1. Lysreaksjonene</strong> foregår i <strong>tylakoidmembranene</strong>, der klorofyllet sitter. Klorofyll a absorberer blått og rødt lys og reflekterer det grønne — derfor ser blader grønne ut. Lysenergien river elektroner løs fra klorofyllet, og hullet fylles ved at <strong>vann spaltes</strong>:</p>$$\\ce{2H2O -> 4H+ + 4e- + O2}$$<p>Oksygenet er et avfallsprodukt og slippes ut. Elektronene sendes gjennom en transportkjede i tylakoidmembranen, og energien brukes til å lage <strong>ATP</strong> og <strong>NADPH</strong>.</p><p><strong>2. Karbonfikseringen</strong> skjer i <strong>stromaet</strong>, væsken rundt tylakoidene. Her bindes CO<sub>2</sub> til et organisk molekyl i en syklus (Calvin-syklusen), og ATP og NADPH fra lysreaksjonene brukes til å bygge karbohydrat. Trinnet kalles ofte «mørkereaksjonene», men navnet er misvisende: reaksjonene går også i fullt dagslys, de er bare ikke avhengige av lys direkte. Uten ATP og NADPH stopper de i løpet av minutter.</p><p>Farten på fotosyntesen bestemmes av <strong>minimumsfaktoren</strong> — den faktoren det er minst av. Ved svakt lys øker farten når du skrur opp lyset, men på et punkt flater kurven ut, og da er det CO<sub>2</sub>-konsentrasjonen eller temperaturen som begrenser. Derfor tilsetter man CO<sub>2</sub> i veksthus.</p>"
+      },
+      {
+        "tittel": "Aerob celleånding",
+        "html": "<p>Energimessig er aerob celleånding fotosyntesen baklengs: glukosen oksideres helt til karbondioksid og vann, og energien som frigjøres, lagres i ATP.</p>$$\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}$$<p>Ett mol glukose (180 g) gir omtrent 2870 kJ. Cellen kan ikke frigjøre alt på én gang — det ville blitt en brann. I stedet plukkes hydrogenet av glukosen litt om gangen av <strong>NAD<sup>+</sup></strong> og FAD, som frakter elektronene videre. Prosessen har fire trinn:</p><table><thead><tr><th>Trinn</th><th>Hvor i cellen</th><th>Viktigste utbytte</th></tr></thead><tbody><tr><td>Glykolysen</td><td>Cytosol</td><td>Glukose blir 2 pyruvat, netto 2 ATP og 2 NADH</td></tr><tr><td>Overgangen til acetyl-CoA</td><td>Mitokondriematriks</td><td>2 CO<sub>2</sub> og 2 NADH</td></tr><tr><td>Sitronsyresyklusen (2 runder)</td><td>Mitokondriematriks</td><td>4 CO<sub>2</sub>, 6 NADH, 2 FADH<sub>2</sub>, 2 ATP</td></tr><tr><td>Elektrontransportkjeden</td><td>Indre mitokondriemembran</td><td>26–28 ATP, og O<sub>2</sub> blir vann</td></tr></tbody></table><p>Til sammen gir ett glukosemolekyl omtrent <strong>30–32 ATP</strong>. Eldre bøker skriver 36–38; nyere beregninger gir lavere tall, blant annet fordi transporten inn i mitokondriet også koster energi.</p><p>Legg nøye merke til hva oksygenet gjør. Det reagerer <em>ikke</em> direkte med glukosen. Oksygen står helt til slutt i elektrontransportkjeden og tar imot de utbrukte elektronene sammen med H<sup>+</sup>, slik at det dannes vann. Uten en slik mottaker fylles kjeden opp, NADH blir ikke frigjort til NAD<sup>+</sup> igjen, og trinn 2, 3 og 4 stopper. All CO<sub>2</sub> du puster ut, kommer fra trinn 2 og 3, mens vannet dannes i trinn 4.</p>"
+      },
+      {
+        "tittel": "Anaerob celleånding og gjæring",
+        "html": "<p>Uten oksygen stopper elektrontransportkjeden, og cellen sitter igjen med NADH den ikke får tømt. Glykolysen krever nemlig ledig NAD<sup>+</sup>, så når alt NAD<sup>+</sup> er bundet opp, stanser også de 2 ATP-ene glykolysen gir. Løsningen er <strong>gjæring</strong>.</p><p>I gjæringen brukes pyruvat, eller et stoff laget av pyruvat, som elektronmottaker i stedet for oksygen. Poenget er ikke å lage ATP — selve gjæringstrinnet gir ikke ett eneste ATP — men å gjenvinne NAD<sup>+</sup> slik at glykolysen kan gå videre. Utbyttet blir derfor de samme 2 ATP per glukose som glykolysen gir alene.</p><ul><li><strong>Melkesyregjæring:</strong> $\\ce{C6H12O6 -> 2C3H6O3}$. Skjer i muskelcellene dine når arbeidet er så hardt at blodet ikke rekker å levere nok oksygen, og hos melkesyrebakterier i yoghurt, surkål og surfôr.</li><li><strong>Alkoholgjæring:</strong> $\\ce{C6H12O6 -> 2C2H5OH + 2CO2}$. Gjærsopp gjør dette. CO<sub>2</sub>-en hever brøddeigen, etanolen blir øl og vin.</li></ul><p><strong>Anaerob celleånding</strong> er noe annet, selv om navnene ligner. Her brukes en fullstendig elektrontransportkjede, men med en annen endelig elektronmottaker enn oksygen: nitrat (denitrifiserende bakterier, som gir N<sub>2</sub>), sulfat (gir H<sub>2</sub>S og lukten av råtne egg i oksygenfritt mudder) eller CO<sub>2</sub> (metanogene arker, som gir CH<sub>4</sub>). Det gir mer ATP enn gjæring, men mindre enn med oksygen — og bare prokaryoter greier det. Cellene dine har bare gjæringen å falle tilbake på.</p><p>Melkesyra blir fjernet raskt etter arbeidet: laktatet fraktes med blodet til lever, hjerte og hvilende muskler, der det brukes som brennstoff eller bygges om til glukose igjen.</p>"
+      },
+      {
+        "tittel": "Næringsstoffer og fordøyelse hos mennesket",
+        "html": "<p>Maten inneholder <strong>energigivende næringsstoffer</strong> — karbohydrat, fett og protein — pluss vann, vitaminer, mineraler og kostfiber, som ikke gir deg energi, men er nødvendige likevel. Byggesteiner kroppen ikke kan lage selv, kalles <strong>essensielle</strong>: ni aminosyrer, to fettsyrer og alle vitaminer og mineraler.</p><table><thead><tr><th>Næringsstoff</th><th>Byggesteiner</th><th>Energi</th></tr></thead><tbody><tr><td>Karbohydrat</td><td>Monosakkarider: glukose, fruktose, galaktose</td><td>17 kJ/g</td></tr><tr><td>Protein</td><td>Aminosyrer</td><td>17 kJ/g</td></tr><tr><td>Fett</td><td>Fettsyrer og glyserol</td><td>37 kJ/g</td></tr></tbody></table><p>Molekylene i maten er for store til å slippe gjennom tarmveggen. <strong>Fordøyelsen</strong> er hydrolyse: enzymer klipper polymerene i biter ved hjelp av vann.</p><ul><li><strong>Munnen:</strong> amylase i spyttet begynner på stivelsen, og tyggingen øker overflaten.</li><li><strong>Magesekken:</strong> saltsyre gir pH rundt 2, som dreper mikrober og folder ut proteinene. Pepsin klipper protein til kortere peptider. Amylasen slutter å virke i det sure miljøet.</li><li><strong>Tolvfingertarmen:</strong> bukspyttet tilfører bikarbonat som nøytraliserer syra, pluss amylase, lipase og proteaser. <strong>Galle</strong> fra leveren emulgerer fettet til små dråper slik at lipasen får mye større angrepsflate — men galle inneholder ingen enzymer.</li><li><strong>Tynntarmen:</strong> enzymer i tarmveggen fullfører nedbrytingen, og byggesteinene tas opp. Veggen er foldet og dekket av <strong>tarmtotter</strong> og <strong>mikrovilli</strong>; nyere målinger anslår opptaksflaten til rundt 30 m<sup>2</sup>, mot omtrent 2 m<sup>2</sup> hud.</li><li><strong>Tykktarmen:</strong> vann og salter tas opp, og tarmbakteriene arbeider videre på resten.</li></ul><p>Monosakkarider og aminosyrer går rett inn i blodet og føres gjennom <strong>portvenen til leveren</strong>. Fettet tar en annen vei: det settes sammen igjen i tarmcellene, pakkes i partikler og sendes ut i <strong>lymfen</strong> før det når blodet.</p>"
+      },
+      {
+        "tittel": "Tarmfloraen",
+        "html": "<p>I tykktarmen lever et enormt bakteriesamfunn, <strong>tarmfloraen</strong> eller tarmmikrobiotaen. Anslagene varierer mellom kilder: eldre bøker skriver «1–2 kg», mens nyere beregninger antyder noen hundre gram og omtrent like mange bakterieceller som kroppens egne celler. Uansett snakker vi om størrelsesorden 10<sup>13</sup>–10<sup>14</sup> celler og flere hundre arter. De fleste er anaerobe og tåler dårlig oksygen.</p><p>Forholdet er <strong>mutualistisk</strong> — begge parter tjener på det. Bakteriene får et varmt, stabilt miljø og maten du ikke greier å bruke. Du får fire ting igjen:</p><ul><li><strong>Energi fra kostfiber.</strong> Du har ingen enzymer som kan hydrolysere cellulose og andre fibre. Bakteriene gjærer dem i stedet og lager <strong>kortkjedede fettsyrer</strong> som acetat, propionat og butyrat. Butyrat er hovedbrennstoffet til cellene i tykktarmsveggen.</li><li><strong>Vitaminer.</strong> Særlig vitamin K og flere B-vitaminer.</li><li><strong>Beskyttelse.</strong> Bakteriene okkuperer plassen og næringen, slik at sykdomsbakterier ikke får fotfeste.</li><li><strong>Trening av immunforsvaret.</strong> Tarmslimhinnen er kroppens største kontaktflate mot omverdenen, og immuncellene der lærer å skille farlig fra harmløst.</li></ul><p>Metan, hydrogen og CO<sub>2</sub> er biprodukter av gjæringen — derfor blir det gass av erter og bønner.</p><p>Bredspektret antibiotika slår ut store deler av floraen, og da kan det oppstå diaré, i verste fall en oppblomstring av bakterien <em>Clostridioides difficile</em>. Slike tilfeller behandles i dag med <strong>fekal mikrobiota-transplantasjon</strong>, der bakterier fra en frisk giver føres inn i tarmen. At floraen også henger sammen med vekt, stoffskifte og kanskje humør, er et felt i rask utvikling — men her er det fortsatt mer korrelasjon enn påvist årsak, så vær kritisk til overskriftene.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Energiregnskapet for ett glukosemolekyl",
+        "oppgave": "<p>Ved fullstendig oksidasjon frigjør 1 mol glukose omtrent 2870 kJ. Vi regner med at cellen får ut 32 ATP per glukose, og at hvert mol ATP lagrer 30,5 kJ.</p><ol><li>Hvor mye av energien blir lagret i ATP, og hva blir virkningsgraden?</li><li>Hvor mye ATP gir samme glukose ved melkesyregjæring, og hvor mange ganger mer glukose må cellen bruke for å få like mye ATP?</li><li>En sprinter bruker 0,60 mol ATP på et 400-meterløp. Hvor mange gram glukose trengs hvis alt lages anaerobt, og hvor mange gram hvis alt lages aerobt? Molar masse for glukose er 180 g/mol.</li></ol>",
+        "losning": "<p><strong>Deloppgave 1 — virkningsgraden.</strong> Energien som havner i ATP:</p>$$E_{\\text{ATP}} = 32\\,\\text{mol} \\cdot 30{,}5\\,\\frac{\\text{kJ}}{\\text{mol}} = 976\\,\\text{kJ}$$<p>Virkningsgraden er denne energien delt på energien i glukosen:</p>$$\\eta = \\frac{976\\,\\text{kJ}}{2870\\,\\text{kJ}} \\cdot 100\\,\\% = 34\\,\\%$$<p>Resten, $2870 - 976 = 1894$ kJ, blir varme. Det er derfor du blir varm når du trener, og derfor kroppstemperaturen holder seg på 37 °C uten at du gjør noe aktivt for det.</p><p><strong>Deloppgave 2 — gjæring.</strong> Melkesyregjæring gir bare de 2 ATP-ene fra glykolysen:</p>$$E_{\\text{ATP}} = 2\\,\\text{mol} \\cdot 30{,}5\\,\\frac{\\text{kJ}}{\\text{mol}} = 61\\,\\text{kJ} \\quad \\Rightarrow \\quad \\eta = \\frac{61}{2870} \\cdot 100\\,\\% = 2{,}1\\,\\%$$<p>Forholdet mellom utbyttene er</p>$$\\frac{32\\ \\text{ATP}}{2\\ \\text{ATP}} = 16$$<p>Cellen må altså bruke <strong>16 ganger mer glukose</strong> anaerobt for å få like mye ATP. Nesten all energien sitter fortsatt igjen i melkesyra, som er et energirikt molekyl — den er ikke «brukt opp».</p><p><strong>Deloppgave 3 — sprinteren.</strong> Anaerobt, med 2 mol ATP per mol glukose:</p>$$n = \\frac{0{,}60\\,\\text{mol ATP}}{2\\,\\frac{\\text{mol ATP}}{\\text{mol glukose}}} = 0{,}30\\,\\text{mol glukose}$$$$m = 0{,}30\\,\\text{mol} \\cdot 180\\,\\frac{\\text{g}}{\\text{mol}} = 54\\,\\text{g}$$<p>Aerobt, med 32 mol ATP per mol glukose:</p>$$n = \\frac{0{,}60}{32} = 0{,}01875\\,\\text{mol}$$$$m = 0{,}01875\\,\\text{mol} \\cdot 180\\,\\frac{\\text{g}}{\\text{mol}} = 3{,}4\\,\\text{g}$$<p><strong>Tolkning.</strong> Forholdet $54 : 3{,}4$ er igjen 16. De 54 gramene er langt mer glukose enn de 4–5 gramene som finnes i blodet til enhver tid, så anaerobt arbeid må tære på glykogenlageret i muskelen. Lageret er begrenset, og melkesyra hoper seg opp — det er den biokjemiske grunnen til at ingen kan sprinte i mer enn et halvt minutt eller to.</p>"
+      },
+      {
+        "tittel": "Fotosynteseforsøk med vannpest: netto og brutto",
+        "oppgave": "<p>Du setter en 5,0 g kvist vannpest i et lukket kar med vann tilsatt natriumhydrogenkarbonat, og måler oksygenkonsentrasjonen med en oksygensensor. Karet står i vannbad på 20 °C. Målingene gir:</p><table><thead><tr><th>Betingelse</th><th>Endring i oksygen</th></tr></thead><tbody><tr><td>Helt mørkt</td><td>minker med 6,0 µmol per time</td></tr><tr><td>Lampe 1,0 m unna</td><td>øker med 4,0 µmol per time</td></tr><tr><td>Lampe 0,25 m unna</td><td>øker med 18,0 µmol per time</td></tr></tbody></table><ol><li>Hvorfor minker oksygenet i mørket?</li><li>Regn ut bruttofotosyntesen ved de to lysstyrkene.</li><li>Hvor mye glukose lager planten per time ved sterkest lys? Svar i mikromol og i mikrogram.</li><li>Hva er kompensasjonspunktet, og hvor stor må bruttofotosyntesen være der?</li><li>Nevn to feilkilder.</li></ol>",
+        "losning": "<p><strong>1 — mørket.</strong> I mørket er det ingen fotosyntese, men celleåndingen går som før. Planten forbruker oksygen og avgir CO<sub>2</sub>. Målingen gir derfor respirasjonshastigheten direkte:</p>$$R = 6{,}0\\ \\mu\\text{mol O}_2\\text{/time}$$<p><strong>2 — brutto.</strong> Sensoren måler bare <em>netto</em>, altså det fotosyntesen lager minus det celleåndingen bruker: $N = B - R$. Løser vi for brutto:</p>$$B = N + R$$<p>Ved 1,0 m:</p>$$B = 4{,}0 + 6{,}0 = 10{,}0\\ \\mu\\text{mol O}_2\\text{/time}$$<p>Ved 0,25 m:</p>$$B = 18{,}0 + 6{,}0 = 24{,}0\\ \\mu\\text{mol O}_2\\text{/time}$$<p>Her gjør vi en antakelse som du bør skrive ned i rapporten: at celleåndingen er like stor i lys som i mørke.</p><p><strong>3 — glukose.</strong> Reaksjonslikningen $\\ce{6CO2 + 6H2O -> C6H12O6 + 6O2}$ viser at det dannes 1 glukose per 6 O<sub>2</sub>:</p>$$n(\\text{glukose}) = \\frac{24{,}0\\ \\mu\\text{mol}}{6} = 4{,}0\\ \\mu\\text{mol/time}$$<p>Massen finner vi med $M = 180$ g/mol:</p>$$m = 4{,}0 \\cdot 10^{-6}\\,\\text{mol} \\cdot 180\\,\\frac{\\text{g}}{\\text{mol}} = 7{,}2 \\cdot 10^{-4}\\,\\text{g} = 720\\ \\mu\\text{g/time}$$<p>Det er 0,72 mg per time. Forbruket av CO<sub>2</sub> er like stort som produksjonen av O<sub>2</sub>, altså 24,0 µmol per time, siden forholdet i likningen er 6 : 6.</p><p><strong>4 — kompensasjonspunktet.</strong> Det er lysstyrken der nettofotosyntesen er null, altså der planten bruker akkurat like mye oksygen som den lager:</p>$$N = 0 \\quad \\Rightarrow \\quad B = R = 6{,}0\\ \\mu\\text{mol O}_2\\text{/time}$$<p>Ved svakere lys enn dette taper planten mer organisk stoff enn den bygger. Punktet ligger et stykke under den svakeste lysstyrken vi målte, siden netto der allerede var $+4{,}0$.</p><p><strong>5 — feilkilder.</strong> Lampen varmer opp vannet, og temperaturen påvirker begge prosessene (derfor vannbad eller varmefilter). Oksygen kan lekke inn eller ut av karet. CO<sub>2</sub> kan bli minimumsfaktor når fotosyntesen går fort — derfor hydrogenkarbonatet. Bakterier og alger i vannet bruker også oksygen, så et kar uten plante bør kjøres som kontroll.</p>"
+      },
+      {
+        "tittel": "Én brødskive med ost — hele veien til ATP",
+        "oppgave": "<p>Du spiser en brødskive med ost. Brødet består i hovedsak av stivelse, osten av protein og fett. Følg maten gjennom fordøyelseskanalen, og forklar for hvert sted hvilket stoff som brytes ned, hvilket enzym som gjør jobben, og hva produktet blir. Avslutt med hva som skjer med byggesteinene inne i en muskelcelle.</p>",
+        "losning": "<p><strong>Munnen.</strong> Tyggingen deler maten opp og øker overflaten enzymene kan angripe. <strong>Amylase</strong> i spyttet hydrolyserer stivelsen i brødet til kortere kjeder og disakkaridet maltose. Verken protein eller fett røres her.</p><p><strong>Spiserøret.</strong> Ingen kjemisk fordøyelse. Ringmuskulaturen presser maten nedover med bølgebevegelser (peristaltikk), og det virker også om du står på hodet.</p><p><strong>Magesekken.</strong> Saltsyre gir pH rundt 2. Det dreper de fleste mikrobene i osten, og det folder ut proteinmolekylene slik at enzymet kommer til. <strong>Pepsin</strong> klipper proteinene fra osten i kortere <em>peptider</em>. Samtidig slutter spyttamylasen å virke, fordi den ikke tåler så lav pH — stivelsesnedbrytingen tar altså pause her.</p><p><strong>Tolvfingertarmen.</strong> Tre bidrag kommer inn samtidig. Bukspytt tilfører bikarbonat som nøytraliserer syra opp til pH rundt 7–8, slik at enzymene under kan virke. <strong>Galle</strong> fra leveren emulgerer fettet i osten til bittesmå dråper — den bryter ikke ned noe, men mangedobler overflaten. Så gjør bukspyttets enzymer jobben: amylase på resten av stivelsen, <strong>lipase</strong> på fettdråpene (til fettsyrer og monoglyserider), og <strong>proteaser</strong> som trypsin på peptidene.</p><p><strong>Tynntarmen.</strong> Enzymer i selve tarmveggen fullfører: maltase spalter maltose til to glukose, og peptidaser klipper de siste peptidene til frie <em>aminosyrer</em>. Nå er alt lite nok til å tas opp gjennom mikrovilli på tarmtottene.</p><p><strong>Transporten.</strong> Glukose og aminosyrer går inn i blodet og føres via portvenen til leveren, som jevner ut blodsukkeret og fordeler videre. Fettet settes sammen til fett igjen inne i tarmcellene, pakkes i partikler og sendes ut i lymfen — det når blodet først ved venen under kragebeinet.</p><p><strong>Tykktarmen.</strong> Fiberet i brødet kommer hit uten å være rørt, for du har ingen enzymer som spalter det. Tarmbakteriene gjærer det til kortkjedede fettsyrer som tarmcellene bruker som brennstoff, og vann og salter tas opp.</p><p><strong>Inne i muskelcellen.</strong> Glukosen fra blodet går gjennom glykolysen i cytosol til 2 pyruvat. Er det nok oksygen, føres pyruvatet inn i mitokondriet, blir acetyl-CoA, går gjennom sitronsyresyklusen, og NADH leverer elektronene til elektrontransportkjeden — omtrent 30–32 ATP i alt, og CO<sub>2</sub> som du puster ut. Aminosyrene brukes helst til å bygge protein, ikke til brennstoff. Fettsyrene gir mye ATP per gram, men bare aerobt.</p>"
+      },
+      {
+        "tittel": "Energiinnholdet i et måltid — og hvor mye ATP det blir",
+        "oppgave": "<p>To brødskiver med ost og et glass melk inneholder til sammen 60 g karbohydrat, 25 g protein og 22 g fett.</p><ol><li>Regn ut energiinnholdet i kJ og i kcal.</li><li>Hvor stor andel av energien kommer fra fett?</li><li>Hvor mange mol ATP kan karbohydratet gi hvis vi regner alt som glukose og 32 ATP per glukose?</li><li>Molar masse for ATP er 507 g/mol. Hvor mange kilo ATP svarer svaret i c) til, og hva forteller det deg?</li></ol>",
+        "losning": "<p><strong>1 — energiinnhold.</strong> Vi bruker 17 kJ/g for karbohydrat og protein og 37 kJ/g for fett:</p>$$E_{\\text{karbo}} = 60\\,\\text{g} \\cdot 17\\,\\frac{\\text{kJ}}{\\text{g}} = 1020\\,\\text{kJ}$$$$E_{\\text{protein}} = 25\\,\\text{g} \\cdot 17\\,\\frac{\\text{kJ}}{\\text{g}} = 425\\,\\text{kJ}$$$$E_{\\text{fett}} = 22\\,\\text{g} \\cdot 37\\,\\frac{\\text{kJ}}{\\text{g}} = 814\\,\\text{kJ}$$<p>Totalt:</p>$$E = 1020 + 425 + 814 = 2259\\,\\text{kJ} \\approx 2{,}3\\,\\text{MJ}$$<p>Omregnet til kilokalorier med $1\\,\\text{kcal} = 4{,}184\\,\\text{kJ}$:</p>$$\\frac{2259\\,\\text{kJ}}{4{,}184\\,\\frac{\\text{kJ}}{\\text{kcal}}} = 540\\,\\text{kcal}$$<p><strong>2 — fettandelen.</strong></p>$$\\frac{814}{2259} \\cdot 100\\,\\% = 36\\,\\%$$<p>Anbefalingen er at 25–40 % av energien kommer fra fett, så måltidet ligger innenfor. Legg merke til at fettet utgjør bare 22 g av 107 g næringsstoffer, men over en tredjedel av energien — fett gir mer enn dobbelt så mye energi per gram som de to andre.</p><p><strong>3 — ATP fra karbohydratet.</strong> Antall mol glukose:</p>$$n = \\frac{60\\,\\text{g}}{180\\,\\frac{\\text{g}}{\\text{mol}}} = 0{,}333\\,\\text{mol}$$$$n(\\text{ATP}) = 0{,}333\\,\\text{mol} \\cdot 32 = 10{,}7\\,\\text{mol ATP}$$<p><strong>4 — massen ATP.</strong></p>$$m = 10{,}7\\,\\text{mol} \\cdot 507\\,\\frac{\\text{g}}{\\text{mol}} \\approx 5400\\,\\text{g} = 5{,}4\\,\\text{kg}$$<p>Kroppen din inneholder til enhver tid bare rundt 50 g ATP. Ett eneste måltid gir altså mer enn hundre ganger så mye ATP som du har i kroppen. Konklusjonen er at ATP ikke er et <em>lager</em>, men en <em>valuta</em>: hvert molekyl brytes ned til ADP og bygges opp igjen tusenvis av ganger i døgnet. Vil du lagre energi, gjør kroppen det som glykogen og fett i stedet.</p><p><strong>Kontrollregning.</strong> Stemmer dette med virkningsgraden fra eksempel 1?</p>$$10{,}7\\,\\text{mol} \\cdot 30{,}5\\,\\frac{\\text{kJ}}{\\text{mol}} = 326\\,\\text{kJ} \\quad \\Rightarrow \\quad \\frac{326}{1020} \\cdot 100\\,\\% = 32\\,\\%$$<p>Det er samme størrelsesorden som de 34 % vi fant der, så regningen henger sammen.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å skrive at plantene driver fotosyntese og dyrene celleånding. Planteceller har mitokondrier og driver celleånding hele døgnet. Om dagen er fotosyntesen raskere, så netto avgis oksygen — men om natten forbruker planten oksygen og avgir CO$_2$, akkurat som deg.",
+      "Å tro at oksygenet plantene avgir, kommer fra karbondioksidet. Det kommer fra vannet, som spaltes i lysreaksjonene: $\\ce{2H2O -> 4H+ + 4e- + O2}$. Oksygenatomene i CO$_2$ ender opp i karbohydratet og i vannet som dannes.",
+      "Å skrive at oksygenet «brenner opp» glukosen i celleåndingen. Oksygen møter aldri glukosen. Det deltar bare i det siste trinnet, som endelig elektronmottaker i elektrontransportkjeden, og blir vann.",
+      "Å bruke «gjæring» og «anaerob celleånding» om hverandre. Gjæring har ingen elektrontransportkjede og gir 2 ATP per glukose. Anaerob celleånding har kjede, men bruker nitrat, sulfat eller CO$_2$ som endelig mottaker — og bare prokaryoter kan det.",
+      "Å tro at melkesyregjæringen gir ATP i tillegg til glykolysen, og at melkesyra er årsaken til stølhet dagen etter. Gjæringstrinnet gir null ATP; hensikten er å regenerere NAD$^+$. Og laktatet er borte i løpet av en time — stølhet skyldes små skader i muskelfibrene.",
+      "Å svare at maten tas opp i magesekken. Magesekken lagrer maten, dreper mikrober og starter proteinnedbrytingen, men nesten all nedbryting fullføres og praktisk talt alt opptak skjer i tynntarmen. Galle er heller ikke et enzym — den bare emulgerer fettet."
+    ],
+
+    "tips": [
+      "Lær de fire reaksjonslikningene utenat og kontroller at de balanserer: fotosyntesen, aerob celleånding, melkesyregjæring og alkoholgjæring. Oppgaver som ber om «reaksjonslikningen» gir lite uttelling for en beskrivelse med ord alene.",
+      "Pug tabellen «trinn – hvor i cellen – utbytte» for celleåndingen. Spørsmålet «hvor i cellen skjer dette?» kommer nesten alltid, og svaret må være presist: cytosol, mitokondriematriks eller indre mitokondriemembran.",
+      "I fotosynteseforsøk skiller du alltid netto fra brutto, og skriver $B = N + R$ eksplisitt. Husk å oppgi antakelsen om at celleåndingen er like stor i lys som i mørke — det gir uttelling på vurdering av metode.",
+      "Gjør en rimelighetssjekk på energiregning: nyttiggjort energi delt på energien i glukosen skal havne rundt en tredjedel aerobt og et par prosent ved gjæring. Får du over 100 %, har du regnet feil et sted.",
+      "Husk fordøyelsen som en reise gjennom organene, og øv på å skrive tabellen «organ – stoff – enzym – produkt» fra minnet. Da har du samtidig svaret på både kortsvar og langsvar om fordøyelse."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Autotrof", "forklaring": "Organisme som lager sine egne organiske molekyler fra uorganiske stoffer som CO$_2$ og vann. Fotoautotrofe bruker lysenergi, kjemoautotrofe bruker energi fra kjemiske reaksjoner med uorganiske stoffer." },
+    { "begrep": "Heterotrof", "forklaring": "Organisme som må ta opp ferdige organiske molekyler laget av andre. Dyr, sopp og de fleste bakterier er heterotrofe." },
+    { "begrep": "ATP", "forklaring": "Cellens energivaluta. Når ATP spaltes til ADP og fosfat, frigjøres omtrent 30,5 kJ/mol som cellen kan bruke til arbeid. ATP lagres ikke, men resirkuleres hele tiden." },
+    { "begrep": "Fotosyntese", "forklaring": "Prosessen der lysenergi brukes til å bygge karbohydrat av CO$_2$ og vann, med oksygen som avfallsprodukt: $\\ce{6CO2 + 6H2O -> C6H12O6 + 6O2}$." },
+    { "begrep": "Lysreaksjonene", "forklaring": "Første del av fotosyntesen, i tylakoidmembranen. Lys driver spalting av vann, det dannes O$_2$, ATP og NADPH." },
+    { "begrep": "Karbonfikseringen", "forklaring": "Andre del av fotosyntesen, i stromaet. CO$_2$ bygges inn i organiske molekyler ved hjelp av ATP og NADPH fra lysreaksjonene. Kalles også mørkereaksjonene." },
+    { "begrep": "Nettofotosyntese", "forklaring": "Det fotosyntesen produserer minus det plantens egen celleånding bruker. Bruttofotosyntese er $B = N + R$." },
+    { "begrep": "Kompensasjonspunkt", "forklaring": "Den lysstyrken der bruttofotosyntesen er akkurat like stor som celleåndingen, slik at nettofotosyntesen er null." },
+    { "begrep": "Aerob celleånding", "forklaring": "Fullstendig oksidasjon av næringsstoffer med oksygen: $\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}$. Gir omtrent 30–32 ATP per glukose." },
+    { "begrep": "Glykolysen", "forklaring": "Det første trinnet i celleåndingen, i cytosol. Glukose spaltes til 2 pyruvat, og cellen får netto 2 ATP og 2 NADH. Krever ikke oksygen." },
+    { "begrep": "Elektrontransportkjeden", "forklaring": "Rekken av proteiner i den indre mitokondriemembranen der elektroner fra NADH og FADH$_2$ gir energi til å lage det meste av ATP-en. Oksygen er endelig elektronmottaker og blir vann." },
+    { "begrep": "Gjæring", "forklaring": "Nedbryting av glukose uten oksygen og uten elektrontransportkjede. Gir bare 2 ATP; hovedhensikten er å regenerere NAD$^+$ slik at glykolysen kan fortsette." },
+    { "begrep": "Anaerob celleånding", "forklaring": "Celleånding med elektrontransportkjede, men med nitrat, sulfat eller CO$_2$ i stedet for oksygen som endelig elektronmottaker. Bare prokaryoter kan dette." },
+    { "begrep": "Tarmtotter og mikrovilli", "forklaring": "Fingerformede utposninger på tynntarmens innside, og de mye mindre utposningene på hver enkelt tarmcelle. Til sammen gjør de opptaksflaten enormt mye større." },
+    { "begrep": "Tarmflora", "forklaring": "Bakteriesamfunnet i tykktarmen, også kalt tarmmikrobiota. Gjærer kostfiber til kortkjedede fettsyrer, produserer vitaminer og beskytter mot sykdomsbakterier." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hva kjennetegner en kjemoautotrof organisme?",
+      "alternativer": [
+        "Den bygger organiske molekyler ved hjelp av lysenergi",
+        "Den bygger organiske molekyler fra CO$_2$, med energi fra kjemiske reaksjoner med uorganiske stoffer",
+        "Den tar opp ferdige organiske molekyler fra omgivelsene",
+        "Den driver ikke celleånding, siden den lager sin egen næring"
+      ],
+      "riktig": 1,
+      "forklaring": "Autotrof betyr at organismen binder karbon fra CO$_2$ selv. Kjemoautotrofe, som nitrifiserende bakterier og svovelbakterier ved varme kilder, henter energien til dette fra oksidasjon av uorganiske stoffer i stedet for fra lys. Alternativ A beskriver de fotoautotrofe, som er den vanlige typen. Alternativ D er en klassisk misforståelse: alle levende organismer driver celleånding, også de autotrofe — ellers fikk de ikke ATP ut av sukkeret de lager."
+    },
+    {
+      "sporsmal": "Hvor kommer oksygenet som plantene avgir, fra?",
+      "alternativer": [
+        "Fra karbondioksidet som tas inn gjennom spalteåpningene",
+        "Fra glukosen som bygges i stromaet",
+        "Fra luftens oksygen, som planten samler opp og slipper ut igjen",
+        "Fra vannet, som spaltes i lysreaksjonene"
+      ],
+      "riktig": 3,
+      "forklaring": "I lysreaksjonene spaltes vann: $\\ce{2H2O -> 4H+ + 4e- + O2}$. Elektronene erstatter dem klorofyllet mistet, og oksygenet er rent avfall. Alternativ A er det mest fristende feilsvaret, fordi CO$_2$ inneholder oksygen og står på venstre side av likningen — men forsøk med merket vann viste at det er vannet som gir O$_2$. Oksygenatomene fra CO$_2$ havner i karbohydratet og i vannet som dannes i prosessen."
+    },
+    {
+      "sporsmal": "Hvor i kloroplasten skjer karbonfikseringen?",
+      "alternativer": [
+        "I tylakoidmembranen",
+        "I den ytre kloroplastmembranen",
+        "I stromaet",
+        "I mitokondriematriksen"
+      ],
+      "riktig": 2,
+      "forklaring": "Karbonfikseringen (Calvin-syklusen) foregår i stromaet, væsken rundt tylakoidene, der enzymene ligger løst. Alternativ A er det vanligste feilsvaret, men tylakoidmembranen er stedet for lysreaksjonene, fordi klorofyllet og elektrontransportkjeden sitter der. Alternativ D er dessuten i en helt annen organell."
+    },
+    {
+      "sporsmal": "Hvor mange ATP får cellen netto ut av glykolysen per glukosemolekyl?",
+      "alternativer": ["2", "4", "32", "0"],
+      "riktig": 0,
+      "forklaring": "Glykolysen produserer 4 ATP, men bruker 2 ATP i startfasen for å gjøre glukosen reaktiv. Netto blir det derfor 2 ATP, i tillegg til 2 NADH og 2 pyruvat. Alternativ B er bruttotallet og den vanligste tabben. Tallet 32 er hele celleåndingen, der det aller meste kommer fra elektrontransportkjeden."
+    },
+    {
+      "sporsmal": "Hva er oksygenets rolle i den aerobe celleåndingen?",
+      "alternativer": [
+        "Det spalter glukosen i to pyruvatmolekyler",
+        "Det binder seg til karbon slik at CO$_2$ kan pustes ut",
+        "Det leverer elektroner til NAD$^+$",
+        "Det tar imot elektroner sist i elektrontransportkjeden og blir vann"
+      ],
+      "riktig": 3,
+      "forklaring": "Oksygen er endelig elektronmottaker: det tar imot de utbrukte elektronene sammen med H$^+$ og danner vann. Uten mottaker fylles kjeden opp, NAD$^+$ blir ikke frigjort, og de tre siste trinnene stanser. Alternativ B er fristende fordi vi puster ut CO$_2$, men karbondioksidet dannes i overgangen til acetyl-CoA og i sitronsyresyklusen, uten at O$_2$ er involvert. Alternativ C har retningen bakvendt — NADH leverer elektroner, det mottar dem ikke fra oksygen."
+    },
+    {
+      "sporsmal": "Hvor i cellen skjer sitronsyresyklusen?",
+      "alternativer": [
+        "I cytosol",
+        "I mitokondriematriksen",
+        "I den indre mitokondriemembranen",
+        "På ribosomene"
+      ],
+      "riktig": 1,
+      "forklaring": "Sitronsyresyklusens enzymer ligger fritt i matriksen, væsken innerst i mitokondriet, sammen med enzymene som lager acetyl-CoA. Alternativ C er det nærmeste feilsvaret: den indre membranen huser elektrontransportkjeden og ATP-syntasen, altså trinnet som kommer etter syklusen. Cytosol er stedet for glykolysen."
+    },
+    {
+      "sporsmal": "Hva er hovedhensikten med melkesyregjæringen i en muskelcelle?",
+      "alternativer": [
+        "Å produsere mer ATP enn celleåndingen greier",
+        "Å bli kvitt overskudd av oksygen",
+        "Å regenerere NAD$^+$ slik at glykolysen kan fortsette",
+        "Å bryte melkesyre videre ned til CO$_2$ og vann"
+      ],
+      "riktig": 2,
+      "forklaring": "Glykolysen stopper hvis alt NAD$^+$ er bundet opp som NADH. Ved å overføre hydrogenet til pyruvat, som da blir melkesyre, frigjøres NAD$^+$ og glykolysen kan holde det gående — og dermed fortsetter de 2 ATP-ene å komme. Alternativ A er feil vei: gjæring gir 16 ganger mindre ATP per glukose enn aerob celleånding, og selve gjæringstrinnet gir ingen ATP i det hele tatt. Det anaerobe systemet er bare raskere i gang, ikke mer effektivt."
+    },
+    {
+      "sporsmal": "Gjærsopp brukes i brøddeig. Hva er det som får deigen til å heve seg?",
+      "alternativer": [
+        "Karbondioksid fra alkoholgjæringen",
+        "Etanol som fordamper i deigen",
+        "Melkesyre som danner gassbobler",
+        "Oksygen fra gjærsoppens celleånding"
+      ],
+      "riktig": 0,
+      "forklaring": "Alkoholgjæringen er $\\ce{C6H12O6 -> 2C2H5OH + 2CO2}$, og det er CO$_2$-gassen som blir fanget i glutennettverket og hever deigen. Alternativ B er fristende siden etanol faktisk dannes, men den fordamper først i ovnen og er ikke det som hever deigen. Melkesyregjæring gir ingen gass i det hele tatt — reaksjonen er $\\ce{C6H12O6 -> 2C3H6O3}$ — og celleånding forbruker oksygen, den lager det ikke."
+    },
+    {
+      "sporsmal": "Hvilket utsagn om anaerob celleånding er riktig?",
+      "alternativer": [
+        "Den foregår i muskelcellene dine når du sprinter",
+        "Den gir like mye ATP per glukose som aerob celleånding",
+        "Den er bare et annet navn på gjæring",
+        "Den bruker en elektrontransportkjede med for eksempel nitrat eller sulfat som endelig elektronmottaker"
+      ],
+      "riktig": 3,
+      "forklaring": "Anaerob celleånding har full elektrontransportkjede, men bytter ut oksygen med en annen mottaker: nitrat hos denitrifiserende bakterier, sulfat hos sulfatreduserende bakterier, CO$_2$ hos metanogene arker. Alternativ C er den vanligste feilen — gjæring mangler elektrontransportkjede helt og gir bare 2 ATP. Alternativ A beskriver melkesyregjæring, for cellene dine har ingen alternativ elektronmottaker. Utbyttet er lavere enn med oksygen, siden de andre mottakerne gir mindre energi."
+    },
+    {
+      "sporsmal": "Hvor og hvordan begynner nedbrytingen av stivelsen i et brød?",
+      "alternativer": [
+        "I magesekken, ved hjelp av pepsin",
+        "I munnen, ved hjelp av amylase i spyttet",
+        "I tolvfingertarmen, ved hjelp av galle",
+        "I tykktarmen, ved hjelp av tarmbakterier"
+      ],
+      "riktig": 1,
+      "forklaring": "Spyttamylasen begynner å hydrolysere stivelsen mens du tygger, og nedbrytingen fullføres av bukspyttamylase og enzymer i tarmveggen. Alternativ A er feil på to måter: pepsin virker bare på protein, og det sure miljøet i magesekken stopper faktisk amylasen. Galle i alternativ C er ikke et enzym og virker bare på fett — den emulgerer det."
+    },
+    {
+      "sporsmal": "Hvilken vei tar fettet etter at det er tatt opp i tynntarmen?",
+      "alternativer": [
+        "Det settes sammen igjen i tarmcellene og sendes ut i lymfen før det når blodet",
+        "Det går rett til leveren gjennom portvenen, på samme måte som glukose",
+        "Det går direkte til nyrene for å bli filtrert",
+        "Det tas ikke opp i det hele tatt, men skilles ut med avføringen"
+      ],
+      "riktig": 0,
+      "forklaring": "Fettsyrer og monoglyserider tas opp i tarmcellene, bygges sammen til fett igjen, pakkes i partikler og føres ut i lymfekarene. Lymfen tømmes i blodet ved venen under kragebeinet. Alternativ B er det fristende feilsvaret, fordi monosakkarider og aminosyrer nettopp går denne veien til leveren — men fettpartiklene er for store for blodkapillarene i tarmveggen."
+    },
+    {
+      "sporsmal": "Hva gjør bakteriene i tarmfloraen for deg?",
+      "alternativer": [
+        "De produserer insulin som regulerer blodsukkeret",
+        "De bryter ned proteiner til aminosyrer som du ellers ikke kunne tatt opp",
+        "De gjærer kostfiber til kortkjedede fettsyrer og lager blant annet vitamin K",
+        "De tar opp vann og salter fra tarminnholdet"
+      ],
+      "riktig": 2,
+      "forklaring": "Du mangler enzymer for cellulose og andre fibre, men bakteriene gjærer dem til acetat, propionat og butyrat — og butyrat er hovedbrennstoffet til cellene i tykktarmsveggen. De produserer også vitamin K og flere B-vitaminer, og de hindrer sykdomsbakterier i å få fotfeste. Alternativ D er det mest fristende, siden opptak av vann og salter faktisk skjer i tykktarmen — men det er tarmcellene dine som gjør den jobben, ikke bakteriene. Insulin lages i bukspyttkjertelen, og proteiner brytes ned av kroppens egne enzymer i magesekk og tynntarm."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Autotrof kontra heterotrof", "bak": "Autotrofe lager egne organiske molekyler fra uorganiske stoffer (CO$_2$ og vann). Heterotrofe må ta opp ferdige organiske molekyler laget av andre. Begge driver celleånding." },
+    { "front": "Reaksjonslikningen for fotosyntesen", "bak": "$\\ce{6CO2 + 6H2O ->[lys] C6H12O6 + 6O2}$ — foregår i kloroplasten." },
+    { "front": "Reaksjonslikningen for aerob celleånding", "bak": "$\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}$ — frigjør omtrent 2870 kJ per mol glukose." },
+    { "front": "Hvor kommer oksygenet fra i fotosyntesen?", "bak": "Fra vannet, som spaltes i lysreaksjonene: $\\ce{2H2O -> 4H+ + 4e- + O2}$. Ikke fra CO$_2$." },
+    { "front": "Lysreaksjonene: hvor, inn og ut", "bak": "I tylakoidmembranen. Inn: lys og vann. Ut: O$_2$, ATP og NADPH." },
+    { "front": "Karbonfikseringen: hvor, inn og ut", "bak": "I stromaet. Inn: CO$_2$, ATP og NADPH. Ut: karbohydrat. Kalles også mørkereaksjonene, men går like godt i dagslys." },
+    { "front": "Brutto- og nettofotosyntese, og kompensasjonspunktet", "bak": "$B = N + R$, der R er plantens egen celleånding. Kompensasjonspunktet er lysstyrken der $N = 0$, altså $B = R$." },
+    { "front": "De fire trinnene i celleåndingen og hvor de skjer", "bak": "1) Glykolysen i cytosol. 2) Pyruvat til acetyl-CoA i mitokondriematriks. 3) Sitronsyresyklusen i matriks. 4) Elektrontransportkjeden i den indre mitokondriemembranen." },
+    { "front": "ATP-regnskapet for én glukose", "bak": "2 ATP fra glykolysen, 2 fra sitronsyresyklusen og 26–28 fra elektrontransportkjeden — omtrent 30–32 ATP i alt." },
+    { "front": "Hva gjør oksygen i celleåndingen?", "bak": "Det er endelig elektronmottaker sist i elektrontransportkjeden og blir vann. Det reagerer aldri direkte med glukosen." },
+    { "front": "Melkesyregjæring", "bak": "$\\ce{C6H12O6 -> 2C3H6O3}$. Netto 2 ATP. Skjer i muskelceller ved oksygenmangel og hos melkesyrebakterier i yoghurt, surkål og surfôr." },
+    { "front": "Alkoholgjæring", "bak": "$\\ce{C6H12O6 -> 2C2H5OH + 2CO2}$. Netto 2 ATP. Gjærsopp; CO$_2$ hever brøddeigen og etanolen gir øl og vin." },
+    { "front": "Gjæring kontra anaerob celleånding", "bak": "Gjæring: ingen elektrontransportkjede, pyruvat tar elektronene, 2 ATP. Anaerob celleånding: full kjede, men nitrat, sulfat eller CO$_2$ som endelig mottaker — bare prokaryoter." },
+    { "front": "Energiinnhold per gram", "bak": "Karbohydrat 17 kJ/g, protein 17 kJ/g, fett 37 kJ/g, alkohol 29 kJ/g. Omregning: 1 kcal = 4,184 kJ." },
+    { "front": "Næringsstoff, byggestein og hvor det skjer", "bak": "Karbohydrat blir monosakkarider (amylase i munn og bukspytt, disakkaridaser i tarmveggen). Protein blir aminosyrer (pepsin i magesekken, proteaser og peptidaser i tarmen). Fett blir fettsyrer og glyserol (lipase, etter at galle har emulgert fettet). Galle er ikke et enzym." },
+    { "front": "Fire oppgaver tarmfloraen har", "bak": "1) Gjærer kostfiber til kortkjedede fettsyrer, blant annet butyrat. 2) Lager vitamin K og B-vitaminer. 3) Hindrer sykdomsbakterier i å etablere seg. 4) Trener immunforsvaret i tarmslimhinnen." }
+  ]
+}

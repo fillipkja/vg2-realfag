@@ -1,0 +1,373 @@
+{
+  "fag": "biologi",
+  "nr": 9,
+  "tittel": "Mikrober, sykdom og immunforsvar",
+  "intro": "Mikroorganismer finnes overalt, og de aller fleste er harmløse eller helt nødvendige for oss. Dette kapittelet handler om det lille mindretallet som gjør oss syke — og om det finstemte forsvarsverket kroppen setter inn mot dem, fra huden og betennelsesreaksjonen til antistoffer, hukommelsesceller, vaksiner og antibiotika.",
+  "kompakt": {
+    "punkter": [
+      "Sykdom kan skyldes fire helt ulike grupper: bakterier (prokaryote celler), virus (ikke celler i det hele tatt), sopp (eukaryote, med cellevegg av kitin) og parasitter (encellede protozoer eller flercellede dyr).",
+      "Virus har arvestoff og kapsid, men ingen egen celle og ingen eget stoffskifte. De må inn i en vertscelle for å formere seg — og derfor virker antibiotika ikke på virus.",
+      "Smittekjeden har fem ledd: smittestoff, smittekilde, smittevei, inngangsport og mottakelig vert. Bryter du ett ledd, stopper smitten.",
+      "Viktige smitteveier er dråpe- og luftsmitte, kontaktsmitte, mat- og vannsmitte (fekal-oral), blodsmitte, seksuell smitte, vektorbåren smitte og smitte fra mor til barn.",
+      "Zoonoser smitter mellom dyr og mennesker. Over 60 % av de nye smittsomme sykdommene hos mennesker er zoonoser — borreliose, salmonellose og covid-19 er eksempler.",
+      "Reproduksjonstallet $R$ er hvor mange nye personer én smittet i gjennomsnitt smitter. Utbruddet vokser når $R>1$ og dør ut når $R<1$.",
+      "Det medfødte immunforsvaret er raskt og uspesifikt: barrierer (hud, slimhinner, magesyre, normalflora), betennelsesreaksjon, fagocytter, NK-celler, komplementsystemet, interferon og feber. Det har ingen hukommelse.",
+      "Det tilpassede immunforsvaret er spesifikt og har hukommelse: B-celler blir plasmaceller som lager antistoff, T-hjelpeceller dirigerer responsen, og cytotoksiske T-celler dreper infiserte celler.",
+      "Vaksiner gir aktiv immunitet — hukommelsesceller uten at du blir syk. Terskelen for flokkimmunitet er $1-\\frac{1}{R_0}$, så jo mer smittsom sykdommen er, jo høyere vaksinasjonsdekning kreves.",
+      "Antibiotikaresistens er naturlig seleksjon i praksis: antibiotikaet dreper de følsomme bakteriene, de resistente overlever og formerer seg — og resistensgener spres mellom bakterier på plasmider."
+    ],
+    "formler": [
+      {
+        "navn": "Terskel for flokkimmunitet",
+        "latex": "H_c = 1 - \\frac{1}{R_0}"
+      },
+      {
+        "navn": "Effektivt reproduksjonstall ved andel immune $p$",
+        "latex": "R = R_0 \\cdot (1 - p)"
+      },
+      {
+        "navn": "Nødvendig vaksinasjonsdekning ved vaksineeffekt $E$",
+        "latex": "v = \\frac{H_c}{E} = \\frac{1 - \\frac{1}{R_0}}{E}"
+      },
+      {
+        "navn": "Bakterievekst ved todeling",
+        "latex": "N = N_0 \\cdot 2^{n}, \\qquad n = \\frac{t}{g}"
+      },
+      {
+        "navn": "Antall generasjoner ut fra celletall",
+        "latex": "n = \\frac{\\log\\left(N / N_0\\right)}{\\log 2}"
+      },
+      {
+        "navn": "Størrelsesordener for mikrober",
+        "latex": "1\\,\\text{mm} = 1000\\,\\mu\\text{m}, \\qquad 1\\,\\mu\\text{m} = 1000\\,\\text{nm}"
+      }
+    ]
+  },
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Fire grupper sykdomsframkallende mikrober",
+        "html": "<p>De fleste mikroorganismer er harmløse, og mange er livsnødvendige for oss. Bare et lite mindretall er <strong>patogene</strong>, altså sykdomsframkallende. De hører til fire grupper med helt ulik biologi — og nettopp derfor må de behandles på helt ulike måter.</p><p><strong>Bakterier</strong> er prokaryote celler på 0,5–5 µm, uten cellekjerne og uten membrankledde organeller. De har cellevegg av peptidoglykan og formerer seg ved todeling. Under gode forhold kan generasjonstiden være så kort som 20 minutter. Sykdom oppstår enten fordi bakteriene ødelegger vev direkte, eller fordi de skiller ut <strong>toksiner</strong> (giftstoffer). Stivkrampe og difteri er nesten ren toksinforgiftning.</p><p><strong>Virus</strong> er 20–300 nm, altså 10–100 ganger mindre enn en bakterie. Et virus er arvestoff — DNA eller RNA — pakket inn i et proteinkapsid, av og til med en lipidkappe utenpå. Det har ikke eget stoffskifte og kan bare formere seg inne i en vertscelle, der det kaprer cellens egen proteinfabrikk. Derfor regner vi vanligvis ikke virus som levende.</p><p><strong>Sopp</strong> er eukaryote, heterotrofe og har cellevegg av kitin. De vokser som encellede gjærsopper eller som tråder (hyfer) i et mycel. Fotsopp og <em>Candida</em>-infeksjoner er vanlige, og de blir alvorlige først når immunforsvaret er svekket. Slike mikrober kaller vi <strong>opportunistiske</strong>.</p><p><strong>Parasitter</strong> lever på eller i en vert og skader den. De encellede kalles protozoer, som malariaparasitten <em>Plasmodium</em> og tarmparasitten <em>Giardia</em>. I tillegg finnes flercellede parasitter: innvollsorm, lus og flått.</p>"
+      },
+      {
+        "tittel": "Smitteveier, epidemier og zoonoser",
+        "html": "<p>For at du skal bli smittet må fem ledd være på plass. Denne rekka kalles <strong>smittekjeden</strong>: et <strong>smittestoff</strong>, en <strong>smittekilde</strong> (menneske, dyr, mat, vann), en <strong>smittevei</strong>, en <strong>inngangsport</strong> (munn, nese, sår, slimhinne) og en <strong>mottakelig vert</strong>. Alt smittevern — håndvask, munnbind, kjøling av mat, vaksinasjon — går ut på å bryte minst ett av leddene.</p><ul><li><strong>Dråpe- og luftsmitte:</strong> store dråper faller til bakken innen 1–2 meter (influensa), mens små aerosoler kan sveve lenge (meslinger, tuberkulose).</li><li><strong>Kontaktsmitte:</strong> direkte hud mot hud, eller indirekte via dørhåndtak og mobiltelefoner.</li><li><strong>Mat- og vannsmitte (fekal-oral):</strong> smittestoffet går ut med avføring og inn gjennom munnen — salmonella, norovirus, <em>Giardia</em>.</li><li><strong>Blodsmitte:</strong> hepatitt B og C, hiv.</li><li><strong>Seksuell smitte:</strong> klamydia, gonoré, HPV.</li><li><strong>Vektorbåren smitte:</strong> et dyr bærer smittestoffet. Flått gir borreliose, <em>Anopheles</em>-mygg gir malaria.</li><li><strong>Fra mor til barn</strong> gjennom placenta, ved fødselen eller via morsmelka.</li></ul><p><strong>Inkubasjonstiden</strong> er tida fra smitte til symptomer. Er du smittsom allerede før symptomene kommer, blir sykdommen mye vanskeligere å stoppe.</p><p><strong>Reproduksjonstallet</strong> $R$ sier hvor mange nye personer én smittet i gjennomsnitt smitter. Er $R>1$, vokser utbruddet; er $R<1$, dør det ut. $R_0$ er verdien i en befolkning uten immunitet og uten tiltak. Et stort lokalt utbrudd kalles en <strong>epidemi</strong>, sprer det seg over flere verdensdeler er det en <strong>pandemi</strong>, og er sykdommen alltid til stede i et område, er den <strong>endemisk</strong>.</p><p><strong>Zoonoser</strong> smitter mellom dyr og mennesker. Over 60 % av nye smittsomme sykdommer hos mennesker er zoonoser: borreliose fra flått, salmonellose fra fjørfe, rabies fra hund og covid-19. Tett husdyrhold, handel med levende dyr, nedbygging av natur og et varmere klima som flytter flått og mygg nordover, gjør at nye zoonoser dukker opp oftere.</p>"
+      },
+      {
+        "tittel": "Det medfødte immunforsvaret",
+        "html": "<p>Det medfødte, uspesifikke immunforsvaret virker mot alle inntrengere, er på plass fra du blir født, og reagerer i løpet av sekunder til timer. Det har ingen hukommelse: det virker like godt — og like dårlig — den tiende gangen som den første.</p><p><strong>Ytre barrierer</strong> er første linje. Huden er et tett lag av døde, keratinfylte celler med surt pH. Slimhinnene i luftveiene fanger partikler i slim som flimmerhårene frakter opp mot svelget. Tårer og spytt inneholder enzymet lysozym, som bryter ned bakterienes cellevegg. Magesyra, $\\ce{HCl}$, gir pH rundt 2 og dreper det aller meste du svelger. Og <strong>normalfloraen</strong> — de bakteriene som allerede bor på og i deg — okkuperer både plassen og næringa, slik at patogener ikke får feste.</p><p>Kommer noe gjennom, starter <strong>betennelsesreaksjonen</strong>. Skadde celler og mastceller frigjør <strong>histamin</strong>, som utvider blodårene og gjør kapillarveggene mer gjennomtrengelige. Da strømmer blod, plasmaproteiner og hvite blodceller til stedet, og du får de fire klassiske tegnene: rødt, varmt, hovent og ømt.</p><p><strong>Fagocyttene</strong> spiser inntrengerne ved fagocytose. Nøytrofile granulocytter kommer først og i stort antall, og døde nøytrofile blir puss. Makrofagene er langlivde storspisere som også rydder opp etterpå, mens dendrittiske celler tar med seg biter av inntrengeren til nærmeste lymfeknute — de er bindeleddet til det tilpassede forsvaret.</p><p>I tillegg har vi <strong>komplementsystemet</strong>, plasmaproteiner som merker mikrober for fagocytose, tilkaller flere hvite blodceller og kan lage porer i bakterieveggen. Virusinfiserte celler sender ut <strong>interferon</strong> som advarer nabocellene, og <strong>NK-celler</strong> dreper celler som ser unormale ut. <strong>Feber</strong> er også forsvar: signalstoffer flytter kroppens termostat i hypotalamus oppover, og den høyere temperaturen hemmer mikrobene samtidig som immuncellene jobber raskere.</p>"
+      },
+      {
+        "tittel": "Det tilpassede immunforsvaret",
+        "html": "<p>Det tilpassede, spesifikke immunforsvaret er tregt første gang — det tar 5–10 dager før det er i full gang — men det er treffsikkert, og det husker. Arbeidshestene er <strong>lymfocyttene</strong>: B-celler, som modnes i beinmargen, og T-celler, som modnes i thymus.</p><p>Nøkkelbegrepet er <strong>antigen</strong>: et molekyl, oftest et protein på overflaten av mikroben, som immunforsvaret kjenner igjen som fremmed. Hver enkelt lymfocytt har bare én type reseptor, som passer til ett bestemt antigen. Kroppen har millioner av ulike lymfocytter på lager, og når antigenet dukker opp, er det nettopp den cellen som passer, som deler seg mange ganger. Dette kalles <strong>klonal seleksjon</strong>.</p><p>En dendrittisk celle eller en makrofag presenterer antigenet for en <strong>T-hjelpecelle</strong>. T-hjelpecellen er dirigenten: den skiller ut signalstoffer (cytokiner) som aktiverer både B-celler og cytotoksiske T-celler. Slår du ut T-hjelpecellene, kollapser hele systemet — og det er nettopp dem hiv angriper.</p><p>Videre går responsen i to spor. I det <strong>humorale</strong> sporet blir aktiverte B-celler til <strong>plasmaceller</strong> som pumper ut <strong>antistoffer</strong>: Y-formede proteiner med et variabelt område som passer til antigenet. Antistoffene nøytraliserer virus, klumper sammen bakterier, merker dem for fagocytose og aktiverer komplement. I det <strong>cellemedierte</strong> sporet dreper <strong>cytotoksiske T-celler</strong> kroppens egne celler som er infisert, og som viser virusantigen på overflaten. Antistoff kan ikke nå et virus som har gjemt seg inne i en celle, og derfor trengs begge sporene.</p><p>Til slutt lages <strong>hukommelsesceller</strong>. Møter du samme antigen igjen, kommer <strong>sekundærresponsen</strong> etter 1–3 dager i stedet for 1–2 uker, og antistoffnivået blir mange ganger høyere. Da er du ofte frisk før du merker at du var syk.</p>"
+      },
+      {
+        "tittel": "Vaksiner og flokkimmunitet",
+        "html": "<p>En vaksine lurer immunforsvaret til å lage hukommelsesceller uten at du blir syk. Du får en ufarlig versjon av antigenet, kroppen kjører en primærrespons, og neste gang det ekte smittestoffet kommer, får du en lynrask sekundærrespons.</p><p>Vaksinetypene skiller seg i hva antigenet er:</p><ul><li><strong>Levende, svekket:</strong> mikroben er avsvekket, men formerer seg litt. Gir sterk og langvarig immunitet, men brukes ikke ved kraftig svekket immunforsvar. Eksempel: MMR mot meslinger, kusma og røde hunder.</li><li><strong>Inaktivert (drept):</strong> mikroben er drept. Trygg, men krever ofte flere doser. Eksempel: poliovaksine og influensavaksine.</li><li><strong>Subenhets- og toksoidvaksiner:</strong> bare en bit av mikroben, eller et avgiftet toksin. Eksempel: HPV-vaksine, difteri og stivkrampe.</li><li><strong>mRNA-vaksiner:</strong> oppskriften på antigenet, slik at dine egne celler lager det. Eksempel: koronavaksinene.</li></ul><p>Vaksinasjon gir <strong>aktiv immunitet</strong>: du lager antistoffene og hukommelsescellene selv, og beskyttelsen varer lenge. <strong>Passiv immunitet</strong> er å få ferdige antistoffer — over placenta, i morsmelka eller som en immunglobulinsprøyte. Det virker med én gang, men gir ingen hukommelsesceller, og beskyttelsen forsvinner når antistoffene brytes ned etter uker eller måneder.</p><p><strong>Flokkimmunitet</strong> oppstår når så mange er immune at smittestoffet ikke finner nok nye verter. Terskelen er $H_c = 1-\\frac{1}{R_0}$. Er $R_0 = 15$, som for meslinger, må over 93 % være immune, mens en sykdom med $R_0 = 2$ klarer seg med 50 %. Flokkimmunitet er den eneste beskyttelsen for dem som ikke kan vaksineres: nyfødte, kreftpasienter og andre med svekket immunforsvar. Derfor sikter Folkehelseinstituttet mot minst 95 % dekning i barnevaksinasjonsprogrammet.</p>"
+      },
+      {
+        "tittel": "Antibiotika og resistens",
+        "html": "<p><strong>Antibiotika</strong> er stoffer som dreper bakterier eller hindrer dem i å vokse. Alexander Fleming oppdaget penicillin i 1928, i en muggsopp. Hele poenget med antibiotika er <strong>selektiv giftighet</strong>: de rammer strukturer som bakterier har og vi ikke har. Penicillin hindrer bakterien i å bygge cellevegg av peptidoglykan, slik at cellen sprekker. Andre typer blokkerer bakterienes ribosomer eller DNA-kopiering. Ingen av disse angrepspunktene finnes i et virus — derfor er antibiotika mot forkjølelse helt bortkastet.</p><p><strong>Smalspektret</strong> antibiotika treffer få bakteriegrupper og sparer normalfloraen, mens <strong>bredspektret</strong> treffer mange og gir større risiko for resistens.</p><p><strong>Resistens</strong> er evnen til å tåle antibiotikaet, og den utvikles ved naturlig seleksjon:</p><ol><li>I en stor bakteriepopulasjon finnes tilfeldig variasjon. Noen få har, eller får ved mutasjon, et gen som gir resistens.</li><li>Antibiotikaet dreper de følsomme. Det er seleksjonspresset.</li><li>De resistente overlever, formerer seg fritt i den tømte plassen og gir genet videre til alle etterkommerne.</li></ol><p>Mekanismene er i hovedsak fire: enzymer som bryter ned antibiotikaet (betalaktamaser, som i ESBL-bakterier), endret målmolekyl slik at medisinen ikke passer (MRSA), pumper som kaster stoffet ut av cellen, og en tettere celleoverflate som slipper mindre inn.</p><p>Det som gjør resistens ekstra farlig, er <strong>horisontal genoverføring</strong>: bakterier kan gi resistensgener til hverandre — også på tvers av arter — på små DNA-ringer som heter plasmider. Derfor er tiltakene å bruke antibiotika bare når det er nødvendig, velge smalspektret der det er mulig, følge den kuren legen har foreskrevet, holde god håndhygiene og redusere bruken i husdyrproduksjonen.</p>"
+      }
+    ],
+    "eksempler": [
+      {
+        "tittel": "Flokkimmunitet mot meslinger — regnet fullt ut",
+        "oppgave": "<p>Meslinger er den mest smittsomme sykdommen vi kjenner, med $R_0 \\approx 15$. MMR-vaksinen gir om lag 97 % beskyttelse etter to doser.</p><ol><li>Hvor stor andel av befolkningen må være immun for at meslinger skal dø ut?</li><li>Hvilken vaksinasjonsdekning svarer det til?</li><li>Hva blir det effektive reproduksjonstallet hvis dekningen faller til 90 %?</li><li>Sammenlign med en influensa som har $R_0 = 1{,}5$.</li></ol>",
+        "losning": "<p><strong>Steg 1 — terskelen for flokkimmunitet.</strong> Vi bruker $H_c = 1-\\frac{1}{R_0}$ med $R_0 = 15$:</p>$$H_c = 1 - \\frac{1}{15} = 1 - 0{,}0667 = 0{,}933 = 93{,}3\\ \\%$$<p>Altså må 93,3 % av befolkningen være immune. Tanken bak formelen er enkel: én smittet møter 15 personer, og skal smitten stanse, må høyst én av dem være mottakelig. Andelen mottakelige må derfor være under $\\frac{1}{15}$.</p><p><strong>Steg 2 — nødvendig vaksinasjonsdekning.</strong> Vaksinen virker ikke på alle. Andelen immune blir dekning ganger effekt, $p = v \\cdot E$, og vi krever $v \\cdot E \\geq H_c$:</p>$$v \\geq \\frac{H_c}{E} = \\frac{0{,}933}{0{,}97} = 0{,}962 = 96{,}2\\ \\%$$<p>Man må altså vaksinere <em>flere</em> enn 93,3 % for å få 93,3 % immune. Det er grunnen til at målet i Norge ligger på 95 % og oppover.</p><p><strong>Steg 3 — dekningen faller til 90 %.</strong> Først andelen immune:</p>$$p = 0{,}90 \\cdot 0{,}97 = 0{,}873 = 87{,}3\\ \\%$$<p>Så det effektive reproduksjonstallet:</p>$$R = R_0 \\cdot (1-p) = 15 \\cdot (1 - 0{,}873) = 15 \\cdot 0{,}127 = 1{,}9$$<p>Siden $R = 1{,}9 > 1$, smitter hver syk person i snitt nesten to nye. Utbruddet vokser. Legg merke til hvor lite som skal til: dekningen falt bare 6 prosentpoeng, men $R$ gikk fra under 1 til nesten 2.</p><p><strong>Steg 4 — influensa til sammenligning.</strong></p>$$H_c = 1 - \\frac{1}{1{,}5} = 1 - 0{,}667 = 0{,}333 = 33\\ \\%$$<p><strong>Konklusjon:</strong> terskelen henger direkte sammen med smittsomheten. En influensa med $R_0 = 1{,}5$ stanser når en tredjedel er immune, mens meslinger krever over 95 % dekning. Derfor er det alltid meslinger som bryter ut først når vaksinasjonsdekningen synker.</p>"
+      },
+      {
+        "tittel": "Fra 50 bakterier til matforgiftning — vekst regnet med enheter",
+        "oppgave": "<p>En kyllingsalat på 150 g inneholder 50 salmonellabakterier per gram. Salaten blir glemt på benken ved 20 °C, der generasjonstiden er om lag 30 minutter. Infeksjonsdosen for salmonella er grovt regnet $1{,}0 \\cdot 10^{5}$ bakterier.</p><ol><li>Hvor mange bakterier per gram er det etter 4 timer?</li><li>Hvor mange bakterier får du i deg om du spiser hele salaten?</li><li>Hvor lenge kunne salaten stått før dosen ble farlig?</li><li>Hva om salaten hadde stått kaldt, med generasjonstid 10 timer?</li></ol>",
+        "losning": "<p><strong>Steg 1 — antall generasjoner og celletall etter 4 timer.</strong> Bakterier deler seg i to, så vi bruker $N = N_0 \\cdot 2^{n}$ med $n = \\frac{t}{g}$. Først må tiden og generasjonstiden ha samme enhet: $t = 4\\ \\text{timer} = 240\\ \\text{min}$ og $g = 30\\ \\text{min}$.</p>$$n = \\frac{240\\ \\text{min}}{30\\ \\text{min}} = 8$$$$N = 50 \\cdot 2^{8} = 50 \\cdot 256 = 12\\,800 \\ \\text{bakterier per gram}$$<p><strong>Steg 2 — total dose.</strong> Salaten veier 150 g:</p>$$N_{\\text{total}} = 12\\,800\\ \\text{g}^{-1} \\cdot 150\\ \\text{g} = 1\\,920\\,000 = 1{,}9 \\cdot 10^{6}\\ \\text{bakterier}$$<p>Det er $\\frac{1{,}9 \\cdot 10^{6}}{1{,}0 \\cdot 10^{5}} = 19$ ganger infeksjonsdosen. Salaten er farlig.</p><p><strong>Steg 3 — hvor lenge kunne den stått?</strong> Vi går baklengs. Dosen $1{,}0 \\cdot 10^{5}$ fordelt på 150 g svarer til</p>$$N = \\frac{1{,}0 \\cdot 10^{5}}{150\\ \\text{g}} = 667\\ \\text{bakterier per gram}$$<p>Så løser vi $50 \\cdot 2^{n} = 667$ for $n$:</p>$$2^{n} = \\frac{667}{50} = 13{,}3 \\quad \\Rightarrow \\quad n = \\frac{\\log 13{,}3}{\\log 2} = \\frac{1{,}125}{0{,}301} = 3{,}7$$$$t = n \\cdot g = 3{,}7 \\cdot 30\\ \\text{min} \\approx 112\\ \\text{min} \\approx 1\\ \\text{time og}\\ 52\\ \\text{min}$$<p>Under to timer på benken er nok. Det er derfor totimersregelen finnes på storkjøkken.</p><p><strong>Steg 4 — samme salat i kjøleskapet.</strong> Med $g = 10\\ \\text{timer} = 600\\ \\text{min}$ og $t = 240\\ \\text{min}$:</p>$$n = \\frac{240}{600} = 0{,}40 \\quad \\Rightarrow \\quad N = 50 \\cdot 2^{0{,}40} = 50 \\cdot 1{,}32 = 66\\ \\text{bakterier per gram}$$$$N_{\\text{total}} = 66\\ \\text{g}^{-1} \\cdot 150\\ \\text{g} \\approx 9\\,900 = 9{,}9 \\cdot 10^{3}\\ \\text{bakterier}$$<p><strong>Konklusjon:</strong> kjøling dreper ikke bakteriene, men forlenger generasjonstiden så mye at dosen aldri rekker opp til grensa. Salmonella slutter i praksis å dele seg under 5–7 °C. Poenget å ta med seg er at eksponentiell vekst er brutal: 8 generasjoner ganger celletallet med 256.</p>"
+      },
+      {
+        "tittel": "Case: et infisert kutt, time for time",
+        "oppgave": "<p>Du skjærer deg i fingeren på en skitten kniv, og stafylokokker kommer inn i vevet. Beskriv hva som skjer i immunforsvaret fra sekundet skaden skjer til du har varig beskyttelse. Sett navn på cellene og angi omtrent når hvert trinn skjer.</p>",
+        "losning": "<p><strong>Sekund 0 — barrieren er brutt.</strong> Huden var første forsvarslinje. Med et kutt er inngangsporten åpen, og bakteriene er inne i vevet. Blodplater og fibrin begynner umiddelbart å tette såret.</p><p><strong>Minutter — betennelsesreaksjonen.</strong> Skadde celler og mastceller frigjør histamin. Blodårene utvides, kapillarveggene blir mer gjennomtrengelige, og plasma med komplementproteiner lekker ut i vevet. Komplementsystemet merker bakteriene for fagocytose, lager porer i noen av dem og skiller ut lokkestoffer. Du ser resultatet: rødt, varmt, hovent og ømt.</p><p><strong>1–4 timer — nøytrofile granulocytter.</strong> De klemmer seg ut av kapillarene og følger lokkestoffene til bakteriene. De fagocytterer det de finner og dør etterpå. Det gule i sårkanten er puss: døde nøytrofile og bakterierester.</p><p><strong>6–24 timer — makrofager og antigenpresentasjon.</strong> Makrofager rykker inn, spiser mer og rydder opp i vevet. Samtidig tar dendrittiske celler opp bakteriebiter og vandrer til lymfeknuten i armhulen — som nå kan bli hoven og ømme. Her vises antigenet fram for T-hjelpecellene. Dette er overgangen fra medfødt til tilpasset forsvar.</p><p><strong>Dag 2–4 — klonal seleksjon.</strong> Den T-hjelpecellen som har reseptor for dette antigenet, aktiveres og deler seg. Den skiller ut cytokiner som aktiverer B-cellene med samme antigenspesifisitet.</p><p><strong>Dag 5–10 — antistoffene kommer.</strong> B-cellene deler seg og blir plasmaceller som pumper ut antistoff. Antistoffene klumper sammen bakteriene, nøytraliserer toksinene deres og merker dem for fagocytose. Infeksjonen slås ned, og fingeren begynner å gro.</p><p><strong>Etterpå — hukommelse.</strong> Noen av de aktiverte B- og T-cellene blir hukommelsesceller som lever i årevis. Får du samme stafylokokk inn neste gang, kommer sekundærresponsen etter 1–3 dager i stedet for 5–10 dager, og med et mye høyere antistoffnivå. Da rekker infeksjonen sjelden å bli synlig.</p>"
+      },
+      {
+        "tittel": "Case: hvorfor en avbrutt antibiotikakur velger ut resistens",
+        "oppgave": "<p>En pasient har en bakterieinfeksjon med om lag $1{,}0 \\cdot 10^{9}$ bakterier. Mutasjoner som gir resistens mot antibiotikaet oppstår med en frekvens på cirka én per $10^{8}$ celledelinger. Generasjonstiden er 30 minutter.</p><ol><li>Hvor mange resistente bakterier er det sannsynligvis til stede før behandlingen starter?</li><li>Pasienten slutter med tablettene etter tre dager fordi han føler seg frisk. Da er de følsomme bakteriene drept, men de resistente lever. Hvor lang tid tar det før populasjonen er tilbake på $10^{9}$?</li><li>Hvorfor virker ikke samme antibiotikum nå, og hvordan kan resistensen spre seg videre?</li></ol>",
+        "losning": "<p><strong>Steg 1 — hvor mange resistente finnes fra før?</strong> Én av $10^{8}$ bakterier har mutasjonen:</p>$$N_{\\text{res}} = \\frac{1{,}0 \\cdot 10^{9}}{10^{8}} = 10\\ \\text{bakterier}$$<p>Merk rekkefølgen nøye: disse ti finnes <em>før</em> du tar den første tabletten. Antibiotikaet lager ikke resistensen — det avslører og premierer den.</p><p><strong>Steg 2 — oppvekst av de resistente.</strong> Nå starter de 10 resistente på en tømt arena, uten konkurranse fra de $999\\,999\\,990$ følsomme. Vi løser $N_0 \\cdot 2^{n} = N$:</p>$$10 \\cdot 2^{n} = 1{,}0 \\cdot 10^{9} \\quad \\Rightarrow \\quad 2^{n} = 1{,}0 \\cdot 10^{8}$$$$n = \\frac{\\log\\left(10^{8}\\right)}{\\log 2} = \\frac{8}{0{,}301} = 26{,}6\\ \\text{generasjoner}$$$$t = n \\cdot g = 26{,}6 \\cdot 30\\ \\text{min} = 798\\ \\text{min} \\approx 13\\ \\text{timer}$$<p>På under ett døgn er infeksjonen like stor som før — men nå består den av etterkommere av de 10 resistente, altså <strong>100 % resistente bakterier</strong>.</p><p><strong>Steg 3 — tolkning.</strong> Dette er naturlig seleksjon i miniatyr, med de tre nødvendige ingrediensene: <em>variasjon</em> (mutasjonen fantes fra før), <em>seleksjonspress</em> (antibiotikaet drepte de følsomme) og <em>arv</em> (resistensgenet gikk videre til alle dattercellene). Samme antibiotikum virker ikke lenger, fordi det ikke finnes følsomme bakterier å drepe.</p><p><strong>Og det stopper ikke der.</strong> Ligger resistensgenet på et plasmid, kan bakteriene overføre det ved konjugasjon — også til bakterier av andre arter, for eksempel til normalfloraen i tarmen. Der kan genet ligge i beredskap lenge etter at infeksjonen er over. Derfor er rådet å følge den kuren legen har foreskrevet i stedet for å stoppe når symptomene forsvinner, og å bruke smalspektret antibiotika der det er mulig.</p>"
+      }
+    ],
+    "vanligeFeil": [
+      "Å tro at antibiotika hjelper mot forkjølelse, influensa eller covid-19. Antibiotika angriper strukturer bare bakterier har: cellevegg av peptidoglykan, bakterielle ribosomer og bakteriell DNA-kopiering. Virus har ingen av dem.",
+      "Å bytte om antigen og antistoff i besvarelsen. Antigenet er det fremmede molekylet som kjennes igjen; antistoffet er det Y-formede proteinet plasmacellene lager for å binde seg til antigenet.",
+      "Å forklare resistens lamarckistisk: «bakteriene tilpasser seg antibiotikaet» eller «antibiotikaet gjør bakteriene resistente». Variasjonen finnes eller oppstår tilfeldig ved mutasjon før behandlingen; antibiotikaet er bare seleksjonspresset. Og det er bakteriepopulasjonen som blir resistent, ikke pasienten.",
+      "Å blande rollene til B- og T-celler — å skrive at T-cellene lager antistoff, eller at B-cellene dreper virusinfiserte celler. Antistoff kommer bare fra plasmaceller (modne B-celler), og infiserte celler drepes av cytotoksiske T-celler.",
+      "Å tro at feber, hovne lymfeknuter og verk er skade mikroben gjør. Det er kroppens eget forsvar i arbeid: feber er en oppjustert termostat i hypotalamus, og hovne lymfeknuter er lymfocytter som deler seg.",
+      "Å kalle vaksinasjon passiv immunitet. Vaksinen gir aktiv immunitet, siden du selv lager antistoff og hukommelsesceller. Passiv immunitet er ferdige antistoffer fra morsmelk, placenta eller en sprøyte — rask virkning, men ingen hukommelse."
+    ],
+    "tips": [
+      "Lag én tabell som stiller det medfødte mot det tilpassede immunforsvaret: hastighet, spesifisitet, hukommelse og celletyper. Svært mange oppgaver i dette kapittelet kan besvares direkte fra en slik tabell.",
+      "Lær immunresponsen som en tidslinje med tall: barrierer (straks), betennelse og fagocytter (minutter til timer), primærrespons (5–10 dager til antistoff), sekundærrespons (1–3 dager). Sensor gir poeng for riktig rekkefølge og tidsforløp, ikke bare for riktige navn.",
+      "Øv på å regne $H_c = 1-\\frac{1}{R_0}$ og $R = R_0(1-p)$. Dette er den ene regneoppgaven som pleier å komme fra kapittelet, og den kommer ofte forkledd som «forklar hvorfor meslinger krever over 95 % vaksinasjonsdekning».",
+      "I langsvar om resistens må ordene variasjon, mutasjon, seleksjonspress, arv og horisontal genoverføring være med — i den rekkefølgen. Skriv eksplisitt at variasjonen fantes først og at antibiotikaet velger, ikke skaper.",
+      "Får du et konkret sykdomstilfelle (flåttbitt, magesjau på hytta, sårinfeksjon), så navngi først mikrobegruppen, deretter smitteveien og inngangsporten, og forklar så forsvaret. Da har du strukturen på svaret og mister ikke poeng på å hoppe rett til immuncellene."
+    ]
+  },
+  "begreper": [
+    {
+      "begrep": "Patogen",
+      "forklaring": "En mikroorganisme som kan gi sykdom. Bare et lite mindretall av mikrobene rundt oss er patogene."
+    },
+    {
+      "begrep": "Toksin",
+      "forklaring": "Giftstoff som en bakterie skiller ut eller frigjør. Ved stivkrampe og difteri er det toksinet, ikke bakterien selv, som gjør skaden."
+    },
+    {
+      "begrep": "Zoonose",
+      "forklaring": "Sykdom som kan smitte mellom dyr og mennesker, for eksempel borreliose, salmonellose og rabies."
+    },
+    {
+      "begrep": "Vektor",
+      "forklaring": "Et dyr som frakter et smittestoff fra en vert til en annen, som flått for borreliabakterien og mygg for malariaparasitten."
+    },
+    {
+      "begrep": "Reproduksjonstall ($R_0$)",
+      "forklaring": "Hvor mange nye personer én smittet i gjennomsnitt smitter i en befolkning uten immunitet og uten tiltak. Utbruddet vokser hvis tallet er over 1."
+    },
+    {
+      "begrep": "Inkubasjonstid",
+      "forklaring": "Tida fra du blir smittet til symptomene kommer. Er du smittsom i denne perioden, er sykdommen vanskelig å stoppe."
+    },
+    {
+      "begrep": "Antigen",
+      "forklaring": "Et molekyl, oftest et overflateprotein på mikroben, som immunforsvaret kan kjenne igjen som fremmed og reagere på."
+    },
+    {
+      "begrep": "Antistoff",
+      "forklaring": "Y-formet protein fra plasmaceller som binder seg spesifikt til ett antigen og nøytraliserer, klumper sammen eller merker mikroben for fagocytose."
+    },
+    {
+      "begrep": "Fagocytose",
+      "forklaring": "Når en celle omslutter og fordøyer en partikkel eller mikrobe. Utføres av nøytrofile granulocytter, makrofager og dendrittiske celler."
+    },
+    {
+      "begrep": "Betennelsesreaksjon",
+      "forklaring": "Lokal respons der histamin utvider blodårene og øker gjennomtrengeligheten, slik at hvite blodceller og plasmaproteiner kommer til. Gir rødt, varmt, hovent og ømt."
+    },
+    {
+      "begrep": "Komplementsystemet",
+      "forklaring": "Plasmaproteiner i det medfødte forsvaret som merker mikrober for fagocytose, tilkaller hvite blodceller og kan lage porer i bakterieveggen."
+    },
+    {
+      "begrep": "Klonal seleksjon",
+      "forklaring": "At bare den lymfocytten som har reseptor for det aktuelle antigenet, blir aktivert og deler seg til en stor klon av like celler."
+    },
+    {
+      "begrep": "Hukommelsescelle",
+      "forklaring": "Langlivd B- eller T-celle som blir igjen etter en infeksjon og gjør at sekundærresponsen kommer på 1–3 dager i stedet for 1–2 uker."
+    },
+    {
+      "begrep": "Flokkimmunitet",
+      "forklaring": "Når så stor andel av befolkningen er immun at smittestoffet ikke finner nok nye verter. Terskelen er $1-\\frac{1}{R_0}$."
+    },
+    {
+      "begrep": "Horisontal genoverføring",
+      "forklaring": "At bakterier gir gener til hverandre i stedet for å arve dem fra en morcelle — for eksempel resistensgener på plasmider, også på tvers av arter."
+    }
+  ],
+  "quiz": [
+    {
+      "sporsmal": "Hvorfor hjelper ikke antibiotika mot forkjølelse?",
+      "alternativer": [
+        "Fordi forkjølelsesvirus har en cellevegg som antibiotika ikke kommer gjennom",
+        "Fordi forkjølelse skyldes virus, som mangler cellevegg, egne ribosomer og eget stoffskifte — altså alt antibiotika angriper",
+        "Fordi antibiotika bare virker hvis du samtidig har feber",
+        "Fordi alle forkjølelsesvirus har blitt resistente mot antibiotika"
+      ],
+      "riktig": 1,
+      "forklaring": "Antibiotika bygger på selektiv giftighet: de rammer peptidoglykan-celleveggen, bakterielle ribosomer eller bakteriell DNA-kopiering. Virus har ingen av disse strukturene, for de bruker vertscellens maskineri. Alternativ D er fristende fordi resistens er et kjent problem, men resistens gjelder bakterier som først var følsomme — virus har aldri vært mottakelige for antibiotika i utgangspunktet."
+    },
+    {
+      "sporsmal": "Hva er hovedoppgaven til T-hjelpecellene?",
+      "alternativer": [
+        "Å produsere og skille ut antistoffer",
+        "Å drepe virusinfiserte celler direkte",
+        "Å fagocyttere bakterier i betennelsesområdet",
+        "Å aktivere B-celler og cytotoksiske T-celler med signalstoffer (cytokiner)"
+      ],
+      "riktig": 3,
+      "forklaring": "T-hjelpecellen er dirigenten: den kjenner igjen antigenet som en dendrittisk celle eller makrofag presenterer, og skiller ut cytokiner som setter i gang både det humorale og det cellemedierte sporet. Alternativ B er den vanligste forvekslingen, men å drepe infiserte celler er jobben til de cytotoksiske T-cellene. Antistoff (A) kommer bare fra plasmaceller, som er modne B-celler."
+    },
+    {
+      "sporsmal": "En sykdom har $R_0 = 4$. Hvor stor andel av befolkningen må være immun for at utbruddet skal dø ut?",
+      "alternativer": [
+        "25 %",
+        "40 %",
+        "75 %",
+        "100 %"
+      ],
+      "riktig": 2,
+      "forklaring": "Terskelen er $H_c = 1-\\frac{1}{R_0} = 1-\\frac{1}{4} = 0{,}75$, altså 75 %. Alternativ A er den klassiske feilen: $\\frac{1}{4} = 25\\ \\%$ er andelen som kan forbli mottakelig, ikke andelen som må være immun. Og du trenger aldri 100 %, nettopp fordi smittestoffet slutter å finne nye verter lenge før alle er immune."
+    },
+    {
+      "sporsmal": "Hva er et antigen?",
+      "alternativer": [
+        "En del av et fremmed molekyl som immunforsvaret kan kjenne igjen og reagere på",
+        "Et Y-formet protein kroppen lager for å binde seg til mikrober",
+        "Et signalstoff som utvider blodårene ved betennelse",
+        "En hvit blodcelle som spiser bakterier"
+      ],
+      "riktig": 0,
+      "forklaring": "Antigenet er kjennemerket — oftest et overflateprotein på mikroben — som en lymfocyttreseptor passer til. Alternativ B beskriver antistoffet, og det er nettopp denne forvekslingen som koster mest poeng i dette kapittelet: antigenet kommer utenfra, antistoffet lager du selv. Alternativ C er histamin, og D er en fagocytt."
+    },
+    {
+      "sporsmal": "Hvordan oppstår og sprer antibiotikaresistens seg i en bakteriepopulasjon?",
+      "alternativer": [
+        "Antibiotikaet endrer genene til bakteriene og gjør dem resistente",
+        "Bakteriene lærer å tåle antibiotikaet og gir kunnskapen videre",
+        "Tilfeldige mutasjoner eller opptak av resistensgener gir noen få bakterier resistens, og antibiotikaet gir disse et seleksjonsfortrinn",
+        "Pasienten blir resistent mot antibiotika av å bruke det for ofte"
+      ],
+      "riktig": 2,
+      "forklaring": "Resistens er naturlig seleksjon: variasjonen finnes eller oppstår tilfeldig før behandlingen, antibiotikaet dreper de følsomme, og de resistente formerer seg og gir genet videre. Alternativ A er den vanligste feilen, og den er lamarckistisk — antibiotikaet skaper ikke mutasjonen, det velger den ut. Alternativ D blander sammen bakteriene og pasienten: det er populasjonen av bakterier som blir resistent, ikke mennesket."
+    },
+    {
+      "sporsmal": "En turgåer får borreliose etter et flåttbitt. Hvilken smittevei er dette?",
+      "alternativer": [
+        "Dråpesmitte",
+        "Fekal-oral smitte",
+        "Vertikal smitte fra mor til barn",
+        "Vektorbåren smitte"
+      ],
+      "riktig": 3,
+      "forklaring": "Flåtten er en vektor: et dyr som frakter smittestoffet — her bakterien Borrelia — fra en vert til en annen. Fekal-oral smitte (B) er fristende å velge fordi mange forbinder «smitte fra naturen» med mat og vann, men da må smittestoffet ut med avføring og inn gjennom munnen. Ved flåttbitt går bakterien rett gjennom huden."
+    },
+    {
+      "sporsmal": "Hvilken av disse hører til det MEDFØDTE immunforsvaret?",
+      "alternativer": [
+        "Hukommelses-B-celler",
+        "Plasmaceller som produserer antistoff",
+        "Cytotoksiske T-celler",
+        "Nøytrofile granulocytter som fagocytterer bakterier"
+      ],
+      "riktig": 3,
+      "forklaring": "Nøytrofile granulocytter angriper alt som er fremmed, uten å skille mellom mikrober og uten å huske noe fra sist. Det er kjennetegnet på det medfødte forsvaret. Alternativ C frister mange fordi T-celler også dreper «direkte», men cytotoksiske T-celler kjenner igjen ett bestemt antigen og hører derfor til det tilpassede forsvaret — som alle lymfocytter gjør."
+    },
+    {
+      "sporsmal": "Hvorfor blir du sjelden syk av vannkopper to ganger?",
+      "alternativer": [
+        "Fordi viruset ikke finnes i miljøet lenger etter at du har hatt sykdommen",
+        "Fordi hukommelsescellene gjør at den tilpassede responsen starter etter 1–3 dager i stedet for 1–2 uker, og antistoffnivået blir mye høyere",
+        "Fordi det medfødte immunforsvaret husker viruset og stopper det i huden",
+        "Fordi antistoffene fra første gang aldri brytes ned, men sirkulerer uendret hele livet"
+      ],
+      "riktig": 1,
+      "forklaring": "Hukommelses-B- og T-celler ligger klare med ferdig reseptor, så sekundærresponsen kommer raskt og kraftig — ofte før du merker symptomer. Alternativ D er fristende, men enkeltantistoffer brytes ned i løpet av uker; det som varer, er cellene som kan lage nye. Alternativ C er feil på et prinsipielt punkt: det medfødte immunforsvaret har ingen hukommelse."
+    },
+    {
+      "sporsmal": "Et nyfødt barn får antistoffer gjennom morsmelka. Hva slags immunitet er dette?",
+      "alternativer": [
+        "Passiv immunitet — barnet får ferdige antistoffer, men danner ikke egne hukommelsesceller",
+        "Aktiv immunitet, fordi antistoffene virker inne i barnets egen kropp",
+        "Medfødt immunforsvar, fordi beskyttelsen virker uten lymfocytter",
+        "Flokkimmunitet, fordi mor beskytter barnet mot smitte"
+      ],
+      "riktig": 0,
+      "forklaring": "Skillet går på hvem som lager antistoffet. Får du det ferdig — via morsmelk, placenta eller sprøyte — er immuniteten passiv: rask virkning, men den forsvinner når antistoffene brytes ned. Alternativ B er den typiske fellen: at antistoffene virker i barnets kropp, gjør dem ikke aktive. Aktiv immunitet krever at barnets egne B- og T-celler blir aktivert, som ved en infeksjon eller en vaksine."
+    },
+    {
+      "sporsmal": "Hvorfor regner vi vanligvis ikke virus som levende organismer?",
+      "alternativer": [
+        "Fordi de mangler arvestoff",
+        "Fordi de er for små til å ses i noe mikroskop",
+        "Fordi de mangler egen celle og eget stoffskifte, og bare kan formere seg inne i en vertscelle",
+        "Fordi de bare består av protein"
+      ],
+      "riktig": 2,
+      "forklaring": "Virus har både arvestoff og proteiner, men ingen celle og ingen egen energiomsetning. De må kapre vertscellens maskineri for å formere seg, og oppfyller derfor ikke kravene til liv. Alternativ A er direkte galt — arvestoffet, DNA eller RNA, er selve kjernen i et virus. Størrelse (B) er heller ikke kriteriet: virus er små, men kan ses i elektronmikroskop, og mange bakterier er også for små for øyet."
+    },
+    {
+      "sporsmal": "Hva skjer i den lokale betennelsesreaksjonen, og hvorfor?",
+      "alternativer": [
+        "Blodårene trekker seg sammen for å stenge mikrobene inne i vevet",
+        "Histamin utvider blodårene og gjør kapillarveggene mer gjennomtrengelige, slik at hvite blodceller og plasmaproteiner kommer raskere til skadestedet",
+        "Temperaturen i området synker for å hemme bakterieveksten",
+        "Plasmaceller vandrer inn i huden og produserer antistoff i løpet av noen minutter"
+      ],
+      "riktig": 1,
+      "forklaring": "Histamin fra mastceller og skadde celler gir utvidede blodårer og lekke kapillarer. Det forklarer alle de fire tegnene på en gang: rødt og varmt av økt blodstrøm, hovent av væske i vevet, ømt av trykk og signalstoffer. Alternativ A snur logikken — poenget er å slippe flere forsvarsceller inn, ikke å stenge området av. Alternativ D er umulig av tidsgrunner: antistoff kommer først etter 5–10 dager i en primærrespons."
+    },
+    {
+      "sporsmal": "En bakteriekultur har 200 bakterier og en generasjonstid på 20 minutter. Hvor mange er det etter 2 timer med optimale forhold?",
+      "alternativer": [
+        "12 800",
+        "2 400",
+        "1 200",
+        "76 800"
+      ],
+      "riktig": 0,
+      "forklaring": "$2$ timer $= 120$ min gir $n = \\frac{120}{20} = 6$ generasjoner, og $N = 200 \\cdot 2^{6} = 200 \\cdot 64 = 12\\,800$. Alternativ B er feilen folk gjør oftest: å gange med antall generasjoner ($200 \\cdot 2 \\cdot 6$) i stedet for å opphøye i antall generasjoner. Veksten er eksponentiell, ikke lineær — hver bakterie blir to, ikke pluss to."
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Fire grupper sykdomsframkallende mikrober",
+      "bak": "Bakterier (prokaryote, cellevegg av peptidoglykan), virus (ikke celler), sopp (eukaryote, cellevegg av kitin) og parasitter (protozoer og flercellede som innvollsorm og lus)."
+    },
+    {
+      "front": "Hvorfor virker antibiotika ikke på virus?",
+      "bak": "Antibiotika angriper cellevegg, bakterielle ribosomer eller bakteriell DNA-kopiering. Virus har ingen av dem — de bruker vertscellens maskineri."
+    },
+    {
+      "front": "Størrelse: bakterie kontra virus",
+      "bak": "Bakterier 0,5–5 µm, virus 20–300 nm. Virus er 10–100 ganger mindre. Husk $1\\,\\mu\\text{m} = 1000\\,\\text{nm}$."
+    },
+    {
+      "front": "De fem leddene i smittekjeden",
+      "bak": "Smittestoff, smittekilde, smittevei, inngangsport og mottakelig vert. Bryt ett ledd, og smitten stopper."
+    },
+    {
+      "front": "Hva er en zoonose?",
+      "bak": "Sykdom som smitter mellom dyr og mennesker. Over 60 % av nye smittsomme sykdommer hos mennesker er zoonoser: borreliose, salmonellose, rabies, covid-19."
+    },
+    {
+      "front": "Ytre barrierer i det medfødte immunforsvaret",
+      "bak": "Hud med keratin og surt pH, slim og flimmerhår i luftveiene, lysozym i tårer og spytt, magesyre $\\ce{HCl}$ ved pH rundt 2, og normalfloraen som tar plassen."
+    },
+    {
+      "front": "De fire tegnene på betennelse — og årsaken",
+      "bak": "Rødt, varmt, hovent og ømt. Histamin utvider blodårene og gjør kapillarveggene gjennomtrengelige, så blod, plasma og hvite blodceller strømmer til."
+    },
+    {
+      "front": "Hvilke celler er fagocytter?",
+      "bak": "Nøytrofile granulocytter (kommer først, blir puss), makrofager (langlivde, rydder opp) og dendrittiske celler (bærer antigen til lymfeknuten)."
+    },
+    {
+      "front": "Tre oppgaver for komplementsystemet",
+      "bak": "Merke mikrober for fagocytose, tilkalle flere hvite blodceller, og lage porer i bakterieveggen slik at cellen sprekker."
+    },
+    {
+      "front": "B-celler kontra T-celler",
+      "bak": "B-celler modnes i beinmargen og blir plasmaceller som lager antistoff (humoral respons). T-celler modnes i thymus: T-hjelpeceller dirigerer, cytotoksiske T-celler dreper infiserte celler (cellemediert respons)."
+    },
+    {
+      "front": "Hva gjør en cytotoksisk T-celle?",
+      "bak": "Kjenner igjen virusantigen på overflaten av kroppens egne infiserte celler og dreper dem. Nødvendig fordi antistoff ikke kommer til inne i en celle."
+    },
+    {
+      "front": "Primærrespons kontra sekundærrespons",
+      "bak": "Primær: 5–10 dager før antistoffet kommer, moderat nivå. Sekundær: 1–3 dager, mange ganger høyere antistoffnivå — takket være hukommelsescellene."
+    },
+    {
+      "front": "Aktiv kontra passiv immunitet",
+      "bak": "Aktiv: du lager antistoff og hukommelsesceller selv (infeksjon eller vaksine), varer lenge. Passiv: ferdige antistoffer fra placenta, morsmelk eller sprøyte — virker straks, men ingen hukommelse."
+    },
+    {
+      "front": "Fire vaksinetyper med eksempel",
+      "bak": "Levende svekket (MMR), inaktivert (polio, influensa), subenhets- eller toksoidvaksine (HPV, stivkrampe) og mRNA-vaksine (koronavaksine)."
+    },
+    {
+      "front": "Terskel for flokkimmunitet",
+      "bak": "$H_c = 1-\\frac{1}{R_0}$. For meslinger med $R_0 = 15$ blir det $1-\\frac{1}{15} = 0{,}933$, altså 93,3 % immune — som krever over 95 % vaksinasjonsdekning."
+    },
+    {
+      "front": "Fire mekanismer for antibiotikaresistens",
+      "bak": "Enzymer som bryter ned antibiotikaet (betalaktamase, ESBL), endret målmolekyl (MRSA), effluxpumper som kaster stoffet ut, og redusert opptak gjennom celleoverflaten."
+    }
+  ]
+}
