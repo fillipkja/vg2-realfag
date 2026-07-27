@@ -79,7 +79,7 @@
         "figur": {
           "type": "hierarki",
           "tittel": "Zoom inn på cellemembranen",
-          "forklaring": "Følg boksene nedover: hvert nivå ligger inni det over, og skalaen krymper hele veien fra vevet til én fettsyrehale. Legg merke til forholdet mellom nivå 2 og 3 — cellen er flere tusen ganger bredere enn membranen er tykk, så barrieren rundt cellen er bare to molekyler tykk.",
+          "forklaring": "Følg boksene nedover: hvert nivå ligger inni det over, og skalaen krymper fra vevet til én fettsyrehale. Cellen er nesten tre tusen ganger bredere enn membranen er tykk (20 µm mot 7–8 nm), så barrieren rundt cellen er bare to molekyler tykk.",
           "nivaaer": [
             {
               "navn": "Vev",
@@ -113,7 +113,7 @@
         "figur": {
           "type": "graf",
           "tittel": "Transportfart mot konsentrasjonen utenfor cellen",
-          "forklaring": "Enkel diffusjon (den rette linja) fortsetter å øke så lenge gradienten øker. Fasilitert diffusjon starter mye brattere, men flater ut mot metningslinja: når alle kanal- og bærerproteinene er i arbeid samtidig, hjelper det ikke å øke konsentrasjonen mer. Begge er passive — det er formen på kurven som skiller dem, ikke ATP.",
+          "forklaring": "Den rette linja er enkel diffusjon: farten øker så lenge gradienten øker. Fasilitert diffusjon starter brattere, men flater ut mot metningslinja når alle proteinene er i arbeid — begge er passive, det er formen på kurven som skiller dem.",
           "xmin": 0,
           "xmax": 12,
           "ymin": 0,
@@ -148,7 +148,7 @@
           "type": "stolper",
           "tittel": "Na⁺ og K⁺ på hver side av membranen i en nervecelle",
           "enhet": "konsentrasjon (mmol/L)",
-          "forklaring": "Sammenlign søylene parvis: natrium står 145 mot 12 (omtrent 12 ganger mer ute), kalium 140 mot 4 (35 ganger mer inne). Pumpa flytter begge ionene motsatt vei av det de ville gått av seg selv, og derfor må hver runde betales med ATP. Forskjellene jevner seg aldri ut så lenge pumpa går.",
+          "forklaring": "Sammenlign søylene parvis: natrium står 145 mot 12 (12 ganger mer ute), kalium 140 mot 4 (35 ganger mer inne). Pumpa flytter begge ionene motsatt vei av det de ville gått av seg selv, og derfor koster hver runde ATP.",
           "data": [
             {
               "navn": "Na⁺ ute",
@@ -192,7 +192,7 @@
               "hoyre": "Stoffer cellen har laget: insulin, signalstoff i synapsen, slim, avfall."
             },
             {
-              "egenskap": "Varianter",
+              "egenskap": "Varianter og vesikler",
               "venstre": "Fagocytose, pinocytose og reseptormediert endocytose.",
               "hoyre": "Vesikler fra Golgi-apparatet vandrer ut til cellemembranen."
             },
@@ -231,7 +231,7 @@
         "figur": {
           "type": "graf",
           "tittel": "Masseendring i potetstavene mot sukkerkonsentrasjon",
-          "forklaring": "De fire punktene er målingene, og x-aksen er 0 %-linja. Der grafen krysser aksen, ved omtrent 0,29 mol/L, er løsningen isotonisk med potetcellene: like mye vann hver vei. Over aksen har staven tatt opp vann (hypotonisk løsning), under aksen har den mistet vann (hypertonisk).",
+          "forklaring": "Punktene er de fire målingene, og x-aksen er 0 %-linja. Det femte punktet er ikke en måling: der linja krysser aksen, ved 0,29 mol/L, er løsningen isotonisk — over aksen har staven tatt opp vann (hypotonisk), under aksen har den mistet vann (hypertonisk).",
           "xmin": -0.03,
           "xmax": 0.68,
           "ymin": -14,
@@ -312,7 +312,7 @@
           "type": "syklus",
           "tittel": "Én runde i natrium-kalium-pumpa",
           "senter": "Na⁺/K⁺-pumpa",
-          "forklaring": "Følg runden med klokka: pumpa binder hvert ion på den siden der det er minst av det (Na⁺ inne, K⁺ ute) og slipper det ut på den rike siden — derfor går transporten mot gradienten. ATP-en i fase 2 er det som får proteinet til å snu formen. Én runde = 1 ATP, 3 Na⁺ ut og 2 K⁺ inn, altså tallene du regner med i oppgaven.",
+          "forklaring": "Følg runden med klokka: pumpa binder hvert ion der det er minst av det (Na⁺ inne, K⁺ ute) og slipper det ut på den rike siden, altså mot gradienten. Fosfatet fra ATP i fase 2 snur formen på pumpa; én runde = 1 ATP, 3 Na⁺ ut og 2 K⁺ inn.",
           "faser": [
             {
               "navn": "3 Na⁺",

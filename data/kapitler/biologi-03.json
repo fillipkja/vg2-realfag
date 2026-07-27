@@ -41,7 +41,7 @@
     "figur": {
       "type": "spektrum",
       "tittel": "Størrelser i cellebiologi",
-      "forklaring": "Skalaen er logaritmisk, så hvert hakk er ti ganger større: en bakterie på 1 µm og en dyrecelle på 10 µm ligger ett hakk fra hverandre i diameter, men tusen ganger i volum. Lysmikroskopets grense på 200 nm ligger i høyre kant av virusbåndet — alt til venstre for den krever elektronmikroskop.",
+      "forklaring": "Hvert hakk er ti ganger større: bakterien på 1 µm og dyrecellen på 10 µm ligger ett hakk fra hverandre i diameter, men tusen ganger i volum. Alt til venstre for lysmikroskopets grense på 200 nm krever elektronmikroskop.",
       "enhet": "diameter i nm (logaritmisk)",
       "min": 1,
       "max": 100000,
@@ -131,7 +131,7 @@
         "figur": {
           "type": "sammenlikning",
           "tittel": "Plantecelle og dyrecelle",
-          "forklaring": "De fem øverste radene er forskjellene, den nederste alt de har felles. Legg merke til hvor lite som egentlig skiller dem: cellevegg, kloroplast og sentralvakuole. Selve maskineriet for proteinsyntese og celleånding er det samme.",
+          "forklaring": "De fem øverste radene er forskjellene, den nederste alt de har felles. Legg merke til hvor lite som egentlig skiller dem — maskineriet for proteinsyntese og celleånding er det samme.",
           "kolonner": [
             "Plantecelle",
             "Dyrecelle"
@@ -176,13 +176,13 @@
         "figur": {
           "type": "graf",
           "tittel": "Overflate per volum for en kuleformet celle",
-          "forklaring": "Kurven er bratt der cellene er små: dobler du radien, halveres verdien. Cellen med r = 10 µm har O/V = 0,30 µm⁻¹, mens kjempecellen med r = 100 µm bare har 0,030 — den ligger nesten nede på aksen og får ikke oksygen nok inn til midten.",
+          "forklaring": "Kurven er bratt der cellene er små: dobler du radien, halveres O/V. Cellen med r = 10 µm har 0,30 µm⁻¹, mens kjempecellen med r = 100 µm bare har 0,030 og ikke får oksygen nok inn til midten.",
           "xmin": 0,
           "xmax": 110,
           "ymin": 0,
           "ymax": 1,
           "xlabel": "r (µm)",
-          "ylabel": "O/V (1/µm)",
+          "ylabel": "O/V",
           "kurver": [
             {
               "uttrykk": "3/x",
@@ -250,19 +250,19 @@
               "note": "tykt preparat slipper ikke lys"
             },
             {
-              "tekst": "Dryp på vann eller farge, senk dekkglasset skrått",
-              "note": "skrått gir ingen luftbobler"
+              "tekst": "Legg på en dråpe vann eller farge",
+              "note": "senk dekkglasset skrått, ingen bobler"
             },
             {
               "tekst": "Start med det svakeste objektivet, 4×",
               "note": "størst synsfelt"
             },
             {
-              "tekst": "Finn objektet og still skarpt med grovhjulet",
-              "note": "sentrer det i synsfeltet"
+              "tekst": "Finn objektet og still skarpt",
+              "note": "grovhjulet, sentrer i synsfeltet"
             },
             {
-              "tekst": "Bytt til sterkere objektiv, 10× og 40×",
+              "tekst": "Bytt til sterkere objektiv: 10×, 40×",
               "note": "objektet blir liggende i fokus"
             },
             {

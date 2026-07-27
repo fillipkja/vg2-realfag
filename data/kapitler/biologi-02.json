@@ -133,7 +133,7 @@
             {
               "egenskap": "Gener og proteinsyntese",
               "venstre": "eget bakterielt mønster",
-              "hoyre": "likner eukaryotenes; det var rRNA-likheten Woese oppdaget"
+              "hoyre": "likner eukaryotenes; rRNA-sammenligningen til Woese skilte dem ut"
             },
             {
               "egenskap": "Typiske levesteder",
@@ -274,7 +274,7 @@
         "figur": {
           "type": "hierarki",
           "tittel": "Treet lest som grupper inne i grupper",
-          "forklaring": "Hval ligger inne i klovdyrboksen, sel står utenfor — derfor er kua nærmere i slekt med hvalen enn selen er, selv om sel og hval likner mest. Den innerste boksen er den yngste noden i treet, og de to artene som ligger der, er søstergrupper.",
+          "forklaring": "Hval ligger inne i klovdyrboksen, sel står utenfor — derfor er kua nærmere i slekt med hvalen enn selen er, selv om sel og hval likner mest. Den innerste boksen er den yngste noden, og de to som ligger der, er søstergrupper.",
           "nivaaer": [
             {
               "navn": "Pattedyr",
@@ -285,8 +285,8 @@
               "eksempel": "ku, flodhest, hval"
             },
             {
-              "navn": "Yngste node",
-              "eksempel": "flodhest, hval"
+              "navn": "Søstre",
+              "eksempel": "hval, flodhest"
             }
           ]
         }

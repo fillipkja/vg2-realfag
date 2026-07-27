@@ -70,7 +70,7 @@
       "type": "stolper",
       "tittel": "Oksygenets partialtrykk faller for hvert steg",
       "enhet": "p(O₂) i kPa",
-      "forklaring": "Se på størrelsen på hvert fall: 21 → 13,3 kPa fordi frisk luft blandes med brukt, fuktig luft i lungene, bare 0,6 kPa tapes over den 0,5 µm tynne alveoleveggen, og det siste, bratte fallet er gradienten som avleverer oksygen til muskelen. Oksygenet kan bare gå nedover trappa, og ventilasjon og sirkulasjon er det som holder trinnene bratte.",
+      "forklaring": "Se hvor fallene ligger: 21 → 13,3 kPa fordi frisk luft blandes med brukt, fuktig luft i lungene, mens blodet nesten når likevekt med alveoleluften — bare 0,6 kPa under. Det siste, bratte fallet er gradienten som avleverer O₂ til muskelen, og ventilasjon og sirkulasjon holder trinnene bratte.",
       "data": [
         {
           "navn": "Uteluft",
@@ -224,7 +224,7 @@
         "html": "<p>Menneskehjertet er to pumper i én. Oksygenfattig blod fra kroppen kommer via hulvenene til <strong>høyre forkammer</strong>, videre til <strong>høyre hjertekammer</strong> og ut i lungearterien til lungene. Oksygenrikt blod kommer tilbake i lungevenene til <strong>venstre forkammer</strong>, ned i <strong>venstre hjertekammer</strong> og ut i aorta. Venstre kammer har tykkest vegg, fordi det må skape trykk til hele kroppen. <strong>Seilklaffene</strong> mellom forkammer og kammer og <strong>lommeklaffene</strong> ved utløpene sikrer enveis strøm; hjertelydene er klaffer som smeller igjen. Rytmen settes av <strong>sinusknuten</strong> i høyre forkammer og går videre via AV-knuten ut i kammermuskulaturen. <strong>Systole</strong> er sammentrekningen, <strong>diastole</strong> hvilefasen. Minuttvolumet er slagvolum ganger puls, i hvile ca. $70\\,\\text{mL} \\cdot 70\\,\\text{min}^{-1} = 4900\\,\\text{mL/min} = 4{,}9\\,\\text{L/min}$.</p><p><strong>Arterier</strong> fører blod fra hjertet og har tykk, elastisk vegg med glatt muskulatur. <strong>Vener</strong> fører blod til hjertet, har tynn vegg, stort lumen og klaffer, og tømmes ved at skjelettmusklene klemmer på dem. <strong>Kapillærene</strong> har vegg av bare ett cellelag, og her skjer all utveksling. I starten av kapillæret er blodtrykket høyere enn plasmaproteinenes <strong>kolloidosmotiske trykk</strong>, så væske presses ut; mot venesiden har blodtrykket falt, og det meste suges inn igjen. Resten samles opp av lymfekarene.</p><p>Blodet er ca. 55 % <strong>plasma</strong> og 45 % blodceller. Røde blodceller mangler kjerne og er stappfulle av <strong>hemoglobin</strong>, der hvert molekyl binder fire $\\ce{O2}$ til jernatomene sine. I vev med mye $\\ce{CO2}$ og lav pH slipper hemoglobinet oksygenet lettere — <strong>Bohr-effekten</strong> — nettopp der behovet er størst. Høy temperatur i arbeidende vev virker i samme retning, men det er en egen effekt og ikke en del av Bohr-effekten. $\\ce{CO2}$ fraktes derimot mest som <strong>bikarbonat</strong>: $\\ce{CO2 + H2O <=> HCO3- + H+}$, en reaksjon enzymet karboanhydrase framskynder inne i de røde blodcellene.</p>",
         "figur": {
           "type": "syklus",
-          "tittel": "Blodets vei gjennom hjertet",
+          "tittel": "Blodets vei gjennom hjertet og kretsløpet",
           "senter": "Dobbelt kretsløp",
           "forklaring": "Følg runden med klokka; H = høyre, V = venstre, fork = forkammer og kam = hjertekammer. Blodet passerer hjertet to ganger per runde, og legg merke til at lungearterien fører O₂-fattig blod mens lungevenene fører det mest O₂-rike blodet i kroppen.",
           "faser": [

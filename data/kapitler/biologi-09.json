@@ -46,11 +46,11 @@
       "type": "flyt",
       "retning": "ned",
       "tittel": "Forsvarslinjene i tidsrekkefølge",
-      "forklaring": "Les tidene i notatene: hvert steg starter seinere enn det forrige, men treffer mer presist. De to første linjene virker mot alt og kjøper tid, mens bare den tredje er spesifikk — og bare den etterlater hukommelse.",
+      "forklaring": "Les tidene i notatene: hvert steg starter seinere enn det forrige, men treffer mer presist. De to første linjene er begge medfødte og virker mot alt, mens bare den tredje er spesifikk — og bare den etterlater hukommelse.",
       "steg": [
         {
           "tekst": "Barrierer: hud, slimhinner, magesyre",
-          "note": "1. linje: virker med én gang"
+          "note": "1. linje: medfødt, straks"
         },
         {
           "tekst": "Betennelse, fagocytter, feber",
@@ -75,8 +75,8 @@
         "figur": {
           "type": "spektrum",
           "tittel": "Størrelsen på de sykdomsframkallende mikrobene",
-          "forklaring": "Skalaen er logaritmisk, så hvert hakk mot høyre er ti ganger større. Se hvor langt til venstre virusbåndet ligger: et virus er 10–100 ganger mindre enn en bakterie, mens sopp- og protozocellene er eukaryote og på størrelse med kroppens egne celler.",
-          "enhet": "diameter (nm), logaritmisk skala",
+          "forklaring": "Skalaen er logaritmisk, så like langt mot høyre betyr ti ganger større. Se hvor langt til venstre virusbåndet ligger: et virus er 10–100 ganger mindre enn en bakterie, mens sopp- og protozocellene er eukaryote og på størrelse med kroppens egne celler.",
+          "enhet": "størrelse (nm), logaritmisk skala",
           "min": 10,
           "max": 100000,
           "log": true,

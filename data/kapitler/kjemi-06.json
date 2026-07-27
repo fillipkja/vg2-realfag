@@ -136,7 +136,7 @@
         "figur": {
           "type": "spektrum",
           "tittel": "Hva størrelsen på K forteller",
-          "forklaring": "Aksen viser eksponenten n i K = 10ⁿ, så hvert hakk mot høyre er ti ganger så stor K. Hydrogenjodidlikevekten med K = 50 havner i midtfeltet, der det finnes mye av både reaktanter og produkter, mens løselighetsproduktet til CaF₂ ligger helt ute til venstre — der løser bare 17 mg salt seg per liter. K sier altså hvor blandingen ender, ikke hvor fort den kommer dit.",
+          "forklaring": "Aksen viser eksponenten n i K = 10ⁿ, så ett hakk mot høyre er ti ganger større K. Grensene 10⁻³ og 10³ er de vanlige. HI-likevekten med K = 50 ligger i høyre del av midtfeltet: 78 % av molekylene er HI, altså klart mot høyre, men ikke fullstendig.",
           "enhet": "K = 10ⁿ (n på aksen)",
           "min": -12,
           "max": 12,
@@ -146,13 +146,13 @@
               "fra": -12,
               "til": -3,
               "navn": "K ≪ 1: nesten bare reaktanter",
-              "verdi": "Ks(CaF₂) = 4·10⁻¹¹"
+              "verdi": "Ks(CaF₂) = 3,9·10⁻¹¹"
             },
             {
               "fra": -3,
               "til": 3,
               "navn": "K rundt 1: mye av begge",
-              "verdi": "K(HI) = 50"
+              "verdi": "K(ester) = 4,0"
             },
             {
               "fra": 3,

@@ -146,7 +146,7 @@
         "figur": {
           "type": "hierarki",
           "tittel": "Nervesystemet delt inn nivå for nivå",
-          "forklaring": "Hver boks ligger inni den over. Se særlig at det autonome ikke er en tredje hoveddel, men en del av den motoriske delen av det perifere nervesystemet — og at parasympatikus står på nederste nivå ved siden av sympatikus. Sentralnervesystemet (hjerne og ryggmarg) er den andre halvparten av nivå to.",
+          "forklaring": "Hver boks ligger inni den over: sympatikus er en gren av det autonome systemet, som selv er en del av den motoriske delen av det perifere nervesystemet. Sidegrenene er ikke tegnet — parasympatikus hører på nederste nivå, og sentralnervesystemet (hjerne og ryggmarg) på nivå to.",
           "nivaaer": [
             {
               "navn": "Nervesystemet",
@@ -232,7 +232,7 @@
               "hoyre": "trekker seg sammen (vasokonstriksjon), så varmen holdes i kjernen"
             },
             {
-              "egenskap": "Svettekjertler",
+              "egenskap": "Svettekjertler og hud",
               "venstre": "svetter mer; 1 L svette som fordamper tar med seg ca. 2,4 MJ",
               "hoyre": "svetter nesten ikke, og hårene reiser seg"
             },

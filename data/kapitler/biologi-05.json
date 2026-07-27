@@ -84,7 +84,7 @@
           "type": "syklus",
           "tittel": "Cellesyklusen: interfase og M-fase",
           "senter": "≈ 24 timer",
-          "forklaring": "Runden går med klokka fra G1. Interfasen (G1, S og G2) er de tre første nodene og tar over 90 prosent av tiden, mens hele delingen ligger i den korte M-fasen. Legg merke til at kromosomtallet er 46 hele runden — det er kromatidtallet som dobles i S.",
+          "forklaring": "Runden går med klokka fra G1. Interfasen (G1, S og G2) tar over 90 prosent av tiden, mens hele delingen ligger i den korte M-fasen. Kromosomtallet er 46 gjennom hele interfasen — det er kromatidtallet som dobles til 92 i S.",
           "faser": [
             {
               "navn": "G1",
@@ -92,7 +92,7 @@
             },
             {
               "navn": "S",
-              "note": "DNA kopieres: 92 kromatider"
+              "note": "DNA kopieres"
             },
             {
               "navn": "G2",
@@ -201,27 +201,26 @@
           "tittel": "Menneskets utvikling før fødselen",
           "enhet": "uker etter befruktning",
           "min": 0,
-          "max": 40,
+          "max": 38,
           "log": false,
-          "forklaring": "Legg merke til hvor kort og tidlig vinduet for organanlegg er: skadelige stoffer gjør mest skade i uke 3–8, da mange ennå ikke vet at de er gravide.",
+          "forklaring": "De tre første ukene deler zygoten seg og fester seg i livmorveggen. Legg merke til hvor kort og tidlig vinduet for organanlegg er — i uke 3–8 gjør skadelige stoffer størst skade, og fødselen kommer først rundt uke 38 etter befruktningen.",
           "band": [
             {
               "fra": 0,
               "til": 3,
-              "navn": "Celledeling og feste",
-              "verdi": "fester seg i livmorveggen"
+              "navn": "Feste"
             },
             {
               "fra": 3,
               "til": 8,
-              "navn": "Organanlegg",
-              "verdi": "alle organ anlegges, mest sårbar periode"
+              "navn": "Organer",
+              "verdi": "sårbar"
             },
             {
               "fra": 8,
-              "til": 40,
+              "til": 38,
               "navn": "Vekst og modning",
-              "verdi": "organene vokser og modnes ferdig"
+              "verdi": "organene modnes"
             }
           ]
         }
@@ -298,7 +297,7 @@
               "note": "cellene tar opp mer vann"
             },
             {
-              "tekst": "Cellene på skyggesiden strekker seg mest",
+              "tekst": "Skyggesiden strekker seg mest",
               "note": "ingen ekstra celledeling"
             },
             {

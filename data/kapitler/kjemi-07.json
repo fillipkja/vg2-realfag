@@ -227,7 +227,7 @@
         "figur": {
           "type": "syklus",
           "tittel": "Bufferen veksler mellom syra og basen",
-          "forklaring": "Følg rundgangen: tilsatt OH⁻ gjør litt av syra HA om til basen A⁻, og tilsatt H₃O⁺ gjør like mye tilbake igjen. Begge formene er til stede hele tiden, så det er bare forholdet mellom dem som endrer seg — og siden forholdet står inne i en logaritme, flytter pH seg bare noen hundredeler. Bufferen bryter først sammen når den ene formen er brukt opp.",
+          "forklaring": "Følg rundgangen: tilsatt OH⁻ gjør litt av syra HA om til basen A⁻, og tilsatt H₃O⁺ gjør like mye tilbake. Bare forholdet mellom de to formene endrer seg, og siden forholdet står inne i en logaritme, flytter pH seg bare en tiendedel eller to.",
           "senter": "Buffer",
           "faser": [
             {
@@ -255,7 +255,7 @@
         "figur": {
           "type": "graf",
           "tittel": "Titreringskurve: 25,0 mL HCl mot NaOH",
-          "forklaring": "Begge løsningene er 0,100 mol/L. Kurven er nesten flat på hver side av ekvivalenspunktet og nesten loddrett gjennom det: mellom 24,90 mL og 25,10 mL — to dråper — stiger pH fra 3,70 til 10,30. Derfor treffer alle indikatorer som slår om mellom pH 4 og 10 endepunktet her. En svak syre gir et kortere sprang, med ekvivalenspunkt rundt pH 8–9.",
+          "forklaring": "Kurven er nesten flat på hver side og nesten loddrett gjennom ekvivalenspunktet: fra 24,95 mL til 25,05 mL — to dråper — stiger pH fra 4,00 til 10,00. Begge løsningene er 0,100 mol/L, og enhver indikator som slår om mellom pH 4 og 10 treffer derfor endepunktet her.",
           "xmin": 0,
           "xmax": 50,
           "ymin": 0,

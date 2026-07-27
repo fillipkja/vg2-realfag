@@ -78,11 +78,11 @@
         },
         {
           "tekst": "Celleåndingen oksiderer glukosen",
-          "note": "med O₂ 30–32 ATP, uten O₂ bare 2"
+          "note": "30–32 ATP med O₂, 2 uten — resten varme"
         },
         {
           "tekst": "ATP driver arbeidet i cellen",
-          "note": "to tredjedeler blir varme"
+          "note": "muskelarbeid, transport, syntese"
         }
       ]
     }
@@ -171,7 +171,7 @@
           "type": "stolper",
           "tittel": "ATP-utbyttet fra hvert trinn i celleåndingen",
           "enhet": "ATP per glukose",
-          "forklaring": "Søylene summerer seg til 32 ATP, og 28 av dem — nesten 90 prosent — kommer fra det siste trinnet, det eneste som trenger oksygen. Faller oksygenet bort, forsvinner de to høyre søylene, og bare de 2 ATP-ene fra glykolysen står igjen.",
+          "forklaring": "Søylene summerer seg til 32 ATP, og 28 av dem — nesten 90 prosent — kommer fra det siste trinnet, det eneste som trenger oksygen. Overgangen til acetyl-CoA gir 0 ATP og har derfor ingen søyle. Uten oksygen faller de to høyre søylene bort, og bare glykolysens 2 ATP står igjen.",
           "data": [
             {
               "navn": "Glykolysen",
@@ -266,7 +266,7 @@
         "figur": {
           "type": "graf",
           "tittel": "Netto og brutto fotosyntese mot lysstyrke",
-          "forklaring": "Den loddrette avstanden mellom kurvene er alltid 6,0 µmol/time, plantens egen celleånding, og der nettokurven krysser x-aksen (N = 0) ligger kompensasjonspunktet — ved svakere lys enn den svakeste målingen. Legg merke til at 16 ganger sterkere lys bare gir 2,4 ganger større bruttofotosyntese: kurven flater ut fordi CO₂ eller temperaturen tar over som minimumsfaktor.",
+          "forklaring": "Avstanden mellom kurvene er alltid 6,0 µmol/time — plantens egen celleånding. Der nettokurven krysser x-aksen, ligger kompensasjonspunktet, ved svakere lys enn vi målte. Og 16 ganger sterkere lys gir bare 2,4 ganger større brutto: kurven flater ut når CO₂ eller temperaturen begrenser.",
           "xmin": 0,
           "xmax": 17,
           "ymin": -8,
@@ -323,7 +323,7 @@
           "min": 0,
           "max": 10,
           "log": false,
-          "forklaring": "Se spranget fra pH 2 i magesekken til pH 7–8 i tynntarmen: bikarbonatet fra bukspyttet må nøytralisere syra før lipase og trypsin kan virke. Samme sprang forklarer at spyttamylasen tar pause i magesekken, og tykktarmen ligger litt surt fordi bakteriene lager syrer av fiberet.",
+          "forklaring": "Se spranget fra pH 2 i magesekken til pH 7–8 i tynntarmen: bikarbonatet fra bukspyttet må nøytralisere syra før lipase og trypsin kan virke. Det sure magemiljøet er også grunnen til at spyttamylasen tar pause der, og tykktarmen ligger litt surt fordi bakteriene lager syrer av fiberet.",
           "band": [
             {
               "fra": 1,

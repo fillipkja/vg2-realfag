@@ -186,7 +186,7 @@
           "type": "flyt",
           "retning": "ned",
           "tittel": "Energien strømmer gjennom, stoffet går rundt",
-          "forklaring": "Pilene nedover peker fra den som blir spist til den som spiser — samme vei som energien. Notatene viser 10 %-regelen: rundt 90 % av nettoprimærproduksjonen forsvinner i hvert hopp, og bare sløyfa til høyre går tilbake — den er stoff, ikke energi.",
+          "forklaring": "Pilene nedover peker fra den som blir spist til den som spiser — samme vei som energien. Notatene viser 10 %-regelen: rundt 90 % av energien i et ledd går tapt før neste ledd, og bare sløyfa til høyre går tilbake — den er stoff, ikke energi.",
           "steg": [
             {
               "tekst": "Produsenter (NPP = BPP − R)",
