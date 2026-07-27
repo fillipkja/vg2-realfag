@@ -14,13 +14,24 @@ gjøre innholdet dårligere. Kjør oppdateringer manuelt, når du har en grunn.
 2. **`SCHEMA.md` er kontrakten.** Les den før du skriver en datafil.
 3. **`data/kapitler/matematikk-03.json` er fasiteksempelet.** Nye kapitler skal
    treffe samme nivå på dybde, tone og LaTeX-bruk.
-4. **Validatoren må være grønn.** Kjør alltid:
+4. **Kjør hele verifiseringen før hver push.** Start serveren én gang, og kjør så
+   ett skript som gjør alt:
    ```bash
-   python3 scripts/validate_data.py            # alt
-   python3 scripts/validate_data.py --strict   # krever at ingen filer mangler
+   python3 scripts/server.py 8721 &     # flertrådet; http.server er det ikke
+   ./scripts/verifiser.sh
    ```
-5. **Verifiser visuelt.** Kjør `python3 -m http.server 8721`, så
-   `scripts/skjermbilder.sh`, og se på bildene i `/tmp/vg2_*.png`.
+   Den kjører i tur og orden:
+
+   | Steg | Skript | Fanger |
+   |---|---|---|
+   | dataskjema | `validate_data.py --strict` | feil felter, antall, figurdata, manglende filer |
+   | LaTeX | `latexsjekk.sh` | formler KaTeX ikke kan tolke — de blir **rød råtekst** i appen |
+   | figurer | `figursjekk.sh` | figurer som ikke blir en gyldig SVG |
+   | funksjonstest | `funksjonstest.sh` | quiz, flashcards, repetisjon, fremdrift, søk |
+   | skjermbilder | `skjermbilder.sh` | layout i lys og mørk modus (se på `/tmp/vg2_*.png`) |
+
+5. **Se faktisk på skjermbildene.** Skriptene sjekker struktur, ikke om noe
+   kolliderer visuelt.
 6. **Aldri force-push.**
 
 ## Oppgave A — rette en faktafeil
@@ -77,10 +88,30 @@ er galt. Kjør validatoren til den er grønn. Rør ingen andre filer." \
   --max-turns 40
 ```
 
+## Oppgave E — legge til en figur
+
+Figurer er data, ikke bilder: appen tegner dem som SVG. Se avsnittet «Figurer» i
+`SCHEMA.md` for de fjorten typene.
+
+Ikke rediger kapittelfilen direkte for å sette inn en figur — bruk hjelpeskriptet,
+som treffer riktig plass og validerer etterpå:
+
+```bash
+cat > /tmp/figspek.json <<'JSON'
+{ "seksjoner": { "2": { "type": "flyt", "retning": "ned", "tittel": "…",
+    "steg": [{"tekst":"…"},{"tekst":"…"}] } } }
+JSON
+python3 scripts/legg_til_figurer.py data/kapitler/kjemi-03.json /tmp/figspek.json
+```
+
+Indeksene er 0-baserte og må finnes i kapittelet. Bare de plassene du oppgir
+endres; de andre figurene står urørt. `--fjern` fjerner **alle** figurene i
+kapittelet — bruk den med omhu.
+
 ## Sjekkliste før push
 
-- [ ] `python3 scripts/validate_data.py --strict` gir 0 feil
-- [ ] `scripts/skjermbilder.sh` kjørt, bildene ser riktige ut i lys og mørk modus
-- [ ] Ingen endringer i `index.html` / `app.js` / `sw.js` du ikke mente å gjøre
-      (`git diff --stat`)
+- [ ] `./scripts/verifiser.sh` er helt grønn
+- [ ] Du har **sett på** bildene i `/tmp/vg2_*.png`, i både lys og mørk modus
+- [ ] Ingen endringer i `index.html` / `app.js` / `figurer.js` / `sw.js` du ikke
+      mente å gjøre (`git diff --stat`)
 - [ ] Ny formel eller nytt begrep dukker opp i søket (`#/sok`)

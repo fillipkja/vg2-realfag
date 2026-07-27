@@ -29,6 +29,10 @@ I tillegg:
 - **Repetisjon i dag** — samler alle forfalte kort fra alle fire fag i én økt,
   flettet mellom fagene. Lenken dukker opp på forsiden når du har kort som er
   klare.
+- **Figurer** i kapitlene: funksjonsgrafer med tangenter, fortegnslinjer,
+  kraftdiagrammer, prosess- og syklusdiagrammer, energinivåer, skallmodeller,
+  molekylgeometri, kretsskjemaer og sammenlikninger. Alt tegnes som SVG fra data,
+  så figurene skalerer, virker offline og følger lys/mørk modus.
 - **Formelsamling** for R1, fysikk og kjemi, sortert etter tema.
 - **Læringsmetoder** — studieteknikkene med best dokumentert effekt, og hvordan
   du bruker dem i realfag.
@@ -74,10 +78,12 @@ Ingen byggesteg. Det som ligger i repoet, er det som serveres.
 ## Utvikling
 
 ```bash
-python3 -m http.server 8721          # åpne http://localhost:8721
-python3 scripts/validate_data.py --strict
-./scripts/skjermbilder.sh            # bilder i /tmp/vg2_*.png
+python3 scripts/server.py 8721 &     # åpne http://localhost:8721
+./scripts/verifiser.sh               # kjører hele verifiseringen
 ```
+
+`verifiser.sh` kjører dataskjema, LaTeX-sjekk, figursjekk, 41 funksjonstester og
+skjermbilder. Bruk den før hver push.
 
 Deploy er `git push` — GitHub Pages publiserer på nytt automatisk (~1 min).
 
@@ -92,11 +98,14 @@ Dype lenker (nyttige for verifisering og for å hoppe rett inn):
 ?theme=dark#/                       tvunget mørk modus
 ```
 
-Verifisering:
+Enkeltsjekker, hvis du bare vil kjøre én:
 
 ```bash
-./scripts/funksjonstest.sh   # 37 tester: quiz, kort, repetisjon, fremdrift, søk
+./scripts/latexsjekk.sh      # hvert uttrykk gjennom KaTeX
+./scripts/figursjekk.sh      # hver figur gjennom figurmotoren
+./scripts/funksjonstest.sh   # 41 tester: quiz, kort, repetisjon, fremdrift, søk
 ./scripts/skjermbilder.sh    # visuell sjekk i lys og mørk modus
+./scripts/figurtest.html     # alle figurtypene med testdata (åpne i nettleser)
 ```
 
 ## iPhone

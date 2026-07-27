@@ -3,7 +3,6 @@
   "nr": 1,
   "tittel": "Rettlinjet bevegelse",
   "intro": "Rettlinjet bevegelse handler om å beskrive presist hvordan noe flytter seg langs en rett linje — med posisjon, fart og akselerasjon. Her møter du bevegelsesgrafene og de fire bevegelseslikningene som all mekanikken senere i Fysikk 1 bygger på, og du lærer å oppgi et måleresultat med usikkerhet.",
-
   "kompakt": {
     "punkter": [
       "Legg alltid en akse langs bevegelsen og velg positiv retning før du regner. Fortegnet på $s$, $v$ og $a$ forteller retning.",
@@ -18,23 +17,101 @@
       "Et måleresultat er ikke ferdig før usikkerheten er med: $x \\pm \\Delta x$. Relativ usikkerhet er $\\frac{\\Delta x}{x}$."
     ],
     "formler": [
-      { "navn": "Gjennomsnittsfart", "latex": "\\bar{v} = \\frac{\\Delta s}{\\Delta t} = \\frac{s_2 - s_1}{t_2 - t_1}" },
-      { "navn": "Momentanfart", "latex": "v = \\lim_{\\Delta t \\to 0}\\frac{\\Delta s}{\\Delta t} = s'(t)" },
-      { "navn": "Gjennomsnittlig akselerasjon", "latex": "\\bar{a} = \\frac{\\Delta v}{\\Delta t} = \\frac{v_2 - v_1}{t_2 - t_1}" },
-      { "navn": "Momentanakselerasjon", "latex": "a = v'(t)" },
-      { "navn": "Fart ved konstant akselerasjon", "latex": "v = v_0 + a t" },
-      { "navn": "Posisjon ved konstant akselerasjon", "latex": "s = s_0 + v_0 t + \\frac{1}{2} a t^{2}" },
-      { "navn": "Bevegelseslikning uten tid", "latex": "v^{2} - v_0^{2} = 2a\\left(s - s_0\\right)" },
-      { "navn": "Bevegelseslikning uten akselerasjon", "latex": "s = s_0 + \\frac{v_0 + v}{2}\\,t" },
-      { "navn": "Posisjonsendring som areal", "latex": "\\Delta s = \\text{arealet mellom } v\\text{-}t\\text{-grafen og tidsaksen}" },
-      { "navn": "Fritt fall fra ro", "latex": "v = g t, \\qquad h = \\frac{1}{2} g t^{2}" },
-      { "navn": "Tyngdeakselerasjonen", "latex": "g = 9{,}81\\,\\text{m/s}^{2}" },
-      { "navn": "Omregning av fart", "latex": "1\\,\\text{m/s} = 3{,}6\\,\\text{km/h}" },
-      { "navn": "Relativ usikkerhet", "latex": "\\frac{\\Delta x}{x} \\cdot 100\\,\\%" },
-      { "navn": "Usikkerhet i produkt og kvotient", "latex": "\\frac{\\Delta z}{z} = \\frac{\\Delta x}{x} + \\frac{\\Delta y}{y}" }
-    ]
+      {
+        "navn": "Gjennomsnittsfart",
+        "latex": "\\bar{v} = \\frac{\\Delta s}{\\Delta t} = \\frac{s_2 - s_1}{t_2 - t_1}"
+      },
+      {
+        "navn": "Momentanfart",
+        "latex": "v = \\lim_{\\Delta t \\to 0}\\frac{\\Delta s}{\\Delta t} = s'(t)"
+      },
+      {
+        "navn": "Gjennomsnittlig akselerasjon",
+        "latex": "\\bar{a} = \\frac{\\Delta v}{\\Delta t} = \\frac{v_2 - v_1}{t_2 - t_1}"
+      },
+      {
+        "navn": "Momentanakselerasjon",
+        "latex": "a = v'(t)"
+      },
+      {
+        "navn": "Fart ved konstant akselerasjon",
+        "latex": "v = v_0 + a t"
+      },
+      {
+        "navn": "Posisjon ved konstant akselerasjon",
+        "latex": "s = s_0 + v_0 t + \\frac{1}{2} a t^{2}"
+      },
+      {
+        "navn": "Bevegelseslikning uten tid",
+        "latex": "v^{2} - v_0^{2} = 2a\\left(s - s_0\\right)"
+      },
+      {
+        "navn": "Bevegelseslikning uten akselerasjon",
+        "latex": "s = s_0 + \\frac{v_0 + v}{2}\\,t"
+      },
+      {
+        "navn": "Posisjonsendring som areal",
+        "latex": "\\Delta s = \\text{arealet mellom } v\\text{-}t\\text{-grafen og tidsaksen}"
+      },
+      {
+        "navn": "Fritt fall fra ro",
+        "latex": "v = g t, \\qquad h = \\frac{1}{2} g t^{2}"
+      },
+      {
+        "navn": "Tyngdeakselerasjonen",
+        "latex": "g = 9{,}81\\,\\text{m/s}^{2}"
+      },
+      {
+        "navn": "Omregning av fart",
+        "latex": "1\\,\\text{m/s} = 3{,}6\\,\\text{km/h}"
+      },
+      {
+        "navn": "Relativ usikkerhet",
+        "latex": "\\frac{\\Delta x}{x} \\cdot 100\\,\\%"
+      },
+      {
+        "navn": "Usikkerhet i produkt og kvotient",
+        "latex": "\\frac{\\Delta z}{z} = \\frac{\\Delta x}{x} + \\frac{\\Delta y}{y}"
+      }
+    ],
+    "figur": {
+      "type": "graf",
+      "tittel": "Fartsgraf med konstant akselerasjon",
+      "forklaring": "Linja er rett, så akselerasjonen er konstant: stigningstallet er (10 − 2,0) m/s delt på 4,0 s = 2,0 m/s². Det skraverte arealet under grafen er posisjonsendringen, (2,0 + 10)/2 · 4,0 s = 24 m — nøyaktig det bevegelseslikningene gir.",
+      "xmin": -0.3,
+      "xmax": 4.4,
+      "ymin": -1,
+      "ymax": 11,
+      "xlabel": "t (s)",
+      "ylabel": "v (m/s)",
+      "kurver": [
+        {
+          "uttrykk": "2+2*x",
+          "navn": "v",
+          "farge": 1
+        }
+      ],
+      "omraade": {
+        "uttrykk": "2+2*x",
+        "fra": 0,
+        "til": 4
+      },
+      "punkter": [
+        {
+          "x": 0,
+          "y": 2,
+          "navn": "v₀",
+          "plassering": "under"
+        },
+        {
+          "x": 4,
+          "y": 10,
+          "navn": "10 m/s",
+          "plassering": "under"
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -47,11 +124,91 @@
       },
       {
         "tittel": "Bevegelsesgrafer: s-t, v-t og a-t",
-        "html": "<p>En graf sier ofte mer enn en tabell. De tre viktigste er posisjonsgrafen ($s$-$t$), fartsgrafen ($v$-$t$) og akselerasjonsgrafen ($a$-$t$). Nøkkelen er å vite hva <strong>stigningstall</strong> og <strong>areal</strong> betyr i hver av dem.</p><table><thead><tr><th>Graf</th><th>Stigningstall</th><th>Areal mellom graf og tidsakse</th></tr></thead><tbody><tr><td>$s$-$t$</td><td>farten $v$</td><td>ingen fysisk betydning</td></tr><tr><td>$v$-$t$</td><td>akselerasjonen $a$</td><td>posisjonsendringen $\\Delta s$</td></tr><tr><td>$a$-$t$</td><td>ikke pensum</td><td>fartsendringen $\\Delta v$</td></tr></tbody></table><p>I en $s$-$t$-graf leser du momentanfarten som stigningstallet til <strong>tangenten</strong>. Er grafen vannrett, står gjenstanden stille. Krummer grafen oppover, er akselerasjonen positiv; krummer den nedover, er den negativ.</p><p>I en $v$-$t$-graf betyr en rett linje konstant akselerasjon. Arealet mellom grafen og tidsaksen gir posisjonsendringen, og areal på undersiden av tidsaksen (negativ fart) teller negativt. Så lenge grafen består av rette linjer, regner du arealet som trekanter, rektangler og trapeser — du trenger ingen integrasjon.</p><p>Vær nøye med å skille grafene fra hverandre. At en $v$-$t$-graf synker mot null, betyr ikke at gjenstanden går bakover. Den beveger seg fortsatt framover, bare stadig saktere. Først når grafen krysser tidsaksen og blir negativ, snur bevegelsen.</p>"
+        "html": "<p>En graf sier ofte mer enn en tabell. De tre viktigste er posisjonsgrafen ($s$-$t$), fartsgrafen ($v$-$t$) og akselerasjonsgrafen ($a$-$t$). Nøkkelen er å vite hva <strong>stigningstall</strong> og <strong>areal</strong> betyr i hver av dem.</p><table><thead><tr><th>Graf</th><th>Stigningstall</th><th>Areal mellom graf og tidsakse</th></tr></thead><tbody><tr><td>$s$-$t$</td><td>farten $v$</td><td>ingen fysisk betydning</td></tr><tr><td>$v$-$t$</td><td>akselerasjonen $a$</td><td>posisjonsendringen $\\Delta s$</td></tr><tr><td>$a$-$t$</td><td>ikke pensum</td><td>fartsendringen $\\Delta v$</td></tr></tbody></table><p>I en $s$-$t$-graf leser du momentanfarten som stigningstallet til <strong>tangenten</strong>. Er grafen vannrett, står gjenstanden stille. Krummer grafen oppover, er akselerasjonen positiv; krummer den nedover, er den negativ.</p><p>I en $v$-$t$-graf betyr en rett linje konstant akselerasjon. Arealet mellom grafen og tidsaksen gir posisjonsendringen, og areal på undersiden av tidsaksen (negativ fart) teller negativt. Så lenge grafen består av rette linjer, regner du arealet som trekanter, rektangler og trapeser — du trenger ingen integrasjon.</p><p>Vær nøye med å skille grafene fra hverandre. At en $v$-$t$-graf synker mot null, betyr ikke at gjenstanden går bakover. Den beveger seg fortsatt framover, bare stadig saktere. Først når grafen krysser tidsaksen og blir negativ, snur bevegelsen.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Posisjonsgraf: sekant og tangent",
+          "forklaring": "Sekanten fra start til punktet har stigningstall 2,0 m/s, og det er gjennomsnittsfarten i tidsrommet. Tangenten i det samme punktet er dobbelt så bratt, så momentanfarten der er 4,0 m/s. At grafen krummer oppover, betyr at farten øker hele veien.",
+          "xmin": -0.3,
+          "xmax": 4.6,
+          "ymin": -1,
+          "ymax": 11,
+          "xlabel": "t (s)",
+          "ylabel": "s (m)",
+          "kurver": [
+            {
+              "uttrykk": "0.5*x^2",
+              "navn": "s",
+              "farge": 1
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                4,
+                8
+              ],
+              "navn": "sekant",
+              "farge": 3
+            },
+            {
+              "fra": [
+                2,
+                0
+              ],
+              "til": [
+                4.6,
+                10.4
+              ],
+              "navn": "tangent",
+              "farge": 2,
+              "merkeplass": 0.1
+            }
+          ],
+          "punkter": [
+            {
+              "x": 4,
+              "y": 8,
+              "hjelpelinjer": true
+            }
+          ]
+        }
       },
       {
         "tittel": "Bevegelseslikningene ved konstant akselerasjon",
-        "html": "<p>Når akselerasjonen er <strong>konstant</strong>, kan vi utlede fire likninger som løser nesten alle oppgavene i dette kapittelet. Konstant $a$ betyr at $v$-$t$-grafen er en rett linje. Løser vi definisjonen $a = \\frac{v - v_0}{t}$ for $v$, får vi den første:</p>$$v = v_0 + at$$<p>Siden fartsgrafen er en rett linje, ligger gjennomsnittsfarten nøyaktig midt mellom start- og sluttfart, $\\bar{v} = \\frac{v_0 + v}{2}$. Ganger vi med tiden, får vi posisjonsendringen:</p>$$s = s_0 + \\frac{v_0 + v}{2}\\,t$$<p>Setter vi $v = v_0 + at$ inn i denne, får vi den formen du kommer til å bruke oftest:</p>$$s = s_0 + v_0 t + \\frac{1}{2}at^2$$<p>Og eliminerer vi tiden mellom de to første likningene, sitter vi igjen med den fjerde, som er gull verdt når tiden verken er gitt eller etterspurt:</p>$$v^2 - v_0^2 = 2a\\left(s - s_0\\right)$$<p>Størrelsene som opptrer, er $s_0$, $s$, $v_0$, $v$, $a$ og $t$. Framgangsmåten er alltid den samme: skriv opp hva du kjenner, se hva du skal finne, og velg den likningen som ikke inneholder den sjette, ukjente størrelsen. Ofte kan du forenkle ved å legge nullpunktet der bevegelsen starter, slik at $s_0 = 0$.</p><p>Én advarsel: likningene gjelder <strong>bare</strong> for konstant akselerasjon. Er $v$-$t$-grafen krum, må du regne areal og stigningstall grafisk i stedet.</p>"
+        "html": "<p>Når akselerasjonen er <strong>konstant</strong>, kan vi utlede fire likninger som løser nesten alle oppgavene i dette kapittelet. Konstant $a$ betyr at $v$-$t$-grafen er en rett linje. Løser vi definisjonen $a = \\frac{v - v_0}{t}$ for $v$, får vi den første:</p>$$v = v_0 + at$$<p>Siden fartsgrafen er en rett linje, ligger gjennomsnittsfarten nøyaktig midt mellom start- og sluttfart, $\\bar{v} = \\frac{v_0 + v}{2}$. Ganger vi med tiden, får vi posisjonsendringen:</p>$$s = s_0 + \\frac{v_0 + v}{2}\\,t$$<p>Setter vi $v = v_0 + at$ inn i denne, får vi den formen du kommer til å bruke oftest:</p>$$s = s_0 + v_0 t + \\frac{1}{2}at^2$$<p>Og eliminerer vi tiden mellom de to første likningene, sitter vi igjen med den fjerde, som er gull verdt når tiden verken er gitt eller etterspurt:</p>$$v^2 - v_0^2 = 2a\\left(s - s_0\\right)$$<p>Størrelsene som opptrer, er $s_0$, $s$, $v_0$, $v$, $a$ og $t$. Framgangsmåten er alltid den samme: skriv opp hva du kjenner, se hva du skal finne, og velg den likningen som ikke inneholder den sjette, ukjente størrelsen. Ofte kan du forenkle ved å legge nullpunktet der bevegelsen starter, slik at $s_0 = 0$.</p><p>Én advarsel: likningene gjelder <strong>bare</strong> for konstant akselerasjon. Er $v$-$t$-grafen krum, må du regne areal og stigningstall grafisk i stedet.</p>",
+        "figur": {
+          "type": "flyt",
+          "tittel": "Framgangsmåte ved konstant akselerasjon",
+          "forklaring": "Steg 4 er nøkkelen: seks størrelser er i spill, og likningen du velger, skal ikke inneholde den du verken kjenner eller er ute etter.",
+          "retning": "ned",
+          "steg": [
+            {
+              "tekst": "Velg positiv retning og nullpunkt",
+              "note": "fortegnene følger av valget"
+            },
+            {
+              "tekst": "Skriv opp s₀, s, v₀, v, a og t",
+              "note": "fyll inn det du kjenner"
+            },
+            {
+              "tekst": "Gjør om til SI-enheter",
+              "note": "km/h delt på 3,6"
+            },
+            {
+              "tekst": "Stryk størrelsen du ikke trenger",
+              "note": "velg likningen uten den"
+            },
+            {
+              "tekst": "Sett inn tall og rund av til slutt",
+              "note": "sjekk at svaret er rimelig"
+            }
+          ]
+        }
       },
       {
         "tittel": "Fritt fall",
@@ -62,7 +219,6 @@
         "html": "<p>Ingen måling er eksakt. Derfor er et måleresultat ikke ferdig før du har sagt hvor sikkert det er, på formen $x \\pm \\Delta x$ — for eksempel $(1{,}500 \\pm 0{,}005)\\,\\text{m}$.</p><p>Vi skiller mellom to typer feil. <strong>Tilfeldige feil</strong> spriker like mye i begge retninger: reaksjonstiden din på stoppeklokka, avlesning mellom to streker på en linjal. De blir mindre hvis du måler flere ganger og bruker middelverdien. <strong>Systematiske feil</strong> drar alltid samme vei: en linjal som er slitt i enden, en vekt som ikke er nullstilt, en stoppeklokke som starter for sent. Å måle mange ganger hjelper ikke i det hele tatt mot slike feil — du må finne årsaken og korrigere for den.</p><p><strong>Absolutt usikkerhet</strong> $\\Delta x$ har samme enhet som målingen. <strong>Relativ usikkerhet</strong> $\\frac{\\Delta x}{x}$ sier mer om hvor god målingen er, og oppgis gjerne i prosent: $\\frac{0{,}005}{1{,}500} = 0{,}33\\,\\%$.</p><p>Når du regner videre med måletall, forplanter usikkerheten seg:</p><ul><li>Sum og differanse: legg sammen de <strong>absolutte</strong> usikkerhetene.</li><li>Produkt og kvotient: legg sammen de <strong>relative</strong> usikkerhetene.</li><li>Potens $x^n$: gang den relative usikkerheten med $n$.</li></ul><p>Til slutt: svaret skal ikke ha flere <strong>gjeldende siffer</strong> enn måledataene tillater. Deler du $3{,}0\\,\\text{m}$ på $1{,}7\\,\\text{s}$, er svaret $1{,}8\\,\\text{m/s}$ — ikke $1{,}7647\\,\\text{m/s}$. Regn med fulle desimaler underveis, og rund av først helt til slutt.</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Bil som akselererer og bremser",
@@ -77,7 +233,38 @@
       {
         "tittel": "Loddrett kast oppover",
         "oppgave": "<p>Du kaster en ball rett opp med farten $12\\,\\text{m/s}$. Ballen forlater hånden $1{,}5\\,\\text{m}$ over bakken. Se bort fra luftmotstanden, og bruk $g = 9{,}81\\,\\text{m/s}^2$.</p><ol><li>Hvor lang tid tar det før ballen er i det høyeste punktet?</li><li>Hvor høyt over bakken kommer ballen?</li><li>Hvor lang tid går det fra kastet til ballen treffer bakken?</li><li>Hvor stor er farten idet ballen treffer bakken?</li></ol>",
-        "losning": "<p><strong>Oppsett.</strong> Vi setter <em>oppover</em> som positiv retning og legger nullpunktet på bakken. Da er</p>$$s_0 = 1{,}5\\,\\text{m}, \\qquad v_0 = +12\\,\\text{m/s}, \\qquad a = -g = -9{,}81\\,\\text{m/s}^2$$<p><strong>1) Tiden til toppunktet.</strong> I det høyeste punktet er $v = 0$. Vi bruker $v = v_0 + at$:</p>$$0 = 12\\,\\text{m/s} - 9{,}81\\,\\text{m/s}^2 \\cdot t$$<p>som gir</p>$$t = \\frac{12\\,\\text{m/s}}{9{,}81\\,\\text{m/s}^2} = 1{,}223\\,\\text{s} \\approx 1{,}22\\,\\text{s}$$<p><strong>2) Største høyde.</strong> Tiden er nå kjent, men det er enklest og mest nøyaktig å bruke likningen uten tid:</p>$$v^2 - v_0^2 = 2a\\left(s - s_0\\right)$$<p>Vi setter inn:</p>$$0 - \\left(12\\,\\text{m/s}\\right)^2 = 2\\cdot\\left(-9{,}81\\,\\text{m/s}^2\\right)\\cdot\\left(s - 1{,}5\\,\\text{m}\\right)$$<p>Vi løser for $s$:</p>$$s - 1{,}5\\,\\text{m} = \\frac{-144\\,\\text{m}^2/\\text{s}^2}{-19{,}62\\,\\text{m/s}^2} = 7{,}34\\,\\text{m}$$<p>Ballen stiger altså 7,34 m over utkastpunktet, og over bakken blir høyden</p>$$s = 1{,}5\\,\\text{m} + 7{,}34\\,\\text{m} = 8{,}84\\,\\text{m} \\approx 8{,}8\\,\\text{m}$$<p><strong>3) Tiden til bakken.</strong> Ballen treffer bakken når $s = 0$. Vi setter inn i posisjonslikningen:</p>$$0 = 1{,}5 + 12t - \\frac{1}{2}\\cdot 9{,}81\\, t^2$$<p>Ryddet opp, med tall i SI-enheter:</p>$$4{,}905\\,t^2 - 12t - 1{,}5 = 0$$<p>Dette er en andregradslikning. Med abc-formelen:</p>$$t = \\frac{12 \\pm \\sqrt{\\left(-12\\right)^2 - 4\\cdot 4{,}905\\cdot\\left(-1{,}5\\right)}}{2\\cdot 4{,}905} = \\frac{12 \\pm \\sqrt{144 + 29{,}43}}{9{,}81}$$<p>Kvadratrota er $\\sqrt{173{,}43} = 13{,}17$, så</p>$$t = \\frac{12 \\pm 13{,}17}{9{,}81}$$<p>Den ene løsningen blir negativ ($t = -0{,}12\\,\\text{s}$) og forkastes, siden kastet skjer ved $t = 0$. Den fysiske løsningen er</p>$$t = \\frac{12 + 13{,}17}{9{,}81} = 2{,}566\\,\\text{s} \\approx 2{,}6\\,\\text{s}$$<p><strong>4) Farten ved bakken.</strong> Vi bruker $v = v_0 + at$ med denne tiden:</p>$$v = 12\\,\\text{m/s} - 9{,}81\\,\\text{m/s}^2\\cdot 2{,}566\\,\\text{s} = -13{,}2\\,\\text{m/s}$$<p>Minustegnet betyr at ballen beveger seg nedover. Farten er altså $13{,}2\\,\\text{m/s}$.</p><p>Legg merke til at ballen treffer bakken med større fart enn den ble kastet opp med, nettopp fordi den ender 1,5 m lavere enn den startet. Hadde du grepet ballen i samme høyde som du kastet den fra, ville farten vært nøyaktig $12\\,\\text{m/s}$ igjen.</p>"
+        "losning": "<p><strong>Oppsett.</strong> Vi setter <em>oppover</em> som positiv retning og legger nullpunktet på bakken. Da er</p>$$s_0 = 1{,}5\\,\\text{m}, \\qquad v_0 = +12\\,\\text{m/s}, \\qquad a = -g = -9{,}81\\,\\text{m/s}^2$$<p><strong>1) Tiden til toppunktet.</strong> I det høyeste punktet er $v = 0$. Vi bruker $v = v_0 + at$:</p>$$0 = 12\\,\\text{m/s} - 9{,}81\\,\\text{m/s}^2 \\cdot t$$<p>som gir</p>$$t = \\frac{12\\,\\text{m/s}}{9{,}81\\,\\text{m/s}^2} = 1{,}223\\,\\text{s} \\approx 1{,}22\\,\\text{s}$$<p><strong>2) Største høyde.</strong> Tiden er nå kjent, men det er enklest og mest nøyaktig å bruke likningen uten tid:</p>$$v^2 - v_0^2 = 2a\\left(s - s_0\\right)$$<p>Vi setter inn:</p>$$0 - \\left(12\\,\\text{m/s}\\right)^2 = 2\\cdot\\left(-9{,}81\\,\\text{m/s}^2\\right)\\cdot\\left(s - 1{,}5\\,\\text{m}\\right)$$<p>Vi løser for $s$:</p>$$s - 1{,}5\\,\\text{m} = \\frac{-144\\,\\text{m}^2/\\text{s}^2}{-19{,}62\\,\\text{m/s}^2} = 7{,}34\\,\\text{m}$$<p>Ballen stiger altså 7,34 m over utkastpunktet, og over bakken blir høyden</p>$$s = 1{,}5\\,\\text{m} + 7{,}34\\,\\text{m} = 8{,}84\\,\\text{m} \\approx 8{,}8\\,\\text{m}$$<p><strong>3) Tiden til bakken.</strong> Ballen treffer bakken når $s = 0$. Vi setter inn i posisjonslikningen:</p>$$0 = 1{,}5 + 12t - \\frac{1}{2}\\cdot 9{,}81\\, t^2$$<p>Ryddet opp, med tall i SI-enheter:</p>$$4{,}905\\,t^2 - 12t - 1{,}5 = 0$$<p>Dette er en andregradslikning. Med abc-formelen:</p>$$t = \\frac{12 \\pm \\sqrt{\\left(-12\\right)^2 - 4\\cdot 4{,}905\\cdot\\left(-1{,}5\\right)}}{2\\cdot 4{,}905} = \\frac{12 \\pm \\sqrt{144 + 29{,}43}}{9{,}81}$$<p>Kvadratrota er $\\sqrt{173{,}43} = 13{,}17$, så</p>$$t = \\frac{12 \\pm 13{,}17}{9{,}81}$$<p>Den ene løsningen blir negativ ($t = -0{,}12\\,\\text{s}$) og forkastes, siden kastet skjer ved $t = 0$. Den fysiske løsningen er</p>$$t = \\frac{12 + 13{,}17}{9{,}81} = 2{,}566\\,\\text{s} \\approx 2{,}6\\,\\text{s}$$<p><strong>4) Farten ved bakken.</strong> Vi bruker $v = v_0 + at$ med denne tiden:</p>$$v = 12\\,\\text{m/s} - 9{,}81\\,\\text{m/s}^2\\cdot 2{,}566\\,\\text{s} = -13{,}2\\,\\text{m/s}$$<p>Minustegnet betyr at ballen beveger seg nedover. Farten er altså $13{,}2\\,\\text{m/s}$.</p><p>Legg merke til at ballen treffer bakken med større fart enn den ble kastet opp med, nettopp fordi den ender 1,5 m lavere enn den startet. Hadde du grepet ballen i samme høyde som du kastet den fra, ville farten vært nøyaktig $12\\,\\text{m/s}$ igjen.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Høyden til ballen som funksjon av tiden",
+          "forklaring": "Grafen er vannrett i toppunktet — der er farten null, men krumningen er den samme hele veien, så akselerasjonen er 9,81 m/s² nedover også der. Nedturen tar 1,34 s mot 1,22 s på oppturen, fordi ballen ender 1,5 m lavere enn den startet.",
+          "xmin": -0.15,
+          "xmax": 2.65,
+          "ymin": -1.3,
+          "ymax": 10,
+          "xlabel": "t (s)",
+          "ylabel": "s (m)",
+          "kurver": [
+            {
+              "uttrykk": "1.5+12*x-4.905*x^2",
+              "farge": 1
+            }
+          ],
+          "punkter": [
+            {
+              "x": 1.223,
+              "y": 8.839,
+              "navn": "8,84 m",
+              "hjelpelinjer": true
+            },
+            {
+              "x": 0,
+              "y": 1.5,
+              "navn": "1,5 m",
+              "plassering": "under"
+            }
+          ]
+        }
       },
       {
         "tittel": "Bestemme g med usikkerhet",
@@ -85,7 +272,6 @@
         "losning": "<p><strong>1) Middelverdi og usikkerhet i tiden.</strong></p>$$\\bar{t} = \\frac{0{,}55 + 0{,}56 + 0{,}54 + 0{,}57 + 0{,}55}{5}\\,\\text{s} = \\frac{2{,}77}{5}\\,\\text{s} = 0{,}554\\,\\text{s}$$<p>Målingene spriker fra 0,54 s til 0,57 s. En vanlig og grei anslagsmetode er å bruke halve spredningen:</p>$$\\Delta t = \\frac{0{,}57\\,\\text{s} - 0{,}54\\,\\text{s}}{2} = 0{,}015\\,\\text{s}$$<p>Altså $t = \\left(0{,}554 \\pm 0{,}015\\right)\\,\\text{s}$.</p><p><strong>2) Beregning av g.</strong> Kula slippes fra ro, så $h = \\frac{1}{2}gt^2$. Vi løser for $g$:</p>$$g = \\frac{2h}{t^2} = \\frac{2\\cdot 1{,}500\\,\\text{m}}{\\left(0{,}554\\,\\text{s}\\right)^2} = \\frac{3{,}000\\,\\text{m}}{0{,}30692\\,\\text{s}^2} = 9{,}77\\,\\text{m/s}^2$$<p>Så usikkerheten. Uttrykket er en kvotient, så vi legger sammen de relative usikkerhetene — og siden $t$ står i andre potens, teller den relative usikkerheten i $t$ dobbelt:</p>$$\\frac{\\Delta h}{h} = \\frac{0{,}005}{1{,}500} = 0{,}0033 = 0{,}33\\,\\%$$<p>og</p>$$\\frac{\\Delta t}{t} = \\frac{0{,}015}{0{,}554} = 0{,}0271 = 2{,}71\\,\\%$$<p>Til sammen:</p>$$\\frac{\\Delta g}{g} = 0{,}33\\,\\% + 2\\cdot 2{,}71\\,\\% = 5{,}75\\,\\%$$<p>Regnet om til absolutt usikkerhet:</p>$$\\Delta g = 0{,}0575\\cdot 9{,}77\\,\\text{m/s}^2 = 0{,}56\\,\\text{m/s}^2 \\approx 0{,}6\\,\\text{m/s}^2$$<p>Svaret oppgis med usikkerheten avrundet til ett gjeldende siffer, og måleverdien til samme desimal:</p>$$g = \\left(9{,}8 \\pm 0{,}6\\right)\\,\\text{m/s}^2$$<p><strong>3) Sammenlikning med tabellverdien.</strong> Resultatet dekker intervallet fra $9{,}2$ til $10{,}4\\,\\text{m/s}^2$, og $9{,}81\\,\\text{m/s}^2$ ligger godt innenfor. Avviket er bare $\\frac{9{,}81 - 9{,}77}{9{,}81} = 0{,}4\\,\\%$, altså langt mindre enn usikkerheten. Målingen stemmer med tabellverdien.</p><p>Legg merke til hva som dominerer usikkerheten: tiden bidrar med 5,4 prosentpoeng, høyden med bare 0,33. Vil dere forbedre forsøket, må dere altså gjøre noe med tidsmålingen — bruke fotoceller i stedet for stoppeklokke, eller slippe kula fra større høyde, slik at falltiden blir lengre og reaksjonstiden betyr mindre.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å blande sammen fart og akselerasjon. En bil som holder 100 km/h, har stor fart, men akselerasjonen er null så lenge farten ikke endrer seg.",
       "Å tro at akselerasjonen er null i det høyeste punktet av et loddrett kast. Farten er null der, men akselerasjonen er fortsatt $9{,}81\\,\\text{m/s}^2$ nedover.",
@@ -94,7 +280,6 @@
       "Å bruke bevegelseslikningene på bevegelser der akselerasjonen ikke er konstant, for eksempel når $v$-$t$-grafen er krum eller luftmotstanden er med.",
       "Å lese en $v$-$t$-graf som om den var en $s$-$t$-graf. At fartsgrafen synker, betyr at gjenstanden går saktere — ikke at den snur eller nærmer seg utgangspunktet."
     ],
-
     "tips": [
       "Tegn en akse og bestem positiv retning før du regner. Skriv deretter opp $s_0$, $s$, $v_0$, $v$, $a$ og $t$ i en liste og fyll inn det du kjenner.",
       "Velg bevegelseslikning etter hva som mangler. Kjenner du ikke tiden og skal ikke finne den, er $v^2 - v_0^2 = 2a(s - s_0)$ nesten alltid riktig valg.",
@@ -103,47 +288,110 @@
       "Regn med fulle desimaler underveis og rund av først i det endelige svaret. Oppgi like mange gjeldende siffer som den dårligste måleverdien tillater, og ta med usikkerheten når oppgaven ber om den."
     ]
   },
-
   "begreper": [
-    { "begrep": "Posisjon", "forklaring": "Hvor en gjenstand befinner seg på en valgt akse, målt fra et valgt nullpunkt. Symbol $s$, og verdien kan være negativ." },
-    { "begrep": "Posisjonsendring", "forklaring": "Forskjellen mellom slutt- og startposisjon, $\\Delta s = s_2 - s_1$. Den forteller hvor langt og i hvilken retning gjenstanden har flyttet seg, uavhengig av veien den tok." },
-    { "begrep": "Strekning", "forklaring": "Hele veilengden gjenstanden faktisk har tilbakelagt. Den er alltid positiv og kan være større enn posisjonsendringen." },
-    { "begrep": "Gjennomsnittsfart", "forklaring": "Posisjonsendring delt på tiden det tok, $\\bar{v} = \\frac{\\Delta s}{\\Delta t}$. Grafisk er den stigningstallet til sekanten i $s$-$t$-grafen." },
-    { "begrep": "Momentanfart", "forklaring": "Farten i ett bestemt øyeblikk, $v = s'(t)$. Grafisk er den stigningstallet til tangenten i $s$-$t$-grafen." },
-    { "begrep": "Akselerasjon", "forklaring": "Hvor raskt farten endrer seg, $a = \\frac{\\Delta v}{\\Delta t}$, med enheten $\\text{m/s}^2$." },
-    { "begrep": "Retardasjon", "forklaring": "Dagligtale for at farten minker. Det skjer når $a$ og $v$ har motsatt fortegn, uansett om $a$ selv er positiv eller negativ." },
-    { "begrep": "Bevegelseslikningene", "forklaring": "De fire likningene som knytter sammen $s$, $v$, $a$ og $t$. De gjelder kun når akselerasjonen er konstant." },
-    { "begrep": "v-t-graf", "forklaring": "Graf som viser farten som funksjon av tiden. Stigningstallet gir akselerasjonen, og arealet mellom grafen og tidsaksen gir posisjonsendringen." },
-    { "begrep": "Fritt fall", "forklaring": "Bevegelse der tyngdekraften er den eneste kraften som virker, altså der luftmotstanden kan neglisjeres." },
-    { "begrep": "Tyngdeakselerasjonen", "forklaring": "Akselerasjonen til en gjenstand i fritt fall, $g = 9{,}81\\,\\text{m/s}^2$ nedover. Den er den samme for alle gjenstander uansett masse." },
-    { "begrep": "Måleusikkerhet", "forklaring": "Et anslag over hvor mye et måleresultat kan avvike fra den sanne verdien. Oppgis som $x \\pm \\Delta x$." },
-    { "begrep": "Absolutt og relativ usikkerhet", "forklaring": "Den absolutte usikkerheten $\\Delta x$ har samme enhet som målingen, mens den relative usikkerheten $\\frac{\\Delta x}{x}$ er et forholdstall som oftest oppgis i prosent." },
-    { "begrep": "Systematisk feil", "forklaring": "En feil som drar alle målingene samme vei, for eksempel en vekt som ikke er nullstilt. Den blir ikke mindre av å måle flere ganger." },
-    { "begrep": "Tilfeldig feil", "forklaring": "En feil som spriker i begge retninger fra gang til gang, for eksempel reaksjonstid på en stoppeklokke. Den blir mindre når du måler mange ganger og bruker middelverdien." }
+    {
+      "begrep": "Posisjon",
+      "forklaring": "Hvor en gjenstand befinner seg på en valgt akse, målt fra et valgt nullpunkt. Symbol $s$, og verdien kan være negativ."
+    },
+    {
+      "begrep": "Posisjonsendring",
+      "forklaring": "Forskjellen mellom slutt- og startposisjon, $\\Delta s = s_2 - s_1$. Den forteller hvor langt og i hvilken retning gjenstanden har flyttet seg, uavhengig av veien den tok."
+    },
+    {
+      "begrep": "Strekning",
+      "forklaring": "Hele veilengden gjenstanden faktisk har tilbakelagt. Den er alltid positiv og kan være større enn posisjonsendringen."
+    },
+    {
+      "begrep": "Gjennomsnittsfart",
+      "forklaring": "Posisjonsendring delt på tiden det tok, $\\bar{v} = \\frac{\\Delta s}{\\Delta t}$. Grafisk er den stigningstallet til sekanten i $s$-$t$-grafen."
+    },
+    {
+      "begrep": "Momentanfart",
+      "forklaring": "Farten i ett bestemt øyeblikk, $v = s'(t)$. Grafisk er den stigningstallet til tangenten i $s$-$t$-grafen."
+    },
+    {
+      "begrep": "Akselerasjon",
+      "forklaring": "Hvor raskt farten endrer seg, $a = \\frac{\\Delta v}{\\Delta t}$, med enheten $\\text{m/s}^2$."
+    },
+    {
+      "begrep": "Retardasjon",
+      "forklaring": "Dagligtale for at farten minker. Det skjer når $a$ og $v$ har motsatt fortegn, uansett om $a$ selv er positiv eller negativ."
+    },
+    {
+      "begrep": "Bevegelseslikningene",
+      "forklaring": "De fire likningene som knytter sammen $s$, $v$, $a$ og $t$. De gjelder kun når akselerasjonen er konstant."
+    },
+    {
+      "begrep": "v-t-graf",
+      "forklaring": "Graf som viser farten som funksjon av tiden. Stigningstallet gir akselerasjonen, og arealet mellom grafen og tidsaksen gir posisjonsendringen."
+    },
+    {
+      "begrep": "Fritt fall",
+      "forklaring": "Bevegelse der tyngdekraften er den eneste kraften som virker, altså der luftmotstanden kan neglisjeres."
+    },
+    {
+      "begrep": "Tyngdeakselerasjonen",
+      "forklaring": "Akselerasjonen til en gjenstand i fritt fall, $g = 9{,}81\\,\\text{m/s}^2$ nedover. Den er den samme for alle gjenstander uansett masse."
+    },
+    {
+      "begrep": "Måleusikkerhet",
+      "forklaring": "Et anslag over hvor mye et måleresultat kan avvike fra den sanne verdien. Oppgis som $x \\pm \\Delta x$."
+    },
+    {
+      "begrep": "Absolutt og relativ usikkerhet",
+      "forklaring": "Den absolutte usikkerheten $\\Delta x$ har samme enhet som målingen, mens den relative usikkerheten $\\frac{\\Delta x}{x}$ er et forholdstall som oftest oppgis i prosent."
+    },
+    {
+      "begrep": "Systematisk feil",
+      "forklaring": "En feil som drar alle målingene samme vei, for eksempel en vekt som ikke er nullstilt. Den blir ikke mindre av å måle flere ganger."
+    },
+    {
+      "begrep": "Tilfeldig feil",
+      "forklaring": "En feil som spriker i begge retninger fra gang til gang, for eksempel reaksjonstid på en stoppeklokke. Den blir mindre når du måler mange ganger og bruker middelverdien."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "En bil kjører med konstant fart 80 km/h langs en rett vei. Hvor stor er akselerasjonen?",
-      "alternativer": ["$80\\,\\text{m/s}^2$", "$22{,}2\\,\\text{m/s}^2$", "$0\\,\\text{m/s}^2$", "Det kan ikke avgjøres uten å vite massen"],
+      "alternativer": [
+        "$80\\,\\text{m/s}^2$",
+        "$22{,}2\\,\\text{m/s}^2$",
+        "$0\\,\\text{m/s}^2$",
+        "Det kan ikke avgjøres uten å vite massen"
+      ],
       "riktig": 2,
       "forklaring": "Akselerasjon er endring i fart per tid. Når farten er konstant, er $\\Delta v = 0$, og dermed $a = 0$ — uansett hvor stor selve farten er. Alternativ B er farten omregnet til m/s ($80/3{,}6 = 22{,}2$), og det er nettopp fellen: fart og akselerasjon er to forskjellige størrelser med forskjellige enheter."
     },
     {
       "sporsmal": "Hva er $72\\,\\text{km/h}$ uttrykt i m/s?",
-      "alternativer": ["$259\\,\\text{m/s}$", "$20\\,\\text{m/s}$", "$26\\,\\text{m/s}$", "$7{,}2\\,\\text{m/s}$"],
+      "alternativer": [
+        "$259\\,\\text{m/s}$",
+        "$20\\,\\text{m/s}$",
+        "$26\\,\\text{m/s}$",
+        "$7{,}2\\,\\text{m/s}$"
+      ],
       "riktig": 1,
       "forklaring": "Du deler på 3,6: $72/3{,}6 = 20$. Alternativ A er hva du får hvis du ganger med 3,6 i stedet. En rask rimelighetssjekk redder deg alltid her: tallet i m/s skal være mindre enn tallet i km/h, aldri større."
     },
     {
       "sporsmal": "Hva forteller arealet mellom en $v$-$t$-graf og tidsaksen deg?",
-      "alternativer": ["Akselerasjonen", "Gjennomsnittsfarten", "Posisjonsendringen", "Sluttfarten"],
+      "alternativer": [
+        "Akselerasjonen",
+        "Gjennomsnittsfarten",
+        "Posisjonsendringen",
+        "Sluttfarten"
+      ],
       "riktig": 2,
       "forklaring": "Areal er høyde ganger bredde, altså fart ganger tid — og fart ganger tid gir en lengde langs bevegelsen. Derfor gir arealet posisjonsendringen $\\Delta s$, der areal under tidsaksen teller negativt. Akselerasjonen finner du i den samme grafen, men som stigningstall. Det er disse to opplysningene elever oftest bytter om på."
     },
     {
       "sporsmal": "Stigningstallet til tangenten i en $s$-$t$-graf gir …",
-      "alternativer": ["momentanfarten", "akselerasjonen", "strekningen", "gjennomsnittsfarten"],
+      "alternativer": [
+        "momentanfarten",
+        "akselerasjonen",
+        "strekningen",
+        "gjennomsnittsfarten"
+      ],
       "riktig": 0,
       "forklaring": "Farten er den deriverte av posisjonen, $v = s'(t)$, altså stigningstallet til tangenten. Bruker du i stedet en sekant mellom to punkter, får du gjennomsnittsfarten i det tidsrommet. De to faller bare sammen dersom grafen er en rett linje."
     },
@@ -160,31 +408,56 @@
     },
     {
       "sporsmal": "En stein slippes fra ro og faller fritt i 3,0 s. Hvor langt faller den? Bruk $g = 9{,}81\\,\\text{m/s}^2$.",
-      "alternativer": ["$29{,}4\\,\\text{m}$", "$44\\,\\text{m}$", "$88\\,\\text{m}$", "$14{,}7\\,\\text{m}$"],
+      "alternativer": [
+        "$29{,}4\\,\\text{m}$",
+        "$44\\,\\text{m}$",
+        "$88\\,\\text{m}$",
+        "$14{,}7\\,\\text{m}$"
+      ],
       "riktig": 1,
       "forklaring": "Fra ro er $h = \\frac{1}{2}gt^2 = 0{,}5\\cdot 9{,}81\\cdot 3{,}0^2\\,\\text{m} = 44{,}1\\,\\text{m}$. Alternativ A er $gt = 29{,}4$, som er sluttfarten i m/s og ikke en lengde. Sjekk alltid enheten på det du regner ut før du velger svar."
     },
     {
       "sporsmal": "En bil i $20\\,\\text{m/s}$ bremser jevnt med $4{,}0\\,\\text{m/s}^2$. Hvor lang er bremselengden?",
-      "alternativer": ["$50\\,\\text{m}$", "$5{,}0\\,\\text{m}$", "$100\\,\\text{m}$", "$80\\,\\text{m}$"],
+      "alternativer": [
+        "$50\\,\\text{m}$",
+        "$5{,}0\\,\\text{m}$",
+        "$100\\,\\text{m}$",
+        "$80\\,\\text{m}$"
+      ],
       "riktig": 0,
       "forklaring": "Tiden er verken gitt eller etterspurt, så bruk likningen uten $t$: $v^2 - v_0^2 = 2as$ gir $0 - 20^2 = 2\\cdot(-4{,}0)\\cdot s$, altså $s = \\frac{400}{8{,}0} = 50\\,\\text{m}$. Alternativ B er $v_0/a = 5{,}0$, men det er bremsetiden i sekunder — ikke en lengde."
     },
     {
       "sporsmal": "Hvilken sammenheng gjelder alltid, også når akselerasjonen varierer?",
-      "alternativer": ["$s = v_0 t + \\frac{1}{2}at^2$", "$v = v_0 + at$", "$\\bar{v} = \\frac{\\Delta s}{\\Delta t}$", "$v^2 - v_0^2 = 2as$"],
+      "alternativer": [
+        "$s = v_0 t + \\frac{1}{2}at^2$",
+        "$v = v_0 + at$",
+        "$\\bar{v} = \\frac{\\Delta s}{\\Delta t}$",
+        "$v^2 - v_0^2 = 2as$"
+      ],
       "riktig": 2,
       "forklaring": "Gjennomsnittsfart er en definisjon og gjelder for enhver bevegelse. De tre andre er bevegelseslikninger som er utledet under forutsetningen om konstant akselerasjon, og de gir feil svar hvis for eksempel luftmotstand eller varierende motorkraft endrer akselerasjonen underveis."
     },
     {
       "sporsmal": "En lengde er målt til $(2{,}50 \\pm 0{,}05)\\,\\text{m}$. Hvor stor er den relative usikkerheten?",
-      "alternativer": ["$0{,}05\\,\\%$", "$2{,}0\\,\\%$", "$5{,}0\\,\\%$", "$0{,}5\\,\\%$"],
+      "alternativer": [
+        "$0{,}05\\,\\%$",
+        "$2{,}0\\,\\%$",
+        "$5{,}0\\,\\%$",
+        "$0{,}5\\,\\%$"
+      ],
       "riktig": 1,
       "forklaring": "Relativ usikkerhet er $\\frac{\\Delta x}{x} = \\frac{0{,}05}{2{,}50} = 0{,}020$, altså $2{,}0\\,\\%$. Alternativ C oppstår hvis du bare leser sifrene i $0{,}05$ og kaller det 5 % uten å dele på selve måleverdien — men prosenten sier alltid noe om usikkerheten i forhold til hvor stor målingen er."
     },
     {
       "sporsmal": "$a$-$t$-grafen til en bevegelse er en vannrett linje over tidsaksen, altså konstant og positiv akselerasjon. Hvordan ser $v$-$t$-grafen ut?",
-      "alternativer": ["En vannrett linje", "En parabel", "En rett linje som synker", "En rett linje som stiger"],
+      "alternativer": [
+        "En vannrett linje",
+        "En parabel",
+        "En rett linje som synker",
+        "En rett linje som stiger"
+      ],
       "riktig": 3,
       "forklaring": "Konstant positiv akselerasjon betyr at farten øker like mye hvert sekund, altså en rett linje med positivt stigningstall lik $a$. Parabelen hører hjemme i $s$-$t$-grafen, fordi $s = s_0 + v_0 t + \\frac{1}{2}at^2$ er en andregradsfunksjon av tiden."
     },
@@ -201,28 +474,80 @@
     },
     {
       "sporsmal": "En løper springer én runde på en 400 m-bane på 80 s og ender der hun startet. Hva blir gjennomsnittsfarten regnet ut fra posisjonsendringen?",
-      "alternativer": ["$5{,}0\\,\\text{m/s}$", "$400\\,\\text{m/s}$", "$80\\,\\text{m/s}$", "$0\\,\\text{m/s}$"],
+      "alternativer": [
+        "$5{,}0\\,\\text{m/s}$",
+        "$400\\,\\text{m/s}$",
+        "$80\\,\\text{m/s}$",
+        "$0\\,\\text{m/s}$"
+      ],
       "riktig": 3,
       "forklaring": "Start- og sluttpunkt er det samme, så $\\Delta s = 0$ og $\\bar{v} = \\frac{0}{80\\,\\text{s}} = 0$. Alternativ A er farten regnet ut fra tilbakelagt strekning, $\\frac{400\\,\\text{m}}{80\\,\\text{s}} = 5{,}0\\,\\text{m/s}$. Les derfor nøye om oppgaven spør etter strekning eller posisjonsendring."
     }
   ],
-
   "flashcards": [
-    { "front": "Gjennomsnittsfart — formel", "bak": "$\\bar{v} = \\frac{\\Delta s}{\\Delta t} = \\frac{s_2 - s_1}{t_2 - t_1}$" },
-    { "front": "Hva er momentanfart geometrisk i en $s$-$t$-graf?", "bak": "Stigningstallet til tangenten i punktet, altså $v = s'(t)$." },
-    { "front": "Akselerasjon — definisjon og enhet", "bak": "$a = \\frac{\\Delta v}{\\Delta t}$, med enheten $\\text{m/s}^2$." },
-    { "front": "Hva betyr stigningstall og areal i en $v$-$t$-graf?", "bak": "Stigningstallet er akselerasjonen $a$. Arealet mellom grafen og tidsaksen er posisjonsendringen $\\Delta s$, og areal under tidsaksen teller negativt." },
-    { "front": "Når øker farten, og når minker den?", "bak": "Farten øker når $v$ og $a$ har samme fortegn, og minker når de har motsatt fortegn." },
-    { "front": "De to mest brukte bevegelseslikningene", "bak": "$v = v_0 + at$ og $s = s_0 + v_0 t + \\frac{1}{2}at^2$" },
-    { "front": "Bevegelseslikningen uten tid", "bak": "$v^2 - v_0^2 = 2a(s - s_0)$ — bruk den når $t$ verken er gitt eller etterspurt." },
-    { "front": "Bevegelseslikningen uten akselerasjon", "bak": "$s = s_0 + \\frac{v_0 + v}{2}t$ — gjennomsnittsfarten ligger midt mellom start- og sluttfart når $a$ er konstant." },
-    { "front": "Når gjelder bevegelseslikningene?", "bak": "Bare når akselerasjonen er konstant. Er $v$-$t$-grafen krum, må du regne grafisk i stedet." },
-    { "front": "Tyngdeakselerasjonen $g$", "bak": "$g = 9{,}81\\,\\text{m/s}^2$ rettet nedover. Den er den samme for alle gjenstander i fritt fall, uansett masse." },
-    { "front": "Fart og akselerasjon i toppunktet av et loddrett kast", "bak": "Farten er $0$, men akselerasjonen er fortsatt $9{,}81\\,\\text{m/s}^2$ nedover." },
-    { "front": "Fallhøyde og sluttfart ved fall fra ro", "bak": "$h = \\frac{1}{2}gt^2$ og $v = gt$" },
-    { "front": "Hvordan gjør du om km/h til m/s?", "bak": "Del på 3,6. For eksempel er $90\\,\\text{km/h} = 25\\,\\text{m/s}$." },
-    { "front": "Strekning eller posisjonsendring?", "bak": "Strekningen er hele veilengden og er alltid positiv. Posisjonsendringen $\\Delta s = s_2 - s_1$ kan være negativ eller null." },
-    { "front": "Relativ usikkerhet", "bak": "$\\frac{\\Delta x}{x}$, ofte oppgitt i prosent. For $(2{,}50 \\pm 0{,}05)\\,\\text{m}$ blir den $2{,}0\\,\\%$." },
-    { "front": "Hvordan forplanter usikkerheten seg?", "bak": "Sum og differanse: legg sammen de absolutte usikkerhetene. Produkt og kvotient: legg sammen de relative. Ved $x^n$ ganges den relative usikkerheten med $n$." }
+    {
+      "front": "Gjennomsnittsfart — formel",
+      "bak": "$\\bar{v} = \\frac{\\Delta s}{\\Delta t} = \\frac{s_2 - s_1}{t_2 - t_1}$"
+    },
+    {
+      "front": "Hva er momentanfart geometrisk i en $s$-$t$-graf?",
+      "bak": "Stigningstallet til tangenten i punktet, altså $v = s'(t)$."
+    },
+    {
+      "front": "Akselerasjon — definisjon og enhet",
+      "bak": "$a = \\frac{\\Delta v}{\\Delta t}$, med enheten $\\text{m/s}^2$."
+    },
+    {
+      "front": "Hva betyr stigningstall og areal i en $v$-$t$-graf?",
+      "bak": "Stigningstallet er akselerasjonen $a$. Arealet mellom grafen og tidsaksen er posisjonsendringen $\\Delta s$, og areal under tidsaksen teller negativt."
+    },
+    {
+      "front": "Når øker farten, og når minker den?",
+      "bak": "Farten øker når $v$ og $a$ har samme fortegn, og minker når de har motsatt fortegn."
+    },
+    {
+      "front": "De to mest brukte bevegelseslikningene",
+      "bak": "$v = v_0 + at$ og $s = s_0 + v_0 t + \\frac{1}{2}at^2$"
+    },
+    {
+      "front": "Bevegelseslikningen uten tid",
+      "bak": "$v^2 - v_0^2 = 2a(s - s_0)$ — bruk den når $t$ verken er gitt eller etterspurt."
+    },
+    {
+      "front": "Bevegelseslikningen uten akselerasjon",
+      "bak": "$s = s_0 + \\frac{v_0 + v}{2}t$ — gjennomsnittsfarten ligger midt mellom start- og sluttfart når $a$ er konstant."
+    },
+    {
+      "front": "Når gjelder bevegelseslikningene?",
+      "bak": "Bare når akselerasjonen er konstant. Er $v$-$t$-grafen krum, må du regne grafisk i stedet."
+    },
+    {
+      "front": "Tyngdeakselerasjonen $g$",
+      "bak": "$g = 9{,}81\\,\\text{m/s}^2$ rettet nedover. Den er den samme for alle gjenstander i fritt fall, uansett masse."
+    },
+    {
+      "front": "Fart og akselerasjon i toppunktet av et loddrett kast",
+      "bak": "Farten er $0$, men akselerasjonen er fortsatt $9{,}81\\,\\text{m/s}^2$ nedover."
+    },
+    {
+      "front": "Fallhøyde og sluttfart ved fall fra ro",
+      "bak": "$h = \\frac{1}{2}gt^2$ og $v = gt$"
+    },
+    {
+      "front": "Hvordan gjør du om km/h til m/s?",
+      "bak": "Del på 3,6. For eksempel er $90\\,\\text{km/h} = 25\\,\\text{m/s}$."
+    },
+    {
+      "front": "Strekning eller posisjonsendring?",
+      "bak": "Strekningen er hele veilengden og er alltid positiv. Posisjonsendringen $\\Delta s = s_2 - s_1$ kan være negativ eller null."
+    },
+    {
+      "front": "Relativ usikkerhet",
+      "bak": "$\\frac{\\Delta x}{x}$, ofte oppgitt i prosent. For $(2{,}50 \\pm 0{,}05)\\,\\text{m}$ blir den $2{,}0\\,\\%$."
+    },
+    {
+      "front": "Hvordan forplanter usikkerheten seg?",
+      "bak": "Sum og differanse: legg sammen de absolutte usikkerhetene. Produkt og kvotient: legg sammen de relative. Ved $x^n$ ganges den relative usikkerheten med $n$."
+    }
   ]
 }

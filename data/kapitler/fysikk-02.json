@@ -3,7 +3,6 @@
   "nr": 2,
   "tittel": "Krefter",
   "intro": "Krefter er årsaken til at bevegelser endrer seg. I dette kapittelet lærer du å tegne frilegemediagram, summere krefter som vektorer og bruke Newtons lover på klosser, snorer, heiser og skråplan — verktøy du bruker resten av Fysikk 1.",
-
   "kompakt": {
     "punkter": [
       "En kraft er en vektor: du må oppgi både størrelse i newton og retning. Enheten er $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$.",
@@ -18,23 +17,132 @@
       "Akselerasjonen nedover et skråplan er $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$ — massen faller ut."
     ],
     "formler": [
-      { "navn": "Newtons 2. lov", "latex": "\\sum \\vec{F} = m\\vec{a}" },
-      { "navn": "Newtons 2. lov i komponenter", "latex": "\\sum F_x = ma_x, \\qquad \\sum F_y = ma_y" },
-      { "navn": "Newtons 3. lov", "latex": "\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}" },
-      { "navn": "Enheten newton", "latex": "1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2" },
-      { "navn": "Tyngde", "latex": "G = mg, \\qquad g = 9{,}81\\,\\text{m/s}^2" },
-      { "navn": "Kraftsum av to vinkelrette krefter", "latex": "F = \\sqrt{F_x^2 + F_y^2}" },
-      { "navn": "Normalkraft på vannrett flate (ingen andre loddrette krefter)", "latex": "N = mg" },
-      { "navn": "Normalkraft på skråplan", "latex": "N = mg\\cos\\alpha" },
-      { "navn": "Tyngdekomponent langs skråplan", "latex": "G_x = mg\\sin\\alpha" },
-      { "navn": "Maksimal statisk friksjon", "latex": "R \\le \\mu_s N" },
-      { "navn": "Kinetisk friksjon", "latex": "R = \\mu N" },
-      { "navn": "Akselerasjon på friksjonsfritt skråplan", "latex": "a = g\\sin\\alpha" },
-      { "navn": "Akselerasjon på skråplan med friksjon", "latex": "a = g\\left(\\sin\\alpha - \\mu\\cos\\alpha\\right)" },
-      { "navn": "Grensevinkel for gliding", "latex": "\\tan\\alpha = \\mu_s" }
-    ]
+      {
+        "navn": "Newtons 2. lov",
+        "latex": "\\sum \\vec{F} = m\\vec{a}"
+      },
+      {
+        "navn": "Newtons 2. lov i komponenter",
+        "latex": "\\sum F_x = ma_x, \\qquad \\sum F_y = ma_y"
+      },
+      {
+        "navn": "Newtons 3. lov",
+        "latex": "\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}"
+      },
+      {
+        "navn": "Enheten newton",
+        "latex": "1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2"
+      },
+      {
+        "navn": "Tyngde",
+        "latex": "G = mg, \\qquad g = 9{,}81\\,\\text{m/s}^2"
+      },
+      {
+        "navn": "Kraftsum av to vinkelrette krefter",
+        "latex": "F = \\sqrt{F_x^2 + F_y^2}"
+      },
+      {
+        "navn": "Normalkraft på vannrett flate (ingen andre loddrette krefter)",
+        "latex": "N = mg"
+      },
+      {
+        "navn": "Normalkraft på skråplan",
+        "latex": "N = mg\\cos\\alpha"
+      },
+      {
+        "navn": "Tyngdekomponent langs skråplan",
+        "latex": "G_x = mg\\sin\\alpha"
+      },
+      {
+        "navn": "Maksimal statisk friksjon",
+        "latex": "R \\le \\mu_s N"
+      },
+      {
+        "navn": "Kinetisk friksjon",
+        "latex": "R = \\mu N"
+      },
+      {
+        "navn": "Akselerasjon på friksjonsfritt skråplan",
+        "latex": "a = g\\sin\\alpha"
+      },
+      {
+        "navn": "Akselerasjon på skråplan med friksjon",
+        "latex": "a = g\\left(\\sin\\alpha - \\mu\\cos\\alpha\\right)"
+      },
+      {
+        "navn": "Grensevinkel for gliding",
+        "latex": "\\tan\\alpha = \\mu_s"
+      }
+    ],
+    "figur": {
+      "type": "vektor",
+      "tittel": "Frilegemediagram: kasse dratt med skrå snor",
+      "forklaring": "Fire krefter virker PÅ kassa, og hver har en avsender: jorda gir G, underlaget gir N og R, snora gir S. Sammenlikn lengdene: N er kortere enn G fordi den loddrette delen av snordraget bærer litt av kassa, og snordraget framover er større enn friksjonen — derfor akselererer kassa mot høyre.",
+      "xmin": -2.5,
+      "xmax": 2.49,
+      "ymin": -1.5,
+      "ymax": 1.7,
+      "rutenett": false,
+      "kropp": {
+        "x": 0,
+        "y": 0.21,
+        "form": "boks"
+      },
+      "underlag": {
+        "y": 0
+      },
+      "vektorer": [
+        {
+          "fra": [
+            0,
+            0.21
+          ],
+          "til": [
+            0,
+            -1.39
+          ],
+          "navn": "G = mg",
+          "farge": 1
+        },
+        {
+          "fra": [
+            0,
+            0.21
+          ],
+          "til": [
+            0,
+            1.42
+          ],
+          "navn": "N",
+          "farge": 2
+        },
+        {
+          "fra": [
+            0,
+            0.21
+          ],
+          "til": [
+            0.678,
+            0.601
+          ],
+          "navn": "S",
+          "farge": 3
+        },
+        {
+          "fra": [
+            0,
+            0.21
+          ],
+          "til": [
+            -0.363,
+            0.21
+          ],
+          "navn": "R",
+          "farge": 2
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -47,7 +155,35 @@
       },
       {
         "tittel": "Frilegemediagram — start alltid her",
-        "html": "<p>Nesten alle kraftoppgaver løses på samme måte, og det første steget er alltid et <strong>frilegemediagram</strong>. Der tegner du legemet som en enkel figur eller et punkt, og så tegner du alle kreftene som virker PÅ legemet, som piler ut fra det.</p><p>Tre regler er avgjørende:</p><ul><li>Bare krefter som virker <em>på</em> legemet skal med. Krefter legemet selv virker på omgivelsene med, hører ikke hjemme i diagrammet.</li><li>Hver kraft må ha en avsender du kan peke på: jorda gir tyngden, underlaget gir normalkraft og friksjon, snora gir snordrag, lufta gir luftmotstand. Finner du ingen avsender, finnes ikke kraften.</li><li>Bevegelsesretningen er ikke en kraft. Å tegne en pil «framover» bare fordi legemet beveger seg framover, er den vanligste feilen i hele kapittelet.</li></ul><p>Etterpå velger du koordinatsystem og positiv retning. Det er nesten alltid lurt å legge den ene aksen langs bevegelsesretningen. Da er akselerasjonen null i den andre retningen, og du kan regne ut normalkraften direkte. Til slutt skriver du Newtons 2. lov for hver akse:</p>$$\\sum F_x = ma_x, \\qquad \\sum F_y = ma_y$$<p>Har du flere legemer som er koblet sammen, tegner du <strong>ett diagram per legeme</strong>. Legemene knyttes sammen av to opplysninger: snordraget er like stort i hele en masseløs snor, og legemene har samme fart og samme akselerasjonstall.</p>"
+        "html": "<p>Nesten alle kraftoppgaver løses på samme måte, og det første steget er alltid et <strong>frilegemediagram</strong>. Der tegner du legemet som en enkel figur eller et punkt, og så tegner du alle kreftene som virker PÅ legemet, som piler ut fra det.</p><p>Tre regler er avgjørende:</p><ul><li>Bare krefter som virker <em>på</em> legemet skal med. Krefter legemet selv virker på omgivelsene med, hører ikke hjemme i diagrammet.</li><li>Hver kraft må ha en avsender du kan peke på: jorda gir tyngden, underlaget gir normalkraft og friksjon, snora gir snordrag, lufta gir luftmotstand. Finner du ingen avsender, finnes ikke kraften.</li><li>Bevegelsesretningen er ikke en kraft. Å tegne en pil «framover» bare fordi legemet beveger seg framover, er den vanligste feilen i hele kapittelet.</li></ul><p>Etterpå velger du koordinatsystem og positiv retning. Det er nesten alltid lurt å legge den ene aksen langs bevegelsesretningen. Da er akselerasjonen null i den andre retningen, og du kan regne ut normalkraften direkte. Til slutt skriver du Newtons 2. lov for hver akse:</p>$$\\sum F_x = ma_x, \\qquad \\sum F_y = ma_y$$<p>Har du flere legemer som er koblet sammen, tegner du <strong>ett diagram per legeme</strong>. Legemene knyttes sammen av to opplysninger: snordraget er like stort i hele en masseløs snor, og legemene har samme fart og samme akselerasjonstall.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Framgangsmåte for kraftoppgaver",
+          "forklaring": "Steg 3 er det som sparer deg for arbeid: legger du den ene aksen langs bevegelsen, er akselerasjonen null på tvers, og da faller normalkraften rett ut av likningen.",
+          "steg": [
+            {
+              "tekst": "Tegn legemet alene",
+              "note": "løsne det fra omgivelsene"
+            },
+            {
+              "tekst": "Tegn hver kraft med en avsender",
+              "note": "jorda, snora, underlaget"
+            },
+            {
+              "tekst": "Velg akser langs bevegelsen",
+              "note": "a = 0 på tvers"
+            },
+            {
+              "tekst": "Dekomponer de skrå kreftene",
+              "note": "sin og cos av vinkelen"
+            },
+            {
+              "tekst": "Skriv ΣF = ma for hver akse",
+              "note": "løs for a, N eller S"
+            }
+          ]
+        }
       },
       {
         "tittel": "Tyngde, normalkraft og snordrag",
@@ -55,14 +191,160 @@
       },
       {
         "tittel": "Friksjon",
-        "html": "<p>Friksjon er kraften fra underlaget <em>langs</em> flaten. Den motsetter seg bevegelse eller forsøk på bevegelse, og vi skiller mellom to tilfeller.</p><p><strong>Statisk friksjon</strong> virker når legemet står stille. Da tilpasser friksjonen seg: den er akkurat så stor som den må være for at legemet skal bli stående. Men den har et tak:</p>$$R \\le \\mu_s N$$<p>Skyver du en kasse med 100 N, og maksimal statisk friksjon er 200 N, er friksjonskraften 100 N — ikke 200 N. Først når du overstiger taket, begynner kassa å gli.</p><p><strong>Kinetisk friksjon</strong> virker når legemet glir. Da er kraften tilnærmet konstant:</p>$$R = \\mu N$$<p>der $\\mu$ er friksjonstallet og $N$ normalkraften. Retningen er alltid motsatt bevegelsesretningen.</p><p>To ting overrasker de fleste. For det første avhenger friksjonskraften av <em>normalkraften</em>, ikke av kontaktarealet: i denne modellen gir brede dekk ikke mer friksjon enn smale. For det andre er friksjonstallet et rent forholdstall uten enhet, fordi det er en kraft delt på en kraft. Typiske verdier er rundt 0,01 for stål på is og rundt 0,8 for gummi på tørr asfalt.</p><p>Husk også at friksjon ikke bare bremser. Det er friksjonen fra veien på drivhjulene som får en bil til å akselerere framover, og friksjonen fra bakken som gjør at du kan gå. På glattisen forsvinner denne kraften, og da hjelper det ikke hvor hardt du prøver.</p>"
+        "html": "<p>Friksjon er kraften fra underlaget <em>langs</em> flaten. Den motsetter seg bevegelse eller forsøk på bevegelse, og vi skiller mellom to tilfeller.</p><p><strong>Statisk friksjon</strong> virker når legemet står stille. Da tilpasser friksjonen seg: den er akkurat så stor som den må være for at legemet skal bli stående. Men den har et tak:</p>$$R \\le \\mu_s N$$<p>Skyver du en kasse med 100 N, og maksimal statisk friksjon er 200 N, er friksjonskraften 100 N — ikke 200 N. Først når du overstiger taket, begynner kassa å gli.</p><p><strong>Kinetisk friksjon</strong> virker når legemet glir. Da er kraften tilnærmet konstant:</p>$$R = \\mu N$$<p>der $\\mu$ er friksjonstallet og $N$ normalkraften. Retningen er alltid motsatt bevegelsesretningen.</p><p>To ting overrasker de fleste. For det første avhenger friksjonskraften av <em>normalkraften</em>, ikke av kontaktarealet: i denne modellen gir brede dekk ikke mer friksjon enn smale. For det andre er friksjonstallet et rent forholdstall uten enhet, fordi det er en kraft delt på en kraft. Typiske verdier er rundt 0,01 for stål på is og rundt 0,8 for gummi på tørr asfalt.</p><p>Husk også at friksjon ikke bare bremser. Det er friksjonen fra veien på drivhjulene som får en bil til å akselerere framover, og friksjonen fra bakken som gjør at du kan gå. På glattisen forsvinner denne kraften, og da hjelper det ikke hvor hardt du prøver.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Friksjonen mot kraften du drar med",
+          "forklaring": "Så lenge kassa står stille, er friksjonen akkurat like stor som dragkraften — den vokser med langs linja R = F. Ved taket μs·N = 200 N løsner kassa, og friksjonen faller til den konstante verdien μN = 170 N. Derfor er det tyngst å få kassa i gang.",
+          "xmin": 0,
+          "xmax": 320,
+          "ymin": 0,
+          "ymax": 240,
+          "xlabel": "F (N)",
+          "ylabel": "R (N)",
+          "linjer": [
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                200,
+                200
+              ],
+              "navn": "R = F i ro",
+              "farge": 1,
+              "stiplet": false
+            },
+            {
+              "fra": [
+                200,
+                200
+              ],
+              "til": [
+                200,
+                170
+              ],
+              "farge": 3
+            },
+            {
+              "fra": [
+                200,
+                170
+              ],
+              "til": [
+                310,
+                170
+              ],
+              "navn": "R = μN",
+              "farge": 2,
+              "stiplet": false,
+              "merkeplass": 0.55
+            }
+          ],
+          "punkter": [
+            {
+              "x": 200,
+              "y": 200,
+              "navn": "μs·N"
+            }
+          ]
+        }
       },
       {
         "tittel": "Bevegelse på skråplan",
-        "html": "<p>Skråplanet er den klassiske oppgavetypen, og trikset er å velge koordinatsystemet smart: legg x-aksen <em>langs</em> planet og y-aksen normalt på planet. Da har både normalkraften og friksjonen retning langs en akse, og bare tyngden må dekomponeres.</p><p>Med helningsvinkel $\\alpha$ blir tyngdens komponenter</p>$$G_x = mg\\sin\\alpha \\quad \\text{(langs planet, nedover)}$$$$G_y = mg\\cos\\alpha \\quad \\text{(inn i planet)}$$<p>Vinkelen mellom tyngden og normalen på planet er nemlig like stor som helningsvinkelen. Kontroller med grensetilfellene: er $\\alpha = 0$, blir $G_x = 0$ og $G_y = mg$, som stemmer for et vannrett gulv. Nærmer $\\alpha$ seg $90^\\circ$, blir $G_x \\to mg$ og $G_y \\to 0$, altså fritt fall.</p><p>Normalt på planet er akselerasjonen null, så</p>$$N = mg\\cos\\alpha$$<p>For et legeme som glir nedover, gir Newtons 2. lov langs planet</p>$$mg\\sin\\alpha - \\mu N = ma$$<p>Setter vi inn $N = mg\\cos\\alpha$ og deler på $m$:</p>$$a = g\\left(\\sin\\alpha - \\mu\\cos\\alpha\\right)$$<p>Massen faller ut. Uten friksjon blir det enda enklere: $a = g\\sin\\alpha$. To klosser med helt ulik masse glir altså nedover med samme akselerasjon.</p><p>Skal du finne når et legeme <em>begynner</em> å gli, setter du kraftsummen langs planet lik null i grenseøyeblikket: $mg\\sin\\alpha = \\mu_s mg\\cos\\alpha$, som gir</p>$$\\tan\\alpha = \\mu_s$$<p>Grensevinkelen avhenger bare av friksjonstallet, ikke av massen. Det gir en enkel måling: vipp planet til klossen glir, og les av vinkelen.</p>"
+        "html": "<p>Skråplanet er den klassiske oppgavetypen, og trikset er å velge koordinatsystemet smart: legg x-aksen <em>langs</em> planet og y-aksen normalt på planet. Da har både normalkraften og friksjonen retning langs en akse, og bare tyngden må dekomponeres.</p><p>Med helningsvinkel $\\alpha$ blir tyngdens komponenter</p>$$G_x = mg\\sin\\alpha \\quad \\text{(langs planet, nedover)}$$$$G_y = mg\\cos\\alpha \\quad \\text{(inn i planet)}$$<p>Vinkelen mellom tyngden og normalen på planet er nemlig like stor som helningsvinkelen. Kontroller med grensetilfellene: er $\\alpha = 0$, blir $G_x = 0$ og $G_y = mg$, som stemmer for et vannrett gulv. Nærmer $\\alpha$ seg $90^\\circ$, blir $G_x \\to mg$ og $G_y \\to 0$, altså fritt fall.</p><p>Normalt på planet er akselerasjonen null, så</p>$$N = mg\\cos\\alpha$$<p>For et legeme som glir nedover, gir Newtons 2. lov langs planet</p>$$mg\\sin\\alpha - \\mu N = ma$$<p>Setter vi inn $N = mg\\cos\\alpha$ og deler på $m$:</p>$$a = g\\left(\\sin\\alpha - \\mu\\cos\\alpha\\right)$$<p>Massen faller ut. Uten friksjon blir det enda enklere: $a = g\\sin\\alpha$. To klosser med helt ulik masse glir altså nedover med samme akselerasjon.</p><p>Skal du finne når et legeme <em>begynner</em> å gli, setter du kraftsummen langs planet lik null i grenseøyeblikket: $mg\\sin\\alpha = \\mu_s mg\\cos\\alpha$, som gir</p>$$\\tan\\alpha = \\mu_s$$<p>Grensevinkelen avhenger bare av friksjonstallet, ikke av massen. Det gir en enkel måling: vipp planet til klossen glir, og les av vinkelen.</p>",
+        "figur": {
+          "type": "vektor",
+          "tittel": "Kreftene på en kloss på skråplan (α = 30°)",
+          "forklaring": "Tyngden G er diagonalen i rektangelet: den deles i Gx = mg·sin α langs planet og Gy = mg·cos α inn i planet. N er nøyaktig like lang som Gy, så de opphever hverandre, mens R er kortere enn Gx — det som blir igjen langs planet, gir akselerasjonen nedover.",
+          "xmin": -2.57,
+          "xmax": 2.57,
+          "ymin": -1.85,
+          "ymax": 1.45,
+          "rutenett": false,
+          "kropp": {
+            "x": 0,
+            "y": 0,
+            "form": "boks",
+            "navn": "m"
+          },
+          "vektorer": [
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                0,
+                -1.6
+              ],
+              "navn": "G",
+              "farge": 1
+            },
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                0.693,
+                -0.4
+              ],
+              "navn": "Gx",
+              "farge": 1
+            },
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                -0.693,
+                -1.2
+              ],
+              "navn": "Gy",
+              "farge": 1
+            },
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                0.693,
+                1.2
+              ],
+              "navn": "N",
+              "farge": 2
+            },
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                -0.36,
+                0.208
+              ],
+              "navn": "R",
+              "farge": 3
+            }
+          ],
+          "parallellogram": [
+            1,
+            2
+          ],
+          "vinkel": {
+            "mellom": [
+              0,
+              2
+            ],
+            "navn": "α"
+          }
+        }
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Kasse dratt med skrå snorkraft over gulv med friksjon",
@@ -85,7 +367,6 @@
         "losning": "<p><strong>To legemer gir to frilegemediagram.</strong> Snora er masseløs, så snordraget $S$ er like stort på begge sider av trinsa. Legemene henger sammen, så de har samme akselerasjonstall $a$. Vi velger positiv retning i bevegelsesretningen for hvert legeme: mot bordkanten for $A$, nedover for $B$.</p><p><strong>Klossen A.</strong> Normalt på bordet er $a_y = 0$, så</p>$$N = m_A g = 3{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 29{,}43\\,\\text{N}$$$$R = \\mu N = 0{,}20 \\cdot 29{,}43\\,\\text{N} = 5{,}89\\,\\text{N}$$<p>Langs bordet virker snordraget framover og friksjonen bakover:</p>$$S - R = m_A a \\qquad (1)$$<p><strong>Loddet B.</strong> Tyngden drar ned, snordraget opp:</p>$$m_B g - S = m_B a \\qquad (2)$$<p>der $m_B g = 2{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 19{,}62\\,\\text{N}$.</p><p><strong>Legg likningene sammen.</strong> Da forsvinner $S$:</p>$$m_B g - R = \\left(m_A + m_B\\right)a$$$$19{,}62\\,\\text{N} - 5{,}89\\,\\text{N} = 5{,}0\\,\\text{kg} \\cdot a$$$$a = \\frac{13{,}73\\,\\text{N}}{5{,}0\\,\\text{kg}} = 2{,}75\\,\\text{m/s}^2$$<p><strong>Snordraget</strong> finner vi fra likning (2):</p>$$S = m_B\\left(g - a\\right) = 2{,}0\\,\\text{kg}\\left(9{,}81 - 2{,}75\\right)\\text{m/s}^2 = 2{,}0 \\cdot 7{,}06 = 14{,}1\\,\\text{N}$$<p><strong>Kontroll med likning (1):</strong></p>$$S = m_A a + R = 3{,}0 \\cdot 2{,}75 + 5{,}89 = 8{,}25 + 5{,}89 = 14{,}1\\,\\text{N}$$<p>Det stemmer. Svar: $a = 2{,}7\\,\\text{m/s}^2$ og $S = 14\\,\\text{N}$.</p><p>Legg merke til at snordraget på $14{,}1$ N er <em>mindre</em> enn tyngden til loddet på $19{,}6$ N. Slik må det være — ellers ville ikke loddet akselerert nedover. En vanlig feil er å sette $S = m_B g$ fra starten.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å tegne en «framdriftskraft» i bevegelsesretningen på et legeme som glir med konstant fart. Bevegelse krever ingen kraft — bare endring av fart gjør det.",
       "Å tro at normalkraften alltid er $mg$. Drar du skrått oppover blir den mindre, trykker du skrått ned blir den større, og på skråplan er den $mg\\cos\\alpha$.",
@@ -94,7 +375,6 @@
       "Å regne $R = \\mu N$ også når legemet står stille. Da er friksjonen bare så stor som den må være, og $\\mu_s N$ er et maksimum, ikke en verdi.",
       "Å blande masse og tyngde: skrive 70 N for massen eller 70 kg for tyngden, eller å glemme å gange med $g$ når oppgaven gir massen i kilogram."
     ],
-
     "tips": [
       "Tegn frilegemediagram FØRST, hver gang, også når oppgaven ser enkel ut. Marker positiv retning på figuren — halvparten av fortegnsfeilene forsvinner da.",
       "På skråplan: legg alltid aksene langs og normalt på planet. Da er $a_y = 0$, og du får $N = mg\\cos\\alpha$ nesten gratis.",
@@ -103,25 +383,68 @@
       "Bruk $g = 9{,}81\\,\\text{m/s}^2$ hvis ikke annet er oppgitt, ta med enheter i hele utregningen og svar med to eller tre gjeldende siffer."
     ]
   },
-
   "begreper": [
-    { "begrep": "Kraft", "forklaring": "En vektorstørrelse som beskriver et dytt eller drag på et legeme. Måles i newton og kan endre farten eller formen til legemet." },
-    { "begrep": "Newton (N)", "forklaring": "SI-enheten for kraft. $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$, altså kraften som gir 1 kg akselerasjonen 1 m/s²." },
-    { "begrep": "Kraftsum (resultantkraft)", "forklaring": "Vektorsummen $\\sum \\vec{F}$ av alle krefter som virker på et legeme. Bare denne summen bestemmer akselerasjonen." },
-    { "begrep": "Frilegemediagram", "forklaring": "En figur der legemet er skilt ut for seg selv og alle krefter som virker på det, er tegnet som piler. Utgangspunktet for all kraftregning." },
-    { "begrep": "Treghet", "forklaring": "Et legemes motstand mot å endre fart. Massen er målet på tregheten: dobbelt masse gir halv akselerasjon for samme kraft." },
-    { "begrep": "Masse", "forklaring": "Et mål på hvor mye stoff et legeme inneholder, og dermed på tregheten til legemet. Måles i kilogram og er den samme overalt i universet." },
-    { "begrep": "Tyngde", "forklaring": "Kraften jorda drar på et legeme med, $G = mg$. Måles i newton og varierer med hvor du er." },
-    { "begrep": "Tyngdeakselerasjon", "forklaring": "Akselerasjonen et legeme får i fritt fall. Nær jordoverflaten regner vi med $g = 9{,}81\\,\\text{m/s}^2$. Kalles også tyngdefeltstyrke og kan skrives 9,81 N/kg." },
-    { "begrep": "Normalkraft", "forklaring": "Kraften fra et underlag på legemet, alltid rettet vinkelrett på berøringsflaten. Regnes ut fra likevekt i normalretningen." },
-    { "begrep": "Snordrag", "forklaring": "Kraften i et tau eller en snor, rettet langs snora. En snor kan bare dra, aldri skyve." },
-    { "begrep": "Friksjonskraft", "forklaring": "Kraften fra underlaget langs flaten, som motsetter seg bevegelse eller forsøk på bevegelse." },
-    { "begrep": "Statisk friksjon", "forklaring": "Friksjonen når legemet står stille. Den tilpasser seg kraften du bruker, opp til maksimalverdien $\\mu_s N$." },
-    { "begrep": "Kinetisk friksjon", "forklaring": "Friksjonen når legemet glir. Den er tilnærmet konstant og gitt ved $R = \\mu N$, motsatt bevegelsesretningen." },
-    { "begrep": "Friksjonstall", "forklaring": "Det enhetsløse forholdstallet $\\mu$ mellom friksjonskraft og normalkraft. Avhenger av de to materialene som glir mot hverandre." },
-    { "begrep": "Likevekt", "forklaring": "Tilstanden der kraftsummen på legemet er null. Da er akselerasjonen null, og legemet står i ro eller går rettlinjet med konstant fart." }
+    {
+      "begrep": "Kraft",
+      "forklaring": "En vektorstørrelse som beskriver et dytt eller drag på et legeme. Måles i newton og kan endre farten eller formen til legemet."
+    },
+    {
+      "begrep": "Newton (N)",
+      "forklaring": "SI-enheten for kraft. $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$, altså kraften som gir 1 kg akselerasjonen 1 m/s²."
+    },
+    {
+      "begrep": "Kraftsum (resultantkraft)",
+      "forklaring": "Vektorsummen $\\sum \\vec{F}$ av alle krefter som virker på et legeme. Bare denne summen bestemmer akselerasjonen."
+    },
+    {
+      "begrep": "Frilegemediagram",
+      "forklaring": "En figur der legemet er skilt ut for seg selv og alle krefter som virker på det, er tegnet som piler. Utgangspunktet for all kraftregning."
+    },
+    {
+      "begrep": "Treghet",
+      "forklaring": "Et legemes motstand mot å endre fart. Massen er målet på tregheten: dobbelt masse gir halv akselerasjon for samme kraft."
+    },
+    {
+      "begrep": "Masse",
+      "forklaring": "Et mål på hvor mye stoff et legeme inneholder, og dermed på tregheten til legemet. Måles i kilogram og er den samme overalt i universet."
+    },
+    {
+      "begrep": "Tyngde",
+      "forklaring": "Kraften jorda drar på et legeme med, $G = mg$. Måles i newton og varierer med hvor du er."
+    },
+    {
+      "begrep": "Tyngdeakselerasjon",
+      "forklaring": "Akselerasjonen et legeme får i fritt fall. Nær jordoverflaten regner vi med $g = 9{,}81\\,\\text{m/s}^2$. Kalles også tyngdefeltstyrke og kan skrives 9,81 N/kg."
+    },
+    {
+      "begrep": "Normalkraft",
+      "forklaring": "Kraften fra et underlag på legemet, alltid rettet vinkelrett på berøringsflaten. Regnes ut fra likevekt i normalretningen."
+    },
+    {
+      "begrep": "Snordrag",
+      "forklaring": "Kraften i et tau eller en snor, rettet langs snora. En snor kan bare dra, aldri skyve."
+    },
+    {
+      "begrep": "Friksjonskraft",
+      "forklaring": "Kraften fra underlaget langs flaten, som motsetter seg bevegelse eller forsøk på bevegelse."
+    },
+    {
+      "begrep": "Statisk friksjon",
+      "forklaring": "Friksjonen når legemet står stille. Den tilpasser seg kraften du bruker, opp til maksimalverdien $\\mu_s N$."
+    },
+    {
+      "begrep": "Kinetisk friksjon",
+      "forklaring": "Friksjonen når legemet glir. Den er tilnærmet konstant og gitt ved $R = \\mu N$, motsatt bevegelsesretningen."
+    },
+    {
+      "begrep": "Friksjonstall",
+      "forklaring": "Det enhetsløse forholdstallet $\\mu$ mellom friksjonskraft og normalkraft. Avhenger av de to materialene som glir mot hverandre."
+    },
+    {
+      "begrep": "Likevekt",
+      "forklaring": "Tilstanden der kraftsummen på legemet er null. Da er akselerasjonen null, og legemet står i ro eller går rettlinjet med konstant fart."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "En kloss glir bortover et vannrett, friksjonsfritt gulv med konstant fart. Hvilke krefter virker på klossen?",
@@ -147,37 +470,67 @@
     },
     {
       "sporsmal": "En kloss med masse $m$ ligger på et skråplan med helningsvinkel $\\alpha$. Hvor stor er normalkraften?",
-      "alternativer": ["$mg\\sin\\alpha$", "$mg\\cos\\alpha$", "$mg$", "$mg\\tan\\alpha$"],
+      "alternativer": [
+        "$mg\\sin\\alpha$",
+        "$mg\\cos\\alpha$",
+        "$mg$",
+        "$mg\\tan\\alpha$"
+      ],
       "riktig": 1,
       "forklaring": "Normalt på planet er akselerasjonen null, så $N$ er like stor som tyngdens komponent inn i planet, $mg\\cos\\alpha$. Alternativ A er tyngdens komponent LANGS planet — den driver bevegelsen nedover og har ingenting å gjøre med normalkraften. Alternativ C gjelder bare når $\\alpha = 0$."
     },
     {
       "sporsmal": "En kloss glir nedover et friksjonsfritt skråplan med helning $30^\\circ$. Hvor stor er akselerasjonen? Bruk $g = 9{,}81\\,\\text{m/s}^2$.",
-      "alternativer": ["$8{,}5\\,\\text{m/s}^2$", "$4{,}9\\,\\text{m/s}^2$", "$9{,}8\\,\\text{m/s}^2$", "$3{,}3\\,\\text{m/s}^2$"],
+      "alternativer": [
+        "$8{,}5\\,\\text{m/s}^2$",
+        "$4{,}9\\,\\text{m/s}^2$",
+        "$9{,}8\\,\\text{m/s}^2$",
+        "$3{,}3\\,\\text{m/s}^2$"
+      ],
       "riktig": 1,
       "forklaring": "Uten friksjon er $a = g\\sin\\alpha = 9{,}81 \\cdot 0{,}500 = 4{,}9\\,\\text{m/s}^2$. Alternativ A på $8{,}5$ er $g\\cos 30^\\circ$ og kommer av å bytte om sinus og cosinus. Alternativ C ville betydd fritt fall, som først skjer ved $\\alpha = 90^\\circ$."
     },
     {
       "sporsmal": "Du dobler massen til en kloss som glir nedover et friksjonsfritt skråplan. Hva skjer med akselerasjonen?",
-      "alternativer": ["Den dobles", "Den halveres", "Den øker, men mindre enn dobbelt", "Den er uendret"],
+      "alternativer": [
+        "Den dobles",
+        "Den halveres",
+        "Den øker, men mindre enn dobbelt",
+        "Den er uendret"
+      ],
       "riktig": 3,
       "forklaring": "Likningen er $mg\\sin\\alpha = ma$, og $m$ forkortes bort: $a = g\\sin\\alpha$. Akselerasjonen avhenger bare av $g$ og vinkelen. Det er fristende å svare «dobles» fordi den drivende kraften $mg\\sin\\alpha$ faktisk dobles — men tregheten (massen) dobles like mye, så forholdet mellom dem er uendret."
     },
     {
       "sporsmal": "En person står på en badevekt i en heis som går oppover med konstant fart. Hva viser vekta sammenlignet med når heisen står stille?",
-      "alternativer": ["Det samme", "Mer", "Mindre", "Null"],
+      "alternativer": [
+        "Det samme",
+        "Mer",
+        "Mindre",
+        "Null"
+      ],
       "riktig": 0,
       "forklaring": "Konstant fart betyr $a = 0$, så $N - mg = 0$ og $N = mg$ — akkurat som i ro. Mange svarer «mer» fordi heisen beveger seg oppover, men Newtons 2. lov handler om akselerasjon, ikke om fart. Vekta ville bare vist mer i det tidsrommet heisen faktisk akselererte oppover."
     },
     {
       "sporsmal": "En kasse på 40 kg står i ro på et vannrett gulv med $\\mu_s = 0{,}50$. Du skyver vannrett med 150 N, men kassa står stille. Hvor stor er friksjonskraften?",
-      "alternativer": ["$196\\,\\text{N}$", "$150\\,\\text{N}$", "$46\\,\\text{N}$", "$0\\,\\text{N}$"],
+      "alternativer": [
+        "$196\\,\\text{N}$",
+        "$150\\,\\text{N}$",
+        "$46\\,\\text{N}$",
+        "$0\\,\\text{N}$"
+      ],
       "riktig": 1,
       "forklaring": "Kassa står stille, så $a = 0$ og kraftsummen må være null. Friksjonen er derfor nøyaktig like stor som skyvekraften: 150 N. Alternativ A er maksimal statisk friksjon, $\\mu_s N = 0{,}50 \\cdot 40 \\cdot 9{,}81 = 196$ N. At denne er større enn 150 N er nettopp grunnen til at kassa ikke glir — men den er et tak, ikke friksjonens verdi."
     },
     {
       "sporsmal": "Ved hvilken helningsvinkel begynner en kloss å gli hvis $\\mu_s = 0{,}60$?",
-      "alternativer": ["$31^\\circ$", "$37^\\circ$", "$53^\\circ$", "$60^\\circ$"],
+      "alternativer": [
+        "$31^\\circ$",
+        "$37^\\circ$",
+        "$53^\\circ$",
+        "$60^\\circ$"
+      ],
       "riktig": 0,
       "forklaring": "I grenseøyeblikket er $mg\\sin\\alpha = \\mu_s mg\\cos\\alpha$, som gir $\\tan\\alpha = \\mu_s$. Da er $\\alpha = \\tan^{-1}(0{,}60) = 31^\\circ$. Alternativ B på $37^\\circ$ er $\\sin^{-1}(0{,}60)$ og er feilen du gjør hvis du glemmer cosinus-leddet fra normalkraften."
     },
@@ -194,7 +547,12 @@
     },
     {
       "sporsmal": "To krefter virker på samme legeme: 30 N mot øst og 40 N mot nord. Hvor stor er kraftsummen?",
-      "alternativer": ["$10\\,\\text{N}$", "$35\\,\\text{N}$", "$50\\,\\text{N}$", "$70\\,\\text{N}$"],
+      "alternativer": [
+        "$10\\,\\text{N}$",
+        "$35\\,\\text{N}$",
+        "$50\\,\\text{N}$",
+        "$70\\,\\text{N}$"
+      ],
       "riktig": 2,
       "forklaring": "Kreftene står vinkelrett på hverandre, så størrelsen finnes med Pytagoras: $\\sqrt{30^2 + 40^2} = \\sqrt{2500} = 50$ N. Alternativ D på 70 N er å legge sammen tallene som om kreftene pekte samme vei, og alternativ B er gjennomsnittet. Krefter må alltid summeres som vektorer."
     },
@@ -211,28 +569,80 @@
     },
     {
       "sporsmal": "En kloss dras over et vannrett gulv med konstant fart av en vannrett kraft på 25 N. Hvor stor er friksjonskraften?",
-      "alternativer": ["$0\\,\\text{N}$", "$25\\,\\text{N}$", "Mindre enn 25 N, siden klossen beveger seg", "Det avhenger av massen til klossen"],
+      "alternativer": [
+        "$0\\,\\text{N}$",
+        "$25\\,\\text{N}$",
+        "Mindre enn 25 N, siden klossen beveger seg",
+        "Det avhenger av massen til klossen"
+      ],
       "riktig": 1,
       "forklaring": "Konstant fart gir $a = 0$, så $\\sum F_x = 25\\,\\text{N} - R = 0$ og $R = 25$ N. Alternativ C er fristende fordi man tenker at det må være «kraft til overs» for å holde bevegelsen i gang — men bevegelse krever ingen kraftsum, bare akselerasjon gjør det. Massen trengs ikke: den er allerede tatt hensyn til gjennom at farten er konstant."
     }
   ],
-
   "flashcards": [
-    { "front": "Newtons 1. lov", "bak": "Er $\\sum \\vec{F} = 0$, holder legemet farten: det står i ro eller går rettlinjet med konstant fart." },
-    { "front": "Newtons 2. lov", "bak": "$\\sum \\vec{F} = m\\vec{a}$ — akselerasjonen peker samme vei som kraftsummen." },
-    { "front": "Newtons 3. lov", "bak": "$\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}$. Like store, motsatt rettet, og de virker på ULIKE legemer." },
-    { "front": "Enheten newton i grunnenheter", "bak": "$1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$" },
-    { "front": "Formel for tyngde", "bak": "$G = mg$ med $g = 9{,}81\\,\\text{m/s}^2$. Peker alltid rett ned." },
-    { "front": "Hva tegner du i et frilegemediagram?", "bak": "Bare kreftene som virker PÅ legemet, hver med en avsender: jorda, underlaget, snora, lufta. Aldri bevegelsesretningen som en kraft." },
-    { "front": "Normalkraft — retning og størrelse", "bak": "Alltid vinkelrett på underlaget. Størrelsen finnes fra likevekt i normalretningen, den er ikke automatisk $mg$." },
-    { "front": "Normalkraft på et skråplan", "bak": "$N = mg\\cos\\alpha$" },
-    { "front": "Tyngdens komponent langs skråplanet", "bak": "$G_x = mg\\sin\\alpha$, rettet nedover langs planet." },
-    { "front": "Maksimal statisk friksjon", "bak": "$R \\le \\mu_s N$ — et tak, ikke en verdi. Står legemet stille, er friksjonen bare så stor som den må være." },
-    { "front": "Kinetisk friksjon", "bak": "$R = \\mu N$, rettet motsatt bevegelsesretningen." },
-    { "front": "Akselerasjon nedover friksjonsfritt skråplan", "bak": "$a = g\\sin\\alpha$ — uavhengig av massen." },
-    { "front": "Akselerasjon nedover skråplan med friksjon", "bak": "$a = g\\left(\\sin\\alpha - \\mu\\cos\\alpha\\right)$" },
-    { "front": "Grensevinkel for at et legeme begynner å gli", "bak": "$\\tan\\alpha = \\mu_s$ — avhenger bare av friksjonstallet, ikke av massen." },
-    { "front": "Snordrag i en masseløs snor over en friksjonsfri trinse", "bak": "Like stort i hele snora. Trinsa endrer bare retningen på kraften, ikke størrelsen." },
-    { "front": "Er tyngde og normalkraft et kraft/motkraft-par?", "bak": "Nei. De virker på samme legeme. Motkraften til normalkraften er kraften legemet trykker på underlaget med." }
+    {
+      "front": "Newtons 1. lov",
+      "bak": "Er $\\sum \\vec{F} = 0$, holder legemet farten: det står i ro eller går rettlinjet med konstant fart."
+    },
+    {
+      "front": "Newtons 2. lov",
+      "bak": "$\\sum \\vec{F} = m\\vec{a}$ — akselerasjonen peker samme vei som kraftsummen."
+    },
+    {
+      "front": "Newtons 3. lov",
+      "bak": "$\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}$. Like store, motsatt rettet, og de virker på ULIKE legemer."
+    },
+    {
+      "front": "Enheten newton i grunnenheter",
+      "bak": "$1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$"
+    },
+    {
+      "front": "Formel for tyngde",
+      "bak": "$G = mg$ med $g = 9{,}81\\,\\text{m/s}^2$. Peker alltid rett ned."
+    },
+    {
+      "front": "Hva tegner du i et frilegemediagram?",
+      "bak": "Bare kreftene som virker PÅ legemet, hver med en avsender: jorda, underlaget, snora, lufta. Aldri bevegelsesretningen som en kraft."
+    },
+    {
+      "front": "Normalkraft — retning og størrelse",
+      "bak": "Alltid vinkelrett på underlaget. Størrelsen finnes fra likevekt i normalretningen, den er ikke automatisk $mg$."
+    },
+    {
+      "front": "Normalkraft på et skråplan",
+      "bak": "$N = mg\\cos\\alpha$"
+    },
+    {
+      "front": "Tyngdens komponent langs skråplanet",
+      "bak": "$G_x = mg\\sin\\alpha$, rettet nedover langs planet."
+    },
+    {
+      "front": "Maksimal statisk friksjon",
+      "bak": "$R \\le \\mu_s N$ — et tak, ikke en verdi. Står legemet stille, er friksjonen bare så stor som den må være."
+    },
+    {
+      "front": "Kinetisk friksjon",
+      "bak": "$R = \\mu N$, rettet motsatt bevegelsesretningen."
+    },
+    {
+      "front": "Akselerasjon nedover friksjonsfritt skråplan",
+      "bak": "$a = g\\sin\\alpha$ — uavhengig av massen."
+    },
+    {
+      "front": "Akselerasjon nedover skråplan med friksjon",
+      "bak": "$a = g\\left(\\sin\\alpha - \\mu\\cos\\alpha\\right)$"
+    },
+    {
+      "front": "Grensevinkel for at et legeme begynner å gli",
+      "bak": "$\\tan\\alpha = \\mu_s$ — avhenger bare av friksjonstallet, ikke av massen."
+    },
+    {
+      "front": "Snordrag i en masseløs snor over en friksjonsfri trinse",
+      "bak": "Like stort i hele snora. Trinsa endrer bare retningen på kraften, ikke størrelsen."
+    },
+    {
+      "front": "Er tyngde og normalkraft et kraft/motkraft-par?",
+      "bak": "Nei. De virker på samme legeme. Motkraften til normalkraften er kraften legemet trykker på underlaget med."
+    }
   ]
 }
