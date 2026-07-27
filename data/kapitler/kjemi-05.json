@@ -3,7 +3,6 @@
   "nr": 5,
   "tittel": "Organisk kjemi",
   "intro": "Organisk kjemi er kjemien til karbonforbindelsene — alt fra propan i grillbeholderen til etanol, eddiksyre og duftstoffene i jordbær. Kapittelet handler om hvordan du navngir slike molekyler, hvordan de funksjonelle gruppene bestemmer egenskapene, og hvilke fire reaksjonstyper du må kjenne igjen.",
-
   "kompakt": {
     "punkter": [
       "Karbon danner alltid fire kovalente bindinger, og karbonatomer binder seg til hverandre i kjeder, forgreninger og ringer. Derfor finnes det millioner av organiske stoffer.",
@@ -18,22 +17,84 @@
       "Hydrogenbindinger i $\\ce{-OH}$- og $\\ce{-COOH}$-gruppene gir mye høyere kokepunkt og bedre vannløselighet enn i hydrokarboner med samme molekylstørrelse."
     ],
     "formler": [
-      { "navn": "Alkan (mettet hydrokarbon)", "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n+2}" },
-      { "navn": "Alken (én dobbeltbinding)", "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n}" },
-      { "navn": "Alkyn (én trippelbinding)", "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n-2}" },
-      { "navn": "Fullstendig forbrenning av butan", "latex": "\\ce{2C4H10 + 13O2 -> 8CO2 + 10H2O}" },
-      { "navn": "Substitusjon (halogenering av alkan)", "latex": "\\ce{CH4 + Cl2 ->[UV] CH3Cl + HCl}" },
-      { "navn": "Addisjon av brom (test på umettethet)", "latex": "\\ce{CH2=CH2 + Br2 -> CH2Br-CH2Br}" },
-      { "navn": "Addisjon av hydrogen (hydrogenering)", "latex": "\\ce{CH2=CH2 + H2 ->[Ni] CH3-CH3}" },
-      { "navn": "Addisjon av vann", "latex": "\\ce{CH2=CH2 + H2O ->[H+] CH3-CH2-OH}" },
-      { "navn": "Eliminasjon (dehydrering av alkohol)", "latex": "\\ce{CH3-CH2-OH ->[H2SO4][varme] CH2=CH2 + H2O}" },
-      { "navn": "Kondensasjon (forestring)", "latex": "\\ce{CH3COOH + CH3CH2OH <=> CH3COOCH2CH3 + H2O}" },
-      { "navn": "Hydrolyse av ester", "latex": "\\ce{CH3COOCH2CH3 + H2O <=> CH3COOH + CH3CH2OH}" },
-      { "navn": "Oksidasjon av primær alkohol", "latex": "\\ce{CH3CH2OH ->[O] CH3CHO ->[O] CH3COOH}" },
-      { "navn": "Stoffmengde fra masse", "latex": "n = \\frac{m}{M}" }
-    ]
+      {
+        "navn": "Alkan (mettet hydrokarbon)",
+        "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n+2}"
+      },
+      {
+        "navn": "Alken (én dobbeltbinding)",
+        "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n}"
+      },
+      {
+        "navn": "Alkyn (én trippelbinding)",
+        "latex": "\\mathrm{C}_{n}\\mathrm{H}_{2n-2}"
+      },
+      {
+        "navn": "Fullstendig forbrenning av butan",
+        "latex": "\\ce{2C4H10 + 13O2 -> 8CO2 + 10H2O}"
+      },
+      {
+        "navn": "Substitusjon (halogenering av alkan)",
+        "latex": "\\ce{CH4 + Cl2 ->[UV] CH3Cl + HCl}"
+      },
+      {
+        "navn": "Addisjon av brom (test på umettethet)",
+        "latex": "\\ce{CH2=CH2 + Br2 -> CH2Br-CH2Br}"
+      },
+      {
+        "navn": "Addisjon av hydrogen (hydrogenering)",
+        "latex": "\\ce{CH2=CH2 + H2 ->[Ni] CH3-CH3}"
+      },
+      {
+        "navn": "Addisjon av vann",
+        "latex": "\\ce{CH2=CH2 + H2O ->[H+] CH3-CH2-OH}"
+      },
+      {
+        "navn": "Eliminasjon (dehydrering av alkohol)",
+        "latex": "\\ce{CH3-CH2-OH ->[H2SO4][varme] CH2=CH2 + H2O}"
+      },
+      {
+        "navn": "Kondensasjon (forestring)",
+        "latex": "\\ce{CH3COOH + CH3CH2OH <=> CH3COOCH2CH3 + H2O}"
+      },
+      {
+        "navn": "Hydrolyse av ester",
+        "latex": "\\ce{CH3COOCH2CH3 + H2O <=> CH3COOH + CH3CH2OH}"
+      },
+      {
+        "navn": "Oksidasjon av primær alkohol",
+        "latex": "\\ce{CH3CH2OH ->[O] CH3CHO ->[O] CH3COOH}"
+      },
+      {
+        "navn": "Stoffmengde fra masse",
+        "latex": "n = \\frac{m}{M}"
+      }
+    ],
+    "figur": {
+      "type": "stolper",
+      "tittel": "Den funksjonelle gruppa bestemmer kokepunktet",
+      "enhet": "kokepunkt (°C)",
+      "forklaring": "Pentan, butanal og butan-1-ol har praktisk talt samme molarmasse (72–74 g/mol), så spranget fra 36 til 118 °C skyldes bare kreftene mellom molekylene: London-krefter, dipolkrefter fra C=O og hydrogenbindinger fra −OH. Butansyre er litt tyngre (88 g/mol), men det svært høye kokepunktet kommer av at −COOH gir to hydrogenbindinger mellom molekylene i par.",
+      "data": [
+        {
+          "navn": "pentan",
+          "verdi": 36
+        },
+        {
+          "navn": "butanal",
+          "verdi": 75
+        },
+        {
+          "navn": "butan-1-ol",
+          "verdi": 118
+        },
+        {
+          "navn": "butansyre",
+          "verdi": 164
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -42,7 +103,31 @@
       },
       {
         "tittel": "Navnsetting av organiske forbindelser",
-        "html": "<p>Et organisk navn er en oppskrift på strukturen: kan du reglene, kan du gå begge veier mellom navn og strukturformel. Bygg navnet i fire steg.</p><p><strong>1. Finn den lengste sammenhengende karbonkjeden.</strong> Den kalles hovedkjeden, og antall karbon i den gir stammen: <strong>met-</strong> (1), <strong>et-</strong> (2), <strong>prop-</strong> (3), <strong>but-</strong> (4), <strong>pent-</strong> (5), <strong>heks-</strong> (6), <strong>hept-</strong> (7), <strong>okt-</strong> (8), <strong>non-</strong> (9), <strong>dek-</strong> (10). Husk at hovedkjeden ikke behøver å være den som er tegnet vannrett — den kan svinge rundt et hjørne.</p><p><strong>2. Velg endelse</strong> etter hva molekylet inneholder: <em>-an</em> for bare enkeltbindinger, <em>-en</em> for dobbeltbinding, <em>-yn</em> for trippelbinding, eller endelsen til den funksjonelle gruppa (<em>-ol</em>, <em>-al</em>, <em>-on</em>, <em>-syre</em>).</p><p><strong>3. Nummerer karbonatomene i hovedkjeden</strong> fra den enden som gir lavest tall. Den funksjonelle gruppa og dobbeltbindingen har førsteprioritet; er det bare sidegrupper, skal de få lavest mulige numre. I karboksylsyrer og aldehyder er karbonet i gruppa alltid nr. 1, så der trenger du ikke skrive tallet.</p><p><strong>4. Sett sidegruppene foran som prefiks</strong>, hver med sitt nummer: metyl ($\\ce{-CH3}$), etyl ($\\ce{-C2H5}$), propyl ($\\ce{-C3H7}$). Flere like grupper samles med di-, tri- og tetra-, og prefiksene ordnes alfabetisk (<em>e</em>tyl før <em>m</em>etyl). Tall skilles fra tall med komma og fra bokstav med bindestrek.</p><p>To eksempler: $\\ce{CH3-CH(CH3)-CH(C2H5)-CH2-CH3}$ har hovedkjede på fem karbon, metyl på nr. 2 og etyl på nr. 3, og heter <strong>3-etyl-2-metylpentan</strong>. Og $\\ce{CH3-CH=CH-CH3}$ heter <strong>but-2-en</strong>, fordi dobbeltbindingen starter på karbon nr. 2. Eldre lærebøker skriver det samme stoffet som 2-buten.</p>"
+        "html": "<p>Et organisk navn er en oppskrift på strukturen: kan du reglene, kan du gå begge veier mellom navn og strukturformel. Bygg navnet i fire steg.</p><p><strong>1. Finn den lengste sammenhengende karbonkjeden.</strong> Den kalles hovedkjeden, og antall karbon i den gir stammen: <strong>met-</strong> (1), <strong>et-</strong> (2), <strong>prop-</strong> (3), <strong>but-</strong> (4), <strong>pent-</strong> (5), <strong>heks-</strong> (6), <strong>hept-</strong> (7), <strong>okt-</strong> (8), <strong>non-</strong> (9), <strong>dek-</strong> (10). Husk at hovedkjeden ikke behøver å være den som er tegnet vannrett — den kan svinge rundt et hjørne.</p><p><strong>2. Velg endelse</strong> etter hva molekylet inneholder: <em>-an</em> for bare enkeltbindinger, <em>-en</em> for dobbeltbinding, <em>-yn</em> for trippelbinding, eller endelsen til den funksjonelle gruppa (<em>-ol</em>, <em>-al</em>, <em>-on</em>, <em>-syre</em>).</p><p><strong>3. Nummerer karbonatomene i hovedkjeden</strong> fra den enden som gir lavest tall. Den funksjonelle gruppa og dobbeltbindingen har førsteprioritet; er det bare sidegrupper, skal de få lavest mulige numre. I karboksylsyrer og aldehyder er karbonet i gruppa alltid nr. 1, så der trenger du ikke skrive tallet.</p><p><strong>4. Sett sidegruppene foran som prefiks</strong>, hver med sitt nummer: metyl ($\\ce{-CH3}$), etyl ($\\ce{-C2H5}$), propyl ($\\ce{-C3H7}$). Flere like grupper samles med di-, tri- og tetra-, og prefiksene ordnes alfabetisk (<em>e</em>tyl før <em>m</em>etyl). Tall skilles fra tall med komma og fra bokstav med bindestrek.</p><p>To eksempler: $\\ce{CH3-CH(CH3)-CH(C2H5)-CH2-CH3}$ har hovedkjede på fem karbon, metyl på nr. 2 og etyl på nr. 3, og heter <strong>3-etyl-2-metylpentan</strong>. Og $\\ce{CH3-CH=CH-CH3}$ heter <strong>but-2-en</strong>, fordi dobbeltbindingen starter på karbon nr. 2. Eldre lærebøker skriver det samme stoffet som 2-buten.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Fra struktur til navn i fire steg",
+          "forklaring": "Legg merke til at nummereringen kommer etter at endelsen er valgt: den funksjonelle gruppa og dobbeltbindingen har førsteprioritet og bestemmer hvilken ende du starter i, og sidegruppene må ta til takke med tallene som blir igjen.",
+          "steg": [
+            {
+              "tekst": "Finn den lengste karbonkjeden",
+              "note": "den gir stammen: prop-, but-"
+            },
+            {
+              "tekst": "Velg endelse etter innholdet",
+              "note": "-an, -en, -yn, -ol, -syre"
+            },
+            {
+              "tekst": "Nummerer fra enden som gir lavest tall",
+              "note": "gruppa har førsteprioritet"
+            },
+            {
+              "tekst": "Sett sidegruppene foran med nummer",
+              "note": "alfabetisk: etyl før metyl"
+            }
+          ]
+        }
       },
       {
         "tittel": "Funksjonelle grupper",
@@ -50,11 +135,56 @@
       },
       {
         "tittel": "Isomeri",
-        "html": "<p><strong>Isomerer</strong> er stoffer med samme molekylformel, men ulik struktur — og dermed ulike egenskaper. Antallet vokser fort: $\\ce{C4H10}$ har 2 isomerer, $\\ce{C5H12}$ har 3 og $\\ce{C6H14}$ har 5.</p><p><strong>Strukturisomeri</strong> kommer i tre varianter:</p><ul><li><strong>Kjedeisomeri</strong> — kjeden er forgrenet på ulike måter, som pentan og 2-metylbutan.</li><li><strong>Stillingsisomeri</strong> — den funksjonelle gruppa eller dobbeltbindingen sitter på ulike karbonatomer, som propan-1-ol og propan-2-ol, eller but-1-en og but-2-en.</li><li><strong>Funksjonsgruppeisomeri</strong> — stoffene hører til ulike stoffklasser. $\\ce{C2H6O}$ kan være etanol (alkohol, koker ved 78 °C) eller dimetyleter (koker ved -24 °C).</li></ul><p>En felle du bør kjenne: to tegninger som ser ulike ut, kan vise det samme molekylet. Enkeltbindinger roterer fritt, og hele molekylet kan snus. Sikreste kontroll er å navngi begge — samme navn betyr samme stoff.</p><p><strong>Cis-trans-isomeri</strong> (geometrisk isomeri) skyldes at en dobbeltbinding <em>ikke</em> kan rotere. Da blir det forskjell på om gruppene peker samme vei eller motsatt vei:</p><ul><li><strong>cis</strong> — like grupper på samme side av dobbeltbindingen</li><li><strong>trans</strong> — like grupper på motsatt side</li></ul><p>Betingelsen er at hvert av de to dobbeltbindingskarbonene har <strong>to ulike</strong> grupper. But-2-en, $\\ce{CH3-CH=CH-CH3}$, oppfyller kravet: hvert dobbeltbindingskarbon har én $\\ce{H}$ og én $\\ce{CH3}$. But-1-en gjør det ikke, for der har det første karbonet to hydrogen. Og forskjellen er reell: cis-but-2-en koker ved 4 °C, trans-but-2-en ved 1 °C.</p>"
+        "html": "<p><strong>Isomerer</strong> er stoffer med samme molekylformel, men ulik struktur — og dermed ulike egenskaper. Antallet vokser fort: $\\ce{C4H10}$ har 2 isomerer, $\\ce{C5H12}$ har 3 og $\\ce{C6H14}$ har 5.</p><p><strong>Strukturisomeri</strong> kommer i tre varianter:</p><ul><li><strong>Kjedeisomeri</strong> — kjeden er forgrenet på ulike måter, som pentan og 2-metylbutan.</li><li><strong>Stillingsisomeri</strong> — den funksjonelle gruppa eller dobbeltbindingen sitter på ulike karbonatomer, som propan-1-ol og propan-2-ol, eller but-1-en og but-2-en.</li><li><strong>Funksjonsgruppeisomeri</strong> — stoffene hører til ulike stoffklasser. $\\ce{C2H6O}$ kan være etanol (alkohol, koker ved 78 °C) eller dimetyleter (koker ved -24 °C).</li></ul><p>En felle du bør kjenne: to tegninger som ser ulike ut, kan vise det samme molekylet. Enkeltbindinger roterer fritt, og hele molekylet kan snus. Sikreste kontroll er å navngi begge — samme navn betyr samme stoff.</p><p><strong>Cis-trans-isomeri</strong> (geometrisk isomeri) skyldes at en dobbeltbinding <em>ikke</em> kan rotere. Da blir det forskjell på om gruppene peker samme vei eller motsatt vei:</p><ul><li><strong>cis</strong> — like grupper på samme side av dobbeltbindingen</li><li><strong>trans</strong> — like grupper på motsatt side</li></ul><p>Betingelsen er at hvert av de to dobbeltbindingskarbonene har <strong>to ulike</strong> grupper. But-2-en, $\\ce{CH3-CH=CH-CH3}$, oppfyller kravet: hvert dobbeltbindingskarbon har én $\\ce{H}$ og én $\\ce{CH3}$. But-1-en gjør det ikke, for der har det første karbonet to hydrogen. Og forskjellen er reell: cis-but-2-en koker ved 4 °C, trans-but-2-en ved 1 °C.</p>",
+        "figur": {
+          "type": "stolper",
+          "tittel": "De tre isomerene av C₅H₁₂",
+          "enhet": "kokepunkt (°C)",
+          "forklaring": "Samme molekylformel, men tre ulike stoffer med tre ulike kokepunkt. Jo mer forgrenet molekylet er, desto mer kulerundt blir det og desto mindre flate har det å røre nabomolekylene med — londonkreftene blir svakere, og 2,2-dimetylpropan koker 26 grader lavere enn den rette kjeden.",
+          "data": [
+            {
+              "navn": "pentan",
+              "verdi": 36
+            },
+            {
+              "navn": "2-metylbutan",
+              "verdi": 28
+            },
+            {
+              "navn": "2,2-dimetylpropan",
+              "verdi": 10
+            }
+          ]
+        }
       },
       {
         "tittel": "Substitusjon, addisjon og eliminasjon",
-        "html": "<p><strong>Substitusjon</strong> betyr utbytting: et atom i molekylet byttes ut med et annet. Alkaner er lite reaktive, men med energi fra UV-lys reagerer de med halogener:</p>$$\\ce{CH4 + Cl2 ->[UV] CH3Cl + HCl}$$<p>Kjennetegnet på substitusjon er at det <em>dannes</em> et lite molekyl ($\\ce{HCl}$) samtidig med hovedproduktet, mens antall bindinger i kjeden er uendret.</p><p><strong>Addisjon</strong> betyr påleiring: dobbeltbindingen brytes, og to atomer eller grupper fester seg — ett på hvert av de to karbonatomene. Ingenting spaltes av. Umettede stoffer adderer lett:</p><ul><li>Brom: $\\ce{CH2=CH2 + Br2 -> CH2Br-CH2Br}$</li><li>Hydrogen, med nikkel som katalysator: $\\ce{CH2=CH2 + H2 ->[Ni] CH3-CH3}$</li><li>Vann, med syre som katalysator: $\\ce{CH2=CH2 + H2O ->[H+] CH3-CH2-OH}$</li></ul><p>Den første av disse er laboratorietesten på umettethet: bromvann er brunt, og fargen forsvinner når bromet adderes til dobbeltbindingen. Et alkan avfarger ikke bromvann i mørke.</p><p><strong>Eliminasjon</strong> er det motsatte av addisjon: et lite molekyl spaltes <em>av</em> ett og samme molekyl, og det dannes en dobbeltbinding. Varmer du en alkohol med konsentrert svovelsyre, blir vann eliminert. Det kalles dehydrering:</p>$$\\ce{CH3-CH2-OH ->[H2SO4][varme] CH2=CH2 + H2O}$$<p>Tell atomer og molekyler på hver side, og du kan alltid avgjøre typen: blir ett molekyl til to og det dukker opp en dobbeltbinding, er det eliminasjon. Blir to molekyler til ett og en dobbeltbinding forsvinner, er det addisjon.</p>"
+        "html": "<p><strong>Substitusjon</strong> betyr utbytting: et atom i molekylet byttes ut med et annet. Alkaner er lite reaktive, men med energi fra UV-lys reagerer de med halogener:</p>$$\\ce{CH4 + Cl2 ->[UV] CH3Cl + HCl}$$<p>Kjennetegnet på substitusjon er at det <em>dannes</em> et lite molekyl ($\\ce{HCl}$) samtidig med hovedproduktet, mens antall bindinger i kjeden er uendret.</p><p><strong>Addisjon</strong> betyr påleiring: dobbeltbindingen brytes, og to atomer eller grupper fester seg — ett på hvert av de to karbonatomene. Ingenting spaltes av. Umettede stoffer adderer lett:</p><ul><li>Brom: $\\ce{CH2=CH2 + Br2 -> CH2Br-CH2Br}$</li><li>Hydrogen, med nikkel som katalysator: $\\ce{CH2=CH2 + H2 ->[Ni] CH3-CH3}$</li><li>Vann, med syre som katalysator: $\\ce{CH2=CH2 + H2O ->[H+] CH3-CH2-OH}$</li></ul><p>Den første av disse er laboratorietesten på umettethet: bromvann er brunt, og fargen forsvinner når bromet adderes til dobbeltbindingen. Et alkan avfarger ikke bromvann i mørke.</p><p><strong>Eliminasjon</strong> er det motsatte av addisjon: et lite molekyl spaltes <em>av</em> ett og samme molekyl, og det dannes en dobbeltbinding. Varmer du en alkohol med konsentrert svovelsyre, blir vann eliminert. Det kalles dehydrering:</p>$$\\ce{CH3-CH2-OH ->[H2SO4][varme] CH2=CH2 + H2O}$$<p>Tell atomer og molekyler på hver side, og du kan alltid avgjøre typen: blir ett molekyl til to og det dukker opp en dobbeltbinding, er det eliminasjon. Blir to molekyler til ett og en dobbeltbinding forsvinner, er det addisjon.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Addisjon ned, eliminasjon opp igjen",
+          "forklaring": "Den samme bindingen brytes på vei ned og dannes på vei opp — reaksjonstypene er hverandres motsatte, og det er betingelsene som avgjør hvilken vei det går. Substitusjon passer ikke inn i sløyfa: der er det to molekyler på hver side, og ingen dobbeltbinding er med i spillet.",
+          "steg": [
+            {
+              "tekst": "Eten, CH₂=CH₂",
+              "note": "umettet: dobbeltbinding"
+            },
+            {
+              "tekst": "Addisjon av vann, H⁺",
+              "note": "to molekyler blir ett"
+            },
+            {
+              "tekst": "Etanol, CH₃CH₂OH",
+              "note": "mettet: bare enkeltbindinger"
+            }
+          ],
+          "tilbakekopling": {
+            "fra": 2,
+            "til": 0,
+            "tekst": "eliminasjon: H₂SO₄, varme"
+          }
+        }
       },
       {
         "tittel": "Kondensasjon og hydrolyse",
@@ -65,7 +195,6 @@
         "html": "<p>Den funksjonelle gruppa styrer både kokepunkt og løselighet. Sammenlign etanol $\\ce{CH3CH2OH}$ ($M = 46{,}07$ g/mol, koker ved 78 °C) med propan $\\ce{C3H8}$ ($M = 44{,}10$ g/mol, koker ved -42 °C). Molekylene er nesten like store, men $\\ce{-OH}$-gruppa lar etanolmolekylene danne <strong>hydrogenbindinger</strong> med hverandre, og da kreves det mye mer energi for å rive dem fra hverandre. Karboksylsyrer har både $\\ce{C=O}$ og $\\ce{-OH}$ og danner hydrogenbindinger enda lettere: etansyre koker ved 118 °C.</p><p>Samme gruppe gir vannløselighet. Metanol, etanol og etansyre blandes med vann i alle forhold, fordi $\\ce{-OH}$ danner hydrogenbindinger med vannmolekylene. Men jo lenger den nonpolare karbonkjeden blir, desto dårligere blir løseligheten: pentan-1-ol løses bare litt, oktan-1-ol nesten ikke. Molekylet får et polart «hode» og en lang nonpolar «hale».</p><p><strong>Oksidasjon av alkoholer</strong> er verdt å pugge, og henger direkte sammen med om alkoholen er primær, sekundær eller tertiær:</p><ul><li>Primær alkohol gir først aldehyd, så karboksylsyre: $\\ce{CH3CH2OH ->[O] CH3CHO ->[O] CH3COOH}$</li><li>Sekundær alkohol gir keton: propan-2-ol gir propanon</li><li>Tertiær alkohol oksideres ikke, fordi $\\ce{-OH}$-karbonet ikke har noe hydrogen å gi fra seg</li></ul><p>Det er derfor vin blir sur når flaska står åpen: etanolen oksideres av oksygenet i lufta til etansyre.</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Navnsetting begge veier og isomerer av $\\ce{C5H12}$",
@@ -88,7 +217,6 @@
         "losning": "<p><strong>1) Likning og navn.</strong></p>$$\\ce{CH3COOH + CH3CH2OH <=> CH3COOCH2CH3 + H2O}$$<p>Esteren heter <strong>etyletanoat</strong> (etylacetat). «Etyl» kommer fra alkoholen etanol og skrives først, «etanoat» fra syra etansyre. To molekyler slås sammen til ett, og et vannmolekyl spaltes av — det er en <strong>kondensasjonsreaksjon</strong> (forestring).</p><p><strong>2) Begrensende reaktant.</strong> Etanol er $\\ce{C2H6O}$:</p>$$M = 2 \\cdot 12{,}01 + 6 \\cdot 1{,}008 + 16{,}00 = 24{,}02 + 6{,}048 + 16{,}00 = 46{,}07\\,\\text{g/mol}$$$$n(\\text{etanol}) = \\frac{9{,}20\\,\\text{g}}{46{,}07\\,\\text{g/mol}} = 0{,}1997\\,\\text{mol}$$<p>Etansyre er $\\ce{C2H4O2}$:</p>$$M = 24{,}02 + 4 \\cdot 1{,}008 + 2 \\cdot 16{,}00 = 24{,}02 + 4{,}032 + 32{,}00 = 60{,}05\\,\\text{g/mol}$$$$n(\\text{etansyre}) = \\frac{18{,}0\\,\\text{g}}{60{,}05\\,\\text{g/mol}} = 0{,}2998\\,\\text{mol}$$<p>Likningen krever forholdet 1:1, altså like mange mol av hver. Etanol har færrest mol og er derfor <strong>begrensende</strong>. Overskuddet av etansyre er</p>$$0{,}2998\\,\\text{mol} - 0{,}1997\\,\\text{mol} = 0{,}1001\\,\\text{mol} \\approx 0{,}100\\,\\text{mol}$$<p><strong>3) Teoretisk utbytte.</strong> Esteren er $\\ce{C4H8O2}$:</p>$$M = 4 \\cdot 12{,}01 + 8 \\cdot 1{,}008 + 2 \\cdot 16{,}00 = 48{,}04 + 8{,}064 + 32{,}00 = 88{,}10\\,\\text{g/mol}$$<p>Forholdet mellom etanol og ester er 1:1, så maksimalt kan vi få $0{,}1997$ mol ester:</p>$$m = 0{,}1997\\,\\text{mol} \\cdot 88{,}10\\,\\text{g/mol} = 17{,}6\\,\\text{g}$$<p><strong>4) Prosentvis utbytte.</strong></p>$$\\text{utbytte} = \\frac{12{,}3\\,\\text{g}}{17{,}6\\,\\text{g}} \\cdot 100\\,\\% = 69{,}9\\,\\% \\approx 70\\,\\%$$<p>Hovedgrunnen til at du ikke får 100 %, er at forestring er en <strong>likevektsreaksjon</strong> — pilen går begge veier. Så lenge vannet blir værende i blandingen, hydrolyseres noe av esteren tilbake til syre og alkohol, og reaksjonen stopper før alt er omdannet. Derfor bruker man overskudd av den ene reaktanten (her syra) og fjerner produktet ved destillasjon, for å skyve likevekten mot esteren. I tillegg går det alltid litt tapt ved overføring mellom kolbene.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å navngi molekylet etter kjeden slik den er tegnet, i stedet for å finne den lengste kjeden. «2-etylbutan» finnes ikke — den lengste kjeden er fem karbon, og stoffet heter 3-metylpentan.",
       "Å nummerere fra den enden som gir høyest tall. $\\ce{CH3-CH(CH3)-CH2-CH3}$ er 2-metylbutan, ikke «3-metylbutan», selv om begge beskriver samme molekyl.",
@@ -97,7 +225,6 @@
       "Å blande substitusjon og addisjon. I addisjon forsvinner dobbeltbindingen og ingen atomer spaltes av; i substitusjon byttes et atom ut, og et lite molekyl som $\\ce{HCl}$ dannes i tillegg.",
       "Å bytte om delene i esternavnet og glemme vannet. I etyletanoat kommer «etyl» fra alkoholen og «etanoat» fra syra, og likningen er ikke ferdig før $\\ce{H2O}$ står på produktsiden."
     ],
-
     "tips": [
       "Tegn alltid strukturformelen før du navngir eller regner, og sjekk at hvert karbon har fire bindinger. Da fanger du opp formelfeil før de forplanter seg til molarmassen.",
       "Puggekortet som gir gratis poeng: stammene met-, et-, prop-, but-, pent-, heks-, hept-, okt-, non-, dek- og de seks endelsene -ol, -al, -on, -syre, -oat og -amin.",
@@ -106,77 +233,165 @@
       "Regneoppgavene i organisk kjemi er helt vanlig støkiometri: masse $\\to$ mol $\\to$ molforhold $\\to$ masse. Kontroller til slutt at massen av reaktantene er lik massen av produktene."
     ]
   },
-
   "begreper": [
-    { "begrep": "Mettet hydrokarbon", "forklaring": "Hydrokarbon med bare enkeltbindinger mellom karbonatomene, altså et alkan med formelen $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$." },
-    { "begrep": "Umettet hydrokarbon", "forklaring": "Hydrokarbon med minst én dobbelt- eller trippelbinding, som derfor kan ta opp flere atomer ved addisjon." },
-    { "begrep": "Homolog rekke", "forklaring": "En serie forbindelser i samme stoffklasse der hvert ledd har ett $\\ce{CH2}$ mer enn det forrige, for eksempel metan, etan, propan og butan." },
-    { "begrep": "Alkylgruppe", "forklaring": "En sidegruppe som er et alkan minus ett hydrogen: metyl $\\ce{-CH3}$, etyl $\\ce{-C2H5}$, propyl $\\ce{-C3H7}$." },
-    { "begrep": "Funksjonell gruppe", "forklaring": "Gruppe av atomer som gir molekylet bestemte kjemiske egenskaper og bestemmer hvilken stoffklasse det hører til." },
-    { "begrep": "Karbonylgruppe", "forklaring": "Gruppa $\\ce{C=O}$. Sitter den ytterst i kjeden med et hydrogen på seg, er stoffet et aldehyd; sitter den mellom to karbonatomer, er det et keton." },
-    { "begrep": "Isomer", "forklaring": "Forbindelse med samme molekylformel som en annen, men med ulik struktur og derfor ulike fysiske og kjemiske egenskaper." },
-    { "begrep": "Strukturisomeri", "forklaring": "Isomeri som skyldes ulik rekkefølge på atomene: kjedeisomeri, stillingsisomeri eller funksjonsgruppeisomeri." },
-    { "begrep": "Cis-trans-isomeri", "forklaring": "Geometrisk isomeri som oppstår fordi en dobbeltbinding ikke kan rotere. Like grupper på samme side gir cis, på motsatt side trans." },
-    { "begrep": "Primær alkohol", "forklaring": "Alkohol der karbonet med $\\ce{-OH}$ er bundet til bare ett annet karbon. Den oksideres videre til aldehyd og deretter til karboksylsyre." },
-    { "begrep": "Ester", "forklaring": "Forbindelse med gruppa $\\ce{-COO-}$, dannet av en karboksylsyre og en alkohol. Estere har ofte kraftig, behagelig lukt." },
-    { "begrep": "Amin", "forklaring": "Organisk forbindelse der ett eller flere hydrogen i ammoniakk $\\ce{NH3}$ er byttet ut med karbonkjeder. Aminer er basiske." },
-    { "begrep": "Substitusjon", "forklaring": "Reaksjon der et atom eller en gruppe i molekylet byttes ut med et annet, samtidig som et lite molekyl som $\\ce{HCl}$ dannes." },
-    { "begrep": "Addisjon", "forklaring": "Reaksjon der en dobbelt- eller trippelbinding brytes og nye atomer leires på karbonatomene. Ingenting spaltes av." },
-    { "begrep": "Kondensasjon", "forklaring": "Reaksjon der to molekyler bindes sammen til ett større og et lite molekyl, oftest vann, spaltes av. Den motsatte reaksjonen kalles hydrolyse." }
+    {
+      "begrep": "Mettet hydrokarbon",
+      "forklaring": "Hydrokarbon med bare enkeltbindinger mellom karbonatomene, altså et alkan med formelen $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$."
+    },
+    {
+      "begrep": "Umettet hydrokarbon",
+      "forklaring": "Hydrokarbon med minst én dobbelt- eller trippelbinding, som derfor kan ta opp flere atomer ved addisjon."
+    },
+    {
+      "begrep": "Homolog rekke",
+      "forklaring": "En serie forbindelser i samme stoffklasse der hvert ledd har ett $\\ce{CH2}$ mer enn det forrige, for eksempel metan, etan, propan og butan."
+    },
+    {
+      "begrep": "Alkylgruppe",
+      "forklaring": "En sidegruppe som er et alkan minus ett hydrogen: metyl $\\ce{-CH3}$, etyl $\\ce{-C2H5}$, propyl $\\ce{-C3H7}$."
+    },
+    {
+      "begrep": "Funksjonell gruppe",
+      "forklaring": "Gruppe av atomer som gir molekylet bestemte kjemiske egenskaper og bestemmer hvilken stoffklasse det hører til."
+    },
+    {
+      "begrep": "Karbonylgruppe",
+      "forklaring": "Gruppa $\\ce{C=O}$. Sitter den ytterst i kjeden med et hydrogen på seg, er stoffet et aldehyd; sitter den mellom to karbonatomer, er det et keton."
+    },
+    {
+      "begrep": "Isomer",
+      "forklaring": "Forbindelse med samme molekylformel som en annen, men med ulik struktur og derfor ulike fysiske og kjemiske egenskaper."
+    },
+    {
+      "begrep": "Strukturisomeri",
+      "forklaring": "Isomeri som skyldes ulik rekkefølge på atomene: kjedeisomeri, stillingsisomeri eller funksjonsgruppeisomeri."
+    },
+    {
+      "begrep": "Cis-trans-isomeri",
+      "forklaring": "Geometrisk isomeri som oppstår fordi en dobbeltbinding ikke kan rotere. Like grupper på samme side gir cis, på motsatt side trans."
+    },
+    {
+      "begrep": "Primær alkohol",
+      "forklaring": "Alkohol der karbonet med $\\ce{-OH}$ er bundet til bare ett annet karbon. Den oksideres videre til aldehyd og deretter til karboksylsyre."
+    },
+    {
+      "begrep": "Ester",
+      "forklaring": "Forbindelse med gruppa $\\ce{-COO-}$, dannet av en karboksylsyre og en alkohol. Estere har ofte kraftig, behagelig lukt."
+    },
+    {
+      "begrep": "Amin",
+      "forklaring": "Organisk forbindelse der ett eller flere hydrogen i ammoniakk $\\ce{NH3}$ er byttet ut med karbonkjeder. Aminer er basiske."
+    },
+    {
+      "begrep": "Substitusjon",
+      "forklaring": "Reaksjon der et atom eller en gruppe i molekylet byttes ut med et annet, samtidig som et lite molekyl som $\\ce{HCl}$ dannes."
+    },
+    {
+      "begrep": "Addisjon",
+      "forklaring": "Reaksjon der en dobbelt- eller trippelbinding brytes og nye atomer leires på karbonatomene. Ingenting spaltes av."
+    },
+    {
+      "begrep": "Kondensasjon",
+      "forklaring": "Reaksjon der to molekyler bindes sammen til ett større og et lite molekyl, oftest vann, spaltes av. Den motsatte reaksjonen kalles hydrolyse."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hvilken molekylformel har et alkan med seks karbonatomer?",
-      "alternativer": ["$\\ce{C6H6}$", "$\\ce{C6H12}$", "$\\ce{C6H14}$", "$\\ce{C6H10}$"],
+      "alternativer": [
+        "$\\ce{C6H6}$",
+        "$\\ce{C6H12}$",
+        "$\\ce{C6H14}$",
+        "$\\ce{C6H10}$"
+      ],
       "riktig": 2,
       "forklaring": "Alkaner er mettede og følger $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$. Med $n = 6$ blir det $2 \\cdot 6 + 2 = 14$ hydrogen, altså $\\ce{C6H14}$ (heksan). $\\ce{C6H12}$ er den vanligste fella — den formelen har to hydrogen for lite til å være mettet og passer med et alken eller en ring."
     },
     {
       "sporsmal": "Hva heter $\\ce{CH3-CH(CH3)-CH2-CH3}$?",
-      "alternativer": ["2-metylbutan", "3-metylbutan", "2-metylpentan", "2,2-dimetylpropan"],
+      "alternativer": [
+        "2-metylbutan",
+        "3-metylbutan",
+        "2-metylpentan",
+        "2,2-dimetylpropan"
+      ],
       "riktig": 0,
       "forklaring": "Den lengste kjeden har fire karbon, altså butan, og metylgruppa sitter på nr. 2 når du nummererer fra den enden som gir lavest tall. «3-metylbutan» beskriver akkurat samme molekyl, men er nummerert fra feil ende, og er derfor et galt navn. 2-metylpentan har seks karbon i alt, dette har fem."
     },
     {
       "sporsmal": "Hvor mange strukturisomerer finnes med molekylformel $\\ce{C4H10}$?",
-      "alternativer": ["1", "2", "3", "4"],
+      "alternativer": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "riktig": 1,
       "forklaring": "Det finnes to: butan (rett kjede) og 2-metylpropan (forgrenet). Setter du metylgruppa i enden av propankjeden i stedet, forlenger du bare kjeden og får butan igjen — derfor finnes ikke navnet «1-metylpropan» (eller «3-metylpropan»), det beskriver bare butan. Å tro at det er tre kommer nesten alltid av at man teller det samme molekylet to ganger."
     },
     {
       "sporsmal": "Hvilket av stoffene er en karboksylsyre?",
-      "alternativer": ["$\\ce{CH3CH2OH}$", "$\\ce{CH3CHO}$", "$\\ce{CH3COCH3}$", "$\\ce{CH3COOH}$"],
+      "alternativer": [
+        "$\\ce{CH3CH2OH}$",
+        "$\\ce{CH3CHO}$",
+        "$\\ce{CH3COCH3}$",
+        "$\\ce{CH3COOH}$"
+      ],
       "riktig": 3,
       "forklaring": "Karboksylgruppa $\\ce{-COOH}$ har to oksygenatomer på samme karbon, og bare $\\ce{CH3COOH}$ (etansyre) har det. $\\ce{CH3CHO}$ er den mest fristende feilen: det er et aldehyd, og det har bare ett oksygen. $\\ce{CH3COCH3}$ er et keton og $\\ce{CH3CH2OH}$ en alkohol."
     },
     {
       "sporsmal": "Hvilken reaksjonstype er $\\ce{CH2=CH2 + HCl -> CH3-CH2Cl}$?",
-      "alternativer": ["Addisjon", "Substitusjon", "Eliminasjon", "Kondensasjon"],
+      "alternativer": [
+        "Addisjon",
+        "Substitusjon",
+        "Eliminasjon",
+        "Kondensasjon"
+      ],
       "riktig": 0,
       "forklaring": "Dobbeltbindingen brytes, og hydrogen og klor fester seg på hvert sitt karbon. Ingen atomer spaltes av, og to molekyler blir ett — det er definisjonen på addisjon. Substitusjon er fristende fordi $\\ce{HCl}$ er med, men i en substitusjon blir $\\ce{HCl}$ dannet som biprodukt, ikke brukt opp som reaktant."
     },
     {
       "sporsmal": "Hvilken reaksjonstype er $\\ce{CH3-CH2-OH ->[H2SO4][varme] CH2=CH2 + H2O}$?",
-      "alternativer": ["Addisjon", "Substitusjon", "Kondensasjon", "Eliminasjon"],
+      "alternativer": [
+        "Addisjon",
+        "Substitusjon",
+        "Kondensasjon",
+        "Eliminasjon"
+      ],
       "riktig": 3,
       "forklaring": "Ett molekyl blir to, det spaltes av vann, og det dannes en dobbeltbinding. Det er eliminasjon, nærmere bestemt dehydrering. Kondensasjon er det mest fristende feilsvaret siden det også dannes vann der, men i en kondensasjon slås to molekyler sammen til ett større — her går det motsatt vei."
     },
     {
       "sporsmal": "Hvilket av stoffene finnes både som cis- og trans-isomer?",
-      "alternativer": ["2-metylpropen", "but-1-en", "butan", "but-2-en"],
+      "alternativer": [
+        "2-metylpropen",
+        "but-1-en",
+        "butan",
+        "but-2-en"
+      ],
       "riktig": 3,
       "forklaring": "Cis-trans krever en dobbeltbinding som ikke kan rotere, OG to ulike grupper på hvert av de to dobbeltbindingskarbonene. I but-2-en har hvert av dem én $\\ce{H}$ og én $\\ce{CH3}$, så både cis og trans finnes. But-1-en er den vanligste fella: det har dobbeltbinding, men karbon nr. 1 har to hydrogen, og da blir «opp» og «ned» det samme molekylet. Butan har ingen dobbeltbinding i det hele tatt."
     },
     {
       "sporsmal": "Hva får du når propan-2-ol oksideres?",
-      "alternativer": ["Propansyre", "Propanal", "Propanon", "Propen"],
+      "alternativer": [
+        "Propansyre",
+        "Propanal",
+        "Propanon",
+        "Propen"
+      ],
       "riktig": 2,
       "forklaring": "I propan-2-ol sitter $\\ce{-OH}$ på midtkarbonet, som er bundet til to andre karbonatomer — altså en sekundær alkohol, og sekundære alkoholer oksideres til ketoner. Svaret er propanon (aceton). Propanal ville krevd propan-1-ol, som er primær, og en sekundær alkohol kan ikke oksideres videre til karboksylsyre fordi karbonylkarbonet ikke har flere hydrogen å gi fra seg."
     },
     {
       "sporsmal": "Hva dannes når en karboksylsyre reagerer med et amin?",
-      "alternativer": ["En ester og vann", "En alkohol og et alken", "Et amid og vann", "Et keton og hydrogen"],
+      "alternativer": [
+        "En ester og vann",
+        "En alkohol og et alken",
+        "Et amid og vann",
+        "Et keton og hydrogen"
+      ],
       "riktig": 2,
       "forklaring": "Karboksylsyre pluss amin gir et amid, og et vannmolekyl spaltes av — en kondensasjonsreaksjon av samme type som forestring. Det er nettopp denne bindingen som holder aminosyrene sammen i proteiner. «En ester og vann» er det fristende svaret, men estere dannes med en alkohol, altså med en $\\ce{-OH}$-gruppe, ikke med $\\ce{-NH2}$."
     },
@@ -193,7 +408,12 @@
     },
     {
       "sporsmal": "Hva heter esteren $\\ce{CH3CH2COOCH3}$?",
-      "alternativer": ["Etylpropanoat", "Metylpropanoat", "Propylmetanoat", "Metyletanoat"],
+      "alternativer": [
+        "Etylpropanoat",
+        "Metylpropanoat",
+        "Propylmetanoat",
+        "Metyletanoat"
+      ],
       "riktig": 1,
       "forklaring": "Del molekylet ved esterbindingen. Syredelen $\\ce{CH3CH2COO-}$ har tre karbon når du regner med karboksylkarbonet, altså propanoat. Alkoholdelen er bare $\\ce{-CH3}$, altså metyl, og alkyldelen fra alkoholen skrives først: metylpropanoat. «Etylpropanoat» er den klassiske fella — der har du gitt alkoholdelen to karbon, men $\\ce{-OCH3}$ har bare ett. «Metyletanoat» er $\\ce{CH3COOCH3}$, der syredelen har bare to karbon."
     },
@@ -209,23 +429,70 @@
       "forklaring": "Bromet adderes over dobbeltbindingen og bindes inn i et fargeløst dibromid, så den brune fargen forsvinner. Dette er standardtesten på umettethet. Alternativ C og D beskriver alkaner: de reagerer med brom bare ved substitusjon, det krever UV-lys, og først da dannes $\\ce{HBr}$. I en addisjon dannes det ikke noe biprodukt."
     }
   ],
-
   "flashcards": [
-    { "front": "Generelle formler for alkan, alken og alkyn", "bak": "Alkan: $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$ (mettet). Alken: $\\mathrm{C}_{n}\\mathrm{H}_{2n}$ (én dobbeltbinding). Alkyn: $\\mathrm{C}_{n}\\mathrm{H}_{2n-2}$ (én trippelbinding)." },
-    { "front": "Stammene for 1–10 karbonatomer", "bak": "met-, et-, prop-, but-, pent-, heks-, hept-, okt-, non-, dek-" },
-    { "front": "Endelsene til de funksjonelle gruppene", "bak": "-ol alkohol, -al aldehyd, -on keton, -syre karboksylsyre, -oat ester, -amin amin." },
-    { "front": "Hva skiller et aldehyd fra et keton?", "bak": "Begge har karbonylgruppa $\\ce{C=O}$. I aldehydet sitter den ytterst i kjeden med et hydrogen på seg ($\\ce{-CHO}$), i ketonet mellom to karbonatomer ($\\ce{-CO-}$)." },
-    { "front": "Hvordan navngir du en ester?", "bak": "Alkyldelen fra alkoholen først, så syredelen med endelsen -oat. $\\ce{CH3COOCH2CH3}$ = etyletanoat: «etyl» fra etanol, «etanoat» fra etansyre." },
-    { "front": "Hva er en isomer?", "bak": "En forbindelse med samme molekylformel som en annen, men ulik struktur — og dermed ulike egenskaper." },
-    { "front": "De tre typene strukturisomeri", "bak": "Kjedeisomeri (ulik forgrening), stillingsisomeri (gruppa sitter på ulikt karbon) og funksjonsgruppeisomeri (ulik stoffklasse, f.eks. etanol og dimetyleter, begge $\\ce{C2H6O}$)." },
-    { "front": "Når har et alken cis-trans-isomeri?", "bak": "Når hvert av de to dobbeltbindingskarbonene har to ulike grupper. But-2-en har det; but-1-en og 2-metylpropen har det ikke." },
-    { "front": "Substitusjon — definisjon og eksempel", "bak": "Et atom byttes ut med et annet, og et lite molekyl dannes: $\\ce{CH4 + Cl2 ->[UV] CH3Cl + HCl}$" },
-    { "front": "Addisjon — definisjon og eksempel", "bak": "Dobbeltbindingen brytes og nye atomer leires på, uten at noe spaltes av: $\\ce{CH2=CH2 + Br2 -> CH2Br-CH2Br}$" },
-    { "front": "Eliminasjon — definisjon og eksempel", "bak": "Et lite molekyl spaltes av ett molekyl, og det dannes en dobbeltbinding: $\\ce{CH3-CH2-OH ->[H2SO4][varme] CH2=CH2 + H2O}$" },
-    { "front": "Kondensasjon — definisjon og eksempel", "bak": "To molekyler slås sammen til ett større, og vann spaltes av: $\\ce{CH3COOH + CH3CH2OH <=> CH3COOCH2CH3 + H2O}$" },
-    { "front": "Hva er hydrolyse?", "bak": "Den motsatte reaksjonen av kondensasjon: vann spalter det store molekylet. En ester hydrolyseres tilbake til karboksylsyre og alkohol." },
-    { "front": "Hva skjer når alkoholer oksideres?", "bak": "Primær: $\\to$ aldehyd $\\to$ karboksylsyre. Sekundær: $\\to$ keton. Tertiær: oksideres ikke, for $\\ce{-OH}$-karbonet har ikke noe hydrogen å gi fra seg." },
-    { "front": "Hvordan tester du om et hydrokarbon er umettet?", "bak": "Rist stoffet med brunt bromvann. Avfarging betyr at brom adderes til en dobbelt- eller trippelbinding, altså umettet stoff. Alkaner avfarger ikke bromvann i mørke." },
-    { "front": "Isomerene med formel $\\ce{C5H12}$", "bak": "Tre: pentan, 2-metylbutan og 2,2-dimetylpropan." }
+    {
+      "front": "Generelle formler for alkan, alken og alkyn",
+      "bak": "Alkan: $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$ (mettet). Alken: $\\mathrm{C}_{n}\\mathrm{H}_{2n}$ (én dobbeltbinding). Alkyn: $\\mathrm{C}_{n}\\mathrm{H}_{2n-2}$ (én trippelbinding)."
+    },
+    {
+      "front": "Stammene for 1–10 karbonatomer",
+      "bak": "met-, et-, prop-, but-, pent-, heks-, hept-, okt-, non-, dek-"
+    },
+    {
+      "front": "Endelsene til de funksjonelle gruppene",
+      "bak": "-ol alkohol, -al aldehyd, -on keton, -syre karboksylsyre, -oat ester, -amin amin."
+    },
+    {
+      "front": "Hva skiller et aldehyd fra et keton?",
+      "bak": "Begge har karbonylgruppa $\\ce{C=O}$. I aldehydet sitter den ytterst i kjeden med et hydrogen på seg ($\\ce{-CHO}$), i ketonet mellom to karbonatomer ($\\ce{-CO-}$)."
+    },
+    {
+      "front": "Hvordan navngir du en ester?",
+      "bak": "Alkyldelen fra alkoholen først, så syredelen med endelsen -oat. $\\ce{CH3COOCH2CH3}$ = etyletanoat: «etyl» fra etanol, «etanoat» fra etansyre."
+    },
+    {
+      "front": "Hva er en isomer?",
+      "bak": "En forbindelse med samme molekylformel som en annen, men ulik struktur — og dermed ulike egenskaper."
+    },
+    {
+      "front": "De tre typene strukturisomeri",
+      "bak": "Kjedeisomeri (ulik forgrening), stillingsisomeri (gruppa sitter på ulikt karbon) og funksjonsgruppeisomeri (ulik stoffklasse, f.eks. etanol og dimetyleter, begge $\\ce{C2H6O}$)."
+    },
+    {
+      "front": "Når har et alken cis-trans-isomeri?",
+      "bak": "Når hvert av de to dobbeltbindingskarbonene har to ulike grupper. But-2-en har det; but-1-en og 2-metylpropen har det ikke."
+    },
+    {
+      "front": "Substitusjon — definisjon og eksempel",
+      "bak": "Et atom byttes ut med et annet, og et lite molekyl dannes: $\\ce{CH4 + Cl2 ->[UV] CH3Cl + HCl}$"
+    },
+    {
+      "front": "Addisjon — definisjon og eksempel",
+      "bak": "Dobbeltbindingen brytes og nye atomer leires på, uten at noe spaltes av: $\\ce{CH2=CH2 + Br2 -> CH2Br-CH2Br}$"
+    },
+    {
+      "front": "Eliminasjon — definisjon og eksempel",
+      "bak": "Et lite molekyl spaltes av ett molekyl, og det dannes en dobbeltbinding: $\\ce{CH3-CH2-OH ->[H2SO4][varme] CH2=CH2 + H2O}$"
+    },
+    {
+      "front": "Kondensasjon — definisjon og eksempel",
+      "bak": "To molekyler slås sammen til ett større, og vann spaltes av: $\\ce{CH3COOH + CH3CH2OH <=> CH3COOCH2CH3 + H2O}$"
+    },
+    {
+      "front": "Hva er hydrolyse?",
+      "bak": "Den motsatte reaksjonen av kondensasjon: vann spalter det store molekylet. En ester hydrolyseres tilbake til karboksylsyre og alkohol."
+    },
+    {
+      "front": "Hva skjer når alkoholer oksideres?",
+      "bak": "Primær: $\\to$ aldehyd $\\to$ karboksylsyre. Sekundær: $\\to$ keton. Tertiær: oksideres ikke, for $\\ce{-OH}$-karbonet har ikke noe hydrogen å gi fra seg."
+    },
+    {
+      "front": "Hvordan tester du om et hydrokarbon er umettet?",
+      "bak": "Rist stoffet med brunt bromvann. Avfarging betyr at brom adderes til en dobbelt- eller trippelbinding, altså umettet stoff. Alkaner avfarger ikke bromvann i mørke."
+    },
+    {
+      "front": "Isomerene med formel $\\ce{C5H12}$",
+      "bak": "Tre: pentan, 2-metylbutan og 2,2-dimetylpropan."
+    }
   ]
 }

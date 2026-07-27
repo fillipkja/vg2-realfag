@@ -76,16 +76,16 @@
     ],
     "figur": {
       "type": "graf",
-      "tittel": "e^x og ln x er speilbilder om linja y = x",
-      "forklaring": "Punktet (0, 1) på grafen til e^x svarer til (1, 0) på grafen til ln x — koordinatene bytter plass. Der den ene er bratt, er den andre slak, og x-aksen som er asymptote for e^x, er blitt y-aksen for ln x.",
-      "xmin": -2.6,
-      "xmax": 5.8,
-      "ymin": -2.6,
-      "ymax": 4.4,
+      "tittel": "eˣ og ln x er speilbilder om linja y = x",
+      "forklaring": "Punktet (0, 1) på eˣ svarer til (1, 0) på ln x: koordinatene bytter plass når du speiler om den stiplede linja. Aksene bytter rolle i speilingen, og derfor er x-aksen asymptote for eˣ, mens y-aksen er asymptote for ln x.",
+      "xmin": -2.4,
+      "xmax": 5.6,
+      "ymin": -2.4,
+      "ymax": 2.58,
       "kurver": [
         {
           "uttrykk": "exp(x)",
-          "navn": "e^x",
+          "navn": "eˣ",
           "farge": 1
         },
         {
@@ -97,16 +97,16 @@
       "linjer": [
         {
           "fra": [
-            -2.6,
-            -2.6
+            -2.4,
+            -2.4
           ],
           "til": [
-            4.4,
-            4.4
+            2.58,
+            2.58
           ],
           "navn": "y = x",
           "farge": 3,
-          "merkeplass": 0.72
+          "merkeplass": 0.8
         }
       ],
       "punkter": [
@@ -224,11 +224,11 @@
         "figur": {
           "type": "graf",
           "tittel": "Speilingen snur stigningstallet",
-          "forklaring": "Tangenten til x² i (2, 4) er bratt med stigningstall 4, mens speilbildet i (4, 2) er slakt med stigningstall 1/4. Det er stigningstallet i a = 2 som gir svaret, ikke det i selve punktet x = 4.",
+          "forklaring": "Den bratte tangenten til x² i (2, 4) har stigningstall 4, mens speilbildet — den slake tangenten til √x i (4, 2) — har stigningstall 1/4. Det er den deriverte i a = 2 som gir svaret, ikke den i x = 4.",
           "xmin": 0,
           "xmax": 7.2,
           "ymin": 0,
-          "ymax": 6,
+          "ymax": 4.48,
           "kurver": [
             {
               "uttrykk": "x^2",
@@ -248,12 +248,10 @@
                 0
               ],
               "til": [
-                2.5,
-                6
+                2.11,
+                4.44
               ],
-              "navn": "stigning 4",
-              "farge": 1,
-              "merkeplass": 0.97
+              "farge": 1
             },
             {
               "fra": [
@@ -264,9 +262,7 @@
                 7.2,
                 2.8
               ],
-              "navn": "stigning 1/4",
-              "farge": 2,
-              "merkeplass": 0.72
+              "farge": 2
             },
             {
               "fra": [
@@ -274,12 +270,12 @@
                 0
               ],
               "til": [
-                6,
-                6
+                4.4,
+                4.4
               ],
               "navn": "y = x",
               "farge": 3,
-              "merkeplass": 0.9
+              "merkeplass": 0.85
             }
           ],
           "punkter": [

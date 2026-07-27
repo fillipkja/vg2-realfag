@@ -3,7 +3,6 @@
   "nr": 6,
   "tittel": "Likevekter",
   "intro": "Mange kjemiske reaksjoner går ikke til ende, men stopper i en blanding der både reaktanter og produkter er til stede samtidig. Dette kapittelet handler om hvordan du regner på slike likevekter med likevektskonstanten, og hvordan du forutsier hvilken vei en likevekt forskyves når du endrer konsentrasjon, trykk eller temperatur.",
-
   "kompakt": {
     "punkter": [
       "En reversibel reaksjon går begge veier og skrives med dobbeltpil: $\\ce{H2(g) + I2(g) <=> 2HI(g)}$.",
@@ -18,27 +17,118 @@
       "Løselighetsproduktet $K_s$ er likevektskonstanten for et tungtløselig salt som løser seg. For $\\ce{CaF2}$ er $K_s = s(2s)^2 = 4s^3$."
     ],
     "formler": [
-      { "navn": "Likevektskonstanten (massevirkningsloven)", "latex": "a\\text{A} + b\\text{B} \\rightleftharpoons c\\text{C} + d\\text{D} \\quad \\Rightarrow \\quad K = \\frac{[\\text{C}]^{c}\\,[\\text{D}]^{d}}{[\\text{A}]^{a}\\,[\\text{B}]^{b}}" },
-      { "navn": "Reaksjonskvotienten", "latex": "Q = \\frac{[\\text{C}]^{c}\\,[\\text{D}]^{d}}{[\\text{A}]^{a}\\,[\\text{B}]^{b}} \\quad (\\text{konsentrasjonene du faktisk har})" },
-      { "navn": "Retningen på reaksjonen", "latex": "Q \\lt K \\;\\Rightarrow\\; \\text{mot høyre} \\qquad Q = K \\;\\Rightarrow\\; \\text{likevekt} \\qquad Q \\gt K \\;\\Rightarrow\\; \\text{mot venstre}" },
-      { "navn": "Konsentrasjon", "latex": "c = \\frac{n}{V} \\qquad [\\,\\text{mol/L}\\,]" },
-      { "navn": "Hydrogenjodidlikevekten", "latex": "\\ce{H2(g) + I2(g) <=> 2HI(g)} \\quad \\Rightarrow \\quad K = \\frac{[\\ce{HI}]^{2}}{[\\ce{H2}]\\,[\\ce{I2}]}" },
-      { "navn": "Ammoniakklikevekten", "latex": "\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} \\quad \\Rightarrow \\quad K = \\frac{[\\ce{NH3}]^{2}}{[\\ce{N2}]\\,[\\ce{H2}]^{3}}" },
-      { "navn": "Heterogen likevekt (faste stoffer utelates)", "latex": "\\ce{CaCO3(s) <=> CaO(s) + CO2(g)} \\quad \\Rightarrow \\quad K = [\\ce{CO2}]" },
-      { "navn": "Omvendt reaksjon", "latex": "K_{\\text{omvendt}} = \\frac{1}{K}" },
-      { "navn": "Likningen ganget med $n$", "latex": "K_{\\text{ny}} = K^{\\,n}" },
-      { "navn": "Løselighetsproduktet", "latex": "\\ce{BaSO4(s) <=> Ba^2+(aq) + SO4^2-(aq)} \\quad \\Rightarrow \\quad K_s = [\\ce{Ba^2+}]\\,[\\ce{SO4^2-}]" },
-      { "navn": "Løselighet av et $\\ce{AB}$-salt", "latex": "K_s = s^{2} \\quad \\Rightarrow \\quad s = \\sqrt{K_s}" },
-      { "navn": "Løselighet av et $\\ce{AB2}$-salt", "latex": "K_s = s\\,(2s)^{2} = 4s^{3} \\quad \\Rightarrow \\quad s = \\sqrt[3]{\\frac{K_s}{4}}" },
-      { "navn": "Vil det felles ut bunnfall?", "latex": "Q \\gt K_s \\;\\Rightarrow\\; \\text{bunnfall} \\qquad Q \\lt K_s \\;\\Rightarrow\\; \\text{alt blir løst}" }
-    ]
+      {
+        "navn": "Likevektskonstanten (massevirkningsloven)",
+        "latex": "a\\text{A} + b\\text{B} \\rightleftharpoons c\\text{C} + d\\text{D} \\quad \\Rightarrow \\quad K = \\frac{[\\text{C}]^{c}\\,[\\text{D}]^{d}}{[\\text{A}]^{a}\\,[\\text{B}]^{b}}"
+      },
+      {
+        "navn": "Reaksjonskvotienten",
+        "latex": "Q = \\frac{[\\text{C}]^{c}\\,[\\text{D}]^{d}}{[\\text{A}]^{a}\\,[\\text{B}]^{b}} \\quad (\\text{konsentrasjonene du faktisk har})"
+      },
+      {
+        "navn": "Retningen på reaksjonen",
+        "latex": "Q \\lt K \\;\\Rightarrow\\; \\text{mot høyre} \\qquad Q = K \\;\\Rightarrow\\; \\text{likevekt} \\qquad Q \\gt K \\;\\Rightarrow\\; \\text{mot venstre}"
+      },
+      {
+        "navn": "Konsentrasjon",
+        "latex": "c = \\frac{n}{V} \\qquad [\\,\\text{mol/L}\\,]"
+      },
+      {
+        "navn": "Hydrogenjodidlikevekten",
+        "latex": "\\ce{H2(g) + I2(g) <=> 2HI(g)} \\quad \\Rightarrow \\quad K = \\frac{[\\ce{HI}]^{2}}{[\\ce{H2}]\\,[\\ce{I2}]}"
+      },
+      {
+        "navn": "Ammoniakklikevekten",
+        "latex": "\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} \\quad \\Rightarrow \\quad K = \\frac{[\\ce{NH3}]^{2}}{[\\ce{N2}]\\,[\\ce{H2}]^{3}}"
+      },
+      {
+        "navn": "Heterogen likevekt (faste stoffer utelates)",
+        "latex": "\\ce{CaCO3(s) <=> CaO(s) + CO2(g)} \\quad \\Rightarrow \\quad K = [\\ce{CO2}]"
+      },
+      {
+        "navn": "Omvendt reaksjon",
+        "latex": "K_{\\text{omvendt}} = \\frac{1}{K}"
+      },
+      {
+        "navn": "Likningen ganget med $n$",
+        "latex": "K_{\\text{ny}} = K^{\\,n}"
+      },
+      {
+        "navn": "Løselighetsproduktet",
+        "latex": "\\ce{BaSO4(s) <=> Ba^2+(aq) + SO4^2-(aq)} \\quad \\Rightarrow \\quad K_s = [\\ce{Ba^2+}]\\,[\\ce{SO4^2-}]"
+      },
+      {
+        "navn": "Løselighet av et $\\ce{AB}$-salt",
+        "latex": "K_s = s^{2} \\quad \\Rightarrow \\quad s = \\sqrt{K_s}"
+      },
+      {
+        "navn": "Løselighet av et $\\ce{AB2}$-salt",
+        "latex": "K_s = s\\,(2s)^{2} = 4s^{3} \\quad \\Rightarrow \\quad s = \\sqrt[3]{\\frac{K_s}{4}}"
+      },
+      {
+        "navn": "Vil det felles ut bunnfall?",
+        "latex": "Q \\gt K_s \\;\\Rightarrow\\; \\text{bunnfall} \\qquad Q \\lt K_s \\;\\Rightarrow\\; \\text{alt blir løst}"
+      }
+    ],
+    "figur": {
+      "type": "graf",
+      "tittel": "H₂ og I₂ på vei mot likevekt",
+      "forklaring": "Begge kurvene flater ut på samme tid, og ingen av dem ender i null: ved likevekt er både reaktanter og produkt til stede. Platåverdiene er nettopp de som gir K = 1,56² / (0,22 · 0,22) ≈ 50, altså en likevekt som ligger langt mot høyre.",
+      "xmin": 0,
+      "xmax": 8,
+      "ymin": 0,
+      "ymax": 1.8,
+      "xlabel": "tid",
+      "ylabel": "c (mol/L)",
+      "kurver": [
+        {
+          "uttrykk": "1.56-1.56*exp(-0.8*x)",
+          "navn": "[HI] = 1,56",
+          "farge": 1
+        },
+        {
+          "uttrykk": "0.22+0.78*exp(-0.8*x)",
+          "navn": "[H₂] = [I₂] = 0,22",
+          "farge": 2
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
         "tittel": "Reversible reaksjoner og dynamisk likevekt",
-        "html": "<p>De fleste reaksjonene du har møtt før, er skrevet med én pil, som om all reaktant blir brukt opp. I virkeligheten går mange reaksjoner <strong>begge veier</strong>. Vi kaller dem <strong>reversible</strong> og skriver dem med dobbeltpil:</p>$$\\ce{N2O4(g) <=> 2NO2(g)}$$<p>Setter du fargeløs $\\ce{N2O4}$ i en lukket kolbe, spalter noe av den seg til brun $\\ce{NO2}$. Etter en stund slutter fargen å endre seg. Det <em>ser</em> ut som om alt har stanset, men det har det ikke: begge reaksjonene går fortsatt, og de går <strong>like fort</strong>. For hvert $\\ce{N2O4}$-molekyl som spaltes, dannes det et nytt et annet sted i kolben. Dette kalles en <strong>dynamisk likevekt</strong>.</p><p>Kjennetegnene på likevekt er:</p><ul><li>Reaksjonsfarten framover er lik reaksjonsfarten bakover.</li><li>Konsentrasjonene av alle stoffene er konstante — men de er sjelden like store.</li><li>Systemet må være <strong>lukket</strong>. Slipper et produkt ut, blir likevekt aldri nådd.</li></ul><p>Tegner du konsentrasjon mot tid, synker reaktantkurven bratt i starten og flater så ut, mens produktkurven stiger og flater ut på samme tidspunkt. Etter det er begge kurvene vannrette.</p><p>Et viktig poeng: du havner i <em>samme</em> likevektsblanding uansett hvilken side du starter fra. Ved 445 °C gir 1 mol $\\ce{H2}$ og 1 mol $\\ce{I2}$ i en énliters beholder nøyaktig den samme blandingen som 2 mol $\\ce{HI}$ alene i samme beholder. I det første tilfellet går reaksjonen framover, i det andre bakover, men de møtes i samme punkt.</p>"
+        "html": "<p>De fleste reaksjonene du har møtt før, er skrevet med én pil, som om all reaktant blir brukt opp. I virkeligheten går mange reaksjoner <strong>begge veier</strong>. Vi kaller dem <strong>reversible</strong> og skriver dem med dobbeltpil:</p>$$\\ce{N2O4(g) <=> 2NO2(g)}$$<p>Setter du fargeløs $\\ce{N2O4}$ i en lukket kolbe, spalter noe av den seg til brun $\\ce{NO2}$. Etter en stund slutter fargen å endre seg. Det <em>ser</em> ut som om alt har stanset, men det har det ikke: begge reaksjonene går fortsatt, og de går <strong>like fort</strong>. For hvert $\\ce{N2O4}$-molekyl som spaltes, dannes det et nytt et annet sted i kolben. Dette kalles en <strong>dynamisk likevekt</strong>.</p><p>Kjennetegnene på likevekt er:</p><ul><li>Reaksjonsfarten framover er lik reaksjonsfarten bakover.</li><li>Konsentrasjonene av alle stoffene er konstante — men de er sjelden like store.</li><li>Systemet må være <strong>lukket</strong>. Slipper et produkt ut, blir likevekt aldri nådd.</li></ul><p>Tegner du konsentrasjon mot tid, synker reaktantkurven bratt i starten og flater så ut, mens produktkurven stiger og flater ut på samme tidspunkt. Etter det er begge kurvene vannrette.</p><p>Et viktig poeng: du havner i <em>samme</em> likevektsblanding uansett hvilken side du starter fra. Ved 445 °C gir 1 mol $\\ce{H2}$ og 1 mol $\\ce{I2}$ i en énliters beholder nøyaktig den samme blandingen som 2 mol $\\ce{HI}$ alene i samme beholder. I det første tilfellet går reaksjonen framover, i det andre bakover, men de møtes i samme punkt.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Farten framover og bakover blir lik",
+          "forklaring": "Den øverste kurven synker fordi reaktantene blir brukt opp, den nederste stiger fordi det kommer mer produkt å reagere med. Begge nærmer seg den stiplede linja — der er farten like stor begge veier, og ingen av dem er null. Det er derfor likevekten er dynamisk.",
+          "xmin": 0,
+          "xmax": 8,
+          "ymin": 0,
+          "ymax": 5.4,
+          "xlabel": "tid",
+          "ylabel": "relativ fart",
+          "kurver": [
+            {
+              "uttrykk": "1+4*exp(-0.3*x)",
+              "navn": "fart framover",
+              "farge": 1
+            },
+            {
+              "uttrykk": "1-exp(-0.3*x)",
+              "navn": "fart bakover",
+              "farge": 2
+            }
+          ],
+          "asymptoter": [
+            {
+              "retning": "horisontal",
+              "verdi": 1,
+              "navn": "like stor fart"
+            }
+          ]
+        }
       },
       {
         "tittel": "Likevektskonstanten",
@@ -50,18 +140,80 @@
       },
       {
         "tittel": "Le Chateliers prinsipp",
-        "html": "<p><strong>Le Chateliers prinsipp:</strong> når du endrer betingelsene for et system som er i likevekt, forskyver likevekten seg slik at endringen delvis motvirkes.</p><p>«Motvirkes» er nøkkelordet. Øker du konsentrasjonen av et stoff, går reaksjonen den veien som bruker opp noe av det. Fjerner du et stoff, går reaksjonen den veien som lager mer av det. Systemet kommer aldri helt tilbake til utgangspunktet — det motvirker bare delvis.</p><p>Prinsippet er kvalitativt: det sier <em>hvilken vei</em>, ikke <em>hvor mye</em>. Vil du ha tall, må du regne med $Q$ og $K$. De to henger sammen: en forstyrrelse gjør at $Q$ ikke lenger er lik $K$, og reaksjonen går den veien som fører $Q$ tilbake til $K$.</p><p>Tre typer endringer forskyver en likevekt:</p><ol><li>Endret konsentrasjon av et av stoffene i $K$-uttrykket.</li><li>Endret volum eller trykk — men bare når det er gasser med i reaksjonen.</li><li>Endret temperatur.</li></ol><p>To endringer som <strong>ikke</strong> forskyver likevekten:</p><ul><li>En <strong>katalysator</strong>. Den øker farten på begge reaksjonene like mye, så likevekten nås raskere, men likevektsblandingen blir helt den samme.</li><li>Tilsatt <strong>inert gass</strong> ved konstant volum, for eksempel argon. Totaltrykket øker, men konsentrasjonen til stoffene i $K$-uttrykket er uendret.</li></ul><p>Legg til slutt merke til at bare temperaturendring forandrer verdien av $K$. De andre endringene flytter blandingen til et nytt punkt som passer med den <em>samme</em> likevektskonstanten.</p>"
+        "html": "<p><strong>Le Chateliers prinsipp:</strong> når du endrer betingelsene for et system som er i likevekt, forskyver likevekten seg slik at endringen delvis motvirkes.</p><p>«Motvirkes» er nøkkelordet. Øker du konsentrasjonen av et stoff, går reaksjonen den veien som bruker opp noe av det. Fjerner du et stoff, går reaksjonen den veien som lager mer av det. Systemet kommer aldri helt tilbake til utgangspunktet — det motvirker bare delvis.</p><p>Prinsippet er kvalitativt: det sier <em>hvilken vei</em>, ikke <em>hvor mye</em>. Vil du ha tall, må du regne med $Q$ og $K$. De to henger sammen: en forstyrrelse gjør at $Q$ ikke lenger er lik $K$, og reaksjonen går den veien som fører $Q$ tilbake til $K$.</p><p>Tre typer endringer forskyver en likevekt:</p><ol><li>Endret konsentrasjon av et av stoffene i $K$-uttrykket.</li><li>Endret volum eller trykk — men bare når det er gasser med i reaksjonen.</li><li>Endret temperatur.</li></ol><p>To endringer som <strong>ikke</strong> forskyver likevekten:</p><ul><li>En <strong>katalysator</strong>. Den øker farten på begge reaksjonene like mye, så likevekten nås raskere, men likevektsblandingen blir helt den samme.</li><li>Tilsatt <strong>inert gass</strong> ved konstant volum, for eksempel argon. Totaltrykket øker, men konsentrasjonen til stoffene i $K$-uttrykket er uendret.</li></ul><p>Legg til slutt merke til at bare temperaturendring forandrer verdien av $K$. De andre endringene flytter blandingen til et nytt punkt som passer med den <em>samme</em> likevektskonstanten.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Fra forstyrrelse til ny likevekt",
+          "forklaring": "Følg sløyfa: forstyrrelsen gjør at Q ikke lenger er lik K, og reaksjonen går den veien som fører Q tilbake til K. Den nye likevekten har samme K som før — med mindre det var temperaturen du endret.",
+          "steg": [
+            {
+              "tekst": "Likevekt: Q = K",
+              "note": "lik fart begge veier"
+            },
+            {
+              "tekst": "Du forstyrrer systemet",
+              "note": "konsentrasjon, volum, temp"
+            },
+            {
+              "tekst": "Q er ikke lenger lik K",
+              "note": "temperatur flytter også K"
+            },
+            {
+              "tekst": "Reaksjonen går mot Q = K",
+              "note": "Q < K: høyre, Q > K: venstre"
+            }
+          ],
+          "tilbakekopling": {
+            "fra": 3,
+            "til": 0,
+            "tekst": "ny likevekt"
+          }
+        }
       },
       {
         "tittel": "Forskyvning ved konsentrasjon, trykk og temperatur",
-        "html": "<p>Vi bruker Haber-Bosch-prosessen som gjennomgangseksempel:</p>$$\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} \\qquad \\Delta H = -92\\,\\text{kJ/mol}$$<p><strong>Konsentrasjon.</strong> Tilsetter du mer $\\ce{N2}$, blir nevneren i $Q$ større, så $Q$ blir mindre enn $K$ og likevekten forskyves mot høyre. Fjerner du $\\ce{NH3}$ underveis — i industrien kjøles ammoniakken ut som væske — blir telleren mindre, $Q$ igjen mindre enn $K$, og mer ammoniakk dannes. Det er derfor produktet tappes av kontinuerlig.</p><p><strong>Trykk og volum.</strong> Presser du gassblandingen sammen til halve volumet, dobles alle konsentrasjonene. For å se hvilken vei det slår ut, teller du mol gass på hver side: 4 mol til venstre ($1 + 3$) og 2 mol til høyre. Likevekten forskyves mot den siden med <strong>færrest mol gass</strong>, altså mot ammoniakk, fordi færre gassmolekyler gir lavere trykk. Er antall mol gass likt på begge sider, som i $\\ce{H2(g) + I2(g) <=> 2HI(g)}$, har trykkendring ingen virkning i det hele tatt. Faste stoffer og væsker teller ikke med i opptellingen.</p><p><strong>Temperatur.</strong> Her hjelper det å skrive varmen som et ledd i likningen. Reaksjonen er eksoterm, så varme er et slags «produkt»:</p>$$\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} + 92\\,\\text{kJ}$$<p>Øker du temperaturen, tilfører du noe som står på produktsiden, og likevekten forskyves mot venstre. Samtidig blir $K$ mindre. For en endoterm reaksjon er det omvendt: høyere temperatur gir forskyvning mot høyre og større $K$.</p><p>Det gir industrien et dilemma: lav temperatur gir best utbytte, men da går reaksjonen for sakte. Kompromisset er omkring 400–450 °C, høyt trykk (om lag 200 bar) og en jernkatalysator.</p>"
+        "html": "<p>Vi bruker Haber-Bosch-prosessen som gjennomgangseksempel:</p>$$\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} \\qquad \\Delta H = -92\\,\\text{kJ/mol}$$<p><strong>Konsentrasjon.</strong> Tilsetter du mer $\\ce{N2}$, blir nevneren i $Q$ større, så $Q$ blir mindre enn $K$ og likevekten forskyves mot høyre. Fjerner du $\\ce{NH3}$ underveis — i industrien kjøles ammoniakken ut som væske — blir telleren mindre, $Q$ igjen mindre enn $K$, og mer ammoniakk dannes. Det er derfor produktet tappes av kontinuerlig.</p><p><strong>Trykk og volum.</strong> Presser du gassblandingen sammen til halve volumet, dobles alle konsentrasjonene. For å se hvilken vei det slår ut, teller du mol gass på hver side: 4 mol til venstre ($1 + 3$) og 2 mol til høyre. Likevekten forskyves mot den siden med <strong>færrest mol gass</strong>, altså mot ammoniakk, fordi færre gassmolekyler gir lavere trykk. Er antall mol gass likt på begge sider, som i $\\ce{H2(g) + I2(g) <=> 2HI(g)}$, har trykkendring ingen virkning i det hele tatt. Faste stoffer og væsker teller ikke med i opptellingen.</p><p><strong>Temperatur.</strong> Her hjelper det å skrive varmen som et ledd i likningen. Reaksjonen er eksoterm, så varme er et slags «produkt»:</p>$$\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} + 92\\,\\text{kJ}$$<p>Øker du temperaturen, tilfører du noe som står på produktsiden, og likevekten forskyves mot venstre. Samtidig blir $K$ mindre. For en endoterm reaksjon er det omvendt: høyere temperatur gir forskyvning mot høyre og større $K$.</p><p>Det gir industrien et dilemma: lav temperatur gir best utbytte, men da går reaksjonen for sakte. Kompromisset er omkring 400–450 °C, høyt trykk (om lag 200 bar) og en jernkatalysator.</p>",
+        "figur": {
+          "type": "nivaaer",
+          "tittel": "Entalpidiagram for ammoniakksyntesen",
+          "enhet": "H (kJ/mol)",
+          "desimaler": 0,
+          "forklaring": "Pila ned er reaksjonen framover: den frigjør 92 kJ per mol N₂ som reagerer. Pila opp er den motsatte veien, og den krever like mye energi. Varmer du opp blandingen, er det den energikrevende veien som får hjelp — likevekten forskyves mot venstre, og K blir mindre.",
+          "nivaaer": [
+            {
+              "verdi": 0,
+              "navn": "N₂(g) + 3H₂(g)"
+            },
+            {
+              "verdi": -92,
+              "navn": "2NH₃(g)",
+              "grunn": true
+            }
+          ],
+          "overganger": [
+            {
+              "fra": 0,
+              "til": 1,
+              "navn": "−92 kJ",
+              "farge": 1,
+              "x": 0
+            },
+            {
+              "fra": 1,
+              "til": 0,
+              "navn": "+92 kJ",
+              "farge": 2,
+              "x": 2
+            }
+          ]
+        }
       },
       {
         "tittel": "Løselighetslikevekter",
         "html": "<p>Selv «uløselige» salter løser seg litt. Legger du fast $\\ce{BaSO4}$ i vann, går noen ioner i løsning, samtidig som andre felles ut igjen. Etter en stund er farten like stor begge veier, og du har en <strong>mettet løsning</strong> i likevekt med bunnfallet:</p>$$\\ce{BaSO4(s) <=> Ba^2+(aq) + SO4^2-(aq)}$$<p>Det faste stoffet skal ikke med i uttrykket, så bare ionene står igjen. Denne likevektskonstanten kalles <strong>løselighetsproduktet</strong>. Her skriver vi den $K_s$, men i tabeller finner du den ofte som $K_{sp}$:</p>$$K_s = [\\ce{Ba^2+}] \\cdot [\\ce{SO4^2-}]$$<p><strong>Løseligheten</strong> $s$ er hvor mange mol salt som løser seg per liter. For et salt av typen $\\ce{AB}$ blir $[\\ce{Ba^2+}] = [\\ce{SO4^2-}] = s$, altså $K_s = s^2$ og $s = \\sqrt{K_s}$. Men støkiometrien må følges nøye. For $\\ce{CaF2}$ gir hver formelenhet <em>to</em> fluoridioner, og da må 2-en både stå som faktor og kvadreres:</p>$$K_s = [\\ce{Ca^2+}] \\cdot [\\ce{F-}]^2 = s \\cdot (2s)^2 = 4s^3$$<p>$K_s$ brukes til to ting. Det ene er å regne ut løselighet, som over. Det andre er å avgjøre om et <strong>bunnfall</strong> dannes når du blander to løsninger: regn ut ioneproduktet $Q$ med konsentrasjonene rett etter blanding. Er $Q$ større enn $K_s$, felles det ut bunnfall til $Q = K_s$. Er $Q$ mindre enn $K_s$, blir alt liggende i løsning.</p><p>Til slutt <strong>fellesioneffekten</strong>: tilfører du et av ionene fra en annen kilde, forskyves likevekten mot venstre etter Le Chatelier, og saltet blir mindre løselig. $K_s$ er fortsatt den samme — det er løseligheten som synker.</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Finne $K$ fra likevektsmålinger",
@@ -84,7 +236,6 @@
         "losning": "<p><strong>a)</strong> Kall løseligheten $s$ (i mol/L). Hver formelenhet som løser seg, gir ett $\\ce{Ca^2+}$-ion og to $\\ce{F-}$-ioner:</p>$$[\\ce{Ca^2+}] = s \\qquad [\\ce{F-}] = 2s$$<p>Sett inn i løselighetsproduktet. Her er det lett å gå i fella: 2-en står både som faktor og skal kvadreres:</p>$$K_s = [\\ce{Ca^2+}] \\cdot [\\ce{F-}]^2 = s \\cdot (2s)^2 = s \\cdot 4s^2 = 4s^3$$$$4s^3 = 3{,}9 \\cdot 10^{-11} \\qquad \\Rightarrow \\qquad s^3 = 9{,}75 \\cdot 10^{-12}$$<p>Nå tar vi tredjerota. Siden $\\sqrt[3]{10^{-12}} = 10^{-4}$ og $\\sqrt[3]{9{,}75} = 2{,}14$, blir</p>$$s = 2{,}14 \\cdot 10^{-4}\\,\\text{mol/L} \\approx 2{,}1 \\cdot 10^{-4}\\,\\text{mol/L}$$<p>Kontroll: $4 \\cdot (2{,}14 \\cdot 10^{-4})^3 = 4 \\cdot 9{,}8 \\cdot 10^{-12} = 3{,}9 \\cdot 10^{-11}$. Stemmer.</p><p>Om til masse per liter med $m = n \\cdot M$:</p>$$2{,}14 \\cdot 10^{-4}\\,\\text{mol/L} \\cdot 78{,}1\\,\\text{g/mol} = 1{,}67 \\cdot 10^{-2}\\,\\text{g/L} \\approx 17\\,\\text{mg/L}$$<p><strong>b)</strong> $\\ce{NaF}$ er et lettløselig salt som er fullstendig oppløst, så det bidrar med $[\\ce{F-}] = 0{,}10$ mol/L. I tillegg kommer $2s$ fra kalsiumfluoridet, men vi vet fra a) at $s$ er svært liten, så vi antar</p>$$[\\ce{F-}] = 0{,}10 + 2s \\approx 0{,}10\\,\\text{mol/L}$$<p>Kalsiumionene kommer bare fra $\\ce{CaF2}$, så $[\\ce{Ca^2+}] = s$ som før:</p>$$K_s = s \\cdot (0{,}10)^2 = s \\cdot 1{,}0 \\cdot 10^{-2} = 3{,}9 \\cdot 10^{-11}$$$$s = \\frac{3{,}9 \\cdot 10^{-11}}{1{,}0 \\cdot 10^{-2}} = 3{,}9 \\cdot 10^{-9}\\,\\text{mol/L}$$<p>Sjekk antagelsen: $2s = 7{,}8 \\cdot 10^{-9}$ mol/L, som er forsvinnende lite mot $0{,}10$ mol/L. Antagelsen holder.</p><p><strong>Tolkning.</strong> Løseligheten har sunket fra $2{,}14 \\cdot 10^{-4}$ til $3{,}9 \\cdot 10^{-9}$ mol/L, altså omtrent $55\\,000$ ganger. Dette er <strong>fellesioneffekten</strong>: de ekstra fluoridionene forskyver likevekten mot venstre. Verdien av $K_s$ er akkurat den samme — det er løseligheten som blir mindre.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å snu brøken i $K$-uttrykket. Produktene skal alltid i telleren og reaktantene i nevneren; snur du, får du $\\frac{1}{K}$ i stedet for $K$.",
       "Å bruke koeffisientene som faktorer i stedet for eksponenter. For $\\ce{2HI}$ skal det stå $[\\ce{HI}]^2$, ikke $2[\\ce{HI}]$.",
@@ -93,7 +244,6 @@
       "Å tro at $K$ endrer seg når du tilsetter mer reaktant, øker trykket eller putter inn en katalysator. Bare temperaturendring endrer $K$.",
       "Å glemme støkiometrien i løselighetsproduktet. For $\\ce{CaF2}$ er $K_s = s(2s)^2 = 4s^3$, ikke $s^2$ eller $s^3$."
     ],
-
     "tips": [
       "Sett alltid opp tabellen start–endring–likevekt, også når oppgaven ser enkel ut. Skriv endringene med koeffisienten foran $x$: $-x$, $-3x$, $+2x$. Da unngår du de fleste feilene i kapittelet.",
       "Er begge sider av likevektsuttrykket kvadrater — like koeffisienter og like startkonsentrasjoner — kan du ta kvadratrota av hele likningen i stedet for å løse en andregradslikning. Det sparer mye tid på prøve uten hjelpemidler.",
@@ -102,25 +252,68 @@
       "$K_s$-oppgaver spør ofte om løselighet i g/L eller mg/L. Regn alltid ut $s$ i mol/L først, og gang med den molare massen helt til slutt."
     ]
   },
-
   "begreper": [
-    { "begrep": "Reversibel reaksjon", "forklaring": "En reaksjon som kan gå både framover og bakover. Skrives med dobbeltpil, for eksempel $\\ce{N2O4(g) <=> 2NO2(g)}$." },
-    { "begrep": "Dynamisk likevekt", "forklaring": "Tilstanden der reaksjonsfarten framover er lik farten bakover, slik at konsentrasjonene er konstante selv om begge reaksjonene fortsetter." },
-    { "begrep": "Lukket system", "forklaring": "Et system der stoff ikke slipper inn eller ut. Det er en forutsetning for at en likevekt skal kunne oppstå." },
-    { "begrep": "Likevektsblanding", "forklaring": "Blandingen av reaktanter og produkter slik den er ved likevekt, med de konsentrasjonene som gjør at $Q = K$." },
-    { "begrep": "Likevektskonstanten $K$", "forklaring": "Tallet du får ved å sette likevektskonsentrasjonene i mol/L inn i produktene delt på reaktantene, med koeffisientene som eksponenter. Avhenger bare av temperaturen." },
-    { "begrep": "Massevirkningsloven", "forklaring": "Loven som sier at brøken $\\frac{[\\text{C}]^c[\\text{D}]^d}{[\\text{A}]^a[\\text{B}]^b}$ har en fast verdi $K$ ved likevekt for en gitt temperatur." },
-    { "begrep": "Reaksjonskvotienten $Q$", "forklaring": "Samme brøk som $K$, men regnet ut med de konsentrasjonene blandingen faktisk har. Sammenligningen mellom $Q$ og $K$ gir reaksjonsretningen." },
-    { "begrep": "Homogen likevekt", "forklaring": "En likevekt der alle stoffene er i samme fase, for eksempel bare gasser eller bare stoffer løst i vann." },
-    { "begrep": "Heterogen likevekt", "forklaring": "En likevekt med stoffer i flere faser. Faste stoffer og rene væsker tas ikke med i $K$-uttrykket." },
-    { "begrep": "Le Chateliers prinsipp", "forklaring": "Endrer du betingelsene for et system i likevekt, forskyves likevekten slik at endringen delvis motvirkes." },
-    { "begrep": "Likevektsforskyvning", "forklaring": "At likevektsblandingen flytter seg mot høyre eller venstre til $Q$ igjen er lik $K$, fordi noe ble endret." },
-    { "begrep": "Katalysator", "forklaring": "Et stoff som øker farten på både reaksjonen framover og reaksjonen bakover like mye. Likevekten nås raskere, men likevektsblandingen blir uendret." },
-    { "begrep": "Mettet løsning", "forklaring": "En løsning som inneholder så mye oppløst stoff som mulig ved den temperaturen, og som er i likevekt med et bunnfall av stoffet." },
-    { "begrep": "Løselighetsproduktet $K_s$", "forklaring": "Likevektskonstanten for et tungtløselig salt som løser seg i vann, altså produktet av ionekonsentrasjonene opphøyd i koeffisientene sine." },
-    { "begrep": "Fellesioneffekten", "forklaring": "At et tungtløselig salt blir mindre løselig når løsningen fra før inneholder ett av ionene saltet består av. $K_s$ er uendret, men løseligheten synker." }
+    {
+      "begrep": "Reversibel reaksjon",
+      "forklaring": "En reaksjon som kan gå både framover og bakover. Skrives med dobbeltpil, for eksempel $\\ce{N2O4(g) <=> 2NO2(g)}$."
+    },
+    {
+      "begrep": "Dynamisk likevekt",
+      "forklaring": "Tilstanden der reaksjonsfarten framover er lik farten bakover, slik at konsentrasjonene er konstante selv om begge reaksjonene fortsetter."
+    },
+    {
+      "begrep": "Lukket system",
+      "forklaring": "Et system der stoff ikke slipper inn eller ut. Det er en forutsetning for at en likevekt skal kunne oppstå."
+    },
+    {
+      "begrep": "Likevektsblanding",
+      "forklaring": "Blandingen av reaktanter og produkter slik den er ved likevekt, med de konsentrasjonene som gjør at $Q = K$."
+    },
+    {
+      "begrep": "Likevektskonstanten $K$",
+      "forklaring": "Tallet du får ved å sette likevektskonsentrasjonene i mol/L inn i produktene delt på reaktantene, med koeffisientene som eksponenter. Avhenger bare av temperaturen."
+    },
+    {
+      "begrep": "Massevirkningsloven",
+      "forklaring": "Loven som sier at brøken $\\frac{[\\text{C}]^c[\\text{D}]^d}{[\\text{A}]^a[\\text{B}]^b}$ har en fast verdi $K$ ved likevekt for en gitt temperatur."
+    },
+    {
+      "begrep": "Reaksjonskvotienten $Q$",
+      "forklaring": "Samme brøk som $K$, men regnet ut med de konsentrasjonene blandingen faktisk har. Sammenligningen mellom $Q$ og $K$ gir reaksjonsretningen."
+    },
+    {
+      "begrep": "Homogen likevekt",
+      "forklaring": "En likevekt der alle stoffene er i samme fase, for eksempel bare gasser eller bare stoffer løst i vann."
+    },
+    {
+      "begrep": "Heterogen likevekt",
+      "forklaring": "En likevekt med stoffer i flere faser. Faste stoffer og rene væsker tas ikke med i $K$-uttrykket."
+    },
+    {
+      "begrep": "Le Chateliers prinsipp",
+      "forklaring": "Endrer du betingelsene for et system i likevekt, forskyves likevekten slik at endringen delvis motvirkes."
+    },
+    {
+      "begrep": "Likevektsforskyvning",
+      "forklaring": "At likevektsblandingen flytter seg mot høyre eller venstre til $Q$ igjen er lik $K$, fordi noe ble endret."
+    },
+    {
+      "begrep": "Katalysator",
+      "forklaring": "Et stoff som øker farten på både reaksjonen framover og reaksjonen bakover like mye. Likevekten nås raskere, men likevektsblandingen blir uendret."
+    },
+    {
+      "begrep": "Mettet løsning",
+      "forklaring": "En løsning som inneholder så mye oppløst stoff som mulig ved den temperaturen, og som er i likevekt med et bunnfall av stoffet."
+    },
+    {
+      "begrep": "Løselighetsproduktet $K_s$",
+      "forklaring": "Likevektskonstanten for et tungtløselig salt som løser seg i vann, altså produktet av ionekonsentrasjonene opphøyd i koeffisientene sine."
+    },
+    {
+      "begrep": "Fellesioneffekten",
+      "forklaring": "At et tungtløselig salt blir mindre løselig når løsningen fra før inneholder ett av ionene saltet består av. $K_s$ er uendret, men løseligheten synker."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hva kjennetegner en dynamisk likevekt?",
@@ -201,7 +394,12 @@
     },
     {
       "sporsmal": "Løseligheten til $\\ce{CaF2}$ er $s$ mol/L. Hvilket uttrykk gir løselighetsproduktet?",
-      "alternativer": ["$K_s = 4s^3$", "$K_s = s^2$", "$K_s = 2s^2$", "$K_s = s^3$"],
+      "alternativer": [
+        "$K_s = 4s^3$",
+        "$K_s = s^2$",
+        "$K_s = 2s^2$",
+        "$K_s = s^3$"
+      ],
       "riktig": 0,
       "forklaring": "Hver formelenhet gir ett $\\ce{Ca^2+}$ og to $\\ce{F-}$, så $[\\ce{Ca^2+}] = s$ og $[\\ce{F-}] = 2s$. Da blir $K_s = s \\cdot (2s)^2 = s \\cdot 4s^2 = 4s^3$. Alternativ D er den vanligste feilen: man kvadrerer fluoridkonsentrasjonen, men glemmer faktoren 2 og regner med $[\\ce{F-}] = s$. Alternativ C får du hvis du tar med 2-en, men glemmer å kvadrere: $s \\cdot 2s = 2s^2$."
     },
@@ -218,7 +416,12 @@
     },
     {
       "sporsmal": "Ved likevekt er $[\\ce{H2}] = [\\ce{I2}] = 0{,}20$ mol/L og $[\\ce{HI}] = 0{,}50$ mol/L for $\\ce{H2(g) + I2(g) <=> 2HI(g)}$. Hva er $K$?",
-      "alternativer": ["$12{,}5$", "$6{,}25$", "$0{,}16$", "$1{,}25$"],
+      "alternativer": [
+        "$12{,}5$",
+        "$6{,}25$",
+        "$0{,}16$",
+        "$1{,}25$"
+      ],
       "riktig": 1,
       "forklaring": "$K = \\frac{[\\ce{HI}]^2}{[\\ce{H2}][\\ce{I2}]} = \\frac{(0{,}50)^2}{0{,}20 \\cdot 0{,}20} = \\frac{0{,}25}{0{,}040} = 6{,}25$. Alternativ A får du hvis du glemmer å kvadrere $[\\ce{HI}]$, og alternativ C er $\\frac{1}{K}$, altså konstanten for den omvendte reaksjonen."
     },
@@ -235,28 +438,80 @@
     },
     {
       "sporsmal": "For $\\ce{A <=> B}$ er $K = 4{,}0$. Hva er likevektskonstanten for $\\ce{B <=> A}$ ved samme temperatur?",
-      "alternativer": ["$-4{,}0$", "$4{,}0$", "$0{,}25$", "$2{,}0$"],
+      "alternativer": [
+        "$-4{,}0$",
+        "$4{,}0$",
+        "$0{,}25$",
+        "$2{,}0$"
+      ],
       "riktig": 2,
       "forklaring": "Snur du likningen, bytter teller og nevner plass, så den nye konstanten er $\\frac{1}{K} = \\frac{1}{4{,}0} = 0{,}25$. Alternativ D er fristende hvis du blander sammen reglene: kvadratrota $\\sqrt{K}$ hører til når du halverer alle koeffisientene, ikke når du snur retningen. En likevektskonstant kan aldri bli negativ, så alternativ A er utelukket."
     }
   ],
-
   "flashcards": [
-    { "front": "Hva er en dynamisk likevekt?", "bak": "En tilstand der reaksjonsfarten framover er lik farten bakover, slik at konsentrasjonene er konstante. Begge reaksjonene går fortsatt." },
-    { "front": "Likevektskonstanten for $a\\text{A} + b\\text{B} \\rightleftharpoons c\\text{C} + d\\text{D}$", "bak": "$K = \\frac{[\\text{C}]^c[\\text{D}]^d}{[\\text{A}]^a[\\text{B}]^b}$ — produkter over reaktanter, koeffisienter som eksponenter, konsentrasjoner i mol/L." },
-    { "front": "Hvilke stoffer tas IKKE med i $K$-uttrykket?", "bak": "Faste stoffer, rene væsker og vann når vannet er løsemiddel. «Konsentrasjonen» deres endrer seg ikke når reaksjonen går." },
-    { "front": "Hva betyr $K \\gg 1$ og $K \\ll 1$?", "bak": "$K \\gg 1$: likevekten ligger langt mot produktene. $K \\ll 1$: den ligger mot reaktantene, og det har knapt skjedd noe." },
-    { "front": "Hva er reaksjonskvotienten $Q$?", "bak": "Samme brøk som $K$, men regnet ut med de konsentrasjonene blandingen faktisk har — også når den ikke er i likevekt." },
-    { "front": "$Q$ mindre enn $K$ — hva skjer?", "bak": "For lite produkt. Reaksjonen går mot høyre til $Q = K$." },
-    { "front": "$Q$ større enn $K$ — hva skjer?", "bak": "For mye produkt. Reaksjonen går mot venstre til $Q = K$." },
-    { "front": "Le Chateliers prinsipp", "bak": "Endrer du betingelsene for et system i likevekt, forskyves likevekten slik at endringen delvis motvirkes." },
-    { "front": "Hva skjer når volumet til en gasslikevekt reduseres?", "bak": "Likevekten forskyves mot siden med færrest mol gass. Er antall mol gass likt på begge sider, skjer ingenting." },
-    { "front": "Eksoterm reaksjon, og du øker temperaturen. Hva skjer?", "bak": "Likevekten forskyves mot venstre (mot reaktantene), og $K$ blir mindre. Tenk på varme som et produkt." },
-    { "front": "Hva er det eneste som endrer verdien av $K$?", "bak": "Temperaturen. Konsentrasjonsendring, trykk, volum og katalysator flytter blandingen, men ikke $K$." },
-    { "front": "Hva gjør en katalysator med en likevekt?", "bak": "Ingenting med likevektsblandingen eller $K$ — den øker begge reaksjonsfartene like mye, så likevekten nås raskere." },
-    { "front": "$K_s$ for $\\ce{BaSO4}$ uttrykt ved løseligheten $s$", "bak": "$K_s = [\\ce{Ba^2+}][\\ce{SO4^2-}] = s \\cdot s = s^2$, altså $s = \\sqrt{K_s}$." },
-    { "front": "$K_s$ for $\\ce{CaF2}$ uttrykt ved løseligheten $s$", "bak": "$K_s = [\\ce{Ca^2+}][\\ce{F-}]^2 = s(2s)^2 = 4s^3$, altså $s = \\sqrt[3]{K_s/4}$." },
-    { "front": "Hva er fellesioneffekten?", "bak": "Et tungtløselig salt blir mindre løselig hvis løsningen fra før inneholder ett av ionene. $K_s$ er uendret; løseligheten synker." },
-    { "front": "Hvordan avgjør du om det felles ut bunnfall?", "bak": "Regn ut ioneproduktet $Q$ med konsentrasjonene rett etter blanding. Er $Q$ større enn $K_s$, felles det ut bunnfall; ellers blir alt løst." }
+    {
+      "front": "Hva er en dynamisk likevekt?",
+      "bak": "En tilstand der reaksjonsfarten framover er lik farten bakover, slik at konsentrasjonene er konstante. Begge reaksjonene går fortsatt."
+    },
+    {
+      "front": "Likevektskonstanten for $a\\text{A} + b\\text{B} \\rightleftharpoons c\\text{C} + d\\text{D}$",
+      "bak": "$K = \\frac{[\\text{C}]^c[\\text{D}]^d}{[\\text{A}]^a[\\text{B}]^b}$ — produkter over reaktanter, koeffisienter som eksponenter, konsentrasjoner i mol/L."
+    },
+    {
+      "front": "Hvilke stoffer tas IKKE med i $K$-uttrykket?",
+      "bak": "Faste stoffer, rene væsker og vann når vannet er løsemiddel. «Konsentrasjonen» deres endrer seg ikke når reaksjonen går."
+    },
+    {
+      "front": "Hva betyr $K \\gg 1$ og $K \\ll 1$?",
+      "bak": "$K \\gg 1$: likevekten ligger langt mot produktene. $K \\ll 1$: den ligger mot reaktantene, og det har knapt skjedd noe."
+    },
+    {
+      "front": "Hva er reaksjonskvotienten $Q$?",
+      "bak": "Samme brøk som $K$, men regnet ut med de konsentrasjonene blandingen faktisk har — også når den ikke er i likevekt."
+    },
+    {
+      "front": "$Q$ mindre enn $K$ — hva skjer?",
+      "bak": "For lite produkt. Reaksjonen går mot høyre til $Q = K$."
+    },
+    {
+      "front": "$Q$ større enn $K$ — hva skjer?",
+      "bak": "For mye produkt. Reaksjonen går mot venstre til $Q = K$."
+    },
+    {
+      "front": "Le Chateliers prinsipp",
+      "bak": "Endrer du betingelsene for et system i likevekt, forskyves likevekten slik at endringen delvis motvirkes."
+    },
+    {
+      "front": "Hva skjer når volumet til en gasslikevekt reduseres?",
+      "bak": "Likevekten forskyves mot siden med færrest mol gass. Er antall mol gass likt på begge sider, skjer ingenting."
+    },
+    {
+      "front": "Eksoterm reaksjon, og du øker temperaturen. Hva skjer?",
+      "bak": "Likevekten forskyves mot venstre (mot reaktantene), og $K$ blir mindre. Tenk på varme som et produkt."
+    },
+    {
+      "front": "Hva er det eneste som endrer verdien av $K$?",
+      "bak": "Temperaturen. Konsentrasjonsendring, trykk, volum og katalysator flytter blandingen, men ikke $K$."
+    },
+    {
+      "front": "Hva gjør en katalysator med en likevekt?",
+      "bak": "Ingenting med likevektsblandingen eller $K$ — den øker begge reaksjonsfartene like mye, så likevekten nås raskere."
+    },
+    {
+      "front": "$K_s$ for $\\ce{BaSO4}$ uttrykt ved løseligheten $s$",
+      "bak": "$K_s = [\\ce{Ba^2+}][\\ce{SO4^2-}] = s \\cdot s = s^2$, altså $s = \\sqrt{K_s}$."
+    },
+    {
+      "front": "$K_s$ for $\\ce{CaF2}$ uttrykt ved løseligheten $s$",
+      "bak": "$K_s = [\\ce{Ca^2+}][\\ce{F-}]^2 = s(2s)^2 = 4s^3$, altså $s = \\sqrt[3]{K_s/4}$."
+    },
+    {
+      "front": "Hva er fellesioneffekten?",
+      "bak": "Et tungtløselig salt blir mindre løselig hvis løsningen fra før inneholder ett av ionene. $K_s$ er uendret; løseligheten synker."
+    },
+    {
+      "front": "Hvordan avgjør du om det felles ut bunnfall?",
+      "bak": "Regn ut ioneproduktet $Q$ med konsentrasjonene rett etter blanding. Er $Q$ større enn $K_s$, felles det ut bunnfall; ellers blir alt løst."
+    }
   ]
 }

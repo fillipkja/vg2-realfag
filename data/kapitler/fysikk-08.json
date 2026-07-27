@@ -3,7 +3,6 @@
   "nr": 8,
   "tittel": "Kjernefysikk",
   "intro": "Kjernefysikk handler om det som skjer inne i atomkjernen: hvorfor noen kjerner er ustabile og sender ut stråling, hvordan halveringstid lar oss regne på nedbrytingen, og hvordan et nesten umerkelig massetap kan frigjøre enorme energimengder gjennom $E = mc^2$. Det samme fagstoffet forklarer både et kjernekraftverk, sola og hvorfor radon i kjelleren er et helseproblem.",
-
   "kompakt": {
     "punkter": [
       "Kjernen består av protoner og nøytroner, med fellesnavnet nukleoner. Atomnummeret $Z$ er antall protoner, massetallet $A$ er antall nukleoner, og antall nøytroner er $N = A - Z$.",
@@ -18,23 +17,101 @@
       "Absorbert dose er $D = \\frac{E}{m}$ i gray, ekvivalent dose er $H = Q \\cdot D$ i sievert. For alfastråling er $Q = 20$, for beta og gamma er $Q = 1$."
     ],
     "formler": [
-      { "navn": "Nuklidenotasjon og nøytrontall", "latex": "{}^{A}_{Z}\\mathrm{X}, \\qquad N = A - Z" },
-      { "navn": "Alfaomdanning", "latex": "{}^{A}_{Z}\\mathrm{X} \\;\\longrightarrow\\; {}^{A-4}_{Z-2}\\mathrm{Y} + {}^{4}_{2}\\mathrm{He}" },
-      { "navn": "Betaminusomdanning", "latex": "{}^{A}_{Z}\\mathrm{X} \\;\\longrightarrow\\; {}^{A}_{Z+1}\\mathrm{Y} + {}^{0}_{-1}\\mathrm{e} + \\overline{\\nu}" },
-      { "navn": "Betaplussomdanning", "latex": "{}^{A}_{Z}\\mathrm{X} \\;\\longrightarrow\\; {}^{A}_{Z-1}\\mathrm{Y} + {}^{0}_{+1}\\mathrm{e} + \\nu" },
-      { "navn": "Halveringstidsloven", "latex": "N = N_0\\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}" },
-      { "navn": "Eksponentiell form", "latex": "N = N_0\\, e^{-\\lambda t}" },
-      { "navn": "Desintegrasjonskonstanten", "latex": "\\lambda = \\frac{\\ln 2}{T_{1/2}}" },
-      { "navn": "Aktivitet", "latex": "A = \\lambda N, \\qquad 1\\,\\text{Bq} = 1\\,\\text{s}^{-1}" },
-      { "navn": "Aktivitet som funksjon av tida", "latex": "A = A_0\\, e^{-\\lambda t} = A_0\\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}" },
-      { "navn": "Massedefekt", "latex": "\\Delta m = Z m_p + N m_n - m_{\\text{kjerne}}" },
-      { "navn": "Einsteins masse-energilov", "latex": "E = mc^2, \\qquad c = 3{,}00\\cdot 10^{8}\\,\\text{m/s}" },
-      { "navn": "Energi frigjort i en kjernereaksjon", "latex": "E = \\Delta m\\, c^2, \\qquad \\Delta m = m_{\\text{før}} - m_{\\text{etter}}" },
-      { "navn": "Omregning av masse og energi", "latex": "1\\,\\text{u} = 1{,}6605\\cdot 10^{-27}\\,\\text{kg} = 931{,}5\\ \\text{MeV}/c^2" },
-      { "navn": "Absorbert og ekvivalent dose", "latex": "D = \\frac{E}{m}\\ \\left[\\text{Gy}\\right], \\qquad H = Q\\cdot D\\ \\left[\\text{Sv}\\right]" }
-    ]
+      {
+        "navn": "Nuklidenotasjon og nøytrontall",
+        "latex": "{}^{A}_{Z}\\mathrm{X}, \\qquad N = A - Z"
+      },
+      {
+        "navn": "Alfaomdanning",
+        "latex": "{}^{A}_{Z}\\mathrm{X} \\;\\longrightarrow\\; {}^{A-4}_{Z-2}\\mathrm{Y} + {}^{4}_{2}\\mathrm{He}"
+      },
+      {
+        "navn": "Betaminusomdanning",
+        "latex": "{}^{A}_{Z}\\mathrm{X} \\;\\longrightarrow\\; {}^{A}_{Z+1}\\mathrm{Y} + {}^{0}_{-1}\\mathrm{e} + \\overline{\\nu}"
+      },
+      {
+        "navn": "Betaplussomdanning",
+        "latex": "{}^{A}_{Z}\\mathrm{X} \\;\\longrightarrow\\; {}^{A}_{Z-1}\\mathrm{Y} + {}^{0}_{+1}\\mathrm{e} + \\nu"
+      },
+      {
+        "navn": "Halveringstidsloven",
+        "latex": "N = N_0\\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}"
+      },
+      {
+        "navn": "Eksponentiell form",
+        "latex": "N = N_0\\, e^{-\\lambda t}"
+      },
+      {
+        "navn": "Desintegrasjonskonstanten",
+        "latex": "\\lambda = \\frac{\\ln 2}{T_{1/2}}"
+      },
+      {
+        "navn": "Aktivitet",
+        "latex": "A = \\lambda N, \\qquad 1\\,\\text{Bq} = 1\\,\\text{s}^{-1}"
+      },
+      {
+        "navn": "Aktivitet som funksjon av tida",
+        "latex": "A = A_0\\, e^{-\\lambda t} = A_0\\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}"
+      },
+      {
+        "navn": "Massedefekt",
+        "latex": "\\Delta m = Z m_p + N m_n - m_{\\text{kjerne}}"
+      },
+      {
+        "navn": "Einsteins masse-energilov",
+        "latex": "E = mc^2, \\qquad c = 3{,}00\\cdot 10^{8}\\,\\text{m/s}"
+      },
+      {
+        "navn": "Energi frigjort i en kjernereaksjon",
+        "latex": "E = \\Delta m\\, c^2, \\qquad \\Delta m = m_{\\text{før}} - m_{\\text{etter}}"
+      },
+      {
+        "navn": "Omregning av masse og energi",
+        "latex": "1\\,\\text{u} = 1{,}6605\\cdot 10^{-27}\\,\\text{kg} = 931{,}5\\ \\text{MeV}/c^2"
+      },
+      {
+        "navn": "Absorbert og ekvivalent dose",
+        "latex": "D = \\frac{E}{m}\\ \\left[\\text{Gy}\\right], \\qquad H = Q\\cdot D\\ \\left[\\text{Sv}\\right]"
+      }
+    ],
+    "figur": {
+      "type": "graf",
+      "tittel": "Halveringskurven",
+      "forklaring": "Se at det står halvparten igjen for hver halveringstid — 50 %, 25 %, 12,5 % — og at kurven flater ut uten å treffe x-aksen: prøven blir aldri helt tom. Aktiviteten følger samme kurve.",
+      "xmin": 0,
+      "xmax": 4.3,
+      "ymin": 0,
+      "ymax": 1.3,
+      "xlabel": "t / T½",
+      "ylabel": "N / N₀",
+      "kurver": [
+        {
+          "uttrykk": "(1/2)^x",
+          "farge": 1
+        }
+      ],
+      "punkter": [
+        {
+          "x": 1,
+          "y": 0.5,
+          "navn": "50 %",
+          "hjelpelinjer": true
+        },
+        {
+          "x": 2,
+          "y": 0.25,
+          "navn": "25 %",
+          "hjelpelinjer": true
+        },
+        {
+          "x": 3,
+          "y": 0.125,
+          "navn": "12,5 %",
+          "hjelpelinjer": true
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -51,18 +128,107 @@
       },
       {
         "tittel": "Masse og energi: massedefekt og bindingsenergi",
-        "html": "<p>Einsteins mest kjente likning sier at masse og energi er to sider av samme sak:</p>$$E = mc^2$$<p>Med $c = 3{,}00\\cdot 10^{8}$ m/s blir $c^2$ et enormt tall, så en forsvinnende liten masse svarer til svært mye energi. Ett gram masse tilsvarer $E = 1{,}0\\cdot 10^{-3}\\ \\text{kg} \\cdot \\left(3{,}00\\cdot 10^{8}\\ \\text{m/s}\\right)^2 = 9{,}0\\cdot 10^{13}\\ \\text{J}$ — mer enn strømforbruket til en norsk bolig gjennom tusen år.</p><p>Veier du nukleonene i en kjerne hver for seg og legger sammen, får du <em>mer</em> masse enn kjernen faktisk har. Differansen kalles <strong>massedefekten</strong>:</p>$$\\Delta m = Z m_p + N m_n - m_{\\text{kjerne}}$$<p>Den «manglende» massen er ikke borte. Den ble frigjort som energi da kjernen ble dannet, og like mye energi må tilføres for å rive kjernen fra hverandre igjen. Denne energien kaller vi <strong>bindingsenergien</strong>, $E_B = \\Delta m\\, c^2$.</p><p>Joule er en upraktisk stor enhet her. Vi bruker i stedet <strong>elektronvolt</strong>, med $1\\ \\text{eV} = 1{,}602\\cdot 10^{-19}\\ \\text{J}$ og dermed $1\\ \\text{MeV} = 1{,}602\\cdot 10^{-13}\\ \\text{J}$. Massene kan regnes om direkte med</p>$$1\\,\\text{u} = 931{,}5\\ \\text{MeV}/c^2$$<p>slik at du bare ganger massedefekten i u med 931,5 og får energien i MeV rett ut.</p><p>Deler vi bindingsenergien på antall nukleoner, får vi <strong>bindingsenergien per nukleon</strong> — et mål på hvor stabil kjernen er. Kurven stiger bratt for de letteste kjernene, topper seg rundt jern-56 med omtrent 8,8 MeV per nukleon, og synker langsomt for de tyngste. Denne kurven forklarer hele neste delkapittel.</p>"
+        "html": "<p>Einsteins mest kjente likning sier at masse og energi er to sider av samme sak:</p>$$E = mc^2$$<p>Med $c = 3{,}00\\cdot 10^{8}$ m/s blir $c^2$ et enormt tall, så en forsvinnende liten masse svarer til svært mye energi. Ett gram masse tilsvarer $E = 1{,}0\\cdot 10^{-3}\\ \\text{kg} \\cdot \\left(3{,}00\\cdot 10^{8}\\ \\text{m/s}\\right)^2 = 9{,}0\\cdot 10^{13}\\ \\text{J}$ — mer enn strømforbruket til en norsk bolig gjennom tusen år.</p><p>Veier du nukleonene i en kjerne hver for seg og legger sammen, får du <em>mer</em> masse enn kjernen faktisk har. Differansen kalles <strong>massedefekten</strong>:</p>$$\\Delta m = Z m_p + N m_n - m_{\\text{kjerne}}$$<p>Den «manglende» massen er ikke borte. Den ble frigjort som energi da kjernen ble dannet, og like mye energi må tilføres for å rive kjernen fra hverandre igjen. Denne energien kaller vi <strong>bindingsenergien</strong>, $E_B = \\Delta m\\, c^2$.</p><p>Joule er en upraktisk stor enhet her. Vi bruker i stedet <strong>elektronvolt</strong>, med $1\\ \\text{eV} = 1{,}602\\cdot 10^{-19}\\ \\text{J}$ og dermed $1\\ \\text{MeV} = 1{,}602\\cdot 10^{-13}\\ \\text{J}$. Massene kan regnes om direkte med</p>$$1\\,\\text{u} = 931{,}5\\ \\text{MeV}/c^2$$<p>slik at du bare ganger massedefekten i u med 931,5 og får energien i MeV rett ut.</p><p>Deler vi bindingsenergien på antall nukleoner, får vi <strong>bindingsenergien per nukleon</strong> — et mål på hvor stabil kjernen er. Kurven stiger bratt for de letteste kjernene, topper seg rundt jern-56 med omtrent 8,8 MeV per nukleon, og synker langsomt for de tyngste. Denne kurven forklarer hele neste delkapittel.</p>",
+        "figur": {
+          "type": "stolper",
+          "tittel": "Bindingsenergi per nukleon",
+          "enhet": "MeV per nukleon",
+          "forklaring": "Toppen ligger ved jern-56: alt til venstre for jern kommer høyere ved å smelte sammen, alt til høyre ved å spalte seg. Legg merke til hvor lavt deuterium ligger — derfor gir fusjon av de letteste kjernene mest energi per nukleon.",
+          "data": [
+            {
+              "navn": "H-2",
+              "verdi": 1.1
+            },
+            {
+              "navn": "He-4",
+              "verdi": 7.1
+            },
+            {
+              "navn": "C-12",
+              "verdi": 7.7
+            },
+            {
+              "navn": "Fe-56",
+              "verdi": 8.8
+            },
+            {
+              "navn": "U-235",
+              "verdi": 7.6
+            }
+          ]
+        }
       },
       {
         "tittel": "Fisjon og fusjon",
-        "html": "<p>Kurven for bindingsenergi per nukleon har toppen ved jern-56. Alle kjernereaksjoner som flytter nukleoner <em>oppover</em> mot denne toppen, frigjør energi — og det kan skje på to måter.</p><p><strong>Fisjon</strong> er spalting av en tung kjerne. Treffes $\\ce{^{235}_{92}U}$ av et langsomt nøytron, deler kjernen seg i to omtrent like store biter, og det slippes fri to eller tre nye nøytroner:</p>$$\\ce{^{235}_{92}U + ^{1}_{0}n -> ^{141}_{56}Ba + ^{92}_{36}Kr + 3 ^{1}_{0}n}$$<p>Hvilke fisjonsprodukter det blir, varierer fra gang til gang, men energien er alltid rundt 200 MeV per kjerne. Siden det kommer ut flere nøytroner enn det gikk inn, kan reaksjonen bli selvforsterkende — en <strong>kjedereaksjon</strong>. I et kjernekraftverk holdes den i sjakk med kontrollstaver som fanger opp overskuddsnøytroner, og med en moderator som bremser nøytronene, fordi langsomme nøytroner lettest blir fanget av uran-235. Ulempen er avfallet: fisjonsproduktene er radioaktive, og noen av dem har halveringstider på tusenvis av år.</p><p><strong>Fusjon</strong> er å slå sammen lette kjerner. Reaksjonen det forskes mest på, bruker deuterium og tritium:</p>$$\\ce{^{2}_{1}H + ^{3}_{1}H -> ^{4}_{2}He + ^{1}_{0}n}$$<p>Masseforskjellen mellom før og etter er $\\Delta m = 5{,}03015\\ \\text{u} - 5{,}01127\\ \\text{u} = 0{,}01888\\ \\text{u}$, som gir $0{,}01888 \\cdot 931{,}5\\ \\text{MeV} = 17{,}6\\ \\text{MeV}$. Det er mindre per reaksjon enn ved fisjon, men mye mer <em>per nukleon</em>: rundt 3,5 MeV mot omtrent 0,85 MeV.</p><p>Problemet er at begge kjernene er positive og frastøter hverandre. De må ha enorm fart — altså temperaturer over hundre millioner grader — for å komme nær nok til at den sterke kjernekraften tar over. I sola sørger tyngdekraften for trykket og temperaturen. På jorda er dette fortsatt ikke løst i praksis.</p>"
+        "html": "<p>Kurven for bindingsenergi per nukleon har toppen ved jern-56. Alle kjernereaksjoner som flytter nukleoner <em>oppover</em> mot denne toppen, frigjør energi — og det kan skje på to måter.</p><p><strong>Fisjon</strong> er spalting av en tung kjerne. Treffes $\\ce{^{235}_{92}U}$ av et langsomt nøytron, deler kjernen seg i to omtrent like store biter, og det slippes fri to eller tre nye nøytroner:</p>$$\\ce{^{235}_{92}U + ^{1}_{0}n -> ^{141}_{56}Ba + ^{92}_{36}Kr + 3 ^{1}_{0}n}$$<p>Hvilke fisjonsprodukter det blir, varierer fra gang til gang, men energien er alltid rundt 200 MeV per kjerne. Siden det kommer ut flere nøytroner enn det gikk inn, kan reaksjonen bli selvforsterkende — en <strong>kjedereaksjon</strong>. I et kjernekraftverk holdes den i sjakk med kontrollstaver som fanger opp overskuddsnøytroner, og med en moderator som bremser nøytronene, fordi langsomme nøytroner lettest blir fanget av uran-235. Ulempen er avfallet: fisjonsproduktene er radioaktive, og noen av dem har halveringstider på tusenvis av år.</p><p><strong>Fusjon</strong> er å slå sammen lette kjerner. Reaksjonen det forskes mest på, bruker deuterium og tritium:</p>$$\\ce{^{2}_{1}H + ^{3}_{1}H -> ^{4}_{2}He + ^{1}_{0}n}$$<p>Masseforskjellen mellom før og etter er $\\Delta m = 5{,}03015\\ \\text{u} - 5{,}01127\\ \\text{u} = 0{,}01888\\ \\text{u}$, som gir $0{,}01888 \\cdot 931{,}5\\ \\text{MeV} = 17{,}6\\ \\text{MeV}$. Det er mindre per reaksjon enn ved fisjon, men mye mer <em>per nukleon</em>: rundt 3,5 MeV mot omtrent 0,85 MeV.</p><p>Problemet er at begge kjernene er positive og frastøter hverandre. De må ha enorm fart — altså temperaturer over hundre millioner grader — for å komme nær nok til at den sterke kjernekraften tar over. I sola sørger tyngdekraften for trykket og temperaturen. På jorda er dette fortsatt ikke løst i praksis.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Kjedereaksjonen i uran-235",
+          "forklaring": "Følg nøytronregnskapet: ett nøytron går inn, 2–3 kommer ut, så én fisjon kan tenne flere nye. Kontrollstavene fanger opp overskuddet, slik at sløyfen holdes på ett nytt nøytron per fisjon.",
+          "steg": [
+            {
+              "tekst": "Nøytron treffer U-235",
+              "note": "moderatoren har bremset det"
+            },
+            {
+              "tekst": "Kjernen spaltes",
+              "note": "Ba-141 + Kr-92 + ca. 200 MeV"
+            },
+            {
+              "tekst": "2–3 nye nøytroner frigjøres",
+              "note": "flere ut enn det gikk inn"
+            }
+          ],
+          "tilbakekopling": {
+            "fra": 2,
+            "til": 0,
+            "tekst": "kjedereaksjon"
+          }
+        }
       },
       {
         "tittel": "Stråling, helse og strålevern",
-        "html": "<p>Alfa-, beta- og gammastråling er <strong>ioniserende</strong>: strålingen har nok energi til å slå elektroner løs fra atomer og molekyler. Treffer strålingen DNA-et i en celle, kan cellen dø, slutte å fungere normalt, eller — i verste fall — få en skade som mange år senere gir kreft.</p><p>Hvor mye strålingsenergi kroppen tar opp per kilogram, kalles <strong>absorbert dose</strong>:</p>$$D = \\frac{E}{m}$$<p>Enheten er <strong>gray</strong>, $1\\,\\text{Gy} = 1\\,\\text{J/kg}$. Men like store absorberte doser er ikke like skadelige. Alfastråling ioniserer mye tettere langs sporet sitt, så vi ganger med en <strong>kvalitetsfaktor</strong> $Q$ og får <strong>ekvivalent dose</strong>:</p>$$H = Q \\cdot D$$<p>målt i <strong>sievert</strong> (Sv). For beta-, gamma- og røntgenstråling er $Q = 1$, for nøytroner rundt 10, og for alfastråling $Q = 20$.</p><p>En gjennomsnittsnordmann får om lag 5 mSv i året, og omtrent halvparten kommer fra <strong>radon</strong> i inneluft. Radon-222 er en alfaemitterende edelgass som siver inn fra grunnen; tiltaksgrensen i norske boliger er 100 Bq/m³. Til sammenligning gir et vanlig røntgenbilde av brystkassa rundt 0,02 mSv, en CT-undersøkelse flere millisievert, og yrkesgrensen for strålearbeidere er 20 mSv per år.</p><p>Strålevern bygger på tre enkle grep: <strong>avstand</strong> — dobler du avstanden til en punktkilde, faller doseraten til en firedel, fordi strålingen fordeles over en fire ganger større kuleflate; <strong>tid</strong> — kort eksponering; og <strong>skjerming</strong> — bly eller betong mot gammastråling. Hold dessuten enhetene fra hverandre: becquerel beskriver kilden, sievert beskriver hva strålingen gjør med kroppen.</p>"
+        "html": "<p>Alfa-, beta- og gammastråling er <strong>ioniserende</strong>: strålingen har nok energi til å slå elektroner løs fra atomer og molekyler. Treffer strålingen DNA-et i en celle, kan cellen dø, slutte å fungere normalt, eller — i verste fall — få en skade som mange år senere gir kreft.</p><p>Hvor mye strålingsenergi kroppen tar opp per kilogram, kalles <strong>absorbert dose</strong>:</p>$$D = \\frac{E}{m}$$<p>Enheten er <strong>gray</strong>, $1\\,\\text{Gy} = 1\\,\\text{J/kg}$. Men like store absorberte doser er ikke like skadelige. Alfastråling ioniserer mye tettere langs sporet sitt, så vi ganger med en <strong>kvalitetsfaktor</strong> $Q$ og får <strong>ekvivalent dose</strong>:</p>$$H = Q \\cdot D$$<p>målt i <strong>sievert</strong> (Sv). For beta-, gamma- og røntgenstråling er $Q = 1$, for nøytroner rundt 10, og for alfastråling $Q = 20$.</p><p>En gjennomsnittsnordmann får om lag 5 mSv i året, og omtrent halvparten kommer fra <strong>radon</strong> i inneluft. Radon-222 er en alfaemitterende edelgass som siver inn fra grunnen; tiltaksgrensen i norske boliger er 100 Bq/m³. Til sammenligning gir et vanlig røntgenbilde av brystkassa rundt 0,02 mSv, en CT-undersøkelse flere millisievert, og yrkesgrensen for strålearbeidere er 20 mSv per år.</p><p>Strålevern bygger på tre enkle grep: <strong>avstand</strong> — dobler du avstanden til en punktkilde, faller doseraten til en firedel, fordi strålingen fordeles over en fire ganger større kuleflate; <strong>tid</strong> — kort eksponering; og <strong>skjerming</strong> — bly eller betong mot gammastråling. Hold dessuten enhetene fra hverandre: becquerel beskriver kilden, sievert beskriver hva strålingen gjør med kroppen.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Doseraten avtar med r²",
+          "forklaring": "Doble avstanden, og doseraten faller til en firedel: 1 m gir 1×, 2 m gir ¼× og 4 m gir 1/16×. Derfor er avstand det mest effektive strålevernet — strålingen fordeles over en kuleflate som vokser med r².",
+          "xmin": 0.7,
+          "xmax": 4.6,
+          "ymin": 0,
+          "ymax": 2.2,
+          "xlabel": "r (m)",
+          "ylabel": "doserate",
+          "kurver": [
+            {
+              "uttrykk": "1/x^2",
+              "farge": 1
+            }
+          ],
+          "punkter": [
+            {
+              "x": 1,
+              "y": 1,
+              "navn": "1 m: 1×",
+              "hjelpelinjer": true
+            },
+            {
+              "x": 2,
+              "y": 0.25,
+              "navn": "2 m: ¼×",
+              "hjelpelinjer": true
+            },
+            {
+              "x": 4,
+              "y": 0.0625,
+              "navn": "4 m: 1/16×",
+              "hjelpelinjer": true
+            }
+          ]
+        }
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Bindingsenergien til helium-4",
@@ -85,7 +251,6 @@
         "losning": "<p><strong>1) Absorbert dose.</strong> Definisjonen er energi per masse:</p>$$D = \\frac{E}{m} = \\frac{1{,}4\\cdot 10^{-3}\\ \\text{J}}{70\\ \\text{kg}} = 2{,}0\\cdot 10^{-5}\\ \\text{Gy} = 20\\ \\mu\\text{Gy}$$<p><strong>2) Ekvivalent dose.</strong></p>$$H = Q \\cdot D = 1 \\cdot 2{,}0\\cdot 10^{-5}\\ \\text{Gy} = 2{,}0\\cdot 10^{-5}\\ \\text{Sv} = 0{,}020\\ \\text{mSv}$$<p>Tallverdien er den samme som i gray, siden $Q = 1$, men enheten skifter til sievert. Skriv aldri gray når du mener sievert — det er to ulike størrelser, selv når tallet er likt.</p><p><strong>3) Sammenligning med årsdosen.</strong></p>$$\\frac{5\\ \\text{mSv}}{0{,}020\\ \\text{mSv}} = 250$$<p>Du måtte tatt 250 slike røntgenbilder for å få like stor dose som naturen gir deg gratis på ett år. Det setter risikoen i perspektiv.</p><p><strong>4) Radon i lungene.</strong> Samme energi, men fordelt på 1,0 kg i stedet for 70 kg:</p>$$D = \\frac{1{,}4\\cdot 10^{-3}\\ \\text{J}}{1{,}0\\ \\text{kg}} = 1{,}4\\cdot 10^{-3}\\ \\text{Gy} = 1{,}4\\ \\text{mGy}$$<p>Og alfastråling har kvalitetsfaktor 20:</p>$$H = Q \\cdot D = 20 \\cdot 1{,}4\\cdot 10^{-3}\\ \\text{Gy} = 2{,}8\\cdot 10^{-2}\\ \\text{Sv} = 28\\ \\text{mSv}$$<p>Det er $\\frac{28}{0{,}020} = 1400$ ganger mer enn i punkt 2 — med presis like mye absorbert energi. To ting gjorde forskjellen: energien ble konsentrert i en liten masse, og strålingstypen ioniserer mye tettere. Nettopp derfor er radon innendørs et reelt helseproblem i Norge, mens en alfakilde du holder i hånda er nokså harmløs.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å blande massetall og atomnummer. Antall nøytroner er $N = A - Z$, ikke $A$. I $\\ce{^{238}_{92}U}$ er det 146 nøytroner, ikke 238.",
       "Å tro at betapartikkelen er et av elektronene i elektronskyen. Elektronet dannes i kjernen idet et nøytron blir et proton — det er derfor $Z$ øker med 1 mens $A$ står stille.",
@@ -94,7 +259,6 @@
       "Å sette massedefekten i u rett inn i $E = mc^2$ som om den var i kilogram. Enten gjør du om til kg først, eller du ganger antall u med 931,5 og får svaret i MeV.",
       "Å runde av massene for tidlig. Massedefekten er en differanse mellom nesten like store tall, så alle desimalene må bli med helt til slutt."
     ],
-
     "tips": [
       "Balansekontroll er gratis poeng: i enhver kjernereaksjon skal summen av massetall og summen av atomnummer være like på begge sider. Stemmer det ikke, har du skrevet feil nuklide — sjekk før du regner videre.",
       "Lær begge veier til energien, og bruk dem til å kontrollere hverandre: $\\Delta m$ i kg ganger $c^2$ gir joule, mens $\\Delta m$ i u ganger 931,5 gir MeV. $1\\ \\text{MeV} = 1{,}602\\cdot 10^{-13}$ J binder de to sammen.",
@@ -103,35 +267,88 @@
       "Oppgaver om stråling og strålevern er drøftingsoppgaver. Bruk fagordene bevisst — ioniserende, kvalitetsfaktor, halveringstid, avstand, tid og skjerming — og trekk inn konkrete tall, som at radon står for omtrent halvparten av årsdosen på rundt 5 mSv, og at yrkesgrensen er 20 mSv per år."
     ]
   },
-
   "begreper": [
-    { "begrep": "Nukleon", "forklaring": "Fellesnavn på protoner og nøytroner, altså partiklene som bygger opp atomkjernen." },
-    { "begrep": "Atomnummer (Z)", "forklaring": "Antall protoner i kjernen. Det bestemmer hvilket element atomet er." },
-    { "begrep": "Massetall (A)", "forklaring": "Totalt antall nukleoner i kjernen, altså protoner pluss nøytroner." },
-    { "begrep": "Isotop", "forklaring": "Nuklider av samme element, med samme antall protoner men ulikt antall nøytroner. Samme kjemi, ulik kjernestabilitet." },
-    { "begrep": "Sterk kjernekraft", "forklaring": "Kraften som holder nukleonene sammen. Den er mye kraftigere enn den elektriske frastøtningen, men virker bare over avstander på størrelse med kjernen." },
-    { "begrep": "Massedefekt", "forklaring": "Differansen mellom summen av massene til de frie nukleonene og massen til den ferdige kjernen." },
-    { "begrep": "Bindingsenergi per nukleon", "forklaring": "Bindingsenergien delt på antall nukleoner — et mål på hvor stabil kjernen er. Størst rundt jern-56." },
-    { "begrep": "Halveringstid", "forklaring": "Tiden det tar før halvparten av kjernene i en prøve er omdannet. En fast egenskap ved nukliden." },
-    { "begrep": "Desintegrasjonskonstant", "forklaring": "Størrelsen $\\lambda = \\frac{\\ln 2}{T_{1/2}}$, som er sannsynligheten for at én bestemt kjerne omdannes i løpet av ett sekund." },
-    { "begrep": "Aktivitet", "forklaring": "Antall kjerneomdanninger per sekund, $A = \\lambda N$, målt i becquerel (Bq)." },
-    { "begrep": "Fisjon", "forklaring": "Spalting av en tung kjerne i to omtrent like store deler, med frigjøring av energi og noen nøytroner." },
-    { "begrep": "Fusjon", "forklaring": "Sammensmelting av lette kjerner til en tyngre kjerne, med frigjøring av energi. Krever ekstremt høy temperatur." },
-    { "begrep": "Ioniserende stråling", "forklaring": "Stråling med nok energi til å rive elektroner løs fra atomer og molekyler, og dermed skade celler." },
-    { "begrep": "Absorbert dose", "forklaring": "Absorbert strålingsenergi per kilogram, $D = \\frac{E}{m}$, målt i gray ($1\\ \\text{Gy} = 1\\ \\text{J/kg}$)." },
-    { "begrep": "Ekvivalent dose", "forklaring": "Absorbert dose ganget med kvalitetsfaktoren, $H = Q \\cdot D$, målt i sievert. Tar hensyn til at ulike strålingstyper er ulikt skadelige." }
+    {
+      "begrep": "Nukleon",
+      "forklaring": "Fellesnavn på protoner og nøytroner, altså partiklene som bygger opp atomkjernen."
+    },
+    {
+      "begrep": "Atomnummer (Z)",
+      "forklaring": "Antall protoner i kjernen. Det bestemmer hvilket element atomet er."
+    },
+    {
+      "begrep": "Massetall (A)",
+      "forklaring": "Totalt antall nukleoner i kjernen, altså protoner pluss nøytroner."
+    },
+    {
+      "begrep": "Isotop",
+      "forklaring": "Nuklider av samme element, med samme antall protoner men ulikt antall nøytroner. Samme kjemi, ulik kjernestabilitet."
+    },
+    {
+      "begrep": "Sterk kjernekraft",
+      "forklaring": "Kraften som holder nukleonene sammen. Den er mye kraftigere enn den elektriske frastøtningen, men virker bare over avstander på størrelse med kjernen."
+    },
+    {
+      "begrep": "Massedefekt",
+      "forklaring": "Differansen mellom summen av massene til de frie nukleonene og massen til den ferdige kjernen."
+    },
+    {
+      "begrep": "Bindingsenergi per nukleon",
+      "forklaring": "Bindingsenergien delt på antall nukleoner — et mål på hvor stabil kjernen er. Størst rundt jern-56."
+    },
+    {
+      "begrep": "Halveringstid",
+      "forklaring": "Tiden det tar før halvparten av kjernene i en prøve er omdannet. En fast egenskap ved nukliden."
+    },
+    {
+      "begrep": "Desintegrasjonskonstant",
+      "forklaring": "Størrelsen $\\lambda = \\frac{\\ln 2}{T_{1/2}}$, som er sannsynligheten for at én bestemt kjerne omdannes i løpet av ett sekund."
+    },
+    {
+      "begrep": "Aktivitet",
+      "forklaring": "Antall kjerneomdanninger per sekund, $A = \\lambda N$, målt i becquerel (Bq)."
+    },
+    {
+      "begrep": "Fisjon",
+      "forklaring": "Spalting av en tung kjerne i to omtrent like store deler, med frigjøring av energi og noen nøytroner."
+    },
+    {
+      "begrep": "Fusjon",
+      "forklaring": "Sammensmelting av lette kjerner til en tyngre kjerne, med frigjøring av energi. Krever ekstremt høy temperatur."
+    },
+    {
+      "begrep": "Ioniserende stråling",
+      "forklaring": "Stråling med nok energi til å rive elektroner løs fra atomer og molekyler, og dermed skade celler."
+    },
+    {
+      "begrep": "Absorbert dose",
+      "forklaring": "Absorbert strålingsenergi per kilogram, $D = \\frac{E}{m}$, målt i gray ($1\\ \\text{Gy} = 1\\ \\text{J/kg}$)."
+    },
+    {
+      "begrep": "Ekvivalent dose",
+      "forklaring": "Absorbert dose ganget med kvalitetsfaktoren, $H = Q \\cdot D$, målt i sievert. Tar hensyn til at ulike strålingstyper er ulikt skadelige."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hvor mange nøytroner er det i kjernen $\\ce{^{60}_{27}Co}$?",
-      "alternativer": ["27", "60", "33", "87"],
+      "alternativer": [
+        "27",
+        "60",
+        "33",
+        "87"
+      ],
       "riktig": 2,
       "forklaring": "Massetallet 60 er antall nukleoner til sammen, og atomnummeret 27 er antall protoner. Antall nøytroner er differansen: $N = A - Z = 60 - 27 = 33$. Alternativ B er den vanligste feilen — massetallet teller både protoner og nøytroner, ikke bare nøytroner. Alternativ D kommer av å legge sammen i stedet for å trekke fra."
     },
     {
       "sporsmal": "$\\ce{^{238}_{92}U}$ sender ut en alfapartikkel. Hvilken kjerne blir igjen?",
-      "alternativer": ["$\\ce{^{238}_{90}Th}$", "$\\ce{^{234}_{90}Th}$", "$\\ce{^{234}_{92}U}$", "$\\ce{^{236}_{91}Pa}$"],
+      "alternativer": [
+        "$\\ce{^{238}_{90}Th}$",
+        "$\\ce{^{234}_{90}Th}$",
+        "$\\ce{^{234}_{92}U}$",
+        "$\\ce{^{236}_{91}Pa}$"
+      ],
       "riktig": 1,
       "forklaring": "En alfapartikkel er $\\ce{^{4}_{2}He}$, så massetallet synker med 4 og atomnummeret med 2: $238 - 4 = 234$ og $92 - 2 = 90$, altså thorium-234. Alternativ A har riktig atomnummer, men glemmer at de fire nukleonene også forlater kjernen, så massetallet må ned. Alternativ C endrer bare massetallet, men da ville ikke ladningen balansert."
     },
@@ -148,7 +365,12 @@
     },
     {
       "sporsmal": "En prøve har aktiviteten 800 Bq, og halveringstiden er 12 timer. Hva er aktiviteten etter 36 timer?",
-      "alternativer": ["100 Bq", "200 Bq", "267 Bq", "0 Bq"],
+      "alternativer": [
+        "100 Bq",
+        "200 Bq",
+        "267 Bq",
+        "0 Bq"
+      ],
       "riktig": 0,
       "forklaring": "36 timer er $36/12 = 3$ halveringstider, så aktiviteten halveres tre ganger: $800 \\to 400 \\to 200 \\to 100$ Bq. Alternativ C er det du får hvis du deler på 3 — men nedbrytingen er eksponentiell, ikke lineær. Alternativ B er svaret etter bare to halveringstider."
     },
@@ -198,7 +420,12 @@
     },
     {
       "sporsmal": "Karbon-14 har halveringstid 5730 år. En trebit inneholder 25 % av den mengden karbon-14 som friskt tre har. Hvor gammel er trebiten?",
-      "alternativer": ["1433 år", "2865 år", "5730 år", "11460 år"],
+      "alternativer": [
+        "1433 år",
+        "2865 år",
+        "5730 år",
+        "11460 år"
+      ],
       "riktig": 3,
       "forklaring": "25 % er $\\frac{1}{4}$, altså to halveringstider: $2 \\cdot 5730\\ \\text{år} = 11460$ år. Alternativ C er svaret hvis det var 50 % igjen. Alternativ B ($5730/2$) kommer av å tenke at «bare en firedel igjen» betyr «halv halveringstid» — men sammenhengen er eksponentiell: mindre igjen betyr lengre tid, ikke kortere."
     },
@@ -215,28 +442,80 @@
     },
     {
       "sporsmal": "Massedefekten til en kjerne er 0,10 u. Omtrent hvor stor er bindingsenergien?",
-      "alternativer": ["0,10 MeV", "9,0 MeV", "93 MeV", "$9{,}0\\cdot 10^{15}$ J"],
+      "alternativer": [
+        "0,10 MeV",
+        "9,0 MeV",
+        "93 MeV",
+        "$9{,}0\\cdot 10^{15}$ J"
+      ],
       "riktig": 2,
       "forklaring": "Bruk omregningen $1\\,\\text{u} = 931{,}5\\ \\text{MeV}/c^2$: $0{,}10 \\cdot 931{,}5\\ \\text{MeV} \\approx 93$ MeV. Alternativ D er hva du får hvis du setter tallet 0,10 rett inn i $E = mc^2$ som om det var kilogram. Massen må først ganges med $1{,}6605\\cdot 10^{-27}$ kg/u, og da blir energien $1{,}5\\cdot 10^{-11}$ J — som er nøyaktig de samme 93 MeV."
     }
   ],
-
   "flashcards": [
-    { "front": "Massetall $A$, atomnummer $Z$ og nøytrontall $N$", "bak": "$A$ = antall nukleoner, $Z$ = antall protoner, $N = A - Z$." },
-    { "front": "Hva er isotoper?", "bak": "Nuklider med samme antall protoner, men ulikt antall nøytroner. Samme kjemiske egenskaper, ulik kjernestabilitet." },
-    { "front": "Alfaomdanning — generelt skjema", "bak": "${}^{A}_{Z}\\mathrm{X} \\to {}^{A-4}_{Z-2}\\mathrm{Y} + {}^{4}_{2}\\mathrm{He}$. Alfapartikkelen er en heliumkjerne." },
-    { "front": "Betaminusomdanning — generelt skjema", "bak": "${}^{A}_{Z}\\mathrm{X} \\to {}^{A}_{Z+1}\\mathrm{Y} + {}^{0}_{-1}\\mathrm{e} + \\overline{\\nu}$. Et nøytron blir et proton, og elektronet dannes i kjernen." },
-    { "front": "Hva skjer med $A$ og $Z$ når en kjerne sender ut gammastråling?", "bak": "Ingenting. Kjernen kvitter seg bare med overskuddsenergi som et foton." },
-    { "front": "Rekkevidde og skjerming: alfa, beta, gamma", "bak": "Alfa: stoppes av papir eller hud. Beta: noen millimeter aluminium. Gamma: flere centimeter bly." },
-    { "front": "Halveringstidsloven", "bak": "$N = N_0\\left(\\frac{1}{2}\\right)^{t/T_{1/2}}$, som også kan skrives $N = N_0 e^{-\\lambda t}$." },
-    { "front": "Hva er desintegrasjonskonstanten $\\lambda$?", "bak": "$\\lambda = \\frac{\\ln 2}{T_{1/2}}$ — sannsynligheten for at én bestemt kjerne omdannes i løpet av ett sekund." },
-    { "front": "Aktivitet: formel og enhet", "bak": "$A = \\lambda N$, målt i becquerel. $1\\,\\text{Bq} = 1\\,\\text{s}^{-1}$, altså én kjerneomdanning per sekund." },
-    { "front": "Massedefekt", "bak": "$\\Delta m = Z m_p + N m_n - m_{\\text{kjerne}}$ — nukleonene veier mer hver for seg enn samlet i kjernen." },
-    { "front": "$1\\,\\text{u}$ uttrykt i kg og i MeV", "bak": "$1\\,\\text{u} = 1{,}6605\\cdot 10^{-27}\\ \\text{kg} = 931{,}5\\ \\text{MeV}/c^2$." },
-    { "front": "Hvor har kurven for bindingsenergi per nukleon toppen, og hvorfor betyr det noe?", "bak": "Rundt jern-56, med omtrent 8,8 MeV per nukleon. Derfor frigjør fusjon av lettere kjerner og fisjon av tyngre kjerner energi." },
-    { "front": "Fisjon av uran-235: typisk reaksjon og energi", "bak": "$\\ce{^{235}_{92}U + ^{1}_{0}n -> ^{141}_{56}Ba + ^{92}_{36}Kr + 3 ^{1}_{0}n}$, omtrent 200 MeV per kjerne. De 2–3 nøytronene kan gi kjedereaksjon." },
-    { "front": "Fusjonsreaksjonen med deuterium og tritium", "bak": "$\\ce{^{2}_{1}H + ^{3}_{1}H -> ^{4}_{2}He + ^{1}_{0}n}$ frigjør 17,6 MeV, men krever over hundre millioner grader for å overvinne den elektriske frastøtningen." },
-    { "front": "Absorbert dose og ekvivalent dose", "bak": "$D = \\frac{E}{m}$ i gray ($1\\ \\text{Gy} = 1\\ \\text{J/kg}$). $H = Q \\cdot D$ i sievert, med $Q = 1$ for beta, gamma og røntgen og $Q = 20$ for alfa." },
-    { "front": "Becquerel eller sievert?", "bak": "Becquerel beskriver kilden — omdanninger per sekund. Sievert beskriver dosen kroppen får. Høy aktivitet betyr ikke automatisk høy dose." }
+    {
+      "front": "Massetall $A$, atomnummer $Z$ og nøytrontall $N$",
+      "bak": "$A$ = antall nukleoner, $Z$ = antall protoner, $N = A - Z$."
+    },
+    {
+      "front": "Hva er isotoper?",
+      "bak": "Nuklider med samme antall protoner, men ulikt antall nøytroner. Samme kjemiske egenskaper, ulik kjernestabilitet."
+    },
+    {
+      "front": "Alfaomdanning — generelt skjema",
+      "bak": "${}^{A}_{Z}\\mathrm{X} \\to {}^{A-4}_{Z-2}\\mathrm{Y} + {}^{4}_{2}\\mathrm{He}$. Alfapartikkelen er en heliumkjerne."
+    },
+    {
+      "front": "Betaminusomdanning — generelt skjema",
+      "bak": "${}^{A}_{Z}\\mathrm{X} \\to {}^{A}_{Z+1}\\mathrm{Y} + {}^{0}_{-1}\\mathrm{e} + \\overline{\\nu}$. Et nøytron blir et proton, og elektronet dannes i kjernen."
+    },
+    {
+      "front": "Hva skjer med $A$ og $Z$ når en kjerne sender ut gammastråling?",
+      "bak": "Ingenting. Kjernen kvitter seg bare med overskuddsenergi som et foton."
+    },
+    {
+      "front": "Rekkevidde og skjerming: alfa, beta, gamma",
+      "bak": "Alfa: stoppes av papir eller hud. Beta: noen millimeter aluminium. Gamma: flere centimeter bly."
+    },
+    {
+      "front": "Halveringstidsloven",
+      "bak": "$N = N_0\\left(\\frac{1}{2}\\right)^{t/T_{1/2}}$, som også kan skrives $N = N_0 e^{-\\lambda t}$."
+    },
+    {
+      "front": "Hva er desintegrasjonskonstanten $\\lambda$?",
+      "bak": "$\\lambda = \\frac{\\ln 2}{T_{1/2}}$ — sannsynligheten for at én bestemt kjerne omdannes i løpet av ett sekund."
+    },
+    {
+      "front": "Aktivitet: formel og enhet",
+      "bak": "$A = \\lambda N$, målt i becquerel. $1\\,\\text{Bq} = 1\\,\\text{s}^{-1}$, altså én kjerneomdanning per sekund."
+    },
+    {
+      "front": "Massedefekt",
+      "bak": "$\\Delta m = Z m_p + N m_n - m_{\\text{kjerne}}$ — nukleonene veier mer hver for seg enn samlet i kjernen."
+    },
+    {
+      "front": "$1\\,\\text{u}$ uttrykt i kg og i MeV",
+      "bak": "$1\\,\\text{u} = 1{,}6605\\cdot 10^{-27}\\ \\text{kg} = 931{,}5\\ \\text{MeV}/c^2$."
+    },
+    {
+      "front": "Hvor har kurven for bindingsenergi per nukleon toppen, og hvorfor betyr det noe?",
+      "bak": "Rundt jern-56, med omtrent 8,8 MeV per nukleon. Derfor frigjør fusjon av lettere kjerner og fisjon av tyngre kjerner energi."
+    },
+    {
+      "front": "Fisjon av uran-235: typisk reaksjon og energi",
+      "bak": "$\\ce{^{235}_{92}U + ^{1}_{0}n -> ^{141}_{56}Ba + ^{92}_{36}Kr + 3 ^{1}_{0}n}$, omtrent 200 MeV per kjerne. De 2–3 nøytronene kan gi kjedereaksjon."
+    },
+    {
+      "front": "Fusjonsreaksjonen med deuterium og tritium",
+      "bak": "$\\ce{^{2}_{1}H + ^{3}_{1}H -> ^{4}_{2}He + ^{1}_{0}n}$ frigjør 17,6 MeV, men krever over hundre millioner grader for å overvinne den elektriske frastøtningen."
+    },
+    {
+      "front": "Absorbert dose og ekvivalent dose",
+      "bak": "$D = \\frac{E}{m}$ i gray ($1\\ \\text{Gy} = 1\\ \\text{J/kg}$). $H = Q \\cdot D$ i sievert, med $Q = 1$ for beta, gamma og røntgen og $Q = 20$ for alfa."
+    },
+    {
+      "front": "Becquerel eller sievert?",
+      "bak": "Becquerel beskriver kilden — omdanninger per sekund. Sievert beskriver dosen kroppen får. Høy aktivitet betyr ikke automatisk høy dose."
+    }
   ]
 }

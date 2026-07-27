@@ -69,7 +69,7 @@
     "figur": {
       "type": "graf",
       "tittel": "Asymptotene til f(x) = 1/(x − 2)",
-      "forklaring": "Følg grafen inn mot x = 2: fra høyre vokser verdiene over alle grenser, fra venstre synker de. De to ensidige grenseverdiene er ulike, så den tosidige finnes ikke. Langt ute til begge sider klemmes grafen inn mot y = 0 — det er grenseverdien når x går mot uendelig.",
+      "forklaring": "Følg grafen inn mot x = 2: fra høyre går verdiene mot +∞, fra venstre mot −∞, så den tosidige grenseverdien finnes ikke. Langt ut til begge sider klemmes grafen inn mot y = 0.",
       "xmin": -3,
       "xmax": 7,
       "ymin": -6,
@@ -142,7 +142,7 @@
         "figur": {
           "type": "graf",
           "tittel": "Et sprang: f(x) = |x| / x",
-          "forklaring": "Grafen ligger på y = 1 til høyre for null og på y = −1 til venstre, og den henger ikke sammen i x = 0. Høyre grenseverdi er 1 og venstre er −1, og fordi de er ulike, finnes ikke den tosidige grenseverdien i x = 0.",
+          "forklaring": "Se på bruddet i x = 0: til høyre ligger grafen fast på y = 1, til venstre på y = −1. Høyre grenseverdi er altså 1 og venstre −1, og siden de er ulike, finnes ikke grenseverdien i x = 0.",
           "xmin": -3,
           "xmax": 3,
           "ymin": -2,
@@ -192,7 +192,7 @@
         "figur": {
           "type": "graf",
           "tittel": "Vertikal og skrå asymptote til f(x) = (2x² − 3x − 5)/(x − 3)",
-          "forklaring": "Begge grenene av grafen legger seg tettere og tettere inntil den stiplede linja y = 2x + 3 når tallverdien til x blir stor — det er restleddet 4/(x − 3) som forsvinner. Ved x = 3 går grenene motsatt vei: mot −∞ fra venstre og mot +∞ fra høyre.",
+          "forklaring": "Begge grenene legger seg tettere inntil den stiplede linja y = 2x + 3 når tallverdien til x blir stor — det er restleddet 4/(x − 3) som forsvinner. Ved x = 3 går grenene motsatt vei: mot −∞ fra venstre og mot +∞ fra høyre.",
           "xmin": -4,
           "xmax": 8,
           "ymin": -20,
@@ -230,12 +230,12 @@
             {
               "x": -1,
               "y": 0,
-              "navn": "x = −1"
+              "navn": "(−1, 0)"
             },
             {
               "x": 2.5,
               "y": 0,
-              "navn": "x = 2,5"
+              "navn": "(2,5 , 0)"
             }
           ]
         }

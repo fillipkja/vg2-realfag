@@ -3,7 +3,6 @@
   "nr": 8,
   "tittel": "Regulering og homeostase",
   "intro": "Kroppen holder temperatur, blodsukker, pH og væskebalanse nesten konstant selv om du sover, spiser eller løper i kuldegrader. Dette kapittelet handler om hvordan nervesystemet og hormonsystemet — og hos planter plantehormonene — måler avvik og retter dem opp igjen.",
-
   "kompakt": {
     "punkter": [
       "Homeostase er evnen til å holde det indre miljøet stabilt — temperatur, pH, blodsukker, salt- og vannbalanse — innenfor et smalt område rundt en referanseverdi (setpunkt). Verdiene svinger hele tiden litt; det er en dynamisk likevekt, ikke stillstand.",
@@ -18,18 +17,77 @@
       "Planter regulerer vekst og bevegelse med hormoner: auksin flyttes til skyggesiden og gir fototropisme, mens nastier som hos mimosen skyldes raske endringer i turgortrykk og er uavhengige av stimulusens retning."
     ],
     "formler": [
-      { "navn": "Natrium-kalium-pumpen", "latex": "3\\,\\ce{Na+}\\ \\text{ut} \\quad + \\quad 2\\,\\ce{K+}\\ \\text{inn} \\quad \\text{per } 1\\ \\text{ATP}" },
-      { "navn": "Amplituden til et aksjonspotensial", "latex": "\\Delta U = U_{\\text{topp}} - U_{\\text{hvile}} = +30\\,\\text{mV} - (-70\\,\\text{mV}) = 100\\,\\text{mV}" },
-      { "navn": "Ledningstid langs et akson", "latex": "t = \\frac{s}{v}" },
-      { "navn": "Største impulsfrekvens", "latex": "f_{\\text{maks}} = \\frac{1}{t_{\\text{AP}} + t_{\\text{refraktær}}}" },
-      { "navn": "Stoffmengde i en løsning", "latex": "n = c \\cdot V" },
-      { "navn": "Masse fra stoffmengde", "latex": "m = n \\cdot M" },
-      { "navn": "Varme produsert i tiden $t$", "latex": "Q = P \\cdot t" },
-      { "navn": "Varme som lagres i kroppen", "latex": "Q = m \\cdot c \\cdot \\Delta T" },
-      { "navn": "Svettevolum som må fordampe for å kvitte seg med varmen $Q$", "latex": "V_{\\text{svette}} = \\frac{Q}{L}, \\qquad L \\approx 2{,}4\\,\\text{MJ/L}" }
-    ]
+      {
+        "navn": "Natrium-kalium-pumpen",
+        "latex": "3\\,\\ce{Na+}\\ \\text{ut} \\quad + \\quad 2\\,\\ce{K+}\\ \\text{inn} \\quad \\text{per } 1\\ \\text{ATP}"
+      },
+      {
+        "navn": "Amplituden til et aksjonspotensial",
+        "latex": "\\Delta U = U_{\\text{topp}} - U_{\\text{hvile}} = +30\\,\\text{mV} - (-70\\,\\text{mV}) = 100\\,\\text{mV}"
+      },
+      {
+        "navn": "Ledningstid langs et akson",
+        "latex": "t = \\frac{s}{v}"
+      },
+      {
+        "navn": "Største impulsfrekvens",
+        "latex": "f_{\\text{maks}} = \\frac{1}{t_{\\text{AP}} + t_{\\text{refraktær}}}"
+      },
+      {
+        "navn": "Stoffmengde i en løsning",
+        "latex": "n = c \\cdot V"
+      },
+      {
+        "navn": "Masse fra stoffmengde",
+        "latex": "m = n \\cdot M"
+      },
+      {
+        "navn": "Varme produsert i tiden $t$",
+        "latex": "Q = P \\cdot t"
+      },
+      {
+        "navn": "Varme som lagres i kroppen",
+        "latex": "Q = m \\cdot c \\cdot \\Delta T"
+      },
+      {
+        "navn": "Svettevolum som må fordampe for å kvitte seg med varmen $Q$",
+        "latex": "V_{\\text{svette}} = \\frac{Q}{L}, \\qquad L \\approx 2{,}4\\,\\text{MJ/L}"
+      }
+    ],
+    "figur": {
+      "type": "flyt",
+      "retning": "ned",
+      "tittel": "Reguleringssløyfa med negativ tilbakekopling",
+      "forklaring": "Steg 2–4 er de tre leddene sensor, kontrollsenter og effektor. Følg pila på høyre side: responsen fjerner selve grunnen til at den ble satt i gang, og derfor slår sløyfa seg av selv — enten det er temperatur, blodsukker eller tyroksin som styres.",
+      "steg": [
+        {
+          "tekst": "Verdien avviker fra setpunktet",
+          "note": "for varm, for høyt blodsukker"
+        },
+        {
+          "tekst": "Sensoren måler verdien",
+          "note": "termoreseptor, betacelle"
+        },
+        {
+          "tekst": "Kontrollsenteret sammenlikner",
+          "note": "hypothalamus, hypofysen"
+        },
+        {
+          "tekst": "Effektoren utfører responsen",
+          "note": "svettekjertel, lever, muskel"
+        },
+        {
+          "tekst": "Avviket rettes opp",
+          "note": "og da avtar signalet selv"
+        }
+      ],
+      "tilbakekopling": {
+        "fra": 4,
+        "til": 0,
+        "tekst": "negativ tilbakekopling"
+      }
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -38,7 +96,49 @@
       },
       {
         "tittel": "Nervecellen, aksjonspotensialet og synapsen",
-        "html": "<p>En <strong>nervecelle</strong> (nevron) har tre deler: <strong>dendritter</strong> som tar imot signaler, en <strong>cellekropp</strong> med kjernen, og et langt <strong>akson</strong> som sender signalet videre. Hos mange nevroner er aksonet pakket i en <strong>myelinskjede</strong> med små glipper, <strong>Ranviers noder</strong>.</p><p>I ro er innsiden av cellen negativ i forhold til utsiden, omtrent $-70\\,\\text{mV}$. Dette <strong>hvilemembranpotensialet</strong> skyldes at natrium-kalium-pumpen bruker ATP til å frakte 3 $\\ce{Na+}$ ut og 2 $\\ce{K+}$ inn, og at membranen i tillegg lekker mest $\\ce{K+}$ utover.</p><p>Blir cellen stimulert slik at potensialet stiger over <strong>terskelverdien</strong> på ca. $-55\\,\\text{mV}$, skjer dette i fast rekkefølge:</p><ol><li><strong>Depolarisering:</strong> spenningsstyrte natriumkanaler åpner seg, $\\ce{Na+}$ strømmer inn, og potensialet skyter opp til ca. $+30\\,\\text{mV}$.</li><li><strong>Repolarisering:</strong> natriumkanalene inaktiveres, kaliumkanaler åpnes, $\\ce{K+}$ strømmer ut, og potensialet faller tilbake.</li><li><strong>Hyperpolarisering og refraktærperiode:</strong> potensialet dypper litt under hvileverdien, og cellen kan en kort stund ikke fyre igjen. Det er derfor signalet bare kan gå framover.</li></ol><p>Aksjonspotensialet følger <strong>alt-eller-ingenting-prinsippet</strong>: det er alltid like kraftig. En sterkere stimulus gir flere impulser per sekund, ikke større impulser. I myeliniserte aksoner hopper signalet fra node til node (<strong>saltatorisk ledning</strong>) og kan nå 100 m/s, mens umyeliniserte fibre ligger på 0,5–2 m/s.</p><p>Ved enden av aksonet stopper det elektriske signalet. I <strong>synapsen</strong> åpner aksjonspotensialet kalsiumkanaler, $\\ce{Ca^{2+}}$ strømmer inn, vesikler smelter sammen med membranen og frigjør <strong>transmittersubstans</strong> som acetylkolin i synapsespalten. Stoffet diffunderer over de 20–40 nm og binder seg til reseptorer på den postsynaptiske cellen, som enten aktiveres eller hemmes. Til slutt brytes transmitteren ned eller tas opp igjen — ellers ville signalet aldri slutte.</p>"
+        "html": "<p>En <strong>nervecelle</strong> (nevron) har tre deler: <strong>dendritter</strong> som tar imot signaler, en <strong>cellekropp</strong> med kjernen, og et langt <strong>akson</strong> som sender signalet videre. Hos mange nevroner er aksonet pakket i en <strong>myelinskjede</strong> med små glipper, <strong>Ranviers noder</strong>.</p><p>I ro er innsiden av cellen negativ i forhold til utsiden, omtrent $-70\\,\\text{mV}$. Dette <strong>hvilemembranpotensialet</strong> skyldes at natrium-kalium-pumpen bruker ATP til å frakte 3 $\\ce{Na+}$ ut og 2 $\\ce{K+}$ inn, og at membranen i tillegg lekker mest $\\ce{K+}$ utover.</p><p>Blir cellen stimulert slik at potensialet stiger over <strong>terskelverdien</strong> på ca. $-55\\,\\text{mV}$, skjer dette i fast rekkefølge:</p><ol><li><strong>Depolarisering:</strong> spenningsstyrte natriumkanaler åpner seg, $\\ce{Na+}$ strømmer inn, og potensialet skyter opp til ca. $+30\\,\\text{mV}$.</li><li><strong>Repolarisering:</strong> natriumkanalene inaktiveres, kaliumkanaler åpnes, $\\ce{K+}$ strømmer ut, og potensialet faller tilbake.</li><li><strong>Hyperpolarisering og refraktærperiode:</strong> potensialet dypper litt under hvileverdien, og cellen kan en kort stund ikke fyre igjen. Det er derfor signalet bare kan gå framover.</li></ol><p>Aksjonspotensialet følger <strong>alt-eller-ingenting-prinsippet</strong>: det er alltid like kraftig. En sterkere stimulus gir flere impulser per sekund, ikke større impulser. I myeliniserte aksoner hopper signalet fra node til node (<strong>saltatorisk ledning</strong>) og kan nå 100 m/s, mens umyeliniserte fibre ligger på 0,5–2 m/s.</p><p>Ved enden av aksonet stopper det elektriske signalet. I <strong>synapsen</strong> åpner aksjonspotensialet kalsiumkanaler, $\\ce{Ca^{2+}}$ strømmer inn, vesikler smelter sammen med membranen og frigjør <strong>transmittersubstans</strong> som acetylkolin i synapsespalten. Stoffet diffunderer over de 20–40 nm og binder seg til reseptorer på den postsynaptiske cellen, som enten aktiveres eller hemmes. Til slutt brytes transmitteren ned eller tas opp igjen — ellers ville signalet aldri slutte.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Aksjonspotensialet i en nervecelle",
+          "forklaring": "Kurven ligger flatt på hvilenivået til den passerer terskelen ved −55 mV — først da åpner natriumkanalene seg, og toppen blir alltid like høy uansett hvor sterk stimulusen var. Etter toppen dypper kurven under hvilenivået, og i den perioden kan cellen ikke fyre på nytt.",
+          "xmin": 0,
+          "xmax": 8,
+          "ymin": -95,
+          "ymax": 45,
+          "xlabel": "t (ms)",
+          "ylabel": "U (mV)",
+          "kurver": [
+            {
+              "uttrykk": "-70+102*exp(0-((x-2.5)/0.55)^2)-10*exp(0-((x-4.2)/1.3)^2)",
+              "farge": 1
+            }
+          ],
+          "asymptoter": [
+            {
+              "retning": "horisontal",
+              "verdi": -70,
+              "navn": "hvile −70"
+            },
+            {
+              "retning": "horisontal",
+              "verdi": -55,
+              "navn": "terskel −55"
+            }
+          ],
+          "punkter": [
+            {
+              "x": 2.5,
+              "y": 30,
+              "navn": "topp +30 mV"
+            },
+            {
+              "x": 4.2,
+              "y": -80,
+              "navn": "hyperpolarisering",
+              "plassering": "under"
+            }
+          ]
+        }
       },
       {
         "tittel": "Sentralt og perifert nervesystem",
@@ -46,7 +146,43 @@
       },
       {
         "tittel": "Hormonsystemet",
-        "html": "<p><strong>Hormoner</strong> er signalstoffer som skilles ut fra <strong>endokrine kjertler</strong> rett til blodet. Blodet frakter dem overalt, men bare celler med riktig <strong>reseptor</strong> reagerer. Slike celler kalles målceller. Konsentrasjonene er svært små, ofte under en milliondels gram per liter blod, og likevel er virkningen kraftig.</p><p>Hvordan hormonet virker, avhenger av om det er vann- eller fettløselig. <strong>Vannløselige</strong> hormoner (protein- og peptidhormoner som insulin) kommer ikke gjennom cellemembranen. De binder seg til en reseptor på utsiden og setter i gang en kjede av signalstoffer inne i cellen. <strong>Fettløselige</strong> hormoner (steroidhormoner som kortisol og testosteron) glir rett gjennom membranen, binder seg til reseptorer inne i cellen og påvirker hvilke gener som leses av. Derfor virker de saktere, men lenger.</p><table><thead><tr><th>Kjertel</th><th>Hormon</th><th>Virkning</th></tr></thead><tbody><tr><td>Hypofysen</td><td>Veksthormon, TSH, ADH</td><td>Vekst, styring av andre kjertler, vannsparing i nyrene</td></tr><tr><td>Skjoldbruskkjertelen</td><td>Tyroksin</td><td>Øker stoffskiftet og varmeproduksjonen</td></tr><tr><td>Binyrene</td><td>Adrenalin, kortisol</td><td>Akutt stressrespons; langvarig stress, hever blodsukkeret</td></tr><tr><td>Bukspyttkjertelen</td><td>Insulin, glukagon</td><td>Senker og hever blodsukkeret</td></tr></tbody></table><p>Hormonaksene styres også av negativ tilbakekopling. Hypothalamus sender TRH til hypofysen, hypofysen sender TSH i blodet, og skjoldbruskkjertelen svarer med tyroksin. Mye tyroksin i blodet hemmer både hypothalamus og hypofysen, så utskillelsen bremses. Nervesystemet og hormonsystemet utfyller hverandre: nerveimpulser er raske, korte og presist adressert, mens hormoner er langsommere, mer langvarige og virker bredt.</p>"
+        "html": "<p><strong>Hormoner</strong> er signalstoffer som skilles ut fra <strong>endokrine kjertler</strong> rett til blodet. Blodet frakter dem overalt, men bare celler med riktig <strong>reseptor</strong> reagerer. Slike celler kalles målceller. Konsentrasjonene er svært små, ofte under en milliondels gram per liter blod, og likevel er virkningen kraftig.</p><p>Hvordan hormonet virker, avhenger av om det er vann- eller fettløselig. <strong>Vannløselige</strong> hormoner (protein- og peptidhormoner som insulin) kommer ikke gjennom cellemembranen. De binder seg til en reseptor på utsiden og setter i gang en kjede av signalstoffer inne i cellen. <strong>Fettløselige</strong> hormoner (steroidhormoner som kortisol og testosteron) glir rett gjennom membranen, binder seg til reseptorer inne i cellen og påvirker hvilke gener som leses av. Derfor virker de saktere, men lenger.</p><table><thead><tr><th>Kjertel</th><th>Hormon</th><th>Virkning</th></tr></thead><tbody><tr><td>Hypofysen</td><td>Veksthormon, TSH, ADH</td><td>Vekst, styring av andre kjertler, vannsparing i nyrene</td></tr><tr><td>Skjoldbruskkjertelen</td><td>Tyroksin</td><td>Øker stoffskiftet og varmeproduksjonen</td></tr><tr><td>Binyrene</td><td>Adrenalin, kortisol</td><td>Akutt stressrespons; langvarig stress, hever blodsukkeret</td></tr><tr><td>Bukspyttkjertelen</td><td>Insulin, glukagon</td><td>Senker og hever blodsukkeret</td></tr></tbody></table><p>Hormonaksene styres også av negativ tilbakekopling. Hypothalamus sender TRH til hypofysen, hypofysen sender TSH i blodet, og skjoldbruskkjertelen svarer med tyroksin. Mye tyroksin i blodet hemmer både hypothalamus og hypofysen, så utskillelsen bremses. Nervesystemet og hormonsystemet utfyller hverandre: nerveimpulser er raske, korte og presist adressert, mens hormoner er langsommere, mer langvarige og virker bredt.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Nervesystem og hormonsystem",
+          "forklaring": "Les radene som fem par motsetninger: det er nettopp disse fem punktene sammenlikningsoppgavene spør etter. Begge systemene styres av negativ tilbakekopling — forskjellen ligger i vei, fart og hvor bredt signalet treffer.",
+          "kolonner": [
+            "Nervesystem",
+            "Hormonsystem"
+          ],
+          "rader": [
+            {
+              "egenskap": "Signal",
+              "venstre": "nerveimpuls og transmittersubstans",
+              "hoyre": "hormon i blodet"
+            },
+            {
+              "egenskap": "Transportvei",
+              "venstre": "nervefibre (aksoner)",
+              "hoyre": "blodet, ut til hele kroppen"
+            },
+            {
+              "egenskap": "Hastighet",
+              "venstre": "millisekunder",
+              "hoyre": "sekunder til timer"
+            },
+            {
+              "egenskap": "Varighet",
+              "venstre": "kortvarig, slutter straks",
+              "hoyre": "langvarig"
+            },
+            {
+              "egenskap": "Hvem treffes",
+              "venstre": "nøyaktig de cellene fiberen går til",
+              "hoyre": "alle celler med riktig reseptor"
+            }
+          ]
+        }
       },
       {
         "tittel": "Blodsukkerregulering og livsstilens betydning",
@@ -58,15 +194,117 @@
       },
       {
         "tittel": "Tropismer, plantehormoner og bevegelse",
-        "html": "<p>Planter har verken nerver eller muskler, men regulerer likevel vekst og bevegelse — med hormoner og med vanntrykk. En <strong>tropisme</strong> er en vekstbevegelse der <em>retningen</em> bestemmes av retningen til stimulusen. Vokser planten mot stimulusen, er tropismen positiv; vokser den bort fra stimulusen, er tropismen negativ.</p><ul><li><strong>Fototropisme</strong> — lys. Skudd er positivt fototrope.</li><li><strong>Gravitropisme</strong> — tyngdekraft. Røtter er positivt gravitrope, skudd negativt.</li><li><strong>Tigmotropisme</strong> — berøring, som når klatretråder snor seg rundt et gjerde.</li><li><strong>Hydrotropisme</strong> — vann; røtter vokser mot fuktighet.</li></ul><p>Nøkkelhormonet er <strong>auksin</strong>, som lages i skuddspissen. Ved ensidig lys transporteres auksin sidelengs over til <strong>skyggesiden</strong>. Der gjør auksin celleveggene mer strekkbare, cellene blir lengre, og fordi skyggesiden nå vokser mest, bøyer skuddet seg mot lyset. I en rot virker auksin motsatt: auksin samler seg på undersiden, men høy konsentrasjon <em>hemmer</em> strekningen i rotceller, så oversiden vokser mest og rota bøyer nedover. Auksin fra toppskuddet hemmer også sideskuddene (<strong>apikaldominans</strong>) — derfor blir en plante buskete når du klipper toppen. Andre plantehormoner er gibberelliner (spiring og strekningsvekst), cytokininer (celledeling), abscisinsyre (lukker stomata i tørke) og etylen (modning av frukt og bladfall).</p><p>Ikke all plantebevegelse er vekst. En <strong>nasti</strong> er en rask, reversibel bevegelse som ikke styres av stimulusens retning. Når du tar på en mimose, strømmer kalium og vann ut av celler i bladputen, <strong>turgortrykket</strong> faller, og bladet klapper sammen i løpet av et sekund. Venusfluefangeren fanger insekter på samme måte, og blomster som lukker seg om kvelden, gjør det uansett hvilken side lyset kom fra.</p>"
+        "html": "<p>Planter har verken nerver eller muskler, men regulerer likevel vekst og bevegelse — med hormoner og med vanntrykk. En <strong>tropisme</strong> er en vekstbevegelse der <em>retningen</em> bestemmes av retningen til stimulusen. Vokser planten mot stimulusen, er tropismen positiv; vokser den bort fra stimulusen, er tropismen negativ.</p><ul><li><strong>Fototropisme</strong> — lys. Skudd er positivt fototrope.</li><li><strong>Gravitropisme</strong> — tyngdekraft. Røtter er positivt gravitrope, skudd negativt.</li><li><strong>Tigmotropisme</strong> — berøring, som når klatretråder snor seg rundt et gjerde.</li><li><strong>Hydrotropisme</strong> — vann; røtter vokser mot fuktighet.</li></ul><p>Nøkkelhormonet er <strong>auksin</strong>, som lages i skuddspissen. Ved ensidig lys transporteres auksin sidelengs over til <strong>skyggesiden</strong>. Der gjør auksin celleveggene mer strekkbare, cellene blir lengre, og fordi skyggesiden nå vokser mest, bøyer skuddet seg mot lyset. I en rot virker auksin motsatt: auksin samler seg på undersiden, men høy konsentrasjon <em>hemmer</em> strekningen i rotceller, så oversiden vokser mest og rota bøyer nedover. Auksin fra toppskuddet hemmer også sideskuddene (<strong>apikaldominans</strong>) — derfor blir en plante buskete når du klipper toppen. Andre plantehormoner er gibberelliner (spiring og strekningsvekst), cytokininer (celledeling), abscisinsyre (lukker stomata i tørke) og etylen (modning av frukt og bladfall).</p><p>Ikke all plantebevegelse er vekst. En <strong>nasti</strong> er en rask, reversibel bevegelse som ikke styres av stimulusens retning. Når du tar på en mimose, strømmer kalium og vann ut av celler i bladputen, <strong>turgortrykket</strong> faller, og bladet klapper sammen i løpet av et sekund. Venusfluefangeren fanger insekter på samme måte, og blomster som lukker seg om kvelden, gjør det uansett hvilken side lyset kom fra.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Fototropisme steg for steg",
+          "forklaring": "Legg merke til at auksinet havner på motsatt side av lyset: det er skyggesiden som strekker seg mest, og derfor bøyer skuddet seg mot lyset. I en rot gir samme hormon motsatt utslag, fordi høy auksinkonsentrasjon hemmer strekningen der.",
+          "steg": [
+            {
+              "tekst": "Ensidig lys treffer skuddspissen",
+              "note": "lysreseptorer i spissen"
+            },
+            {
+              "tekst": "Auksin flyttes til skyggesiden",
+              "note": "sidelengs, så nedover"
+            },
+            {
+              "tekst": "Celleveggene der blir strekkbare",
+              "note": "cellene tar opp vann"
+            },
+            {
+              "tekst": "Skyggesiden vokser mest",
+              "note": "skuddet bøyer mot lyset"
+            }
+          ]
+        }
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Glukosebelastningstest — blodsukkersløyfa med tall",
         "oppgave": "<p>En elev gjennomfører en glukosebelastningstest. Hun har fastet over natta, drikker en løsning med 75 g glukose, og blodsukkeret måles slik:</p><table><thead><tr><th>Tid</th><th>0 min</th><th>30 min</th><th>60 min</th><th>120 min</th></tr></thead><tbody><tr><td>Glukose (mmol/L)</td><td>5,2</td><td>9,4</td><td>8,1</td><td>5,6</td></tr></tbody></table><p>Regn med at hun har 5,0 L blod, og at molmassen til glukose er $M = 180\\,\\text{g/mol}$.</p><ol><li>Hvor mange gram glukose er det i blodet hennes ved 0 min og ved 30 min?</li><li>Hva forteller sammenlikningen med de 75 gramene hun drakk?</li><li>Regn ut gjennomsnittlig endring per minutt fra 0 til 30 min og fra 30 til 120 min.</li><li>Sett navn på sensor, kontrollsenter, effektor og respons i denne sløyfa.</li><li>En annen person har fastende verdi 7,4 mmol/L og 12,6 mmol/L etter 120 min. Hva tyder det på?</li></ol>",
-        "losning": "<p><strong>1 — glukose i blodet.</strong> Vi bruker $n = c \\cdot V$ og deretter $m = n \\cdot M$.</p><p>Ved 0 min:</p>$$n = 5{,}2\\,\\frac{\\text{mmol}}{\\text{L}} \\cdot 5{,}0\\,\\text{L} = 26\\,\\text{mmol} = 0{,}026\\,\\text{mol}$$$$m = 0{,}026\\,\\text{mol} \\cdot 180\\,\\frac{\\text{g}}{\\text{mol}} = 4{,}7\\,\\text{g}$$<p>Ved 30 min:</p>$$n = 9{,}4\\,\\frac{\\text{mmol}}{\\text{L}} \\cdot 5{,}0\\,\\text{L} = 47\\,\\text{mmol} = 0{,}047\\,\\text{mol}$$$$m = 0{,}047\\,\\text{mol} \\cdot 180\\,\\frac{\\text{g}}{\\text{mol}} = 8{,}5\\,\\text{g}$$<p><strong>2 — tolkning.</strong> Økningen i blodet er bare</p>$$8{,}5\\,\\text{g} - 4{,}7\\,\\text{g} = 3{,}8\\,\\text{g}$$<p>av de 75 gramene hun drakk, altså omtrent 5 %. Noe av resten er ennå ikke tatt opp fra tarmen, men mye er alt tatt opp i cellene og lagret som glykogen i lever og muskler eller brukt til celleånding. Dette viser hvor kraftig reguleringen er: kroppen slipper ikke blodsukkeret opp i været selv om det kommer en stor porsjon karbohydrat på kort tid.</p><p><strong>3 — endring per minutt.</strong> Stigningen de første 30 minuttene:</p>$$\\frac{9{,}4 - 5{,}2}{30}\\,\\frac{\\text{mmol/L}}{\\text{min}} = \\frac{4{,}2}{30} = 0{,}14\\,\\frac{\\text{mmol}}{\\text{L}\\cdot\\text{min}}$$<p>Fallet fra 30 til 120 min:</p>$$\\frac{5{,}6 - 9{,}4}{90} = \\frac{-3{,}8}{90} = -0{,}042\\,\\frac{\\text{mmol}}{\\text{L}\\cdot\\text{min}}$$<p>Opptaket skjer altså raskt, mens nedreguleringen tar lengre tid — typisk for negativ tilbakekopling: det tar tid før insulinet har fått effekt, og derfor bommer sløyfa alltid litt før den treffer.</p><p><strong>4 — leddene i sløyfa.</strong></p><ul><li><strong>Sensor og kontrollsenter:</strong> betacellene i de langerhanske øyene, som selv registrerer glukosekonsentrasjonen.</li><li><strong>Signal:</strong> hormonet insulin i blodet.</li><li><strong>Effektorer:</strong> muskelceller, fettceller og leverceller.</li><li><strong>Respons:</strong> økt opptak av glukose og lagring som glykogen, slik at blodsukkeret faller — og når det faller, avtar insulinutskillelsen.</li></ul><p><strong>5 — den andre personen.</strong> Fastende verdi 7,4 mmol/L ligger over det normale området 4–6 mmol/L, og etter to timer er verdien fremdeles 12,6 mmol/L, mens den skal ha kommet ned under omtrent 7,8 mmol/L. Begge målingene ligger over grenseverdiene som brukes til å stille diabetesdiagnosen (fastende $\\geq 7{,}0$ mmol/L, to-timers verdi $\\geq 11{,}1$ mmol/L). Kurven er forenlig med diabetes: enten mangler insulinet (type 1), eller cellene svarer dårlig på det (insulinresistens ved type 2). Én test er likevel ikke nok — diagnosen krever gjentatte målinger, og legen bruker i tillegg langtidsblodsukkeret HbA1c.</p>"
+        "losning": "<p><strong>1 — glukose i blodet.</strong> Vi bruker $n = c \\cdot V$ og deretter $m = n \\cdot M$.</p><p>Ved 0 min:</p>$$n = 5{,}2\\,\\frac{\\text{mmol}}{\\text{L}} \\cdot 5{,}0\\,\\text{L} = 26\\,\\text{mmol} = 0{,}026\\,\\text{mol}$$$$m = 0{,}026\\,\\text{mol} \\cdot 180\\,\\frac{\\text{g}}{\\text{mol}} = 4{,}7\\,\\text{g}$$<p>Ved 30 min:</p>$$n = 9{,}4\\,\\frac{\\text{mmol}}{\\text{L}} \\cdot 5{,}0\\,\\text{L} = 47\\,\\text{mmol} = 0{,}047\\,\\text{mol}$$$$m = 0{,}047\\,\\text{mol} \\cdot 180\\,\\frac{\\text{g}}{\\text{mol}} = 8{,}5\\,\\text{g}$$<p><strong>2 — tolkning.</strong> Økningen i blodet er bare</p>$$8{,}5\\,\\text{g} - 4{,}7\\,\\text{g} = 3{,}8\\,\\text{g}$$<p>av de 75 gramene hun drakk, altså omtrent 5 %. Noe av resten er ennå ikke tatt opp fra tarmen, men mye er alt tatt opp i cellene og lagret som glykogen i lever og muskler eller brukt til celleånding. Dette viser hvor kraftig reguleringen er: kroppen slipper ikke blodsukkeret opp i været selv om det kommer en stor porsjon karbohydrat på kort tid.</p><p><strong>3 — endring per minutt.</strong> Stigningen de første 30 minuttene:</p>$$\\frac{9{,}4 - 5{,}2}{30}\\,\\frac{\\text{mmol/L}}{\\text{min}} = \\frac{4{,}2}{30} = 0{,}14\\,\\frac{\\text{mmol}}{\\text{L}\\cdot\\text{min}}$$<p>Fallet fra 30 til 120 min:</p>$$\\frac{5{,}6 - 9{,}4}{90} = \\frac{-3{,}8}{90} = -0{,}042\\,\\frac{\\text{mmol}}{\\text{L}\\cdot\\text{min}}$$<p>Opptaket skjer altså raskt, mens nedreguleringen tar lengre tid — typisk for negativ tilbakekopling: det tar tid før insulinet har fått effekt, og derfor bommer sløyfa alltid litt før den treffer.</p><p><strong>4 — leddene i sløyfa.</strong></p><ul><li><strong>Sensor og kontrollsenter:</strong> betacellene i de langerhanske øyene, som selv registrerer glukosekonsentrasjonen.</li><li><strong>Signal:</strong> hormonet insulin i blodet.</li><li><strong>Effektorer:</strong> muskelceller, fettceller og leverceller.</li><li><strong>Respons:</strong> økt opptak av glukose og lagring som glykogen, slik at blodsukkeret faller — og når det faller, avtar insulinutskillelsen.</li></ul><p><strong>5 — den andre personen.</strong> Fastende verdi 7,4 mmol/L ligger over det normale området 4–6 mmol/L, og etter to timer er verdien fremdeles 12,6 mmol/L, mens den skal ha kommet ned under omtrent 7,8 mmol/L. Begge målingene ligger over grenseverdiene som brukes til å stille diabetesdiagnosen (fastende $\\geq 7{,}0$ mmol/L, to-timers verdi $\\geq 11{,}1$ mmol/L). Kurven er forenlig med diabetes: enten mangler insulinet (type 1), eller cellene svarer dårlig på det (insulinresistens ved type 2). Én test er likevel ikke nok — diagnosen krever gjentatte målinger, og legen bruker i tillegg langtidsblodsukkeret HbA1c.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Glukosebelastningstest — måleverdiene",
+          "forklaring": "Stigningen de første 30 minuttene er over tre ganger brattere enn fallet etterpå: insulinet trenger tid før det virker, så sløyfa bommer alltid litt før den treffer. Den stiplede linja er grenseverdien to timer etter inntak — her ender kurven godt under.",
+          "xmin": -8,
+          "xmax": 132,
+          "ymin": 0,
+          "ymax": 11,
+          "xlabel": "t (min)",
+          "ylabel": "glukose (mmol/L)",
+          "linjer": [
+            {
+              "fra": [
+                0,
+                5.2
+              ],
+              "til": [
+                30,
+                9.4
+              ],
+              "farge": 1,
+              "stiplet": false
+            },
+            {
+              "fra": [
+                30,
+                9.4
+              ],
+              "til": [
+                60,
+                8.1
+              ],
+              "farge": 1,
+              "stiplet": false
+            },
+            {
+              "fra": [
+                60,
+                8.1
+              ],
+              "til": [
+                120,
+                5.6
+              ],
+              "farge": 1,
+              "stiplet": false
+            }
+          ],
+          "asymptoter": [
+            {
+              "retning": "horisontal",
+              "verdi": 7.8,
+              "navn": "7,8 mmol/L"
+            }
+          ],
+          "punkter": [
+            {
+              "x": 0,
+              "y": 5.2,
+              "navn": "5,2",
+              "plassering": "under"
+            },
+            {
+              "x": 30,
+              "y": 9.4,
+              "navn": "9,4"
+            },
+            {
+              "x": 60,
+              "y": 8.1,
+              "navn": "8,1"
+            },
+            {
+              "x": 120,
+              "y": 5.6,
+              "navn": "5,6"
+            }
+          ]
+        }
       },
       {
         "tittel": "Hvor lang tid tar en refleks?",
@@ -84,7 +322,6 @@
         "losning": "<p><strong>Gruppe A er kontrollen.</strong> Den viser at oppsettet virker: ensidig lys gir bøying mot lyset, altså positiv fototropisme.</p><p><strong>A mot B.</strong> Den eneste forskjellen er om spissen er der. Uten spiss skjer det ingenting. Konklusjon: spissen er nødvendig for både bøyingen og strekningsveksten.</p><p><strong>C mot D.</strong> Her er den uavhengige variabelen <em>hvor</em> planten mottar lys. Dekker du spissen (C), skjer ingen bøying, men planten vokser rett opp — den er ikke skadet, den mangler bare informasjonen. Dekker du derimot sonen <em>under</em> spissen og lar spissen se lyset (D), bøyer planten seg som normalt. Konklusjon: <strong>lysreseptoren sitter i spissen</strong>, mens bøyingen skjer i strekksonen lenger ned. Sanseorganet og effektoren er altså på to ulike steder, og det må gå et signal mellom dem.</p><p><strong>E mot F.</strong> Nå testes hva slags signal det er. I begge gruppene er spissen fjernet og lagt tilbake, så avstanden og kontakten er lik. Forskjellen er om laget imellom slipper gjennom stoffer: gelatin er fuktig og gjennomtrengelig, glimmer er tett. Gelatin gir bøying, glimmer gir ingen. Konklusjon: signalet er et <strong>kjemisk stoff som beveger seg nedover</strong> fra spissen — ikke en elektrisk impuls, for en elektrisk impuls ville også stoppet i gelatinen, mens et stoff ville stoppet i glimmeren. Det er nettopp dette mønsteret som skiller de to hypotesene fra hverandre.</p><p><strong>Mekanismen.</strong> Stoffet er <strong>auksin</strong>. Lysreseptorer i spissen registrerer blått lys fra én side, og auksin transporteres sidelengs over til skyggesiden før det sendes nedover. På skyggesiden gjør auksin celleveggene mer strekkbare, cellene tar opp vann og blir lengre. Når den ene siden av skuddet vokser mer enn den andre, må skuddet bøye seg — mot lyset.</p><p><strong>Forsøksdesign.</strong> Legg merke til at gruppe C er den viktigste kontrollen av alle: den utelukker forklaringen «hetten hindret veksten mekanisk». Kontrollerte variabler i hele forsøket er plantetype, temperatur, vanntilgang, lysstyrke og lysretning — bare én ting endres om gangen.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å tro at «negativ tilbakekopling» betyr noe skadelig eller at noe hemmes. Negativ betyr «motsatt rettet»: responsen trekker verdien tilbake mot setpunktet. Det er den positive tilbakekoplingen som er farlig hvis den ikke stoppes.",
       "Å skrive at natrium-kalium-pumpen lager aksjonspotensialet. Pumpen bruker ATP til å bygge opp konsentrasjonsforskjellene og holde hvilepotensialet på $-70\\,\\text{mV}$. Selve aksjonspotensialet er passiv strømning av $\\ce{Na+}$ inn og $\\ce{K+}$ ut gjennom spenningsstyrte kanaler.",
@@ -93,7 +330,6 @@
       "Å plassere ryggmargen eller det autonome nervesystemet feil. Ryggmargen hører til sentralnervesystemet sammen med hjernen, mens det autonome nervesystemet med sympatikus og parasympatikus er en del av det perifere nervesystemet.",
       "Å svare at auksin samler seg på lyssiden, eller at auksin alltid øker veksten. Auksin flyttes til skyggesiden, og der strekker cellene seg mer. I rotceller virker høy auksinkonsentrasjon hemmende — det er derfor rota bøyer nedover og ikke oppover."
     ],
-
     "tips": [
       "Bruk en fast mal på alle «forklar hvordan X reguleres»-oppgaver: avvik fra setpunkt, sensor, kontrollsenter, signal, effektor, respons, avviket rettes opp, signalet avtar. Det siste leddet er der de fleste taper poeng — si alltid eksplisitt at responsen slår seg av selv.",
       "Tegn aksjonspotensialet som graf med mV på y-aksen og ms på x-aksen, og merk hvilepotensial ($-70\\,\\text{mV}$), terskel ($-55\\,\\text{mV}$), topp ($+30\\,\\text{mV}$) og hyperpolarisering. Skriv hvilke kanaler som er åpne i hver fase. Denne figuren er den vanligste eksamensoppgaven i kapittelet.",
@@ -102,25 +338,68 @@
       "I tropismeoppgaver må du alltid ha med tre ting: hvilken stimulus, om tropismen er positiv eller negativ, og at bøyingen skyldes at cellene på den ene siden strekker seg mer enn på den andre. Å bare skrive «på grunn av auksin» gir lite uttelling."
     ]
   },
-
   "begreper": [
-    { "begrep": "Homeostase", "forklaring": "Kroppens evne til å holde det indre miljøet stabilt innenfor et smalt område, selv når forholdene utenfor endrer seg. Det er en dynamisk likevekt der verdiene svinger litt rundt et setpunkt." },
-    { "begrep": "Setpunkt (referanseverdi)", "forklaring": "Den verdien kontrollsenteret sammenlikner målingene med, for eksempel 37 °C for kroppstemperaturen. Ved feber blir setpunktet flyttet oppover." },
-    { "begrep": "Negativ tilbakekopling", "forklaring": "Reguleringsmåte der responsen motvirker avviket og fører verdien tilbake mot setpunktet. Sløyfa slår seg av selv når avviket er borte." },
-    { "begrep": "Positiv tilbakekopling", "forklaring": "Reguleringsmåte der responsen forsterker avviket, som ved fødselsrier og blodkoagulering. Den må ha et sluttpunkt, ellers løper prosessen løpsk." },
-    { "begrep": "Hvilemembranpotensial", "forklaring": "Spenningsforskjellen over membranen til en nervecelle i ro, omtrent $-70\\,\\text{mV}$ med negativ innside. Den opprettholdes av natrium-kalium-pumpen og av at membranen lekker mest $\\ce{K+}$." },
-    { "begrep": "Aksjonspotensial", "forklaring": "En kortvarig, kraftig endring i membranpotensialet som forplanter seg langs aksonet: depolarisering med $\\ce{Na+}$ inn, så repolarisering med $\\ce{K+}$ ut." },
-    { "begrep": "Terskelverdi", "forklaring": "Membranpotensialet som må nås, ca. $-55\\,\\text{mV}$, før spenningsstyrte natriumkanaler åpner seg og et aksjonspotensial utløses. Under terskelen skjer ingenting; over den blir det alltid et fullt aksjonspotensial." },
-    { "begrep": "Saltatorisk ledning", "forklaring": "Ledning der aksjonspotensialet hopper fra en Ranvier-node til den neste i et myelinisert akson. Det gjør signalet mange ganger raskere enn i umyeliniserte fibre." },
-    { "begrep": "Synapse", "forklaring": "Koblingen mellom to nerveceller, eller mellom en nervecelle og en muskel- eller kjertelcelle. Signalet overføres kjemisk over en spalte på 20–40 nm og går derfor bare én vei." },
-    { "begrep": "Transmittersubstans", "forklaring": "Signalstoff som frigjøres fra den presynaptiske enden når $\\ce{Ca^{2+}}$ strømmer inn, og som binder seg til reseptorer på den postsynaptiske cellen. Acetylkolin, dopamin og serotonin er eksempler." },
-    { "begrep": "Autonome nervesystemet", "forklaring": "Den delen av det perifere nervesystemet som styrer indre organer uten viljens kontroll. Sympatikus gjør kroppen klar for aktivitet, parasympatikus for hvile og fordøyelse." },
-    { "begrep": "Hormon", "forklaring": "Signalstoff som skilles ut fra en endokrin kjertel til blodet og virker bare på celler som har passende reseptor. Virkningen kommer saktere enn en nerveimpuls, men varer lenger." },
-    { "begrep": "Insulinresistens", "forklaring": "Tilstand der cellene svarer dårligere på insulin, slik at det trengs mer insulin for samme effekt. Det er kjernen i diabetes type 2 og påvirkes av vekt, aktivitetsnivå, søvn og stress." },
-    { "begrep": "Auksin", "forklaring": "Plantehormon som lages i skuddspissen og styrer strekningsvekst. Det flyttes til skyggesiden ved ensidig lys, og gir i tillegg apikaldominans." },
-    { "begrep": "Tropisme", "forklaring": "Vekstbevegelse hos planter der retningen bestemmes av retningen til stimulusen, som fototropisme og gravitropisme. En nasti, derimot, er en rask turgorbevegelse uten sammenheng med stimulusens retning." }
+    {
+      "begrep": "Homeostase",
+      "forklaring": "Kroppens evne til å holde det indre miljøet stabilt innenfor et smalt område, selv når forholdene utenfor endrer seg. Det er en dynamisk likevekt der verdiene svinger litt rundt et setpunkt."
+    },
+    {
+      "begrep": "Setpunkt (referanseverdi)",
+      "forklaring": "Den verdien kontrollsenteret sammenlikner målingene med, for eksempel 37 °C for kroppstemperaturen. Ved feber blir setpunktet flyttet oppover."
+    },
+    {
+      "begrep": "Negativ tilbakekopling",
+      "forklaring": "Reguleringsmåte der responsen motvirker avviket og fører verdien tilbake mot setpunktet. Sløyfa slår seg av selv når avviket er borte."
+    },
+    {
+      "begrep": "Positiv tilbakekopling",
+      "forklaring": "Reguleringsmåte der responsen forsterker avviket, som ved fødselsrier og blodkoagulering. Den må ha et sluttpunkt, ellers løper prosessen løpsk."
+    },
+    {
+      "begrep": "Hvilemembranpotensial",
+      "forklaring": "Spenningsforskjellen over membranen til en nervecelle i ro, omtrent $-70\\,\\text{mV}$ med negativ innside. Den opprettholdes av natrium-kalium-pumpen og av at membranen lekker mest $\\ce{K+}$."
+    },
+    {
+      "begrep": "Aksjonspotensial",
+      "forklaring": "En kortvarig, kraftig endring i membranpotensialet som forplanter seg langs aksonet: depolarisering med $\\ce{Na+}$ inn, så repolarisering med $\\ce{K+}$ ut."
+    },
+    {
+      "begrep": "Terskelverdi",
+      "forklaring": "Membranpotensialet som må nås, ca. $-55\\,\\text{mV}$, før spenningsstyrte natriumkanaler åpner seg og et aksjonspotensial utløses. Under terskelen skjer ingenting; over den blir det alltid et fullt aksjonspotensial."
+    },
+    {
+      "begrep": "Saltatorisk ledning",
+      "forklaring": "Ledning der aksjonspotensialet hopper fra en Ranvier-node til den neste i et myelinisert akson. Det gjør signalet mange ganger raskere enn i umyeliniserte fibre."
+    },
+    {
+      "begrep": "Synapse",
+      "forklaring": "Koblingen mellom to nerveceller, eller mellom en nervecelle og en muskel- eller kjertelcelle. Signalet overføres kjemisk over en spalte på 20–40 nm og går derfor bare én vei."
+    },
+    {
+      "begrep": "Transmittersubstans",
+      "forklaring": "Signalstoff som frigjøres fra den presynaptiske enden når $\\ce{Ca^{2+}}$ strømmer inn, og som binder seg til reseptorer på den postsynaptiske cellen. Acetylkolin, dopamin og serotonin er eksempler."
+    },
+    {
+      "begrep": "Autonome nervesystemet",
+      "forklaring": "Den delen av det perifere nervesystemet som styrer indre organer uten viljens kontroll. Sympatikus gjør kroppen klar for aktivitet, parasympatikus for hvile og fordøyelse."
+    },
+    {
+      "begrep": "Hormon",
+      "forklaring": "Signalstoff som skilles ut fra en endokrin kjertel til blodet og virker bare på celler som har passende reseptor. Virkningen kommer saktere enn en nerveimpuls, men varer lenger."
+    },
+    {
+      "begrep": "Insulinresistens",
+      "forklaring": "Tilstand der cellene svarer dårligere på insulin, slik at det trengs mer insulin for samme effekt. Det er kjernen i diabetes type 2 og påvirkes av vekt, aktivitetsnivå, søvn og stress."
+    },
+    {
+      "begrep": "Auksin",
+      "forklaring": "Plantehormon som lages i skuddspissen og styrer strekningsvekst. Det flyttes til skyggesiden ved ensidig lys, og gir i tillegg apikaldominans."
+    },
+    {
+      "begrep": "Tropisme",
+      "forklaring": "Vekstbevegelse hos planter der retningen bestemmes av retningen til stimulusen, som fototropisme og gravitropisme. En nasti, derimot, er en rask turgorbevegelse uten sammenheng med stimulusens retning."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hva kjennetegner negativ tilbakekopling?",
@@ -135,7 +414,12 @@
     },
     {
       "sporsmal": "Hvor stort er hvilemembranpotensialet i en nervecelle omtrent?",
-      "alternativer": ["$0\\,\\text{mV}$", "$+30\\,\\text{mV}$", "$-70\\,\\text{mV}$", "$-55\\,\\text{mV}$"],
+      "alternativer": [
+        "$0\\,\\text{mV}$",
+        "$+30\\,\\text{mV}$",
+        "$-70\\,\\text{mV}$",
+        "$-55\\,\\text{mV}$"
+      ],
       "riktig": 2,
       "forklaring": "I ro er innsiden omtrent $-70\\,\\text{mV}$ i forhold til utsiden. To av de andre tallene hører også til kapittelet, men betyr noe annet: $-55\\,\\text{mV}$ er terskelverdien der aksjonspotensialet utløses, og $+30\\,\\text{mV}$ er toppen av aksjonspotensialet. Blander du dem, blir hele grafen feil."
     },
@@ -163,7 +447,12 @@
     },
     {
       "sporsmal": "Hvilket ion strømmer inn i den presynaptiske enden og utløser at transmittersubstans frigjøres?",
-      "alternativer": ["$\\ce{Na+}$", "$\\ce{K+}$", "$\\ce{Ca^{2+}}$", "$\\ce{Cl-}$"],
+      "alternativer": [
+        "$\\ce{Na+}$",
+        "$\\ce{K+}$",
+        "$\\ce{Ca^{2+}}$",
+        "$\\ce{Cl-}$"
+      ],
       "riktig": 2,
       "forklaring": "Når aksjonspotensialet kommer fram, åpnes spenningsstyrte kalsiumkanaler, og $\\ce{Ca^{2+}}$ får vesiklene til å smelte sammen med membranen og tømme innholdet i synapsespalten. $\\ce{Na+}$ er et fristende svar fordi natrium driver selve aksjonspotensialet fram til enden, men natrium er ikke det som frigjør transmitteren."
     },
@@ -245,23 +534,70 @@
       "forklaring": "En tropisme er en vekstbevegelse styrt av hvor stimulusen kommer fra, som når skuddet bøyer seg mot lyset. En nasti, som mimosen som klapper sammen ved berøring, går samme vei uansett hvilken side du tar på. Alternativ C har byttet om de to: nastier skyldes endringer i turgortrykk, tropismer skyldes ulik cellestrekning. Nastier er raske, men det er fordi vann flytter seg, ikke fordi celler deler seg."
     }
   ],
-
   "flashcards": [
-    { "front": "Hva betyr homeostase?", "bak": "At kroppen holder det indre miljøet stabilt innenfor et smalt område rundt et setpunkt, selv om omgivelsene endrer seg. En dynamisk likevekt, ikke stillstand." },
-    { "front": "De tre leddene i en reguleringssløyfe", "bak": "Sensor (måler), kontrollsenter (sammenlikner med setpunktet) og effektor (utfører responsen)." },
-    { "front": "Negativ eller positiv tilbakekopling?", "bak": "Negativ: responsen motvirker avviket — hovedregelen i kroppen. Positiv: responsen forsterker avviket — fødselsrier, blodkoagulering, den oppadgående fasen av et aksjonspotensial." },
-    { "front": "Tre viktige spenningsverdier i en nervecelle", "bak": "Hvilemembranpotensial $-70\\,\\text{mV}$, terskelverdi $-55\\,\\text{mV}$, topp av aksjonspotensialet ca. $+30\\,\\text{mV}$." },
-    { "front": "Hva gjør natrium-kalium-pumpen?", "bak": "Bruker ATP til å frakte 3 $\\ce{Na+}$ ut og 2 $\\ce{K+}$ inn. Den bygger opp konsentrasjonsforskjellene og holder hvilepotensialet, men lager ikke selve aksjonspotensialet." },
-    { "front": "Fasene i et aksjonspotensial", "bak": "1) Depolarisering: natriumkanaler åpnes, $\\ce{Na+}$ inn. 2) Repolarisering: natriumkanaler inaktiveres, kaliumkanaler åpnes, $\\ce{K+}$ ut. 3) Hyperpolarisering og refraktærperiode." },
-    { "front": "Alt-eller-ingenting-prinsippet", "bak": "Under terskelen skjer ingenting; over terskelen blir aksjonspotensialet alltid like stort. Styrken på stimulusen kodes derfor som antall impulser per sekund." },
-    { "front": "Hvorfor leder myeliniserte aksoner raskere?", "bak": "Aksjonspotensialet hopper fra Ranvier-node til Ranvier-node (saltatorisk ledning). Hastigheten kan nå 100 m/s, mot 0,5–2 m/s i umyeliniserte fibre." },
-    { "front": "Overføringen i en synapse, steg for steg", "bak": "Aksjonspotensial til presynaptisk ende, $\\ce{Ca^{2+}}$ inn, vesikler smelter sammen med membranen, transmittersubstans ut i spalten, binding til reseptor på postsynaptisk membran, deretter nedbryting eller gjenopptak." },
-    { "front": "Hvordan deles nervesystemet?", "bak": "Sentralnervesystemet: hjernen og ryggmargen. Det perifere: hjerne- og ryggmargsnervene, med en somatisk (viljestyrt) og en autonom del." },
-    { "front": "Sympatikus mot parasympatikus", "bak": "Sympatikus: kjemp eller flykt — høyere puls, utvidede bronkier og pupiller, glukose ut i blodet, bremset fordøyelse. Parasympatikus: hvil og fordøy — lavere puls, økt fordøyelse, små pupiller." },
-    { "front": "De fem leddene i en refleksbue", "bak": "Reseptor, sensorisk nevron, ryggmargen (ofte via interneuron), motorisk nevron, effektor. Hjernen får beskjed etterpå — derfor er refleksen så rask." },
-    { "front": "Nervesystem mot hormonsystem", "bak": "Nerver: elektrisk-kjemisk signal i nervefibre, millisekunder, kortvarig, treffer utvalgte celler. Hormoner: kjemisk signal i blodet, sekunder til timer, langvarig, treffer alle celler med riktig reseptor." },
-    { "front": "Insulin mot glukagon", "bak": "Insulin fra betacellene senker blodsukkeret: glukose inn i cellene og lagres som glykogen. Glukagon fra alfacellene hever det: glykogen i leveren brytes ned til glukose." },
-    { "front": "Kroppens respons på varme og på kulde", "bak": "Varme: blodårene i huden utvider seg, og svetten fordamper (ca. 2,4 MJ per liter). Kulde: blodårene trekker seg sammen, hårene reiser seg, musklene skjelver, og tyroksin øker stoffskiftet ved langvarig kulde." },
-    { "front": "Hvorfor bøyer et skudd seg mot lyset?", "bak": "Lysreseptorer i spissen fører til at auksin flyttes til skyggesiden. Der blir celleveggene mer strekkbare og cellene lengre, så skyggesiden vokser mest og skuddet bøyer seg mot lyset." }
+    {
+      "front": "Hva betyr homeostase?",
+      "bak": "At kroppen holder det indre miljøet stabilt innenfor et smalt område rundt et setpunkt, selv om omgivelsene endrer seg. En dynamisk likevekt, ikke stillstand."
+    },
+    {
+      "front": "De tre leddene i en reguleringssløyfe",
+      "bak": "Sensor (måler), kontrollsenter (sammenlikner med setpunktet) og effektor (utfører responsen)."
+    },
+    {
+      "front": "Negativ eller positiv tilbakekopling?",
+      "bak": "Negativ: responsen motvirker avviket — hovedregelen i kroppen. Positiv: responsen forsterker avviket — fødselsrier, blodkoagulering, den oppadgående fasen av et aksjonspotensial."
+    },
+    {
+      "front": "Tre viktige spenningsverdier i en nervecelle",
+      "bak": "Hvilemembranpotensial $-70\\,\\text{mV}$, terskelverdi $-55\\,\\text{mV}$, topp av aksjonspotensialet ca. $+30\\,\\text{mV}$."
+    },
+    {
+      "front": "Hva gjør natrium-kalium-pumpen?",
+      "bak": "Bruker ATP til å frakte 3 $\\ce{Na+}$ ut og 2 $\\ce{K+}$ inn. Den bygger opp konsentrasjonsforskjellene og holder hvilepotensialet, men lager ikke selve aksjonspotensialet."
+    },
+    {
+      "front": "Fasene i et aksjonspotensial",
+      "bak": "1) Depolarisering: natriumkanaler åpnes, $\\ce{Na+}$ inn. 2) Repolarisering: natriumkanaler inaktiveres, kaliumkanaler åpnes, $\\ce{K+}$ ut. 3) Hyperpolarisering og refraktærperiode."
+    },
+    {
+      "front": "Alt-eller-ingenting-prinsippet",
+      "bak": "Under terskelen skjer ingenting; over terskelen blir aksjonspotensialet alltid like stort. Styrken på stimulusen kodes derfor som antall impulser per sekund."
+    },
+    {
+      "front": "Hvorfor leder myeliniserte aksoner raskere?",
+      "bak": "Aksjonspotensialet hopper fra Ranvier-node til Ranvier-node (saltatorisk ledning). Hastigheten kan nå 100 m/s, mot 0,5–2 m/s i umyeliniserte fibre."
+    },
+    {
+      "front": "Overføringen i en synapse, steg for steg",
+      "bak": "Aksjonspotensial til presynaptisk ende, $\\ce{Ca^{2+}}$ inn, vesikler smelter sammen med membranen, transmittersubstans ut i spalten, binding til reseptor på postsynaptisk membran, deretter nedbryting eller gjenopptak."
+    },
+    {
+      "front": "Hvordan deles nervesystemet?",
+      "bak": "Sentralnervesystemet: hjernen og ryggmargen. Det perifere: hjerne- og ryggmargsnervene, med en somatisk (viljestyrt) og en autonom del."
+    },
+    {
+      "front": "Sympatikus mot parasympatikus",
+      "bak": "Sympatikus: kjemp eller flykt — høyere puls, utvidede bronkier og pupiller, glukose ut i blodet, bremset fordøyelse. Parasympatikus: hvil og fordøy — lavere puls, økt fordøyelse, små pupiller."
+    },
+    {
+      "front": "De fem leddene i en refleksbue",
+      "bak": "Reseptor, sensorisk nevron, ryggmargen (ofte via interneuron), motorisk nevron, effektor. Hjernen får beskjed etterpå — derfor er refleksen så rask."
+    },
+    {
+      "front": "Nervesystem mot hormonsystem",
+      "bak": "Nerver: elektrisk-kjemisk signal i nervefibre, millisekunder, kortvarig, treffer utvalgte celler. Hormoner: kjemisk signal i blodet, sekunder til timer, langvarig, treffer alle celler med riktig reseptor."
+    },
+    {
+      "front": "Insulin mot glukagon",
+      "bak": "Insulin fra betacellene senker blodsukkeret: glukose inn i cellene og lagres som glykogen. Glukagon fra alfacellene hever det: glykogen i leveren brytes ned til glukose."
+    },
+    {
+      "front": "Kroppens respons på varme og på kulde",
+      "bak": "Varme: blodårene i huden utvider seg, og svetten fordamper (ca. 2,4 MJ per liter). Kulde: blodårene trekker seg sammen, hårene reiser seg, musklene skjelver, og tyroksin øker stoffskiftet ved langvarig kulde."
+    },
+    {
+      "front": "Hvorfor bøyer et skudd seg mot lyset?",
+      "bak": "Lysreseptorer i spissen fører til at auksin flyttes til skyggesiden. Der blir celleveggene mer strekkbare og cellene lengre, så skyggesiden vokser mest og skuddet bøyer seg mot lyset."
+    }
   ]
 }

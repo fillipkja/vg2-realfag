@@ -107,7 +107,8 @@
             -2
           ],
           "navn": "f' = 0",
-          "farge": 2
+          "farge": 2,
+          "merkeplass": 1
         }
       ],
       "punkter": [
@@ -209,8 +210,7 @@
             {
               "x": 0,
               "y": 0,
-              "navn": "f' = f'' = 0",
-              "plassering": "under"
+              "navn": "f' = f'' = 0"
             }
           ]
         }
@@ -221,7 +221,57 @@
       },
       {
         "tittel": "Største og minste verdi på et intervall",
-        "html": "<p>Et toppunkt er bare en <em>lokal</em> topp — grafen kan godt ligge høyere et annet sted. Når oppgaven spør om den <strong>største</strong> eller <strong>minste</strong> verdien til $f$ i et lukket intervall $[a, b]$, må du derfor sammenligne alle kandidatene:</p><ul><li>de stasjonære punktene som ligger inne i intervallet</li><li>endepunktene $x = a$ og $x = b$</li><li>eventuelle punkter der $f$ ikke er deriverbar</li></ul><p>Regn ut $f$-verdien i hver kandidat, og plukk den største og den minste. Mer er det ikke. En kontinuerlig funksjon på et lukket intervall har alltid både en største og en minste verdi.</p><p>Eksempel: $f(x) = x^3 - 3x$ på intervallet $[0, 3]$. Her er $f'(x) = 3x^2 - 3 = 3(x-1)(x+1)$, så de stasjonære punktene er $x = 1$ og $x = -1$ — men bare $x = 1$ ligger i intervallet. Kandidatene blir</p>$$f(0) = 0, \\qquad f(1) = 1 - 3 = -2, \\qquad f(3) = 27 - 9 = 18$$<p>Største verdi er $18$, og den ligger i endepunktet $x = 3$. Minste verdi er $-2$, i bunnpunktet $x = 1$. Hadde du bare sett på de stasjonære punktene, ville du bommet på maksimum.</p><p>Utvider vi til hele $\\mathbb{R}$, finnes det ingen største verdi i det hele tatt, for $f(x) \\to \\infty$ når $x \\to \\infty$. På åpne intervaller og på hele tallinja må du derfor alltid sjekke randen før du kaller noe «den største verdien».</p>"
+        "html": "<p>Et toppunkt er bare en <em>lokal</em> topp — grafen kan godt ligge høyere et annet sted. Når oppgaven spør om den <strong>største</strong> eller <strong>minste</strong> verdien til $f$ i et lukket intervall $[a, b]$, må du derfor sammenligne alle kandidatene:</p><ul><li>de stasjonære punktene som ligger inne i intervallet</li><li>endepunktene $x = a$ og $x = b$</li><li>eventuelle punkter der $f$ ikke er deriverbar</li></ul><p>Regn ut $f$-verdien i hver kandidat, og plukk den største og den minste. Mer er det ikke. En kontinuerlig funksjon på et lukket intervall har alltid både en største og en minste verdi.</p><p>Eksempel: $f(x) = x^3 - 3x$ på intervallet $[0, 3]$. Her er $f'(x) = 3x^2 - 3 = 3(x-1)(x+1)$, så de stasjonære punktene er $x = 1$ og $x = -1$ — men bare $x = 1$ ligger i intervallet. Kandidatene blir</p>$$f(0) = 0, \\qquad f(1) = 1 - 3 = -2, \\qquad f(3) = 27 - 9 = 18$$<p>Største verdi er $18$, og den ligger i endepunktet $x = 3$. Minste verdi er $-2$, i bunnpunktet $x = 1$. Hadde du bare sett på de stasjonære punktene, ville du bommet på maksimum.</p><p>Utvider vi til hele $\\mathbb{R}$, finnes det ingen største verdi i det hele tatt, for $f(x) \\to \\infty$ når $x \\to \\infty$. På åpne intervaller og på hele tallinja må du derfor alltid sjekke randen før du kaller noe «den største verdien».</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Største verdi til f(x) = x³ − 3x i [0, 3]",
+          "forklaring": "Alle tre kandidatene er merket av. Den minste verdien ligger i bunnpunktet (1, −2), men den største ligger i endepunktet x = 3 — ikke i et stasjonært punkt. Ser du bare på f'(x) = 0, bommer du på maksimum.",
+          "xmin": -0.3,
+          "xmax": 3.3,
+          "ymin": -4,
+          "ymax": 22,
+          "kurver": [
+            {
+              "uttrykk": "x^3-3*x",
+              "farge": 1
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                3,
+                0
+              ],
+              "navn": "[0, 3]",
+              "farge": 2,
+              "stiplet": false,
+              "merkeplass": 0.5
+            }
+          ],
+          "punkter": [
+            {
+              "x": 0,
+              "y": 0,
+              "navn": "f(0) = 0"
+            },
+            {
+              "x": 1,
+              "y": -2,
+              "navn": "f(1) = −2",
+              "plassering": "under"
+            },
+            {
+              "x": 3,
+              "y": 18,
+              "navn": "f(3) = 18",
+              "hjelpelinjer": true
+            }
+          ]
+        }
       },
       {
         "tittel": "Optimering av praktiske problemer",
@@ -246,9 +296,9 @@
         "figur": {
           "type": "graf",
           "tittel": "Volumet V(x) = x(30 − 2x)²",
-          "forklaring": "Hjelpelinjene viser toppen: x = 5 gir V = 2000. Den andre løsningen av V'(x) = 0 er x = 15, men der er volumet null — hele bunnen er klippet bort — og x = 15 ligger utenfor definisjonsmengden.",
+          "forklaring": "Hjelpelinjene viser toppen: x = 5 gir V = 2000 cm³, og tangenten er vannrett der. Den andre løsningen av V'(x) = 0 er x = 15, men der er hele bunnen klippet bort og volumet null — derfor må definisjonsmengden 0 < x < 15 være med i drøftingen.",
           "xmin": 0,
-          "xmax": 18,
+          "xmax": 16.5,
           "ymin": 0,
           "ymax": 2300,
           "xlabel": "x (cm)",
@@ -256,7 +306,6 @@
           "kurver": [
             {
               "uttrykk": "x*(30-2*x)^2",
-              "navn": "V",
               "farge": 1
             }
           ],
@@ -267,7 +316,7 @@
                 2000
               ],
               "til": [
-                8.6,
+                8,
                 2000
               ],
               "navn": "V' = 0",

@@ -3,7 +3,6 @@
   "nr": 4,
   "tittel": "Cellemembranen og cellekommunikasjon",
   "intro": "Cellemembranen er bare noen nanometer tykk, men den bestemmer hva som kommer inn i cellen, hva som slipper ut, og hvilke beskjeder cellen får fra omverdenen. I dette kapittelet lærer du hvordan membranen er bygd, måtene stoffer krysser den, hvordan et hormon får en celle til å gjøre noe — og hvordan celler i et vev henger sammen.",
-
   "kompakt": {
     "punkter": [
       "Cellemembranen er et dobbelt lag av fosfolipider, omtrent 7–8 nm tykt. De hydrofile hodene vender ut mot vannet på begge sider, de hydrofobe fettsyrehalene inn mot midten. Selve fettlaget er barrieren.",
@@ -18,16 +17,60 @@
       "Cellekontakter: tette forbindelser tetter mellomrommet, festeforbindelser (desmosomer) nagler cellene sammen, og kanalforbindelser lar små molekyler gå rett fra celle til celle. Planteceller bruker plasmodesmer."
     ],
     "formler": [
-      { "navn": "Retningen for diffusjon", "latex": "\\text{høy konsentrasjon} \\longrightarrow \\text{lav konsentrasjon}" },
-      { "navn": "Retningen for osmose (vannets vei)", "latex": "\\text{hypotonisk (mye vann)} \\longrightarrow \\text{hypertonisk (lite vann)}" },
-      { "navn": "Prosentvis masseendring i osmoseforsøk", "latex": "\\frac{m_{\\text{etter}} - m_{\\text{f\\o r}}}{m_{\\text{f\\o r}}} \\cdot 100\\,\\%" },
-      { "navn": "Natrium-kalium-pumpa per ATP", "latex": "3\\,\\ce{Na+}\\;\\text{ut} \\;+\\; 2\\,\\ce{K+}\\;\\text{inn}" },
-      { "navn": "Netto ladning flyttet per pumpesyklus", "latex": "(+3) - (+2) = +1 \\;\\text{ladning ut av cellen}" },
-      { "navn": "Energikilden til aktiv transport", "latex": "\\text{ATP} \\longrightarrow \\text{ADP} + \\text{fosfat} + \\text{energi}" },
-      { "navn": "Konsentrasjonsforhold over membranen (natrium)", "latex": "\\frac{c_{\\text{ute}}}{c_{\\text{inne}}} = \\frac{145\\,\\text{mmol/L}}{12\\,\\text{mmol/L}} \\approx 12" }
-    ]
+      {
+        "navn": "Retningen for diffusjon",
+        "latex": "\\text{høy konsentrasjon} \\longrightarrow \\text{lav konsentrasjon}"
+      },
+      {
+        "navn": "Retningen for osmose (vannets vei)",
+        "latex": "\\text{hypotonisk (mye vann)} \\longrightarrow \\text{hypertonisk (lite vann)}"
+      },
+      {
+        "navn": "Prosentvis masseendring i osmoseforsøk",
+        "latex": "\\frac{m_{\\text{etter}} - m_{\\text{f\\o r}}}{m_{\\text{f\\o r}}} \\cdot 100\\,\\%"
+      },
+      {
+        "navn": "Natrium-kalium-pumpa per ATP",
+        "latex": "3\\,\\ce{Na+}\\;\\text{ut} \\;+\\; 2\\,\\ce{K+}\\;\\text{inn}"
+      },
+      {
+        "navn": "Netto ladning flyttet per pumpesyklus",
+        "latex": "(+3) - (+2) = +1 \\;\\text{ladning ut av cellen}"
+      },
+      {
+        "navn": "Energikilden til aktiv transport",
+        "latex": "\\text{ATP} \\longrightarrow \\text{ADP} + \\text{fosfat} + \\text{energi}"
+      },
+      {
+        "navn": "Konsentrasjonsforhold over membranen (natrium)",
+        "latex": "\\frac{c_{\\text{ute}}}{c_{\\text{inne}}} = \\frac{145\\,\\text{mmol/L}}{12\\,\\text{mmol/L}} \\approx 12"
+      }
+    ],
+    "figur": {
+      "type": "flyt",
+      "retning": "ned",
+      "tittel": "Slik avgjør du hvilken transportmekanisme det er",
+      "forklaring": "Det er steg 1 og 3 som skiller mekanismene, ikke steg 2: fasilitert diffusjon har transportprotein, men bruker ikke ATP. Bare transport mot gradienten — og vesikkeltransport, der hele membranen må flytte seg — koster cellen energi.",
+      "steg": [
+        {
+          "tekst": "Med eller mot gradienten?",
+          "note": "mot = aktiv, med = passiv"
+        },
+        {
+          "tekst": "Trengs det et transportprotein?",
+          "note": "kanal, bærer eller pumpe"
+        },
+        {
+          "tekst": "Brukes det ATP?",
+          "note": "mot gradienten og i vesikler"
+        },
+        {
+          "tekst": "Sett navn på mekanismen",
+          "note": "og gi et konkret eksempel"
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -36,11 +79,65 @@
       },
       {
         "tittel": "Passiv transport: diffusjon, osmose og fasilitert diffusjon",
-        "html": "<p><strong>Passiv transport</strong> er all transport som går <em>med</em> konsentrasjonsgradienten, og som derfor ikke koster cellen ATP. Drivkraften er den tilfeldige varmebevegelsen til molekylene selv.</p><p><strong>Diffusjon</strong> er netto bevegelse av et stoff fra høy til lav konsentrasjon. Molekylene beveger seg i alle retninger hele tiden, men fordi det er flest av dem der konsentrasjonen er høy, blir <em>netto</em>-strømmen én vei. Diffusjonen stopper ikke når det blir <strong>likevekt</strong>: molekylene fortsetter å krysse membranen, men nå går like mange hver vei. Rett gjennom fosfolipidlaget diffunderer i praksis bare små upolare molekyler som $\\ce{O2}$ og $\\ce{CO2}$, og fettløselige stoffer som steroidhormoner. Diffusjonen går raskere når gradienten er brattere, temperaturen høyere, avstanden kortere og overflaten større.</p><p><strong>Osmose</strong> er diffusjon av <em>vann</em> gjennom en semipermeabel membran. Vannet går fra siden med mest vann — altså lavest konsentrasjon av oppløst stoff — til siden med minst vann. Pass på hvilken vei du tenker: vannet følger sin egen gradient. Det ser bare ut som om saltet trekker vannet til seg.</p><p><strong>Fasilitert diffusjon</strong> («hjulpen diffusjon») er passiv transport gjennom et protein. Glukose, aminosyrer og ioner er for store eller for polare til å komme gjennom fettlaget, og vann siver bare langsomt gjennom det. Disse stoffene bruker i stedet <strong>kanalproteiner</strong> som ionekanaler og <strong>akvaporiner</strong> (vannkanaler), eller <strong>bærerproteiner</strong> som endrer form og slipper stoffet over. Dette er fortsatt passivt — retningen bestemmes av gradienten, ikke av cellen, og det brukes ikke ATP. Men fordi antallet proteiner i membranen er begrenset, <strong>mettes</strong> transporten: øker du konsentrasjonen langt nok, går det ikke fortere.</p>"
+        "html": "<p><strong>Passiv transport</strong> er all transport som går <em>med</em> konsentrasjonsgradienten, og som derfor ikke koster cellen ATP. Drivkraften er den tilfeldige varmebevegelsen til molekylene selv.</p><p><strong>Diffusjon</strong> er netto bevegelse av et stoff fra høy til lav konsentrasjon. Molekylene beveger seg i alle retninger hele tiden, men fordi det er flest av dem der konsentrasjonen er høy, blir <em>netto</em>-strømmen én vei. Diffusjonen stopper ikke når det blir <strong>likevekt</strong>: molekylene fortsetter å krysse membranen, men nå går like mange hver vei. Rett gjennom fosfolipidlaget diffunderer i praksis bare små upolare molekyler som $\\ce{O2}$ og $\\ce{CO2}$, og fettløselige stoffer som steroidhormoner. Diffusjonen går raskere når gradienten er brattere, temperaturen høyere, avstanden kortere og overflaten større.</p><p><strong>Osmose</strong> er diffusjon av <em>vann</em> gjennom en semipermeabel membran. Vannet går fra siden med mest vann — altså lavest konsentrasjon av oppløst stoff — til siden med minst vann. Pass på hvilken vei du tenker: vannet følger sin egen gradient. Det ser bare ut som om saltet trekker vannet til seg.</p><p><strong>Fasilitert diffusjon</strong> («hjulpen diffusjon») er passiv transport gjennom et protein. Glukose, aminosyrer og ioner er for store eller for polare til å komme gjennom fettlaget, og vann siver bare langsomt gjennom det. Disse stoffene bruker i stedet <strong>kanalproteiner</strong> som ionekanaler og <strong>akvaporiner</strong> (vannkanaler), eller <strong>bærerproteiner</strong> som endrer form og slipper stoffet over. Dette er fortsatt passivt — retningen bestemmes av gradienten, ikke av cellen, og det brukes ikke ATP. Men fordi antallet proteiner i membranen er begrenset, <strong>mettes</strong> transporten: øker du konsentrasjonen langt nok, går det ikke fortere.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Transportfart mot konsentrasjonen utenfor cellen",
+          "forklaring": "Enkel diffusjon (den rette linja) fortsetter å øke så lenge gradienten øker. Fasilitert diffusjon starter mye brattere, men flater ut mot metningslinja: når alle kanal- og bærerproteinene er i arbeid samtidig, hjelper det ikke å øke konsentrasjonen mer. Begge er passive — det er formen på kurven som skiller dem, ikke ATP.",
+          "xmin": 0,
+          "xmax": 12,
+          "ymin": 0,
+          "ymax": 115,
+          "xlabel": "konsentrasjon ute",
+          "ylabel": "transportfart",
+          "kurver": [
+            {
+              "uttrykk": "100*x/(2+x)",
+              "navn": "fasilitert diffusjon",
+              "farge": 1
+            },
+            {
+              "uttrykk": "5*x",
+              "navn": "enkel diffusjon",
+              "farge": 2
+            }
+          ],
+          "asymptoter": [
+            {
+              "retning": "horisontal",
+              "verdi": 100,
+              "navn": "metning"
+            }
+          ]
+        }
       },
       {
         "tittel": "Aktiv transport og ionepumper",
-        "html": "<p>Cellen kan ikke klare seg med passiv transport alene. En nervecelle må holde mye mer kalium inne enn ute, og en tarmcelle må hente ut det siste av glukosen selv når det alt er mer glukose inni cellen enn i tarmen. Å flytte et stoff <em>mot</em> konsentrasjonsgradienten krever energi, og det er <strong>aktiv transport</strong>.</p><p>Energien kommer fra ATP. Transportproteinet — en <strong>pumpe</strong> — binder stoffet, får en fosfatgruppe fra ATP, endrer form og slipper stoffet ut på den andre siden. Så faller fosfatgruppen av, og pumpa vender tilbake til utgangsformen. Pumper er selektive: hver pumpe flytter bare bestemte ioner eller molekyler.</p><p>Den viktigste er <strong>natrium-kalium-pumpa</strong>. For hvert ATP-molekyl den bruker, pumper den <strong>3 $\\ce{Na+}$ ut</strong> og <strong>2 $\\ce{K+}$ inn</strong>. Legg merke til at tallene ikke er like: hver runde flytter én positiv ladning ut av cellen, så pumpa gjør innsiden litt negativ. Sammen med kalium som lekker ut, er dette grunnlaget for <strong>membranpotensialet</strong> — hvilepotensialet på om lag $-70$ mV i en nervecelle. Pumpa er dermed forutsetningen for nerveimpulser, og den er dyr i drift: en betydelig del av kroppens ATP-forbruk går til nettopp denne jobben. Andre viktige pumper er kalsiumpumper og protonpumper.</p><p>Gradienten en pumpe lager, kan brukes videre. I tarmcellene strømmer $\\ce{Na+}$ tilbake inn gjennom et bærerprotein som samtidig drar glukose med seg. Det kalles <strong>sekundær aktiv transport</strong>: glukosen går mot sin egen gradient, men energien kommer indirekte fra natrium-kalium-pumpa.</p>"
+        "html": "<p>Cellen kan ikke klare seg med passiv transport alene. En nervecelle må holde mye mer kalium inne enn ute, og en tarmcelle må hente ut det siste av glukosen selv når det alt er mer glukose inni cellen enn i tarmen. Å flytte et stoff <em>mot</em> konsentrasjonsgradienten krever energi, og det er <strong>aktiv transport</strong>.</p><p>Energien kommer fra ATP. Transportproteinet — en <strong>pumpe</strong> — binder stoffet, får en fosfatgruppe fra ATP, endrer form og slipper stoffet ut på den andre siden. Så faller fosfatgruppen av, og pumpa vender tilbake til utgangsformen. Pumper er selektive: hver pumpe flytter bare bestemte ioner eller molekyler.</p><p>Den viktigste er <strong>natrium-kalium-pumpa</strong>. For hvert ATP-molekyl den bruker, pumper den <strong>3 $\\ce{Na+}$ ut</strong> og <strong>2 $\\ce{K+}$ inn</strong>. Legg merke til at tallene ikke er like: hver runde flytter én positiv ladning ut av cellen, så pumpa gjør innsiden litt negativ. Sammen med kalium som lekker ut, er dette grunnlaget for <strong>membranpotensialet</strong> — hvilepotensialet på om lag $-70$ mV i en nervecelle. Pumpa er dermed forutsetningen for nerveimpulser, og den er dyr i drift: en betydelig del av kroppens ATP-forbruk går til nettopp denne jobben. Andre viktige pumper er kalsiumpumper og protonpumper.</p><p>Gradienten en pumpe lager, kan brukes videre. I tarmcellene strømmer $\\ce{Na+}$ tilbake inn gjennom et bærerprotein som samtidig drar glukose med seg. Det kalles <strong>sekundær aktiv transport</strong>: glukosen går mot sin egen gradient, men energien kommer indirekte fra natrium-kalium-pumpa.</p>",
+        "figur": {
+          "type": "stolper",
+          "tittel": "Na⁺ og K⁺ på hver side av membranen i en nervecelle",
+          "enhet": "konsentrasjon (mmol/L)",
+          "forklaring": "Sammenlign søylene parvis: natrium står 145 mot 12 (omtrent 12 ganger mer ute), kalium 140 mot 4 (35 ganger mer inne). Pumpa flytter begge ionene motsatt vei av det de ville gått av seg selv, og derfor må hver runde betales med ATP. Forskjellene jevner seg aldri ut så lenge pumpa går.",
+          "data": [
+            {
+              "navn": "Na⁺ ute",
+              "verdi": 145
+            },
+            {
+              "navn": "Na⁺ inne",
+              "verdi": 12
+            },
+            {
+              "navn": "K⁺ ute",
+              "verdi": 4
+            },
+            {
+              "navn": "K⁺ inne",
+              "verdi": 140
+            }
+          ]
+        }
       },
       {
         "tittel": "Endocytose og eksocytose",
@@ -55,12 +152,86 @@
         "html": "<p>Celler i et vev ligger ikke løst ved siden av hverandre. De er koblet sammen med <strong>cellekontakter</strong> som både holder vevet sammen og bestemmer hva som får passere mellom cellene. Hos dyr og mennesker finnes tre hovedtyper:</p><ul><li><strong>Tette forbindelser</strong> syr membranene til to naboceller sammen i et belte hele veien rundt, slik at det ikke er noen sprekk mellom dem. I tarmveggen hindrer de tarminnholdet i å lekke mellom cellene og rett ut i blodet — alt må gjennom cellene, der cellen selv kontrollerer transporten. De samme forbindelsene i blodårene i hjernen utgjør blod-hjerne-barrieren.</li><li><strong>Festeforbindelser (desmosomer)</strong> virker som naglinger: proteintråder inne i cellene festes til hverandre gjennom membranene. De finnes der vevet utsettes for strekk, som i huden og i hjertemuskelen.</li><li><strong>Kanalforbindelser (gap junctions)</strong> er små tunneler mellom cytoplasmaet i to naboceller. Ioner og små molekyler går rett fra celle til celle, og cellene kan derfor svare som en enhet. I hjertet er dette grunnen til at muskelcellene trekker seg sammen i takt.</li></ul><p>Planteceller har cellevegg mellom seg og løser oppgaven på sitt eget vis: gjennom små kanaler i celleveggen, <strong>plasmodesmer</strong>, står cytoplasmaet i nabocellene i direkte forbindelse med hverandre. Funksjonen svarer til kanalforbindelsene hos dyr.</p><p>Kontaktene har også en rolle i signalisering. Mister en celle den normale kontakten med naboene sine, endrer den ofte oppførsel. Det er sentralt både i sårheling og når kreftceller løsner fra svulsten og sprer seg til andre vev.</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Osmoseforsøk med potet — fra masseendring til isotonisk konsentrasjon",
         "oppgave": "<p>Du skjærer fire like store staver av rå potet, tørker dem forsiktig og veier dem. Så legger du én stav i hver av fire sukkerløsninger og lar dem ligge i to timer. Deretter tørker og veier du dem på nytt.</p><table><thead><tr><th>Sukkerkonsentrasjon (mol/L)</th><th>Masse før (g)</th><th>Masse etter (g)</th></tr></thead><tbody><tr><td>0,00</td><td>5,00</td><td>5,60</td></tr><tr><td>0,20</td><td>5,00</td><td>5,15</td></tr><tr><td>0,40</td><td>5,00</td><td>4,80</td></tr><tr><td>0,60</td><td>5,00</td><td>4,45</td></tr></tbody></table><ol><li>Regn ut prosentvis masseendring for hver stav.</li><li>Forklar hvilken vei vannet har gått i den svakeste og i den sterkeste løsningen. Bruk begrepene hypotonisk og hypertonisk.</li><li>Anslå hvilken sukkerkonsentrasjon som er isotonisk med potetcellene.</li><li>Hva har skjedd med cellene i den sterkeste løsningen?</li></ol>",
-        "losning": "<p><strong>Deloppgave 1 — prosentvis masseendring.</strong> Vi bruker</p>$$\\frac{m_{\\text{etter}} - m_{\\text{f\\o r}}}{m_{\\text{f\\o r}}} \\cdot 100\\,\\%$$<p>og regner ut én linje om gangen:</p>$$0{,}00\\,\\text{mol/L:}\\quad \\frac{5{,}60 - 5{,}00}{5{,}00} \\cdot 100\\,\\% = \\frac{0{,}60}{5{,}00}\\cdot 100\\,\\% = +12{,}0\\,\\%$$$$0{,}20\\,\\text{mol/L:}\\quad \\frac{5{,}15 - 5{,}00}{5{,}00} \\cdot 100\\,\\% = \\frac{0{,}15}{5{,}00}\\cdot 100\\,\\% = +3{,}0\\,\\%$$$$0{,}40\\,\\text{mol/L:}\\quad \\frac{4{,}80 - 5{,}00}{5{,}00} \\cdot 100\\,\\% = \\frac{-0{,}20}{5{,}00}\\cdot 100\\,\\% = -4{,}0\\,\\%$$$$0{,}60\\,\\text{mol/L:}\\quad \\frac{4{,}45 - 5{,}00}{5{,}00} \\cdot 100\\,\\% = \\frac{-0{,}55}{5{,}00}\\cdot 100\\,\\% = -11{,}0\\,\\%$$<p><strong>Deloppgave 2 — hvilken vei gikk vannet?</strong> I destillert vann (0,00 mol/L) er løsningen <strong>hypotonisk</strong> i forhold til celleinnholdet: det er mer vann og mindre oppløst stoff ute enn inne. Vann diffunderer derfor <em>inn</em> i cellene, og staven blir 12,0 % tyngre. I 0,60 mol/L er løsningen <strong>hypertonisk</strong>: nå er det minst vann på utsiden, så vann diffunderer <em>ut</em>, og staven mister 11,0 % av massen. Merk at det er vannet som flytter seg — sukkeret kommer ikke gjennom membranen.</p><p><strong>Deloppgave 3 — den isotoniske konsentrasjonen.</strong> Isotonisk betyr at det ikke er noen netto vannstrøm, altså 0 % masseendring. Verdien ligger mellom 0,20 mol/L (som gir $+3{,}0\\,\\%$) og 0,40 mol/L (som gir $-4{,}0\\,\\%$). Over dette intervallet på 0,20 mol/L endrer resultatet seg</p>$$3{,}0\\,\\% - (-4{,}0\\,\\%) = 7{,}0 \\text{ prosentpoeng}$$<p>Vi må ned 3,0 prosentpoeng fra 0,20 mol/L, altså $\\frac{3{,}0}{7{,}0}$ av intervallet:</p>$$c \\approx 0{,}20\\,\\text{mol/L} + 0{,}20\\,\\text{mol/L} \\cdot \\frac{3{,}0}{7{,}0} = 0{,}20 + 0{,}086 \\approx 0{,}29\\,\\text{mol/L}$$<p>Grafisk er dette akkurat der grafen krysser 0 %-linja.</p><p><strong>Deloppgave 4 — cellene i den sterkeste løsningen.</strong> Cellene har mistet så mye vann at protoplasten (cellemembranen med innholdet) har trukket seg vekk fra celleveggen. Det kalles <strong>plasmolyse</strong>. Turgortrykket forsvinner, og staven kjennes slapp og myk. Fordi planteceller har cellevegg, sprekker de ikke i destillert vann; de blir bare stive av turgortrykk. En dyrecelle uten cellevegg ville derimot kunne sprekke.</p><p><strong>Feilkilder å nevne i en rapport:</strong> hvor godt du tørket stavene før veiing, ulik overflate på stavene, og at to timer kanskje ikke er nok til full likevekt.</p>"
+        "losning": "<p><strong>Deloppgave 1 — prosentvis masseendring.</strong> Vi bruker</p>$$\\frac{m_{\\text{etter}} - m_{\\text{f\\o r}}}{m_{\\text{f\\o r}}} \\cdot 100\\,\\%$$<p>og regner ut én linje om gangen:</p>$$0{,}00\\,\\text{mol/L:}\\quad \\frac{5{,}60 - 5{,}00}{5{,}00} \\cdot 100\\,\\% = \\frac{0{,}60}{5{,}00}\\cdot 100\\,\\% = +12{,}0\\,\\%$$$$0{,}20\\,\\text{mol/L:}\\quad \\frac{5{,}15 - 5{,}00}{5{,}00} \\cdot 100\\,\\% = \\frac{0{,}15}{5{,}00}\\cdot 100\\,\\% = +3{,}0\\,\\%$$$$0{,}40\\,\\text{mol/L:}\\quad \\frac{4{,}80 - 5{,}00}{5{,}00} \\cdot 100\\,\\% = \\frac{-0{,}20}{5{,}00}\\cdot 100\\,\\% = -4{,}0\\,\\%$$$$0{,}60\\,\\text{mol/L:}\\quad \\frac{4{,}45 - 5{,}00}{5{,}00} \\cdot 100\\,\\% = \\frac{-0{,}55}{5{,}00}\\cdot 100\\,\\% = -11{,}0\\,\\%$$<p><strong>Deloppgave 2 — hvilken vei gikk vannet?</strong> I destillert vann (0,00 mol/L) er løsningen <strong>hypotonisk</strong> i forhold til celleinnholdet: det er mer vann og mindre oppløst stoff ute enn inne. Vann diffunderer derfor <em>inn</em> i cellene, og staven blir 12,0 % tyngre. I 0,60 mol/L er løsningen <strong>hypertonisk</strong>: nå er det minst vann på utsiden, så vann diffunderer <em>ut</em>, og staven mister 11,0 % av massen. Merk at det er vannet som flytter seg — sukkeret kommer ikke gjennom membranen.</p><p><strong>Deloppgave 3 — den isotoniske konsentrasjonen.</strong> Isotonisk betyr at det ikke er noen netto vannstrøm, altså 0 % masseendring. Verdien ligger mellom 0,20 mol/L (som gir $+3{,}0\\,\\%$) og 0,40 mol/L (som gir $-4{,}0\\,\\%$). Over dette intervallet på 0,20 mol/L endrer resultatet seg</p>$$3{,}0\\,\\% - (-4{,}0\\,\\%) = 7{,}0 \\text{ prosentpoeng}$$<p>Vi må ned 3,0 prosentpoeng fra 0,20 mol/L, altså $\\frac{3{,}0}{7{,}0}$ av intervallet:</p>$$c \\approx 0{,}20\\,\\text{mol/L} + 0{,}20\\,\\text{mol/L} \\cdot \\frac{3{,}0}{7{,}0} = 0{,}20 + 0{,}086 \\approx 0{,}29\\,\\text{mol/L}$$<p>Grafisk er dette akkurat der grafen krysser 0 %-linja.</p><p><strong>Deloppgave 4 — cellene i den sterkeste løsningen.</strong> Cellene har mistet så mye vann at protoplasten (cellemembranen med innholdet) har trukket seg vekk fra celleveggen. Det kalles <strong>plasmolyse</strong>. Turgortrykket forsvinner, og staven kjennes slapp og myk. Fordi planteceller har cellevegg, sprekker de ikke i destillert vann; de blir bare stive av turgortrykk. En dyrecelle uten cellevegg ville derimot kunne sprekke.</p><p><strong>Feilkilder å nevne i en rapport:</strong> hvor godt du tørket stavene før veiing, ulik overflate på stavene, og at to timer kanskje ikke er nok til full likevekt.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Masseendring i potetstavene mot sukkerkonsentrasjon",
+          "forklaring": "De fire punktene er målingene, og x-aksen er 0 %-linja. Der grafen krysser aksen, ved omtrent 0,29 mol/L, er løsningen isotonisk med potetcellene: like mye vann hver vei. Over aksen har staven tatt opp vann (hypotonisk løsning), under aksen har den mistet vann (hypertonisk).",
+          "xmin": -0.03,
+          "xmax": 0.68,
+          "ymin": -14,
+          "ymax": 14,
+          "xlabel": "sukker (mol/L)",
+          "ylabel": "masseendring (%)",
+          "linjer": [
+            {
+              "fra": [
+                0,
+                12
+              ],
+              "til": [
+                0.2,
+                3
+              ],
+              "stiplet": false
+            },
+            {
+              "fra": [
+                0.2,
+                3
+              ],
+              "til": [
+                0.4,
+                -4
+              ],
+              "stiplet": false
+            },
+            {
+              "fra": [
+                0.4,
+                -4
+              ],
+              "til": [
+                0.6,
+                -11
+              ],
+              "stiplet": false
+            }
+          ],
+          "asymptoter": [
+            {
+              "retning": "vertikal",
+              "verdi": 0.286,
+              "navn": "isotonisk ≈ 0,29 mol/L"
+            }
+          ],
+          "punkter": [
+            {
+              "x": 0,
+              "y": 12
+            },
+            {
+              "x": 0.2,
+              "y": 3
+            },
+            {
+              "x": 0.4,
+              "y": -4
+            },
+            {
+              "x": 0.6,
+              "y": -11
+            },
+            {
+              "x": 0.286,
+              "y": 0
+            }
+          ]
+        }
       },
       {
         "tittel": "Natrium-kalium-pumpa — regnskap for ioner, ATP og ladning",
@@ -75,10 +246,46 @@
       {
         "tittel": "Fra måltid til glukoseopptak — insulinsignalet trinn for trinn",
         "oppgave": "<p>Etter et måltid stiger blodsukkeret fra 5,0 mmol/L til 9,0 mmol/L. En halvtime senere er det nede på 5,4 mmol/L.</p><ol><li>Forklar trinn for trinn hvordan insulinet fører til at glukose tas opp i en muskelcelle. Bruk begrepene eksocytose, reseptor, signaloverføring og fasilitert diffusjon.</li><li>Hvorfor må insulin ha en reseptor på utsiden av membranen, mens testosteron ikke trenger det?</li><li>Hvor mange prosent har blodsukkeret sunket fra toppen til den siste målingen?</li><li>Hvorfor virker ikke insulin på alle celler i kroppen?</li></ol>",
-        "losning": "<p><strong>Deloppgave 1 — kjeden fra måltid til opptak.</strong></p><ol><li>Blodsukkeret stiger, og betacellene i de langerhanske øyene i bukspyttkjertelen registrerer det.</li><li>Insulin ligger ferdig laget i vesikler inne i betacellene. Vesiklene smelter sammen med cellemembranen, og insulinet tømmes ut i blodet ved <strong>eksocytose</strong>.</li><li>Insulin er et lite protein på 51 aminosyrer og er vannløselig. Det kommer altså ikke gjennom det hydrofobe fettlaget, men binder seg til en <strong>reseptor</strong> på utsiden av membranen til muskel-, fett- og leverceller.</li><li>Reseptoren endrer form, og det starter en <strong>signaloverføring</strong> inne i cellen: en kjede av proteiner aktiveres, og signalet forsterkes i hvert trinn.</li><li><strong>Responsen</strong> er at vesikler med glukosetransportører (bærerproteiner av typen GLUT4) smelter sammen med cellemembranen. Ved eksocytose får membranen dermed mange flere glukosetransportører enn før.</li><li>Nå går glukosen inn ved <strong>fasilitert diffusjon</strong>, med gradienten fra 9,0 mmol/L i blodet mot en lavere konsentrasjon inne i cellen. Cellen bruker ikke ATP på selve opptaket. Inne i cellen bygges glukosen straks om, så den frie glukosekonsentrasjonen holdes lav og gradienten opprettholdes.</li><li>Blodsukkeret synker, betacellene skiller ut mindre insulin, og opptaket bremses. Dette er negativ tilbakekopling.</li></ol><p><strong>Deloppgave 2 — reseptorens plassering.</strong> Insulin er vannløselig og blir stanset av de hydrofobe fettsyrehalene midt i membranen. Beskjeden må derfor leveres på utsiden, og reseptoren må være et protein som går gjennom membranen og kan videreformidle formendringen innover. Testosteron er et fettløselig steroidhormon og diffunderer rett gjennom fettlaget; reseptoren ligger derfor inne i cellen, ofte i kjernen, der hormonet påvirker hvilke gener som leses av.</p><p><strong>Deloppgave 3 — prosentvis nedgang.</strong></p>$$\\frac{9{,}0 - 5{,}4}{9{,}0}\\cdot 100\\,\\% = \\frac{3{,}6}{9{,}0}\\cdot 100\\,\\% = 40\\,\\%$$<p>Blodsukkeret har sunket 40 % fra toppverdien og er tilbake i normalområdet på 4–6 mmol/L.</p><p><strong>Deloppgave 4 — hvem svarer på signalet?</strong> Insulinet når alle celler via blodet, men bare celler med insulinreseptor kan «lese» beskjeden. En celle uten reseptor merker ingenting. Ved diabetes type 1 mangler insulinet fordi betacellene er ødelagt, mens ved type 2 er insulinet der, men reseptorene og signalkjeden svarer for dårlig — det kalles insulinresistens.</p>"
+        "losning": "<p><strong>Deloppgave 1 — kjeden fra måltid til opptak.</strong></p><ol><li>Blodsukkeret stiger, og betacellene i de langerhanske øyene i bukspyttkjertelen registrerer det.</li><li>Insulin ligger ferdig laget i vesikler inne i betacellene. Vesiklene smelter sammen med cellemembranen, og insulinet tømmes ut i blodet ved <strong>eksocytose</strong>.</li><li>Insulin er et lite protein på 51 aminosyrer og er vannløselig. Det kommer altså ikke gjennom det hydrofobe fettlaget, men binder seg til en <strong>reseptor</strong> på utsiden av membranen til muskel-, fett- og leverceller.</li><li>Reseptoren endrer form, og det starter en <strong>signaloverføring</strong> inne i cellen: en kjede av proteiner aktiveres, og signalet forsterkes i hvert trinn.</li><li><strong>Responsen</strong> er at vesikler med glukosetransportører (bærerproteiner av typen GLUT4) smelter sammen med cellemembranen. Ved eksocytose får membranen dermed mange flere glukosetransportører enn før.</li><li>Nå går glukosen inn ved <strong>fasilitert diffusjon</strong>, med gradienten fra 9,0 mmol/L i blodet mot en lavere konsentrasjon inne i cellen. Cellen bruker ikke ATP på selve opptaket. Inne i cellen bygges glukosen straks om, så den frie glukosekonsentrasjonen holdes lav og gradienten opprettholdes.</li><li>Blodsukkeret synker, betacellene skiller ut mindre insulin, og opptaket bremses. Dette er negativ tilbakekopling.</li></ol><p><strong>Deloppgave 2 — reseptorens plassering.</strong> Insulin er vannløselig og blir stanset av de hydrofobe fettsyrehalene midt i membranen. Beskjeden må derfor leveres på utsiden, og reseptoren må være et protein som går gjennom membranen og kan videreformidle formendringen innover. Testosteron er et fettløselig steroidhormon og diffunderer rett gjennom fettlaget; reseptoren ligger derfor inne i cellen, ofte i kjernen, der hormonet påvirker hvilke gener som leses av.</p><p><strong>Deloppgave 3 — prosentvis nedgang.</strong></p>$$\\frac{9{,}0 - 5{,}4}{9{,}0}\\cdot 100\\,\\% = \\frac{3{,}6}{9{,}0}\\cdot 100\\,\\% = 40\\,\\%$$<p>Blodsukkeret har sunket 40 % fra toppverdien og er tilbake i normalområdet på 4–6 mmol/L.</p><p><strong>Deloppgave 4 — hvem svarer på signalet?</strong> Insulinet når alle celler via blodet, men bare celler med insulinreseptor kan «lese» beskjeden. En celle uten reseptor merker ingenting. Ved diabetes type 1 mangler insulinet fordi betacellene er ødelagt, mens ved type 2 er insulinet der, men reseptorene og signalkjeden svarer for dårlig — det kalles insulinresistens.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Insulinsignalet fra måltid til glukoseopptak",
+          "forklaring": "Insulinet går aldri inn i cellen: det leverer beskjeden på utsiden (mottak, steg 3), signalet forsterkes inne i cellen (overføring, steg 4), og responsen er flere GLUT4-transportører i membranen (steg 5). Selve opptaket i steg 6 er passivt, og sløyfen tilbake viser hvorfor utskillingen av insulin bremses når blodsukkeret har sunket.",
+          "steg": [
+            {
+              "tekst": "Blodsukkeret stiger",
+              "note": "fra 5,0 til 9,0 mmol/L"
+            },
+            {
+              "tekst": "Insulin ut i blodet",
+              "note": "eksocytose fra betacellene"
+            },
+            {
+              "tekst": "Insulin binder reseptor",
+              "note": "på utsiden av membranen"
+            },
+            {
+              "tekst": "Signalkjede inne i cellen",
+              "note": "signalet forsterkes"
+            },
+            {
+              "tekst": "GLUT4 opp i membranen",
+              "note": "responsen — ny eksocytose"
+            },
+            {
+              "tekst": "Glukose inn i cellen",
+              "note": "fasilitert diffusjon, uten ATP"
+            }
+          ],
+          "tilbakekopling": {
+            "fra": 5,
+            "til": 0,
+            "tekst": "negativ tilbakekopling"
+          }
+        }
       }
     ],
-
     "vanligeFeil": [
       "Å tro at diffusjonen stopper når konsentrasjonen er blitt like stor på begge sider. Molekylene fortsetter å krysse membranen i begge retninger; det er bare netto-strømmen som er null ved likevekt.",
       "Å skrive at saltet «trekker» vannet gjennom membranen ved osmose. Vannet diffunderer helt vanlig, fra der det er mest vann til der det er minst vann. Det er vannet som flytter seg, ikke saltet.",
@@ -87,7 +294,6 @@
       "Å svare at natrium-kalium-pumpa flytter like mange ioner hver vei. Den flytter 3 $\\ce{Na+}$ ut og 2 $\\ce{K+}$ inn per ATP, og det er nettopp forskjellen som gjør innsiden av cellen negativ.",
       "Å bytte om endocytose og eksocytose, eller å tro at et hormon selv velger hvilke celler det skal virke på. «Endo» betyr inn, «ekso» betyr ut — og det er reseptoren, ikke hormonet, som bestemmer hvilke celler som svarer."
     ],
-
     "tips": [
       "Svar alltid på tre ting når du skal bestemme en transportmekanisme: går stoffet med eller mot gradienten, trengs det et transportprotein, og brukes det ATP. Det er sjekklista sensoren leter etter.",
       "Osmoseoppgaver med tabell over masse før og etter går igjen på prøver. Øv på prosentvis masseendring, og på at den isotoniske konsentrasjonen er der grafen krysser 0 %-linja.",
@@ -96,25 +302,68 @@
       "Lær tonisitet sammen med utfallet for begge celletyper: dyrecelle i hypotonisk løsning kan sprekke, plantecelle blir stiv av turgortrykk; i hypertonisk løsning skrumper dyrecellen, og plantecellen plasmolyseres."
     ]
   },
-
   "begreper": [
-    { "begrep": "Fosfolipid", "forklaring": "Membranmolekyl med et hydrofilt hode med fosfatgruppe og to hydrofobe fettsyrehaler. I vann ordner fosfolipidene seg i et dobbeltlag med halene inn mot midten." },
-    { "begrep": "Fluid mosaikk-modellen", "forklaring": "Modellen for cellemembranen der fosfolipidlaget er flytende og proteinene ligger som brikker i en mosaikk som kan flytte seg sideveis." },
-    { "begrep": "Semipermeabel membran", "forklaring": "En halvgjennomtrengelig membran som slipper gjennom noen stoffer, som vann, men holder andre tilbake, som oppløste salter og sukker." },
-    { "begrep": "Diffusjon", "forklaring": "Netto bevegelse av et stoff fra høy til lav konsentrasjon på grunn av molekylenes tilfeldige bevegelse. Krever ikke energi fra cellen." },
-    { "begrep": "Osmose", "forklaring": "Diffusjon av vann gjennom en semipermeabel membran, fra siden med lav konsentrasjon av oppløst stoff til siden med høy konsentrasjon." },
-    { "begrep": "Tonisitet", "forklaring": "Hvordan konsentrasjonen i en løsning er sammenlignet med celleinnholdet: hypotonisk (lavere, vann går inn), isotonisk (lik, ingen netto strøm) og hypertonisk (høyere, vann går ut)." },
-    { "begrep": "Plasmolyse", "forklaring": "Når en plantecelle i en hypertonisk løsning mister så mye vann at cellemembranen med innholdet trekker seg vekk fra celleveggen." },
-    { "begrep": "Turgortrykk", "forklaring": "Trykket vann inne i en plantecelle utøver mot celleveggen. Det gjør stengler og blader stive, og forsvinner når cellene mister vann." },
-    { "begrep": "Fasilitert diffusjon", "forklaring": "Passiv transport av polare eller store molekyler gjennom kanalproteiner eller bærerproteiner. Følger gradienten, men mettes fordi antallet proteiner er begrenset." },
-    { "begrep": "Aktiv transport", "forklaring": "Transport av et stoff mot konsentrasjonsgradienten ved hjelp av et transportprotein som bruker energi, vanligvis direkte fra ATP." },
-    { "begrep": "Natrium-kalium-pumpa", "forklaring": "Ionepumpe som for hvert ATP flytter 3 natriumioner ut og 2 kaliumioner inn. Den gjør innsiden av cellen negativ og er grunnlaget for membranpotensialet." },
-    { "begrep": "Endocytose", "forklaring": "Opptak av store molekyler eller partikler ved at membranen bøyer seg innover og danner en vesikkel. Finnes som fagocytose, pinocytose og reseptormediert endocytose." },
-    { "begrep": "Eksocytose", "forklaring": "Utskilling ved at en vesikkel smelter sammen med cellemembranen og tømmer innholdet ut av cellen. Brukes til hormoner, signalstoff, slim og avfall." },
-    { "begrep": "Reseptor", "forklaring": "Protein med en bindingsplass som passer til et bestemt signalmolekyl. Bare celler med riktig reseptor kan svare på signalet." },
-    { "begrep": "Andre budbringer", "forklaring": "Et molekyl inne i cellen, for eksempel cAMP eller kalsiumioner, som sprer og forsterker beskjeden videre etter at signalmolekylet har bundet seg til reseptoren i membranen." }
+    {
+      "begrep": "Fosfolipid",
+      "forklaring": "Membranmolekyl med et hydrofilt hode med fosfatgruppe og to hydrofobe fettsyrehaler. I vann ordner fosfolipidene seg i et dobbeltlag med halene inn mot midten."
+    },
+    {
+      "begrep": "Fluid mosaikk-modellen",
+      "forklaring": "Modellen for cellemembranen der fosfolipidlaget er flytende og proteinene ligger som brikker i en mosaikk som kan flytte seg sideveis."
+    },
+    {
+      "begrep": "Semipermeabel membran",
+      "forklaring": "En halvgjennomtrengelig membran som slipper gjennom noen stoffer, som vann, men holder andre tilbake, som oppløste salter og sukker."
+    },
+    {
+      "begrep": "Diffusjon",
+      "forklaring": "Netto bevegelse av et stoff fra høy til lav konsentrasjon på grunn av molekylenes tilfeldige bevegelse. Krever ikke energi fra cellen."
+    },
+    {
+      "begrep": "Osmose",
+      "forklaring": "Diffusjon av vann gjennom en semipermeabel membran, fra siden med lav konsentrasjon av oppløst stoff til siden med høy konsentrasjon."
+    },
+    {
+      "begrep": "Tonisitet",
+      "forklaring": "Hvordan konsentrasjonen i en løsning er sammenlignet med celleinnholdet: hypotonisk (lavere, vann går inn), isotonisk (lik, ingen netto strøm) og hypertonisk (høyere, vann går ut)."
+    },
+    {
+      "begrep": "Plasmolyse",
+      "forklaring": "Når en plantecelle i en hypertonisk løsning mister så mye vann at cellemembranen med innholdet trekker seg vekk fra celleveggen."
+    },
+    {
+      "begrep": "Turgortrykk",
+      "forklaring": "Trykket vann inne i en plantecelle utøver mot celleveggen. Det gjør stengler og blader stive, og forsvinner når cellene mister vann."
+    },
+    {
+      "begrep": "Fasilitert diffusjon",
+      "forklaring": "Passiv transport av polare eller store molekyler gjennom kanalproteiner eller bærerproteiner. Følger gradienten, men mettes fordi antallet proteiner er begrenset."
+    },
+    {
+      "begrep": "Aktiv transport",
+      "forklaring": "Transport av et stoff mot konsentrasjonsgradienten ved hjelp av et transportprotein som bruker energi, vanligvis direkte fra ATP."
+    },
+    {
+      "begrep": "Natrium-kalium-pumpa",
+      "forklaring": "Ionepumpe som for hvert ATP flytter 3 natriumioner ut og 2 kaliumioner inn. Den gjør innsiden av cellen negativ og er grunnlaget for membranpotensialet."
+    },
+    {
+      "begrep": "Endocytose",
+      "forklaring": "Opptak av store molekyler eller partikler ved at membranen bøyer seg innover og danner en vesikkel. Finnes som fagocytose, pinocytose og reseptormediert endocytose."
+    },
+    {
+      "begrep": "Eksocytose",
+      "forklaring": "Utskilling ved at en vesikkel smelter sammen med cellemembranen og tømmer innholdet ut av cellen. Brukes til hormoner, signalstoff, slim og avfall."
+    },
+    {
+      "begrep": "Reseptor",
+      "forklaring": "Protein med en bindingsplass som passer til et bestemt signalmolekyl. Bare celler med riktig reseptor kan svare på signalet."
+    },
+    {
+      "begrep": "Andre budbringer",
+      "forklaring": "Et molekyl inne i cellen, for eksempel cAMP eller kalsiumioner, som sprer og forsterker beskjeden videre etter at signalmolekylet har bundet seg til reseptoren i membranen."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hvorfor kommer $\\ce{O2}$ rett gjennom cellemembranen, mens $\\ce{Na+}$ må ha et transportprotein?",
@@ -249,23 +498,70 @@
       "forklaring": "Kolesterol ligger inne mellom fosfolipidene og virker som en støtdemper for membranens flytende egenskaper ved ulike temperaturer. Alternativ B og D er fristende fordi kolesterol er et lipid som hører til i membranen, men reseptorer og kanaler er alltid proteiner. Og vann kommer fortsatt gjennom, både langsomt gjennom fettlaget og raskt gjennom akvaporiner."
     }
   ],
-
   "flashcards": [
-    { "front": "Fluid mosaikk-modellen", "bak": "Cellemembranen er et flytende dobbeltlag av fosfolipider der proteiner ligger og flyter som brikker i en mosaikk. Beskrevet av Singer og Nicolson i 1972." },
-    { "front": "Hvordan ligger fosfolipidene i membranen?", "bak": "I to lag: hydrofile hoder ut mot vannet på begge sider, hydrofobe fettsyrehaler inn mot midten. Det hydrofobe midtlaget er selve barrieren." },
-    { "front": "Hva gjør kolesterol i membranen?", "bak": "Ligger mellom fosfolipidene i dyreceller og stabiliserer membranen: hindrer at den blir for flytende når det er varmt og for stiv når det er kaldt." },
-    { "front": "Hva er glykoproteiner og glykolipider i membranen til?", "bak": "Karbohydratkjeder på utsiden som virker som cellens navneskilt: gjenkjenning mellom celler, immunforsvarets «egen/fremmed»-kontroll og blodtypene i ABO-systemet." },
-    { "front": "Hvilke stoffer går rett gjennom fosfolipidlaget?", "bak": "Små upolare molekyler som $\\ce{O2}$ og $\\ce{CO2}$, og fettløselige stoffer som steroidhormoner. Ioner, glukose og store polare molekyler må ha protein." },
-    { "front": "Passiv kontra aktiv transport", "bak": "Passiv: med konsentrasjonsgradienten, uten ATP (diffusjon, osmose, fasilitert diffusjon). Aktiv: mot gradienten, krever ATP (pumper) — og vesikkeltransport, som også krever ATP." },
-    { "front": "Definer osmose og retningen vannet går", "bak": "Diffusjon av vann gjennom en semipermeabel membran. Vannet går fra lav til høy konsentrasjon av oppløst stoff, altså fra mye vann til lite vann." },
-    { "front": "Hva skjer med en dyrecelle og en plantecelle i hypotonisk løsning?", "bak": "Vann går inn. Dyrecellen svulner og kan sprekke (hemolyse hos røde blodceller). Plantecellen blir stiv av turgortrykk, fordi celleveggen holder igjen." },
-    { "front": "Hva skjer med en dyrecelle og en plantecelle i hypertonisk løsning?", "bak": "Vann går ut. Dyrecellen skrumper, og plantecellen plasmolyseres: cellemembranen med innholdet trekker seg vekk fra celleveggen, og turgortrykket forsvinner." },
-    { "front": "Fasilitert diffusjon — hva er det, og hvorfor mettes den?", "bak": "Passiv transport gjennom kanalproteiner (ionekanaler, akvaporiner) eller bærerproteiner. Antallet proteiner er begrenset, så når alle er i bruk, kan ikke transporten gå fortere." },
-    { "front": "Natrium-kalium-pumpa", "bak": "Aktiv transport: 3 $\\ce{Na+}$ ut og 2 $\\ce{K+}$ inn per ATP. Flytter én positiv ladning ut per runde, gjør innsiden negativ og bidrar sammen med kaliumlekkasjen til hvilepotensialet på om lag $-70$ mV." },
-    { "front": "De tre formene for endocytose", "bak": "Fagocytose (store partikler, f.eks. bakterier), pinocytose (væske og det som er oppløst i den) og reseptormediert endocytose (bestemte molekyler, f.eks. LDL-kolesterol)." },
-    { "front": "Eksocytose — hva skjer, og hvorfor er det mer enn utskilling?", "bak": "En vesikkel smelter sammen med cellemembranen og tømmer innholdet ut (insulin, signalstoff, slim, avfall). Samtidig blir vesikkelmembranen en del av cellemembranen, så nye membranproteiner kommer på plass." },
-    { "front": "De tre trinnene i signaloverføring", "bak": "1) Mottak: signalmolekylet binder seg til reseptoren. 2) Overføring: en kjede av reaksjoner inne i cellen, ofte med andre budbringere som cAMP eller $\\ce{Ca^2+}$, forsterker signalet. 3) Respons: enzym slås på, kanal åpnes eller gen leses av." },
-    { "front": "Hvor sitter reseptoren for vannløselige og for fettløselige signalmolekyler?", "bak": "Vannløselige (insulin, adrenalin) stanses av fettlaget og binder seg til reseptor på utsiden av membranen. Fettløselige (steroidhormoner) diffunderer inn og binder reseptor inne i cellen, ofte i kjernen." },
-    { "front": "De tre cellekontaktene hos dyr — og plantenes løsning", "bak": "Tette forbindelser tetter mellomrommet (tarmvegg, blod-hjerne-barrieren), festeforbindelser/desmosomer nagler celler sammen (hud, hjertemuskel), kanalforbindelser slipper små molekyler rett over (hjertemuskel i takt). Planteceller bruker plasmodesmer gjennom celleveggen." }
+    {
+      "front": "Fluid mosaikk-modellen",
+      "bak": "Cellemembranen er et flytende dobbeltlag av fosfolipider der proteiner ligger og flyter som brikker i en mosaikk. Beskrevet av Singer og Nicolson i 1972."
+    },
+    {
+      "front": "Hvordan ligger fosfolipidene i membranen?",
+      "bak": "I to lag: hydrofile hoder ut mot vannet på begge sider, hydrofobe fettsyrehaler inn mot midten. Det hydrofobe midtlaget er selve barrieren."
+    },
+    {
+      "front": "Hva gjør kolesterol i membranen?",
+      "bak": "Ligger mellom fosfolipidene i dyreceller og stabiliserer membranen: hindrer at den blir for flytende når det er varmt og for stiv når det er kaldt."
+    },
+    {
+      "front": "Hva er glykoproteiner og glykolipider i membranen til?",
+      "bak": "Karbohydratkjeder på utsiden som virker som cellens navneskilt: gjenkjenning mellom celler, immunforsvarets «egen/fremmed»-kontroll og blodtypene i ABO-systemet."
+    },
+    {
+      "front": "Hvilke stoffer går rett gjennom fosfolipidlaget?",
+      "bak": "Små upolare molekyler som $\\ce{O2}$ og $\\ce{CO2}$, og fettløselige stoffer som steroidhormoner. Ioner, glukose og store polare molekyler må ha protein."
+    },
+    {
+      "front": "Passiv kontra aktiv transport",
+      "bak": "Passiv: med konsentrasjonsgradienten, uten ATP (diffusjon, osmose, fasilitert diffusjon). Aktiv: mot gradienten, krever ATP (pumper) — og vesikkeltransport, som også krever ATP."
+    },
+    {
+      "front": "Definer osmose og retningen vannet går",
+      "bak": "Diffusjon av vann gjennom en semipermeabel membran. Vannet går fra lav til høy konsentrasjon av oppløst stoff, altså fra mye vann til lite vann."
+    },
+    {
+      "front": "Hva skjer med en dyrecelle og en plantecelle i hypotonisk løsning?",
+      "bak": "Vann går inn. Dyrecellen svulner og kan sprekke (hemolyse hos røde blodceller). Plantecellen blir stiv av turgortrykk, fordi celleveggen holder igjen."
+    },
+    {
+      "front": "Hva skjer med en dyrecelle og en plantecelle i hypertonisk løsning?",
+      "bak": "Vann går ut. Dyrecellen skrumper, og plantecellen plasmolyseres: cellemembranen med innholdet trekker seg vekk fra celleveggen, og turgortrykket forsvinner."
+    },
+    {
+      "front": "Fasilitert diffusjon — hva er det, og hvorfor mettes den?",
+      "bak": "Passiv transport gjennom kanalproteiner (ionekanaler, akvaporiner) eller bærerproteiner. Antallet proteiner er begrenset, så når alle er i bruk, kan ikke transporten gå fortere."
+    },
+    {
+      "front": "Natrium-kalium-pumpa",
+      "bak": "Aktiv transport: 3 $\\ce{Na+}$ ut og 2 $\\ce{K+}$ inn per ATP. Flytter én positiv ladning ut per runde, gjør innsiden negativ og bidrar sammen med kaliumlekkasjen til hvilepotensialet på om lag $-70$ mV."
+    },
+    {
+      "front": "De tre formene for endocytose",
+      "bak": "Fagocytose (store partikler, f.eks. bakterier), pinocytose (væske og det som er oppløst i den) og reseptormediert endocytose (bestemte molekyler, f.eks. LDL-kolesterol)."
+    },
+    {
+      "front": "Eksocytose — hva skjer, og hvorfor er det mer enn utskilling?",
+      "bak": "En vesikkel smelter sammen med cellemembranen og tømmer innholdet ut (insulin, signalstoff, slim, avfall). Samtidig blir vesikkelmembranen en del av cellemembranen, så nye membranproteiner kommer på plass."
+    },
+    {
+      "front": "De tre trinnene i signaloverføring",
+      "bak": "1) Mottak: signalmolekylet binder seg til reseptoren. 2) Overføring: en kjede av reaksjoner inne i cellen, ofte med andre budbringere som cAMP eller $\\ce{Ca^2+}$, forsterker signalet. 3) Respons: enzym slås på, kanal åpnes eller gen leses av."
+    },
+    {
+      "front": "Hvor sitter reseptoren for vannløselige og for fettløselige signalmolekyler?",
+      "bak": "Vannløselige (insulin, adrenalin) stanses av fettlaget og binder seg til reseptor på utsiden av membranen. Fettløselige (steroidhormoner) diffunderer inn og binder reseptor inne i cellen, ofte i kjernen."
+    },
+    {
+      "front": "De tre cellekontaktene hos dyr — og plantenes løsning",
+      "bak": "Tette forbindelser tetter mellomrommet (tarmvegg, blod-hjerne-barrieren), festeforbindelser/desmosomer nagler celler sammen (hud, hjertemuskel), kanalforbindelser slipper små molekyler rett over (hjertemuskel i takt). Planteceller bruker plasmodesmer gjennom celleveggen."
+    }
   ]
 }

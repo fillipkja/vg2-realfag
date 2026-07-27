@@ -3,7 +3,6 @@
   "nr": 1,
   "tittel": "Biologi som vitenskap",
   "intro": "Biologi 1 starter med verktøykassa: hva som skiller levende fra ikke-levende, hvordan livet er organisert fra celle til biosfære, og hvordan du planlegger et forsøk eller et feltarbeid som faktisk gir svar. Alt du gjør resten av året hviler på metodene i dette kapittelet.",
-
   "kompakt": {
     "punkter": [
       "Liv defineres ikke av én egenskap, men av en liste kjennetegn: celler, stoffskifte, vekst, reproduksjon, arvestoff, homeostase, respons på stimuli og evne til å utvikle seg gjennom evolusjon.",
@@ -18,17 +17,77 @@
       "Samvariasjon er ikke det samme som årsakssammenheng, og en kilde vurderes etter avsender, dato, primærkilde og fagfellevurdering."
     ],
     "formler": [
-      { "navn": "Gjennomsnitt", "latex": "\\bar{x} = \\frac{x_1 + x_2 + \\cdots + x_n}{n} = \\frac{1}{n}\\sum_{i=1}^{n} x_i" },
-      { "navn": "Variasjonsbredde", "latex": "R = x_{\\text{maks}} - x_{\\text{min}}" },
-      { "navn": "Standardavvik i et utvalg", "latex": "s = \\sqrt{\\frac{1}{n-1}\\sum_{i=1}^{n}\\left(x_i - \\bar{x}\\right)^2}" },
-      { "navn": "Individtetthet", "latex": "D = \\frac{N}{A}" },
-      { "navn": "Estimert antall i hele området", "latex": "N_{\\text{tot}} = D \\cdot A_{\\text{tot}}" },
-      { "navn": "Dekningsgrad i en rute", "latex": "\\text{dekning} = \\frac{A_{\\text{art}}}{A_{\\text{rute}}} \\cdot 100\\,\\%" },
-      { "navn": "Relativt avvik fra en fasitverdi", "latex": "\\text{avvik} = \\frac{\\left|x_{\\text{målt}} - x_{\\text{fasit}}\\right|}{x_{\\text{fasit}}} \\cdot 100\\,\\%" },
-      { "navn": "Total forstørrelse i lysmikroskop", "latex": "M = M_{\\text{okular}} \\cdot M_{\\text{objektiv}}" }
-    ]
+      {
+        "navn": "Gjennomsnitt",
+        "latex": "\\bar{x} = \\frac{x_1 + x_2 + \\cdots + x_n}{n} = \\frac{1}{n}\\sum_{i=1}^{n} x_i"
+      },
+      {
+        "navn": "Variasjonsbredde",
+        "latex": "R = x_{\\text{maks}} - x_{\\text{min}}"
+      },
+      {
+        "navn": "Standardavvik i et utvalg",
+        "latex": "s = \\sqrt{\\frac{1}{n-1}\\sum_{i=1}^{n}\\left(x_i - \\bar{x}\\right)^2}"
+      },
+      {
+        "navn": "Individtetthet",
+        "latex": "D = \\frac{N}{A}"
+      },
+      {
+        "navn": "Estimert antall i hele området",
+        "latex": "N_{\\text{tot}} = D \\cdot A_{\\text{tot}}"
+      },
+      {
+        "navn": "Dekningsgrad i en rute",
+        "latex": "\\text{dekning} = \\frac{A_{\\text{art}}}{A_{\\text{rute}}} \\cdot 100\\,\\%"
+      },
+      {
+        "navn": "Relativt avvik fra en fasitverdi",
+        "latex": "\\text{avvik} = \\frac{\\left|x_{\\text{målt}} - x_{\\text{fasit}}\\right|}{x_{\\text{fasit}}} \\cdot 100\\,\\%"
+      },
+      {
+        "navn": "Total forstørrelse i lysmikroskop",
+        "latex": "M = M_{\\text{okular}} \\cdot M_{\\text{objektiv}}"
+      }
+    ],
+    "figur": {
+      "type": "flyt",
+      "retning": "ned",
+      "tittel": "Den naturvitenskapelige arbeidsmåten",
+      "forklaring": "Legg merke til rekkefølgen: hypotesen kommer før forsøket, og prediksjonen er hypotesen omskrevet til noe du faktisk kan måle. Sløyfen til høyre viser at konklusjonen ikke er et endepunkt — den gir en ny problemstilling, og forsøket kan bare styrke eller svekke hypotesen.",
+      "steg": [
+        {
+          "tekst": "Observasjon",
+          "note": "karse spirer raskere i mai"
+        },
+        {
+          "tekst": "Problemstilling",
+          "note": "lys eller temperatur?"
+        },
+        {
+          "tekst": "Testbar hypotese",
+          "note": "må kunne vise seg å være gal"
+        },
+        {
+          "tekst": "Prediksjon: hvis–så",
+          "note": "hva forventer du å måle?"
+        },
+        {
+          "tekst": "Forsøk med gjentak",
+          "note": "én variabel endres om gangen"
+        },
+        {
+          "tekst": "Konklusjon og feilkilder",
+          "note": "styrket, ikke bevist"
+        }
+      ],
+      "tilbakekopling": {
+        "fra": 5,
+        "til": 1,
+        "tekst": "nye spørsmål"
+      }
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -37,7 +96,46 @@
       },
       {
         "tittel": "Organisasjonsnivåer fra celle til biosfære",
-        "html": "<p>Det levende er bygd i <strong>nivåer</strong>. Hvert nivå består av enheter fra nivået under, og på hvert nivå oppstår <strong>nye egenskaper</strong> som ikke finnes i delene alene. Én nervecelle husker ingenting; en hjerne gjør det. Slike egenskaper kalles emergente, og det er grunnen til at biologi må studeres på flere nivåer samtidig.</p><table><thead><tr><th>Nivå</th><th>Eksempel</th></tr></thead><tbody><tr><td>Molekyl</td><td>DNA, hemoglobin, klorofyll</td></tr><tr><td>Celle</td><td>en muskelcelle — den minste enheten som er levende</td></tr><tr><td>Vev</td><td>muskelvev, overhud (epidermis) i et blad</td></tr><tr><td>Organ</td><td>hjertet, et blad</td></tr><tr><td>Organsystem</td><td>blodomløpet, transportsystemet i planta</td></tr><tr><td>Organisme (individ)</td><td>én elg, én granplante</td></tr><tr><td>Populasjon</td><td>alle elgene i samme skogområde</td></tr><tr><td>Samfunn</td><td>alle populasjonene av ulike arter i granskogen</td></tr><tr><td>Økosystem</td><td>granskogen med jord, vann, lys og klima</td></tr><tr><td>Biom</td><td>barskog (taiga)</td></tr><tr><td>Biosfære</td><td>hele det laget av jorda der det finnes liv</td></tr></tbody></table><p>To skiller forveksles ofte. En <strong>populasjon</strong> er individer av <em>samme art</em> i samme område, som kan formere seg med hverandre. Et <strong>samfunn</strong> er alle populasjonene som lever sammen — bare det levende. Et <strong>økosystem</strong> er samfunnet <em>pluss</em> de ikke-levende (abiotiske) faktorene og prosessene mellom dem.</p><p>Encellede organismer som bakterier er celle og organisme samtidig. Nivåstigen er et verktøy for å velge riktig zoomnivå på spørsmålet du stiller.</p>"
+        "html": "<p>Det levende er bygd i <strong>nivåer</strong>. Hvert nivå består av enheter fra nivået under, og på hvert nivå oppstår <strong>nye egenskaper</strong> som ikke finnes i delene alene. Én nervecelle husker ingenting; en hjerne gjør det. Slike egenskaper kalles emergente, og det er grunnen til at biologi må studeres på flere nivåer samtidig.</p><table><thead><tr><th>Nivå</th><th>Eksempel</th></tr></thead><tbody><tr><td>Molekyl</td><td>DNA, hemoglobin, klorofyll</td></tr><tr><td>Celle</td><td>en muskelcelle — den minste enheten som er levende</td></tr><tr><td>Vev</td><td>muskelvev, overhud (epidermis) i et blad</td></tr><tr><td>Organ</td><td>hjertet, et blad</td></tr><tr><td>Organsystem</td><td>blodomløpet, transportsystemet i planta</td></tr><tr><td>Organisme (individ)</td><td>én elg, én granplante</td></tr><tr><td>Populasjon</td><td>alle elgene i samme skogområde</td></tr><tr><td>Samfunn</td><td>alle populasjonene av ulike arter i granskogen</td></tr><tr><td>Økosystem</td><td>granskogen med jord, vann, lys og klima</td></tr><tr><td>Biom</td><td>barskog (taiga)</td></tr><tr><td>Biosfære</td><td>hele det laget av jorda der det finnes liv</td></tr></tbody></table><p>To skiller forveksles ofte. En <strong>populasjon</strong> er individer av <em>samme art</em> i samme område, som kan formere seg med hverandre. Et <strong>samfunn</strong> er alle populasjonene som lever sammen — bare det levende. Et <strong>økosystem</strong> er samfunnet <em>pluss</em> de ikke-levende (abiotiske) faktorene og prosessene mellom dem.</p><p>Encellede organismer som bakterier er celle og organisme samtidig. Nivåstigen er et verktøy for å velge riktig zoomnivå på spørsmålet du stiller.</p>",
+        "figur": {
+          "type": "hierarki",
+          "tittel": "Organisasjonsnivåene, biosfære ned til celle",
+          "forklaring": "Hvert nivå ligger inni det over: elgen er ett individ i populasjonen, samfunnet er alle populasjonene, og økosystemet er samfunnet pluss jord, vann og lys. Stigen fortsetter med biom mellom økosystem og biosfære, og med organsystem mellom organ og organisme.",
+          "nivaaer": [
+            {
+              "navn": "Biosfære",
+              "eksempel": "alt liv på jorda"
+            },
+            {
+              "navn": "Økosystem",
+              "eksempel": "granskog med jord og lys"
+            },
+            {
+              "navn": "Samfunn",
+              "eksempel": "alle artene i skogen"
+            },
+            {
+              "navn": "Populasjon",
+              "eksempel": "alle elgene i skogen"
+            },
+            {
+              "navn": "Organisme",
+              "eksempel": "én elg"
+            },
+            {
+              "navn": "Organ",
+              "eksempel": "hjertet"
+            },
+            {
+              "navn": "Vev",
+              "eksempel": "muskelvev"
+            },
+            {
+              "navn": "Celle",
+              "eksempel": "muskelcelle"
+            }
+          ]
+        }
       },
       {
         "tittel": "Hypotese, variabler og forsøksdesign",
@@ -49,15 +147,110 @@
       },
       {
         "tittel": "Databehandling, feilkilder og kildekritikk",
-        "html": "<p><strong>Rådata</strong> setter du i tabell med enhet i kolonneoverskriften. Deretter regner du ut noe som beskriver tallene: <strong>gjennomsnitt</strong> for det typiske nivået, <strong>median</strong> når få ekstreme verdier trekker gjennomsnittet skjevt, og <strong>variasjonsbredde</strong> og <strong>standardavvik</strong> for spredningen. Stort standardavvik betyr at målingene ligger spredt, og at en forskjell mellom to grupper godt kan skyldes tilfeldigheter.</p><p>Velg diagram etter datatypen: <strong>søylediagram</strong> når den uavhengige variabelen er kategorier (fire lokaliteter), <strong>linje- eller spredningsdiagram</strong> når begge variablene er tallverdier (spiring mot temperatur). Aksene skal ha navn og enhet. Oppgi ikke flere siffer enn målingene bærer: har du telt 60 skudd i 5 ruter, skriver du 12 skudd per rute, ikke 12,0000.</p><p>Feilkilder deles i to grupper:</p><ul><li><strong>Systematiske feil</strong> drar alle målingene i samme retning — et termometer som viser 1,5 °C for høyt, eller ruter lagt bare på de frodigste flekkene. Flere målinger hjelper ikke; du må kalibrere utstyret eller endre metoden.</li><li><strong>Tilfeldige feil</strong> varierer opp og ned — unøyaktig avlesning, naturlig variasjon mellom ruter. Dem demper du med flere gjentak og gjennomsnitt.</li></ul><p><strong>Kildekritikk</strong> er fire spørsmål: Hvem står bak, og har avsenderen egne interesser? Når er det publisert? Er det en <strong>primærkilde</strong> med forskernes egne data, eller en omskriving? Er arbeidet <strong>fagfellevurdert</strong>? Og husk hovedregelen for tolkning: <strong>samvariasjon er ikke årsakssammenheng</strong>. Finner du mye mose der pH er lav, vet du ikke hvilken vei påvirkningen går — eller om en tredje faktor styrer begge.</p>"
+        "html": "<p><strong>Rådata</strong> setter du i tabell med enhet i kolonneoverskriften. Deretter regner du ut noe som beskriver tallene: <strong>gjennomsnitt</strong> for det typiske nivået, <strong>median</strong> når få ekstreme verdier trekker gjennomsnittet skjevt, og <strong>variasjonsbredde</strong> og <strong>standardavvik</strong> for spredningen. Stort standardavvik betyr at målingene ligger spredt, og at en forskjell mellom to grupper godt kan skyldes tilfeldigheter.</p><p>Velg diagram etter datatypen: <strong>søylediagram</strong> når den uavhengige variabelen er kategorier (fire lokaliteter), <strong>linje- eller spredningsdiagram</strong> når begge variablene er tallverdier (spiring mot temperatur). Aksene skal ha navn og enhet. Oppgi ikke flere siffer enn målingene bærer: har du telt 60 skudd i 5 ruter, skriver du 12 skudd per rute, ikke 12,0000.</p><p>Feilkilder deles i to grupper:</p><ul><li><strong>Systematiske feil</strong> drar alle målingene i samme retning — et termometer som viser 1,5 °C for høyt, eller ruter lagt bare på de frodigste flekkene. Flere målinger hjelper ikke; du må kalibrere utstyret eller endre metoden.</li><li><strong>Tilfeldige feil</strong> varierer opp og ned — unøyaktig avlesning, naturlig variasjon mellom ruter. Dem demper du med flere gjentak og gjennomsnitt.</li></ul><p><strong>Kildekritikk</strong> er fire spørsmål: Hvem står bak, og har avsenderen egne interesser? Når er det publisert? Er det en <strong>primærkilde</strong> med forskernes egne data, eller en omskriving? Er arbeidet <strong>fagfellevurdert</strong>? Og husk hovedregelen for tolkning: <strong>samvariasjon er ikke årsakssammenheng</strong>. Finner du mye mose der pH er lav, vet du ikke hvilken vei påvirkningen går — eller om en tredje faktor styrer begge.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik drøfter du en feilkilde ferdig",
+          "forklaring": "Steg 2 avgjør hvilket tiltak som hjelper: en systematisk feil blir ikke borte av flere gjentak, mens en tilfeldig feil demper seg i gjennomsnittet. Stopper du før steg 3 og 4, har du bare nevnt feilkilden — ikke drøftet den.",
+          "steg": [
+            {
+              "tekst": "Nevn feilkilden konkret",
+              "note": "ikke «vi målte unøyaktig»"
+            },
+            {
+              "tekst": "Systematisk eller tilfeldig?",
+              "note": "drar alle målingene samme vei?"
+            },
+            {
+              "tekst": "Hvilken vei drar den svaret?",
+              "note": "for høyt, for lavt, mer spredt"
+            },
+            {
+              "tekst": "Foreslå ett konkret tiltak",
+              "note": "kalibrer, eller flere gjentak"
+            }
+          ]
+        }
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Fra observasjon til ferdig forsøksdesign",
         "oppgave": "<p>Du har lagt merke til at karse i vinduskarmen spirer raskere i mai enn i januar. Sett opp en testbar hypotese, definer variablene, lag et forsøksdesign — og tolk resultatene i tabellen nedenfor.</p><table><thead><tr><th>Temperatur</th><th>Skål 1</th><th>Skål 2</th><th>Skål 3</th></tr></thead><tbody><tr><td>5 °C</td><td>6</td><td>9</td><td>6</td></tr><tr><td>10 °C</td><td>18</td><td>22</td><td>20</td></tr><tr><td>15 °C</td><td>34</td><td>31</td><td>37</td></tr><tr><td>20 °C</td><td>44</td><td>46</td><td>42</td></tr></tbody></table><p>Tallene er antall spirte frø av 50 utlagte frø per skål etter 5 døgn.</p>",
-        "losning": "<p><strong>Steg 1 — problemstilling og hypotese.</strong> Observasjonen kan skyldes både lys og temperatur. Vi velger å teste temperatur, og formulerer en hypotese som kan vise seg å være gal:</p><p><em>Hypotese:</em> Karsefrø spirer i større andel ved høyere temperatur i intervallet 5–20 °C.</p><p><em>Prediksjon (hvis–så):</em> Hvis hypotesen er riktig, så vil andelen spirte frø etter 5 døgn øke når temperaturen øker fra 5 °C til 20 °C.</p><p><strong>Steg 2 — variablene.</strong></p><ul><li><strong>Uavhengig variabel:</strong> temperatur, med fire nivåer (5, 10, 15 og 20 °C).</li><li><strong>Avhengig variabel:</strong> andel spirte frø etter 5 døgn, målt i prosent.</li><li><strong>Kontrollerte variabler:</strong> samme frøparti, 50 frø per skål, samme fat og papirtype, 5 mL vann per døgn, 12 timer lys per døgn, samme person teller, og telling til samme klokkeslett.</li></ul><p><strong>Steg 3 — design.</strong> Tre skåler (gjentak) per temperatur gir $4 \\times 3 = 12$ skåler og $12 \\times 50 = 600$ frø. Frøene fordeles tilfeldig mellom skålene, slik at ikke de største frøene havner i samme skål. Skålene ved 20 °C står ved vanlig romtemperatur og er referansegruppa de andre sammenlignes med.</p><p><strong>Steg 4 — behandle dataene.</strong> Vi regner gjennomsnitt per temperatur og gjør om til prosent av 50 frø:</p><ul><li>5 °C: $\\frac{6+9+6}{3} = \\frac{21}{3} = 7{,}0$ frø, altså $\\frac{7{,}0}{50} = 0{,}14 = 14\\,\\%$</li><li>10 °C: $\\frac{18+22+20}{3} = \\frac{60}{3} = 20{,}0$ frø, altså $\\frac{20{,}0}{50} = 0{,}40 = 40\\,\\%$</li><li>15 °C: $\\frac{34+31+37}{3} = \\frac{102}{3} = 34{,}0$ frø, altså $\\frac{34{,}0}{50} = 0{,}68 = 68\\,\\%$</li><li>20 °C: $\\frac{44+46+42}{3} = \\frac{132}{3} = 44{,}0$ frø, altså $\\frac{44{,}0}{50} = 0{,}88 = 88\\,\\%$</li></ul><p>Spredningen innenfor hver temperatur er liten (største forskjell mellom to skåler er $37-31 = 6$ frø ved 15 °C), mens forskjellen mellom temperaturene er stor (fra 14 % til 88 %). Forskjellen er altså mye større enn den tilfeldige variasjonen mellom paralleller.</p><p><strong>Steg 5 — konklusjon.</strong> Resultatene støtter hypotesen: spiringsandelen øker jevnt med temperaturen i det undersøkte intervallet. Men konklusjonen gjelder bare for 5–20 °C og for denne karsesorten. Vi kan ikke slutte at 30 °C ville gitt enda mer spiring, og forsøket sier ingenting om lys, siden lysmengden var holdt konstant. Hypotesen er styrket, ikke bevist.</p>"
+        "losning": "<p><strong>Steg 1 — problemstilling og hypotese.</strong> Observasjonen kan skyldes både lys og temperatur. Vi velger å teste temperatur, og formulerer en hypotese som kan vise seg å være gal:</p><p><em>Hypotese:</em> Karsefrø spirer i større andel ved høyere temperatur i intervallet 5–20 °C.</p><p><em>Prediksjon (hvis–så):</em> Hvis hypotesen er riktig, så vil andelen spirte frø etter 5 døgn øke når temperaturen øker fra 5 °C til 20 °C.</p><p><strong>Steg 2 — variablene.</strong></p><ul><li><strong>Uavhengig variabel:</strong> temperatur, med fire nivåer (5, 10, 15 og 20 °C).</li><li><strong>Avhengig variabel:</strong> andel spirte frø etter 5 døgn, målt i prosent.</li><li><strong>Kontrollerte variabler:</strong> samme frøparti, 50 frø per skål, samme fat og papirtype, 5 mL vann per døgn, 12 timer lys per døgn, samme person teller, og telling til samme klokkeslett.</li></ul><p><strong>Steg 3 — design.</strong> Tre skåler (gjentak) per temperatur gir $4 \\times 3 = 12$ skåler og $12 \\times 50 = 600$ frø. Frøene fordeles tilfeldig mellom skålene, slik at ikke de største frøene havner i samme skål. Skålene ved 20 °C står ved vanlig romtemperatur og er referansegruppa de andre sammenlignes med.</p><p><strong>Steg 4 — behandle dataene.</strong> Vi regner gjennomsnitt per temperatur og gjør om til prosent av 50 frø:</p><ul><li>5 °C: $\\frac{6+9+6}{3} = \\frac{21}{3} = 7{,}0$ frø, altså $\\frac{7{,}0}{50} = 0{,}14 = 14\\,\\%$</li><li>10 °C: $\\frac{18+22+20}{3} = \\frac{60}{3} = 20{,}0$ frø, altså $\\frac{20{,}0}{50} = 0{,}40 = 40\\,\\%$</li><li>15 °C: $\\frac{34+31+37}{3} = \\frac{102}{3} = 34{,}0$ frø, altså $\\frac{34{,}0}{50} = 0{,}68 = 68\\,\\%$</li><li>20 °C: $\\frac{44+46+42}{3} = \\frac{132}{3} = 44{,}0$ frø, altså $\\frac{44{,}0}{50} = 0{,}88 = 88\\,\\%$</li></ul><p>Spredningen innenfor hver temperatur er liten (største forskjell mellom to skåler er $37-31 = 6$ frø ved 15 °C), mens forskjellen mellom temperaturene er stor (fra 14 % til 88 %). Forskjellen er altså mye større enn den tilfeldige variasjonen mellom paralleller.</p><p><strong>Steg 5 — konklusjon.</strong> Resultatene støtter hypotesen: spiringsandelen øker jevnt med temperaturen i det undersøkte intervallet. Men konklusjonen gjelder bare for 5–20 °C og for denne karsesorten. Vi kan ikke slutte at 30 °C ville gitt enda mer spiring, og forsøket sier ingenting om lys, siden lysmengden var holdt konstant. Hypotesen er styrket, ikke bevist.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Andel spirte frø etter 5 døgn mot temperatur",
+          "forklaring": "Begge variablene er tallverdier, så disse dataene hører i et linjediagram og ikke i søyler. Punktene er gjennomsnittet av de tre skålene, og det siste trinnet løfter mindre (+20 prosentpoeng) enn de to første (+26 og +28) — kurven er i ferd med å flate ut, så figuren sier ingenting om 30 °C.",
+          "xmin": 0,
+          "xmax": 24,
+          "ymin": 0,
+          "ymax": 105,
+          "xlabel": "temperatur (°C)",
+          "ylabel": "spirte frø (%)",
+          "linjer": [
+            {
+              "fra": [
+                5,
+                14
+              ],
+              "til": [
+                10,
+                40
+              ],
+              "stiplet": false
+            },
+            {
+              "fra": [
+                10,
+                40
+              ],
+              "til": [
+                15,
+                68
+              ],
+              "stiplet": false
+            },
+            {
+              "fra": [
+                15,
+                68
+              ],
+              "til": [
+                20,
+                88
+              ],
+              "stiplet": false
+            }
+          ],
+          "punkter": [
+            {
+              "x": 5,
+              "y": 14,
+              "navn": "14 %",
+              "plassering": "under"
+            },
+            {
+              "x": 10,
+              "y": 40,
+              "navn": "40 %",
+              "plassering": "under"
+            },
+            {
+              "x": 15,
+              "y": 68,
+              "navn": "68 %",
+              "plassering": "under"
+            },
+            {
+              "x": 20,
+              "y": 88,
+              "navn": "88 %",
+              "plassering": "under"
+            }
+          ]
+        }
       },
       {
         "tittel": "Databehandling av en ruteanalyse i blåbærgranskog",
@@ -70,7 +263,6 @@
         "losning": "<p><strong>Trinn 1.</strong> Vi sjekker bladstillingen først, fordi den er lett å se og deler nøkkelen i to store greiner. Bladene sitter spredt, ikke parvis, så vi velger <strong>1b</strong> og går til trinn 3. Da er både spisslønn og ask utelukket, siden begge har motsatt bladstilling.</p><p><strong>Trinn 3.</strong> Bladranden er dobbelt sagtannet — det vil si at det sitter små tenner på de store tennene — og barken er hvit. Det er <strong>3a</strong>, og vi går til trinn 4. Alternativ 3b passer ikke: vårt blad er trekantet med sagtannet rand, ikke rundt med grove, bølgete tenner.</p><p><strong>Trinn 4.</strong> Kvistene er hårløse med små vorter, og bladet er trekantet med lang spiss. Det er <strong>4a</strong>.</p><p><strong>Konklusjon:</strong> treet er <strong>hengebjørk</strong>, <em>Betula pendula</em>. Slektsnavnet skrives med stor forbokstav og artsepitetet med liten, begge i kursiv.</p><p><strong>Vurdering av appens forslag.</strong> «Osp» (<em>Populus tremula</em>) er galt, og det er lett å kontrollere med kjennetegn i stedet for å stole på forslaget:</p><ul><li>Osp har nesten runde blad med grove, bølgete tenner — ikke dobbelt sagtannet rand.</li><li>Osp har en lang, flattrykt bladstilk, som er grunnen til at bladene skjelver i minste vindpust. Bjørk har rund bladstilk — se etter dette neste gang du er i felt.</li><li>Osp har grågrønn, glatt bark, ikke hvit bark med svarte flekker.</li></ul><p>Appen bommet sannsynligvis fordi begge trærne har spredt bladstilling og blad av lignende størrelse, og fordi et enkelt bilde sjelden viser bladrand, bark og kvist godt nok. Lærdommen er metodisk: bruk <strong>flere</strong> kjennetegn, og velg de stabile (bladstilling, bladrand, hårvekst) framfor størrelse og farge, som varierer med voksestedet. Et digitalt forslag er en hypotese om arten — nøkkelen er testen.</p><p><strong>Dokumentasjon.</strong> Før inn i feltboka: dato, koordinater, voksested, hvilke kjennetegn du brukte, og et foto av både blad, kvist og bark med noe kjent som målestokk. Er du fortsatt usikker, sammenligner du med Artsdatabankens beskrivelser før du bestemmer arten endelig.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å bytte om uavhengig og avhengig variabel. Mange skriver at temperaturen er «avhengig» fordi den avhenger av hva de velger. Regelen er motsatt: det du selv stiller inn, er uavhengig, og det du måler, er avhengig.",
       "Å kalle alle kontrollerte variabler for «kontrollgruppe». Kontrollerte variabler er forhold du holder likt i alle gruppene; kontrollgruppa er en egen gruppe som ikke får behandlingen.",
@@ -79,7 +271,6 @@
       "Å regne ut medianen uten å sortere tallene først, eller å bruke gjennomsnitt når én ekstremverdi trekker hele resultatet skjevt.",
       "Å skrive «vi kan ha målt unøyaktig» som feilkilde uten å si hvilken vei feilen trekker resultatet. En feilkilde er først ferdig drøftet når du har sagt om resultatet blir for høyt, for lavt eller mer spredt — og hva du ville gjort annerledes."
     ],
-
     "tips": [
       "Når en oppgave beskriver et forsøk, skriv tre faste linjer: uavhengig variabel, avhengig variabel med enhet, og minst to kontrollerte variabler. Dette er nesten gratis poeng og glemmes ofte.",
       "Lær nivåstigen utenat i rekkefølge: celle, vev, organ, organsystem, organisme, populasjon, samfunn, økosystem, biom, biosfære. Oppgaver spør ofte «på hvilket organisasjonsnivå …».",
@@ -88,25 +279,68 @@
       "Øv på å bruke en dikotom nøkkel begge veier: både å bestemme en art og å forklare hvilke kjennetegn som skilte den fra en lignende art. Det siste er en vanlig eksamensoppgave."
     ]
   },
-
   "begreper": [
-    { "begrep": "Stoffskifte (metabolisme)", "forklaring": "Alle de kjemiske reaksjonene i en organisme der stoffer og energi tas opp, bygges om og brukes. Et av kjennetegnene på liv." },
-    { "begrep": "Homeostase", "forklaring": "Organismens evne til å holde et stabilt indre miljø, for eksempel temperatur, pH og vannmengde, selv om omgivelsene endrer seg." },
-    { "begrep": "Emergent egenskap", "forklaring": "En egenskap som oppstår på et organisasjonsnivå og ikke finnes i delene alene, slik hukommelse finnes i en hjerne, men ikke i én nervecelle." },
-    { "begrep": "Populasjon", "forklaring": "Alle individene av samme art som lever i samme område til samme tid og kan formere seg med hverandre." },
-    { "begrep": "Biologisk samfunn", "forklaring": "Alle populasjonene av ulike arter som lever sammen i et område — altså bare de levende delene." },
-    { "begrep": "Økosystem", "forklaring": "Et biologisk samfunn sammen med de abiotiske faktorene i området og alle prosessene mellom dem." },
-    { "begrep": "Biosfære", "forklaring": "Summen av alle økosystemene på jorda, altså hele det laget av jorda der det finnes liv." },
-    { "begrep": "Hypotese", "forklaring": "En testbar og falsifiserbar påstand om en sammenheng, som forsøket ditt kan styrke eller svekke." },
-    { "begrep": "Uavhengig variabel", "forklaring": "Den ene faktoren du selv endrer i forsøket, for eksempel temperatur eller saltkonsentrasjon." },
-    { "begrep": "Avhengig variabel", "forklaring": "Størrelsen du måler for å se om den uavhengige variabelen har effekt. Oppgis alltid med enhet." },
-    { "begrep": "Kontrollgruppe", "forklaring": "En gruppe som ikke får behandlingen, og som viser hva som skjer uten inngrep. Gir sammenligningsgrunnlaget." },
-    { "begrep": "Gjentak (replikat)", "forklaring": "Flere paralleller av samme behandling, slik at du ser hvor stor den tilfeldige variasjonen er og ikke lar én uheldig måling avgjøre." },
-    { "begrep": "Systematisk feil", "forklaring": "En feil som drar alle målingene i samme retning, for eksempel et feilkalibrert termometer. Forsvinner ikke med flere målinger." },
-    { "begrep": "Tilfeldig feil", "forklaring": "En feil som varierer i størrelse og retning fra måling til måling, og som demper seg når du tar gjennomsnitt av mange målinger." },
-    { "begrep": "Dikotom bestemmelsesnøkkel", "forklaring": "En nøkkel der du på hvert trinn velger mellom to utsagn om kjennetegn, til du kommer fram til arten." }
+    {
+      "begrep": "Stoffskifte (metabolisme)",
+      "forklaring": "Alle de kjemiske reaksjonene i en organisme der stoffer og energi tas opp, bygges om og brukes. Et av kjennetegnene på liv."
+    },
+    {
+      "begrep": "Homeostase",
+      "forklaring": "Organismens evne til å holde et stabilt indre miljø, for eksempel temperatur, pH og vannmengde, selv om omgivelsene endrer seg."
+    },
+    {
+      "begrep": "Emergent egenskap",
+      "forklaring": "En egenskap som oppstår på et organisasjonsnivå og ikke finnes i delene alene, slik hukommelse finnes i en hjerne, men ikke i én nervecelle."
+    },
+    {
+      "begrep": "Populasjon",
+      "forklaring": "Alle individene av samme art som lever i samme område til samme tid og kan formere seg med hverandre."
+    },
+    {
+      "begrep": "Biologisk samfunn",
+      "forklaring": "Alle populasjonene av ulike arter som lever sammen i et område — altså bare de levende delene."
+    },
+    {
+      "begrep": "Økosystem",
+      "forklaring": "Et biologisk samfunn sammen med de abiotiske faktorene i området og alle prosessene mellom dem."
+    },
+    {
+      "begrep": "Biosfære",
+      "forklaring": "Summen av alle økosystemene på jorda, altså hele det laget av jorda der det finnes liv."
+    },
+    {
+      "begrep": "Hypotese",
+      "forklaring": "En testbar og falsifiserbar påstand om en sammenheng, som forsøket ditt kan styrke eller svekke."
+    },
+    {
+      "begrep": "Uavhengig variabel",
+      "forklaring": "Den ene faktoren du selv endrer i forsøket, for eksempel temperatur eller saltkonsentrasjon."
+    },
+    {
+      "begrep": "Avhengig variabel",
+      "forklaring": "Størrelsen du måler for å se om den uavhengige variabelen har effekt. Oppgis alltid med enhet."
+    },
+    {
+      "begrep": "Kontrollgruppe",
+      "forklaring": "En gruppe som ikke får behandlingen, og som viser hva som skjer uten inngrep. Gir sammenligningsgrunnlaget."
+    },
+    {
+      "begrep": "Gjentak (replikat)",
+      "forklaring": "Flere paralleller av samme behandling, slik at du ser hvor stor den tilfeldige variasjonen er og ikke lar én uheldig måling avgjøre."
+    },
+    {
+      "begrep": "Systematisk feil",
+      "forklaring": "En feil som drar alle målingene i samme retning, for eksempel et feilkalibrert termometer. Forsvinner ikke med flere målinger."
+    },
+    {
+      "begrep": "Tilfeldig feil",
+      "forklaring": "En feil som varierer i størrelse og retning fra måling til måling, og som demper seg når du tar gjennomsnitt av mange målinger."
+    },
+    {
+      "begrep": "Dikotom bestemmelsesnøkkel",
+      "forklaring": "En nøkkel der du på hvert trinn velger mellom to utsagn om kjennetegn, til du kommer fram til arten."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hva er hovedgrunnen til at virus vanligvis ikke regnes som levende?",
@@ -241,23 +475,70 @@
       "forklaring": "«Dikotom» betyr todelt: hvert trinn har to alternativer, og du følger det som passer med organismen din til du ender på en art. Alternativ B er fristende fordi nøkler ofte begynner med vanlige arter, men rekkefølgen bestemmes av kjennetegn, ikke av hvor hyppig arten er. DNA-analyse hører til molekylære metoder, ikke til en morfologisk nøkkel, og de fleste nøkler dekker bare et utvalg arter i et bestemt område."
     }
   ],
-
   "flashcards": [
-    { "front": "Hvilke kjennetegn brukes for å definere liv?", "bak": "Celler, stoffskifte, vekst og utvikling, reproduksjon, arvestoff (DNA), homeostase, respons på stimuli og tilpasning gjennom evolusjon." },
-    { "front": "Hvorfor er virus i grenselandet mellom levende og ikke-levende?", "bak": "De har arvestoff og formerer seg, men mangler celle og eget stoffskifte og trenger en vertscelle." },
-    { "front": "Organisasjonsnivåene i rekkefølge", "bak": "Molekyl → celle → vev → organ → organsystem → organisme → populasjon → samfunn → økosystem → biom → biosfære." },
-    { "front": "Populasjon eller samfunn?", "bak": "Populasjon = individer av samme art i samme område. Samfunn = alle populasjonene av ulike arter som lever sammen." },
-    { "front": "Hva er et økosystem?", "bak": "Det biologiske samfunnet pluss de abiotiske faktorene (jord, vann, lys, klima) og prosessene mellom dem." },
-    { "front": "Hva menes med en emergent egenskap?", "bak": "En egenskap som oppstår på et høyere organisasjonsnivå og ikke finnes i delene alene — for eksempel hukommelse i en hjerne." },
-    { "front": "Hva må en vitenskapelig hypotese være?", "bak": "Testbar og falsifiserbar: den må kunne prøves med målinger og kunne vise seg å være gal." },
-    { "front": "Uavhengig og avhengig variabel", "bak": "Uavhengig: den ene faktoren du selv endrer. Avhengig: det du måler, med enhet." },
-    { "front": "Hvorfor trenger du en kontrollgruppe?", "bak": "For å se hva som skjer uten behandlingen, slik at du har noe å sammenligne resultatene med." },
-    { "front": "Hvorfor gjentak (replikater)?", "bak": "For å se hvor stor den tilfeldige variasjonen er, slik at én uheldig måling ikke avgjør konklusjonen." },
-    { "front": "Reliabilitet eller validitet?", "bak": "Reliabilitet: kan målingene gjentas og stoles på? Validitet: måler du faktisk det du vil undersøke?" },
-    { "front": "Systematisk eller tilfeldig feil?", "bak": "Systematisk: alle målingene dras samme vei (feilkalibrert utstyr) — flere målinger hjelper ikke. Tilfeldig: varierer opp og ned — demper seg med gjentak." },
-    { "front": "Formel for standardavvik i et utvalg", "bak": "$s = \\sqrt{\\frac{1}{n-1}\\sum\\left(x_i - \\bar{x}\\right)^2}$ — stort $s$ betyr stor spredning i dataene." },
-    { "front": "Hvordan finner du individtetthet fra en ruteanalyse?", "bak": "$D = \\frac{N}{A}$: gjennomsnittlig antall per rute delt på rutearealet. Ganger du med totalarealet, får du et anslag for hele området." },
-    { "front": "Hvordan skrives et vitenskapelig artsnavn?", "bak": "Slekt med stor forbokstav, artsepitet med liten, begge i kursiv: Vaccinium myrtillus (blåbær)." },
-    { "front": "Fire spørsmål i kildekritikk", "bak": "Hvem står bak (og har de egne interesser)? Når er det publisert? Er det primærkilde? Er det fagfellevurdert?" }
+    {
+      "front": "Hvilke kjennetegn brukes for å definere liv?",
+      "bak": "Celler, stoffskifte, vekst og utvikling, reproduksjon, arvestoff (DNA), homeostase, respons på stimuli og tilpasning gjennom evolusjon."
+    },
+    {
+      "front": "Hvorfor er virus i grenselandet mellom levende og ikke-levende?",
+      "bak": "De har arvestoff og formerer seg, men mangler celle og eget stoffskifte og trenger en vertscelle."
+    },
+    {
+      "front": "Organisasjonsnivåene i rekkefølge",
+      "bak": "Molekyl → celle → vev → organ → organsystem → organisme → populasjon → samfunn → økosystem → biom → biosfære."
+    },
+    {
+      "front": "Populasjon eller samfunn?",
+      "bak": "Populasjon = individer av samme art i samme område. Samfunn = alle populasjonene av ulike arter som lever sammen."
+    },
+    {
+      "front": "Hva er et økosystem?",
+      "bak": "Det biologiske samfunnet pluss de abiotiske faktorene (jord, vann, lys, klima) og prosessene mellom dem."
+    },
+    {
+      "front": "Hva menes med en emergent egenskap?",
+      "bak": "En egenskap som oppstår på et høyere organisasjonsnivå og ikke finnes i delene alene — for eksempel hukommelse i en hjerne."
+    },
+    {
+      "front": "Hva må en vitenskapelig hypotese være?",
+      "bak": "Testbar og falsifiserbar: den må kunne prøves med målinger og kunne vise seg å være gal."
+    },
+    {
+      "front": "Uavhengig og avhengig variabel",
+      "bak": "Uavhengig: den ene faktoren du selv endrer. Avhengig: det du måler, med enhet."
+    },
+    {
+      "front": "Hvorfor trenger du en kontrollgruppe?",
+      "bak": "For å se hva som skjer uten behandlingen, slik at du har noe å sammenligne resultatene med."
+    },
+    {
+      "front": "Hvorfor gjentak (replikater)?",
+      "bak": "For å se hvor stor den tilfeldige variasjonen er, slik at én uheldig måling ikke avgjør konklusjonen."
+    },
+    {
+      "front": "Reliabilitet eller validitet?",
+      "bak": "Reliabilitet: kan målingene gjentas og stoles på? Validitet: måler du faktisk det du vil undersøke?"
+    },
+    {
+      "front": "Systematisk eller tilfeldig feil?",
+      "bak": "Systematisk: alle målingene dras samme vei (feilkalibrert utstyr) — flere målinger hjelper ikke. Tilfeldig: varierer opp og ned — demper seg med gjentak."
+    },
+    {
+      "front": "Formel for standardavvik i et utvalg",
+      "bak": "$s = \\sqrt{\\frac{1}{n-1}\\sum\\left(x_i - \\bar{x}\\right)^2}$ — stort $s$ betyr stor spredning i dataene."
+    },
+    {
+      "front": "Hvordan finner du individtetthet fra en ruteanalyse?",
+      "bak": "$D = \\frac{N}{A}$: gjennomsnittlig antall per rute delt på rutearealet. Ganger du med totalarealet, får du et anslag for hele området."
+    },
+    {
+      "front": "Hvordan skrives et vitenskapelig artsnavn?",
+      "bak": "Slekt med stor forbokstav, artsepitet med liten, begge i kursiv: Vaccinium myrtillus (blåbær)."
+    },
+    {
+      "front": "Fire spørsmål i kildekritikk",
+      "bak": "Hvem står bak (og har de egne interesser)? Når er det publisert? Er det primærkilde? Er det fagfellevurdert?"
+    }
   ]
 }

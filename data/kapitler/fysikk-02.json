@@ -77,7 +77,7 @@
     "figur": {
       "type": "vektor",
       "tittel": "Frilegemediagram: kasse dratt med skrå snor",
-      "forklaring": "Fire krefter virker PÅ kassa, og hver har en avsender: jorda gir G, underlaget gir N og R, snora gir S. Sammenlikn lengdene: N er kortere enn G fordi den loddrette delen av snordraget bærer litt av kassa, og snordraget framover er større enn friksjonen — derfor akselererer kassa mot høyre.",
+      "forklaring": "Hver pil har en avsender: jorda gir G, underlaget gir N og R, snora gir S — bevegelsesretningen er ingen kraft. Pilene er i målestokk: N er kortere enn G fordi den loddrette delen av snordraget bærer litt av kassa, og den vannrette delen er større enn friksjonen R.",
       "xmin": -2.5,
       "xmax": 2.49,
       "ymin": -1.5,
@@ -131,11 +131,11 @@
         {
           "fra": [
             0,
-            0.21
+            0.09
           ],
           "til": [
             -0.363,
-            0.21
+            0.09
           ],
           "navn": "R",
           "farge": 2
@@ -195,9 +195,9 @@
         "figur": {
           "type": "graf",
           "tittel": "Friksjonen mot kraften du drar med",
-          "forklaring": "Så lenge kassa står stille, er friksjonen akkurat like stor som dragkraften — den vokser med langs linja R = F. Ved taket μs·N = 200 N løsner kassa, og friksjonen faller til den konstante verdien μN = 170 N. Derfor er det tyngst å få kassa i gang.",
+          "forklaring": "Så lenge kassa står stille, er friksjonen akkurat like stor som kraften du drar med, og den vokser i takt med den langs linja R = F. Ved taket μs·N = 200 N løsner kassa, og friksjonen faller til den konstante verdien μN = 170 N — derfor er det tyngst å få kassa i gang.",
           "xmin": 0,
-          "xmax": 320,
+          "xmax": 340,
           "ymin": 0,
           "ymax": 240,
           "xlabel": "F (N)",
@@ -212,7 +212,7 @@
                 200,
                 200
               ],
-              "navn": "R = F i ro",
+              "navn": "R = F",
               "farge": 1,
               "stiplet": false
             },
@@ -257,7 +257,7 @@
         "figur": {
           "type": "vektor",
           "tittel": "Kreftene på en kloss på skråplan (α = 30°)",
-          "forklaring": "Tyngden G er diagonalen i rektangelet: den deles i Gx = mg·sin α langs planet og Gy = mg·cos α inn i planet. N er nøyaktig like lang som Gy, så de opphever hverandre, mens R er kortere enn Gx — det som blir igjen langs planet, gir akselerasjonen nedover.",
+          "forklaring": "Tyngden er diagonalen i rektangelet: Gx = mg·sin α langs planet og Gy = mg·cos α inn i planet, og vinkelen α mellom G og Gy er den samme som helningsvinkelen. N er like lang som Gy og opphever den, mens R er kortere enn Gx — det som blir igjen langs planet, gir akselerasjonen nedover.",
           "xmin": -2.57,
           "xmax": 2.57,
           "ymin": -1.85,
@@ -266,8 +266,7 @@
           "kropp": {
             "x": 0,
             "y": 0,
-            "form": "boks",
-            "navn": "m"
+            "form": "boks"
           },
           "vektorer": [
             {
@@ -288,7 +287,7 @@
                 0
               ],
               "til": [
-                0.693,
+                -0.693,
                 -0.4
               ],
               "navn": "Gx",
@@ -300,7 +299,7 @@
                 0
               ],
               "til": [
-                -0.693,
+                0.693,
                 -1.2
               ],
               "navn": "Gy",
@@ -312,7 +311,7 @@
                 0
               ],
               "til": [
-                0.693,
+                -0.693,
                 1.2
               ],
               "navn": "N",
@@ -324,8 +323,8 @@
                 0
               ],
               "til": [
-                -0.36,
-                0.208
+                0.48,
+                0.277
               ],
               "navn": "R",
               "farge": 3

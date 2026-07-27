@@ -3,7 +3,6 @@
   "nr": 8,
   "tittel": "Miljøanalyse",
   "intro": "Miljøanalyse er kjemi brukt på virkeligheten: du tar en prøve av vann, jord eller luft, finner ut hva den inneholder og hvor mye, og vurderer hva tallene betyr for miljøet. Kapittelet binder sammen støkiometri, syrer og baser og lysabsorpsjon — og krever at du er ærlig om usikkerheten i egne målinger.",
-
   "kompakt": {
     "punkter": [
       "Kvalitativ analyse svarer på hvilke stoffer prøven inneholder, kvantitativ analyse svarer på hvor mye. «Påvis» betyr kvalitativt, «bestem konsentrasjonen» betyr kvantitativt.",
@@ -18,23 +17,96 @@
       "Forsuring skyldes $\\ce{SO2}$ og $\\ce{NO_x}$ som blir $\\ce{H2SO4}$ og $\\ce{HNO3}$ i atmosfæren. Kalkfattige vann har lav alkalitet og rammes hardest."
     ],
     "formler": [
-      { "navn": "Stoffmengde i en løsning", "latex": "n = c \\cdot V" },
-      { "navn": "Konsentrasjon", "latex": "c = \\frac{n}{V}" },
-      { "navn": "Stoffmengdeforhold ved ekvivalenspunktet, med koeffisientene $a$ og $b$", "latex": "\\frac{n(\\ce{A})}{a} = \\frac{n(\\ce{B})}{b}" },
-      { "navn": "Titrering der forholdet er 1:1", "latex": "c_{\\text{syre}} V_{\\text{syre}} = c_{\\text{base}} V_{\\text{base}}" },
-      { "navn": "Fortynning", "latex": "c_1 V_1 = c_2 V_2" },
-      { "navn": "Fortynningsfaktor", "latex": "f = \\frac{V_{\\text{slutt}}}{V_{\\text{start}}}" },
-      { "navn": "Fra mol/L til g/L — gang med 1000 for mg/L", "latex": "\\rho = c \\cdot M" },
-      { "navn": "Absorbans, der $T = I/I_0$ er transmittansen", "latex": "A = \\log\\frac{I_0}{I} = -\\log T" },
-      { "navn": "Beer-Lamberts lov", "latex": "A = \\varepsilon \\cdot l \\cdot c" },
-      { "navn": "Standardkurve gjennom origo", "latex": "A = k \\cdot c \\quad \\Rightarrow \\quad c = \\frac{A}{k}" },
-      { "navn": "pH", "latex": "\\mathrm{pH} = -\\log[\\ce{H3O+}]" },
-      { "navn": "Konsentrasjon fra pH", "latex": "[\\ce{H3O+}] = 10^{-\\mathrm{pH}}" },
-      { "navn": "Vannets ioneprodukt ved 25 °C", "latex": "K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14}" },
-      { "navn": "Gjennomsnitt av parallelle målinger", "latex": "\\bar{x} = \\frac{x_1 + x_2 + \\ldots + x_n}{n}" }
-    ]
+      {
+        "navn": "Stoffmengde i en løsning",
+        "latex": "n = c \\cdot V"
+      },
+      {
+        "navn": "Konsentrasjon",
+        "latex": "c = \\frac{n}{V}"
+      },
+      {
+        "navn": "Stoffmengdeforhold ved ekvivalenspunktet, med koeffisientene $a$ og $b$",
+        "latex": "\\frac{n(\\ce{A})}{a} = \\frac{n(\\ce{B})}{b}"
+      },
+      {
+        "navn": "Titrering der forholdet er 1:1",
+        "latex": "c_{\\text{syre}} V_{\\text{syre}} = c_{\\text{base}} V_{\\text{base}}"
+      },
+      {
+        "navn": "Fortynning",
+        "latex": "c_1 V_1 = c_2 V_2"
+      },
+      {
+        "navn": "Fortynningsfaktor",
+        "latex": "f = \\frac{V_{\\text{slutt}}}{V_{\\text{start}}}"
+      },
+      {
+        "navn": "Fra mol/L til g/L — gang med 1000 for mg/L",
+        "latex": "\\rho = c \\cdot M"
+      },
+      {
+        "navn": "Absorbans, der $T = I/I_0$ er transmittansen",
+        "latex": "A = \\log\\frac{I_0}{I} = -\\log T"
+      },
+      {
+        "navn": "Beer-Lamberts lov",
+        "latex": "A = \\varepsilon \\cdot l \\cdot c"
+      },
+      {
+        "navn": "Standardkurve gjennom origo",
+        "latex": "A = k \\cdot c \\quad \\Rightarrow \\quad c = \\frac{A}{k}"
+      },
+      {
+        "navn": "pH",
+        "latex": "\\mathrm{pH} = -\\log[\\ce{H3O+}]"
+      },
+      {
+        "navn": "Konsentrasjon fra pH",
+        "latex": "[\\ce{H3O+}] = 10^{-\\mathrm{pH}}"
+      },
+      {
+        "navn": "Vannets ioneprodukt ved 25 °C",
+        "latex": "K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14}"
+      },
+      {
+        "navn": "Gjennomsnitt av parallelle målinger",
+        "latex": "\\bar{x} = \\frac{x_1 + x_2 + \\ldots + x_n}{n}"
+      }
+    ],
+    "figur": {
+      "type": "flyt",
+      "retning": "ned",
+      "tittel": "Fra vannprøve til vurdert svar",
+      "forklaring": "Kalibreringen i steg 3 kommer før målingen, ikke etter: et byrettevolum eller et instrumentutslag betyr ingenting før det er sammenlignet med noe med kjent konsentrasjon. Legg også merke til at kjeden ikke stopper ved et tall — steg 6 er å avgjøre om tallet ligger over grenseverdien, og hvor sikkert det er.",
+      "steg": [
+        {
+          "tekst": "Hva spør vi om — hva, eller hvor mye?",
+          "note": "kvalitativt / kvantitativt"
+        },
+        {
+          "tekst": "Ta en representativ prøve",
+          "note": "noter sted, tid, dyp, temp."
+        },
+        {
+          "tekst": "Kalibrer mot noe med kjent innhold",
+          "note": "standardløsning eller kurve"
+        },
+        {
+          "tekst": "Mål: blindprøve og tre paralleller",
+          "note": "titrer eller mål absorbans"
+        },
+        {
+          "tekst": "Regn ut konsentrasjonen",
+          "note": "n = c·V, husk fortynningen"
+        },
+        {
+          "tekst": "Vurder mot grenseverdi og usikkerhet",
+          "note": "rimelig antall siffer"
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -47,7 +119,27 @@
       },
       {
         "tittel": "Titrering som analysemetode",
-        "html": "<p>Titrering er den billigste presise metoden vi har. Du fyller en <strong>byrette</strong> med en <strong>standardløsning</strong> — en løsning der konsentrasjonen er kjent nøyaktig — og tilsetter den dråpevis til en nøyaktig avmålt prøve, helt til reaksjonen er akkurat ferdig.</p><p>Skill mellom to punkter. <strong>Ekvivalenspunktet</strong> er der stoffmengdene stemmer med koeffisientene i reaksjonslikningen, altså det teoretisk riktige punktet. <strong>Endepunktet</strong> er der du <em>ser</em> at indikatoren skifter farge. Jobben din er å velge indikator slik at de to faller nesten sammen. Titrerer du en sterk syre med en sterk base, ligger ekvivalenspunktet ved pH 7, og både fenolftalein (omslag pH 8,3–10,0) og metylrødt (4,4–6,2) virker, fordi pH stuper bratt der. Titrerer du en svak syre som eddiksyre med sterk base, ligger ekvivalenspunktet over pH 7, og da må du bruke fenolftalein.</p><p>Regnemåten er alltid den samme:</p><ol><li>Skriv den balanserte reaksjonslikningen.</li><li>Regn ut stoffmengden av titranten: $n = c \\cdot V$, med $V$ i liter.</li><li>Bruk koeffisientforholdet til å finne stoffmengden av analytten.</li><li>Del på prøvens volum for å få konsentrasjonen.</li></ol><p>Gjør minst tre <strong>parallelle</strong> titreringer og bruk gjennomsnittet av dem som ligger tett; den første er ofte en grovtitrering der du bare finner omtrent hvor endepunktet er. Husk også at fast $\\ce{NaOH}$ trekker til seg både vann og $\\ce{CO2}$ fra lufta. En natriumhydroksidløsning er derfor ingen primærstandard — konsentrasjonen må bestemmes ved titrering mot en syre med kjent konsentrasjon.</p>"
+        "html": "<p>Titrering er den billigste presise metoden vi har. Du fyller en <strong>byrette</strong> med en <strong>standardløsning</strong> — en løsning der konsentrasjonen er kjent nøyaktig — og tilsetter den dråpevis til en nøyaktig avmålt prøve, helt til reaksjonen er akkurat ferdig.</p><p>Skill mellom to punkter. <strong>Ekvivalenspunktet</strong> er der stoffmengdene stemmer med koeffisientene i reaksjonslikningen, altså det teoretisk riktige punktet. <strong>Endepunktet</strong> er der du <em>ser</em> at indikatoren skifter farge. Jobben din er å velge indikator slik at de to faller nesten sammen. Titrerer du en sterk syre med en sterk base, ligger ekvivalenspunktet ved pH 7, og både fenolftalein (omslag pH 8,3–10,0) og metylrødt (4,4–6,2) virker, fordi pH stuper bratt der. Titrerer du en svak syre som eddiksyre med sterk base, ligger ekvivalenspunktet over pH 7, og da må du bruke fenolftalein.</p><p>Regnemåten er alltid den samme:</p><ol><li>Skriv den balanserte reaksjonslikningen.</li><li>Regn ut stoffmengden av titranten: $n = c \\cdot V$, med $V$ i liter.</li><li>Bruk koeffisientforholdet til å finne stoffmengden av analytten.</li><li>Del på prøvens volum for å få konsentrasjonen.</li></ol><p>Gjør minst tre <strong>parallelle</strong> titreringer og bruk gjennomsnittet av dem som ligger tett; den første er ofte en grovtitrering der du bare finner omtrent hvor endepunktet er. Husk også at fast $\\ce{NaOH}$ trekker til seg både vann og $\\ce{CO2}$ fra lufta. En natriumhydroksidløsning er derfor ingen primærstandard — konsentrasjonen må bestemmes ved titrering mot en syre med kjent konsentrasjon.</p>",
+        "figur": {
+          "type": "stolper",
+          "tittel": "Titrervolum for tre ulike syrer",
+          "enhet": "V(NaOH) ved ekvivalens (mL)",
+          "forklaring": "Alle tre prøvene er 25,00 mL 0,0500 mol/L syre, titrert med 0,100 mol/L NaOH. Eddiksyra er svak, men bruker like mye base som saltsyra: styrken bestemmer pH underveis og valget av indikator, mens antall protoner bestemmer volumet. Glemmer du 2-tallet for svovelsyra, blir svaret dobbelt for høyt.",
+          "data": [
+            {
+              "navn": "HCl (1 H⁺)",
+              "verdi": 12.5
+            },
+            {
+              "navn": "Eddiksyre (1 H⁺)",
+              "verdi": 12.5
+            },
+            {
+              "navn": "H₂SO₄ (2 H⁺)",
+              "verdi": 25.0
+            }
+          ]
+        }
       },
       {
         "tittel": "Kolorimetri og spektrofotometri",
@@ -55,14 +147,41 @@
       },
       {
         "tittel": "Forurensning: næringssalter og forsuring",
-        "html": "<p><strong>Eutrofiering</strong> betyr at et vann får for mye næring. Nitrat, $\\ce{NO3-}$, og fosfat, $\\ce{PO4^3-}$, kommer fra gjødslet jordbruksareal, fra kloakk og fra oppdrett. I ferskvann er fosfor oftest <strong>minimumsfaktoren</strong>: det er næringsstoffet det er minst av, så det er tilført fosfat som setter i gang veksten. I sjøvann er nitrogen oftere den begrensende faktoren.</p><p>Selve algeveksten er ikke hovedproblemet. Problemet kommer når algene dør, synker og brytes ned av bakterier, for nedbrytingen bruker oksygen. Dypvannet kan bli nesten oksygenfritt, bunndyr og fisk forsvinner, og i oksygenfritt vann dannes illeluktende $\\ce{H2S}$. Dette er en kjede du må kunne gjengi: næringssalter → algevekst → dødt organisk materiale → bakteriell nedbryting → oksygensvikt.</p><p><strong>Forsuring</strong> har en helt annen årsak. Forbrenning av kull og olje slipper ut svoveldioksid og nitrogenoksider, som blir sterke syrer i atmosfæren:</p>$$\\ce{2SO2 + O2 + 2H2O -> 2H2SO4} \\qquad \\ce{4NO2 + O2 + 2H2O -> 4HNO3}$$<p>Ren nedbør er allerede litt sur, med pH omkring 5,6, fordi $\\ce{CO2}$ løser seg i vann og danner den svake karbonsyren: $\\ce{CO2 + H2O <=> H2CO3}$. Sur nedbør kan komme ned mot pH 4. Vann på kalkrik grunn har høy <strong>alkalitet</strong> og nøytraliserer syren med $\\ce{HCO3-}$, mens vann på hardt fjell som granitt har liten bufferevne og blir surt. Ved lav pH løses giftig $\\ce{Al^3+}$ ut fra jorda og skader gjellene til fisken. Motgiften er <strong>kalking</strong> med $\\ce{CaCO3}$:</p>$$\\ce{CaCO3 + 2H3O+ -> Ca^2+ + 3H2O + CO2}$$"
+        "html": "<p><strong>Eutrofiering</strong> betyr at et vann får for mye næring. Nitrat, $\\ce{NO3-}$, og fosfat, $\\ce{PO4^3-}$, kommer fra gjødslet jordbruksareal, fra kloakk og fra oppdrett. I ferskvann er fosfor oftest <strong>minimumsfaktoren</strong>: det er næringsstoffet det er minst av, så det er tilført fosfat som setter i gang veksten. I sjøvann er nitrogen oftere den begrensende faktoren.</p><p>Selve algeveksten er ikke hovedproblemet. Problemet kommer når algene dør, synker og brytes ned av bakterier, for nedbrytingen bruker oksygen. Dypvannet kan bli nesten oksygenfritt, bunndyr og fisk forsvinner, og i oksygenfritt vann dannes illeluktende $\\ce{H2S}$. Dette er en kjede du må kunne gjengi: næringssalter → algevekst → dødt organisk materiale → bakteriell nedbryting → oksygensvikt.</p><p><strong>Forsuring</strong> har en helt annen årsak. Forbrenning av kull og olje slipper ut svoveldioksid og nitrogenoksider, som blir sterke syrer i atmosfæren:</p>$$\\ce{2SO2 + O2 + 2H2O -> 2H2SO4} \\qquad \\ce{4NO2 + O2 + 2H2O -> 4HNO3}$$<p>Ren nedbør er allerede litt sur, med pH omkring 5,6, fordi $\\ce{CO2}$ løser seg i vann og danner den svake karbonsyren: $\\ce{CO2 + H2O <=> H2CO3}$. Sur nedbør kan komme ned mot pH 4. Vann på kalkrik grunn har høy <strong>alkalitet</strong> og nøytraliserer syren med $\\ce{HCO3-}$, mens vann på hardt fjell som granitt har liten bufferevne og blir surt. Ved lav pH løses giftig $\\ce{Al^3+}$ ut fra jorda og skader gjellene til fisken. Motgiften er <strong>kalking</strong> med $\\ce{CaCO3}$:</p>$$\\ce{CaCO3 + 2H3O+ -> Ca^2+ + 3H2O + CO2}$$",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Eutrofiering, steg for steg",
+          "forklaring": "Følg oksygenet gjennom kjeden: algene i steg 2 gir netto oksygen mens de lever i lyset, og det er først i steg 4 — nede i mørket, etter at algene er døde — at oksygenet forsvinner. Derfor rammer oksygensvikten dypvannet og ikke overflaten.",
+          "steg": [
+            {
+              "tekst": "Fosfat og nitrat renner ut i vannet",
+              "note": "gjødsel, kloakk, oppdrett"
+            },
+            {
+              "tekst": "Kraftig algevekst i overflatevannet",
+              "note": "fosfor er minimumsfaktor"
+            },
+            {
+              "tekst": "Algene dør og synker mot bunnen",
+              "note": "dødt organisk materiale"
+            },
+            {
+              "tekst": "Bakterier bryter ned det døde stoffet",
+              "note": "nedbrytingen bruker O₂"
+            },
+            {
+              "tekst": "Oksygensvikt i dypvannet",
+              "note": "bunndyr og fisk forsvinner"
+            }
+          ]
+        }
       },
       {
         "tittel": "Feltarbeid og usikkerhet",
         "html": "<p>Et feltarbeid begynner ved skrivebordet. Bestem hva du vil finne ut, hvilke parametere som svarer på det, hvor mange prøvepunkter du trenger, og når prøvene skal tas. Ta alltid med et <strong>referansepunkt</strong>, for eksempel oppstrøms et utslipp, så du har noe å sammenligne med. Uten referanse kan du ikke si om en verdi er høy.</p><p>Alle målinger har <strong>usikkerhet</strong>, og du må skille to typer:</p><ul><li><strong>Tilfeldige feil</strong> gir spredning rundt riktig verdi — du leser av byretten litt ulikt hver gang. De blir mindre når du gjentar målingen og bruker gjennomsnittet.</li><li><strong>Systematiske feil</strong> trekker alle målingene samme vei: en byrette som er feil kalibrert, et pH-meter som ikke er kalibrert, eller et reagens som har stått for lenge. Gjentakelse hjelper ikke; feilen forsvinner bare hvis du finner årsaken.</li></ul><p>Derfor er <strong>presisjon</strong> (liten spredning) og <strong>nøyaktighet</strong> (nær sann verdi) to forskjellige ting. Tre titreringer som gir 18,35 mL, 18,40 mL og 18,45 mL er presise, men alle tre kan være gale hvis standardløsningen har feil konsentrasjon.</p><p>To kontroller bør alltid være med: en <strong>blindprøve</strong>, som viser hva reagenser og utstyr bidrar med av seg selv, og en <strong>kontrollprøve</strong> med kjent konsentrasjon, som viser om metoden treffer.</p><p>Til slutt: oppgi svaret med et rimelig antall <strong>gjeldende siffer</strong>. Har du målt volumet til 18,40 mL med fire siffer, kan ikke svaret ha ni. Kalkulatoren holder ikke orden på usikkerheten for deg.</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Titrering av svovelsyre i prosessvann",
@@ -72,7 +191,48 @@
       {
         "tittel": "Fosfat i avløpsvann med spektrofotometri",
         "oppgave": "<p>Du skal bestemme fosforinnholdet i avløpsvann fra et renseanlegg. Fosfat omdannes først til et blått kompleks, og absorbansen måles ved 880 nm. Standardløsningene gir:</p><table><thead><tr><th>$c$ (mg P/L)</th><th>Absorbans $A$</th></tr></thead><tbody><tr><td>0,200</td><td>0,124</td></tr><tr><td>0,500</td><td>0,310</td></tr><tr><td>0,800</td><td>0,496</td></tr></tbody></table><p>Blindprøven gir $A = 0{,}000$. Prøven er for konsentrert til å måles direkte, så 5,00 mL avløpsvann fortynnes til 50,0 mL. Den fortynnede prøven har $A = 0{,}285$.</p><ol><li>Finn likningen for standardkurven.</li><li>Bestem konsentrasjonen av fosfor i avløpsvannet, i mg/L og i mol/L.</li><li>Utslippskravet for anlegget er 1,0 mg P/L. Er kravet oppfylt?</li></ol><p>Molar masse: P 30,97 g/mol.</p>",
-        "losning": "<p><strong>Steg 1 — standardkurven.</strong> Blindprøven gir absorbans 0, så linja går gjennom origo og har formen $A = k \\cdot c$. Stigningstallet finner vi fra ytterpunktene:</p>$$k = \\frac{0{,}496 - 0{,}124}{0{,}800 - 0{,}200} = \\frac{0{,}372}{0{,}600} = 0{,}620\\ \\frac{\\text{L}}{\\text{mg}}$$<p>Kontroll med midtpunktet: $0{,}620 \\cdot 0{,}500 = 0{,}310$, som er nøyaktig det som ble målt. Punktene ligger på rett linje, slik Beer-Lamberts lov krever:</p>$$A = 0{,}620 \\cdot c$$<p><strong>Steg 2 — konsentrasjonen i den fortynnede prøven.</strong> Vi snur likningen:</p>$$c = \\frac{A}{k} = \\frac{0{,}285}{0{,}620\\ \\text{L/mg}} = 0{,}4597\\ \\text{mg/L} \\approx 0{,}460\\ \\text{mg/L}$$<p>Verdien ligger mellom den laveste og den høyeste standarden (0,200 og 0,800 mg/L), så vi leser av innenfor kurven og slipper å ekstrapolere.</p><p><strong>Steg 3 — fortynningsfaktoren.</strong> 5,00 mL ble fylt opp til 50,0 mL:</p>$$f = \\frac{50{,}0\\ \\text{mL}}{5{,}00\\ \\text{mL}} = 10{,}0$$<p>Den opprinnelige prøven er ti ganger sterkere enn den vi målte:</p>$$c(\\text{P}) = 10{,}0 \\cdot 0{,}4597\\ \\text{mg/L} = 4{,}597\\ \\text{mg/L} \\approx 4{,}60\\ \\text{mg/L}$$<p><strong>Steg 4 — over til mol/L.</strong> Vi regner om mg/L til g/L og deler på molar masse:</p>$$c = \\frac{4{,}60 \\cdot 10^{-3}\\ \\text{g/L}}{30{,}97\\ \\text{g/mol}} = 1{,}49 \\cdot 10^{-4}\\ \\text{mol/L}$$<p><strong>Steg 5 — vurderingen.</strong> Målt verdi er 4,60 mg P/L, mens kravet er 1,0 mg P/L:</p>$$\\frac{4{,}60}{1{,}0} = 4{,}6$$<p>Utslippet er 4,6 ganger høyere enn kravet, altså er kravet ikke oppfylt. Fosfor er minimumsfaktoren i ferskvann, så et slikt utslipp vil gi kraftig algevekst i resipienten.</p><p><strong>Svar:</strong> Standardkurven er $A = 0{,}620c$, konsentrasjonen er 4,60 mg P/L $= 1{,}49 \\cdot 10^{-4}$ mol/L, og kravet er brutt. Merk at hele svaret hviler på fortynningsfaktoren — glemmer du den, rapporterer du 0,460 mg/L og konkluderer stikk motsatt.</p>"
+        "losning": "<p><strong>Steg 1 — standardkurven.</strong> Blindprøven gir absorbans 0, så linja går gjennom origo og har formen $A = k \\cdot c$. Stigningstallet finner vi fra ytterpunktene:</p>$$k = \\frac{0{,}496 - 0{,}124}{0{,}800 - 0{,}200} = \\frac{0{,}372}{0{,}600} = 0{,}620\\ \\frac{\\text{L}}{\\text{mg}}$$<p>Kontroll med midtpunktet: $0{,}620 \\cdot 0{,}500 = 0{,}310$, som er nøyaktig det som ble målt. Punktene ligger på rett linje, slik Beer-Lamberts lov krever:</p>$$A = 0{,}620 \\cdot c$$<p><strong>Steg 2 — konsentrasjonen i den fortynnede prøven.</strong> Vi snur likningen:</p>$$c = \\frac{A}{k} = \\frac{0{,}285}{0{,}620\\ \\text{L/mg}} = 0{,}4597\\ \\text{mg/L} \\approx 0{,}460\\ \\text{mg/L}$$<p>Verdien ligger mellom den laveste og den høyeste standarden (0,200 og 0,800 mg/L), så vi leser av innenfor kurven og slipper å ekstrapolere.</p><p><strong>Steg 3 — fortynningsfaktoren.</strong> 5,00 mL ble fylt opp til 50,0 mL:</p>$$f = \\frac{50{,}0\\ \\text{mL}}{5{,}00\\ \\text{mL}} = 10{,}0$$<p>Den opprinnelige prøven er ti ganger sterkere enn den vi målte:</p>$$c(\\text{P}) = 10{,}0 \\cdot 0{,}4597\\ \\text{mg/L} = 4{,}597\\ \\text{mg/L} \\approx 4{,}60\\ \\text{mg/L}$$<p><strong>Steg 4 — over til mol/L.</strong> Vi regner om mg/L til g/L og deler på molar masse:</p>$$c = \\frac{4{,}60 \\cdot 10^{-3}\\ \\text{g/L}}{30{,}97\\ \\text{g/mol}} = 1{,}49 \\cdot 10^{-4}\\ \\text{mol/L}$$<p><strong>Steg 5 — vurderingen.</strong> Målt verdi er 4,60 mg P/L, mens kravet er 1,0 mg P/L:</p>$$\\frac{4{,}60}{1{,}0} = 4{,}6$$<p>Utslippet er 4,6 ganger høyere enn kravet, altså er kravet ikke oppfylt. Fosfor er minimumsfaktoren i ferskvann, så et slikt utslipp vil gi kraftig algevekst i resipienten.</p><p><strong>Svar:</strong> Standardkurven er $A = 0{,}620c$, konsentrasjonen er 4,60 mg P/L $= 1{,}49 \\cdot 10^{-4}$ mol/L, og kravet er brutt. Merk at hele svaret hviler på fortynningsfaktoren — glemmer du den, rapporterer du 0,460 mg/L og konkluderer stikk motsatt.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Standardkurven med avlesningen av prøven",
+          "forklaring": "De tre standardene ligger på en rett linje gjennom origo, slik Beer-Lamberts lov krever når blindprøven gir A = 0. Hjelpelinjene viser avlesningen: A = 0,285 treffer linja mellom laveste og høyeste standard, så du slipper å ekstrapolere — men 0,460 mg/L gjelder den fortynnede prøven og må ganges med 10.",
+          "xmin": 0,
+          "xmax": 0.9,
+          "ymin": 0,
+          "ymax": 0.56,
+          "xlabel": "c (mg P/L)",
+          "ylabel": "A",
+          "kurver": [
+            {
+              "uttrykk": "0.620*x",
+              "navn": "A = 0,620c",
+              "farge": 1
+            }
+          ],
+          "punkter": [
+            {
+              "x": 0.2,
+              "y": 0.124,
+              "navn": "standarder",
+              "plassering": "under"
+            },
+            {
+              "x": 0.5,
+              "y": 0.31
+            },
+            {
+              "x": 0.8,
+              "y": 0.496
+            },
+            {
+              "x": 0.4597,
+              "y": 0.285,
+              "navn": "prøven: 0,460",
+              "plassering": "under",
+              "hjelpelinjer": true
+            }
+          ]
+        }
       },
       {
         "tittel": "Hvor mye kalk trengs i et forsuret vann?",
@@ -80,7 +240,6 @@
         "losning": "<p><strong>Steg 1 — konsentrasjonen av oksoniumioner.</strong> Vi bruker $[\\ce{H3O+}] = 10^{-\\mathrm{pH}}$:</p>$$[\\ce{H3O+}] = 10^{-4{,}60}\\ \\text{mol/L} = 2{,}5 \\cdot 10^{-5}\\ \\text{mol/L}$$<p>pH er oppgitt med to desimaler, som svarer til to gjeldende siffer i konsentrasjonen.</p><p><strong>Steg 2 — sammenligningen.</strong> pH-skalaen er logaritmisk, så to pH-enheter betyr en faktor $10^2$:</p>$$\\frac{10^{-4{,}60}}{10^{-6{,}60}} = 10^{-4{,}60 - (-6{,}60)} = 10^{2} = 100$$<p>Vannet inneholder 100 ganger mer $\\ce{H3O+}$ enn et vann med pH 6,60.</p><p><strong>Steg 3 — total stoffmengde syre i vannet.</strong></p>$$n(\\ce{H3O+}) = c \\cdot V = 2{,}5 \\cdot 10^{-5}\\ \\text{mol/L} \\cdot 2{,}0 \\cdot 10^{7}\\ \\text{L} = 5{,}0 \\cdot 10^{2}\\ \\text{mol}$$<p><strong>Steg 4 — reaksjonen med kalk.</strong> Karbonationet tar opp to protoner:</p>$$\\ce{CaCO3 + 2H3O+ -> Ca^2+ + 3H2O + CO2}$$<p>Forholdet er 1 mol $\\ce{CaCO3}$ per 2 mol $\\ce{H3O+}$:</p>$$n(\\ce{CaCO3}) = \\frac{5{,}0 \\cdot 10^{2}}{2}\\ \\text{mol} = 2{,}5 \\cdot 10^{2}\\ \\text{mol}$$<p><strong>Steg 5 — massen.</strong> Molar masse:</p>$$M(\\ce{CaCO3}) = 40{,}08 + 12{,}01 + 3 \\cdot 16{,}00 = 100{,}09\\ \\text{g/mol}$$$$m = n \\cdot M = 2{,}5 \\cdot 10^{2}\\ \\text{mol} \\cdot 100{,}09\\ \\text{g/mol} = 2{,}5 \\cdot 10^{4}\\ \\text{g} = 25\\ \\text{kg}$$<p><strong>Svar:</strong> $[\\ce{H3O+}] = 2{,}5 \\cdot 10^{-5}$ mol/L, 100 ganger mer enn ved pH 6,60, og omtrent 25 kg kalk.</p><p><strong>Viktig forbehold:</strong> 25 kg er et teoretisk minimum som bare nøytraliserer den frie syren i vannet slik det er i dag. I virkeligheten kalkes det med mange ganger mer, fordi surt vann renner til hele tiden, fordi jordsmonnet rundt vannet har et lager av syre som lekker ut, og fordi kalken løser seg langsomt. Regnestykket gir størrelsesorden, ikke en oppskrift.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å bruke $c_{\\text{syre}}V_{\\text{syre}} = c_{\\text{base}}V_{\\text{base}}$ også når syra er toprotisk. For $\\ce{H2SO4}$ må stoffmengden base deles på 2, ellers får du dobbelt så høy syrekonsentrasjon som riktig.",
       "Å sette inn volumet i mL i $n = c \\cdot V$. Konsentrasjonen er mol per liter, så volumet må gjøres om til liter først — hvis ikke blir svaret 1000 ganger for stort.",
@@ -89,7 +248,6 @@
       "Å tro at det er algene som bruker opp oksygenet i et eutroft vann. Algene gir netto oksygen mens de lever i lyset; det er bakterienes nedbryting av døde alger som tømmer dypvannet.",
       "Å skrive av hele kalkulatordisplayet. Er volumet målt til 18,40 mL og konsentrasjonen til 0,1050 mol/L, har svaret fire gjeldende siffer — ikke ni."
     ],
-
     "tips": [
       "Skriv den balanserte reaksjonslikningen først i alle titreringsoppgaver, og sett opp $\\frac{n(\\ce{A})}{a} = \\frac{n(\\ce{B})}{b}$. Da glemmer du ikke koeffisientene, og du får uttelling for framgangsmåten selv om det sniker seg inn en regnefeil.",
       "Får du en standardkurve i oppgaven, sjekk tre ting før du regner: går linja gjennom origo (blindprøven), ligger prøvens absorbans mellom standardene, og var prøven fortynnet?",
@@ -98,41 +256,99 @@
       "I langsvar om feltarbeid skal du navngi konkrete feilkilder — «pH-meteret var ikke kalibrert», «prøven sto et døgn i romtemperatur» — og si om feilen er systematisk eller tilfeldig. «Menneskelig feil» gir ingen poeng."
     ]
   },
-
   "begreper": [
-    { "begrep": "Analytt", "forklaring": "Stoffet eller ionet du vil påvise eller bestemme mengden av. Alt det andre i prøven kalles matriksen." },
-    { "begrep": "Kvalitativ analyse", "forklaring": "Analyse som svarer på hvilke stoffer prøven inneholder, uten å tallfeste hvor mye." },
-    { "begrep": "Kvantitativ analyse", "forklaring": "Analyse som tallfester mengden av analytten, for eksempel i mol/L eller mg/L." },
-    { "begrep": "Standardløsning", "forklaring": "Løsning med nøyaktig kjent konsentrasjon, brukt som målestokk i titrering og kalibrering." },
-    { "begrep": "Ekvivalenspunkt", "forklaring": "Punktet i en titrering der stoffmengdene av titrant og analytt er i forholdet koeffisientene i reaksjonslikningen viser." },
-    { "begrep": "Endepunkt", "forklaring": "Punktet der indikatoren skifter farge, altså der du i praksis stopper titreringen. Ligger ideelt like ved ekvivalenspunktet." },
-    { "begrep": "Absorbans", "forklaring": "Logaritmisk mål på hvor mye lys en løsning absorberer: $A = \\log\\frac{I_0}{I}$. Absorbans har ingen enhet." },
-    { "begrep": "Beer-Lamberts lov", "forklaring": "$A = \\varepsilon \\cdot l \\cdot c$ — absorbansen er proporsjonal med konsentrasjonen så lenge løsningen ikke er for sterk." },
-    { "begrep": "Standardkurve", "forklaring": "Grafen av absorbans mot kjent konsentrasjon for en serie standardløsninger. Prøvens konsentrasjon leses av på linja." },
-    { "begrep": "Blindprøve", "forklaring": "Prøve med alle reagenser, men uten analytt. Brukes til å nullstille instrumentet slik at bare analytten teller." },
-    { "begrep": "Deteksjonsgrense", "forklaring": "Den laveste konsentrasjonen en metode kan skille sikkert fra null. «Under deteksjonsgrensen» betyr ikke nødvendigvis fritt for stoffet." },
-    { "begrep": "Ledningsevne", "forklaring": "Vannets evne til å lede elektrisk strøm, som er et raskt mål på den samlede konsentrasjonen av oppløste ioner." },
-    { "begrep": "Alkalitet", "forklaring": "Vannets evne til å nøytralisere tilført syre, i ferskvann i hovedsak bestemt av innholdet av $\\ce{HCO3-}$." },
-    { "begrep": "Eutrofiering", "forklaring": "Overgjødsling av et vann med næringssalter som nitrat og fosfat, som gir algevekst og senere oksygensvikt i dypvannet." },
-    { "begrep": "Systematisk feil", "forklaring": "Feil som trekker alle målingene i samme retning, for eksempel et ukalibrert instrument. Til forskjell fra tilfeldige feil blir den ikke mindre av å gjenta målingen." }
+    {
+      "begrep": "Analytt",
+      "forklaring": "Stoffet eller ionet du vil påvise eller bestemme mengden av. Alt det andre i prøven kalles matriksen."
+    },
+    {
+      "begrep": "Kvalitativ analyse",
+      "forklaring": "Analyse som svarer på hvilke stoffer prøven inneholder, uten å tallfeste hvor mye."
+    },
+    {
+      "begrep": "Kvantitativ analyse",
+      "forklaring": "Analyse som tallfester mengden av analytten, for eksempel i mol/L eller mg/L."
+    },
+    {
+      "begrep": "Standardløsning",
+      "forklaring": "Løsning med nøyaktig kjent konsentrasjon, brukt som målestokk i titrering og kalibrering."
+    },
+    {
+      "begrep": "Ekvivalenspunkt",
+      "forklaring": "Punktet i en titrering der stoffmengdene av titrant og analytt er i forholdet koeffisientene i reaksjonslikningen viser."
+    },
+    {
+      "begrep": "Endepunkt",
+      "forklaring": "Punktet der indikatoren skifter farge, altså der du i praksis stopper titreringen. Ligger ideelt like ved ekvivalenspunktet."
+    },
+    {
+      "begrep": "Absorbans",
+      "forklaring": "Logaritmisk mål på hvor mye lys en løsning absorberer: $A = \\log\\frac{I_0}{I}$. Absorbans har ingen enhet."
+    },
+    {
+      "begrep": "Beer-Lamberts lov",
+      "forklaring": "$A = \\varepsilon \\cdot l \\cdot c$ — absorbansen er proporsjonal med konsentrasjonen så lenge løsningen ikke er for sterk."
+    },
+    {
+      "begrep": "Standardkurve",
+      "forklaring": "Grafen av absorbans mot kjent konsentrasjon for en serie standardløsninger. Prøvens konsentrasjon leses av på linja."
+    },
+    {
+      "begrep": "Blindprøve",
+      "forklaring": "Prøve med alle reagenser, men uten analytt. Brukes til å nullstille instrumentet slik at bare analytten teller."
+    },
+    {
+      "begrep": "Deteksjonsgrense",
+      "forklaring": "Den laveste konsentrasjonen en metode kan skille sikkert fra null. «Under deteksjonsgrensen» betyr ikke nødvendigvis fritt for stoffet."
+    },
+    {
+      "begrep": "Ledningsevne",
+      "forklaring": "Vannets evne til å lede elektrisk strøm, som er et raskt mål på den samlede konsentrasjonen av oppløste ioner."
+    },
+    {
+      "begrep": "Alkalitet",
+      "forklaring": "Vannets evne til å nøytralisere tilført syre, i ferskvann i hovedsak bestemt av innholdet av $\\ce{HCO3-}$."
+    },
+    {
+      "begrep": "Eutrofiering",
+      "forklaring": "Overgjødsling av et vann med næringssalter som nitrat og fosfat, som gir algevekst og senere oksygensvikt i dypvannet."
+    },
+    {
+      "begrep": "Systematisk feil",
+      "forklaring": "Feil som trekker alle målingene i samme retning, for eksempel et ukalibrert instrument. Til forskjell fra tilfeldige feil blir den ikke mindre av å gjenta målingen."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "20,00 mL natriumhydroksidløsning krever 15,00 mL saltsyre med konsentrasjon 0,100 mol/L for å nå ekvivalenspunktet. Hva er $c(\\ce{NaOH})$?",
-      "alternativer": ["0,133 mol/L", "0,0375 mol/L", "0,0750 mol/L", "0,300 mol/L"],
+      "alternativer": [
+        "0,133 mol/L",
+        "0,0375 mol/L",
+        "0,0750 mol/L",
+        "0,300 mol/L"
+      ],
       "riktig": 2,
       "forklaring": "$\\ce{HCl + NaOH -> NaCl + H2O}$ gir forholdet 1:1. $n(\\ce{HCl}) = 0{,}100 \\cdot 0{,}01500 = 1{,}50 \\cdot 10^{-3}$ mol, og like mye $\\ce{NaOH}$ må ha vært i kolben. Da blir $c = \\frac{1{,}50 \\cdot 10^{-3}}{0{,}02000} = 0{,}0750$ mol/L. Alternativ A får du om du snur brøken. Bruk fornuftssjekken: det gikk mest av baseløsningen, så den må være den svakeste."
     },
     {
       "sporsmal": "25,0 mL av en svovelsyreløsning nøytraliseres av 40,0 mL $\\ce{NaOH}$ med konsentrasjon 0,200 mol/L. Hva er $c(\\ce{H2SO4})$?",
-      "alternativer": ["0,320 mol/L", "0,160 mol/L", "0,125 mol/L", "0,0800 mol/L"],
+      "alternativer": [
+        "0,320 mol/L",
+        "0,160 mol/L",
+        "0,125 mol/L",
+        "0,0800 mol/L"
+      ],
       "riktig": 1,
       "forklaring": "Likningen er $\\ce{H2SO4 + 2NaOH -> Na2SO4 + 2H2O}$. $n(\\ce{NaOH}) = 0{,}200 \\cdot 0{,}0400 = 8{,}00 \\cdot 10^{-3}$ mol, og siden det går 2 mol base per mol syre, er $n(\\ce{H2SO4}) = 4{,}00 \\cdot 10^{-3}$ mol. Delt på 0,0250 L gir 0,160 mol/L. Alternativ A er den klassiske feilen: der er $c_{\\text{syre}}V_{\\text{syre}} = c_{\\text{base}}V_{\\text{base}}$ brukt rett fram, som om syra var enprotisk."
     },
     {
       "sporsmal": "En løsning har absorbans 0,60. Du tar 10,0 mL av den og fyller opp til 50,0 mL. Hva blir absorbansen til den fortynnede løsningen, målt i samme kyvette?",
-      "alternativer": ["0,12", "3,0", "0,60", "0,55"],
+      "alternativer": [
+        "0,12",
+        "3,0",
+        "0,60",
+        "0,55"
+      ],
       "riktig": 0,
       "forklaring": "Beer-Lamberts lov $A = \\varepsilon \\cdot l \\cdot c$ sier at absorbansen er proporsjonal med konsentrasjonen. Fortynner du fem ganger, blir absorbansen fem ganger mindre: $0{,}60 / 5 = 0{,}12$. Alternativ B er hva du får om du ganger i stedet for å dele — og en absorbans på 3,0 ville dessuten ligget langt utenfor det lineære området til loven."
     },
@@ -171,7 +387,12 @@
     },
     {
       "sporsmal": "Vann A har pH 4,0 og vann B har pH 6,0. Hvor mange ganger større er $[\\ce{H3O+}]$ i A enn i B?",
-      "alternativer": ["1,5 ganger", "2 ganger", "100 ganger", "20 ganger"],
+      "alternativer": [
+        "1,5 ganger",
+        "2 ganger",
+        "100 ganger",
+        "20 ganger"
+      ],
       "riktig": 2,
       "forklaring": "$[\\ce{H3O+}] = 10^{-\\mathrm{pH}}$, så A har $1{,}0 \\cdot 10^{-4}$ mol/L og B har $1{,}0 \\cdot 10^{-6}$ mol/L. Forholdet er $\\frac{10^{-4}}{10^{-6}} = 10^{2} = 100$. Alternativ B er den vanligste feilen: pH-skalaen er logaritmisk, så to enheters forskjell betyr faktor 100, ikke faktor 2."
     },
@@ -188,7 +409,12 @@
     },
     {
       "sporsmal": "Du fortynner 10,0 mL vannprøve til 100,0 mL og måler 0,25 mg/L nitrat i den fortynnede løsningen. Hva var konsentrasjonen i den opprinnelige prøven?",
-      "alternativer": ["0,025 mg/L", "2,5 mg/L", "0,25 mg/L", "25 mg/L"],
+      "alternativer": [
+        "0,025 mg/L",
+        "2,5 mg/L",
+        "0,25 mg/L",
+        "25 mg/L"
+      ],
       "riktig": 1,
       "forklaring": "Fortynningsfaktoren er $\\frac{100{,}0}{10{,}0} = 10$, og en fortynning gjør løsningen svakere. Den opprinnelige prøven må derfor være 10 ganger sterkere: $10 \\cdot 0{,}25 = 2{,}5$ mg/L. Alternativ A får du om du deler i stedet for å gange, og den kan avvises med fornuft: en fortynnet prøve kan aldri være sterkere enn den du startet med."
     },
@@ -226,23 +452,70 @@
       "forklaring": "Deteksjonsgrensen er den laveste konsentrasjonen metoden kan skille sikkert fra null. Ligger prøven under, kan innholdet være null, men det kan også være litt nitrat der som metoden ikke er følsom nok til å se. Alternativ A er derfor en påstand du ikke har dekning for; skal du hevde at et stoff ikke finnes, må du oppgi hvilken deteksjonsgrense du målte med."
     }
   ],
-
   "flashcards": [
-    { "front": "Kvalitativ eller kvantitativ analyse?", "bak": "Kvalitativ: hvilke stoffer finnes i prøven. Kvantitativ: hvor mye det er av dem." },
-    { "front": "Ekvivalenspunkt kontra endepunkt", "bak": "Ekvivalenspunktet er det teoretisk riktige punktet ut fra koeffisientene i likningen. Endepunktet er der indikatoren skifter farge." },
-    { "front": "Omslagsområdet til fenolftalein", "bak": "pH 8,3–10,0, fra fargeløs til rosa. Passer når ekvivalenspunktet ligger over pH 7." },
-    { "front": "Framgangsmåte for titreringsregning", "bak": "1) Balansert likning. 2) $n = c \\cdot V$ for titranten, $V$ i liter. 3) Koeffisientforholdet. 4) Del på prøvevolumet." },
-    { "front": "Beer-Lamberts lov", "bak": "$A = \\varepsilon \\cdot l \\cdot c$ — absorbansen er proporsjonal med konsentrasjonen, gyldig omtrent opp til $A = 1$." },
-    { "front": "Hva bruker du en blindprøve til i et spektrofotometer?", "bak": "Å nullstille instrumentet, slik at kyvette, løsemiddel og reagenser ikke teller med i absorbansen." },
-    { "front": "Hvorfor må sterke løsninger fortynnes før spektrofotometrisk måling?", "bak": "Fordi sammenhengen mellom $A$ og $c$ bare er lineær i et begrenset område. Husk å gange med fortynningsfaktoren til slutt." },
-    { "front": "Påvisning av klorid", "bak": "Tilsett sølvnitratløsning: $\\ce{Ag+ + Cl- -> AgCl(s)}$, hvitt bunnfall." },
-    { "front": "Påvisning av sulfat", "bak": "Tilsett bariumkloridløsning: $\\ce{Ba^2+ + SO4^2- -> BaSO4(s)}$, hvitt bunnfall." },
-    { "front": "Flammefarger for Na, K, Ca og Cu", "bak": "Natrium gul, kalium fiolett, kalsium teglrød og kopper grønn." },
-    { "front": "Hvorfor har ren nedbør pH omkring 5,6?", "bak": "$\\ce{CO2}$ fra lufta løser seg i vannet og danner den svake karbonsyren: $\\ce{CO2 + H2O <=> H2CO3}$." },
-    { "front": "De to utslippene bak sur nedbør", "bak": "$\\ce{SO2}$ og $\\ce{NO_x}$, som blir $\\ce{H2SO4}$ og $\\ce{HNO3}$ i atmosfæren." },
-    { "front": "Kjeden i eutrofiering", "bak": "Næringssalter (fosfat, nitrat) → algevekst → dødt organisk materiale → bakteriell nedbryting → oksygensvikt i dypvannet." },
-    { "front": "Hvorfor tåler kalkrike vann sur nedbør bedre?", "bak": "De har høy alkalitet: $\\ce{HCO3-}$ nøytraliserer syren som tilføres, så pH holdes oppe." },
-    { "front": "Reaksjonen ved kalking av surt vann", "bak": "$\\ce{CaCO3 + 2H3O+ -> Ca^2+ + 3H2O + CO2}$" },
-    { "front": "Hvilken feiltype blir mindre av flere målinger?", "bak": "Bare den tilfeldige. Systematiske feil trekker alle målingene samme vei og må fjernes ved kalibrering eller korreksjon." }
+    {
+      "front": "Kvalitativ eller kvantitativ analyse?",
+      "bak": "Kvalitativ: hvilke stoffer finnes i prøven. Kvantitativ: hvor mye det er av dem."
+    },
+    {
+      "front": "Ekvivalenspunkt kontra endepunkt",
+      "bak": "Ekvivalenspunktet er det teoretisk riktige punktet ut fra koeffisientene i likningen. Endepunktet er der indikatoren skifter farge."
+    },
+    {
+      "front": "Omslagsområdet til fenolftalein",
+      "bak": "pH 8,3–10,0, fra fargeløs til rosa. Passer når ekvivalenspunktet ligger over pH 7."
+    },
+    {
+      "front": "Framgangsmåte for titreringsregning",
+      "bak": "1) Balansert likning. 2) $n = c \\cdot V$ for titranten, $V$ i liter. 3) Koeffisientforholdet. 4) Del på prøvevolumet."
+    },
+    {
+      "front": "Beer-Lamberts lov",
+      "bak": "$A = \\varepsilon \\cdot l \\cdot c$ — absorbansen er proporsjonal med konsentrasjonen, gyldig omtrent opp til $A = 1$."
+    },
+    {
+      "front": "Hva bruker du en blindprøve til i et spektrofotometer?",
+      "bak": "Å nullstille instrumentet, slik at kyvette, løsemiddel og reagenser ikke teller med i absorbansen."
+    },
+    {
+      "front": "Hvorfor må sterke løsninger fortynnes før spektrofotometrisk måling?",
+      "bak": "Fordi sammenhengen mellom $A$ og $c$ bare er lineær i et begrenset område. Husk å gange med fortynningsfaktoren til slutt."
+    },
+    {
+      "front": "Påvisning av klorid",
+      "bak": "Tilsett sølvnitratløsning: $\\ce{Ag+ + Cl- -> AgCl(s)}$, hvitt bunnfall."
+    },
+    {
+      "front": "Påvisning av sulfat",
+      "bak": "Tilsett bariumkloridløsning: $\\ce{Ba^2+ + SO4^2- -> BaSO4(s)}$, hvitt bunnfall."
+    },
+    {
+      "front": "Flammefarger for Na, K, Ca og Cu",
+      "bak": "Natrium gul, kalium fiolett, kalsium teglrød og kopper grønn."
+    },
+    {
+      "front": "Hvorfor har ren nedbør pH omkring 5,6?",
+      "bak": "$\\ce{CO2}$ fra lufta løser seg i vannet og danner den svake karbonsyren: $\\ce{CO2 + H2O <=> H2CO3}$."
+    },
+    {
+      "front": "De to utslippene bak sur nedbør",
+      "bak": "$\\ce{SO2}$ og $\\ce{NO_x}$, som blir $\\ce{H2SO4}$ og $\\ce{HNO3}$ i atmosfæren."
+    },
+    {
+      "front": "Kjeden i eutrofiering",
+      "bak": "Næringssalter (fosfat, nitrat) → algevekst → dødt organisk materiale → bakteriell nedbryting → oksygensvikt i dypvannet."
+    },
+    {
+      "front": "Hvorfor tåler kalkrike vann sur nedbør bedre?",
+      "bak": "De har høy alkalitet: $\\ce{HCO3-}$ nøytraliserer syren som tilføres, så pH holdes oppe."
+    },
+    {
+      "front": "Reaksjonen ved kalking av surt vann",
+      "bak": "$\\ce{CaCO3 + 2H3O+ -> Ca^2+ + 3H2O + CO2}$"
+    },
+    {
+      "front": "Hvilken feiltype blir mindre av flere målinger?",
+      "bak": "Bare den tilfeldige. Systematiske feil trekker alle målingene samme vei og må fjernes ved kalibrering eller korreksjon."
+    }
   ]
 }

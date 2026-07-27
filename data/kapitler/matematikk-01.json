@@ -193,7 +193,7 @@
           "steg": [
             {
               "tekst": "Få potensen alene på én side",
-              "note": "del bort tallet foran"
+              "note": "50 · 1,2ᵗ = 300 → 1,2ᵗ = 6"
             },
             {
               "tekst": "Ta lg på begge sider",
@@ -204,7 +204,7 @@
               "note": "lg aˣ = x · lg a"
             },
             {
-              "tekst": "Del på lg a",
+              "tekst": "Del på tallet foran x",
               "note": "lg b / lg a er eksakt svar"
             }
           ]
@@ -232,7 +232,7 @@
         "losning": "<p><strong>Steg 1 — finn definisjonsmengden.</strong> Begge uttrykkene inni logaritmene må være positive:</p>$$x + 3 > 0 \\quad \\text{og} \\quad x > 0$$<p>Den strengeste av disse er $x > 0$, så bare positive løsninger kan godtas.</p><p><strong>Steg 2 — samle til én logaritme.</strong> Vi bruker $\\lg a + \\lg b = \\lg(ab)$ baklengs:</p>$$\\lg\\left(x(x+3)\\right) = 1$$<p><strong>Steg 3 — bruk definisjonen av $\\lg$.</strong> At logaritmen er 1, betyr at innmaten er $10^1$:</p>$$x(x+3) = 10^1 = 10$$<p><strong>Steg 4 — løs andregradslikningen.</strong> Vi ganger ut og flytter alt over på én side:</p>$$x^2 + 3x - 10 = 0$$$$x = \\frac{-3 \\pm \\sqrt{3^2 - 4 \\cdot 1 \\cdot (-10)}}{2 \\cdot 1} = \\frac{-3 \\pm \\sqrt{9 + 40}}{2} = \\frac{-3 \\pm 7}{2}$$<p>Det gir to kandidater:</p>$$x = \\frac{-3 + 7}{2} = 2 \\qquad \\text{eller} \\qquad x = \\frac{-3 - 7}{2} = -5$$<p><strong>Steg 5 — forkast falske løsninger.</strong> Verdien $x = -5$ ligger utenfor definisjonsmengden, for $\\lg(-5)$ finnes ikke. Den er en falsk løsning som dukket opp da vi gikk over til andregradslikningen.</p><p><strong>Kontroll.</strong> Vi setter $x = 2$ inn i den opprinnelige likningen:</p>$$\\lg(2+3) + \\lg 2 = \\lg 5 + \\lg 2 = \\lg(5 \\cdot 2) = \\lg 10 = 1$$<p>Likningen stemmer, så den eneste løsningen er $x = 2$.</p>",
         "figur": {
           "type": "graf",
-          "tittel": "Venstre side av likningen finnes bare for x > 0",
+          "tittel": "Venstre side finnes bare for x > 0",
           "forklaring": "Grafen krysser linja y = 1 nøyaktig én gang, i x = 2. Ved x = −5 finnes det ingen graf i det hele tatt, for da er begge uttrykkene inni logaritmene negative — kandidaten er en falsk løsning som dukket opp da vi gikk over til andregradslikningen.",
           "xmin": -6,
           "xmax": 6,
@@ -270,7 +270,7 @@
             {
               "x": -5,
               "y": 0,
-              "navn": "x = −5"
+              "navn": "x = −5 er falsk"
             }
           ]
         }

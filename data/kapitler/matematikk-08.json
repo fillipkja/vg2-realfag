@@ -113,23 +113,49 @@
         "tittel": "Tidsbruk og rekkefølge",
         "html": "<p>300 minutter høres mye ut, men settet er laget for at du skal jobbe jevnt hele tiden. Bruk de første fem minuttene på et budsjett i stedet for å kaste deg over oppgave 1.</p><p><strong>Slik lager du budsjettet:</strong> bla gjennom hele delen, tell oppgavene, trekk fra en halvtime til kontroll og til det uforutsette, og del resten på antall oppgaver. Har du 180 minutter og seks oppgaver i Del 1, gir det $\\frac{180 - 30}{6} = 25$ minutter per oppgave som tak — og da har du fortsatt den halvtimen igjen til det som tar lengre tid enn planlagt, og til kontroll. Skriv klokkeslettene i margen: «oppgave 3 senest 10.20». Da ser du selv når du sakker av, i stedet for å oppdage det når det er 20 minutter igjen.</p><p>Jobb i tre runder:</p><ol><li><strong>Runde 1:</strong> alt du kan løse nesten uten å tenke. Det gir uttelling raskt og roer nervene.</li><li><strong>Runde 2:</strong> oppgavene der du selv må sette opp noe, som optimering og modellering.</li><li><strong>Runde 3:</strong> kontroll av enheter, avrundinger, svarsetninger og «vis at»-oppgavene.</li></ol><p>Regelen når du står fast: har du ikke gjort framgang på tre til fire minutter, skriver du ned hva du <em>ville</em> gjort, setter et merke i margen og går videre. Husk også at deloppgaver kan løses uavhengig av hverandre. Klarer du ikke a), kan du fortsatt bruke det oppgitte resultatet fra a) i b).</p>",
         "figur": {
-          "type": "tallinje",
+          "type": "spektrum",
           "tittel": "Tidsbudsjett for Del 1: 180 minutter",
-          "forklaring": "Hvert merke på tallinja er 25 minutter — taket for én av de seks oppgavene, så du ser selv når du har sakket av. De siste 30 minuttene er ikke regnetid, men reserve og kontroll.",
+          "forklaring": "Seks like store bolker à 25 minutter, og til slutt en halvtime som ikke er regnetid. Klokka i margen: er du ikke ferdig med oppgave 3 etter 75 minutter, hopper du videre.",
+          "enhet": "tid (minutter)",
           "min": 0,
-          "max": 210,
-          "intervaller": [
+          "max": 180,
+          "band": [
             {
               "fra": 0,
+              "til": 25,
+              "navn": "oppg. 1",
+              "verdi": "25 min"
+            },
+            {
+              "fra": 25,
+              "til": 50,
+              "navn": "oppg. 2"
+            },
+            {
+              "fra": 50,
+              "til": 75,
+              "navn": "oppg. 3"
+            },
+            {
+              "fra": 75,
+              "til": 100,
+              "navn": "oppg. 4"
+            },
+            {
+              "fra": 100,
+              "til": 125,
+              "navn": "oppg. 5"
+            },
+            {
+              "fra": 125,
               "til": 150,
-              "navn": "oppgave 1–6",
-              "farge": 1
+              "navn": "oppg. 6"
             },
             {
               "fra": 150,
               "til": 180,
               "navn": "kontroll",
-              "farge": 2
+              "verdi": "30 min"
             }
           ]
         }
@@ -167,7 +193,7 @@
         "losning": "<p><strong>a)</strong> Uttrykket er et produkt, så vi bruker produktregelen med</p>$$u = x^{2} \\quad \\text{og} \\quad v = e^{-x}$$<p>Vi deriverer hver faktor. Den første er rett fram, $u' = 2x$. Den andre krever kjerneregelen: kjernen er $-x$, som har derivert $-1$, så $v' = e^{-x}\\cdot(-1) = -e^{-x}$. Produktregelen $(uv)' = u'v + uv'$ gir</p>$$f'(x) = 2x\\cdot e^{-x} + x^{2}\\cdot\\left(-e^{-x}\\right) = e^{-x}\\left(2x - x^{2}\\right)$$<p>Til slutt setter vi $x$ utenfor parentesen: $2x - x^{2} = x(2-x)$. Dermed er</p>$$f'(x) = x(2-x)e^{-x}$$<p>som var det vi skulle vise.</p><p><strong>b)</strong> Vi løser $f'(x) = 0$. Siden $e^{-x} > 0$ for alle $x$, kan aldri denne faktoren gjøre produktet null. Da er</p>$$f'(x) = 0 \\iff x(2-x) = 0 \\iff x = 0 \\;\\text{ eller }\\; x = 2$$<p>Fortegnslinja avgjør hvilken type punktene er. Vi ser på fortegnet til hver faktor:</p><table><thead><tr><th>Faktor</th><th>$x < 0$</th><th>$x = 0$</th><th>$0 < x < 2$</th><th>$x = 2$</th><th>$x > 2$</th></tr></thead><tbody><tr><td>$x$</td><td>$-$</td><td>$0$</td><td>$+$</td><td>$+$</td><td>$+$</td></tr><tr><td>$2-x$</td><td>$+$</td><td>$+$</td><td>$+$</td><td>$0$</td><td>$-$</td></tr><tr><td>$e^{-x}$</td><td>$+$</td><td>$+$</td><td>$+$</td><td>$+$</td><td>$+$</td></tr><tr><td>$f'(x)$</td><td>$-$</td><td>$0$</td><td>$+$</td><td>$0$</td><td>$-$</td></tr></tbody></table><p>Fortegnet til $f'$ går fra $-$ til $+$ i $x=0$, altså bunnpunkt, og fra $+$ til $-$ i $x=2$, altså toppunkt. Vi regner ut funksjonsverdiene:</p>$$f(0) = 0^{2}\\cdot e^{0} = 0, \\qquad f(2) = 2^{2}e^{-2} = \\frac{4}{e^{2}}$$<p><strong>Svar:</strong> bunnpunkt $(0,\\, 0)$ og toppunkt $\\left(2,\\, \\frac{4}{e^{2}}\\right)$. Med $e^{2} \\approx 7{,}389$ er $\\frac{4}{e^{2}} \\approx 0{,}54$, så toppunktet ligger omtrent i $(2;\\, 0{,}54)$.</p><p><strong>c)</strong> Skriv om til en brøk:</p>$$f(x) = \\frac{x^{2}}{e^{x}}$$<p>Både teller og nevner går mot uendelig, men $e^{x}$ vokser mye raskere enn $x^{2}$. Grenseverdien er derfor</p>$$\\lim_{x \\to \\infty} \\frac{x^{2}}{e^{x}} = 0$$<p>Du kan overbevise deg med tall: $f(10) = 100\\cdot e^{-10} \\approx 100\\cdot 0{,}0000454 = 0{,}0045$, og $f(20) = 400\\cdot e^{-20} \\approx 8{,}2\\cdot 10^{-7}$.</p><p>For grafen betyr dette at linja $y = 0$ er en <strong>horisontal asymptote</strong> når $x$ vokser. Siden $f(x) > 0$ for alle $x \\neq 0$, nærmer grafen seg asymptoten ovenfra. Mot venstre skjer det motsatte: når $x \\to -\\infty$, vokser både $x^{2}$ og $e^{-x}$, så $f(x) \\to \\infty$.</p>",
         "figur": {
           "type": "graf",
-          "tittel": "Grafen til f(x) = x²e^(−x)",
+          "tittel": "Grafen til f(x) = x²e⁻ˣ",
           "forklaring": "Grafen faller mot bunnpunktet i origo, stiger til toppunktet (2; 0,54) og klemmes deretter ned mot x-aksen. Det siste er nettopp grenseverdien i c): y = 0 er en vannrett asymptote, og grafen nærmer seg den ovenfra.",
           "xmin": -0.5,
           "xmax": 6,
@@ -206,18 +232,45 @@
         "losning": "<p><strong>a)</strong> Se på forholdet mellom nabomålingene, som ligger fire timer fra hverandre:</p>$$\\frac{485}{250} = 1{,}94, \\qquad \\frac{940}{485} \\approx 1{,}94, \\qquad \\frac{1820}{940} \\approx 1{,}94$$<p>Antallet blir ganget med omtrent det samme tallet for hvert like store tidssteg. Det er nettopp kjennetegnet på eksponentiell vekst, og derfor passer modellen $N(t) = N_0\\cdot a^{t}$.</p><p>Vekstfaktoren per time finner vi ved å ta fjerderoten, siden 1,94 gjelder for fire timer:</p>$$a = 1{,}94^{1/4} \\approx 1{,}18$$<p>Startverdien leser vi av ved $t=0$: $N_0 = 250$. Regresjon bekrefter dette. (I GeoGebra: legg punktene i regnearket, marker dem og velg Regresjonsanalyse med modelltypen «Vekst», som gir formen $a\\cdot b^{x}$.) Modellen blir</p>$$N(t) = 250\\cdot 1{,}18^{t}$$<p>Siden $\\ln 1{,}18 \\approx 0{,}1655$, er dette det samme som $N(t) = 250\\,e^{0{,}166t}$ — velger du modelltypen «Eksponentiell» i stedet, er det dette uttrykket du får.</p><p><strong>b)</strong> Doblingstiden er den $t$ som gir dobbelt så mange bakterier som ved start:</p>$$250\\cdot 1{,}18^{t} = 500 \\quad \\Longrightarrow \\quad 1{,}18^{t} = 2$$<p>Vi tar $\\ln$ på begge sider og bruker $\\ln a^{t} = t\\ln a$:</p>$$t\\ln 1{,}18 = \\ln 2 \\quad \\Longrightarrow \\quad t = \\frac{\\ln 2}{\\ln 1{,}18} = \\frac{0{,}6931}{0{,}1655} \\approx 4{,}19$$<p>Legg merke til at startverdien $250$ ble forkortet bort — doblingstiden er uavhengig av hvor mange bakterier du starter med. Siden $0{,}19\\cdot 60 \\approx 11$, er svaret <strong>omtrent 4 timer og 11 minutter</strong>.</p><p><strong>c)</strong> «Hvor raskt» betyr vekstfart, altså den deriverte. Med $\\left(a^{t}\\right)' = a^{t}\\ln a$ får vi</p>$$N'(t) = 250\\cdot 1{,}18^{t}\\cdot \\ln 1{,}18$$<p>Vi setter inn $t = 10$. Først $1{,}18^{10} \\approx 5{,}234$, som gir $N(10) = 250\\cdot 5{,}234 \\approx 1308$ bakterier. Da er</p>$$N'(10) = 250\\cdot 5{,}234\\cdot 0{,}1655 \\approx 216{,}6$$<p><strong>Svar:</strong> etter 10 timer vokser bestanden med omtrent 217 bakterier per time.</p><p><strong>d)</strong> Modellen treffer måledataene godt, siden forholdstallene i a) var nesten identiske. Men eksponentiell vekst forutsetter ubegrenset plass og næring. To døgn er $t = 48$, og da gir modellen</p>$$N(48) = 250\\cdot 1{,}18^{48} \\approx 7\\cdot 10^{5}$$<p>altså rundt 700 000 bakterier — og etter en uke ville tallet vært astronomisk. I virkeligheten flater veksten ut når næringen tar slutt, slik en logistisk modell beskriver. Konklusjonen er derfor at modellen er god innenfor de 12 timene som er målt, men usikker når du ekstrapolerer langt utenfor måleområdet.</p>",
         "figur": {
           "type": "graf",
-          "tittel": "Måledataene og modellen N(t) = 250 · 1,18^t",
-          "forklaring": "De fire målepunktene ligger praktisk talt på grafen — det er begrunnelsen for å velge en eksponentiell modell. Hjelpelinjene viser doblingstiden: de 250 bakteriene har blitt 500 etter 4,2 timer.",
+          "tittel": "Måledataene og modellen N(t) = 250 · 1,18ᵗ",
+          "forklaring": "De fire målepunktene ligger praktisk talt på grafen — det er begrunnelsen for å velge en eksponentiell modell. Den stiplede vinkelen er doblingstiden fra b): de 250 bakteriene har blitt 500 etter 4,2 timer.",
           "xmin": 0,
           "xmax": 12.5,
           "ymin": 0,
-          "ymax": 2000,
+          "ymax": 2100,
           "xlabel": "t (timer)",
           "ylabel": "N",
           "kurver": [
             {
               "uttrykk": "250*1.18^x",
               "navn": "N"
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                0,
+                500
+              ],
+              "til": [
+                4.19,
+                500
+              ],
+              "navn": "dobling",
+              "farge": 2,
+              "stiplet": true
+            },
+            {
+              "fra": [
+                4.19,
+                0
+              ],
+              "til": [
+                4.19,
+                500
+              ],
+              "farge": 2,
+              "stiplet": true
             }
           ],
           "punkter": [
@@ -236,12 +289,6 @@
             {
               "x": 12,
               "y": 1820
-            },
-            {
-              "x": 4.19,
-              "y": 500,
-              "navn": "dobling",
-              "hjelpelinjer": true
             }
           ]
         }

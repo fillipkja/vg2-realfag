@@ -3,7 +3,6 @@
   "nr": 7,
   "tittel": "Gassutveksling, transport og utskilling",
   "intro": "Alle celler trenger oksygen og må bli kvitt karbondioksid og nitrogenholdig avfall, men diffusjon rekker bare noen få cellelag. Dette kapittelet handler om løsningene naturen har funnet: gassutvekslingsflater, transportsystemer i planter og dyr, hjertet og blodet, og nyrene som holder væskebalansen i orden.",
-
   "kompakt": {
     "punkter": [
       "All gassutveksling skjer ved passiv diffusjon langs en partialtrykkgradient. En effektiv gassutvekslingsflate har alltid tre trekk: stor overflate, kort diffusjonsavstand (tynn, fuktig hinne) og en gradient som holdes oppe av ventilasjon utenfor og sirkulasjon innenfor.",
@@ -18,21 +17,80 @@
       "Nyrene filtrerer uselektivt ca. 180 L primærurin i døgnet. Over 99 % reabsorberes, og ADH på samlerøret bestemmer hvor konsentrert de siste 1–1,5 litrene blir."
     ],
     "formler": [
-      { "navn": "Partialtrykk av en gass i en blanding", "latex": "p_{\\text{gass}} = x_{\\text{gass}} \\cdot p_{\\text{total}}" },
-      { "navn": "Diffusjonsrate (Ficks lov, forenklet)", "latex": "\\text{diffusjonsrate} \\propto \\frac{A \\cdot \\Delta p}{d}" },
-      { "navn": "Overflate/volum-forholdet for en kuleformet celle", "latex": "\\frac{O}{V} = \\frac{3}{r}" },
-      { "navn": "Minuttvolum (slagvolum ganger puls)", "latex": "MV = SV \\cdot f" },
-      { "navn": "Oksygenlevering til vevet ($c_{\\text{O}_2}$ = oksygeninnhold per liter blod, $u$ = uttaksgrad)", "latex": "\\text{levert } \\text{O}_2 = MV \\cdot c_{\\text{O}_2} \\cdot u" },
-      { "navn": "Mengde primærurin", "latex": "V_{\\text{primærurin}} = \\text{GFR} \\cdot t" },
-      { "navn": "Reabsorpsjonsgrad for vann", "latex": "R = \\frac{V_{\\text{filtrert}} - V_{\\text{urin}}}{V_{\\text{filtrert}}} \\cdot 100\\,\\%" },
-      { "navn": "Stoffmengde ut fra konsentrasjon og volum", "latex": "n = c \\cdot V" },
-      { "navn": "Vannvolum i et kapillærrør (potometer)", "latex": "V = \\pi r^{2} h" },
-      { "navn": "Bikarbonatlikevekten i blodet", "latex": "\\ce{CO2 + H2O <=> H2CO3 <=> HCO3- + H+}" },
-      { "navn": "Aerob celleånding — hvorfor vi trenger oksygen", "latex": "\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}" },
-      { "navn": "Urinstoff (urea)", "latex": "\\ce{CO(NH2)2}" }
-    ]
+      {
+        "navn": "Partialtrykk av en gass i en blanding",
+        "latex": "p_{\\text{gass}} = x_{\\text{gass}} \\cdot p_{\\text{total}}"
+      },
+      {
+        "navn": "Diffusjonsrate (Ficks lov, forenklet)",
+        "latex": "\\text{diffusjonsrate} \\propto \\frac{A \\cdot \\Delta p}{d}"
+      },
+      {
+        "navn": "Overflate/volum-forholdet for en kuleformet celle",
+        "latex": "\\frac{O}{V} = \\frac{3}{r}"
+      },
+      {
+        "navn": "Minuttvolum (slagvolum ganger puls)",
+        "latex": "MV = SV \\cdot f"
+      },
+      {
+        "navn": "Oksygenlevering til vevet ($c_{\\text{O}_2}$ = oksygeninnhold per liter blod, $u$ = uttaksgrad)",
+        "latex": "\\text{levert } \\text{O}_2 = MV \\cdot c_{\\text{O}_2} \\cdot u"
+      },
+      {
+        "navn": "Mengde primærurin",
+        "latex": "V_{\\text{primærurin}} = \\text{GFR} \\cdot t"
+      },
+      {
+        "navn": "Reabsorpsjonsgrad for vann",
+        "latex": "R = \\frac{V_{\\text{filtrert}} - V_{\\text{urin}}}{V_{\\text{filtrert}}} \\cdot 100\\,\\%"
+      },
+      {
+        "navn": "Stoffmengde ut fra konsentrasjon og volum",
+        "latex": "n = c \\cdot V"
+      },
+      {
+        "navn": "Vannvolum i et kapillærrør (potometer)",
+        "latex": "V = \\pi r^{2} h"
+      },
+      {
+        "navn": "Bikarbonatlikevekten i blodet",
+        "latex": "\\ce{CO2 + H2O <=> H2CO3 <=> HCO3- + H+}"
+      },
+      {
+        "navn": "Aerob celleånding — hvorfor vi trenger oksygen",
+        "latex": "\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}"
+      },
+      {
+        "navn": "Urinstoff (urea)",
+        "latex": "\\ce{CO(NH2)2}"
+      }
+    ],
+    "figur": {
+      "type": "stolper",
+      "tittel": "Oksygenets partialtrykk faller for hvert steg",
+      "enhet": "p(O₂) i kPa",
+      "forklaring": "Se på størrelsen på hvert fall: 21 → 13,3 kPa fordi frisk luft blandes med brukt, fuktig luft i lungene, bare 0,6 kPa tapes over den 0,5 µm tynne alveoleveggen, og det siste, bratte fallet er gradienten som avleverer oksygen til muskelen. Oksygenet kan bare gå nedover trappa, og ventilasjon og sirkulasjon er det som holder trinnene bratte.",
+      "data": [
+        {
+          "navn": "Uteluft",
+          "verdi": 21
+        },
+        {
+          "navn": "Alveoleluft",
+          "verdi": 13.3
+        },
+        {
+          "navn": "Arterielt blod",
+          "verdi": 12.7
+        },
+        {
+          "navn": "Muskel i arbeid",
+          "verdi": 3
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -45,7 +103,35 @@
       },
       {
         "tittel": "Transport i planter: vedvev, silvev og transpirasjon",
-        "html": "<p>Planter har to ledningsvev. <strong>Vedvevet</strong> (xylem) fører vann og mineralioner <em>oppover</em> fra rot til blad. Det består av døde, tomme celler — <strong>vedrør</strong> og <strong>trakeider</strong> — med lignin i veggen, slik at rørene ikke klapper sammen. <strong>Silvevet</strong> (floem) fører sukker, mest sukrose, og består av <em>levende</em> silrørceller med gjennomhullede silplater, med følgeceller ved siden.</p><p>Drivkraften i vedvevet er <strong>transpirasjonssuget</strong>. Vann fordamper fra celleveggene inne i bladet og forsvinner ut gjennom spalteåpningene. Det setter vannet i bladet under strekk, altså negativt trykk. Fordi vannmolekyler holder hverandre fast med hydrogenbindinger (<strong>kohesjon</strong>) og klistrer seg til rørveggene (<strong>adhesjon</strong>), henger vannsøylen sammen som en tråd og dras oppover — helt til topps i et 40 meter høyt tre. Planten bruker ikke ATP på dette; sola gjør arbeidet. Om natten, når transpirasjonen er lav, kan <strong>rottrykk</strong> presse vann oppover, og du kan se <strong>guttasjon</strong>: vanndråper langs bladkanten.</p><p>I silvevet forklares transporten av <strong>trykkstrømteorien</strong>. I en <strong>kilde</strong>, typisk et blad med fotosyntese, lastes sukrose aktivt inn i silrøret. Da synker vannpotensialet, vann følger etter ved osmose fra vedvevet, og trykket stiger. I et <strong>sluk</strong> — rot, frukt, knopp eller potetknoll — tas sukrosen ut igjen, vann forlater røret, og trykket faller. Trykkforskjellen presser innholdet fra kilde til sluk. Derfor kan silvevet transportere i begge retninger, avhengig av hvor kilden og sluket ligger, mens vedvevet praktisk talt bare går oppover.</p>"
+        "html": "<p>Planter har to ledningsvev. <strong>Vedvevet</strong> (xylem) fører vann og mineralioner <em>oppover</em> fra rot til blad. Det består av døde, tomme celler — <strong>vedrør</strong> og <strong>trakeider</strong> — med lignin i veggen, slik at rørene ikke klapper sammen. <strong>Silvevet</strong> (floem) fører sukker, mest sukrose, og består av <em>levende</em> silrørceller med gjennomhullede silplater, med følgeceller ved siden.</p><p>Drivkraften i vedvevet er <strong>transpirasjonssuget</strong>. Vann fordamper fra celleveggene inne i bladet og forsvinner ut gjennom spalteåpningene. Det setter vannet i bladet under strekk, altså negativt trykk. Fordi vannmolekyler holder hverandre fast med hydrogenbindinger (<strong>kohesjon</strong>) og klistrer seg til rørveggene (<strong>adhesjon</strong>), henger vannsøylen sammen som en tråd og dras oppover — helt til topps i et 40 meter høyt tre. Planten bruker ikke ATP på dette; sola gjør arbeidet. Om natten, når transpirasjonen er lav, kan <strong>rottrykk</strong> presse vann oppover, og du kan se <strong>guttasjon</strong>: vanndråper langs bladkanten.</p><p>I silvevet forklares transporten av <strong>trykkstrømteorien</strong>. I en <strong>kilde</strong>, typisk et blad med fotosyntese, lastes sukrose aktivt inn i silrøret. Da synker vannpotensialet, vann følger etter ved osmose fra vedvevet, og trykket stiger. I et <strong>sluk</strong> — rot, frukt, knopp eller potetknoll — tas sukrosen ut igjen, vann forlater røret, og trykket faller. Trykkforskjellen presser innholdet fra kilde til sluk. Derfor kan silvevet transportere i begge retninger, avhengig av hvor kilden og sluket ligger, mens vedvevet praktisk talt bare går oppover.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Transpirasjonssuget: drivkraften sitter i bladet",
+          "forklaring": "Les kjeden ovenfra: årsaken starter med fordampingen i bladet, og rota kommer sist — den suger ikke, den trekkes med. Sola gjør arbeidet, så planten bruker ikke ATP på vanntransporten i vedvevet.",
+          "steg": [
+            {
+              "tekst": "Sola fordamper vann inne i bladet",
+              "note": "vanndamp ut av spalteåpningene"
+            },
+            {
+              "tekst": "Undertrykk i bladets vedrør",
+              "note": "vannet settes under strekk"
+            },
+            {
+              "tekst": "Kohesjon og adhesjon holder søylen",
+              "note": "hydrogenbindinger i vannet"
+            },
+            {
+              "tekst": "Hele søylen dras oppover",
+              "note": "helt til topps i et 40 m tre"
+            },
+            {
+              "tekst": "Rota tar opp nytt vann",
+              "note": "følger etter, uten ATP"
+            }
+          ]
+        }
       },
       {
         "tittel": "Sirkulasjonssystemer hos dyr",
@@ -53,7 +139,39 @@
       },
       {
         "tittel": "Hjertet, blodårene og blodet",
-        "html": "<p>Menneskehjertet er to pumper i én. Oksygenfattig blod fra kroppen kommer via hulvenene til <strong>høyre forkammer</strong>, videre til <strong>høyre hjertekammer</strong> og ut i lungearterien til lungene. Oksygenrikt blod kommer tilbake i lungevenene til <strong>venstre forkammer</strong>, ned i <strong>venstre hjertekammer</strong> og ut i aorta. Venstre kammer har tykkest vegg, fordi det må skape trykk til hele kroppen. <strong>Seilklaffene</strong> mellom forkammer og kammer og <strong>lommeklaffene</strong> ved utløpene sikrer enveis strøm; hjertelydene er klaffer som smeller igjen. Rytmen settes av <strong>sinusknuten</strong> i høyre forkammer og går videre via AV-knuten ut i kammermuskulaturen. <strong>Systole</strong> er sammentrekningen, <strong>diastole</strong> hvilefasen. Minuttvolumet er slagvolum ganger puls, i hvile ca. $70\\,\\text{mL} \\cdot 70\\,\\text{min}^{-1} = 4900\\,\\text{mL/min} = 4{,}9\\,\\text{L/min}$.</p><p><strong>Arterier</strong> fører blod fra hjertet og har tykk, elastisk vegg med glatt muskulatur. <strong>Vener</strong> fører blod til hjertet, har tynn vegg, stort lumen og klaffer, og tømmes ved at skjelettmusklene klemmer på dem. <strong>Kapillærene</strong> har vegg av bare ett cellelag, og her skjer all utveksling. I starten av kapillæret er blodtrykket høyere enn plasmaproteinenes <strong>kolloidosmotiske trykk</strong>, så væske presses ut; mot venesiden har blodtrykket falt, og det meste suges inn igjen. Resten samles opp av lymfekarene.</p><p>Blodet er ca. 55 % <strong>plasma</strong> og 45 % blodceller. Røde blodceller mangler kjerne og er stappfulle av <strong>hemoglobin</strong>, der hvert molekyl binder fire $\\ce{O2}$ til jernatomene sine. I vev med mye $\\ce{CO2}$ og lav pH slipper hemoglobinet oksygenet lettere — <strong>Bohr-effekten</strong> — nettopp der behovet er størst. Høy temperatur i arbeidende vev virker i samme retning, men det er en egen effekt og ikke en del av Bohr-effekten. $\\ce{CO2}$ fraktes derimot mest som <strong>bikarbonat</strong>: $\\ce{CO2 + H2O <=> HCO3- + H+}$, en reaksjon enzymet karboanhydrase framskynder inne i de røde blodcellene.</p>"
+        "html": "<p>Menneskehjertet er to pumper i én. Oksygenfattig blod fra kroppen kommer via hulvenene til <strong>høyre forkammer</strong>, videre til <strong>høyre hjertekammer</strong> og ut i lungearterien til lungene. Oksygenrikt blod kommer tilbake i lungevenene til <strong>venstre forkammer</strong>, ned i <strong>venstre hjertekammer</strong> og ut i aorta. Venstre kammer har tykkest vegg, fordi det må skape trykk til hele kroppen. <strong>Seilklaffene</strong> mellom forkammer og kammer og <strong>lommeklaffene</strong> ved utløpene sikrer enveis strøm; hjertelydene er klaffer som smeller igjen. Rytmen settes av <strong>sinusknuten</strong> i høyre forkammer og går videre via AV-knuten ut i kammermuskulaturen. <strong>Systole</strong> er sammentrekningen, <strong>diastole</strong> hvilefasen. Minuttvolumet er slagvolum ganger puls, i hvile ca. $70\\,\\text{mL} \\cdot 70\\,\\text{min}^{-1} = 4900\\,\\text{mL/min} = 4{,}9\\,\\text{L/min}$.</p><p><strong>Arterier</strong> fører blod fra hjertet og har tykk, elastisk vegg med glatt muskulatur. <strong>Vener</strong> fører blod til hjertet, har tynn vegg, stort lumen og klaffer, og tømmes ved at skjelettmusklene klemmer på dem. <strong>Kapillærene</strong> har vegg av bare ett cellelag, og her skjer all utveksling. I starten av kapillæret er blodtrykket høyere enn plasmaproteinenes <strong>kolloidosmotiske trykk</strong>, så væske presses ut; mot venesiden har blodtrykket falt, og det meste suges inn igjen. Resten samles opp av lymfekarene.</p><p>Blodet er ca. 55 % <strong>plasma</strong> og 45 % blodceller. Røde blodceller mangler kjerne og er stappfulle av <strong>hemoglobin</strong>, der hvert molekyl binder fire $\\ce{O2}$ til jernatomene sine. I vev med mye $\\ce{CO2}$ og lav pH slipper hemoglobinet oksygenet lettere — <strong>Bohr-effekten</strong> — nettopp der behovet er størst. Høy temperatur i arbeidende vev virker i samme retning, men det er en egen effekt og ikke en del av Bohr-effekten. $\\ce{CO2}$ fraktes derimot mest som <strong>bikarbonat</strong>: $\\ce{CO2 + H2O <=> HCO3- + H+}$, en reaksjon enzymet karboanhydrase framskynder inne i de røde blodcellene.</p>",
+        "figur": {
+          "type": "syklus",
+          "tittel": "Blodets vei gjennom hjertet",
+          "senter": "Dobbelt kretsløp",
+          "forklaring": "Følg runden med klokka; H = høyre, V = venstre, fork = forkammer og kam = hjertekammer. Blodet passerer hjertet to ganger per runde, og legg merke til at lungearterien fører O₂-fattig blod mens lungevenene fører det mest O₂-rike blodet i kroppen.",
+          "faser": [
+            {
+              "navn": "H.fork",
+              "note": "fra hulvenene"
+            },
+            {
+              "navn": "H.kam",
+              "note": "ut i lungearterien"
+            },
+            {
+              "navn": "Lunger",
+              "note": "O₂ inn, CO₂ ut"
+            },
+            {
+              "navn": "V.fork",
+              "note": "fra lungevenene"
+            },
+            {
+              "navn": "V.kam",
+              "note": "ut i aorta"
+            },
+            {
+              "navn": "Kropp",
+              "note": "O₂ ut, CO₂ inn"
+            }
+          ]
+        }
       },
       {
         "tittel": "Ekskresjon og nitrogenholdig avfall",
@@ -61,10 +179,42 @@
       },
       {
         "tittel": "Nyrene og væskebalansen",
-        "html": "<p>Hver nyre inneholder rundt en million <strong>nefroner</strong>. Et nefron begynner med et <strong>nyrelegeme</strong>: et kapillærnøste (<strong>glomerulus</strong>) inne i en kapsel. Fordi den tilførende arteriolen er videre enn den fraførende, blir trykket i nøstet høyt, og vann med små oppløste stoffer presses ut i kapselen. Denne <strong>filtrasjonen</strong> er uselektiv og sorterer bare etter størrelse: vann, ioner, glukose, aminosyrer og urinstoff går rett gjennom, mens blodceller og plasmaproteiner holdes tilbake. Det blir omtrent 180 L <strong>primærurin</strong> i døgnet.</p><p>Selektiviteten ligger i <strong>reabsorpsjonen</strong> lenger ute i røret. I <strong>proksimal tubulus</strong> hentes all glukose og alle aminosyrer tilbake ved aktiv transport, sammen med rundt to tredeler av vannet og natriumet. I <strong>Henles sløyfe</strong> går vann ut av den nedstigende delen, mens den oppstigende delen pumper ut salt uten å slippe ut vann. Slik bygges det opp en saltgradient i nyremargen — et <strong>motstrømssystem</strong> som gjør det mulig å lage urin som er mer konsentrert enn blodet. I <strong>distal tubulus</strong> og <strong>samlerøret</strong> finjusteres alt, og her skilles også $\\ce{H+}$ ut, noe som hjelper på blodets pH.</p><p><strong>Væskebalansen</strong> styres hormonelt. Osmoreseptorer i hypotalamus merker at blodet blir for salt. Da frigjør hypofysen <strong>ADH</strong> (antidiuretisk hormon), som setter flere vannkanaler (aquaporiner) inn i veggen i samlerøret. Mer vann suges tilbake, urinen blir liten og mørk, og du blir tørst. Drikker du mye, faller ADH, og du lager rikelig med lys urin. <strong>Aldosteron</strong> fra binyrebarken øker reabsorpsjonen av $\\ce{Na+}$, og vann følger etter. Til slutt er det bare 1–1,5 L urin igjen av de 180 litrene primærurin.</p>"
+        "html": "<p>Hver nyre inneholder rundt en million <strong>nefroner</strong>. Et nefron begynner med et <strong>nyrelegeme</strong>: et kapillærnøste (<strong>glomerulus</strong>) inne i en kapsel. Fordi den tilførende arteriolen er videre enn den fraførende, blir trykket i nøstet høyt, og vann med små oppløste stoffer presses ut i kapselen. Denne <strong>filtrasjonen</strong> er uselektiv og sorterer bare etter størrelse: vann, ioner, glukose, aminosyrer og urinstoff går rett gjennom, mens blodceller og plasmaproteiner holdes tilbake. Det blir omtrent 180 L <strong>primærurin</strong> i døgnet.</p><p>Selektiviteten ligger i <strong>reabsorpsjonen</strong> lenger ute i røret. I <strong>proksimal tubulus</strong> hentes all glukose og alle aminosyrer tilbake ved aktiv transport, sammen med rundt to tredeler av vannet og natriumet. I <strong>Henles sløyfe</strong> går vann ut av den nedstigende delen, mens den oppstigende delen pumper ut salt uten å slippe ut vann. Slik bygges det opp en saltgradient i nyremargen — et <strong>motstrømssystem</strong> som gjør det mulig å lage urin som er mer konsentrert enn blodet. I <strong>distal tubulus</strong> og <strong>samlerøret</strong> finjusteres alt, og her skilles også $\\ce{H+}$ ut, noe som hjelper på blodets pH.</p><p><strong>Væskebalansen</strong> styres hormonelt. Osmoreseptorer i hypotalamus merker at blodet blir for salt. Da frigjør hypofysen <strong>ADH</strong> (antidiuretisk hormon), som setter flere vannkanaler (aquaporiner) inn i veggen i samlerøret. Mer vann suges tilbake, urinen blir liten og mørk, og du blir tørst. Drikker du mye, faller ADH, og du lager rikelig med lys urin. <strong>Aldosteron</strong> fra binyrebarken øker reabsorpsjonen av $\\ce{Na+}$, og vann følger etter. Til slutt er det bare 1–1,5 L urin igjen av de 180 litrene primærurin.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Negativ tilbakekopling: ADH og væskebalansen",
+          "forklaring": "Sløyfen er poenget: responsen fjerner selve grunnen til at den ble utløst, så ADH faller igjen. Merk retningen — mer ADH gir mindre og mørkere urin, ikke mer.",
+          "steg": [
+            {
+              "tekst": "Du svetter uten å drikke",
+              "note": "blodet blir for salt"
+            },
+            {
+              "tekst": "Osmoreseptorer merker det",
+              "note": "i hypotalamus"
+            },
+            {
+              "tekst": "Hypofysen frigjør ADH",
+              "note": "antidiuretisk hormon"
+            },
+            {
+              "tekst": "Aquaporiner inn i samlerøret",
+              "note": "flere vannkanaler i veggen"
+            },
+            {
+              "tekst": "Mer vann reabsorberes",
+              "note": "liten, mørk urin og tørste"
+            }
+          ],
+          "tilbakekopling": {
+            "fra": 4,
+            "til": 0,
+            "tekst": "blodet blir mindre salt igjen"
+          }
+        }
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Følg oksygenet fra alveolen til muskelcellen",
@@ -87,7 +237,6 @@
         "losning": "<p><strong>Deloppgave 1 — primærurin.</strong> Vi bruker $V = \\text{GFR} \\cdot t$ med $t = 24\\,\\text{h} = 24 \\cdot 60\\,\\text{min} = 1440\\,\\text{min}$:</p>$$V = 125\\,\\frac{\\text{mL}}{\\text{min}} \\cdot 1440\\,\\text{min} = 180\\,000\\,\\text{mL} = 180\\,\\text{L}$$<p>Alt blodplasmaet i kroppen (ca. 3 L) blir altså filtrert rundt 60 ganger i døgnet.</p><p><strong>Deloppgave 2 — reabsorbert vann.</strong></p>$$V_{\\text{reabsorbert}} = 180\\,\\text{L} - 1{,}5\\,\\text{L} = 178{,}5\\,\\text{L}$$$$R = \\frac{178{,}5\\,\\text{L}}{180\\,\\text{L}} \\cdot 100\\,\\% = 99{,}2\\,\\%$$<p>Under én prosent av vannet forlater kroppen. Det er derfor et lite prosentavvik i reabsorpsjonen får så store følger for urinmengden.</p><p><strong>Deloppgave 3 — glukose.</strong> Vi bruker $n = c \\cdot V$:</p>$$n = 5{,}0\\,\\frac{\\text{mmol}}{\\text{L}} \\cdot 180\\,\\text{L} = 900\\,\\text{mmol}$$<p>Med molar masse 180 g/mol for glukose svarer det til $0{,}900\\,\\text{mol} \\cdot 180\\,\\text{g/mol} = 162\\,\\text{g}$ glukose per døgn. Alt hentes tilbake ved aktiv transport i proksimal tubulus, derfor er urinen glukosefri. Finner man glukose i urinen, er transportkapasiteten sprengt fordi blodsukkeret er for høyt — et klassisk tegn på diabetes.</p><p><strong>Deloppgave 4 — urinstoff.</strong></p>$$n_{\\text{filtrert}} = 5{,}0\\,\\frac{\\text{mmol}}{\\text{L}} \\cdot 180\\,\\text{L} = 900\\,\\text{mmol}$$$$n_{\\text{utskilt}} = 300\\,\\frac{\\text{mmol}}{\\text{L}} \\cdot 1{,}5\\,\\text{L} = 450\\,\\text{mmol}$$<p>Halvparten, 450 mmol, følger altså vannet passivt tilbake i blodet. Oppkonsentreringen i urinen er</p>$$\\frac{300\\,\\text{mmol/L}}{5{,}0\\,\\text{mmol/L}} = 60$$<p>Urinstoffet er 60 ganger mer konsentrert i urinen enn i plasmaet. Sammenlign med glukose, som konsentreres 0 ganger: nyren skiller ikke ut «avfall» i filteret, den <em>tar tilbake</em> det den vil beholde.</p><p><strong>Deloppgave 5 — dehydrering.</strong> Svetten tar med seg mer vann enn salt, så osmolaliteten i blodet stiger. Osmoreseptorer i hypotalamus registrerer det, hypofysen frigjør mer <strong>ADH</strong>, og ADH setter flere aquaporiner inn i samlerøret. Mer vann reabsorberes, urinmengden kan falle mot 0,5 L i døgnet, og urinen blir mørk og sterkt konsentrert. Samtidig utløses tørste, og aldosteron øker natriumreabsorpsjonen. Men nitrogenavfallet <em>må</em> ut, så urinproduksjonen kan aldri stoppe helt — derfor taper du vann selv når du er tørst.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å tro at arterier alltid fører oksygenrikt blod. Navnet sier bare hvilken retning blodet går: arterier fra hjertet, vener til hjertet. Lungearterien fører oksygenfattig blod, og lungevenen er kroppens mest oksygenrike åre.",
       "Å bytte om vedvev og silvev, eller å skrive at silvevet fører vann oppover. Vedvev (xylem) = døde rør, vann og mineraler oppover. Silvev (floem) = levende celler, sukrose fra kilde til sluk, i begge retninger.",
@@ -96,7 +245,6 @@
       "Å blande ekskresjon og avføring. Ekskresjon er avfall fra stoffskiftet inne i cellene (urinstoff, $\\ce{CO2}$). Avføring er ufordøyd materiale som aldri har vært tatt opp i kroppen.",
       "Å si at nyrene «filtrerer ut avfallsstoffene». Filtrasjonen i glomerulus er uselektiv og slipper gjennom glukose, aminosyrer og ioner like lett som urinstoff. Selektiviteten ligger i reabsorpsjonen etterpå. Og husk at ADH gir mindre urin, ikke mer — «antidiuretisk» betyr «mot vannlating»."
     ],
-
     "tips": [
       "Tegn hjertet og blodets vei fra hukommelsen, og skriv «O2-rikt» eller «O2-fattig» ved hver del: hulvener, høyre forkammer, høyre kammer, lungearterie, lunger, lungevener, venstre forkammer, venstre kammer, aorta. Denne runden er nesten alltid med på prøve.",
       "Bruk «gradient-språk» i alle forklaringsoppgaver om gassutveksling. Nevn alltid de tre kravene — stor overflate, kort diffusjonsavstand og opprettholdt gradient via ventilasjon og sirkulasjon — og knytt dem konkret til organet du skriver om. Det er nøyaktig dette sensoren ser etter når spørsmålet er «forklar hvorfor gjeller/alveoler/parabronkier er effektive».",
@@ -105,29 +253,77 @@
       "Øv på sammenligningene, ikke bare enkeltdelene: enkelt mot dobbelt kretsløp, åpent mot lukket, vedvev mot silvev, ammoniakk mot urinstoff mot urinsyre. Bruk to setninger per par: hva forskjellen er, og hvilken fordel den gir dyret eller planten."
     ]
   },
-
   "begreper": [
-    { "begrep": "Partialtrykk", "forklaring": "Den delen av totaltrykket i en gassblanding som skyldes én bestemt gass. Gasser diffunderer alltid fra høyt til lavt partialtrykk." },
-    { "begrep": "Spalteåpning (stoma)", "forklaring": "Pore i bladoverflaten mellom to lukkeceller. Åpnes når lukkecellene tar opp $\\ce{K+}$ og sveller av vann, og slipper $\\ce{CO2}$ inn og vanndamp ut." },
-    { "begrep": "Vedvev (xylem)", "forklaring": "Ledningsvev av døde, ligninforsterkede vedrør og trakeider som fører vann og mineralioner oppover fra rot til blad." },
-    { "begrep": "Silvev (floem)", "forklaring": "Ledningsvev av levende silrørceller med silplater og følgeceller, som fører sukrose og andre organiske stoffer fra kilde til sluk." },
-    { "begrep": "Transpirasjonssug", "forklaring": "Undertrykket som oppstår i vedvevet når vann fordamper fra bladet. Det er hoveddrivkraften for vanntransport oppover, og krever ingen ATP." },
-    { "begrep": "Trykkstrømteorien", "forklaring": "Forklaringen på floemtransport: aktiv lasting av sukrose i kilden trekker inn vann og hever trykket, avlasting i sluket senker det, og trykkforskjellen driver strømmen." },
-    { "begrep": "Motstrømsprinsippet", "forklaring": "At to strømmer, for eksempel vann og blod, går i motsatt retning forbi hverandre, slik at gradienten opprettholdes langs hele strekningen. Brukes i fiskens gjeller og i Henles sløyfe." },
-    { "begrep": "Åpent kretsløp", "forklaring": "Sirkulasjonssystem der hjertet pumper hemolymfe ut i åpne kroppshulrom, slik som hos insekter. Lavt trykk og dårlig regulert fordeling." },
-    { "begrep": "Dobbelt kretsløp", "forklaring": "Kretsløp der blodet passerer hjertet to ganger per runde, delt i et lungekretsløp og et kroppskretsløp. Gir høyt trykk i kroppen og lavt trykk i lungene." },
-    { "begrep": "Minuttvolum", "forklaring": "Blodmengden hjertet pumper ut per minutt, altså slagvolum ganger puls. I hvile omtrent 5 L/min hos en voksen." },
-    { "begrep": "Hemoglobin", "forklaring": "Jernholdig transportprotein i røde blodceller. Hvert molekyl binder fire $\\ce{O2}$ og slipper dem lettere ved lav pH og høy temperatur." },
-    { "begrep": "Ekskresjon", "forklaring": "Utskilling av avfallsstoffer som har vært med i cellenes stoffskifte, som urinstoff og $\\ce{CO2}$. Ikke det samme som avføring." },
-    { "begrep": "Nefron", "forklaring": "Nyrens funksjonelle enhet: nyrelegeme med glomerulus, proksimal tubulus, Henles sløyfe, distal tubulus og samlerør. Rundt en million per nyre." },
-    { "begrep": "Primærurin", "forklaring": "Væsken som presses ut av blodet i glomerulus. Har samme sammensetning som plasma bortsett fra at proteiner og blodceller mangler; ca. 180 L per døgn." },
-    { "begrep": "ADH (antidiuretisk hormon)", "forklaring": "Hormon fra hypofysen som setter aquaporiner inn i samlerøret slik at mer vann reabsorberes. Høyt ADH gir liten mengde konsentrert urin." }
+    {
+      "begrep": "Partialtrykk",
+      "forklaring": "Den delen av totaltrykket i en gassblanding som skyldes én bestemt gass. Gasser diffunderer alltid fra høyt til lavt partialtrykk."
+    },
+    {
+      "begrep": "Spalteåpning (stoma)",
+      "forklaring": "Pore i bladoverflaten mellom to lukkeceller. Åpnes når lukkecellene tar opp $\\ce{K+}$ og sveller av vann, og slipper $\\ce{CO2}$ inn og vanndamp ut."
+    },
+    {
+      "begrep": "Vedvev (xylem)",
+      "forklaring": "Ledningsvev av døde, ligninforsterkede vedrør og trakeider som fører vann og mineralioner oppover fra rot til blad."
+    },
+    {
+      "begrep": "Silvev (floem)",
+      "forklaring": "Ledningsvev av levende silrørceller med silplater og følgeceller, som fører sukrose og andre organiske stoffer fra kilde til sluk."
+    },
+    {
+      "begrep": "Transpirasjonssug",
+      "forklaring": "Undertrykket som oppstår i vedvevet når vann fordamper fra bladet. Det er hoveddrivkraften for vanntransport oppover, og krever ingen ATP."
+    },
+    {
+      "begrep": "Trykkstrømteorien",
+      "forklaring": "Forklaringen på floemtransport: aktiv lasting av sukrose i kilden trekker inn vann og hever trykket, avlasting i sluket senker det, og trykkforskjellen driver strømmen."
+    },
+    {
+      "begrep": "Motstrømsprinsippet",
+      "forklaring": "At to strømmer, for eksempel vann og blod, går i motsatt retning forbi hverandre, slik at gradienten opprettholdes langs hele strekningen. Brukes i fiskens gjeller og i Henles sløyfe."
+    },
+    {
+      "begrep": "Åpent kretsløp",
+      "forklaring": "Sirkulasjonssystem der hjertet pumper hemolymfe ut i åpne kroppshulrom, slik som hos insekter. Lavt trykk og dårlig regulert fordeling."
+    },
+    {
+      "begrep": "Dobbelt kretsløp",
+      "forklaring": "Kretsløp der blodet passerer hjertet to ganger per runde, delt i et lungekretsløp og et kroppskretsløp. Gir høyt trykk i kroppen og lavt trykk i lungene."
+    },
+    {
+      "begrep": "Minuttvolum",
+      "forklaring": "Blodmengden hjertet pumper ut per minutt, altså slagvolum ganger puls. I hvile omtrent 5 L/min hos en voksen."
+    },
+    {
+      "begrep": "Hemoglobin",
+      "forklaring": "Jernholdig transportprotein i røde blodceller. Hvert molekyl binder fire $\\ce{O2}$ og slipper dem lettere ved lav pH og høy temperatur."
+    },
+    {
+      "begrep": "Ekskresjon",
+      "forklaring": "Utskilling av avfallsstoffer som har vært med i cellenes stoffskifte, som urinstoff og $\\ce{CO2}$. Ikke det samme som avføring."
+    },
+    {
+      "begrep": "Nefron",
+      "forklaring": "Nyrens funksjonelle enhet: nyrelegeme med glomerulus, proksimal tubulus, Henles sløyfe, distal tubulus og samlerør. Rundt en million per nyre."
+    },
+    {
+      "begrep": "Primærurin",
+      "forklaring": "Væsken som presses ut av blodet i glomerulus. Har samme sammensetning som plasma bortsett fra at proteiner og blodceller mangler; ca. 180 L per døgn."
+    },
+    {
+      "begrep": "ADH (antidiuretisk hormon)",
+      "forklaring": "Hormon fra hypofysen som setter aquaporiner inn i samlerøret slik at mer vann reabsorberes. Høyt ADH gir liten mengde konsentrert urin."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hvilken av disse blodårene fører oksygenfattig blod?",
-      "alternativer": ["Aorta", "Lungevenen", "Lungearterien", "Kranspulsåren"],
+      "alternativer": [
+        "Aorta",
+        "Lungevenen",
+        "Lungearterien",
+        "Kranspulsåren"
+      ],
       "riktig": 2,
       "forklaring": "Arterier og vener navngis etter retningen, ikke etter oksygeninnholdet: arterier fører blod fra hjertet, vener til hjertet. Lungearterien går fra høyre hjertekammer til lungene med blod som nettopp har levert oksygenet sitt til kroppen, og er derfor oksygenfattig. Den mest fristende fella er lungevenen — den heter «vene» fordi den går til hjertet, men den kommer rett fra lungene og er faktisk kroppens mest oksygenrike blodåre."
     },
@@ -144,7 +340,12 @@
     },
     {
       "sporsmal": "Slagvolumet er 80 mL og pulsen 65 slag per minutt. Hva er minuttvolumet?",
-      "alternativer": ["520 mL/min", "5,2 L/min", "52 L/min", "1,2 L/min"],
+      "alternativer": [
+        "520 mL/min",
+        "5,2 L/min",
+        "52 L/min",
+        "1,2 L/min"
+      ],
       "riktig": 1,
       "forklaring": "$MV = SV \\cdot f = 80\\,\\text{mL} \\cdot 65\\,\\text{min}^{-1} = 5200\\,\\text{mL/min} = 5{,}2\\,\\text{L/min}$. Den vanligste feilen er å rote med enhetene: 5200 mL er 5,2 L, ikke 520 mL. Alternativ D får du hvis du deler i stedet for å gange, og 1,2 L/min ville dessuten vært altfor lite til å holde en voksen i live."
     },
@@ -172,7 +373,12 @@
     },
     {
       "sporsmal": "Hvor i nefronet reabsorberes all glukosen, alle aminosyrene og mest av vannet?",
-      "alternativer": ["Proksimal tubulus", "Glomerulus", "Den oppstigende delen av Henles sløyfe", "Samlerøret"],
+      "alternativer": [
+        "Proksimal tubulus",
+        "Glomerulus",
+        "Den oppstigende delen av Henles sløyfe",
+        "Samlerøret"
+      ],
       "riktig": 0,
       "forklaring": "I proksimal tubulus hentes all glukose og alle aminosyrer tilbake ved aktiv transport, sammen med rundt to tredeler av vannet og natriumet. Glomerulus (alternativ B) er stedet der filtrasjonen skjer — der går stoffene ut av blodet, ikke inn i det. Den oppstigende delen av Henles sløyfe pumper ut salt, men er tett for vann, og samlerøret finjusterer bare de siste prosentene under kontroll av ADH."
     },
@@ -222,7 +428,12 @@
     },
     {
       "sporsmal": "Hva holdes normalt tilbake i blodet under filtrasjonen i glomerulus?",
-      "alternativer": ["Vann og natriumioner", "Glukose og aminosyrer", "Urinstoff", "Blodceller og plasmaproteiner"],
+      "alternativer": [
+        "Vann og natriumioner",
+        "Glukose og aminosyrer",
+        "Urinstoff",
+        "Blodceller og plasmaproteiner"
+      ],
       "riktig": 3,
       "forklaring": "Filtrasjonen sorterer bare etter størrelse, og bare de største partiklene — blodceller og plasmaproteiner som albumin — er for store til å slippe gjennom. Vann, ioner, glukose, aminosyrer og urinstoff går alle rett ut i primærurinen. Alternativ B er den vanligste fella: glukosen kommer tilbake i blodet, men det skjer ved aktiv reabsorpsjon i proksimal tubulus etterpå, ikke ved at filteret holder den igjen."
     },
@@ -238,23 +449,70 @@
       "forklaring": "Diffusjonshastigheten avhenger ikke bare av trykkforskjellen, men også av hvor lett gassen løser seg i det den skal gjennom. $\\ce{CO2}$ er langt mer løselig enn $\\ce{O2}$, og det kompenserer for den mye mindre gradienten. Alternativ D er dessuten feil i seg selv: $\\ce{CO2}$ har molar masse 44 g/mol mot 32 g/mol for $\\ce{O2}$, altså er $\\ce{CO2}$ det tyngste av de to molekylene. Og all gassutveksling i lungene er passiv diffusjon — det finnes ingen gasspumpe (alternativ C)."
     }
   ],
-
   "flashcards": [
-    { "front": "De tre kravene til en effektiv gassutvekslingsflate", "bak": "Stor overflate, kort diffusjonsavstand (tynn og fuktig hinne) og en gradient som holdes oppe av ventilasjon utenfor og sirkulasjon innenfor." },
-    { "front": "Partialtrykk av oksygen i luft, i alveolene og i blodet som kommer til lungene", "bak": "Luft: $0{,}21 \\cdot 101\\,\\text{kPa} \\approx 21\\,\\text{kPa}$. Alveoleluft: ca. 13 kPa. Venøst blod: ca. 5 kPa. Gradienten på ca. 8 kPa driver oksygenet inn i blodet." },
-    { "front": "Vedvev (xylem) — bygning, innhold og retning", "bak": "Døde, ligninforsterkede vedrør og trakeider. Fører vann og mineralioner oppover, drevet av transpirasjonssug. Ingen ATP." },
-    { "front": "Silvev (floem) — bygning, innhold og retning", "bak": "Levende silrørceller med silplater og følgeceller. Fører sukrose fra kilde til sluk etter trykkstrømteorien, i begge retninger." },
-    { "front": "Hvorfor henger vannsøylen i vedvevet sammen?", "bak": "Kohesjon: hydrogenbindinger mellom vannmolekylene. I tillegg adhesjon til rørveggen. Derfor kan strekket fra fordampingen i bladet overføres helt ned til rota." },
-    { "front": "Hvordan åpnes en spalteåpning?", "bak": "Lukkecellene tar opp $\\ce{K+}$, vann følger etter ved osmose, cellene sveller, og fordi celleveggen er ujevnt tykk buler de slik at poren mellom dem åpner seg." },
-    { "front": "Motstrømsprinsippet i fiskens gjeller", "bak": "Vann og blod strømmer motsatt vei, så blodet møter hele veien vann med litt høyere oksygenpartialtrykk. Gradienten holdes langs hele lamellen, og fisken tar ut opp mot 80 % av oksygenet." },
-    { "front": "Åpent kontra lukket kretsløp", "bak": "Åpent: hemolymfe pumpes ut i kroppshulrom, lavt trykk, dårlig regulering (insekter, de fleste bløtdyr). Lukket: blodet holdes i årer, høyt trykk og styrt fordeling (meitemark, blekksprut, virveldyr)." },
-    { "front": "Blodets vei gjennom hjertet", "bak": "Hulvener → høyre forkammer → høyre hjertekammer → lungearterie → lunger → lungevener → venstre forkammer → venstre hjertekammer → aorta." },
-    { "front": "Minuttvolum", "bak": "$MV = SV \\cdot f$. I hvile ca. $70\\,\\text{mL} \\cdot 70\\,\\text{min}^{-1} = 4900\\,\\text{mL/min} = 4{,}9\\,\\text{L/min}$." },
-    { "front": "Hemoglobin og Bohr-effekten", "bak": "Jernholdig protein i røde blodceller; hvert molekyl binder fire $\\ce{O2}$. Bohr-effekten: ved lav pH (mye $\\ce{CO2}$) slipper hemoglobinet oksygenet lettere — altså der vevet jobber hardest. Høy temperatur virker i samme retning, men er en egen effekt." },
-    { "front": "Hvordan fraktes $\\ce{CO2}$ i blodet?", "bak": "Ca. 70 % som bikarbonat, $\\ce{HCO3-}$, i plasmaet (karboanhydrase i røde blodceller), ca. 20 % bundet til hemoglobinets proteindel og ca. 10 % fysisk løst." },
-    { "front": "Væskeutveksling i kapillærene", "bak": "I starten er blodtrykket høyere enn plasmaproteinenes kolloidosmotiske trykk, så væske presses ut. Mot venesiden har blodtrykket falt, og det meste suges inn igjen. Resten hentes av lymfekarene." },
-    { "front": "De tre nitrogenholdige avfallsstoffene", "bak": "Ammoniakk: billigst, giftigst, krever mest vann (ferskvannsfisk). Urinstoff: mellomting, lages i leveren (pattedyr, amfibier, haier). Urinsyre: dyrest, nesten uløselig, sparer vann (fugl, krypdyr, insekter)." },
-    { "front": "Nyrenes nøkkeltall", "bak": "GFR 125 mL/min gir $125 \\cdot 1440 = 180\\,000\\,\\text{mL} = 180\\,\\text{L}$ primærurin per døgn. Over 99 % reabsorberes, og det blir 1–1,5 L urin." },
-    { "front": "Hva gjør ADH?", "bak": "Frigjøres fra hypofysen når osmoreseptorer i hypotalamus merker at blodet er for salt. Setter aquaporiner inn i samlerøret, mer vann reabsorberes, og urinen blir liten og konsentrert." }
+    {
+      "front": "De tre kravene til en effektiv gassutvekslingsflate",
+      "bak": "Stor overflate, kort diffusjonsavstand (tynn og fuktig hinne) og en gradient som holdes oppe av ventilasjon utenfor og sirkulasjon innenfor."
+    },
+    {
+      "front": "Partialtrykk av oksygen i luft, i alveolene og i blodet som kommer til lungene",
+      "bak": "Luft: $0{,}21 \\cdot 101\\,\\text{kPa} \\approx 21\\,\\text{kPa}$. Alveoleluft: ca. 13 kPa. Venøst blod: ca. 5 kPa. Gradienten på ca. 8 kPa driver oksygenet inn i blodet."
+    },
+    {
+      "front": "Vedvev (xylem) — bygning, innhold og retning",
+      "bak": "Døde, ligninforsterkede vedrør og trakeider. Fører vann og mineralioner oppover, drevet av transpirasjonssug. Ingen ATP."
+    },
+    {
+      "front": "Silvev (floem) — bygning, innhold og retning",
+      "bak": "Levende silrørceller med silplater og følgeceller. Fører sukrose fra kilde til sluk etter trykkstrømteorien, i begge retninger."
+    },
+    {
+      "front": "Hvorfor henger vannsøylen i vedvevet sammen?",
+      "bak": "Kohesjon: hydrogenbindinger mellom vannmolekylene. I tillegg adhesjon til rørveggen. Derfor kan strekket fra fordampingen i bladet overføres helt ned til rota."
+    },
+    {
+      "front": "Hvordan åpnes en spalteåpning?",
+      "bak": "Lukkecellene tar opp $\\ce{K+}$, vann følger etter ved osmose, cellene sveller, og fordi celleveggen er ujevnt tykk buler de slik at poren mellom dem åpner seg."
+    },
+    {
+      "front": "Motstrømsprinsippet i fiskens gjeller",
+      "bak": "Vann og blod strømmer motsatt vei, så blodet møter hele veien vann med litt høyere oksygenpartialtrykk. Gradienten holdes langs hele lamellen, og fisken tar ut opp mot 80 % av oksygenet."
+    },
+    {
+      "front": "Åpent kontra lukket kretsløp",
+      "bak": "Åpent: hemolymfe pumpes ut i kroppshulrom, lavt trykk, dårlig regulering (insekter, de fleste bløtdyr). Lukket: blodet holdes i årer, høyt trykk og styrt fordeling (meitemark, blekksprut, virveldyr)."
+    },
+    {
+      "front": "Blodets vei gjennom hjertet",
+      "bak": "Hulvener → høyre forkammer → høyre hjertekammer → lungearterie → lunger → lungevener → venstre forkammer → venstre hjertekammer → aorta."
+    },
+    {
+      "front": "Minuttvolum",
+      "bak": "$MV = SV \\cdot f$. I hvile ca. $70\\,\\text{mL} \\cdot 70\\,\\text{min}^{-1} = 4900\\,\\text{mL/min} = 4{,}9\\,\\text{L/min}$."
+    },
+    {
+      "front": "Hemoglobin og Bohr-effekten",
+      "bak": "Jernholdig protein i røde blodceller; hvert molekyl binder fire $\\ce{O2}$. Bohr-effekten: ved lav pH (mye $\\ce{CO2}$) slipper hemoglobinet oksygenet lettere — altså der vevet jobber hardest. Høy temperatur virker i samme retning, men er en egen effekt."
+    },
+    {
+      "front": "Hvordan fraktes $\\ce{CO2}$ i blodet?",
+      "bak": "Ca. 70 % som bikarbonat, $\\ce{HCO3-}$, i plasmaet (karboanhydrase i røde blodceller), ca. 20 % bundet til hemoglobinets proteindel og ca. 10 % fysisk løst."
+    },
+    {
+      "front": "Væskeutveksling i kapillærene",
+      "bak": "I starten er blodtrykket høyere enn plasmaproteinenes kolloidosmotiske trykk, så væske presses ut. Mot venesiden har blodtrykket falt, og det meste suges inn igjen. Resten hentes av lymfekarene."
+    },
+    {
+      "front": "De tre nitrogenholdige avfallsstoffene",
+      "bak": "Ammoniakk: billigst, giftigst, krever mest vann (ferskvannsfisk). Urinstoff: mellomting, lages i leveren (pattedyr, amfibier, haier). Urinsyre: dyrest, nesten uløselig, sparer vann (fugl, krypdyr, insekter)."
+    },
+    {
+      "front": "Nyrenes nøkkeltall",
+      "bak": "GFR 125 mL/min gir $125 \\cdot 1440 = 180\\,000\\,\\text{mL} = 180\\,\\text{L}$ primærurin per døgn. Over 99 % reabsorberes, og det blir 1–1,5 L urin."
+    },
+    {
+      "front": "Hva gjør ADH?",
+      "bak": "Frigjøres fra hypofysen når osmoreseptorer i hypotalamus merker at blodet er for salt. Setter aquaporiner inn i samlerøret, mer vann reabsorberes, og urinen blir liten og konsentrert."
+    }
   ]
 }

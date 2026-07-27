@@ -3,7 +3,6 @@
   "nr": 3,
   "tittel": "Celler",
   "intro": "Cellen er den minste enheten som kan kalles levende, og alt annet i biologien bygger på den. I dette kapittelet lærer du de to grunnplanene celler finnes i, hva de enkelte organellene gjør, hvorfor bygningen til en celle henger sammen med jobben den har — og hvordan du finner igjen alt dette i mikroskopet.",
-
   "kompakt": {
     "punkter": [
       "Alle celler har fire ting felles: cellemembran, cytoplasma, ribosomer og DNA. Alt annet varierer.",
@@ -18,19 +17,109 @@
       "Total forstørrelse er okular ganger objektiv. Et lysmikroskop skiller detaljer ned til ca. 0,2 µm; et elektronmikroskop kommer ned på nanometernivå."
     ],
     "formler": [
-      { "navn": "Total forstørrelse i lysmikroskop", "latex": "M = M_{\\text{okular}} \\cdot M_{\\text{objektiv}}" },
-      { "navn": "Synsfeltets diameter ved ny forstørrelse", "latex": "d_2 = d_1 \\cdot \\frac{M_1}{M_2}" },
-      { "navn": "Overflate og volum av en kuleformet celle", "latex": "O = 4\\pi r^{2}, \\qquad V = \\frac{4}{3}\\pi r^{3}" },
-      { "navn": "Overflate/volum-forholdet", "latex": "\\frac{O}{V} = \\frac{4\\pi r^{2}}{\\frac{4}{3}\\pi r^{3}} = \\frac{3}{r}" },
-      { "navn": "Lengdeenheter i cellebiologi", "latex": "1\\,\\text{mm} = 1000\\,\\mu\\text{m}, \\qquad 1\\,\\mu\\text{m} = 1000\\,\\text{nm}" }
-    ]
+      {
+        "navn": "Total forstørrelse i lysmikroskop",
+        "latex": "M = M_{\\text{okular}} \\cdot M_{\\text{objektiv}}"
+      },
+      {
+        "navn": "Synsfeltets diameter ved ny forstørrelse",
+        "latex": "d_2 = d_1 \\cdot \\frac{M_1}{M_2}"
+      },
+      {
+        "navn": "Overflate og volum av en kuleformet celle",
+        "latex": "O = 4\\pi r^{2}, \\qquad V = \\frac{4}{3}\\pi r^{3}"
+      },
+      {
+        "navn": "Overflate/volum-forholdet",
+        "latex": "\\frac{O}{V} = \\frac{4\\pi r^{2}}{\\frac{4}{3}\\pi r^{3}} = \\frac{3}{r}"
+      },
+      {
+        "navn": "Lengdeenheter i cellebiologi",
+        "latex": "1\\,\\text{mm} = 1000\\,\\mu\\text{m}, \\qquad 1\\,\\mu\\text{m} = 1000\\,\\text{nm}"
+      }
+    ],
+    "figur": {
+      "type": "spektrum",
+      "tittel": "Størrelser i cellebiologi",
+      "forklaring": "Skalaen er logaritmisk, så hvert hakk er ti ganger større: en bakterie på 1 µm og en dyrecelle på 10 µm ligger ett hakk fra hverandre i diameter, men tusen ganger i volum. Lysmikroskopets grense på 200 nm ligger i høyre kant av virusbåndet — alt til venstre for den krever elektronmikroskop.",
+      "enhet": "diameter i nm (logaritmisk)",
+      "min": 1,
+      "max": 100000,
+      "log": true,
+      "band": [
+        {
+          "fra": 1,
+          "til": 20,
+          "navn": "molekyler",
+          "verdi": "DNA 2 nm"
+        },
+        {
+          "fra": 20,
+          "til": 300,
+          "navn": "virus",
+          "verdi": "polio 30 nm"
+        },
+        {
+          "fra": 1000,
+          "til": 5000,
+          "navn": "bakterier",
+          "verdi": "1–5 µm"
+        },
+        {
+          "fra": 10000,
+          "til": 100000,
+          "navn": "eukaryote celler",
+          "verdi": "10–100 µm"
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
         "tittel": "To grunnplaner: prokaryot og eukaryot",
-        "html": "<p>Uansett hvor i livets tre du leter, har enhver celle fire ting: en <strong>cellemembran</strong> som skiller innsiden fra utsiden, <strong>cytoplasma</strong> med væsken cytosol, <strong>ribosomer</strong> som setter sammen protein, og <strong>DNA</strong> som arvestoff. Utover dette finnes det bare to grunnplaner.</p><p>I en <strong>prokaryot</strong> celle ligger DNA-et fritt i cytoplasmaet, i et område som kalles <strong>nukleoid</strong>. Kromosomet er som regel ett eneste ringformet DNA-molekyl. I tillegg har mange bakterier små ekstra DNA-ringer, <strong>plasmider</strong>, som gjerne bærer gener for antibiotikaresistens og kan overføres mellom celler. Prokaryoter har ingen kjernemembran og ingen membranomsluttede organeller — verken mitokondrier, ER eller Golgi. Cellene er små, typisk 1–5 µm, og har nesten alltid cellevegg utenpå membranen. Mange har også kapsel, flageller og pili.</p><p>I en <strong>eukaryot</strong> celle ligger DNA-et inne i en <strong>cellekjerne</strong> omgitt av en dobbel kjernemembran med kjerneporer. Arvestoffet er lineært, fordelt på flere kromosomer og pakket sammen med histonproteiner. Cellen er delt inn i rom med hver sin oppgave, og er typisk 10–100 µm i diameter. Volumet blir da fort tusen ganger større enn i en bakterie.</p><p>Også ribosomene er ulike: prokaryote ribosomer er mindre (70S) enn eukaryote (80S). Det høres ut som en detalj, men det er nettopp denne forskjellen mange antibiotika utnytter — de blokkerer bakteriens 70S-ribosomer uten å røre 80S-ribosomene i cytoplasmaet ditt.</p>"
+        "html": "<p>Uansett hvor i livets tre du leter, har enhver celle fire ting: en <strong>cellemembran</strong> som skiller innsiden fra utsiden, <strong>cytoplasma</strong> med væsken cytosol, <strong>ribosomer</strong> som setter sammen protein, og <strong>DNA</strong> som arvestoff. Utover dette finnes det bare to grunnplaner.</p><p>I en <strong>prokaryot</strong> celle ligger DNA-et fritt i cytoplasmaet, i et område som kalles <strong>nukleoid</strong>. Kromosomet er som regel ett eneste ringformet DNA-molekyl. I tillegg har mange bakterier små ekstra DNA-ringer, <strong>plasmider</strong>, som gjerne bærer gener for antibiotikaresistens og kan overføres mellom celler. Prokaryoter har ingen kjernemembran og ingen membranomsluttede organeller — verken mitokondrier, ER eller Golgi. Cellene er små, typisk 1–5 µm, og har nesten alltid cellevegg utenpå membranen. Mange har også kapsel, flageller og pili.</p><p>I en <strong>eukaryot</strong> celle ligger DNA-et inne i en <strong>cellekjerne</strong> omgitt av en dobbel kjernemembran med kjerneporer. Arvestoffet er lineært, fordelt på flere kromosomer og pakket sammen med histonproteiner. Cellen er delt inn i rom med hver sin oppgave, og er typisk 10–100 µm i diameter. Volumet blir da fort tusen ganger større enn i en bakterie.</p><p>Også ribosomene er ulike: prokaryote ribosomer er mindre (70S) enn eukaryote (80S). Det høres ut som en detalj, men det er nettopp denne forskjellen mange antibiotika utnytter — de blokkerer bakteriens 70S-ribosomer uten å røre 80S-ribosomene i cytoplasmaet ditt.</p>",
+        "figur": {
+          "type": "sammenlikning",
+          "tittel": "Prokaryot og eukaryot celle",
+          "forklaring": "Alle radene er forskjeller — cellemembran, cytoplasma, ribosomer og DNA har begge grunnplanene. Merk ribosomraden: at bakterien har 70S og du 80S, er grunnen til at antibiotika kan stoppe bakterien uten å røre dine egne celler.",
+          "kolonner": [
+            "Prokaryot",
+            "Eukaryot"
+          ],
+          "rader": [
+            {
+              "egenskap": "Cellekjerne",
+              "venstre": "ingen",
+              "hoyre": "dobbel kjernemembran med kjerneporer"
+            },
+            {
+              "egenskap": "Arvestoff",
+              "venstre": "ett ringformet DNA i nukleoidet, ofte plasmider i tillegg",
+              "hoyre": "flere lineære kromosomer med histoner, inne i kjernen"
+            },
+            {
+              "egenskap": "Organeller med membran",
+              "venstre": "ingen",
+              "hoyre": "mitokondrier, ER, Golgi, lysosomer, ev. kloroplaster"
+            },
+            {
+              "egenskap": "Ribosomer",
+              "venstre": "70S (mindre)",
+              "hoyre": "80S (større)"
+            },
+            {
+              "egenskap": "Diameter",
+              "venstre": "1–5 µm",
+              "hoyre": "10–100 µm, altså ca. tusen ganger volumet"
+            },
+            {
+              "egenskap": "Hvem",
+              "venstre": "bakterier og arker",
+              "hoyre": "protister, sopp, planter, dyr"
+            }
+          ]
+        }
       },
       {
         "tittel": "Bakterier og arker — de to prokaryote domenene",
@@ -42,18 +131,75 @@
       },
       {
         "tittel": "Sammenhengen mellom struktur og funksjon",
-        "html": "<p>«Formen følger funksjonen» er kanskje det viktigste prinsippet i hele biologien, og det starter med størrelse. En celle tar opp næring og oksygen gjennom <em>overflaten</em>, men forbruker dem i hele <em>volumet</em>. For en kuleformet celle er overflaten $O = 4\\pi r^{2}$ og volumet $V = \\frac{4}{3}\\pi r^{3}$, slik at</p>$$\\frac{O}{V} = \\frac{4\\pi r^{2}}{\\frac{4}{3}\\pi r^{3}} = \\frac{3}{r}$$<p>Dobles radien, halveres overflaten per volumenhet. Derfor er nesten alle celler mindre enn 100 µm — en kjempecelle ville rett og slett sultet i sitt eget indre.</p><p>Celler som trenger ekstra stor overflate, løser det med formen. Tarmcellene har tusenvis av <strong>mikrovilli</strong> som mangedobler opptaksflaten, røde blodceller er flate og bikonkave, og rothårceller strekker seg langt ut i jorda.</p><p>Innholdet av organeller røper også hva cellen driver med:</p><ul><li>Muskelceller og spermier er stappfulle av mitokondrier, fordi bevegelse koster mye ATP.</li><li>Celler i bukspyttkjertelen har svært mye ru ER og et stort Golgi-apparat, fordi de eksporterer fordøyelsesenzymer.</li><li>Leverceller har mye glatt ER, fordi de bryter ned alkohol og legemidler.</li><li>Modne røde blodceller har verken kjerne eller mitokondrier — all plass går til hemoglobin.</li></ul><p>Får du en oppgave om struktur og funksjon, skal svaret alltid koble en <em>konkret</em> struktur til en <em>konkret</em> oppgave.</p>"
+        "html": "<p>«Formen følger funksjonen» er kanskje det viktigste prinsippet i hele biologien, og det starter med størrelse. En celle tar opp næring og oksygen gjennom <em>overflaten</em>, men forbruker dem i hele <em>volumet</em>. For en kuleformet celle er overflaten $O = 4\\pi r^{2}$ og volumet $V = \\frac{4}{3}\\pi r^{3}$, slik at</p>$$\\frac{O}{V} = \\frac{4\\pi r^{2}}{\\frac{4}{3}\\pi r^{3}} = \\frac{3}{r}$$<p>Dobles radien, halveres overflaten per volumenhet. Derfor er nesten alle celler mindre enn 100 µm — en kjempecelle ville rett og slett sultet i sitt eget indre.</p><p>Celler som trenger ekstra stor overflate, løser det med formen. Tarmcellene har tusenvis av <strong>mikrovilli</strong> som mangedobler opptaksflaten, røde blodceller er flate og bikonkave, og rothårceller strekker seg langt ut i jorda.</p><p>Innholdet av organeller røper også hva cellen driver med:</p><ul><li>Muskelceller og spermier er stappfulle av mitokondrier, fordi bevegelse koster mye ATP.</li><li>Celler i bukspyttkjertelen har svært mye ru ER og et stort Golgi-apparat, fordi de eksporterer fordøyelsesenzymer.</li><li>Leverceller har mye glatt ER, fordi de bryter ned alkohol og legemidler.</li><li>Modne røde blodceller har verken kjerne eller mitokondrier — all plass går til hemoglobin.</li></ul><p>Får du en oppgave om struktur og funksjon, skal svaret alltid koble en <em>konkret</em> struktur til en <em>konkret</em> oppgave.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Overflate per volum for en kuleformet celle",
+          "forklaring": "Kurven er bratt der cellene er små: dobler du radien, halveres verdien. Cellen med r = 10 µm har O/V = 0,30 µm⁻¹, mens kjempecellen med r = 100 µm bare har 0,030 — den ligger nesten nede på aksen og får ikke oksygen nok inn til midten.",
+          "xmin": 0,
+          "xmax": 110,
+          "ymin": 0,
+          "ymax": 1,
+          "xlabel": "r (µm)",
+          "ylabel": "O/V (1/µm)",
+          "kurver": [
+            {
+              "uttrykk": "3/x",
+              "farge": 1
+            }
+          ],
+          "punkter": [
+            {
+              "x": 10,
+              "y": 0.3,
+              "navn": "r = 10 µm",
+              "hjelpelinjer": true
+            },
+            {
+              "x": 100,
+              "y": 0.03,
+              "navn": "r = 100 µm"
+            }
+          ]
+        }
       },
       {
         "tittel": "Endosymbioseteorien",
-        "html": "<p>Hvor kom mitokondriene fra? <strong>Endosymbioseteorien</strong>, som Lynn Margulis fikk gjennomslag for rundt 1970, sier at de en gang var frittlevende bakterier. En større vertscelle tok opp bakterien ved fagocytose, men fordøyde den ikke. Bakterien fortsatte å leve inne i verten (gresk <em>endo</em> = inni, <em>symbiose</em> = samliv), og begge tjente på det: verten fikk ATP, bakterien fikk næring og ly. Over lang tid ble den en fast del av cellen og flyttet mesteparten av genene sine over til vertens kjerne.</p><p>Holdepunktene er sterke:</p><ul><li><strong>To membraner.</strong> Den ytre stammer fra vertens blære, den indre fra bakteriens egen cellemembran.</li><li><strong>Eget DNA.</strong> Sirkulært og uten histoner — akkurat som hos bakterier.</li><li><strong>Egne ribosomer.</strong> De ligner bakteriers ribosomer og hemmes av flere av de samme antibiotikaene som stopper bakterier.</li><li><strong>Egen deling.</strong> Mitokondrier og kloroplaster deler seg ved todeling, uavhengig av cellens egen deling. Cellen kan ikke lage nye fra bunnen av.</li><li><strong>Slektskap i sekvensene.</strong> Mitokondriets DNA ligner mest på DNA hos α-proteobakterier, kloroplastens på cyanobakterier.</li></ul><p>Rekkefølgen var trolig at mitokondriet kom først. Senere tok en av disse cellene opp en fotosyntetiserende cyanobakterie, og slik oppsto kloroplasten — og dermed alger og planter. Teorien forklarer altså både hvorfor du puster og hvorfor plantene er grønne.</p>"
+        "html": "<p>Hvor kom mitokondriene fra? <strong>Endosymbioseteorien</strong>, som Lynn Margulis fikk gjennomslag for rundt 1970, sier at de en gang var frittlevende bakterier. En større vertscelle tok opp bakterien ved fagocytose, men fordøyde den ikke. Bakterien fortsatte å leve inne i verten (gresk <em>endo</em> = inni, <em>symbiose</em> = samliv), og begge tjente på det: verten fikk ATP, bakterien fikk næring og ly. Over lang tid ble den en fast del av cellen og flyttet mesteparten av genene sine over til vertens kjerne.</p><p>Holdepunktene er sterke:</p><ul><li><strong>To membraner.</strong> Den ytre stammer fra vertens blære, den indre fra bakteriens egen cellemembran.</li><li><strong>Eget DNA.</strong> Sirkulært og uten histoner — akkurat som hos bakterier.</li><li><strong>Egne ribosomer.</strong> De ligner bakteriers ribosomer og hemmes av flere av de samme antibiotikaene som stopper bakterier.</li><li><strong>Egen deling.</strong> Mitokondrier og kloroplaster deler seg ved todeling, uavhengig av cellens egen deling. Cellen kan ikke lage nye fra bunnen av.</li><li><strong>Slektskap i sekvensene.</strong> Mitokondriets DNA ligner mest på DNA hos α-proteobakterier, kloroplastens på cyanobakterier.</li></ul><p>Rekkefølgen var trolig at mitokondriet kom først. Senere tok en av disse cellene opp en fotosyntetiserende cyanobakterie, og slik oppsto kloroplasten — og dermed alger og planter. Teorien forklarer altså både hvorfor du puster og hvorfor plantene er grønne.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Fra frittlevende bakterie til mitokondrium",
+          "forklaring": "Følg hvor de to membranene kommer fra: den ytre er vertens blære, den indre bakteriens egen. Da blir dobbeltmembran, eget ringformet DNA og egen todeling rester etter et liv som selvstendig organisme.",
+          "steg": [
+            {
+              "tekst": "Vertscelle tar opp en bakterie",
+              "note": "fagocytose lager en blære"
+            },
+            {
+              "tekst": "Bakterien blir ikke fordøyd",
+              "note": "blæren blir den ytre membranen"
+            },
+            {
+              "tekst": "Begge tjener på samlivet",
+              "note": "verten får ATP, bakterien ly"
+            },
+            {
+              "tekst": "Genene flyttes til vertens kjerne",
+              "note": "litt sirkulært DNA blir igjen"
+            },
+            {
+              "tekst": "Nå er bakterien et mitokondrium",
+              "note": "deler seg ved todeling"
+            }
+          ]
+        }
       },
       {
         "tittel": "Mikroskopering i praksis",
         "html": "<p>Et lysmikroskop forstørrer i to trinn: objektivet lager et forstørret bilde, og okularet forstørrer dette bildet én gang til. <strong>Total forstørrelse</strong> er derfor produktet:</p>$$M = M_{\\text{okular}} \\cdot M_{\\text{objektiv}}$$<p>Med et vanlig 10×-okular og objektivene 4×, 10× og 40× får du 40×, 100× og 400×. Et oljeimmersjonsobjektiv på 100× gir 1000×, og der stopper det.</p><p>Grensen settes av <strong>oppløsningsevnen</strong>: den minste avstanden mellom to punkter som fortsatt kan sees som to punkter. Fordi synlig lys har bølgelengder rundt 400–700 nm, klarer et lysmikroskop omtrent 0,2 µm. Forstørrer du mer enn ca. 1000 ganger, blir bildet bare større og uskarpere — det kalles tom forstørrelse. Et elektronmikroskop bruker elektroner i stedet for lys og kommer ned på nanometernivå. Det er derfor all kunnskap om organellenes finstruktur er yngre enn 1950.</p><p>Slik gjør du det i praksis: lag et tynt preparat, legg på en dråpe vann eller farge, og senk dekkglasset ned skrått for å unngå luftbobler. Start alltid med det minste objektivet, finn objektet og still skarpt med grovinnstillingen. Bytt så til sterkere objektiv og bruk <strong>bare</strong> fininnstillingen. Husk at bildet er snudd: flytter du preparatet mot høyre, går bildet mot venstre. Metylenblått farger kjerner i kinnhudceller, og Lugols løsning farger stivelseskorn blåsvarte.</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Fra objektiv til cellestørrelse",
@@ -68,7 +214,39 @@
       {
         "tittel": "Veien til et ferdig protein",
         "oppgave": "<p>En celle i bukspyttkjertelen produserer fordøyelsesenzymet amylase og skiller det ut slik at det havner i tynntarmen. Beskriv veien enzymet tar gjennom cellen, og forklar hvilken organell som gjør hva.</p>",
-        "losning": "<p><strong>Steg 1 — cellekjernen.</strong> Genet for amylase leses av (transkripsjon), og mRNA-molekylet transporteres ut gjennom kjerneporene til cytoplasmaet. DNA-et forlater aldri kjernen.</p><p><strong>Steg 2 — ribosomet.</strong> Et ribosom begynner å oversette mRNA til en aminosyrekjede. Fordi enzymet skal ut av cellen, starter kjeden med en signalsekvens som fører ribosomet bort til det endoplasmatiske nettverket.</p><p><strong>Steg 3 — ru ER.</strong> Ribosomet fester seg på utsiden av ER, og proteinkjeden mates rett inn i hulrommet i ER mens den lages. Der folder den seg til riktig form og får ofte påhengt sukkergrupper. Det er nettopp derfor ru ER heter «ru»: ribosomene på overflaten gir det en kornete tekstur i elektronmikroskopet.</p><p><strong>Steg 4 — transportblære.</strong> En del av ER-membranen snører seg av som en liten blære med amylasen inni, og blæren fraktes til Golgi-apparatet.</p><p><strong>Steg 5 — Golgi-apparatet.</strong> Blæren smelter sammen med Golgi på mottakssiden. Her ferdigmodifiseres proteinet, sorteres etter adresse og pakkes i en sekretblære som snøres av på avsendersiden.</p><p><strong>Steg 6 — eksocytose.</strong> Sekretblæren fraktes langs cytoskjelettet ut til cellemembranen. Blæremembranen smelter sammen med cellemembranen, og amylasen tømmes ut av cellen.</p><p><strong>Poenget.</strong> Slike celler er stappfulle av ru ER og har et uvanlig stort Golgi-apparat — strukturen speiler funksjonen. Mitokondriene i nærheten leverer ATP-en som transporten og eksocytosen krever.</p>"
+        "losning": "<p><strong>Steg 1 — cellekjernen.</strong> Genet for amylase leses av (transkripsjon), og mRNA-molekylet transporteres ut gjennom kjerneporene til cytoplasmaet. DNA-et forlater aldri kjernen.</p><p><strong>Steg 2 — ribosomet.</strong> Et ribosom begynner å oversette mRNA til en aminosyrekjede. Fordi enzymet skal ut av cellen, starter kjeden med en signalsekvens som fører ribosomet bort til det endoplasmatiske nettverket.</p><p><strong>Steg 3 — ru ER.</strong> Ribosomet fester seg på utsiden av ER, og proteinkjeden mates rett inn i hulrommet i ER mens den lages. Der folder den seg til riktig form og får ofte påhengt sukkergrupper. Det er nettopp derfor ru ER heter «ru»: ribosomene på overflaten gir det en kornete tekstur i elektronmikroskopet.</p><p><strong>Steg 4 — transportblære.</strong> En del av ER-membranen snører seg av som en liten blære med amylasen inni, og blæren fraktes til Golgi-apparatet.</p><p><strong>Steg 5 — Golgi-apparatet.</strong> Blæren smelter sammen med Golgi på mottakssiden. Her ferdigmodifiseres proteinet, sorteres etter adresse og pakkes i en sekretblære som snøres av på avsendersiden.</p><p><strong>Steg 6 — eksocytose.</strong> Sekretblæren fraktes langs cytoskjelettet ut til cellemembranen. Blæremembranen smelter sammen med cellemembranen, og amylasen tømmes ut av cellen.</p><p><strong>Poenget.</strong> Slike celler er stappfulle av ru ER og har et uvanlig stort Golgi-apparat — strukturen speiler funksjonen. Mitokondriene i nærheten leverer ATP-en som transporten og eksocytosen krever.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Veien amylasen tar gjennom cellen",
+          "forklaring": "Proteinet flyter aldri fritt i cytosolen: fra steg 3 ligger det inne i et membranrom hele veien ut. Derfor er nettopp ru ER og Golgi de store organellene i en celle som eksporterer enzymer.",
+          "steg": [
+            {
+              "tekst": "Kjernen: genet leses av til mRNA",
+              "note": "mRNA ut gjennom kjerneporene"
+            },
+            {
+              "tekst": "Ribosom starter oversettelsen",
+              "note": "signalsekvens fører den til ER"
+            },
+            {
+              "tekst": "Ru ER: folding og sukkergrupper",
+              "note": "kjeden mates inn i ER-rommet"
+            },
+            {
+              "tekst": "Transportblære snøres av ER",
+              "note": "fraktes videre til Golgi"
+            },
+            {
+              "tekst": "Golgi modifiserer og sorterer",
+              "note": "pakkes i en sekretblære"
+            },
+            {
+              "tekst": "Eksocytose ved cellemembranen",
+              "note": "amylasen tømmes ut av cellen"
+            }
+          ]
+        }
       },
       {
         "tittel": "Vurder holdepunktene for endosymbioseteorien",
@@ -76,7 +254,6 @@
         "losning": "<p><strong>A — to membraner.</strong> Når en celle tar opp noe ved fagocytose, blir det pakket inn i en blære laget av vertens egen cellemembran. Den opprinnelige bakterien hadde allerede sin egen membran. Resultatet er nøyaktig to membraner, og den indre ligner faktisk mest på en bakteriemembran i sammensetning. Støtten er god, men indirekte: også kjernen har to membraner uten å ha vært en bakterie.</p><p><strong>B — eget sirkulært DNA.</strong> Vanlige organeller har ikke arvestoff i det hele tatt. At mitokondriet har sitt eget, og at det er ringformet og uten histoner slik bakteriekromosomer er, er vanskelig å forklare på noen annen måte enn at det en gang var en selvstendig organisme.</p><p><strong>C — egne ribosomer.</strong> Resten av cellen bruker 80S-ribosomer. At mitokondriet har sitt eget proteinapparat av bakterietype, og at antibiotika som er laget for å stoppe bakterier også påvirker det, peker samme vei.</p><p><strong>D — egen todeling.</strong> Cellen kan ikke bygge et nytt mitokondrium fra bunnen av; nye oppstår bare ved at eksisterende deler seg — akkurat som bakterier formerer seg.</p><p><strong>Sterkest?</strong> B er det sterkeste enkeltargumentet, særlig når man tar det ett skritt videre og sammenligner sekvensene. Da viser mitokondrie-DNA seg å ligne mest på DNA hos α-proteobakterier. Det er ikke bare en likhet i byggemåte, men et målbart slektskap. A alene ville vært for svakt, mens B, C og D til sammen beskriver en organell som fortsatt oppfører seg som en bakterie.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å skrive at prokaryote celler ikke har ribosomer. De har ribosomer, bare mindre (70S). Det de mangler, er cellekjerne og membranomsluttede organeller.",
       "Å tro at planteceller ikke har mitokondrier fordi de har kloroplaster. Planteceller har begge: kloroplastene lager næring i lyset, men mitokondriene må bryte den ned til ATP hele døgnet, også i røtter og om natten.",
@@ -85,7 +262,6 @@
       "Å blande sammen cellevegg og cellemembran. Alle celler har cellemembran. Cellevegg finnes hos planter (cellulose), sopp (kitin) og de fleste prokaryoter (peptidoglykan hos bakterier) — men aldri hos dyreceller.",
       "Å svare at endosymbioseteorien forklarer hvor cellekjernen kom fra. Teorien gjelder mitokondrier og kloroplaster; kjernens opprinnelse er en annen og langt mer usikker historie."
     ],
-
     "tips": [
       "Lag en tabell med tre kolonner — «bare plantecelle», «bare dyrecelle», «begge» — og fyll den ut uten å se i boka. Dette er den vanligste oppgavetypen på prøver om celler.",
       "Svar alltid i to ledd på struktur–funksjon-oppgaver. «Mange mitokondrier» gir lite uttelling; «mange mitokondrier fordi muskelcellen trenger mye ATP til sammentrekning» gir full.",
@@ -94,25 +270,68 @@
       "I en mikroskoperingsjournal vurderes du på framgangsmåte og feilkilder, ikke bare på tegningen. Skriv alltid ned forstørrelse, farging og hva du faktisk så — også luftbobler og andre artefakter."
     ]
   },
-
   "begreper": [
-    { "begrep": "Prokaryot celle", "forklaring": "Celle uten cellekjerne og uten membranomsluttede organeller. DNA-et ligger som en ring i nukleoidet. Bakterier og arker er prokaryote." },
-    { "begrep": "Eukaryot celle", "forklaring": "Celle med cellekjerne og membranomsluttede organeller. Protister, sopp, planter og dyr er eukaryote." },
-    { "begrep": "Nukleoid", "forklaring": "Området i en prokaryot celle der det ringformede kromosomet ligger. Det er ikke omgitt av noen membran." },
-    { "begrep": "Plasmid", "forklaring": "Liten ekstra DNA-ring hos mange bakterier, ofte med gener for antibiotikaresistens. Kan overføres mellom celler." },
-    { "begrep": "Domene", "forklaring": "Det øverste nivået i klassifiseringen av liv. De tre domenene er bakterier, arker og eukaryoter." },
-    { "begrep": "Arke", "forklaring": "Prokaryot organisme uten peptidoglykan i celleveggen og med eterbindinger i membranlipidene. Mange lever i ekstreme miljøer." },
-    { "begrep": "Peptidoglykan", "forklaring": "Nettverket av sukker og aminosyrer som gir bakteriers cellevegg styrke. Finnes bare hos bakterier, og er målet for penicillin." },
-    { "begrep": "Organell", "forklaring": "En avgrenset del av cellen med en bestemt oppgave, som regel omgitt av membran." },
-    { "begrep": "Endomembransystem", "forklaring": "Kjernemembran, ER, Golgi, blærer og cellemembran som henger sammen og frakter stoffer gjennom cellen." },
-    { "begrep": "Ribosom", "forklaring": "Partikkelen som setter sammen aminosyrer til protein. Finnes i alle celler: 70S hos prokaryoter, 80S hos eukaryoter." },
-    { "begrep": "Mitokondrie", "forklaring": "Organellen med dobbeltmembran der celleåndingen skjer og ATP lages. Har eget DNA og egne ribosomer." },
-    { "begrep": "Kloroplast", "forklaring": "Organellen i planter og alger der fotosyntesen skjer. Inneholder klorofyll i tylakoidene og har eget DNA." },
-    { "begrep": "Sentralvakuole", "forklaring": "Stor væskefylt blære i planteceller som lagrer stoffer og gir turgortrykk mot celleveggen slik at planten står oppreist." },
-    { "begrep": "Endosymbioseteorien", "forklaring": "Forklaringen på at mitokondrier og kloroplaster stammer fra frittlevende bakterier som ble tatt opp i en vertscelle og ble værende." },
-    { "begrep": "Oppløsningsevne", "forklaring": "Den minste avstanden mellom to punkter som fortsatt kan sees som to atskilte punkter. Ca. 0,2 µm for lysmikroskop." }
+    {
+      "begrep": "Prokaryot celle",
+      "forklaring": "Celle uten cellekjerne og uten membranomsluttede organeller. DNA-et ligger som en ring i nukleoidet. Bakterier og arker er prokaryote."
+    },
+    {
+      "begrep": "Eukaryot celle",
+      "forklaring": "Celle med cellekjerne og membranomsluttede organeller. Protister, sopp, planter og dyr er eukaryote."
+    },
+    {
+      "begrep": "Nukleoid",
+      "forklaring": "Området i en prokaryot celle der det ringformede kromosomet ligger. Det er ikke omgitt av noen membran."
+    },
+    {
+      "begrep": "Plasmid",
+      "forklaring": "Liten ekstra DNA-ring hos mange bakterier, ofte med gener for antibiotikaresistens. Kan overføres mellom celler."
+    },
+    {
+      "begrep": "Domene",
+      "forklaring": "Det øverste nivået i klassifiseringen av liv. De tre domenene er bakterier, arker og eukaryoter."
+    },
+    {
+      "begrep": "Arke",
+      "forklaring": "Prokaryot organisme uten peptidoglykan i celleveggen og med eterbindinger i membranlipidene. Mange lever i ekstreme miljøer."
+    },
+    {
+      "begrep": "Peptidoglykan",
+      "forklaring": "Nettverket av sukker og aminosyrer som gir bakteriers cellevegg styrke. Finnes bare hos bakterier, og er målet for penicillin."
+    },
+    {
+      "begrep": "Organell",
+      "forklaring": "En avgrenset del av cellen med en bestemt oppgave, som regel omgitt av membran."
+    },
+    {
+      "begrep": "Endomembransystem",
+      "forklaring": "Kjernemembran, ER, Golgi, blærer og cellemembran som henger sammen og frakter stoffer gjennom cellen."
+    },
+    {
+      "begrep": "Ribosom",
+      "forklaring": "Partikkelen som setter sammen aminosyrer til protein. Finnes i alle celler: 70S hos prokaryoter, 80S hos eukaryoter."
+    },
+    {
+      "begrep": "Mitokondrie",
+      "forklaring": "Organellen med dobbeltmembran der celleåndingen skjer og ATP lages. Har eget DNA og egne ribosomer."
+    },
+    {
+      "begrep": "Kloroplast",
+      "forklaring": "Organellen i planter og alger der fotosyntesen skjer. Inneholder klorofyll i tylakoidene og har eget DNA."
+    },
+    {
+      "begrep": "Sentralvakuole",
+      "forklaring": "Stor væskefylt blære i planteceller som lagrer stoffer og gir turgortrykk mot celleveggen slik at planten står oppreist."
+    },
+    {
+      "begrep": "Endosymbioseteorien",
+      "forklaring": "Forklaringen på at mitokondrier og kloroplaster stammer fra frittlevende bakterier som ble tatt opp i en vertscelle og ble værende."
+    },
+    {
+      "begrep": "Oppløsningsevne",
+      "forklaring": "Den minste avstanden mellom to punkter som fortsatt kan sees som to atskilte punkter. Ca. 0,2 µm for lysmikroskop."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hva er den avgjørende forskjellen mellom en prokaryot og en eukaryot celle?",
@@ -149,7 +368,12 @@
     },
     {
       "sporsmal": "Et mikroskop har okular på 10×, og du bruker 40×-objektivet. Hva er total forstørrelse?",
-      "alternativer": ["50×", "400×", "4000×", "40×"],
+      "alternativer": [
+        "50×",
+        "400×",
+        "4000×",
+        "40×"
+      ],
       "riktig": 1,
       "forklaring": "Total forstørrelse er okular ganger objektiv: $10 \\cdot 40 = 400$. Alternativ A kommer av å legge sammen i stedet for å gange, og alternativ D av å lese tallet rett av objektivet og glemme okularet. 4000× ville dessuten ikke gitt noe nytt å se: nyttig forstørrelse i et lysmikroskop stopper rundt 1000× på grunn av oppløsningsevnen, og alt over det er tom forstørrelse."
     },
@@ -177,13 +401,23 @@
     },
     {
       "sporsmal": "En kuleformet celle vokser slik at radien dobles. Hva skjer med forholdet mellom overflate og volum?",
-      "alternativer": ["Det dobles", "Det er uendret", "Det firedobles", "Det halveres"],
+      "alternativer": [
+        "Det dobles",
+        "Det er uendret",
+        "Det firedobles",
+        "Det halveres"
+      ],
       "riktig": 3,
       "forklaring": "Bruk $\\frac{O}{V} = \\frac{3}{r}$: dobles $r$, halveres forholdet. Regner du ut hver for seg: overflaten firedobles fordi den går med $r^2$, mens volumet åttedobles fordi det går med $r^3$, og $\\frac{4}{8} = \\frac{1}{2}$. Alternativ C er fristende hvis du bare tenker på overflaten og glemmer at volumet vokser enda raskere."
     },
     {
       "sporsmal": "Hvilken struktur finnes i alle celler — hos bakterier, arker, planter og dyr?",
-      "alternativer": ["Cellekjerne", "Ribosomer", "Mitokondrier", "Cellevegg"],
+      "alternativer": [
+        "Cellekjerne",
+        "Ribosomer",
+        "Mitokondrier",
+        "Cellevegg"
+      ],
       "riktig": 1,
       "forklaring": "Alle celler må lage protein, og det skjer på ribosomer. Kjerne og mitokondrier finnes bare hos eukaryoter. Cellevegg er nesten universelt utenom dyreriket — planter, sopp og de fleste prokaryoter har det — men dyreceller har det aldri, så «alle» blir feil."
     },
@@ -200,7 +434,12 @@
     },
     {
       "sporsmal": "Du ser på løkhudceller ved 100× total forstørrelse, og synsfeltet er 1,8 mm i diameter. Du bytter til 400×. Hvor stort blir synsfeltet da?",
-      "alternativer": ["0,45 mm", "1,8 mm", "7,2 mm", "0,18 mm"],
+      "alternativer": [
+        "0,45 mm",
+        "1,8 mm",
+        "7,2 mm",
+        "0,18 mm"
+      ],
       "riktig": 0,
       "forklaring": "Forstørrelsen firedobles, så diameteren blir fire ganger mindre: $1{,}8 \\cdot \\frac{100}{400} = 0{,}45$ mm. Alternativ C er hva du får hvis du ganger med 4 i stedet for å dele — men synsfeltet blir jo alltid mindre når du forstørrer mer, ikke større."
     },
@@ -216,23 +455,70 @@
       "forklaring": "Enzymer er proteiner, og proteiner som skal ut av cellen lages på ru ER og pakkes i Golgi. Alternativ C er det mest fristende feilsvaret, men glatt ER lager lipider og hormoner — ikke protein. Alternativ A kan utelukkes med én gang: en dyrecelle har verken kloroplaster eller sentralvakuole."
     }
   ],
-
   "flashcards": [
-    { "front": "Hva kjennetegner en prokaryot celle?", "bak": "Ingen cellekjerne og ingen membranomsluttede organeller. DNA-et ligger som en ring i nukleoidet. Bakterier og arker er prokaryote." },
-    { "front": "Hva har absolutt alle celler?", "bak": "Cellemembran, cytoplasma, ribosomer og DNA." },
-    { "front": "De tre domenene", "bak": "Bakterier, arker og eukaryoter. Inndelingen bygger på 16S rRNA-sekvenser, og arker og eukaryoter er nærmest beslektet." },
-    { "front": "Hva består bakteriers cellevegg av?", "bak": "Peptidoglykan (murein). Gram-positive har et tykt lag, gram-negative et tynt lag med en ytre membran utenpå." },
-    { "front": "Hva skiller arkenes membran fra bakterienes?", "bak": "Eterbindinger og forgrenede isoprenkjeder i stedet for esterbindinger og uforgrenede fettsyrer. Det gjør membranen mer motstandsdyktig mot varme og syre." },
-    { "front": "Cellekjernens oppgave", "bak": "Oppbevarer og beskytter DNA-et og styrer proteinsyntesen. Kjernelegemet (nukleolus) lager delene til ribosomene." },
-    { "front": "Ru ER kontra glatt ER", "bak": "Ru ER har ribosomer på utsiden og lager proteiner som skal ut av cellen eller inn i membraner. Glatt ER lager lipider og steroidhormoner, avgifter stoffer og lagrer kalsiumioner." },
-    { "front": "Hva gjør Golgi-apparatet?", "bak": "Modifiserer, sorterer og pakker proteiner. Blærer kommer inn på mottakssiden fra ER og forlater avsendersiden med adresse videre." },
-    { "front": "Mitokondriet", "bak": "Dobbeltmembran med indre membran foldet i cristae. Her skjer celleåndingen som lager ATP. Har eget sirkulært DNA og egne ribosomer av bakterietype." },
-    { "front": "Kloroplasten", "bak": "Dobbeltmembran, med tylakoider stablet i grana inne i stromaet. Klorofyllet fanger lysenergi til fotosyntesen. Har eget DNA." },
-    { "front": "Tre ting bare planteceller har", "bak": "Cellevegg av cellulose, kloroplaster og en stor sentralvakuole som gir turgortrykk." },
-    { "front": "Endosymbioseteorien i én setning", "bak": "Mitokondrier og kloroplaster stammer fra frittlevende bakterier som ble tatt opp i en større vertscelle og ble værende der." },
-    { "front": "Fire holdepunkter for endosymbioseteorien", "bak": "1) Dobbeltmembran. 2) Eget sirkulært DNA uten histoner. 3) Egne ribosomer av bakterietype. 4) Deler seg ved todeling uavhengig av cellen." },
-    { "front": "Total forstørrelse i lysmikroskop", "bak": "$M = M_{\\text{okular}} \\cdot M_{\\text{objektiv}}$. Et 10×-okular og et 40×-objektiv gir 400×." },
-    { "front": "Oppløsningsevne: lysmikroskop kontra elektronmikroskop", "bak": "Lysmikroskopet skiller punkter som ligger ca. 0,2 µm fra hverandre, og nyttig forstørrelse stopper rundt 1000×. Elektronmikroskopet kommer ned på nanometernivå." },
-    { "front": "Hvorfor er celler små?", "bak": "$\\frac{O}{V} = \\frac{3}{r}$ for en kuleformet celle. Jo større cellen blir, desto mindre overflate har den per volumenhet — og opptaket skjer gjennom overflaten." }
+    {
+      "front": "Hva kjennetegner en prokaryot celle?",
+      "bak": "Ingen cellekjerne og ingen membranomsluttede organeller. DNA-et ligger som en ring i nukleoidet. Bakterier og arker er prokaryote."
+    },
+    {
+      "front": "Hva har absolutt alle celler?",
+      "bak": "Cellemembran, cytoplasma, ribosomer og DNA."
+    },
+    {
+      "front": "De tre domenene",
+      "bak": "Bakterier, arker og eukaryoter. Inndelingen bygger på 16S rRNA-sekvenser, og arker og eukaryoter er nærmest beslektet."
+    },
+    {
+      "front": "Hva består bakteriers cellevegg av?",
+      "bak": "Peptidoglykan (murein). Gram-positive har et tykt lag, gram-negative et tynt lag med en ytre membran utenpå."
+    },
+    {
+      "front": "Hva skiller arkenes membran fra bakterienes?",
+      "bak": "Eterbindinger og forgrenede isoprenkjeder i stedet for esterbindinger og uforgrenede fettsyrer. Det gjør membranen mer motstandsdyktig mot varme og syre."
+    },
+    {
+      "front": "Cellekjernens oppgave",
+      "bak": "Oppbevarer og beskytter DNA-et og styrer proteinsyntesen. Kjernelegemet (nukleolus) lager delene til ribosomene."
+    },
+    {
+      "front": "Ru ER kontra glatt ER",
+      "bak": "Ru ER har ribosomer på utsiden og lager proteiner som skal ut av cellen eller inn i membraner. Glatt ER lager lipider og steroidhormoner, avgifter stoffer og lagrer kalsiumioner."
+    },
+    {
+      "front": "Hva gjør Golgi-apparatet?",
+      "bak": "Modifiserer, sorterer og pakker proteiner. Blærer kommer inn på mottakssiden fra ER og forlater avsendersiden med adresse videre."
+    },
+    {
+      "front": "Mitokondriet",
+      "bak": "Dobbeltmembran med indre membran foldet i cristae. Her skjer celleåndingen som lager ATP. Har eget sirkulært DNA og egne ribosomer av bakterietype."
+    },
+    {
+      "front": "Kloroplasten",
+      "bak": "Dobbeltmembran, med tylakoider stablet i grana inne i stromaet. Klorofyllet fanger lysenergi til fotosyntesen. Har eget DNA."
+    },
+    {
+      "front": "Tre ting bare planteceller har",
+      "bak": "Cellevegg av cellulose, kloroplaster og en stor sentralvakuole som gir turgortrykk."
+    },
+    {
+      "front": "Endosymbioseteorien i én setning",
+      "bak": "Mitokondrier og kloroplaster stammer fra frittlevende bakterier som ble tatt opp i en større vertscelle og ble værende der."
+    },
+    {
+      "front": "Fire holdepunkter for endosymbioseteorien",
+      "bak": "1) Dobbeltmembran. 2) Eget sirkulært DNA uten histoner. 3) Egne ribosomer av bakterietype. 4) Deler seg ved todeling uavhengig av cellen."
+    },
+    {
+      "front": "Total forstørrelse i lysmikroskop",
+      "bak": "$M = M_{\\text{okular}} \\cdot M_{\\text{objektiv}}$. Et 10×-okular og et 40×-objektiv gir 400×."
+    },
+    {
+      "front": "Oppløsningsevne: lysmikroskop kontra elektronmikroskop",
+      "bak": "Lysmikroskopet skiller punkter som ligger ca. 0,2 µm fra hverandre, og nyttig forstørrelse stopper rundt 1000×. Elektronmikroskopet kommer ned på nanometernivå."
+    },
+    {
+      "front": "Hvorfor er celler små?",
+      "bak": "$\\frac{O}{V} = \\frac{3}{r}$ for en kuleformet celle. Jo større cellen blir, desto mindre overflate har den per volumenhet — og opptaket skjer gjennom overflaten."
+    }
   ]
 }

@@ -3,7 +3,6 @@
   "nr": 3,
   "tittel": "Mekanisk energi",
   "intro": "Mekanisk energi handler om å regne på bevegelse uten å gå veien om krefter og akselerasjon — du følger energien i stedet. Med arbeid, kinetisk og potensiell energi, effekt og virkningsgrad løser du oppgaver som ellers ville vært svært tungvinte, og du får språket du trenger for energi i resten av Fysikk 1.",
-
   "kompakt": {
     "punkter": [
       "Arbeid er kraft ganger forflytning langs kraftretningen: $W = F s \\cos\\alpha$. Enheten er joule, $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}$.",
@@ -18,22 +17,107 @@
       "Virkningsgrad er $\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}}$. Den er aldri over 100 %, og resten blir tap — nesten alltid varme."
     ],
     "formler": [
-      { "navn": "Arbeid utført av en konstant kraft", "latex": "W = F \\, s \\, \\cos\\alpha" },
-      { "navn": "Kinetisk energi", "latex": "E_k = \\frac{1}{2}mv^{2}" },
-      { "navn": "Potensiell energi (tyngdeenergi)", "latex": "E_p = mgh" },
-      { "navn": "Arbeidssetningen", "latex": "W_{\\text{tot}} = \\Delta E_k = \\frac{1}{2}mv^{2} - \\frac{1}{2}mv_0^{2}" },
-      { "navn": "Arbeidet tyngdekraften gjør", "latex": "W_G = -\\Delta E_p = -mg\\,\\Delta h" },
-      { "navn": "Mekanisk energi", "latex": "E = E_k + E_p = \\frac{1}{2}mv^{2} + mgh" },
-      { "navn": "Bevaring av mekanisk energi", "latex": "\\frac{1}{2}mv_1^{2} + mgh_1 = \\frac{1}{2}mv_2^{2} + mgh_2" },
-      { "navn": "Fart etter fall fra høyden $h$ (fra ro, uten friksjon)", "latex": "v = \\sqrt{2gh}" },
-      { "navn": "Energitap til friksjon", "latex": "E_2 - E_1 = W_{\\text{friksjon}} < 0" },
-      { "navn": "Effekt", "latex": "P = \\frac{W}{t} = \\frac{\\Delta E}{\\Delta t}" },
-      { "navn": "Effekt av en kraft ved farten $v$", "latex": "P = F \\, v" },
-      { "navn": "Virkningsgrad", "latex": "\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}} = \\frac{P_{\\text{nyttig}}}{P_{\\text{tilført}}}" },
-      { "navn": "Enheter", "latex": "1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}, \\qquad 1\\,\\text{W} = 1\\,\\text{J/s}, \\qquad 1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}" }
-    ]
+      {
+        "navn": "Arbeid utført av en konstant kraft",
+        "latex": "W = F \\, s \\, \\cos\\alpha"
+      },
+      {
+        "navn": "Kinetisk energi",
+        "latex": "E_k = \\frac{1}{2}mv^{2}"
+      },
+      {
+        "navn": "Potensiell energi (tyngdeenergi)",
+        "latex": "E_p = mgh"
+      },
+      {
+        "navn": "Arbeidssetningen",
+        "latex": "W_{\\text{tot}} = \\Delta E_k = \\frac{1}{2}mv^{2} - \\frac{1}{2}mv_0^{2}"
+      },
+      {
+        "navn": "Arbeidet tyngdekraften gjør",
+        "latex": "W_G = -\\Delta E_p = -mg\\,\\Delta h"
+      },
+      {
+        "navn": "Mekanisk energi",
+        "latex": "E = E_k + E_p = \\frac{1}{2}mv^{2} + mgh"
+      },
+      {
+        "navn": "Bevaring av mekanisk energi",
+        "latex": "\\frac{1}{2}mv_1^{2} + mgh_1 = \\frac{1}{2}mv_2^{2} + mgh_2"
+      },
+      {
+        "navn": "Fart etter fall fra høyden $h$ (fra ro, uten friksjon)",
+        "latex": "v = \\sqrt{2gh}"
+      },
+      {
+        "navn": "Energitap til friksjon",
+        "latex": "E_2 - E_1 = W_{\\text{friksjon}} < 0"
+      },
+      {
+        "navn": "Effekt",
+        "latex": "P = \\frac{W}{t} = \\frac{\\Delta E}{\\Delta t}"
+      },
+      {
+        "navn": "Effekt av en kraft ved farten $v$",
+        "latex": "P = F \\, v"
+      },
+      {
+        "navn": "Virkningsgrad",
+        "latex": "\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}} = \\frac{P_{\\text{nyttig}}}{P_{\\text{tilført}}}"
+      },
+      {
+        "navn": "Enheter",
+        "latex": "1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}, \\qquad 1\\,\\text{W} = 1\\,\\text{J/s}, \\qquad 1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}"
+      }
+    ],
+    "figur": {
+      "type": "graf",
+      "tittel": "Fritt fall fra 20 m (1,0 kg)",
+      "forklaring": "Tyngdeenergien synker like mye som bevegelsesenergien vokser, så summen ligger flatt på 196 J hele veien ned. Der kurvene krysser, har gjenstanden falt 10 m, og halvparten av energien er blitt kinetisk.",
+      "xmin": 0,
+      "xmax": 20,
+      "ymin": 0,
+      "ymax": 230,
+      "xlabel": "s (m)",
+      "ylabel": "E (J)",
+      "kurver": [
+        {
+          "uttrykk": "9.81*x",
+          "navn": "Ek",
+          "farge": 1
+        },
+        {
+          "uttrykk": "9.81*(20-x)",
+          "navn": "Ep",
+          "farge": 2
+        }
+      ],
+      "linjer": [
+        {
+          "fra": [
+            0,
+            196.2
+          ],
+          "til": [
+            20,
+            196.2
+          ],
+          "navn": "E = Ek + Ep",
+          "farge": 3,
+          "stiplet": false,
+          "merkeplass": 0.34
+        }
+      ],
+      "punkter": [
+        {
+          "x": 10,
+          "y": 98.1,
+          "navn": "Ek = Ep",
+          "hjelpelinjer": true
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -50,7 +134,35 @@
       },
       {
         "tittel": "Bevaring av mekanisk energi",
-        "html": "<p>Summen av kinetisk og potensiell energi kaller vi den <strong>mekaniske energien</strong>:</p>$$E = E_k + E_p = \\frac{1}{2}mv^{2} + mgh$$<p>Er tyngdekraften den eneste kraften som gjør arbeid (normalkraft og snordrag på tvers gjør som kjent ingenting), er den mekaniske energien <strong>bevart</strong>. Energien flyttes bare mellom de to formene: går legemet nedover, blir $E_p$ gjort om til $E_k$, og går det oppover, skjer det motsatte. Dette gir den viktigste regnemodellen i kapittelet:</p>$$\\frac{1}{2}mv_1^{2} + mgh_1 = \\frac{1}{2}mv_2^{2} + mgh_2$$<p>Framgangsmåten er alltid den samme: velg nullnivå, velg to tilstander (1 og 2), skriv opp hva du kjenner i hver av dem, og løs likningen for det som mangler.</p><p>Slippes noe fra ro fra høyden $h$, blir $mgh = \\frac{1}{2}mv^{2}$. Massen forkortes bort på begge sider, og vi får</p>$$v = \\sqrt{2gh}$$<p>Farten er altså uavhengig av massen. Legg også merke til at bare høydeforskjellen betyr noe — <em>veien</em> ned har ingenting å si. En skiløper som starter i ro, får samme fart nederst i en bratt og en slak løype, så lenge høydeforskjellen er den samme og bakken er glatt.</p>"
+        "html": "<p>Summen av kinetisk og potensiell energi kaller vi den <strong>mekaniske energien</strong>:</p>$$E = E_k + E_p = \\frac{1}{2}mv^{2} + mgh$$<p>Er tyngdekraften den eneste kraften som gjør arbeid (normalkraft og snordrag på tvers gjør som kjent ingenting), er den mekaniske energien <strong>bevart</strong>. Energien flyttes bare mellom de to formene: går legemet nedover, blir $E_p$ gjort om til $E_k$, og går det oppover, skjer det motsatte. Dette gir den viktigste regnemodellen i kapittelet:</p>$$\\frac{1}{2}mv_1^{2} + mgh_1 = \\frac{1}{2}mv_2^{2} + mgh_2$$<p>Framgangsmåten er alltid den samme: velg nullnivå, velg to tilstander (1 og 2), skriv opp hva du kjenner i hver av dem, og løs likningen for det som mangler.</p><p>Slippes noe fra ro fra høyden $h$, blir $mgh = \\frac{1}{2}mv^{2}$. Massen forkortes bort på begge sider, og vi får</p>$$v = \\sqrt{2gh}$$<p>Farten er altså uavhengig av massen. Legg også merke til at bare høydeforskjellen betyr noe — <em>veien</em> ned har ingenting å si. En skiløper som starter i ro, får samme fart nederst i en bratt og en slak løype, så lenge høydeforskjellen er den samme og bakken er glatt.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik løser du en energioppgave",
+          "forklaring": "Steg 4 er det avgjørende: er friksjon eller luftmotstand med, får du ikke sette E₁ = E₂, men må bruke E₂ = E₁ + W. Legg merke til at ingen av stegene spør etter akselerasjon — det er nettopp derfor energimetoden blir kortere.",
+          "steg": [
+            {
+              "tekst": "Velg nullnivå og tegn det inn",
+              "note": "legg det i det laveste punktet"
+            },
+            {
+              "tekst": "Velg tilstand 1 og tilstand 2",
+              "note": "der du vet noe, og der du spør"
+            },
+            {
+              "tekst": "Skriv opp Ek og Ep i hver tilstand",
+              "note": "sett inn det du kjenner"
+            },
+            {
+              "tekst": "Sjekk hvilke krefter som gjør arbeid",
+              "note": "tyngdekraften alene: E bevart"
+            },
+            {
+              "tekst": "Sett E₁ = E₂ og løs for det ukjente",
+              "note": "massen forkortes ofte bort"
+            }
+          ]
+        }
       },
       {
         "tittel": "Når mekanisk energi ikke er bevart",
@@ -62,15 +174,102 @@
       },
       {
         "tittel": "Virkningsgrad",
-        "html": "<p>Ingen maskin gjør all energien den får tilført om til det vi ønsker. <strong>Virkningsgraden</strong> $\\eta$ (den greske bokstaven eta) forteller hvor stor andel som blir nyttig:</p>$$\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}} = \\frac{P_{\\text{nyttig}}}{P_{\\text{tilført}}}$$<p>Virkningsgraden er et forholdstall uten enhet, og den oppgis ofte i prosent. Fordi energien som kommer ut aldri kan være mer enn den som går inn, er $\\eta \\le 1$, altså høyst 100 %. Resten, andelen $1 - \\eta$, blir <strong>tap</strong> — nesten alltid termisk energi og litt lyd.</p><p>Noen typiske verdier: en elmotor 90–95 %, en bensinmotor 25–35 %, en gammeldags glødelampe rundt 5 %, et solcellepanel 15–22 %, og menneskekroppen omtrent 20–25 % når du sykler.</p><p>To regnegrep må du kunne begge veier:</p><ul><li>Kjenner du tilført og nyttig energi, finner du $\\eta$ ved å dele.</li><li>Kjenner du $\\eta$ og den nyttige energien, finner du tilført energi som $E_{\\text{tilført}} = \\frac{E_{\\text{nyttig}}}{\\eta}$.</li></ul><p>Pass på at brøken står rett vei: tilført er alltid det største tallet. Får du en virkningsgrad over 1, har du snudd brøken opp ned.</p>"
+        "html": "<p>Ingen maskin gjør all energien den får tilført om til det vi ønsker. <strong>Virkningsgraden</strong> $\\eta$ (den greske bokstaven eta) forteller hvor stor andel som blir nyttig:</p>$$\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}} = \\frac{P_{\\text{nyttig}}}{P_{\\text{tilført}}}$$<p>Virkningsgraden er et forholdstall uten enhet, og den oppgis ofte i prosent. Fordi energien som kommer ut aldri kan være mer enn den som går inn, er $\\eta \\le 1$, altså høyst 100 %. Resten, andelen $1 - \\eta$, blir <strong>tap</strong> — nesten alltid termisk energi og litt lyd.</p><p>Noen typiske verdier: en elmotor 90–95 %, en bensinmotor 25–35 %, en gammeldags glødelampe rundt 5 %, et solcellepanel 15–22 %, og menneskekroppen omtrent 20–25 % når du sykler.</p><p>To regnegrep må du kunne begge veier:</p><ul><li>Kjenner du tilført og nyttig energi, finner du $\\eta$ ved å dele.</li><li>Kjenner du $\\eta$ og den nyttige energien, finner du tilført energi som $E_{\\text{tilført}} = \\frac{E_{\\text{nyttig}}}{\\eta}$.</li></ul><p>Pass på at brøken står rett vei: tilført er alltid det største tallet. Får du en virkningsgrad over 1, har du snudd brøken opp ned.</p>",
+        "figur": {
+          "type": "stolper",
+          "tittel": "Typiske virkningsgrader",
+          "enhet": "η (%)",
+          "forklaring": "Søylehøyden er den andelen av tilført energi som blir nyttig — resten blir varme. Ingen søyle kan nå 100 %, og glødelampa på 5 % gir nitten ganger mer varme enn lys.",
+          "data": [
+            {
+              "navn": "Elmotor",
+              "verdi": 92
+            },
+            {
+              "navn": "Bensinmotor",
+              "verdi": 30
+            },
+            {
+              "navn": "Syklist",
+              "verdi": 22
+            },
+            {
+              "navn": "Solcelle",
+              "verdi": 18
+            },
+            {
+              "navn": "Glødelampe",
+              "verdi": 5
+            }
+          ]
+        }
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Arbeid fra flere krefter og arbeidssetningen",
         "oppgave": "<p>En kasse med masse $25\\,\\text{kg}$ står i ro på et vannrett gulv. Du trekker den $8{,}0\\,\\text{m}$ bortover med en snor som danner $30^\\circ$ med gulvet. Snordraget er $120\\,\\text{N}$, og friksjonstallet mellom kassa og gulvet er $0{,}20$.</p><ul><li>a) Hvor stort arbeid gjør snordraget?</li><li>b) Hvor stort arbeid gjør friksjonskraften?</li><li>c) Hvor stor fart har kassa etter de $8{,}0$ meterne?</li></ul>",
-        "losning": "<p><strong>a) Arbeidet fra snordraget.</strong> Bare komponenten langs bevegelsen gjør arbeid, så vi bruker $W = F s \\cos\\alpha$ med $\\alpha = 30^\\circ$ og $\\cos 30^\\circ = 0{,}866$:</p>$$W_F = 120\\,\\text{N}\\cdot 8{,}0\\,\\text{m}\\cdot 0{,}866 = 831\\,\\text{J}$$<p><strong>b) Arbeidet fra friksjonen.</strong> Først trenger vi normalkraften. Snora drar litt oppover med komponenten $F\\sin 30^\\circ$, så gulvet trenger ikke presse like hardt. Loddrett likevekt gir</p>$$N = mg - F\\sin 30^\\circ = 25\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 - 120\\,\\text{N}\\cdot 0{,}500$$$$N = 245{,}25\\,\\text{N} - 60{,}0\\,\\text{N} = 185{,}25\\,\\text{N}$$<p>Friksjonskraften blir</p>$$R = \\mu N = 0{,}20\\cdot 185{,}25\\,\\text{N} = 37{,}05\\,\\text{N}$$<p>Friksjonen peker motsatt vei av bevegelsen, altså er $\\alpha = 180^\\circ$ og $\\cos 180^\\circ = -1$:</p>$$W_R = -37{,}05\\,\\text{N}\\cdot 8{,}0\\,\\text{m} = -296\\,\\text{J}$$<p><strong>c) Sluttfarten.</strong> Tyngdekraften og normalkraften er loddrette, mens forflytningen er vannrett, så de gjør ikke arbeid. Totalt arbeid blir</p>$$W_{\\text{tot}} = 831\\,\\text{J} + \\left(-296\\,\\text{J}\\right) = 535\\,\\text{J}$$<p>Kassa starter i ro, så $v_0 = 0$, og arbeidssetningen gir</p>$$W_{\\text{tot}} = \\frac{1}{2}mv^{2} - 0 \\quad \\Rightarrow \\quad v = \\sqrt{\\frac{2W_{\\text{tot}}}{m}}$$$$v = \\sqrt{\\frac{2\\cdot 535\\,\\text{J}}{25\\,\\text{kg}}} = \\sqrt{42{,}8\\,\\text{m}^2/\\text{s}^2} = 6{,}5\\,\\text{m/s}$$<p>Legg merke til at vi aldri regnet ut akselerasjonen. Energimetoden går rett fra krefter til fart.</p>"
+        "losning": "<p><strong>a) Arbeidet fra snordraget.</strong> Bare komponenten langs bevegelsen gjør arbeid, så vi bruker $W = F s \\cos\\alpha$ med $\\alpha = 30^\\circ$ og $\\cos 30^\\circ = 0{,}866$:</p>$$W_F = 120\\,\\text{N}\\cdot 8{,}0\\,\\text{m}\\cdot 0{,}866 = 831\\,\\text{J}$$<p><strong>b) Arbeidet fra friksjonen.</strong> Først trenger vi normalkraften. Snora drar litt oppover med komponenten $F\\sin 30^\\circ$, så gulvet trenger ikke presse like hardt. Loddrett likevekt gir</p>$$N = mg - F\\sin 30^\\circ = 25\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 - 120\\,\\text{N}\\cdot 0{,}500$$$$N = 245{,}25\\,\\text{N} - 60{,}0\\,\\text{N} = 185{,}25\\,\\text{N}$$<p>Friksjonskraften blir</p>$$R = \\mu N = 0{,}20\\cdot 185{,}25\\,\\text{N} = 37{,}05\\,\\text{N}$$<p>Friksjonen peker motsatt vei av bevegelsen, altså er $\\alpha = 180^\\circ$ og $\\cos 180^\\circ = -1$:</p>$$W_R = -37{,}05\\,\\text{N}\\cdot 8{,}0\\,\\text{m} = -296\\,\\text{J}$$<p><strong>c) Sluttfarten.</strong> Tyngdekraften og normalkraften er loddrette, mens forflytningen er vannrett, så de gjør ikke arbeid. Totalt arbeid blir</p>$$W_{\\text{tot}} = 831\\,\\text{J} + \\left(-296\\,\\text{J}\\right) = 535\\,\\text{J}$$<p>Kassa starter i ro, så $v_0 = 0$, og arbeidssetningen gir</p>$$W_{\\text{tot}} = \\frac{1}{2}mv^{2} - 0 \\quad \\Rightarrow \\quad v = \\sqrt{\\frac{2W_{\\text{tot}}}{m}}$$$$v = \\sqrt{\\frac{2\\cdot 535\\,\\text{J}}{25\\,\\text{kg}}} = \\sqrt{42{,}8\\,\\text{m}^2/\\text{s}^2} = 6{,}5\\,\\text{m/s}$$<p>Legg merke til at vi aldri regnet ut akselerasjonen. Energimetoden går rett fra krefter til fart.</p>",
+        "figur": {
+          "type": "vektor",
+          "tittel": "Snordraget, forflytningen og friksjonen",
+          "forklaring": "Vinkelen i W = F s cos α er vinkelen mellom kraftpila på 120 N og forflytningspila: bare den delen av F som ligger langs s, gjør arbeid. Friksjonen R er tegnet i samme målestokk som F og peker motsatt vei av s, så arbeidet fra den blir negativt. Tyngdekraften og normalkraften er ikke tegnet inn — de står normalt på s og gjør ikke arbeid.",
+          "xmin": -1.15,
+          "xmax": 3.15,
+          "ymin": -1.04,
+          "ymax": 1.72,
+          "rutenett": false,
+          "kropp": {
+            "x": 0,
+            "y": 0,
+            "form": "boks"
+          },
+          "vektorer": [
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                1.732,
+                1.0
+              ],
+              "navn": "120 N",
+              "farge": 1
+            },
+            {
+              "fra": [
+                0,
+                0
+              ],
+              "til": [
+                2.9,
+                0
+              ],
+              "navn": "s = 8,0 m",
+              "farge": 2
+            },
+            {
+              "fra": [
+                -0.31,
+                0
+              ],
+              "til": [
+                -0.928,
+                0
+              ],
+              "navn": "R = 37 N",
+              "farge": 3
+            }
+          ],
+          "vinkel": {
+            "mellom": [
+              0,
+              1
+            ],
+            "navn": "30°"
+          }
+        }
       },
       {
         "tittel": "Berg-og-dalbane med og uten friksjon",
@@ -88,7 +287,6 @@
         "losning": "<p><strong>a)</strong> En stigning på $6{,}0\\,\\%$ betyr $6{,}0\\,\\text{m}$ opp per $100\\,\\text{m}$. Vinkelen er så liten at forskjellen mellom veilengden og den vannrette avstanden kan neglisjeres, så</p>$$h = 0{,}060\\cdot 1800\\,\\text{m} = 108\\,\\text{m}$$<p><strong>b)</strong> Vi ser bort fra luftmotstand og rullemotstand. Farten er konstant, så all energien syklisten leverer, går til å øke den potensielle energien:</p>$$W = mgh = 78\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 108\\,\\text{m} = 82\\,639\\,\\text{J} \\approx 82{,}6\\,\\text{kJ}$$<p><strong>c)</strong> Først gjør vi om tida til sekunder: $t = 9{,}0\\,\\text{min} = 9{,}0\\cdot 60\\,\\text{s} = 540\\,\\text{s}$. Da blir</p>$$P = \\frac{W}{t} = \\frac{82\\,639\\,\\text{J}}{540\\,\\text{s}} = 153\\,\\text{W}$$<p>Kontroll med $P = Fv$: den kraften syklisten må overvinne langs veien, er</p>$$F = \\frac{W}{s} = \\frac{82\\,639\\,\\text{J}}{1800\\,\\text{m}} = 45{,}9\\,\\text{N}$$<p>Farten er $v = \\frac{1800\\,\\text{m}}{540\\,\\text{s}} = 3{,}33\\,\\text{m/s}$, altså $12\\,\\text{km/h}$, og dermed</p>$$P = 45{,}9\\,\\text{N}\\cdot 3{,}33\\,\\text{m/s} = 153\\,\\text{W}$$<p><strong>d)</strong> Her går vi baklengs gjennom virkningsgraden. Det nyttige er $82{,}6\\,\\text{kJ}$, og $\\eta = 0{,}22$:</p>$$E_{\\text{tilført}} = \\frac{E_{\\text{nyttig}}}{\\eta} = \\frac{82{,}6\\,\\text{kJ}}{0{,}22} = 376\\,\\text{kJ}$$<p>Kroppen må altså omsette omtrent $376\\,\\text{kJ}$, mer enn fire ganger det nyttige arbeidet. Resten blir kroppsvarme, og det er derfor du blir svett i motbakke. Omregnet til matkalorier blir det $\\frac{376\\,\\text{kJ}}{4{,}184\\,\\text{kJ/kcal}} \\approx 90\\,\\text{kcal}$.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å glemme $\\cos\\alpha$ når kraften peker skrått. Trekker du en slede med en snor i $40^\\circ$, er det bare $F\\cos 40^\\circ$ som gjør arbeid — ikke hele snordraget.",
       "Å bruke lengden langs skråplanet eller bakken som $h$ i $mgh$. $h$ er alltid den loddrette høydeforskjellen, så du må gange med $\\sin$ til helningsvinkelen.",
@@ -97,7 +295,6 @@
       "Å blande effekt og energi. Watt er joule per sekund, så «motoren gjorde 5 kW arbeid» er meningsløst — og kWh er en energienhet, ikke en effekt.",
       "Å snu brøken i virkningsgraden, slik at svaret blir over 100 %, eller å regne $\\eta$ som tapet delt på det tilførte. Nyttig energi skal alltid stå i telleren."
     ],
-
     "tips": [
       "Tegn figur og merk nullnivået før du skriver en eneste likning. Legg nullnivået i det laveste punktet, så blir $E_p = 0$ der og likningen kortere.",
       "Spør deg hva oppgaven handler om: er det bare fart, høyde og strekning mellom to tilstander, er energimetoden raskest. Trenger du akselerasjonen eller tida underveis, må du bruke bevegelseslikningene — men merk at effektoppgaver er energioppgaver selv om tida er med. Energimetoden virker også når kraften eller banen ikke er konstant, og der stopper bevegelseslikningene.",
@@ -106,77 +303,165 @@
       "Bruk $g = 9{,}81\\,\\text{m/s}^2$ hvis ikke annet er oppgitt, regn med fulle desimaler underveis, og rund av til riktig antall gjeldende siffer først i svaret."
     ]
   },
-
   "begreper": [
-    { "begrep": "Arbeid", "forklaring": "Energioverføringen når en kraft flytter noe: $W = F s \\cos\\alpha$. Uten forflytning er arbeidet null, uansett hvor stor kraften er." },
-    { "begrep": "Joule", "forklaring": "SI-enheten for energi og arbeid. $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m} = 1\\,\\text{kg}\\,\\text{m}^2/\\text{s}^2$." },
-    { "begrep": "Negativt arbeid", "forklaring": "Arbeid fra en kraft som har en komponent mot bevegelsesretningen, som friksjon. Kraften tar energi ut av systemet og bremser." },
-    { "begrep": "Kinetisk energi", "forklaring": "Energien et legeme har på grunn av farten: $E_k = \\frac{1}{2}mv^2$. Dobbel fart gir fire ganger så mye." },
-    { "begrep": "Potensiell energi", "forklaring": "Lagret energi som skyldes posisjonen. I dette kapittelet tyngdeenergien $E_p = mgh$." },
-    { "begrep": "Nullnivå", "forklaring": "Det høydenivået du selv velger som $h = 0$ når du regner $E_p$. Bare høydeforskjeller har fysisk betydning." },
-    { "begrep": "Mekanisk energi", "forklaring": "Summen av kinetisk og potensiell energi: $E = E_k + E_p$." },
-    { "begrep": "Arbeidssetningen", "forklaring": "Totalt arbeid fra alle krefter er lik endringen i kinetisk energi: $W_{\\text{tot}} = \\Delta E_k$." },
-    { "begrep": "Bevaring av mekanisk energi", "forklaring": "Gjør bare tyngdekraften arbeid, er $E_k + E_p$ konstant gjennom hele bevegelsen." },
-    { "begrep": "Energiloven", "forklaring": "Den totale energien i et lukket system er konstant. Energi kan bare gå fra én form til en annen, aldri bli skapt eller forsvinne." },
-    { "begrep": "Termisk energi", "forklaring": "Den indre energien i et stoff, knyttet til den uordnede bevegelsen til partiklene. Friksjon gjør mekanisk energi om til termisk energi." },
-    { "begrep": "Energikvalitet", "forklaring": "Et mål på hvor lett en energiform kan gjøres om til noe nyttig. Mekanisk og elektrisk energi har høy kvalitet, spredt varme lav." },
-    { "begrep": "Effekt", "forklaring": "Energioverføring per tid: $P = \\frac{W}{t}$, målt i watt. For en kraft langs bevegelsen er $P = Fv$." },
-    { "begrep": "Watt", "forklaring": "SI-enheten for effekt. $1\\,\\text{W} = 1\\,\\text{J/s}$." },
-    { "begrep": "Virkningsgrad", "forklaring": "Andelen av tilført energi som blir nyttig: $\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}}$. Alltid mellom 0 og 1." }
+    {
+      "begrep": "Arbeid",
+      "forklaring": "Energioverføringen når en kraft flytter noe: $W = F s \\cos\\alpha$. Uten forflytning er arbeidet null, uansett hvor stor kraften er."
+    },
+    {
+      "begrep": "Joule",
+      "forklaring": "SI-enheten for energi og arbeid. $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m} = 1\\,\\text{kg}\\,\\text{m}^2/\\text{s}^2$."
+    },
+    {
+      "begrep": "Negativt arbeid",
+      "forklaring": "Arbeid fra en kraft som har en komponent mot bevegelsesretningen, som friksjon. Kraften tar energi ut av systemet og bremser."
+    },
+    {
+      "begrep": "Kinetisk energi",
+      "forklaring": "Energien et legeme har på grunn av farten: $E_k = \\frac{1}{2}mv^2$. Dobbel fart gir fire ganger så mye."
+    },
+    {
+      "begrep": "Potensiell energi",
+      "forklaring": "Lagret energi som skyldes posisjonen. I dette kapittelet tyngdeenergien $E_p = mgh$."
+    },
+    {
+      "begrep": "Nullnivå",
+      "forklaring": "Det høydenivået du selv velger som $h = 0$ når du regner $E_p$. Bare høydeforskjeller har fysisk betydning."
+    },
+    {
+      "begrep": "Mekanisk energi",
+      "forklaring": "Summen av kinetisk og potensiell energi: $E = E_k + E_p$."
+    },
+    {
+      "begrep": "Arbeidssetningen",
+      "forklaring": "Totalt arbeid fra alle krefter er lik endringen i kinetisk energi: $W_{\\text{tot}} = \\Delta E_k$."
+    },
+    {
+      "begrep": "Bevaring av mekanisk energi",
+      "forklaring": "Gjør bare tyngdekraften arbeid, er $E_k + E_p$ konstant gjennom hele bevegelsen."
+    },
+    {
+      "begrep": "Energiloven",
+      "forklaring": "Den totale energien i et lukket system er konstant. Energi kan bare gå fra én form til en annen, aldri bli skapt eller forsvinne."
+    },
+    {
+      "begrep": "Termisk energi",
+      "forklaring": "Den indre energien i et stoff, knyttet til den uordnede bevegelsen til partiklene. Friksjon gjør mekanisk energi om til termisk energi."
+    },
+    {
+      "begrep": "Energikvalitet",
+      "forklaring": "Et mål på hvor lett en energiform kan gjøres om til noe nyttig. Mekanisk og elektrisk energi har høy kvalitet, spredt varme lav."
+    },
+    {
+      "begrep": "Effekt",
+      "forklaring": "Energioverføring per tid: $P = \\frac{W}{t}$, målt i watt. For en kraft langs bevegelsen er $P = Fv$."
+    },
+    {
+      "begrep": "Watt",
+      "forklaring": "SI-enheten for effekt. $1\\,\\text{W} = 1\\,\\text{J/s}$."
+    },
+    {
+      "begrep": "Virkningsgrad",
+      "forklaring": "Andelen av tilført energi som blir nyttig: $\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}}$. Alltid mellom 0 og 1."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "En kasse skyves $4{,}0\\,\\text{m}$ bortover et vannrett gulv med en vannrett kraft på $25\\,\\text{N}$. Hvor stort arbeid gjør kraften?",
-      "alternativer": ["$6{,}3\\,\\text{J}$", "$100\\,\\text{J}$", "$100\\,\\text{W}$", "$29\\,\\text{J}$"],
+      "alternativer": [
+        "$6{,}3\\,\\text{J}$",
+        "$100\\,\\text{J}$",
+        "$100\\,\\text{W}$",
+        "$29\\,\\text{J}$"
+      ],
       "riktig": 1,
       "forklaring": "Kraften peker samme vei som forflytningen, så $\\alpha = 0$ og $W = F s = 25\\,\\text{N}\\cdot 4{,}0\\,\\text{m} = 100\\,\\text{J}$. Alternativet $100\\,\\text{W}$ har riktig tall, men watt er effekt (joule per sekund) — her er det ikke oppgitt noen tid i det hele tatt. $6{,}3\\,\\text{J}$ kommer av å dele istedenfor å gange."
     },
     {
       "sporsmal": "Du bærer en sekk på $12\\,\\text{kg}$ vannrett bortover et flatt gulv i $20\\,\\text{m}$ med konstant fart. Hvor stort arbeid gjør den løftende kraften din på sekken?",
-      "alternativer": ["$0\\,\\text{J}$", "$240\\,\\text{J}$", "$2354\\,\\text{J}$", "$118\\,\\text{J}$"],
+      "alternativer": [
+        "$0\\,\\text{J}$",
+        "$240\\,\\text{J}$",
+        "$2354\\,\\text{J}$",
+        "$118\\,\\text{J}$"
+      ],
       "riktig": 0,
       "forklaring": "Kraften du holder sekken med, peker rett opp, mens forflytningen er vannrett. Vinkelen er $90^\\circ$, og $\\cos 90^\\circ = 0$, så arbeidet er null. Det fristende svaret $2354\\,\\text{J}$ er $mgs = 12\\cdot 9{,}81\\cdot 20$, altså tyngden ganget med den vannrette strekningen — men $mg$ og $s$ står normalt på hverandre, og da får du ikke gange dem sammen."
     },
     {
       "sporsmal": "En bil dobler farten fra $20\\,\\text{km/h}$ til $40\\,\\text{km/h}$. Hva skjer med den kinetiske energien?",
-      "alternativer": ["Den blir dobbelt så stor", "Den øker med 50 %", "Den blir fire ganger så stor", "Den blir $\\sqrt{2}$ ganger så stor"],
+      "alternativer": [
+        "Den blir dobbelt så stor",
+        "Den øker med 50 %",
+        "Den blir fire ganger så stor",
+        "Den blir $\\sqrt{2}$ ganger så stor"
+      ],
       "riktig": 2,
       "forklaring": "I $E_k = \\frac{1}{2}mv^2$ er farten kvadrert, så dobler du $v$, blir energien $2^2 = 4$ ganger så stor. At den «blir dobbelt så stor» er den klassiske feilen — det ville stemt hvis farten sto i første potens, slik den gjør i bevegelsesmengden $mv$."
     },
     {
       "sporsmal": "En ball med masse $0{,}50\\,\\text{kg}$ er $3{,}0\\,\\text{m}$ over bakken og har farten $4{,}0\\,\\text{m/s}$. Hvor stor er den mekaniske energien med bakken som nullnivå?",
-      "alternativer": ["$4{,}0\\,\\text{J}$", "$14{,}7\\,\\text{J}$", "$22{,}7\\,\\text{J}$", "$18{,}7\\,\\text{J}$"],
+      "alternativer": [
+        "$4{,}0\\,\\text{J}$",
+        "$14{,}7\\,\\text{J}$",
+        "$22{,}7\\,\\text{J}$",
+        "$18{,}7\\,\\text{J}$"
+      ],
       "riktig": 3,
       "forklaring": "$E_p = mgh = 0{,}50\\cdot 9{,}81\\cdot 3{,}0 = 14{,}7\\,\\text{J}$ og $E_k = \\frac{1}{2}mv^2 = 0{,}5\\cdot 0{,}50\\cdot 4{,}0^2 = 4{,}0\\,\\text{J}$, til sammen $18{,}7\\,\\text{J}$. Svaret $22{,}7\\,\\text{J}$ får du hvis du glemmer $\\frac{1}{2}$ og regner $E_k = mv^2 = 8{,}0\\,\\text{J}$."
     },
     {
       "sporsmal": "En pendelkule slippes fra ro. Hvor i svingen er den kinetiske energien størst?",
-      "alternativer": ["Øverst, der den slippes", "Midtveis mellom øverste og nederste punkt", "Like stor hele veien", "I det laveste punktet i banen"],
+      "alternativer": [
+        "Øverst, der den slippes",
+        "Midtveis mellom øverste og nederste punkt",
+        "Like stor hele veien",
+        "I det laveste punktet i banen"
+      ],
       "riktig": 3,
       "forklaring": "Den mekaniske energien $E_k + E_p$ er tilnærmet konstant. Der $E_p = mgh$ er minst, altså i det laveste punktet, må $E_k$ være størst. Øverst er kula i ro, så der er $E_k = 0$ — det er det motsatte av svaret. At energien er «like stor hele veien» gjelder den mekaniske energien i alt, ikke den kinetiske delen alene."
     },
     {
       "sporsmal": "En stein slippes fra ro fra $20\\,\\text{m}$ høyde. Hvor stor er farten når steinen er $5{,}0\\,\\text{m}$ over bakken? Se bort fra luftmotstand.",
-      "alternativer": ["$9{,}9\\,\\text{m/s}$", "$12\\,\\text{m/s}$", "$17\\,\\text{m/s}$", "$20\\,\\text{m/s}$"],
+      "alternativer": [
+        "$9{,}9\\,\\text{m/s}$",
+        "$12\\,\\text{m/s}$",
+        "$17\\,\\text{m/s}$",
+        "$20\\,\\text{m/s}$"
+      ],
       "riktig": 2,
       "forklaring": "Steinen har falt $20\\,\\text{m} - 5{,}0\\,\\text{m} = 15\\,\\text{m}$, så $v = \\sqrt{2g\\,\\Delta h} = \\sqrt{2\\cdot 9{,}81\\cdot 15} = 17\\,\\text{m/s}$. Svaret $9{,}9\\,\\text{m/s}$ kommer av å sette inn $5{,}0\\,\\text{m}$ (høyden over bakken) og $20\\,\\text{m/s}$ av å sette inn hele $20\\,\\text{m}$. Det er alltid fallhøyden — høydeforskjellen — som skal inn."
     },
     {
       "sporsmal": "En kloss glir nedover et skråplan. Hvilken av kreftene på klossen gjør ikke arbeid?",
-      "alternativer": ["Tyngdekraften", "Normalkraften", "Friksjonskraften", "Alle tre gjør arbeid"],
+      "alternativer": [
+        "Tyngdekraften",
+        "Normalkraften",
+        "Friksjonskraften",
+        "Alle tre gjør arbeid"
+      ],
       "riktig": 1,
       "forklaring": "Normalkraften står alltid normalt på underlaget og dermed på bevegelsen, så $\\alpha = 90^\\circ$ og $W = Fs\\cos 90^\\circ = 0$. Tyngdekraften gjør positivt arbeid (klossen går nedover), og friksjonen gjør negativt arbeid. At normalkraften er stor, betyr ikke at den overfører energi — retningen avgjør."
     },
     {
       "sporsmal": "En motor gjør $60\\,\\text{kJ}$ arbeid i løpet av $40\\,\\text{s}$. Hvor stor er effekten?",
-      "alternativer": ["$2{,}4\\,\\text{kW}$", "$0{,}67\\,\\text{kW}$", "$1500\\,\\text{kJ}$", "$1{,}5\\,\\text{kW}$"],
+      "alternativer": [
+        "$2{,}4\\,\\text{kW}$",
+        "$0{,}67\\,\\text{kW}$",
+        "$1500\\,\\text{kJ}$",
+        "$1{,}5\\,\\text{kW}$"
+      ],
       "riktig": 3,
       "forklaring": "$P = \\frac{W}{t} = \\frac{60\\,000\\,\\text{J}}{40\\,\\text{s}} = 1500\\,\\text{W} = 1{,}5\\,\\text{kW}$. Alternativet $2{,}4\\,\\text{kW}$ kommer av å gange $60\\cdot 40$ istedenfor å dele, og $1500\\,\\text{kJ}$ har riktig tall men gal enhet — kJ måler energi, ikke effekt."
     },
     {
       "sporsmal": "En pumpe tar opp $2{,}0\\,\\text{kW}$ elektrisk effekt og gir $1{,}4\\,\\text{kW}$ nyttig effekt. Hva er virkningsgraden?",
-      "alternativer": ["$30\\,\\%$", "$70\\,\\%$", "$140\\,\\%$", "$0{,}6\\,\\text{kW}$"],
+      "alternativer": [
+        "$30\\,\\%$",
+        "$70\\,\\%$",
+        "$140\\,\\%$",
+        "$0{,}6\\,\\text{kW}$"
+      ],
       "riktig": 1,
       "forklaring": "$\\eta = \\frac{P_{\\text{nyttig}}}{P_{\\text{tilført}}} = \\frac{1{,}4}{2{,}0} = 0{,}70 = 70\\,\\%$. Svaret $30\\,\\%$ er tapet, ikke virkningsgraden, og $140\\,\\%$ kommer av å snu brøken ($\\frac{2{,}0}{1{,}4} \\approx 1{,}43$). En virkningsgrad over 100 % er alltid et tegn på at brøken står opp ned."
     },
@@ -214,23 +499,70 @@
       "forklaring": "Ved konstant fart er drivkraften like stor som motstanden, og $P = Fv = 600\\,\\text{N}\\cdot 25\\,\\text{m/s} = 15\\,000\\,\\text{W} = 15\\,\\text{kW}$. Det fristende $0\\,\\text{W}$ bygger på at $\\Delta E_k = 0$ — det er riktig at den kinetiske energien ikke endrer seg, men motoren må hele tiden erstatte den energien friksjon og luftmotstand tar."
     }
   ],
-
   "flashcards": [
-    { "front": "Arbeid utført av en konstant kraft", "bak": "$W = F s \\cos\\alpha$, der $\\alpha$ er vinkelen mellom kraften og forflytningen. Enhet: joule." },
-    { "front": "Når gjør en kraft ikke arbeid?", "bak": "Når det ikke er noen forflytning, eller når kraften står normalt på bevegelsen ($\\cos 90^\\circ = 0$), som normalkraften." },
-    { "front": "$1\\,\\text{J} = ?$", "bak": "$1\\,\\text{N}\\cdot\\text{m} = 1\\,\\text{kg}\\,\\text{m}^2/\\text{s}^2$" },
-    { "front": "Kinetisk energi", "bak": "$E_k = \\frac{1}{2}mv^2$ — dobler du farten, blir energien fire ganger så stor." },
-    { "front": "Potensiell energi (tyngdeenergi)", "bak": "$E_p = mgh$, der $h$ er den loddrette høyden over et selvvalgt nullnivå." },
-    { "front": "Arbeidssetningen", "bak": "$W_{\\text{tot}} = \\Delta E_k = \\frac{1}{2}mv^2 - \\frac{1}{2}mv_0^2$ — nettoarbeidet fra alle krefter er lik endringen i kinetisk energi." },
-    { "front": "Mekanisk energi", "bak": "$E = E_k + E_p = \\frac{1}{2}mv^2 + mgh$" },
-    { "front": "Når er mekanisk energi bevart?", "bak": "Når tyngdekraften er den eneste kraften som gjør arbeid, altså ingen friksjon eller luftmotstand. Da er $E_1 = E_2$." },
-    { "front": "Likningen for bevaring av mekanisk energi", "bak": "$\\frac{1}{2}mv_1^2 + mgh_1 = \\frac{1}{2}mv_2^2 + mgh_2$" },
-    { "front": "Fart etter å ha falt høyden $h$ fra ro", "bak": "$v = \\sqrt{2gh}$ når vi ser bort fra friksjon og luftmotstand — uavhengig av massen og av veien ned." },
-    { "front": "Hva skjer med mekanisk energi når det er friksjon?", "bak": "Den avtar: $E_2 = E_1 + W_{\\text{friksjon}}$, der friksjonsarbeidet er negativt. Tapet blir termisk energi." },
-    { "front": "Effekt", "bak": "$P = \\frac{W}{t} = \\frac{\\Delta E}{\\Delta t}$, målt i watt. $1\\,\\text{W} = 1\\,\\text{J/s}$." },
-    { "front": "Effekt uttrykt ved kraft og fart", "bak": "$P = F v$ når kraften virker langs bevegelsen. Nyttig ved konstant fart." },
-    { "front": "$1\\,\\text{kWh}$ i joule", "bak": "$1\\,\\text{kWh} = 1000\\,\\text{W}\\cdot 3600\\,\\text{s} = 3{,}6\\cdot 10^6\\,\\text{J} = 3{,}6\\,\\text{MJ}$" },
-    { "front": "Virkningsgrad", "bak": "$\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}} = \\frac{P_{\\text{nyttig}}}{P_{\\text{tilført}}}$ — alltid $\\le 1$. Resten er tap, oftest varme." },
-    { "front": "Hvordan finner du tilført energi når du kjenner $\\eta$?", "bak": "$E_{\\text{tilført}} = \\frac{E_{\\text{nyttig}}}{\\eta}$ — du deler på virkningsgraden, siden det tilførte alltid er størst." }
+    {
+      "front": "Arbeid utført av en konstant kraft",
+      "bak": "$W = F s \\cos\\alpha$, der $\\alpha$ er vinkelen mellom kraften og forflytningen. Enhet: joule."
+    },
+    {
+      "front": "Når gjør en kraft ikke arbeid?",
+      "bak": "Når det ikke er noen forflytning, eller når kraften står normalt på bevegelsen ($\\cos 90^\\circ = 0$), som normalkraften."
+    },
+    {
+      "front": "$1\\,\\text{J} = ?$",
+      "bak": "$1\\,\\text{N}\\cdot\\text{m} = 1\\,\\text{kg}\\,\\text{m}^2/\\text{s}^2$"
+    },
+    {
+      "front": "Kinetisk energi",
+      "bak": "$E_k = \\frac{1}{2}mv^2$ — dobler du farten, blir energien fire ganger så stor."
+    },
+    {
+      "front": "Potensiell energi (tyngdeenergi)",
+      "bak": "$E_p = mgh$, der $h$ er den loddrette høyden over et selvvalgt nullnivå."
+    },
+    {
+      "front": "Arbeidssetningen",
+      "bak": "$W_{\\text{tot}} = \\Delta E_k = \\frac{1}{2}mv^2 - \\frac{1}{2}mv_0^2$ — nettoarbeidet fra alle krefter er lik endringen i kinetisk energi."
+    },
+    {
+      "front": "Mekanisk energi",
+      "bak": "$E = E_k + E_p = \\frac{1}{2}mv^2 + mgh$"
+    },
+    {
+      "front": "Når er mekanisk energi bevart?",
+      "bak": "Når tyngdekraften er den eneste kraften som gjør arbeid, altså ingen friksjon eller luftmotstand. Da er $E_1 = E_2$."
+    },
+    {
+      "front": "Likningen for bevaring av mekanisk energi",
+      "bak": "$\\frac{1}{2}mv_1^2 + mgh_1 = \\frac{1}{2}mv_2^2 + mgh_2$"
+    },
+    {
+      "front": "Fart etter å ha falt høyden $h$ fra ro",
+      "bak": "$v = \\sqrt{2gh}$ når vi ser bort fra friksjon og luftmotstand — uavhengig av massen og av veien ned."
+    },
+    {
+      "front": "Hva skjer med mekanisk energi når det er friksjon?",
+      "bak": "Den avtar: $E_2 = E_1 + W_{\\text{friksjon}}$, der friksjonsarbeidet er negativt. Tapet blir termisk energi."
+    },
+    {
+      "front": "Effekt",
+      "bak": "$P = \\frac{W}{t} = \\frac{\\Delta E}{\\Delta t}$, målt i watt. $1\\,\\text{W} = 1\\,\\text{J/s}$."
+    },
+    {
+      "front": "Effekt uttrykt ved kraft og fart",
+      "bak": "$P = F v$ når kraften virker langs bevegelsen. Nyttig ved konstant fart."
+    },
+    {
+      "front": "$1\\,\\text{kWh}$ i joule",
+      "bak": "$1\\,\\text{kWh} = 1000\\,\\text{W}\\cdot 3600\\,\\text{s} = 3{,}6\\cdot 10^6\\,\\text{J} = 3{,}6\\,\\text{MJ}$"
+    },
+    {
+      "front": "Virkningsgrad",
+      "bak": "$\\eta = \\frac{E_{\\text{nyttig}}}{E_{\\text{tilført}}} = \\frac{P_{\\text{nyttig}}}{P_{\\text{tilført}}}$ — alltid $\\le 1$. Resten er tap, oftest varme."
+    },
+    {
+      "front": "Hvordan finner du tilført energi når du kjenner $\\eta$?",
+      "bak": "$E_{\\text{tilført}} = \\frac{E_{\\text{nyttig}}}{\\eta}$ — du deler på virkningsgraden, siden det tilførte alltid er størst."
+    }
   ]
 }

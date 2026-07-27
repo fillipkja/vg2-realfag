@@ -3,7 +3,6 @@
   "nr": 7,
   "tittel": "Atomfysikk",
   "intro": "Atomfysikk handler om hvordan atomer tar opp og sender ut energi. Nøkkelen er at et atom bare kan ha bestemte energier, og at lys kommer i porsjoner — fotoner. Det forklarer hvorfor hvert grunnstoff har sitt eget stripete spektrum, og hvorfor vi kan si hva en fjern stjerne består av bare ved å se på lyset fra den.",
-
   "kompakt": {
     "punkter": [
       "Bohrs modell: elektronet i et atom kan bare ha bestemte, kvantiserte energier. Så lenge atomet står i et slikt energinivå, sender det ikke ut stråling.",
@@ -18,20 +17,105 @@
       "Et glødende fast stoff eller en tett gass gir et sammenhengende spektrum. At tynne gasser i stedet gir linjespektre, er selve beviset for at energinivåene er kvantiserte."
     ],
     "formler": [
-      { "navn": "Fotonenergi", "latex": "E = hf = \\frac{hc}{\\lambda}" },
-      { "navn": "Planckkonstanten", "latex": "h = 6{,}63\\cdot 10^{-34}\\,\\text{J}\\cdot\\text{s}" },
-      { "navn": "Sammenheng fart, frekvens og bølgelengde", "latex": "c = f\\lambda, \\qquad c = 3{,}00\\cdot 10^{8}\\,\\text{m/s}" },
-      { "navn": "Elektronvolt", "latex": "1\\,\\text{eV} = 1{,}60\\cdot 10^{-19}\\,\\text{J}" },
-      { "navn": "Energinivåene i hydrogen", "latex": "E_n = -\\frac{13{,}6\\,\\text{eV}}{n^{2}}, \\qquad n = 1, 2, 3, \\ldots" },
-      { "navn": "Foton ved overgang mellom nivåer", "latex": "hf = E_{\\text{start}} - E_{\\text{slutt}} = \\Delta E" },
-      { "navn": "Bølgelengden til utsendt foton", "latex": "\\lambda = \\frac{hc}{\\Delta E}" },
-      { "navn": "Praktisk snarvei", "latex": "hc = 1240\\,\\text{eV}\\cdot\\text{nm} \\;\\Rightarrow\\; \\lambda\\,[\\text{nm}] = \\frac{1240}{\\Delta E\\,[\\text{eV}]}" },
-      { "navn": "Ioniseringsenergi fra grunntilstanden", "latex": "E_{\\text{ion}} = 0 - E_1" },
-      { "navn": "Antall mulige spektrallinjer fra $n$ nivåer", "latex": "\\frac{n(n-1)}{2}" },
-      { "navn": "Antall fotoner per sekund fra en lyskilde", "latex": "P = N \\cdot hf \\;\\Rightarrow\\; N = \\frac{P}{hf}, \\quad N = \\text{fotoner per sekund}" }
-    ]
+      {
+        "navn": "Fotonenergi",
+        "latex": "E = hf = \\frac{hc}{\\lambda}"
+      },
+      {
+        "navn": "Planckkonstanten",
+        "latex": "h = 6{,}63\\cdot 10^{-34}\\,\\text{J}\\cdot\\text{s}"
+      },
+      {
+        "navn": "Sammenheng fart, frekvens og bølgelengde",
+        "latex": "c = f\\lambda, \\qquad c = 3{,}00\\cdot 10^{8}\\,\\text{m/s}"
+      },
+      {
+        "navn": "Elektronvolt",
+        "latex": "1\\,\\text{eV} = 1{,}60\\cdot 10^{-19}\\,\\text{J}"
+      },
+      {
+        "navn": "Energinivåene i hydrogen",
+        "latex": "E_n = -\\frac{13{,}6\\,\\text{eV}}{n^{2}}, \\qquad n = 1, 2, 3, \\ldots"
+      },
+      {
+        "navn": "Foton ved overgang mellom nivåer",
+        "latex": "hf = E_{\\text{start}} - E_{\\text{slutt}} = \\Delta E"
+      },
+      {
+        "navn": "Bølgelengden til utsendt foton",
+        "latex": "\\lambda = \\frac{hc}{\\Delta E}"
+      },
+      {
+        "navn": "Praktisk snarvei",
+        "latex": "hc = 1240\\,\\text{eV}\\cdot\\text{nm} \\;\\Rightarrow\\; \\lambda\\,[\\text{nm}] = \\frac{1240}{\\Delta E\\,[\\text{eV}]}"
+      },
+      {
+        "navn": "Ioniseringsenergi fra grunntilstanden",
+        "latex": "E_{\\text{ion}} = 0 - E_1"
+      },
+      {
+        "navn": "Antall mulige spektrallinjer fra $n$ nivåer",
+        "latex": "\\frac{n(n-1)}{2}"
+      },
+      {
+        "navn": "Antall fotoner per sekund fra en lyskilde",
+        "latex": "P = N \\cdot hf \\;\\Rightarrow\\; N = \\frac{P}{hf}, \\quad N = \\text{fotoner per sekund}"
+      }
+    ],
+    "figur": {
+      "type": "nivaaer",
+      "tittel": "Energinivåene i hydrogen",
+      "forklaring": "Se hvordan nivåene ligger tettere og tettere opp mot 0 eV. Pilene nedover er fotoner atomet sender ut, og den lange pila opp til 0 eV er ionisering fra grunntilstanden.",
+      "enhet": "E (eV)",
+      "desimaler": 2,
+      "nivaaer": [
+        {
+          "verdi": -13.6,
+          "navn": "n = 1",
+          "grunn": true
+        },
+        {
+          "verdi": -3.4,
+          "navn": "n = 2"
+        },
+        {
+          "verdi": -1.51,
+          "navn": "n = 3"
+        },
+        {
+          "verdi": -0.85,
+          "navn": "n = 4"
+        },
+        {
+          "verdi": 0,
+          "navn": "n = ∞"
+        }
+      ],
+      "overganger": [
+        {
+          "fra": 1,
+          "til": 0,
+          "navn": "10,2 eV",
+          "farge": 1,
+          "x": 0
+        },
+        {
+          "fra": 2,
+          "til": 1,
+          "navn": "1,89 eV",
+          "farge": 1,
+          "x": 1
+        },
+        {
+          "fra": 0,
+          "til": 4,
+          "navn": "13,6 eV",
+          "farge": 3,
+          "x": 3
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -48,18 +132,107 @@
       },
       {
         "tittel": "Fotoner og fotonenergien $E = hf$",
-        "html": "<p>Lys oppfører seg i mange forsøk som en bølge, men når det utveksler energi med atomer, kommer energien i udelelige porsjoner. En slik energiporsjon kalles et <strong>foton</strong>, og energien er</p>$$E = hf$$<p>der $f$ er frekvensen og $h = 6{,}63\\cdot 10^{-34}\\ \\text{J}\\cdot\\text{s}$ er <strong>Planckkonstanten</strong>. Siden $c = f\\lambda$, kan vi like godt skrive</p>$$E = \\frac{hc}{\\lambda}$$<p>Legg merke til at bølgelengden står i <em>nevneren</em>. Kort bølgelengde gir stor fotonenergi: et UV-foton er energirikt nok til å skade hud, mens et infrarødt foton med ti ganger lengre bølgelengde bare varmer.</p><p>Fotonenergier for lys er svært små i joule, derfor bruker vi <strong>elektronvolt</strong>:</p>$$1\\,\\text{eV} = 1{,}60\\cdot 10^{-19}\\,\\text{J}$$<p>Ett eV er energien et elektron får når det akselereres gjennom en spenning på 1 V. Synlig lys ligger på om lag 1,8–3,1 eV. Kombinerer du de to formlene, får du en snarvei som er verdt å pugge:</p>$$\\lambda\\,[\\text{nm}] = \\frac{1240}{\\Delta E\\,[\\text{eV}]}$$<p>Til slutt en viktig oppklaring: <strong>lysstyrken</strong> forteller hvor <em>mange</em> fotoner som kommer per sekund, mens <strong>fargen</strong> forteller hvor mye energi hvert enkelt foton har. En sterk rød lampe sender ut mange fotoner, men hvert av dem har fortsatt lav energi.</p>"
+        "html": "<p>Lys oppfører seg i mange forsøk som en bølge, men når det utveksler energi med atomer, kommer energien i udelelige porsjoner. En slik energiporsjon kalles et <strong>foton</strong>, og energien er</p>$$E = hf$$<p>der $f$ er frekvensen og $h = 6{,}63\\cdot 10^{-34}\\ \\text{J}\\cdot\\text{s}$ er <strong>Planckkonstanten</strong>. Siden $c = f\\lambda$, kan vi like godt skrive</p>$$E = \\frac{hc}{\\lambda}$$<p>Legg merke til at bølgelengden står i <em>nevneren</em>. Kort bølgelengde gir stor fotonenergi: et UV-foton er energirikt nok til å skade hud, mens et infrarødt foton med ti ganger lengre bølgelengde bare varmer.</p><p>Fotonenergier for lys er svært små i joule, derfor bruker vi <strong>elektronvolt</strong>:</p>$$1\\,\\text{eV} = 1{,}60\\cdot 10^{-19}\\,\\text{J}$$<p>Ett eV er energien et elektron får når det akselereres gjennom en spenning på 1 V. Synlig lys ligger på om lag 1,8–3,1 eV. Kombinerer du de to formlene, får du en snarvei som er verdt å pugge:</p>$$\\lambda\\,[\\text{nm}] = \\frac{1240}{\\Delta E\\,[\\text{eV}]}$$<p>Til slutt en viktig oppklaring: <strong>lysstyrken</strong> forteller hvor <em>mange</em> fotoner som kommer per sekund, mens <strong>fargen</strong> forteller hvor mye energi hvert enkelt foton har. En sterk rød lampe sender ut mange fotoner, men hvert av dem har fortsatt lav energi.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Fotonenergi mot bølgelengde",
+          "forklaring": "Bølgelengden står i nevneren, så kurven er en hyperbel: dobler du bølgelengden, halveres fotonenergien. Hele det synlige området ligger mellom 1,8 eV og 3,1 eV, mens et UV-foton på 200 nm har 6,2 eV.",
+          "xmin": 200,
+          "xmax": 1000,
+          "ymin": 0,
+          "ymax": 7,
+          "xlabel": "λ (nm)",
+          "ylabel": "E (eV)",
+          "kurver": [
+            {
+              "uttrykk": "1240/x",
+              "navn": "E = 1240/λ",
+              "farge": 1
+            }
+          ],
+          "punkter": [
+            {
+              "x": 400,
+              "y": 3.1,
+              "navn": "400 nm: 3,1 eV",
+              "hjelpelinjer": true
+            },
+            {
+              "x": 700,
+              "y": 1.77,
+              "navn": "700 nm: 1,8 eV",
+              "hjelpelinjer": true
+            }
+          ]
+        }
       },
       {
         "tittel": "Emisjons-, absorpsjons- og sammenhengende spektre",
-        "html": "<p>Sender du lys gjennom et prisme eller et gitter, sprer det seg etter bølgelengde, og du får et <strong>spektrum</strong>. Det finnes tre typer, og du bør kunne skille dem.</p><ul><li><strong>Sammenhengende spektrum:</strong> et ubrutt fargebånd fra rødt til fiolett. Kommer fra glødende faste stoff, væsker og tette gasser, for eksempel en glødelampe eller de innerste lagene i sola.</li><li><strong>Emisjonsspektrum (linjespektrum):</strong> noen få skarpe, lyse linjer på svart bakgrunn. Kommer fra en tynn, varm gass. Linjene ligger nøyaktig der $\\Delta E$ mellom to nivåer havner, og siden hvert grunnstoff har sitt eget sett av energinivåer, er linjemønsteret et fingeravtrykk for stoffet.</li><li><strong>Absorpsjonsspektrum:</strong> et sammenhengende spektrum med <em>mørke</em> linjer i. Det får du når hvitt lys passerer en kaldere, tynn gass. Gassen plukker ut nøyaktig de fotonene den kan absorbere — altså de samme bølgelengdene den ville sendt ut selv.</li></ul><p>Det siste poenget er nøkkelen: emisjons- og absorpsjonslinjene til et stoff ligger på <strong>samme</strong> bølgelengder. De mørke linjene i sollyset, <strong>Fraunhoferlinjene</strong>, skyldes gass i solas ytre lag, og det var slik helium ble oppdaget i sola før det ble funnet på jorda.</p><p>De synlige hydrogenlinjene, <strong>Balmerlinjene</strong>, skyldes overganger som ender på $n=2$: 656 nm (rød), 486 nm (blågrønn), 434 nm (blåfiolett) og 410 nm (fiolett). Overganger som ender på $n=1$, gir langt større $\\Delta E$ og havner i ultrafiolett.</p>"
+        "html": "<p>Sender du lys gjennom et prisme eller et gitter, sprer det seg etter bølgelengde, og du får et <strong>spektrum</strong>. Det finnes tre typer, og du bør kunne skille dem.</p><ul><li><strong>Sammenhengende spektrum:</strong> et ubrutt fargebånd fra rødt til fiolett. Kommer fra glødende faste stoff, væsker og tette gasser, for eksempel en glødelampe eller de innerste lagene i sola.</li><li><strong>Emisjonsspektrum (linjespektrum):</strong> noen få skarpe, lyse linjer på svart bakgrunn. Kommer fra en tynn, varm gass. Linjene ligger nøyaktig der $\\Delta E$ mellom to nivåer havner, og siden hvert grunnstoff har sitt eget sett av energinivåer, er linjemønsteret et fingeravtrykk for stoffet.</li><li><strong>Absorpsjonsspektrum:</strong> et sammenhengende spektrum med <em>mørke</em> linjer i. Det får du når hvitt lys passerer en kaldere, tynn gass. Gassen plukker ut nøyaktig de fotonene den kan absorbere — altså de samme bølgelengdene den ville sendt ut selv.</li></ul><p>Det siste poenget er nøkkelen: emisjons- og absorpsjonslinjene til et stoff ligger på <strong>samme</strong> bølgelengder. De mørke linjene i sollyset, <strong>Fraunhoferlinjene</strong>, skyldes gass i solas ytre lag, og det var slik helium ble oppdaget i sola før det ble funnet på jorda.</p><p>De synlige hydrogenlinjene, <strong>Balmerlinjene</strong>, skyldes overganger som ender på $n=2$: 656 nm (rød), 486 nm (blågrønn), 434 nm (blåfiolett) og 410 nm (fiolett). Overganger som ender på $n=1$, gir langt større $\\Delta E$ og havner i ultrafiolett.</p>",
+        "figur": {
+          "type": "spektrum",
+          "tittel": "Hydrogens synlige emisjonslinjer",
+          "forklaring": "De fire synlige linjene er overganger som ender på n = 2: 3 → 2 gir rødt 656 nm, 4 → 2 blågrønt 486 nm, 5 → 2 blåfiolett 434 nm og 6 → 2 fiolett 410 nm. Mellom linjene er det svart, og i et absorpsjonsspektrum er det nøyaktig disse bølgelengdene som blir mørke.",
+          "enhet": "λ (nm)",
+          "min": 400,
+          "max": 700,
+          "band": [
+            {
+              "fra": 407,
+              "til": 413,
+              "navn": "410"
+            },
+            {
+              "fra": 431,
+              "til": 437,
+              "navn": "434"
+            },
+            {
+              "fra": 483,
+              "til": 489,
+              "navn": "486"
+            },
+            {
+              "fra": 653,
+              "til": 659,
+              "navn": "656"
+            }
+          ]
+        }
       },
       {
         "tittel": "Regneoppskriften: fra energinivå til bølgelengde",
-        "html": "<p>Nesten alle regneoppgavene i dette kapittelet følger samme mønster. Bruk denne rekkefølgen, så unngår du de vanligste feilene.</p><ol><li><strong>Skriv opp nivåene med tall.</strong> Enten er de gitt, eller du regner dem ut med $E_n = -13{,}6\\,\\text{eV}/n^2$. Tegn dem gjerne som streker over hverandre.</li><li><strong>Finn energidifferansen.</strong> $\\Delta E = E_{\\text{start}} - E_{\\text{slutt}}$ ved emisjon. Husk at nivåene er negative: fra $n=3$ til $n=2$ blir det $-1{,}51 - (-3{,}40) = 1{,}89$ eV. $\\Delta E$ for et utsendt foton skal alltid bli positiv.</li><li><strong>Velg enhet bevisst.</strong> Skal du bruke $E = hf$ eller $\\lambda = hc/\\Delta E$ med SI-enheter, må $\\Delta E$ først gjøres om til joule ved å gange med $1{,}60\\cdot 10^{-19}$. Bruker du snarveien $\\lambda\\,[\\text{nm}] = 1240/\\Delta E\\,[\\text{eV}]$, skal energien stå i eV.</li><li><strong>Kontroller svaret.</strong> Ligger bølgelengden mellom 400 nm og 700 nm, er lyset synlig. Kortere er ultrafiolett, lengre er infrarødt. Fotonenergier for synlig lys ligger rundt $3\\cdot 10^{-19}$ J — får du noe helt annet, har du sannsynligvis glemt en omregning.</li></ol><p>Skal du finne <strong>hvor mange linjer</strong> et atom med $n$ nivåer kan gi, er antallet mulige overganger $\\frac{n(n-1)}{2}$. Fire nivåer gir altså seks linjer, med mindre to overganger tilfeldigvis har akkurat samme energi.</p>"
+        "html": "<p>Nesten alle regneoppgavene i dette kapittelet følger samme mønster. Bruk denne rekkefølgen, så unngår du de vanligste feilene.</p><ol><li><strong>Skriv opp nivåene med tall.</strong> Enten er de gitt, eller du regner dem ut med $E_n = -13{,}6\\,\\text{eV}/n^2$. Tegn dem gjerne som streker over hverandre.</li><li><strong>Finn energidifferansen.</strong> $\\Delta E = E_{\\text{start}} - E_{\\text{slutt}}$ ved emisjon. Husk at nivåene er negative: fra $n=3$ til $n=2$ blir det $-1{,}51 - (-3{,}40) = 1{,}89$ eV. $\\Delta E$ for et utsendt foton skal alltid bli positiv.</li><li><strong>Velg enhet bevisst.</strong> Skal du bruke $E = hf$ eller $\\lambda = hc/\\Delta E$ med SI-enheter, må $\\Delta E$ først gjøres om til joule ved å gange med $1{,}60\\cdot 10^{-19}$. Bruker du snarveien $\\lambda\\,[\\text{nm}] = 1240/\\Delta E\\,[\\text{eV}]$, skal energien stå i eV.</li><li><strong>Kontroller svaret.</strong> Ligger bølgelengden mellom 400 nm og 700 nm, er lyset synlig. Kortere er ultrafiolett, lengre er infrarødt. Fotonenergier for synlig lys ligger rundt $3\\cdot 10^{-19}$ J — får du noe helt annet, har du sannsynligvis glemt en omregning.</li></ol><p>Skal du finne <strong>hvor mange linjer</strong> et atom med $n$ nivåer kan gi, er antallet mulige overganger $\\frac{n(n-1)}{2}$. Fire nivåer gir altså seks linjer, med mindre to overganger tilfeldigvis har akkurat samme energi.</p>",
+        "figur": {
+          "type": "flyt",
+          "tittel": "Fra energinivå til bølgelengde",
+          "forklaring": "Rekkefølgen er alltid den samme. Steg 3 er der de fleste feilene skjer: velg enhet før du setter inn i formelen.",
+          "retning": "ned",
+          "steg": [
+            {
+              "tekst": "Skriv opp nivåene i eV",
+              "note": "En = −13,6 eV/n² for hydrogen"
+            },
+            {
+              "tekst": "Regn ut ΔE mellom nivåene",
+              "note": "utsendt foton gir ΔE > 0"
+            },
+            {
+              "tekst": "Velg enhet: eV eller joule",
+              "note": "1 eV = 1,60·10⁻¹⁹ J"
+            },
+            {
+              "tekst": "λ (nm) = 1240 / ΔE (eV)",
+              "note": "eller λ = hc/ΔE i SI-enheter"
+            },
+            {
+              "tekst": "Kontroller: 400–700 nm er synlig",
+              "note": "kortere er UV, lengre er IR"
+            }
+          ]
+        }
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Fotonenergi og antall fotoner fra en laserpenn",
@@ -74,7 +247,45 @@
       {
         "tittel": "Eksitasjon ved kollisjon kontra ved foton",
         "oppgave": "<p>Et fritt elektron med kinetisk energi 12,0 eV kolliderer med et hydrogenatom som er i grunntilstanden.</p><ol><li>Til hvilket nivå kan atomet bli eksitert?</li><li>Hvor stor kinetisk energi har elektronet etter kollisjonen?</li><li>Ville et <em>foton</em> med energien 12,0 eV kunnet eksitere det samme atomet?</li></ol>",
-        "losning": "<p><strong>Steg 1 — sett opp nivåene.</strong></p>$$E_1 = -13{,}6\\ \\text{eV}, \\quad E_2 = -\\frac{13{,}6}{4} = -3{,}40\\ \\text{eV}, \\quad E_3 = -\\frac{13{,}6}{9} = -1{,}51\\ \\text{eV}$$<p><strong>Steg 2 — hvor mye energi krever hvert hopp fra grunntilstanden?</strong></p>$$E_1 \\to E_2: \\quad \\Delta E = -3{,}40 - \\left(-13{,}6\\right) = 10{,}2\\ \\text{eV}$$$$E_1 \\to E_3: \\quad \\Delta E = -1{,}51 - \\left(-13{,}6\\right) = 12{,}09\\ \\text{eV}$$<p><strong>Steg 3 — sammenlign med 12,0 eV.</strong> Elektronet har nok energi til hoppet på 10,2 eV, men 12,0 eV er litt <em>mindre</em> enn de 12,09 eV som kreves for å nå $n=3$. Atomet blir derfor eksitert til $n = 2$, og ikke høyere.</p><p><strong>Steg 4 — energiregnskapet for elektronet.</strong> Ved kollisjon trenger ikke energien å passe nøyaktig; atomet tar bare det det trenger, og resten beholder elektronet:</p>$$E_{k,\\text{etter}} = 12{,}0\\ \\text{eV} - 10{,}2\\ \\text{eV} = 1{,}8\\ \\text{eV}$$<p><strong>Steg 5 — samme energi som foton.</strong> Her er svaret nei. Et foton kan bare absorberes hvis energien passer <em>nøyaktig</em> til en energidifferanse. 12,0 eV passer verken til 10,2 eV eller 12,09 eV, og er heller ikke stor nok til å ionisere atomet (det krever 13,6 eV). Fotonet går rett gjennom gassen uten å bli absorbert.</p><p><strong>Svar:</strong> Atomet eksiteres til $n=2$, elektronet fortsetter med 1,8 eV kinetisk energi, og et foton på 12,0 eV ville ikke blitt absorbert. Dette er hele forskjellen mellom de to eksitasjonsmåtene: kollisjon krever «minst nok», foton krever «akkurat nok».</p>"
+        "losning": "<p><strong>Steg 1 — sett opp nivåene.</strong></p>$$E_1 = -13{,}6\\ \\text{eV}, \\quad E_2 = -\\frac{13{,}6}{4} = -3{,}40\\ \\text{eV}, \\quad E_3 = -\\frac{13{,}6}{9} = -1{,}51\\ \\text{eV}$$<p><strong>Steg 2 — hvor mye energi krever hvert hopp fra grunntilstanden?</strong></p>$$E_1 \\to E_2: \\quad \\Delta E = -3{,}40 - \\left(-13{,}6\\right) = 10{,}2\\ \\text{eV}$$$$E_1 \\to E_3: \\quad \\Delta E = -1{,}51 - \\left(-13{,}6\\right) = 12{,}09\\ \\text{eV}$$<p><strong>Steg 3 — sammenlign med 12,0 eV.</strong> Elektronet har nok energi til hoppet på 10,2 eV, men 12,0 eV er litt <em>mindre</em> enn de 12,09 eV som kreves for å nå $n=3$. Atomet blir derfor eksitert til $n = 2$, og ikke høyere.</p><p><strong>Steg 4 — energiregnskapet for elektronet.</strong> Ved kollisjon trenger ikke energien å passe nøyaktig; atomet tar bare det det trenger, og resten beholder elektronet:</p>$$E_{k,\\text{etter}} = 12{,}0\\ \\text{eV} - 10{,}2\\ \\text{eV} = 1{,}8\\ \\text{eV}$$<p><strong>Steg 5 — samme energi som foton.</strong> Her er svaret nei. Et foton kan bare absorberes hvis energien passer <em>nøyaktig</em> til en energidifferanse. 12,0 eV passer verken til 10,2 eV eller 12,09 eV, og er heller ikke stor nok til å ionisere atomet (det krever 13,6 eV). Fotonet går rett gjennom gassen uten å bli absorbert.</p><p><strong>Svar:</strong> Atomet eksiteres til $n=2$, elektronet fortsetter med 1,8 eV kinetisk energi, og et foton på 12,0 eV ville ikke blitt absorbert. Dette er hele forskjellen mellom de to eksitasjonsmåtene: kollisjon krever «minst nok», foton krever «akkurat nok».</p>",
+        "figur": {
+          "type": "nivaaer",
+          "tittel": "12,0 eV rekker til n = 2, men ikke til n = 3",
+          "forklaring": "Sammenlikn de to spranghøydene med de 12,0 eV elektronet kommer med: 10,2 eV går fint (✓), mens n = 3 krever 12,09 eV (✗). Atomet stopper på n = 2, og elektronet går videre med 1,8 eV.",
+          "enhet": "E (eV)",
+          "desimaler": 2,
+          "nivaaer": [
+            {
+              "verdi": -13.6,
+              "navn": "n = 1",
+              "grunn": true
+            },
+            {
+              "verdi": -3.4,
+              "navn": "n = 2"
+            },
+            {
+              "verdi": -1.51,
+              "navn": "n = 3"
+            }
+          ],
+          "overganger": [
+            {
+              "fra": 0,
+              "til": 1,
+              "navn": "10,2 eV ✓",
+              "farge": 1,
+              "x": 0
+            },
+            {
+              "fra": 0,
+              "til": 2,
+              "navn": "12,09 eV ✗",
+              "farge": 3,
+              "x": 2
+            }
+          ]
+        }
       },
       {
         "tittel": "Spektrallinjer fra et atom med fire energinivåer",
@@ -82,7 +293,6 @@
         "losning": "<p><strong>Steg 1 — antall linjer.</strong> Med fire nivåer er antallet mulige overganger</p>$$\\frac{n(n-1)}{2} = \\frac{4 \\cdot 3}{2} = 6$$<p><strong>Steg 2 — regn ut alle seks energidifferansene</strong> og bruk snarveien $\\lambda\\,[\\text{nm}] = \\frac{1240}{\\Delta E\\,[\\text{eV}]}$:</p><table><thead><tr><th>Overgang</th><th>$\\Delta E$ (eV)</th><th>$\\lambda$ (nm)</th><th>Område</th></tr></thead><tbody><tr><td>$4 \\to 3$</td><td>$-0{,}5 - (-2{,}0) = 1{,}5$</td><td>$1240/1{,}5 = 827$</td><td>infrarødt</td></tr><tr><td>$3 \\to 2$</td><td>$-2{,}0 - (-5{,}0) = 3{,}0$</td><td>$1240/3{,}0 = 413$</td><td>synlig, fiolett</td></tr><tr><td>$4 \\to 2$</td><td>$-0{,}5 - (-5{,}0) = 4{,}5$</td><td>$1240/4{,}5 = 276$</td><td>ultrafiolett</td></tr><tr><td>$2 \\to 1$</td><td>$-5{,}0 - (-10{,}0) = 5{,}0$</td><td>$1240/5{,}0 = 248$</td><td>ultrafiolett</td></tr><tr><td>$3 \\to 1$</td><td>$-2{,}0 - (-10{,}0) = 8{,}0$</td><td>$1240/8{,}0 = 155$</td><td>ultrafiolett</td></tr><tr><td>$4 \\to 1$</td><td>$-0{,}5 - (-10{,}0) = 9{,}5$</td><td>$1240/9{,}5 = 131$</td><td>ultrafiolett</td></tr></tbody></table><p>Alle seks differansene er ulike, så vi får virkelig seks forskjellige linjer.</p><p><strong>Steg 3 — lengst bølgelengde.</strong> Siden $\\lambda = \\frac{hc}{\\Delta E}$, hører den <em>lengste</em> bølgelengden sammen med den <em>minste</em> energidifferansen. Det er overgangen $4 \\to 3$ med $\\Delta E = 1{,}5$ eV. Vi kontrollerer med SI-enheter:</p>$$\\Delta E = 1{,}5 \\cdot 1{,}60\\cdot 10^{-19}\\ \\text{J} = 2{,}40\\cdot 10^{-19}\\ \\text{J}$$$$\\lambda = \\frac{1{,}99\\cdot 10^{-25}\\ \\text{J}\\cdot\\text{m}}{2{,}40\\cdot 10^{-19}\\ \\text{J}} = 8{,}3\\cdot 10^{-7}\\ \\text{m} = 830\\ \\text{nm}$$<p>Det stemmer med de 827 nm fra tabellen.</p><p><strong>Steg 4 — synlige linjer.</strong> Bare $3 \\to 2$ med 413 nm ligger mellom 400 nm og 700 nm. Øyet ville altså se én eneste fiolett linje, selv om atomet sender ut seks.</p><p><strong>Steg 5 — ioniseringsenergien.</strong> Elektronet skal løftes fra $E_1$ helt opp til $E = 0$:</p>$$E_{\\text{ion}} = 0 - E_1 = 0 - \\left(-10{,}0\\ \\text{eV}\\right) = 10{,}0\\ \\text{eV}$$<p><strong>Svar:</strong> 6 linjer; lengst bølgelengde er 827 nm (overgangen $4 \\to 3$, infrarødt); bare linja på 413 nm er synlig; ioniseringsenergien er 10,0 eV.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å tro at fotonenergien øker med bølgelengden. Sammenhengen er $E = \\frac{hc}{\\lambda}$, så det er kort bølgelengde som gir høy energi — fiolett lys har mer energi per foton enn rødt.",
       "Å regne energidifferansen feil fordi nivåene er negative. Fra $n=3$ til $n=2$ er $\\Delta E = -1{,}51 - (-3{,}40) = 1{,}89$ eV, ikke $-1{,}51 - 3{,}40 = -4{,}91$ eV.",
@@ -91,7 +301,6 @@
       "Å blande eksitasjon og ionisering. Eksitasjon flytter elektronet til et høyere nivå inne i atomet, mens ionisering river det helt løs, altså opp til $E = 0$.",
       "Å tro at emisjonslinjene og absorpsjonslinjene til et stoff ligger på ulike bølgelengder. De ligger på nøyaktig de samme — forskjellen er bare om linjene er lyse på svart bakgrunn eller mørke i et sammenhengende spektrum."
     ],
-
     "tips": [
       "Tegn alltid energinivådiagrammet med tallene på før du regner. Da ser du med én gang hvilke overganger som finnes, og du slipper fortegnsfeil i $\\Delta E$.",
       "Puggeverdi: $\\lambda\\,[\\text{nm}] = \\frac{1240}{\\Delta E\\,[\\text{eV}]}$ og at synlig lys er 400–700 nm, altså 1,8–3,1 eV. Da kan du kontrollere svaret ditt på to sekunder og se om lyset er UV, synlig eller IR.",
@@ -100,35 +309,88 @@
       "I oppgaver om «hvor mange linjer» bruker du $\\frac{n(n-1)}{2}$, men sjekk alltid om to overganger har samme $\\Delta E$ — da faller to linjer sammen til én, og det er nettopp den detaljen sensor ser etter."
     ]
   },
-
   "begreper": [
-    { "begrep": "Bohrs atommodell", "forklaring": "Modellen fra 1913 der elektronet bare kan ha bestemte energier, og der stråling sendes ut eller tas opp når elektronet hopper mellom to slike nivåer." },
-    { "begrep": "Kvantisert", "forklaring": "At en størrelse bare kan ha bestemte, atskilte verdier. Energien til et atom er kvantisert som trinn i en trapp, ikke som en jevn skråbakke." },
-    { "begrep": "Energinivå", "forklaring": "En av de tillatte energiverdiene atomet kan ha. For hydrogen er de gitt ved $E_n = -\\frac{13{,}6\\,\\text{eV}}{n^2}$." },
-    { "begrep": "Grunntilstand", "forklaring": "Det laveste energinivået, $n=1$. Det er tilstanden atomet normalt befinner seg i." },
-    { "begrep": "Eksitert tilstand", "forklaring": "Et energinivå over grunntilstanden. Atomet blir bare værende der i typisk $10^{-8}$ sekunder." },
-    { "begrep": "Eksitasjon", "forklaring": "At atomet tar opp energi slik at elektronet flyttes til et høyere energinivå, enten ved å absorbere et foton eller ved kollisjon med en partikkel." },
-    { "begrep": "De-eksitasjon", "forklaring": "At elektronet faller ned til et lavere nivå, og at energidifferansen sendes ut som et foton med $hf = \\Delta E$." },
-    { "begrep": "Ionisering", "forklaring": "At elektronet rives helt løs fra atomet, altså løftes opp til $E = 0$. For hydrogen i grunntilstanden kreves 13,6 eV." },
-    { "begrep": "Foton", "forklaring": "Den minste udelelige energiporsjonen i elektromagnetisk stråling, med energien $E = hf = \\frac{hc}{\\lambda}$." },
-    { "begrep": "Planckkonstanten", "forklaring": "Naturkonstanten $h = 6{,}63\\cdot 10^{-34}\\,\\text{J}\\cdot\\text{s}$ som knytter fotonenergien til frekvensen." },
-    { "begrep": "Elektronvolt (eV)", "forklaring": "Energienheten atomfysikere bruker: energien et elektron får gjennom en spenning på 1 V. $1\\,\\text{eV} = 1{,}60\\cdot 10^{-19}\\,\\text{J}$." },
-    { "begrep": "Emisjonsspektrum", "forklaring": "Lyse spektrallinjer på mørk bakgrunn fra en tynn, varm gass. Linjemønsteret er unikt for hvert grunnstoff." },
-    { "begrep": "Absorpsjonsspektrum", "forklaring": "Et sammenhengende spektrum med mørke linjer der en kaldere gass har absorbert lys — på de samme bølgelengdene som gassens emisjonslinjer." },
-    { "begrep": "Sammenhengende spektrum", "forklaring": "Et ubrutt fargebånd uten linjer, som du får fra glødende faste stoff, væsker og tette gasser." },
-    { "begrep": "Balmerlinjene", "forklaring": "De fire hydrogenlinjene i det synlige området (656, 486, 434 og 410 nm) som kommer fra overganger ned til $n=2$." }
+    {
+      "begrep": "Bohrs atommodell",
+      "forklaring": "Modellen fra 1913 der elektronet bare kan ha bestemte energier, og der stråling sendes ut eller tas opp når elektronet hopper mellom to slike nivåer."
+    },
+    {
+      "begrep": "Kvantisert",
+      "forklaring": "At en størrelse bare kan ha bestemte, atskilte verdier. Energien til et atom er kvantisert som trinn i en trapp, ikke som en jevn skråbakke."
+    },
+    {
+      "begrep": "Energinivå",
+      "forklaring": "En av de tillatte energiverdiene atomet kan ha. For hydrogen er de gitt ved $E_n = -\\frac{13{,}6\\,\\text{eV}}{n^2}$."
+    },
+    {
+      "begrep": "Grunntilstand",
+      "forklaring": "Det laveste energinivået, $n=1$. Det er tilstanden atomet normalt befinner seg i."
+    },
+    {
+      "begrep": "Eksitert tilstand",
+      "forklaring": "Et energinivå over grunntilstanden. Atomet blir bare værende der i typisk $10^{-8}$ sekunder."
+    },
+    {
+      "begrep": "Eksitasjon",
+      "forklaring": "At atomet tar opp energi slik at elektronet flyttes til et høyere energinivå, enten ved å absorbere et foton eller ved kollisjon med en partikkel."
+    },
+    {
+      "begrep": "De-eksitasjon",
+      "forklaring": "At elektronet faller ned til et lavere nivå, og at energidifferansen sendes ut som et foton med $hf = \\Delta E$."
+    },
+    {
+      "begrep": "Ionisering",
+      "forklaring": "At elektronet rives helt løs fra atomet, altså løftes opp til $E = 0$. For hydrogen i grunntilstanden kreves 13,6 eV."
+    },
+    {
+      "begrep": "Foton",
+      "forklaring": "Den minste udelelige energiporsjonen i elektromagnetisk stråling, med energien $E = hf = \\frac{hc}{\\lambda}$."
+    },
+    {
+      "begrep": "Planckkonstanten",
+      "forklaring": "Naturkonstanten $h = 6{,}63\\cdot 10^{-34}\\,\\text{J}\\cdot\\text{s}$ som knytter fotonenergien til frekvensen."
+    },
+    {
+      "begrep": "Elektronvolt (eV)",
+      "forklaring": "Energienheten atomfysikere bruker: energien et elektron får gjennom en spenning på 1 V. $1\\,\\text{eV} = 1{,}60\\cdot 10^{-19}\\,\\text{J}$."
+    },
+    {
+      "begrep": "Emisjonsspektrum",
+      "forklaring": "Lyse spektrallinjer på mørk bakgrunn fra en tynn, varm gass. Linjemønsteret er unikt for hvert grunnstoff."
+    },
+    {
+      "begrep": "Absorpsjonsspektrum",
+      "forklaring": "Et sammenhengende spektrum med mørke linjer der en kaldere gass har absorbert lys — på de samme bølgelengdene som gassens emisjonslinjer."
+    },
+    {
+      "begrep": "Sammenhengende spektrum",
+      "forklaring": "Et ubrutt fargebånd uten linjer, som du får fra glødende faste stoff, væsker og tette gasser."
+    },
+    {
+      "begrep": "Balmerlinjene",
+      "forklaring": "De fire hydrogenlinjene i det synlige området (656, 486, 434 og 410 nm) som kommer fra overganger ned til $n=2$."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hva skjer med fotonenergien hvis bølgelengden til lyset dobles?",
-      "alternativer": ["Den dobles", "Den halveres", "Den blir fire ganger så stor", "Den er uendret"],
+      "alternativer": [
+        "Den dobles",
+        "Den halveres",
+        "Den blir fire ganger så stor",
+        "Den er uendret"
+      ],
       "riktig": 1,
       "forklaring": "$E = \\frac{hc}{\\lambda}$ — bølgelengden står i nevneren, så dobbel bølgelengde gir halv energi. Å svare «den dobles» er den vanligste feilen, og kommer av at man leser sammenhengen som proporsjonal. Den er omvendt proporsjonal: lang bølgelengde betyr fotoner med lav energi."
     },
     {
       "sporsmal": "Energinivåene i hydrogen er $E_n = -\\frac{13{,}6\\,\\text{eV}}{n^2}$. Hvor mye energi må tilføres for å ionisere et hydrogenatom som er i grunntilstanden?",
-      "alternativer": ["3,40 eV", "10,2 eV", "13,6 eV", "27,2 eV"],
+      "alternativer": [
+        "3,40 eV",
+        "10,2 eV",
+        "13,6 eV",
+        "27,2 eV"
+      ],
       "riktig": 2,
       "forklaring": "Ionisering betyr å løfte elektronet fra $E_1$ helt opp til $E = 0$, altså $0 - (-13{,}6) = 13{,}6$ eV. Det fristende feilsvaret er 10,2 eV, men det er bare energien som trengs for å eksitere atomet fra $n=1$ til $n=2$ — elektronet er da fortsatt bundet til kjernen."
     },
@@ -156,7 +418,12 @@
     },
     {
       "sporsmal": "Et atom har energinivåene $-6{,}0$ eV, $-3{,}0$ eV og $-1{,}0$ eV. Atomet er i grunntilstanden. Hvilket foton kan det IKKE absorbere?",
-      "alternativer": ["3,0 eV", "5,0 eV", "2,0 eV", "6,0 eV"],
+      "alternativer": [
+        "3,0 eV",
+        "5,0 eV",
+        "2,0 eV",
+        "6,0 eV"
+      ],
       "riktig": 2,
       "forklaring": "Fra grunntilstanden på $-6{,}0$ eV kan atomet ta opp 3,0 eV (til $-3{,}0$ eV), 5,0 eV (til $-1{,}0$ eV) eller 6,0 eV (som ioniserer det). Fotonet på 2,0 eV passer til avstanden mellom $-3{,}0$ eV og $-1{,}0$ eV, men den overgangen krever at atomet allerede er eksitert. Det er nettopp derfor 2,0 eV er det fristende feilsvaret: energien finnes i diagrammet, men ikke som et hopp fra grunntilstanden."
     },
@@ -173,7 +440,12 @@
     },
     {
       "sporsmal": "Et foton har energien 4,0 eV. Hvilken bølgelengde har lyset? Bruk $hc = 1240\\,\\text{eV}\\cdot\\text{nm}$.",
-      "alternativer": ["4960 nm", "310 nm", "1240 nm", "$5{,}0\\cdot 10^{-26}\\,\\text{m}$"],
+      "alternativer": [
+        "4960 nm",
+        "310 nm",
+        "1240 nm",
+        "$5{,}0\\cdot 10^{-26}\\,\\text{m}$"
+      ],
       "riktig": 1,
       "forklaring": "$\\lambda = \\frac{1240\\,\\text{eV}\\cdot\\text{nm}}{4{,}0\\,\\text{eV}} = 310$ nm, altså ultrafiolett. Svaret 4960 nm kommer av å gange i stedet for å dele. Det siste alternativet er den klassiske enhetsfellen: setter du 4,0 rett inn i $\\lambda = hc/\\Delta E$ som om energien var oppgitt i joule, får du $10^{-26}$ meter — mindre enn en atomkjerne, og dermed åpenbart galt."
     },
@@ -190,7 +462,12 @@
     },
     {
       "sporsmal": "Et hydrogenatom faller fra $n=3$ til $n=2$. Hva slags stråling sendes ut? ($E_3 = -1{,}51$ eV, $E_2 = -3{,}40$ eV.)",
-      "alternativer": ["Ultrafiolett", "Rødt lys", "Blått lys", "Røntgenstråling"],
+      "alternativer": [
+        "Ultrafiolett",
+        "Rødt lys",
+        "Blått lys",
+        "Røntgenstråling"
+      ],
       "riktig": 1,
       "forklaring": "$\\Delta E = -1{,}51 - (-3{,}40) = 1{,}89$ eV, som gir $\\lambda = \\frac{1240}{1{,}89} = 656$ nm — den røde H-alfalinja. Ultrafiolett er det fristende feilsvaret, men UV krever større $\\Delta E$ enn dette — for eksempel overgangene ned til $n=1$, som krever minst 10,2 eV og gir bølgelengder på 122 nm eller kortere."
     },
@@ -228,23 +505,70 @@
       "forklaring": "$E = hf$ er en rett proporsjonalitet med $h$ som proporsjonalitetskonstant: dobler du frekvensen, dobler du energien per foton. Alternativ B er en veldig vanlig sammenblanding — lysstyrken sier hvor mange fotoner som kommer per sekund, mens frekvensen sier hvor mye energi hvert enkelt foton har. En sterk rød lampe gir mange lavenergifotoner, ikke energirike fotoner."
     }
   ],
-
   "flashcards": [
-    { "front": "Hva er hovedideen i Bohrs atommodell?", "bak": "Elektronet kan bare ha bestemte, kvantiserte energier. I et slikt energinivå stråler det ikke; stråling sendes ut eller tas opp bare når elektronet hopper mellom to nivåer." },
-    { "front": "Hva viste Rutherfords gullfolieforsøk?", "bak": "At atomet stort sett er tomt rom, og at nesten all massen og hele den positive ladningen er samlet i en bitte liten kjerne. Det avkreftet rosinbollemodellen." },
-    { "front": "Energinivåene i hydrogen", "bak": "$E_n = -\\frac{13{,}6\\,\\text{eV}}{n^2}$, altså $-13{,}6$ eV, $-3{,}40$ eV, $-1{,}51$ eV, $-0{,}85$ eV … for $n = 1, 2, 3, 4$" },
-    { "front": "Hvorfor er energinivåene negative, og hva er $-13{,}6$ eV et mål på?", "bak": "Nullpunktet er valgt der elektronet er fritt og i ro langt fra kjernen, så bundne tilstander får negativ energi. Tallverdien 13,6 eV er samtidig ioniseringsenergien til hydrogen i grunntilstanden." },
-    { "front": "Fotonenergi — formelen", "bak": "$E = hf = \\frac{hc}{\\lambda}$. Kort bølgelengde gir høy fotonenergi." },
-    { "front": "Planckkonstanten og lysfarten", "bak": "$h = 6{,}63\\cdot 10^{-34}\\,\\text{J}\\cdot\\text{s}$ og $c = 3{,}00\\cdot 10^{8}\\,\\text{m/s}$" },
-    { "front": "$1\\,\\text{eV} = ?$", "bak": "$1{,}60\\cdot 10^{-19}\\,\\text{J}$ — energien et elektron får gjennom en spenning på 1 V." },
-    { "front": "Snarveien for bølgelengde fra energi i eV", "bak": "$\\lambda\\,[\\text{nm}] = \\frac{1240}{\\Delta E\\,[\\text{eV}]}$, fordi $hc = 1240\\,\\text{eV}\\cdot\\text{nm}$" },
-    { "front": "Forskjellen på eksitasjon og ionisering", "bak": "Eksitasjon flytter elektronet til et høyere nivå inne i atomet. Ionisering river det helt løs, altså opp til $E = 0$." },
-    { "front": "Når kan et atom absorbere et foton?", "bak": "Bare når fotonenergien passer nøyaktig til differansen mellom to av atomets energinivåer. Passer den ikke, går fotonet rett igjennom." },
-    { "front": "Hva kreves for å eksitere et atom ved kollisjon?", "bak": "At den innkommende partikkelen har minst så stor kinetisk energi som energidifferansen. Overskuddet beholder partikkelen som kinetisk energi." },
-    { "front": "Energien til fotonet ved de-eksitasjon", "bak": "$hf = E_{\\text{start}} - E_{\\text{slutt}} = \\Delta E$. Fallet kan skje i flere trinn, og da sendes det ut flere fotoner med lavere energi." },
-    { "front": "Emisjonsspektrum", "bak": "Lyse, skarpe linjer på svart bakgrunn fra en tynn, varm gass. Linjemønsteret er unikt for hvert grunnstoff." },
-    { "front": "Absorpsjonsspektrum", "bak": "Sammenhengende spektrum med mørke linjer, laget når hvitt lys går gjennom en kaldere, tynn gass. Linjene ligger på de samme bølgelengdene som gassens emisjonslinjer." },
-    { "front": "Hva gir et sammenhengende spektrum?", "bak": "Glødende faste stoff, væsker og tette gasser — for eksempel en glødelampe eller de indre lagene i sola." },
-    { "front": "Hvor mange spektrallinjer kan et atom med $n$ energinivåer gi?", "bak": "$\\frac{n(n-1)}{2}$ — altså 6 linjer for 4 nivåer, med mindre to overganger har samme $\\Delta E$." }
+    {
+      "front": "Hva er hovedideen i Bohrs atommodell?",
+      "bak": "Elektronet kan bare ha bestemte, kvantiserte energier. I et slikt energinivå stråler det ikke; stråling sendes ut eller tas opp bare når elektronet hopper mellom to nivåer."
+    },
+    {
+      "front": "Hva viste Rutherfords gullfolieforsøk?",
+      "bak": "At atomet stort sett er tomt rom, og at nesten all massen og hele den positive ladningen er samlet i en bitte liten kjerne. Det avkreftet rosinbollemodellen."
+    },
+    {
+      "front": "Energinivåene i hydrogen",
+      "bak": "$E_n = -\\frac{13{,}6\\,\\text{eV}}{n^2}$, altså $-13{,}6$ eV, $-3{,}40$ eV, $-1{,}51$ eV, $-0{,}85$ eV … for $n = 1, 2, 3, 4$"
+    },
+    {
+      "front": "Hvorfor er energinivåene negative, og hva er $-13{,}6$ eV et mål på?",
+      "bak": "Nullpunktet er valgt der elektronet er fritt og i ro langt fra kjernen, så bundne tilstander får negativ energi. Tallverdien 13,6 eV er samtidig ioniseringsenergien til hydrogen i grunntilstanden."
+    },
+    {
+      "front": "Fotonenergi — formelen",
+      "bak": "$E = hf = \\frac{hc}{\\lambda}$. Kort bølgelengde gir høy fotonenergi."
+    },
+    {
+      "front": "Planckkonstanten og lysfarten",
+      "bak": "$h = 6{,}63\\cdot 10^{-34}\\,\\text{J}\\cdot\\text{s}$ og $c = 3{,}00\\cdot 10^{8}\\,\\text{m/s}$"
+    },
+    {
+      "front": "$1\\,\\text{eV} = ?$",
+      "bak": "$1{,}60\\cdot 10^{-19}\\,\\text{J}$ — energien et elektron får gjennom en spenning på 1 V."
+    },
+    {
+      "front": "Snarveien for bølgelengde fra energi i eV",
+      "bak": "$\\lambda\\,[\\text{nm}] = \\frac{1240}{\\Delta E\\,[\\text{eV}]}$, fordi $hc = 1240\\,\\text{eV}\\cdot\\text{nm}$"
+    },
+    {
+      "front": "Forskjellen på eksitasjon og ionisering",
+      "bak": "Eksitasjon flytter elektronet til et høyere nivå inne i atomet. Ionisering river det helt løs, altså opp til $E = 0$."
+    },
+    {
+      "front": "Når kan et atom absorbere et foton?",
+      "bak": "Bare når fotonenergien passer nøyaktig til differansen mellom to av atomets energinivåer. Passer den ikke, går fotonet rett igjennom."
+    },
+    {
+      "front": "Hva kreves for å eksitere et atom ved kollisjon?",
+      "bak": "At den innkommende partikkelen har minst så stor kinetisk energi som energidifferansen. Overskuddet beholder partikkelen som kinetisk energi."
+    },
+    {
+      "front": "Energien til fotonet ved de-eksitasjon",
+      "bak": "$hf = E_{\\text{start}} - E_{\\text{slutt}} = \\Delta E$. Fallet kan skje i flere trinn, og da sendes det ut flere fotoner med lavere energi."
+    },
+    {
+      "front": "Emisjonsspektrum",
+      "bak": "Lyse, skarpe linjer på svart bakgrunn fra en tynn, varm gass. Linjemønsteret er unikt for hvert grunnstoff."
+    },
+    {
+      "front": "Absorpsjonsspektrum",
+      "bak": "Sammenhengende spektrum med mørke linjer, laget når hvitt lys går gjennom en kaldere, tynn gass. Linjene ligger på de samme bølgelengdene som gassens emisjonslinjer."
+    },
+    {
+      "front": "Hva gir et sammenhengende spektrum?",
+      "bak": "Glødende faste stoff, væsker og tette gasser — for eksempel en glødelampe eller de indre lagene i sola."
+    },
+    {
+      "front": "Hvor mange spektrallinjer kan et atom med $n$ energinivåer gi?",
+      "bak": "$\\frac{n(n-1)}{2}$ — altså 6 linjer for 4 nivåer, med mindre to overganger har samme $\\Delta E$."
+    }
   ]
 }

@@ -76,8 +76,8 @@
     ],
     "figur": {
       "type": "vektor",
-      "tittel": "Skalarprodukt og determinant på samme figur",
-      "forklaring": "Vektorene er tegnet ut fra samme punkt, slik vinkelen mellom dem alltid måles. Skalarproduktet 3·1 + 1·3 = 6 gir cos α = 6/10, altså α ≈ 53,1°, mens determinanten 3·3 − 1·1 = 8 er arealet av det skraverte parallellogrammet.",
+      "tittel": "Skalarprodukt og determinant",
+      "forklaring": "Begge vektorene er tegnet ut fra samme punkt — det er alltid slik vinkelen mellom dem måles. Skalarproduktet 3·1 + 1·3 = 6, og siden |a|·|b| = 10 blir cos α = 6/10, altså α ≈ 53,1°, mens determinanten 3·3 − 1·1 = 8 er arealet av det skraverte parallellogrammet.",
       "xmin": -2.3,
       "xmax": 6.3,
       "ymin": -1,
@@ -296,7 +296,7 @@
         "figur": {
           "type": "vektor",
           "tittel": "Trekanten ABC og parallellogrammet",
-          "forklaring": "Alle tre vektorene starter i A. Determinanten 6·5 − 2·3 = 24 er arealet av det skraverte parallellogrammet, og en strek mellom de to pilspissene deler det i to like store trekanter — derfor er arealet av ABC 12. Legg merke til at AD legger seg oppå AB: determinanten deres er 0, og da må D ligge på linja gjennom A og B.",
+          "forklaring": "Alle tre vektorene starter i A — den grønne AD ligger rett oppå den blå AB og fortsetter forbi B, og nettopp derfor ligger D på linja gjennom A og B. Determinanten 6·5 − 2·3 = 24 er arealet av det skraverte parallellogrammet, og en strek fra B til C deler det i to trekanter med areal 12.",
           "xmin": -4.1,
           "xmax": 9.1,
           "ymin": 0,

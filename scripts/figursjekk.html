@@ -47,9 +47,11 @@ const ut = document.getElementById("ut");
         let html = "";
         try { html = window.VG2Figur.figurHTML(fig, f.id); }
         catch (e) { html = ""; advarsler.push("krasj: " + e.message); }
-        if (!html || !html.includes("<svg")) {
+        /* sammenlikning tegnes som HTML, ikke SVG — den skal ha .samlikn */
+        const merke = fig.type === "sammenlikning" ? "samlikn-rad" : "<svg";
+        if (!html || !html.includes(merke)) {
           feil++;
-          rader.push(`FEIL     ${f.id}-${k.nr} ${hvor} [${fig.type}] — ${advarsler.join(" | ") || "ingen SVG"}`);
+          rader.push(`FEIL     ${f.id}-${k.nr} ${hvor} [${fig.type}] — ${advarsler.join(" | ") || "ingen " + (merke === "<svg" ? "SVG" : "tabell")}`);
         } else if (advarsler.length) {
           feil++;
           rader.push(`ADVARSEL ${f.id}-${k.nr} ${hvor} [${fig.type}] — ${advarsler.join(" | ")}`);

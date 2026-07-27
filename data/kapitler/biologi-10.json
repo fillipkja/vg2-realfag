@@ -3,7 +3,6 @@
   "nr": 10,
   "tittel": "Økologi og bærekraftig forvaltning",
   "intro": "Økologi handler om samspillet mellom organismene og miljøet rundt dem, og om hvordan energi og stoff beveger seg gjennom et økosystem. Dette kapittelet knytter abiotiske og biotiske faktorer, energistrøm og biologisk mangfold sammen til det du trenger for å drøfte klimaendringer, arealbruk og hva bærekraftig forvaltning faktisk krever.",
-
   "kompakt": {
     "punkter": [
       "Abiotiske faktorer er de ikke-levende delene av miljøet (lys, temperatur, vann, pH, salt, næringssalter). Biotiske faktorer skyldes andre organismer (konkurranse, predasjon, beiting, parasittisme, mutualisme).",
@@ -18,21 +17,127 @@
       "Naturmangfoldloven (2009) krever godt kunnskapsgrunnlag (§ 8), føre-var (§ 9) og vurdering av samlet belastning (§ 10) i alle vedtak som berører natur."
     ],
     "formler": [
-      { "navn": "Fotosyntesen — inngangen til energistrømmen", "latex": "\\ce{6CO2 + 6H2O -> C6H12O6 + 6O2}" },
-      { "navn": "Aerob celleånding — energitapet i hvert ledd", "latex": "\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}" },
-      { "navn": "Nettoprimærproduksjon", "latex": "\\text{NPP} = \\text{BPP} - R" },
-      { "navn": "Økologisk effektivitet mellom to nivåer", "latex": "\\text{effektivitet} = \\frac{E_{n+1}}{E_n} \\cdot 100\\,\\%" },
-      { "navn": "10 %-regelen over flere nivåer", "latex": "E_n \\approx E_1 \\cdot 0{,}10^{\\,n-1}" },
-      { "navn": "Arealenheter i forvaltningssaker", "latex": "1 \\ \\text{hektar} = 10 \\ \\text{dekar} = 10\\,000 \\ \\text{m}^2" },
-      { "navn": "Fra karbonlager til klimagassutslipp", "latex": "m(\\ce{CO2}) = m(\\ce{C}) \\cdot \\frac{44}{12} \\approx 3{,}67 \\cdot m(\\ce{C})" }
-    ]
+      {
+        "navn": "Fotosyntesen — inngangen til energistrømmen",
+        "latex": "\\ce{6CO2 + 6H2O -> C6H12O6 + 6O2}"
+      },
+      {
+        "navn": "Aerob celleånding — energitapet i hvert ledd",
+        "latex": "\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}"
+      },
+      {
+        "navn": "Nettoprimærproduksjon",
+        "latex": "\\text{NPP} = \\text{BPP} - R"
+      },
+      {
+        "navn": "Økologisk effektivitet mellom to nivåer",
+        "latex": "\\text{effektivitet} = \\frac{E_{n+1}}{E_n} \\cdot 100\\,\\%"
+      },
+      {
+        "navn": "10 %-regelen over flere nivåer",
+        "latex": "E_n \\approx E_1 \\cdot 0{,}10^{\\,n-1}"
+      },
+      {
+        "navn": "Arealenheter i forvaltningssaker",
+        "latex": "1 \\ \\text{hektar} = 10 \\ \\text{dekar} = 10\\,000 \\ \\text{m}^2"
+      },
+      {
+        "navn": "Fra karbonlager til klimagassutslipp",
+        "latex": "m(\\ce{CO2}) = m(\\ce{C}) \\cdot \\frac{44}{12} \\approx 3{,}67 \\cdot m(\\ce{C})"
+      }
+    ],
+    "figur": {
+      "type": "stolper",
+      "tittel": "Trusler mot de 2 752 truede artene i Norge",
+      "enhet": "antall truede arter påvirket",
+      "forklaring": "Den første søyla er i en klasse for seg: arealendringer rammer 2 456 av de 2 752 truede artene (89 %), over seks ganger så mange som forurensning. Klimaendringer vokser raskest (211 mot 87 i 2015), og én art kan telles under flere trusler.",
+      "data": [
+        {
+          "navn": "Arealendringer",
+          "verdi": 2456
+        },
+        {
+          "navn": "Forurensning",
+          "verdi": 377
+        },
+        {
+          "navn": "Klimaendringer",
+          "verdi": 211
+        },
+        {
+          "navn": "Fremmede arter",
+          "verdi": 153
+        },
+        {
+          "navn": "Høsting",
+          "verdi": 55
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
         "tittel": "Abiotiske og biotiske faktorer",
-        "html": "<p>Alt som påvirker en organisme, kan sorteres i to bunker. <strong>Abiotiske faktorer</strong> er de ikke-levende: lys, temperatur, vann, vind, oksygen, pH, saltholdighet og næringssalter som nitrat og fosfat. <strong>Biotiske faktorer</strong> skyldes andre organismer: konkurranse, beiting, predasjon, parasittisme, sykdom, mutualisme og tilgang på mat.</p><p>For hver abiotisk faktor har arten et <strong>toleranseområde</strong>. Toleransekurven har et optimum der arten trives best, og en øvre og nedre grense der individene ikke overlever. Blåbær vokser for eksempel best i sur, jevnt fuktig skogsjord og forsvinner der jorda blir tørr eller kalkrik.</p><p>Ofte er det bare én faktor som setter grensa. Den kalles den <strong>begrensende faktoren</strong>, eller minimumsfaktoren: den faktoren som ligger lengst fra optimum, bestemmer hvor godt arten klarer seg, uansett hvor bra alt det andre er. Gjødsler du en åker med fosfor når det er nitrogen som mangler, skjer det ingenting.</p><p>En viktig forskjell mellom de to typene: abiotiske faktorer virker stort sett uavhengig av hvor tett bestanden er — en frostnatt tar like stor <em>andel</em> av en liten som av en stor bestand. Mange biotiske faktorer er derimot <strong>tetthetsavhengige</strong>: konkurransen om mat og smittepresset øker når det blir trangt.</p><p>Når du utforsker et økosystem i felt, måler du begge typer. Temperatur i °C, lysstyrke i lux, pH med pH-meter, jordfuktighet — og samtidig registrerer du hvilke arter som finnes, og hvor stor dekningsgraden i prosent er i ruter du legger ut. Først når du kobler måleverdiene til artene, kan du forklare mønsteret du ser.</p>"
+        "html": "<p>Alt som påvirker en organisme, kan sorteres i to bunker. <strong>Abiotiske faktorer</strong> er de ikke-levende: lys, temperatur, vann, vind, oksygen, pH, saltholdighet og næringssalter som nitrat og fosfat. <strong>Biotiske faktorer</strong> skyldes andre organismer: konkurranse, beiting, predasjon, parasittisme, sykdom, mutualisme og tilgang på mat.</p><p>For hver abiotisk faktor har arten et <strong>toleranseområde</strong>. Toleransekurven har et optimum der arten trives best, og en øvre og nedre grense der individene ikke overlever. Blåbær vokser for eksempel best i sur, jevnt fuktig skogsjord og forsvinner der jorda blir tørr eller kalkrik.</p><p>Ofte er det bare én faktor som setter grensa. Den kalles den <strong>begrensende faktoren</strong>, eller minimumsfaktoren: den faktoren som ligger lengst fra optimum, bestemmer hvor godt arten klarer seg, uansett hvor bra alt det andre er. Gjødsler du en åker med fosfor når det er nitrogen som mangler, skjer det ingenting.</p><p>En viktig forskjell mellom de to typene: abiotiske faktorer virker stort sett uavhengig av hvor tett bestanden er — en frostnatt tar like stor <em>andel</em> av en liten som av en stor bestand. Mange biotiske faktorer er derimot <strong>tetthetsavhengige</strong>: konkurransen om mat og smittepresset øker når det blir trangt.</p><p>Når du utforsker et økosystem i felt, måler du begge typer. Temperatur i °C, lysstyrke i lux, pH med pH-meter, jordfuktighet — og samtidig registrerer du hvilke arter som finnes, og hvor stor dekningsgraden i prosent er i ruter du legger ut. Først når du kobler måleverdiene til artene, kan du forklare mønsteret du ser.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Toleransekurve for én abiotisk faktor",
+          "forklaring": "Det skraverte feltet er toleranseområdet: bestanden er størst ved optimum (14 °C) og faller mot null ved begge toleransegrensene. Ligger én faktor langt ute mot en grense, er det den som er den begrensende faktoren — å bedre de andre faktorene flytter ikke arten oppover kurven.",
+          "xmin": 0,
+          "xmax": 30,
+          "ymin": 0,
+          "ymax": 115,
+          "xlabel": "temperatur (°C)",
+          "ylabel": "individtall (% av maks)",
+          "kurver": [
+            {
+              "uttrykk": "100/exp((x-14)^2/34)",
+              "farge": 1
+            }
+          ],
+          "omraade": {
+            "uttrykk": "100/exp((x-14)^2/34)",
+            "fra": 2,
+            "til": 26
+          },
+          "linjer": [
+            {
+              "fra": [
+                2,
+                0
+              ],
+              "til": [
+                2,
+                108
+              ],
+              "navn": "nedre grense",
+              "farge": 2,
+              "merkeplass": 0.9
+            },
+            {
+              "fra": [
+                26,
+                0
+              ],
+              "til": [
+                26,
+                108
+              ],
+              "navn": "øvre grense",
+              "farge": 2,
+              "merkeplass": 0.9
+            }
+          ],
+          "punkter": [
+            {
+              "x": 14,
+              "y": 100,
+              "navn": "optimum",
+              "hjelpelinjer": true
+            }
+          ]
+        }
       },
       {
         "tittel": "Økosystem, habitat og nisje",
@@ -40,11 +145,58 @@
       },
       {
         "tittel": "Næringskjeder, næringsnett og energistrøm",
-        "html": "<p>Nesten all energi i et økosystem kommer fra sola og fanges av <strong>produsentene</strong> i fotosyntesen, der lysenergi lagres som kjemisk bundet energi i glukose:</p><p>$$\\ce{6CO2 + 6H2O -> C6H12O6 + 6O2}$$</p><p>Alt produsentene binder til sammen, er <strong>bruttoprimærproduksjonen</strong> (BPP). Plantene bruker selv en stor del i celleånding, og det som blir igjen som ny biomasse, er <strong>nettoprimærproduksjonen</strong>: $\\text{NPP} = \\text{BPP} - R$. Bare NPP er tilgjengelig for dem som spiser plantene.</p><p>En <strong>næringskjede</strong> viser hvem som spiser hvem: produsent, primærkonsument (planteeter), sekundærkonsument og tertiærkonsument. Pilene peker fra den som blir spist til den som spiser, fordi de viser retningen energien og stoffet flyttes. Hvert ledd er et <strong>trofisk nivå</strong>. I virkeligheten spiser de fleste arter flere ting og blir spist av flere, så kjedene henger sammen i et <strong>næringsnett</strong>. En art kan stå på flere nivåer samtidig: en rødrev som spiser både bær og smågnagere, er både primær- og sekundærkonsument.</p><p><strong>Nedbryterne</strong> — bakterier, sopp, meitemark og spretthaler — lever av dødt organisk materiale, kalt detritus, og frigjør næringsstoffene til jorda og vannet igjen. I en granskog går faktisk mer av energien gjennom nedbryterveien enn gjennom beiteveien.</p><p>Det viktigste prinsippet i hele kapittelet: <strong>stoff går i kretsløp, energi strømmer gjennom.</strong> Karbon, nitrogen og fosfor brukes om og om igjen, mens energien forlater økosystemet som varme og må erstattes av nytt sollys hver dag. Mellom to trofiske nivåer overføres bare rundt 10 %. Resten går tapt i celleånding, i avføring og i deler som aldri blir spist.</p>"
+        "html": "<p>Nesten all energi i et økosystem kommer fra sola og fanges av <strong>produsentene</strong> i fotosyntesen, der lysenergi lagres som kjemisk bundet energi i glukose:</p><p>$$\\ce{6CO2 + 6H2O -> C6H12O6 + 6O2}$$</p><p>Alt produsentene binder til sammen, er <strong>bruttoprimærproduksjonen</strong> (BPP). Plantene bruker selv en stor del i celleånding, og det som blir igjen som ny biomasse, er <strong>nettoprimærproduksjonen</strong>: $\\text{NPP} = \\text{BPP} - R$. Bare NPP er tilgjengelig for dem som spiser plantene.</p><p>En <strong>næringskjede</strong> viser hvem som spiser hvem: produsent, primærkonsument (planteeter), sekundærkonsument og tertiærkonsument. Pilene peker fra den som blir spist til den som spiser, fordi de viser retningen energien og stoffet flyttes. Hvert ledd er et <strong>trofisk nivå</strong>. I virkeligheten spiser de fleste arter flere ting og blir spist av flere, så kjedene henger sammen i et <strong>næringsnett</strong>. En art kan stå på flere nivåer samtidig: en rødrev som spiser både bær og smågnagere, er både primær- og sekundærkonsument.</p><p><strong>Nedbryterne</strong> — bakterier, sopp, meitemark og spretthaler — lever av dødt organisk materiale, kalt detritus, og frigjør næringsstoffene til jorda og vannet igjen. I en granskog går faktisk mer av energien gjennom nedbryterveien enn gjennom beiteveien.</p><p>Det viktigste prinsippet i hele kapittelet: <strong>stoff går i kretsløp, energi strømmer gjennom.</strong> Karbon, nitrogen og fosfor brukes om og om igjen, mens energien forlater økosystemet som varme og må erstattes av nytt sollys hver dag. Mellom to trofiske nivåer overføres bare rundt 10 %. Resten går tapt i celleånding, i avføring og i deler som aldri blir spist.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Energien strømmer gjennom, stoffet går rundt",
+          "forklaring": "Pilene nedover peker fra den som blir spist til den som spiser — samme vei som energien. Notatene viser 10 %-regelen: rundt 90 % av nettoprimærproduksjonen forsvinner i hvert hopp, og bare sløyfa til høyre går tilbake — den er stoff, ikke energi.",
+          "steg": [
+            {
+              "tekst": "Produsenter (NPP = BPP − R)",
+              "note": "100 % av NPP"
+            },
+            {
+              "tekst": "Primærkonsument: planteeter",
+              "note": "≈ 10 % av NPP"
+            },
+            {
+              "tekst": "Sekundærkonsument: rovdyr",
+              "note": "≈ 1 % av NPP"
+            },
+            {
+              "tekst": "Tertiærkonsument: toppredator",
+              "note": "≈ 0,1 % av NPP"
+            }
+          ],
+          "tilbakekopling": {
+            "fra": 3,
+            "til": 0,
+            "tekst": "stoffkretsløp via nedbrytere"
+          }
+        }
       },
       {
         "tittel": "Tre nivåer av biologisk mangfold",
-        "html": "<p>Naturmangfoldloven definerer biologisk mangfold som mangfoldet av økosystemer, arter og genetiske variasjoner innenfor artene, og de økologiske sammenhengene mellom disse. Det gir tre nivåer du må holde fra hverandre:</p><ul><li><strong>Genetisk mangfold</strong> er variasjonen i genvarianter innenfor en art og innenfor hver enkelt bestand. Dette er råstoffet for evolusjon: uten genetisk variasjon kan ikke bestanden tilpasse seg en ny sykdom eller et varmere klima. Små, isolerte bestander mister variasjon gjennom innavl og tilfeldige endringer i allelfrekvensene.</li><li><strong>Artsmangfold</strong> er hvor mange arter som finnes (artsrikdom) og hvor jevnt individene er fordelt mellom artene (jevnhet). To områder med ti arter er ikke like mangfoldige hvis det ene har 90 % av individene i én enkelt art.</li><li><strong>Økosystemmangfold</strong> er mangfoldet av naturtyper og landskap: myr, kalkrik lågurtskog, tareskog, kystlynghei, elvedelta. Hver naturtype har «sine» arter, og mange av dem finnes ingen andre steder.</li></ul><p>Nivåene henger sammen nedenfra og opp. Bygger du ned en naturtype, mister du artene som er knyttet til den, og de bestandene som blir igjen, blir mindre, mer isolerte og genetisk fattigere. Derfor er det ikke nok å telle arter når man skal vurdere om et inngrep er bærekraftig.</p><p>Tallene for Norge er verdt å kunne: av de 23 405 artene som er vurdert i Norsk rødliste for arter (2021), er 4 957 rødlistet, og 2 752 av dem er vurdert som <em>truet</em>. Fugler, pattedyr, moser og karplanter er blant gruppene med størst andel truede arter.</p>"
+        "html": "<p>Naturmangfoldloven definerer biologisk mangfold som mangfoldet av økosystemer, arter og genetiske variasjoner innenfor artene, og de økologiske sammenhengene mellom disse. Det gir tre nivåer du må holde fra hverandre:</p><ul><li><strong>Genetisk mangfold</strong> er variasjonen i genvarianter innenfor en art og innenfor hver enkelt bestand. Dette er råstoffet for evolusjon: uten genetisk variasjon kan ikke bestanden tilpasse seg en ny sykdom eller et varmere klima. Små, isolerte bestander mister variasjon gjennom innavl og tilfeldige endringer i allelfrekvensene.</li><li><strong>Artsmangfold</strong> er hvor mange arter som finnes (artsrikdom) og hvor jevnt individene er fordelt mellom artene (jevnhet). To områder med ti arter er ikke like mangfoldige hvis det ene har 90 % av individene i én enkelt art.</li><li><strong>Økosystemmangfold</strong> er mangfoldet av naturtyper og landskap: myr, kalkrik lågurtskog, tareskog, kystlynghei, elvedelta. Hver naturtype har «sine» arter, og mange av dem finnes ingen andre steder.</li></ul><p>Nivåene henger sammen nedenfra og opp. Bygger du ned en naturtype, mister du artene som er knyttet til den, og de bestandene som blir igjen, blir mindre, mer isolerte og genetisk fattigere. Derfor er det ikke nok å telle arter når man skal vurdere om et inngrep er bærekraftig.</p><p>Tallene for Norge er verdt å kunne: av de 23 405 artene som er vurdert i Norsk rødliste for arter (2021), er 4 957 rødlistet, og 2 752 av dem er vurdert som <em>truet</em>. Fugler, pattedyr, moser og karplanter er blant gruppene med størst andel truede arter.</p>",
+        "figur": {
+          "type": "hierarki",
+          "tittel": "De tre nivåene ligger inni hverandre",
+          "forklaring": "Legg merke til at hvert nivå er en del av det over: taper du naturtypen øverst, mister du artene som hører til den, og bestandene som blir igjen, blir små og genetisk fattige. Derfor måler ikke artstelling alene om et inngrep er bærekraftig.",
+          "nivaaer": [
+            {
+              "navn": "Økosystemmangfold",
+              "eksempel": "myr, tareskog, lynghei"
+            },
+            {
+              "navn": "Artsmangfold",
+              "eksempel": "artsrikdom og jevnhet"
+            },
+            {
+              "navn": "Genetisk mangfold"
+            }
+          ]
+        }
       },
       {
         "tittel": "Naturens egenverdi og etikk",
@@ -59,7 +211,6 @@
         "html": "<p><strong>Naturmangfoldloven</strong> fra 2009 er hovedloven. Formålet er at naturen med sitt mangfold skal tas vare på ved bærekraftig bruk og vern (§ 1), og loven gir prinsipper som må brukes i alle vedtak som berører natur: kunnskapsgrunnlaget skal være godt (§ 8), <strong>føre-var-prinsippet</strong> gjelder når kunnskapen mangler (§ 9), den <strong>samlede belastningen</strong> på økosystemet skal vurderes (§ 10), og tiltakshaveren skal dekke kostnadene ved miljøforringelse (§ 11).</p><p>Verktøykassa inneholder fire hovedgrupper tiltak:</p><ul><li><strong>Områdevern</strong>: nasjonalpark (§ 35), landskapsvernområde (§ 36), naturreservat (§ 37, den strengeste formen), biotopvernområde (§ 38) og marint verneområde (§ 39). Norge har 48 nasjonalparker medregnet Svalbard, og 17,8 % av fastlandsarealet og 4,6 % av sjøarealet er vernet.</li><li><strong>Artsforvaltning</strong>: fredning, prioriterte arter, utvalgte naturtyper, handlingsplaner og aktive tiltak. Avlsprogrammet for fjellrev er det tydeligste eksempelet: utsetting av valper, støttefôring og felling av rødrev har fått den norske bestanden opp til om lag 300 voksne individer, og arten ble i 2021 flyttet fra kritisk truet (CR) til sterkt truet (EN).</li><li><strong>Kunnskap og overvåking</strong>: Artsdatabankens rødlister for arter og naturtyper og Fremmedartslista, og Naturindeks for Norge, som Miljødirektoratet har ansvaret for. Merk at <em>rødlistet</em> ikke betyr det samme som <em>truet</em>: truet er kategoriene CR (kritisk truet), EN (sterkt truet) og VU (sårbar).</li><li><strong>Bærekraftig høsting</strong>: kvoter bygget på bestandsberegninger og råd fra Havforskningsinstituttet og ICES, minstemål, maskevidde og sorteringsrist. Kollapsen i norsk vårgytende sild sist på 1960-tallet og den senere oppbyggingen av bestanden er skoleeksempelet.</li></ul><p>Rovviltforvaltningen viser interessekonfliktene tydeligst. Stortinget har fastsatt bestandsmål på 65 årlige familiegrupper av gaupe, 39 ynglinger av jerv, 13 av bjørn og 4–6 ulvekull der 3 skal være helnorske. Internasjonalt er Norge bundet av naturavtalen fra 2022, med mål om å verne 30 % av arealene og restaurere 30 % av forringet natur innen 2030.</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Energibudsjett og økologisk effektivitet",
@@ -82,7 +233,6 @@
         "losning": "<p><strong>a) Karbonlageret.</strong> Først arealet i kvadratmeter:</p><p>$$4{,}0 \\ \\text{hektar} \\cdot 10\\,000 \\ \\frac{\\text{m}^2}{\\text{hektar}} = 40\\,000 \\ \\text{m}^2$$</p><p>Så karbonmengden:</p><p>$$40\\,000 \\ \\text{m}^2 \\cdot 55 \\ \\frac{\\text{kg}}{\\text{m}^2} = 2\\,200\\,000 \\ \\text{kg} = 2\\,200 \\ \\text{tonn karbon}$$</p><p><strong>b) Fra karbon til CO<sub>2</sub>.</strong> Når torva brytes ned aerobt, går karbonet ut som karbondioksid:</p><p>$$\\ce{C + O2 -> CO2}$$</p><p>Ett mol karbon gir ett mol CO<sub>2</sub>, men massen øker, fordi $M(\\ce{C}) = 12 \\ \\text{g/mol}$ og $M(\\ce{CO2}) = 44 \\ \\text{g/mol}$:</p><p>$$\\frac{44}{12} \\approx 3{,}67$$</p><p>$$m(\\ce{CO2}) = 2\\,200 \\ \\text{tonn} \\cdot 3{,}67 \\approx 8\\,100 \\ \\text{tonn CO}_2$$</p><p><strong>c) Sammenligning med bilen.</strong> Utslipp per år:</p><p>$$12\\,000 \\ \\text{km} \\cdot 120 \\ \\frac{\\text{g}}{\\text{km}} = 1\\,440\\,000 \\ \\text{g} = 1\\,440 \\ \\text{kg} = 1{,}44 \\ \\text{tonn}$$</p><p>$$\\frac{8\\,100 \\ \\text{tonn}}{1{,}44 \\ \\text{tonn/år}} \\approx 5\\,600 \\ \\text{bilår}$$</p><p>De 4 hektarene tilsvarer altså utslippet fra 5 600 biler i ett år. Merk at utslippet fra myra skjer over mange tiår, ikke på én gang — men det er irreversibelt i praksis: torva har brukt flere tusen år på å bygge seg opp, med en vekst på under én millimeter i året.</p><p><strong>d) Vurdering etter loven.</strong></p><ul><li><strong>§ 8 kunnskapsgrunnlaget:</strong> kommunen må kartlegge naturtypen og artene før vedtak, og sjekke Artsdatabankens rødlister og Artskart. Flere myrtyper er selv truede naturtyper, og myr huser mange spesialiserte arter av moser, orkideer og våtmarksfugl.</li><li><strong>§ 9 føre-var-prinsippet:</strong> vet man ikke sikkert hvor dypt torvlaget er eller hvilke arter som finnes, skal ikke <em>mangelen</em> på kunnskap brukes som argument for å bygge. Usikkerheten skal gå i naturens favør når det er risiko for alvorlig og irreversibel skade.</li><li><strong>§ 10 samlet belastning:</strong> feltet skal ikke vurderes alene. Fire hektar er lite, men sammen med de andre hyttefeltene, veiene og hogstene i kommunen blir det bit-for-bit-nedbygging, som er den viktigste mekanismen bak arealtapet i Norge.</li></ul><p><strong>Verdiargumentene.</strong> Nytteverdi finnes på begge sider: hyttefeltet gir arbeidsplasser og kommunale inntekter, mens myra gir regulerende økosystemtjenester i form av karbonlagring, flomdemping og vannrensing. Egenverdiargumentet er et annet: myra og artene der har verdi i seg selv, uavhengig av hva vi får ut av dem. En vanlig konklusjon i slike saker er å bygge på areal som alt er nedbygd eller på mineraljord, redusere feltets størrelse, eller å avslå — og å være klar over at restaurering av myr et annet sted ikke gir tilbake det karbonlageret og det artssamfunnet som forsvinner her.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å bytte om habitat og nisje. Habitatet er stedet arten lever, nisjen er alt arten trenger og gjør. «Nisjen til hakkespetten er gammel granskog» er derfor feil bruk av begrepet.",
       "Å tegne pilene i næringskjeden fra rovdyret mot byttet, som om de viste hvem som jakter. Pilene følger energien, altså fra den som blir spist til den som spiser.",
@@ -91,34 +241,76 @@
       "Å tro at biologisk mangfold bare betyr antall arter. Genetisk mangfold innenfor artene og mangfoldet av naturtyper er to like viktige nivåer, og nettopp de som glemmes på prøver.",
       "Å bruke nytteverdiargumenter når oppgaven spør om egenverdi. «Myra må bevares fordi den lagrer karbon» handler om hva myra gjør for oss, ikke om verdien myra har i seg selv."
     ],
-
     "tips": [
       "Bygg svaret på «utforsk et økosystem»-oppgaver i tre trinn: abiotiske faktorer med måleverdier og enheter (°C, lux, pH, % dekning), deretter biotiske faktorer og artene, og til slutt sammenhengene mellom dem. Det er koblingen som gir de høye poengene.",
       "Når du tegner et næringsnett, merk alltid av trofiske nivåer, sett pilene i energiretningen og få med nedbryterne. Nevn gjerne at en omnivor kan stå på flere nivåer samtidig — det viser at du har forstått forskjellen på kjede og nett.",
       "Regneoppgaver i dette kapittelet handler nesten alltid om energioverføring, areal eller karbon. Skriv enhetene i hvert steg (kJ/m² per år, hektar, tonn CO₂), og husk at 1 hektar er 10 000 m² og at 1 tonn karbon blir 3,67 tonn CO₂.",
       "Drøftingsoppgaver om tiltak bør ha fast struktur: tiltak, virkning på mangfoldet, interessemotsetning, konklusjon. Bruk fagbegrepene egenverdi, nytteverdi, økosystemtjenester, føre-var-prinsippet og samlet belastning aktivt — de gir uttelling.",
-"Lær fire konkrete norske eksempler du kan trekke fram i drøfting, med tall der du har dem: fjellrev og rødrev, kråkeboller og tareskog (om lag 5 000 km² fortsatt nedbeitet i Troms og Finnmark), nedbygging av myr (55 kg karbon per m²) og sildekollapsen på 1960-tallet. Sensor belønner konkretisering, og de samme eksemplene passer på nesten alle oppgavetypene fra kapittelet."
+      "Lær fire konkrete norske eksempler du kan trekke fram i drøfting, med tall der du har dem: fjellrev og rødrev, kråkeboller og tareskog (om lag 5 000 km² fortsatt nedbeitet i Troms og Finnmark), nedbygging av myr (55 kg karbon per m²) og sildekollapsen på 1960-tallet. Sensor belønner konkretisering, og de samme eksemplene passer på nesten alle oppgavetypene fra kapittelet."
     ]
   },
-
   "begreper": [
-    { "begrep": "Abiotisk faktor", "forklaring": "En ikke-levende faktor i miljøet, som lys, temperatur, vann, pH, salt eller næringssalter." },
-    { "begrep": "Biotisk faktor", "forklaring": "En faktor som skyldes andre organismer, for eksempel konkurranse, beiting, predasjon, parasittisme eller mutualisme." },
-    { "begrep": "Begrensende faktor", "forklaring": "Den faktoren som ligger lengst fra artens optimum og dermed setter grensen for hvor godt arten klarer seg, uansett hvor gunstige de andre faktorene er." },
-    { "begrep": "Økosystem", "forklaring": "Alle organismene i et område sammen med de abiotiske omgivelsene, med stoffkretsløp og energistrøm mellom delene." },
-    { "begrep": "Habitat", "forklaring": "Det fysiske stedet der en art lever — «adressen» til arten." },
-    { "begrep": "Økologisk nisje", "forklaring": "Summen av alle krav arten har til miljøet og all bruk den gjør av det: mat, tid, plass, temperatur og relasjoner til andre arter. «Yrket» til arten." },
-    { "begrep": "Realisert nisje", "forklaring": "Den delen av fundamentalnisjen arten faktisk bruker når konkurrenter, predatorer og parasitter er til stede. Alltid mindre enn eller lik fundamentalnisjen." },
-    { "begrep": "Trofisk nivå", "forklaring": "Plasseringen en organisme har i næringskjeden ut fra hvor mange ledd energien har gått gjennom: produsent, primærkonsument, sekundærkonsument og så videre." },
-    { "begrep": "Nettoprimærproduksjon", "forklaring": "Energien produsentene binder, minus det de bruker i egen celleånding. Det er denne energien som er tilgjengelig for planteeterne." },
-    { "begrep": "Økologisk effektivitet", "forklaring": "Hvor stor andel av energien i ett trofisk nivå som blir bygget inn i det neste — i praksis rundt 10 %." },
-    { "begrep": "Nøkkelart", "forklaring": "En art som har mye større betydning for økosystemet enn antallet individer tilsier, slik at systemet endres kraftig om den forsvinner." },
-    { "begrep": "Biologisk mangfold", "forklaring": "Mangfoldet av økosystemer, arter og genetiske variasjoner innenfor artene, og de økologiske sammenhengene mellom disse." },
-    { "begrep": "Økosystemtjenester", "forklaring": "Godene naturen gir mennesket, delt i forsynende, regulerende, kulturelle og grunnleggende tjenester. Dette er naturens nytteverdi." },
-    { "begrep": "Egenverdi", "forklaring": "At en art eller et økosystem har verdi i seg selv, uavhengig av hvilken nytte mennesket har av det." },
-    { "begrep": "Rødliste", "forklaring": "Artsdatabankens oversikt over arter med risiko for å dø ut i Norge. Truet betyr kategoriene CR, EN og VU; rødlistet omfatter også NT og DD." }
+    {
+      "begrep": "Abiotisk faktor",
+      "forklaring": "En ikke-levende faktor i miljøet, som lys, temperatur, vann, pH, salt eller næringssalter."
+    },
+    {
+      "begrep": "Biotisk faktor",
+      "forklaring": "En faktor som skyldes andre organismer, for eksempel konkurranse, beiting, predasjon, parasittisme eller mutualisme."
+    },
+    {
+      "begrep": "Begrensende faktor",
+      "forklaring": "Den faktoren som ligger lengst fra artens optimum og dermed setter grensen for hvor godt arten klarer seg, uansett hvor gunstige de andre faktorene er."
+    },
+    {
+      "begrep": "Økosystem",
+      "forklaring": "Alle organismene i et område sammen med de abiotiske omgivelsene, med stoffkretsløp og energistrøm mellom delene."
+    },
+    {
+      "begrep": "Habitat",
+      "forklaring": "Det fysiske stedet der en art lever — «adressen» til arten."
+    },
+    {
+      "begrep": "Økologisk nisje",
+      "forklaring": "Summen av alle krav arten har til miljøet og all bruk den gjør av det: mat, tid, plass, temperatur og relasjoner til andre arter. «Yrket» til arten."
+    },
+    {
+      "begrep": "Realisert nisje",
+      "forklaring": "Den delen av fundamentalnisjen arten faktisk bruker når konkurrenter, predatorer og parasitter er til stede. Alltid mindre enn eller lik fundamentalnisjen."
+    },
+    {
+      "begrep": "Trofisk nivå",
+      "forklaring": "Plasseringen en organisme har i næringskjeden ut fra hvor mange ledd energien har gått gjennom: produsent, primærkonsument, sekundærkonsument og så videre."
+    },
+    {
+      "begrep": "Nettoprimærproduksjon",
+      "forklaring": "Energien produsentene binder, minus det de bruker i egen celleånding. Det er denne energien som er tilgjengelig for planteeterne."
+    },
+    {
+      "begrep": "Økologisk effektivitet",
+      "forklaring": "Hvor stor andel av energien i ett trofisk nivå som blir bygget inn i det neste — i praksis rundt 10 %."
+    },
+    {
+      "begrep": "Nøkkelart",
+      "forklaring": "En art som har mye større betydning for økosystemet enn antallet individer tilsier, slik at systemet endres kraftig om den forsvinner."
+    },
+    {
+      "begrep": "Biologisk mangfold",
+      "forklaring": "Mangfoldet av økosystemer, arter og genetiske variasjoner innenfor artene, og de økologiske sammenhengene mellom disse."
+    },
+    {
+      "begrep": "Økosystemtjenester",
+      "forklaring": "Godene naturen gir mennesket, delt i forsynende, regulerende, kulturelle og grunnleggende tjenester. Dette er naturens nytteverdi."
+    },
+    {
+      "begrep": "Egenverdi",
+      "forklaring": "At en art eller et økosystem har verdi i seg selv, uavhengig av hvilken nytte mennesket har av det."
+    },
+    {
+      "begrep": "Rødliste",
+      "forklaring": "Artsdatabankens oversikt over arter med risiko for å dø ut i Norge. Truet betyr kategoriene CR, EN og VU; rødlistet omfatter også NT og DD."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hvilken av disse er en abiotisk faktor i en granskog?",
@@ -253,23 +445,70 @@
       "forklaring": "$\\text{NPP} = \\text{BPP} - R = 60\\,000 - 25\\,000 = 35\\,000$ kJ per m² per år, og det er bare denne delen som er tilgjengelig for planteeterne. Alternativ B legger til i stedet for å trekke fra, og alternativ C glemmer at plantene selv driver celleånding hele døgnet. Alternativ D forveksler NPP med energioverføringen til neste trofiske nivå."
     }
   ],
-
   "flashcards": [
-    { "front": "Abiotisk kontra biotisk faktor", "bak": "Abiotisk = ikke-levende: lys, temperatur, vann, pH, salt, næringssalter. Biotisk = skyldes andre organismer: konkurranse, predasjon, beiting, parasittisme, mutualisme." },
-    { "front": "Hva er den begrensende faktoren?", "bak": "Den faktoren som ligger lengst fra artens optimum. Den setter grensen alene, uansett hvor gunstige de andre faktorene er." },
-    { "front": "Habitat kontra nisje", "bak": "Habitatet er adressen — stedet arten lever. Nisjen er yrket — alt arten trenger og gjør: mat, tid, toleransegrenser og forhold til andre arter." },
-    { "front": "Fundamentalnisje kontra realisert nisje", "bak": "Fundamentalnisjen er alt arten kunne utnyttet alene. Realisert nisje er det den faktisk bruker med konkurrenter og fiender til stede, og er alltid mindre enn eller lik fundamentalnisjen." },
-    { "front": "Konkurranseeksklusjonsprinsippet", "bak": "To arter med helt identisk nisje kan ikke leve stabilt på samme sted — den ene utkonkurrerer den andre. Derfor ser vi nisjedeling i naturen." },
-    { "front": "Hva viser pilene i en næringskjede?", "bak": "Retningen energien og stoffet flyttes, altså fra den som blir spist til den som spiser. Ikke hvem som jakter på hvem." },
-    { "front": "$\\text{NPP} = ?$", "bak": "$\\text{NPP} = \\text{BPP} - R$. Nettoprimærproduksjonen er det produsentene binder minus deres egen celleånding, og det er bare NPP planteeterne kan bruke." },
-    { "front": "Økologisk effektivitet — formel og typisk verdi", "bak": "$\\text{effektivitet} = \\frac{E_{n+1}}{E_n} \\cdot 100\\,\\%$, i praksis rundt 10 %. Over tre overganger: $0{,}10^3 = 0{,}001$." },
-    { "front": "Hvorfor har næringskjeder bare fire til fem ledd?", "bak": "Fordi rundt 90 % av energien tapes i hvert ledd — celleånding, avføring og deler som ikke blir spist. Etter fire ledd er det for lite energi igjen til å bære en bestand." },
-    { "front": "Stoff eller energi — hva går i kretsløp?", "bak": "Stoff går i kretsløp (karbon, nitrogen, fosfor brukes om igjen). Energi strømmer gjennom systemet én gang og forlater det som varme." },
-    { "front": "Nedbrytere og detritus", "bak": "Nedbrytere (bakterier, sopp, meitemark, spretthaler) lever av dødt organisk materiale — detritus — og frigjør næringsstoffene til jord og vann igjen. I en granskog går mer energi gjennom nedbryterveien enn gjennom beiteveien." },
-    { "front": "De tre nivåene av biologisk mangfold", "bak": "1) Genetisk mangfold innenfor artene, 2) artsmangfold (artsrikdom og jevnhet), 3) mangfold av økosystemer og naturtyper." },
-    { "front": "Egenverdi kontra nytteverdi", "bak": "Egenverdi: verdi i seg selv, uavhengig av mennesket. Nytteverdi: økosystemtjenester i fire grupper — forsynende, regulerende, kulturelle og grunnleggende." },
-    { "front": "Rødlistet kontra truet", "bak": "Truet = CR (kritisk truet), EN (sterkt truet) og VU (sårbar). Rødlistet omfatter i tillegg NT (nær truet) og DD (datamangel): 4 957 rødlistede, 2 752 truede arter i Norge (2021)." },
-    { "front": "De viktigste prinsippene i naturmangfoldloven", "bak": "§ 8 godt kunnskapsgrunnlag, § 9 føre-var-prinsippet, § 10 samlet belastning på økosystemet, § 11 tiltakshaveren dekker kostnadene ved miljøforringelse." },
-    { "front": "Største trussel mot truede arter i Norge", "bak": "Arealendringer: 2 456 av 2 752 truede arter (89 %). Deretter forurensning (377), klimaendringer (211, raskest økende), fremmede arter (153) og høsting (55)." }
+    {
+      "front": "Abiotisk kontra biotisk faktor",
+      "bak": "Abiotisk = ikke-levende: lys, temperatur, vann, pH, salt, næringssalter. Biotisk = skyldes andre organismer: konkurranse, predasjon, beiting, parasittisme, mutualisme."
+    },
+    {
+      "front": "Hva er den begrensende faktoren?",
+      "bak": "Den faktoren som ligger lengst fra artens optimum. Den setter grensen alene, uansett hvor gunstige de andre faktorene er."
+    },
+    {
+      "front": "Habitat kontra nisje",
+      "bak": "Habitatet er adressen — stedet arten lever. Nisjen er yrket — alt arten trenger og gjør: mat, tid, toleransegrenser og forhold til andre arter."
+    },
+    {
+      "front": "Fundamentalnisje kontra realisert nisje",
+      "bak": "Fundamentalnisjen er alt arten kunne utnyttet alene. Realisert nisje er det den faktisk bruker med konkurrenter og fiender til stede, og er alltid mindre enn eller lik fundamentalnisjen."
+    },
+    {
+      "front": "Konkurranseeksklusjonsprinsippet",
+      "bak": "To arter med helt identisk nisje kan ikke leve stabilt på samme sted — den ene utkonkurrerer den andre. Derfor ser vi nisjedeling i naturen."
+    },
+    {
+      "front": "Hva viser pilene i en næringskjede?",
+      "bak": "Retningen energien og stoffet flyttes, altså fra den som blir spist til den som spiser. Ikke hvem som jakter på hvem."
+    },
+    {
+      "front": "$\\text{NPP} = ?$",
+      "bak": "$\\text{NPP} = \\text{BPP} - R$. Nettoprimærproduksjonen er det produsentene binder minus deres egen celleånding, og det er bare NPP planteeterne kan bruke."
+    },
+    {
+      "front": "Økologisk effektivitet — formel og typisk verdi",
+      "bak": "$\\text{effektivitet} = \\frac{E_{n+1}}{E_n} \\cdot 100\\,\\%$, i praksis rundt 10 %. Over tre overganger: $0{,}10^3 = 0{,}001$."
+    },
+    {
+      "front": "Hvorfor har næringskjeder bare fire til fem ledd?",
+      "bak": "Fordi rundt 90 % av energien tapes i hvert ledd — celleånding, avføring og deler som ikke blir spist. Etter fire ledd er det for lite energi igjen til å bære en bestand."
+    },
+    {
+      "front": "Stoff eller energi — hva går i kretsløp?",
+      "bak": "Stoff går i kretsløp (karbon, nitrogen, fosfor brukes om igjen). Energi strømmer gjennom systemet én gang og forlater det som varme."
+    },
+    {
+      "front": "Nedbrytere og detritus",
+      "bak": "Nedbrytere (bakterier, sopp, meitemark, spretthaler) lever av dødt organisk materiale — detritus — og frigjør næringsstoffene til jord og vann igjen. I en granskog går mer energi gjennom nedbryterveien enn gjennom beiteveien."
+    },
+    {
+      "front": "De tre nivåene av biologisk mangfold",
+      "bak": "1) Genetisk mangfold innenfor artene, 2) artsmangfold (artsrikdom og jevnhet), 3) mangfold av økosystemer og naturtyper."
+    },
+    {
+      "front": "Egenverdi kontra nytteverdi",
+      "bak": "Egenverdi: verdi i seg selv, uavhengig av mennesket. Nytteverdi: økosystemtjenester i fire grupper — forsynende, regulerende, kulturelle og grunnleggende."
+    },
+    {
+      "front": "Rødlistet kontra truet",
+      "bak": "Truet = CR (kritisk truet), EN (sterkt truet) og VU (sårbar). Rødlistet omfatter i tillegg NT (nær truet) og DD (datamangel): 4 957 rødlistede, 2 752 truede arter i Norge (2021)."
+    },
+    {
+      "front": "De viktigste prinsippene i naturmangfoldloven",
+      "bak": "§ 8 godt kunnskapsgrunnlag, § 9 føre-var-prinsippet, § 10 samlet belastning på økosystemet, § 11 tiltakshaveren dekker kostnadene ved miljøforringelse."
+    },
+    {
+      "front": "Største trussel mot truede arter i Norge",
+      "bak": "Arealendringer: 2 456 av 2 752 truede arter (89 %). Deretter forurensning (377), klimaendringer (211, raskest økende), fremmede arter (153) og høsting (55)."
+    }
   ]
 }

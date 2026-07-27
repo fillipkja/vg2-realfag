@@ -3,7 +3,6 @@
   "nr": 4,
   "tittel": "Termokjemi",
   "intro": "Termokjemi handler om energien som følger med kjemiske reaksjoner: hvorfor noen reaksjoner varmer opp omgivelsene mens andre kjøler dem ned, og hvordan du regner ut hvor mye energi som er i spill. Med entalpi, entropi og Gibbs energi får du også verktøyet til å avgjøre om en reaksjon i det hele tatt kan gå av seg selv.",
-
   "kompakt": {
     "punkter": [
       "En eksoterm reaksjon avgir energi til omgivelsene og har $\\Delta H < 0$; en endoterm reaksjon tar opp energi og har $\\Delta H > 0$.",
@@ -18,22 +17,88 @@
       "Grensen mellom spontan og ikke-spontan ligger der $\\Delta G = 0$, altså ved $T = \\frac{\\Delta H}{\\Delta S}$. Husk kelvin, og husk å dele $\\Delta S$ på 1000."
     ],
     "formler": [
-      { "navn": "Entalpiendring", "latex": "\\Delta H = H_{\\text{produkter}} - H_{\\text{reaktanter}}" },
-      { "navn": "Varme og temperaturendring", "latex": "q = c \\cdot m \\cdot \\Delta T" },
-      { "navn": "Varmen i kalorimeteret", "latex": "q_{\\text{reaksjon}} = -\\,q_{\\text{løsning}}" },
-      { "navn": "Molar reaksjonsentalpi fra måling", "latex": "\\Delta H = \\frac{q_{\\text{reaksjon}}}{n}" },
-      { "navn": "Reaksjonsentalpi fra dannelsesentalpier", "latex": "\\Delta H^\\circ = \\sum n \\Delta H_f^\\circ(\\text{prod}) - \\sum n \\Delta H_f^\\circ(\\text{reak})" },
-      { "navn": "Hess' lov", "latex": "\\Delta H_{\\text{total}} = \\Delta H_1 + \\Delta H_2 + \\ldots + \\Delta H_n" },
-      { "navn": "Entalpi fra bindingsentalpier", "latex": "\\Delta H \\approx \\sum E_{\\text{bindinger brutt}} - \\sum E_{\\text{bindinger dannet}}" },
-      { "navn": "Entropiendring", "latex": "\\Delta S^\\circ = \\sum n S^\\circ(\\text{prod}) - \\sum n S^\\circ(\\text{reak})" },
-      { "navn": "Gibbs energi", "latex": "\\Delta G = \\Delta H - T \\Delta S" },
-      { "navn": "Gibbs energi fra tabell", "latex": "\\Delta G^\\circ = \\sum n \\Delta G_f^\\circ(\\text{prod}) - \\sum n \\Delta G_f^\\circ(\\text{reak})" },
-      { "navn": "Grensetemperatur for spontanitet", "latex": "T = \\frac{\\Delta H}{\\Delta S} \\quad (\\text{der } \\Delta G = 0)" },
-      { "navn": "Celsius til kelvin", "latex": "T = \\theta + 273{,}15" },
-      { "navn": "Energi per gram brensel", "latex": "\\frac{\\Delta H}{M}" }
-    ]
+      {
+        "navn": "Entalpiendring",
+        "latex": "\\Delta H = H_{\\text{produkter}} - H_{\\text{reaktanter}}"
+      },
+      {
+        "navn": "Varme og temperaturendring",
+        "latex": "q = c \\cdot m \\cdot \\Delta T"
+      },
+      {
+        "navn": "Varmen i kalorimeteret",
+        "latex": "q_{\\text{reaksjon}} = -\\,q_{\\text{løsning}}"
+      },
+      {
+        "navn": "Molar reaksjonsentalpi fra måling",
+        "latex": "\\Delta H = \\frac{q_{\\text{reaksjon}}}{n}"
+      },
+      {
+        "navn": "Reaksjonsentalpi fra dannelsesentalpier",
+        "latex": "\\Delta H^\\circ = \\sum n \\Delta H_f^\\circ(\\text{prod}) - \\sum n \\Delta H_f^\\circ(\\text{reak})"
+      },
+      {
+        "navn": "Hess' lov",
+        "latex": "\\Delta H_{\\text{total}} = \\Delta H_1 + \\Delta H_2 + \\ldots + \\Delta H_n"
+      },
+      {
+        "navn": "Entalpi fra bindingsentalpier",
+        "latex": "\\Delta H \\approx \\sum E_{\\text{bindinger brutt}} - \\sum E_{\\text{bindinger dannet}}"
+      },
+      {
+        "navn": "Entropiendring",
+        "latex": "\\Delta S^\\circ = \\sum n S^\\circ(\\text{prod}) - \\sum n S^\\circ(\\text{reak})"
+      },
+      {
+        "navn": "Gibbs energi",
+        "latex": "\\Delta G = \\Delta H - T \\Delta S"
+      },
+      {
+        "navn": "Gibbs energi fra tabell",
+        "latex": "\\Delta G^\\circ = \\sum n \\Delta G_f^\\circ(\\text{prod}) - \\sum n \\Delta G_f^\\circ(\\text{reak})"
+      },
+      {
+        "navn": "Grensetemperatur for spontanitet",
+        "latex": "T = \\frac{\\Delta H}{\\Delta S} \\quad (\\text{der } \\Delta G = 0)"
+      },
+      {
+        "navn": "Celsius til kelvin",
+        "latex": "T = \\theta + 273{,}15"
+      },
+      {
+        "navn": "Energi per gram brensel",
+        "latex": "\\frac{\\Delta H}{M}"
+      }
+    ],
+    "figur": {
+      "type": "flyt",
+      "retning": "ned",
+      "tittel": "Slik avgjør du om en reaksjon er spontan",
+      "forklaring": "Fortegnet på ΔH eller ΔS alene avgjør ingenting — dommen faller først i steg 5, når temperaturen er regnet inn. Steg 3 er ren enhetsjobb, og det er der de fleste poengene ryker.",
+      "steg": [
+        {
+          "tekst": "Finn ΔH — negativ betyr eksoterm",
+          "note": "kJ per mol likning"
+        },
+        {
+          "tekst": "Finn ΔS — tell mol gass på hver side",
+          "note": "mer gass gir ΔS > 0"
+        },
+        {
+          "tekst": "Del ΔS på 1000, og bruk T i kelvin",
+          "note": "her ryker de fleste"
+        },
+        {
+          "tekst": "Regn ut ΔG = ΔH − T · ΔS",
+          "note": "sett inn med fortegn"
+        },
+        {
+          "tekst": "ΔG < 0 gir spontan reaksjon",
+          "note": "spontan betyr ikke rask"
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -42,7 +107,52 @@
       },
       {
         "tittel": "Entalpi og entalpidiagram",
-        "html": "<p><strong>Entalpi</strong>, symbol $H$, er et mål på energiinnholdet i stoffene når trykket holdes konstant. Vi kan ikke måle $H$ direkte, men det trenger vi heller ikke: det interessante er <em>endringen</em></p>$$\\Delta H = H_{\\text{produkter}} - H_{\\text{reaktanter}}$$<p>Ved konstant trykk er $\\Delta H$ nøyaktig den varmen reaksjonen utveksler med omgivelsene. En <strong>termokjemisk likning</strong> har $\\Delta H$ skrevet ved siden av:</p>$$\\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)} \\qquad \\Delta H^\\circ = -890{,}3\\ \\text{kJ/mol}$$<p>Tre ting du må være nøye med:</p><ul><li><strong>«Per mol» betyr per mol reaksjonslikning slik den står.</strong> Dobler du alle koeffisientene, dobles tallverdien av $\\Delta H$.</li><li><strong>Snur du likningen, snur fortegnet.</strong> Danning av vann gir $-285{,}8$ kJ/mol, spalting av vann krever $+285{,}8$ kJ/mol.</li><li><strong>Fasen betyr noe.</strong> $\\ce{H2O(l)}$ og $\\ce{H2O(g)}$ skiller seg med fordampningsvarmen på ca. 44 kJ/mol, så du må skrive (l), (g), (s) eller (aq) på alle stoffene.</li></ul><p>I et <strong>entalpidiagram</strong> setter du energi på den loddrette aksen og tegner reaktanter og produkter som vannrette nivåer. Peker pilen nedover, er reaksjonen eksoterm; peker den oppover, er den endoterm. Høydeforskjellen mellom nivåene er $|\\Delta H|$.</p>"
+        "html": "<p><strong>Entalpi</strong>, symbol $H$, er et mål på energiinnholdet i stoffene når trykket holdes konstant. Vi kan ikke måle $H$ direkte, men det trenger vi heller ikke: det interessante er <em>endringen</em></p>$$\\Delta H = H_{\\text{produkter}} - H_{\\text{reaktanter}}$$<p>Ved konstant trykk er $\\Delta H$ nøyaktig den varmen reaksjonen utveksler med omgivelsene. En <strong>termokjemisk likning</strong> har $\\Delta H$ skrevet ved siden av:</p>$$\\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)} \\qquad \\Delta H^\\circ = -890{,}3\\ \\text{kJ/mol}$$<p>Tre ting du må være nøye med:</p><ul><li><strong>«Per mol» betyr per mol reaksjonslikning slik den står.</strong> Dobler du alle koeffisientene, dobles tallverdien av $\\Delta H$.</li><li><strong>Snur du likningen, snur fortegnet.</strong> Danning av vann gir $-285{,}8$ kJ/mol, spalting av vann krever $+285{,}8$ kJ/mol.</li><li><strong>Fasen betyr noe.</strong> $\\ce{H2O(l)}$ og $\\ce{H2O(g)}$ skiller seg med fordampningsvarmen på ca. 44 kJ/mol, så du må skrive (l), (g), (s) eller (aq) på alle stoffene.</li></ul><p>I et <strong>entalpidiagram</strong> setter du energi på den loddrette aksen og tegner reaktanter og produkter som vannrette nivåer. Peker pilen nedover, er reaksjonen eksoterm; peker den oppover, er den endoterm. Høydeforskjellen mellom nivåene er $|\\Delta H|$.</p>",
+        "figur": {
+          "type": "nivaaer",
+          "tittel": "Entalpidiagram for vann",
+          "enhet": "H (kJ/mol)",
+          "desimaler": 1,
+          "forklaring": "Høydeforskjellen mellom nivåene er tallverdien til ΔH: pila ned er den eksoterme danningen av vann, pila opp er den endoterme spaltingen — samme tall, motsatt fortegn. Den korte pila nederst er fordampingen, +44,0 kJ/mol, og den er grunnen til at fasen må stå i likningen.",
+          "nivaaer": [
+            {
+              "verdi": 0,
+              "navn": "H₂(g) + ½O₂(g)",
+              "grunn": true
+            },
+            {
+              "verdi": -241.8,
+              "navn": "H₂O(g)"
+            },
+            {
+              "verdi": -285.8,
+              "navn": "H₂O(l)"
+            }
+          ],
+          "overganger": [
+            {
+              "fra": 0,
+              "til": 2,
+              "navn": "ΔH = −285,8",
+              "farge": 1,
+              "x": 0
+            },
+            {
+              "fra": 2,
+              "til": 0,
+              "navn": "ΔH = +285,8",
+              "farge": 3,
+              "x": 2
+            },
+            {
+              "fra": 2,
+              "til": 1,
+              "navn": "+44,0",
+              "farge": 2,
+              "x": 3
+            }
+          ]
+        }
       },
       {
         "tittel": "Bindinger og energi",
@@ -50,7 +160,35 @@
       },
       {
         "tittel": "Energiberegninger med kalorimeter",
-        "html": "<p>Måten vi faktisk <em>måler</em> reaksjonsentalpi på, er å la reaksjonen gå i et <strong>kalorimeter</strong> og se hvor mye temperaturen i løsningen endrer seg. Varmen som løsningen tar opp eller mister, er</p>$$q = c \\cdot m \\cdot \\Delta T$$<p>der $c$ er den <strong>spesifikke varmekapasiteten</strong> (for vann 4,18 J/(g·K)), $m$ er massen av hele løsningen i gram, og $\\Delta T = T_{\\text{slutt}} - T_{\\text{start}}$. Siden en temperatur<em>differanse</em> er like stor i kelvin som i grader celsius, kan du sette inn $\\Delta T$ i °C uten omregning.</p><p>Så kommer fortegnet, som er der de fleste roter det til. Energien går mellom reaksjonen og løsningen, så</p>$$q_{\\text{reaksjon}} = -\\,q_{\\text{løsning}}$$<p>Stiger temperaturen, har løsningen tatt opp varme, og reaksjonen har avgitt den: $\\Delta H$ blir negativ. Til slutt deler du på stoffmengden for å få entalpien per mol:</p>$$\\Delta H = \\frac{q_{\\text{reaksjon}}}{n}$$<p>Vi gjør alltid noen forenklinger: at løsningen har samme tetthet og varmekapasitet som rent vann, og at kalorimeteret selv ikke tar opp varme. Derfor får målingen nesten alltid litt for lav tallverdi — noe varme forsvinner ut i glasset og lufta.</p>"
+        "html": "<p>Måten vi faktisk <em>måler</em> reaksjonsentalpi på, er å la reaksjonen gå i et <strong>kalorimeter</strong> og se hvor mye temperaturen i løsningen endrer seg. Varmen som løsningen tar opp eller mister, er</p>$$q = c \\cdot m \\cdot \\Delta T$$<p>der $c$ er den <strong>spesifikke varmekapasiteten</strong> (for vann 4,18 J/(g·K)), $m$ er massen av hele løsningen i gram, og $\\Delta T = T_{\\text{slutt}} - T_{\\text{start}}$. Siden en temperatur<em>differanse</em> er like stor i kelvin som i grader celsius, kan du sette inn $\\Delta T$ i °C uten omregning.</p><p>Så kommer fortegnet, som er der de fleste roter det til. Energien går mellom reaksjonen og løsningen, så</p>$$q_{\\text{reaksjon}} = -\\,q_{\\text{løsning}}$$<p>Stiger temperaturen, har løsningen tatt opp varme, og reaksjonen har avgitt den: $\\Delta H$ blir negativ. Til slutt deler du på stoffmengden for å få entalpien per mol:</p>$$\\Delta H = \\frac{q_{\\text{reaksjon}}}{n}$$<p>Vi gjør alltid noen forenklinger: at løsningen har samme tetthet og varmekapasitet som rent vann, og at kalorimeteret selv ikke tar opp varme. Derfor får målingen nesten alltid litt for lav tallverdi — noe varme forsvinner ut i glasset og lufta.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Fra temperaturmåling til ΔH",
+          "forklaring": "Legg merke til skiftet i steg 4: alt før det gjelder løsningen, og først der flytter du regnestykket over til reaksjonen. Massen i steg 1 er begge løsningene til sammen, ikke bare det ene stoffet.",
+          "steg": [
+            {
+              "tekst": "Finn massen av HELE løsningen",
+              "note": "1 mL løsning ≈ 1 g"
+            },
+            {
+              "tekst": "Regn ut ΔT = T(slutt) − T(start)",
+              "note": "like stor i °C og K"
+            },
+            {
+              "tekst": "Regn ut q = c · m · ΔT for løsningen",
+              "note": "vann: c = 4,18 J/(g·K)"
+            },
+            {
+              "tekst": "Snu fortegnet: q(reak) = −q(løsning)",
+              "note": "varmere løsning gir ΔH < 0"
+            },
+            {
+              "tekst": "Del på stoffmengden: ΔH = q(reak)/n",
+              "note": "n av stoffet som reagerer"
+            }
+          ]
+        }
       },
       {
         "tittel": "Hess' lov og dannelsesentalpier",
@@ -58,14 +196,68 @@
       },
       {
         "tittel": "Entropi",
-        "html": "<p><strong>Entropien</strong> $S$ er et mål på hvor mange måter partiklene og energien i et system kan fordeles på. Populært sier vi «grad av uorden», men mer presist: jo flere måter systemet kan arrangere seg på, jo høyere entropi. Enheten er J/(K·mol).</p><p>Entropi skiller seg fra entalpi på ett viktig punkt: vi kan oppgi en <em>absolutt</em> verdi. En perfekt krystall ved 0 K har bare én mulig ordning og dermed $S = 0$. Derfor har alle stoffer positiv $S^\\circ$ i tabellene — også grunnstoffene.</p><p>Disse mønstrene bør du kunne:</p><ul><li>$S(\\text{fast}) < S(\\text{væske}) \\ll S(\\text{gass})$. Overgangen til gass er det store spranget.</li><li>Flere partikler gir høyere entropi enn få.</li><li>Store, kompliserte molekyler har høyere entropi enn små, enkle.</li><li>Et salt som løses opp i vann, gir vanligvis entropiøkning, fordi ionene spres fritt i løsningen.</li><li>Høyere temperatur gir høyere entropi.</li></ul><p>På prøven er den raskeste sjekken å <strong>telle mol gass</strong> på hver side av likningen. Går antallet opp, er $\\Delta S > 0$. I $\\ce{N2(g) + 3H2(g) -> 2NH3(g)}$ går vi fra 4 til 2 mol gass, så $\\Delta S < 0$. Regner du med tabellverdier, bruker du</p>$$\\Delta S^\\circ = \\sum n S^\\circ(\\text{produkter}) - \\sum n S^\\circ(\\text{reaktanter})$$<p>Termodynamikkens andre lov sier at entropien i universet som helhet alltid øker. Det er nettopp derfor endoterme reaksjoner kan gå av seg selv: de kan «betale» for energiopptaket med stor nok entropiøkning.</p>"
+        "html": "<p><strong>Entropien</strong> $S$ er et mål på hvor mange måter partiklene og energien i et system kan fordeles på. Populært sier vi «grad av uorden», men mer presist: jo flere måter systemet kan arrangere seg på, jo høyere entropi. Enheten er J/(K·mol).</p><p>Entropi skiller seg fra entalpi på ett viktig punkt: vi kan oppgi en <em>absolutt</em> verdi. En perfekt krystall ved 0 K har bare én mulig ordning og dermed $S = 0$. Derfor har alle stoffer positiv $S^\\circ$ i tabellene — også grunnstoffene.</p><p>Disse mønstrene bør du kunne:</p><ul><li>$S(\\text{fast}) < S(\\text{væske}) \\ll S(\\text{gass})$. Overgangen til gass er det store spranget.</li><li>Flere partikler gir høyere entropi enn få.</li><li>Store, kompliserte molekyler har høyere entropi enn små, enkle.</li><li>Et salt som løses opp i vann, gir vanligvis entropiøkning, fordi ionene spres fritt i løsningen.</li><li>Høyere temperatur gir høyere entropi.</li></ul><p>På prøven er den raskeste sjekken å <strong>telle mol gass</strong> på hver side av likningen. Går antallet opp, er $\\Delta S > 0$. I $\\ce{N2(g) + 3H2(g) -> 2NH3(g)}$ går vi fra 4 til 2 mol gass, så $\\Delta S < 0$. Regner du med tabellverdier, bruker du</p>$$\\Delta S^\\circ = \\sum n S^\\circ(\\text{produkter}) - \\sum n S^\\circ(\\text{reaktanter})$$<p>Termodynamikkens andre lov sier at entropien i universet som helhet alltid øker. Det er nettopp derfor endoterme reaksjoner kan gå av seg selv: de kan «betale» for energiopptaket med stor nok entropiøkning.</p>",
+        "figur": {
+          "type": "stolper",
+          "tittel": "Entropien til vann i de tre fasene",
+          "enhet": "S (J/(K·mol))",
+          "forklaring": "Spranget fra vann til damp er 119 J/(K·mol), mens spranget fra is til vann bare er 29 — fire ganger mindre. Derfor holder det oftest å telle mol gass for å avgjøre fortegnet på ΔS.",
+          "data": [
+            {
+              "navn": "Is (0 °C)",
+              "verdi": 41
+            },
+            {
+              "navn": "Vann (25 °C)",
+              "verdi": 70
+            },
+            {
+              "navn": "Damp (25 °C)",
+              "verdi": 189
+            }
+          ]
+        }
       },
       {
         "tittel": "Gibbs energi og spontanitet",
-        "html": "<p>En reaksjon er <strong>spontan</strong> når den kan gå av seg selv, uten at vi tilfører energi hele tiden. Verken $\\Delta H$ eller $\\Delta S$ avgjør dette alene — det er kombinasjonen, og den kaller vi <strong>Gibbs energi</strong>:</p>$$\\Delta G = \\Delta H - T \\Delta S$$<p>Tolkningen er enkel: $\\Delta G < 0$ betyr spontan, $\\Delta G > 0$ betyr at reaksjonen ikke går spontant (men at den motsatte reaksjonen gjør det), og $\\Delta G = 0$ betyr likevekt.</p><p>Legg merke til at temperaturen står som faktor foran $\\Delta S$. Det gir fire tilfeller:</p><table><thead><tr><th>$\\Delta H$</th><th>$\\Delta S$</th><th>Spontan?</th></tr></thead><tbody><tr><td>negativ</td><td>positiv</td><td>Ja, ved alle temperaturer</td></tr><tr><td>negativ</td><td>negativ</td><td>Bare ved lav temperatur</td></tr><tr><td>positiv</td><td>positiv</td><td>Bare ved høy temperatur</td></tr><tr><td>positiv</td><td>negativ</td><td>Nei, aldri</td></tr></tbody></table><p>I de to midterste tilfellene finnes en <strong>grensetemperatur</strong> der reaksjonen skifter. Der er $\\Delta G = 0$, altså $\\Delta H = T\\Delta S$, som gir</p>$$T = \\frac{\\Delta H}{\\Delta S}$$<p>To feller til slutt. Den første er enheter: $\\Delta H$ står i kJ/mol, mens $\\Delta S$ står i J/(K·mol), så du må dele $\\Delta S$ på 1000 — og $T$ skal alltid være i kelvin. Den andre er språklig: <strong>spontan betyr ikke rask.</strong> Omdanningen av diamant til grafitt har $\\Delta G < 0$ ved romtemperatur, men den tar milliarder av år. Farten bestemmes av aktiveringsenergien, ikke av $\\Delta G$.</p>"
+        "html": "<p>En reaksjon er <strong>spontan</strong> når den kan gå av seg selv, uten at vi tilfører energi hele tiden. Verken $\\Delta H$ eller $\\Delta S$ avgjør dette alene — det er kombinasjonen, og den kaller vi <strong>Gibbs energi</strong>:</p>$$\\Delta G = \\Delta H - T \\Delta S$$<p>Tolkningen er enkel: $\\Delta G < 0$ betyr spontan, $\\Delta G > 0$ betyr at reaksjonen ikke går spontant (men at den motsatte reaksjonen gjør det), og $\\Delta G = 0$ betyr likevekt.</p><p>Legg merke til at temperaturen står som faktor foran $\\Delta S$. Det gir fire tilfeller:</p><table><thead><tr><th>$\\Delta H$</th><th>$\\Delta S$</th><th>Spontan?</th></tr></thead><tbody><tr><td>negativ</td><td>positiv</td><td>Ja, ved alle temperaturer</td></tr><tr><td>negativ</td><td>negativ</td><td>Bare ved lav temperatur</td></tr><tr><td>positiv</td><td>positiv</td><td>Bare ved høy temperatur</td></tr><tr><td>positiv</td><td>negativ</td><td>Nei, aldri</td></tr></tbody></table><p>I de to midterste tilfellene finnes en <strong>grensetemperatur</strong> der reaksjonen skifter. Der er $\\Delta G = 0$, altså $\\Delta H = T\\Delta S$, som gir</p>$$T = \\frac{\\Delta H}{\\Delta S}$$<p>To feller til slutt. Den første er enheter: $\\Delta H$ står i kJ/mol, mens $\\Delta S$ står i J/(K·mol), så du må dele $\\Delta S$ på 1000 — og $T$ skal alltid være i kelvin. Den andre er språklig: <strong>spontan betyr ikke rask.</strong> Omdanningen av diamant til grafitt har $\\Delta G < 0$ ved romtemperatur, men den tar milliarder av år. Farten bestemmes av aktiveringsenergien, ikke av $\\Delta G$.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "ΔG mot temperatur i de to grensetilfellene",
+          "xmin": 0,
+          "xmax": 1500,
+          "ymin": -100,
+          "ymax": 230,
+          "xlabel": "T (K)",
+          "ylabel": "ΔG (kJ/mol)",
+          "forklaring": "Begge linjene krysser ΔG = 0 ved grensetemperaturen T = ΔH/ΔS, og der skifter reaksjonen. Den fallende linja er kalkbrenningen i eksempel 4, som blir spontan først over 1122 K; den stigende er ammoniakksyntesen, som slutter å være spontan over 465 K.",
+          "kurver": [
+            {
+              "uttrykk": "178.4-0.159*x",
+              "navn": "ΔH > 0, ΔS > 0",
+              "farge": 1
+            },
+            {
+              "uttrykk": "-92.2+0.1981*x",
+              "navn": "ΔH < 0, ΔS < 0",
+              "farge": 2
+            }
+          ],
+          "punkter": [
+            {
+              "x": 465,
+              "y": 0,
+              "navn": "465 K"
+            },
+            {
+              "x": 1122,
+              "y": 0,
+              "navn": "1122 K"
+            }
+          ]
+        }
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Reaksjonsentalpi målt i kalorimeter",
@@ -88,7 +280,6 @@
         "losning": "<p><strong>Steg 1 — entalpiendringen.</strong> Alle koeffisientene er 1:</p>$$\\Delta H^\\circ = \\left[(-635{,}1) + (-393{,}5)\\right] - (-1207{,}0)$$$$\\Delta H^\\circ = -1028{,}6 + 1207{,}0 = +178{,}4\\ \\text{kJ/mol}$$<p>Positiv, altså endoterm. Det stemmer med at kalkovner må fyres opp.</p><p><strong>Steg 2 — entropiendringen.</strong></p>$$\\Delta S^\\circ = \\left[38{,}1 + 213{,}8\\right] - 92{,}9$$$$\\Delta S^\\circ = 251{,}9 - 92{,}9 = +159{,}0\\ \\frac{\\text{J}}{\\text{K}\\cdot\\text{mol}}$$<p>Positiv, som ventet: vi går fra ingen gass til 1 mol gass.</p><p><strong>Steg 3 — gjør om enheter før du bruker Gibbs-formelen.</strong></p>$$T = 25\\ ^\\circ\\text{C} + 273 = 298\\ \\text{K}$$$$\\Delta S^\\circ = 159{,}0\\ \\frac{\\text{J}}{\\text{K}\\cdot\\text{mol}} = 0{,}1590\\ \\frac{\\text{kJ}}{\\text{K}\\cdot\\text{mol}}$$<p><strong>Steg 4 — Gibbs energi ved 298 K.</strong></p>$$\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ = 178{,}4 - 298 \\cdot 0{,}1590$$$$\\Delta G^\\circ = 178{,}4 - 47{,}4 = +131{,}0\\ \\text{kJ/mol}$$<p>$\\Delta G^\\circ$ er klart positiv, så reaksjonen er <strong>ikke</strong> spontan ved romtemperatur. Godt for oss — ellers ville kalkstein og marmor smuldret opp av seg selv.</p><p><strong>Steg 5 — grensetemperaturen.</strong> Vi har $\\Delta H > 0$ og $\\Delta S > 0$, altså tilfellet «spontan bare ved høy temperatur». Grensen ligger der $\\Delta G = 0$:</p>$$T = \\frac{\\Delta H^\\circ}{\\Delta S^\\circ} = \\frac{178{,}4\\ \\text{kJ/mol}}{0{,}1590\\ \\text{kJ/(K}\\cdot\\text{mol)}} = 1122\\ \\text{K}$$$$1122\\ \\text{K} - 273 = 849\\ ^\\circ\\text{C}$$<p>Over omtrent 850 °C blir leddet $T\\Delta S$ større enn $\\Delta H$, slik at $\\Delta G$ blir negativ og kalksteinen spaltes. Det er nettopp derfor industrielle kalkovner holdes på 900–1000 °C.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å snu fortegnsregelen for $\\Delta H$ og tro at et positivt tall betyr at energi frigjøres. $\\Delta H > 0$ betyr at systemet TAR OPP energi, altså endoterm, og at produktene ligger høyere i energi enn reaktantene.",
       "Å glemme å gjøre om $\\Delta S$ fra J/(K·mol) til kJ/(K·mol) i $\\Delta G = \\Delta H - T\\Delta S$. Da blir leddet $T\\Delta S$ tusen ganger for stort, og du konkluderer med feil spontanitet.",
@@ -97,7 +288,6 @@
       "Å bruke massen av bare det ene stoffet i $q = c \\cdot m \\cdot \\Delta T$. Det er massen av hele løsningen som varmes opp. Og husk fortegnsskiftet: $q_{\\text{reaksjon}} = -q_{\\text{løsning}}$.",
       "Å tro at «spontan» betyr «rask». $\\Delta G < 0$ sier bare at reaksjonen er termodynamisk mulig — den kan likevel gå uendelig langsomt uten katalysator eller høy nok temperatur."
     ],
-
     "tips": [
       "Skriv de tre fortegnsreglene øverst på arket før du begynner: $\\Delta H < 0$ er eksoterm, $\\Delta S > 0$ er økt uorden, $\\Delta G < 0$ er spontan. Da slipper du å resonnere deg fram til dem under tidspress.",
       "Gjør et overslag på $\\Delta S$ før du regner: tell mol gass på hver side av likningen. Får du negativ $\\Delta S$ av tabellverdiene mens gassmengden øker, har du regnet feil et sted.",
@@ -106,25 +296,68 @@
       "På kalorimetrioppgaver: regn ut $q$ i joule først, gjør om til kJ, del på stoffmengden, og sett fortegnet helt til slutt ut fra om temperaturen steg eller sank. Skriv enheten på hvert mellomsvar — det avslører feil umiddelbart."
     ]
   },
-
   "begreper": [
-    { "begrep": "System", "forklaring": "Den delen av verden vi studerer, altså stoffene som reagerer. Alt utenfor kalles omgivelsene." },
-    { "begrep": "Omgivelser", "forklaring": "Alt utenfor systemet — begerglasset, løsemiddelet, lufta rundt. Energien som systemet avgir eller tar opp, går til eller fra omgivelsene." },
-    { "begrep": "Eksoterm reaksjon", "forklaring": "En reaksjon som avgir energi til omgivelsene, slik at temperaturen der stiger. $\\Delta H < 0$." },
-    { "begrep": "Endoterm reaksjon", "forklaring": "En reaksjon som tar opp energi fra omgivelsene, slik at temperaturen der synker. $\\Delta H > 0$." },
-    { "begrep": "Entalpi ($H$)", "forklaring": "Et mål på energiinnholdet i stoffene ved konstant trykk. Vi måler ikke $H$ direkte, bare endringen $\\Delta H$." },
-    { "begrep": "Reaksjonsentalpi ($\\Delta H$)", "forklaring": "Varmen en reaksjon utveksler med omgivelsene ved konstant trykk, regnet per mol reaksjonslikning som den er skrevet." },
-    { "begrep": "Termokjemisk likning", "forklaring": "En balansert reaksjonslikning med fasene angitt og $\\Delta H$ oppgitt ved siden av." },
-    { "begrep": "Standard dannelsesentalpi ($\\Delta H_f^\\circ$)", "forklaring": "Entalpiendringen når 1 mol av et stoff dannes fra grunnstoffene i deres mest stabile form ved 25 °C og 1 bar. Er 0 for grunnstoff i stabil form." },
-    { "begrep": "Tilstandsfunksjon", "forklaring": "En størrelse som bare avhenger av tilstanden til systemet, ikke av veien dit. Entalpi, entropi og Gibbs energi er alle tilstandsfunksjoner." },
-    { "begrep": "Hess' lov", "forklaring": "Entalpiendringen for en reaksjon er den samme uansett hvilken vei reaksjonen går, så delreaksjoner og deres $\\Delta H$ kan legges sammen." },
-    { "begrep": "Bindingsentalpi", "forklaring": "Energien som trengs for å bryte 1 mol av en bestemt binding i gassfase. Bindingsbrudd krever energi, bindingsdanning frigjør energi." },
-    { "begrep": "Kalorimeter", "forklaring": "Et isolert kar der man måler temperaturendringen i en løsning for å bestemme varmen en reaksjon utveksler." },
-    { "begrep": "Spesifikk varmekapasitet ($c$)", "forklaring": "Energien som trengs for å øke temperaturen til 1 gram av et stoff med 1 K. For vann er den 4,18 J/(g·K)." },
-    { "begrep": "Entropi ($S$)", "forklaring": "Et mål på hvor mange måter partiklene og energien i et system kan fordeles på — populært kalt grad av uorden. Enhet J/(K·mol)." },
-    { "begrep": "Gibbs energi ($\\Delta G$)", "forklaring": "Størrelsen $\\Delta G = \\Delta H - T\\Delta S$ som avgjør om en reaksjon er spontan. Negativ $\\Delta G$ betyr at reaksjonen kan gå av seg selv." }
+    {
+      "begrep": "System",
+      "forklaring": "Den delen av verden vi studerer, altså stoffene som reagerer. Alt utenfor kalles omgivelsene."
+    },
+    {
+      "begrep": "Omgivelser",
+      "forklaring": "Alt utenfor systemet — begerglasset, løsemiddelet, lufta rundt. Energien som systemet avgir eller tar opp, går til eller fra omgivelsene."
+    },
+    {
+      "begrep": "Eksoterm reaksjon",
+      "forklaring": "En reaksjon som avgir energi til omgivelsene, slik at temperaturen der stiger. $\\Delta H < 0$."
+    },
+    {
+      "begrep": "Endoterm reaksjon",
+      "forklaring": "En reaksjon som tar opp energi fra omgivelsene, slik at temperaturen der synker. $\\Delta H > 0$."
+    },
+    {
+      "begrep": "Entalpi ($H$)",
+      "forklaring": "Et mål på energiinnholdet i stoffene ved konstant trykk. Vi måler ikke $H$ direkte, bare endringen $\\Delta H$."
+    },
+    {
+      "begrep": "Reaksjonsentalpi ($\\Delta H$)",
+      "forklaring": "Varmen en reaksjon utveksler med omgivelsene ved konstant trykk, regnet per mol reaksjonslikning som den er skrevet."
+    },
+    {
+      "begrep": "Termokjemisk likning",
+      "forklaring": "En balansert reaksjonslikning med fasene angitt og $\\Delta H$ oppgitt ved siden av."
+    },
+    {
+      "begrep": "Standard dannelsesentalpi ($\\Delta H_f^\\circ$)",
+      "forklaring": "Entalpiendringen når 1 mol av et stoff dannes fra grunnstoffene i deres mest stabile form ved 25 °C og 1 bar. Er 0 for grunnstoff i stabil form."
+    },
+    {
+      "begrep": "Tilstandsfunksjon",
+      "forklaring": "En størrelse som bare avhenger av tilstanden til systemet, ikke av veien dit. Entalpi, entropi og Gibbs energi er alle tilstandsfunksjoner."
+    },
+    {
+      "begrep": "Hess' lov",
+      "forklaring": "Entalpiendringen for en reaksjon er den samme uansett hvilken vei reaksjonen går, så delreaksjoner og deres $\\Delta H$ kan legges sammen."
+    },
+    {
+      "begrep": "Bindingsentalpi",
+      "forklaring": "Energien som trengs for å bryte 1 mol av en bestemt binding i gassfase. Bindingsbrudd krever energi, bindingsdanning frigjør energi."
+    },
+    {
+      "begrep": "Kalorimeter",
+      "forklaring": "Et isolert kar der man måler temperaturendringen i en løsning for å bestemme varmen en reaksjon utveksler."
+    },
+    {
+      "begrep": "Spesifikk varmekapasitet ($c$)",
+      "forklaring": "Energien som trengs for å øke temperaturen til 1 gram av et stoff med 1 K. For vann er den 4,18 J/(g·K)."
+    },
+    {
+      "begrep": "Entropi ($S$)",
+      "forklaring": "Et mål på hvor mange måter partiklene og energien i et system kan fordeles på — populært kalt grad av uorden. Enhet J/(K·mol)."
+    },
+    {
+      "begrep": "Gibbs energi ($\\Delta G$)",
+      "forklaring": "Størrelsen $\\Delta G = \\Delta H - T\\Delta S$ som avgjør om en reaksjon er spontan. Negativ $\\Delta G$ betyr at reaksjonen kan gå av seg selv."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "En reaksjon har $\\Delta H = -128$ kJ/mol. Hva betyr det?",
@@ -150,19 +383,34 @@
     },
     {
       "sporsmal": "Du varmer 250 g vann fra 20,0 °C til 45,0 °C. Hvor mye varme har vannet tatt opp? ($c = 4{,}18$ J/(g·K))",
-      "alternativer": ["$20{,}9$ kJ", "$47{,}0$ kJ", "$26{,}1$ kJ", "$261$ kJ"],
+      "alternativer": [
+        "$20{,}9$ kJ",
+        "$47{,}0$ kJ",
+        "$26{,}1$ kJ",
+        "$261$ kJ"
+      ],
       "riktig": 2,
       "forklaring": "$q = c \\cdot m \\cdot \\Delta T = 4{,}18 \\cdot 250 \\cdot 25{,}0 = 26\\,125$ J $\\approx 26{,}1$ kJ. Det avgjørende er at du bruker temperatur-ENDRINGEN $\\Delta T = 45{,}0 - 20{,}0 = 25{,}0$ K, ikke sluttemperaturen. Setter du inn 45,0 får du 47,0 kJ, som er det mest fristende feilsvaret. Setter du inn 20,0 får du 20,9 kJ."
     },
     {
       "sporsmal": "Hvilket stoff har $\\Delta H_f^\\circ = 0$?",
-      "alternativer": ["$\\ce{H2O(l)}$", "$\\ce{Br2(l)}$", "$\\ce{O3(g)}$", "$\\ce{C(s)}$ som diamant"],
+      "alternativer": [
+        "$\\ce{H2O(l)}$",
+        "$\\ce{Br2(l)}$",
+        "$\\ce{O3(g)}$",
+        "$\\ce{C(s)}$ som diamant"
+      ],
       "riktig": 1,
       "forklaring": "Dannelsesentalpien er null for grunnstoffer i den mest stabile formen ved 25 °C og 1 bar. Brom er væske ved romtemperatur, så $\\ce{Br2(l)}$ er referanseformen. Ozon er et grunnstoff, men den stabile formen av oksygen er $\\ce{O2}$, så ozon har positiv dannelsesentalpi ($+142{,}7$ kJ/mol). Diamant er den vanligste fellen: den stabile formen av karbon er grafitt, så diamant har $\\Delta H_f^\\circ = +1{,}9$ kJ/mol. Vann er en kjemisk forbindelse og har $-285{,}8$ kJ/mol."
     },
     {
       "sporsmal": "En reaksjon har $\\Delta H = 45{,}0$ kJ/mol og $\\Delta S = 125$ J/(K·mol). Hva er $\\Delta G$ ved 298 K?",
-      "alternativer": ["$-37\\,205$ kJ/mol", "$-7{,}8$ kJ/mol", "$+82{,}3$ kJ/mol", "$+7{,}8$ kJ/mol"],
+      "alternativer": [
+        "$-37\\,205$ kJ/mol",
+        "$-7{,}8$ kJ/mol",
+        "$+82{,}3$ kJ/mol",
+        "$+7{,}8$ kJ/mol"
+      ],
       "riktig": 3,
       "forklaring": "Gjør om entropien først: $125$ J/(K·mol) $= 0{,}125$ kJ/(K·mol). Da blir $\\Delta G = 45{,}0 - 298 \\cdot 0{,}125 = 45{,}0 - 37{,}25 = +7{,}8$ kJ/mol, så reaksjonen er ikke spontan ved 298 K. Alternativ A er hva du får hvis du glemmer å dele entropien på 1000 ($45{,}0 - 37\\,250$), og alternativ C er hva du får hvis du legger til i stedet for å trekke fra."
     },
@@ -179,7 +427,12 @@
     },
     {
       "sporsmal": "Reaksjonen $\\ce{2H2(g) + O2(g) -> 2H2O(l)}$ har $\\Delta H = -571{,}6$ kJ/mol. Hva er $\\Delta H$ for $\\ce{H2O(l) -> H2(g) + 1/2 O2(g)}$?",
-      "alternativer": ["$-285{,}8$ kJ/mol", "$+571{,}6$ kJ/mol", "$+285{,}8$ kJ/mol", "$-571{,}6$ kJ/mol"],
+      "alternativer": [
+        "$-285{,}8$ kJ/mol",
+        "$+571{,}6$ kJ/mol",
+        "$+285{,}8$ kJ/mol",
+        "$-571{,}6$ kJ/mol"
+      ],
       "riktig": 2,
       "forklaring": "To grep: snu likningen, da snur fortegnet, og halver koeffisientene, da halveres tallverdien. $-571{,}6 \\to +571{,}6 \\to +285{,}8$ kJ/mol. Alternativ B har riktig fortegn, men du har glemt å halvere. Alternativ A har riktig tallverdi, men feil fortegn. Uansett må svaret være positivt: å spalte vann til hydrogen og oksygen krever energi."
     },
@@ -218,28 +471,80 @@
     },
     {
       "sporsmal": "En endoterm reaksjon har $\\Delta H = 92{,}0$ kJ/mol og $\\Delta S = 200$ J/(K·mol). Over hvilken temperatur blir reaksjonen spontan?",
-      "alternativer": ["$460$ K", "$0{,}46$ K", "$18\\,400$ K", "$2{,}17$ K"],
+      "alternativer": [
+        "$460$ K",
+        "$0{,}46$ K",
+        "$18\\,400$ K",
+        "$2{,}17$ K"
+      ],
       "riktig": 0,
       "forklaring": "Grensen ligger der $\\Delta G = 0$, altså der $\\Delta H = T\\Delta S$, som gir $T = \\frac{\\Delta H}{\\Delta S} = \\frac{92{,}0}{0{,}200} = 460$ K. Over 460 K blir $T\\Delta S$ større enn $\\Delta H$, og $\\Delta G$ blir negativ. Alternativ B er det mest fristende feilsvaret: det er hva du får hvis du glemmer å gjøre om $\\Delta S$ fra J til kJ ($92{,}0 / 200$). Alternativ C er produktet i stedet for brøken, og D er brøken opp ned."
     }
   ],
-
   "flashcards": [
-    { "front": "Eksoterm reaksjon", "bak": "Avgir energi til omgivelsene, som blir varmere. $\\Delta H < 0$, og produktene ligger lavere i energi enn reaktantene." },
-    { "front": "Endoterm reaksjon", "bak": "Tar opp energi fra omgivelsene, som blir kaldere. $\\Delta H > 0$, og produktene ligger høyere i energi enn reaktantene." },
-    { "front": "Hva er $\\Delta H$?", "bak": "Entalpiendringen: varmen reaksjonen utveksler med omgivelsene ved konstant trykk. $\\Delta H = H(\\text{produkter}) - H(\\text{reaktanter})$, oppgitt i kJ per mol reaksjonslikning." },
-    { "front": "Hva skjer med $\\Delta H$ hvis du snur eller ganger opp likningen?", "bak": "Snur du likningen, snur fortegnet. Ganger du alle koeffisientene med et tall, ganges tallverdien av $\\Delta H$ med det samme tallet." },
-    { "front": "Formelen for varme i kalorimetri", "bak": "$q = c \\cdot m \\cdot \\Delta T$. For vann er $c = 4{,}18$ J/(g·K), $m$ er massen av HELE løsningen, og $\\Delta T = T_{\\text{slutt}} - T_{\\text{start}}$." },
-    { "front": "Sammenhengen mellom $q$ for løsningen og $\\Delta H$ for reaksjonen", "bak": "$q_{\\text{reaksjon}} = -q_{\\text{løsning}}$, og $\\Delta H = \\frac{q_{\\text{reaksjon}}}{n}$. Stiger temperaturen, er $\\Delta H$ negativ." },
-    { "front": "Hess' lov", "bak": "$\\Delta H$ for en reaksjon er uavhengig av veien fra reaktanter til produkter, fordi entalpi er en tilstandsfunksjon. Derfor kan delreaksjoner og deres $\\Delta H$ legges sammen." },
-    { "front": "Reaksjonsentalpi fra dannelsesentalpier", "bak": "$\\Delta H^\\circ = \\sum n \\Delta H_f^\\circ(\\text{produkter}) - \\sum n \\Delta H_f^\\circ(\\text{reaktanter})$. Husk å gange med koeffisientene $n$." },
-    { "front": "Standard dannelsesentalpi $\\Delta H_f^\\circ$", "bak": "$\\Delta H$ når 1 mol av stoffet dannes fra grunnstoffene i deres mest stabile form ved 25 °C og 1 bar. Er 0 for grunnstoff i stabil form, for eksempel $\\ce{O2(g)}$, $\\ce{Br2(l)}$ og karbon som grafitt." },
-    { "front": "$\\Delta H$ ut fra bindingsentalpier", "bak": "$\\Delta H \\approx \\sum E_{\\text{bindinger brutt}} - \\sum E_{\\text{bindinger dannet}}$. Brudd krever energi, danning frigjør energi. Er de nye bindingene sterkest, blir reaksjonen eksoterm." },
-    { "front": "Entropi $S$", "bak": "Mål på hvor mange måter partiklene og energien kan fordeles på — grad av uorden. Enhet J/(K·mol). Alltid positiv for et stoff, siden en perfekt krystall ved 0 K har $S = 0$." },
-    { "front": "Rekkefølgen på entropien i de tre fasene", "bak": "$S(\\text{fast}) < S(\\text{væske}) \\ll S(\\text{gass})$. Overgangen til gass er det store spranget." },
-    { "front": "Raskeste sjekk på fortegnet til $\\Delta S$", "bak": "Tell mol gass på hver side av likningen. Øker antall mol gass, er $\\Delta S > 0$; synker det, er $\\Delta S < 0$." },
-    { "front": "Gibbs energi", "bak": "$\\Delta G = \\Delta H - T\\Delta S$, med $\\Delta H$ i kJ/mol, $\\Delta S$ i kJ/(K·mol) (del tabellverdien på 1000) og $T$ i kelvin." },
-    { "front": "Når er en reaksjon spontan?", "bak": "Når $\\Delta G < 0$. Er $\\Delta G > 0$, går reaksjonen ikke spontant (men den motsatte gjør det). Er $\\Delta G = 0$, er systemet i likevekt." },
-    { "front": "Betyr «spontan» at reaksjonen går fort?", "bak": "Nei. $\\Delta G < 0$ sier bare at reaksjonen er termodynamisk mulig. Farten bestemmes av aktiveringsenergien — diamant blir spontant til grafitt, men det tar milliarder av år." }
+    {
+      "front": "Eksoterm reaksjon",
+      "bak": "Avgir energi til omgivelsene, som blir varmere. $\\Delta H < 0$, og produktene ligger lavere i energi enn reaktantene."
+    },
+    {
+      "front": "Endoterm reaksjon",
+      "bak": "Tar opp energi fra omgivelsene, som blir kaldere. $\\Delta H > 0$, og produktene ligger høyere i energi enn reaktantene."
+    },
+    {
+      "front": "Hva er $\\Delta H$?",
+      "bak": "Entalpiendringen: varmen reaksjonen utveksler med omgivelsene ved konstant trykk. $\\Delta H = H(\\text{produkter}) - H(\\text{reaktanter})$, oppgitt i kJ per mol reaksjonslikning."
+    },
+    {
+      "front": "Hva skjer med $\\Delta H$ hvis du snur eller ganger opp likningen?",
+      "bak": "Snur du likningen, snur fortegnet. Ganger du alle koeffisientene med et tall, ganges tallverdien av $\\Delta H$ med det samme tallet."
+    },
+    {
+      "front": "Formelen for varme i kalorimetri",
+      "bak": "$q = c \\cdot m \\cdot \\Delta T$. For vann er $c = 4{,}18$ J/(g·K), $m$ er massen av HELE løsningen, og $\\Delta T = T_{\\text{slutt}} - T_{\\text{start}}$."
+    },
+    {
+      "front": "Sammenhengen mellom $q$ for løsningen og $\\Delta H$ for reaksjonen",
+      "bak": "$q_{\\text{reaksjon}} = -q_{\\text{løsning}}$, og $\\Delta H = \\frac{q_{\\text{reaksjon}}}{n}$. Stiger temperaturen, er $\\Delta H$ negativ."
+    },
+    {
+      "front": "Hess' lov",
+      "bak": "$\\Delta H$ for en reaksjon er uavhengig av veien fra reaktanter til produkter, fordi entalpi er en tilstandsfunksjon. Derfor kan delreaksjoner og deres $\\Delta H$ legges sammen."
+    },
+    {
+      "front": "Reaksjonsentalpi fra dannelsesentalpier",
+      "bak": "$\\Delta H^\\circ = \\sum n \\Delta H_f^\\circ(\\text{produkter}) - \\sum n \\Delta H_f^\\circ(\\text{reaktanter})$. Husk å gange med koeffisientene $n$."
+    },
+    {
+      "front": "Standard dannelsesentalpi $\\Delta H_f^\\circ$",
+      "bak": "$\\Delta H$ når 1 mol av stoffet dannes fra grunnstoffene i deres mest stabile form ved 25 °C og 1 bar. Er 0 for grunnstoff i stabil form, for eksempel $\\ce{O2(g)}$, $\\ce{Br2(l)}$ og karbon som grafitt."
+    },
+    {
+      "front": "$\\Delta H$ ut fra bindingsentalpier",
+      "bak": "$\\Delta H \\approx \\sum E_{\\text{bindinger brutt}} - \\sum E_{\\text{bindinger dannet}}$. Brudd krever energi, danning frigjør energi. Er de nye bindingene sterkest, blir reaksjonen eksoterm."
+    },
+    {
+      "front": "Entropi $S$",
+      "bak": "Mål på hvor mange måter partiklene og energien kan fordeles på — grad av uorden. Enhet J/(K·mol). Alltid positiv for et stoff, siden en perfekt krystall ved 0 K har $S = 0$."
+    },
+    {
+      "front": "Rekkefølgen på entropien i de tre fasene",
+      "bak": "$S(\\text{fast}) < S(\\text{væske}) \\ll S(\\text{gass})$. Overgangen til gass er det store spranget."
+    },
+    {
+      "front": "Raskeste sjekk på fortegnet til $\\Delta S$",
+      "bak": "Tell mol gass på hver side av likningen. Øker antall mol gass, er $\\Delta S > 0$; synker det, er $\\Delta S < 0$."
+    },
+    {
+      "front": "Gibbs energi",
+      "bak": "$\\Delta G = \\Delta H - T\\Delta S$, med $\\Delta H$ i kJ/mol, $\\Delta S$ i kJ/(K·mol) (del tabellverdien på 1000) og $T$ i kelvin."
+    },
+    {
+      "front": "Når er en reaksjon spontan?",
+      "bak": "Når $\\Delta G < 0$. Er $\\Delta G > 0$, går reaksjonen ikke spontant (men den motsatte gjør det). Er $\\Delta G = 0$, er systemet i likevekt."
+    },
+    {
+      "front": "Betyr «spontan» at reaksjonen går fort?",
+      "bak": "Nei. $\\Delta G < 0$ sier bare at reaksjonen er termodynamisk mulig. Farten bestemmes av aktiveringsenergien — diamant blir spontant til grafitt, men det tar milliarder av år."
+    }
   ]
 }

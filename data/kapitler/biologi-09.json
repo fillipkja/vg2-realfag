@@ -41,7 +41,31 @@
         "navn": "Størrelsesordener for mikrober",
         "latex": "1\\,\\text{mm} = 1000\\,\\mu\\text{m}, \\qquad 1\\,\\mu\\text{m} = 1000\\,\\text{nm}"
       }
-    ]
+    ],
+    "figur": {
+      "type": "flyt",
+      "retning": "ned",
+      "tittel": "Forsvarslinjene i tidsrekkefølge",
+      "forklaring": "Les tidene i notatene: hvert steg starter seinere enn det forrige, men treffer mer presist. De to første linjene virker mot alt og kjøper tid, mens bare den tredje er spesifikk — og bare den etterlater hukommelse.",
+      "steg": [
+        {
+          "tekst": "Barrierer: hud, slimhinner, magesyre",
+          "note": "1. linje: virker med én gang"
+        },
+        {
+          "tekst": "Betennelse, fagocytter, feber",
+          "note": "2. linje: medfødt, timer"
+        },
+        {
+          "tekst": "B- og T-celler mot ett antigen",
+          "note": "3. linje: tilpasset, 5–10 døgn"
+        },
+        {
+          "tekst": "Hukommelsesceller",
+          "note": "neste møte: 1–3 døgn"
+        }
+      ]
+    }
   },
   "grundig": {
     "seksjoner": [
@@ -51,7 +75,40 @@
       },
       {
         "tittel": "Smitteveier, epidemier og zoonoser",
-        "html": "<p>For at du skal bli smittet må fem ledd være på plass. Denne rekka kalles <strong>smittekjeden</strong>: et <strong>smittestoff</strong>, en <strong>smittekilde</strong> (menneske, dyr, mat, vann), en <strong>smittevei</strong>, en <strong>inngangsport</strong> (munn, nese, sår, slimhinne) og en <strong>mottakelig vert</strong>. Alt smittevern — håndvask, munnbind, kjøling av mat, vaksinasjon — går ut på å bryte minst ett av leddene.</p><ul><li><strong>Dråpe- og luftsmitte:</strong> store dråper faller til bakken innen 1–2 meter (influensa), mens små aerosoler kan sveve lenge (meslinger, tuberkulose).</li><li><strong>Kontaktsmitte:</strong> direkte hud mot hud, eller indirekte via dørhåndtak og mobiltelefoner.</li><li><strong>Mat- og vannsmitte (fekal-oral):</strong> smittestoffet går ut med avføring og inn gjennom munnen — salmonella, norovirus, <em>Giardia</em>.</li><li><strong>Blodsmitte:</strong> hepatitt B og C, hiv.</li><li><strong>Seksuell smitte:</strong> klamydia, gonoré, HPV.</li><li><strong>Vektorbåren smitte:</strong> et dyr bærer smittestoffet. Flått gir borreliose, <em>Anopheles</em>-mygg gir malaria.</li><li><strong>Fra mor til barn</strong> gjennom placenta, ved fødselen eller via morsmelka.</li></ul><p><strong>Inkubasjonstiden</strong> er tida fra smitte til symptomer. Er du smittsom allerede før symptomene kommer, blir sykdommen mye vanskeligere å stoppe.</p><p><strong>Reproduksjonstallet</strong> $R$ sier hvor mange nye personer én smittet i gjennomsnitt smitter. Er $R>1$, vokser utbruddet; er $R<1$, dør det ut. $R_0$ er verdien i en befolkning uten immunitet og uten tiltak. Et stort lokalt utbrudd kalles en <strong>epidemi</strong>, sprer det seg over flere verdensdeler er det en <strong>pandemi</strong>, og er sykdommen alltid til stede i et område, er den <strong>endemisk</strong>.</p><p><strong>Zoonoser</strong> smitter mellom dyr og mennesker. Rundt 60 % av alle kjente smittsomme sykdommer hos mennesker er zoonoser, og så mye som 75 % av de nye: borreliose fra flått, salmonellose fra fjørfe, rabies fra hund og covid-19. Tett husdyrhold, handel med levende dyr, nedbygging av natur og et varmere klima som flytter flått og mygg nordover, gjør at nye zoonoser dukker opp oftere.</p>"
+        "html": "<p>For at du skal bli smittet må fem ledd være på plass. Denne rekka kalles <strong>smittekjeden</strong>: et <strong>smittestoff</strong>, en <strong>smittekilde</strong> (menneske, dyr, mat, vann), en <strong>smittevei</strong>, en <strong>inngangsport</strong> (munn, nese, sår, slimhinne) og en <strong>mottakelig vert</strong>. Alt smittevern — håndvask, munnbind, kjøling av mat, vaksinasjon — går ut på å bryte minst ett av leddene.</p><ul><li><strong>Dråpe- og luftsmitte:</strong> store dråper faller til bakken innen 1–2 meter (influensa), mens små aerosoler kan sveve lenge (meslinger, tuberkulose).</li><li><strong>Kontaktsmitte:</strong> direkte hud mot hud, eller indirekte via dørhåndtak og mobiltelefoner.</li><li><strong>Mat- og vannsmitte (fekal-oral):</strong> smittestoffet går ut med avføring og inn gjennom munnen — salmonella, norovirus, <em>Giardia</em>.</li><li><strong>Blodsmitte:</strong> hepatitt B og C, hiv.</li><li><strong>Seksuell smitte:</strong> klamydia, gonoré, HPV.</li><li><strong>Vektorbåren smitte:</strong> et dyr bærer smittestoffet. Flått gir borreliose, <em>Anopheles</em>-mygg gir malaria.</li><li><strong>Fra mor til barn</strong> gjennom placenta, ved fødselen eller via morsmelka.</li></ul><p><strong>Inkubasjonstiden</strong> er tida fra smitte til symptomer. Er du smittsom allerede før symptomene kommer, blir sykdommen mye vanskeligere å stoppe.</p><p><strong>Reproduksjonstallet</strong> $R$ sier hvor mange nye personer én smittet i gjennomsnitt smitter. Er $R>1$, vokser utbruddet; er $R<1$, dør det ut. $R_0$ er verdien i en befolkning uten immunitet og uten tiltak. Et stort lokalt utbrudd kalles en <strong>epidemi</strong>, sprer det seg over flere verdensdeler er det en <strong>pandemi</strong>, og er sykdommen alltid til stede i et område, er den <strong>endemisk</strong>.</p><p><strong>Zoonoser</strong> smitter mellom dyr og mennesker. Rundt 60 % av alle kjente smittsomme sykdommer hos mennesker er zoonoser, og så mye som 75 % av de nye: borreliose fra flått, salmonellose fra fjørfe, rabies fra hund og covid-19. Tett husdyrhold, handel med levende dyr, nedbygging av natur og et varmere klima som flytter flått og mygg nordover, gjør at nye zoonoser dukker opp oftere.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Smittekjeden — bryt ett ledd",
+          "forklaring": "Hvert tiltak river ut sitt eget ledd: kjøling av mat rammer smittekilden, håndvask og munnbind smitteveien, plaster inngangsporten og vaksine verten. Sløyfa til høyre er selve epidemien — den som blir smittet, er neste smittekilde.",
+          "steg": [
+            {
+              "tekst": "Smittestoff",
+              "note": "bakterie, virus, sopp, parasitt"
+            },
+            {
+              "tekst": "Smittekilde",
+              "note": "menneske, dyr, mat eller vann"
+            },
+            {
+              "tekst": "Smittevei",
+              "note": "dråpe, kontakt, mat, blod"
+            },
+            {
+              "tekst": "Inngangsport",
+              "note": "munn, nese, sår, slimhinne"
+            },
+            {
+              "tekst": "Mottakelig vert",
+              "note": "ikke immun fra før"
+            }
+          ],
+          "tilbakekopling": {
+            "fra": 4,
+            "til": 1,
+            "tekst": "den syke blir ny smittekilde"
+          }
+        }
       },
       {
         "tittel": "Det medfødte immunforsvaret",
@@ -59,7 +116,57 @@
       },
       {
         "tittel": "Det tilpassede immunforsvaret",
-        "html": "<p>Det tilpassede, spesifikke immunforsvaret er tregt første gang — det tar 5–10 dager før det er i full gang — men det er treffsikkert, og det husker. Arbeidshestene er <strong>lymfocyttene</strong>: B-celler, som modnes i beinmargen, og T-celler, som modnes i thymus.</p><p>Nøkkelbegrepet er <strong>antigen</strong>: et molekyl, oftest et protein på overflaten av mikroben, som immunforsvaret kjenner igjen som fremmed. Hver enkelt lymfocytt har bare én type reseptor, som passer til ett bestemt antigen. Kroppen har millioner av ulike lymfocytter på lager, og når antigenet dukker opp, er det nettopp den cellen som passer, som deler seg mange ganger. Dette kalles <strong>klonal seleksjon</strong>.</p><p>En dendrittisk celle eller en makrofag presenterer antigenet for en <strong>T-hjelpecelle</strong>. T-hjelpecellen er dirigenten: den skiller ut signalstoffer (cytokiner) som aktiverer både B-celler og cytotoksiske T-celler. Slår du ut T-hjelpecellene, kollapser hele systemet — og det er nettopp dem hiv angriper.</p><p>Videre går responsen i to spor. I det <strong>humorale</strong> sporet blir aktiverte B-celler til <strong>plasmaceller</strong> som pumper ut <strong>antistoffer</strong>: Y-formede proteiner med et variabelt område som passer til antigenet. Antistoffene nøytraliserer virus, klumper sammen bakterier, merker dem for fagocytose og aktiverer komplement. I det <strong>cellemedierte</strong> sporet dreper <strong>cytotoksiske T-celler</strong> kroppens egne celler som er infisert, og som viser virusantigen på overflaten. Antistoff kan ikke nå et virus som har gjemt seg inne i en celle, og derfor trengs begge sporene.</p><p>Til slutt lages <strong>hukommelsesceller</strong>. Møter du samme antigen igjen, kommer <strong>sekundærresponsen</strong> etter 1–3 dager i stedet for 1–2 uker, og antistoffnivået blir mange ganger høyere. Da er du ofte frisk før du merker at du var syk.</p>"
+        "html": "<p>Det tilpassede, spesifikke immunforsvaret er tregt første gang — det tar 5–10 dager før det er i full gang — men det er treffsikkert, og det husker. Arbeidshestene er <strong>lymfocyttene</strong>: B-celler, som modnes i beinmargen, og T-celler, som modnes i thymus.</p><p>Nøkkelbegrepet er <strong>antigen</strong>: et molekyl, oftest et protein på overflaten av mikroben, som immunforsvaret kjenner igjen som fremmed. Hver enkelt lymfocytt har bare én type reseptor, som passer til ett bestemt antigen. Kroppen har millioner av ulike lymfocytter på lager, og når antigenet dukker opp, er det nettopp den cellen som passer, som deler seg mange ganger. Dette kalles <strong>klonal seleksjon</strong>.</p><p>En dendrittisk celle eller en makrofag presenterer antigenet for en <strong>T-hjelpecelle</strong>. T-hjelpecellen er dirigenten: den skiller ut signalstoffer (cytokiner) som aktiverer både B-celler og cytotoksiske T-celler. Slår du ut T-hjelpecellene, kollapser hele systemet — og det er nettopp dem hiv angriper.</p><p>Videre går responsen i to spor. I det <strong>humorale</strong> sporet blir aktiverte B-celler til <strong>plasmaceller</strong> som pumper ut <strong>antistoffer</strong>: Y-formede proteiner med et variabelt område som passer til antigenet. Antistoffene nøytraliserer virus, klumper sammen bakterier, merker dem for fagocytose og aktiverer komplement. I det <strong>cellemedierte</strong> sporet dreper <strong>cytotoksiske T-celler</strong> kroppens egne celler som er infisert, og som viser virusantigen på overflaten. Antistoff kan ikke nå et virus som har gjemt seg inne i en celle, og derfor trengs begge sporene.</p><p>Til slutt lages <strong>hukommelsesceller</strong>. Møter du samme antigen igjen, kommer <strong>sekundærresponsen</strong> etter 1–3 dager i stedet for 1–2 uker, og antistoffnivået blir mange ganger høyere. Da er du ofte frisk før du merker at du var syk.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Antistoff i blodet ved første og andre møte med samme antigen",
+          "forklaring": "Etter første møte går det en uke før nivået begynner å stige, og toppen blir lav. Ved andre møte skyter nivået opp innen 1–3 døgn, blir mange ganger høyere enn primærtoppen og holder seg oppe — hukommelsescellene sto klare.",
+          "xmin": -2,
+          "xmax": 58,
+          "ymin": -6,
+          "ymax": 78,
+          "xlabel": "tid (døgn)",
+          "ylabel": "antistoff (relativt)",
+          "kurver": [
+            {
+              "uttrykk": "10/exp(((x-14)/4.5)^2)+70/(1+exp(0-(x-42)*2))/exp((x-42)/70)",
+              "farge": 1
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                40,
+                74
+              ],
+              "til": [
+                40,
+                -6
+              ],
+              "navn": "2. møte",
+              "farge": 2,
+              "merkeplass": 0.3
+            }
+          ],
+          "punkter": [
+            {
+              "x": 0,
+              "y": 0,
+              "navn": "1. møte",
+              "plassering": "under"
+            },
+            {
+              "x": 14,
+              "y": 10,
+              "navn": "primærrespons"
+            },
+            {
+              "x": 45,
+              "y": 66.9,
+              "navn": "sekundærrespons"
+            }
+          ]
+        }
       },
       {
         "tittel": "Vaksiner og flokkimmunitet",
@@ -74,7 +181,54 @@
       {
         "tittel": "Flokkimmunitet mot meslinger — regnet fullt ut",
         "oppgave": "<p>Meslinger er den mest smittsomme sykdommen vi kjenner, med $R_0 \\approx 15$. MMR-vaksinen gir om lag 97 % beskyttelse etter to doser.</p><ol><li>Hvor stor andel av befolkningen må være immun for at meslinger skal dø ut?</li><li>Hvilken vaksinasjonsdekning svarer det til?</li><li>Hva blir det effektive reproduksjonstallet hvis dekningen faller til 90 %?</li><li>Sammenlign med en influensa som har $R_0 = 1{,}5$.</li></ol>",
-        "losning": "<p><strong>Steg 1 — terskelen for flokkimmunitet.</strong> Vi bruker $H_c = 1-\\frac{1}{R_0}$ med $R_0 = 15$:</p>$$H_c = 1 - \\frac{1}{15} = 1 - 0{,}0667 = 0{,}933 = 93{,}3\\ \\%$$<p>Altså må 93,3 % av befolkningen være immune. Tanken bak formelen er enkel: én smittet møter 15 personer, og skal smitten stanse, må høyst én av dem være mottakelig. Andelen mottakelige må derfor være under $\\frac{1}{15}$.</p><p><strong>Steg 2 — nødvendig vaksinasjonsdekning.</strong> Vaksinen virker ikke på alle. Andelen immune blir dekning ganger effekt, $p = v \\cdot E$, og vi krever $v \\cdot E \\geq H_c$:</p>$$v \\geq \\frac{H_c}{E} = \\frac{0{,}933}{0{,}97} = 0{,}962 = 96{,}2\\ \\%$$<p>Man må altså vaksinere <em>flere</em> enn 93,3 % for å få 93,3 % immune. Det er grunnen til at målet i Norge ligger på 95 % og oppover.</p><p><strong>Steg 3 — dekningen faller til 90 %.</strong> Først andelen immune:</p>$$p = 0{,}90 \\cdot 0{,}97 = 0{,}873 = 87{,}3\\ \\%$$<p>Så det effektive reproduksjonstallet:</p>$$R = R_0 \\cdot (1-p) = 15 \\cdot (1 - 0{,}873) = 15 \\cdot 0{,}127 = 1{,}9$$<p>Siden $R = 1{,}9 > 1$, smitter hver syk person i snitt nesten to nye. Utbruddet vokser. Legg merke til hvor lite som skal til: dekningen falt bare 6 prosentpoeng, men $R$ gikk fra 1 til nesten 2.</p><p><strong>Steg 4 — influensa til sammenligning.</strong></p>$$H_c = 1 - \\frac{1}{1{,}5} = 1 - 0{,}667 = 0{,}333 = 33\\ \\%$$<p><strong>Konklusjon:</strong> terskelen henger direkte sammen med smittsomheten. En influensa med $R_0 = 1{,}5$ stanser når en tredjedel er immune, mens meslinger krever over 95 % dekning. Derfor er det gjerne meslinger som bryter ut først når vaksinasjonsdekningen synker.</p>"
+        "losning": "<p><strong>Steg 1 — terskelen for flokkimmunitet.</strong> Vi bruker $H_c = 1-\\frac{1}{R_0}$ med $R_0 = 15$:</p>$$H_c = 1 - \\frac{1}{15} = 1 - 0{,}0667 = 0{,}933 = 93{,}3\\ \\%$$<p>Altså må 93,3 % av befolkningen være immune. Tanken bak formelen er enkel: én smittet møter 15 personer, og skal smitten stanse, må høyst én av dem være mottakelig. Andelen mottakelige må derfor være under $\\frac{1}{15}$.</p><p><strong>Steg 2 — nødvendig vaksinasjonsdekning.</strong> Vaksinen virker ikke på alle. Andelen immune blir dekning ganger effekt, $p = v \\cdot E$, og vi krever $v \\cdot E \\geq H_c$:</p>$$v \\geq \\frac{H_c}{E} = \\frac{0{,}933}{0{,}97} = 0{,}962 = 96{,}2\\ \\%$$<p>Man må altså vaksinere <em>flere</em> enn 93,3 % for å få 93,3 % immune. Det er grunnen til at målet i Norge ligger på 95 % og oppover.</p><p><strong>Steg 3 — dekningen faller til 90 %.</strong> Først andelen immune:</p>$$p = 0{,}90 \\cdot 0{,}97 = 0{,}873 = 87{,}3\\ \\%$$<p>Så det effektive reproduksjonstallet:</p>$$R = R_0 \\cdot (1-p) = 15 \\cdot (1 - 0{,}873) = 15 \\cdot 0{,}127 = 1{,}9$$<p>Siden $R = 1{,}9 > 1$, smitter hver syk person i snitt nesten to nye. Utbruddet vokser. Legg merke til hvor lite som skal til: dekningen falt bare 6 prosentpoeng, men $R$ gikk fra 1 til nesten 2.</p><p><strong>Steg 4 — influensa til sammenligning.</strong></p>$$H_c = 1 - \\frac{1}{1{,}5} = 1 - 0{,}667 = 0{,}333 = 33\\ \\%$$<p><strong>Konklusjon:</strong> terskelen henger direkte sammen med smittsomheten. En influensa med $R_0 = 1{,}5$ stanser når en tredjedel er immune, mens meslinger krever over 95 % dekning. Derfor er det gjerne meslinger som bryter ut først når vaksinasjonsdekningen synker.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "R = 15(1 − p) for meslinger",
+          "forklaring": "Der linja krysser R = 1, ved p = 0,933, dør utbruddet ut; til venstre for krysset vokser det. Ved 90 % dekning havner vi på p = 0,873 og R = 1,9 — seks prosentpoeng under terskelen er nok til at hver syk smitter nesten to nye.",
+          "xmin": 0.7,
+          "xmax": 1.02,
+          "ymin": -0.3,
+          "ymax": 4.8,
+          "xlabel": "andel immune p",
+          "ylabel": "R",
+          "kurver": [
+            {
+              "uttrykk": "15*(1-x)",
+              "farge": 1
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                0.7,
+                1
+              ],
+              "til": [
+                1.02,
+                1
+              ],
+              "navn": "R = 1",
+              "farge": 2,
+              "merkeplass": 0.15
+            }
+          ],
+          "punkter": [
+            {
+              "x": 0.873,
+              "y": 1.905,
+              "navn": "90 % dekning → R = 1,9",
+              "hjelpelinjer": true
+            },
+            {
+              "x": 0.9333,
+              "y": 1,
+              "navn": "terskel 93,3 %",
+              "plassering": "under",
+              "hjelpelinjer": true
+            }
+          ]
+        }
       },
       {
         "tittel": "Fra 50 bakterier til matforgiftning — vekst regnet med enheter",
