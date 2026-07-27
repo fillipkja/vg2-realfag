@@ -1,7 +1,7 @@
 /* Realfag VG2 — service worker.
    Network-first for HTML/JS/JSON (så innhold aldri blir gammelt),
    cache-first for vendor-filer og ikoner (som ikke endrer seg). */
-const CACHE = "vg2realfag-v1";
+const CACHE = "vg2realfag-v2";
 const SKALL = [
   "./",
   "./index.html",
@@ -16,12 +16,37 @@ const SKALL = [
   "./icons/icon-512.png",
 ];
 
+/* Alle datafilene utledes av fag.json, så hele pensumet kan caches ved
+   installasjon. Da fungerer appen offline — på bussen, i klasserommet. */
+async function alleDatafiler() {
+  try {
+    const r = await fetch("./data/fag.json", { cache: "no-cache" });
+    if (!r.ok) return [];
+    const { fag } = await r.json();
+    const stier = ["./data/studieteknikk.json"];
+    for (const f of fag) {
+      if (["matematikk", "fysikk", "kjemi"].includes(f.id)) {
+        stier.push(`./data/formler-${f.id}.json`);
+      }
+      for (const k of f.kapitler) {
+        stier.push(`./data/kapitler/${f.id}-${String(k.nr).padStart(2, "0")}.json`);
+      }
+    }
+    return stier;
+  } catch {
+    return [];
+  }
+}
+
 self.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches.open(CACHE)
-      .then((c) => Promise.allSettled(SKALL.map((u) => c.add(u))))
-      .then(() => self.skipWaiting())
-  );
+  e.waitUntil((async () => {
+    const c = await caches.open(CACHE);
+    await Promise.allSettled(SKALL.map((u) => c.add(u)));
+    // pensumet i bakgrunnen — feiler stille hvis en fil ikke finnes ennå
+    const data = await alleDatafiler();
+    await Promise.allSettled(data.map((u) => c.add(u)));
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener("activate", (e) => {

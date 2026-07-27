@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="nb"><meta charset="utf-8">
+<!--
+  Funksjonstest for de interaktive delene: quiz, flashcards og fremdrift.
+  Kjøres headless — se scripts/funksjonstest.sh.
+  Appen lastes i en iframe på samme origin, så testen kan klikke i den.
+-->
+<title>Funksjonstest — Realfag VG2</title>
+<style>body{font:14px/1.5 ui-monospace,monospace;margin:0;padding:12px}
+iframe{position:fixed;right:0;top:0;width:393px;height:100%;border-left:1px solid #ccc}
+pre{margin:0;white-space:pre-wrap;max-width:calc(100% - 410px)}</style>
+<body>
+<pre id="ut">kjører …</pre>
+<iframe id="ramme"></iframe>
+<script>
+const ut = document.getElementById("ut");
+const ramme = document.getElementById("ramme");
+let logg = [], feil = 0;
+
+const si = (s) => { logg.push(s); ut.textContent = logg.join("\n"); };
+const ok = (navn, betingelse, detalj = "") => {
+  if (!betingelse) feil++;
+  si(`${betingelse ? "OK  " : "FEIL"}  ${navn}${detalj ? "  — " + detalj : ""}`);
+};
+const vent = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function gaTil(rute) {
+  ramme.src = "../?theme=light#" + rute;
+  await vent(1400);
+  return ramme.contentDocument;
+}
+async function bytt(rute) {
+  ramme.contentWindow.location.hash = rute;
+  await vent(800);
+  return ramme.contentDocument;
+}
+const lager = () => {
+  try { return JSON.parse(ramme.contentWindow.localStorage.getItem("vg2realfag:v1")) || {}; }
+  catch { return {}; }
+};
+
+(async () => {
+  // ── quiz ───────────────────────────────────────────────────────────────
+  si("── QUIZ ──");
+  let d = await gaTil("/kap/matematikk/3?v=quiz");
+  let alt = [...d.querySelectorAll(".alt")];
+  ok("quizen viser 4 alternativer", alt.length === 4, `fant ${alt.length}`);
+  const tellerFor = d.querySelector(".teller")?.textContent.trim();
+  ok("telleren starter på 1", /^1 \//.test(tellerFor || ""), tellerFor);
+
+  // svar riktig på spørsmål 1 (fasit hentes fra datafila)
+  const kap = await (await fetch("../data/kapitler/matematikk-03.json")).json();
+  const riktigIdx = kap.quiz[0].riktig;
+  alt[riktigIdx].click();
+  await vent(400);
+  ok("markerer riktig svar", d.querySelector('.alt[data-svar="riktig"]') !== null);
+  ok("viser forklaring", (d.querySelector(".forklaring")?.textContent || "").length > 40);
+  ok("fasit sier riktig", d.querySelector(".fasit.ok") !== null);
+  ok("alternativene låses etter svar", [...d.querySelectorAll(".alt")].every((b) => b.disabled));
+  d.querySelector("#neste")?.click();
+  await vent(400);
+  ok("går videre til spørsmål 2", /^2 \//.test(d.querySelector(".teller")?.textContent.trim() || ""),
+     d.querySelector(".teller")?.textContent.trim());
+
+  // svar galt på spørsmål 2
+  const alt2 = [...d.querySelectorAll(".alt")];
+  const galtIdx = (kap.quiz[1].riktig + 1) % 4;
+  alt2[galtIdx].click();
+  await vent(400);
+  ok("markerer galt svar", d.querySelector('.alt[data-svar="galt"]') !== null);
+  ok("viser likevel riktig svar", d.querySelector('.alt[data-svar="riktig"]') !== null);
+  ok("fasit sier ikke riktig", d.querySelector(".fasit.feil") !== null);
+
+  // fullfør resten av quizen med riktige svar → skal gi bestått.
+  // Vi har svart på spørsmål 1 og 2, så neste klikk viser spørsmål 3 (indeks 2).
+  for (let i = 2; i < kap.quiz.length; i++) {
+    d.querySelector("#neste")?.click();
+    await vent(260);
+    const a = [...d.querySelectorAll(".alt")];
+    if (!a.length) break;
+    a[kap.quiz[i].riktig]?.click();
+    await vent(260);
+  }
+  d.querySelector("#neste")?.click();
+  await vent(500);
+  ok("viser resultatside", d.querySelector(".resultat") !== null);
+  const res = lager().kap?.["matematikk-3"]?.quiz;
+  ok("lagrer beste resultat", !!res && res.antall === kap.quiz.length,
+     res ? `${res.best}/${res.antall}` : "ingenting lagret");
+  ok("bestått quiz gir fremdrift", (res?.best / res?.antall) >= 0.7,
+     res ? `${Math.round(100 * res.best / res.antall)} %` : "-");
+
+  // ── flashcards ─────────────────────────────────────────────────────────
+  si("");
+  si("── FLASHCARDS ──");
+  d = await bytt("/kap/matematikk/3?v=kort");
+  const kort = d.querySelector("#kort");
+  ok("viser et kort", kort !== null);
+  ok("knappene er skjult før kortet snus",
+     getComputedStyle(d.querySelector("#knapper")).display === "none");
+  kort.click();
+  await vent(650);
+  ok("kortet snus", kort.classList.contains("snudd"));
+  ok("knappene vises etter snuing",
+     getComputedStyle(d.querySelector("#knapper")).display !== "none");
+  const forTeller = d.querySelector(".teller")?.textContent.trim();
+  d.querySelector("#riktig").click();
+  await vent(500);
+  ok("«Kunne det» flytter til neste kort",
+     d.querySelector(".teller")?.textContent.trim() !== forTeller,
+     `${forTeller} → ${d.querySelector(".teller")?.textContent.trim()}`);
+  const k0 = lager().kort?.["matematikk-3:0"];
+  ok("kortet flyttes opp en Leitner-boks", k0?.boks === 2, `boks ${k0?.boks}`);
+  ok("kortet får en forfallsdato fram i tid", (k0?.forfall || 0) > Date.now());
+  // bomm på neste kort → skal tilbake til boks 1
+  d.querySelector("#kort").click();
+  await vent(650);
+  d.querySelector("#feil").click();
+  await vent(400);
+  const k1 = lager().kort?.["matematikk-3:1"];
+  ok("«Ikke sikker» holder kortet i boks 1", k1?.boks === 1, `boks ${k1?.boks}`);
+
+  // ── fremdrift ──────────────────────────────────────────────────────────
+  si("");
+  si("── FREMDRIFT ──");
+  d = await bytt("/kap/matematikk/3?v=kompakt");
+  d.querySelector("#merk").click();
+  await vent(400);
+  ok("«Marker som lest» lagres", lager().kap?.["matematikk-3"]?.kompakt === 1);
+  ok("knappen bytter til angre-tilstand",
+     /angre/i.test(d.querySelector("#merk")?.textContent || ""));
+  d = await bytt("/kap/matematikk/3?v=grundig");
+  d.querySelector("#merk").click();
+  await vent(400);
+  ok("grundig-lest lagres", lager().kap?.["matematikk-3"]?.grundig === 1);
+  // vis løsning på et eksempel
+  const losBtn = d.querySelector("[data-los]");
+  const losBoks = d.querySelector("#los-0");
+  ok("løsningen er skjult i utgangspunktet", getComputedStyle(losBoks).display === "none");
+  losBtn.click();
+  await vent(300);
+  ok("«Vis løsning» åpner løsningen", getComputedStyle(losBoks).display !== "none");
+  ok("knappen bytter tekst", /skjul/i.test(losBtn.textContent));
+
+  d = await bytt("/");
+  await vent(600);
+  const heroTekst = d.querySelector(".hero .fig")?.textContent || "";
+  ok("forsiden viser samlet fremdrift over 0 %", parseInt(heroTekst, 10) > 0, heroTekst.trim());
+  ok("forsiden viser «Fortsett der du var»",
+     /Fortsett der du var/.test(d.body.textContent));
+
+  // ── fag og formler ─────────────────────────────────────────────────────
+  si("");
+  si("── NAVIGASJON ──");
+  d = await bytt("/fag/matematikk");
+  ok("kapittel 3 er markert ferdig", d.querySelector(".kapkort.ferdig") !== null);
+  ok("alle 8 kapitler listes", d.querySelectorAll(".kapkort").length === 8,
+     `${d.querySelectorAll(".kapkort").length} kapitler`);
+  d = await bytt("/sok");
+  const inn = d.querySelector("#sokinput");
+  ok("søkefeltet finnes", inn !== null);
+  inn.value = "kjerneregel";
+  inn.dispatchEvent(new ramme.contentWindow.Event("input"));
+  await vent(2500);
+  const treff = d.querySelectorAll(".treff").length;
+  ok("søk på «kjerneregel» gir treff", treff > 0, `${treff} treff`);
+
+  si("");
+  si(feil === 0 ? `ALLE ${logg.filter((l) => l.startsWith("OK")).length} TESTER OK`
+                : `${feil} TESTER FEILET`);
+  document.title = feil === 0 ? "TEST-OK" : "TEST-FEIL";
+})().catch((e) => { si("KRASJ: " + (e && e.stack || e)); document.title = "TEST-FEIL"; });
+</script>

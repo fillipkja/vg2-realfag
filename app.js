@@ -66,6 +66,7 @@ function lastLager() {
   lager.kap ||= {};     // "matematikk-3": {kompakt:1, grundig:1, quiz:{best,antall,dato}}
   lager.kort ||= {};    // "matematikk-3:4": {boks, forfall}
   lager.tema ||= "auto";
+  lager.sist ||= null;  // {fag, nr, v} — sist åpnede kapittel
   return lager;
 }
 function lagre() {
@@ -249,12 +250,23 @@ function tegnTabbar() {
 
 /* ─────────────────────────── visning: hjem ─────────────────────────── */
 
+/* Forfalte flashcards på tvers av alle fag — «hva bør du repetere i dag» */
+function forfalteKort() {
+  const lag = lastLager(), naa = Date.now();
+  let n = 0;
+  for (const t of Object.values(lag.kort)) if ((t.forfall || 0) <= naa && t.boks > 1) n++;
+  return n;
+}
+
 function visHjem(el) {
   tegnTopp({ tittel: "Realfag VG2", under: "Studiespesialisering — realfag" });
   const tot = totalProsent();
   const ferdige = S.fag.flatMap((f) => f.kapitler.map((k) => kapProsent(f.id, k.nr)))
     .filter((p) => p === 100).length;
   const antKap = S.fag.reduce((a, f) => a + f.kapitler.length, 0);
+  const sist = lastLager().sist;
+  const sistKap = sist && kapAv(sist.fag, sist.nr) ? sist : null;
+  const forfalt = forfalteKort();
 
   el.innerHTML = `
     <div class="card hero" style="margin-top:16px">
@@ -262,6 +274,24 @@ function visHjem(el) {
       <div class="lbl">av pensum gjennomgått<br>
         <b>${ferdige}</b> av <b>${antKap}</b> kapitler er ferdige</div>
     </div>
+
+    ${sistKap ? `
+      <div class="section-label">Fortsett der du var</div>
+      <a class="card kapkort" href="#/kap/${sistKap.fag}/${sistKap.nr}?v=${sistKap.v || "kompakt"}"
+         style="--accent:${FAGFARGE[sistKap.fag]};--track:color-mix(in srgb, ${FAGFARGE[sistKap.fag]} 18%, var(--grid))">
+        <span class="kapnum">${sistKap.nr}</span>
+        <span class="kapbody">
+          <h4>${esc(kapAv(sistKap.fag, sistKap.nr).tittel)}</h4>
+          <div class="undertema">${esc(fagAv(sistKap.fag).navn)}</div>
+          ${kapProsent(sistKap.fag, sistKap.nr) > 0
+            ? `<div style="margin-top:7px">${meter(kapProsent(sistKap.fag, sistKap.nr), sistKap.fag, true)}</div>` : ""}
+        </span>
+        <span class="chev">${svg("fram", 16)}</span>
+      </a>` : ""}
+
+    ${forfalt > 0 ? `<div class="notat" style="margin-top:12px">
+      Du har <b>${forfalt}</b> ${forfalt === 1 ? "kort" : "kort"} som er klare for repetisjon.
+      Åpne «Kort» i et kapittel du har øvd på før.</div>` : ""}
 
     <div class="section-label">Fagene dine</div>
     <div class="fagliste">
@@ -360,7 +390,11 @@ async function visKapittel(el, fagId, nr, ønsketVisning) {
   const f = fagAv(fagId), kMeta = kapAv(fagId, nr);
   if (!f || !kMeta) return visIkkeFunnet(el);
   tegnTopp({ tittel: `${nr}. ${kMeta.tittel}`, under: f.navn, tilbake: `/fag/${fagId}` });
-  el.innerHTML = `<div class="laster">Laster kapittel …</div>`;
+  /* bare vis lasteteksten hvis kapittelet ikke ligger i minnet — ellers blinker
+     visningen hver gang du bytter fane */
+  if (!S.kapCache.has(kapNokkel(fagId, nr))) {
+    el.innerHTML = `<div class="laster">Laster kapittel …</div>`;
+  }
 
   let d;
   try { d = await hentKapittel(fagId, nr); }
@@ -376,9 +410,10 @@ async function visKapittel(el, fagId, nr, ønsketVisning) {
     return;
   }
 
-  const st = kapState(fagId, nr);
   const v = VISNINGER.some(([id]) => id === ønsketVisning) ? ønsketVisning : "kompakt";
   const a = FAGFARGE[fagId];
+  lastLager().sist = { fag: fagId, nr: Number(nr), v };
+  lagre();
 
   el.innerHTML = `
     <div class="seg" role="tablist">
@@ -387,17 +422,12 @@ async function visKapittel(el, fagId, nr, ønsketVisning) {
     </div>
     <div id="kapinnhold" style="--accent:${a};--track:color-mix(in srgb, ${a} 18%, var(--grid))"></div>`;
 
+  /* Fanebytte går via ruten, så adressen alltid kan deles og «sist åpnet»
+     stemmer. Hash-endringen trigger tegn() som rendrer kapittelet på nytt. */
   el.querySelectorAll(".seg button").forEach((b) => {
-    b.onclick = () => {
-      gaTil(`/kap/${fagId}/${nr}?v=${b.dataset.v}`, true);
-      el.querySelectorAll(".seg button").forEach((x) =>
-        x.setAttribute("aria-selected", String(x === b)));
-      tegnKapInnhold($("#kapinnhold"), fagId, nr, d, b.dataset.v);
-      window.scrollTo({ top: 0, behavior: "instant" });
-    };
+    b.onclick = () => gaTil(`/kap/${fagId}/${nr}?v=${b.dataset.v}`, true);
   });
   tegnKapInnhold($("#kapinnhold"), fagId, nr, d, v);
-  void st;
 }
 
 function tegnKapInnhold(vert, fagId, nr, d, v) {
