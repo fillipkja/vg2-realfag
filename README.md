@@ -26,6 +26,9 @@ For hvert kapittel i hvert fag:
 
 I tillegg:
 
+- **Repetisjon i dag** — samler alle forfalte kort fra alle fire fag i én økt,
+  flettet mellom fagene. Lenken dukker opp på forsiden når du har kort som er
+  klare.
 - **Formelsamling** for R1, fysikk og kjemi, sortert etter tema.
 - **Læringsmetoder** — studieteknikkene med best dokumentert effekt, og hvordan
   du bruker dem i realfag.
@@ -85,7 +88,15 @@ Dype lenker (nyttige for verifisering og for å hoppe rett inn):
 #/kap/matematikk/3?v=grundig        kapittel, valgt visning
 #/formler/kjemi                     formelsamling
 #/metoder/aktiv-gjenkalling         én læringsmetode
+#/repetisjon                        global repetisjonsøkt
 ?theme=dark#/                       tvunget mørk modus
+```
+
+Verifisering:
+
+```bash
+./scripts/funksjonstest.sh   # 37 tester: quiz, kort, repetisjon, fremdrift, søk
+./scripts/skjermbilder.sh    # visuell sjekk i lys og mørk modus
 ```
 
 ## iPhone
