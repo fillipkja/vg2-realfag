@@ -1,0 +1,253 @@
+{
+  "fag": "kjemi",
+  "nr": 7,
+  "tittel": "Syrer og baser",
+  "intro": "Syrer og baser handler om ett eneste lite partikkel som flytter seg: protonet. Kapittelet knytter sammen likevekt, logaritmer og laboratoriearbeid, og pH-regning er noe av det som går oftest igjen på prøver og eksamen i Kjemi 1.",
+
+  "kompakt": {
+    "punkter": [
+      "Etter Brønsted er en syre en protondonor (avgir $\\ce{H+}$) og en base en protonakseptor (tar opp $\\ce{H+}$). Overføringen kalles en protolyse.",
+      "Syre og base opptrer alltid i korresponderende par, $\\ce{HA}$ og $\\ce{A-}$. Stoffer som kan gjøre begge ting, som $\\ce{H2O}$ og $\\ce{HCO3-}$, er amfotære.",
+      "Vannets egenprotolyse $\\ce{2H2O <=> H3O+ + OH-}$ gir $K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14}$ ved 25 °C. I rent vann er begge $1{,}0 \\cdot 10^{-7}$ mol/L.",
+      "$\\text{pH} = -\\log[\\ce{H3O+}]$ og $[\\ce{H3O+}] = 10^{-\\text{pH}}$. Ved 25 °C er $\\text{pH} + \\text{pOH} = 14{,}00$.",
+      "En sterk syre protolyseres fullstendig, så $[\\ce{H3O+}] = c(\\text{syre})$. En svak syre gir en likevekt, og da må du bruke $K_a$. Styrke (andel som protolyseres) og konsentrasjon (mol per liter) er to helt ulike ting.",
+      "Syrekonstanten er $K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}$, og $\\text{p}K_a = -\\log K_a$. Stor $K_a$ og liten $\\text{p}K_a$ betyr sterk syre.",
+      "For en svak syre med startkonsentrasjon $c$ er $[\\ce{H3O+}] \\approx \\sqrt{K_a \\cdot c}$. Tilnærmingen er gyldig når protolysegraden er under 5 %.",
+      "I et korresponderende par henger konstantene sammen: $K_a \\cdot K_b = K_w$, altså $\\text{p}K_a + \\text{p}K_b = 14{,}00$.",
+      "En buffer er en svak syre sammen med sin korresponderende base. $\\text{pH} = \\text{p}K_a + \\log\\frac{c(\\text{base})}{c(\\text{syre})}$, og bufferen virker best i området $\\text{p}K_a \\pm 1$.",
+      "Ved titrering er ekvivalenspunktet der stoffmengdene stemmer med molforholdet, og endepunktet der indikatoren slår om. Indikatoren velges ut fra pH i ekvivalenspunktet."
+    ],
+    "formler": [
+      { "navn": "pH", "latex": "\\text{pH} = -\\log[\\ce{H3O+}]" },
+      { "navn": "Konsentrasjon fra pH", "latex": "[\\ce{H3O+}] = 10^{-\\text{pH}}" },
+      { "navn": "pOH", "latex": "\\text{pOH} = -\\log[\\ce{OH-}], \\qquad [\\ce{OH-}] = 10^{-\\text{pOH}}" },
+      { "navn": "Sammenhengen mellom pH og pOH", "latex": "\\text{pH} + \\text{pOH} = 14{,}00 \\qquad (25\\,^\\circ\\text{C})" },
+      { "navn": "Vannets ionprodukt", "latex": "K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14} \\qquad (25\\,^\\circ\\text{C})" },
+      { "navn": "Sterk syre", "latex": "[\\ce{H3O+}] = c(\\text{syre})" },
+      { "navn": "Sterk base", "latex": "[\\ce{OH-}] = a \\cdot c(\\text{base}) \\quad (a = \\text{antall OH-grupper})" },
+      { "navn": "Syrekonstanten", "latex": "K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}" },
+      { "navn": "pKa", "latex": "\\text{p}K_a = -\\log K_a, \\qquad K_a = 10^{-\\text{p}K_a}" },
+      { "navn": "Basekonstanten", "latex": "K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}" },
+      { "navn": "Korresponderende par", "latex": "K_a \\cdot K_b = K_w \\qquad \\Longleftrightarrow \\qquad \\text{p}K_a + \\text{p}K_b = 14{,}00" },
+      { "navn": "Svak syre (tilnærming)", "latex": "[\\ce{H3O+}] = \\sqrt{K_a \\cdot c}" },
+      { "navn": "Protolysegrad", "latex": "\\text{protolysegrad} = \\frac{[\\ce{H3O+}]}{c_0} \\cdot 100\\,\\%" },
+      { "navn": "Henderson–Hasselbalch (buffer)", "latex": "\\text{pH} = \\text{p}K_a + \\log \\frac{c(\\text{base})}{c(\\text{syre})}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Syrer og baser etter Brønsted",
+        "html": "<p>På ungdomsskolen lærte du at en syre gir $\\ce{H+}$ i vann og en base gir $\\ce{OH-}$. Det er <strong>Arrhenius-definisjonen</strong>, og den er litt for trang: den forklarer ikke hvorfor ammoniakk, $\\ce{NH3}$, gjør vann basisk selv om molekylet ikke inneholder noen OH-gruppe i det hele tatt.</p><p>I Kjemi 1 bruker vi derfor <strong>Brønsteds definisjon</strong>:</p><ul><li>En <strong>syre</strong> er en <strong>protondonor</strong> — den kan avgi et proton, altså et $\\ce{H+}$.</li><li>En <strong>base</strong> er en <strong>protonakseptor</strong> — den kan ta opp et proton.</li></ul><p>Selve overføringen av protonet kalles en <strong>protolyse</strong>. Poenget med definisjonen er at en syre aldri kan avgi protonet alene; det må finnes en base som tar imot. I vannløsning er det oftest vannet selv som gjør jobben:</p>$$\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$$$$\\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}$$<p>Her er vann base i den første likningen og syre i den andre. Stoffer som kan opptre som både syre og base, kalles <strong>amfotære</strong>. Andre eksempler er $\\ce{HCO3-}$ og $\\ce{H2PO4-}$.</p><p>Legg merke til at stoffene henger sammen i par. $\\ce{HCl}$ og $\\ce{Cl-}$ er et <strong>korresponderende syre-base-par</strong>, og det samme er $\\ce{NH4+}$ og $\\ce{NH3}$. Du går fra syra til basen ved å fjerne ett proton, og motsatt vei ved å legge til ett. Et fritt proton finnes for øvrig aldri alene i vann — det binder seg straks til et vannmolekyl og danner et <strong>hydroniumion</strong>, $\\ce{H3O+}$. Derfor skriver vi $\\ce{H3O+}$ og ikke $\\ce{H+}$ i likningene.</p>"
+      },
+      {
+        "tittel": "Vannets egenprotolyse og pH-skalaen",
+        "html": "<p>Selv helt rent vann leder litt strøm. Grunnen er at vannmolekyler protolyserer hverandre i en liten grad, i det vi kaller <strong>vannets egenprotolyse</strong>:</p>$$\\ce{2H2O(l) <=> H3O+(aq) + OH-(aq)}$$<p>Likevekten ligger svært langt mot venstre. Likevektskonstanten kalles <strong>vannets ionprodukt</strong>:</p>$$K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14} \\qquad (25\\,^\\circ\\text{C})$$<p>I rent vann dannes det like mye av de to ionene, så</p>$$[\\ce{H3O+}] = [\\ce{OH-}] = \\sqrt{1{,}0 \\cdot 10^{-14}} = 1{,}0 \\cdot 10^{-7}\\ \\text{mol/L}$$<p>Fordi slike tall er upraktiske å jobbe med, bruker vi logaritmer:</p>$$\\text{pH} = -\\log[\\ce{H3O+}] \\qquad \\text{pOH} = -\\log[\\ce{OH-}]$$<p>Rent vann får dermed $\\text{pH} = -\\log(1{,}0 \\cdot 10^{-7}) = 7{,}00$. Tar du logaritmen på begge sider av $K_w$-uttrykket, faller den svært nyttige sammenhengen ut av seg selv:</p>$$\\text{pH} + \\text{pOH} = 14{,}00 \\qquad (25\\,^\\circ\\text{C})$$<p>Det viktigste å forstå her er at $K_w$ gjelder i <em>alle</em> vannløsninger, ikke bare i rent vann. Kjenner du den ene konsentrasjonen, kan du alltid regne ut den andre. Skal du fra pH tilbake til konsentrasjon, opphever du logaritmen: $[\\ce{H3O+}] = 10^{-\\text{pH}}$.</p><p>Siden skalaen er logaritmisk, betyr én pH-enhet en faktor 10. En løsning med pH 3 har ti ganger så høy $[\\ce{H3O+}]$ som en med pH 4, og hundre ganger så høy som en med pH 5. Merk også at pH ikke er «sperret» til området 0–14; 2 mol/L saltsyre har negativ pH.</p>"
+      },
+      {
+        "tittel": "Sterke og svake syrer og baser",
+        "html": "<p>Forskjellen på en sterk og en svak syre er <strong>hvor stor andel</strong> av molekylene som faktisk gir fra seg protonet.</p><p>En <strong>sterk syre</strong> protolyseres praktisk talt fullstendig. Vi skriver enkel pil, og da er $[\\ce{H3O+}]$ rett og slett like stor som konsentrasjonen av syra:</p>$$\\ce{HNO3(aq) + H2O(l) -> H3O+(aq) + NO3-(aq)}$$<p>De sterke syrene du bør kunne utenat er $\\ce{HCl}$, $\\ce{HBr}$, $\\ce{HI}$, $\\ce{HNO3}$, $\\ce{HClO4}$ og $\\ce{H2SO4}$ (sterk i det første protolysetrinnet). Sterke baser er hydroksidene til alkalimetallene, som $\\ce{NaOH}$ og $\\ce{KOH}$, i tillegg til $\\ce{Ca(OH)2}$, $\\ce{Sr(OH)2}$ og $\\ce{Ba(OH)2}$.</p><p>En <strong>svak syre</strong> protolyseres bare delvis, og vi skriver likevektspil:</p>$$\\ce{CH3COOH(aq) + H2O(l) <=> H3O+(aq) + CH3COO-(aq)}$$<p>I eddiksyre med konsentrasjon 0,10 mol/L er bare omtrent 1,3 % av molekylene protolysert. Denne andelen kalles <strong>protolysegraden</strong>.</p><p>Her er en forskjell mange roter med: <strong>styrke og konsentrasjon er ikke det samme.</strong> «Sterk» sier hvor villig stoffet er til å gi fra seg protonet, «konsentrert» sier hvor mange mol du har per liter. Konsentrert eddiksyre er fortsatt en svak syre, og svært fortynnet saltsyre er fortsatt en sterk syre.</p><p>Til slutt en sammenheng innenfor paret: jo sterkere syra er, jo svakere er den korresponderende basen. $\\ce{Cl-}$ er korresponderende base til den sterke syra $\\ce{HCl}$, og virker ikke som base i vann i det hele tatt — derfor er koksaltløsning nøytral. Acetat, $\\ce{CH3COO-}$, kommer fra en svak syre og er en brukbar base, og derfor er natriumacetat løst i vann basisk.</p>"
+      },
+      {
+        "tittel": "Syrekonstanten Ka og pKa",
+        "html": "<p>Fordi en svak syre gir en likevekt, kan vi beskrive den med en likevektskonstant. For den generelle syra $\\ce{HA}$</p>$$\\ce{HA(aq) + H2O(l) <=> H3O+(aq) + A-(aq)}$$<p>kaller vi konstanten <strong>syrekonstanten</strong>:</p>$$K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}$$<p>Vannet står ikke i uttrykket, fordi det er løsemiddelet. Stor $K_a$ betyr at likevekten ligger langt mot høyre, altså en sterkere syre. Fordi verdiene er små, oppgis de ofte som $\\text{p}K_a = -\\log K_a$. Merk at <strong>fortegnet snur</strong>: lav $\\text{p}K_a$ betyr sterk syre.</p><table><thead><tr><th>Syre</th><th>$K_a$</th><th>$\\text{p}K_a$</th></tr></thead><tbody><tr><td>Maursyre, $\\ce{HCOOH}$</td><td>$1{,}8 \\cdot 10^{-4}$</td><td>3,74</td></tr><tr><td>Eddiksyre, $\\ce{CH3COOH}$</td><td>$1{,}8 \\cdot 10^{-5}$</td><td>4,74</td></tr><tr><td>Karbonsyre (1. trinn)</td><td>$4{,}5 \\cdot 10^{-7}$</td><td>6,35</td></tr><tr><td>Ammoniumion, $\\ce{NH4+}$</td><td>$5{,}6 \\cdot 10^{-10}$</td><td>9,25</td></tr></tbody></table><p>Skal du finne pH i en løsning av en svak syre med startkonsentrasjon $c$, setter du $[\\ce{H3O+}] = x$. Molforholdet er 1:1, så det dannes like mye $\\ce{A-}$, og det brukes opp $x$ av syra. Da blir $K_a = \\frac{x^2}{c - x}$. Så lenge syra virkelig er svak, er $x$ liten sammenliknet med $c$, og vi kan bruke tilnærmingen $c - x \\approx c$:</p>$$[\\ce{H3O+}] = \\sqrt{K_a \\cdot c}$$<p>Tilnærmingen er god når $x$ er mindre enn 5 % av $c$, og det er verdt å sjekke til slutt. For den korresponderende basen gjelder $K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}$, og de to konstantene er koblet gjennom $K_a \\cdot K_b = K_w$.</p>"
+      },
+      {
+        "tittel": "Buffere",
+        "html": "<p>En <strong>buffer</strong> er en løsning som holder pH nesten konstant selv om du tilsetter litt syre eller litt base. Oppskriften er alltid den samme: <strong>en svak syre sammen med sin korresponderende base</strong>, begge i rimelig store mengder. Eddiksyre og natriumacetat er skoleeksempelet.</p><p>Bufferen virker fordi begge «beredskapene» finnes i løsningen samtidig. Tilsetter du hydroksid, blir det spist opp av syra:</p>$$\\ce{CH3COOH + OH- -> CH3COO- + H2O}$$<p>Tilsetter du hydronium, blir det spist opp av basen:</p>$$\\ce{CH3COO- + H3O+ -> CH3COOH + H2O}$$<p>I begge tilfeller endres forholdet mellom syre og base litt, men ingen av dem forsvinner. Skriver du $K_a$-uttrykket på logaritmeform, får du <strong>Henderson–Hasselbalch-likningen</strong>:</p>$$\\text{pH} = \\text{p}K_a + \\log \\frac{c(\\text{base})}{c(\\text{syre})}$$<p>Tre ting er verdt å merke seg. For det <strong>første</strong>: er konsentrasjonene like store, er brøken 1, logaritmen 0, og pH er nøyaktig lik $\\text{p}K_a$. For det <strong>andre</strong>: siden syra og basen er i samme løsning og dermed samme volum, kan du sette inn stoffmengder i mol i stedet for konsentrasjoner — volumet forkortes bort. For det <strong>tredje</strong>: bufferen virker best når forholdet ligger mellom 0,1 og 10, altså i området $\\text{p}K_a \\pm 1$. Derfor velger du bufferpar etter hvilken pH du trenger.</p><p>Blodet ditt bruker hydrogenkarbonatbufferen $\\ce{CO2 + 2H2O <=> HCO3- + H3O+}$ for å holde pH mellom 7,35 og 7,45. Men <strong>bufferkapasiteten</strong> er ikke uendelig: tilsetter du mer syre enn det finnes base til å ta imot, bryter bufferen sammen og pH endrer seg brått.</p>"
+      },
+      {
+        "tittel": "Titrering og indikatorer",
+        "html": "<p>Ved en <strong>titrering</strong> finner du konsentrasjonen i en ukjent løsning ved å tilsette en løsning med kjent konsentrasjon til reaksjonen er akkurat ferdig. Du måler et nøyaktig volum av prøven med pipette over i en erlenmeyerkolbe, og fyller titrervæsken i en byrette der du kan lese av volumet med to desimaler.</p><p><strong>Ekvivalenspunktet</strong> er der stoffmengdene stemmer nøyaktig med molforholdet i likningen, altså der all syra er nøytralisert. <strong>Endepunktet</strong> er der du faktisk stopper, nemlig der indikatoren skifter farge. En god titrering er en der de to punktene ligger så nær hverandre at forskjellen ikke betyr noe.</p><p>Regnegangen er alltid tre steg: finn stoffmengden av det du kjenner med $n = c \\cdot V$, bruk molforholdet fra likningen, og del til slutt på volumet av prøven. For en 1:1-reaksjon som $\\ce{HCl + NaOH -> NaCl + H2O}$ gir dette $c_s V_s = c_b V_b$. Er syra toprotisk, må du huske faktoren: $\\ce{H2SO4 + 2NaOH -> Na2SO4 + 2H2O}$ krever dobbelt så mye base.</p><p>En <strong>indikator</strong> er selv en svak syre der syreformen og baseformen har ulik farge. Den skifter farge over omtrent to pH-enheter rundt sin egen $\\text{p}K_a$, så indikatoren må velges slik at omslagsområdet dekker pH i ekvivalenspunktet:</p><table><thead><tr><th>Indikator</th><th>Omslagsområde</th><th>Fargeskifte</th></tr></thead><tbody><tr><td>Metyloransje</td><td>3,1–4,4</td><td>rød til gul</td></tr><tr><td>Metylrødt</td><td>4,4–6,2</td><td>rød til gul</td></tr><tr><td>Bromtymolblått</td><td>6,0–7,6</td><td>gul til blå</td></tr><tr><td>Fenolftalein</td><td>8,2–10,0</td><td>fargeløs til rosa</td></tr></tbody></table><p>Sterk syre mot sterk base gir pH 7 i ekvivalenspunktet. Svak syre mot sterk base gir pH over 7, fordi det som er igjen er den korresponderende basen — der bruker du fenolftalein.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "pH i en sterk syre og en sterk base",
+        "oppgave": "<p><strong>a)</strong> 25,0 mL saltsyre med konsentrasjon 0,100 mol/L fortynnes med vann til 250,0 mL. Finn pH i den fortynnede løsningen.</p><p><strong>b)</strong> Finn pH i en løsning av bariumhydroksid, $\\ce{Ba(OH)2}$, med konsentrasjon 0,0100 mol/L.</p>",
+        "losning": "<p><strong>a) Først fortynningen.</strong> Stoffmengden syre er den samme før og etter at du har tilsatt vann, så $c_1 V_1 = c_2 V_2$:</p>$$c_2 = \\frac{c_1 V_1}{V_2} = \\frac{0{,}100\\ \\text{mol/L} \\cdot 25{,}0\\ \\text{mL}}{250{,}0\\ \\text{mL}} = 0{,}0100\\ \\text{mol/L}$$<p>Saltsyre er en sterk syre og protolyseres fullstendig:</p>$$\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$$<p>Molforholdet er 1:1, så hydroniumkonsentrasjonen er lik syrekonsentrasjonen:</p>$$[\\ce{H3O+}] = 0{,}0100\\ \\text{mol/L} = 1{,}00 \\cdot 10^{-2}\\ \\text{mol/L}$$$$\\text{pH} = -\\log\\left(1{,}00 \\cdot 10^{-2}\\right) = 2{,}00$$<p>Bidraget fra vannets egenprotolyse, $10^{-7}$ mol/L, er helt neglisjerbart ved siden av $10^{-2}$ mol/L, så vi ser bort fra det.</p><p><strong>b) Nå basen.</strong> $\\ce{Ba(OH)2}$ er en sterk base, og hver formelenhet gir <strong>to</strong> hydroksidioner:</p>$$\\ce{Ba(OH)2(s) -> Ba^2+(aq) + 2OH-(aq)}$$$$[\\ce{OH-}] = 2 \\cdot 0{,}0100\\ \\text{mol/L} = 0{,}0200\\ \\text{mol/L}$$<p>Vi regner ut pOH:</p>$$\\text{pOH} = -\\log\\left(2{,}00 \\cdot 10^{-2}\\right) = 1{,}70$$<p>Og går over til pH:</p>$$\\text{pH} = 14{,}00 - \\text{pOH} = 14{,}00 - 1{,}70 = 12{,}30$$<p><strong>Kontroll via $K_w$:</strong></p>$$[\\ce{H3O+}] = \\frac{K_w}{[\\ce{OH-}]} = \\frac{1{,}0 \\cdot 10^{-14}}{0{,}0200} = 5{,}0 \\cdot 10^{-13}\\ \\text{mol/L}$$$$\\text{pH} = -\\log\\left(5{,}0 \\cdot 10^{-13}\\right) = 12{,}30$$<p>Samme svar, som det skal være. Svaret er dessuten rimelig: en basisk løsning må ha pH over 7.</p>"
+      },
+      {
+        "tittel": "pH og protolysegrad i en svak syre",
+        "oppgave": "<p>Eddiksyre, $\\ce{CH3COOH}$, har $K_a = 1{,}8 \\cdot 10^{-5}$. Finn pH og protolysegraden i en eddiksyreløsning med konsentrasjon 0,100 mol/L, og sammenlikn med pH i saltsyre med samme konsentrasjon.</p>",
+        "losning": "<p><strong>Steg 1 — skriv likningen.</strong> Eddiksyre er en svak syre, så dette er en likevekt:</p>$$\\ce{CH3COOH(aq) + H2O(l) <=> H3O+(aq) + CH3COO-(aq)}$$<p><strong>Steg 2 — sett opp konsentrasjonene.</strong> Kall $[\\ce{H3O+}]$ ved likevekt for $x$. Molforholdet er 1:1, så det dannes like mye acetat, og det brukes opp $x$ av syra:</p><table><thead><tr><th>Stoff</th><th>Start (mol/L)</th><th>Ved likevekt (mol/L)</th></tr></thead><tbody><tr><td>$\\ce{CH3COOH}$</td><td>0,100</td><td>$0{,}100 - x$</td></tr><tr><td>$\\ce{H3O+}$</td><td>$\\approx 0$</td><td>$x$</td></tr><tr><td>$\\ce{CH3COO-}$</td><td>0</td><td>$x$</td></tr></tbody></table><p><strong>Steg 3 — sett inn i uttrykket for $K_a$.</strong></p>$$K_a = \\frac{[\\ce{H3O+}][\\ce{CH3COO-}]}{[\\ce{CH3COOH}]} = \\frac{x^2}{0{,}100 - x} = 1{,}8 \\cdot 10^{-5}$$<p><strong>Steg 4 — bruk tilnærmingen.</strong> Syra er svak, så $x$ er mye mindre enn 0,100, og vi setter $0{,}100 - x \\approx 0{,}100$:</p>$$x^2 = 1{,}8 \\cdot 10^{-5} \\cdot 0{,}100 = 1{,}8 \\cdot 10^{-6}$$$$x = \\sqrt{1{,}8 \\cdot 10^{-6}} = 1{,}34 \\cdot 10^{-3}\\ \\text{mol/L}$$<p><strong>Steg 5 — regn ut pH.</strong></p>$$\\text{pH} = -\\log\\left(1{,}34 \\cdot 10^{-3}\\right) = 2{,}87$$<p><strong>Steg 6 — protolysegrad, og kontroll av tilnærmingen.</strong></p>$$\\text{protolysegrad} = \\frac{x}{c_0} \\cdot 100\\,\\% = \\frac{1{,}34 \\cdot 10^{-3}}{0{,}100} \\cdot 100\\,\\% = 1{,}3\\,\\%$$<p>1,3 % er godt under 5 %, så tilnærmingen holder. Løser du andregradslikningen eksakt, får du $x = 1{,}33 \\cdot 10^{-3}$ mol/L og pH $= 2{,}88$ — forskjellen er uten praktisk betydning.</p><p><strong>Sammenlikning.</strong> I saltsyre med konsentrasjon 0,100 mol/L er $[\\ce{H3O+}] = 0{,}100$ mol/L, altså</p>$$\\text{pH} = -\\log(0{,}100) = 1{,}00$$<p>Eddiksyra gir nesten to pH-enheter høyere pH selv om konsentrasjonen er den samme, nettopp fordi bare 1,3 % av molekylene har gitt fra seg protonet. Dette er hele forskjellen mellom styrke og konsentrasjon i ett regnestykke.</p>"
+      },
+      {
+        "tittel": "Buffer: pH før og etter tilsatt base",
+        "oppgave": "<p>Du blander 50,0 mL eddiksyre med konsentrasjon 0,200 mol/L og 50,0 mL natriumacetat med konsentrasjon 0,100 mol/L. $K_a(\\ce{CH3COOH}) = 1{,}8 \\cdot 10^{-5}$.</p><p><strong>a)</strong> Finn pH i bufferen.</p><p><strong>b)</strong> Du tilsetter 1,0 mmol fast $\\ce{NaOH}$ (volumendringen er neglisjerbar). Finn den nye pH-en, og sammenlikn med hva samme mengde $\\ce{NaOH}$ ville gjort i 100 mL rent vann.</p>",
+        "losning": "<p><strong>a) Regn ut stoffmengdene.</strong></p>$$n(\\ce{CH3COOH}) = c \\cdot V = 0{,}200\\ \\text{mol/L} \\cdot 0{,}0500\\ \\text{L} = 0{,}0100\\ \\text{mol}$$$$n(\\ce{CH3COO-}) = 0{,}100\\ \\text{mol/L} \\cdot 0{,}0500\\ \\text{L} = 0{,}00500\\ \\text{mol}$$<p>Vi trenger $\\text{p}K_a$:</p>$$\\text{p}K_a = -\\log\\left(1{,}8 \\cdot 10^{-5}\\right) = 4{,}74$$<p>Syra og basen er i samme løsning, altså samme volum, så volumet forkortes bort og vi kan sette stoffmengdene rett inn i Henderson–Hasselbalch:</p>$$\\text{pH} = \\text{p}K_a + \\log \\frac{n(\\text{base})}{n(\\text{syre})} = 4{,}74 + \\log \\frac{0{,}00500}{0{,}0100}$$$$\\text{pH} = 4{,}74 + \\log 0{,}500 = 4{,}74 - 0{,}30 = 4{,}44$$<p>Legg merke til at pH ligger litt under $\\text{p}K_a$. Det stemmer, for det er mer syre enn base i blandingen.</p><p><strong>b) Hydroksidet reagerer med syra i bufferen:</strong></p>$$\\ce{CH3COOH + OH- -> CH3COO- + H2O}$$<p>1,0 mmol er $0{,}0010$ mol. Denne mengden $\\ce{OH-}$ bruker opp 0,0010 mol syre og lager 0,0010 mol acetat:</p>$$n(\\text{syre}) = 0{,}0100 - 0{,}0010 = 0{,}0090\\ \\text{mol}$$$$n(\\text{base}) = 0{,}00500 + 0{,}0010 = 0{,}0060\\ \\text{mol}$$$$\\text{pH} = 4{,}74 + \\log \\frac{0{,}0060}{0{,}0090} = 4{,}74 + \\log 0{,}667 = 4{,}74 - 0{,}18 = 4{,}56$$<p>pH har altså bare steget 0,12 enheter, fra 4,44 til 4,56.</p><p><strong>Sammenlikning med rent vann.</strong> De samme 0,0010 mol $\\ce{NaOH}$ i 100 mL rent vann gir</p>$$[\\ce{OH-}] = \\frac{0{,}0010\\ \\text{mol}}{0{,}100\\ \\text{L}} = 0{,}010\\ \\text{mol/L}$$$$\\text{pOH} = -\\log(0{,}010) = 2{,}00 \\quad \\Rightarrow \\quad \\text{pH} = 14{,}00 - 2{,}00 = 12{,}00$$<p>Der hopper pH fra 7,00 til 12,00, altså fem hele enheter. Bufferen dempet den samme tilsetningen ned til 0,12 enheter.</p>"
+      },
+      {
+        "tittel": "Titrering: hvor mye eddiksyre er det i eddik?",
+        "oppgave": "<p>Du skal bestemme innholdet av eddiksyre i husholdningseddik. Du pipetterer 10,00 mL eddik over i en 100,0 mL målekolbe og fyller til merket med vann. Deretter titrerer du 20,00 mL av den fortynnede løsningen med natriumhydroksid, $c = 0{,}1050$ mol/L, og bruker 15,80 mL før fenolftaleinen slår om.</p><p><strong>a)</strong> Finn konsentrasjonen av eddiksyre i den ufortynnede eddiken.</p><p><strong>b)</strong> Hvor mange masseprosent eddiksyre inneholder eddiken? Bruk tettheten 1,01 g/mL og $M(\\ce{CH3COOH}) = 60{,}05$ g/mol.</p><p><strong>c)</strong> Hvorfor er fenolftalein et bedre valg enn metyloransje i denne titreringen?</p>",
+        "losning": "<p><strong>a) Reaksjonslikningen</strong> har molforhold 1:1:</p>$$\\ce{CH3COOH(aq) + NaOH(aq) -> CH3COONa(aq) + H2O(l)}$$<p><strong>Steg 1 — stoffmengde base brukt.</strong></p>$$n(\\ce{NaOH}) = c \\cdot V = 0{,}1050\\ \\text{mol/L} \\cdot 0{,}01580\\ \\text{L} = 1{,}659 \\cdot 10^{-3}\\ \\text{mol}$$<p><strong>Steg 2 — molforholdet.</strong> Forholdet er 1:1, så det var like mange mol eddiksyre i prøven:</p>$$n(\\ce{CH3COOH}) = 1{,}659 \\cdot 10^{-3}\\ \\text{mol}$$<p><strong>Steg 3 — konsentrasjonen i den fortynnede løsningen.</strong> Denne stoffmengden lå i 20,00 mL:</p>$$c = \\frac{n}{V} = \\frac{1{,}659 \\cdot 10^{-3}\\ \\text{mol}}{0{,}02000\\ \\text{L}} = 0{,}08295\\ \\text{mol/L}$$<p><strong>Steg 4 — tilbake til ufortynnet eddik.</strong> 10,00 mL ble fortynnet til 100,0 mL, altså en fortynningsfaktor på 10:</p>$$c(\\text{eddik}) = 10 \\cdot 0{,}08295\\ \\text{mol/L} = 0{,}830\\ \\text{mol/L}$$<p><strong>b) Masseprosent.</strong> Vi regner på 1,000 L eddik. Massen eddiksyre er</p>$$m = n \\cdot M = 0{,}8295\\ \\text{mol} \\cdot 60{,}05\\ \\text{g/mol} = 49{,}8\\ \\text{g}$$<p>Hele literen veier</p>$$m_{\\text{total}} = 1000\\ \\text{mL} \\cdot 1{,}01\\ \\text{g/mL} = 1010\\ \\text{g}$$$$\\text{masseprosent} = \\frac{49{,}8\\ \\text{g}}{1010\\ \\text{g}} \\cdot 100\\,\\% = 4{,}9\\,\\%$$<p>Rundt 5 % er en helt typisk verdi for eddik til matlaging, så svaret er rimelig.</p><p><strong>c) Indikatorvalg.</strong> I ekvivalenspunktet er all eddiksyra omdannet til natriumacetat. Acetat er korresponderende base til en svak syre, så løsningen er <em>basisk</em> der, med pH rundt 8–9. Fenolftalein slår om i området 8,2–10,0 og treffer dette godt. Metyloransje slår om ved pH 3,1–4,4, altså lenge før ekvivalenspunktet. Da ville du stoppet for tidlig, brukt for lite base og fått et svar som var altfor lavt.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å blande sammen styrke og konsentrasjon. «Konsentrert eddiksyre» er fortsatt en svak syre, og saltsyre med konsentrasjon 0,001 mol/L er fortsatt en sterk syre.",
+      "Å sette $[\\ce{H3O+}] = c$ for en svak syre. For 0,100 mol/L eddiksyre gir det pH 1,00, mens riktig svar er 2,87. Motsatt feil er å bruke $K_a$-metoden på saltsyre, som protolyseres fullstendig.",
+      "Å regne ut pOH i en baseoppgave og skrive det som svar. Du må alltid ta det siste steget $\\text{pH} = 14{,}00 - \\text{pOH}$ — og sjekke at en basisk løsning ender over pH 7.",
+      "Å glemme faktoren i $\\ce{Ca(OH)2}$ og $\\ce{Ba(OH)2}$. Hver formelenhet gir to $\\ce{OH-}$, så $[\\ce{OH-}]$ er dobbelt så stor som konsentrasjonen av basen.",
+      "Å snu brøken i Henderson–Hasselbalch. Basen står i telleren: mer base gir høyere pH. Blander du dessuten mol i én av dem og mol/L i den andre, blir svaret feil.",
+      "Å tro at ekvivalenspunktet alltid ligger på pH 7, og derfor velge indikator på autopilot. Titrerer du en svak syre med sterk base, er ekvivalenspunktet basisk, og metyloransje slår om altfor tidlig."
+    ],
+
+    "tips": [
+      "Still alltid dette spørsmålet først i en pH-oppgave: er syra eller basen sterk eller svak? Svaret bestemmer om du kan sette $[\\ce{H3O+}] = c$ eller må gå via $K_a$. Skriv protolyselikningen med riktig pil — enkel pil for sterk, likevektspil for svak — så husker du det.",
+      "Kontroller alltid svaret grovt til slutt: sur løsning skal ha pH under 7, basisk over 7, og en svak syre skal gi høyere pH enn en sterk syre med samme konsentrasjon. Et svar som pH 15 eller pH 3 for ammoniakk er en tabbe du kan fange selv.",
+      "Antall desimaler i pH er antall gjeldende siffer i konsentrasjonen. $[\\ce{H3O+}] = 1{,}8 \\cdot 10^{-3}$ mol/L har to gjeldende siffer, så pH skal skrives med to desimaler: 2,74. Sifrene foran komma er bare tierpotensen.",
+      "Lær tabellbruken i formelsamlingen: $\\text{p}K_a = -\\log K_a$, $K_a = 10^{-\\text{p}K_a}$ og $K_b = \\frac{K_w}{K_a}$. Mange oppgaver oppgir $\\text{p}K_a$ når du trenger $K_a$, eller $K_a$ til syra når du skal regne på basen.",
+      "I titreringsoppgaver: skriv opp balansert likning, regn $n = c \\cdot V$ for det du kjenner, bruk molforholdet, og del på volumet av prøven. Sjekk til slutt om prøven var fortynnet — glemt fortynningsfaktor er den vanligste tapte poengsummen i denne oppgavetypen."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Protolyse", "forklaring": "Overføring av et proton ($\\ce{H+}$) fra en syre til en base." },
+    { "begrep": "Brønsted-syre", "forklaring": "Et stoff som kan avgi et proton, altså en protondonor." },
+    { "begrep": "Brønsted-base", "forklaring": "Et stoff som kan ta opp et proton, altså en protonakseptor." },
+    { "begrep": "Korresponderende syre-base-par", "forklaring": "To stoffer som skiller seg med akkurat ett proton, som $\\ce{CH3COOH}$ og $\\ce{CH3COO-}$." },
+    { "begrep": "Amfotært stoff", "forklaring": "Et stoff som kan opptre både som syre og som base, for eksempel $\\ce{H2O}$, $\\ce{HCO3-}$ og $\\ce{H2PO4-}$." },
+    { "begrep": "Vannets egenprotolyse", "forklaring": "Reaksjonen $\\ce{2H2O <=> H3O+ + OH-}$, som skjer i all vann i svært liten grad." },
+    { "begrep": "Vannets ionprodukt", "forklaring": "Konstanten $K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14}$ ved 25 °C. Den gjelder i alle vannløsninger." },
+    { "begrep": "pH", "forklaring": "Et logaritmisk mål for surhet: $\\text{pH} = -\\log[\\ce{H3O+}]$. Én pH-enhet svarer til en faktor 10 i konsentrasjon." },
+    { "begrep": "Sterk syre", "forklaring": "En syre som protolyseres praktisk talt fullstendig i vann, slik at $[\\ce{H3O+}]$ blir lik konsentrasjonen av syra." },
+    { "begrep": "Svak syre", "forklaring": "En syre der bare en liten andel av molekylene avgir protonet, slik at det oppstår en likevekt beskrevet av $K_a$." },
+    { "begrep": "Protolysegrad", "forklaring": "Hvor stor andel av syremolekylene som har avgitt protonet, regnet som $\\frac{[\\ce{H3O+}]}{c_0} \\cdot 100\\,\\%$." },
+    { "begrep": "Syrekonstanten Ka", "forklaring": "Likevektskonstanten for protolysen av en syre: $K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}$. Stor $K_a$ betyr sterk syre." },
+    { "begrep": "Buffer", "forklaring": "En løsning med en svak syre og dens korresponderende base, som holder pH nesten konstant når du tilsetter litt syre eller base." },
+    { "begrep": "Ekvivalenspunkt", "forklaring": "Punktet i en titrering der stoffmengdene syre og base stemmer nøyaktig med molforholdet i reaksjonslikningen." },
+    { "begrep": "Indikator", "forklaring": "En svak syre der syreformen og baseformen har ulik farge, slik at fargeskiftet viser når pH passerer et bestemt område." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hva er en syre etter Brønsteds definisjon?",
+      "alternativer": [
+        "Et stoff som danner $\\ce{OH-}$ når det løses i vann",
+        "Et stoff som kan ta opp et proton",
+        "Et stoff som kan avgi et proton",
+        "En løsning som har pH under 7"
+      ],
+      "riktig": 2,
+      "forklaring": "En Brønsted-syre er en protondonor: den gir fra seg et $\\ce{H+}$. Alternativ B er den vanligste forvekslingen — det er definisjonen av en Brønsted-base (protonakseptor). Alternativ A beskriver en base etter den gamle Arrhenius-definisjonen, og alternativ D forveksler stoffet med egenskapen til løsningen: om pH blir under 7 avhenger også av konsentrasjonen."
+    },
+    {
+      "sporsmal": "Hva er den korresponderende basen til $\\ce{HSO4-}$?",
+      "alternativer": ["$\\ce{H2SO4}$", "$\\ce{SO4^2-}$", "$\\ce{H3O+}$", "$\\ce{OH-}$"],
+      "riktig": 1,
+      "forklaring": "Den korresponderende basen får du ved å fjerne ett proton: $\\ce{HSO4-}$ minus $\\ce{H+}$ blir $\\ce{SO4^2-}$. Legg merke til at ladningen synker med én. Alternativ A er fristende, men $\\ce{H2SO4}$ er den korresponderende syra — den har fått ett proton i stedet. $\\ce{HSO4-}$ er nettopp et amfotært ion, så den har begge naboene."
+    },
+    {
+      "sporsmal": "Hva er pH i salpetersyre, $\\ce{HNO3}$, med konsentrasjon 0,010 mol/L?",
+      "alternativer": ["1,00", "0,010", "12,00", "2,00"],
+      "riktig": 3,
+      "forklaring": "$\\ce{HNO3}$ er en sterk syre og protolyseres fullstendig, så $[\\ce{H3O+}] = 0{,}010 = 1{,}0 \\cdot 10^{-2}$ mol/L og pH $= 2{,}00$. Alternativ C, 12,00, får du hvis du regner $14 - 2$ — men det er pOH som er 12,00 her, ikke pH. Alternativ A svarer til konsentrasjonen 0,10 mol/L, altså en tierpotens feil."
+    },
+    {
+      "sporsmal": "En løsning har pH $= 9{,}40$. Hva er $[\\ce{H3O+}]$?",
+      "alternativer": [
+        "$4{,}0 \\cdot 10^{-10}$ mol/L",
+        "$2{,}5 \\cdot 10^{-5}$ mol/L",
+        "$9{,}4 \\cdot 10^{-10}$ mol/L",
+        "$4{,}0 \\cdot 10^{-5}$ mol/L"
+      ],
+      "riktig": 0,
+      "forklaring": "Du opphever logaritmen: $[\\ce{H3O+}] = 10^{-9{,}40} = 4{,}0 \\cdot 10^{-10}$ mol/L. Alternativ B er $10^{-4{,}60}$, altså $[\\ce{OH-}]$ — det du får om du regner ut pOH $= 4{,}60$ først og glemmer å bytte tilbake. Alternativ C er å bare flytte tallet 9,4 ned i eksponenten, som ikke er hva en logaritme gjør."
+    },
+    {
+      "sporsmal": "Hva er forskjellen på en «sterk» og en «konsentrert» syre?",
+      "alternativer": [
+        "Sterk og konsentrert betyr det samme for en syre",
+        "En sterk syre protolyseres fullstendig i vann, mens «konsentrert» bare sier at det er mange mol syre per liter",
+        "En sterk syre gir alltid høyere pH enn en svak syre med samme konsentrasjon",
+        "En konsentrert syre protolyseres fullstendig, mens en sterk syre bare protolyseres delvis"
+      ],
+      "riktig": 1,
+      "forklaring": "Styrke handler om andelen molekyler som avgir protonet, konsentrasjon om antall mol per liter. Derfor kan du ha konsentrert eddiksyre (svak, men mye) og fortynnet saltsyre (sterk, men lite). Alternativ D bytter om på begrepene, og alternativ C har feil retning: en sterk syre gir flere $\\ce{H3O+}$ og dermed lavere pH enn en svak syre med samme konsentrasjon."
+    },
+    {
+      "sporsmal": "Maursyre har $K_a = 1{,}8 \\cdot 10^{-4}$. Hva er $\\text{p}K_a$?",
+      "alternativer": ["$-3{,}74$", "$4{,}00$", "$3{,}74$", "$10{,}26$"],
+      "riktig": 2,
+      "forklaring": "$\\text{p}K_a = -\\log\\left(1{,}8 \\cdot 10^{-4}\\right) = 4 - \\log 1{,}8 = 4 - 0{,}26 = 3{,}74$. Alternativ D, 10,26, er $\\text{p}K_b$ til den korresponderende basen ($14{,}00 - 3{,}74$) — et vanlig feilsteg når man tar med $K_w$ uten grunn. Alternativ A har glemt minustegnet foran logaritmen: siden $K_a < 1$, må $\\text{p}K_a$ bli positiv."
+    },
+    {
+      "sporsmal": "Ammoniakk har $K_b = 1{,}8 \\cdot 10^{-5}$. Hva er pH i en løsning med konsentrasjon 0,10 mol/L?",
+      "alternativer": ["2,87", "11,13", "13,00", "1,00"],
+      "riktig": 1,
+      "forklaring": "$[\\ce{OH-}] = \\sqrt{K_b \\cdot c} = \\sqrt{1{,}8 \\cdot 10^{-5} \\cdot 0{,}10} = 1{,}34 \\cdot 10^{-3}$ mol/L, som gir pOH $= 2{,}87$ og pH $= 14{,}00 - 2{,}87 = 11{,}13$. Alternativ A er nettopp pOH — den klassiske feilen der man stopper ett steg for tidlig. Alternativ C, 13,00, får du hvis du behandler ammoniakk som en sterk base med $[\\ce{OH-}] = 0{,}10$ mol/L, men $\\ce{NH3}$ er svak."
+    },
+    {
+      "sporsmal": "Hvilken blanding gir en buffer?",
+      "alternativer": [
+        "$\\ce{HCl}$ og $\\ce{NaCl}$",
+        "$\\ce{NaOH}$ og $\\ce{NaCl}$",
+        "$\\ce{HCl}$ og $\\ce{NaOH}$ i like store stoffmengder",
+        "$\\ce{CH3COOH}$ og $\\ce{CH3COONa}$"
+      ],
+      "riktig": 3,
+      "forklaring": "En buffer krever en svak syre sammen med sin korresponderende base, og eddiksyre/acetat er nettopp det. Alternativ A ser like ut på formen «syre + salt av syra», men $\\ce{HCl}$ er sterk, og $\\ce{Cl-}$ virker ikke som base i vann — det er derfor ingen buffervirkning. I alternativ C nøytraliserer syra og basen hverandre helt, så du står igjen med en nøytral koksaltløsning."
+    },
+    {
+      "sporsmal": "En buffer har pH nøyaktig lik $\\text{p}K_a$ til syra. Hva vet du da?",
+      "alternativer": [
+        "$c(\\text{base}) = 10 \\cdot c(\\text{syre})$",
+        "$c(\\text{base}) = c(\\text{syre})$",
+        "$c(\\text{base}) = 0$",
+        "Løsningen er nøytral, med pH $= 7{,}00$"
+      ],
+      "riktig": 1,
+      "forklaring": "Henderson–Hasselbalch sier $\\text{pH} = \\text{p}K_a + \\log\\frac{c(\\text{base})}{c(\\text{syre})}$. At leddet med logaritmen er null, krever at brøken er 1, altså like store konsentrasjoner. Alternativ A gir $\\log 10 = 1$, altså pH $= \\text{p}K_a + 1$. Alternativ D forveksler «pH lik $\\text{p}K_a$» med «nøytral»: for eddiksyre er $\\text{p}K_a = 4{,}74$, så løsningen er tydelig sur."
+    },
+    {
+      "sporsmal": "Du titrerer 25,0 mL saltsyre og bruker 18,4 mL $\\ce{NaOH}$ med konsentrasjon 0,100 mol/L. Hva er konsentrasjonen av saltsyra?",
+      "alternativer": ["0,0736 mol/L", "0,136 mol/L", "0,100 mol/L", "0,0184 mol/L"],
+      "riktig": 0,
+      "forklaring": "$n(\\ce{NaOH}) = 0{,}100 \\cdot 0{,}0184 = 1{,}84 \\cdot 10^{-3}$ mol. Molforholdet er 1:1, så $c(\\ce{HCl}) = \\frac{1{,}84 \\cdot 10^{-3}}{0{,}0250} = 0{,}0736$ mol/L. Alternativ B er hva du får om du snur volumene ($0{,}100 \\cdot \\frac{25{,}0}{18{,}4}$). Sjekk rimeligheten: du trengte mindre volum base enn du hadde syre, så syra må være tynnere enn basen — 0,0736 mol/L er mindre enn 0,100 mol/L, mens 0,136 mol/L er større."
+    },
+    {
+      "sporsmal": "Hvilken indikator passer best når du titrerer eddiksyre med $\\ce{NaOH}$?",
+      "alternativer": [
+        "Metyloransje, omslag 3,1–4,4",
+        "Metylrødt, omslag 4,4–6,2",
+        "Fenolftalein, omslag 8,2–10,0",
+        "Det har ingen betydning hvilken indikator du bruker"
+      ],
+      "riktig": 2,
+      "forklaring": "I ekvivalenspunktet er all eddiksyra blitt acetat, som er en svak base. Løsningen er derfor basisk, med pH rundt 8–9, og fenolftalein treffer dette området. Alternativ B er fristende fordi 4,74 er $\\text{p}K_a$ til eddiksyre — men det er pH midt i titreringen, ikke i ekvivalenspunktet. Metyloransje slår om enda tidligere, og begge ville fått deg til å stoppe for tidlig og få et for lavt svar."
+    },
+    {
+      "sporsmal": "I en løsning er $[\\ce{H3O+}] = 2{,}0 \\cdot 10^{-3}$ mol/L. Hva er $[\\ce{OH-}]$ ved 25 °C?",
+      "alternativer": [
+        "$5{,}0 \\cdot 10^{-12}$ mol/L",
+        "$2{,}0 \\cdot 10^{-11}$ mol/L",
+        "$5{,}0 \\cdot 10^{-11}$ mol/L",
+        "$1{,}0 \\cdot 10^{-14}$ mol/L"
+      ],
+      "riktig": 0,
+      "forklaring": "$K_w$ gjelder i alle vannløsninger, så $[\\ce{OH-}] = \\frac{K_w}{[\\ce{H3O+}]} = \\frac{1{,}0 \\cdot 10^{-14}}{2{,}0 \\cdot 10^{-3}} = 5{,}0 \\cdot 10^{-12}$ mol/L. Alternativ C er samme regnestykke med en tierpotens for lite — kontroller ved å gange: $5{,}0 \\cdot 10^{-11} \\cdot 2{,}0 \\cdot 10^{-3} = 1{,}0 \\cdot 10^{-13}$, som er ti ganger for stort. Alternativ D forveksler $[\\ce{OH-}]$ med selve $K_w$."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Brønsted-syre og Brønsted-base", "bak": "Syre = protondonor (avgir $\\ce{H+}$). Base = protonakseptor (tar opp $\\ce{H+}$). Overføringen kalles protolyse." },
+    { "front": "Definisjonen av pH", "bak": "$\\text{pH} = -\\log[\\ce{H3O+}]$, og motsatt vei $[\\ce{H3O+}] = 10^{-\\text{pH}}$." },
+    { "front": "Vannets egenprotolyse", "bak": "$\\ce{2H2O(l) <=> H3O+(aq) + OH-(aq)}$ — likevekten ligger svært langt mot venstre." },
+    { "front": "$K_w$ ved 25 °C", "bak": "$K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14}$. Gjelder i alle vannløsninger, ikke bare i rent vann." },
+    { "front": "$\\text{pH} + \\text{pOH} = ?$", "bak": "$14{,}00$ ved 25 °C. Følger av at du tar logaritmen på begge sider av $K_w$-uttrykket." },
+    { "front": "Hvilke syrer regnes som sterke?", "bak": "$\\ce{HCl}$, $\\ce{HBr}$, $\\ce{HI}$, $\\ce{HNO3}$, $\\ce{HClO4}$ og $\\ce{H2SO4}$ (i første protolysetrinn)." },
+    { "front": "Hvilke baser regnes som sterke?", "bak": "Alkalimetallhydroksidene $\\ce{NaOH}$, $\\ce{KOH}$ og $\\ce{LiOH}$, samt $\\ce{Ca(OH)2}$, $\\ce{Sr(OH)2}$ og $\\ce{Ba(OH)2}$. Husk at de tre siste gir to $\\ce{OH-}$ hver." },
+    { "front": "Styrke kontra konsentrasjon", "bak": "Styrke = hvor stor andel av molekylene som protolyseres. Konsentrasjon = mol per liter. Konsentrert eddiksyre er fortsatt svak; fortynnet saltsyre er fortsatt sterk." },
+    { "front": "Syrekonstanten $K_a$ for $\\ce{HA}$", "bak": "$K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}$ — vannet står ikke i uttrykket, fordi det er løsemiddelet." },
+    { "front": "Hva betyr lav $\\text{p}K_a$?", "bak": "Sterk syre. $\\text{p}K_a = -\\log K_a$, så fortegnet snur: stor $K_a$ gir liten $\\text{p}K_a$." },
+    { "front": "$[\\ce{H3O+}]$ i en svak syre med konsentrasjon $c$", "bak": "$[\\ce{H3O+}] = \\sqrt{K_a \\cdot c}$. Tilnærmingen gjelder når protolysegraden er under 5 %." },
+    { "front": "Sammenhengen mellom $K_a$ og $K_b$ i et korresponderende par", "bak": "$K_a \\cdot K_b = K_w = 1{,}0 \\cdot 10^{-14}$, altså $\\text{p}K_a + \\text{p}K_b = 14{,}00$." },
+    { "front": "Hva er en buffer, og hvordan lager du en?", "bak": "En løsning med en svak syre og dens korresponderende base i rimelig store mengder, for eksempel eddiksyre og natriumacetat. Den holder pH nesten konstant når du tilsetter litt syre eller base." },
+    { "front": "Henderson–Hasselbalch-likningen", "bak": "$\\text{pH} = \\text{p}K_a + \\log\\frac{c(\\text{base})}{c(\\text{syre})}$. Like konsentrasjoner gir $\\text{pH} = \\text{p}K_a$, og bufferen virker best i $\\text{p}K_a \\pm 1$." },
+    { "front": "Ekvivalenspunkt kontra endepunkt", "bak": "Ekvivalenspunktet er der stoffmengdene stemmer med molforholdet i likningen. Endepunktet er der indikatoren slår om og du faktisk stopper." },
+    { "front": "Omslagsområdet til fenolftalein, og når bruker du den?", "bak": "8,2–10,0, fargeløs til rosa. Brukes når ekvivalenspunktet er basisk, altså når du titrerer en svak syre med en sterk base." }
+  ]
+}

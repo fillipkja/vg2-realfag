@@ -1,0 +1,252 @@
+{
+  "fag": "kjemi",
+  "nr": 2,
+  "tittel": "Egenskaper og reaksjoner",
+  "intro": "Dette kapittelet forklarer hvorfor stoffer oppfører seg som de gjør: hvorfor vann koker ved 100 °C mens metan er en gass, hvorfor salt løser seg i vann men ikke i bensin, og hva som skjer når to saltløsninger blandes. Du får også den første innføringen i syre-base- og redoksreaksjoner, og du lærer å navngi uorganiske forbindelser.",
+
+  "kompakt": {
+    "punkter": [
+      "Bindingene inne i molekylet (kovalente) er sterke, kreftene mellom molekylene er svake. Det er de svake kreftene som ryker når et stoff smelter eller koker, så de bestemmer smeltepunkt, kokepunkt, overflatespenning og løselighet.",
+      "Londonkrefter finnes mellom alle molekyler. De blir sterkere når molekylet har flere elektroner (større molar masse) og når formen er langstrakt, slik at kontaktflaten blir stor.",
+      "Dipol-dipol-krefter krever en permanent dipol: polare bindinger OG en usymmetrisk oppbygning. $\\ce{H2O}$ er bøyd og polart, $\\ce{CO2}$ er lineært og upolart.",
+      "Hydrogenbinding er den sterkeste kraften mellom molekyler, men krever at hydrogen sitter direkte på $\\ce{N}$, $\\ce{O}$ eller $\\ce{F}$, og at nabomolekylet har et fritt elektronpar på $\\ce{N}$, $\\ce{O}$ eller $\\ce{F}$.",
+      "«Likt løser likt»: polare og ioniske stoffer løser seg i polare løsemidler, upolare stoffer i upolare løsemidler.",
+      "Vann er en dipol og danner hydrogenbindinger. Derfor har det uvanlig høyt kokepunkt, stor varmekapasitet, høy overflatespenning, og is ($0{,}92$ g/cm³) flyter på vann ($1{,}00$ g/cm³).",
+      "I en fellingsreaksjon danner ioner fra to løsninger et tungtløselig salt. Netto ionelikningen viser bare ionene som deltar; tilskuerionene strykes.",
+      "Etter Brønsted er en syre en protondonor og en base en protonakseptor: $\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$.",
+      "I en redoksreaksjon overføres elektroner. Oksidasjon er å avgi elektroner (oksidasjonstallet øker), reduksjon er å ta opp elektroner (oksidasjonstallet synker). De skjer alltid samtidig.",
+      "Navnsetting: metall + ikke-metall gir ionenavn med -id (natriumklorid), flerverdige metaller får romertall (jern(III)klorid), og to ikke-metaller får greske prefikser (dinitrogentetraoksid)."
+    ],
+    "formler": [
+      { "navn": "Bindingstype ut fra elektronegativitet", "latex": "\\Delta \\text{EN} < 0{,}5:\\ \\text{upolar} \\qquad 0{,}5\\text{–}1{,}7:\\ \\text{polar} \\qquad > 1{,}7:\\ \\text{ionisk}" },
+      { "navn": "Salt løser seg i vann (hydratisering)", "latex": "\\ce{NaCl(s) -> Na+(aq) + Cl-(aq)}" },
+      { "navn": "Felling av sølvklorid (netto ionelikning)", "latex": "\\ce{Ag+(aq) + Cl-(aq) -> AgCl(s)}" },
+      { "navn": "Felling av bariumsulfat", "latex": "\\ce{Ba^2+(aq) + SO4^2-(aq) -> BaSO4(s)}" },
+      { "navn": "Felling av blyjodid", "latex": "\\ce{Pb^2+(aq) + 2I-(aq) -> PbI2(s)}" },
+      { "navn": "Sterk syre i vann", "latex": "\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}" },
+      { "navn": "Svak base i vann", "latex": "\\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}" },
+      { "navn": "Autoprotolyse av vann", "latex": "\\ce{2H2O(l) <=> H3O+(aq) + OH-(aq)}" },
+      { "navn": "Nøytralisering", "latex": "\\ce{H3O+(aq) + OH-(aq) -> 2H2O(l)}" },
+      { "navn": "Karbonat og syre gir gass", "latex": "\\ce{CaCO3(s) + 2H3O+(aq) -> Ca^2+(aq) + CO2(g) + 3H2O(l)}" },
+      { "navn": "Oksidasjon (halvreaksjon)", "latex": "\\ce{Zn(s) -> Zn^2+(aq) + 2e-}" },
+      { "navn": "Reduksjon (halvreaksjon)", "latex": "\\ce{Cu^2+(aq) + 2e- -> Cu(s)}" },
+      { "navn": "Samlet redoksreaksjon", "latex": "\\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}" },
+      { "navn": "Regel for oksidasjonstall", "latex": "\\sum \\text{oksidasjonstall} = \\text{ladningen til partikkelen}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Krefter inne i og mellom molekyler",
+        "html": "<p>Bindingene <em>inne i</em> et molekyl er kovalente og sterke: å bryte en O–H-binding i vann krever omtrent 460 kJ per mol. Kreftene <strong>mellom</strong> molekylene er mye svakere — en hydrogenbinding mellom to vannmolekyler ligger på rundt 20 kJ per mol. Det er disse svake, <strong>intermolekylære kreftene</strong> som ryker når et stoff smelter eller koker. Derfor er det de, og ikke bindingene inne i molekylet, som bestemmer smeltepunkt, kokepunkt, overflatespenning og løselighet. Når vann koker, blir molekylene revet fra hverandre, men de er fortsatt hele $\\ce{H2O}$-molekyler i dampen.</p><p><strong>Londonkrefter</strong> (dispersjonskrefter) finnes mellom <em>alle</em> molekyler. Elektronene i en elektronsky er i stadig bevegelse, og i et gitt øyeblikk kan de ligge litt skjevt. Da har molekylet en kortvarig dipol, som får nabomolekylet til å bli dipol i motsatt retning — og de to tiltrekker hverandre. Kreftene blir sterkere når molekylet har <strong>flere elektroner</strong> og når formen er <strong>langstrakt</strong>, slik at kontaktflaten blir stor. Derfor er $\\ce{F2}$ (18 elektroner) gass, $\\ce{Br2}$ (70 elektroner) væske og $\\ce{I2}$ (106 elektroner) fast stoff ved romtemperatur. Og derfor koker pentan ved 36 °C, mens 2,2-dimetylpropan — samme molekylformel $\\ce{C5H12}$, men nesten kulerund — koker alt ved 9,5 °C.</p><p><strong>Dipol-dipol-krefter</strong> kommer i tillegg når molekylet har en <strong>permanent dipol</strong>. Det krever to ting: polare bindinger <em>og</em> en usymmetrisk oppbygning slik at bindingsdipolene ikke opphever hverandre. Positiv ende møter negativ ende, og stoffet får høyere kokepunkt enn et upolart stoff med samme masse.</p>"
+      },
+      {
+        "tittel": "Hydrogenbinding",
+        "html": "<p>En <strong>hydrogenbinding</strong> er den sterkeste av kreftene mellom molekyler, men den oppstår bare under en streng betingelse: et hydrogenatom må være bundet <strong>direkte til N, O eller F</strong>. Disse tre grunnstoffene er små og svært elektronegative (N 3,04, O 3,44 og F 3,98 mot hydrogens 2,20). De trekker bindingselektronene så kraftig til seg at hydrogenkjernen nesten blir et bart proton. Dette lille, sterkt positive hydrogenatomet kan komme helt inntil et <strong>fritt elektronpar</strong> på N, O eller F i et nabomolekyl, og tiltrekningen blir uvanlig sterk.</p><p>Effekten ser du klarest i kokepunkter. Sammenlign fire hydrider med nesten samme molare masse:</p><table><thead><tr><th>Stoff</th><th>Molar masse</th><th>Kokepunkt</th><th>Sterkeste kraft</th></tr></thead><tbody><tr><td>$\\ce{CH4}$</td><td>16 g/mol</td><td>-162 °C</td><td>londonkrefter</td></tr><tr><td>$\\ce{NH3}$</td><td>17 g/mol</td><td>-33 °C</td><td>hydrogenbinding</td></tr><tr><td>$\\ce{H2O}$</td><td>18 g/mol</td><td>100 °C</td><td>hydrogenbinding</td></tr><tr><td>$\\ce{HF}$</td><td>20 g/mol</td><td>20 °C</td><td>hydrogenbinding</td></tr></tbody></table><p>Metan har bare londonkrefter og koker lavest. Vann skiller seg ut fra de andre fordi hvert molekyl har <em>to</em> hydrogenatomer og <em>to</em> frie elektronpar, og derfor kan danne opptil fire hydrogenbindinger samtidig — et helt nettverk.</p><p>Det er ikke nok å ha hydrogen i formelen. $\\ce{CH4}$, $\\ce{HCl}$ og $\\ce{CH3F}$ danner ikke hydrogenbindinger, for her sitter hydrogenet på karbon eller på klor. Hydrogenbindinger er også grunnen til at alkoholer koker mye høyere enn alkaner med samme masse, at de to DNA-trådene holder sammen, og at proteiner beholder formen sin.</p>"
+      },
+      {
+        "tittel": "Løselighet og «likt løser likt»",
+        "html": "<p>For at et stoff skal løse seg, må tre ting skje: partiklene i stoffet må skilles fra hverandre, molekylene i løsemidlet må skyves til side, og det må dannes nye tiltrekninger mellom stoff og løsemiddel. Er de nye kreftene omtrent like sterke som de vi bryter, går prosessen. Er de mye svakere, gjør den det ikke. Det er hele innholdet i regelen <strong>«likt løser likt»</strong>: polare og ioniske stoffer løser seg i polare løsemidler, upolare stoffer i upolare løsemidler.</p><p>Vann er polart. Derfor løser vann salt godt (ca. 36 g $\\ce{NaCl}$ per 100 g vann ved 20 °C), og sukker og etanol likeså, mens bensin, olje og jod nesten ikke løser seg. Heksan ($\\ce{C6H14}$) er upolart og løser jod og fett fint, men blander seg ikke med vann — de legger seg i to faser.</p><p>Molekyler eller molekyldeler som liker vann, kalles <strong>hydrofile</strong>; de som støter vann fra seg, kalles <strong>hydrofobe</strong>. Ofte er ett og samme molekyl litt av hver, og da avgjør forholdet mellom delene. Metanol, etanol og propan-1-ol blander seg med vann i alle forhold, fordi den hydrofile $\\ce{-OH}$-gruppa dominerer. I butan-1-ol løser bare ca. 8 g seg per 100 g vann, og i pentan-1-ol ca. 2 g: nå har den upolare karbonkjeden tatt over.</p><p>Såpe utnytter begge sider. Et såpemolekyl har en lang hydrofob hale som stikker inn i fettet, og en ionisk, hydrofil ende som vender ut mot vannet. Dermed klarer du å blande fett og vann.</p>"
+      },
+      {
+        "tittel": "Vann som løsemiddel",
+        "html": "<p>Vannmolekylet er <strong>bøyd</strong>, med en vinkel på ca. 104,5° mellom de to O–H-bindingene. Elektronegativiteten til oksygen er 3,44 og til hydrogen 2,20, så forskjellen blir $3{,}44 - 2{,}20 = 1{,}24$. Bindingene er altså klart polare, og siden molekylet i tillegg er usymmetrisk, blir hele molekylet en <strong>dipol</strong> med negativ ende ved oksygenatomet og positiv ende ved hydrogenatomene.</p><p>Når et salt løser seg, snur vannmolekylene seg mot ionene: oksygensida mot de positive ionene, hydrogensida mot de negative. Hvert ion blir omgitt av en kappe av vannmolekyler — det blir <strong>hydratisert</strong>:</p>$$\\ce{NaCl(s) -> Na+(aq) + Cl-(aq)}$$<p>Forkortelsen (aq) betyr nettopp «omgitt av vannmolekyler». Løsningen leder strøm fordi ionene nå kan bevege seg fritt; en slik løsning kalles en <strong>elektrolytt</strong>.</p><p>Hydrogenbindingene gir vann flere egenskaper som er uvanlige for et så lite molekyl:</p><ul><li>Høyt kokepunkt: 100 °C, mot -60 °C for $\\ce{H2S}$, som er nesten dobbelt så tungt.</li><li>Stor varmekapasitet, slik at vann jevner ut temperatursvingninger i hav, innsjøer og kropp.</li><li>Høy overflatespenning, som gjør at små insekter kan gå på vannflaten.</li><li>Is har lavere tetthet (0,92 g/cm³) enn flytende vann (1,00 g/cm³), fordi hydrogenbindingene låser molekylene i et åpent, sekskantet gitter. Derfor flyter is, og innsjøer fryser fra toppen og ned.</li></ul><p>Vann reagerer også svakt med seg selv. I en liten grad skjer <strong>autoprotolyse</strong>, $\\ce{2H2O(l) <=> H3O+(aq) + OH-(aq)}$, og det er dette som gjør at rent vann har pH 7.</p>"
+      },
+      {
+        "tittel": "Fellingsreaksjoner",
+        "html": "<p>Blander du to løsninger av salter, får ionene nye naboer. Er en av de nye kombinasjonene <strong>tungtløselig</strong>, faller den ut som fast stoff — et <strong>bunnfall</strong> — og reaksjonen kalles en <strong>fellingsreaksjon</strong>. For å forutsi dette trenger du noen løselighetsregler:</p><ul><li>Alle nitrater ($\\ce{NO3^-}$) er løselige.</li><li>Alle salter av alkalimetaller ($\\ce{Na+}$, $\\ce{K+}$) og av ammonium ($\\ce{NH4+}$) er løselige.</li><li>Klorider, bromider og jodider er løselige, unntatt med $\\ce{Ag+}$ og $\\ce{Pb^2+}$.</li><li>Sulfater er løselige, unntatt $\\ce{BaSO4}$, $\\ce{PbSO4}$ og delvis $\\ce{CaSO4}$.</li><li>Karbonater, fosfater, sulfider og hydroksider er stort sett tungtløselige — bortsett fra med alkalimetaller og ammonium.</li></ul><p>Slik setter du opp likningen. Blander vi sølvnitrat og natriumklorid, finnes ionene $\\ce{Ag+}$, $\\ce{NO3^-}$, $\\ce{Na+}$ og $\\ce{Cl-}$ i løsningen. De nye kombinasjonene er $\\ce{AgCl}$ og $\\ce{NaNO3}$. Reglene sier at $\\ce{AgCl}$ er tungtløselig, så det er bunnfallet:</p>$$\\ce{AgNO3(aq) + NaCl(aq) -> AgCl(s) + NaNO3(aq)}$$<p>$\\ce{Na+}$ og $\\ce{NO3^-}$ står på begge sider uten å gjøre noe. De kalles <strong>tilskuerioner</strong>. Stryker du dem, står du igjen med <strong>netto ionelikningen</strong>:</p>$$\\ce{Ag+(aq) + Cl-(aq) -> AgCl(s)}$$<p>Netto ionelikningen viser hva som faktisk skjer. Husk to ting: bunnfallet skrives som én samlet formel med (s), aldri som løse ioner, og både atomantall og total ladning må stemme på begge sider.</p>"
+      },
+      {
+        "tittel": "Syrer, baser og redoksreaksjoner",
+        "html": "<p>To reaksjonstyper går igjen i hele kjemien, og begge handler om at noe blir overført fra ett stoff til et annet.</p><p><strong>Syre-basereaksjoner overfører protoner.</strong> Etter Brønsted er en <strong>syre</strong> et stoff som gir fra seg $\\ce{H+}$ (et proton), og en <strong>base</strong> et stoff som tar opp $\\ce{H+}$. Løser du hydrogenklorid i vann, gir $\\ce{HCl}$ fra seg protonet og vannet tar det imot:</p>$$\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$$<p>Her er $\\ce{HCl}$ syra og vann basen. Med ammoniakk går det motsatt vei — da er det vannet som gir fra seg protonet:</p>$$\\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}$$<p>Vann kan altså være både syre og base; slike stoffer kalles <strong>amfotære</strong>. Syra og basen den blir til når protonet er gitt bort, hører sammen som et <strong>korresponderende syre-basepar</strong>: $\\ce{HCl}$ og $\\ce{Cl-}$, $\\ce{H2O}$ og $\\ce{OH-}$. En sur løsning har overskudd av $\\ce{H3O+}$ (pH under 7), en basisk løsning overskudd av $\\ce{OH-}$ (pH over 7).</p><p><strong>Redoksreaksjoner overfører elektroner.</strong> <strong>Oksidasjon</strong> er å avgi elektroner, <strong>reduksjon</strong> er å ta opp elektroner, og de skjer alltid samtidig: noen må ta imot det den andre gir. Legger du en sinkspiker i koppersulfatløsning, blir spikeren dekket av kopper:</p>$$\\ce{Zn(s) -> Zn^2+(aq) + 2e-} \\qquad \\text{(oksidasjon)}$$$$\\ce{Cu^2+(aq) + 2e- -> Cu(s)} \\qquad \\text{(reduksjon)}$$$$\\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}$$<p>Sink avgir elektronene og er <strong>reduksjonsmiddel</strong> — det er sink som reduserer den andre. Kopperionet tar imot og er <strong>oksidasjonsmiddel</strong>. For å holde orden bruker vi <strong>oksidasjonstall</strong>: et grunnstoff har 0, oksygen har vanligvis -II, hydrogen +I, og summen av oksidasjonstallene er lik ladningen til partikkelen. Øker oksidasjonstallet, er atomet oksidert.</p>"
+      },
+      {
+        "tittel": "Navnsetting av uorganiske forbindelser",
+        "html": "<p>Navnsetting følger få og faste regler, og de lønner seg å pugge.</p><p><strong>Metall + ikke-metall (ionisk).</strong> Metallet først med sitt vanlige navn, ikke-metallet etterpå med endingen <strong>-id</strong>: $\\ce{NaCl}$ natriumklorid, $\\ce{MgO}$ magnesiumoksid, $\\ce{CaF2}$ kalsiumfluorid, $\\ce{Al2O3}$ aluminiumoksid. Antallet nevnes ikke, for det følger av ladningene.</p><p><strong>Metaller med flere mulige ladninger</strong> får ladningen oppgitt med romertall: $\\ce{FeCl2}$ jern(II)klorid, $\\ce{FeCl3}$ jern(III)klorid, $\\ce{CuO}$ kopper(II)oksid og $\\ce{Cu2O}$ kopper(I)oksid. (Mange bøker skriver kobber.) Metallene i gruppe 1 og 2, samt aluminium, sink og sølv, har bare én ladning og trenger ikke romertall.</p><p><strong>Sammensatte ioner</strong> beholder navnet sitt: nitrat $\\ce{NO3^-}$, sulfat $\\ce{SO4^2-}$, karbonat $\\ce{CO3^2-}$, fosfat $\\ce{PO4^3-}$, hydroksid $\\ce{OH-}$, ammonium $\\ce{NH4+}$ og hydrogenkarbonat $\\ce{HCO3^-}$. Legg merke til mønsteret <strong>-at</strong> mot <strong>-itt</strong>: -itt-ionet har ett oksygenatom mindre, som i sulfat $\\ce{SO4^2-}$ mot sulfitt $\\ce{SO3^2-}$ og nitrat $\\ce{NO3^-}$ mot nitritt $\\ce{NO2^-}$. Eksempler: $\\ce{CaCO3}$ kalsiumkarbonat, $\\ce{Al2(SO4)3}$ aluminiumsulfat, $\\ce{NH4NO3}$ ammoniumnitrat.</p><p><strong>To ikke-metaller.</strong> Her sier vi hvor mange atomer det er, med greske prefikser: mono-, di-, tri-, tetra-, penta-, heksa-. Prefikset mono- sløyfes på det første grunnstoffet: $\\ce{CO}$ karbonmonoksid, $\\ce{CO2}$ karbondioksid, $\\ce{N2O4}$ dinitrogentetraoksid, $\\ce{PCl5}$ fosforpentaklorid, $\\ce{SF6}$ svovelheksafluorid.</p><p><strong>Syrer</strong> har egne navn du må kunne: $\\ce{HCl(aq)}$ saltsyre, $\\ce{H2SO4}$ svovelsyre, $\\ce{HNO3}$ salpetersyre, $\\ce{H2CO3}$ karbonsyre, $\\ce{H3PO4}$ fosforsyre og $\\ce{CH3COOH}$ eddiksyre.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Krefter mellom molekyler og rangering av kokepunkt",
+        "oppgave": "<p>Du får tre stoffer: propan $\\ce{C3H8}$, dimetyleter $\\ce{CH3OCH3}$ og etanol $\\ce{CH3CH2OH}$.</p><ol><li>Regn ut molar masse for hvert stoff.</li><li>Avgjør hvilke krefter som virker mellom molekylene i hvert stoff.</li><li>Rangér stoffene etter økende kokepunkt, og begrunn svaret.</li></ol>",
+        "losning": "<p><strong>Del 1 — molare masser.</strong> Vi bruker atommassene $M(\\ce{C}) = 12{,}01$ g/mol, $M(\\ce{H}) = 1{,}008$ g/mol og $M(\\ce{O}) = 16{,}00$ g/mol.</p>$$M(\\ce{C3H8}) = 3 \\cdot 12{,}01 + 8 \\cdot 1{,}008 = 36{,}03 + 8{,}06 = 44{,}09\\,\\text{g/mol}$$<p>Dimetyleter og etanol har samme molekylformel, $\\ce{C2H6O}$ — de er isomerer:</p>$$M(\\ce{C2H6O}) = 2 \\cdot 12{,}01 + 6 \\cdot 1{,}008 + 16{,}00 = 24{,}02 + 6{,}05 + 16{,}00 = 46{,}07\\,\\text{g/mol}$$<p>De tre stoffene har altså nesten helt like molare masser. Da kan ikke masse alene forklare forskjeller i kokepunkt.</p><p><strong>Del 2 — kreftene.</strong></p><ul><li><strong>Propan:</strong> bare C–H- og C–C-bindinger. For C–H er $\\Delta \\text{EN} = 2{,}55 - 2{,}20 = 0{,}35$, altså praktisk talt upolart, og molekylet er dessuten symmetrisk. Konklusjon: bare <strong>londonkrefter</strong>.</li><li><strong>Dimetyleter:</strong> C–O-bindingene er polare, $\\Delta \\text{EN} = 3{,}44 - 2{,}55 = 0{,}89$, og molekylet er bøyd ved oksygenatomet, så dipolene opphever ikke hverandre. Molekylet er en permanent dipol: <strong>londonkrefter + dipol-dipol-krefter</strong>. Hydrogenatomene sitter på karbon, ikke på oksygen, så det blir <em>ingen</em> hydrogenbinding.</li><li><strong>Etanol:</strong> her sitter ett hydrogenatom direkte på oksygen i $\\ce{-OH}$-gruppa, og oksygenet har frie elektronpar. Da får vi <strong>hydrogenbinding</strong> i tillegg til dipol-dipol- og londonkrefter.</li></ul><p><strong>Del 3 — rangering.</strong> Sterkere krefter mellom molekylene krever mer energi for å rive dem fra hverandre, altså høyere kokepunkt. Rekkefølgen etter økende kokepunkt blir:</p><p>propan $<$ dimetyleter $<$ etanol</p><p>Målte verdier bekrefter dette: propan koker ved -42 °C, dimetyleter ved -24 °C og etanol ved 78 °C. Legg merke til hvor stort spranget fra dimetyleter til etanol er, over 100 grader, selv om de har <em>identisk</em> molar masse. Det er hydrogenbindingen alene som står for hele forskjellen.</p>"
+      },
+      {
+        "tittel": "Hvilke blandinger gir bunnfall?",
+        "oppgave": "<p>Du har tre klare løsninger: kaliumjodid $\\ce{KI(aq)}$, blynitrat $\\ce{Pb(NO3)2(aq)}$ og natriumsulfat $\\ce{Na2SO4(aq)}$. Du blander dem to og to. Avgjør hvilke blandinger som gir bunnfall, og skriv full likning og netto ionelikning for dem som gjør det.</p>",
+        "losning": "<p><strong>Steg 1 — hvilke ioner har vi?</strong></p><ul><li>$\\ce{KI(aq)}$ inneholder $\\ce{K+}$ og $\\ce{I-}$</li><li>$\\ce{Pb(NO3)2(aq)}$ inneholder $\\ce{Pb^2+}$ og $\\ce{NO3^-}$</li><li>$\\ce{Na2SO4(aq)}$ inneholder $\\ce{Na+}$ og $\\ce{SO4^2-}$</li></ul><p><strong>Steg 2 — blanding A: $\\ce{KI}$ + $\\ce{Pb(NO3)2}$.</strong> De nye kombinasjonene er $\\ce{PbI2}$ og $\\ce{KNO3}$. Alle nitrater er løselige, så $\\ce{KNO3}$ blir i løsning. Jodider er løselige unntatt med $\\ce{Ag+}$ og $\\ce{Pb^2+}$ — her har vi nettopp $\\ce{Pb^2+}$, så $\\ce{PbI2}$ felles ut som et gult bunnfall.</p>$$\\ce{2KI(aq) + Pb(NO3)2(aq) -> PbI2(s) + 2KNO3(aq)}$$<p>Tilskuerionene er $\\ce{K+}$ og $\\ce{NO3^-}$. Vi stryker dem:</p>$$\\ce{Pb^2+(aq) + 2I-(aq) -> PbI2(s)}$$<p>Kontroll av ladning: venstre side $(+2) + 2 \\cdot (-1) = 0$, høyre side $0$. Atomantall: 1 Pb og 2 I på begge sider. Likningen stemmer.</p><p><strong>Steg 3 — blanding B: $\\ce{Pb(NO3)2}$ + $\\ce{Na2SO4}$.</strong> De nye kombinasjonene er $\\ce{PbSO4}$ og $\\ce{NaNO3}$. Natriumsalter og nitrater er løselige, men sulfater er tungtløselige med $\\ce{Pb^2+}$. Vi får hvitt bunnfall av $\\ce{PbSO4}$.</p>$$\\ce{Pb(NO3)2(aq) + Na2SO4(aq) -> PbSO4(s) + 2NaNO3(aq)}$$$$\\ce{Pb^2+(aq) + SO4^2-(aq) -> PbSO4(s)}$$<p>Kontroll av ladning: $(+2) + (-2) = 0$ på venstre side, $0$ på høyre. Stemmer.</p><p><strong>Steg 4 — blanding C: $\\ce{KI}$ + $\\ce{Na2SO4}$.</strong> De nye kombinasjonene er $\\ce{K2SO4}$ og $\\ce{NaI}$. Begge er salter av alkalimetaller, og de er løselige. <strong>Ingen reaksjon.</strong> Løsningen inneholder bare de fire ionene $\\ce{K+}$, $\\ce{I-}$, $\\ce{Na+}$ og $\\ce{SO4^2-}$ som svømmer fritt rundt.</p><p><strong>Svar:</strong> blanding A og B gir bunnfall (henholdsvis $\\ce{PbI2}$ og $\\ce{PbSO4}$), blanding C gir ingenting.</p>"
+      },
+      {
+        "tittel": "Oksidasjonstall og en redoksreaksjon",
+        "oppgave": "<p>a) Finn oksidasjonstallet til krom i dikromationet $\\ce{Cr2O7^2-}$ og til nitrogen i $\\ce{HNO3}$.</p><p>b) I reaksjonen $\\ce{2Al(s) + 3Cu^2+(aq) -> 2Al^3+(aq) + 3Cu(s)}$: hvilket stoff blir oksidert, hvilket blir redusert, og hvilket er oksidasjonsmiddel? Vis at antall elektroner stemmer.</p>",
+        "losning": "<p><strong>a) Oksidasjonstall.</strong> Reglene vi bruker: oksygen har -II, hydrogen har +I, og summen av oksidasjonstallene er lik ladningen til partikkelen. Vi kaller oksidasjonstallet til krom for $x$ og regner med tallverdier.</p><p>For $\\ce{Cr2O7^2-}$ er ladningen $-2$, og vi har 2 kromatomer og 7 oksygenatomer:</p>$$2x + 7 \\cdot (-2) = -2$$$$2x - 14 = -2$$$$2x = 12 \\quad \\Rightarrow \\quad x = +6$$<p>Oksidasjonstallet til krom er altså <strong>+VI</strong>.</p><p>For $\\ce{HNO3}$ er molekylet nøytralt, så summen skal være 0. Ett hydrogen med +I og tre oksygen med -II:</p>$$(+1) + x + 3 \\cdot (-2) = 0$$$$x - 5 = 0 \\quad \\Rightarrow \\quad x = +5$$<p>Nitrogen har oksidasjonstall <strong>+V</strong> i salpetersyre.</p><p><strong>b) Redoksanalyse.</strong> Vi setter opp oksidasjonstallene før og etter:</p><table><thead><tr><th>Atom</th><th>Før</th><th>Etter</th><th>Endring</th></tr></thead><tbody><tr><td>Al</td><td>0 (grunnstoff)</td><td>+III i $\\ce{Al^3+}$</td><td>øker med 3</td></tr><tr><td>Cu</td><td>+II i $\\ce{Cu^2+}$</td><td>0 (grunnstoff)</td><td>synker med 2</td></tr></tbody></table><p>Aluminium får høyere oksidasjonstall, altså avgir det elektroner: <strong>Al blir oksidert</strong> og er <strong>reduksjonsmiddel</strong>. Kopperionet får lavere oksidasjonstall, altså tar det opp elektroner: <strong>$\\ce{Cu^2+}$ blir redusert</strong> og er <strong>oksidasjonsmiddel</strong>.</p><p>Halvreaksjonene er:</p>$$\\ce{Al -> Al^3+ + 3e-} \\qquad \\text{ganges med 2}$$$$\\ce{Cu^2+ + 2e- -> Cu} \\qquad \\text{ganges med 3}$$<p>Antall elektroner: aluminium avgir $2 \\cdot 3 = 6$ elektroner, og kopperionene tar opp $3 \\cdot 2 = 6$ elektroner. $6 = 6$, så elektronregnskapet går opp — det er nettopp derfor koeffisientene måtte være 2 og 3.</p><p>Til slutt en ladningskontroll på den samlede likningen: venstre side har $3 \\cdot (+2) = +6$, høyre side har $2 \\cdot (+3) = +6$. Likningen er balansert.</p>"
+      },
+      {
+        "tittel": "Fra formel til navn og tilbake",
+        "oppgave": "<p>a) Skriv navnet på $\\ce{Fe2(SO4)3}$, $\\ce{Cu2O}$, $\\ce{Mg(OH)2}$ og $\\ce{N2O5}$.</p><p>b) Skriv formelen til aluminiumsulfat, kalsiumfosfat, ammoniumkarbonat og svovelheksafluorid.</p>",
+        "losning": "<p><strong>a) Formel til navn.</strong></p><p>$\\ce{Fe2(SO4)3}$: sulfationet er $\\ce{SO4^2-}$, og tre av dem gir $3 \\cdot (-2) = -6$. Forbindelsen er nøytral, så de to jernionene må til sammen ha $+6$, altså $+6 / 2 = +3$ hver. Jern kan ha flere ladninger, så vi må ha romertall: <strong>jern(III)sulfat</strong>.</p><p>$\\ce{Cu2O}$: oksidionet er $\\ce{O^2-}$, altså $-2$. De to kopperionene deler $+2$, så hvert av dem har $+1$: <strong>kopper(I)oksid</strong>.</p><p>$\\ce{Mg(OH)2}$: magnesium står i gruppe 2 og har alltid $+2$, så romertall er unødvendig. Hydroksid beholder navnet sitt: <strong>magnesiumhydroksid</strong>.</p><p>$\\ce{N2O5}$: to ikke-metaller, altså greske prefikser. To nitrogen gir «di-», fem oksygen gir «penta-»: <strong>dinitrogenpentaoksid</strong>.</p><p><strong>b) Navn til formel.</strong> Her er trikset å skrive opp ionene med ladning og få summen til å bli null.</p><p><strong>Aluminiumsulfat:</strong> $\\ce{Al^3+}$ og $\\ce{SO4^2-}$. Minste felles multiplum av 3 og 2 er 6, så vi trenger 2 aluminiumioner ($2 \\cdot (+3) = +6$) og 3 sulfationer ($3 \\cdot (-2) = -6$). Sammensatte ioner får parentes når det er flere av dem:</p>$$\\ce{Al2(SO4)3}$$<p><strong>Kalsiumfosfat:</strong> $\\ce{Ca^2+}$ og $\\ce{PO4^3-}$. Igjen er 6 målet: 3 kalsium ($3 \\cdot (+2) = +6$) og 2 fosfat ($2 \\cdot (-3) = -6$):</p>$$\\ce{Ca3(PO4)2}$$<p><strong>Ammoniumkarbonat:</strong> $\\ce{NH4+}$ og $\\ce{CO3^2-}$. Vi trenger 2 ammonium for å veie opp $-2$:</p>$$\\ce{(NH4)2CO3}$$<p><strong>Svovelheksafluorid:</strong> her er det ikke ladninger, men prefikser som styrer. Ingen prefiks foran svovel betyr ett svovelatom, og «heksa-» betyr seks fluoratomer:</p>$$\\ce{SF6}$$"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å tro at O–H-bindingene brytes når vann koker. Ved koking ryker bare hydrogenbindingene mellom molekylene — molekylene er hele $\\ce{H2O}$ både i væsken og i dampen.",
+      "Å tro at det er nok å ha hydrogen i formelen for å få hydrogenbinding. Hydrogenet må sitte direkte på N, O eller F. $\\ce{HCl}$, $\\ce{CH4}$ og $\\ce{CH3F}$ danner ikke hydrogenbindinger.",
+      "Å konkludere at molekylet er polart bare fordi bindingene er polare. $\\ce{CO2}$ og $\\ce{CCl4}$ har tydelig polare bindinger, men er så symmetriske at dipolene opphever hverandre, og stoffene er upolare.",
+      "Å ta med tilskuerionene i netto ionelikningen, eller å splitte bunnfallet i ioner. Bunnfallet skal alltid stå som én formel med (s).",
+      "Å blande sammen oksidasjonstall og ladning. I $\\ce{SO4^2-}$ har svovel oksidasjonstall +VI selv om hele ionet har ladning $2-$; oksidasjonstall er et regnskapstall per atom, ikke en virkelig ladning.",
+      "Å bruke greske prefikser på ioniske forbindelser eller å glemme romertallet. $\\ce{Na2O}$ heter natriumoksid, ikke «dinatriumoksid», og $\\ce{FeCl3}$ heter jern(III)klorid, ikke «jernklorid»."
+    ],
+
+    "tips": [
+      "Når du skal rangere kokepunkt, gå gjennom i denne rekkefølgen: (1) Finnes hydrogenbinding, altså H på N, O eller F? (2) Er molekylet en permanent dipol? (3) Hvor mange elektroner har det, og hvilken form? Skriv begrunnelsen i samme rekkefølge — det er den sensor leter etter.",
+      "Tegn molekylet før du avgjør om det er polart. Elektronegativitetsforskjellen alene holder ikke; det er symmetrien som avgjør om bindingsdipolene opphever hverandre.",
+      "Pugg de to enkleste løselighetsreglene: alle nitrater er løselige, og alle natrium-, kalium- og ammoniumsalter er løselige. Da klarer du de fleste fellingsoppgavene ved eliminasjon. Sjekk også at du kan lese løselighetstabellen i tabellheftet.",
+      "Bruk samme oppskrift på hver netto ionelikning: skriv opp alle ioner i løsningen, finn den tungtløselige kombinasjonen, stryk tilskuerionene, og kontroller til slutt både atomantall og total ladning på begge sider.",
+      "Lag et lite kort med de sammensatte ionene (nitrat, sulfat, sulfitt, karbonat, hydrogenkarbonat, fosfat, hydroksid, ammonium) med formel og ladning. Disse kommer på så godt som hver prøve, både i navnsetting og i fellingsoppgaver."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Intermolekylære krefter", "forklaring": "Krefter mellom hele molekyler, ikke inne i dem. De er mye svakere enn kovalente bindinger og bestemmer smeltepunkt, kokepunkt og løselighet." },
+    { "begrep": "Londonkrefter", "forklaring": "Svake krefter som oppstår fordi elektronskyene et øyeblikk ligger skjevt og lager kortvarige dipoler. De finnes mellom alle molekyler og øker med antall elektroner og med kontaktflate." },
+    { "begrep": "Dipol", "forklaring": "Et molekyl med en positiv og en negativ ende. Dipoler tiltrekker hverandre ende mot ende, og disse kreftene kalles dipol-dipol-krefter." },
+    { "begrep": "Hydrogenbinding", "forklaring": "Sterk tiltrekning mellom et hydrogenatom som sitter på N, O eller F, og et fritt elektronpar på N, O eller F i et nabomolekyl." },
+    { "begrep": "Elektronegativitet", "forklaring": "Et mål på hvor sterkt et atom trekker på bindingselektronene. Stor forskjell mellom to atomer gir polar binding; svært stor forskjell gir ionebinding." },
+    { "begrep": "Polar kovalent binding", "forklaring": "En elektronparbinding der elektronene er ujevnt fordelt fordi atomene har ulik elektronegativitet, slik at bindingen får en positiv og en negativ side." },
+    { "begrep": "Hydrofil og hydrofob", "forklaring": "Hydrofile molekyldeler er polare eller ioniske og trekkes mot vann; hydrofobe deler er upolare og støtes bort fra vann." },
+    { "begrep": "Hydratisering", "forklaring": "At et ion i vann blir omgitt av en kappe vannmolekyler som snur riktig ende inn mot ionet. Dette er grunnen til at salter i det hele tatt løser seg." },
+    { "begrep": "Elektrolytt", "forklaring": "En løsning som leder elektrisk strøm fordi den inneholder frie ioner, for eksempel saltvann." },
+    { "begrep": "Fellingsreaksjon", "forklaring": "En reaksjon der ioner fra to løsninger danner et tungtløselig salt som faller ut som bunnfall." },
+    { "begrep": "Tilskuerion", "forklaring": "Et ion som er med i løsningen både før og etter reaksjonen uten å delta. Tilskuerioner strykes når du skriver netto ionelikning." },
+    { "begrep": "Syre og base (Brønsted)", "forklaring": "En syre gir fra seg et proton ($\\ce{H+}$), en base tar opp et proton. Sammen med reaksjonsproduktet danner de korresponderende syre-basepar." },
+    { "begrep": "Amfotær", "forklaring": "Et stoff som kan virke både som syre og som base. Vann er det viktigste eksempelet: det gir fra seg proton til ammoniakk, men tar imot proton fra $\\ce{HCl}$." },
+    { "begrep": "Oksidasjonstall", "forklaring": "Et regnskapstall per atom som viser hvordan bindingselektronene tenkes fordelt. Summen av oksidasjonstallene i en partikkel er lik ladningen til partikkelen." },
+    { "begrep": "Redoksreaksjon", "forklaring": "En reaksjon der elektroner overføres. Stoffet som avgir elektroner blir oksidert og er reduksjonsmiddel; stoffet som tar opp elektroner blir redusert og er oksidasjonsmiddel." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hvilket av stoffene kan danne hydrogenbindinger mellom molekylene sine?",
+      "alternativer": ["$\\ce{CH4}$", "$\\ce{HCl}$", "$\\ce{CH3OH}$", "$\\ce{CH3F}$"],
+      "riktig": 2,
+      "forklaring": "Hydrogenbinding krever at hydrogen sitter direkte på N, O eller F. I metanol sitter ett hydrogen på oksygen i $\\ce{-OH}$-gruppa, så det går. $\\ce{CH3F}$ er det mest fristende feilsvaret fordi det inneholder fluor, men hydrogenatomene sitter på karbon, ikke på fluor. Av samme grunn faller $\\ce{HCl}$ ut: klor er ikke N, O eller F."
+    },
+    {
+      "sporsmal": "Hvorfor er $\\ce{CO2}$ et upolart molekyl selv om C=O-bindingene er polare?",
+      "alternativer": [
+        "Fordi karbon og oksygen har samme elektronegativitet",
+        "Fordi molekylet er lineært og symmetrisk, slik at bindingsdipolene opphever hverandre",
+        "Fordi $\\ce{CO2}$ er en gass, og gasser er alltid upolare",
+        "Fordi karbonatomet ikke har frie elektronpar"
+      ],
+      "riktig": 1,
+      "forklaring": "Polaritet avhenger av både bindingene og formen. I $\\ce{CO2}$ peker de to like store bindingsdipolene i motsatt retning langs en rett linje, så de nuller hverandre ut. Alternativ A er direkte feil: forskjellen er $3{,}44 - 2{,}55 = 0{,}89$, som nettopp er grunnen til at bindingene er polare. At noe er gass sier ingenting om polaritet — $\\ce{HCl}$ er en polar gass."
+    },
+    {
+      "sporsmal": "Hvilket av halogenene har høyest kokepunkt?",
+      "alternativer": ["$\\ce{F2}$", "$\\ce{Cl2}$", "$\\ce{Br2}$", "$\\ce{I2}$"],
+      "riktig": 3,
+      "forklaring": "Alle fire er upolare, så bare londonkrefter virker. Londonkrefter øker med antall elektroner: $\\ce{F2}$ har 18, $\\ce{I2}$ har 106. Derfor koker $\\ce{I2}$ høyest (184 °C mot -188 °C for $\\ce{F2}$). Det fristende feilsvaret er $\\ce{F2}$ fordi fluor er mest elektronegativt, men i et molekyl av to like atomer gir elektronegativiteten ingen dipol i det hele tatt."
+    },
+    {
+      "sporsmal": "Hvorfor blander ikke heksan ($\\ce{C6H14}$) seg med vann?",
+      "alternativer": [
+        "Fordi heksan er upolart og ikke kan erstatte hydrogenbindingene som vannmolekylene har til hverandre",
+        "Fordi heksan har for stor molar masse til å løse seg",
+        "Fordi heksan reagerer kjemisk med vann",
+        "Fordi heksan har lavere tetthet enn vann"
+      ],
+      "riktig": 0,
+      "forklaring": "Vannmolekylene holder hardt sammen med hydrogenbindinger. Skal heksan trenge inn, må disse brytes og erstattes av nye krefter — men heksan er upolart og kan bare tilby svake londonkrefter. Dermed er det energimessig mest gunstig at de to holder seg atskilt. At heksan er lettere enn vann forklarer bare hvilket lag som legger seg øverst, ikke hvorfor de ikke blander seg. Og noen reaksjon skjer det ikke."
+    },
+    {
+      "sporsmal": "Du blander løsninger av $\\ce{Ba(NO3)2}$ og $\\ce{Na2SO4}$. Hva er netto ionelikningen?",
+      "alternativer": [
+        "$\\ce{Ba(NO3)2(aq) + Na2SO4(aq) -> BaSO4(s) + 2NaNO3(aq)}$",
+        "$\\ce{Ba^2+(aq) + SO4^2-(aq) -> BaSO4(s)}$",
+        "$\\ce{2Na+(aq) + 2NO3^-(aq) -> 2NaNO3(s)}$",
+        "$\\ce{Ba^2+(aq) + 2NO3^-(aq) -> Ba(NO3)2(s)}$"
+      ],
+      "riktig": 1,
+      "forklaring": "Bariumsulfat er tungtløselig, så $\\ce{Ba^2+}$ og $\\ce{SO4^2-}$ er ionene som faktisk reagerer. Alternativ A er riktig kjemi, men det er den fulle likningen — den inneholder fortsatt tilskuerionene $\\ce{Na+}$ og $\\ce{NO3^-}$, og det er nettopp de som skal strykes i en netto ionelikning. Alternativ C og D påstår at løselige salter feller ut, og det gjør de ikke."
+    },
+    {
+      "sporsmal": "Hva er oksidasjonstallet til svovel i $\\ce{H2SO4}$?",
+      "alternativer": ["+IV", "+II", "+VI", "-II"],
+      "riktig": 2,
+      "forklaring": "Molekylet er nøytralt, så summen skal bli 0. Med to hydrogen på +I og fire oksygen på -II får vi $2(+1) + x + 4(-2) = 0$, altså $x - 6 = 0$ og $x = +6$. Det mest fristende feilsvaret er -II, fordi svovel som fritt ion ofte er $\\ce{S^2-}$. Men her er svovel bundet til det svært elektronegative oksygenet og får derfor et høyt positivt oksidasjonstall."
+    },
+    {
+      "sporsmal": "I reaksjonen $\\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}$ — hvilken påstand er riktig?",
+      "alternativer": [
+        "Sink blir redusert og er oksidasjonsmiddel",
+        "Kopperionet blir oksidert og er reduksjonsmiddel",
+        "Sink blir oksidert og er reduksjonsmiddel",
+        "Både sink og kopperionet blir oksidert"
+      ],
+      "riktig": 2,
+      "forklaring": "Sink går fra oksidasjonstall 0 til +II, altså avgir det to elektroner og blir oksidert. Den som avgir elektroner, er reduksjonsmiddel — det er sink som reduserer kopperionet. Alternativ A er den klassiske feilen: mange tror at «den som blir oksidert» er oksidasjonsmiddelet, men det er stikk motsatt. Og oksidasjon og reduksjon må skje samtidig, så alternativ D er umulig."
+    },
+    {
+      "sporsmal": "Hvilken rolle har vann i reaksjonen $\\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}$?",
+      "alternativer": [
+        "Vann er syre, fordi det gir fra seg et proton til ammoniakk",
+        "Vann er base, fordi det tar opp et proton fra ammoniakk",
+        "Vann er bare løsemiddel og deltar ikke i reaksjonen",
+        "Vann er oksidasjonsmiddel, fordi ammoniakk avgir elektroner"
+      ],
+      "riktig": 0,
+      "forklaring": "Se på hva som skjer med formlene: $\\ce{H2O}$ blir $\\ce{OH-}$, altså har vannet mistet ett $\\ce{H+}$. En protondonor er per definisjon en syre. Alternativ B er fristende fordi vann oftest opptrer som base (slik det gjør mot $\\ce{HCl}$), men vann er amfotært og velger rolle etter motparten. Her er det ammoniakk som er basen: $\\ce{NH3}$ blir $\\ce{NH4+}$."
+    },
+    {
+      "sporsmal": "Hva heter forbindelsen $\\ce{FeCl3}$?",
+      "alternativer": ["jernklorid", "jerntriklorid", "jern(II)klorid", "jern(III)klorid"],
+      "riktig": 3,
+      "forklaring": "Tre kloridioner gir $3 \\cdot (-1) = -3$, så jernionet må ha ladning $+3$. Siden jern kan ha flere ladninger, skal ladningen oppgis med romertall: jern(III)klorid. «Jerntriklorid» er den vanligste fellen — greske prefikser brukes bare når begge grunnstoffene er ikke-metaller, ikke i ioniske forbindelser. «Jernklorid» er for upresist, for det kan like godt være $\\ce{FeCl2}$."
+    },
+    {
+      "sporsmal": "Hvilken formel har dinitrogentetraoksid?",
+      "alternativer": ["$\\ce{N2O}$", "$\\ce{NO2}$", "$\\ce{N2O4}$", "$\\ce{N4O2}$"],
+      "riktig": 2,
+      "forklaring": "«Di-» foran nitrogen betyr 2 nitrogenatomer, og «tetra-» foran oksid betyr 4 oksygenatomer, altså $\\ce{N2O4}$. $\\ce{NO2}$ er det mest fristende feilsvaret siden det har samme forholdstall mellom atomene, men det heter nitrogendioksid — prefiksene sier hvor mange atomer molekylet faktisk har, ikke det forkortede forholdet. $\\ce{N4O2}$ har byttet om prefiksene."
+    },
+    {
+      "sporsmal": "Hvorfor flyter is på vann?",
+      "alternativer": [
+        "Fordi is er kaldere enn vann, og kalde stoffer er alltid lettere",
+        "Fordi hydrogenbindingene låser molekylene i et åpent gitter med større volum per molekyl, slik at isen får lavere tetthet",
+        "Fordi det alltid er luftbobler i is",
+        "Fordi O–H-bindingene inne i molekylene blir lengre når vannet fryser"
+      ],
+      "riktig": 1,
+      "forklaring": "Når vann fryser, tvinger hydrogenbindingene molekylene inn i et sekskantet, åpent mønster med hulrom. Volumet per molekyl øker, og tettheten synker til 0,92 g/cm³ mot 1,00 g/cm³ for vann. Alternativ D er feil fordi frysing bare påvirker kreftene mellom molekylene; bindingene inne i molekylet er urørt. Og de fleste andre stoffer blir tettere når de fryser, så temperatur alene forklarer ingenting."
+    },
+    {
+      "sporsmal": "Hvilket av saltene er tungtløselig i vann?",
+      "alternativer": ["$\\ce{KNO3}$", "$\\ce{AgCl}$", "$\\ce{NaCl}$", "$\\ce{NH4Cl}$"],
+      "riktig": 1,
+      "forklaring": "Klorider er stort sett løselige, men $\\ce{Ag+}$ er ett av de få unntakene, så $\\ce{AgCl}$ feller ut som hvitt bunnfall. De tre andre dekkes av de aller sikreste reglene: alle nitrater er løselige, og alle natrium- og ammoniumsalter er løselige. Et vanlig feilsvar er $\\ce{NH4Cl}$, kanskje fordi ammonium ser komplisert ut — men ammoniumsalter er alltid løselige."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Hvilke tre typer krefter kan virke mellom molekyler?", "bak": "Londonkrefter (finnes alltid), dipol-dipol-krefter (krever permanent dipol) og hydrogenbinding (sterkest, krever H på N, O eller F)." },
+    { "front": "Hva kreves for at et stoff skal danne hydrogenbindinger?", "bak": "Et hydrogenatom bundet direkte til N, O eller F, og et fritt elektronpar på N, O eller F i nabomolekylet." },
+    { "front": "Hva gjør londonkreftene sterkere?", "bak": "Flere elektroner (større molar masse) og en langstrakt form som gir stor kontaktflate mellom molekylene." },
+    { "front": "Når er et molekyl polart?", "bak": "Når det har polare bindinger OG en usymmetrisk oppbygning, slik at bindingsdipolene ikke opphever hverandre." },
+    { "front": "Hvorfor er $\\ce{CO2}$ upolart når C=O-bindingene er polare?", "bak": "Molekylet er lineært og symmetrisk, så de to bindingsdipolene peker motsatt vei og nuller hverandre ut." },
+    { "front": "Hva ryker når vann koker?", "bak": "Bare hydrogenbindingene mellom molekylene (ca. 20 kJ/mol). O–H-bindingene inne i molekylet (ca. 460 kJ/mol) er urørt." },
+    { "front": "«Likt løser likt» — hva betyr det?", "bak": "Polare og ioniske stoffer løser seg i polare løsemidler som vann; upolare stoffer løser seg i upolare løsemidler som heksan." },
+    { "front": "Form og vinkel på vannmolekylet", "bak": "Bøyd, med ca. 104,5° mellom O–H-bindingene. Negativ ende ved oksygen, positiv ende ved hydrogen." },
+    { "front": "Hvorfor flyter is?", "bak": "Hydrogenbindingene låser molekylene i et åpent, sekskantet gitter. Tettheten blir 0,92 g/cm³ mot 1,00 g/cm³ for flytende vann." },
+    { "front": "Hva er hydratisering?", "bak": "At et ion i løsning blir omgitt av en kappe vannmolekyler som snur riktig ende inn mot ionet: $\\ce{NaCl(s) -> Na+(aq) + Cl-(aq)}$." },
+    { "front": "To løselighetsregler du alltid kan stole på", "bak": "Alle nitrater ($\\ce{NO3^-}$) er løselige, og alle salter av $\\ce{Na+}$, $\\ce{K+}$ og $\\ce{NH4+}$ er løselige." },
+    { "front": "Netto ionelikning for felling av sølvklorid", "bak": "$\\ce{Ag+(aq) + Cl-(aq) -> AgCl(s)}$ — tilskuerionene er strøket, og bunnfallet står som én formel med (s)." },
+    { "front": "Syre og base etter Brønsted", "bak": "Syre = protondonor (gir fra seg $\\ce{H+}$). Base = protonakseptor (tar opp $\\ce{H+}$). Vann kan være begge og er amfotært." },
+    { "front": "Autoprotolyse av vann", "bak": "$\\ce{2H2O(l) <=> H3O+(aq) + OH-(aq)}$ — derfor har rent vann pH 7." },
+    { "front": "Oksidasjon og reduksjon", "bak": "Oksidasjon = avgi elektroner, oksidasjonstallet øker. Reduksjon = ta opp elektroner, oksidasjonstallet synker. Skjer alltid samtidig." },
+    { "front": "Når skal navnet inneholde romertall, og når greske prefikser?", "bak": "Romertall når metallet kan ha flere ladninger: jern(III)klorid. Greske prefikser bare når begge grunnstoffene er ikke-metaller: dinitrogentetraoksid." }
+  ]
+}

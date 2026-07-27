@@ -1,0 +1,226 @@
+{
+  "fag": "kjemi",
+  "nr": 3,
+  "tittel": "Støkiometri",
+  "intro": "Støkiometri er regnekjemien: hvordan du går fra en balansert reaksjonslikning til konkrete gram, liter og konsentrasjoner. Alt du regner på senere i Kjemi 1 — termokjemi, likevekter, pH og titrering — hviler på at du behersker mol.",
+
+  "kompakt": {
+    "punkter": [
+      "1 mol er $6{,}022 \\cdot 10^{23}$ partikler. Tallet heter Avogadros konstant, $N_A$, og antall partikler er $N = n \\cdot N_A$.",
+      "Molar masse $M$ har enhet g/mol og finnes ved å summere molare masser for alle atomene i formelen. Sammenhengen er $n = \\frac{m}{M}$.",
+      "Når du balanserer, endrer du bare koeffisientene foran formlene — aldri indeksene inne i dem.",
+      "Koeffisientene i en balansert likning gir forholdet mellom stoffmengder i mol, ikke mellom masser.",
+      "Alle masseberegninger går veien om mol: gram $\\to$ mol $\\to$ mol $\\to$ gram.",
+      "Stoffmengdekonsentrasjon er $c = \\frac{n}{V}$ der $V$ er volumet av hele løsningen i liter. Enheten mol/L skrives ofte M.",
+      "Ved fortynning er stoffmengden bevart, så $c_1 V_1 = c_2 V_2$.",
+      "Begrensende reaktant finner du ved å regne om til mol og dele på koeffisienten i likningen — minste verdi er begrensende.",
+      "Prosentvis utbytte er praktisk utbytte delt på teoretisk utbytte, ganget med 100 %. Over 100 % er umulig.",
+      "Molart volum for gass er 22,4 L/mol ved 0 °C og 101,3 kPa, og 24,5 L/mol ved 25 °C. Da er $V = n \\cdot V_m$."
+    ],
+    "formler": [
+      { "navn": "Stoffmengde fra masse", "latex": "n = \\frac{m}{M}" },
+      { "navn": "Masse fra stoffmengde", "latex": "m = n \\cdot M" },
+      { "navn": "Molar masse", "latex": "M = \\frac{m}{n} \\qquad [\\text{g/mol}]" },
+      { "navn": "Antall partikler", "latex": "N = n \\cdot N_A" },
+      { "navn": "Avogadros konstant", "latex": "N_A = 6{,}022 \\cdot 10^{23}\\ \\text{mol}^{-1}" },
+      { "navn": "Molforhold fra likningen", "latex": "\\frac{n(\\text{B})}{n(\\text{A})} = \\frac{b}{a}" },
+      { "navn": "Stoffmengdekonsentrasjon", "latex": "c = \\frac{n}{V} \\qquad [\\text{mol/L}]" },
+      { "navn": "Stoffmengde i en løsning", "latex": "n = c \\cdot V" },
+      { "navn": "Fortynning", "latex": "c_1 V_1 = c_2 V_2" },
+      { "navn": "Gassvolum", "latex": "V = n \\cdot V_m" },
+      { "navn": "Molart volum", "latex": "V_m = 22{,}4\\ \\text{L/mol}\\ (0\\,^\\circ\\text{C},\\ 101{,}3\\ \\text{kPa}) \\qquad V_m = 24{,}5\\ \\text{L/mol}\\ (25\\,^\\circ\\text{C})" },
+      { "navn": "Den ideelle gasslikningen", "latex": "pV = nRT, \\qquad R = 8{,}314\\ \\text{J/(K}\\cdot\\text{mol)}" },
+      { "navn": "Prosentvis utbytte", "latex": "\\text{utbytte} = \\frac{\\text{praktisk utbytte}}{\\text{teoretisk utbytte}} \\cdot 100\\,\\%" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Mol, Avogadros konstant og molar masse",
+        "html": "<p>Atomer og molekyler er så små at vi aldri kan telle dem én for én. Derfor bruker kjemikere en <strong>tellenhet</strong>, på samme måte som du sier «ett dusin» i stedet for tolv. Enheten heter <strong>mol</strong>, og 1 mol er $6{,}022 \\cdot 10^{23}$ partikler. Dette tallet kalles <strong>Avogadros konstant</strong>, $N_A$. Sammenhengen mellom antall partikler $N$ og stoffmengde $n$ er</p>$$N = n \\cdot N_A$$<p>Det geniale er hvordan tallet er valgt: 1 mol av et stoff veier like mange gram som stoffets relative atom- eller molekylmasse. Karbon har relativ atommasse 12,01, og 1 mol karbonatomer veier 12,01 g. Denne massen per mol kaller vi <strong>molar masse</strong>, $M$, med enhet g/mol. Tallene henter du rett fra periodesystemet.</p><p>Molar masse for en forbindelse finner du ved å legge sammen molare masser for alle atomene i formelen. For vann: $M(\\ce{H2O}) = 2 \\cdot 1{,}008 + 16{,}00 = 18{,}02$ g/mol. Husk at en parentes gjelder alt som står inni: i $\\ce{Ca(OH)2}$ er det to oksygenatomer og to hydrogenatomer, så $M = 40{,}08 + 2(16{,}00 + 1{,}008) = 74{,}10$ g/mol.</p><p>Den mest brukte formelen i hele kjemien er sammenhengen mellom masse, stoffmengde og molar masse:</p>$$n = \\frac{m}{M}$$<p>Snu den som du trenger: $m = n \\cdot M$ og $M = \\frac{m}{n}$. Enhetene hjelper deg å huske hvilken vei det går — gram delt på gram per mol gir mol.</p>"
+      },
+      {
+        "tittel": "Balansering av reaksjonslikninger",
+        "html": "<p>En reaksjonslikning er balansert når det er like mange atomer av hvert grunnstoff på venstre og høyre side. Det følger av at masse ikke forsvinner i en kjemisk reaksjon: atomene blir bare satt sammen på nye måter.</p><p>Du balanserer ved å sette <strong>koeffisienter</strong> foran formlene. Du får <em>aldri</em> endre indeksene inne i en formel. $\\ce{H2O}$ må fortsatt være $\\ce{H2O}$ — skriver du $\\ce{H2O2}$, har du byttet ut vann med hydrogenperoksid, og da svarer du på en annen oppgave.</p><p>En framgangsmåte som nesten alltid virker:</p><ol><li>Tell atomene av hvert grunnstoff på begge sider.</li><li>Start med grunnstoffet som bare finnes i én forbindelse på hver side, og som har flest atomer.</li><li>Ta hydrogen og oksygen til slutt — de er ofte med i flere forbindelser samtidig.</li><li>Kontroller alle grunnstoffene på nytt, og sjekk at koeffisientene er hele tall uten felles faktor.</li></ol><p>Eksempel: $\\ce{C3H8 + O2 -> CO2 + H2O}$. Karbon finnes bare i propan og karbondioksid, og det er tre karbonatomer til venstre, så vi setter 3 foran $\\ce{CO2}$. Hydrogen: åtte til venstre gir 4 foran $\\ce{H2O}$. Nå er det $3 \\cdot 2 + 4 = 10$ oksygenatomer på høyre side, som krever 5 foran $\\ce{O2}$:</p>$$\\ce{C3H8 + 5O2 -> 3CO2 + 4H2O}$$<p>Ender du opp med en halv koeffisient, ganger du hele likningen med 2 helt til slutt. For likninger med ioner må du i tillegg kontrollere at samlet <strong>ladning</strong> er lik på begge sider.</p>"
+      },
+      {
+        "tittel": "Masseberegninger — veien om mol",
+        "html": "<p>Koeffisientene forteller om forholdet mellom <strong>stoffmengder</strong>, ikke mellom masser. I $\\ce{2H2 + O2 -> 2H2O}$ reagerer 2 mol $\\ce{H2}$ med 1 mol $\\ce{O2}$, men massene er 4,03 g og 32,00 g — det er ikke noe 2:1-forhold. Derfor kan du ikke bruke koeffisientene direkte på gram.</p><p>Alle masseberegninger må gå <strong>veien om mol</strong>. Oppskriften er den samme hver gang:</p><ol><li>Balanser likningen.</li><li>Regn om det du kjenner fra gram til mol med $n = \\frac{m}{M}$.</li><li>Bruk koeffisientforholdet til å finne stoffmengden av stoffet du spør etter.</li><li>Regn tilbake til gram med $m = n \\cdot M$.</li></ol><p>Steg 3 kan skrives som en enkel brøk. Kjenner du $n(\\text{A})$ og vil finne $n(\\text{B})$, der $a$ og $b$ er koeffisientene:</p>$$n(\\text{B}) = n(\\text{A}) \\cdot \\frac{b}{a}$$<p>Et nyttig kontrolltriks: samlet masse på reaktantsiden skal være lik samlet masse på produktsiden. Regner du ut alle stoffene i en oppgave og massene ikke stemmer, har du gjort en feil et sted.</p><p>Vær nøye med gjeldende siffer. Er massen oppgitt som 10,0 g — tre gjeldende siffer — skal svaret også ha tre. Rund av først helt til slutt; runder du underveis, blir siste siffer ofte feil.</p>"
+      },
+      {
+        "tittel": "Konsentrasjon og fortynning",
+        "html": "<p><strong>Stoffmengdekonsentrasjon</strong> forteller hvor mye stoff det er per liter løsning:</p>$$c = \\frac{n}{V}$$<p>Enheten er mol/L, som ofte skrives M og leses «molar». At $c(\\ce{HCl}) = 0{,}10$ mol/L betyr at hver liter løsning inneholder 0,10 mol $\\ce{HCl}$. Legg merke til at $V$ er volumet av <strong>hele løsningen</strong>, ikke volumet av vannet du startet med.</p><p>Skal du lage en løsning med kjent konsentrasjon, regner du baklengs: finn $n = c \\cdot V$, gjør om til masse med $m = n \\cdot M$, vei ut stoffet, løs det i litt vann i en målekolbe og fyll opp til merket med vann.</p><p>Ved <strong>fortynning</strong> tilsetter du bare mer løsemiddel. Antall mol oppløst stoff er da helt uforandret — det er bare volumet som øker. Siden $n = c_1 V_1 = c_2 V_2$, får vi</p>$$c_1 V_1 = c_2 V_2$$<p>der indeks 1 er før og 2 er etter fortynning. Tar du 10,0 mL av en 1,00 M løsning og fyller opp til 100,0 mL, blir konsentrasjonen $1{,}00 \\cdot \\frac{10{,}0}{100{,}0} = 0{,}100$ mol/L, altså ti ganger lavere.</p><p>Én praktisk detalj som koster mange elever poeng: i $c = \\frac{n}{V}$ <em>må</em> volumet være i liter, så 250 mL er 0,250 L. I $c_1V_1 = c_2V_2$ kan du derimot gjerne bruke mL på begge sider, fordi volumenheten forkortes bort.</p>"
+      },
+      {
+        "tittel": "Begrensende reaktant og utbytte",
+        "html": "<p>På laboratoriet er reaktantene sjelden blandet i akkurat det forholdet likningen krever. Da blir ett av stoffene brukt opp først, og reaksjonen stopper. Dette stoffet kalles <strong>begrensende reaktant</strong>, og det er det alene som bestemmer hvor mye produkt du kan få. Det som er igjen av det andre stoffet, er <strong>overskudd</strong>.</p><p>Slik finner du den begrensende: regn om begge mengdene til mol, og <strong>del stoffmengden på koeffisienten</strong> i den balanserte likningen. Stoffet som gir den minste verdien, er begrensende.</p><p>Det holder altså ikke å se hvilket stoff det er minst av. I $\\ce{N2 + 3H2 -> 2NH3}$ med 1,0 mol $\\ce{N2}$ og 2,0 mol $\\ce{H2}$ er det minst nitrogen, men regnestykket $\\frac{1{,}0}{1} = 1{,}0$ mot $\\frac{2{,}0}{3} = 0{,}67$ viser at det er hydrogen som tar slutt først.</p><p>Mengden produkt du regner deg fram til ut fra den begrensende reaktanten, er det <strong>teoretiske utbyttet</strong>. I praksis får du mindre: noe blir sittende igjen i utstyret, noen reaksjoner går ikke helt til ende, og sidereaksjoner stjeler stoff. Derfor oppgir vi <strong>prosentvis utbytte</strong>:</p>$$\\text{utbytte} = \\frac{\\text{praktisk utbytte}}{\\text{teoretisk utbytte}} \\cdot 100\\,\\%$$<p>Teller og nevner må være samme type størrelse — begge i gram eller begge i mol. Får du over 100 %, har du gjort en regnefeil, eller produktet er ikke tørt eller rent nok.</p>"
+      },
+      {
+        "tittel": "Gassvolum og molart volum",
+        "html": "<p>Det er mye lettere å måle volumet av en gass enn å veie den. Heldigvis sier <strong>Avogadros lov</strong> at like volum av alle gasser inneholder like mange molekyler når temperatur og trykk er like — helt uavhengig av hvilken gass det er. Grunnen er at molekylene i en gass ligger så spredt at deres egen størrelse nesten ikke betyr noe.</p><p>Volumet 1 mol gass tar opp, kalles <strong>molart volum</strong>, $V_m$. Det avhenger bare av temperatur og trykk:</p><table><thead><tr><th>Betingelser</th><th>Molart volum</th></tr></thead><tbody><tr><td>0 °C og 101,3 kPa (standardbetingelser)</td><td>22,4 L/mol</td></tr><tr><td>25 °C og 101,3 kPa (romtemperatur)</td><td>24,5 L/mol</td></tr></tbody></table><p>Sammenhengen mellom volum og stoffmengde blir da</p>$$V = n \\cdot V_m \\qquad \\text{og} \\qquad n = \\frac{V}{V_m}$$<p>Trenger du andre betingelser enn de to i tabellen, bruker du <strong>den ideelle gasslikningen</strong>:</p>$$pV = nRT$$<p>der $R = 8{,}314$ J/(K·mol). Her må $p$ være i pascal, $V$ i kubikkmeter og $T$ i kelvin, altså $T = t + 273$ når $t$ er temperaturen i celsiusgrader. Molart volum er egentlig bare denne likningen løst for $\\frac{V}{n}$.</p><p>Pass på én ting: molart volum gjelder <em>bare</em> gasser. Volumet av 1 mol vann er cirka 18 mL, ikke 22,4 L, fordi molekylene i en væske ligger tett inntil hverandre.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Fra masse til antall atomer",
+        "oppgave": "<p>Du har 25,0 g kalsiumkarbonat, $\\ce{CaCO3}$.</p><ol><li>Hvor mange mol er dette?</li><li>Hvor mange formelenheter $\\ce{CaCO3}$ inneholder prøven?</li><li>Hvor mange oksygenatomer inneholder prøven?</li></ol><p>Molare masser: Ca 40,08 g/mol, C 12,01 g/mol, O 16,00 g/mol.</p>",
+        "losning": "<p><strong>Steg 1 — molar masse.</strong> Formelen inneholder ett Ca, ett C og tre O:</p>$$M(\\ce{CaCO3}) = 40{,}08 + 12{,}01 + 3 \\cdot 16{,}00 = 40{,}08 + 12{,}01 + 48{,}00 = 100{,}09\\ \\text{g/mol}$$<p><strong>Steg 2 — stoffmengde.</strong> Vi bruker $n = \\frac{m}{M}$ og passer på at gram står øverst:</p>$$n = \\frac{25{,}0\\ \\text{g}}{100{,}09\\ \\text{g/mol}} = 0{,}2498\\ \\text{mol} \\approx 0{,}250\\ \\text{mol}$$<p>Enhetene stemmer: $\\frac{\\text{g}}{\\text{g/mol}} = \\text{mol}$.</p><p><strong>Steg 3 — antall formelenheter.</strong> Vi ganger stoffmengden med Avogadros konstant. Her regner vi videre med det uavrundede tallet 0,2498:</p>$$N = n \\cdot N_A = 0{,}2498\\ \\text{mol} \\cdot 6{,}022 \\cdot 10^{23}\\ \\text{mol}^{-1} = 1{,}50 \\cdot 10^{23}$$<p><strong>Steg 4 — antall oksygenatomer.</strong> Hver formelenhet $\\ce{CaCO3}$ inneholder tre oksygenatomer, så vi ganger med 3:</p>$$N(\\ce{O}) = 3 \\cdot 1{,}504 \\cdot 10^{23} = 4{,}51 \\cdot 10^{23}$$<p><strong>Svar:</strong> 0,250 mol, $1{,}50 \\cdot 10^{23}$ formelenheter og $4{,}51 \\cdot 10^{23}$ oksygenatomer. Alle svar med tre gjeldende siffer, siden 25,0 g har tre.</p>"
+      },
+      {
+        "tittel": "Balansering, masseberegning og gassvolum",
+        "oppgave": "<p>Propan, $\\ce{C3H8}$, brenner fullstendig i oksygen og danner karbondioksid og vann.</p><ol><li>Balanser reaksjonslikningen.</li><li>Hvor mange gram $\\ce{CO2}$ dannes når 10,0 g propan brenner fullstendig?</li><li>Hvilket volum oksygengass trengs, målt ved 0 °C og 101,3 kPa?</li></ol>",
+        "losning": "<p><strong>Steg 1 — balanser.</strong> Vi starter med $\\ce{C3H8 + O2 -> CO2 + H2O}$. Tre karbonatomer til venstre gir 3 foran $\\ce{CO2}$, og åtte hydrogenatomer gir 4 foran $\\ce{H2O}$. Da er det $3 \\cdot 2 + 4 \\cdot 1 = 10$ oksygenatomer til høyre, altså 5 foran $\\ce{O2}$:</p>$$\\ce{C3H8 + 5O2 -> 3CO2 + 4H2O}$$<p><strong>Steg 2 — gram propan til mol propan.</strong></p>$$M(\\ce{C3H8}) = 3 \\cdot 12{,}01 + 8 \\cdot 1{,}008 = 36{,}03 + 8{,}06 = 44{,}09\\ \\text{g/mol}$$$$n(\\ce{C3H8}) = \\frac{10{,}0\\ \\text{g}}{44{,}09\\ \\text{g/mol}} = 0{,}2268\\ \\text{mol}$$<p><strong>Steg 3 — molforholdet.</strong> Likningen sier 1 mol propan gir 3 mol $\\ce{CO2}$:</p>$$n(\\ce{CO2}) = 3 \\cdot 0{,}2268\\ \\text{mol} = 0{,}6804\\ \\text{mol}$$<p><strong>Steg 4 — mol tilbake til gram.</strong></p>$$M(\\ce{CO2}) = 12{,}01 + 2 \\cdot 16{,}00 = 44{,}01\\ \\text{g/mol}$$$$m(\\ce{CO2}) = 0{,}6804\\ \\text{mol} \\cdot 44{,}01\\ \\text{g/mol} = 29{,}9\\ \\text{g}$$<p><strong>Steg 5 — oksygenvolumet.</strong> Likningen sier 5 mol $\\ce{O2}$ per mol propan:</p>$$n(\\ce{O2}) = 5 \\cdot 0{,}2268\\ \\text{mol} = 1{,}134\\ \\text{mol}$$<p>Ved 0 °C og 101,3 kPa er $V_m = 22{,}4$ L/mol:</p>$$V(\\ce{O2}) = n \\cdot V_m = 1{,}134\\ \\text{mol} \\cdot 22{,}4\\ \\text{L/mol} = 25{,}4\\ \\text{L}$$<p><strong>Kontroll av massebalansen.</strong> $m(\\ce{O2}) = 1{,}134 \\cdot 32{,}00 = 36{,}3$ g og $m(\\ce{H2O}) = 4 \\cdot 0{,}2268 \\cdot 18{,}02 = 16{,}3$ g. Reaktanter: $10{,}0 + 36{,}3 = 46{,}3$ g. Produkter: $29{,}9 + 16{,}3 = 46{,}2$ g. Forskjellen på 0,1 g skyldes bare avrunding, så regningen holder.</p><p><strong>Svar:</strong> 29,9 g $\\ce{CO2}$ og 25,4 L $\\ce{O2}$.</p>"
+      },
+      {
+        "tittel": "Å lage og fortynne en løsning",
+        "oppgave": "<p>Du skal lage 250,0 mL natriumhydroksidløsning med konsentrasjon 0,150 mol/L.</p><ol><li>Hvor mange gram fast $\\ce{NaOH}$ må du veie ut?</li><li>Du tar 25,0 mL av løsningen og fyller opp med vann til 100,0 mL. Hva blir konsentrasjonen?</li><li>Hvor mange millilitre av den opprinnelige løsningen trenger du for å lage 500,0 mL løsning med konsentrasjon 0,0200 mol/L?</li></ol><p>Molare masser: Na 22,99 g/mol, O 16,00 g/mol, H 1,008 g/mol.</p>",
+        "losning": "<p><strong>Del 1 — hvor mye må veies ut?</strong> Først gjør vi volumet om til liter, siden $c = \\frac{n}{V}$ krever liter:</p>$$V = 250{,}0\\ \\text{mL} = 0{,}2500\\ \\text{L}$$<p>Så finner vi stoffmengden vi trenger:</p>$$n = c \\cdot V = 0{,}150\\ \\text{mol/L} \\cdot 0{,}2500\\ \\text{L} = 0{,}0375\\ \\text{mol}$$<p>Molar masse:</p>$$M(\\ce{NaOH}) = 22{,}99 + 16{,}00 + 1{,}008 = 40{,}00\\ \\text{g/mol}$$$$m = n \\cdot M = 0{,}0375\\ \\text{mol} \\cdot 40{,}00\\ \\text{g/mol} = 1{,}50\\ \\text{g}$$<p>I praksis veier du ut 1,50 g, løser det i litt vann i en 250 mL målekolbe og fyller opp til merket.</p><p><strong>Del 2 — fortynningen.</strong> Stoffmengden er den samme før og etter, så vi bruker $c_1V_1 = c_2V_2$. Her kan vi beholde mL, fordi enheten forkortes bort:</p>$$c_2 = \\frac{c_1 V_1}{V_2} = \\frac{0{,}150\\ \\text{mol/L} \\cdot 25{,}0\\ \\text{mL}}{100{,}0\\ \\text{mL}} = 0{,}0375\\ \\text{mol/L}$$<p>Kontroll den lange veien: $n = 0{,}150 \\cdot 0{,}0250 = 3{,}75 \\cdot 10^{-3}$ mol, og $c = \\frac{3{,}75 \\cdot 10^{-3}\\ \\text{mol}}{0{,}1000\\ \\text{L}} = 0{,}0375$ mol/L. Samme svar. Volumet ble firedoblet, og konsentrasjonen ble fire ganger lavere.</p><p><strong>Del 3 — hvor mye stamløsning?</strong> Nå er det $V_1$ vi er ute etter:</p>$$V_1 = \\frac{c_2 V_2}{c_1} = \\frac{0{,}0200\\ \\text{mol/L} \\cdot 500{,}0\\ \\text{mL}}{0{,}150\\ \\text{mol/L}} = \\frac{10{,}0}{0{,}150}\\ \\text{mL} = 66{,}7\\ \\text{mL}$$<p><strong>Svar:</strong> 1,50 g $\\ce{NaOH}$, ny konsentrasjon 0,0375 mol/L, og 66,7 mL stamløsning fylt opp til 500,0 mL.</p>"
+      },
+      {
+        "tittel": "Begrensende reaktant, gassvolum og utbytte",
+        "oppgave": "<p>Sink reagerer med saltsyre etter likningen</p>$$\\ce{Zn + 2HCl -> ZnCl2 + H2}$$<p>Du legger 5,00 g sink i 50,0 mL saltsyre med konsentrasjon 1,20 mol/L.</p><ol><li>Hvilket stoff er begrensende reaktant?</li><li>Hvilket volum hydrogengass kan du maksimalt få, målt ved 25 °C og 101,3 kPa?</li><li>Du samler opp 0,680 L gass ved samme betingelser. Hva er det prosentvise utbyttet?</li><li>Hvor mange gram sink er ikke brukt opp?</li></ol><p>$M(\\ce{Zn}) = 65{,}38$ g/mol.</p>",
+        "losning": "<p><strong>Del 1 — hvem tar slutt først?</strong> Vi regner om begge mengdene til mol:</p>$$n(\\ce{Zn}) = \\frac{5{,}00\\ \\text{g}}{65{,}38\\ \\text{g/mol}} = 0{,}0765\\ \\text{mol}$$$$n(\\ce{HCl}) = c \\cdot V = 1{,}20\\ \\text{mol/L} \\cdot 0{,}0500\\ \\text{L} = 0{,}0600\\ \\text{mol}$$<p>Nå deler vi hver stoffmengde på koeffisienten sin i likningen:</p>$$\\frac{n(\\ce{Zn})}{1} = 0{,}0765 \\qquad \\frac{n(\\ce{HCl})}{2} = \\frac{0{,}0600}{2} = 0{,}0300$$<p>Den minste verdien hører til $\\ce{HCl}$, så <strong>saltsyra er begrensende reaktant</strong> — selv om det er flere mol $\\ce{Zn}$ enn $\\ce{HCl}$ er det ikke det som avgjør, fordi hvert sinkatom krever to $\\ce{HCl}$.</p><p><strong>Del 2 — teoretisk gassvolum.</strong> Likningen gir 1 mol $\\ce{H2}$ per 2 mol $\\ce{HCl}$:</p>$$n(\\ce{H2}) = \\frac{0{,}0600\\ \\text{mol}}{2} = 0{,}0300\\ \\text{mol}$$<p>Ved 25 °C og 101,3 kPa er $V_m = 24{,}5$ L/mol:</p>$$V(\\ce{H2}) = 0{,}0300\\ \\text{mol} \\cdot 24{,}5\\ \\text{L/mol} = 0{,}735\\ \\text{L}$$<p><strong>Del 3 — prosentvis utbytte.</strong> Målt og teoretisk volum gjelder samme betingelser, så vi kan sammenligne volumene direkte:</p>$$\\text{utbytte} = \\frac{0{,}680\\ \\text{L}}{0{,}735\\ \\text{L}} \\cdot 100\\,\\% = 92{,}5\\ \\%$$<p>Vil du gjøre det via mol, blir det $n = \\frac{0{,}680}{24{,}5} = 0{,}0278$ mol, og $\\frac{0{,}0278}{0{,}0300} = 0{,}925$ — samme resultat.</p><p><strong>Del 4 — sink i overskudd.</strong> Sinken som faktisk reagerte, følger av $\\ce{HCl}$:</p>$$n(\\ce{Zn})_{\\text{reagert}} = \\frac{0{,}0600}{2} = 0{,}0300\\ \\text{mol} \\quad \\Rightarrow \\quad m = 0{,}0300 \\cdot 65{,}38 = 1{,}96\\ \\text{g}$$$$m(\\ce{Zn})_{\\text{igjen}} = 5{,}00\\ \\text{g} - 1{,}96\\ \\text{g} = 3{,}04\\ \\text{g}$$<p><strong>Svar:</strong> $\\ce{HCl}$ er begrensende, teoretisk volum 0,735 L, utbytte 92,5 %, og 3,04 g sink ligger igjen.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å endre indeksene i formlene når du balanserer. Du kan ikke gjøre $\\ce{H2O}$ om til $\\ce{H2O2}$ for å få oksygenet til å stemme — bare koeffisienten foran formelen kan endres.",
+      "Å bruke koeffisientene direkte på masser. I $\\ce{2H2 + O2 -> 2H2O}$ reagerer 2 mol $\\ce{H2}$ med 1 mol $\\ce{O2}$, men aldri 2 g med 1 g. Du må alltid innom mol.",
+      "Å glemme å gjøre mL om til L i $c = \\frac{n}{V}$. Da blir konsentrasjonen 1000 ganger for stor eller for liten, og svaret ser helt urimelig ut.",
+      "Å velge begrensende reaktant ut fra hvem det er minst av, uten å dele på koeffisienten. Med 1,0 mol $\\ce{N2}$ og 2,0 mol $\\ce{H2}$ i $\\ce{N2 + 3H2 -> 2NH3}$ er det hydrogen som er begrensende.",
+      "Å glemme at en parentes i formelen gjelder alle atomene inni. $M(\\ce{Al2(SO4)3})$ krever tre svovel og tolv oksygen, ikke ett og fire.",
+      "Å bruke 22,4 L/mol på væsker og faste stoffer, eller ved 25 °C. Molart volum gjelder bare gasser, og ved romtemperatur er verdien 24,5 L/mol."
+    ],
+
+    "tips": [
+      "Skriv opp alle molare masser du trenger med enhet g/mol før du begynner å regne. Da blir resten av oppgaven ren mekanikk, og du ser med en gang om du har glemt et atom.",
+      "Sett enhet på hvert tall gjennom hele utregningen. Får du en «mol» der du forventet «g», har du snudd $n = \\frac{m}{M}$ feil vei — det er den vanligste regnefeilen i kapittelet.",
+      "Får du oppgitt tallverdier for TO reaktanter, er det nesten alltid en oppgave om begrensende reaktant. Da skal du regne om begge til mol og dele på koeffisientene før du gjør noe annet.",
+      "Ved balansering: ta grunnstoffet som bare finnes i én forbindelse på hver side først, og hydrogen og oksygen sist. Havner du på en halv koeffisient, ganger du hele likningen med 2 til slutt.",
+      "Kontroller svaret med massebalansen eller med en overslagsregning. At 10 g propan gir cirka 30 g $\\ce{CO2}$ er rimelig, siden tre tunge $\\ce{CO2}$-molekyler kommer ut av hvert propanmolekyl."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Støkiometri", "forklaring": "Læren om mengdeforholdene i kjemiske reaksjoner — hvor mye som reagerer, og hvor mye som dannes." },
+    { "begrep": "Mol", "forklaring": "SI-enheten for stoffmengde. 1 mol er $6{,}022 \\cdot 10^{23}$ partikler, enten det er atomer, molekyler eller ioner." },
+    { "begrep": "Avogadros konstant", "forklaring": "Antall partikler i 1 mol: $N_A = 6{,}022 \\cdot 10^{23}\\ \\text{mol}^{-1}$." },
+    { "begrep": "Molar masse", "forklaring": "Massen av 1 mol av et stoff, med enhet g/mol. Tallverdien er den samme som den relative atom- eller molekylmassen." },
+    { "begrep": "Relativ atommasse", "forklaring": "Massen til et atom sammenlignet med en tolvdel av massen til et karbon-12-atom. Det er dette tallet du finner i periodesystemet." },
+    { "begrep": "Formelenhet", "forklaring": "Den minste enheten i formelen til et ionestoff, for eksempel $\\ce{NaCl}$. Ionestoffer består ikke av molekyler, så vi teller formelenheter i stedet." },
+    { "begrep": "Koeffisient", "forklaring": "Tallet foran en formel i en reaksjonslikning. Det forteller hvor mange mol av stoffet som deltar, og er det du justerer når du balanserer." },
+    { "begrep": "Indeks", "forklaring": "Det lille senkede tallet inne i en kjemisk formel, som sier hvor mange atomer formelen inneholder av grunnstoffet. Indekser skal aldri endres under balansering." },
+    { "begrep": "Stoffmengdekonsentrasjon", "forklaring": "Stoffmengde per liter løsning, $c = \\frac{n}{V}$, med enhet mol/L. Skrives ofte M og leses «molar»." },
+    { "begrep": "Fortynning", "forklaring": "Å tilsette mer løsemiddel til en løsning. Stoffmengden er uendret, så $c_1V_1 = c_2V_2$." },
+    { "begrep": "Begrensende reaktant", "forklaring": "Reaktanten som blir brukt opp først, og som dermed bestemmer hvor mye produkt reaksjonen kan gi." },
+    { "begrep": "Overskuddsreaktant", "forklaring": "Reaktanten det er mer av enn nødvendig. En del av den ligger igjen uendret når reaksjonen er ferdig." },
+    { "begrep": "Teoretisk utbytte", "forklaring": "Mengden produkt du regner deg fram til når alt av den begrensende reaktanten reagerer slik likningen sier." },
+    { "begrep": "Prosentvis utbytte", "forklaring": "Praktisk utbytte delt på teoretisk utbytte, ganget med 100 %. Sier hvor godt reaksjonen faktisk gikk." },
+    { "begrep": "Molart volum", "forklaring": "Volumet av 1 mol gass ved gitte betingelser: 22,4 L/mol ved 0 °C og 101,3 kPa, 24,5 L/mol ved 25 °C. Bygger på Avogadros lov, som sier at like gassvolum inneholder like mange molekyler ved samme temperatur og trykk." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hva er molar masse for $\\ce{Ca(OH)2}$? (Ca 40,08, O 16,00, H 1,008 g/mol)",
+      "alternativer": ["57,09 g/mol", "74,10 g/mol", "72,08 g/mol", "41,09 g/mol"],
+      "riktig": 1,
+      "forklaring": "Indeksen 2 utenfor parentesen gjelder både O og H, så du har to hydroksidgrupper: $40{,}08 + 2(16{,}00 + 1{,}008) = 74{,}10$ g/mol. Svaret 57,09 g/mol er den klassiske feilen der du bare regner med én OH-gruppe og glemmer parentesen helt."
+    },
+    {
+      "sporsmal": "Hvilket sett koeffisienter balanserer $\\ce{C2H6 + O2 -> CO2 + H2O}$?",
+      "alternativer": ["1, 3, 2, 3", "1, 5, 2, 3", "2, 5, 4, 6", "2, 7, 4, 6"],
+      "riktig": 3,
+      "forklaring": "Med 2, 7, 4, 6 får du 4 C og 12 H på hver side, og oksygen: $2 \\cdot 7 = 14$ til venstre mot $4 \\cdot 2 + 6 = 14$ til høyre. Alternativet 1, 3, 2, 3 har riktig C og H, men bare 6 O til venstre mot 7 til høyre — derfor må du gange hele likningen med 2 og bruke 7 foran $\\ce{O2}$."
+    },
+    {
+      "sporsmal": "Hvor mange gram vann dannes når 2,00 mol $\\ce{H2}$ reagerer fullstendig etter $\\ce{2H2 + O2 -> 2H2O}$? ($M(\\ce{H2O}) = 18{,}02$ g/mol)",
+      "alternativer": ["36,0 g", "18,0 g", "72,0 g", "9,00 g"],
+      "riktig": 0,
+      "forklaring": "Molforholdet mellom $\\ce{H2}$ og $\\ce{H2O}$ er 2:2, altså 1:1, så 2,00 mol $\\ce{H2}$ gir 2,00 mol vann: $m = 2{,}00 \\cdot 18{,}02 = 36{,}0$ g. Svaret 18,0 g får du hvis du feilaktig deler på koeffisienten 2 og tror det bare dannes 1 mol vann — men koeffisientene er like på begge sider her."
+    },
+    {
+      "sporsmal": "Du løser 0,050 mol $\\ce{NaCl}$ i vann til totalvolumet er 500 mL. Hva er konsentrasjonen?",
+      "alternativer": ["0,025 mol/L", "1,0 mol/L", "0,10 mol/L", "25 mol/L"],
+      "riktig": 2,
+      "forklaring": "$c = \\frac{n}{V} = \\frac{0{,}050\\ \\text{mol}}{0{,}500\\ \\text{L}} = 0{,}10$ mol/L. Svaret 0,025 mol/L er hva du får hvis du ganger i stedet for å dele ($0{,}050 \\cdot 0{,}500$). Sjekk alltid rimeligheten: en halv liter er mindre enn én liter, så konsentrasjonen må bli større enn 0,050 mol/L, ikke mindre."
+    },
+    {
+      "sporsmal": "Du tar 20,0 mL av en 0,500 mol/L $\\ce{HCl}$-løsning og fyller opp med vann til 100,0 mL. Hva er den nye konsentrasjonen?",
+      "alternativer": ["2,50 mol/L", "0,400 mol/L", "0,250 mol/L", "0,100 mol/L"],
+      "riktig": 3,
+      "forklaring": "Stoffmengden endres ikke når du bare tilsetter vann: $n = 0{,}500 \\cdot 0{,}0200 = 0{,}0100$ mol, og $c_2 = \\frac{0{,}0100}{0{,}1000} = 0{,}100$ mol/L. Volumet ble fem ganger større, så konsentrasjonen blir fem ganger lavere. Svaret 2,50 mol/L er samme regnestykke snudd feil vei — fortynning kan aldri gi høyere konsentrasjon."
+    },
+    {
+      "sporsmal": "I reaksjonen $\\ce{N2 + 3H2 -> 2NH3}$ har du 1,0 mol $\\ce{N2}$ og 2,0 mol $\\ce{H2}$. Hvilket stoff er begrensende reaktant?",
+      "alternativer": [
+        "$\\ce{N2}$, fordi det er færrest mol av det",
+        "$\\ce{H2}$, fordi det trengs 3 mol $\\ce{H2}$ per mol $\\ce{N2}$",
+        "Ingen av dem — stoffene er i støkiometrisk forhold",
+        "$\\ce{N2}$, fordi molar massen er størst"
+      ],
+      "riktig": 1,
+      "forklaring": "Del stoffmengden på koeffisienten: $\\frac{1{,}0}{1} = 1{,}0$ for $\\ce{N2}$ og $\\frac{2{,}0}{3} = 0{,}67$ for $\\ce{H2}$. Minste verdi er begrensende, altså hydrogen. Å velge $\\ce{N2}$ fordi det er færrest mol er den vanligste fellen — antall mol alene sier ingenting før du har tatt hensyn til koeffisientene."
+    },
+    {
+      "sporsmal": "Teoretisk utbytte i en reaksjon er 8,50 g. Du får faktisk 7,14 g produkt. Hva er det prosentvise utbyttet?",
+      "alternativer": ["119 %", "16,0 %", "84,0 %", "1,36 %"],
+      "riktig": 2,
+      "forklaring": "$\\frac{7{,}14}{8{,}50} \\cdot 100\\,\\% = 84{,}0\\ \\%$. Svaret 119 % er brøken snudd på hodet, og et utbytte over 100 % er umulig — da har du fått mer produkt enn atomene tillater. 16,0 % er tapet, altså det som mangler, ikke utbyttet."
+    },
+    {
+      "sporsmal": "Hvilket volum har 0,250 mol $\\ce{O2}$ ved 0 °C og 101,3 kPa?",
+      "alternativer": ["5,60 L", "22,4 L", "89,6 L", "8,00 L"],
+      "riktig": 0,
+      "forklaring": "$V = n \\cdot V_m = 0{,}250 \\cdot 22{,}4 = 5{,}60$ L. Svaret 89,6 L er $\\frac{22{,}4}{0{,}250}$, altså divisjon i stedet for multiplikasjon — og en fjerdedel av et mol kan umulig ta mer plass enn ett helt mol. 8,00 g er derimot massen av gassen ($0{,}250 \\cdot 32{,}00$), ikke volumet."
+    },
+    {
+      "sporsmal": "Du har 1,0 L metangass, $\\ce{CH4}$, og 1,0 L oksygengass, $\\ce{O2}$, ved samme temperatur og trykk. Hva er riktig?",
+      "alternativer": [
+        "Metanprøven inneholder flest molekyler, fordi metan har lavest molar masse",
+        "Oksygenprøven inneholder flest molekyler, fordi oksygen har størst molar masse",
+        "Prøvene har like stor masse, men ulikt antall molekyler",
+        "Prøvene inneholder like mange molekyler, men oksygenprøven har størst masse"
+      ],
+      "riktig": 3,
+      "forklaring": "Avogadros lov sier at like gassvolum inneholder like mange molekyler ved samme temperatur og trykk, så $n$ er lik i de to prøvene. Massen er derimot $m = n \\cdot M$, og siden $M(\\ce{O2}) = 32{,}00$ g/mol mot $M(\\ce{CH4}) = 16{,}04$ g/mol, veier oksygenprøven omtrent dobbelt så mye. Molar masse påvirker massen, ikke antall molekyler."
+    },
+    {
+      "sporsmal": "Hvor mange oksygenatomer er det i 0,500 mol $\\ce{H2SO4}$?",
+      "alternativer": ["$3{,}01 \\cdot 10^{23}$", "$6{,}02 \\cdot 10^{23}$", "$1{,}20 \\cdot 10^{24}$", "$2{,}00 \\cdot 10^{23}$"],
+      "riktig": 2,
+      "forklaring": "Først antall molekyler: $0{,}500 \\cdot 6{,}022 \\cdot 10^{23} = 3{,}01 \\cdot 10^{23}$. Hvert molekyl inneholder fire oksygenatomer, så du må gange med 4: $1{,}20 \\cdot 10^{24}$. Svaret $3{,}01 \\cdot 10^{23}$ er nettopp antall molekyler — det er der de fleste stopper og glemmer indeksen 4."
+    },
+    {
+      "sporsmal": "Hva forteller koeffisientene i en balansert reaksjonslikning?",
+      "alternativer": [
+        "Massen i gram av hvert stoff som deltar",
+        "Forholdet mellom stoffmengdene i mol",
+        "Hvor mange atomer hvert molekyl består av",
+        "Konsentrasjonen av hvert stoff i løsningen"
+      ],
+      "riktig": 1,
+      "forklaring": "Koeffisientene gir molforholdet. De kan ikke leses som masser, fordi stoffene har ulik molar masse: i $\\ce{2H2 + O2 -> 2H2O}$ reagerer 2 mol med 1 mol, men det tilsvarer 4,03 g mot 32,00 g. Antall atomer i hvert molekyl står i indeksene inne i formelen, ikke i koeffisienten foran."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Hvordan finner du stoffmengde fra masse?", "bak": "$n = \\frac{m}{M}$ — masse i gram delt på molar masse i g/mol." },
+    { "front": "Avogadros konstant", "bak": "$N_A = 6{,}022 \\cdot 10^{23}$ partikler per mol. Antall partikler: $N = n \\cdot N_A$." },
+    { "front": "Hva er molar masse for $\\ce{H2SO4}$?", "bak": "$2 \\cdot 1{,}008 + 32{,}06 + 4 \\cdot 16{,}00 = 98{,}08$ g/mol." },
+    { "front": "Hva får du ALDRI endre når du balanserer en likning?", "bak": "Indeksene inne i formlene. Bare koeffisientene foran formlene kan endres." },
+    { "front": "Hva forteller koeffisientene i en reaksjonslikning?", "bak": "Forholdet mellom stoffmengder i mol — ikke forholdet mellom masser." },
+    { "front": "Oppskriften på en masseberegning", "bak": "Balanser likningen, gram $\\to$ mol med $n = \\frac{m}{M}$, mol $\\to$ mol med koeffisientforholdet, mol $\\to$ gram med $m = n \\cdot M$." },
+    { "front": "Hvordan regner du ut stoffmengdekonsentrasjon?", "bak": "$c = \\frac{n}{V}$ — stoffmengde i mol delt på volum av løsningen i liter. Enhet mol/L, ofte skrevet M." },
+    { "front": "Fortynningsformelen", "bak": "$c_1 V_1 = c_2 V_2$. Stoffmengden er den samme før og etter, bare volumet øker." },
+    { "front": "Hvordan finner du begrensende reaktant?", "bak": "Regn om begge mengdene til mol og del på koeffisienten i den balanserte likningen. Minste verdi er begrensende." },
+    { "front": "Prosentvis utbytte", "bak": "$\\frac{\\text{praktisk utbytte}}{\\text{teoretisk utbytte}} \\cdot 100\\,\\%$. Over 100 % er umulig og betyr at produktet ikke er tørt eller rent." },
+    { "front": "Molart volum ved 0 °C og 101,3 kPa?", "bak": "22,4 L/mol. Ved 25 °C og samme trykk: 24,5 L/mol." },
+    { "front": "Hvordan finner du volumet av en gass fra stoffmengden?", "bak": "$V = n \\cdot V_m$, og motsatt $n = \\frac{V}{V_m}$." },
+    { "front": "Avogadros lov", "bak": "Like volum av gasser inneholder like mange molekyler ved samme temperatur og trykk, uansett hvilken gass det er." },
+    { "front": "Den ideelle gasslikningen", "bak": "$pV = nRT$ med $R = 8{,}314$ J/(K·mol). $p$ i pascal, $V$ i $\\text{m}^3$ og $T$ i kelvin ($T = t + 273$)." },
+    { "front": "Gjelder 22,4 L/mol også for væsker og faste stoffer?", "bak": "Nei, bare for gasser. 1 mol vann er cirka 18 mL, fordi molekylene i en væske ligger tett inntil hverandre." },
+    { "front": "Hvor mange mol er 1,00 g $\\ce{H2}$?", "bak": "$M(\\ce{H2}) = 2{,}016$ g/mol, så $n = \\frac{1{,}00}{2{,}016} = 0{,}496$ mol." }
+  ]
+}
