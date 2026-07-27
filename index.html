@@ -279,17 +279,31 @@ nav.tabbar a[aria-current="page"] { color: var(--text-primary); }
 .prose li { margin-bottom: .35em; }
 .prose li::marker { color: var(--text-muted); }
 .prose strong { font-weight: 640; }
-.prose table {
-  width: 100%; border-collapse: collapse; margin: .9em 0; font-size: 14px;
-  display: block; overflow-x: auto;
+/* Tabeller kan bli bredere enn en telefonskjerm. De skrolles vannrett, og
+   app.js legger på en «dra for å se mer»-hint når de faktisk er for brede. */
+.tabellramme { position: relative; margin: .9em 0; }
+.tabellramme > table {
+  width: 100%; border-collapse: collapse; margin: 0; font-size: 14px;
+  display: block; overflow-x: auto; -webkit-overflow-scrolling: touch;
 }
+.prose table { width: 100%; border-collapse: collapse; margin: .9em 0; font-size: 14px;
+  display: block; overflow-x: auto; }
 .prose th, .prose td {
-  border-bottom: 1px solid var(--grid); padding: 7px 10px; text-align: left;
+  border-bottom: 1px solid var(--grid); padding: 7px 9px; text-align: left;
   vertical-align: top;
 }
-.prose th { font-weight: 620; color: var(--text-secondary); font-size: 13px;
-  white-space: nowrap; }
+.prose th { font-weight: 620; color: var(--text-secondary); font-size: 13px; }
 .prose tbody tr:last-child td { border-bottom: 0; }
+.tabellhint {
+  font-size: 11.5px; color: var(--text-muted); font-weight: 550;
+  margin-top: 5px; display: flex; align-items: center; gap: 5px;
+}
+/* mykt hjørne som viser at det er mer til høyre */
+.tabellramme.bred::after {
+  content: ""; position: absolute; right: 0; top: 0; width: 26px;
+  height: calc(100% - 22px); pointer-events: none;
+  background: linear-gradient(to right, transparent, var(--surface-1));
+}
 
 .blokk { padding: 16px 17px; margin-bottom: 10px; }
 .blokk > h3 { font-size: 15.5px; margin-bottom: 9px; display: flex; align-items: center; gap: 8px; }

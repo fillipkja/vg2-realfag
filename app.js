@@ -127,6 +127,26 @@ function rens(html) {
   return mal.innerHTML;
 }
 
+/* Tabeller i fagstoffet kan bli bredere enn skjermen. Pakk dem i en ramme og
+   si det tydelig når de må skrolles vannrett — ellers ser eleven bare en
+   kolonne som er kuttet. */
+function tabeller(rot) {
+  for (const tab of rot.querySelectorAll(".prose > table, .prose table")) {
+    if (tab.parentElement?.classList.contains("tabellramme")) continue;
+    const ramme = document.createElement("div");
+    ramme.className = "tabellramme";
+    tab.replaceWith(ramme);
+    ramme.appendChild(tab);
+    if (tab.scrollWidth > tab.clientWidth + 2) {
+      ramme.classList.add("bred");
+      const hint = document.createElement("div");
+      hint.className = "tabellhint";
+      hint.textContent = "Dra tabellen sidelengs for å se resten";
+      ramme.appendChild(hint);
+    }
+  }
+}
+
 /* KaTeX på et element, etter innsetting */
 function mat(rot) {
   if (!window.renderMathInElement) return;
@@ -144,6 +164,8 @@ function mat(rot) {
       ignoredTags: ["script", "noscript", "style", "textarea", "option"],
     });
   } catch (e) { console.warn("KaTeX:", e); }
+  /* etter matematikken, siden formler endrer kolonnebreddene */
+  try { tabeller(rot); } catch (e) { console.warn("tabeller:", e); }
 }
 function latex(kode, display = false) {
   if (!window.katex) return esc(kode);
