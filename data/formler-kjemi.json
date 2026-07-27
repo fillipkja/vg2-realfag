@@ -69,7 +69,7 @@
         { "navn": "Fortynning", "latex": "c_1 V_1 = c_2 V_2", "forklaring": "Stoffmengden er den samme før og etter fortynning — bare volumet endres." },
         { "navn": "Massekonsentrasjon", "latex": "\\rho = c \\cdot M \\qquad [\\text{g/L}]", "forklaring": "Regner om fra mol/L til g/L (eller mg/L hvis du ganger med 1000). Nyttig i vannanalyse." },
         { "navn": "Masseprosent i en løsning", "latex": "w = \\frac{m(\\text{stoff})}{m(\\text{løsning})} \\cdot 100\\,\\%", "forklaring": "Massen av løsningen er massen av stoffet pluss massen av løsemiddelet." },
-        { "navn": "Gassvolum", "latex": "V = n \\cdot V_m", "forklaring": "Gjelder for alle gasser: 1 mol gass fyller samme volum uansett hvilken gass det er." },
+        { "navn": "Gassvolum", "latex": "V = n \\cdot V_m", "forklaring": "$V_m$ er det molare volumet. Ved samme trykk og temperatur fyller 1 mol gass samme volum uansett hvilken gass det er." },
         { "navn": "Molart volum", "latex": "V_m = 22{,}4\\ \\text{L/mol}\\ (0\\,^\\circ\\text{C}) \\qquad V_m = 24{,}5\\ \\text{L/mol}\\ (25\\,^\\circ\\text{C})", "forklaring": "Ved trykket 101,3 kPa. Sjekk alltid hvilken temperatur oppgaven oppgir." },
         { "navn": "Den ideelle gasslikningen", "latex": "pV = nRT, \\qquad R = 8{,}314\\ \\text{J/(K}\\cdot\\text{mol)}", "forklaring": "Med denne $R$-verdien må $p$ være i Pa, $V$ i m³ og $T$ i kelvin. $1\\ \\text{L} = 10^{-3}\\ \\text{m}^3$." },
         { "navn": "Avogadros lov (volumforhold for gasser)", "latex": "\\frac{V(\\text{A})}{V(\\text{B})} = \\frac{n(\\text{A})}{n(\\text{B})} = \\frac{a}{b}", "forklaring": "Ved samme trykk og temperatur er volumforholdet mellom gasser likt molforholdet i likningen." },
@@ -150,7 +150,7 @@
         { "navn": "Løselighet av et $\\ce{AB2}$- eller $\\ce{A2B}$-salt", "latex": "K_s = s\\,(2s)^{2} = 4s^{3} \\quad \\Rightarrow \\quad s = \\sqrt[3]{\\frac{K_s}{4}}", "forklaring": "Koeffisienten 2 i likningen gir både faktoren 2 foran $s$ og eksponenten 2." },
         { "navn": "Løselighet i gram per liter", "latex": "s\\,[\\text{g/L}] = s\\,[\\text{mol/L}] \\cdot M", "forklaring": "Gang med molar masse når oppgaven spør om hvor mange gram som løser seg." },
         { "navn": "Vil det felles ut bunnfall?", "latex": "Q > K_s \\;\\Rightarrow\\; \\text{bunnfall} \\qquad Q = K_s \\;\\Rightarrow\\; \\text{mettet} \\qquad Q < K_s \\;\\Rightarrow\\; \\text{alt løser seg}", "forklaring": "Regn ut $Q$ med konsentrasjonene rett etter blanding — husk at volumet øker når du blander to løsninger." },
-        { "navn": "Felles ione-effekt", "latex": "[\\ce{A+}] \\uparrow \\ \\Rightarrow \\ s \\downarrow", "forklaring": "Et salt løser seg dårligere i en løsning som allerede inneholder ett av ionene. Le Chatelier skyver likevekten mot fast stoff." }
+        { "navn": "Fellesioneffekten", "latex": "[\\ce{A+}] \\uparrow \\ \\Rightarrow \\ s \\downarrow", "forklaring": "Et salt løser seg dårligere i en løsning som allerede inneholder ett av ionene. Le Chatelier skyver likevekten mot fast stoff." }
       ]
     },
     {
@@ -164,7 +164,7 @@
         { "navn": "Syrekonstanten", "latex": "\\ce{HA + H2O <=> H3O+ + A-} \\quad \\Rightarrow \\quad K_a = \\frac{[\\ce{H3O+}]\\,[\\ce{A-}]}{[\\ce{HA}]}", "forklaring": "Stor $K_a$ betyr sterk syre. Vann står ikke i uttrykket." },
         { "navn": "pKa", "latex": "\\text{p}K_a = -\\log K_a \\qquad K_a = 10^{-\\text{p}K_a}", "forklaring": "Lav $\\text{p}K_a$ betyr sterk syre. Praktisk fordi $K_a$-verdiene er så små tall." },
         { "navn": "Basekonstanten", "latex": "\\ce{A- + H2O <=> HA + OH-} \\quad \\Rightarrow \\quad K_b = \\frac{[\\ce{HA}]\\,[\\ce{OH-}]}{[\\ce{A-}]}", "forklaring": "Gjelder for den korresponderende basen til syra $\\ce{HA}$." },
-        { "navn": "Korresponderende syre-basepar", "latex": "K_a \\cdot K_b = K_w \\qquad \\Longleftrightarrow \\qquad \\text{p}K_a + \\text{p}K_b = 14{,}00", "forklaring": "Sterk syre gir svak korresponderende base, og omvendt. Brukes når tabellen bare oppgir $K_a$." },
+        { "navn": "Korresponderende syre-basepar", "latex": "K_a \\cdot K_b = K_w \\qquad \\Longleftrightarrow \\qquad \\text{p}K_a + \\text{p}K_b = 14{,}00 \\quad (25\\,^\\circ\\text{C})", "forklaring": "Sterk syre gir svak korresponderende base, og omvendt. Brukes når tabellen bare oppgir $K_a$." },
         { "navn": "Svak syre (tilnærming)", "latex": "[\\ce{H3O+}] = \\sqrt{K_a \\cdot c}", "forklaring": "Gjelder når protolysen er liten, slik at $[\\ce{HA}] \\approx c$ (tommelfingerregel: mindre enn 5 % protolyseres)." },
         { "navn": "Svak base (tilnærming)", "latex": "[\\ce{OH-}] = \\sqrt{K_b \\cdot c}", "forklaring": "Finn $[\\ce{OH-}]$ først, så pOH, og til slutt pH med $\\text{pH} = 14{,}00 - \\text{pOH}$." },
         { "navn": "Protolysegrad", "latex": "\\text{protolysegrad} = \\frac{[\\ce{H3O+}]}{c_0} \\cdot 100\\,\\%", "forklaring": "Hvor stor andel av syremolekylene som har gitt fra seg protonet. Øker når løsningen fortynnes." }
@@ -178,13 +178,13 @@
         { "navn": "Bufferområdet", "latex": "\\text{pH} = \\text{p}K_a \\pm 1", "forklaring": "Utenfor dette området er forholdet mellom syre og base for skjevt, og bufferen virker dårlig." },
         { "navn": "Ekvivalenspunktet ved titrering", "latex": "\\frac{n(\\text{A})}{a} = \\frac{n(\\text{B})}{b}", "forklaring": "$a$ og $b$ er koeffisientene i reaksjonslikningen. Ekvivalenspunktet er der stoffmengdene passer akkurat med likningen." },
         { "navn": "Titrering med forhold 1:1", "latex": "c_{\\text{syre}} V_{\\text{syre}} = c_{\\text{base}} V_{\\text{base}}", "forklaring": "Gjelder for eksempel $\\ce{HCl}$ mot $\\ce{NaOH}$. Volumene kan være i mL så lenge du bruker samme enhet på begge sider." },
-        { "navn": "Konsentrasjon fra en titrering", "latex": "c(\\text{prøve}) = \\frac{b}{a} \\cdot \\frac{c_t \\cdot V_t}{V_{\\text{prøve}}}", "forklaring": "$c_t$ og $V_t$ er konsentrasjon og forbrukt volum av titranten. Bruk gjennomsnittet av parallelle titreringer." },
+        { "navn": "Konsentrasjon fra en titrering", "latex": "c(\\text{prøve}) = \\frac{a}{b} \\cdot \\frac{c_t \\cdot V_t}{V_{\\text{prøve}}}", "forklaring": "$c_t$ og $V_t$ er konsentrasjon og forbrukt volum av titranten. $a$ er koeffisienten foran stoffet i prøven og $b$ koeffisienten foran titranten. Bruk gjennomsnittet av parallelle titreringer." },
         { "navn": "Fortynningsfaktor", "latex": "f = \\frac{V_{\\text{slutt}}}{V_{\\text{start}}}", "forklaring": "Har du fortynnet prøven før analysen, må resultatet ganges med $f$ til slutt." },
         { "navn": "Fra mol/L til mg/L", "latex": "\\rho = c \\cdot M \\cdot 1000 \\qquad [\\text{mg/L}]", "forklaring": "Vannkvalitet oppgis nesten alltid i mg/L. For vannløsninger er 1 mg/L omtrent det samme som 1 ppm." },
         { "navn": "Absorbans", "latex": "A = \\log \\frac{I_0}{I} = -\\log T", "forklaring": "$I_0$ er lysstyrken inn, $I$ ut og $T = I/I_0$ transmittansen. Absorbansen har ingen enhet." },
         { "navn": "Beer–Lamberts lov", "latex": "A = \\varepsilon \\cdot l \\cdot c", "forklaring": "$\\varepsilon$ er molar absorptivitet i L/(mol·cm), $l$ lysveien i cm og $c$ konsentrasjonen i mol/L. Absorbansen er proporsjonal med konsentrasjonen." },
         { "navn": "Standardkurve gjennom origo", "latex": "A = k \\cdot c \\quad \\Rightarrow \\quad c = \\frac{A}{k}", "forklaring": "Mål absorbansen til kjente standardløsninger, finn stigningstallet $k$ ved lineær regresjon, og les av den ukjente konsentrasjonen." },
-        { "navn": "Gjennomsnitt av parallelle målinger", "latex": "\\bar{x} = \\frac{x_1 + x_2 + \\ldots + x_n}{n}", "forklaring": "Ta alltid flere paralleller. Store avvik mellom dem tyder på en systematisk feil i metoden." }
+        { "navn": "Gjennomsnitt av parallelle målinger", "latex": "\\bar{x} = \\frac{x_1 + x_2 + \\ldots + x_n}{n}", "forklaring": "Ta alltid flere paralleller. Store avvik mellom parallellene tyder på tilfeldige feil, altså dårlig presisjon. En systematisk feil ser du ikke slik, for den trekker alle målingene like mye i samme retning." }
       ]
     }
   ]

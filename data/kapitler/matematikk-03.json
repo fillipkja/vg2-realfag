@@ -485,7 +485,7 @@
         "$\\frac{2}{3}x^{3/2}$"
       ],
       "riktig": 0,
-      "forklaring": "Skriv om først: $x\\sqrt{x} = x \\cdot x^{1/2} = x^{3/2}$. Potensregelen gir $\\frac{3}{2}x^{1/2} = \\frac{3}{2}\\sqrt{x}$. Alternativ B er hva du får hvis du bruker produktregelen — som gir det samme svaret, men bare hvis du trekker sammen til slutt."
+      "forklaring": "Skriv om først: $x\\sqrt{x} = x \\cdot x^{1/2} = x^{3/2}$. Potensregelen gir $\\frac{3}{2}x^{1/2} = \\frac{3}{2}\\sqrt{x}$. Produktregelen fungerer også, men da må du gange den siste faktoren med $x$: $1 \\cdot \\sqrt{x} + x \\cdot \\frac{1}{2\\sqrt{x}} = \\sqrt{x} + \\frac{\\sqrt{x}}{2} = \\frac{3}{2}\\sqrt{x}$. Alternativ B er nettopp feilen der man glemmer denne $x$-en og bare skriver $\\frac{1}{2\\sqrt{x}}$ — sett inn $x=4$ og se: riktig svar er 3, mens alternativ B gir 2,25."
     },
     {
       "sporsmal": "Newton-kvotienten $\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}$ beskriver …",

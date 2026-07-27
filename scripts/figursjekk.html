@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="nb"><meta charset="utf-8">
+<title>Figursjekk — Realfag VG2</title>
+<!--
+  Laster ALLE figurene fra alle kapittelfilene gjennom figurmotoren og
+  rapporterer hver figur som ikke kan tegnes. Validatoren sjekker strukturen;
+  denne sjekker at figuren faktisk blir en SVG.
+  Kjøres med scripts/figursjekk.sh.
+-->
+<script src="../figurer.js"></script>
+<style>body{font:13px/1.5 ui-monospace,monospace;margin:0;padding:12px;white-space:pre-wrap}</style>
+<body><pre id="ut">laster …</pre>
+<script>
+const ut = document.getElementById("ut");
+(async () => {
+  const orgWarn = console.warn;
+  let advarsler = [];
+  console.warn = (...a) => { advarsler.push(a.join(" ")); orgWarn(...a); };
+
+  const { fag } = await (await fetch("../data/fag.json")).json();
+  const rader = [];
+  let antall = 0, feil = 0, mangler = 0;
+
+  for (const f of fag) {
+    for (const k of f.kapitler) {
+      const sti = `../data/kapitler/${f.id}-${String(k.nr).padStart(2, "0")}.json`;
+      let d;
+      try { d = await (await fetch(sti)).json(); }
+      catch { rader.push(`MANGLER  ${f.id}-${k.nr}`); mangler++; continue; }
+
+      const figurer = [];
+      if (d.kompakt?.figur) figurer.push(["kompakt", d.kompakt.figur]);
+      (d.grundig?.seksjoner || []).forEach((s, i) => {
+        if (s.figur) figurer.push([`seksjon[${i}] ${s.tittel}`, s.figur]);
+      });
+      (d.grundig?.eksempler || []).forEach((e, i) => {
+        if (e.figur) figurer.push([`eksempel[${i}] ${e.tittel}`, e.figur]);
+      });
+
+      if (!figurer.length) {
+        rader.push(`INGEN    ${f.id}-${k.nr}  ${k.tittel}`);
+        continue;
+      }
+      for (const [hvor, fig] of figurer) {
+        antall++;
+        advarsler = [];
+        let html = "";
+        try { html = window.VG2Figur.figurHTML(fig, f.id); }
+        catch (e) { html = ""; advarsler.push("krasj: " + e.message); }
+        if (!html || !html.includes("<svg")) {
+          feil++;
+          rader.push(`FEIL     ${f.id}-${k.nr} ${hvor} [${fig.type}] — ${advarsler.join(" | ") || "ingen SVG"}`);
+        } else if (advarsler.length) {
+          feil++;
+          rader.push(`ADVARSEL ${f.id}-${k.nr} ${hvor} [${fig.type}] — ${advarsler.join(" | ")}`);
+        }
+      }
+      rader.push(`OK       ${f.id}-${k.nr}  ${figurer.length} figurer  (${figurer.map(([, x]) => x.type).join(", ")})`);
+    }
+  }
+  console.warn = orgWarn;
+  const uten = rader.filter((r) => r.startsWith("INGEN")).length;
+  ut.textContent = rader.join("\n") +
+    `\n\n${antall} figurer i alt · ${feil} med feil · ${uten} kapitler uten figurer` +
+    (mangler ? ` · ${mangler} kapittelfiler mangler` : "") +
+    `\n${feil === 0 ? "FIGURSJEKK-OK" : "FIGURSJEKK-FEIL"}`;
+  document.title = feil === 0 ? "FIGURSJEKK-OK" : "FIGURSJEKK-FEIL";
+})().catch((e) => { ut.textContent = "KRASJ: " + (e && e.stack || e); document.title = "FIGURSJEKK-FEIL"; });
+</script>
+</body>
+</html>

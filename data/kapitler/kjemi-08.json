@@ -24,13 +24,13 @@
       { "navn": "Titrering der forholdet er 1:1", "latex": "c_{\\text{syre}} V_{\\text{syre}} = c_{\\text{base}} V_{\\text{base}}" },
       { "navn": "Fortynning", "latex": "c_1 V_1 = c_2 V_2" },
       { "navn": "Fortynningsfaktor", "latex": "f = \\frac{V_{\\text{slutt}}}{V_{\\text{start}}}" },
-      { "navn": "Fra mol/L til mg/L", "latex": "\\rho = c \\cdot M" },
-      { "navn": "Absorbans", "latex": "A = \\log\\frac{I_0}{I} = -\\log T" },
+      { "navn": "Fra mol/L til g/L — gang med 1000 for mg/L", "latex": "\\rho = c \\cdot M" },
+      { "navn": "Absorbans, der $T = I/I_0$ er transmittansen", "latex": "A = \\log\\frac{I_0}{I} = -\\log T" },
       { "navn": "Beer-Lamberts lov", "latex": "A = \\varepsilon \\cdot l \\cdot c" },
       { "navn": "Standardkurve gjennom origo", "latex": "A = k \\cdot c \\quad \\Rightarrow \\quad c = \\frac{A}{k}" },
       { "navn": "pH", "latex": "\\mathrm{pH} = -\\log[\\ce{H3O+}]" },
       { "navn": "Konsentrasjon fra pH", "latex": "[\\ce{H3O+}] = 10^{-\\mathrm{pH}}" },
-      { "navn": "Vannets ionelikevekt ved 25 °C", "latex": "K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14}" },
+      { "navn": "Vannets ioneprodukt ved 25 °C", "latex": "K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14}" },
       { "navn": "Gjennomsnitt av parallelle målinger", "latex": "\\bar{x} = \\frac{x_1 + x_2 + \\ldots + x_n}{n}" }
     ]
   },
@@ -51,7 +51,7 @@
       },
       {
         "tittel": "Kolorimetri og spektrofotometri",
-        "html": "<p>Mange ioner er fargeløse i vann, men kan omdannes til et farget stoff med et reagens. Måler du fargestyrken, måler du indirekte konsentrasjonen. Det er ideen bak <strong>kolorimetri</strong>, der du sammenligner med fargestandarder, og <strong>spektrofotometri</strong>, der et instrument måler nøyaktig ved én bølgelengde.</p><p>Instrumentet sender lys med intensitet $I_0$ inn i kyvetten og måler intensiteten $I$ som slipper ut. <strong>Absorbansen</strong> er</p>$$A = \\log\\frac{I_0}{I}$$<p>og Beer-Lamberts lov knytter den til konsentrasjonen:</p>$$A = \\varepsilon \\cdot l \\cdot c$$<p>Her er $l$ lysveien gjennom kyvetten og $\\varepsilon$ en konstant for stoffet ved den bølgelengden du bruker. Siden $\\varepsilon$ og $l$ er faste, er $A$ rett proporsjonal med $c$: dobler du konsentrasjonen, dobler du absorbansen.</p><p>Slik gjør du en bestemmelse:</p><ol><li>Velg bølgelengden der stoffet absorberer mest — da blir metoden mest følsom.</li><li>Nullstill instrumentet med en <strong>blindprøve</strong>: alle reagenser, men ingen analytt.</li><li>Mål absorbansen til minst fire standardløsninger med kjent konsentrasjon, og tegn <strong>standardkurven</strong> med $A$ langs den loddrette aksen og $c$ langs den vannrette.</li><li>Mål prøven, og finn konsentrasjonen ved å lese av eller regne med likningen for linja.</li></ol><p>To fallgruver: loven er bare lineær i et begrenset område, i praksis omtrent opp til $A = 1$, så sterke løsninger må fortynnes — og da må fortynningsfaktoren inn til slutt. Prøven må dessuten leses av <em>innenfor</em> standardene. Ekstrapolerer du over den høyeste standarden, vet du ikke om linja fortsatt er rett.</p>"
+        "html": "<p>Mange ioner er fargeløse i vann, men kan omdannes til et farget stoff med et reagens. Måler du fargestyrken, måler du indirekte konsentrasjonen. Det er ideen bak <strong>kolorimetri</strong>, der du sammenligner med fargestandarder, og <strong>spektrofotometri</strong>, der et instrument måler nøyaktig ved én bølgelengde.</p><p>Instrumentet sender lys med intensitet $I_0$ inn i kyvetten og måler intensiteten $I$ som slipper ut. <strong>Absorbansen</strong> er</p>$$A = \\log\\frac{I_0}{I}$$<p>og Beer-Lamberts lov knytter den til konsentrasjonen:</p>$$A = \\varepsilon \\cdot l \\cdot c$$<p>Her er $l$ lysveien gjennom kyvetten og $\\varepsilon$ den molare absorpsjonskoeffisienten, en konstant for stoffet ved den bølgelengden du bruker. Siden $\\varepsilon$ og $l$ er faste, er $A$ rett proporsjonal med $c$: dobler du konsentrasjonen, dobler du absorbansen.</p><p>Slik gjør du en bestemmelse:</p><ol><li>Velg bølgelengden der stoffet absorberer mest — da blir metoden mest følsom.</li><li>Nullstill instrumentet med en <strong>blindprøve</strong>: alle reagenser, men ingen analytt.</li><li>Mål absorbansen til minst fire standardløsninger med kjent konsentrasjon, og tegn <strong>standardkurven</strong> med $A$ langs den loddrette aksen og $c$ langs den vannrette.</li><li>Mål prøven, og finn konsentrasjonen ved å lese av eller regne med likningen for linja.</li></ol><p>To fallgruver: loven er bare lineær i et begrenset område, i praksis omtrent opp til $A = 1$, så sterke løsninger må fortynnes — og da må fortynningsfaktoren inn til slutt. Prøven må dessuten leses av <em>innenfor</em> standardene. Ekstrapolerer du over den høyeste standarden, vet du ikke om linja fortsatt er rett.</p>"
       },
       {
         "tittel": "Forurensning: næringssalter og forsuring",
@@ -219,7 +219,7 @@
       "alternativer": [
         "At prøven ikke inneholder nitrat i det hele tatt",
         "At instrumentet var feil kalibrert under målingen",
-        "At nitratmengden er for liten for metoden å måle sikkert, men ikke nødvendigvis null",
+        "At nitratmengden er for liten til at metoden kan måle den sikkert, men ikke nødvendigvis null",
         "At konsentrasjonen var så høy at instrumentet ikke klarte å måle den"
       ],
       "riktig": 2,

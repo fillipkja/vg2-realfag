@@ -11,7 +11,7 @@
         { "navn": "Konjugatsetningen", "latex": "(a+b)(a-b) = a^{2} - b^{2}", "forklaring": "Brukes til å bli kvitt kvadratrøtter i en teller eller nevner." },
         { "navn": "Fullstendig kvadrat", "latex": "x^{2} + bx = \\left(x + \\frac{b}{2}\\right)^{2} - \\frac{b^{2}}{4}", "forklaring": "Skriver et andregradsuttrykk om til formen $a(x-h)^{2}+k$, der $(h,k)$ er topp- eller bunnpunktet." },
         { "navn": "Faktorteoremet (nullpunktsetningen)", "latex": "f(a) = 0 \\quad \\Longleftrightarrow \\quad (x-a) \\text{ er en faktor i } f(x)", "forklaring": "Finn ett nullpunkt ved prøving, og del deretter polynomet med $(x-a)$ for å finne resten." },
-        { "navn": "Polynomdivisjon", "latex": "P(x) = Q(x) \\cdot S(x) + R(x)", "forklaring": "$S$ er svaret og $R$ er resten. Divisjonen går opp når $R(x)=0$, og graden til $R$ er alltid lavere enn graden til $Q$." },
+        { "navn": "Polynomdivisjon", "latex": "P(x) = Q(x) \\cdot S(x) + R(x)", "forklaring": "$P$ er polynomet du deler, $Q$ er det du deler med, $S$ er svaret og $R$ er resten. Divisjonen går opp når $R(x)=0$, og graden til $R$ er alltid lavere enn graden til $Q$." },
         { "navn": "Brøklikning", "latex": "\\frac{u(x)}{v(x)} = 0 \\quad \\Longleftrightarrow \\quad u(x) = 0 \\ \\text{ og } \\ v(x) \\neq 0", "forklaring": "Sjekk alltid til slutt at løsningene ikke gjør nevneren null." },
         { "navn": "Stigningstallet til en linje", "latex": "a = \\frac{y_2 - y_1}{x_2 - x_1}", "forklaring": "Endring i $y$ delt på endring i $x$ mellom to punkter på linja." },
         { "navn": "Ettpunktsformelen", "latex": "y - y_1 = a\\,(x - x_1)", "forklaring": "Likningen for linja med stigningstall $a$ gjennom punktet $(x_1, y_1)$." },
@@ -25,7 +25,7 @@
         { "navn": "Divisjon av potenser", "latex": "\\frac{a^{m}}{a^{n}} = a^{m-n}", "forklaring": "Samme grunntall: trekk eksponenten i nevneren fra eksponenten i telleren." },
         { "navn": "Potens av potens", "latex": "\\left(a^{m}\\right)^{n} = a^{m \\cdot n}" },
         { "navn": "Potens av produkt og brøk", "latex": "(ab)^{n} = a^{n}b^{n}, \\qquad \\left(\\frac{a}{b}\\right)^{n} = \\frac{a^{n}}{b^{n}}", "forklaring": "Gjelder bare for produkt og brøk — ikke for sum: $(a+b)^{n} \\neq a^{n}+b^{n}$." },
-        { "navn": "Eksponent 0 og 1", "latex": "a^{0} = 1, \\qquad a^{1} = a \\qquad (a \\neq 0)" },
+        { "navn": "Eksponent 0 og 1", "latex": "a^{0} = 1 \\quad (a \\neq 0), \\qquad a^{1} = a" },
         { "navn": "Negativ eksponent", "latex": "a^{-n} = \\frac{1}{a^{n}}, \\qquad \\frac{1}{a^{-n}} = a^{n} \\qquad (a \\neq 0)", "forklaring": "Negativ eksponent betyr «snu brøken» — ikke at svaret blir negativt." },
         { "navn": "Røtter som potenser", "latex": "a^{\\frac{1}{n}} = \\sqrt[n]{a}, \\qquad a^{\\frac{m}{n}} = \\sqrt[n]{a^{m}}", "forklaring": "Skriv alltid røtter om til potenser før du deriverer." },
         { "navn": "Regning med kvadratrøtter", "latex": "\\sqrt{a}\\cdot\\sqrt{b} = \\sqrt{ab}, \\qquad \\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}} \\qquad (a \\ge 0,\\ b > 0)", "forklaring": "Merk at $\\sqrt{a+b} \\neq \\sqrt{a}+\\sqrt{b}$." },
@@ -43,9 +43,9 @@
         { "navn": "Kjente logaritmeverdier", "latex": "\\ln 1 = 0, \\quad \\ln e = 1, \\quad \\lg 1 = 0, \\quad \\lg 10 = 1, \\quad \\lg 10^{n} = n" },
         { "navn": "Motsatte operasjoner", "latex": "e^{\\ln x} = x \\ (x>0), \\qquad \\ln e^{x} = x, \\qquad 10^{\\lg x} = x, \\qquad \\lg 10^{x} = x", "forklaring": "Logaritme og eksponentialfunksjon opphever hverandre." },
         { "navn": "Eksponentiallikning", "latex": "a^{x} = b \\quad \\Longleftrightarrow \\quad x = \\frac{\\ln b}{\\ln a} = \\frac{\\lg b}{\\lg a} \\qquad (a>0,\\ a \\neq 1,\\ b>0)", "forklaring": "Ta logaritmen på begge sider og bruk $\\ln a^{x} = x \\ln a$." },
-        { "navn": "Eksponentiallikning med grunntall e", "latex": "e^{kx} = c \\quad \\Longleftrightarrow \\quad x = \\frac{\\ln c}{k} \\qquad (c > 0)" },
+        { "navn": "Eksponentiallikning med grunntall e", "latex": "e^{kx} = c \\quad \\Longleftrightarrow \\quad x = \\frac{\\ln c}{k} \\qquad (c > 0,\\ k \\neq 0)" },
         { "navn": "Logaritmelikning", "latex": "\\ln x = c \\quad \\Longleftrightarrow \\quad x = e^{c}", "forklaring": "Sett prøve på svaret: løsninger som gir logaritme av et tall $\\le 0$ er falske løsninger." },
-        { "navn": "Skifte av grunntall", "latex": "a^{x} = e^{x \\ln a}", "forklaring": "Alle eksponentialfunksjoner kan skrives med grunntall $e$. Nyttig før derivasjon." }
+        { "navn": "Skifte av grunntall", "latex": "a^{x} = e^{x \\ln a} \\qquad (a > 0)", "forklaring": "Alle eksponentialfunksjoner kan skrives med grunntall $e$. Nyttig før derivasjon." }
       ]
     },
     {
@@ -128,7 +128,7 @@
         { "navn": "Definisjons- og verdimengde", "latex": "D_{f^{-1}} = V_f, \\qquad V_{f^{-1}} = D_f", "forklaring": "Definisjonsmengde og verdimengde bytter plass." },
         { "navn": "Speiling om linja $y = x$", "latex": "f(a) = b \\quad \\Longleftrightarrow \\quad f^{-1}(b) = a", "forklaring": "Grafen til $f^{-1}$ er speilbildet av grafen til $f$ om linja $y=x$." },
         { "navn": "$e^{x}$ og $\\ln x$ er omvendte", "latex": "\\ln\\left(e^{x}\\right) = x, \\qquad e^{\\ln x} = x \\qquad (x > 0)" },
-        { "navn": "n-te rot som potens", "latex": "\\sqrt[n]{x} = x^{\\frac{1}{n}}", "forklaring": "Rotfunksjonen er den omvendte av potensfunksjonen $y = x^{n}$." },
+        { "navn": "n-te rot som potens", "latex": "\\sqrt[n]{x} = x^{\\frac{1}{n}}", "forklaring": "Rotfunksjonen er den omvendte av potensfunksjonen $y = x^{n}$. Når $n$ er et partall, må du begrense deg til $x \\ge 0$ for at den omvendte funksjonen skal finnes." },
         { "navn": "Definisjonsmengde for rotfunksjon", "latex": "f(x) = \\sqrt{g(x)} \\quad \\Rightarrow \\quad g(x) \\ge 0", "forklaring": "Du må løse ulikheten $g(x) \\ge 0$ for å finne definisjonsmengden." },
         { "navn": "Derivert av rotfunksjon", "latex": "\\left(\\sqrt{x}\\right)' = \\frac{1}{2\\sqrt{x}}, \\qquad \\left(x^{\\frac{1}{n}}\\right)' = \\frac{1}{n}\\,x^{\\frac{1}{n}-1}" },
         { "navn": "Derivert av omvendt funksjon", "latex": "\\left(f^{-1}\\right)'(x) = \\frac{1}{f'\\left(f^{-1}(x)\\right)}", "forklaring": "Speilingen snur stigningstallet: i punktet der $f(a) = b$ er $\\left(f^{-1}\\right)'(b) = \\frac{1}{f'(a)}$, forutsatt $f'(a) \\neq 0$." }
@@ -161,7 +161,7 @@
         { "navn": "Vekstfarten i en eksponentiell modell", "latex": "f'(x) = a\\,b^{x}\\ln b = f(x) \\cdot \\ln b", "forklaring": "Vekstfarten er proporsjonal med funksjonsverdien — det er kjennetegnet på eksponentiell vekst." },
         { "navn": "Doblingstid", "latex": "b^{x} = 2 \\quad \\Rightarrow \\quad x = \\frac{\\ln 2}{\\ln b}", "forklaring": "Tiden det tar før verdien er dobbelt så stor. Uavhengig av startverdien." },
         { "navn": "Halveringstid", "latex": "b^{x} = 0{,}5 \\quad \\Rightarrow \\quad x = \\frac{\\ln 0{,}5}{\\ln b}" },
-        { "navn": "Potensmodell", "latex": "f(x) = a\\,x^{b}", "forklaring": "Passer data der forholdstall vokser jevnt, for eksempel sammenhengen mellom lengde og masse." },
+        { "navn": "Potensmodell", "latex": "f(x) = a\\,x^{b}", "forklaring": "Ganger du $x$ med en faktor, ganges $f(x)$ med en fast faktor. Passer for eksempel på sammenhengen mellom lengde og masse." },
         { "navn": "Logistisk modell", "latex": "f(x) = \\frac{B}{1 + C\\,e^{-kx}}, \\qquad f(0) = \\frac{B}{1+C}, \\qquad f(x) \\to B", "forklaring": "$B$ er bæreevnen, altså den øvre grensa modellen nærmer seg." },
         { "navn": "Raskest vekst i en logistisk modell", "latex": "x = \\frac{\\ln C}{k}, \\qquad f(x) = \\frac{B}{2}, \\qquad f'_{\\max} = \\frac{kB}{4}", "forklaring": "Vendepunktet ligger halvveis opp mot bæreevnen — der er veksten på topp." }
       ]

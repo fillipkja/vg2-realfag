@@ -17,7 +17,7 @@
         {
           "navn": "Gjennomsnittlig akselerasjon",
           "latex": "\\bar{a} = \\frac{\\Delta v}{\\Delta t} = \\frac{v_2 - v_1}{t_2 - t_1}",
-          "forklaring": "Fartsendring per tid, målt i $\\text{m/s}^2$. Negativ verdi betyr at farten avtar i positiv retning."
+          "forklaring": "Fartsendring per tid, målt i $\\text{m/s}^2$. Negativ verdi betyr at akselerasjonen peker i negativ retning — farten avtar bare dersom gjenstanden beveger seg i positiv retning."
         },
         {
           "navn": "Momentanakselerasjon",
@@ -287,7 +287,7 @@
         {
           "navn": "Varmekapasitet til et legeme",
           "latex": "C = c\\,m, \\qquad Q = C\\,\\Delta T",
-          "forklaring": "Brukes for eksempel om et kalorimeter der du kjenner hele beholderens varmekapasitet i J/K."
+          "forklaring": "Brukes for eksempel for et kalorimeter der du kjenner hele beholderens varmekapasitet i J/K."
         },
         {
           "navn": "Energiregnskap i isolert blanding",
@@ -362,7 +362,7 @@
         {
           "navn": "Destruktiv interferens",
           "latex": "\\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda",
-          "forklaring": "Halvtalls veiforskjell gir utslukning, fordi topp møter bunn."
+          "forklaring": "En veiforskjell på et halvt antall bølgelengder gir utslukning, fordi topp møter bunn."
         },
         {
           "navn": "Gitter og dobbeltspalt",
@@ -377,7 +377,7 @@
         {
           "navn": "Stefan-Boltzmanns strålingslov",
           "latex": "P = \\sigma A T^{4}, \\qquad \\sigma = 5{,}67\\cdot 10^{-8}\\,\\frac{\\text{W}}{\\text{m}^2\\text{K}^4}",
-          "forklaring": "Utstrålt effekt fra en varm flate. $T$ må være i kelvin, og fjerdepotensen gjør at små temperaturøkninger betyr mye."
+          "forklaring": "Utstrålt effekt fra en varm flate som stråler som et svart legeme. $T$ må være i kelvin, og fjerdepotensen gjør at små temperaturøkninger betyr mye."
         }
       ]
     },
@@ -392,7 +392,7 @@
         {
           "navn": "Planckkonstanten",
           "latex": "h = 6{,}63\\cdot 10^{-34}\\,\\text{J}\\cdot\\text{s}",
-          "forklaring": "Setter $f$ i hertz for å få $E$ i joule."
+          "forklaring": "Sett $f$ i hertz for å få $E$ i joule."
         },
         {
           "navn": "Elektronvolt",
