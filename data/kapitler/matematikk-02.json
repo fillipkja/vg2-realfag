@@ -3,7 +3,6 @@
   "nr": 2,
   "tittel": "Grenseverdier og kontinuitet",
   "intro": "Grenseverdier handler om hva en funksjon nærmer seg, ikke om hva den er i ett bestemt punkt. Med grenseverdier kan du beskrive hull og sprang i en graf, avgjøre om en funksjon er kontinuerlig, og finne asymptotene til rasjonale funksjoner — og de er selve grunnlaget for derivasjon i neste kapittel.",
-
   "kompakt": {
     "punkter": [
       "$\\lim_{x \\to a} f(x) = L$ betyr at $f(x)$ nærmer seg $L$ når $x$ nærmer seg $a$ — uten at $x$ noen gang blir lik $a$.",
@@ -18,21 +17,91 @@
       "Skrå asymptote får du når telleren har nøyaktig én grad mer enn nevneren. Polynomdivider til $f(x) = ax+b+\\frac{r(x)}{q(x)}$; linja $y=ax+b$ er asymptoten."
     ],
     "formler": [
-      { "navn": "Sum og differanse", "latex": "\\lim_{x \\to a}\\left(f(x) \\pm g(x)\\right) = \\lim_{x \\to a} f(x) \\pm \\lim_{x \\to a} g(x)" },
-      { "navn": "Konstant faktor", "latex": "\\lim_{x \\to a} \\left(k \\cdot f(x)\\right) = k \\cdot \\lim_{x \\to a} f(x)" },
-      { "navn": "Produkt", "latex": "\\lim_{x \\to a}\\left(f(x) \\cdot g(x)\\right) = \\lim_{x \\to a} f(x) \\cdot \\lim_{x \\to a} g(x)" },
-      { "navn": "Kvotient", "latex": "\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x \\to a} f(x)}{\\lim_{x \\to a} g(x)}, \\qquad \\lim_{x \\to a} g(x) \\neq 0" },
-      { "navn": "Ensidige grenseverdier", "latex": "\\lim_{x \\to a} f(x) = L \\iff \\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = L" },
-      { "navn": "Kontinuitet i $x=a$", "latex": "\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = f(a)" },
-      { "navn": "Grenseverdi mot uendelig", "latex": "\\lim_{x \\to \\pm\\infty} \\frac{1}{x^{n}} = 0, \\qquad n > 0" },
-      { "navn": "Rasjonal funksjon, lik grad", "latex": "\\lim_{x \\to \\pm\\infty} \\frac{a_n x^{n} + \\cdots}{b_n x^{n} + \\cdots} = \\frac{a_n}{b_n}" },
-      { "navn": "Horisontal asymptote", "latex": "y = b \\quad \\text{når} \\quad \\lim_{x \\to \\pm\\infty} f(x) = b" },
-      { "navn": "Vertikal asymptote", "latex": "x = a \\quad \\text{når} \\quad \\lim_{x \\to a^{\\pm}} f(x) = \\pm\\infty" },
-      { "navn": "Skrå asymptote", "latex": "f(x) = ax + b + \\frac{r(x)}{q(x)}, \\qquad \\frac{r(x)}{q(x)} \\to 0" },
-      { "navn": "Konjugatknepet", "latex": "\\frac{\\sqrt{u} - c}{w} = \\frac{u - c^{2}}{w\\left(\\sqrt{u} + c\\right)}" }
-    ]
+      {
+        "navn": "Sum og differanse",
+        "latex": "\\lim_{x \\to a}\\left(f(x) \\pm g(x)\\right) = \\lim_{x \\to a} f(x) \\pm \\lim_{x \\to a} g(x)"
+      },
+      {
+        "navn": "Konstant faktor",
+        "latex": "\\lim_{x \\to a} \\left(k \\cdot f(x)\\right) = k \\cdot \\lim_{x \\to a} f(x)"
+      },
+      {
+        "navn": "Produkt",
+        "latex": "\\lim_{x \\to a}\\left(f(x) \\cdot g(x)\\right) = \\lim_{x \\to a} f(x) \\cdot \\lim_{x \\to a} g(x)"
+      },
+      {
+        "navn": "Kvotient",
+        "latex": "\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x \\to a} f(x)}{\\lim_{x \\to a} g(x)}, \\qquad \\lim_{x \\to a} g(x) \\neq 0"
+      },
+      {
+        "navn": "Ensidige grenseverdier",
+        "latex": "\\lim_{x \\to a} f(x) = L \\iff \\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = L"
+      },
+      {
+        "navn": "Kontinuitet i $x=a$",
+        "latex": "\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = f(a)"
+      },
+      {
+        "navn": "Grenseverdi mot uendelig",
+        "latex": "\\lim_{x \\to \\pm\\infty} \\frac{1}{x^{n}} = 0, \\qquad n > 0"
+      },
+      {
+        "navn": "Rasjonal funksjon, lik grad",
+        "latex": "\\lim_{x \\to \\pm\\infty} \\frac{a_n x^{n} + \\cdots}{b_n x^{n} + \\cdots} = \\frac{a_n}{b_n}"
+      },
+      {
+        "navn": "Horisontal asymptote",
+        "latex": "y = b \\quad \\text{når} \\quad \\lim_{x \\to \\pm\\infty} f(x) = b"
+      },
+      {
+        "navn": "Vertikal asymptote",
+        "latex": "x = a \\quad \\text{når} \\quad \\lim_{x \\to a^{\\pm}} f(x) = \\pm\\infty"
+      },
+      {
+        "navn": "Skrå asymptote",
+        "latex": "f(x) = ax + b + \\frac{r(x)}{q(x)}, \\qquad \\frac{r(x)}{q(x)} \\to 0"
+      },
+      {
+        "navn": "Konjugatknepet",
+        "latex": "\\frac{\\sqrt{u} - c}{w} = \\frac{u - c^{2}}{w\\left(\\sqrt{u} + c\\right)}"
+      }
+    ],
+    "figur": {
+      "type": "graf",
+      "tittel": "Asymptotene til f(x) = 1/(x − 2)",
+      "forklaring": "Følg grafen inn mot x = 2: fra høyre vokser verdiene over alle grenser, fra venstre synker de. De to ensidige grenseverdiene er ulike, så den tosidige finnes ikke. Langt ute til begge sider klemmes grafen inn mot y = 0 — det er grenseverdien når x går mot uendelig.",
+      "xmin": -3,
+      "xmax": 7,
+      "ymin": -6,
+      "ymax": 6,
+      "kurver": [
+        {
+          "uttrykk": "1/(x-2)",
+          "navn": "f",
+          "farge": 1
+        }
+      ],
+      "asymptoter": [
+        {
+          "retning": "vertikal",
+          "verdi": 2,
+          "navn": "x = 2"
+        },
+        {
+          "retning": "horisontal",
+          "verdi": 0,
+          "navn": "y = 0"
+        }
+      ],
+      "punkter": [
+        {
+          "x": 4,
+          "y": 0.5,
+          "navn": "f(4) = 0,5"
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -41,11 +110,51 @@
       },
       {
         "tittel": "Regneregler for grenseverdier",
-        "html": "<p>Grenseverdier oppfører seg som du håper: du kan regne del for del. Dersom både $\\lim_{x \\to a} f(x)$ og $\\lim_{x \\to a} g(x)$ finnes, gjelder</p><ul><li>$\\lim_{x \\to a}\\left(f \\pm g\\right) = \\lim_{x \\to a} f \\pm \\lim_{x \\to a} g$</li><li>$\\lim_{x \\to a}\\left(k \\cdot f\\right) = k \\cdot \\lim_{x \\to a} f$</li><li>$\\lim_{x \\to a}\\left(f \\cdot g\\right) = \\lim_{x \\to a} f \\cdot \\lim_{x \\to a} g$</li><li>$\\lim_{x \\to a} \\frac{f}{g} = \\frac{\\lim_{x \\to a} f}{\\lim_{x \\to a} g}$, forutsatt at $\\lim_{x \\to a} g \\neq 0$</li></ul><p>For polynomer betyr dette at du bare kan sette inn: $\\lim_{x \\to 2}\\left(x^3 - 4x\\right) = 8 - 8 = 0$. Det samme gjelder rasjonale funksjoner, så lenge nevneren ikke blir 0 i punktet.</p><p>Problemene kommer når innsetting gir $\\frac{0}{0}$. Det kalles et <strong>ubestemt uttrykk</strong>. Det betyr ikke at grenseverdien er 0, og ikke at den ikke finnes — det betyr bare at innsetting ikke gir svar. Da må du skrive om uttrykket, og to knep dekker nesten alt du møter i R1:</p><ol><li><strong>Faktoriser og forkort.</strong> Blir både teller og nevner 0 for $x=a$, har begge faktoren $(x-a)$. Forkort den bort, og sett inn på nytt.</li><li><strong>Gang med det konjugerte.</strong> Står det en kvadratrot i uttrykket, ganger du teller og nevner med det konjugerte uttrykket, slik at konjugatsetningen fjerner rota.</li></ol><p>Forkortingen er lovlig nettopp fordi $x$ aldri blir lik $a$ i en grenseverdi — vi ser bare på verdier <em>rundt</em> $a$. Derfor er $\\frac{(x-a)h(x)}{(x-a)k(x)}$ og $\\frac{h(x)}{k(x)}$ like i alle punktene vi bryr oss om.</p>"
+        "html": "<p>Grenseverdier oppfører seg som du håper: du kan regne del for del. Dersom både $\\lim_{x \\to a} f(x)$ og $\\lim_{x \\to a} g(x)$ finnes, gjelder</p><ul><li>$\\lim_{x \\to a}\\left(f \\pm g\\right) = \\lim_{x \\to a} f \\pm \\lim_{x \\to a} g$</li><li>$\\lim_{x \\to a}\\left(k \\cdot f\\right) = k \\cdot \\lim_{x \\to a} f$</li><li>$\\lim_{x \\to a}\\left(f \\cdot g\\right) = \\lim_{x \\to a} f \\cdot \\lim_{x \\to a} g$</li><li>$\\lim_{x \\to a} \\frac{f}{g} = \\frac{\\lim_{x \\to a} f}{\\lim_{x \\to a} g}$, forutsatt at $\\lim_{x \\to a} g \\neq 0$</li></ul><p>For polynomer betyr dette at du bare kan sette inn: $\\lim_{x \\to 2}\\left(x^3 - 4x\\right) = 8 - 8 = 0$. Det samme gjelder rasjonale funksjoner, så lenge nevneren ikke blir 0 i punktet.</p><p>Problemene kommer når innsetting gir $\\frac{0}{0}$. Det kalles et <strong>ubestemt uttrykk</strong>. Det betyr ikke at grenseverdien er 0, og ikke at den ikke finnes — det betyr bare at innsetting ikke gir svar. Da må du skrive om uttrykket, og to knep dekker nesten alt du møter i R1:</p><ol><li><strong>Faktoriser og forkort.</strong> Blir både teller og nevner 0 for $x=a$, har begge faktoren $(x-a)$. Forkort den bort, og sett inn på nytt.</li><li><strong>Gang med det konjugerte.</strong> Står det en kvadratrot i uttrykket, ganger du teller og nevner med det konjugerte uttrykket, slik at konjugatsetningen fjerner rota.</li></ol><p>Forkortingen er lovlig nettopp fordi $x$ aldri blir lik $a$ i en grenseverdi — vi ser bare på verdier <em>rundt</em> $a$. Derfor er $\\frac{(x-a)h(x)}{(x-a)k(x)}$ og $\\frac{h(x)}{k(x)}$ like i alle punktene vi bryr oss om.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik regner du ut en grenseverdi",
+          "forklaring": "Legg merke til at steg 2–4 bare skal brukes når innsetting gir 0/0. Selve forkortingen er poenget: den fjerner den felles faktoren som gjorde både teller og nevner 0.",
+          "steg": [
+            {
+              "tekst": "Sett inn x = a i uttrykket",
+              "note": "prøv alltid dette først"
+            },
+            {
+              "tekst": "Får du 0/0, må uttrykket skrives om",
+              "note": "faktoriser eller konjugér"
+            },
+            {
+              "tekst": "Forkort felles faktor (x − a)",
+              "note": "lovlig fordi x aldri blir a"
+            },
+            {
+              "tekst": "Sett inn på nytt",
+              "note": "nå får du et vanlig tall"
+            }
+          ]
+        }
       },
       {
         "tittel": "Ensidige grenseverdier",
-        "html": "<p>Noen ganger oppfører funksjonen seg ulikt på de to sidene av $x=a$. Da trenger vi <strong>ensidige</strong> grenseverdier:</p><ul><li>$\\lim_{x \\to a^-} f(x)$ er venstre grenseverdi. Her nærmer $x$ seg $a$ nedenfra, altså $x < a$.</li><li>$\\lim_{x \\to a^+} f(x)$ er høyre grenseverdi. Her nærmer $x$ seg $a$ ovenfra, altså $x > a$.</li></ul><p>Den tosidige grenseverdien finnes bare når de to er like:</p>$$\\lim_{x \\to a} f(x) = L \\quad \\iff \\quad \\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = L$$<p>Et standardeksempel er $f(x) = \\frac{|x|}{x}$. For $x > 0$ er $f(x) = 1$, og for $x < 0$ er $f(x) = -1$. Høyre grenseverdi i null er derfor 1 og venstre er $-1$. Siden de er ulike, finnes ikke $\\lim_{x \\to 0} f(x)$, og grafen gjør et <strong>sprang</strong>.</p><p>Ensidige grenseverdier er også verktøyet ved vertikale asymptoter. Se på $f(x) = \\frac{1}{x-2}$ nær $x=2$. Nevneren går mot 0, så tallverdien til $f(x)$ blir enorm, men fortegnet avhenger av hvilken side du kommer fra. Er $x$ litt større enn 2, er $x-2$ et lite positivt tall, og $f(x) \\to +\\infty$. Er $x$ litt mindre enn 2, er $x-2$ lite og negativt, og $f(x) \\to -\\infty$.</p><p>Fortegnssjekken er hele jobben: sett inn et tall tett på fra hver side, for eksempel $x = 2{,}01$ og $x = 1{,}99$, og se hvilket fortegn nevneren får.</p>"
+        "html": "<p>Noen ganger oppfører funksjonen seg ulikt på de to sidene av $x=a$. Da trenger vi <strong>ensidige</strong> grenseverdier:</p><ul><li>$\\lim_{x \\to a^-} f(x)$ er venstre grenseverdi. Her nærmer $x$ seg $a$ nedenfra, altså $x < a$.</li><li>$\\lim_{x \\to a^+} f(x)$ er høyre grenseverdi. Her nærmer $x$ seg $a$ ovenfra, altså $x > a$.</li></ul><p>Den tosidige grenseverdien finnes bare når de to er like:</p>$$\\lim_{x \\to a} f(x) = L \\quad \\iff \\quad \\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = L$$<p>Et standardeksempel er $f(x) = \\frac{|x|}{x}$. For $x > 0$ er $f(x) = 1$, og for $x < 0$ er $f(x) = -1$. Høyre grenseverdi i null er derfor 1 og venstre er $-1$. Siden de er ulike, finnes ikke $\\lim_{x \\to 0} f(x)$, og grafen gjør et <strong>sprang</strong>.</p><p>Ensidige grenseverdier er også verktøyet ved vertikale asymptoter. Se på $f(x) = \\frac{1}{x-2}$ nær $x=2$. Nevneren går mot 0, så tallverdien til $f(x)$ blir enorm, men fortegnet avhenger av hvilken side du kommer fra. Er $x$ litt større enn 2, er $x-2$ et lite positivt tall, og $f(x) \\to +\\infty$. Er $x$ litt mindre enn 2, er $x-2$ lite og negativt, og $f(x) \\to -\\infty$.</p><p>Fortegnssjekken er hele jobben: sett inn et tall tett på fra hver side, for eksempel $x = 2{,}01$ og $x = 1{,}99$, og se hvilket fortegn nevneren får.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Et sprang: f(x) = |x| / x",
+          "forklaring": "Grafen ligger på y = 1 til høyre for null og på y = −1 til venstre, og den henger ikke sammen i x = 0. Høyre grenseverdi er 1 og venstre er −1, og fordi de er ulike, finnes ikke den tosidige grenseverdien i x = 0.",
+          "xmin": -3,
+          "xmax": 3,
+          "ymin": -2,
+          "ymax": 2,
+          "kurver": [
+            {
+              "uttrykk": "abs(x)/x",
+              "navn": "f",
+              "farge": 1
+            }
+          ]
+        }
       },
       {
         "tittel": "Kontinuitet",
@@ -60,7 +169,6 @@
         "html": "<p>En <strong>rasjonal funksjon</strong> er en brøk med polynom i teller og nevner, $f(x) = \\frac{p(x)}{q(x)}$. Definisjonsmengden er alle $x$ der $q(x) \\neq 0$.</p><p><strong>Vertikale asymptoter.</strong> Løs $q(x) = 0$. Er $x=a$ en løsning der telleren <em>ikke</em> også blir 0, har grafen en vertikal asymptote $x=a$, og $f(x) \\to \\pm\\infty$ når $x \\to a$. Blir både teller og nevner 0, må du forkorte felles faktor først. Da får du oftest et hull i stedet, som i $\\frac{x+2}{x^2-4} = \\frac{x+2}{(x-2)(x+2)} = \\frac{1}{x-2}$: her er det hull i $x=-2$ og vertikal asymptote bare i $x=2$.</p><p><strong>Skrå asymptote.</strong> Er graden i telleren nøyaktig én høyere enn i nevneren, har grafen en skrå asymptote. Bruk <strong>polynomdivisjon</strong> og skriv funksjonen som</p>$$f(x) = ax + b + \\frac{r(x)}{q(x)}$$<p>Restleddet $\\frac{r(x)}{q(x)}$ går mot 0 når tallverdien til $x$ blir stor, så grafen nærmer seg linja $y = ax+b$. Det er den skrå asymptoten. En rasjonal funksjon kan ikke ha både horisontal og skrå asymptote — gradene bestemmer hvilken av dem du får, om noen.</p><p>Skal du drøfte en rasjonal funksjon, tar du punktene i denne rekkefølgen: definisjonsmengde, nullpunkter (der $p(x)=0$), skjæring med $y$-aksen ($f(0)$), vertikale asymptoter med ensidige grenseverdier, og til slutt horisontal eller skrå asymptote.</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Grenseverdi av typen 0/0 — faktoriser og forkort",
@@ -80,10 +188,59 @@
       {
         "tittel": "Full drøfting av en rasjonal funksjon med skrå asymptote",
         "oppgave": "<p>Gitt funksjonen</p>$$f(x) = \\frac{2x^2 - 3x - 5}{x - 3}$$<p>Bestem definisjonsmengden, nullpunktene, skjæringen med $y$-aksen og alle asymptoter.</p>",
-        "losning": "<p><strong>Definisjonsmengde.</strong> Nevneren kan ikke være 0, og $x-3 = 0$ gir $x=3$. Altså er $D_f = \\mathbb{R} \\setminus \\{3\\}$, alle reelle tall unntatt 3.</p><p><strong>Nullpunkter.</strong> En brøk er 0 når telleren er 0:</p>$$2x^2 - 3x - 5 = 0$$$$x = \\frac{3 \\pm \\sqrt{(-3)^2 - 4 \\cdot 2 \\cdot (-5)}}{2 \\cdot 2} = \\frac{3 \\pm \\sqrt{9+40}}{4} = \\frac{3 \\pm 7}{4}$$<p>Det gir $x = \\frac{10}{4} = 2{,}5$ og $x = \\frac{-4}{4} = -1$. Begge ligger i definisjonsmengden, så nullpunktene er $(-1, 0)$ og $(2{,}5\\ ,\\ 0)$.</p><p><strong>Skjæring med $y$-aksen.</strong></p>$$f(0) = \\frac{-5}{-3} = \\frac{5}{3} \\approx 1{,}67$$<p><strong>Vertikal asymptote.</strong> Nevneren er 0 for $x=3$. Vi må sjekke telleren i samme punkt:</p>$$2 \\cdot 3^2 - 3 \\cdot 3 - 5 = 18 - 9 - 5 = 4 \\neq 0$$<p>Telleren er ikke 0, så $x=3$ er en vertikal asymptote (ikke et hull). Fortegnene finner vi med ensidige grenseverdier. Telleren nærmer seg 4, som er positiv:</p>$$\\lim_{x \\to 3^+} f(x) = +\\infty \\qquad \\text{(nevneren er liten og positiv)}$$$$\\lim_{x \\to 3^-} f(x) = -\\infty \\qquad \\text{(nevneren er liten og negativ)}$$<p><strong>Skrå asymptote.</strong> Telleren har grad 2 og nevneren grad 1. Differansen er 1, så vi venter en skrå asymptote. Vi polynomdividerer:</p><ul><li>$2x^2 : x = 2x$, og $2x(x-3) = 2x^2 - 6x$. Trekker vi fra, står vi igjen med $3x - 5$.</li><li>$3x : x = 3$, og $3(x-3) = 3x - 9$. Trekker vi fra, blir resten $-5 - (-9) = 4$.</li></ul><p>Altså</p>$$f(x) = 2x + 3 + \\frac{4}{x-3}$$<p><strong>Kontroll av divisjonen:</strong> $(2x+3)(x-3) + 4 = 2x^2 - 6x + 3x - 9 + 4 = 2x^2 - 3x - 5$. Det stemmer med telleren.</p><p>Når tallverdien til $x$ blir stor, går $\\frac{4}{x-3}$ mot 0, og da nærmer $f(x)$ seg $2x+3$. Den skrå asymptoten er</p>$$y = 2x + 3$$<p>Restleddet forteller også hvilken side grafen ligger på: for $x > 3$ er $\\frac{4}{x-3} > 0$, så grafen ligger over asymptoten, og for $x < 3$ ligger den under. Det finnes ingen horisontal asymptote, siden telleren har høyere grad enn nevneren.</p>"
+        "losning": "<p><strong>Definisjonsmengde.</strong> Nevneren kan ikke være 0, og $x-3 = 0$ gir $x=3$. Altså er $D_f = \\mathbb{R} \\setminus \\{3\\}$, alle reelle tall unntatt 3.</p><p><strong>Nullpunkter.</strong> En brøk er 0 når telleren er 0:</p>$$2x^2 - 3x - 5 = 0$$$$x = \\frac{3 \\pm \\sqrt{(-3)^2 - 4 \\cdot 2 \\cdot (-5)}}{2 \\cdot 2} = \\frac{3 \\pm \\sqrt{9+40}}{4} = \\frac{3 \\pm 7}{4}$$<p>Det gir $x = \\frac{10}{4} = 2{,}5$ og $x = \\frac{-4}{4} = -1$. Begge ligger i definisjonsmengden, så nullpunktene er $(-1, 0)$ og $(2{,}5\\ ,\\ 0)$.</p><p><strong>Skjæring med $y$-aksen.</strong></p>$$f(0) = \\frac{-5}{-3} = \\frac{5}{3} \\approx 1{,}67$$<p><strong>Vertikal asymptote.</strong> Nevneren er 0 for $x=3$. Vi må sjekke telleren i samme punkt:</p>$$2 \\cdot 3^2 - 3 \\cdot 3 - 5 = 18 - 9 - 5 = 4 \\neq 0$$<p>Telleren er ikke 0, så $x=3$ er en vertikal asymptote (ikke et hull). Fortegnene finner vi med ensidige grenseverdier. Telleren nærmer seg 4, som er positiv:</p>$$\\lim_{x \\to 3^+} f(x) = +\\infty \\qquad \\text{(nevneren er liten og positiv)}$$$$\\lim_{x \\to 3^-} f(x) = -\\infty \\qquad \\text{(nevneren er liten og negativ)}$$<p><strong>Skrå asymptote.</strong> Telleren har grad 2 og nevneren grad 1. Differansen er 1, så vi venter en skrå asymptote. Vi polynomdividerer:</p><ul><li>$2x^2 : x = 2x$, og $2x(x-3) = 2x^2 - 6x$. Trekker vi fra, står vi igjen med $3x - 5$.</li><li>$3x : x = 3$, og $3(x-3) = 3x - 9$. Trekker vi fra, blir resten $-5 - (-9) = 4$.</li></ul><p>Altså</p>$$f(x) = 2x + 3 + \\frac{4}{x-3}$$<p><strong>Kontroll av divisjonen:</strong> $(2x+3)(x-3) + 4 = 2x^2 - 6x + 3x - 9 + 4 = 2x^2 - 3x - 5$. Det stemmer med telleren.</p><p>Når tallverdien til $x$ blir stor, går $\\frac{4}{x-3}$ mot 0, og da nærmer $f(x)$ seg $2x+3$. Den skrå asymptoten er</p>$$y = 2x + 3$$<p>Restleddet forteller også hvilken side grafen ligger på: for $x > 3$ er $\\frac{4}{x-3} > 0$, så grafen ligger over asymptoten, og for $x < 3$ ligger den under. Det finnes ingen horisontal asymptote, siden telleren har høyere grad enn nevneren.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Vertikal og skrå asymptote til f(x) = (2x² − 3x − 5)/(x − 3)",
+          "forklaring": "Begge grenene av grafen legger seg tettere og tettere inntil den stiplede linja y = 2x + 3 når tallverdien til x blir stor — det er restleddet 4/(x − 3) som forsvinner. Ved x = 3 går grenene motsatt vei: mot −∞ fra venstre og mot +∞ fra høyre.",
+          "xmin": -4,
+          "xmax": 8,
+          "ymin": -20,
+          "ymax": 25,
+          "kurver": [
+            {
+              "uttrykk": "(2*x^2-3*x-5)/(x-3)",
+              "navn": "f",
+              "farge": 1
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                -4,
+                -5
+              ],
+              "til": [
+                8,
+                19
+              ],
+              "navn": "y = 2x + 3",
+              "farge": 2,
+              "merkeplass": 0.45
+            }
+          ],
+          "asymptoter": [
+            {
+              "retning": "vertikal",
+              "verdi": 3,
+              "navn": "x = 3"
+            }
+          ],
+          "punkter": [
+            {
+              "x": -1,
+              "y": 0,
+              "navn": "x = −1"
+            },
+            {
+              "x": 2.5,
+              "y": 0,
+              "navn": "x = 2,5"
+            }
+          ]
+        }
       }
     ],
-
     "vanligeFeil": [
       "Å tro at $\\frac{0}{0}$ betyr at grenseverdien er 0, eller at den ikke finnes. $\\frac{0}{0}$ er bare et signal om at du må skrive om uttrykket — svaret kan bli hvilket som helst tall.",
       "Å forkorte bare en del av en faktor. I $\\frac{x-3}{x^2-3x}$ kan du ikke stryke $x$-ene; du må faktorisere til $\\frac{x-3}{x(x-3)}$ og forkorte hele parentesen, som gir $\\frac{1}{x}$.",
@@ -92,7 +249,6 @@
       "Å bytte om $x$ og $y$ i asymptotelikningene. Vertikale asymptoter skrives $x = \\text{tall}$, horisontale og skrå asymptoter skrives $y = \\ldots$",
       "Å konkludere med at $f$ er kontinuerlig i $x=a$ bare fordi grenseverdien finnes. $f(a)$ må også være definert, og ha nøyaktig den samme verdien som grenseverdien."
     ],
-
     "tips": [
       "Sett alltid inn tallet først. Får du et vanlig tall, er du ferdig — faktorisering og konjugatknep skal bare brukes når innsetting gir $\\frac{0}{0}$.",
       "Ved grenseverdier mot $\\pm\\infty$ i en rasjonal funksjon: del alle ledd på den høyeste potensen av $x$ i nevneren. Det gir riktig svar uansett hvordan gradene forholder seg, og viser regningen sensor vil se.",
@@ -101,46 +257,106 @@
       "Med hjelpemidler kan du plotte funksjonen i GeoGebra og sjekke asymptotene mot svaret ditt, men skriv regningen i besvarelsen. Poengene ligger i grenseverdiene og polynomdivisjonen, ikke i grafbildet."
     ]
   },
-
   "begreper": [
-    { "begrep": "Grenseverdi", "forklaring": "Den verdien $f(x)$ nærmer seg når $x$ nærmer seg et tall $a$. Skrives $\\lim_{x \\to a} f(x)$, og handler om verdiene rundt $a$, ikke i $a$." },
-    { "begrep": "Ensidig grenseverdi", "forklaring": "Grenseverdien når du bare nærmer deg fra én side: $\\lim_{x \\to a^-}$ fra venstre og $\\lim_{x \\to a^+}$ fra høyre." },
-    { "begrep": "Ubestemt uttrykk", "forklaring": "Et uttrykk som $\\frac{0}{0}$, som ikke har en bestemt verdi. Du må skrive om funksjonen før du kan finne grenseverdien." },
-    { "begrep": "Kontinuerlig funksjon", "forklaring": "En funksjon der grafen henger sammen. I $x=a$ krever det at $f(a)$ er definert og at $\\lim_{x \\to a} f(x) = f(a)$." },
-    { "begrep": "Diskontinuitet", "forklaring": "Et punkt der funksjonen ikke er kontinuerlig, for eksempel et hull, et sprang eller en vertikal asymptote." },
-    { "begrep": "Hull", "forklaring": "Et enkelt punkt som mangler på grafen. Grenseverdien finnes, men funksjonen er ikke definert der — typisk etter at en felles faktor er forkortet bort." },
-    { "begrep": "Sprang", "forklaring": "Et brudd der venstre og høyre grenseverdi finnes, men er ulike, slik at grafen hopper." },
-    { "begrep": "Rasjonal funksjon", "forklaring": "En funksjon på formen $f(x) = \\frac{p(x)}{q(x)}$ der $p$ og $q$ er polynomer. Definert for alle $x$ med $q(x) \\neq 0$." },
-    { "begrep": "Asymptote", "forklaring": "En rett linje som grafen nærmer seg mer og mer, uten å legge seg fast på den." },
-    { "begrep": "Vertikal asymptote", "forklaring": "Den loddrette linja $x=a$ der funksjonsverdiene går mot $\\pm\\infty$. Oppstår når nevneren blir 0 og telleren ikke." },
-    { "begrep": "Horisontal asymptote", "forklaring": "Den vannrette linja $y=b$ når $\\lim_{x \\to \\infty} f(x) = b$ eller $\\lim_{x \\to -\\infty} f(x) = b$." },
-    { "begrep": "Skrå asymptote", "forklaring": "En skrå linje $y = ax+b$ som grafen nærmer seg. En rasjonal funksjon har det når telleren har én grad mer enn nevneren." },
-    { "begrep": "Polynomdivisjon", "forklaring": "Divisjon av polynomer med samme oppsett som lang divisjon. Brukes til å skrive $\\frac{p(x)}{q(x)}$ som $ax+b+\\frac{r(x)}{q(x)}$ og finne den skrå asymptoten." },
-    { "begrep": "Det konjugerte uttrykket", "forklaring": "Uttrykket $\\sqrt{u}+c$ hører sammen med $\\sqrt{u}-c$. Ganger du dem, forsvinner rota, og knepet fjerner $\\frac{0}{0}$ i grenseverdier med kvadratrot." }
+    {
+      "begrep": "Grenseverdi",
+      "forklaring": "Den verdien $f(x)$ nærmer seg når $x$ nærmer seg et tall $a$. Skrives $\\lim_{x \\to a} f(x)$, og handler om verdiene rundt $a$, ikke i $a$."
+    },
+    {
+      "begrep": "Ensidig grenseverdi",
+      "forklaring": "Grenseverdien når du bare nærmer deg fra én side: $\\lim_{x \\to a^-}$ fra venstre og $\\lim_{x \\to a^+}$ fra høyre."
+    },
+    {
+      "begrep": "Ubestemt uttrykk",
+      "forklaring": "Et uttrykk som $\\frac{0}{0}$, som ikke har en bestemt verdi. Du må skrive om funksjonen før du kan finne grenseverdien."
+    },
+    {
+      "begrep": "Kontinuerlig funksjon",
+      "forklaring": "En funksjon der grafen henger sammen. I $x=a$ krever det at $f(a)$ er definert og at $\\lim_{x \\to a} f(x) = f(a)$."
+    },
+    {
+      "begrep": "Diskontinuitet",
+      "forklaring": "Et punkt der funksjonen ikke er kontinuerlig, for eksempel et hull, et sprang eller en vertikal asymptote."
+    },
+    {
+      "begrep": "Hull",
+      "forklaring": "Et enkelt punkt som mangler på grafen. Grenseverdien finnes, men funksjonen er ikke definert der — typisk etter at en felles faktor er forkortet bort."
+    },
+    {
+      "begrep": "Sprang",
+      "forklaring": "Et brudd der venstre og høyre grenseverdi finnes, men er ulike, slik at grafen hopper."
+    },
+    {
+      "begrep": "Rasjonal funksjon",
+      "forklaring": "En funksjon på formen $f(x) = \\frac{p(x)}{q(x)}$ der $p$ og $q$ er polynomer. Definert for alle $x$ med $q(x) \\neq 0$."
+    },
+    {
+      "begrep": "Asymptote",
+      "forklaring": "En rett linje som grafen nærmer seg mer og mer, uten å legge seg fast på den."
+    },
+    {
+      "begrep": "Vertikal asymptote",
+      "forklaring": "Den loddrette linja $x=a$ der funksjonsverdiene går mot $\\pm\\infty$. Oppstår når nevneren blir 0 og telleren ikke."
+    },
+    {
+      "begrep": "Horisontal asymptote",
+      "forklaring": "Den vannrette linja $y=b$ når $\\lim_{x \\to \\infty} f(x) = b$ eller $\\lim_{x \\to -\\infty} f(x) = b$."
+    },
+    {
+      "begrep": "Skrå asymptote",
+      "forklaring": "En skrå linje $y = ax+b$ som grafen nærmer seg. En rasjonal funksjon har det når telleren har én grad mer enn nevneren."
+    },
+    {
+      "begrep": "Polynomdivisjon",
+      "forklaring": "Divisjon av polynomer med samme oppsett som lang divisjon. Brukes til å skrive $\\frac{p(x)}{q(x)}$ som $ax+b+\\frac{r(x)}{q(x)}$ og finne den skrå asymptoten."
+    },
+    {
+      "begrep": "Det konjugerte uttrykket",
+      "forklaring": "Uttrykket $\\sqrt{u}+c$ hører sammen med $\\sqrt{u}-c$. Ganger du dem, forsvinner rota, og knepet fjerner $\\frac{0}{0}$ i grenseverdier med kvadratrot."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hva er $\\lim_{x \\to 2} \\frac{x^2-4}{x-2}$?",
-      "alternativer": ["$0$", "Grenseverdien finnes ikke", "$4$", "$2$"],
+      "alternativer": [
+        "$0$",
+        "Grenseverdien finnes ikke",
+        "$4$",
+        "$2$"
+      ],
       "riktig": 2,
       "forklaring": "Innsetting gir $\\frac{0}{0}$, så vi faktoriserer: $\\frac{(x-2)(x+2)}{x-2} = x+2$ for $x \\neq 2$, og $x+2 \\to 4$. At grenseverdien «ikke finnes» er den vanligste fellen her — funksjonen er riktignok udefinert i $x=2$, men grenseverdien handler om verdiene rundt punktet, og de nærmer seg 4. Grafen har et hull i $(2,4)$."
     },
     {
       "sporsmal": "Hva er $\\lim_{x \\to 1^-} \\frac{x+3}{x-1}$?",
-      "alternativer": ["$+\\infty$", "$-\\infty$", "$4$", "$0$"],
+      "alternativer": [
+        "$+\\infty$",
+        "$-\\infty$",
+        "$4$",
+        "$0$"
+      ],
       "riktig": 1,
       "forklaring": "Telleren nærmer seg $1+3=4$, som er positiv, mens nevneren går mot 0. Fra venstre er $x < 1$, så $x-1$ er et lite negativt tall: sett inn $x = 0{,}99$ og du får $\\frac{3{,}99}{-0{,}01} = -399$. Verdiene går altså mot $-\\infty$. Svaret $+\\infty$ er det du får hvis du glemmer fortegnssjekken, og $4$ er bare telleren."
     },
     {
       "sporsmal": "Hvilken linje er horisontal asymptote for $f(x) = \\frac{3x-1}{x+2}$?",
-      "alternativer": ["$y = 0$", "$x = -2$", "$y = -\\frac{1}{2}$", "$y = 3$"],
+      "alternativer": [
+        "$y = 0$",
+        "$x = -2$",
+        "$y = -\\frac{1}{2}$",
+        "$y = 3$"
+      ],
       "riktig": 3,
       "forklaring": "Teller og nevner har samme grad, så grenseverdien mot $\\pm\\infty$ er forholdet mellom koeffisientene foran $x$: $\\frac{3}{1} = 3$. Linja $x=-2$ er den vertikale asymptoten, og $-\\frac{1}{2}$ er $f(0)$, altså skjæringen med $y$-aksen. Ingen av dem er den horisontale asymptoten."
     },
     {
       "sporsmal": "Hva kjennetegner grafen til $f(x) = \\frac{x^2-1}{x-1}$ ved $x=1$?",
-      "alternativer": ["Grafen har en vertikal asymptote $x=1$", "Grafen har et hull i punktet $(1,2)$", "$f$ er kontinuerlig i $x=1$", "Grafen har et hull i punktet $(1,0)$"],
+      "alternativer": [
+        "Grafen har en vertikal asymptote $x=1$",
+        "Grafen har et hull i punktet $(1,2)$",
+        "$f$ er kontinuerlig i $x=1$",
+        "Grafen har et hull i punktet $(1,0)$"
+      ],
       "riktig": 1,
       "forklaring": "Både teller og nevner blir 0 for $x=1$, så faktoren $(x-1)$ forkortes bort: $f(x) = x+1$ for $x \\neq 1$. Grenseverdien er 2, men $f(1)$ er ikke definert, så det blir et hull i $(1,2)$ — ikke en asymptote. Asymptote får du bare når nevneren blir 0 og telleren ikke gjør det."
     },
@@ -157,19 +373,34 @@
     },
     {
       "sporsmal": "Hva er $\\lim_{x \\to \\infty} \\frac{4x^2-3x}{2x^2+5}$?",
-      "alternativer": ["$0$", "$\\infty$", "$2$", "$-\\frac{3}{5}$"],
+      "alternativer": [
+        "$0$",
+        "$\\infty$",
+        "$2$",
+        "$-\\frac{3}{5}$"
+      ],
       "riktig": 2,
       "forklaring": "Del alle ledd på $x^2$: $\\frac{4-\\frac{3}{x}}{2+\\frac{5}{x^2}} \\to \\frac{4}{2} = 2$. At svaret skulle være $\\infty$ fordi både teller og nevner vokser, er den vanligste feilslutningen — de vokser like fort, og forholdet stabiliserer seg. $-\\frac{3}{5}$ kommer av å se på leddene av lavest grad, som er de som betyr minst når $x$ blir stor."
     },
     {
       "sporsmal": "$f(x) = x^2 + a$ for $x \\le 1$ og $f(x) = 4x - 1$ for $x > 1$. For hvilken $a$ er $f$ kontinuerlig?",
-      "alternativer": ["$a = -2$", "$a = 4$", "$a = 2$", "$a = 3$"],
+      "alternativer": [
+        "$a = -2$",
+        "$a = 4$",
+        "$a = 2$",
+        "$a = 3$"
+      ],
       "riktig": 2,
       "forklaring": "Venstre grenseverdi og funksjonsverdien er $1^2 + a = 1 + a$, høyre grenseverdi er $4 \\cdot 1 - 1 = 3$. Kontinuitet krever $1 + a = 3$, altså $a = 2$. Svaret $a=3$ er fellen for dem som glemmer leddet $1^2$ og bare setter $a$ lik høyre grenseverdi."
     },
     {
       "sporsmal": "Hva er $\\lim_{x \\to 0} \\frac{\\sqrt{x+9}-3}{x}$?",
-      "alternativer": ["$\\frac{1}{6}$", "$0$", "$\\frac{1}{3}$", "Grenseverdien finnes ikke"],
+      "alternativer": [
+        "$\\frac{1}{6}$",
+        "$0$",
+        "$\\frac{1}{3}$",
+        "Grenseverdien finnes ikke"
+      ],
       "riktig": 0,
       "forklaring": "Gang med det konjugerte: telleren blir $(x+9)-9 = x$, så uttrykket er $\\frac{x}{x(\\sqrt{x+9}+3)} = \\frac{1}{\\sqrt{x+9}+3} \\to \\frac{1}{3+3} = \\frac{1}{6}$. Svaret $\\frac{1}{3}$ får du hvis du glemmer $+3$ i nevneren etter utvidelsen, og $0$ hvis du tror $\\frac{0}{0} = 0$."
     },
@@ -186,39 +417,98 @@
     },
     {
       "sporsmal": "Hvilke vertikale asymptoter har $f(x) = \\frac{x+2}{x^2-4}$?",
-      "alternativer": ["Bare $x = -2$", "$x = 2$ og $x = -2$", "Ingen vertikale asymptoter", "Bare $x = 2$"],
+      "alternativer": [
+        "Bare $x = -2$",
+        "$x = 2$ og $x = -2$",
+        "Ingen vertikale asymptoter",
+        "Bare $x = 2$"
+      ],
       "riktig": 3,
       "forklaring": "Nevneren faktoriseres til $(x-2)(x+2)$, og $(x+2)$ forkortes mot telleren: $f(x) = \\frac{1}{x-2}$ for $x \\neq -2$. Bare $x=2$ gir en asymptote. I $x=-2$ er funksjonen udefinert, men grenseverdien finnes ($-\\frac{1}{4}$), så der er det et hull. Å lese av begge nullpunktene til nevneren uten å forkorte først er den klassiske feilen."
     },
     {
       "sporsmal": "Hva er $\\lim_{x \\to 2} \\frac{|x-2|}{x-2}$?",
-      "alternativer": ["$1$", "$-1$", "$0$", "Grenseverdien finnes ikke"],
+      "alternativer": [
+        "$1$",
+        "$-1$",
+        "$0$",
+        "Grenseverdien finnes ikke"
+      ],
       "riktig": 3,
       "forklaring": "For $x > 2$ er $|x-2| = x-2$, så høyre grenseverdi er 1. For $x < 2$ er $|x-2| = -(x-2)$, så venstre grenseverdi er $-1$. Den tosidige grenseverdien finnes bare når de ensidige er like, og her er de ulike — grafen gjør et sprang. Både $1$ og $-1$ er riktige svar på hver sin ensidige grenseverdi, men ingen av dem er svaret på spørsmålet."
     },
     {
       "sporsmal": "Anta at $\\lim_{x \\to a} f(x) = 3$ og $\\lim_{x \\to a} g(x) = -2$. Hva er $\\lim_{x \\to a}\\left(f(x) \\cdot g(x) + g(x)^2\\right)$?",
-      "alternativer": ["$-2$", "$-10$", "$2$", "$10$"],
+      "alternativer": [
+        "$-2$",
+        "$-10$",
+        "$2$",
+        "$10$"
+      ],
       "riktig": 0,
       "forklaring": "Regnereglene lar deg regne del for del: $3 \\cdot (-2) + (-2)^2 = -6 + 4 = -2$. Svaret $-10$ kommer av å skrive $(-2)^2 = -4$; husk at et kvadrat aldri er negativt. Svaret $10$ kommer av fortegnsfeil i produktet — positiv ganger negativ må bli negativ — og $2$ av fortegnsfeil i både produktet og kvadratet."
     }
   ],
-
   "flashcards": [
-    { "front": "Hva betyr $\\lim_{x \\to a} f(x) = L$?", "bak": "At $f(x)$ nærmer seg $L$ når $x$ nærmer seg $a$. Det sier ingenting om $f(a)$ — bare om verdiene rundt $a$." },
-    { "front": "Når finnes den tosidige grenseverdien i $x=a$?", "bak": "Bare når de ensidige grenseverdiene er like: $\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x)$." },
-    { "front": "Innsetting gir $\\frac{0}{0}$. Hva gjør du?", "bak": "Faktoriser teller og nevner og forkort felles faktor $(x-a)$. Sett så inn på nytt." },
-    { "front": "Grenseverdi med kvadratrot i telleren — hva er knepet?", "bak": "Gang teller og nevner med det konjugerte uttrykket, så konjugatsetningen fjerner rota fra telleren." },
-    { "front": "De tre kravene for at $f$ er kontinuerlig i $x=a$", "bak": "1) $f(a)$ er definert. 2) $\\lim_{x \\to a} f(x)$ finnes. 3) $\\lim_{x \\to a} f(x) = f(a)$." },
-    { "front": "$\\lim_{x \\to \\pm\\infty} \\frac{1}{x^n} = ?$", "bak": "$0$ for alle $n > 0$." },
-    { "front": "Hvordan finner du vertikale asymptoter til $\\frac{p(x)}{q(x)}$?", "bak": "Løs $q(x) = 0$. Der telleren ikke også er 0, er $x = a$ en vertikal asymptote." },
-    { "front": "Både teller og nevner blir 0 i $x=a$. Asymptote eller hull?", "bak": "Forkort felles faktor først og se på uttrykket som står igjen. Er nevneren da ikke lenger 0 i $x=a$, har du et hull: grenseverdien finnes, men funksjonen er udefinert i punktet. Er nevneren fortsatt 0, er $x=a$ likevel en vertikal asymptote." },
-    { "front": "Horisontal asymptote til en rasjonal funksjon — hvordan?", "bak": "Sammenlign gradene: teller lavere gir $y=0$, lik grad gir forholdet mellom koeffisientene foran høyestegradsleddene, teller høyere gir ingen horisontal asymptote." },
-    { "front": "Når har en rasjonal funksjon skrå asymptote?", "bak": "Når graden i telleren er nøyaktig én høyere enn graden i nevneren." },
-    { "front": "Hvordan finner du den skrå asymptoten?", "bak": "Polynomdivider til $f(x) = ax+b+\\frac{r(x)}{q(x)}$. Restleddet går mot 0, så asymptoten er $y = ax+b$." },
-    { "front": "$\\lim_{x \\to 3} \\frac{x^2-9}{x-3} = ?$", "bak": "$6$, fordi $\\frac{(x-3)(x+3)}{x-3} = x+3 \\to 3+3 = 6$." },
-    { "front": "Forskjellen på et hull og en vertikal asymptote", "bak": "Ved et hull finnes grenseverdien, men funksjonsverdien mangler. Ved en vertikal asymptote går verdiene mot $\\pm\\infty$, og grenseverdien finnes ikke som tall." },
-    { "front": "Er polynomer kontinuerlige?", "bak": "Ja, for alle reelle $x$. Rasjonale funksjoner er kontinuerlige overalt der nevneren ikke er 0." },
-    { "front": "Kan grafen krysse sin horisontale asymptote?", "bak": "Ja. Asymptoten beskriver bare oppførselen når $x \\to \\pm\\infty$; nærmere origo kan grafen godt skjære linja." }
+    {
+      "front": "Hva betyr $\\lim_{x \\to a} f(x) = L$?",
+      "bak": "At $f(x)$ nærmer seg $L$ når $x$ nærmer seg $a$. Det sier ingenting om $f(a)$ — bare om verdiene rundt $a$."
+    },
+    {
+      "front": "Når finnes den tosidige grenseverdien i $x=a$?",
+      "bak": "Bare når de ensidige grenseverdiene er like: $\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x)$."
+    },
+    {
+      "front": "Innsetting gir $\\frac{0}{0}$. Hva gjør du?",
+      "bak": "Faktoriser teller og nevner og forkort felles faktor $(x-a)$. Sett så inn på nytt."
+    },
+    {
+      "front": "Grenseverdi med kvadratrot i telleren — hva er knepet?",
+      "bak": "Gang teller og nevner med det konjugerte uttrykket, så konjugatsetningen fjerner rota fra telleren."
+    },
+    {
+      "front": "De tre kravene for at $f$ er kontinuerlig i $x=a$",
+      "bak": "1) $f(a)$ er definert. 2) $\\lim_{x \\to a} f(x)$ finnes. 3) $\\lim_{x \\to a} f(x) = f(a)$."
+    },
+    {
+      "front": "$\\lim_{x \\to \\pm\\infty} \\frac{1}{x^n} = ?$",
+      "bak": "$0$ for alle $n > 0$."
+    },
+    {
+      "front": "Hvordan finner du vertikale asymptoter til $\\frac{p(x)}{q(x)}$?",
+      "bak": "Løs $q(x) = 0$. Der telleren ikke også er 0, er $x = a$ en vertikal asymptote."
+    },
+    {
+      "front": "Både teller og nevner blir 0 i $x=a$. Asymptote eller hull?",
+      "bak": "Forkort felles faktor først og se på uttrykket som står igjen. Er nevneren da ikke lenger 0 i $x=a$, har du et hull: grenseverdien finnes, men funksjonen er udefinert i punktet. Er nevneren fortsatt 0, er $x=a$ likevel en vertikal asymptote."
+    },
+    {
+      "front": "Horisontal asymptote til en rasjonal funksjon — hvordan?",
+      "bak": "Sammenlign gradene: teller lavere gir $y=0$, lik grad gir forholdet mellom koeffisientene foran høyestegradsleddene, teller høyere gir ingen horisontal asymptote."
+    },
+    {
+      "front": "Når har en rasjonal funksjon skrå asymptote?",
+      "bak": "Når graden i telleren er nøyaktig én høyere enn graden i nevneren."
+    },
+    {
+      "front": "Hvordan finner du den skrå asymptoten?",
+      "bak": "Polynomdivider til $f(x) = ax+b+\\frac{r(x)}{q(x)}$. Restleddet går mot 0, så asymptoten er $y = ax+b$."
+    },
+    {
+      "front": "$\\lim_{x \\to 3} \\frac{x^2-9}{x-3} = ?$",
+      "bak": "$6$, fordi $\\frac{(x-3)(x+3)}{x-3} = x+3 \\to 3+3 = 6$."
+    },
+    {
+      "front": "Forskjellen på et hull og en vertikal asymptote",
+      "bak": "Ved et hull finnes grenseverdien, men funksjonsverdien mangler. Ved en vertikal asymptote går verdiene mot $\\pm\\infty$, og grenseverdien finnes ikke som tall."
+    },
+    {
+      "front": "Er polynomer kontinuerlige?",
+      "bak": "Ja, for alle reelle $x$. Rasjonale funksjoner er kontinuerlige overalt der nevneren ikke er 0."
+    },
+    {
+      "front": "Kan grafen krysse sin horisontale asymptote?",
+      "bak": "Ja. Asymptoten beskriver bare oppførselen når $x \\to \\pm\\infty$; nærmere origo kan grafen godt skjære linja."
+    }
   ]
 }

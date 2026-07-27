@@ -3,7 +3,6 @@
   "nr": 4,
   "tittel": "Bruk av derivasjon",
   "intro": "Her bruker du den deriverte til å lese grafen uten å plotte den: hvor funksjonen stiger og synker, hvor den har topp- og bunnpunkter, hvordan den krummer, og hvilken verdi som gir størst volum eller minst materialbruk. Fortegnslinja er hovedverktøyet i hele kapittelet.",
-
   "kompakt": {
     "punkter": [
       "$f'(x) > 0$ i et helt intervall betyr at $f$ er voksende der, $f'(x) < 0$ betyr avtagende. Det er fortegnet som avgjør, ikke størrelsen.",
@@ -18,27 +17,166 @@
       "Optimering: sett opp målfunksjonen, bruk bibetingelsen til å få bare én variabel, finn definisjonsmengden, deriver og begrunn maks/min."
     ],
     "formler": [
-      { "navn": "Voksende funksjon", "latex": "f'(x) > 0 \\ \\text{for alle } x \\in \\langle a, b \\rangle \\ \\Rightarrow \\ f \\text{ er voksende i } \\langle a, b \\rangle" },
-      { "navn": "Avtagende funksjon", "latex": "f'(x) < 0 \\ \\text{for alle } x \\in \\langle a, b \\rangle \\ \\Rightarrow \\ f \\text{ er avtagende i } \\langle a, b \\rangle" },
-      { "navn": "Stasjonært punkt", "latex": "f'(a) = 0" },
-      { "navn": "Den andrederiverte", "latex": "f''(x) = \\left(f'(x)\\right)'" },
-      { "navn": "Toppunkt (andrederiverttesten)", "latex": "f'(a) = 0 \\ \\text{ og } \\ f''(a) < 0" },
-      { "navn": "Bunnpunkt (andrederiverttesten)", "latex": "f'(a) = 0 \\ \\text{ og } \\ f''(a) > 0" },
-      { "navn": "Terrassepunkt", "latex": "f'(a) = 0 \\ \\text{ og } \\ f' \\text{ skifter ikke fortegn i } a" },
-      { "navn": "Krumning oppover", "latex": "f''(x) > 0 \\ \\Rightarrow \\ \\text{grafen krummer oppover}" },
-      { "navn": "Krumning nedover", "latex": "f''(x) < 0 \\ \\Rightarrow \\ \\text{grafen krummer nedover}" },
-      { "navn": "Vendepunkt", "latex": "f''(a) = 0 \\ \\text{ og } \\ f'' \\text{ skifter fortegn i } a" },
-      { "navn": "Vendetangent", "latex": "y = f'(a)(x-a) + f(a), \\quad a = \\text{vendepunktets } x\\text{-verdi}" },
-      { "navn": "Vendepunkt i tredjegradsfunksjon", "latex": "x_{\\text{vend}} = \\frac{x_1 + x_2}{2}, \\quad x_1, x_2 = \\text{topp- og bunnpunktets } x\\text{-verdier}" },
-      { "navn": "Fart og akselerasjon", "latex": "v(t) = s'(t), \\qquad a(t) = v'(t) = s''(t)" }
-    ]
+      {
+        "navn": "Voksende funksjon",
+        "latex": "f'(x) > 0 \\ \\text{for alle } x \\in \\langle a, b \\rangle \\ \\Rightarrow \\ f \\text{ er voksende i } \\langle a, b \\rangle"
+      },
+      {
+        "navn": "Avtagende funksjon",
+        "latex": "f'(x) < 0 \\ \\text{for alle } x \\in \\langle a, b \\rangle \\ \\Rightarrow \\ f \\text{ er avtagende i } \\langle a, b \\rangle"
+      },
+      {
+        "navn": "Stasjonært punkt",
+        "latex": "f'(a) = 0"
+      },
+      {
+        "navn": "Den andrederiverte",
+        "latex": "f''(x) = \\left(f'(x)\\right)'"
+      },
+      {
+        "navn": "Toppunkt (andrederiverttesten)",
+        "latex": "f'(a) = 0 \\ \\text{ og } \\ f''(a) < 0"
+      },
+      {
+        "navn": "Bunnpunkt (andrederiverttesten)",
+        "latex": "f'(a) = 0 \\ \\text{ og } \\ f''(a) > 0"
+      },
+      {
+        "navn": "Terrassepunkt",
+        "latex": "f'(a) = 0 \\ \\text{ og } \\ f' \\text{ skifter ikke fortegn i } a"
+      },
+      {
+        "navn": "Krumning oppover",
+        "latex": "f''(x) > 0 \\ \\Rightarrow \\ \\text{grafen krummer oppover}"
+      },
+      {
+        "navn": "Krumning nedover",
+        "latex": "f''(x) < 0 \\ \\Rightarrow \\ \\text{grafen krummer nedover}"
+      },
+      {
+        "navn": "Vendepunkt",
+        "latex": "f''(a) = 0 \\ \\text{ og } \\ f'' \\text{ skifter fortegn i } a"
+      },
+      {
+        "navn": "Vendetangent",
+        "latex": "y = f'(a)(x-a) + f(a), \\quad a = \\text{vendepunktets } x\\text{-verdi}"
+      },
+      {
+        "navn": "Vendepunkt i tredjegradsfunksjon",
+        "latex": "x_{\\text{vend}} = \\frac{x_1 + x_2}{2}, \\quad x_1, x_2 = \\text{topp- og bunnpunktets } x\\text{-verdier}"
+      },
+      {
+        "navn": "Fart og akselerasjon",
+        "latex": "v(t) = s'(t), \\qquad a(t) = v'(t) = s''(t)"
+      }
+    ],
+    "figur": {
+      "type": "graf",
+      "tittel": "Alt f' og f'' forteller om f(x) = x³ − 3x",
+      "forklaring": "Tangenten er vannrett i begge de stasjonære punktene, og mellom dem er f' negativ, så grafen synker. I (0, 0) skifter krumningen fra nedover til oppover — det er vendepunktet, og det ligger midt mellom toppunktet og bunnpunktet.",
+      "xmin": -2.2,
+      "xmax": 2.2,
+      "ymin": -4.5,
+      "ymax": 4.5,
+      "kurver": [
+        {
+          "uttrykk": "x^3-3*x",
+          "navn": "f",
+          "farge": 1
+        }
+      ],
+      "linjer": [
+        {
+          "fra": [
+            -1.8,
+            2
+          ],
+          "til": [
+            -0.2,
+            2
+          ],
+          "farge": 2
+        },
+        {
+          "fra": [
+            0.2,
+            -2
+          ],
+          "til": [
+            1.8,
+            -2
+          ],
+          "navn": "f' = 0",
+          "farge": 2
+        }
+      ],
+      "punkter": [
+        {
+          "x": -1,
+          "y": 2,
+          "navn": "toppunkt (−1, 2)"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "navn": "vendepunkt",
+          "plassering": "under"
+        },
+        {
+          "x": 1,
+          "y": -2,
+          "navn": "bunnpunkt (1, −2)",
+          "plassering": "under"
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
         "tittel": "Monotoniegenskaper og fortegnslinjer",
-        "html": "<p>Den deriverte forteller hvor bratt grafen er — og enda viktigere: i hvilken retning den går. Sammenhengen kalles funksjonens <strong>monotoniegenskaper</strong>:</p><ul><li>$f'(x) > 0$ i hele intervallet: $f$ er <strong>voksende</strong> der</li><li>$f'(x) < 0$ i hele intervallet: $f$ er <strong>avtagende</strong> der</li><li>$f'(x) = 0$ i hele intervallet: $f$ er konstant der</li></ul><p>Legg merke til at det er <em>fortegnet</em>, ikke størrelsen, som avgjør. $f'(x) = 0{,}01$ er en veldig slak stigning, men grafen stiger fortsatt.</p><p>For å finne ut hvor $f'$ er positiv og negativ, bruker du en <strong>fortegnslinje</strong>. Framgangsmåten er alltid:</p><ol><li>Deriver, og faktoriser $f'$ så langt du kommer.</li><li>Finn nullpunktene til hver faktor, og eventuelle $x$-verdier der $f'$ ikke er definert.</li><li>Tegn én linje per faktor, og marker fortegnet på hver side av nullpunktet.</li><li>Gang fortegnene sammen nedover, kolonne for kolonne.</li></ol><p>Fortegnet til de vanligste faktorene: en førstegradsfaktor $x - a$ er negativ til venstre for $a$ og positiv til høyre. Et kvadrat som $(x-a)^2$ er positivt overalt bortsett fra i $a$, og gir derfor <em>ikke</em> fortegnsskifte. En eksponentialfunksjon som $e^{2x}$ er positiv for alle $x$ og kan aldri skifte fortegn.</p><p>Svaret skriver du som intervaller i $x$: «$f$ er voksende i $\\langle \\leftarrow, -1 \\rangle$ og i $\\langle 3, \\rightarrow \\rangle$, og avtagende i $\\langle -1, 3 \\rangle$». Monotoni handler om hvilke $x$-verdier grafen stiger for, så svar aldri med $y$-verdier.</p>"
+        "html": "<p>Den deriverte forteller hvor bratt grafen er — og enda viktigere: i hvilken retning den går. Sammenhengen kalles funksjonens <strong>monotoniegenskaper</strong>:</p><ul><li>$f'(x) > 0$ i hele intervallet: $f$ er <strong>voksende</strong> der</li><li>$f'(x) < 0$ i hele intervallet: $f$ er <strong>avtagende</strong> der</li><li>$f'(x) = 0$ i hele intervallet: $f$ er konstant der</li></ul><p>Legg merke til at det er <em>fortegnet</em>, ikke størrelsen, som avgjør. $f'(x) = 0{,}01$ er en veldig slak stigning, men grafen stiger fortsatt.</p><p>For å finne ut hvor $f'$ er positiv og negativ, bruker du en <strong>fortegnslinje</strong>. Framgangsmåten er alltid:</p><ol><li>Deriver, og faktoriser $f'$ så langt du kommer.</li><li>Finn nullpunktene til hver faktor, og eventuelle $x$-verdier der $f'$ ikke er definert.</li><li>Tegn én linje per faktor, og marker fortegnet på hver side av nullpunktet.</li><li>Gang fortegnene sammen nedover, kolonne for kolonne.</li></ol><p>Fortegnet til de vanligste faktorene: en førstegradsfaktor $x - a$ er negativ til venstre for $a$ og positiv til høyre. Et kvadrat som $(x-a)^2$ er positivt overalt bortsett fra i $a$, og gir derfor <em>ikke</em> fortegnsskifte. En eksponentialfunksjon som $e^{2x}$ er positiv for alle $x$ og kan aldri skifte fortegn.</p><p>Svaret skriver du som intervaller i $x$: «$f$ er voksende i $\\langle \\leftarrow, -1 \\rangle$ og i $\\langle 3, \\rightarrow \\rangle$, og avtagende i $\\langle -1, 3 \\rangle$». Monotoni handler om hvilke $x$-verdier grafen stiger for, så svar aldri med $y$-verdier.</p>",
+        "figur": {
+          "type": "fortegnslinje",
+          "tittel": "Fortegnslinje for f'(x) = 3(x − 3)(x + 1)",
+          "forklaring": "Nederste linje er produktet av de to øverste: to negative faktorer gir positiv f', mens ulike fortegn gir negativ. Heltrukken strek betyr f' > 0 og voksende f, stiplet strek betyr f' < 0 og avtagende f.",
+          "xmin": -3,
+          "xmax": 5,
+          "linjer": [
+            {
+              "navn": "x + 1",
+              "nullpunkt": [
+                -1
+              ],
+              "fortegn": [
+                "-",
+                "+"
+              ]
+            },
+            {
+              "navn": "x − 3",
+              "nullpunkt": [
+                3
+              ],
+              "fortegn": [
+                "-",
+                "+"
+              ]
+            }
+          ],
+          "resultat": {
+            "navn": "f'(x)",
+            "nullpunkt": [
+              -1,
+              3
+            ],
+            "fortegn": [
+              "+",
+              "-",
+              "+"
+            ]
+          }
+        }
       },
       {
         "tittel": "Topp-, bunn- og terrassepunkter",
@@ -46,7 +184,36 @@
       },
       {
         "tittel": "Den andrederiverte, krumning og vendepunkter",
-        "html": "<p>Deriverer du $f'$ en gang til, får du den <strong>andrederiverte</strong> $f''$. Den måler hvor raskt stigningstallet endrer seg, altså hvordan grafen <strong>krummer</strong>:</p>$$f''(x) > 0 \\ \\Rightarrow \\ \\text{grafen krummer oppover (hul side opp)}$$$$f''(x) < 0 \\ \\Rightarrow \\ \\text{grafen krummer nedover}$$<p>Tenk slik: $f'' > 0$ betyr at $f'$ er voksende. Stigningstallet blir større og større, og grafen bøyer seg oppover som innsiden av en bolle. Merk at $f$ selv godt kan være avtagende samtidig — $f(x) = e^{-x}$ er avtagende overalt, men krummer oppover overalt.</p><p>Der krumningen <em>skifter</em>, har grafen et <strong>vendepunkt</strong>. Siden $f''$ må skifte fortegn, må $f''(x) = 0$ i vendepunktet, men det er ikke nok: for $f(x) = x^4$ er $f''(x) = 12x^2$, som er null i $x = 0$ uten å skifte fortegn. Grafen krummer oppover på begge sider, så der er det bunnpunkt og ikke vendepunkt. Lag derfor alltid fortegnslinje for $f''$ også.</p><p><strong>Andrederiverttesten</strong> er en snarvei for å klassifisere stasjonære punkter: er $f'(a) = 0$ og $f''(a) < 0$, krummer grafen nedover og du har toppunkt. Er $f''(a) > 0$, har du bunnpunkt. Blir $f''(a) = 0$, sier testen ingenting, og du må tilbake til fortegnslinja for $f'$.</p><p>Tangenten i et vendepunkt kalles <strong>vendetangenten</strong>. I fysikk møter du $f''$ som akselerasjon: er $s(t)$ posisjonen, er $v(t) = s'(t)$ farten og $a(t) = s''(t)$ akselerasjonen.</p>"
+        "html": "<p>Deriverer du $f'$ en gang til, får du den <strong>andrederiverte</strong> $f''$. Den måler hvor raskt stigningstallet endrer seg, altså hvordan grafen <strong>krummer</strong>:</p>$$f''(x) > 0 \\ \\Rightarrow \\ \\text{grafen krummer oppover (hul side opp)}$$$$f''(x) < 0 \\ \\Rightarrow \\ \\text{grafen krummer nedover}$$<p>Tenk slik: $f'' > 0$ betyr at $f'$ er voksende. Stigningstallet blir større og større, og grafen bøyer seg oppover som innsiden av en bolle. Merk at $f$ selv godt kan være avtagende samtidig — $f(x) = e^{-x}$ er avtagende overalt, men krummer oppover overalt.</p><p>Der krumningen <em>skifter</em>, har grafen et <strong>vendepunkt</strong>. Siden $f''$ må skifte fortegn, må $f''(x) = 0$ i vendepunktet, men det er ikke nok: for $f(x) = x^4$ er $f''(x) = 12x^2$, som er null i $x = 0$ uten å skifte fortegn. Grafen krummer oppover på begge sider, så der er det bunnpunkt og ikke vendepunkt. Lag derfor alltid fortegnslinje for $f''$ også.</p><p><strong>Andrederiverttesten</strong> er en snarvei for å klassifisere stasjonære punkter: er $f'(a) = 0$ og $f''(a) < 0$, krummer grafen nedover og du har toppunkt. Er $f''(a) > 0$, har du bunnpunkt. Blir $f''(a) = 0$, sier testen ingenting, og du må tilbake til fortegnslinja for $f'$.</p><p>Tangenten i et vendepunkt kalles <strong>vendetangenten</strong>. I fysikk møter du $f''$ som akselerasjon: er $s(t)$ posisjonen, er $v(t) = s'(t)$ farten og $a(t) = s''(t)$ akselerasjonen.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "x³ og x⁴: f''(0) = 0 i begge tilfeller",
+          "forklaring": "Følg krumningen fra venstre: x⁴ er hul opp på begge sider av null, så (0, 0) er et bunnpunkt der. x³ er hul ned til venstre og hul opp til høyre, så der skifter krumningen — og bare da har du et vendepunkt.",
+          "xmin": -1.25,
+          "xmax": 1.25,
+          "ymin": -2.2,
+          "ymax": 2.6,
+          "kurver": [
+            {
+              "uttrykk": "x^3",
+              "navn": "x³",
+              "farge": 1
+            },
+            {
+              "uttrykk": "x^4",
+              "navn": "x⁴",
+              "farge": 2
+            }
+          ],
+          "punkter": [
+            {
+              "x": 0,
+              "y": 0,
+              "navn": "f' = f'' = 0",
+              "plassering": "under"
+            }
+          ]
+        }
       },
       {
         "tittel": "Funksjonsdrøfting steg for steg",
@@ -61,7 +228,6 @@
         "html": "<p>Optimering er derivasjon brukt på virkeligheten: størst mulig volum, minst mulig materialbruk, størst mulig overskudd. Oppskriften er alltid den samme:</p><ol><li>Lag en skisse, og gi navn til størrelsene.</li><li>Skriv opp et uttrykk for det som skal bli størst eller minst. Dette kalles <strong>målfunksjonen</strong>.</li><li>Har du to ukjente, bruker du <strong>bibetingelsen</strong> — den faste opplysningen i oppgaven — til å uttrykke den ene ved den andre, slik at målfunksjonen bare har én variabel.</li><li>Finn definisjonsmengden ut fra situasjonen. Lengder, tider og antall må være positive.</li><li>Deriver, løs likningen $f'(x) = 0$, og forkast løsninger som ligger utenfor definisjonsmengden.</li><li>Begrunn at du har funnet et maksimum eller minimum, med fortegnslinje eller $f''$.</li><li>Svar på det som faktisk ble spurt om, med enhet.</li></ol><p>Steg 3 er der de fleste stopper. Trikset er å lete etter setningen som gir en fast sammenheng: «omkretsen er 40 cm» betyr $2x + 2y = 40$, altså $y = 20 - x$, og «volumet er 1 liter» betyr $\\pi r^2 h = 1000$, altså $h = \\frac{1000}{\\pi r^2}$.</p><p>Steg 6 og 7 er der poengene forsvinner. At den deriverte er null viser bare at <em>noe</em> skjer i punktet — du må vise hva. Og «$x = 5$» er ikke et svar på spørsmålet «hvor stort blir volumet?».</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Fullstendig drøfting av en tredjegradsfunksjon",
@@ -76,7 +242,53 @@
       {
         "tittel": "Optimering: størst mulig eske av en papplate",
         "oppgave": "<p>Du har en kvadratisk papplate med sider $30$ cm. Du klipper bort et kvadrat med sider $x$ cm i hvert hjørne, bretter opp kantene og teiper sammen en eske uten lokk. Hvilken $x$ gir størst volum, og hvor stort blir volumet?</p>",
-        "losning": "<p><strong>Steg 1 — målfunksjonen.</strong> Kantene du bretter opp, er $x$ cm høye, så høyden i esken er $x$. Både lengden og bredden i bunnen blir redusert med $x$ i hver ende, altså $30 - 2x$. Volumet er grunnflate ganger høyde:</p>$$V(x) = x(30-2x)^2$$<p><strong>Steg 2 — definisjonsmengde.</strong> Vi må ha $x > 0$ for å få en høyde, og $30 - 2x > 0$ for å ha noe bunn igjen. Det gir</p>$$0 < x < 15$$<p><strong>Steg 3 — deriver.</strong> Produktregelen med $u = x$ og $v = (30-2x)^2$. Kjerneregelen gir $v' = 2(30-2x) \\cdot (-2) = -4(30-2x)$:</p>$$V'(x) = 1 \\cdot (30-2x)^2 + x \\cdot \\left(-4(30-2x)\\right)$$<p>Vi setter den felles faktoren $(30-2x)$ utenfor:</p>$$V'(x) = (30-2x)\\left[(30-2x) - 4x\\right] = (30-2x)(30-6x)$$<p>(Du kan også gange ut først: $V(x) = 4x^3 - 120x^2 + 900x$ gir $V'(x) = 12x^2 - 240x + 900 = 12(x-5)(x-15)$, som er det samme uttrykket.)</p><p><strong>Steg 4 — løs $V'(x) = 0$.</strong></p>$$30 - 2x = 0 \\ \\Rightarrow \\ x = 15 \\qquad \\text{eller} \\qquad 30 - 6x = 0 \\ \\Rightarrow \\ x = 5$$<p>Løsningen $x = 15$ ligger utenfor definisjonsmengden — da har du klippet bort hele bunnen. Bare $x = 5$ er aktuell.</p><p><strong>Steg 5 — er det virkelig et maksimum?</strong> For $0 < x < 5$ er både $(30-2x) > 0$ og $(30-6x) > 0$, så $V' > 0$. For $5 < x < 15$ er $(30-2x) > 0$, men $(30-6x) < 0$, så $V' < 0$. $V'$ skifter fra $+$ til $-$, altså har $V$ toppunkt for $x = 5$. Kontroll med den andrederiverte: $V''(x) = 24x - 240$, og $V''(5) = 120 - 240 = -120 < 0$.</p><p><strong>Steg 6 — svar med enheter.</strong></p>$$V(5) = 5 \\cdot (30 - 2 \\cdot 5)^2 = 5 \\cdot 20^2 = 5 \\cdot 400 = 2000$$<p>Du skal klippe bort kvadrater med sider $5$ cm. Esken blir da $20\\ \\text{cm} \\times 20\\ \\text{cm} \\times 5\\ \\text{cm}$, og volumet blir størst mulig: $2000\\ \\text{cm}^3$, altså $2$ liter.</p>"
+        "losning": "<p><strong>Steg 1 — målfunksjonen.</strong> Kantene du bretter opp, er $x$ cm høye, så høyden i esken er $x$. Både lengden og bredden i bunnen blir redusert med $x$ i hver ende, altså $30 - 2x$. Volumet er grunnflate ganger høyde:</p>$$V(x) = x(30-2x)^2$$<p><strong>Steg 2 — definisjonsmengde.</strong> Vi må ha $x > 0$ for å få en høyde, og $30 - 2x > 0$ for å ha noe bunn igjen. Det gir</p>$$0 < x < 15$$<p><strong>Steg 3 — deriver.</strong> Produktregelen med $u = x$ og $v = (30-2x)^2$. Kjerneregelen gir $v' = 2(30-2x) \\cdot (-2) = -4(30-2x)$:</p>$$V'(x) = 1 \\cdot (30-2x)^2 + x \\cdot \\left(-4(30-2x)\\right)$$<p>Vi setter den felles faktoren $(30-2x)$ utenfor:</p>$$V'(x) = (30-2x)\\left[(30-2x) - 4x\\right] = (30-2x)(30-6x)$$<p>(Du kan også gange ut først: $V(x) = 4x^3 - 120x^2 + 900x$ gir $V'(x) = 12x^2 - 240x + 900 = 12(x-5)(x-15)$, som er det samme uttrykket.)</p><p><strong>Steg 4 — løs $V'(x) = 0$.</strong></p>$$30 - 2x = 0 \\ \\Rightarrow \\ x = 15 \\qquad \\text{eller} \\qquad 30 - 6x = 0 \\ \\Rightarrow \\ x = 5$$<p>Løsningen $x = 15$ ligger utenfor definisjonsmengden — da har du klippet bort hele bunnen. Bare $x = 5$ er aktuell.</p><p><strong>Steg 5 — er det virkelig et maksimum?</strong> For $0 < x < 5$ er både $(30-2x) > 0$ og $(30-6x) > 0$, så $V' > 0$. For $5 < x < 15$ er $(30-2x) > 0$, men $(30-6x) < 0$, så $V' < 0$. $V'$ skifter fra $+$ til $-$, altså har $V$ toppunkt for $x = 5$. Kontroll med den andrederiverte: $V''(x) = 24x - 240$, og $V''(5) = 120 - 240 = -120 < 0$.</p><p><strong>Steg 6 — svar med enheter.</strong></p>$$V(5) = 5 \\cdot (30 - 2 \\cdot 5)^2 = 5 \\cdot 20^2 = 5 \\cdot 400 = 2000$$<p>Du skal klippe bort kvadrater med sider $5$ cm. Esken blir da $20\\ \\text{cm} \\times 20\\ \\text{cm} \\times 5\\ \\text{cm}$, og volumet blir størst mulig: $2000\\ \\text{cm}^3$, altså $2$ liter.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Volumet V(x) = x(30 − 2x)²",
+          "forklaring": "Hjelpelinjene viser toppen: x = 5 gir V = 2000. Den andre løsningen av V'(x) = 0 er x = 15, men der er volumet null — hele bunnen er klippet bort — og x = 15 ligger utenfor definisjonsmengden.",
+          "xmin": 0,
+          "xmax": 18,
+          "ymin": 0,
+          "ymax": 2300,
+          "xlabel": "x (cm)",
+          "ylabel": "V (cm³)",
+          "kurver": [
+            {
+              "uttrykk": "x*(30-2*x)^2",
+              "navn": "V",
+              "farge": 1
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                2,
+                2000
+              ],
+              "til": [
+                8.6,
+                2000
+              ],
+              "navn": "V' = 0",
+              "farge": 2,
+              "merkeplass": 0.9
+            }
+          ],
+          "punkter": [
+            {
+              "x": 5,
+              "y": 2000,
+              "navn": "(5, 2000)",
+              "hjelpelinjer": true
+            },
+            {
+              "x": 15,
+              "y": 0,
+              "navn": "V(15) = 0"
+            }
+          ]
+        }
       },
       {
         "tittel": "Optimering med eksponentialfunksjon: medisin i blodet",
@@ -84,7 +296,6 @@
         "losning": "<p><strong>Steg 1 — deriver.</strong> Vi bruker produktregelen med $u = 5t$ og $v = e^{-0{,}5t}$. Kjernen er $-0{,}5t$, så $v' = -0{,}5 e^{-0{,}5t}$:</p>$$C'(t) = 5 e^{-0{,}5t} + 5t \\cdot \\left(-0{,}5 e^{-0{,}5t}\\right) = e^{-0{,}5t}\\left(5 - 2{,}5t\\right)$$<p><strong>Steg 2 — stasjonære punkter.</strong> En eksponentialfunksjon er alltid positiv, så $e^{-0{,}5t}$ kan aldri bli null. Da må den andre faktoren være null:</p>$$5 - 2{,}5t = 0 \\ \\Rightarrow \\ t = \\frac{5}{2{,}5} = 2$$<p><strong>Steg 3 — toppunkt eller bunnpunkt?</strong> Fortegnet til $C'$ bestemmes helt av $5 - 2{,}5t$, siden $e^{-0{,}5t} > 0$ alltid. Denne er positiv for $t < 2$ og negativ for $t > 2$, så $C'$ skifter fra $+$ til $-$: konsentrasjonen stiger de to første timene og synker etterpå. Vi har toppunkt for $t = 2$.</p><p><strong>Steg 4 — maksimalverdien.</strong></p>$$C(2) = 5 \\cdot 2 \\cdot e^{-0{,}5 \\cdot 2} = 10 e^{-1} \\approx 10 \\cdot 0{,}368 = 3{,}68$$<p>Konsentrasjonen er høyest etter $2$ timer, og maksimalverdien er ca. $3{,}7\\ \\text{mg/L}$.</p><p><strong>Steg 5 — når synker den raskest?</strong> Raskest fall betyr at $C'$ er på sitt minste, og et ekstremalpunkt for $C'$ finner vi der $C'' = 0$ og krumningen skifter. Vi deriverer $C'(t) = e^{-0{,}5t}(5 - 2{,}5t)$ med produktregelen igjen:</p>$$C''(t) = -0{,}5 e^{-0{,}5t}(5 - 2{,}5t) + e^{-0{,}5t} \\cdot (-2{,}5)$$$$C''(t) = e^{-0{,}5t}\\left(-2{,}5 + 1{,}25t - 2{,}5\\right) = e^{-0{,}5t}\\left(1{,}25t - 5\\right)$$<p>Dette er null når $1{,}25t = 5$, altså $t = 4$. Faktoren $1{,}25t - 5$ er negativ for $t < 4$ og positiv for $t > 4$, så krumningen skifter og $t = 4$ gir et vendepunkt. Der er fallet brattest:</p>$$C(4) = 5 \\cdot 4 \\cdot e^{-2} = 20 e^{-2} \\approx 2{,}71$$$$C'(4) = e^{-2}(5 - 2{,}5 \\cdot 4) = -5 e^{-2} \\approx -0{,}68$$<p>Etter $4$ timer er konsentrasjonen ca. $2{,}7\\ \\text{mg/L}$, og den synker med ca. $0{,}68$ mg/L per time — det raskeste fallet i hele forløpet.</p><p><strong>Kontroll:</strong> $C''(2) = e^{-1}(1{,}25 \\cdot 2 - 5) = -2{,}5 e^{-1} \\approx -0{,}92 < 0$, som bekrefter at $t = 2$ gir toppunkt.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å svare med $x$-verdien når oppgaven spør om maksimalverdien. Er toppunktet $(2, 7)$, er maksimalverdien $7$ — $2$ er maksimalpunktet.",
       "Å tro at $f'(a) = 0$ alltid betyr topp- eller bunnpunkt. Det kan være et terrassepunkt, som i $f'(x) = 3(x-2)^2$.",
@@ -93,7 +304,6 @@
       "Å glemme endepunktene når du skal finne største eller minste verdi på et lukket intervall. Ytterpunktene er ofte svaret.",
       "I optimering: å godta en løsning av $f'(x) = 0$ som ligger utenfor definisjonsmengden, for eksempel $x = 15$ når esken krever $0 < x < 15$."
     ],
-
     "tips": [
       "Faktoriser $f'$ helt før du lager fortegnslinja. Med $f'(x) = 3(x-3)(x+1)$ leser du av fortegnene uten kalkulator, mens $3x^2 - 6x - 9$ tvinger deg til å teste verdier.",
       "Skriv fortegnslinja som en liten tabell med én rad per faktor og en konklusjonsrad. Sensor gir poeng for begrunnelsen — «$f'$ skifter fra positiv til negativ» — ikke bare for svaret.",
@@ -102,25 +312,68 @@
       "Avslutt alltid med en setning som svarer på spørsmålet, med enhet: «Volumet er størst når $x = 5$ cm, og da er volumet 2000 cm³.»"
     ]
   },
-
   "begreper": [
-    { "begrep": "Voksende funksjon", "forklaring": "En funksjon der grafen stiger når $x$ øker. Kjennetegnet er at $f'(x) > 0$ i hele intervallet." },
-    { "begrep": "Avtagende funksjon", "forklaring": "En funksjon der grafen synker når $x$ øker, altså der $f'(x) < 0$ i hele intervallet." },
-    { "begrep": "Monotoniegenskaper", "forklaring": "Oversikten over hvilke intervaller en funksjon er voksende og avtagende i." },
-    { "begrep": "Fortegnslinje", "forklaring": "En tabell eller linje der du markerer fortegnet til hver faktor i $f'$ (eller $f''$) og ganger fortegnene sammen for å se hvor uttrykket er positivt og negativt." },
-    { "begrep": "Stasjonært punkt", "forklaring": "Et punkt der $f'(x) = 0$, slik at tangenten er vannrett. Kan være toppunkt, bunnpunkt eller terrassepunkt." },
-    { "begrep": "Toppunkt", "forklaring": "Punktet $(a, f(a))$ på grafen der $f'$ skifter fra positiv til negativ, altså der funksjonen går fra å vokse til å avta." },
-    { "begrep": "Bunnpunkt", "forklaring": "Punktet $(a, f(a))$ på grafen der $f'$ skifter fra negativ til positiv." },
-    { "begrep": "Terrassepunkt", "forklaring": "Et stasjonært punkt der $f'$ har samme fortegn på begge sider. Grafen flater ut, men fortsetter i samme retning." },
-    { "begrep": "Ekstremalpunkt", "forklaring": "$x$-verdien til et maksimum eller minimum, altså maksimalpunktet eller minimalpunktet." },
-    { "begrep": "Ekstremalverdi", "forklaring": "Funksjonsverdien $f(a)$ i et ekstremalpunkt — maksimalverdien eller minimalverdien." },
-    { "begrep": "Den andrederiverte", "forklaring": "Funksjonen $f''$ du får ved å derivere $f'$ en gang til. Den måler hvor raskt stigningstallet endrer seg." },
-    { "begrep": "Krumning", "forklaring": "Hvilken vei grafen bøyer seg. $f''(x) > 0$ gir krumning oppover (hul side opp), $f''(x) < 0$ krumning nedover." },
-    { "begrep": "Vendepunkt", "forklaring": "Et punkt der krumningen skifter retning. Der må $f''(x) = 0$, og $f''$ må skifte fortegn." },
-    { "begrep": "Vendetangent", "forklaring": "Tangenten til grafen i et vendepunkt." },
-    { "begrep": "Bibetingelse", "forklaring": "Den faste sammenhengen i en optimeringsoppgave (gitt omkrets, areal eller volum) som du bruker til å redusere målfunksjonen til én variabel." }
+    {
+      "begrep": "Voksende funksjon",
+      "forklaring": "En funksjon der grafen stiger når $x$ øker. Kjennetegnet er at $f'(x) > 0$ i hele intervallet."
+    },
+    {
+      "begrep": "Avtagende funksjon",
+      "forklaring": "En funksjon der grafen synker når $x$ øker, altså der $f'(x) < 0$ i hele intervallet."
+    },
+    {
+      "begrep": "Monotoniegenskaper",
+      "forklaring": "Oversikten over hvilke intervaller en funksjon er voksende og avtagende i."
+    },
+    {
+      "begrep": "Fortegnslinje",
+      "forklaring": "En tabell eller linje der du markerer fortegnet til hver faktor i $f'$ (eller $f''$) og ganger fortegnene sammen for å se hvor uttrykket er positivt og negativt."
+    },
+    {
+      "begrep": "Stasjonært punkt",
+      "forklaring": "Et punkt der $f'(x) = 0$, slik at tangenten er vannrett. Kan være toppunkt, bunnpunkt eller terrassepunkt."
+    },
+    {
+      "begrep": "Toppunkt",
+      "forklaring": "Punktet $(a, f(a))$ på grafen der $f'$ skifter fra positiv til negativ, altså der funksjonen går fra å vokse til å avta."
+    },
+    {
+      "begrep": "Bunnpunkt",
+      "forklaring": "Punktet $(a, f(a))$ på grafen der $f'$ skifter fra negativ til positiv."
+    },
+    {
+      "begrep": "Terrassepunkt",
+      "forklaring": "Et stasjonært punkt der $f'$ har samme fortegn på begge sider. Grafen flater ut, men fortsetter i samme retning."
+    },
+    {
+      "begrep": "Ekstremalpunkt",
+      "forklaring": "$x$-verdien til et maksimum eller minimum, altså maksimalpunktet eller minimalpunktet."
+    },
+    {
+      "begrep": "Ekstremalverdi",
+      "forklaring": "Funksjonsverdien $f(a)$ i et ekstremalpunkt — maksimalverdien eller minimalverdien."
+    },
+    {
+      "begrep": "Den andrederiverte",
+      "forklaring": "Funksjonen $f''$ du får ved å derivere $f'$ en gang til. Den måler hvor raskt stigningstallet endrer seg."
+    },
+    {
+      "begrep": "Krumning",
+      "forklaring": "Hvilken vei grafen bøyer seg. $f''(x) > 0$ gir krumning oppover (hul side opp), $f''(x) < 0$ krumning nedover."
+    },
+    {
+      "begrep": "Vendepunkt",
+      "forklaring": "Et punkt der krumningen skifter retning. Der må $f''(x) = 0$, og $f''$ må skifte fortegn."
+    },
+    {
+      "begrep": "Vendetangent",
+      "forklaring": "Tangenten til grafen i et vendepunkt."
+    },
+    {
+      "begrep": "Bibetingelse",
+      "forklaring": "Den faste sammenhengen i en optimeringsoppgave (gitt omkrets, areal eller volum) som du bruker til å redusere målfunksjonen til én variabel."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "For en funksjon $f$ er $f'(x) = 3(x-2)(x+4)$. I hvilket intervall er $f$ avtagende?",
@@ -146,7 +399,12 @@
     },
     {
       "sporsmal": "Det er gitt at $f'(2) = 0$ og $f''(2) = -6$. Hva har grafen til $f$ i $x = 2$?",
-      "alternativer": ["Toppunkt", "Bunnpunkt", "Terrassepunkt", "Vendepunkt"],
+      "alternativer": [
+        "Toppunkt",
+        "Bunnpunkt",
+        "Terrassepunkt",
+        "Vendepunkt"
+      ],
       "riktig": 0,
       "forklaring": "Vannrett tangent ($f'(2) = 0$) kombinert med negativ andrederivert betyr at grafen krummer nedover i punktet, og da er det et toppunkt. Vendepunkt (alternativ D) krever at $f''$ er null og skifter fortegn, men her er $f''(2) = -6 \\ne 0$."
     },
@@ -174,13 +432,23 @@
     },
     {
       "sporsmal": "Hva er den største verdien til $f(x) = x^3 - 3x$ i intervallet $[0, 3]$?",
-      "alternativer": ["$-2$", "$0$", "$2$", "$18$"],
+      "alternativer": [
+        "$-2$",
+        "$0$",
+        "$2$",
+        "$18$"
+      ],
       "riktig": 3,
       "forklaring": "$f'(x) = 3x^2 - 3 = 3(x-1)(x+1)$, så det eneste stasjonære punktet i intervallet er $x = 1$ med $f(1) = -2$ — men det er et bunnpunkt. Kandidatene til største verdi er endepunktene: $f(0) = 0$ og $f(3) = 27 - 9 = 18$. Største verdi er $18$. Alternativ A er hva du får hvis du bare ser på det stasjonære punktet og glemmer endepunktene."
     },
     {
       "sporsmal": "Et rektangel har omkrets $40$ cm. Hvilke sidelengder gir størst areal?",
-      "alternativer": ["$5$ cm og $15$ cm", "$8$ cm og $12$ cm", "$10$ cm og $10$ cm", "$1$ cm og $19$ cm"],
+      "alternativer": [
+        "$5$ cm og $15$ cm",
+        "$8$ cm og $12$ cm",
+        "$10$ cm og $10$ cm",
+        "$1$ cm og $19$ cm"
+      ],
       "riktig": 2,
       "forklaring": "Bibetingelsen $2x + 2y = 40$ gir $y = 20 - x$, så $A(x) = x(20-x) = 20x - x^2$. Da er $A'(x) = 20 - 2x$, som er null for $x = 10$. $A'$ skifter fra positiv til negativ, så det er et maksimum, og $y = 20 - 10 = 10$: kvadratet er best, med areal $100\\ \\text{cm}^2$. De andre alternativene har riktig omkrets, men mindre areal ($75$, $96$ og $19\\ \\text{cm}^2$)."
     },
@@ -197,19 +465,34 @@
     },
     {
       "sporsmal": "Hva er den minste verdien til $f(x) = x + \\frac{9}{x}$ for $x > 0$?",
-      "alternativer": ["$3$", "$6$", "$9$", "$10$"],
+      "alternativer": [
+        "$3$",
+        "$6$",
+        "$9$",
+        "$10$"
+      ],
       "riktig": 1,
       "forklaring": "Skriv $f(x) = x + 9x^{-1}$, så $f'(x) = 1 - \\frac{9}{x^2}$. Likningen $f'(x) = 0$ gir $x^2 = 9$, altså $x = 3$ (siden $x > 0$). $f'$ er negativ for $0 < x < 3$ og positiv for $x > 3$, så $x = 3$ er minimalpunktet. Minimalverdien er $f(3) = 3 + \\frac{9}{3} = 3 + 3 = 6$. Alternativ A er den klassiske feilen: å svare med $x$-verdien i stedet for funksjonsverdien."
     },
     {
       "sporsmal": "Hvor mange stasjonære punkter kan grafen til en tredjegradsfunksjon ha?",
-      "alternativer": ["Alltid to", "Alltid ett", "Minst ett, men maksimalt tre", "Null, ett eller to"],
+      "alternativer": [
+        "Alltid to",
+        "Alltid ett",
+        "Minst ett, men maksimalt tre",
+        "Null, ett eller to"
+      ],
       "riktig": 3,
       "forklaring": "$f'$ er en andregradsfunksjon, og en andregradslikning har null, én eller to løsninger. Ett stasjonært punkt betyr terrassepunkt (dobbelt nullpunkt), og ingen stasjonære punkter er også mulig — for $f(x) = x^3 + x$ er $f'(x) = 3x^2 + 1$, som aldri blir null. Derfor er både «alltid to», «alltid ett» og «minst ett» gale påstander."
     },
     {
       "sporsmal": "Grafen til $f$ har toppunkt i $(2, 7)$. Hva er maksimalverdien til $f$?",
-      "alternativer": ["$7$", "$x = 2$", "$14$", "$5$"],
+      "alternativer": [
+        "$7$",
+        "$x = 2$",
+        "$14$",
+        "$5$"
+      ],
       "riktig": 0,
       "forklaring": "Maksimalverdien er funksjonsverdien, altså $y$-koordinaten $7$. $x$-verdien $2$ (alternativ B) er maksimalpunktet — det er verdt å lese oppgaveteksten nøye, for «punkt» og «verdi» betyr to ulike ting i dette kapittelet."
     },
@@ -225,23 +508,70 @@
       "forklaring": "På fortegnslinja markerer du både nullpunktene til $f'$ og alle $x$-verdier der $f'$ ikke er definert. Telleren gir $x = 2$ (der $f'$ er null), og nevneren gir bruddpunktet $x = -1$, som markeres med en loddrett strek. Merk likevel at $(x+1)^2$ er positiv på begge sider, så fortegnet til $f'$ skifter bare i $x = 2$ — bruddpunktet må stå der, men gir ikke fortegnsskifte."
     }
   ],
-
   "flashcards": [
-    { "front": "Når er $f$ voksende?", "bak": "Når $f'(x) > 0$ i hele intervallet. Det er fortegnet til $f'$ som avgjør, ikke størrelsen." },
-    { "front": "Hva er et stasjonært punkt?", "bak": "Et punkt der $f'(x) = 0$, altså der tangenten til grafen er vannrett." },
-    { "front": "Fortegn til $f'$ i et toppunkt", "bak": "Skifter fra $+$ til $-$ (grafen går fra å stige til å synke)." },
-    { "front": "Fortegn til $f'$ i et bunnpunkt", "bak": "Skifter fra $-$ til $+$." },
-    { "front": "Fortegn til $f'$ i et terrassepunkt", "bak": "Samme fortegn på begge sider: $+, 0, +$ eller $-, 0, -$. $f'$ har et dobbelt nullpunkt der." },
-    { "front": "Andrederiverttesten", "bak": "$f'(a) = 0$ og $f''(a) < 0$ gir toppunkt. $f'(a) = 0$ og $f''(a) > 0$ gir bunnpunkt. $f''(a) = 0$ gir ingen konklusjon — bruk fortegnslinja til $f'$." },
-    { "front": "Hva betyr $f''(x) > 0$?", "bak": "At $f'$ er voksende, og at grafen krummer oppover (hul side opp). $f$ selv kan godt være avtagende." },
-    { "front": "Betingelse for vendepunkt i $x = a$", "bak": "$f''(a) = 0$ OG $f''$ må skifte fortegn i $a$. Bare $f''(a) = 0$ er ikke nok — se $f(x) = x^4$ i $x=0$." },
-    { "front": "Ekstremalpunkt eller ekstremalverdi?", "bak": "Ekstremalpunktet er $x$-verdien, ekstremalverdien er $f$-verdien, og toppunktet/bunnpunktet er koordinatparet $(a, f(a))$." },
-    { "front": "Slik finner du største verdi i $[a, b]$", "bak": "Regn ut $f$ i alle stasjonære punkter inne i intervallet og i endepunktene $a$ og $b$, og sammenlign verdiene." },
-    { "front": "Oppskrift for optimering", "bak": "Målfunksjon $\\rightarrow$ bruk bibetingelsen til å få én variabel $\\rightarrow$ definisjonsmengde $\\rightarrow$ løs $f'(x)=0$ $\\rightarrow$ begrunn maks/min $\\rightarrow$ svar med enhet." },
-    { "front": "Hva er en bibetingelse?", "bak": "Den faste opplysningen i oppgaven (omkrets, areal, volum, pris) som du bruker for å kvitte deg med den ene av to ukjente." },
-    { "front": "Hva er en vendetangent?", "bak": "Tangenten i vendepunktet: $y = f'(a)(x-a) + f(a)$ der $a$ er vendepunktets $x$-verdi. For en tredjegradsfunksjon har $f'$ sitt eget ekstremalpunkt her." },
-    { "front": "Hvor ligger vendepunktet til en tredjegradsfunksjon med topp- og bunnpunkt?", "bak": "Midt mellom dem: $x = \\frac{x_1 + x_2}{2}$." },
-    { "front": "Hvorfor kan $e^{kx}$ aldri gi fortegnsskifte i en fortegnslinje?", "bak": "Fordi en eksponentialfunksjon er positiv for alle $x$. Fortegnet til uttrykket bestemmes av de andre faktorene." },
-    { "front": "Posisjon, fart og akselerasjon", "bak": "$v(t) = s'(t)$ og $a(t) = v'(t) = s''(t)$ — akselerasjonen er den andrederiverte av posisjonen." }
+    {
+      "front": "Når er $f$ voksende?",
+      "bak": "Når $f'(x) > 0$ i hele intervallet. Det er fortegnet til $f'$ som avgjør, ikke størrelsen."
+    },
+    {
+      "front": "Hva er et stasjonært punkt?",
+      "bak": "Et punkt der $f'(x) = 0$, altså der tangenten til grafen er vannrett."
+    },
+    {
+      "front": "Fortegn til $f'$ i et toppunkt",
+      "bak": "Skifter fra $+$ til $-$ (grafen går fra å stige til å synke)."
+    },
+    {
+      "front": "Fortegn til $f'$ i et bunnpunkt",
+      "bak": "Skifter fra $-$ til $+$."
+    },
+    {
+      "front": "Fortegn til $f'$ i et terrassepunkt",
+      "bak": "Samme fortegn på begge sider: $+, 0, +$ eller $-, 0, -$. $f'$ har et dobbelt nullpunkt der."
+    },
+    {
+      "front": "Andrederiverttesten",
+      "bak": "$f'(a) = 0$ og $f''(a) < 0$ gir toppunkt. $f'(a) = 0$ og $f''(a) > 0$ gir bunnpunkt. $f''(a) = 0$ gir ingen konklusjon — bruk fortegnslinja til $f'$."
+    },
+    {
+      "front": "Hva betyr $f''(x) > 0$?",
+      "bak": "At $f'$ er voksende, og at grafen krummer oppover (hul side opp). $f$ selv kan godt være avtagende."
+    },
+    {
+      "front": "Betingelse for vendepunkt i $x = a$",
+      "bak": "$f''(a) = 0$ OG $f''$ må skifte fortegn i $a$. Bare $f''(a) = 0$ er ikke nok — se $f(x) = x^4$ i $x=0$."
+    },
+    {
+      "front": "Ekstremalpunkt eller ekstremalverdi?",
+      "bak": "Ekstremalpunktet er $x$-verdien, ekstremalverdien er $f$-verdien, og toppunktet/bunnpunktet er koordinatparet $(a, f(a))$."
+    },
+    {
+      "front": "Slik finner du største verdi i $[a, b]$",
+      "bak": "Regn ut $f$ i alle stasjonære punkter inne i intervallet og i endepunktene $a$ og $b$, og sammenlign verdiene."
+    },
+    {
+      "front": "Oppskrift for optimering",
+      "bak": "Målfunksjon $\\rightarrow$ bruk bibetingelsen til å få én variabel $\\rightarrow$ definisjonsmengde $\\rightarrow$ løs $f'(x)=0$ $\\rightarrow$ begrunn maks/min $\\rightarrow$ svar med enhet."
+    },
+    {
+      "front": "Hva er en bibetingelse?",
+      "bak": "Den faste opplysningen i oppgaven (omkrets, areal, volum, pris) som du bruker for å kvitte deg med den ene av to ukjente."
+    },
+    {
+      "front": "Hva er en vendetangent?",
+      "bak": "Tangenten i vendepunktet: $y = f'(a)(x-a) + f(a)$ der $a$ er vendepunktets $x$-verdi. For en tredjegradsfunksjon har $f'$ sitt eget ekstremalpunkt her."
+    },
+    {
+      "front": "Hvor ligger vendepunktet til en tredjegradsfunksjon med topp- og bunnpunkt?",
+      "bak": "Midt mellom dem: $x = \\frac{x_1 + x_2}{2}$."
+    },
+    {
+      "front": "Hvorfor kan $e^{kx}$ aldri gi fortegnsskifte i en fortegnslinje?",
+      "bak": "Fordi en eksponentialfunksjon er positiv for alle $x$. Fortegnet til uttrykket bestemmes av de andre faktorene."
+    },
+    {
+      "front": "Posisjon, fart og akselerasjon",
+      "bak": "$v(t) = s'(t)$ og $a(t) = v'(t) = s''(t)$ — akselerasjonen er den andrederiverte av posisjonen."
+    }
   ]
 }

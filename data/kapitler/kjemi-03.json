@@ -28,7 +28,7 @@
       { "navn": "Stoffmengde i en løsning", "latex": "n = c \\cdot V" },
       { "navn": "Fortynning", "latex": "c_1 V_1 = c_2 V_2" },
       { "navn": "Gassvolum", "latex": "V = n \\cdot V_m" },
-      { "navn": "Molart volum", "latex": "V_m = 22{,}4\\ \\text{L/mol}\\ (0\\,^\\circ\\text{C},\\ 101{,}3\\ \\text{kPa}) \\qquad V_m = 24{,}5\\ \\text{L/mol}\\ (25\\,^\\circ\\text{C})" },
+      { "navn": "Molart volum", "latex": "V_m = 22{,}4\\ \\text{L/mol}\\ (0\\,{}^\\circ\\text{C},\\ 101{,}3\\ \\text{kPa}) \\qquad V_m = 24{,}5\\ \\text{L/mol}\\ (25\\,{}^\\circ\\text{C})" },
       { "navn": "Den ideelle gasslikningen", "latex": "pV = nRT, \\qquad R = 8{,}314\\ \\text{J/(K}\\cdot\\text{mol)}" },
       { "navn": "Prosentvis utbytte", "latex": "\\text{utbytte} = \\frac{\\text{praktisk utbytte}}{\\text{teoretisk utbytte}} \\cdot 100\\,\\%" }
     ]

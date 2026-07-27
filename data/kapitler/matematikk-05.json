@@ -3,7 +3,6 @@
   "nr": 5,
   "tittel": "Omvendte funksjoner",
   "intro": "Omvendte funksjoner handler om å regne baklengs: tar $f$ deg fra $x$ til $y$, tar den omvendte funksjonen deg fra $y$ tilbake til $x$. Her ser du hvilke funksjoner som kan reverseres, hvordan de to grafene henger sammen, og hvorfor $\\sqrt{x}$ og $\\ln x$ egentlig bare er $x^2$ og $e^x$ lest baklengs.",
-
   "kompakt": {
     "punkter": [
       "En funksjon er en-entydig (injektiv) når to ulike x-verdier aldri gir samme funksjonsverdi: $f(x_1)=f(x_2) \\Rightarrow x_1 = x_2$.",
@@ -18,32 +17,194 @@
       "Speiling snur stigningstallet: $\\left(f^{-1}\\right)'(x) = \\frac{1}{f'\\left(f^{-1}(x)\\right)}$."
     ],
     "formler": [
-      { "navn": "En-entydig funksjon", "latex": "f(x_1) = f(x_2) \\ \\Rightarrow \\ x_1 = x_2" },
-      { "navn": "Omvendt funksjon", "latex": "f^{-1}(f(x)) = x, \\qquad f\\left(f^{-1}(x)\\right) = x" },
-      { "navn": "Definisjons- og verdimengde", "latex": "D_{f^{-1}} = V_f, \\qquad V_{f^{-1}} = D_f" },
-      { "navn": "Speiling om linja $y=x$", "latex": "f(a) = b \\ \\Longleftrightarrow \\ f^{-1}(b) = a" },
-      { "navn": "Kvadratrot", "latex": "\\sqrt{x^2} = |x|, \\qquad \\left(\\sqrt{x}\\right)^2 = x \\quad (x \\ge 0)" },
-      { "navn": "n-te rot som potens", "latex": "\\sqrt[n]{x} = x^{\\frac{1}{n}} \\quad (x \\ge 0)" },
-      { "navn": "Derivert av kvadratrot", "latex": "\\left(\\sqrt{x}\\right)' = \\frac{1}{2\\sqrt{x}}" },
-      { "navn": "Derivert av rotfunksjon generelt", "latex": "\\left(x^{\\frac{1}{n}}\\right)' = \\frac{1}{n} x^{\\frac{1}{n} - 1}" },
-      { "navn": "e og ln er omvendte", "latex": "\\ln\\left(e^{x}\\right) = x, \\qquad e^{\\ln x} = x \\quad (x > 0)" },
-      { "navn": "Eksponentiallikning", "latex": "e^{kx} = c \\ \\Longleftrightarrow \\ x = \\frac{\\ln c}{k} \\quad (c > 0)" },
-      { "navn": "Logaritmelikning", "latex": "\\ln x = c \\ \\Longleftrightarrow \\ x = e^{c}" },
-      { "navn": "Vilkårlig grunntall", "latex": "a^{x} = e^{x \\ln a} \\quad (a > 0)" },
-      { "navn": "Derivert av omvendt funksjon", "latex": "\\left(f^{-1}\\right)'(x) = \\frac{1}{f'\\left(f^{-1}(x)\\right)}" },
-      { "navn": "Derivert i et punkt", "latex": "f(a) = b \\ \\Rightarrow \\ \\left(f^{-1}\\right)'(b) = \\frac{1}{f'(a)}, \\quad f'(a) \\neq 0" }
-    ]
+      {
+        "navn": "En-entydig funksjon",
+        "latex": "f(x_1) = f(x_2) \\ \\Rightarrow \\ x_1 = x_2"
+      },
+      {
+        "navn": "Omvendt funksjon",
+        "latex": "f^{-1}(f(x)) = x, \\qquad f\\left(f^{-1}(x)\\right) = x"
+      },
+      {
+        "navn": "Definisjons- og verdimengde",
+        "latex": "D_{f^{-1}} = V_f, \\qquad V_{f^{-1}} = D_f"
+      },
+      {
+        "navn": "Speiling om linja $y=x$",
+        "latex": "f(a) = b \\ \\Longleftrightarrow \\ f^{-1}(b) = a"
+      },
+      {
+        "navn": "Kvadratrot",
+        "latex": "\\sqrt{x^2} = |x|, \\qquad \\left(\\sqrt{x}\\right)^2 = x \\quad (x \\ge 0)"
+      },
+      {
+        "navn": "n-te rot som potens",
+        "latex": "\\sqrt[n]{x} = x^{\\frac{1}{n}} \\quad (x \\ge 0)"
+      },
+      {
+        "navn": "Derivert av kvadratrot",
+        "latex": "\\left(\\sqrt{x}\\right)' = \\frac{1}{2\\sqrt{x}}"
+      },
+      {
+        "navn": "Derivert av rotfunksjon generelt",
+        "latex": "\\left(x^{\\frac{1}{n}}\\right)' = \\frac{1}{n} x^{\\frac{1}{n} - 1}"
+      },
+      {
+        "navn": "e og ln er omvendte",
+        "latex": "\\ln\\left(e^{x}\\right) = x, \\qquad e^{\\ln x} = x \\quad (x > 0)"
+      },
+      {
+        "navn": "Eksponentiallikning",
+        "latex": "e^{kx} = c \\ \\Longleftrightarrow \\ x = \\frac{\\ln c}{k} \\quad (c > 0)"
+      },
+      {
+        "navn": "Logaritmelikning",
+        "latex": "\\ln x = c \\ \\Longleftrightarrow \\ x = e^{c}"
+      },
+      {
+        "navn": "Vilkårlig grunntall",
+        "latex": "a^{x} = e^{x \\ln a} \\quad (a > 0)"
+      },
+      {
+        "navn": "Derivert av omvendt funksjon",
+        "latex": "\\left(f^{-1}\\right)'(x) = \\frac{1}{f'\\left(f^{-1}(x)\\right)}"
+      },
+      {
+        "navn": "Derivert i et punkt",
+        "latex": "f(a) = b \\ \\Rightarrow \\ \\left(f^{-1}\\right)'(b) = \\frac{1}{f'(a)}, \\quad f'(a) \\neq 0"
+      }
+    ],
+    "figur": {
+      "type": "graf",
+      "tittel": "e^x og ln x er speilbilder om linja y = x",
+      "forklaring": "Punktet (0, 1) på grafen til e^x svarer til (1, 0) på grafen til ln x — koordinatene bytter plass. Der den ene er bratt, er den andre slak, og x-aksen som er asymptote for e^x, er blitt y-aksen for ln x.",
+      "xmin": -2.6,
+      "xmax": 5.8,
+      "ymin": -2.6,
+      "ymax": 4.4,
+      "kurver": [
+        {
+          "uttrykk": "exp(x)",
+          "navn": "e^x",
+          "farge": 1
+        },
+        {
+          "uttrykk": "ln(x)",
+          "navn": "ln x",
+          "farge": 2
+        }
+      ],
+      "linjer": [
+        {
+          "fra": [
+            -2.6,
+            -2.6
+          ],
+          "til": [
+            4.4,
+            4.4
+          ],
+          "navn": "y = x",
+          "farge": 3,
+          "merkeplass": 0.72
+        }
+      ],
+      "punkter": [
+        {
+          "x": 0,
+          "y": 1,
+          "navn": "(0, 1)"
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "navn": "(1, 0)",
+          "plassering": "under"
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
         "tittel": "En-entydige (injektive) funksjoner",
-        "html": "<p>En funksjon er <strong>en-entydig</strong> (injektiv) dersom to ulike x-verdier aldri gir samme funksjonsverdi. Med symboler:</p>$$f(x_1) = f(x_2) \\quad \\Rightarrow \\quad x_1 = x_2$$<p>Grafisk finnes en enkel test. Legg en <strong>vannrett linje</strong> hvor som helst i koordinatsystemet: er funksjonen en-entydig, treffer linja grafen høyst én gang. Grafen til $f(x)=x^2$ stryker på testen, for linja $y=4$ treffer grafen både i $x=-2$ og $x=2$, siden $f(-2) = f(2) = 4$. Grafen til $f(x)=x^3$ klarer testen.</p><p>En snarvei som er gull verdt på prøver: er $f$ <strong>strengt voksende</strong> i hele definisjonsmengden, må den være en-entydig — funksjonsverdien rekker aldri tilbake til en verdi den har hatt før. Det samme gjelder strengt avtakende funksjoner. Og monotoni undersøker du med den deriverte fra kapittel 3: er $f'(x) > 0$ for alle $x$ i $D_f$, er $f$ strengt voksende, og er $f'(x) < 0$ overalt, er $f$ strengt avtakende.</p><p>Hvorfor bry seg om dette? Fordi bare en-entydige funksjoner kan reverseres. Skal du finne $x$ når du vet at $f(x) = 4$, og både $x=-2$ og $x=2$ passer, finnes det ikke <em>ett</em> entydig svar — og da kan vi ikke lage en ny funksjon som gir svaret. Er funksjonen ikke en-entydig, kan du likevel redde situasjonen ved å <strong>innskrenke definisjonsmengden</strong> til et område der grafen bare stiger, eller bare synker.</p>"
+        "html": "<p>En funksjon er <strong>en-entydig</strong> (injektiv) dersom to ulike x-verdier aldri gir samme funksjonsverdi. Med symboler:</p>$$f(x_1) = f(x_2) \\quad \\Rightarrow \\quad x_1 = x_2$$<p>Grafisk finnes en enkel test. Legg en <strong>vannrett linje</strong> hvor som helst i koordinatsystemet: er funksjonen en-entydig, treffer linja grafen høyst én gang. Grafen til $f(x)=x^2$ stryker på testen, for linja $y=4$ treffer grafen både i $x=-2$ og $x=2$, siden $f(-2) = f(2) = 4$. Grafen til $f(x)=x^3$ klarer testen.</p><p>En snarvei som er gull verdt på prøver: er $f$ <strong>strengt voksende</strong> i hele definisjonsmengden, må den være en-entydig — funksjonsverdien rekker aldri tilbake til en verdi den har hatt før. Det samme gjelder strengt avtakende funksjoner. Og monotoni undersøker du med den deriverte fra kapittel 3: er $f'(x) > 0$ for alle $x$ i $D_f$, er $f$ strengt voksende, og er $f'(x) < 0$ overalt, er $f$ strengt avtakende.</p><p>Hvorfor bry seg om dette? Fordi bare en-entydige funksjoner kan reverseres. Skal du finne $x$ når du vet at $f(x) = 4$, og både $x=-2$ og $x=2$ passer, finnes det ikke <em>ett</em> entydig svar — og da kan vi ikke lage en ny funksjon som gir svaret. Er funksjonen ikke en-entydig, kan du likevel redde situasjonen ved å <strong>innskrenke definisjonsmengden</strong> til et område der grafen bare stiger, eller bare synker.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Vannrett linje-test",
+          "forklaring": "Linja y = 4 treffer parabelen i to punkter, så to ulike x-verdier gir samme funksjonsverdi — da finnes det ingen entydig vei tilbake. Den samme linja treffer x³ bare én gang, og en slik funksjon kan reverseres.",
+          "xmin": -2.4,
+          "xmax": 2.4,
+          "ymin": -2,
+          "ymax": 6.4,
+          "kurver": [
+            {
+              "uttrykk": "x^2",
+              "navn": "x²",
+              "farge": 1
+            },
+            {
+              "uttrykk": "x^3",
+              "navn": "x³",
+              "farge": 2
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                -2.4,
+                4
+              ],
+              "til": [
+                2.4,
+                4
+              ],
+              "navn": "y = 4",
+              "farge": 3,
+              "merkeplass": 0.45
+            }
+          ],
+          "punkter": [
+            {
+              "x": -2,
+              "y": 4,
+              "navn": "(−2, 4)"
+            },
+            {
+              "x": 2,
+              "y": 4,
+              "navn": "(2, 4)"
+            }
+          ]
+        }
       },
       {
         "tittel": "Den omvendte funksjonen",
-        "html": "<p>La $f$ være en-entydig. Den <strong>omvendte funksjonen</strong> $f^{-1}$ er funksjonen som gjør om det $f$ gjorde:</p>$$f^{-1}(f(x)) = x \\quad \\text{og} \\quad f\\left(f^{-1}(x)\\right) = x$$<p>Sender $f$ tallet 2 til 12, sender $f^{-1}$ tallet 12 tilbake til 2. Da må mengdene bytte plass, for det $f^{-1}$ kan ta inn, er nettopp det $f$ gir ut:</p>$$D_{f^{-1}} = V_f \\qquad \\text{og} \\qquad V_{f^{-1}} = D_f$$<p>Slik finner du uttrykket:</p><ol><li>Skriv $y = f(x)$.</li><li>Løs likningen for $x$, slik at $x$ står uttrykt ved $y$.</li><li>Bytt navn: kall den frie variabelen $x$ og funksjonen $f^{-1}$.</li><li>Oppgi definisjonsmengden — den er verdimengden til $f$.</li></ol><p>Prøv med $f(x) = 3x + 6$. Fra $y = 3x+6$ får vi $3x = y - 6$, altså $x = \\frac{y-6}{3}$, og dermed $f^{-1}(x) = \\frac{x-6}{3}$ med $D_{f^{-1}} = \\mathbb{R}$. Kontroll: $f(2) = 12$ og $f^{-1}(12) = \\frac{12-6}{3} = 2$.</p><p>En viktig advarsel om skrivemåten: $f^{-1}$ betyr <strong>ikke</strong> $\\frac{1}{f}$. Her er $-1$ bare et navn, ikke en eksponent. For funksjonen over er $f^{-1}(x) = \\frac{x-6}{3}$, mens $\\frac{1}{f(x)} = \\frac{1}{3x+6}$ — to helt forskjellige funksjoner.</p>"
+        "html": "<p>La $f$ være en-entydig. Den <strong>omvendte funksjonen</strong> $f^{-1}$ er funksjonen som gjør om det $f$ gjorde:</p>$$f^{-1}(f(x)) = x \\quad \\text{og} \\quad f\\left(f^{-1}(x)\\right) = x$$<p>Sender $f$ tallet 2 til 12, sender $f^{-1}$ tallet 12 tilbake til 2. Da må mengdene bytte plass, for det $f^{-1}$ kan ta inn, er nettopp det $f$ gir ut:</p>$$D_{f^{-1}} = V_f \\qquad \\text{og} \\qquad V_{f^{-1}} = D_f$$<p>Slik finner du uttrykket:</p><ol><li>Skriv $y = f(x)$.</li><li>Løs likningen for $x$, slik at $x$ står uttrykt ved $y$.</li><li>Bytt navn: kall den frie variabelen $x$ og funksjonen $f^{-1}$.</li><li>Oppgi definisjonsmengden — den er verdimengden til $f$.</li></ol><p>Prøv med $f(x) = 3x + 6$. Fra $y = 3x+6$ får vi $3x = y - 6$, altså $x = \\frac{y-6}{3}$, og dermed $f^{-1}(x) = \\frac{x-6}{3}$ med $D_{f^{-1}} = \\mathbb{R}$. Kontroll: $f(2) = 12$ og $f^{-1}(12) = \\frac{12-6}{3} = 2$.</p><p>En viktig advarsel om skrivemåten: $f^{-1}$ betyr <strong>ikke</strong> $\\frac{1}{f}$. Her er $-1$ bare et navn, ikke en eksponent. For funksjonen over er $f^{-1}(x) = \\frac{x-6}{3}$, mens $\\frac{1}{f(x)} = \\frac{1}{3x+6}$ — to helt forskjellige funksjoner.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik finner du den omvendte funksjonen",
+          "forklaring": "Steg 3 er bare et navnebytte — all regning er ferdig i steg 2. Hopper du over steg 4, er svaret halvferdig, for den omvendte kan bare ta inn de verdiene f faktisk gir ut.",
+          "steg": [
+            {
+              "tekst": "Sett y = f(x)",
+              "note": "start med likningen"
+            },
+            {
+              "tekst": "Løs likningen for x",
+              "note": "x uttrykt ved y"
+            },
+            {
+              "tekst": "Bytt navn: kall variabelen x",
+              "note": "svaret blir f⁻¹(x)"
+            },
+            {
+              "tekst": "Oppgi definisjonsmengden",
+              "note": "den er verdimengden til f"
+            }
+          ]
+        }
       },
       {
         "tittel": "Grafen til den omvendte funksjonen",
@@ -59,10 +220,84 @@
       },
       {
         "tittel": "Derivasjon av omvendte funksjoner",
-        "html": "<p>Speiling om $y=x$ bytter om på x-retningen og y-retningen. Et stigningstall er $\\frac{\\Delta y}{\\Delta x}$, så når retningene bytter plass, blir brøken snudd på hodet. Det er hele ideen bak regelen.</p><p>Er $f(a) = b$ og $f'(a) \\neq 0$, har grafen til $f^{-1}$ stigningstallet</p>$$\\left(f^{-1}\\right)'(b) = \\frac{1}{f'(a)}$$<p>i speilpunktet $(b,a)$. Skriver vi dette som en formel som gjelder for alle $x$ i $D_{f^{-1}}$, må vi først finne den tilhørende a-verdien, og den er $a = f^{-1}(x)$:</p>$$\\left(f^{-1}\\right)'(x) = \\frac{1}{f'\\left(f^{-1}(x)\\right)}$$<p>Formelen følger av kjerneregelen. Deriverer du begge sider av $f\\left(f^{-1}(x)\\right) = x$, får du $f'\\left(f^{-1}(x)\\right) \\cdot \\left(f^{-1}\\right)'(x) = 1$, og så deler du på den første faktoren.</p><p>To regler du allerede kan, er egentlig bare denne formelen i arbeid. Med $f(x) = e^x$ og $f^{-1}(x) = \\ln x$ er $f'(x) = e^x$, og da blir $\\left(\\ln x\\right)' = \\frac{1}{e^{\\ln x}} = \\frac{1}{x}$. Med $f(x) = x^2$ for $x \\ge 0$ og $f^{-1}(x) = \\sqrt{x}$ er $f'(x) = 2x$, og da blir $\\left(\\sqrt{x}\\right)' = \\frac{1}{2\\sqrt{x}}$.</p><p>Legg merke til kravet $f'(a) \\neq 0$. Er tangenten til $f$ vannrett i et punkt, blir tangenten til $f^{-1}$ loddrett i speilpunktet, og da er $f^{-1}$ ikke deriverbar der. Det ser du i $x=0$: $\\left(\\sqrt{x}\\right)'$ finnes ikke der, fordi $x^2$ har vannrett tangent i origo.</p>"
+        "html": "<p>Speiling om $y=x$ bytter om på x-retningen og y-retningen. Et stigningstall er $\\frac{\\Delta y}{\\Delta x}$, så når retningene bytter plass, blir brøken snudd på hodet. Det er hele ideen bak regelen.</p><p>Er $f(a) = b$ og $f'(a) \\neq 0$, har grafen til $f^{-1}$ stigningstallet</p>$$\\left(f^{-1}\\right)'(b) = \\frac{1}{f'(a)}$$<p>i speilpunktet $(b,a)$. Skriver vi dette som en formel som gjelder for alle $x$ i $D_{f^{-1}}$, må vi først finne den tilhørende a-verdien, og den er $a = f^{-1}(x)$:</p>$$\\left(f^{-1}\\right)'(x) = \\frac{1}{f'\\left(f^{-1}(x)\\right)}$$<p>Formelen følger av kjerneregelen. Deriverer du begge sider av $f\\left(f^{-1}(x)\\right) = x$, får du $f'\\left(f^{-1}(x)\\right) \\cdot \\left(f^{-1}\\right)'(x) = 1$, og så deler du på den første faktoren.</p><p>To regler du allerede kan, er egentlig bare denne formelen i arbeid. Med $f(x) = e^x$ og $f^{-1}(x) = \\ln x$ er $f'(x) = e^x$, og da blir $\\left(\\ln x\\right)' = \\frac{1}{e^{\\ln x}} = \\frac{1}{x}$. Med $f(x) = x^2$ for $x \\ge 0$ og $f^{-1}(x) = \\sqrt{x}$ er $f'(x) = 2x$, og da blir $\\left(\\sqrt{x}\\right)' = \\frac{1}{2\\sqrt{x}}$.</p><p>Legg merke til kravet $f'(a) \\neq 0$. Er tangenten til $f$ vannrett i et punkt, blir tangenten til $f^{-1}$ loddrett i speilpunktet, og da er $f^{-1}$ ikke deriverbar der. Det ser du i $x=0$: $\\left(\\sqrt{x}\\right)'$ finnes ikke der, fordi $x^2$ har vannrett tangent i origo.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Speilingen snur stigningstallet",
+          "forklaring": "Tangenten til x² i (2, 4) er bratt med stigningstall 4, mens speilbildet i (4, 2) er slakt med stigningstall 1/4. Det er stigningstallet i a = 2 som gir svaret, ikke det i selve punktet x = 4.",
+          "xmin": -0.4,
+          "xmax": 6.8,
+          "ymin": -0.6,
+          "ymax": 5.4,
+          "kurver": [
+            {
+              "uttrykk": "x^2",
+              "navn": "x²",
+              "farge": 1
+            },
+            {
+              "uttrykk": "sqrt(x)",
+              "navn": "√x",
+              "farge": 2
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                0.85,
+                -0.6
+              ],
+              "til": [
+                2.35,
+                5.4
+              ],
+              "navn": "stigning 4",
+              "farge": 1,
+              "merkeplass": 0.97
+            },
+            {
+              "fra": [
+                -0.4,
+                0.9
+              ],
+              "til": [
+                6.8,
+                2.7
+              ],
+              "navn": "stigning 1/4",
+              "farge": 2,
+              "merkeplass": 0.72
+            },
+            {
+              "fra": [
+                -0.6,
+                -0.6
+              ],
+              "til": [
+                5.4,
+                5.4
+              ],
+              "navn": "y = x",
+              "farge": 3,
+              "merkeplass": 0.9
+            }
+          ],
+          "punkter": [
+            {
+              "x": 2,
+              "y": 4,
+              "navn": "(2, 4)"
+            },
+            {
+              "x": 4,
+              "y": 2,
+              "navn": "(4, 2)",
+              "plassering": "under"
+            }
+          ]
+        }
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Innskrenk definisjonsmengden og finn den omvendte",
@@ -85,7 +320,6 @@
         "losning": "<p><strong>Steg 1 — den omvendte funksjonen.</strong> For $t \\ge 0$ er $h'(t) = 9{,}8t \\ge 0$, så $h$ er voksende og en-entydig der. Vi løser for $t$:</p>$$h = 4{,}9t^2 \\quad \\Rightarrow \\quad t^2 = \\frac{h}{4{,}9} \\quad \\Rightarrow \\quad t = \\sqrt{\\frac{h}{4{,}9}}$$<p>Vi velger den positive roten, siden tida ikke kan være negativ. Definisjonsmengden til $t(h)$ er $h \\ge 0$, som er verdimengden til $h(t)$ — mengdene bytter plass, akkurat som teorien sier.</p><p><strong>Steg 2 — falltid for 45 m.</strong></p>$$t(45) = \\sqrt{\\frac{45}{4{,}9}} = \\sqrt{9{,}18} \\approx 3{,}03\\ \\text{s}$$<p>Steinen bruker omtrent 3,03 sekunder på de første 45 metrene. Kontroll: $h(3{,}03) = 4{,}9 \\cdot 3{,}03^2 = 4{,}9 \\cdot 9{,}18 \\approx 45{,}0\\ \\text{m}$.</p><p><strong>Steg 3a — deriver direkte.</strong> Vi skriver rota som en potens først:</p>$$t(h) = \\frac{1}{\\sqrt{4{,}9}} \\cdot h^{\\frac{1}{2}} \\quad \\Rightarrow \\quad t'(h) = \\frac{1}{\\sqrt{4{,}9}} \\cdot \\frac{1}{2\\sqrt{h}} = \\frac{1}{2\\sqrt{4{,}9h}}$$<p>Setter vi inn $h = 45$:</p>$$t'(45) = \\frac{1}{2\\sqrt{4{,}9 \\cdot 45}} = \\frac{1}{2\\sqrt{220{,}5}} = \\frac{1}{2 \\cdot 14{,}85} \\approx 0{,}0337$$<p><strong>Steg 3b — bruk regelen for omvendte funksjoner.</strong> Her er $t$ den omvendte til $h$, så $t'(h) = \\frac{1}{h'(t(h))}$. Vi har $h'(t) = 9{,}8t$ og $t(45) \\approx 3{,}03$:</p>$$t'(45) = \\frac{1}{h'(3{,}03)} = \\frac{1}{9{,}8 \\cdot 3{,}03} = \\frac{1}{29{,}69} \\approx 0{,}0337$$<p>Samme svar, som forventet.</p><p><strong>Tolkning.</strong> Enheten er sekund per meter, så $t'(45) \\approx 0{,}034\\ \\text{s/m}$ betyr at når steinen har falt 45 m, tar hver ekstra meter bare rundt 0,034 sekunder. Nær starten er det motsatt: $t'(1) = \\frac{1}{2\\sqrt{4{,}9}} \\approx 0{,}23\\ \\text{s/m}$, altså nesten sju ganger så lang tid per meter. Den omvendte funksjonen vokser saktere og saktere — nettopp fordi $h(t)$ vokser fortere og fortere.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å tro at $f^{-1}(x)$ betyr $\\frac{1}{f(x)}$. Tallet $-1$ er her et navn på den omvendte funksjonen, ikke en eksponent: for $f(x)=3x+6$ er $f^{-1}(x)=\\frac{x-6}{3}$, ikke $\\frac{1}{3x+6}$.",
       "Å glemme å oppgi definisjonsmengden til den omvendte. Den er verdimengden til $f$, og uten den er svaret bare halvferdig — $f^{-1}(x) = 3+\\sqrt{x+4}$ gjelder bare for $x \\ge -4$.",
@@ -94,7 +328,6 @@
       "Å bruke $\\frac{1}{f'(x)}$ i stedet for $\\frac{1}{f'\\left(f^{-1}(x)\\right)}$. Skal du finne $g'(3)$ for $g=f^{-1}$, må du først finne $g(3)$ og sette den verdien inn i $f'$ — ikke 3.",
       "Å speile grafen om x-aksen eller y-aksen. Speilingen skjer om linja $y=x$; speiling om x-aksen gir $-f(x)$, som er noe helt annet."
     ],
-
     "tips": [
       "Kontroller alltid svaret med ett tall: har du funnet at $f(4) = 1$, må $f^{-1}(1) = 4$. Det tar ti sekunder og avslører både fortegnsfeil og regnefeil.",
       "På oppgaver av typen «vis at $f$ har en omvendt funksjon» er standardsvaret å derivere: er $f'(x) > 0$ (eller $< 0$) i hele definisjonsmengden, er $f$ strengt monoton og dermed en-entydig. Skriv den begrunnelsen eksplisitt — den gir poeng.",
@@ -103,115 +336,262 @@
       "Med hjelpemidler kan du kontrollere i GeoGebra: plott $f$, den omvendte du fant, og linja $y=x$. Ligger de to grafene speilvendt om hjelpelinja, er svaret riktig. Bruk kommandoen Funksjon(uttrykk, start, slutt) hvis du har innskrenket definisjonsmengden."
     ]
   },
-
   "begreper": [
-    { "begrep": "En-entydig (injektiv) funksjon", "forklaring": "En funksjon der to ulike x-verdier aldri gir samme funksjonsverdi. Bare slike funksjoner har en omvendt funksjon." },
-    { "begrep": "Vannrett linje-test", "forklaring": "Grafisk sjekk på en-entydighet: en vannrett linje skal treffe grafen høyst én gang." },
-    { "begrep": "Strengt voksende", "forklaring": "Funksjonsverdien øker hver gang x øker. Er $f'(x) > 0$ i hele definisjonsmengden, er $f$ strengt voksende og dermed en-entydig." },
-    { "begrep": "Strengt avtakende", "forklaring": "Funksjonsverdien synker hver gang x øker, typisk fordi $f'(x) < 0$ overalt. Også slike funksjoner er en-entydige." },
-    { "begrep": "Omvendt funksjon", "forklaring": "Funksjonen $f^{-1}$ som reverserer $f$, slik at $f^{-1}(f(x)) = x$ og $f\\left(f^{-1}(x)\\right) = x$." },
-    { "begrep": "Innskrenket definisjonsmengde", "forklaring": "En mindre definisjonsmengde valgt slik at funksjonen blir en-entydig, for eksempel $x \\ge 0$ for $f(x)=x^2$." },
-    { "begrep": "Definisjonsmengde", "forklaring": "Alle x-verdiene funksjonen er definert for. For den omvendte gjelder $D_{f^{-1}} = V_f$." },
-    { "begrep": "Verdimengde", "forklaring": "Alle verdiene funksjonen kan gi ut. For den omvendte gjelder $V_{f^{-1}} = D_f$." },
-    { "begrep": "Speiling om linja $y=x$", "forklaring": "Den geometriske sammenhengen mellom grafene til $f$ og $f^{-1}$: punktet $(a,b)$ blir $(b,a)$." },
-    { "begrep": "Rotfunksjon", "forklaring": "En funksjon på formen $f(x) = \\sqrt[n]{x}$, som for $x \\ge 0$ også kan skrives $x^{\\frac{1}{n}}$. Den er definert som den omvendte til potensfunksjonen $x^n$." },
-    { "begrep": "Kvadratrot", "forklaring": "$\\sqrt{a}$ er det ikke-negative tallet som gir $a$ når det kvadreres. Derfor er $\\sqrt{x^2} = |x|$." },
-    { "begrep": "n-te rot", "forklaring": "Den omvendte til $x^n$. For partall $n$ må $x \\ge 0$, for oddetall $n$ er roten definert for alle reelle $x$." },
-    { "begrep": "Naturlig logaritme", "forklaring": "$\\ln a$ er den eksponenten $e$ må ha for å bli $a$. Funksjonen $\\ln x$ er den omvendte til $e^x$ og har $D = \\langle 0, \\to\\rangle$." },
-    { "begrep": "Loddrett tangent", "forklaring": "Der $f'(a) = 0$, får grafen til $f^{-1}$ en loddrett tangent i speilpunktet, og $f^{-1}$ er ikke deriverbar der — som $\\sqrt{x}$ i $x=0$." }
+    {
+      "begrep": "En-entydig (injektiv) funksjon",
+      "forklaring": "En funksjon der to ulike x-verdier aldri gir samme funksjonsverdi. Bare slike funksjoner har en omvendt funksjon."
+    },
+    {
+      "begrep": "Vannrett linje-test",
+      "forklaring": "Grafisk sjekk på en-entydighet: en vannrett linje skal treffe grafen høyst én gang."
+    },
+    {
+      "begrep": "Strengt voksende",
+      "forklaring": "Funksjonsverdien øker hver gang x øker. Er $f'(x) > 0$ i hele definisjonsmengden, er $f$ strengt voksende og dermed en-entydig."
+    },
+    {
+      "begrep": "Strengt avtakende",
+      "forklaring": "Funksjonsverdien synker hver gang x øker, typisk fordi $f'(x) < 0$ overalt. Også slike funksjoner er en-entydige."
+    },
+    {
+      "begrep": "Omvendt funksjon",
+      "forklaring": "Funksjonen $f^{-1}$ som reverserer $f$, slik at $f^{-1}(f(x)) = x$ og $f\\left(f^{-1}(x)\\right) = x$."
+    },
+    {
+      "begrep": "Innskrenket definisjonsmengde",
+      "forklaring": "En mindre definisjonsmengde valgt slik at funksjonen blir en-entydig, for eksempel $x \\ge 0$ for $f(x)=x^2$."
+    },
+    {
+      "begrep": "Definisjonsmengde",
+      "forklaring": "Alle x-verdiene funksjonen er definert for. For den omvendte gjelder $D_{f^{-1}} = V_f$."
+    },
+    {
+      "begrep": "Verdimengde",
+      "forklaring": "Alle verdiene funksjonen kan gi ut. For den omvendte gjelder $V_{f^{-1}} = D_f$."
+    },
+    {
+      "begrep": "Speiling om linja $y=x$",
+      "forklaring": "Den geometriske sammenhengen mellom grafene til $f$ og $f^{-1}$: punktet $(a,b)$ blir $(b,a)$."
+    },
+    {
+      "begrep": "Rotfunksjon",
+      "forklaring": "En funksjon på formen $f(x) = \\sqrt[n]{x}$, som for $x \\ge 0$ også kan skrives $x^{\\frac{1}{n}}$. Den er definert som den omvendte til potensfunksjonen $x^n$."
+    },
+    {
+      "begrep": "Kvadratrot",
+      "forklaring": "$\\sqrt{a}$ er det ikke-negative tallet som gir $a$ når det kvadreres. Derfor er $\\sqrt{x^2} = |x|$."
+    },
+    {
+      "begrep": "n-te rot",
+      "forklaring": "Den omvendte til $x^n$. For partall $n$ må $x \\ge 0$, for oddetall $n$ er roten definert for alle reelle $x$."
+    },
+    {
+      "begrep": "Naturlig logaritme",
+      "forklaring": "$\\ln a$ er den eksponenten $e$ må ha for å bli $a$. Funksjonen $\\ln x$ er den omvendte til $e^x$ og har $D = \\langle 0, \\to\\rangle$."
+    },
+    {
+      "begrep": "Loddrett tangent",
+      "forklaring": "Der $f'(a) = 0$, får grafen til $f^{-1}$ en loddrett tangent i speilpunktet, og $f^{-1}$ er ikke deriverbar der — som $\\sqrt{x}$ i $x=0$."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hvilken av funksjonene er en-entydig på hele $\\mathbb{R}$?",
-      "alternativer": ["$f(x) = x^2 - 4$", "$f(x) = x^3 + 2x$", "$f(x) = |x - 1|$", "$f(x) = x^4$"],
+      "alternativer": [
+        "$f(x) = x^2 - 4$",
+        "$f(x) = x^3 + 2x$",
+        "$f(x) = |x - 1|$",
+        "$f(x) = x^4$"
+      ],
       "riktig": 1,
       "forklaring": "For $f(x)=x^3+2x$ er $f'(x) = 3x^2 + 2 \\ge 2 > 0$ for alle $x$, så funksjonen er strengt voksende og dermed en-entydig. $f(x)=x^2-4$ er ikke det: $f(-2) = 0$ og $f(2) = 0$ gir samme verdi for to ulike x-er. Både $|x-1|$ og $x^4$ er symmetriske og feiler på samme måte."
     },
     {
       "sporsmal": "$f$ er en-entydig, og $f(4) = -2$. Hva er $f^{-1}(-2)$?",
-      "alternativer": ["$-\\frac{1}{2}$", "$-4$", "$4$", "$2$"],
+      "alternativer": [
+        "$-\\frac{1}{2}$",
+        "$-4$",
+        "$4$",
+        "$2$"
+      ],
       "riktig": 2,
       "forklaring": "Den omvendte funksjonen reverserer $f$: sender $f$ tallet 4 til $-2$, sender $f^{-1}$ tallet $-2$ tilbake til 4. Alternativet $-\\frac{1}{2}$ er fella der man tror $f^{-1}$ betyr $\\frac{1}{f}$ — men $-1$ er et navn, ikke en eksponent."
     },
     {
       "sporsmal": "Grafen til $f^{-1}$ får du ved å speile grafen til $f$ om",
-      "alternativer": ["x-aksen", "y-aksen", "linja $y = x$", "linja $y = -x$"],
+      "alternativer": [
+        "x-aksen",
+        "y-aksen",
+        "linja $y = x$",
+        "linja $y = -x$"
+      ],
       "riktig": 2,
       "forklaring": "Siden $f(a)=b$ gir $f^{-1}(b)=a$, bytter koordinatene plass: $(a,b)$ blir $(b,a)$. Det er nøyaktig speiling om linja $y=x$. Speiling om x-aksen ville gitt grafen til $-f(x)$, som er en helt annen funksjon."
     },
     {
       "sporsmal": "En en-entydig funksjon $f$ har $D_f = [1, \\to\\rangle$ og $V_f = [-3, \\to\\rangle$. Hva er $D_{f^{-1}}$?",
-      "alternativer": ["$[1, \\to\\rangle$", "$[-3, \\to\\rangle$", "$\\mathbb{R}$", "$[3, \\to\\rangle$"],
+      "alternativer": [
+        "$[1, \\to\\rangle$",
+        "$[-3, \\to\\rangle$",
+        "$\\mathbb{R}$",
+        "$[3, \\to\\rangle$"
+      ],
       "riktig": 1,
       "forklaring": "Definisjonsmengden til den omvendte er verdimengden til $f$, altså $[-3, \\to\\rangle$ — den omvendte kan bare ta inn de verdiene $f$ faktisk gir ut. Å svare $[1, \\to\\rangle$ er å blande sammen: det blir verdimengden til $f^{-1}$."
     },
     {
       "sporsmal": "Hva er $\\sqrt{(-5)^2}$?",
-      "alternativer": ["$-5$", "$25$", "Ikke definert", "$5$"],
+      "alternativer": [
+        "$-5$",
+        "$25$",
+        "Ikke definert",
+        "$5$"
+      ],
       "riktig": 3,
       "forklaring": "Først $(-5)^2 = 25$, og deretter $\\sqrt{25} = 5$. Rottegnet gir alltid det ikke-negative svaret, og det er derfor $\\sqrt{x^2} = |x|$ og ikke $x$. Svaret $-5$ er den vanligste feilen: man «stryker» rot mot kvadrat og glemmer tallverdien."
     },
     {
       "sporsmal": "Hvilken funksjon er den omvendte til $f(x) = e^x$?",
-      "alternativer": ["$g(x) = e^{-x}$", "$g(x) = \\frac{1}{\\ln x}$", "$g(x) = \\ln x$", "$g(x) = \\log x$"],
+      "alternativer": [
+        "$g(x) = e^{-x}$",
+        "$g(x) = \\frac{1}{\\ln x}$",
+        "$g(x) = \\ln x$",
+        "$g(x) = \\log x$"
+      ],
       "riktig": 2,
       "forklaring": "$\\ln x$ er definert som den omvendte til $e^x$, og derfor er $\\ln\\left(e^x\\right) = x$ og $e^{\\ln x} = x$ for $x>0$. Grafen til $e^{-x}$ er en speiling om y-aksen, ikke om linja $y=x$, og $\\log x$ (grunntall 10) er den omvendte til $10^x$."
     },
     {
       "sporsmal": "Hva er $e^{\\ln 7}$?",
-      "alternativer": ["$\\ln 7$", "$e^7$", "$7e$", "$7$"],
+      "alternativer": [
+        "$\\ln 7$",
+        "$e^7$",
+        "$7e$",
+        "$7$"
+      ],
       "riktig": 3,
       "forklaring": "$\\ln 7$ er den eksponenten $e$ må ha for å bli 7, så $e$ opphøyd i den eksponenten er nettopp 7. Generelt er $e^{\\ln x} = x$ for $x>0$, fordi funksjonene reverserer hverandre. Svaret $e^7$ kommer av å gange sammen i stedet for å bruke identiteten."
     },
     {
       "sporsmal": "Løs likningen $e^{2x} = 9$.",
-      "alternativer": ["$x = \\ln 3$", "$x = 2\\ln 9$", "$x = \\frac{\\ln 2}{\\ln 9}$", "$x = \\ln 9 - \\ln 2$"],
+      "alternativer": [
+        "$x = \\ln 3$",
+        "$x = 2\\ln 9$",
+        "$x = \\frac{\\ln 2}{\\ln 9}$",
+        "$x = \\ln 9 - \\ln 2$"
+      ],
       "riktig": 0,
       "forklaring": "Ta $\\ln$ på begge sider: $2x = \\ln 9$, altså $x = \\frac{\\ln 9}{2} = \\ln\\sqrt{9} = \\ln 3 \\approx 1{,}10$. Alternativ D er den vanlige fella: å dele på 2 er ikke det samme som å trekke fra $\\ln 2$, for $\\ln 9 - \\ln 2 = \\ln 4{,}5 \\approx 1{,}50$."
     },
     {
       "sporsmal": "La $f(x) = x^3 + 2$ og la $g$ være den omvendte funksjonen. Hva er $g'(10)$?",
-      "alternativer": ["$12$", "$\\frac{1}{12}$", "$\\frac{1}{300}$", "$\\frac{1}{3}$"],
+      "alternativer": [
+        "$12$",
+        "$\\frac{1}{12}$",
+        "$\\frac{1}{300}$",
+        "$\\frac{1}{3}$"
+      ],
       "riktig": 1,
       "forklaring": "Først finner vi $g(10)$: $x^3 + 2 = 10$ gir $x = 2$. Så bruker vi $g'(x) = \\frac{1}{f'(g(x))}$ med $f'(x) = 3x^2$: $g'(10) = \\frac{1}{f'(2)} = \\frac{1}{12}$. Alternativ C er feilen der man setter 10 rett inn i $f'$ og får $\\frac{1}{300}$ — men det er a-verdien, ikke b-verdien, som skal inn i $f'$."
     },
     {
       "sporsmal": "Hva er definisjonsmengden til $f(x) = \\sqrt{5 - 2x}$?",
-      "alternativer": ["$x \\ge \\frac{5}{2}$", "Alle reelle tall", "$x \\ge -\\frac{5}{2}$", "$x \\le \\frac{5}{2}$"],
+      "alternativer": [
+        "$x \\ge \\frac{5}{2}$",
+        "Alle reelle tall",
+        "$x \\ge -\\frac{5}{2}$",
+        "$x \\le \\frac{5}{2}$"
+      ],
       "riktig": 3,
       "forklaring": "Uttrykket under rottegnet må være $\\ge 0$: $5 - 2x \\ge 0$ gir $-2x \\ge -5$, og når vi deler på $-2$, snur ulikhetstegnet: $x \\le \\frac{5}{2}$. Alternativ A er nettopp feilen der man glemmer å snu tegnet ved divisjon med et negativt tall."
     },
     {
       "sporsmal": "Hvorfor må vi innskrenke definisjonsmengden til $f(x) = x^2$ før vi finner den omvendte?",
-      "alternativer": ["Fordi $f$ ikke er kontinuerlig", "Fordi $f$ ikke er en-entydig på hele $\\mathbb{R}$", "Fordi $f$ ikke er deriverbar i $x = 0$", "Fordi $V_f$ er tom"],
+      "alternativer": [
+        "Fordi $f$ ikke er kontinuerlig",
+        "Fordi $f$ ikke er en-entydig på hele $\\mathbb{R}$",
+        "Fordi $f$ ikke er deriverbar i $x = 0$",
+        "Fordi $V_f$ er tom"
+      ],
       "riktig": 1,
       "forklaring": "$f(-3)$ og $f(3)$ er begge 9, så det finnes ingen entydig vei tilbake fra 9. Innskrenker vi til $x \\ge 0$, blir $f$ strengt voksende, og den omvendte er $\\sqrt{x}$. Merk at $x^2$ både er kontinuerlig og deriverbar overalt, også i $x=0$ — alternativ A og C er derfor rett og slett gale påstander."
     },
     {
       "sporsmal": "Grafen til en en-entydig funksjon $f$ går gjennom $(2,5)$, og $f'(2) = 4$. Hva er stigningstallet til tangenten til grafen til $f^{-1}$ i punktet $(5,2)$?",
-      "alternativer": ["$\\frac{1}{4}$", "$4$", "$-\\frac{1}{4}$", "$\\frac{2}{5}$"],
+      "alternativer": [
+        "$\\frac{1}{4}$",
+        "$4$",
+        "$-\\frac{1}{4}$",
+        "$\\frac{2}{5}$"
+      ],
       "riktig": 0,
       "forklaring": "Speilingen om $y=x$ bytter om på $\\Delta x$ og $\\Delta y$, så stigningstallet snus: $\\left(f^{-1}\\right)'(5) = \\frac{1}{f'(2)} = \\frac{1}{4}$. Å svare 4 er å tro at speilingen bevarer stigningstallet, og $-\\frac{1}{4}$ er stigningstallet til normalen til grafen til $f$ i $(2,5)$ — den står vinkelrett på tangenten til $f$ og har ikke noe å gjøre med den omvendte funksjonen."
     }
   ],
-
   "flashcards": [
-    { "front": "Når er en funksjon en-entydig (injektiv)?", "bak": "Når to ulike x-verdier aldri gir samme funksjonsverdi: $f(x_1) = f(x_2) \\Rightarrow x_1 = x_2$. Grafisk treffer en vannrett linje grafen høyst én gang." },
-    { "front": "Hvordan viser du at $f$ har en omvendt funksjon?", "bak": "Vis at $f$ er strengt monoton, oftest ved at $f'(x) > 0$ (eller $f'(x) < 0$) i hele definisjonsmengden." },
-    { "front": "De to identitetene for omvendt funksjon", "bak": "$f^{-1}(f(x)) = x$ og $f\\left(f^{-1}(x)\\right) = x$" },
-    { "front": "$D_{f^{-1}}$ og $V_{f^{-1}}$?", "bak": "$D_{f^{-1}} = V_f$ og $V_{f^{-1}} = D_f$ — mengdene bytter plass." },
-    { "front": "Framgangsmåte for å finne $f^{-1}$", "bak": "Sett $y = f(x)$, løs likningen for $x$, bytt navn på variablene, og oppgi definisjonsmengden (som er $V_f$)." },
-    { "front": "Hvordan ligger grafen til $f^{-1}$ i forhold til grafen til $f$?", "bak": "Den er speilingen om linja $y = x$. Punktet $(a,b)$ blir $(b,a)$." },
-    { "front": "Betyr $f^{-1}(x)$ det samme som $\\frac{1}{f(x)}$?", "bak": "Nei. $-1$ er et navn på den omvendte funksjonen, ikke en eksponent." },
-    { "front": "$\\sqrt{x^2} = ?$", "bak": "$|x|$ — rottegnet gir alltid det ikke-negative svaret." },
-    { "front": "Hvilken funksjon er $\\sqrt{x}$ den omvendte til?", "bak": "$f(x) = x^2$ med definisjonsmengden innskrenket til $x \\ge 0$." },
-    { "front": "$\\sqrt[n]{x}$ skrevet som potens", "bak": "$\\sqrt[n]{x} = x^{\\frac{1}{n}}$ for $x \\ge 0$. Er $n$ et partall, må $x \\ge 0$; er $n$ et oddetall, er selve roten definert for alle reelle $x$, som $\\sqrt[3]{-8} = -2$." },
-    { "front": "De to identitetene for $e^x$ og $\\ln x$", "bak": "$\\ln\\left(e^{x}\\right) = x$ for alle $x$, og $e^{\\ln x} = x$ for $x > 0$." },
-    { "front": "$D$ og $V$ til $e^x$ og $\\ln x$", "bak": "$e^x$: $D = \\mathbb{R}$, $V = \\langle 0, \\to\\rangle$. $\\ln x$: $D = \\langle 0, \\to\\rangle$, $V = \\mathbb{R}$." },
-    { "front": "Løs $e^{kx} = c$", "bak": "$x = \\frac{\\ln c}{k}$ når $c > 0$." },
-    { "front": "Regelen for derivasjon av omvendt funksjon", "bak": "$\\left(f^{-1}\\right)'(x) = \\frac{1}{f'\\left(f^{-1}(x)\\right)}$" },
-    { "front": "$f(a) = b$ og $f'(a) = 5$. Hva er $\\left(f^{-1}\\right)'(b)$?", "bak": "$\\frac{1}{5}$ — speilingen om $y=x$ snur stigningstallet." },
-    { "front": "Hva skjer med den omvendte der $f'(a) = 0$?", "bak": "Tangenten blir loddrett i speilpunktet, og $f^{-1}$ er ikke deriverbar der. Eksempel: $\\sqrt{x}$ i $x = 0$." }
+    {
+      "front": "Når er en funksjon en-entydig (injektiv)?",
+      "bak": "Når to ulike x-verdier aldri gir samme funksjonsverdi: $f(x_1) = f(x_2) \\Rightarrow x_1 = x_2$. Grafisk treffer en vannrett linje grafen høyst én gang."
+    },
+    {
+      "front": "Hvordan viser du at $f$ har en omvendt funksjon?",
+      "bak": "Vis at $f$ er strengt monoton, oftest ved at $f'(x) > 0$ (eller $f'(x) < 0$) i hele definisjonsmengden."
+    },
+    {
+      "front": "De to identitetene for omvendt funksjon",
+      "bak": "$f^{-1}(f(x)) = x$ og $f\\left(f^{-1}(x)\\right) = x$"
+    },
+    {
+      "front": "$D_{f^{-1}}$ og $V_{f^{-1}}$?",
+      "bak": "$D_{f^{-1}} = V_f$ og $V_{f^{-1}} = D_f$ — mengdene bytter plass."
+    },
+    {
+      "front": "Framgangsmåte for å finne $f^{-1}$",
+      "bak": "Sett $y = f(x)$, løs likningen for $x$, bytt navn på variablene, og oppgi definisjonsmengden (som er $V_f$)."
+    },
+    {
+      "front": "Hvordan ligger grafen til $f^{-1}$ i forhold til grafen til $f$?",
+      "bak": "Den er speilingen om linja $y = x$. Punktet $(a,b)$ blir $(b,a)$."
+    },
+    {
+      "front": "Betyr $f^{-1}(x)$ det samme som $\\frac{1}{f(x)}$?",
+      "bak": "Nei. $-1$ er et navn på den omvendte funksjonen, ikke en eksponent."
+    },
+    {
+      "front": "$\\sqrt{x^2} = ?$",
+      "bak": "$|x|$ — rottegnet gir alltid det ikke-negative svaret."
+    },
+    {
+      "front": "Hvilken funksjon er $\\sqrt{x}$ den omvendte til?",
+      "bak": "$f(x) = x^2$ med definisjonsmengden innskrenket til $x \\ge 0$."
+    },
+    {
+      "front": "$\\sqrt[n]{x}$ skrevet som potens",
+      "bak": "$\\sqrt[n]{x} = x^{\\frac{1}{n}}$ for $x \\ge 0$. Er $n$ et partall, må $x \\ge 0$; er $n$ et oddetall, er selve roten definert for alle reelle $x$, som $\\sqrt[3]{-8} = -2$."
+    },
+    {
+      "front": "De to identitetene for $e^x$ og $\\ln x$",
+      "bak": "$\\ln\\left(e^{x}\\right) = x$ for alle $x$, og $e^{\\ln x} = x$ for $x > 0$."
+    },
+    {
+      "front": "$D$ og $V$ til $e^x$ og $\\ln x$",
+      "bak": "$e^x$: $D = \\mathbb{R}$, $V = \\langle 0, \\to\\rangle$. $\\ln x$: $D = \\langle 0, \\to\\rangle$, $V = \\mathbb{R}$."
+    },
+    {
+      "front": "Løs $e^{kx} = c$",
+      "bak": "$x = \\frac{\\ln c}{k}$ når $c > 0$."
+    },
+    {
+      "front": "Regelen for derivasjon av omvendt funksjon",
+      "bak": "$\\left(f^{-1}\\right)'(x) = \\frac{1}{f'\\left(f^{-1}(x)\\right)}$"
+    },
+    {
+      "front": "$f(a) = b$ og $f'(a) = 5$. Hva er $\\left(f^{-1}\\right)'(b)$?",
+      "bak": "$\\frac{1}{5}$ — speilingen om $y=x$ snur stigningstallet."
+    },
+    {
+      "front": "Hva skjer med den omvendte der $f'(a) = 0$?",
+      "bak": "Tangenten blir loddrett i speilpunktet, og $f^{-1}$ er ikke deriverbar der. Eksempel: $\\sqrt{x}$ i $x = 0$."
+    }
   ]
 }

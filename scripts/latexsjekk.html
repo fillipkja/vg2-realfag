@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="nb"><meta charset="utf-8">
+<title>LaTeX-sjekk — Realfag VG2</title>
+<!--
+  Renderer HVER matematikk- og kjemiformel i alle datafilene gjennom KaTeX med
+  throwOnError, og rapporterer alt som ikke kan tolkes. Uten denne sjekken
+  havner parsefeil i appen som rød råtekst — som er verre enn ingen formel,
+  fordi eleven ikke ser hva som skulle stått.
+  Kjøres med scripts/latexsjekk.sh.
+-->
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<script src="../vendor/katex/katex.min.js"></script>
+<script src="../vendor/katex/contrib/mhchem.min.js"></script>
+<style>body{font:12.5px/1.55 ui-monospace,monospace;margin:0;padding:12px;white-space:pre-wrap}</style>
+<body><pre id="ut">laster …</pre>
+<script>
+const ut = document.getElementById("ut");
+
+/* Trekker ut alle $…$ og $$…$$ fra en streng. Samme avgrensere som
+   auto-render bruker i appen. */
+function hentMatte(s) {
+  const funn = [];
+  const t = String(s);
+  const re = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
+  let m;
+  while ((m = re.exec(t)) !== null) {
+    funn.push({ kode: m[1] ?? m[2], display: m[1] != null });
+  }
+  return funn;
+}
+
+/* Går gjennom hele objektet og finner alle strenger, med sti. */
+function alleStrenger(obj, sti = "", ut = []) {
+  if (typeof obj === "string") { ut.push([sti, obj]); return ut; }
+  if (Array.isArray(obj)) { obj.forEach((v, i) => alleStrenger(v, `${sti}[${i}]`, ut)); return ut; }
+  if (obj && typeof obj === "object") {
+    for (const [k, v] of Object.entries(obj)) alleStrenger(v, sti ? `${sti}.${k}` : k, ut);
+  }
+  return ut;
+}
+
+(async () => {
+  const { fag } = await (await fetch("../data/fag.json")).json();
+  const filer = ["../data/fag.json", "../data/studieteknikk.json"];
+  for (const f of fag) {
+    for (const k of f.kapitler) {
+      filer.push(`../data/kapitler/${f.id}-${String(k.nr).padStart(2, "0")}.json`);
+    }
+    if (["matematikk", "fysikk", "kjemi"].includes(f.id)) filer.push(`../data/formler-${f.id}.json`);
+  }
+
+  const feil = [];
+  let antall = 0, filerSjekket = 0;
+
+  for (const sti of filer) {
+    let d;
+    try { d = await (await fetch(sti)).json(); } catch { continue; }
+    filerSjekket++;
+    const kort = sti.replace("../data/", "");
+
+    for (const [felt, verdi] of alleStrenger(d)) {
+      /* «latex»-feltene er ren LaTeX uten $-avgrensere */
+      const koder = /(^|\.)latex$/.test(felt)
+        ? [{ kode: verdi, display: false }]
+        : hentMatte(verdi);
+      for (const { kode, display } of koder) {
+        antall++;
+        try {
+          katex.renderToString(kode, { displayMode: display, throwOnError: true, strict: false, trust: false });
+        } catch (e) {
+          feil.push(`${kort}\n    felt: ${felt}\n    kode: ${kode.slice(0, 160)}\n    feil: ${String(e.message).slice(0, 190)}`);
+        }
+      }
+      /* ubalansert antall $ gir «halv» matematikk som ikke rendres i det hele tatt */
+      if (!/(^|\.)latex$/.test(felt) && (verdi.split("$").length - 1) % 2 !== 0) {
+        feil.push(`${kort}\n    felt: ${felt}\n    feil: ubalansert antall $-tegn`);
+      }
+    }
+  }
+
+  ut.textContent =
+    (feil.length ? feil.join("\n\n") + "\n\n" : "") +
+    `${antall} uttrykk i ${filerSjekket} filer · ${feil.length} med feil\n` +
+    (feil.length === 0 ? "LATEX-OK" : "LATEX-FEIL");
+  document.title = feil.length === 0 ? "LATEX-OK" : "LATEX-FEIL";
+})().catch((e) => { ut.textContent = "KRASJ: " + (e && e.stack || e); document.title = "LATEX-FEIL"; });
+</script>
+</body>
+</html>

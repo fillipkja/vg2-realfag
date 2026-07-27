@@ -173,9 +173,9 @@
         { "navn": "Parameterframstilling på koordinatform", "latex": "x = x_0 + a t, \\qquad y = y_0 + b t" },
         { "navn": "Fra parameterframstilling til likning", "latex": "t = \\frac{x - x_0}{a} \\quad \\Rightarrow \\quad y = y_0 + b \\cdot \\frac{x - x_0}{a}", "forklaring": "Løs den ene likningen for $t$ og sett inn i den andre." },
         { "navn": "Posisjonsvektor (vektorfunksjon)", "latex": "\\vec{r}(t) = [\\,x(t),\\; y(t)\\,]", "forklaring": "Beskriver hvor et punkt er ved tiden $t$. Kurven punktet følger, kalles banen." },
-        { "navn": "Fartsvektor", "latex": "\\vec{v}(t) = \\vec{r}\\,'(t) = [\\,x'(t),\\; y'(t)\\,]", "forklaring": "Deriver hver koordinat for seg. Fartsvektoren har retning langs tangenten til banen." },
+        { "navn": "Fartsvektor", "latex": "\\vec{v}(t) = \\vec{r}\\,{}'(t) = [\\,x'(t),\\; y'(t)\\,]", "forklaring": "Deriver hver koordinat for seg. Fartsvektoren har retning langs tangenten til banen." },
         { "navn": "Banefart", "latex": "\\left|\\vec{v}(t)\\right| = \\sqrt{\\left(x'(t)\\right)^{2} + \\left(y'(t)\\right)^{2}}", "forklaring": "Farten langs banen. Er koordinatene i meter og $t$ i sekunder, blir enheten m/s." },
-        { "navn": "Akselerasjonsvektor", "latex": "\\vec{a}(t) = \\vec{v}\\,'(t) = [\\,x''(t),\\; y''(t)\\,]", "forklaring": "Deriver fartsvektoren komponentvis. Enhet m/s² når posisjonen er i meter og tiden i sekunder." },
+        { "navn": "Akselerasjonsvektor", "latex": "\\vec{a}(t) = \\vec{v}\\,{}'(t) = [\\,x''(t),\\; y''(t)\\,]", "forklaring": "Deriver fartsvektoren komponentvis. Enhet m/s² når posisjonen er i meter og tiden i sekunder." },
         { "navn": "Skjæring og kollisjon mellom to baner", "latex": "\\vec{r}_1(t) = \\vec{r}_2(s)", "forklaring": "Løs likningssettet. Får du samme parameterverdi ($t = s$), er punktene på samme sted til samme tid — da kolliderer de." }
       ]
     }

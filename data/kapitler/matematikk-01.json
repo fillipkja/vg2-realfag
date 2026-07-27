@@ -3,7 +3,6 @@
   "nr": 1,
   "tittel": "Potenser og logaritmer",
   "intro": "Potenser og logaritmer er verktøyene du bruker når noe vokser eller avtar med en fast prosent — renter, bakterier, medisin i blodet og radioaktivitet. Logaritmen er den motsatte operasjonen av å opphøye i noe, og den er nøkkelen til å løse likninger der den ukjente står i eksponenten.",
-
   "kompakt": {
     "punkter": [
       "Potensreglene krever samme grunntall: $a^m \\cdot a^n = a^{m+n}$ og $\\frac{a^m}{a^n} = a^{m-n}$.",
@@ -18,23 +17,112 @@
       "Står den ukjente inni en logaritme, samler du til én logaritme, bruker definisjonen — og forkaster falske løsninger."
     ],
     "formler": [
-      { "navn": "Multiplikasjon av potenser", "latex": "a^m \\cdot a^n = a^{m+n}" },
-      { "navn": "Divisjon av potenser", "latex": "\\frac{a^m}{a^n} = a^{m-n}" },
-      { "navn": "Potens av potens", "latex": "\\left(a^m\\right)^n = a^{m \\cdot n}" },
-      { "navn": "Potens av produkt og brøk", "latex": "(ab)^n = a^n b^n, \\qquad \\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}" },
-      { "navn": "Null og negativ eksponent", "latex": "a^0 = 1, \\qquad a^{-n} = \\frac{1}{a^n} \\qquad (a \\neq 0)" },
-      { "navn": "Røtter som potenser", "latex": "a^{\\frac{1}{n}} = \\sqrt[n]{a}, \\qquad a^{\\frac{m}{n}} = \\sqrt[n]{a^m}" },
-      { "navn": "Eksponentialfunksjon", "latex": "f(x) = a \\cdot k^x, \\qquad k = 1 + \\frac{p}{100}" },
-      { "navn": "Definisjonen av lg", "latex": "\\lg x = y \\quad \\Leftrightarrow \\quad 10^y = x" },
-      { "navn": "Definisjonen av ln", "latex": "\\ln x = y \\quad \\Leftrightarrow \\quad e^y = x" },
-      { "navn": "Logaritmen av et produkt og en brøk", "latex": "\\lg(ab) = \\lg a + \\lg b, \\qquad \\lg\\frac{a}{b} = \\lg a - \\lg b" },
-      { "navn": "Logaritmen av en potens", "latex": "\\lg a^n = n \\lg a" },
-      { "navn": "Motsatte operasjoner", "latex": "10^{\\lg x} = x, \\quad \\lg 10^x = x, \\quad e^{\\ln x} = x, \\quad \\ln e^x = x" },
-      { "navn": "Eksponentiallikning", "latex": "a^x = b \\quad \\Rightarrow \\quad x = \\frac{\\lg b}{\\lg a} = \\frac{\\ln b}{\\ln a}" },
-      { "navn": "Doblings- og halveringstid for $a \\cdot k^t$", "latex": "t = \\frac{\\lg 2}{\\lg k}, \\qquad t = \\frac{\\lg 0{,}5}{\\lg k}" }
-    ]
+      {
+        "navn": "Multiplikasjon av potenser",
+        "latex": "a^m \\cdot a^n = a^{m+n}"
+      },
+      {
+        "navn": "Divisjon av potenser",
+        "latex": "\\frac{a^m}{a^n} = a^{m-n}"
+      },
+      {
+        "navn": "Potens av potens",
+        "latex": "\\left(a^m\\right)^n = a^{m \\cdot n}"
+      },
+      {
+        "navn": "Potens av produkt og brøk",
+        "latex": "(ab)^n = a^n b^n, \\qquad \\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}"
+      },
+      {
+        "navn": "Null og negativ eksponent",
+        "latex": "a^0 = 1, \\qquad a^{-n} = \\frac{1}{a^n} \\qquad (a \\neq 0)"
+      },
+      {
+        "navn": "Røtter som potenser",
+        "latex": "a^{\\frac{1}{n}} = \\sqrt[n]{a}, \\qquad a^{\\frac{m}{n}} = \\sqrt[n]{a^m}"
+      },
+      {
+        "navn": "Eksponentialfunksjon",
+        "latex": "f(x) = a \\cdot k^x, \\qquad k = 1 + \\frac{p}{100}"
+      },
+      {
+        "navn": "Definisjonen av lg",
+        "latex": "\\lg x = y \\quad \\Leftrightarrow \\quad 10^y = x"
+      },
+      {
+        "navn": "Definisjonen av ln",
+        "latex": "\\ln x = y \\quad \\Leftrightarrow \\quad e^y = x"
+      },
+      {
+        "navn": "Logaritmen av et produkt og en brøk",
+        "latex": "\\lg(ab) = \\lg a + \\lg b, \\qquad \\lg\\frac{a}{b} = \\lg a - \\lg b"
+      },
+      {
+        "navn": "Logaritmen av en potens",
+        "latex": "\\lg a^n = n \\lg a"
+      },
+      {
+        "navn": "Motsatte operasjoner",
+        "latex": "10^{\\lg x} = x, \\quad \\lg 10^x = x, \\quad e^{\\ln x} = x, \\quad \\ln e^x = x"
+      },
+      {
+        "navn": "Eksponentiallikning",
+        "latex": "a^x = b \\quad \\Rightarrow \\quad x = \\frac{\\lg b}{\\lg a} = \\frac{\\ln b}{\\ln a}"
+      },
+      {
+        "navn": "Doblings- og halveringstid for $a \\cdot k^t$",
+        "latex": "t = \\frac{\\lg 2}{\\lg k}, \\qquad t = \\frac{\\lg 0{,}5}{\\lg k}"
+      }
+    ],
+    "figur": {
+      "type": "graf",
+      "tittel": "eˣ og ln x er speilbilder om linja y = x",
+      "forklaring": "Punktet (0, 1) på eˣ svarer til (1, 0) på ln x — koordinatene bytter plass fordi logaritmen gjør om på eksponentialfunksjonen. Legg merke til at eˣ aldri kommer under x-aksen, og at ln x derfor bare finnes til høyre for y-aksen.",
+      "xmin": -3,
+      "xmax": 5,
+      "ymin": -3,
+      "ymax": 5,
+      "kurver": [
+        {
+          "uttrykk": "exp(x)",
+          "navn": "eˣ",
+          "farge": 1
+        },
+        {
+          "uttrykk": "ln(x)",
+          "navn": "ln x",
+          "farge": 2
+        }
+      ],
+      "linjer": [
+        {
+          "fra": [
+            -3,
+            -3
+          ],
+          "til": [
+            5,
+            5
+          ],
+          "navn": "y = x",
+          "farge": 3
+        }
+      ],
+      "punkter": [
+        {
+          "x": 0,
+          "y": 1,
+          "navn": "(0, 1)"
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "navn": "(1, 0)",
+          "plassering": "under"
+        }
+      ]
+    }
   },
-
   "grundig": {
     "seksjoner": [
       {
@@ -43,7 +131,48 @@
       },
       {
         "tittel": "Eksponentialfunksjoner og tallet e",
-        "html": "<p>En <strong>eksponentialfunksjon</strong> har den variable i eksponenten:</p>$$f(x) = a \\cdot k^x$$<p>Her er $a = f(0)$ startverdien, og $k$ er <strong>vekstfaktoren</strong>. Er $k > 1$, vokser funksjonen; er $0 < k < 1$, avtar den. En vekst på $p$ prosent per tidsenhet gir $k = 1 + \\frac{p}{100}$, og en nedgang på $p$ prosent gir $k = 1 - \\frac{p}{100}$. En bakteriekultur som øker 18 % per time, har $k = 1{,}18$, og en bil som faller 12 % i verdi per år, har $k = 0{,}88$.</p><p>Grafen til $f(x) = a \\cdot k^x$ med $a > 0$ ligger alltid over $x$-aksen: uansett hvor negativ $x$ blir, er $k^x$ positiv. Linja $y = 0$ er en <strong>asymptote</strong> som grafen nærmer seg, men aldri treffer. Det som skiller eksponentiell vekst fra lineær vekst, er at funksjonsverdien <em>ganges</em> med samme faktor for hvert steg, i stedet for at det <em>legges til</em> et fast tall.</p><p>Blant alle mulige grunntall er ett spesielt: <strong>tallet $e$</strong>.</p>$$e \\approx 2{,}718281828$$<p>Tallet er irrasjonalt, akkurat som $\\pi$, og du finner det som verdien $\\left(1 + \\frac{1}{n}\\right)^n$ nærmer seg når $n$ blir svært stor. Funksjonen $f(x) = e^x$ heter den <strong>naturlige eksponentialfunksjonen</strong>. Den er spesiell fordi stigningstallet til grafen i et punkt er nøyaktig like stort som funksjonsverdien der. Det gjør $e$ til standardvalget i vekstmodeller, og alle andre eksponentialfunksjoner kan skrives om til dette grunntallet, siden $k^x = e^{x \\ln k}$.</p>"
+        "html": "<p>En <strong>eksponentialfunksjon</strong> har den variable i eksponenten:</p>$$f(x) = a \\cdot k^x$$<p>Her er $a = f(0)$ startverdien, og $k$ er <strong>vekstfaktoren</strong>. Er $k > 1$, vokser funksjonen; er $0 < k < 1$, avtar den. En vekst på $p$ prosent per tidsenhet gir $k = 1 + \\frac{p}{100}$, og en nedgang på $p$ prosent gir $k = 1 - \\frac{p}{100}$. En bakteriekultur som øker 18 % per time, har $k = 1{,}18$, og en bil som faller 12 % i verdi per år, har $k = 0{,}88$.</p><p>Grafen til $f(x) = a \\cdot k^x$ med $a > 0$ ligger alltid over $x$-aksen: uansett hvor negativ $x$ blir, er $k^x$ positiv. Linja $y = 0$ er en <strong>asymptote</strong> som grafen nærmer seg, men aldri treffer. Det som skiller eksponentiell vekst fra lineær vekst, er at funksjonsverdien <em>ganges</em> med samme faktor for hvert steg, i stedet for at det <em>legges til</em> et fast tall.</p><p>Blant alle mulige grunntall er ett spesielt: <strong>tallet $e$</strong>.</p>$$e \\approx 2{,}718281828$$<p>Tallet er irrasjonalt, akkurat som $\\pi$, og du finner det som verdien $\\left(1 + \\frac{1}{n}\\right)^n$ nærmer seg når $n$ blir svært stor. Funksjonen $f(x) = e^x$ heter den <strong>naturlige eksponentialfunksjonen</strong>. Den er spesiell fordi stigningstallet til grafen i et punkt er nøyaktig like stort som funksjonsverdien der. Det gjør $e$ til standardvalget i vekstmodeller, og alle andre eksponentialfunksjoner kan skrives om til dette grunntallet, siden $k^x = e^{x \\ln k}$.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Vekstfaktoren bestemmer om grafen stiger eller synker",
+          "forklaring": "Begge grafene starter i 1 og ganges med den samme faktoren for hvert steg mot høyre. Med k = 1,18 er verdien doblet etter 4,2 tidsenheter, mens k = 0,88 nærmer seg x-aksen uten å nå den — en eksponentialfunksjon blir aldri 0 eller negativ.",
+          "xmin": -2,
+          "xmax": 10,
+          "ymin": 0,
+          "ymax": 5.6,
+          "kurver": [
+            {
+              "uttrykk": "1.18^x",
+              "navn": "k = 1,18",
+              "farge": 1
+            },
+            {
+              "uttrykk": "0.88^x",
+              "navn": "k = 0,88",
+              "farge": 2
+            }
+          ],
+          "asymptoter": [
+            {
+              "retning": "horisontal",
+              "verdi": 0,
+              "navn": "y = 0"
+            }
+          ],
+          "punkter": [
+            {
+              "x": 0,
+              "y": 1,
+              "navn": "(0, 1)"
+            },
+            {
+              "x": 4.19,
+              "y": 2,
+              "navn": "dobling",
+              "hjelpelinjer": true
+            }
+          ]
+        }
       },
       {
         "tittel": "Logaritmer: lg og ln",
@@ -55,14 +184,37 @@
       },
       {
         "tittel": "Eksponentiallikninger",
-        "html": "<p>I en <strong>eksponentiallikning</strong> står den ukjente i eksponenten. Går tallene pent opp, kan du se svaret: $2^x = 32$ gir $x = 5$, fordi $2^5 = 32$. Men $2^x = 40$ krever logaritmer.</p><p>Framgangsmåten er alltid den samme:</p><ol><li>Få potensen alene på én side av likhetstegnet.</li><li>Ta logaritmen på begge sider.</li><li>Bruk $\\lg a^x = x \\lg a$ til å flytte eksponenten ned.</li><li>Del på tallet som står foran $x$.</li></ol><p>For $2^x = 40$ blir det slik:</p>$$\\lg 2^x = \\lg 40 \\quad \\Rightarrow \\quad x \\lg 2 = \\lg 40 \\quad \\Rightarrow \\quad x = \\frac{\\lg 40}{\\lg 2} \\approx 5{,}32$$<p>Merk at $\\frac{\\lg 40}{\\lg 2}$ er det <strong>eksakte</strong> svaret. Uten hjelpemidler lar du det stå på denne formen.</p><p>Har likningen $e$ som grunntall, er det enklest å bruke $\\ln$, siden $\\ln e = 1$:</p>$$e^{0{,}4x} = 9 \\quad \\Rightarrow \\quad 0{,}4x = \\ln 9 \\quad \\Rightarrow \\quad x = \\frac{\\ln 9}{0{,}4} \\approx 5{,}49$$<p>Står det en konstant faktor foran potensen, må du dele den bort <em>først</em>. I $50 \\cdot 1{,}2^t = 300$ deler du på 50 og får $1{,}2^t = 6$, som gir $t = \\frac{\\lg 6}{\\lg 1{,}2} \\approx 9{,}83$.</p><p>Er den ukjente i eksponenten på begge sider, tar du logaritmen likevel og samler $x$-leddene: $3^x = 2^{x+1}$ gir $x \\lg 3 = (x+1)\\lg 2$, som du løser som en helt vanlig lineær likning.</p>"
+        "html": "<p>I en <strong>eksponentiallikning</strong> står den ukjente i eksponenten. Går tallene pent opp, kan du se svaret: $2^x = 32$ gir $x = 5$, fordi $2^5 = 32$. Men $2^x = 40$ krever logaritmer.</p><p>Framgangsmåten er alltid den samme:</p><ol><li>Få potensen alene på én side av likhetstegnet.</li><li>Ta logaritmen på begge sider.</li><li>Bruk $\\lg a^x = x \\lg a$ til å flytte eksponenten ned.</li><li>Del på tallet som står foran $x$.</li></ol><p>For $2^x = 40$ blir det slik:</p>$$\\lg 2^x = \\lg 40 \\quad \\Rightarrow \\quad x \\lg 2 = \\lg 40 \\quad \\Rightarrow \\quad x = \\frac{\\lg 40}{\\lg 2} \\approx 5{,}32$$<p>Merk at $\\frac{\\lg 40}{\\lg 2}$ er det <strong>eksakte</strong> svaret. Uten hjelpemidler lar du det stå på denne formen.</p><p>Har likningen $e$ som grunntall, er det enklest å bruke $\\ln$, siden $\\ln e = 1$:</p>$$e^{0{,}4x} = 9 \\quad \\Rightarrow \\quad 0{,}4x = \\ln 9 \\quad \\Rightarrow \\quad x = \\frac{\\ln 9}{0{,}4} \\approx 5{,}49$$<p>Står det en konstant faktor foran potensen, må du dele den bort <em>først</em>. I $50 \\cdot 1{,}2^t = 300$ deler du på 50 og får $1{,}2^t = 6$, som gir $t = \\frac{\\lg 6}{\\lg 1{,}2} \\approx 9{,}83$.</p><p>Er den ukjente i eksponenten på begge sider, tar du logaritmen likevel og samler $x$-leddene: $3^x = 2^{x+1}$ gir $x \\lg 3 = (x+1)\\lg 2$, som du løser som en helt vanlig lineær likning.</p>",
+        "figur": {
+          "type": "flyt",
+          "retning": "ned",
+          "tittel": "Slik løser du en eksponentiallikning",
+          "forklaring": "Steg 1 er det som oftest glemmes: en konstant faktor foran potensen må deles bort før du logaritmerer. Steg 3 er hele hensikten med logaritmen — den flytter den ukjente ned fra eksponenten.",
+          "steg": [
+            {
+              "tekst": "Få potensen alene på én side",
+              "note": "del bort tallet foran"
+            },
+            {
+              "tekst": "Ta lg på begge sider",
+              "note": "bruk ln når grunntallet er e"
+            },
+            {
+              "tekst": "Flytt eksponenten ned",
+              "note": "lg aˣ = x · lg a"
+            },
+            {
+              "tekst": "Del på lg a",
+              "note": "lg b / lg a er eksakt svar"
+            }
+          ]
+        }
       },
       {
         "tittel": "Logaritmelikninger og falske løsninger",
         "html": "<p>I en <strong>logaritmelikning</strong> står den ukjente inni logaritmen. Da bruker du definisjonen baklengs: $\\lg x = y$ betyr $x = 10^y$. Enkleste tilfelle er $\\lg x = 2{,}5$, som gir $x = 10^{2{,}5} \\approx 316$, og $\\ln x = 3$, som gir $x = e^3 \\approx 20{,}1$.</p><p>Er det flere logaritmer i likningen, må du først bruke logaritmereglene til å samle alt i <strong>én</strong> logaritme:</p>$$\\lg(x+1) + \\lg(x-1) = \\lg\\left((x+1)(x-1)\\right)$$<p>Deretter kvitter du deg med logaritmen. Står det $\\lg(\\ldots) = \\lg(\\ldots)$ på begge sider, kan du stryke logaritmen og sette innmaten lik hverandre.</p><p>Her kommer den store fellen. Logaritmen er bare definert for positive tall, så løsningene du finner, må gi et positivt uttrykk inni <em>alle</em> logaritmene i den opprinnelige likningen. En løsning som bryter dette, kalles en <strong>falsk løsning</strong> og skal forkastes. Skriv derfor opp definisjonsmengden før du regner, eller sett svaret inn til slutt og kontroller.</p><p>Se på $\\lg(x-2) = 1 - \\lg x$. Både $x - 2 > 0$ og $x > 0$ må gjelde, altså $x > 2$. Vi samler logaritmene på én side:</p>$$\\lg(x-2) + \\lg x = 1 \\quad \\Rightarrow \\quad \\lg\\left(x(x-2)\\right) = 1 \\quad \\Rightarrow \\quad x^2 - 2x = 10$$<p>Andregradsformelen gir $x = 1 \\pm \\sqrt{11}$, det vil si $x \\approx 4{,}32$ eller $x \\approx -2{,}32$. Bare den første er større enn 2, så $x = 1 + \\sqrt{11}$ er den eneste løsningen.</p>"
       }
     ],
-
     "eksempler": [
       {
         "tittel": "Forenkling med potensreglene",
@@ -77,7 +229,51 @@
       {
         "tittel": "Logaritmelikning med falsk løsning",
         "oppgave": "<p>Løs likningen $\\lg(x+3) + \\lg x = 1$.</p>",
-        "losning": "<p><strong>Steg 1 — finn definisjonsmengden.</strong> Begge uttrykkene inni logaritmene må være positive:</p>$$x + 3 > 0 \\quad \\text{og} \\quad x > 0$$<p>Den strengeste av disse er $x > 0$, så bare positive løsninger kan godtas.</p><p><strong>Steg 2 — samle til én logaritme.</strong> Vi bruker $\\lg a + \\lg b = \\lg(ab)$ baklengs:</p>$$\\lg\\left(x(x+3)\\right) = 1$$<p><strong>Steg 3 — bruk definisjonen av $\\lg$.</strong> At logaritmen er 1, betyr at innmaten er $10^1$:</p>$$x(x+3) = 10^1 = 10$$<p><strong>Steg 4 — løs andregradslikningen.</strong> Vi ganger ut og flytter alt over på én side:</p>$$x^2 + 3x - 10 = 0$$$$x = \\frac{-3 \\pm \\sqrt{3^2 - 4 \\cdot 1 \\cdot (-10)}}{2 \\cdot 1} = \\frac{-3 \\pm \\sqrt{9 + 40}}{2} = \\frac{-3 \\pm 7}{2}$$<p>Det gir to kandidater:</p>$$x = \\frac{-3 + 7}{2} = 2 \\qquad \\text{eller} \\qquad x = \\frac{-3 - 7}{2} = -5$$<p><strong>Steg 5 — forkast falske løsninger.</strong> Verdien $x = -5$ ligger utenfor definisjonsmengden, for $\\lg(-5)$ finnes ikke. Den er en falsk løsning som dukket opp da vi gikk over til andregradslikningen.</p><p><strong>Kontroll.</strong> Vi setter $x = 2$ inn i den opprinnelige likningen:</p>$$\\lg(2+3) + \\lg 2 = \\lg 5 + \\lg 2 = \\lg(5 \\cdot 2) = \\lg 10 = 1$$<p>Likningen stemmer, så den eneste løsningen er $x = 2$.</p>"
+        "losning": "<p><strong>Steg 1 — finn definisjonsmengden.</strong> Begge uttrykkene inni logaritmene må være positive:</p>$$x + 3 > 0 \\quad \\text{og} \\quad x > 0$$<p>Den strengeste av disse er $x > 0$, så bare positive løsninger kan godtas.</p><p><strong>Steg 2 — samle til én logaritme.</strong> Vi bruker $\\lg a + \\lg b = \\lg(ab)$ baklengs:</p>$$\\lg\\left(x(x+3)\\right) = 1$$<p><strong>Steg 3 — bruk definisjonen av $\\lg$.</strong> At logaritmen er 1, betyr at innmaten er $10^1$:</p>$$x(x+3) = 10^1 = 10$$<p><strong>Steg 4 — løs andregradslikningen.</strong> Vi ganger ut og flytter alt over på én side:</p>$$x^2 + 3x - 10 = 0$$$$x = \\frac{-3 \\pm \\sqrt{3^2 - 4 \\cdot 1 \\cdot (-10)}}{2 \\cdot 1} = \\frac{-3 \\pm \\sqrt{9 + 40}}{2} = \\frac{-3 \\pm 7}{2}$$<p>Det gir to kandidater:</p>$$x = \\frac{-3 + 7}{2} = 2 \\qquad \\text{eller} \\qquad x = \\frac{-3 - 7}{2} = -5$$<p><strong>Steg 5 — forkast falske løsninger.</strong> Verdien $x = -5$ ligger utenfor definisjonsmengden, for $\\lg(-5)$ finnes ikke. Den er en falsk løsning som dukket opp da vi gikk over til andregradslikningen.</p><p><strong>Kontroll.</strong> Vi setter $x = 2$ inn i den opprinnelige likningen:</p>$$\\lg(2+3) + \\lg 2 = \\lg 5 + \\lg 2 = \\lg(5 \\cdot 2) = \\lg 10 = 1$$<p>Likningen stemmer, så den eneste løsningen er $x = 2$.</p>",
+        "figur": {
+          "type": "graf",
+          "tittel": "Venstre side av likningen finnes bare for x > 0",
+          "forklaring": "Grafen krysser linja y = 1 nøyaktig én gang, i x = 2. Ved x = −5 finnes det ingen graf i det hele tatt, for da er begge uttrykkene inni logaritmene negative — kandidaten er en falsk løsning som dukket opp da vi gikk over til andregradslikningen.",
+          "xmin": -6,
+          "xmax": 6,
+          "ymin": -1.5,
+          "ymax": 2,
+          "kurver": [
+            {
+              "uttrykk": "lg(x+3)+lg(x)",
+              "navn": "lg(x+3) + lg x",
+              "farge": 1
+            }
+          ],
+          "linjer": [
+            {
+              "fra": [
+                -6,
+                1
+              ],
+              "til": [
+                6,
+                1
+              ],
+              "navn": "y = 1",
+              "farge": 2,
+              "merkeplass": 0.12
+            }
+          ],
+          "punkter": [
+            {
+              "x": 2,
+              "y": 1,
+              "navn": "(2, 1)",
+              "hjelpelinjer": true
+            },
+            {
+              "x": -5,
+              "y": 0,
+              "navn": "x = −5"
+            }
+          ]
+        }
       },
       {
         "tittel": "Eksponentielt forfall med e: koffein i kroppen",
@@ -85,7 +281,6 @@
         "losning": "<p><strong>a)</strong> Vi setter $t = 5$ inn og regner ut eksponenten først:</p>$$K(5) = 120 \\cdot e^{-0{,}13 \\cdot 5} = 120 \\cdot e^{-0{,}65} = 120 \\cdot 0{,}5220 = 62{,}6$$<p>Det er omtrent <strong>62,6 mg</strong> koffein igjen etter 5 timer.</p><p><strong>b)</strong> Halveringstiden er tiden det tar før mengden er halvert. Startmengden er $K(0) = 120$ mg, så vi løser $K(t) = 60$:</p>$$120 \\cdot e^{-0{,}13t} = 60 \\quad \\Rightarrow \\quad e^{-0{,}13t} = \\frac{60}{120} = 0{,}5$$<p>Nå står $e$ som grunntall, så vi tar $\\ln$ på begge sider. Fordi $\\ln e^u = u$, forsvinner eksponentialfunksjonen helt:</p>$$-0{,}13t = \\ln 0{,}5 = -0{,}6931$$$$t = \\frac{-0{,}6931}{-0{,}13} = 5{,}33$$<p>Halveringstiden er omtrent <strong>5,33 timer</strong>, altså cirka 5 timer og 20 minutter. Startmengden 120 falt bort i regningen, så du får samme svar om du regner fra 60 mg ned til 30 mg.</p><p><strong>c)</strong> Vi løser først likningen $K(t) = 20$:</p>$$120 \\cdot e^{-0{,}13t} = 20 \\quad \\Rightarrow \\quad e^{-0{,}13t} = \\frac{20}{120} = \\frac{1}{6}$$$$-0{,}13t = \\ln\\frac{1}{6} = -\\ln 6 = -1{,}7918$$$$t = \\frac{-1{,}7918}{-0{,}13} = 13{,}78$$<p>Siden $K$ er en avtakende funksjon, er mengden mindre enn 20 mg for alle $t > 13{,}78$. Det er altså mindre enn 20 mg koffein igjen etter omtrent <strong>13,8 timer</strong>. Modellen gir aldri null: selv et helt døgn etter kaffen er det igjen $120 \\cdot e^{-0{,}13 \\cdot 24} \\approx 5$ mg.</p>"
       }
     ],
-
     "vanligeFeil": [
       "Å gange eksponentene når du ganger potenser. $a^3 \\cdot a^4$ er $a^7$, ikke $a^{12}$ — det er bare ved potens av potens, $\\left(a^3\\right)^4$, at du ganger.",
       "Å tolke en negativ eksponent som et negativt svar. $2^{-3}$ er $\\frac{1}{8}$, ikke $-8$.",
@@ -94,7 +289,6 @@
       "Å forkorte en brøk mellom to logaritmer. $\\frac{\\lg 20}{\\lg 3}$ kan ikke skrives som $\\lg\\frac{20}{3}$ — regelen sier at en brøk inni logaritmen blir en differanse mellom to logaritmer, $\\lg\\frac{a}{b} = \\lg a - \\lg b$, og den kan ikke brukes baklengs på en brøk mellom to logaritmer.",
       "Å svare uten å sjekke definisjonsmengden i logaritmelikninger, og dermed ta med falske løsninger der uttrykket inni logaritmen blir null eller negativt."
     ],
-
     "tips": [
       "Skriv om alle røtter til brøkeksponenter før du bruker potensreglene. $\\frac{\\sqrt{x}}{\\sqrt[3]{x}}$ er lett når det står $x^{\\frac{1}{2} - \\frac{1}{3}} = x^{\\frac{1}{6}}$.",
       "Uten hjelpemidler skal svaret ofte stå eksakt. La $\\frac{\\lg 5}{\\lg 3}$ eller $1 + \\sqrt{11}$ stå som det er, og lær utenat at $\\lg 1 = 0$, $\\lg 10 = 1$, $\\lg 100 = 2$, $\\lg 0{,}1 = -1$, $\\ln 1 = 0$ og $\\ln e = 1$.",
@@ -103,40 +297,95 @@
       "I modelleringsoppgaver: del bort startverdien før du logaritmerer, og svar med enhet og tolkning («etter 15,3 timer», «5,33 timer, altså cirka 5 timer og 20 minutter»)."
     ]
   },
-
   "begreper": [
-    { "begrep": "Potens", "forklaring": "Uttrykket $a^n$, som betyr grunntallet $a$ ganget med seg selv $n$ ganger når $n$ er et positivt heltall." },
-    { "begrep": "Grunntall", "forklaring": "Tallet som opphøyes i $a^n$, altså $a$. Potensreglene gjelder bare når grunntallene er like." },
-    { "begrep": "Eksponent", "forklaring": "Tallet grunntallet opphøyes i, altså $n$ i $a^n$. Den kan være negativ, null eller en brøk." },
-    { "begrep": "n-te rot", "forklaring": "Tallet som opphøyd i $n$ gir $a$, skrevet $\\sqrt[n]{a} = a^{\\frac{1}{n}}$." },
-    { "begrep": "Eksponentialfunksjon", "forklaring": "En funksjon på formen $f(x) = a \\cdot k^x$, der den variable står i eksponenten." },
-    { "begrep": "Vekstfaktor", "forklaring": "Tallet $k$ du ganger med for hver tidsenhet. $p$ % vekst gir $k = 1 + \\frac{p}{100}$, $p$ % nedgang gir $k = 1 - \\frac{p}{100}$." },
-    { "begrep": "Asymptote", "forklaring": "En rett linje som grafen nærmer seg mer og mer. For $f(x) = a \\cdot k^x$ er $x$-aksen ($y = 0$) en asymptote som grafen aldri treffer." },
-    { "begrep": "Tallet e", "forklaring": "Et irrasjonalt tall, $e \\approx 2{,}718$, som er grunntallet i den naturlige eksponentialfunksjonen $e^x$." },
-    { "begrep": "Logaritme", "forklaring": "Svaret på spørsmålet «hvilken eksponent må grunntallet ha for å bli dette tallet?». Bare definert for positive tall." },
-    { "begrep": "Briggsk logaritme (lg)", "forklaring": "Logaritmen med grunntall 10: $\\lg x = y$ betyr $10^y = x$. Kalles også titallslogaritmen." },
-    { "begrep": "Naturlig logaritme (ln)", "forklaring": "Logaritmen med grunntall $e$: $\\ln x = y$ betyr $e^y = x$. Den passer best sammen med $e^x$." },
-    { "begrep": "Doblingstid", "forklaring": "Tiden det tar før en voksende størrelse er dobbelt så stor. For $a \\cdot k^t$ er den $\\frac{\\lg 2}{\\lg k}$, uavhengig av startverdien." },
-    { "begrep": "Halveringstid", "forklaring": "Tiden det tar før en avtakende størrelse er halvert, for eksempel for et legemiddel i blodet eller et radioaktivt stoff." },
-    { "begrep": "Falsk løsning", "forklaring": "En verdi som løser likningen du regnet deg fram til, men som ligger utenfor definisjonsmengden til den opprinnelige likningen og derfor må forkastes." }
+    {
+      "begrep": "Potens",
+      "forklaring": "Uttrykket $a^n$, som betyr grunntallet $a$ ganget med seg selv $n$ ganger når $n$ er et positivt heltall."
+    },
+    {
+      "begrep": "Grunntall",
+      "forklaring": "Tallet som opphøyes i $a^n$, altså $a$. Potensreglene gjelder bare når grunntallene er like."
+    },
+    {
+      "begrep": "Eksponent",
+      "forklaring": "Tallet grunntallet opphøyes i, altså $n$ i $a^n$. Den kan være negativ, null eller en brøk."
+    },
+    {
+      "begrep": "n-te rot",
+      "forklaring": "Tallet som opphøyd i $n$ gir $a$, skrevet $\\sqrt[n]{a} = a^{\\frac{1}{n}}$."
+    },
+    {
+      "begrep": "Eksponentialfunksjon",
+      "forklaring": "En funksjon på formen $f(x) = a \\cdot k^x$, der den variable står i eksponenten."
+    },
+    {
+      "begrep": "Vekstfaktor",
+      "forklaring": "Tallet $k$ du ganger med for hver tidsenhet. $p$ % vekst gir $k = 1 + \\frac{p}{100}$, $p$ % nedgang gir $k = 1 - \\frac{p}{100}$."
+    },
+    {
+      "begrep": "Asymptote",
+      "forklaring": "En rett linje som grafen nærmer seg mer og mer. For $f(x) = a \\cdot k^x$ er $x$-aksen ($y = 0$) en asymptote som grafen aldri treffer."
+    },
+    {
+      "begrep": "Tallet e",
+      "forklaring": "Et irrasjonalt tall, $e \\approx 2{,}718$, som er grunntallet i den naturlige eksponentialfunksjonen $e^x$."
+    },
+    {
+      "begrep": "Logaritme",
+      "forklaring": "Svaret på spørsmålet «hvilken eksponent må grunntallet ha for å bli dette tallet?». Bare definert for positive tall."
+    },
+    {
+      "begrep": "Briggsk logaritme (lg)",
+      "forklaring": "Logaritmen med grunntall 10: $\\lg x = y$ betyr $10^y = x$. Kalles også titallslogaritmen."
+    },
+    {
+      "begrep": "Naturlig logaritme (ln)",
+      "forklaring": "Logaritmen med grunntall $e$: $\\ln x = y$ betyr $e^y = x$. Den passer best sammen med $e^x$."
+    },
+    {
+      "begrep": "Doblingstid",
+      "forklaring": "Tiden det tar før en voksende størrelse er dobbelt så stor. For $a \\cdot k^t$ er den $\\frac{\\lg 2}{\\lg k}$, uavhengig av startverdien."
+    },
+    {
+      "begrep": "Halveringstid",
+      "forklaring": "Tiden det tar før en avtakende størrelse er halvert, for eksempel for et legemiddel i blodet eller et radioaktivt stoff."
+    },
+    {
+      "begrep": "Falsk løsning",
+      "forklaring": "En verdi som løser likningen du regnet deg fram til, men som ligger utenfor definisjonsmengden til den opprinnelige likningen og derfor må forkastes."
+    }
   ],
-
   "quiz": [
     {
       "sporsmal": "Hva blir $\\left(3x^2\\right)^3$?",
-      "alternativer": ["$3x^6$", "$9x^6$", "$27x^6$", "$27x^5$"],
+      "alternativer": [
+        "$3x^6$",
+        "$9x^6$",
+        "$27x^6$",
+        "$27x^5$"
+      ],
       "riktig": 2,
       "forklaring": "Regelen $(ab)^n = a^n b^n$ betyr at alt inni parentesen skal opphøyes i 3, også tallet: $3^3 = 27$ og $\\left(x^2\\right)^3 = x^{2 \\cdot 3} = x^6$. Den vanligste feilen er å la 3-eren stå urørt og svare $3x^6$. Svaret $27x^5$ kommer av å legge sammen eksponentene $2+3$ i stedet for å gange dem — sammenlegging hører til $x^2 \\cdot x^3$."
     },
     {
       "sporsmal": "Hva er $\\frac{a^7}{a^{-3}}$?",
-      "alternativer": ["$a^{10}$", "$a^{4}$", "$a^{-21}$", "$\\frac{1}{a^{4}}$"],
+      "alternativer": [
+        "$a^{10}$",
+        "$a^{4}$",
+        "$a^{-21}$",
+        "$\\frac{1}{a^{4}}$"
+      ],
       "riktig": 0,
       "forklaring": "Divisjonsregelen gir $a^{7-(-3)} = a^{7+3} = a^{10}$. Å trekke fra en negativ eksponent er det samme som å legge til. Svaret $a^4$ er den klassiske feilen der man overser minustegnet og regner $7-3$. $a^{-21}$ kommer av å gange eksponentene, som bare gjelder ved potens av potens."
     },
     {
       "sporsmal": "Hva er $27^{\\frac{2}{3}}$?",
-      "alternativer": ["$18$", "$3$", "$729$", "$9$"],
+      "alternativer": [
+        "$18$",
+        "$3$",
+        "$729$",
+        "$9$"
+      ],
       "riktig": 3,
       "forklaring": "Brøkeksponent betyr rot: $27^{\\frac{2}{3}} = \\left(\\sqrt[3]{27}\\right)^2 = 3^2 = 9$. Nevneren i eksponenten forteller hvilken rot, telleren hvilken potens. Svaret 18 kommer av å gange $27$ med $\\frac{2}{3}$, som blander sammen eksponent og faktor. 3 er svaret hvis du glemmer å kvadrere, og 729 er $27^2$, altså hvis du glemmer rota."
     },
@@ -153,25 +402,45 @@
     },
     {
       "sporsmal": "Hva er $\\lg 0{,}001$?",
-      "alternativer": ["$-2$", "$3$", "$-3$", "$\\frac{1}{3}$"],
+      "alternativer": [
+        "$-2$",
+        "$3$",
+        "$-3$",
+        "$\\frac{1}{3}$"
+      ],
       "riktig": 2,
       "forklaring": "Skriv tallet som en tierpotens: $0{,}001 = \\frac{1}{1000} = 10^{-3}$, og $\\lg 10^x = x$ gir svaret $-3$. Svaret 3 glemmer at tallet er mindre enn 1, og alle tall mellom 0 og 1 har negativ logaritme. $-2$ er logaritmen til $0{,}01$ — tell nullene nøye."
     },
     {
       "sporsmal": "Hva er den eksakte løsningen av likningen $3^x = 20$?",
-      "alternativer": ["$x = \\lg 20 - \\lg 3$", "$x = \\frac{\\lg 20}{\\lg 3}$", "$x = \\frac{20}{3}$", "$x = \\lg 20 \\cdot \\lg 3$"],
+      "alternativer": [
+        "$x = \\lg 20 - \\lg 3$",
+        "$x = \\frac{\\lg 20}{\\lg 3}$",
+        "$x = \\frac{20}{3}$",
+        "$x = \\lg 20 \\cdot \\lg 3$"
+      ],
       "riktig": 1,
       "forklaring": "Tar du $\\lg$ på begge sider, blir det $x \\lg 3 = \\lg 20$, og deling på $\\lg 3$ gir $x = \\frac{\\lg 20}{\\lg 3} \\approx 2{,}73$. Alternativ A er feil fordi $\\lg 20 - \\lg 3 = \\lg\\frac{20}{3} \\approx 0{,}82$ — en differanse av logaritmer er ikke det samme som en brøk mellom dem. Sjekk med hoderegning: $3^2 = 9$ og $3^3 = 27$, så $x$ må ligge mellom 2 og 3."
     },
     {
       "sporsmal": "Hva er løsningen av $e^{2x} = 7$?",
-      "alternativer": ["$x = \\frac{\\ln 7}{2}$", "$x = \\ln 7 - \\ln 2$", "$x = \\frac{\\ln 7}{\\ln 2}$", "$x = 2 \\ln 7$"],
+      "alternativer": [
+        "$x = \\frac{\\ln 7}{2}$",
+        "$x = \\ln 7 - \\ln 2$",
+        "$x = \\frac{\\ln 7}{\\ln 2}$",
+        "$x = 2 \\ln 7$"
+      ],
       "riktig": 0,
       "forklaring": "Tar du $\\ln$ på begge sider, gir $\\ln e^{2x} = 2x$ likningen $2x = \\ln 7$, altså $x = \\frac{\\ln 7}{2} \\approx 0{,}973$. Alternativ D er feil fordi du skal dele på 2, ikke gange den inn. Alternativ C forveksler «dele på tallet 2» med «dele på $\\ln 2$», som du bare gjør når 2 er grunntallet i potensen."
     },
     {
       "sporsmal": "En bestand er gitt ved $N(t) = 50 \\cdot 1{,}25^t$. Hvilket uttrykk gir doblingstiden?",
-      "alternativer": ["$\\frac{\\lg 2}{\\lg 50}$", "$\\frac{\\lg 100}{\\lg 1{,}25}$", "$2 \\lg 1{,}25$", "$\\frac{\\lg 2}{\\lg 1{,}25}$"],
+      "alternativer": [
+        "$\\frac{\\lg 2}{\\lg 50}$",
+        "$\\frac{\\lg 100}{\\lg 1{,}25}$",
+        "$2 \\lg 1{,}25$",
+        "$\\frac{\\lg 2}{\\lg 1{,}25}$"
+      ],
       "riktig": 3,
       "forklaring": "Doblet bestand betyr $50 \\cdot 1{,}25^t = 100$. Deler du først på 50, står det $1{,}25^t = 2$, og da gir logaritmene $t = \\frac{\\lg 2}{\\lg 1{,}25} \\approx 3{,}1$. Alternativ B er den fristende feilen: der har man beholdt tallet 100 i stedet for å dele bort startverdien. Doblingstiden avhenger bare av vekstfaktoren, aldri av hvor mange du starter med."
     },
@@ -188,13 +457,23 @@
     },
     {
       "sporsmal": "Hva er løsningen av $\\lg(x-1) = 2$?",
-      "alternativer": ["$x = 3$", "$x = 100$", "$x = 1000$", "$x = 101$"],
+      "alternativer": [
+        "$x = 3$",
+        "$x = 100$",
+        "$x = 1000$",
+        "$x = 101$"
+      ],
       "riktig": 3,
       "forklaring": "Definisjonen av $\\lg$ gir $x - 1 = 10^2 = 100$, altså $x = 101$. Den mest fristende feilen er $x = 100$: da har man funnet $10^2$ riktig, men glemt å løse videre for $x$. $x = 3$ kommer av å sette $x - 1 = 2$, som ville betydd at man droppet logaritmen helt, og $x = 1000$ bruker $10^3$ i stedet for $10^2$."
     },
     {
       "sporsmal": "Hva er definisjonsmengden til $f(x) = \\ln(x-4)$?",
-      "alternativer": ["$x \\geq 4$", "$x > 4$", "$x > 0$", "Alle reelle tall"],
+      "alternativer": [
+        "$x \\geq 4$",
+        "$x > 4$",
+        "$x > 0$",
+        "Alle reelle tall"
+      ],
       "riktig": 1,
       "forklaring": "Uttrykket inni logaritmen må være strengt positivt: $x - 4 > 0$ gir $x > 4$. Alternativ A tar med $x = 4$, men $\\ln 0$ finnes ikke, for ingen eksponent gir $e^y = 0$. Alternativ C sjekker $x$ i stedet for kjernen $x-4$ — det er alltid innmaten i logaritmen som må være positiv."
     },
@@ -210,23 +489,70 @@
       "forklaring": "Vekstfaktoren er $k = 0{,}88 = 1 - \\frac{12}{100}$, så verdien blir 88 % av fjorårets verdi, det vil si en nedgang på 12 % per år. Alternativ A forveksler vekstfaktoren med den prosentvise endringen. Alternativ C beskriver lineær nedgang med et fast kronebeløp; i en eksponentiell modell blir kronetapet mindre og mindre for hvert år, fordi 12 % regnes av en stadig lavere verdi."
     }
   ],
-
   "flashcards": [
-    { "front": "$a^m \\cdot a^n = ?$", "bak": "$a^{m+n}$ — legg sammen eksponentene når grunntallet er likt." },
-    { "front": "$\\frac{a^m}{a^n} = ?$", "bak": "$a^{m-n}$ — trekk eksponenten i nevneren fra eksponenten i telleren." },
-    { "front": "$\\left(a^m\\right)^n = ?$", "bak": "$a^{m \\cdot n}$ — her, og bare her, ganger du eksponentene." },
-    { "front": "$a^{-n}$ og $a^0$", "bak": "$a^{-n} = \\frac{1}{a^n}$ og $a^0 = 1$ for alle $a \\neq 0$. Negativ eksponent gir aldri negativt svar." },
-    { "front": "$a^{\\frac{m}{n}} = ?$", "bak": "$\\sqrt[n]{a^m}$ — nevneren gir rota, telleren gir potensen. For eksempel $8^{\\frac{2}{3}} = \\left(\\sqrt[3]{8}\\right)^2 = 4$." },
-    { "front": "Hva er vekstfaktoren ved 18 % vekst? Og ved 12 % nedgang?", "bak": "$k = 1{,}18$ og $k = 0{,}88$. Generelt $k = 1 \\pm \\frac{p}{100}$." },
-    { "front": "Hva betyr $\\lg x$?", "bak": "Eksponenten 10 må ha for å bli $x$: $\\lg x = y \\Leftrightarrow 10^y = x$. For eksempel $\\lg 100 = 2$." },
-    { "front": "Hva betyr $\\ln x$?", "bak": "Eksponenten $e$ må ha for å bli $x$: $\\ln x = y \\Leftrightarrow e^y = x$. Her er $\\ln 1 = 0$ og $\\ln e = 1$." },
-    { "front": "$\\lg(ab) = ?$ og $\\lg\\frac{a}{b} = ?$", "bak": "$\\lg a + \\lg b$ og $\\lg a - \\lg b$." },
-    { "front": "$\\lg a^n = ?$", "bak": "$n \\lg a$ — eksponenten flyttes ned som faktor. Dette er nøkkelen til eksponentiallikninger." },
-    { "front": "Gjelder $\\lg(a+b) = \\lg a + \\lg b$?", "bak": "Nei, det finnes ingen regel for logaritmen av en sum. Motbevis: $\\lg(10+90) = 2$, mens $\\lg 10 + \\lg 90 \\approx 2{,}95$." },
-    { "front": "$10^{\\lg x}$, $\\lg 10^x$, $e^{\\ln x}$, $\\ln e^x$", "bak": "Alle er lik $x$ — logaritme og eksponentialfunksjon er motsatte operasjoner som nuller ut hverandre." },
-    { "front": "Hvilke $x$ kan settes inn i $\\lg x$ og $\\ln x$?", "bak": "Bare $x > 0$. Ingen eksponent gir 0 eller et negativt tall, så $\\lg 0$ og $\\lg(-4)$ finnes ikke." },
-    { "front": "Hvordan løser du $a^x = b$?", "bak": "Ta logaritmen på begge sider: $x \\lg a = \\lg b$, altså $x = \\frac{\\lg b}{\\lg a}$. Del bort eventuelle konstante faktorer først." },
-    { "front": "Doblingstid og halveringstid for $N(t) = a \\cdot k^t$", "bak": "$t = \\frac{\\lg 2}{\\lg k}$ og $t = \\frac{\\lg 0{,}5}{\\lg k}$. Begge er uavhengige av startverdien $a$." },
-    { "front": "Hva er en falsk løsning i en logaritmelikning?", "bak": "En verdi som løser likningen du endte opp med, men som gjør et uttrykk inni en logaritme null eller negativt. Den må forkastes — kontroller alltid mot definisjonsmengden." }
+    {
+      "front": "$a^m \\cdot a^n = ?$",
+      "bak": "$a^{m+n}$ — legg sammen eksponentene når grunntallet er likt."
+    },
+    {
+      "front": "$\\frac{a^m}{a^n} = ?$",
+      "bak": "$a^{m-n}$ — trekk eksponenten i nevneren fra eksponenten i telleren."
+    },
+    {
+      "front": "$\\left(a^m\\right)^n = ?$",
+      "bak": "$a^{m \\cdot n}$ — her, og bare her, ganger du eksponentene."
+    },
+    {
+      "front": "$a^{-n}$ og $a^0$",
+      "bak": "$a^{-n} = \\frac{1}{a^n}$ og $a^0 = 1$ for alle $a \\neq 0$. Negativ eksponent gir aldri negativt svar."
+    },
+    {
+      "front": "$a^{\\frac{m}{n}} = ?$",
+      "bak": "$\\sqrt[n]{a^m}$ — nevneren gir rota, telleren gir potensen. For eksempel $8^{\\frac{2}{3}} = \\left(\\sqrt[3]{8}\\right)^2 = 4$."
+    },
+    {
+      "front": "Hva er vekstfaktoren ved 18 % vekst? Og ved 12 % nedgang?",
+      "bak": "$k = 1{,}18$ og $k = 0{,}88$. Generelt $k = 1 \\pm \\frac{p}{100}$."
+    },
+    {
+      "front": "Hva betyr $\\lg x$?",
+      "bak": "Eksponenten 10 må ha for å bli $x$: $\\lg x = y \\Leftrightarrow 10^y = x$. For eksempel $\\lg 100 = 2$."
+    },
+    {
+      "front": "Hva betyr $\\ln x$?",
+      "bak": "Eksponenten $e$ må ha for å bli $x$: $\\ln x = y \\Leftrightarrow e^y = x$. Her er $\\ln 1 = 0$ og $\\ln e = 1$."
+    },
+    {
+      "front": "$\\lg(ab) = ?$ og $\\lg\\frac{a}{b} = ?$",
+      "bak": "$\\lg a + \\lg b$ og $\\lg a - \\lg b$."
+    },
+    {
+      "front": "$\\lg a^n = ?$",
+      "bak": "$n \\lg a$ — eksponenten flyttes ned som faktor. Dette er nøkkelen til eksponentiallikninger."
+    },
+    {
+      "front": "Gjelder $\\lg(a+b) = \\lg a + \\lg b$?",
+      "bak": "Nei, det finnes ingen regel for logaritmen av en sum. Motbevis: $\\lg(10+90) = 2$, mens $\\lg 10 + \\lg 90 \\approx 2{,}95$."
+    },
+    {
+      "front": "$10^{\\lg x}$, $\\lg 10^x$, $e^{\\ln x}$, $\\ln e^x$",
+      "bak": "Alle er lik $x$ — logaritme og eksponentialfunksjon er motsatte operasjoner som nuller ut hverandre."
+    },
+    {
+      "front": "Hvilke $x$ kan settes inn i $\\lg x$ og $\\ln x$?",
+      "bak": "Bare $x > 0$. Ingen eksponent gir 0 eller et negativt tall, så $\\lg 0$ og $\\lg(-4)$ finnes ikke."
+    },
+    {
+      "front": "Hvordan løser du $a^x = b$?",
+      "bak": "Ta logaritmen på begge sider: $x \\lg a = \\lg b$, altså $x = \\frac{\\lg b}{\\lg a}$. Del bort eventuelle konstante faktorer først."
+    },
+    {
+      "front": "Doblingstid og halveringstid for $N(t) = a \\cdot k^t$",
+      "bak": "$t = \\frac{\\lg 2}{\\lg k}$ og $t = \\frac{\\lg 0{,}5}{\\lg k}$. Begge er uavhengige av startverdien $a$."
+    },
+    {
+      "front": "Hva er en falsk løsning i en logaritmelikning?",
+      "bak": "En verdi som løser likningen du endte opp med, men som gjør et uttrykk inni en logaritme null eller negativt. Den må forkastes — kontroller alltid mot definisjonsmengden."
+    }
   ]
 }
