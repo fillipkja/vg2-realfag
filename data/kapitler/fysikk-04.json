@@ -1,0 +1,253 @@
+{
+  "fag": "fysikk",
+  "nr": 4,
+  "tittel": "Bevegelsesmengde",
+  "intro": "Bevegelsesmengde er masse ganger fart, og den forteller hvor vanskelig noe er å stoppe. I dette kapittelet lærer du at en kraft som virker over tid endrer bevegelsesmengden, og at den totale bevegelsesmengden i et støt alltid er den samme før og etter — også når energien ikke er bevart.",
+
+  "kompakt": {
+    "punkter": [
+      "Bevegelsesmengden til en gjenstand er $p = mv$, med enheten $\\text{kg}\\cdot\\text{m/s}$, som er det samme som $\\text{N}\\cdot\\text{s}$.",
+      "Bevegelsesmengde er en vektorstørrelse. I rettlinjet bevegelse holder det å velge positiv retning og gi $v$ og $p$ fortegn.",
+      "Kraftstøtet (impulsen) er kraft ganger tid, $F\\Delta t$, og er lik endringen i bevegelsesmengde: $F\\Delta t = \\Delta p$.",
+      "Newtons 2. lov kan skrives $\\sum F = \\frac{\\Delta p}{\\Delta t}$. Det er denne formen bevegelsesmengde bygger på.",
+      "Samme fartsendring over lengre tid gir mindre kraft. Det er hele ideen bak kollisjonspute, bilbelte og deformasjonssoner.",
+      "I et lukket system, der summen av de ytre kreftene er null, er den totale bevegelsesmengden bevart: $p_{\\text{før}} = p_{\\text{etter}}$.",
+      "Bevaringen følger av Newtons 3. lov: de to gjenstandene virker på hverandre med like store, motsatt rettede krefter i like lang tid.",
+      "I et fullstendig uelastisk støt henger gjenstandene sammen etterpå: $m_1 v_1 + m_2 v_2 = (m_1 + m_2)v'$.",
+      "I et elastisk støt er både bevegelsesmengde og kinetisk energi bevart. I alle andre støt går kinetisk energi over til deformasjon, varme og lyd.",
+      "Bevegelsesmengden er bevart i ethvert støt, men den kinetiske energien er det bare i elastiske støt. Aldri sett $E_k$ før $= E_k$ etter uten at oppgaven sier at støtet er elastisk."
+    ],
+    "formler": [
+      { "navn": "Bevegelsesmengde", "latex": "p = mv" },
+      { "navn": "Enheten for bevegelsesmengde", "latex": "1\\,\\text{kg}\\cdot\\text{m/s} = 1\\,\\text{N}\\cdot\\text{s}" },
+      { "navn": "Kraftstøt (impuls)", "latex": "I = F\\,\\Delta t" },
+      { "navn": "Impulsloven", "latex": "F\\,\\Delta t = \\Delta p = mv - mv_0" },
+      { "navn": "Newtons 2. lov med bevegelsesmengde", "latex": "\\sum F = \\frac{\\Delta p}{\\Delta t}" },
+      { "navn": "Gjennomsnittskraft i et støt", "latex": "F = \\frac{\\Delta p}{\\Delta t}" },
+      { "navn": "Kraftstøt som areal", "latex": "I = \\text{arealet mellom } F\\text{-}t\\text{-grafen og tidsaksen}" },
+      { "navn": "Bevaring av bevegelsesmengde", "latex": "p_{\\text{før}} = p_{\\text{etter}}" },
+      { "navn": "Støt mellom to gjenstander", "latex": "m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'" },
+      { "navn": "Fullstendig uelastisk støt", "latex": "m_1 v_1 + m_2 v_2 = \\left(m_1 + m_2\\right) v'" },
+      { "navn": "Elastisk støt: energibevaring", "latex": "\\frac{1}{2}m_1 v_1^{2} + \\frac{1}{2}m_2 v_2^{2} = \\frac{1}{2}m_1 v_1'^{2} + \\frac{1}{2}m_2 v_2'^{2}" },
+      { "navn": "Elastisk støt: relativ fart", "latex": "v_1 - v_2 = -\\left(v_1' - v_2'\\right)" },
+      { "navn": "Rekyl fra ro", "latex": "0 = m_1 v_1' + m_2 v_2'" },
+      { "navn": "Kinetisk energi uttrykt med p", "latex": "E_k = \\frac{p^{2}}{2m}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Bevegelsesmengde — masse ganger fart",
+        "html": "<p>En trailer som triller sakte mot deg og en pistolkule i høy fart har én ting felles: begge er svært vanskelige å stoppe. <strong>Bevegelsesmengden</strong> er størrelsen som fanger opp nettopp dette, og den er rett og slett masse ganger fart:</p>$$p = mv$$<p>Enheten følger av definisjonen: $\\text{kg}\\cdot\\text{m/s}$. Litt senere skal du se at dette er nøyaktig det samme som $\\text{N}\\cdot\\text{s}$, og begge skrivemåtene er tillatt. På nynorsk kalles den «rørslemengd», og i engelske bøker «momentum».</p><p>Bevegelsesmengde er en <strong>vektorstørrelse</strong>. Retningen er den samme som fartsretningen, og det betyr at fortegnet er en del av svaret. I dette kapittelet holder vi oss til bevegelser langs en rett linje, så du trenger ikke vektorpiler: velg en positiv retning, og gi $v$ og $p$ fortegn etter den. En ball som spretter tilbake fra en vegg, har byttet fortegn på $p$, og derfor er endringen mye større enn du kanskje tror.</p><p>Legg merke til forskjellen fra kinetisk energi, $E_k = \\frac{1}{2}mv^2$, som du møtte i forrige kapittel. Energien er en skalar og alltid positiv, mens bevegelsesmengden har retning. To like biler som kjører rett mot hverandre med samme fart, har til sammen bevegelsesmengde null, men de har absolutt ikke energi null. Dobler du farten, dobles $p$, mens $E_k$ blir fire ganger så stor. De to størrelsene henger sammen gjennom $E_k = \\frac{p^2}{2m}$.</p>"
+      },
+      {
+        "tittel": "Impuls og kraftstøt",
+        "html": "<p>Hvorfor er $p$ en nyttig størrelse? Fordi Newtons 2. lov kan skrives om til noe som handler direkte om den. Er massen konstant, er</p>$$\\sum F = ma = m\\,\\frac{\\Delta v}{\\Delta t} = \\frac{\\Delta\\left(mv\\right)}{\\Delta t} = \\frac{\\Delta p}{\\Delta t}$$<p>Kraften er altså endringen i bevegelsesmengde per tid. Ganger vi med $\\Delta t$ på begge sider, får vi <strong>impulsloven</strong>:</p>$$F\\,\\Delta t = \\Delta p = mv - mv_0$$<p>Produktet $F\\Delta t$ kalles <strong>kraftstøtet</strong>, eller impulsen. Enheten er $\\text{N}\\cdot\\text{s}$, og siden $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$, er $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$. Kraftstøt og bevegelsesmengde har med andre ord samme enhet — de <em>må</em> ha det, siden de er like store.</p><p>I virkelige støt varierer kraften kraftig i løpet av de få millisekundene kontakten varer. Da er $F$ i formelen <strong>gjennomsnittskraften</strong>, og kraftstøtet er arealet mellom $F$-$t$-grafen og tidsaksen.</p><p>Den praktiske konsekvensen er viktig. Skal en bil i 50 km/h stoppes, er $\\Delta p$ gitt av situasjonen — du kan ikke velge den. Men du kan velge $\\Delta t$. Fordeler du samme fartsendring over lengre tid, blir kraften mindre:</p>$$F = \\frac{\\Delta p}{\\Delta t}$$<p>Det er derfor kollisjonsputer, bilbelter med strekk, deformasjonssoner, hjelmer og fallmatter virker. Ingen av dem endrer hvor mye bevegelsesmengde som skal bort — de bruker bare lengre tid på jobben. Du gjør det samme selv når du bøyer knærne i landingen etter et hopp.</p>"
+      },
+      {
+        "tittel": "Bevaring av bevegelsesmengde",
+        "html": "<p>Se på to gjenstander som støter sammen. Under støtet virker de på hverandre med krefter, og etter <strong>Newtons 3. lov</strong> er disse to kreftene like store og motsatt rettet. De virker dessuten i akkurat like lang tid: kontakten begynner og slutter samtidig for begge. Da er også kraftstøtene like store og motsatt rettede:</p>$$F_{1\\to 2}\\,\\Delta t = -F_{2\\to 1}\\,\\Delta t \\quad \\Longrightarrow \\quad \\Delta p_2 = -\\Delta p_1$$<p>Det den ene mister av bevegelsesmengde, får den andre. Til sammen endrer seg altså ingenting, og vi har <strong>loven om bevaring av bevegelsesmengde</strong>:</p>$$m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$$<p>Fartene uten apostrof er fra før støtet, de med apostrof er etter. Alle fartene skal settes inn <strong>med fortegn</strong> etter den positive retningen du har valgt.</p><p>Loven gjelder for et <strong>lukket system</strong>, det vil si når summen av de <em>ytre</em> kreftene er null. Kreftene gjenstandene utøver på hverandre, er indre krefter og opphever hverandre alltid. Ytre krefter som friksjon eller et snordrag kan derimot endre systemets bevegelsesmengde. I et støt varer kontakten så kort tid at kraftstøtet fra tyngde og friksjon blir helt ubetydelig mot de enorme støtkreftene — derfor kan vi bruke loven selv på biler som kolliderer på asfalt.</p><p>Bevaringen gjelder også når gjenstander skyver seg fra hverandre. Står du i ro på skøyter og kaster en ball, er $p$ null før kastet, og da må summen være null etterpå også: du triller bakover. Det samme prinsippet er <strong>rekylen</strong> i et gevær og det som driver en rakett framover.</p>"
+      },
+      {
+        "tittel": "Uelastiske støt",
+        "html": "<p>Et støt kalles <strong>uelastisk</strong> når kinetisk energi ikke er bevart. Det er det normale i hverdagen: metall bulker, plast knekker, det blir varmt i kontaktflaten, og det smeller. Alt dette koster energi, og energien tas fra bevegelsesenergien. Den totale energien er selvfølgelig bevart — den har bare skiftet form, til indre energi og lyd.</p><p>Det ytterste tilfellet er det <strong>fullstendig uelastiske</strong> støtet, der gjenstandene henger sammen etterpå og dermed har samme fart. Da har du bare én ukjent, og bevaringsloven alene er nok:</p>$$m_1 v_1 + m_2 v_2 = \\left(m_1 + m_2\\right) v'$$<p>To togvogner som kobles, en pil som borer seg inn i et blinkbrett, og en snøball som treffer en vegg og blir liggende, er alle fullstendig uelastiske. I slike støt går det største mulige energitapet bort — større tap er umulig, for da måtte gjenstandene ha stoppet helt, og det bryter med bevaringsloven med mindre den totale bevegelsesmengden var null fra før.</p><p>Energitapet regner du ut som differansen:</p>$$\\Delta E_k = E_{k,\\text{etter}} - E_{k,\\text{før}}$$<p>Du finner alltid et negativt tall, og oppgaven spør ofte om hvor mange prosent av den opprinnelige energien som gikk tapt.</p><p>Det viktige poenget er dette: bevegelsesmengden er bevart i <strong>alle</strong> støt, også de uelastiske. Regn derfor alltid støtet med bevaringsloven først, og bruk energiregnskapet etterpå — aldri omvendt.</p>"
+      },
+      {
+        "tittel": "Elastiske støt",
+        "html": "<p>I et <strong>elastisk</strong> støt er både bevegelsesmengden og den kinetiske energien bevart. Gjenstandene deformeres under sammenstøtet, men fjærer helt tilbake og gir all energien tilbake til bevegelsen. Perfekt elastiske støt er en idealisering, men biljardkuler, harde stålkuler og ikke minst molekyler og atomer kommer svært nær.</p><p>Nå har du to likninger og kan finne to ukjente farter:</p>$$m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$$$$\\frac{1}{2}m_1 v_1^2 + \\frac{1}{2}m_2 v_2^2 = \\frac{1}{2}m_1 v_1'^2 + \\frac{1}{2}m_2 v_2'^2$$<p>Energilikningen er andregrads, så regningen blir litt tung. Et nyttig triks er at de to likningene til sammen gir en enkel sammenheng: <strong>den relative farten snur, men beholder tallverdien.</strong></p>$$v_1 - v_2 = -\\left(v_1' - v_2'\\right)$$<p>Nærmer kulene seg hverandre med 5 m/s før støtet, fjerner de seg fra hverandre med 5 m/s etterpå. Denne likningen er lineær, så kombinerer du den med bevaringsloven, slipper du andregradslikningen helt. Bruk den i det minste som kontroll av svaret.</p><p>Tre spesialtilfeller er verdt å kjenne:</p><ul><li><strong>Like masser, den ene i ro:</strong> den som traff, stopper helt, og den andre går videre med hele farten. Slik ser du det på biljardbordet.</li><li><strong>Lett gjenstand mot svært tung:</strong> den lette spretter tilbake med nesten uendret fart, som en ball mot en vegg.</li><li><strong>Tung gjenstand mot svært lett:</strong> den tunge fortsetter nesten upåvirket, og den lette skytes av gårde med nesten dobbelt så stor fart som den tunge hadde.</li></ul>"
+      },
+      {
+        "tittel": "Slik løser du støtoppgaver",
+        "html": "<p>Nesten alle oppgavene i kapittelet lar seg løse med den samme oppskriften. Bruk den, også når oppgaven ser lett ut — fortegnsfeil er den vanligste grunnen til at et riktig oppsett gir galt svar.</p><ol><li>Tegn en enkel skisse med «før» og «etter», og sett piler på fartene.</li><li>Velg positiv retning og skriv den ned. Alt annet følger av dette valget.</li><li>Sett opp en liten tabell med $m_1$, $m_2$, $v_1$, $v_2$, $v_1'$ og $v_2'$, og fyll inn med fortegn. Gjør om gram til kg og tonn til kg med en gang.</li><li>Skriv opp $p_{\\text{før}} = p_{\\text{etter}}$ og sett inn.</li><li>Er støtet fullstendig uelastisk, er $v_1' = v_2' = v'$, og du har bare én ukjent. Er det elastisk, trenger du én likning mer — energilikningen eller likningen for relativ fart.</li><li>Tolk fortegnet i svaret. Negativ fart betyr bare at gjenstanden går motsatt vei av det du valgte som positivt.</li></ol><p>Til slutt: kontroller. I et fullstendig uelastisk støt må sluttfarten ligge mellom de to startfartene. Den kinetiske energien etter et støt kan aldri være større enn før. Og hvis du får ut at en gjenstand går rett gjennom en annen, eller at den bakerste kula fortsatt har større fart enn den foran, har du gjort en fortegnsfeil.</p><p>Handler oppgaven om kontakttid eller kraft på én enkelt gjenstand, er det derimot impulsloven $F\\Delta t = \\Delta p$ du skal bruke, ikke bevaringsloven. Å kjenne igjen hvilken av de to oppgavetypene du har foran deg, er halve jobben.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Kraftstøt på en fotball",
+        "oppgave": "<p>En fotball med masse $0{,}430\\,\\text{kg}$ kommer mot en spiller med farten $12\\,\\text{m/s}$. Spilleren skyter den rett tilbake, og ballen forlater foten med farten $18\\,\\text{m/s}$. Kontakten mellom fot og ball varer $8{,}0\\,\\text{ms}$.</p><ol><li>Hvor stort er kraftstøtet på ballen?</li><li>Hvor stor er gjennomsnittskraften fra foten? Sammenlikn med tyngden til ballen.</li><li>Hvor stor ville kraften vært hvis spilleren bare stoppet ballen død på samme tid?</li></ol>",
+        "losning": "<p><strong>Oppsett.</strong> Vi velger retningen ballen har <em>etter</em> skuddet som positiv. Da er</p>$$v_0 = -12\\,\\text{m/s}, \\qquad v = +18\\,\\text{m/s}, \\qquad \\Delta t = 8{,}0\\,\\text{ms} = 8{,}0\\cdot 10^{-3}\\,\\text{s}$$<p><strong>1) Kraftstøtet</strong> er lik endringen i bevegelsesmengde:</p>$$\\Delta p = mv - mv_0 = 0{,}430\\,\\text{kg}\\cdot 18\\,\\text{m/s} - 0{,}430\\,\\text{kg}\\cdot\\left(-12\\,\\text{m/s}\\right)$$$$\\Delta p = 7{,}74\\,\\text{kg}\\cdot\\text{m/s} + 5{,}16\\,\\text{kg}\\cdot\\text{m/s} = 12{,}9\\,\\text{kg}\\cdot\\text{m/s}$$<p>Kraftstøtet er altså $12{,}9\\,\\text{N}\\cdot\\text{s}$ i skuddretningen. Legg merke til at de to bidragene <em>legges sammen</em>: ballen skal først stoppes, og deretter sendes tilbake. Hadde du glemt minustegnet på $v_0$, ville du fått bare $2{,}58\\,\\text{kg}\\cdot\\text{m/s}$ — en fjerdedel av riktig svar.</p><p><strong>2) Gjennomsnittskraften.</strong> Vi bruker impulsloven $F\\Delta t = \\Delta p$:</p>$$F = \\frac{\\Delta p}{\\Delta t} = \\frac{12{,}9\\,\\text{kg}\\cdot\\text{m/s}}{8{,}0\\cdot 10^{-3}\\,\\text{s}} = 1612{,}5\\,\\text{N} \\approx 1{,}6\\cdot 10^{3}\\,\\text{N}$$<p>Tyngden til ballen er</p>$$G = mg = 0{,}430\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 = 4{,}22\\,\\text{N}$$<p>Forholdet blir</p>$$\\frac{1612{,}5\\,\\text{N}}{4{,}22\\,\\text{N}} \\approx 380$$<p>Kraften fra foten er altså nesten 400 ganger større enn tyngden. Det er nettopp derfor vi kan se bort fra tyngdekraften mens støtet varer.</p><p><strong>3) Bare stoppe ballen.</strong> Nå er $v = 0$, så</p>$$\\Delta p = 0 - 0{,}430\\,\\text{kg}\\cdot\\left(-12\\,\\text{m/s}\\right) = 5{,}16\\,\\text{kg}\\cdot\\text{m/s}$$$$F = \\frac{5{,}16\\,\\text{kg}\\cdot\\text{m/s}}{8{,}0\\cdot 10^{-3}\\,\\text{s}} = 645\\,\\text{N}$$<p>Å skyte ballen tilbake krever altså 2,5 ganger så stor kraft som å stoppe den, selv om fartsendringen «bare» er 30 m/s mot 12 m/s. Retningsforandringen koster.</p>"
+      },
+      {
+        "tittel": "To togvogner kobles sammen",
+        "oppgave": "<p>En godsvogn med masse $8{,}0\\cdot 10^{3}\\,\\text{kg}$ triller med farten $3{,}0\\,\\text{m/s}$ mot en vogn med masse $12\\cdot 10^{3}\\,\\text{kg}$ som står i ro på sporet. Vognene kobles sammen i støtet og triller videre som én enhet. Se bort fra friksjon.</p><ol><li>Hvor stor fart har vognene etter sammenkoblingen?</li><li>Hvor mye kinetisk energi går tapt, og hvor stor del av den opprinnelige energien er det?</li><li>Koblingen tar $0{,}80\\,\\text{s}$. Hvor stor gjennomsnittskraft virker på hver av vognene?</li></ol>",
+        "losning": "<p><strong>Oppsett.</strong> Positiv retning er den retningen den første vognen triller. Da er</p>$$m_1 = 8{,}0\\cdot 10^{3}\\,\\text{kg}, \\quad v_1 = 3{,}0\\,\\text{m/s}, \\quad m_2 = 12\\cdot 10^{3}\\,\\text{kg}, \\quad v_2 = 0$$<p><strong>1) Farten etter støtet.</strong> Støtet er fullstendig uelastisk, så begge har farten $v'$ etterpå:</p>$$m_1 v_1 + m_2 v_2 = \\left(m_1 + m_2\\right)v'$$$$8{,}0\\cdot 10^{3}\\,\\text{kg}\\cdot 3{,}0\\,\\text{m/s} + 0 = \\left(8{,}0\\cdot 10^{3} + 12\\cdot 10^{3}\\right)\\text{kg}\\cdot v'$$$$2{,}4\\cdot 10^{4}\\,\\text{kg}\\cdot\\text{m/s} = 2{,}0\\cdot 10^{4}\\,\\text{kg}\\cdot v'$$$$v' = \\frac{2{,}4\\cdot 10^{4}}{2{,}0\\cdot 10^{4}}\\,\\text{m/s} = 1{,}2\\,\\text{m/s}$$<p>Svaret ligger mellom 0 og 3,0 m/s, som det må gjøre. Legg også merke til at farten ble mindre enn halvparten, fordi den vognen som sto i ro, var den tyngste.</p><p><strong>2) Energitapet.</strong> Før støtet:</p>$$E_{k,\\text{før}} = \\frac{1}{2}\\cdot 8{,}0\\cdot 10^{3}\\,\\text{kg}\\cdot\\left(3{,}0\\,\\text{m/s}\\right)^2 = \\frac{1}{2}\\cdot 8{,}0\\cdot 10^{3}\\cdot 9{,}0\\,\\text{J} = 3{,}6\\cdot 10^{4}\\,\\text{J}$$<p>Etter støtet:</p>$$E_{k,\\text{etter}} = \\frac{1}{2}\\cdot 2{,}0\\cdot 10^{4}\\,\\text{kg}\\cdot\\left(1{,}2\\,\\text{m/s}\\right)^2 = \\frac{1}{2}\\cdot 2{,}0\\cdot 10^{4}\\cdot 1{,}44\\,\\text{J} = 1{,}44\\cdot 10^{4}\\,\\text{J}$$<p>Tapet blir</p>$$\\Delta E_k = 1{,}44\\cdot 10^{4}\\,\\text{J} - 3{,}6\\cdot 10^{4}\\,\\text{J} = -2{,}16\\cdot 10^{4}\\,\\text{J} \\approx -22\\,\\text{kJ}$$<p>Relativt til utgangspunktet:</p>$$\\frac{2{,}16\\cdot 10^{4}}{3{,}6\\cdot 10^{4}} = 0{,}60 = 60\\,\\%$$<p>Hele 60 % av bevegelsesenergien forsvant inn i buffere, lyd og varme — mens bevegelsesmengden var like stor før og etter. Det er den beste illustrasjonen på at de to bevaringslovene er forskjellige.</p><p><strong>3) Kreftene.</strong> Vi bruker impulsloven på hver vogn. For den vognen som sto i ro:</p>$$\\Delta p_2 = m_2\\left(v' - v_2\\right) = 12\\cdot 10^{3}\\,\\text{kg}\\cdot\\left(1{,}2 - 0\\right)\\text{m/s} = 1{,}44\\cdot 10^{4}\\,\\text{kg}\\cdot\\text{m/s}$$$$F_2 = \\frac{1{,}44\\cdot 10^{4}\\,\\text{kg}\\cdot\\text{m/s}}{0{,}80\\,\\text{s}} = 1{,}8\\cdot 10^{4}\\,\\text{N} = 18\\,\\text{kN}$$<p>For den som kom trillende:</p>$$\\Delta p_1 = 8{,}0\\cdot 10^{3}\\,\\text{kg}\\cdot\\left(1{,}2 - 3{,}0\\right)\\text{m/s} = -1{,}44\\cdot 10^{4}\\,\\text{kg}\\cdot\\text{m/s}$$$$F_1 = \\frac{-1{,}44\\cdot 10^{4}\\,\\text{kg}\\cdot\\text{m/s}}{0{,}80\\,\\text{s}} = -1{,}8\\cdot 10^{4}\\,\\text{N}$$<p>Kreftene er like store og motsatt rettede, akkurat som Newtons 3. lov krever. Det er ingen tilfeldighet — det er selve grunnen til at bevegelsesmengden er bevart.</p>"
+      },
+      {
+        "tittel": "Elastisk støt mellom to kuler",
+        "oppgave": "<p>En kule med masse $0{,}20\\,\\text{kg}$ triller med farten $4{,}0\\,\\text{m/s}$ mot en kule med masse $0{,}30\\,\\text{kg}$ som ligger i ro på et vannrett, friksjonsfritt bord. Støtet er elastisk og skjer langs samme rette linje. Finn fartene til begge kulene etter støtet.</p>",
+        "losning": "<p><strong>Oppsett.</strong> Positiv retning er den kule 1 triller. Vi har $m_1 = 0{,}20\\,\\text{kg}$, $v_1 = 4{,}0\\,\\text{m/s}$, $m_2 = 0{,}30\\,\\text{kg}$ og $v_2 = 0$. To ukjente krever to likninger.</p><p><strong>Likning 1 — bevegelsesmengde:</strong></p>$$0{,}20\\cdot 4{,}0 = 0{,}20\\,v_1' + 0{,}30\\,v_2'$$<p>Alle tall i SI-enheter. Venstre side er $0{,}80\\,\\text{kg}\\cdot\\text{m/s}$. Vi deler hele likningen på $0{,}10$ for å få pene tall:</p>$$8{,}0 = 2v_1' + 3v_2' \\quad \\Longrightarrow \\quad v_1' = 4{,}0 - 1{,}5\\,v_2'$$<p><strong>Likning 2 — kinetisk energi</strong> (den er bevart fordi støtet er elastisk):</p>$$\\frac{1}{2}\\cdot 0{,}20\\cdot 4{,}0^2 = \\frac{1}{2}\\cdot 0{,}20\\,v_1'^2 + \\frac{1}{2}\\cdot 0{,}30\\,v_2'^2$$<p>Venstre side er $1{,}6\\,\\text{J}$. Vi ganger hele likningen med 20:</p>$$32 = 2v_1'^2 + 3v_2'^2$$<p><strong>Setter inn</strong> uttrykket for $v_1'$:</p>$$2\\left(4{,}0 - 1{,}5v_2'\\right)^2 + 3v_2'^2 = 32$$$$2\\left(16 - 12v_2' + 2{,}25v_2'^2\\right) + 3v_2'^2 = 32$$$$32 - 24v_2' + 4{,}5v_2'^2 + 3v_2'^2 = 32$$$$7{,}5\\,v_2'^2 - 24\\,v_2' = 0$$<p>Vi faktoriserer:</p>$$v_2'\\left(7{,}5v_2' - 24\\right) = 0$$<p>Den ene løsningen er $v_2' = 0$. Den svarer til situasjonen <em>før</em> støtet — matematisk gyldig, fysisk uinteressant — så vi forkaster den. Den andre er</p>$$v_2' = \\frac{24}{7{,}5}\\,\\text{m/s} = 3{,}2\\,\\text{m/s}$$<p>og da blir</p>$$v_1' = 4{,}0 - 1{,}5\\cdot 3{,}2 = 4{,}0 - 4{,}8 = -0{,}80\\,\\text{m/s}$$<p><strong>Tolkning.</strong> Kule 2 skytes framover med 3,2 m/s. Kule 1 får negativ fart, altså spretter den tilbake med farten 0,80 m/s. Det er som forventet, siden den traff en tyngre kule.</p><p><strong>Kontroll 1 — bevegelsesmengde:</strong></p>$$0{,}20\\cdot\\left(-0{,}80\\right) + 0{,}30\\cdot 3{,}2 = -0{,}16 + 0{,}96 = 0{,}80\\,\\text{kg}\\cdot\\text{m/s}$$<p><strong>Kontroll 2 — energi:</strong></p>$$\\frac{1}{2}\\cdot 0{,}20\\cdot 0{,}80^2 + \\frac{1}{2}\\cdot 0{,}30\\cdot 3{,}2^2 = 0{,}064 + 1{,}536 = 1{,}600\\,\\text{J}$$<p>Begge stemmer. <strong>Kontroll 3 — relativ fart:</strong> kulene nærmet seg med $4{,}0\\,\\text{m/s}$ før støtet, og de fjerner seg med $3{,}2 - \\left(-0{,}80\\right) = 4{,}0\\,\\text{m/s}$ etterpå. Denne siste kontrollen tar fem sekunder, og du kan også bruke likningen $v_1 - v_2 = -(v_1' - v_2')$ i stedet for energilikningen for å slippe andregradsregningen helt.</p>"
+      },
+      {
+        "tittel": "Ballistisk pendel — støt og energi kombinert",
+        "oppgave": "<p>En kule med masse $10{,}0\\,\\text{g}$ treffer en trekloss med masse $2{,}00\\,\\text{kg}$ som henger i ro i to lange snorer. Kula har farten $400\\,\\text{m/s}$ og blir sittende fast i klossen. Bruk $g = 9{,}81\\,\\text{m/s}^2$.</p><ol><li>Hvor stor fart har kloss og kule rett etter støtet?</li><li>Hvor høyt svinger klossen opp?</li><li>Hvor stor del av kulas kinetiske energi går tapt i støtet?</li></ol>",
+        "losning": "<p><strong>Oppsett.</strong> Massen til kula må gjøres om: $10{,}0\\,\\text{g} = 0{,}0100\\,\\text{kg}$. Positiv retning er kulas fartsretning. Oppgaven har to helt forskjellige faser, og de må behandles hver for seg:</p><ul><li><strong>Fase 1 — støtet.</strong> Fullstendig uelastisk, varer noen få millisekunder. Her bruker vi bevaring av bevegelsesmengde.</li><li><strong>Fase 2 — oppsvinget.</strong> Ingen støt, bare tyngdekraft og snordrag. Her bruker vi bevaring av mekanisk energi.</li></ul><p><strong>1) Farten rett etter støtet.</strong></p>$$m_k v_k = \\left(m_k + m_{\\text{kloss}}\\right)v'$$$$0{,}0100\\,\\text{kg}\\cdot 400\\,\\text{m/s} = \\left(0{,}0100 + 2{,}00\\right)\\text{kg}\\cdot v'$$$$4{,}00\\,\\text{kg}\\cdot\\text{m/s} = 2{,}010\\,\\text{kg}\\cdot v'$$$$v' = \\frac{4{,}00}{2{,}010}\\,\\text{m/s} = 1{,}990\\,\\text{m/s} \\approx 1{,}99\\,\\text{m/s}$$<p><strong>2) Høyden.</strong> Nå er støtet over, og systemet svinger opp uten tap. Bevaring av mekanisk energi gir</p>$$\\frac{1}{2}mv'^2 = mgh$$<p>Massen forkortes bort, så høyden er uavhengig av hvor tung klossen er:</p>$$h = \\frac{v'^2}{2g} = \\frac{\\left(1{,}990\\,\\text{m/s}\\right)^2}{2\\cdot 9{,}81\\,\\text{m/s}^2} = \\frac{3{,}960\\,\\text{m}^2/\\text{s}^2}{19{,}62\\,\\text{m/s}^2} = 0{,}2019\\,\\text{m} \\approx 20{,}2\\,\\text{cm}$$<p><strong>3) Energitapet i støtet.</strong> Før støtet:</p>$$E_{k,\\text{før}} = \\frac{1}{2}\\cdot 0{,}0100\\,\\text{kg}\\cdot\\left(400\\,\\text{m/s}\\right)^2 = \\frac{1}{2}\\cdot 0{,}0100\\cdot 160\\,000\\,\\text{J} = 800\\,\\text{J}$$<p>Rett etter støtet:</p>$$E_{k,\\text{etter}} = \\frac{1}{2}\\cdot 2{,}010\\,\\text{kg}\\cdot\\left(1{,}990\\,\\text{m/s}\\right)^2 = \\frac{1}{2}\\cdot 2{,}010\\cdot 3{,}960\\,\\text{J} = 3{,}98\\,\\text{J}$$<p>Andelen som forsvant:</p>$$\\frac{800\\,\\text{J} - 3{,}98\\,\\text{J}}{800\\,\\text{J}} = 0{,}995 = 99{,}5\\,\\%$$<p>Nesten all bevegelsesenergien gikk med til å varme opp og deformere treet der kula boret seg inn. Dette er nøkkelpoenget i oppgaven: hadde du brukt energibevaring gjennom støtet, ville du fått $v' = \\sqrt{2\\cdot 800/2{,}010} = 28{,}2\\,\\text{m/s}$ og en høyde på over 40 meter — helt urimelig. Bevegelsesmengden er bevart i støtet, energien er det ikke.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å glemme fortegnene når gjenstander beveger seg mot hverandre. Kommer én med $+4\\,\\text{m/s}$ og én med $-1\\,\\text{m/s}$, skal bidragene trekkes fra hverandre, ikke legges sammen.",
+      "Å bruke energibevaring gjennom et støt som ikke er elastisk. I et fullstendig uelastisk støt forsvinner ofte over halvparten av den kinetiske energien, så $E_k$ før $= E_k$ etter gir tull.",
+      "Å tro at fordi bevegelsesmengden er bevart, må energien være bevart også. Det er to uavhengige lover: $p$ er bevart i alle støt, $E_k$ bare i de elastiske.",
+      "Å tro at den lille bilen får en større kraft enn traileren i en kollisjon. Kreftene er like store (Newtons 3. lov); det er fartsendringen som blir mye større for den lille, fordi $\\Delta v = \\frac{F\\Delta t}{m}$.",
+      "Å tro at en kollisjonspute reduserer bevegelsesmengdeendringen. Den er gitt av farten du hadde — puten forlenger bare $\\Delta t$, og dermed synker kraften.",
+      "Å glemme enhetsomregning: gram og tonn må gjøres om til kg, og millisekunder til sekunder, før du deler. Å bruke $8{,}0$ i stedet for $8{,}0\\cdot 10^{-3}\\,\\text{s}$ gir en kraft som er 1000 ganger for liten."
+    ],
+
+    "tips": [
+      "Start hver støtoppgave med en før/etter-skisse og en oppskrevet positiv retning. Sensor gir poeng for oppsettet, og du unngår den vanligste feilen i kapittelet.",
+      "Kjenn igjen oppgavetypen: står det kontakttid, kraft eller «hvor stor kraft virker på», er det $F\\Delta t = \\Delta p$. Står det to gjenstander som treffer hverandre, er det $p_{\\text{før}} = p_{\\text{etter}}$.",
+      "Ved elastiske støt: bruk $v_1 - v_2 = -(v_1' - v_2')$ sammen med bevaringsloven. To lineære likninger er langt raskere og tryggere enn å kvadrere energilikningen.",
+      "Sjekk alltid svaret: i et fullstendig uelastisk støt må sluttfarten ligge mellom startfartene, og den kinetiske energien etter et støt kan aldri være større enn før.",
+      "Oppgaver som kombinerer kapittel 3 og 4 er svært vanlige til eksamen — typisk et støt etterfulgt av et oppsving eller en utglidning. Del alltid slike oppgaver i faser: bevegelsesmengde i støtet, energi før og etter."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Bevegelsesmengde", "forklaring": "Produktet av masse og fart, $p = mv$. En vektorstørrelse med enheten $\\text{kg}\\cdot\\text{m/s}$, som forteller hvor vanskelig gjenstanden er å stoppe." },
+    { "begrep": "Kraftstøt", "forklaring": "Produktet av kraft og tiden kraften virker, $F\\Delta t$. Kalles også impuls og har enheten $\\text{N}\\cdot\\text{s}$." },
+    { "begrep": "Impulsloven", "forklaring": "Sammenhengen $F\\Delta t = \\Delta p$: kraftstøtet på en gjenstand er like stort som endringen i bevegelsesmengden dens." },
+    { "begrep": "Gjennomsnittskraft", "forklaring": "Den konstante kraften som ville gitt samme kraftstøt som den virkelige, varierende kraften i løpet av kontakttiden." },
+    { "begrep": "Lukket system", "forklaring": "Et system der summen av de ytre kreftene er null, slik at den totale bevegelsesmengden er bevart." },
+    { "begrep": "Indre og ytre krefter", "forklaring": "Indre krefter virker mellom delene i systemet og opphever hverandre parvis. Ytre krefter kommer fra omgivelsene og kan endre systemets bevegelsesmengde." },
+    { "begrep": "Bevaring av bevegelsesmengde", "forklaring": "Loven om at den totale bevegelsesmengden i et lukket system er like stor før og etter en hendelse: $p_{\\text{før}} = p_{\\text{etter}}$." },
+    { "begrep": "Støt", "forklaring": "En kortvarig hendelse der to gjenstander utøver store krefter på hverandre, slik at kraftstøtet fra ytre krefter kan neglisjeres." },
+    { "begrep": "Elastisk støt", "forklaring": "Et støt der både bevegelsesmengden og den kinetiske energien er bevart. Gjenstandene fjærer helt tilbake." },
+    { "begrep": "Uelastisk støt", "forklaring": "Et støt der kinetisk energi går over til deformasjon, indre energi og lyd. Bevegelsesmengden er fortsatt bevart." },
+    { "begrep": "Fullstendig uelastisk støt", "forklaring": "Et støt der gjenstandene henger sammen etterpå og har samme fart. Her er energitapet størst mulig." },
+    { "begrep": "Relativ fart", "forklaring": "Farten den ene gjenstanden har sett fra den andre, $v_1 - v_2$. I et elastisk støt snur den, men beholder tallverdien." },
+    { "begrep": "Rekyl", "forklaring": "At en gjenstand får bevegelsesmengde bakover når den skyter noe framover, fordi den totale bevegelsesmengden må holde seg uendret." },
+    { "begrep": "Newtons 3. lov", "forklaring": "Kraft og motkraft er like store og motsatt rettede. Dette er begrunnelsen for at bevegelsesmengde er bevart i støt." },
+    { "begrep": "Ballistisk pendel", "forklaring": "Et oppsett der et prosjektil skyter seg inn i en hengende kloss. Farten finnes ved å kombinere bevaring av bevegelsesmengde i støtet med energibevaring i oppsvinget." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hvilken enhet har bevegelsesmengde?",
+      "alternativer": ["$\\text{J}$", "$\\text{kg}\\cdot\\text{m/s}^2$", "$\\text{kg}\\cdot\\text{m/s}$", "$\\text{N/s}$"],
+      "riktig": 2,
+      "forklaring": "Siden $p = mv$, blir enheten masse ganger fart, altså $\\text{kg}\\cdot\\text{m/s}$. Det er også det samme som $\\text{N}\\cdot\\text{s}$, fordi $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. Joule er enheten for energi ($\\text{kg}\\cdot\\text{m}^2/\\text{s}^2$) og er den vanligste forvekslingen — men energi og bevegelsesmengde er to helt forskjellige størrelser. $\\text{kg}\\cdot\\text{m/s}^2$ er newton, altså en kraft."
+    },
+    {
+      "sporsmal": "En lastebil på $20\\,000\\,\\text{kg}$ kjører med $2{,}0\\,\\text{m/s}$, og en personbil på $1000\\,\\text{kg}$ kjører med $40\\,\\text{m/s}$. Hvem har størst bevegelsesmengde i tallverdi?",
+      "alternativer": ["Lastebilen", "Personbilen", "Det kan ikke avgjøres uten å vite retningene", "De har like stor bevegelsesmengde"],
+      "riktig": 3,
+      "forklaring": "Regn ut begge: $20\\,000\\cdot 2{,}0 = 4{,}0\\cdot 10^{4}\\,\\text{kg}\\cdot\\text{m/s}$ og $1000\\cdot 40 = 4{,}0\\cdot 10^{4}\\,\\text{kg}\\cdot\\text{m/s}$. Nøyaktig like store. Å tippe lastebilen er nærliggende fordi massen er så mye større, men i $p = mv$ teller de to faktorene like mye. Den kinetiske energien er derimot helt ulik: $40\\,\\text{kJ}$ for lastebilen mot $800\\,\\text{kJ}$ for personbilen, siden farten der er kvadrert."
+    },
+    {
+      "sporsmal": "En kraft på $25\\,\\text{N}$ virker i $0{,}40\\,\\text{s}$ på en kloss med masse $2{,}0\\,\\text{kg}$ som ligger i ro på et friksjonsfritt bord. Hvor stor fart har klossen etterpå?",
+      "alternativer": ["$20\\,\\text{m/s}$", "$10\\,\\text{m/s}$", "$12{,}5\\,\\text{m/s}$", "$5{,}0\\,\\text{m/s}$"],
+      "riktig": 3,
+      "forklaring": "Kraftstøtet er $F\\Delta t = 25\\,\\text{N}\\cdot 0{,}40\\,\\text{s} = 10\\,\\text{N}\\cdot\\text{s}$, og det er lik $\\Delta p = mv - 0$. Altså er $v = \\frac{10}{2{,}0}\\,\\text{m/s} = 5{,}0\\,\\text{m/s}$. Alternativ B er selve kraftstøtet, som har enheten $\\text{N}\\cdot\\text{s}$ og ikke er en fart. Alternativ C er akselerasjonen $\\frac{25}{2{,}0} = 12{,}5\\,\\text{m/s}^2$ forvekslet med en fart, og alternativ A får du hvis du ganger med massen i stedet for å dele."
+    },
+    {
+      "sporsmal": "Hvorfor reduserer en kollisjonspute skadene i en frontkollisjon?",
+      "alternativer": [
+        "Fordi bevegelsesmengden føreren må bli kvitt, blir mindre",
+        "Fordi endringen i bevegelsesmengde fordeles over lengre tid, slik at kraften blir mindre",
+        "Fordi kraftstøtet på føreren blir mindre",
+        "Fordi den kinetiske energien blir bevart i støtet"
+      ],
+      "riktig": 1,
+      "forklaring": "Føreren har farten bilen hadde, og skal ned til null uansett. Derfor er $\\Delta p$ helt bestemt av situasjonen. Puten øker $\\Delta t$ fra noen få millisekunder mot et ratt til langt mer, og siden $F = \\frac{\\Delta p}{\\Delta t}$, synker kraften tilsvarende. Alternativ C er den mest fristende fellen: kraftstøtet er per definisjon lik $\\Delta p$, så det kan ikke endres — bare fordeles over lengre tid."
+    },
+    {
+      "sporsmal": "Hva er bevart i et fullstendig uelastisk støt?",
+      "alternativer": [
+        "Bare den kinetiske energien",
+        "Verken bevegelsesmengden eller den kinetiske energien",
+        "Både bevegelsesmengden og den kinetiske energien",
+        "Bare bevegelsesmengden"
+      ],
+      "riktig": 3,
+      "forklaring": "Bevegelsesmengden er bevart i alle støt, fordi kreftene gjenstandene virker på hverandre med, er like store og motsatt rettede i like lang tid. Kinetisk energi er derimot ikke bevart her: en stor del går over til deformasjon, varme og lyd — i et typisk togvognstøt over halvparten. Alternativ C er den klassiske feilen. Den totale energien er selvsagt bevart, men ikke den kinetiske."
+    },
+    {
+      "sporsmal": "En biljardkule treffer en identisk kule som ligger i ro, rett på. Støtet er elastisk. Hva skjer?",
+      "alternativer": [
+        "Begge går videre med halve farten",
+        "Den første kula stopper, og den andre går videre med hele farten",
+        "Begge spretter tilbake med samme fart som før",
+        "De henger sammen og går videre med halve farten"
+      ],
+      "riktig": 1,
+      "forklaring": "Med like masser er svaret at fartene byttes. Sjekk begge lovene: bevegelsesmengden $mv$ er den samme, og energien $\\frac{1}{2}mv^2$ er også den samme, siden hele farten er overført. Alternativ A og D har riktig bevegelsesmengde ($2m\\cdot\\frac{v}{2} = mv$), men bare halvparten av energien: $2\\cdot\\frac{1}{2}m\\left(\\frac{v}{2}\\right)^2 = \\frac{1}{4}mv^2$. Alternativ D beskriver et fullstendig uelastisk støt, ikke et elastisk."
+    },
+    {
+      "sporsmal": "Du står i ro på skøyter på glatt is med en medisinball på $4{,}0\\,\\text{kg}$. Du kaster ballen vannrett fra deg med farten $6{,}0\\,\\text{m/s}$. Massen din er $60\\,\\text{kg}$. Hvor stor fart får du?",
+      "alternativer": ["$0{,}40\\,\\text{m/s}$", "$0{,}10\\,\\text{m/s}$", "$1{,}5\\,\\text{m/s}$", "$6{,}0\\,\\text{m/s}$"],
+      "riktig": 0,
+      "forklaring": "Før kastet er den totale bevegelsesmengden null, og isen er glatt, så den må være null etterpå også: $0 = 60\\,v + 4{,}0\\cdot 6{,}0$. Det gir $v = -\\frac{24}{60}\\,\\text{m/s} = -0{,}40\\,\\text{m/s}$, altså farten $0{,}40\\,\\text{m/s}$ motsatt vei. Alternativ B får du hvis du glemmer ballens masse og deler $6{,}0$ på $60$. Legg merke til at du får like stor bevegelsesmengde som ballen, men mye mindre fart og mye mindre kinetisk energi, siden du er 15 ganger tyngre."
+    },
+    {
+      "sporsmal": "En liten personbil kolliderer front mot front med en trailer. Hvilken påstand er riktig?",
+      "alternativer": [
+        "Kreftene på hverandre er like store, men fartsendringen blir størst for personbilen",
+        "Kraften på personbilen er større enn kraften på traileren",
+        "Kraften er størst på traileren, siden den har størst bevegelsesmengde",
+        "Kreftene er like store, og derfor blir også fartsendringene like store"
+      ],
+      "riktig": 0,
+      "forklaring": "Newtons 3. lov gjelder uansett masse: kreftene er alltid like store og motsatt rettede, og de virker i like lang tid. Kraftstøtene er derfor også like store. Men $\\Delta v = \\frac{F\\Delta t}{m}$, så med liten masse blir fartsendringen stor. Det er derfor personbilen tar skaden — ikke fordi den kjenner en større kraft, som er den vanligste misforståelsen her."
+    },
+    {
+      "sporsmal": "Når er den totale bevegelsesmengden i et system bevart?",
+      "alternativer": [
+        "Alltid, uten unntak",
+        "Bare i elastiske støt",
+        "Når summen av de ytre kreftene på systemet er null",
+        "Bare når gjenstandene har like stor masse"
+      ],
+      "riktig": 2,
+      "forklaring": "Indre krefter mellom delene i systemet opphever hverandre parvis etter Newtons 3. lov og kan aldri endre den totale bevegelsesmengden. Ytre krefter, som friksjon eller et snordrag, kan derimot gjøre det. Alternativ B er en typisk sammenblanding: det er den kinetiske energien som krever et elastisk støt — bevegelsesmengden er bevart også når gjenstandene bulker og henger sammen etterpå."
+    },
+    {
+      "sporsmal": "En vogn på $3{,}0\\,\\text{kg}$ triller mot høyre med $4{,}0\\,\\text{m/s}$ og kolliderer med en vogn på $2{,}0\\,\\text{kg}$ som triller mot venstre med $1{,}0\\,\\text{m/s}$. Vognene henger sammen etter støtet. Hva blir farten deres?",
+      "alternativer": ["$2{,}8\\,\\text{m/s}$ mot høyre", "$2{,}0\\,\\text{m/s}$ mot høyre", "$2{,}0\\,\\text{m/s}$ mot venstre", "$1{,}0\\,\\text{m/s}$ mot høyre"],
+      "riktig": 1,
+      "forklaring": "Med høyre som positiv retning er $p_{\\text{før}} = 3{,}0\\cdot 4{,}0 + 2{,}0\\cdot\\left(-1{,}0\\right) = 12 - 2{,}0 = 10\\,\\text{kg}\\cdot\\text{m/s}$. Da er $v' = \\frac{10}{5{,}0}\\,\\text{m/s} = 2{,}0\\,\\text{m/s}$, positiv, altså mot høyre. Alternativ A er $\\frac{14}{5{,}0} = 2{,}8$, som er hva du får hvis du legger sammen tallverdiene og glemmer at den ene vognen kommer motsatt vei. Fortegnene er hele poenget i slike oppgaver."
+    },
+    {
+      "sporsmal": "En gjenstand dobler farten sin. Hva skjer med bevegelsesmengden og den kinetiske energien?",
+      "alternativer": [
+        "Begge dobles",
+        "Bevegelsesmengden dobles, og den kinetiske energien firedobles",
+        "Bevegelsesmengden firedobles, og den kinetiske energien dobles",
+        "Begge firedobles"
+      ],
+      "riktig": 1,
+      "forklaring": "I $p = mv$ står farten i første potens, så $p$ dobles. I $E_k = \\frac{1}{2}mv^2$ er farten kvadrert, så energien blir $2^2 = 4$ ganger så stor. Sammenhengen $E_k = \\frac{p^2}{2m}$ viser det samme. Dette er grunnen til at bremselengden firedobles når farten dobles, mens kraftstøtet som må til for å stoppe bilen, bare dobles."
+    },
+    {
+      "sporsmal": "Hva forteller arealet mellom en $F$-$t$-graf og tidsaksen deg?",
+      "alternativer": [
+        "Gjennomsnittskraften i støtet",
+        "Den kinetiske energien til gjenstanden",
+        "Kraftstøtet, altså endringen i bevegelsesmengde",
+        "Arbeidet kraften utfører"
+      ],
+      "riktig": 2,
+      "forklaring": "Areal er høyde ganger bredde, her kraft ganger tid — og $F\\Delta t$ er nettopp kraftstøtet, som er lik $\\Delta p$. Alternativ D er den mest fristende fellen, men arbeid er kraft ganger vei, så arbeidet er arealet under en $F$-$s$-graf. Gjennomsnittskraften finner du ved å dele arealet på hele kontakttiden."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Bevegelsesmengde — formel og enhet", "bak": "$p = mv$, med enheten $\\text{kg}\\cdot\\text{m/s} = \\text{N}\\cdot\\text{s}$. Det er en vektorstørrelse med samme retning som farten." },
+    { "front": "Kraftstøt (impuls)", "bak": "$I = F\\Delta t$, med enheten $\\text{N}\\cdot\\text{s}$. Ved varierende kraft er $F$ gjennomsnittskraften, og kraftstøtet er arealet under $F$-$t$-grafen." },
+    { "front": "Impulsloven", "bak": "$F\\Delta t = \\Delta p = mv - mv_0$ — kraftstøtet på en gjenstand er lik endringen i bevegelsesmengden." },
+    { "front": "Newtons 2. lov skrevet med bevegelsesmengde", "bak": "$\\sum F = \\frac{\\Delta p}{\\Delta t}$" },
+    { "front": "Hvorfor virker en kollisjonspute?", "bak": "$\\Delta p$ er gitt av farten og kan ikke endres. Puten øker $\\Delta t$, og siden $F = \\frac{\\Delta p}{\\Delta t}$, blir kraften mindre." },
+    { "front": "Loven om bevaring av bevegelsesmengde", "bak": "$m_1v_1 + m_2v_2 = m_1v_1' + m_2v_2'$ når summen av de ytre kreftene er null. Alle farter settes inn med fortegn." },
+    { "front": "Hvorfor er bevegelsesmengde bevart i et støt?", "bak": "Newtons 3. lov: kreftene på hverandre er like store og motsatt rettede, og virker i like lang tid. Kraftstøtene er da like store og motsatte, så $\\Delta p_1 + \\Delta p_2 = 0$." },
+    { "front": "Fullstendig uelastisk støt", "bak": "Gjenstandene henger sammen etterpå og har samme fart: $m_1v_1 + m_2v_2 = (m_1+m_2)v'$. Energitapet er størst mulig." },
+    { "front": "Elastisk støt — hva er bevart?", "bak": "Både bevegelsesmengden og den kinetiske energien. Det gir to likninger, så du kan finne to ukjente farter." },
+    { "front": "Snarveien ved elastisk støt", "bak": "$v_1 - v_2 = -(v_1' - v_2')$ — den relative farten snur, men beholder tallverdien. Lineær, og mye raskere enn energilikningen." },
+    { "front": "Elastisk støt mellom like masser der den ene er i ro", "bak": "Fartene byttes: den som traff, stopper helt, og den andre går videre med hele farten." },
+    { "front": "Er $p$ eller $E_k$ bevart i et uelastisk støt?", "bak": "Bare $p$. Kinetisk energi går over til deformasjon, indre energi og lyd. Sett aldri $E_k$ før $= E_k$ etter uten at det står at støtet er elastisk." },
+    { "front": "Rekyl — likningen når alt starter i ro", "bak": "$0 = m_1v_1' + m_2v_2'$, altså $v_2' = -\\frac{m_1}{m_2}v_1'$. Den tyngste delen får minst fart." },
+    { "front": "Sammenheng mellom $E_k$ og $p$", "bak": "$E_k = \\frac{p^2}{2m}$ — sjekk selv: $\\frac{(mv)^2}{2m} = \\frac{1}{2}mv^2$." },
+    { "front": "Hva skjer med $p$ og $E_k$ når farten dobles?", "bak": "$p$ dobles (fart i første potens), mens $E_k$ firedobles (fart i andre potens)." },
+    { "front": "Framgangsmåte i en oppgave med støt og etterfølgende oppsving", "bak": "Del i faser. Fase 1, støtet: bruk bevaring av bevegelsesmengde. Fase 2, etter støtet: bruk bevaring av mekanisk energi, $\\frac{1}{2}mv'^2 = mgh$." }
+  ]
+}

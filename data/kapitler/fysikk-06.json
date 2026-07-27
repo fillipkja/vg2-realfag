@@ -1,0 +1,238 @@
+{
+  "fag": "fysikk",
+  "nr": 6,
+  "tittel": "Bølger og stråling",
+  "intro": "Bølger frakter energi uten å frakte stoff, og de aller fleste bølgene vi lever av — lys, varmestråling, radiosignaler — er elektromagnetiske. I dette kapittelet knytter du sammen bølgemodellen, det elektromagnetiske spekteret og strålingen fra sola som holder jorda beboelig.",
+
+  "kompakt": {
+    "punkter": [
+      "En bølge frakter energi gjennom et medium uten at stoffet flytter seg med bølgen.",
+      "Bølgeformelen $v = \\lambda f$ knytter sammen fart, bølgelengde og frekvens, og $f = \\frac{1}{T}$.",
+      "Farten bestemmes av mediet, frekvensen av kilden. Går lyset over i et nytt stoff, endres $v$ og $\\lambda$, men $f$ er uendret.",
+      "Ved refleksjon er innfallsvinkelen lik refleksjonsvinkelen — begge målt fra normalen.",
+      "Brytning skyldes at farten endres: $\\frac{\\sin\\theta_1}{\\sin\\theta_2} = \\frac{v_1}{v_2} = \\frac{n_2}{n_1}$, der $n = \\frac{c}{v}$.",
+      "Går lyset fra tett til tynt stoff, kan du få totalrefleksjon når innfallsvinkelen er større enn grensevinkelen $\\theta_g$.",
+      "Bøyning (diffraksjon) er at bølger sprer seg rundt hindringer og ut fra åpninger, og er tydeligst når åpningen er omtrent like stor som bølgelengden.",
+      "Interferens bestemmes av veiforskjellen: $\\Delta s = n\\lambda$ gir forsterkning, $\\Delta s = \\left(n+\\frac{1}{2}\\right)\\lambda$ gir utslokning.",
+      "Alle elektromagnetiske bølger har farten $c = 3{,}00 \\cdot 10^8$ m/s i vakuum; spekteret går fra radiobølger til gammastråling, og fotonenergien $E = hf$ øker mot den korte enden.",
+      "Sola stråler som et varmt legeme ($P = \\sigma A T^4$, $\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot 10^{-3}}{T}$), og drivhusgasser slipper gjennom kortbølget sollys men absorberer jordas langbølgede varmestråling."
+    ],
+    "formler": [
+      { "navn": "Bølgeformelen", "latex": "v = \\lambda f" },
+      { "navn": "Frekvens og periode", "latex": "f = \\frac{1}{T}" },
+      { "navn": "Refleksjonsloven", "latex": "\\theta_{\\text{inn}} = \\theta_{\\text{ut}}" },
+      { "navn": "Brytningsindeks", "latex": "n = \\frac{c}{v}, \\qquad c = 3{,}00\\cdot 10^{8}\\,\\text{m/s}" },
+      { "navn": "Snells brytningslov", "latex": "\\frac{\\sin\\theta_1}{\\sin\\theta_2} = \\frac{v_1}{v_2} = \\frac{n_2}{n_1}" },
+      { "navn": "Bølgelengde i et stoff", "latex": "\\lambda_n = \\frac{\\lambda_0}{n}" },
+      { "navn": "Grensevinkel for totalrefleksjon", "latex": "\\sin\\theta_g = \\frac{n_2}{n_1}, \\qquad n_1 > n_2" },
+      { "navn": "Konstruktiv interferens", "latex": "\\Delta s = n\\lambda, \\qquad n = 0, 1, 2, \\ldots" },
+      { "navn": "Destruktiv interferens", "latex": "\\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda" },
+      { "navn": "Gitter og dobbeltspalt", "latex": "d\\sin\\theta_n = n\\lambda, \\qquad d = \\frac{1}{N}" },
+      { "navn": "Fotonenergi", "latex": "E = hf = \\frac{hc}{\\lambda}, \\qquad h = 6{,}63\\cdot 10^{-34}\\,\\text{Js}" },
+      { "navn": "Intensitet", "latex": "I = \\frac{P}{A} = \\frac{P}{4\\pi r^{2}}" },
+      { "navn": "Stefan-Boltzmanns lov", "latex": "P = \\sigma A T^{4}, \\qquad \\sigma = 5{,}67\\cdot 10^{-8}\\,\\frac{\\text{W}}{\\text{m}^2\\text{K}^4}" },
+      { "navn": "Wiens forskyvningslov", "latex": "\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot 10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Bølgefart, frekvens og bølgelengde",
+        "html": "<p>En <strong>bølge</strong> er en forstyrrelse som brer seg og frakter energi fra ett sted til et annet, <em>uten</em> at stoffet i mediet flytter seg med. En kork som ligger på vannet vipper opp og ned mens bølgen passerer — den følger ikke bølgen inn mot land.</p><p>Vi skiller mellom to typer. I en <strong>transversal</strong> bølge svinger mediet på tvers av retningen bølgen går, som på et tau eller på vannoverflaten. I en <strong>longitudinal</strong> bølge svinger mediet fram og tilbake langs bevegelsesretningen. Lyd i luft er longitudinal: luftmolekylene presses skiftevis sammen og trekkes fra hverandre.</p><p>Fire størrelser beskriver bølgen:</p><ul><li><strong>Bølgelengden</strong> $\\lambda$ — avstanden mellom to nabopunkter som svinger i takt, for eksempel topp til topp.</li><li><strong>Perioden</strong> $T$ — tiden én hel svingning tar.</li><li><strong>Frekvensen</strong> $f = \\frac{1}{T}$ — antall svingninger per sekund, målt i hertz ($1\\,\\text{Hz} = 1\\,\\text{s}^{-1}$).</li><li><strong>Amplituden</strong> — største utslag fra likevektslinja. Den bestemmer hvor mye energi bølgen fører med seg.</li></ul><p>På én periode flytter bølgen seg nøyaktig én bølgelengde framover. Fart er strekning delt på tid, så</p>$$v = \\frac{\\lambda}{T} = \\lambda f$$<p>Legg merke til arbeidsdelingen: <strong>farten bestemmes av mediet</strong> (lyd går raskere i vann enn i luft), mens <strong>frekvensen bestemmes av kilden</strong>. Sender du en 440 Hz-tone inn i vann, er den fortsatt 440 Hz — men fordi farten øker, blir bølgelengden lengre. Denne innsikten er nøkkelen til brytning senere i kapittelet.</p>"
+      },
+      {
+        "tittel": "Refleksjon og brytning",
+        "html": "<p>Når en bølge treffer en grenseflate, blir en del av den kastet tilbake. <strong>Refleksjonsloven</strong> sier at innfallsvinkelen er lik refleksjonsvinkelen, og begge vinklene måles fra <strong>normalen</strong> — linja som står vinkelrett på flaten i treffpunktet. Det er slurv med normalen som gir flest feil i dette kapittelet.</p><p>Den delen som fortsetter inn i det nye stoffet, skifter retning. Det kalles <strong>brytning</strong>, og årsaken er at farten endres. Vi beskriver stoffet med <strong>brytningsindeksen</strong></p>$$n = \\frac{c}{v}$$<p>der $c = 3{,}00\\cdot 10^8$ m/s er lysfarten i vakuum. Siden lys aldri går fortere enn $c$, er alltid $n \\ge 1$: luft har $n = 1{,}00$, vann $n = 1{,}33$ og vanlig glass omtrent $n = 1{,}5$. Sammenhengen mellom vinklene er <strong>Snells lov</strong>:</p>$$\\frac{\\sin\\theta_1}{\\sin\\theta_2} = \\frac{v_1}{v_2} = \\frac{n_2}{n_1}$$<p>Går lyset inn i et stoff med større $n$, blir farten mindre og strålen brytes <em>mot</em> normalen. Frekvensen er uendret, så når farten synker, må bølgelengden krympe: $\\lambda_n = \\frac{\\lambda_0}{n}$.</p><p>Går lyset motsatt vei, fra tett til tynt stoff, brytes det <em>fra</em> normalen. Øker du innfallsvinkelen nok, blir brytningsvinkelen $90^\\circ$, og ved større vinkler kommer ingenting ut: alt reflekteres. Dette er <strong>totalrefleksjon</strong>, og grensevinkelen finnes av</p>$$\\sin\\theta_g = \\frac{n_2}{n_1}$$<p>Totalrefleksjon er grunnen til at optiske fibre kan lede lys kilometervis nesten uten tap.</p>"
+      },
+      {
+        "tittel": "Bøyning og interferens",
+        "html": "<p><strong>Bøyning</strong> (diffraksjon) er at bølger sprer seg rundt hindringer og ut fra åpninger i stedet for å gå rett fram. Effekten er tydeligst når åpningen er omtrent like stor som bølgelengden — derfor hører du lyd rundt et hjørne (bølgelengde noen desimeter), mens lys (bølgelengde noen hundre nanometer) gir skarpe skygger.</p><p>Møtes to bølger i samme punkt, legger utslagene seg sammen. Det kalles <strong>interferens</strong>. Er bølgene i fase, forsterker de hverandre (<strong>konstruktiv</strong> interferens); er de i motfase, svekker eller slukker de hverandre (<strong>destruktiv</strong> interferens). Kommer bølgene fra to kilder som svinger i takt, avgjør <strong>veiforskjellen</strong> $\\Delta s$ hva som skjer:</p>$$\\Delta s = n\\lambda \\quad \\text{(forsterkning)}, \\qquad \\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda \\quad \\text{(utslokning)}$$<p>der $n$ er et helt tall. Sender du laserlys mot to smale spalter med avstand $d$, bøyes lyset ut fra hver spalte, og på en skjerm bak får du et mønster av lyse og mørke striper. De lyse ligger i retninger gitt av</p>$$d\\sin\\theta_n = n\\lambda$$<p>Et <strong>gitter</strong> er tusenvis av slike spalter. Formelen er den samme, men stripene blir mye skarpere. Har gitteret $N$ streker per meter, er gitterkonstanten $d = \\frac{1}{N}$.</p><p>Fordi vinkelen avhenger av $\\lambda$, splittes hvitt lys i farger: rødt lys har lengst bølgelengde og bøyes mest. Derfor bruker fysikere gitter til å måle bølgelengder og finne ut hvilke stoffer en lyskilde inneholder.</p>"
+      },
+      {
+        "tittel": "Det elektromagnetiske spekteret",
+        "html": "<p>Lys er en <strong>elektromagnetisk bølge</strong>: et elektrisk og et magnetisk felt som svinger vinkelrett på hverandre og på bevegelsesretningen. Slike bølger trenger ikke noe medium, og de har alle samme fart i vakuum:</p>$$c = \\lambda f = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$$<p>Siden produktet er fast, hører lang bølgelengde og lav frekvens sammen. Det <strong>elektromagnetiske spekteret</strong> er hele skalaen, sortert fra lang til kort bølgelengde: radiobølger, mikrobølger, infrarød stråling, synlig lys (ca. 400–700 nm), ultrafiolett stråling, røntgenstråling og gammastråling. Det synlige er altså bare en tynn stripe i midten; innenfor den ser vi fiolett ved 400 nm og rødt ved 700 nm.</p><p>Energien strålingen kommer i, er kvantisert i <strong>fotoner</strong> med energi</p>$$E = hf = \\frac{hc}{\\lambda}$$<p>der $h = 6{,}63\\cdot 10^{-34}$ Js er Plancks konstant. Kort bølgelengde betyr høy frekvens og dermed energirike fotoner. Fra ultrafiolett og oppover har fotonene nok energi til å slå elektroner løs fra atomer — vi kaller det <strong>ioniserende stråling</strong>, og den kan skade DNA og gi kreft. Radiobølger og mikrobølger er ikke-ioniserende; de kan varme opp vev, men ikke bryte kjemiske bindinger.</p><p>Dette forklarer også hvorfor solkrem beskytter mot UV, mens en mobiltelefon ikke gir stråleskader: det er fotonenergien, ikke intensiteten, som avgjør om strålingen kan ionisere.</p>"
+      },
+      {
+        "tittel": "Stråling fra sola",
+        "html": "<p>Alle legemer med temperatur over det absolutte nullpunktet sender ut elektromagnetisk stråling. Et idealisert legeme som absorberer og sender ut all stråling, kalles et <strong>svart legeme</strong>, og sola er en god tilnærming til et slikt.</p><p>Hvor mye et legeme stråler ut, gir <strong>Stefan-Boltzmanns lov</strong>:</p>$$P = \\sigma A T^{4}, \\qquad \\sigma = 5{,}67\\cdot 10^{-8}\\,\\frac{\\text{W}}{\\text{m}^2\\text{K}^4}$$<p>Her er $A$ overflaten og $T$ den absolutte temperaturen i <strong>kelvin</strong>. Fjerdepotensen gjør loven brutal: dobler du temperaturen, blir utstrålt effekt $2^4 = 16$ ganger større.</p><p>Hvilken bølgelengde det stråles mest på, gir <strong>Wiens forskyvningslov</strong>:</p>$$\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot 10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}$$<p>Her er sammenhengen omvendt proporsjonal: varmere legeme gir kortere bølgelengde. Sola, med overflatetemperatur omkring 5800 K, har maksimum rundt 500 nm — midt i det synlige området, som er grunnen til at øyet vårt er følsomt nettopp der. Jorda, med rundt 288 K, stråler derimot på omtrent 10 000 nm, altså <strong>langbølget infrarød</strong> varmestråling.</p><p>Strålingen fordeler seg over stadig større kuleflater når den brer seg utover, så <strong>intensiteten</strong> avtar:</p>$$I = \\frac{P}{A} = \\frac{P}{4\\pi r^{2}}$$<p>Ved jordas avstand fra sola gir dette omtrent 1360 W/m². Dette tallet kalles <strong>solkonstanten</strong>, og det er energibudsjettet hele klimasystemet må balansere mot.</p>"
+      },
+      {
+        "tittel": "Drivhuseffekten",
+        "html": "<p>Jorda er i <strong>strålingsbalanse</strong>: over tid må den sende ut like mye energi som den tar imot fra sola, ellers endres temperaturen. Omtrent 30 % av sollyset reflekteres rett tilbake av skyer, snø og lyse flater. Denne andelen kalles <strong>albedoen</strong> $a$. Resten absorberes, og balansen blir</p>$$\\sigma T^{4} = \\frac{S(1-a)}{4}$$<p>Faktoren 4 kommer av at sola bare treffer tverrsnittet $\\pi r^2$, mens jorda stråler ut fra hele kuleflaten $4\\pi r^2$. Regner du dette ut, får du $T \\approx 255$ K, altså omtrent $-18\\ ^\\circ\\text{C}$. Middeltemperaturen på jorda er i virkeligheten omkring $+15\\ ^\\circ\\text{C}$. De vel 30 gradene i mellom er <strong>drivhuseffekten</strong>.</p><p>Mekanismen bygger på forskjellen i bølgelengde. Sollyset er <strong>kortbølget</strong> (synlig lys), og atmosfæren er nesten gjennomsiktig for det. Bakken varmes opp og stråler ut igjen som <strong>langbølget</strong> infrarød stråling. Den absorberes av <strong>drivhusgasser</strong> — vanndamp, karbondioksid, metan og lystgass — som sender energien ut igjen i alle retninger, også nedover. Nettoresultatet er at varmen bruker lengre tid på å slippe ut, og overflaten blir varmere.</p><p>Merk at nitrogen og oksygen, som utgjør 99 % av lufta, <em>ikke</em> er drivhusgasser: symmetriske toatomige molekyler absorberer ikke infrarød stråling. Når vi brenner fossilt brensel, øker CO₂-innholdet, mindre varmestråling slipper ut, og vi får en <strong>forsterket drivhuseffekt</strong>. Uten drivhuseffekten i det hele tatt ville jorda vært en frossen planet.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Bølgefart, periode og bølgelengde",
+        "oppgave": "<p>En bøye på havet vipper opp og ned 12 hele ganger i minuttet. Avstanden mellom to bølgetopper er 8,0 m.</p><ol><li>Finn frekvensen og perioden til bølgen.</li><li>Finn bølgefarten.</li><li>Hvor lang tid bruker bølgen på de siste 200 m inn til stranda?</li><li>En FM-sender sender på 100,0 MHz. Hvor lang er bølgelengden til radiobølgen?</li></ol>",
+        "losning": "<p><strong>1) Frekvens og periode.</strong> Frekvensen er antall svingninger per sekund, så vi må gjøre om minuttet til sekunder:</p>$$f = \\frac{12}{60\\,\\text{s}} = 0{,}20\\,\\text{Hz}$$<p>Perioden er den omvendte:</p>$$T = \\frac{1}{f} = \\frac{1}{0{,}20\\,\\text{s}^{-1}} = 5{,}0\\,\\text{s}$$<p>Bøyen bruker altså 5,0 sekunder på én hel opp-og-ned-bevegelse.</p><p><strong>2) Bølgefarten.</strong> Vi bruker bølgeformelen med $\\lambda = 8{,}0$ m:</p>$$v = \\lambda f = 8{,}0\\,\\text{m} \\cdot 0{,}20\\,\\text{s}^{-1} = 1{,}6\\,\\text{m/s}$$<p>Sjekk enhetene: $\\text{m}\\cdot\\text{s}^{-1} = \\text{m/s}$. Det stemmer.</p><p><strong>3) Tida inn til stranda.</strong> Bølgen holder konstant fart, så</p>$$t = \\frac{s}{v} = \\frac{200\\,\\text{m}}{1{,}6\\,\\text{m/s}} = 125\\,\\text{s} \\approx 2{,}1\\,\\text{min}$$<p><strong>4) Radiobølgen.</strong> Radiobølger er elektromagnetiske, så farten er $c = 3{,}00\\cdot 10^8$ m/s. Først gjør vi om megahertz til hertz: $100{,}0\\ \\text{MHz} = 1{,}000\\cdot 10^{8}\\,\\text{Hz}$. Så løser vi bølgeformelen for $\\lambda$:</p>$$\\lambda = \\frac{c}{f} = \\frac{3{,}00\\cdot 10^{8}\\,\\text{m/s}}{1{,}000\\cdot 10^{8}\\,\\text{s}^{-1}} = 3{,}00\\,\\text{m}$$<p>Legg merke til forskjellen i størrelsesorden: havbølgen har åtte meters bølgelengde og går 1,6 m/s, mens radiobølgen har omtrent samme bølgelengde men går nesten 200 millioner ganger fortere. Det er frekvensen som skiller dem.</p>"
+      },
+      {
+        "tittel": "Brytning i glass og grensevinkel",
+        "oppgave": "<p>En laserstråle med bølgelengde 589 nm i luft treffer en glassplate med brytningsindeks $n = 1{,}52$. Innfallsvinkelen er $35^\\circ$. Luft har $n = 1{,}00$.</p><ol><li>Finn brytningsvinkelen i glasset.</li><li>Finn lysfarten i glasset.</li><li>Finn frekvensen og bølgelengden til lyset inne i glasset.</li><li>Finn grensevinkelen for lys som går fra dette glasset ut i luft.</li></ol>",
+        "losning": "<p><strong>1) Brytningsvinkelen.</strong> Snells lov med stoff 1 = luft og stoff 2 = glass:</p>$$\\frac{\\sin\\theta_1}{\\sin\\theta_2} = \\frac{n_2}{n_1} \\quad \\Rightarrow \\quad \\sin\\theta_2 = \\frac{n_1 \\sin\\theta_1}{n_2}$$$$\\sin\\theta_2 = \\frac{1{,}00 \\cdot \\sin 35^\\circ}{1{,}52} = \\frac{0{,}5736}{1{,}52} = 0{,}3774$$$$\\theta_2 = \\sin^{-1}(0{,}3774) = 22{,}2^\\circ$$<p>Rimelighetssjekk: glasset er tettere enn luft, så strålen skal brytes <em>mot</em> normalen. $22{,}2^\\circ < 35^\\circ$, altså stemmer det.</p><p><strong>2) Farten i glasset.</strong> Fra $n = \\frac{c}{v}$ får vi</p>$$v = \\frac{c}{n} = \\frac{3{,}00\\cdot 10^{8}\\,\\text{m/s}}{1{,}52} = 1{,}97\\cdot 10^{8}\\,\\text{m/s}$$<p><strong>3) Frekvens og bølgelengde.</strong> Frekvensen regner vi ut i luft, der vi kjenner både fart og bølgelengde. Husk $589\\ \\text{nm} = 589\\cdot 10^{-9}\\,\\text{m}$:</p>$$f = \\frac{c}{\\lambda_0} = \\frac{3{,}00\\cdot 10^{8}\\,\\text{m/s}}{5{,}89\\cdot 10^{-7}\\,\\text{m}} = 5{,}09\\cdot 10^{14}\\,\\text{Hz}$$<p>Frekvensen er bestemt av lyskilden og endres <strong>ikke</strong> ved brytning. Bølgelengden i glasset blir derfor</p>$$\\lambda_n = \\frac{v}{f} = \\frac{1{,}97\\cdot 10^{8}\\,\\text{m/s}}{5{,}09\\cdot 10^{14}\\,\\text{s}^{-1}} = 3{,}87\\cdot 10^{-7}\\,\\text{m} = 387\\,\\text{nm}$$<p>Samme svar får du raskere med $\\lambda_n = \\frac{\\lambda_0}{n} = \\frac{589\\,\\text{nm}}{1{,}52} = 388\\,\\text{nm}$ (liten avrundingsforskjell).</p><p><strong>4) Grensevinkelen.</strong> Nå går lyset fra glass ($n_1 = 1{,}52$) til luft ($n_2 = 1{,}00$):</p>$$\\sin\\theta_g = \\frac{n_2}{n_1} = \\frac{1{,}00}{1{,}52} = 0{,}6579$$$$\\theta_g = \\sin^{-1}(0{,}6579) = 41{,}1^\\circ$$<p>Treffer strålen glassoverflaten innenfra med en vinkel større enn $41{,}1^\\circ$ fra normalen, kommer ingenting ut — alt blir reflektert tilbake i glasset.</p>"
+      },
+      {
+        "tittel": "Gitter: vinkler og antall ordener",
+        "oppgave": "<p>Et gitter har 500 streker per millimeter. Du sender rødt laserlys med bølgelengde 650 nm rett inn på gitteret, og setter en skjerm 1,50 m bak.</p><ol><li>Finn gitterkonstanten $d$.</li><li>Finn vinkelen til første ordens maksimum, og hvor langt fra midten dette treffer skjermen.</li><li>Hvor mange ordener kan du se på hver side av midten?</li></ol>",
+        "losning": "<p><strong>1) Gitterkonstanten.</strong> Først gjør vi om til streker per meter:</p>$$N = 500\\,\\text{mm}^{-1} = 500 \\cdot 1000\\,\\text{m}^{-1} = 5{,}00\\cdot 10^{5}\\,\\text{m}^{-1}$$$$d = \\frac{1}{N} = \\frac{1}{5{,}00\\cdot 10^{5}\\,\\text{m}^{-1}} = 2{,}00\\cdot 10^{-6}\\,\\text{m}$$<p><strong>2) Første orden.</strong> Vi bruker $d\\sin\\theta_n = n\\lambda$ med $n = 1$ og $\\lambda = 650\\ \\text{nm} = 6{,}50\\cdot 10^{-7}$ m:</p>$$\\sin\\theta_1 = \\frac{1 \\cdot \\lambda}{d} = \\frac{6{,}50\\cdot 10^{-7}\\,\\text{m}}{2{,}00\\cdot 10^{-6}\\,\\text{m}} = 0{,}325$$$$\\theta_1 = \\sin^{-1}(0{,}325) = 19{,}0^\\circ$$<p>Avstanden $x$ fra midtstripa på skjermen finner vi med tangens i den rettvinklede trekanten med kateter $L = 1{,}50$ m og $x$:</p>$$x = L\\tan\\theta_1 = 1{,}50\\,\\text{m} \\cdot \\tan 19{,}0^\\circ = 1{,}50\\,\\text{m} \\cdot 0{,}344 = 0{,}52\\,\\text{m}$$<p><strong>3) Antall ordener.</strong> Sinus til en vinkel kan aldri bli større enn 1, så kravet er</p>$$\\sin\\theta_n = \\frac{n\\lambda}{d} \\le 1 \\quad \\Rightarrow \\quad n \\le \\frac{d}{\\lambda} = \\frac{2{,}00\\cdot 10^{-6}}{6{,}50\\cdot 10^{-7}} = 3{,}08$$<p>Siden $n$ må være et helt tall, er høyeste orden $n = 3$. Vi kontrollerer:</p><table><thead><tr><th>Orden $n$</th><th>$\\sin\\theta_n$</th><th>$\\theta_n$</th></tr></thead><tbody><tr><td>1</td><td>0,325</td><td>$19{,}0^\\circ$</td></tr><tr><td>2</td><td>0,650</td><td>$40{,}5^\\circ$</td></tr><tr><td>3</td><td>0,975</td><td>$77{,}2^\\circ$</td></tr><tr><td>4</td><td>1,300</td><td>finnes ikke</td></tr></tbody></table><p>Du ser altså tre ordener på hver side av den lyse midtstripa, til sammen sju maksima.</p>"
+      },
+      {
+        "tittel": "Strålingen fra sola og jordas temperatur",
+        "oppgave": "<p>Sola har overflatetemperatur omkring 5800 K og radius $6{,}96\\cdot 10^{8}$ m. Avstanden til jorda er $1{,}50\\cdot 10^{11}$ m.</p><ol><li>Hvilken bølgelengde stråler sola mest på?</li><li>Hvor stor effekt sender sola ut i alt?</li><li>Hvor stor er intensiteten ved jorda?</li><li>Jordas albedo er 0,30. Hvilken middeltemperatur gir strålingsbalansen, og hva forteller svaret om drivhuseffekten?</li></ol>",
+        "losning": "<p><strong>1) Wiens forskyvningslov.</strong></p>$$\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot 10^{-3}\\,\\text{m}\\cdot\\text{K}}{5800\\,\\text{K}} = 5{,}0\\cdot 10^{-7}\\,\\text{m} = 500\\,\\text{nm}$$<p>Det ligger midt i det synlige området, i grønt lys.</p><p><strong>2) Stefan-Boltzmanns lov.</strong> Først overflaten til sola, som er en kule:</p>$$A = 4\\pi r^{2} = 4\\pi \\left(6{,}96\\cdot 10^{8}\\,\\text{m}\\right)^{2} = 6{,}09\\cdot 10^{18}\\,\\text{m}^2$$<p>Så regner vi ut hvor mye hver kvadratmeter stråler:</p>$$\\sigma T^{4} = 5{,}67\\cdot 10^{-8} \\cdot \\left(5800\\right)^{4}\\,\\frac{\\text{W}}{\\text{m}^2} = 5{,}67\\cdot 10^{-8} \\cdot 1{,}132\\cdot 10^{15}\\,\\frac{\\text{W}}{\\text{m}^2} = 6{,}42\\cdot 10^{7}\\,\\frac{\\text{W}}{\\text{m}^2}$$<p>Total effekt:</p>$$P = \\sigma A T^{4} = 6{,}09\\cdot 10^{18}\\,\\text{m}^2 \\cdot 6{,}42\\cdot 10^{7}\\,\\frac{\\text{W}}{\\text{m}^2} = 3{,}9\\cdot 10^{26}\\,\\text{W}$$<p><strong>3) Intensiteten ved jorda.</strong> Effekten er nå spredt jevnt ut over en kuleflate med radius lik avstanden sol–jord:</p>$$I = \\frac{P}{4\\pi r^{2}} = \\frac{3{,}9\\cdot 10^{26}\\,\\text{W}}{4\\pi\\left(1{,}50\\cdot 10^{11}\\,\\text{m}\\right)^{2}} = \\frac{3{,}9\\cdot 10^{26}}{2{,}83\\cdot 10^{23}}\\,\\frac{\\text{W}}{\\text{m}^2} = 1{,}4\\cdot 10^{3}\\,\\frac{\\text{W}}{\\text{m}^2}$$<p>Det stemmer godt med den målte solkonstanten $S = 1360$ W/m².</p><p><strong>4) Strålingsbalansen.</strong> Jorda absorberer sollys over tverrsnittet $\\pi r^2$, men stråler ut fra hele overflaten $4\\pi r^2$. Setter vi inn absorbert lik utstrålt, forkortes $\\pi r^2$ bort:</p>$$S(1-a)\\pi r^{2} = \\sigma T^{4} \\cdot 4\\pi r^{2} \\quad \\Rightarrow \\quad \\sigma T^{4} = \\frac{S(1-a)}{4}$$$$\\sigma T^{4} = \\frac{1360 \\cdot (1 - 0{,}30)}{4}\\,\\frac{\\text{W}}{\\text{m}^2} = \\frac{952}{4}\\,\\frac{\\text{W}}{\\text{m}^2} = 238\\,\\frac{\\text{W}}{\\text{m}^2}$$$$T^{4} = \\frac{238}{5{,}67\\cdot 10^{-8}}\\,\\text{K}^4 = 4{,}20\\cdot 10^{9}\\,\\text{K}^4$$$$T = \\sqrt[4]{4{,}20\\cdot 10^{9}}\\,\\text{K} = 255\\,\\text{K} = 255 - 273 = -18\\ ^\\circ\\text{C}$$<p>Målt middeltemperatur på jorda er omtrent $+15\\ ^\\circ\\text{C}$. Regnestykket over tar bare hensyn til stråling inn og ut, ikke til at atmosfæren absorberer jordas langbølgede varmestråling. Differansen på cirka 33 grader er nettopp drivhuseffekten — og uten den ville jorda vært en frossen planet.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å rote med bølgeformelen og skrive $v = \\frac{\\lambda}{f}$ eller $v = \\frac{f}{\\lambda}$. Den er $v = \\lambda f$ — sjekk enhetene: $\\text{m}\\cdot\\text{s}^{-1}$ blir m/s.",
+      "Å tro at frekvensen endres når lys går inn i glass eller vann. Frekvensen bestemmes av kilden og er uendret; det er farten og bølgelengden som blir mindre.",
+      "Å måle innfalls- og brytningsvinkelen fra selve overflaten i stedet for fra normalen. Da får du komplementvinkelen, altså $90^\\circ$ minus riktig svar.",
+      "Å snu brøken i Snells lov, slik at strålen brytes fra normalen når den går inn i et tettere stoff. Kontroller alltid: større $n$ gir mindre vinkel.",
+      "Å forveksle bøyning og brytning fordi begge starter på b. Brytning er retningsendring i en grenseflate mellom to stoffer; bøyning er at bølgen sprer seg rundt en kant eller ut fra en åpning.",
+      "Å regne strålingsformlene med celsius, eller å bruke fjerdepotens i Wiens lov. Stefan-Boltzmann har $T^4$, Wien har $\\frac{1}{T}$, og begge krever kelvin."
+    ],
+
+    "tips": [
+      "Skriv opp alle gitte størrelser med enhet før du regner, og gjør om prefikser med én gang: $650\\ \\text{nm} = 6{,}50\\cdot 10^{-7}$ m, $500\\ \\text{mm}^{-1} = 5{,}00\\cdot 10^{5}\\ \\text{m}^{-1}$. Nesten alle tallfeil i dette kapittelet er prefiksfeil.",
+      "Tegn alltid en figur med stiplet normal i refleksjons- og brytningsoppgaver, og skriv $n$-verdien på hver side av flaten. Da ser du med én gang om vinkelen skal bli større eller mindre.",
+      "Bruk rimelighetssjekker: sinus kan aldri bli større enn 1 (det er slik du finner antall ordener i et gitter), lysfarten i et stoff kan aldri bli større enn $c$, og brytningsindeksen er alltid minst 1.",
+      "Alle strålingsformlene ligger i formelsamlingen, men verdien av kelvin gjør det ikke: legg $T\\,[\\text{K}] = t\\,[^\\circ\\text{C}] + 273$ på rygghukommelsen, og gjør om før du setter inn.",
+      "Drivhuseffekten kommer nesten alltid som en drøftingsoppgave uten regning. Øv på å skrive fem–åtte setninger der du får med kortbølget inn, langbølget ut, hvilke gasser som absorberer, strålingsbalanse, albedo og forsterket drivhuseffekt."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Bølgelengde", "forklaring": "Avstanden mellom to nabopunkter i bølgen som svinger i takt, for eksempel fra bølgetopp til bølgetopp. Symbol $\\lambda$." },
+    { "begrep": "Frekvens", "forklaring": "Antall hele svingninger per sekund, målt i hertz. Frekvensen bestemmes av kilden og er den omvendte av perioden: $f = \\frac{1}{T}$." },
+    { "begrep": "Amplitude", "forklaring": "Største utslag fra likevektsstillingen. Amplituden bestemmer hvor mye energi bølgen fører med seg, ikke hvor fort den går." },
+    { "begrep": "Transversal bølge", "forklaring": "Bølge der mediet svinger på tvers av retningen bølgen brer seg i, som bølger på et tau eller på vann." },
+    { "begrep": "Longitudinal bølge", "forklaring": "Bølge der mediet svinger fram og tilbake langs bevegelsesretningen, som lyd i luft." },
+    { "begrep": "Brytningsindeks", "forklaring": "Tallet $n = \\frac{c}{v}$ som sier hvor mange ganger saktere lyset går i et stoff enn i vakuum. Alltid $n \\ge 1$." },
+    { "begrep": "Totalrefleksjon", "forklaring": "At all stråling reflekteres tilbake når lys treffer en grenseflate fra det tetteste stoffet med en vinkel større enn grensevinkelen $\\theta_g$." },
+    { "begrep": "Bøyning (diffraksjon)", "forklaring": "At bølger sprer seg rundt hindringer og ut fra åpninger. Tydeligst når åpningen er omtrent like stor som bølgelengden." },
+    { "begrep": "Interferens", "forklaring": "At to bølger møtes og utslagene legger seg sammen, slik at de forsterker eller slukker hverandre." },
+    { "begrep": "Veiforskjell", "forklaring": "Forskjellen i strekning to bølger har gått før de møtes. Et helt antall bølgelengder gir forsterkning, et halvt antall gir utslokning." },
+    { "begrep": "Foton", "forklaring": "Den minste energipakken elektromagnetisk stråling kan komme i, med energi $E = hf$." },
+    { "begrep": "Ioniserende stråling", "forklaring": "Stråling med fotoner energirike nok til å slå elektroner løs fra atomer — ultrafiolett stråling og alt med kortere bølgelengde." },
+    { "begrep": "Solkonstanten", "forklaring": "Intensiteten av solstrålingen rett utenfor jordas atmosfære, omtrent 1360 W/m²." },
+    { "begrep": "Albedo", "forklaring": "Andelen av innkommende sollys som reflekteres tilbake til verdensrommet. For jorda som helhet omtrent 0,30." },
+    { "begrep": "Drivhuseffekten", "forklaring": "At drivhusgasser i atmosfæren slipper gjennom kortbølget sollys, men absorberer jordas langbølgede varmestråling, slik at overflaten blir varmere." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "En lydbølge har frekvens 250 Hz og bølgelengde 1,36 m. Hva er bølgefarten?",
+      "alternativer": ["$184$ m/s", "$0{,}0054$ m/s", "$340$ m/s", "$250$ m/s"],
+      "riktig": 2,
+      "forklaring": "Bølgeformelen er $v = \\lambda f = 1{,}36\\,\\text{m} \\cdot 250\\,\\text{s}^{-1} = 340$ m/s, som er lydfarten i luft. Svaret 184 m/s er det du får hvis du deler frekvensen på bølgelengden — sjekk alltid enhetene: bare multiplikasjon gir $\\text{m}\\cdot\\text{s}^{-1}$, altså m/s."
+    },
+    {
+      "sporsmal": "Lys går fra luft inn i vann. Hva skjer med bølgen?",
+      "alternativer": [
+        "Frekvensen synker, bølgelengden er uendret",
+        "Bølgelengden blir kortere, frekvensen er uendret",
+        "Både frekvensen og bølgelengden øker",
+        "Farten øker, og bølgelengden blir lengre"
+      ],
+      "riktig": 1,
+      "forklaring": "Frekvensen bestemmes av lyskilden og følger bølgen uendret over grenseflaten. Farten synker fordi vann har større brytningsindeks, og siden $v = \\lambda f$ med fast $f$, må bølgelengden krympe: $\\lambda_n = \\frac{\\lambda_0}{n}$. Alternativ A er den vanligste feilen — men om frekvensen endret seg, ville fargen på lyset endret seg under vann, og det gjør den ikke."
+    },
+    {
+      "sporsmal": "Vann har brytningsindeks 1,33. Hvor fort går lyset i vann?",
+      "alternativer": ["$2{,}26\\cdot 10^{8}$ m/s", "$3{,}99\\cdot 10^{8}$ m/s", "$3{,}00\\cdot 10^{8}$ m/s", "$1{,}33\\cdot 10^{8}$ m/s"],
+      "riktig": 0,
+      "forklaring": "Fra $n = \\frac{c}{v}$ får vi $v = \\frac{c}{n} = \\frac{3{,}00\\cdot 10^{8}}{1{,}33} = 2{,}26\\cdot 10^{8}$ m/s. Alternativ B er $c \\cdot n$, altså å gange når man skulle dele — og det svaret er umulig, for ingenting går fortere enn lyset i vakuum. Den kontrollen bør du gjøre hver gang."
+    },
+    {
+      "sporsmal": "Glass har $n = 1{,}50$. Hva er grensevinkelen for totalrefleksjon mot luft?",
+      "alternativer": ["$33{,}7^\\circ$", "$48{,}2^\\circ$", "$56{,}3^\\circ$", "$41{,}8^\\circ$"],
+      "riktig": 3,
+      "forklaring": "$\\sin\\theta_g = \\frac{n_2}{n_1} = \\frac{1{,}00}{1{,}50} = 0{,}667$, som gir $\\theta_g = 41{,}8^\\circ$. Alternativ B, $48{,}2^\\circ$, er komplementvinkelen $90^\\circ - 41{,}8^\\circ$ — den får du hvis du måler vinkelen fra glassoverflaten i stedet for fra normalen."
+    },
+    {
+      "sporsmal": "Når blir bøyning av bølger tydeligst?",
+      "alternativer": [
+        "Når åpningen er omtrent like stor som bølgelengden",
+        "Når åpningen er mye større enn bølgelengden",
+        "Når bølgen har stor amplitude",
+        "Når bølgen har høy frekvens"
+      ],
+      "riktig": 0,
+      "forklaring": "Bøyning er kraftigst når åpningen eller hindringen er i samme størrelsesorden som bølgelengden. Er åpningen mye større (alternativ B), går bølgen tilnærmet rett fram og gir skarp skygge — det er nettopp derfor lys, med bølgelengde på noen hundre nanometer, sjelden ser ut til å bøye seg, mens lyd bøyer seg rundt et hjørne. Amplituden har ingenting å si for bøyningen."
+    },
+    {
+      "sporsmal": "To høyttalere svinger i takt og sender ut lyd med bølgelengde 0,50 m. I et punkt er veiforskjellen fra de to høyttalerne 0,75 m. Hva hører du?",
+      "alternativer": [
+        "Kraftig lyd, siden veiforskjellen er større enn bølgelengden",
+        "Ingen interferens, siden veiforskjellen ikke er et helt antall bølgelengder",
+        "Svak eller ingen lyd, fordi bølgene slukker hverandre",
+        "Lyd med dobbelt så høy frekvens"
+      ],
+      "riktig": 2,
+      "forklaring": "Regn ut hvor mange bølgelengder veiforskjellen er: $\\frac{0{,}75}{0{,}50} = 1{,}5 = \\left(1 + \\frac{1}{2}\\right)\\lambda$. Et halvt antall bølgelengder betyr at bølgene kommer i motfase og gir destruktiv interferens. Alternativ B blander sammen betingelsene: at veiforskjellen ikke er et helt antall bølgelengder, betyr ikke at interferensen forsvinner — det betyr bare at den ikke er konstruktiv."
+    },
+    {
+      "sporsmal": "Hvitt lys sendes gjennom et gitter. Hvilken farge finner du lengst ute fra midten i førsteordens spekter?",
+      "alternativer": ["Fiolett", "Grønt", "Rødt", "Alle fargene havner på samme sted"],
+      "riktig": 2,
+      "forklaring": "Fra $d\\sin\\theta = n\\lambda$ ser du at større bølgelengde gir større vinkel. Rødt lys har den lengste bølgelengden i det synlige området (rundt 700 nm) og bøyes derfor mest. Fiolett, med rundt 400 nm, ligger nærmest midten. Merk at dette er motsatt av hva mange husker fra prismer, der det er fiolett som avbøyes mest."
+    },
+    {
+      "sporsmal": "Hvilken av disse strålingstypene har høyest frekvens?",
+      "alternativer": ["Radiobølger", "Infrarød stråling", "Synlig lys", "Ultrafiolett stråling"],
+      "riktig": 3,
+      "forklaring": "Alle elektromagnetiske bølger har samme fart $c$ i vakuum, så $c = \\lambda f$ gir at kortest bølgelengde har høyest frekvens. Rekkefølgen med økende frekvens er radio, mikro, infrarødt, synlig, ultrafiolett, røntgen, gamma — så UV er høyest av de fire. Radiobølger har lavest frekvens, ikke høyest, selv om senderne kan ha stor effekt."
+    },
+    {
+      "sporsmal": "Grønt lys har bølgelengde 500 nm. Hvor stor er fotonenergien? ($h = 6{,}63\\cdot 10^{-34}$ Js)",
+      "alternativer": ["$1{,}33\\cdot 10^{-27}$ J", "$1{,}99\\cdot 10^{-25}$ J", "$3{,}32\\cdot 10^{-40}$ J", "$3{,}98\\cdot 10^{-19}$ J"],
+      "riktig": 3,
+      "forklaring": "$E = \\frac{hc}{\\lambda} = \\frac{6{,}63\\cdot 10^{-34} \\cdot 3{,}00\\cdot 10^{8}}{5{,}00\\cdot 10^{-7}}\\,\\text{J} = \\frac{1{,}99\\cdot 10^{-25}}{5{,}00\\cdot 10^{-7}}\\,\\text{J} = 3{,}98\\cdot 10^{-19}$ J. Alternativ B er telleren $hc$ der man har glemt å dele på bølgelengden, og alternativ C er $h\\lambda$ — altså multiplikasjon i stedet for divisjon. Husk å gjøre om nanometer til meter først."
+    },
+    {
+      "sporsmal": "Sola har overflatetemperatur omkring 5800 K og stråler mest ved 500 nm. En stjerne er dobbelt så varm. Hvor ligger dens maksimum?",
+      "alternativer": ["Ved 1000 nm", "Ved 250 nm", "Ved 500 nm, som sola", "Ved 125 nm"],
+      "riktig": 1,
+      "forklaring": "Wiens forskyvningslov, $\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot 10^{-3}}{T}$, er omvendt proporsjonal: dobbel temperatur gir halv bølgelengde, altså 250 nm (ultrafiolett). Alternativ D, 125 nm, er en fjerdedel — det er å blande inn fjerdepotensen fra Stefan-Boltzmanns lov, men den handler om utstrålt effekt, ikke om bølgelengde."
+    },
+    {
+      "sporsmal": "Hvordan endres utstrålt effekt fra et legeme hvis den absolutte temperaturen dobles?",
+      "alternativer": ["Den dobles", "Den blir 4 ganger større", "Den blir 8 ganger større", "Den blir 16 ganger større"],
+      "riktig": 3,
+      "forklaring": "Stefan-Boltzmanns lov er $P = \\sigma A T^4$, så $P$ er proporsjonal med $T^4$. Dobles $T$, blir effekten $2^4 = 16$ ganger større. Alternativ B er å forveksle fjerdepotens med kvadrat, og alternativ C er å regne $2^3$. Merk at $T$ må være i kelvin — å doble antall celsiusgrader er noe helt annet."
+    },
+    {
+      "sporsmal": "Hvorfor fører mer CO₂ i atmosfæren til høyere temperatur ved jordoverflaten?",
+      "alternativer": [
+        "CO₂ slipper gjennom kortbølget sollys, men absorberer jordas langbølgede varmestråling",
+        "CO₂ hindrer sollys fra å slippe ut igjen, fordi gassen er ugjennomsiktig for synlig lys",
+        "CO₂ lager hull i ozonlaget, slik at mer sollys kommer inn",
+        "CO₂ øker jordas albedo, slik at mer stråling absorberes"
+      ],
+      "riktig": 0,
+      "forklaring": "Atmosfæren er nesten gjennomsiktig for det kortbølgede sollyset, men CO₂ absorberer den langbølgede infrarøde strålingen jorda sender ut, og stråler en del av den tilbake ned. Alternativ B er feil fordi CO₂ nettopp er gjennomsiktig for synlig lys. Ozonlaget (alternativ C) er en helt annen sak — det handler om UV-stråling. Og høyere albedo (alternativ D) ville betydd at mer sollys ble reflektert, altså avkjøling."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Bølgeformelen", "bak": "$v = \\lambda f$ — bølgefart er bølgelengde ganger frekvens." },
+    { "front": "Sammenhengen mellom frekvens og periode", "bak": "$f = \\frac{1}{T}$. Frekvens i hertz, periode i sekunder." },
+    { "front": "Transversal kontra longitudinal bølge", "bak": "Transversal: mediet svinger på tvers av bevegelsesretningen (tau, vann). Longitudinal: mediet svinger langs bevegelsesretningen (lyd i luft)." },
+    { "front": "Hva endres når lys går inn i et nytt stoff?", "bak": "Farten og bølgelengden endres, frekvensen er uendret. $\\lambda_n = \\frac{\\lambda_0}{n}$." },
+    { "front": "Brytningsindeks", "bak": "$n = \\frac{c}{v}$, med $c = 3{,}00\\cdot 10^{8}$ m/s. Alltid $n \\ge 1$." },
+    { "front": "Snells brytningslov", "bak": "$\\frac{\\sin\\theta_1}{\\sin\\theta_2} = \\frac{v_1}{v_2} = \\frac{n_2}{n_1}$. Vinklene måles fra normalen." },
+    { "front": "Grensevinkel for totalrefleksjon", "bak": "$\\sin\\theta_g = \\frac{n_2}{n_1}$ når $n_1 > n_2$. Ved større innfallsvinkel reflekteres alt tilbake." },
+    { "front": "Betingelsene for interferens", "bak": "Konstruktiv: $\\Delta s = n\\lambda$. Destruktiv: $\\Delta s = \\left(n + \\frac{1}{2}\\right)\\lambda$." },
+    { "front": "Gitterformelen", "bak": "$d\\sin\\theta_n = n\\lambda$, der gitterkonstanten er $d = \\frac{1}{N}$ og $N$ er antall streker per meter." },
+    { "front": "Bøyning eller brytning?", "bak": "Brytning: retningsendring i grenseflaten mellom to stoffer fordi farten endres. Bøyning: bølgen sprer seg rundt en kant eller ut fra en åpning." },
+    { "front": "Det elektromagnetiske spekteret fra lang til kort bølgelengde", "bak": "Radiobølger, mikrobølger, infrarødt, synlig lys (400–700 nm), ultrafiolett, røntgen, gamma. Alle har farten $c$ i vakuum." },
+    { "front": "Fotonenergi", "bak": "$E = hf = \\frac{hc}{\\lambda}$ med $h = 6{,}63\\cdot 10^{-34}$ Js. Kort bølgelengde gir energirike fotoner." },
+    { "front": "Ioniserende stråling", "bak": "UV, røntgen og gamma. Fotonene har nok energi til å slå løs elektroner og skade DNA. Radio- og mikrobølger er ikke-ioniserende." },
+    { "front": "Stefan-Boltzmanns lov", "bak": "$P = \\sigma A T^{4}$ med $\\sigma = 5{,}67\\cdot 10^{-8}\\ \\text{W/(m}^2\\text{K}^4)$. $T$ i kelvin. Dobbel temperatur gir 16 ganger effekten." },
+    { "front": "Wiens forskyvningslov", "bak": "$\\lambda_{\\text{maks}} = \\frac{2{,}90\\cdot 10^{-3}\\,\\text{m}\\cdot\\text{K}}{T}$. Varmere legeme stråler på kortere bølgelengde." },
+    { "front": "Jordas strålingsbalanse og drivhuseffekten", "bak": "$\\sigma T^4 = \\frac{S(1-a)}{4}$ gir $T \\approx 255$ K, altså $-18\\ ^\\circ\\text{C}$. Målt middeltemperatur er $+15\\ ^\\circ\\text{C}$; forskjellen på cirka 33 grader er drivhuseffekten." }
+  ]
+}

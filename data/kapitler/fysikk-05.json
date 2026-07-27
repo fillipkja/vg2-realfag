@@ -1,0 +1,215 @@
+{
+  "fag": "fysikk",
+  "nr": 5,
+  "tittel": "Termisk energi",
+  "intro": "Termisk energi handler om hva temperatur egentlig er, og om hvordan energi flytter seg som varme og arbeid. Du lærer å regne ut hvor mye energi som trengs for å varme opp, smelte og fordampe et stoff, og du møter termofysikkens første lov — energibevaring i sin mest generelle form.",
+
+  "kompakt": {
+    "punkter": [
+      "Temperatur er et mål på den gjennomsnittlige kinetiske energien til partiklene i et stoff — ikke på den totale energien.",
+      "Absolutt temperatur måles i kelvin: $T = t + 273{,}15$. Absolutt nullpunkt er $0$ K $= -273{,}15\\ ^\\circ$C.",
+      "En temperaturdifferanse er tallmessig lik i celsius og kelvin: en økning på 20 °C er en økning på 20 K.",
+      "Indre energi $U$ er summen av kinetisk og potensiell energi til alle partiklene i systemet.",
+      "Varme $Q$ er energi som overføres fordi to systemer har ulik temperatur. Varme går alltid spontant fra høy til lav temperatur.",
+      "Termofysikkens første lov: $\\Delta U = Q + W$, der $W$ er arbeid utført på systemet. Positiv $Q$ = tilført varme.",
+      "Ved oppvarming uten faseovergang er $Q = cm\\Delta T$, der $c$ er spesifikk varmekapasitet med enhet J/(kg·K).",
+      "Vann har uvanlig høy spesifikk varmekapasitet, 4180 J/(kg·K) — derfor er vann en god varmebærer og derfor er kystklima mildt.",
+      "Under en faseovergang er temperaturen konstant, og energien går til å bryte bindinger: $Q = L_s m$ ved smelting og $Q = L_f m$ ved fordamping.",
+      "I en isolert blanding er $Q_{\\text{avgitt}} = Q_{\\text{mottatt}}$, altså $\\sum Q = 0$. Sluttemperaturen ligger alltid mellom starttemperaturene."
+    ],
+    "formler": [
+      { "navn": "Absolutt temperatur", "latex": "T = t + 273{,}15 \\quad (T \\text{ i K}, \\; t \\text{ i } ^\\circ\\text{C})" },
+      { "navn": "Termofysikkens første lov", "latex": "\\Delta U = Q + W" },
+      { "navn": "Varme ved temperaturendring", "latex": "Q = c\\,m\\,\\Delta T" },
+      { "navn": "Spesifikk varmekapasitet", "latex": "c = \\frac{Q}{m\\,\\Delta T}" },
+      { "navn": "Temperaturendring", "latex": "\\Delta T = \\frac{Q}{c\\,m}" },
+      { "navn": "Varmekapasitet til et legeme", "latex": "C = c\\,m, \\qquad Q = C\\,\\Delta T" },
+      { "navn": "Energiregnskap i isolert blanding", "latex": "Q_{\\text{avgitt}} = Q_{\\text{mottatt}} \\quad \\Leftrightarrow \\quad \\sum Q = 0" },
+      { "navn": "Smeltevarme", "latex": "Q = L_s \\, m" },
+      { "navn": "Fordampingsvarme", "latex": "Q = L_f \\, m" },
+      { "navn": "Energi fra en effekt", "latex": "Q = P\\,t" },
+      { "navn": "Nyttig energi med virkningsgrad", "latex": "Q_{\\text{nyttig}} = \\eta \\, P \\, t" }
+    ]
+  },
+
+  "grundig": {
+    "seksjoner": [
+      {
+        "tittel": "Temperatur, termisk likevekt og indre energi",
+        "html": "<p>Alle stoffer er bygd opp av partikler — atomer, molekyler eller ioner — som er i stadig bevegelse. I en gass flyr partiklene fritt omkring, i en væske sklir de rundt hverandre, og i et fast stoff vibrerer de om faste plasser. <strong>Temperatur</strong> er et mål på den <em>gjennomsnittlige</em> kinetiske energien til disse partiklene. Høy temperatur betyr at partiklene i gjennomsnitt beveger seg raskt.</p><p>Legg merke til ordet «gjennomsnittlig». Temperaturen sier ingenting om <em>hvor mange</em> partikler du har. En tekopp på 90 °C har mye høyere temperatur enn Mjøsa i juli, men Mjøsa inneholder umåtelig mye mer energi, rett og slett fordi den har så uendelig mange flere partikler.</p><p>Setter du to legemer med ulik temperatur i kontakt, blir det varmeste kaldere og det kaldeste varmere — helt til de har samme temperatur. Da er de i <strong>termisk likevekt</strong>, og det går ikke lenger noen netto energi mellom dem.</p><p>Celsiusskalaen har nullpunktet der vann fryser, altså et praktisk, men tilfeldig valgt sted. <strong>Kelvinskalaen</strong> legger nullpunktet der partikkelbevegelsen er minst mulig, i det <strong>absolutte nullpunktet</strong>:</p>$$T = t + 273{,}15$$<p>Her er $t$ temperaturen i celsiusgrader og $T$ den absolutte temperaturen i kelvin (K). Fordi de to skalaene har like store grader, blir en temperatur<em>differanse</em> tallmessig helt lik i begge: $\\Delta T = 20\\ ^\\circ\\text{C} = 20\\ \\text{K}$.</p><p>Den totale energien partiklene har — både kinetisk energi fra bevegelsen og potensiell energi i bindingene mellom dem — kaller vi den <strong>indre energien</strong> $U$ til legemet. Indre energi avhenger av temperaturen, av hvor mye stoff du har, av hvilket stoff det er, og av hvilken fase stoffet er i.</p>"
+      },
+      {
+        "tittel": "Varme og arbeid — to måter å endre indre energi",
+        "html": "<p>Det finnes bare to måter å endre den indre energien til et system: du kan overføre <strong>varme</strong>, eller det kan utføres <strong>arbeid</strong>.</p><p><strong>Varme</strong> $Q$ er energi som overføres mellom to systemer <em>fordi de har ulik temperatur</em>. Varme går alltid av seg selv fra høy mot lav temperatur, aldri motsatt vei. Dette er det viktigste og samtidig vanskeligste begrepet i kapittelet, for i dagligtalen bruker vi ordet «varme» om nesten hva som helst. I fysikken er varme <em>energi under overføring</em> — noe som skjer, ikke noe et legeme har. Et glødende jernstykke inneholder ikke «mye varme»; det har høy temperatur og stor indre energi, og det kan <em>avgi</em> varme.</p><p>Fordi varme drives av temperaturforskjell og ikke av energimengde, kan energi godt gå fra et lite, varmt legeme til et stort, kaldt: kaffekoppen på 90 °C avgir varme til rommet på 20 °C, selv om rommet har enormt mye større indre energi enn kaffen.</p><p><strong>Arbeid</strong> $W$ kan også endre indre energi, helt uten at det finnes en temperaturforskjell i nærheten. Gnir du hendene mot hverandre, blir de varme fordi du utfører mekanisk arbeid mot friksjon. Trykker du raskt sammen luften i en sykkelpumpe, stiger temperaturen i pumpa. Rører du kraftig nok i vann lenge nok, stiger temperaturen — nettopp et slikt forsøk brukte James Joule for å vise at mekanisk energi og varme er to former for det samme.</p><p>Både $Q$ og $W$ måles i joule (J). Forskjellen ligger ikke i enheten, men i mekanismen: varme skyldes temperaturforskjell, arbeid skyldes en kraft som virker over en strekning.</p>"
+      },
+      {
+        "tittel": "Termofysikkens første lov",
+        "html": "<p>Termofysikkens første lov er energibevaring skrevet for termiske systemer:</p>$$\\Delta U = Q + W$$<p>Endringen i indre energi er lik varmen som tilføres, pluss arbeidet som utføres <em>på</em> systemet. Fortegnene er hele poenget:</p><table><thead><tr><th>Størrelse</th><th>Positiv når …</th><th>Negativ når …</th></tr></thead><tbody><tr><td>$Q$</td><td>systemet får tilført varme</td><td>systemet avgir varme</td></tr><tr><td>$W$</td><td>omgivelsene utfører arbeid på systemet (gassen presses sammen)</td><td>systemet utfører arbeid på omgivelsene (gassen utvider seg)</td></tr><tr><td>$\\Delta U$</td><td>indre energi øker (temperaturen stiger, eller stoffet smelter)</td><td>indre energi avtar</td></tr></tbody></table><p>Noen bøker skriver loven som $\\Delta U = Q - W$ og mener da med $W$ arbeidet systemet utfører <em>på omgivelsene</em>. Innholdet er identisk — men sjekk alltid hvilken konvensjon oppgaven bruker før du setter inn tall.</p><p>Tre spesialtilfeller er verdt å kjenne igjen:</p><ul><li>Er systemet godt <strong>varmeisolert</strong>, er $Q = 0$ og $\\Delta U = W$. Da kommer all temperaturendring fra arbeid, slik som i sykkelpumpa.</li><li>Skjer det <strong>ikke noe arbeid</strong>, er $W = 0$ og $\\Delta U = Q$. Dette gjelder i nesten alle oppgaver om oppvarming av faste stoffer og væsker, og er grunnen til at vi kan bruke $Q = cm\\Delta T$ direkte.</li><li>Er systemet helt isolert fra omgivelsene, er både $Q = 0$ og $W = 0$, og dermed $\\Delta U = 0$: den indre energien er bevart.</li></ul><p>Loven sier også noe viktig om hva som er umulig. Du kan ikke få mer energi ut av et system enn du putter inn — en maskin som lager energi av ingenting, bryter med termofysikkens første lov.</p>"
+      },
+      {
+        "tittel": "Spesifikk varmekapasitet",
+        "html": "<p>Hvor mye energi trengs for å varme opp noe? Det avhenger av tre ting: hvor mye stoff du har, hvor mange grader du vil opp, og hvilket stoff det er. Sammenhengen er</p>$$Q = c\\,m\\,\\Delta T$$<p>der $m$ er massen i kilogram, $\\Delta T$ temperaturendringen i kelvin (eller celsiusgrader — for en differanse er det det samme), og $c$ stoffets <strong>spesifikke varmekapasitet</strong>. Enheten er $\\frac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, og tallet forteller hvor mange joule som må til for å varme 1 kg av stoffet 1 K.</p><table><thead><tr><th>Stoff</th><th>$c$ i J/(kg·K)</th></tr></thead><tbody><tr><td>Vann</td><td>4180</td></tr><tr><td>Is</td><td>2100</td></tr><tr><td>Aluminium</td><td>900</td></tr><tr><td>Jern</td><td>450</td></tr><tr><td>Kopper</td><td>385</td></tr><tr><td>Bly</td><td>130</td></tr></tbody></table><p>Vann skiller seg kraftig ut. Det trengs over ni ganger så mye energi for å varme 1 kg vann én grad som 1 kg jern. Derfor brukes vann som kjølevæske i motorer og som varmebærer i vannbårne varmeanlegg, og derfor er kystklimaet mildt: havet må ta imot eller gi fra seg enorme energimengder for at temperaturen skal endre seg bare litt.</p><p>Formelen kan snus etter hva du er ute etter: $\\Delta T = \\frac{Q}{cm}$, $m = \\frac{Q}{c\\,\\Delta T}$ og $c = \\frac{Q}{m\\,\\Delta T}$. Skal du bestemme $c$ i et forsøk, måler du altså tilført energi, masse og temperaturstigning.</p><p>Kommer energien fra et elektrisk apparat med effekt $P$, finner du energien fra $Q = Pt$. Er virkningsgraden $\\eta$ mindre enn 1, er det bare $\\eta P t$ som faktisk kommer stoffet til gode.</p>"
+      },
+      {
+        "tittel": "Blandingsoppgaver og energiregnskap",
+        "html": "<p>En klassisk oppgavetype: du blander to stoffer med ulik temperatur i en godt isolert beholder — et <strong>kalorimeter</strong> — og skal finne sluttemperaturen. Siden beholderen er isolert, forsvinner ingen energi ut. Alt det varme stoffet gir fra seg, tar det kalde imot:</p>$$Q_{\\text{avgitt}} = Q_{\\text{mottatt}}$$<p>Skriver du i stedet alle bidragene med fortegn, blir regnskapet $\\sum Q = 0$: det som avgis er negativt, det som mottas er positivt. De to skrivemåtene gir samme svar, men velg én og hold deg til den.</p><p>Framgangsmåten er alltid den samme:</p><ol><li>Kall den ukjente sluttemperaturen $T$. Begge stoffene ender på samme $T$, for de havner i termisk likevekt.</li><li>Skriv $Q = cm\\Delta T$ for hvert stoff, og pass på at begge $\\Delta T$ blir positive: for det varme stoffet $\\left(T_{\\text{varm}} - T\\right)$, for det kalde $\\left(T - T_{\\text{kald}}\\right)$.</li><li>Sett uttrykkene lik hverandre og løs likningen for $T$.</li></ol><p>Kontroller alltid til slutt at svaret ligger <em>mellom</em> de to starttemperaturene. Får du en sluttemperatur som er høyere enn den varmeste eller lavere enn den kaldeste, har du gjort en fortegnsfeil.</p><p>Legg merke til at det er produktet $cm$ som avgjør hvem som «vinner» dragkampen om sluttemperaturen. Dette produktet kalles legemets <strong>varmekapasitet</strong>, $C = cm$, med enhet J/K. Et lite metallstykke med lav $c$ flytter sluttemperaturen i et vannbad svært lite, selv om metallet var glovarmt — vannets $C$ er mye større.</p>"
+      },
+      {
+        "tittel": "Faseoverganger, smeltevarme og fordampingsvarme",
+        "html": "<p>Varmer du is fra −20 °C, stiger temperaturen jevnt til den treffer 0 °C. Der skjer noe merkelig: du fortsetter å tilføre energi, men temperaturen står helt stille til all isen er smeltet. Først da begynner den å stige igjen. En temperatur–tid-graf får derfor et <strong>platå</strong> ved hver faseovergang.</p><p>Forklaringen ligger i den potensielle energien. Under smeltingen går all tilført energi til å bryte bindingene som holder molekylene på plass i iskrystallen, ikke til å øke farten deres. Den indre energien øker, men den kinetiske delen — altså temperaturen — er uendret. Energien kalles derfor <strong>latent</strong> («skjult») varme.</p><p>Energien som trengs for å smelte 1 kg av et stoff ved smeltepunktet, er den <strong>spesifikke smeltevarmen</strong> $L_s$. Energien for å fordampe 1 kg ved kokepunktet er den <strong>spesifikke fordampingsvarmen</strong> $L_f$:</p>$$Q = L_s\\,m \\qquad \\text{og} \\qquad Q = L_f\\,m$$<p>Legg merke til at det ikke står noen $\\Delta T$ i disse formlene — temperaturen endrer seg ikke. For vann er $L_s = 3{,}34 \\cdot 10^{5}$ J/kg ved 0 °C og $L_f = 2{,}26 \\cdot 10^{6}$ J/kg ved 100 °C.</p><p>Fordampingsvarmen er nesten sju ganger større enn smeltevarmen. Det er derfor svette kjøler kroppen så effektivt, og derfor damp på 100 °C gir langt verre brannskader enn vann på 100 °C: når dampen kondenserer på huden, frigjør den $2{,}26 \\cdot 10^{6}$ J per kilogram i tillegg til å avkjøles.</p><p>Overgangene virker like godt begge veier. Når vann fryser, <em>avgir</em> det $L_s m$, og når damp kondenserer, avgir den $L_f m$. Derfor sprayer fruktbønder vann på trærne når det meldes nattefrost: vannet som fryser, avgir varme og holder knoppene på 0 °C i stedet for kaldere.</p>"
+      }
+    ],
+
+    "eksempler": [
+      {
+        "tittel": "Oppvarming av vann i en vannkoker",
+        "oppgave": "<p>En vannkoker er merket 2000 W. Du fyller den med 1,5 L vann på 15 °C og vil koke det opp til 100 °C.</p><ol><li>Hvor mye energi må vannet ta imot?</li><li>Hvor lang tid tar det dersom 90 % av den elektriske energien går til vannet?</li></ol><p>Bruk $c_{\\text{vann}} = 4180$ J/(kg·K).</p>",
+        "losning": "<p><strong>Først: finn massen.</strong> Tettheten til vann er 1000 kg/m³, så 1 L vann har massen 1 kg:</p>$$m = 1{,}5\\ \\text{L} = 1{,}5\\ \\text{kg}$$<p><strong>Temperaturendringen.</strong> Her trenger du ikke gjøre om til kelvin, for differansen er den samme i begge skalaer:</p>$$\\Delta T = 100\\ ^\\circ\\text{C} - 15\\ ^\\circ\\text{C} = 85\\ ^\\circ\\text{C} = 85\\ \\text{K}$$<p><strong>1) Energien.</strong> Det skjer ingen faseovergang her — vannet skal bare opp <em>til</em> kokepunktet, ikke koke bort. Derfor bruker vi $Q = cm\\Delta T$:</p>$$Q = 4180\\,\\frac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 1{,}5\\ \\text{kg} \\cdot 85\\ \\text{K}$$<p>Vi regner ut i to trinn:</p>$$4180 \\cdot 1{,}5 = 6270 \\qquad \\text{og} \\qquad 6270 \\cdot 85 = 532\\,950$$<p>Enhetene kg og K forkortes mot hverandre, så det står igjen joule:</p>$$Q = 5{,}3 \\cdot 10^{5}\\ \\text{J} = 533\\ \\text{kJ}$$<p><strong>2) Tiden.</strong> Bare 90 % av effekten kommer vannet til gode:</p>$$P_{\\text{nyttig}} = \\eta P = 0{,}90 \\cdot 2000\\ \\text{W} = 1800\\ \\text{W}$$<p>Siden $Q = P_{\\text{nyttig}} \\, t$, blir</p>$$t = \\frac{Q}{P_{\\text{nyttig}}} = \\frac{532\\,950\\ \\text{J}}{1800\\ \\text{W}} = 296\\ \\text{s}$$<p>Her er det greit å huske at $1\\ \\text{W} = 1\\ \\text{J/s}$, slik at J delt på W gir sekunder. Svaret er</p>$$t \\approx 3{,}0 \\cdot 10^{2}\\ \\text{s} \\approx 4\\ \\text{min}\\ 56\\ \\text{s}$$<p>Altså knapt fem minutter — som stemmer godt med en vanlig vannkoker.</p>"
+      },
+      {
+        "tittel": "Blanding: varmt metall i kaldt vann",
+        "oppgave": "<p>Et aluminiumsstykke med masse 0,25 kg varmes opp til 150 °C og slippes ned i 0,50 kg vann på 20 °C i et godt isolert kalorimeter. Hva blir sluttemperaturen? Se bort fra varmekapasiteten til beholderen. Bruk $c_{\\text{Al}} = 900$ J/(kg·K) og $c_{\\text{vann}} = 4180$ J/(kg·K).</p>",
+        "losning": "<p>Aluminiumet avgir varme, vannet mottar varme, og ingenting slipper ut av kalorimeteret. Energiregnskapet blir derfor</p>$$Q_{\\text{avgitt}} = Q_{\\text{mottatt}}$$<p>Vi kaller sluttemperaturen $T$. Begge stoffene ender der. Aluminiumet kjøles fra 150 °C ned til $T$, vannet varmes fra 20 °C opp til $T$:</p>$$c_{\\text{Al}} m_{\\text{Al}} \\left(150\\ ^\\circ\\text{C} - T\\right) = c_{\\text{vann}} m_{\\text{vann}} \\left(T - 20\\ ^\\circ\\text{C}\\right)$$<p>Det lønner seg å regne ut varmekapasitetene $C = cm$ først, så blir likningen mye ryddigere:</p>$$C_{\\text{Al}} = 900 \\cdot 0{,}25 = 225\\ \\text{J/K}$$$$C_{\\text{vann}} = 4180 \\cdot 0{,}50 = 2090\\ \\text{J/K}$$<p>Likningen blir da (vi dropper enhetene i mellomregningen og setter dem på til slutt):</p>$$225\\left(150 - T\\right) = 2090\\left(T - 20\\right)$$<p>Vi multipliserer ut begge parenteser:</p>$$33\\,750 - 225T = 2090T - 41\\,800$$<p>Så samler vi $T$-leddene på høyre side og tallene på venstre:</p>$$33\\,750 + 41\\,800 = 2090T + 225T$$$$75\\,550 = 2315T$$<p>Vi løser for $T$:</p>$$T = \\frac{75\\,550}{2315} = 32{,}6\\ ^\\circ\\text{C} \\approx 33\\ ^\\circ\\text{C}$$<p><strong>Kontroll.</strong> Svaret ligger mellom 20 °C og 150 °C, som det må. Vi sjekker også at de to energiene faktisk blir like:</p>$$Q_{\\text{avgitt}} = 225 \\cdot \\left(150 - 32{,}6\\right) = 2{,}6 \\cdot 10^{4}\\ \\text{J}$$$$Q_{\\text{mottatt}} = 2090 \\cdot \\left(32{,}6 - 20\\right) = 2{,}6 \\cdot 10^{4}\\ \\text{J}$$<p>Legg merke til hvor lite vannet varmes opp: bare 13 grader, selv om metallet falt 117 grader. Grunnen er at vannets varmekapasitet er over ni ganger større enn aluminiumets.</p>"
+      },
+      {
+        "tittel": "Fra is på −10 °C til vann på 20 °C",
+        "oppgave": "<p>Du har 0,50 kg is med temperatur −10 °C.</p><ol><li>Hvor mye energi trengs for å gjøre isen om til vann med temperatur 20 °C?</li><li>Hvor lang tid tar det med en varmekilde som gir 500 W til isen?</li></ol><p>Bruk $c_{\\text{is}} = 2100$ J/(kg·K), $c_{\\text{vann}} = 4180$ J/(kg·K) og $L_s = 3{,}34 \\cdot 10^{5}$ J/kg.</p>",
+        "losning": "<p>Dette må deles i <strong>tre</strong> trinn, fordi en faseovergang skjer midt i. Prøver du å gå rett fra −10 °C til 20 °C med én formel, blir svaret helt feil.</p><p><strong>Trinn 1 — varm isen fra −10 °C til 0 °C.</strong> Her er stoffet fast hele veien, så vi bruker $c_{\\text{is}}$:</p>$$Q_1 = c_{\\text{is}} m \\Delta T = 2100 \\cdot 0{,}50 \\cdot 10\\ \\text{J} = 10\\,500\\ \\text{J}$$<p><strong>Trinn 2 — smelt isen ved 0 °C.</strong> Temperaturen står stille, så det finnes ingen $\\Delta T$ å sette inn. Vi bruker smeltevarmen:</p>$$Q_2 = L_s m = 3{,}34 \\cdot 10^{5} \\cdot 0{,}50\\ \\text{J} = 1{,}67 \\cdot 10^{5}\\ \\text{J} = 167\\,000\\ \\text{J}$$<p><strong>Trinn 3 — varm vannet fra 0 °C til 20 °C.</strong> Nå er stoffet væske, så vi må bytte til $c_{\\text{vann}}$:</p>$$Q_3 = c_{\\text{vann}} m \\Delta T = 4180 \\cdot 0{,}50 \\cdot 20\\ \\text{J} = 41\\,800\\ \\text{J}$$<p><strong>1) Summen.</strong></p>$$Q = Q_1 + Q_2 + Q_3 = 10\\,500 + 167\\,000 + 41\\,800 = 219\\,300\\ \\text{J}$$$$Q \\approx 2{,}2 \\cdot 10^{5}\\ \\text{J}$$<p>Legg merke til fordelingen: smeltingen alene krever 167 000 J, altså over tre fjerdedeler av all energien. Det koster mye mer å bryte bindingene i iskrystallen enn å varme opp både isen og vannet.</p><p><strong>2) Tiden.</strong> Med $Q = Pt$ får vi</p>$$t = \\frac{Q}{P} = \\frac{219\\,300\\ \\text{J}}{500\\ \\text{W}} = 439\\ \\text{s} \\approx 7{,}3\\ \\text{min}$$<p>Av disse går $\\frac{167\\,000}{500} = 334$ s — nesten seks minutter — med til smeltingen, mens termometeret står bom stille på 0 °C.</p>"
+      },
+      {
+        "tittel": "Termofysikkens første lov i praksis",
+        "oppgave": "<p>a) En gass i en sylinder får tilført 450 J varme. Samtidig utvider gassen seg og utfører 180 J arbeid på stempelet. Hvor mye endrer den indre energien seg?</p><p>b) Deretter komprimeres gassen så raskt at ingen varme rekker å slippe ut, og det utføres 320 J arbeid på gassen. Hva blir $\\Delta U$ nå, og hva skjer med temperaturen?</p><p>c) En blyklump med masse 0,50 kg faller 20 m ned på et hardt gulv og blir liggende. Anta at all mekanisk energi blir indre energi i blyet. Hvor mye stiger temperaturen? Bruk $c_{\\text{bly}} = 130$ J/(kg·K) og $g = 9{,}81$ m/s².</p>",
+        "losning": "<p><strong>a)</strong> Vi bruker $\\Delta U = Q + W$, der $W$ er arbeidet utført <em>på</em> gassen. Gassen får varme, så $Q = +450$ J. Gassen utfører arbeid <em>på omgivelsene</em>, altså er arbeidet på gassen negativt: $W = -180$ J.</p>$$\\Delta U = 450\\ \\text{J} + \\left(-180\\ \\text{J}\\right) = +270\\ \\text{J}$$<p>Den indre energien øker med 270 J. Gassen «bruker» 180 av de 450 tilførte joulene på å skyve stempelet utover.</p><p><strong>b)</strong> Nå er sylinderen varmeisolert, så $Q = 0$. Omgivelsene utfører arbeid på gassen, så $W = +320$ J:</p>$$\\Delta U = 0 + 320\\ \\text{J} = +320\\ \\text{J}$$<p>Indre energi øker uten at noen varme er tilført. Temperaturen stiger derfor — dette er akkurat det du merker som varme i en sykkelpumpe.</p><p>Samlet etter a) og b) er endringen $270\\ \\text{J} + 320\\ \\text{J} = 590\\ \\text{J}$.</p><p><strong>c)</strong> Først den mekaniske energien blyklumpen har i utgangspunktet:</p>$$E_p = mgh = 0{,}50\\ \\text{kg} \\cdot 9{,}81\\,\\frac{\\text{m}}{\\text{s}^2} \\cdot 20\\ \\text{m} = 98{,}1\\ \\text{J}$$<p>Hele denne energien blir indre energi i blyet, så $\\Delta U = 98{,}1$ J. Her er det arbeid, ikke varme, som endrer den indre energien: $Q = 0$ og $\\Delta U = W$.</p><p>Temperaturstigningen finner vi fra $\\Delta U = cm\\Delta T$:</p>$$\\Delta T = \\frac{\\Delta U}{cm} = \\frac{98{,}1\\ \\text{J}}{130\\,\\frac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0{,}50\\ \\text{kg}} = \\frac{98{,}1}{65}\\ \\text{K} = 1{,}5\\ \\text{K}$$<p>Et fint poeng: massen forkorter seg bort hvis du regner symbolsk, siden $\\Delta T = \\frac{mgh}{cm} = \\frac{gh}{c}$. Temperaturstigningen er altså den samme uansett hvor stor blyklumpen er — den avhenger bare av fallhøyden og av $c$.</p>"
+      }
+    ],
+
+    "vanligeFeil": [
+      "Å bruke ordene varme og temperatur om hverandre, og si at et varmt legeme «inneholder mye varme». Varme er energi under overføring; det legemet har, er indre energi og en temperatur.",
+      "Å legge til 273 på $\\Delta T$ i $Q = cm\\Delta T$. En temperaturdifferanse er tallmessig lik i celsius og kelvin — bare absolutte temperaturer skal gjøres om.",
+      "Å hoppe over faseovergangen i flertrinnsoppgaver, for eksempel å regne is på −10 °C rett til vann på 20 °C med bare én $c$ og én $\\Delta T$. Da mangler hele smeltevarmen, som ofte er den største posten.",
+      "Å bruke $c$ for vann på isen (eller omvendt). Is har $c = 2100$ J/(kg·K), vann 4180 J/(kg·K) — du må bytte verdi ved 0 °C.",
+      "Å sette inn massen i gram eller volumet i liter direkte i formelen. $c$ er oppgitt per kilogram, så 250 g må bli 0,25 kg.",
+      "Fortegnsfeil i første lov: å sette $W = +180$ J når det er gassen selv som utfører 180 J arbeid på omgivelsene. Utfører systemet arbeid, er $W$ negativt i $\\Delta U = Q + W$."
+    ],
+
+    "tips": [
+      "Skriv opp energiregnskapet i ord før du setter inn tall: hvilke porsjoner energi går inn, og hvilke går ut? I isolerte blandinger setter du $Q_{\\text{avgitt}} = Q_{\\text{mottatt}}$ og løser for den ukjente temperaturen.",
+      "Tegn en skisse av temperatur–tid-grafen i faseovergangsoppgaver. Skrå strekninger er $Q = cm\\Delta T$, vannrette platåer er $Q = Lm$. Antall knekkpunkter forteller hvor mange ledd svaret skal ha.",
+      "I blandingsoppgaver med is må du sjekke om isen faktisk smelter helt: regn ut energien vannet kan gi fra seg ned til 0 °C, og sammenlign med $L_s m_{\\text{is}}$. Er den for liten, blir sluttemperaturen 0 °C med is igjen i glasset.",
+      "Sluttemperaturen i en blanding må alltid ligge mellom de to starttemperaturene. Bruk det som kontroll — det avslører fortegnsfeil på ett sekund.",
+      "Vær nøye med enheter og gjeldende siffer: masse i kg, $c$ i J/(kg·K), $L$ i J/kg. Store energimengder oppgir du på standardform, som $2{,}2 \\cdot 10^{5}$ J, og du skal ha like mange gjeldende siffer som den dårligste måleverdien i oppgaven."
+    ]
+  },
+
+  "begreper": [
+    { "begrep": "Temperatur", "forklaring": "Et mål på den gjennomsnittlige kinetiske energien til partiklene i et stoff. Måles i celsiusgrader eller kelvin." },
+    { "begrep": "Indre energi", "forklaring": "Summen av kinetisk og potensiell energi til alle partiklene i et system, betegnet $U$. Avhenger av temperatur, masse, stoff og fase." },
+    { "begrep": "Termisk likevekt", "forklaring": "Tilstanden der to systemer har samme temperatur, slik at det ikke går noen netto varme mellom dem." },
+    { "begrep": "Kelvin", "forklaring": "SI-enheten for absolutt temperatur. Samme gradstørrelse som celsius, men med nullpunkt i det absolutte nullpunktet: $T = t + 273{,}15$." },
+    { "begrep": "Absolutt nullpunkt", "forklaring": "0 K, det vil si −273,15 °C. Den lavest mulige temperaturen, der partikkelbevegelsen er minst mulig." },
+    { "begrep": "Varme", "forklaring": "Energi som overføres mellom systemer fordi de har ulik temperatur. Går alltid spontant fra høyere til lavere temperatur." },
+    { "begrep": "Arbeid", "forklaring": "Energioverføring der en kraft virker over en strekning. Kan endre indre energi uten at det finnes noen temperaturforskjell." },
+    { "begrep": "Termofysikkens første lov", "forklaring": "$\\Delta U = Q + W$: endringen i indre energi er tilført varme pluss arbeid utført på systemet. Dette er energibevaring for termiske systemer." },
+    { "begrep": "Spesifikk varmekapasitet", "forklaring": "Energien $c$ som trengs for å endre temperaturen til 1 kg av et stoff med 1 K. Enhet J/(kg·K)." },
+    { "begrep": "Varmekapasitet", "forklaring": "Energien $C = cm$ som trengs for å endre temperaturen til et helt legeme med 1 K. Enhet J/K." },
+    { "begrep": "Kalorimeter", "forklaring": "En godt varmeisolert beholder som brukes til å måle energioverføringer, for eksempel til å bestemme spesifikk varmekapasitet." },
+    { "begrep": "Faseovergang", "forklaring": "Overgang mellom fast stoff, væske og gass. Skjer ved en fast temperatur, som holder seg konstant så lenge overgangen varer." },
+    { "begrep": "Latent varme", "forklaring": "Energien som går til å bryte eller danne bindinger under en faseovergang, uten at temperaturen endres." },
+    { "begrep": "Spesifikk smeltevarme", "forklaring": "Energien $L_s$ som trengs for å smelte 1 kg av et stoff ved smeltepunktet. For is er den $3{,}34 \\cdot 10^{5}$ J/kg." },
+    { "begrep": "Spesifikk fordampingsvarme", "forklaring": "Energien $L_f$ som trengs for å fordampe 1 kg av et stoff ved kokepunktet. For vann er den $2{,}26 \\cdot 10^{6}$ J/kg." }
+  ],
+
+  "quiz": [
+    {
+      "sporsmal": "Hva er 25 °C uttrykt i kelvin?",
+      "alternativer": ["248 K", "273 K", "298 K", "25 K"],
+      "riktig": 2,
+      "forklaring": "Absolutt temperatur er $T = t + 273{,}15$, så $25 + 273 = 298$ K. Alternativet 248 K er den klassiske feilen der man trekker fra 273 i stedet for å legge til. Husk at kelvinverdier alltid er positive, og at rommet du sitter i er rundt 293 K."
+    },
+    {
+      "sporsmal": "Hvor mye energi må du tilføre for å varme 2,0 kg vann fra 20 °C til 30 °C? ($c = 4180$ J/(kg·K))",
+      "alternativer": ["$8{,}4 \\cdot 10^{4}$ J", "$4{,}2 \\cdot 10^{4}$ J", "$2{,}5 \\cdot 10^{5}$ J", "$8{,}4 \\cdot 10^{3}$ J"],
+      "riktig": 0,
+      "forklaring": "$Q = cm\\Delta T = 4180 \\cdot 2{,}0 \\cdot 10 = 83\\,600$ J $\\approx 8{,}4 \\cdot 10^{4}$ J. Alternativet $2{,}5 \\cdot 10^{5}$ J er det du får hvis du setter inn sluttemperaturen 30 i stedet for differansen $\\Delta T = 10$ K — i denne formelen skal det alltid stå en temperaturendring, aldri en temperatur."
+    },
+    {
+      "sporsmal": "En gass får tilført 300 J varme, og samtidig utfører gassen 100 J arbeid på omgivelsene. Hvor mye endrer den indre energien seg?",
+      "alternativer": ["$+400$ J", "$+200$ J", "$-200$ J", "$-400$ J"],
+      "riktig": 1,
+      "forklaring": "I $\\Delta U = Q + W$ er $W$ arbeidet utført på systemet. Når gassen selv utfører 100 J, er $W = -100$ J, og $\\Delta U = 300 - 100 = +200$ J. Svaret $+400$ J kommer av å sette $W = +100$ J, altså å glemme at gassen gir bort energi til stempelet."
+    },
+    {
+      "sporsmal": "Du tilfører varme til en blanding av is og vann som er 0 °C. Hva skjer med temperaturen mens isen smelter?",
+      "alternativer": ["Den stiger jevnt hele tiden", "Den synker litt før den stiger", "Den holder seg konstant på 0 °C", "Den stiger raskere enn før, fordi is har lavere $c$ enn vann"],
+      "riktig": 2,
+      "forklaring": "Under en faseovergang går all tilført energi til å bryte bindingene i iskrystallen, ikke til å øke partikkelfarten. Temperaturen er et mål på nettopp partikkelfarten, så den står stille til siste isbit er smeltet. Alternativ D blander sammen to ting: $c$-verdien betyr noe når temperaturen faktisk endrer seg, men her endrer den seg ikke i det hele tatt."
+    },
+    {
+      "sporsmal": "Enheten J/(kg·K) hører til hvilken størrelse?",
+      "alternativer": ["Varme", "Spesifikk smeltevarme", "Indre energi", "Spesifikk varmekapasitet"],
+      "riktig": 3,
+      "forklaring": "$c = \\frac{Q}{m\\Delta T}$ gir joule per kilogram per kelvin. Spesifikk smeltevarme er den mest fristende feilen, men $L_s = \\frac{Q}{m}$ har enheten J/kg uten kelvin — nettopp fordi temperaturen ikke endres under smeltingen. Varme og indre energi er energier og måles i joule."
+    },
+    {
+      "sporsmal": "1,0 kg jern ($c = 450$ J/(kg·K)) og 1,0 kg vann ($c = 4180$ J/(kg·K)) får tilført like mye energi. Hva skjer?",
+      "alternativer": ["Jernet stiger mest i temperatur, fordi det har lavest $c$", "Vannet stiger mest i temperatur, fordi det har høyest $c$", "Begge stiger like mye, siden massene er like", "Vannet stiger mest, fordi væsker varmes lettere opp enn faste stoffer"],
+      "riktig": 0,
+      "forklaring": "Snu formelen: $\\Delta T = \\frac{Q}{cm}$. Med samme $Q$ og samme $m$ gir liten $c$ stor $\\Delta T$, så jernet stiger $\\frac{4180}{450} \\approx 9{,}3$ ganger så mye. Alternativ B er fristende fordi man tenker «høy varmekapasitet = mye varme», men høy $c$ betyr tvert imot at stoffet er tungt å varme opp."
+    },
+    {
+      "sporsmal": "Hvorfor gir vanndamp på 100 °C mye alvorligere brannskader enn vann på 100 °C?",
+      "alternativer": ["Fordi damp har høyere temperatur enn 100 °C", "Fordi damp har høyere spesifikk varmekapasitet enn vann", "Fordi dampen i tillegg avgir fordampingsvarmen når den kondenserer på huden", "Fordi gasser leder varme bedre enn væsker"],
+      "riktig": 2,
+      "forklaring": "Når 1 kg damp kondenserer, frigjøres $L_f = 2{,}26 \\cdot 10^{6}$ J før vannet i det hele tatt begynner å avkjøles. Det er over fem ganger mer enn de $4{,}2 \\cdot 10^{5}$ J som frigjøres når det samme vannet kjøles fra 100 °C til 0 °C. Alternativ A er feil av definisjon: begge er 100 °C i denne oppgaven."
+    },
+    {
+      "sporsmal": "Du blander 0,10 kg vann på 80 °C med 0,10 kg vann på 20 °C i en godt isolert termos. Hva blir sluttemperaturen?",
+      "alternativer": ["30 °C", "40 °C", "50 °C", "60 °C"],
+      "riktig": 2,
+      "forklaring": "Energiregnskapet er $cm(80 - T) = cm(T - 20)$. Siden $c$ og $m$ er like på begge sider, forkortes de bort, og $80 - T = T - 20$ gir $T = 50$ °C — midt mellom. Merk at dette bare gjelder når både masse og stoff er likt; med ulike masser må du beholde $cm$ og løse likningen ordentlig."
+    },
+    {
+      "sporsmal": "Hva menes med den indre energien til et legeme?",
+      "alternativer": ["Energien legemet har fordi det beveger seg", "Varmen som er lagret i legemet", "Summen av varmen og arbeidet som er tilført legemet", "Summen av kinetisk og potensiell energi til alle partiklene i legemet"],
+      "riktig": 3,
+      "forklaring": "Indre energi er partiklenes egen energi: bevegelsesenergien deres pluss den potensielle energien i bindingene mellom dem. Alternativ B er kapittelets største misforståelse — varme er energi under overføring og kan ikke lagres. Alternativ C beskriver $\\Delta U$, altså selve endringen i indre energi, ikke $U$ selv."
+    },
+    {
+      "sporsmal": "Hvor mye energi trengs for å smelte 0,20 kg is som allerede har temperatur 0 °C? ($L_s = 3{,}34 \\cdot 10^{5}$ J/kg)",
+      "alternativer": ["$3{,}3 \\cdot 10^{5}$ J", "$1{,}7 \\cdot 10^{6}$ J", "$4{,}5 \\cdot 10^{5}$ J", "$6{,}7 \\cdot 10^{4}$ J"],
+      "riktig": 3,
+      "forklaring": "$Q = L_s m = 3{,}34 \\cdot 10^{5} \\cdot 0{,}20 = 6{,}7 \\cdot 10^{4}$ J. Alternativ A er svaret for 1 kg, altså glemt masse. Alternativ B kommer av å dele på massen i stedet for å gange. Alternativ C er $2{,}26 \\cdot 10^{6} \\cdot 0{,}20$, altså fordampingsvarmen brukt ved en smelting."
+    },
+    {
+      "sporsmal": "Temperaturen i et rom stiger med 15 °C. Hvor stor er temperaturendringen målt i kelvin?",
+      "alternativer": ["288 K", "15 K", "258 K", "$-258$ K"],
+      "riktig": 1,
+      "forklaring": "Celsius- og kelvinskalaen har like store grader, så en differanse er tallmessig identisk: 15 °C endring tilsvarer 15 K endring. 288 K er hva 15 °C er som absolutt temperatur, men det er en temperatur, ikke en endring — og derfor helt feil svar her."
+    },
+    {
+      "sporsmal": "Varme går av seg selv …",
+      "alternativer": ["fra legemet med mest indre energi til det med minst", "fra legemet med høyest temperatur til det med lavest", "fra det største legemet til det minste", "fra legemet med høyest varmekapasitet til det med lavest"],
+      "riktig": 1,
+      "forklaring": "Det er utelukkende temperaturforskjellen som bestemmer retningen. Alternativ A er fristende, men galt: en kald innsjø har enormt mye mer indre energi enn en varm kaffekopp, og likevel går varmen fra koppen til innsjøen. Størrelse og varmekapasitet påvirker hvor raskt og hvor mye temperaturene endrer seg, men ikke hvilken vei energien går."
+    }
+  ],
+
+  "flashcards": [
+    { "front": "Hva er temperatur, fysisk sett?", "bak": "Et mål på den gjennomsnittlige kinetiske energien til partiklene i stoffet. Sier ingenting om hvor mange partikler du har." },
+    { "front": "Hva er indre energi $U$?", "bak": "Summen av kinetisk og potensiell energi til alle partiklene i systemet." },
+    { "front": "Hva er varme $Q$?", "bak": "Energi som overføres fordi to systemer har ulik temperatur. Går alltid spontant fra høy til lav temperatur." },
+    { "front": "Termofysikkens første lov", "bak": "$\\Delta U = Q + W$. $Q > 0$ når systemet får varme, $W > 0$ når det utføres arbeid på systemet." },
+    { "front": "Fra celsius til kelvin", "bak": "$T = t + 273{,}15$. Absolutt nullpunkt er 0 K $= -273{,}15\\ ^\\circ$C." },
+    { "front": "Er en temperaturendring på 5 °C lik 5 K?", "bak": "Ja. Skalaene har like store grader, så differanser er tallmessig identiske. Bare absolutte temperaturer må gjøres om." },
+    { "front": "Formel for varme ved temperaturendring", "bak": "$Q = c\\,m\\,\\Delta T$, med $m$ i kg og $\\Delta T$ i K." },
+    { "front": "Enhet for spesifikk varmekapasitet $c$", "bak": "J/(kg·K) — antall joule som må til for å varme 1 kg av stoffet 1 K." },
+    { "front": "$c$ for vann og for is", "bak": "Vann: 4180 J/(kg·K). Is: 2100 J/(kg·K). Du må bytte verdi ved 0 °C." },
+    { "front": "Hva er varmekapasiteten $C$ til et legeme?", "bak": "$C = cm$, med enhet J/K. Da er $Q = C\\Delta T$. Det er $C$ som avgjør sluttemperaturen i en blanding." },
+    { "front": "Energiregnskap i et isolert kalorimeter", "bak": "$Q_{\\text{avgitt}} = Q_{\\text{mottatt}}$, det vil si $\\sum Q = 0$. Sluttemperaturen ligger mellom starttemperaturene." },
+    { "front": "Hva skjer med temperaturen under en faseovergang?", "bak": "Ingenting — den er konstant. All energien går til å bryte (eller danne) bindinger mellom partiklene." },
+    { "front": "Formlene for smelting og fordamping", "bak": "$Q = L_s m$ ved smeltepunktet og $Q = L_f m$ ved kokepunktet. Ingen $\\Delta T$ i formelen." },
+    { "front": "$L_s$ for is og $L_f$ for vann", "bak": "$L_s = 3{,}34 \\cdot 10^{5}$ J/kg ved 0 °C. $L_f = 2{,}26 \\cdot 10^{6}$ J/kg ved 100 °C — nesten sju ganger større." },
+    { "front": "Hvordan finner du energien fra en effekt $P$?", "bak": "$Q = Pt$. Er virkningsgraden $\\eta$, er nyttig energi $\\eta P t$. Husk $1\\ \\text{W} = 1\\ \\text{J/s}$." },
+    { "front": "Hvorfor svir damp på 100 °C verre enn vann på 100 °C?", "bak": "Dampen avgir fordampingsvarmen $2{,}26 \\cdot 10^{6}$ J/kg når den kondenserer på huden, i tillegg til energien fra avkjølingen etterpå." }
+  ]
+}
