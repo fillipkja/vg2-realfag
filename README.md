@@ -57,6 +57,7 @@ Får du vite hvilket verk klassen faktisk bruker, står det i
 VG2/
 ├── index.html              # markup + all CSS
 ├── app.js                  # ruting, visninger, quiz, flashcards, søk
+├── figurer.js              # figurmotoren: data → SVG, med egen uttrykksparser
 ├── data/
 │   ├── fag.json            # fag- og kapittelstrukturen
 │   ├── kapitler/           # ett kapittel per fil: <fag>-<nn>.json
@@ -65,10 +66,18 @@ VG2/
 ├── vendor/katex/           # KaTeX + mhchem, committet (fungerer offline)
 ├── icons/                  # PWA-ikoner
 ├── manifest.webmanifest    # PWA-manifest
-├── sw.js                   # service worker (network-first for innhold)
+├── sw.js                   # service worker (cacher hele pensum ved installasjon)
 ├── scripts/
+│   ├── server.py           # flertrådet lokal server
+│   ├── verifiser.sh        # kjører ALT under — bruk denne før push
 │   ├── validate_data.py    # validerer datafilene mot SCHEMA.md
-│   └── skjermbilder.sh     # headless-Chrome skjermbilder til verifisering
+│   ├── latexsjekk.{html,sh}   # hvert uttrykk gjennom KaTeX
+│   ├── figursjekk.{html,sh}   # hver figur gjennom figurmotoren
+│   ├── figurtest.html      # alle figurtypene med testdata
+│   ├── funksjonstest.{html,sh} # 41 tester av det interaktive
+│   ├── skjermbilder.sh     # headless-Chrome skjermbilder
+│   ├── legg_til_figurer.py # setter en figur inn på rett plass i et kapittel
+│   └── installer-iphone.sh # bygger og installerer iPhone-skallet
 ├── SCHEMA.md               # dataformatet — kontrakten for alt innhold
 └── INNHOLD_BRIEF.md        # slik legger du til eller retter innhold
 ```
