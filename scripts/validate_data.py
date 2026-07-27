@@ -66,6 +66,127 @@ def sjekk_liste(fil, sti, verdi, minst, mest):
     return True
 
 
+FIGURTYPER = {"graf", "fortegnslinje", "vektor", "tallinje", "flyt",
+              "syklus", "nivaaer", "stolper"}
+# uttrykksparseren i figurer.js kjenner bare disse navnene
+UTTRYKK_NAVN = {"x", "pi", "e", "sin", "cos", "tan", "asin", "acos", "atan",
+                "sinh", "cosh", "tanh", "exp", "ln", "log", "lg", "sqrt",
+                "abs", "floor", "ceil"}
+
+
+def sjekk_uttrykk(fil, sti, u):
+    """Speiler tokeniseringen i figurer.js så en ugyldig formel fanges her."""
+    if not isinstance(u, str) or not u.strip():
+        err(fil, f"{sti}: tomt uttrykk")
+        return
+    ulovlig = re.sub(r"[0-9a-zA-Z.+\-*/^(),\s]", "", u)
+    if ulovlig:
+        err(fil, f"{sti}: ulovlige tegn i uttrykket: {ulovlig!r}")
+    for navn in re.findall(r"[a-zA-Z][a-zA-Z0-9]*", u):
+        if navn not in UTTRYKK_NAVN:
+            err(fil, f"{sti}: ukjent navn «{navn}» i uttrykket "
+                     f"(kjente: x, pi, e og standardfunksjonene)")
+    if u.count("(") != u.count(")"):
+        err(fil, f"{sti}: ubalanserte parenteser i uttrykket")
+    if re.search(r"\d\s*[a-zA-Z(]", u.replace("e", "").replace("x", "x")) and \
+            re.search(r"\d\s*x", u):
+        err(fil, f"{sti}: implisitt multiplikasjon — skriv «2*x», ikke «2x»")
+
+
+def valider_figur(fil, sti, f):
+    if not isinstance(f, dict):
+        err(fil, f"{sti}: figur skal være et objekt")
+        return
+    t = f.get("type")
+    if t not in FIGURTYPER:
+        err(fil, f"{sti}.type: ukjent figurtype {t!r} "
+                 f"(gyldige: {', '.join(sorted(FIGURTYPER))})")
+        return
+    if "tittel" in f:
+        sjekk_streng(fil, f"{sti}.tittel", f["tittel"])
+    if "forklaring" in f:
+        sjekk_streng(fil, f"{sti}.forklaring", f["forklaring"])
+
+    def liste(navn, minst, mest):
+        v = f.get(navn)
+        if not isinstance(v, list) or not (minst <= len(v) <= mest):
+            err(fil, f"{sti}.{navn}: skal være liste med {minst}-{mest} elementer, "
+                     f"fikk {len(v) if isinstance(v, list) else type(v).__name__}")
+            return []
+        return v
+
+    if t == "graf":
+        if not (f.get("kurver") or f.get("linjer") or f.get("punkter")):
+            err(fil, f"{sti}: graf må ha minst én av kurver, linjer eller punkter")
+        for i, k in enumerate(f.get("kurver") or []):
+            sjekk_uttrykk(fil, f"{sti}.kurver[{i}].uttrykk", k.get("uttrykk"))
+        if len(f.get("kurver") or []) > 3:
+            err(fil, f"{sti}.kurver: maks 3 kurver (fargepaletten er validert for 3)")
+        if f.get("omraade"):
+            sjekk_uttrykk(fil, f"{sti}.omraade.uttrykk", f["omraade"].get("uttrykk"))
+        for i, l in enumerate(f.get("linjer") or []):
+            for felt in ("fra", "til"):
+                p = l.get(felt)
+                if not (isinstance(p, list) and len(p) == 2
+                        and all(isinstance(v, (int, float)) for v in p)):
+                    err(fil, f"{sti}.linjer[{i}].{felt}: skal være [x, y] med tall")
+    elif t == "fortegnslinje":
+        rader = liste("linjer", 1, 4)
+        if f.get("resultat"):
+            rader = rader + [f["resultat"]]
+        for i, r in enumerate(rader):
+            n = r.get("nullpunkt")
+            fo = r.get("fortegn")
+            if not isinstance(n, list) or not isinstance(fo, list):
+                err(fil, f"{sti}: rad {i} mangler nullpunkt eller fortegn")
+                continue
+            if len(fo) != len(n) + 1:
+                err(fil, f"{sti}: rad {i} har {len(n)} nullpunkt og {len(fo)} fortegn "
+                         f"— fortegn skal ha ett element mer")
+            for v in fo:
+                if v not in ("+", "-"):
+                    err(fil, f"{sti}: rad {i} har ugyldig fortegn {v!r} (bruk «+» eller «-»)")
+    elif t == "vektor":
+        for i, v in enumerate(liste("vektorer", 1, 5)):
+            p = v.get("til")
+            if not (isinstance(p, list) and len(p) == 2):
+                err(fil, f"{sti}.vektorer[{i}].til: skal være [x, y]")
+    elif t == "tallinje":
+        if not (f.get("intervaller") or f.get("punkter")):
+            err(fil, f"{sti}: tallinje må ha intervaller eller punkter")
+    elif t == "flyt":
+        maks = 4 if f.get("retning") == "hoyre" else 6
+        for i, st in enumerate(liste("steg", 2, maks)):
+            sjekk_streng(fil, f"{sti}.steg[{i}].tekst", st.get("tekst"))
+            if len(str(st.get("tekst", ""))) > 52:
+                err(fil, f"{sti}.steg[{i}].tekst: for lang ({len(st['tekst'])} tegn, maks 52)")
+        tk = f.get("tilbakekopling")
+        if tk:
+            n = len(f.get("steg") or [])
+            for felt in ("fra", "til"):
+                if not isinstance(tk.get(felt), int) or not (0 <= tk[felt] < n):
+                    err(fil, f"{sti}.tilbakekopling.{felt}: skal være stegindeks 0-{n - 1}")
+    elif t == "syklus":
+        for i, fa in enumerate(liste("faser", 3, 6)):
+            sjekk_streng(fil, f"{sti}.faser[{i}].navn", fa.get("navn"))
+            if len(str(fa.get("navn", ""))) > 8:
+                err(fil, f"{sti}.faser[{i}].navn: for langt (maks 8 tegn)")
+    elif t == "nivaaer":
+        niv = liste("nivaaer", 2, 7)
+        for i, n in enumerate(niv):
+            if not isinstance(n.get("verdi"), (int, float)):
+                err(fil, f"{sti}.nivaaer[{i}].verdi: skal være et tall")
+        for i, o in enumerate(f.get("overganger") or []):
+            for felt in ("fra", "til"):
+                if not isinstance(o.get(felt), int) or not (0 <= o[felt] < len(niv)):
+                    err(fil, f"{sti}.overganger[{i}].{felt}: skal være nivåindeks 0-{len(niv) - 1}")
+    elif t == "stolper":
+        for i, r in enumerate(liste("data", 2, 6)):
+            sjekk_streng(fil, f"{sti}.data[{i}].navn", r.get("navn"))
+            if not isinstance(r.get("verdi"), (int, float)):
+                err(fil, f"{sti}.data[{i}].verdi: skal være et tall")
+
+
 def valider_kapittel(fil, d, fagdata):
     for felt in ["fag", "nr", "tittel", "intro", "kompakt", "grundig",
                  "begreper", "quiz", "flashcards"]:
@@ -95,6 +216,8 @@ def valider_kapittel(fil, d, fagdata):
     if sjekk_liste(fil, "kompakt.punkter", k.get("punkter"), 6, 10):
         for i, p in enumerate(k["punkter"]):
             sjekk_streng(fil, f"kompakt.punkter[{i}]", p)
+    if "figur" in k:
+        valider_figur(fil, "kompakt.figur", k["figur"])
     if sjekk_liste(fil, "kompakt.formler", k.get("formler", []), 0, 14):
         for i, f in enumerate(k.get("formler", [])):
             sjekk_streng(fil, f"kompakt.formler[{i}].navn", f.get("navn"))
@@ -106,12 +229,16 @@ def valider_kapittel(fil, d, fagdata):
             sjekk_streng(fil, f"grundig.seksjoner[{i}].tittel", s.get("tittel"))
             sjekk_streng(fil, f"grundig.seksjoner[{i}].html", s.get("html"),
                          html_tillatt=True, min_len=200)
+            if "figur" in s:
+                valider_figur(fil, f"grundig.seksjoner[{i}].figur", s["figur"])
     if sjekk_liste(fil, "grundig.eksempler", g.get("eksempler"), 2, 4):
         for i, e in enumerate(g["eksempler"]):
             sjekk_streng(fil, f"grundig.eksempler[{i}].tittel", e.get("tittel"))
             sjekk_streng(fil, f"grundig.eksempler[{i}].oppgave", e.get("oppgave"), html_tillatt=True)
             sjekk_streng(fil, f"grundig.eksempler[{i}].losning", e.get("losning"),
                          html_tillatt=True, min_len=100)
+            if "figur" in e:
+                valider_figur(fil, f"grundig.eksempler[{i}].figur", e["figur"])
     if sjekk_liste(fil, "grundig.vanligeFeil", g.get("vanligeFeil"), 3, 6):
         for i, v in enumerate(g["vanligeFeil"]):
             sjekk_streng(fil, f"grundig.vanligeFeil[{i}]", v)

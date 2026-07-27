@@ -2,7 +2,7 @@
   "fag": "kjemi",
   "nr": 7,
   "tittel": "Syrer og baser",
-  "intro": "Syrer og baser handler om ett eneste lite partikkel som flytter seg: protonet. Kapittelet knytter sammen likevekt, logaritmer og laboratoriearbeid, og pH-regning er noe av det som går oftest igjen på prøver og eksamen i Kjemi 1.",
+  "intro": "Syrer og baser handler om én eneste liten partikkel som flytter seg: protonet. Kapittelet knytter sammen likevekt, logaritmer og laboratoriearbeid, og pH-regning er noe av det som går oftest igjen på prøver og eksamen i Kjemi 1.",
 
   "kompakt": {
     "punkter": [
@@ -22,7 +22,7 @@
       { "navn": "Konsentrasjon fra pH", "latex": "[\\ce{H3O+}] = 10^{-\\text{pH}}" },
       { "navn": "pOH", "latex": "\\text{pOH} = -\\log[\\ce{OH-}], \\qquad [\\ce{OH-}] = 10^{-\\text{pOH}}" },
       { "navn": "Sammenhengen mellom pH og pOH", "latex": "\\text{pH} + \\text{pOH} = 14{,}00 \\qquad (25\\,^\\circ\\text{C})" },
-      { "navn": "Vannets ionprodukt", "latex": "K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14} \\qquad (25\\,^\\circ\\text{C})" },
+      { "navn": "Vannets ioneprodukt", "latex": "K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14} \\qquad (25\\,^\\circ\\text{C})" },
       { "navn": "Sterk syre", "latex": "[\\ce{H3O+}] = c(\\text{syre})" },
       { "navn": "Sterk base", "latex": "[\\ce{OH-}] = a \\cdot c(\\text{base}) \\quad (a = \\text{antall OH-grupper})" },
       { "navn": "Syrekonstanten", "latex": "K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}" },
@@ -43,7 +43,7 @@
       },
       {
         "tittel": "Vannets egenprotolyse og pH-skalaen",
-        "html": "<p>Selv helt rent vann leder litt strøm. Grunnen er at vannmolekyler protolyserer hverandre i en liten grad, i det vi kaller <strong>vannets egenprotolyse</strong>:</p>$$\\ce{2H2O(l) <=> H3O+(aq) + OH-(aq)}$$<p>Likevekten ligger svært langt mot venstre. Likevektskonstanten kalles <strong>vannets ionprodukt</strong>:</p>$$K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14} \\qquad (25\\,^\\circ\\text{C})$$<p>I rent vann dannes det like mye av de to ionene, så</p>$$[\\ce{H3O+}] = [\\ce{OH-}] = \\sqrt{1{,}0 \\cdot 10^{-14}} = 1{,}0 \\cdot 10^{-7}\\ \\text{mol/L}$$<p>Fordi slike tall er upraktiske å jobbe med, bruker vi logaritmer:</p>$$\\text{pH} = -\\log[\\ce{H3O+}] \\qquad \\text{pOH} = -\\log[\\ce{OH-}]$$<p>Rent vann får dermed $\\text{pH} = -\\log(1{,}0 \\cdot 10^{-7}) = 7{,}00$. Tar du logaritmen på begge sider av $K_w$-uttrykket, faller den svært nyttige sammenhengen ut av seg selv:</p>$$\\text{pH} + \\text{pOH} = 14{,}00 \\qquad (25\\,^\\circ\\text{C})$$<p>Det viktigste å forstå her er at $K_w$ gjelder i <em>alle</em> vannløsninger, ikke bare i rent vann. Kjenner du den ene konsentrasjonen, kan du alltid regne ut den andre. Skal du fra pH tilbake til konsentrasjon, opphever du logaritmen: $[\\ce{H3O+}] = 10^{-\\text{pH}}$.</p><p>Siden skalaen er logaritmisk, betyr én pH-enhet en faktor 10. En løsning med pH 3 har ti ganger så høy $[\\ce{H3O+}]$ som en med pH 4, og hundre ganger så høy som en med pH 5. Merk også at pH ikke er «sperret» til området 0–14; 2 mol/L saltsyre har negativ pH.</p>"
+        "html": "<p>Selv helt rent vann leder litt strøm. Grunnen er at vannmolekyler protolyserer hverandre i en liten grad, i det vi kaller <strong>vannets egenprotolyse</strong>:</p>$$\\ce{2H2O(l) <=> H3O+(aq) + OH-(aq)}$$<p>Likevekten ligger svært langt mot venstre. Likevektskonstanten kalles <strong>vannets ioneprodukt</strong>:</p>$$K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14} \\qquad (25\\,^\\circ\\text{C})$$<p>I rent vann dannes det like mye av de to ionene, så</p>$$[\\ce{H3O+}] = [\\ce{OH-}] = \\sqrt{1{,}0 \\cdot 10^{-14}} = 1{,}0 \\cdot 10^{-7}\\ \\text{mol/L}$$<p>Fordi slike tall er upraktiske å jobbe med, bruker vi logaritmer:</p>$$\\text{pH} = -\\log[\\ce{H3O+}] \\qquad \\text{pOH} = -\\log[\\ce{OH-}]$$<p>Rent vann får dermed $\\text{pH} = -\\log(1{,}0 \\cdot 10^{-7}) = 7{,}00$. Tar du logaritmen på begge sider av $K_w$-uttrykket, faller den svært nyttige sammenhengen ut av seg selv:</p>$$\\text{pH} + \\text{pOH} = 14{,}00 \\qquad (25\\,^\\circ\\text{C})$$<p>Det viktigste å forstå her er at $K_w$ gjelder i <em>alle</em> vannløsninger, ikke bare i rent vann. Kjenner du den ene konsentrasjonen, kan du alltid regne ut den andre. Skal du fra pH tilbake til konsentrasjon, opphever du logaritmen: $[\\ce{H3O+}] = 10^{-\\text{pH}}$.</p><p>Siden skalaen er logaritmisk, betyr én pH-enhet en faktor 10. En løsning med pH 3 har ti ganger så høy $[\\ce{H3O+}]$ som en med pH 4, og hundre ganger så høy som en med pH 5. Merk også at pH ikke er «sperret» til området 0–14; 2 mol/L saltsyre har negativ pH.</p>"
       },
       {
         "tittel": "Sterke og svake syrer og baser",
@@ -55,7 +55,7 @@
       },
       {
         "tittel": "Buffere",
-        "html": "<p>En <strong>buffer</strong> er en løsning som holder pH nesten konstant selv om du tilsetter litt syre eller litt base. Oppskriften er alltid den samme: <strong>en svak syre sammen med sin korresponderende base</strong>, begge i rimelig store mengder. Eddiksyre og natriumacetat er skoleeksempelet.</p><p>Bufferen virker fordi begge «beredskapene» finnes i løsningen samtidig. Tilsetter du hydroksid, blir det spist opp av syra:</p>$$\\ce{CH3COOH + OH- -> CH3COO- + H2O}$$<p>Tilsetter du hydronium, blir det spist opp av basen:</p>$$\\ce{CH3COO- + H3O+ -> CH3COOH + H2O}$$<p>I begge tilfeller endres forholdet mellom syre og base litt, men ingen av dem forsvinner. Skriver du $K_a$-uttrykket på logaritmeform, får du <strong>Henderson–Hasselbalch-likningen</strong>:</p>$$\\text{pH} = \\text{p}K_a + \\log \\frac{c(\\text{base})}{c(\\text{syre})}$$<p>Tre ting er verdt å merke seg. For det <strong>første</strong>: er konsentrasjonene like store, er brøken 1, logaritmen 0, og pH er nøyaktig lik $\\text{p}K_a$. For det <strong>andre</strong>: siden syra og basen er i samme løsning og dermed samme volum, kan du sette inn stoffmengder i mol i stedet for konsentrasjoner — volumet forkortes bort. For det <strong>tredje</strong>: bufferen virker best når forholdet ligger mellom 0,1 og 10, altså i området $\\text{p}K_a \\pm 1$. Derfor velger du bufferpar etter hvilken pH du trenger.</p><p>Blodet ditt bruker hydrogenkarbonatbufferen $\\ce{CO2 + 2H2O <=> HCO3- + H3O+}$ for å holde pH mellom 7,35 og 7,45. Men <strong>bufferkapasiteten</strong> er ikke uendelig: tilsetter du mer syre enn det finnes base til å ta imot, bryter bufferen sammen og pH endrer seg brått.</p>"
+        "html": "<p>En <strong>buffer</strong> er en løsning som holder pH nesten konstant selv om du tilsetter litt syre eller litt base. Oppskriften er alltid den samme: <strong>en svak syre sammen med sin korresponderende base</strong>, begge i rimelig store mengder. Eddiksyre og natriumacetat er skoleeksempelet.</p><p>Bufferen virker fordi begge formene, syra og den korresponderende basen, finnes i løsningen samtidig. Tilsetter du hydroksid, blir det spist opp av syra:</p>$$\\ce{CH3COOH + OH- -> CH3COO- + H2O}$$<p>Tilsetter du hydronium, blir det spist opp av basen:</p>$$\\ce{CH3COO- + H3O+ -> CH3COOH + H2O}$$<p>I begge tilfeller endres forholdet mellom syre og base litt, men ingen av dem forsvinner. Skriver du $K_a$-uttrykket på logaritmeform, får du <strong>Henderson–Hasselbalch-likningen</strong>:</p>$$\\text{pH} = \\text{p}K_a + \\log \\frac{c(\\text{base})}{c(\\text{syre})}$$<p>Tre ting er verdt å merke seg. For det <strong>første</strong>: er konsentrasjonene like store, er brøken 1, logaritmen 0, og pH er nøyaktig lik $\\text{p}K_a$. For det <strong>andre</strong>: siden syra og basen er i samme løsning og dermed samme volum, kan du sette inn stoffmengder i mol i stedet for konsentrasjoner — volumet forkortes bort. For det <strong>tredje</strong>: bufferen virker best når forholdet ligger mellom 0,1 og 10, altså i området $\\text{p}K_a \\pm 1$. Derfor velger du bufferpar etter hvilken pH du trenger.</p><p>Blodet ditt bruker hydrogenkarbonatbufferen $\\ce{CO2 + 2H2O <=> HCO3- + H3O+}$ for å holde pH mellom 7,35 og 7,45. Men <strong>bufferkapasiteten</strong> er ikke uendelig: tilsetter du mer syre enn det finnes base til å ta imot, bryter bufferen sammen og pH endrer seg brått.</p>"
       },
       {
         "tittel": "Titrering og indikatorer",
@@ -97,7 +97,7 @@
 
     "tips": [
       "Still alltid dette spørsmålet først i en pH-oppgave: er syra eller basen sterk eller svak? Svaret bestemmer om du kan sette $[\\ce{H3O+}] = c$ eller må gå via $K_a$. Skriv protolyselikningen med riktig pil — enkel pil for sterk, likevektspil for svak — så husker du det.",
-      "Kontroller alltid svaret grovt til slutt: sur løsning skal ha pH under 7, basisk over 7, og en svak syre skal gi høyere pH enn en sterk syre med samme konsentrasjon. Et svar som pH 15 eller pH 3 for ammoniakk er en tabbe du kan fange selv.",
+      "Kontroller alltid svaret grovt til slutt: sur løsning skal ha pH under 7, basisk over 7, og en svak syre skal gi høyere pH enn en sterk syre med samme konsentrasjon. Et svar som pH 15 for en fortynnet løsning, eller pH 3 for ammoniakk, er en tabbe du kan fange selv.",
       "Antall desimaler i pH er antall gjeldende siffer i konsentrasjonen. $[\\ce{H3O+}] = 1{,}8 \\cdot 10^{-3}$ mol/L har to gjeldende siffer, så pH skal skrives med to desimaler: 2,74. Sifrene foran komma er bare tierpotensen.",
       "Lær tabellbruken i formelsamlingen: $\\text{p}K_a = -\\log K_a$, $K_a = 10^{-\\text{p}K_a}$ og $K_b = \\frac{K_w}{K_a}$. Mange oppgaver oppgir $\\text{p}K_a$ når du trenger $K_a$, eller $K_a$ til syra når du skal regne på basen.",
       "I titreringsoppgaver: skriv opp balansert likning, regn $n = c \\cdot V$ for det du kjenner, bruk molforholdet, og del på volumet av prøven. Sjekk til slutt om prøven var fortynnet — glemt fortynningsfaktor er den vanligste tapte poengsummen i denne oppgavetypen."
@@ -110,8 +110,8 @@
     { "begrep": "Brønsted-base", "forklaring": "Et stoff som kan ta opp et proton, altså en protonakseptor." },
     { "begrep": "Korresponderende syre-base-par", "forklaring": "To stoffer som skiller seg med akkurat ett proton, som $\\ce{CH3COOH}$ og $\\ce{CH3COO-}$." },
     { "begrep": "Amfotært stoff", "forklaring": "Et stoff som kan opptre både som syre og som base, for eksempel $\\ce{H2O}$, $\\ce{HCO3-}$ og $\\ce{H2PO4-}$." },
-    { "begrep": "Vannets egenprotolyse", "forklaring": "Reaksjonen $\\ce{2H2O <=> H3O+ + OH-}$, som skjer i all vann i svært liten grad." },
-    { "begrep": "Vannets ionprodukt", "forklaring": "Konstanten $K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14}$ ved 25 °C. Den gjelder i alle vannløsninger." },
+    { "begrep": "Vannets egenprotolyse", "forklaring": "Reaksjonen $\\ce{2H2O <=> H3O+ + OH-}$, som skjer i alt vann i svært liten grad." },
+    { "begrep": "Vannets ioneprodukt", "forklaring": "Konstanten $K_w = [\\ce{H3O+}][\\ce{OH-}] = 1{,}0 \\cdot 10^{-14}$ ved 25 °C. Den gjelder i alle vannløsninger." },
     { "begrep": "pH", "forklaring": "Et logaritmisk mål for surhet: $\\text{pH} = -\\log[\\ce{H3O+}]$. Én pH-enhet svarer til en faktor 10 i konsentrasjon." },
     { "begrep": "Sterk syre", "forklaring": "En syre som protolyseres praktisk talt fullstendig i vann, slik at $[\\ce{H3O+}]$ blir lik konsentrasjonen av syra." },
     { "begrep": "Svak syre", "forklaring": "En syre der bare en liten andel av molekylene avgir protonet, slik at det oppstår en likevekt beskrevet av $K_a$." },
@@ -138,7 +138,7 @@
       "sporsmal": "Hva er den korresponderende basen til $\\ce{HSO4-}$?",
       "alternativer": ["$\\ce{H2SO4}$", "$\\ce{SO4^2-}$", "$\\ce{H3O+}$", "$\\ce{OH-}$"],
       "riktig": 1,
-      "forklaring": "Den korresponderende basen får du ved å fjerne ett proton: $\\ce{HSO4-}$ minus $\\ce{H+}$ blir $\\ce{SO4^2-}$. Legg merke til at ladningen synker med én. Alternativ A er fristende, men $\\ce{H2SO4}$ er den korresponderende syra — den har fått ett proton i stedet. $\\ce{HSO4-}$ er nettopp et amfotært ion, så den har begge naboene."
+      "forklaring": "Den korresponderende basen får du ved å fjerne ett proton: $\\ce{HSO4-}$ minus $\\ce{H+}$ blir $\\ce{SO4^2-}$. Legg merke til at ladningen synker med én. Alternativ A er fristende, men $\\ce{H2SO4}$ er den korresponderende syra — den har fått ett proton i stedet. $\\ce{HSO4-}$ er nettopp et amfotært ion, så det har begge naboene."
     },
     {
       "sporsmal": "Hva er pH i salpetersyre, $\\ce{HNO3}$, med konsentrasjon 0,010 mol/L?",
@@ -228,7 +228,7 @@
         "$1{,}0 \\cdot 10^{-14}$ mol/L"
       ],
       "riktig": 0,
-      "forklaring": "$K_w$ gjelder i alle vannløsninger, så $[\\ce{OH-}] = \\frac{K_w}{[\\ce{H3O+}]} = \\frac{1{,}0 \\cdot 10^{-14}}{2{,}0 \\cdot 10^{-3}} = 5{,}0 \\cdot 10^{-12}$ mol/L. Alternativ C er samme regnestykke med en tierpotens for lite — kontroller ved å gange: $5{,}0 \\cdot 10^{-11} \\cdot 2{,}0 \\cdot 10^{-3} = 1{,}0 \\cdot 10^{-13}$, som er ti ganger for stort. Alternativ D forveksler $[\\ce{OH-}]$ med selve $K_w$."
+      "forklaring": "$K_w$ gjelder i alle vannløsninger, så $[\\ce{OH-}] = \\frac{K_w}{[\\ce{H3O+}]} = \\frac{1{,}0 \\cdot 10^{-14}}{2{,}0 \\cdot 10^{-3}} = 5{,}0 \\cdot 10^{-12}$ mol/L. Alternativ C er samme regnestykke med et svar som er en tierpotens for stort — kontroller ved å gange: $5{,}0 \\cdot 10^{-11} \\cdot 2{,}0 \\cdot 10^{-3} = 1{,}0 \\cdot 10^{-13}$, som er ti ganger for stort. Alternativ D forveksler $[\\ce{OH-}]$ med selve $K_w$."
     }
   ],
 

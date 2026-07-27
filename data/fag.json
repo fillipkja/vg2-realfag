@@ -6,14 +6,103 @@
       "kort": "R1",
       "beskrivelse": "Realfagsmatematikk for VG2: funksjoner, derivasjon, vektorer og modellering.",
       "kapitler": [
-        { "nr": 1, "tittel": "Potenser og logaritmer", "undertema": ["Potensregler", "Eksponentialfunksjoner og tallet e", "Logaritmer: lg og ln", "Logaritmeregler", "Eksponential- og logaritmelikninger"] },
-        { "nr": 2, "tittel": "Grenseverdier og kontinuitet", "undertema": ["Grenseverdibegrepet", "Regneregler for grenseverdier", "Ensidige grenseverdier", "Kontinuitet", "Vertikale, horisontale og skrå asymptoter", "Rasjonale funksjoner"] },
-        { "nr": 3, "tittel": "Derivasjon", "undertema": ["Gjennomsnittlig og momentan vekstfart", "Definisjonen av den deriverte", "Derivasjonsregler: potens, sum, produkt, kvotient", "Kjerneregelen", "Derivasjon av eksponential- og logaritmefunksjoner", "Tangenter og normaler"] },
-        { "nr": 4, "tittel": "Bruk av derivasjon", "undertema": ["Monotoniegenskaper og fortegnslinjer", "Topp-, bunn- og terrassepunkter", "Den andrederiverte, krumning og vendepunkter", "Funksjonsdrøfting", "Optimering av praktiske problemer"] },
-        { "nr": 5, "tittel": "Omvendte funksjoner", "undertema": ["En-entydige (injektive) funksjoner", "Omvendt funksjon og grafen til den omvendte", "Rotfunksjoner", "Sammenhengen mellom e^x og ln x", "Derivasjon av omvendte funksjoner"] },
-        { "nr": 6, "tittel": "Vektorer", "undertema": ["Vektorbegrepet og regning med vektorer", "Vektorer på koordinatform", "Skalarproduktet", "Vinkel mellom vektorer, parallellitet og ortogonalitet", "Determinanter og areal"] },
-        { "nr": 7, "tittel": "Anvendelser og modeller", "undertema": ["Matematiske modeller og regresjon", "Lineær, polynomisk, eksponentiell og logistisk vekst", "Modellering med derivasjon", "Parameterframstillinger og vektorfunksjoner", "Fart og akselerasjon langs kurver"] },
-        { "nr": 8, "tittel": "Oppgavesamling", "undertema": ["Blandede oppgaver på tvers av kapitler", "Eksamensstrategi og tidsbruk", "Typiske oppgavetyper med og uten hjelpemidler", "Slik fører du en god besvarelse"] }
+        {
+          "nr": 1,
+          "tittel": "Potenser og logaritmer",
+          "undertema": [
+            "Potensregler",
+            "Eksponentialfunksjoner og tallet e",
+            "Logaritmer: lg og ln",
+            "Logaritmeregler",
+            "Eksponential- og logaritmelikninger"
+          ],
+          "gruppe": "Funksjoner og grenser"
+        },
+        {
+          "nr": 2,
+          "tittel": "Grenseverdier og kontinuitet",
+          "undertema": [
+            "Grenseverdibegrepet",
+            "Regneregler for grenseverdier",
+            "Ensidige grenseverdier",
+            "Kontinuitet",
+            "Vertikale, horisontale og skrå asymptoter",
+            "Rasjonale funksjoner"
+          ],
+          "gruppe": "Funksjoner og grenser"
+        },
+        {
+          "nr": 3,
+          "tittel": "Derivasjon",
+          "undertema": [
+            "Gjennomsnittlig og momentan vekstfart",
+            "Definisjonen av den deriverte",
+            "Derivasjonsregler: potens, sum, produkt, kvotient",
+            "Kjerneregelen",
+            "Derivasjon av eksponential- og logaritmefunksjoner",
+            "Tangenter og normaler"
+          ],
+          "gruppe": "Derivasjon"
+        },
+        {
+          "nr": 4,
+          "tittel": "Bruk av derivasjon",
+          "undertema": [
+            "Monotoniegenskaper og fortegnslinjer",
+            "Topp-, bunn- og terrassepunkter",
+            "Den andrederiverte, krumning og vendepunkter",
+            "Funksjonsdrøfting",
+            "Optimering av praktiske problemer"
+          ],
+          "gruppe": "Derivasjon"
+        },
+        {
+          "nr": 5,
+          "tittel": "Omvendte funksjoner",
+          "undertema": [
+            "En-entydige (injektive) funksjoner",
+            "Omvendt funksjon og grafen til den omvendte",
+            "Rotfunksjoner",
+            "Sammenhengen mellom e^x og ln x",
+            "Derivasjon av omvendte funksjoner"
+          ],
+          "gruppe": "Derivasjon"
+        },
+        {
+          "nr": 6,
+          "tittel": "Vektorer",
+          "undertema": [
+            "Vektorbegrepet og regning med vektorer",
+            "Vektorer på koordinatform",
+            "Skalarproduktet",
+            "Vinkel mellom vektorer, parallellitet og ortogonalitet",
+            "Determinanter og areal"
+          ],
+          "gruppe": "Vektorer"
+        },
+        {
+          "nr": 7,
+          "tittel": "Anvendelser og modeller",
+          "undertema": [
+            "Matematiske modeller og regresjon",
+            "Lineær, polynomisk, eksponentiell og logistisk vekst",
+            "Modellering med derivasjon",
+            "Parameterframstillinger og vektorfunksjoner",
+            "Fart og akselerasjon langs kurver"
+          ],
+          "gruppe": "Modeller og eksamen"
+        },
+        {
+          "nr": 8,
+          "tittel": "Oppgavesamling",
+          "undertema": [
+            "Blandede oppgaver på tvers av kapitler",
+            "Eksamensstrategi og tidsbruk",
+            "Typiske oppgavetyper med og uten hjelpemidler",
+            "Slik fører du en god besvarelse"
+          ],
+          "gruppe": "Modeller og eksamen"
+        }
       ]
     },
     {
@@ -22,16 +111,124 @@
       "kort": "Fysikk",
       "beskrivelse": "Mekanikk, energi, bølger, moderne fysikk og elektrisitet.",
       "kapitler": [
-        { "nr": 1, "tittel": "Rettlinjet bevegelse", "undertema": ["Posisjon, fart og akselerasjon", "Bevegelsesgrafer (s-t, v-t, a-t)", "Bevegelseslikningene ved konstant akselerasjon", "Fritt fall", "Måling og usikkerhet"] },
-        { "nr": 2, "tittel": "Krefter", "undertema": ["Newtons tre lover", "Frilegemediagram og kraftsum", "Tyngde, normalkraft og snordrag", "Friksjon", "Bevegelse på skråplan"] },
-        { "nr": 3, "tittel": "Mekanisk energi", "undertema": ["Arbeid", "Kinetisk og potensiell energi", "Bevaring av mekanisk energi", "Effekt", "Virkningsgrad"] },
-        { "nr": 4, "tittel": "Bevegelsesmengde", "undertema": ["Bevegelsesmengde", "Impuls og kraftstøt", "Bevaring av bevegelsesmengde", "Elastiske og uelastiske støt"] },
-        { "nr": 5, "tittel": "Termisk energi", "undertema": ["Temperatur og indre energi", "Varme og termofysikkens første lov", "Spesifikk varmekapasitet", "Faseoverganger og smelte-/fordampingsvarme"] },
-        { "nr": 6, "tittel": "Bølger og stråling", "undertema": ["Bølgefart, frekvens og bølgelengde", "Refleksjon, brytning og bøyning", "Interferens", "Det elektromagnetiske spekteret", "Stråling fra sola og drivhuseffekten"] },
-        { "nr": 7, "tittel": "Atomfysikk", "undertema": ["Atommodeller og Bohrs modell", "Energinivåer og eksitasjon", "Fotoner og fotonenergi E = hf", "Emisjons- og absorpsjonsspektre"] },
-        { "nr": 8, "tittel": "Kjernefysikk", "undertema": ["Atomkjernens oppbygning og isotoper", "Radioaktiv stråling: alfa, beta og gamma", "Halveringstid og aktivitet", "Fisjon og fusjon", "Masse og energi: E = mc²", "Stråling, helse og strålevern"] },
-        { "nr": 9, "tittel": "Astrofysikk", "undertema": ["Avstander og størrelser i universet", "Stjerners fødsel, liv og død", "Energiproduksjonen i sola", "Universets utvikling og big bang", "Rødforskyvning og Hubbles lov"] },
-        { "nr": 10, "tittel": "Elektrisitet", "undertema": ["Strøm, spenning og resistans", "Ohms lov", "Serie- og parallellkoblinger", "Elektrisk energi og effekt", "Målinger i kretser"] }
+        {
+          "nr": 1,
+          "tittel": "Rettlinjet bevegelse",
+          "undertema": [
+            "Posisjon, fart og akselerasjon",
+            "Bevegelsesgrafer (s-t, v-t, a-t)",
+            "Bevegelseslikningene ved konstant akselerasjon",
+            "Fritt fall",
+            "Måling og usikkerhet"
+          ],
+          "gruppe": "Mekanikk"
+        },
+        {
+          "nr": 2,
+          "tittel": "Krefter",
+          "undertema": [
+            "Newtons tre lover",
+            "Frilegemediagram og kraftsum",
+            "Tyngde, normalkraft og snordrag",
+            "Friksjon",
+            "Bevegelse på skråplan"
+          ],
+          "gruppe": "Mekanikk"
+        },
+        {
+          "nr": 3,
+          "tittel": "Mekanisk energi",
+          "undertema": [
+            "Arbeid",
+            "Kinetisk og potensiell energi",
+            "Bevaring av mekanisk energi",
+            "Effekt",
+            "Virkningsgrad"
+          ],
+          "gruppe": "Mekanikk"
+        },
+        {
+          "nr": 4,
+          "tittel": "Bevegelsesmengde",
+          "undertema": [
+            "Bevegelsesmengde",
+            "Impuls og kraftstøt",
+            "Bevaring av bevegelsesmengde",
+            "Elastiske og uelastiske støt"
+          ],
+          "gruppe": "Mekanikk"
+        },
+        {
+          "nr": 5,
+          "tittel": "Termisk energi",
+          "undertema": [
+            "Temperatur og indre energi",
+            "Varme og termofysikkens første lov",
+            "Spesifikk varmekapasitet",
+            "Faseoverganger og smelte-/fordampingsvarme"
+          ],
+          "gruppe": "Termofysikk"
+        },
+        {
+          "nr": 6,
+          "tittel": "Bølger og stråling",
+          "undertema": [
+            "Bølgefart, frekvens og bølgelengde",
+            "Refleksjon, brytning og bøyning",
+            "Interferens",
+            "Det elektromagnetiske spekteret",
+            "Stråling fra sola og drivhuseffekten"
+          ],
+          "gruppe": "Bølger og moderne fysikk"
+        },
+        {
+          "nr": 7,
+          "tittel": "Atomfysikk",
+          "undertema": [
+            "Atommodeller og Bohrs modell",
+            "Energinivåer og eksitasjon",
+            "Fotoner og fotonenergi E = hf",
+            "Emisjons- og absorpsjonsspektre"
+          ],
+          "gruppe": "Bølger og moderne fysikk"
+        },
+        {
+          "nr": 8,
+          "tittel": "Kjernefysikk",
+          "undertema": [
+            "Atomkjernens oppbygning og isotoper",
+            "Radioaktiv stråling: alfa, beta og gamma",
+            "Halveringstid og aktivitet",
+            "Fisjon og fusjon",
+            "Masse og energi: E = mc²",
+            "Stråling, helse og strålevern"
+          ],
+          "gruppe": "Bølger og moderne fysikk"
+        },
+        {
+          "nr": 9,
+          "tittel": "Astrofysikk",
+          "undertema": [
+            "Avstander og størrelser i universet",
+            "Stjerners fødsel, liv og død",
+            "Energiproduksjonen i sola",
+            "Universets utvikling og big bang",
+            "Rødforskyvning og Hubbles lov"
+          ],
+          "gruppe": "Bølger og moderne fysikk"
+        },
+        {
+          "nr": 10,
+          "tittel": "Elektrisitet",
+          "undertema": [
+            "Strøm, spenning og resistans",
+            "Ohms lov",
+            "Serie- og parallellkoblinger",
+            "Elektrisk energi og effekt",
+            "Målinger i kretser"
+          ],
+          "gruppe": "Elektrisitet"
+        }
       ]
     },
     {
@@ -40,14 +237,107 @@
       "kort": "Kjemi",
       "beskrivelse": "Bindinger, reaksjoner, støkiometri, organisk kjemi, likevekter og analyse.",
       "kapitler": [
-        { "nr": 1, "tittel": "Kjemiske bindinger", "undertema": ["Atomets oppbygning og elektronkonfigurasjon", "Periodesystemet", "Ionebinding", "Kovalent binding og elektronparformler (lewisstrukturer)", "Molekylgeometri og polaritet", "Metallbinding"] },
-        { "nr": 2, "tittel": "Egenskaper og reaksjoner", "undertema": ["Krefter mellom molekyler: hydrogenbinding, dipol og londonkrefter", "Løselighet og «likt løser likt»", "Vann som løsemiddel", "Fellingsreaksjoner", "Innføring i syre-base- og redoksreaksjoner", "Navnsetting av uorganiske forbindelser"] },
-        { "nr": 3, "tittel": "Støkiometri", "undertema": ["Mol og molar masse", "Balansering av reaksjonslikninger", "Masseberegninger", "Konsentrasjon og fortynning", "Begrensende reaktant og utbytte", "Gassvolum og molart volum"] },
-        { "nr": 4, "tittel": "Termokjemi", "undertema": ["Endoterme og eksoterme reaksjoner", "Entalpi", "Entropi", "Gibbs energi og spontanitet", "Energiberegninger"] },
-        { "nr": 5, "tittel": "Organisk kjemi", "undertema": ["Hydrokarboner: alkaner, alkener og alkyner", "Navnsetting av organiske forbindelser", "Funksjonelle grupper: alkoholer, aldehyder, ketoner, karboksylsyrer, estere og aminer", "Isomeri", "Organiske reaksjonstyper: substitusjon, addisjon, eliminasjon og kondensasjon"] },
-        { "nr": 6, "tittel": "Likevekter", "undertema": ["Reversible reaksjoner og dynamisk likevekt", "Likevektskonstanten og reaksjonskvotienten", "Le Chateliers prinsipp", "Forskyvning ved endring av konsentrasjon, trykk og temperatur", "Løselighetslikevekter"] },
-        { "nr": 7, "tittel": "Syrer og baser", "undertema": ["Syre- og basedefinisjoner", "pH og vannets egenprotolyse", "Sterke og svake syrer og baser", "Syrekonstanten Ka", "Buffere", "Titrering og indikatorer"] },
-        { "nr": 8, "tittel": "Miljøanalyse", "undertema": ["Kvalitativ og kvantitativ analyse", "Vannanalyse og vannkvalitet", "Titrering som analysemetode", "Kolorimetri og spektrofotometri", "Forurensning: næringssalter og forsuring", "Feltarbeid og usikkerhet"] }
+        {
+          "nr": 1,
+          "tittel": "Kjemiske bindinger",
+          "undertema": [
+            "Atomets oppbygning og elektronkonfigurasjon",
+            "Periodesystemet",
+            "Ionebinding",
+            "Kovalent binding og elektronparformler (lewisstrukturer)",
+            "Molekylgeometri og polaritet",
+            "Metallbinding"
+          ],
+          "gruppe": "Struktur og bindinger"
+        },
+        {
+          "nr": 2,
+          "tittel": "Egenskaper og reaksjoner",
+          "undertema": [
+            "Krefter mellom molekyler: hydrogenbinding, dipol og londonkrefter",
+            "Løselighet og «likt løser likt»",
+            "Vann som løsemiddel",
+            "Fellingsreaksjoner",
+            "Innføring i syre-base- og redoksreaksjoner",
+            "Navnsetting av uorganiske forbindelser"
+          ],
+          "gruppe": "Struktur og bindinger"
+        },
+        {
+          "nr": 3,
+          "tittel": "Støkiometri",
+          "undertema": [
+            "Mol og molar masse",
+            "Balansering av reaksjonslikninger",
+            "Masseberegninger",
+            "Konsentrasjon og fortynning",
+            "Begrensende reaktant og utbytte",
+            "Gassvolum og molart volum"
+          ],
+          "gruppe": "Beregninger og energi"
+        },
+        {
+          "nr": 4,
+          "tittel": "Termokjemi",
+          "undertema": [
+            "Endoterme og eksoterme reaksjoner",
+            "Entalpi",
+            "Entropi",
+            "Gibbs energi og spontanitet",
+            "Energiberegninger"
+          ],
+          "gruppe": "Beregninger og energi"
+        },
+        {
+          "nr": 5,
+          "tittel": "Organisk kjemi",
+          "undertema": [
+            "Hydrokarboner: alkaner, alkener og alkyner",
+            "Navnsetting av organiske forbindelser",
+            "Funksjonelle grupper: alkoholer, aldehyder, ketoner, karboksylsyrer, estere og aminer",
+            "Isomeri",
+            "Organiske reaksjonstyper: substitusjon, addisjon, eliminasjon og kondensasjon"
+          ],
+          "gruppe": "Organisk kjemi"
+        },
+        {
+          "nr": 6,
+          "tittel": "Likevekter",
+          "undertema": [
+            "Reversible reaksjoner og dynamisk likevekt",
+            "Likevektskonstanten og reaksjonskvotienten",
+            "Le Chateliers prinsipp",
+            "Forskyvning ved endring av konsentrasjon, trykk og temperatur",
+            "Løselighetslikevekter"
+          ],
+          "gruppe": "Likevekt og analyse"
+        },
+        {
+          "nr": 7,
+          "tittel": "Syrer og baser",
+          "undertema": [
+            "Syre- og basedefinisjoner",
+            "pH og vannets egenprotolyse",
+            "Sterke og svake syrer og baser",
+            "Syrekonstanten Ka",
+            "Buffere",
+            "Titrering og indikatorer"
+          ],
+          "gruppe": "Likevekt og analyse"
+        },
+        {
+          "nr": 8,
+          "tittel": "Miljøanalyse",
+          "undertema": [
+            "Kvalitativ og kvantitativ analyse",
+            "Vannanalyse og vannkvalitet",
+            "Titrering som analysemetode",
+            "Kolorimetri og spektrofotometri",
+            "Forurensning: næringssalter og forsuring",
+            "Feltarbeid og usikkerhet"
+          ],
+          "gruppe": "Likevekt og analyse"
+        }
       ]
     },
     {
@@ -57,16 +347,136 @@
       "beskrivelse": "Celler, livsprosesser, immunforsvar, økologi og bærekraftig forvaltning.",
       "kildenote": "Aschehoug/Aunivers har ikke et eget Biologi 1-verk. Kapitlene her følger Udirs læreplan BIO01-02 (LK20) og progresjonen i Bios 1 (Cappelen Damm), som er det mest brukte læreverket. Stoffet passer også til Bi 1 (Gyldendal) og NDLA Biologi 1.",
       "kapitler": [
-        { "nr": 1, "tittel": "Biologi som vitenskap", "undertema": ["Hva kjennetegner liv?", "Organisasjonsnivåer fra celle til biosfære", "Hypotese, variabler og forsøksdesign", "Feltarbeid og artsbestemmelse", "Databehandling, feilkilder og kildekritikk"] },
-        { "nr": 2, "tittel": "Systematikk og biologisk mangfold", "undertema": ["Artsbegrepet og variasjon", "Binomisk nomenklatur og klassifikasjonsnivåer", "Domener og de seks rikene", "Taksonomiske kriterier i endring: fra morfologi til DNA", "Bestemmelsesnøkler og fylogenetiske trær"] },
-        { "nr": 3, "tittel": "Celler", "undertema": ["Prokaryote og eukaryote celler", "Bakterier og arker", "Organeller i plante- og dyreceller", "Sammenheng mellom cellestruktur og funksjon", "Endosymbioseteorien", "Mikroskopering"] },
-        { "nr": 4, "tittel": "Cellemembranen og cellekommunikasjon", "undertema": ["Membranens oppbygning og fluid mosaikk-modellen", "Passiv transport: diffusjon, osmose og fasilitert diffusjon", "Aktiv transport og ionepumper", "Endocytose og eksocytose", "Reseptorer og signaloverføring", "Cellekontakter"] },
-        { "nr": 5, "tittel": "Celledeling, vekst og utvikling", "undertema": ["Cellesyklus og regulering", "Mitose", "Meiose og genetisk variasjon", "Ukontrollert celledeling og kreft", "Differensiering: fra celle til vev og organ", "Vekst og utvikling hos planter og mennesket"] },
-        { "nr": 6, "tittel": "Næringsopptak og energiomsetning", "undertema": ["Autotrofe og heterotrofe organismer", "Fotosyntesen i hovedtrekk", "Aerob celleånding", "Anaerob celleånding og gjæring", "Næringsstoffer og fordøyelse hos mennesket", "Tarmfloraen"] },
-        { "nr": 7, "tittel": "Gassutveksling, transport og utskilling", "undertema": ["Gassutveksling hos planter, dyr og mennesket", "Transport i planter: vedvev, silvev og transpirasjon", "Sirkulasjonssystemer hos dyr", "Hjertet, blodårene og blodet", "Ekskresjon og nitrogenholdig avfall", "Nyrene og væskebalansen"] },
-        { "nr": 8, "tittel": "Regulering og homeostase", "undertema": ["Homeostase og negativ tilbakekopling", "Nervecellen, aksjonspotensial og synapser", "Sentralt og perifert nervesystem", "Hormonsystemet", "Blodsukker- og temperaturregulering", "Livsstilens betydning for reguleringen", "Tropismer og bevegelse"] },
-        { "nr": 9, "tittel": "Mikrober, sykdom og immunforsvar", "undertema": ["Bakterier, virus, sopp og parasitter", "Smitteveier, epidemier og zoonoser", "Det medfødte immunforsvaret", "Det tilpassede immunforsvaret", "Vaksiner og flokkimmunitet", "Antibiotika og resistens"] },
-        { "nr": 10, "tittel": "Økologi og bærekraftig forvaltning", "undertema": ["Abiotiske og biotiske faktorer", "Økosystem, habitat og nisje", "Næringskjeder, næringsnett og energistrøm", "Tre nivåer av biologisk mangfold", "Naturens egenverdi og etikk", "Klimaendringer og arealbruk", "Naturforvaltning i Norge"] }
+        {
+          "nr": 1,
+          "tittel": "Biologi som vitenskap",
+          "undertema": [
+            "Hva kjennetegner liv?",
+            "Organisasjonsnivåer fra celle til biosfære",
+            "Hypotese, variabler og forsøksdesign",
+            "Feltarbeid og artsbestemmelse",
+            "Databehandling, feilkilder og kildekritikk"
+          ],
+          "gruppe": "Faget og mangfoldet"
+        },
+        {
+          "nr": 2,
+          "tittel": "Systematikk og biologisk mangfold",
+          "undertema": [
+            "Artsbegrepet og variasjon",
+            "Binomisk nomenklatur og klassifikasjonsnivåer",
+            "Domener og de seks rikene",
+            "Taksonomiske kriterier i endring: fra morfologi til DNA",
+            "Bestemmelsesnøkler og fylogenetiske trær"
+          ],
+          "gruppe": "Faget og mangfoldet"
+        },
+        {
+          "nr": 3,
+          "tittel": "Celler",
+          "undertema": [
+            "Prokaryote og eukaryote celler",
+            "Bakterier og arker",
+            "Organeller i plante- og dyreceller",
+            "Sammenheng mellom cellestruktur og funksjon",
+            "Endosymbioseteorien",
+            "Mikroskopering"
+          ],
+          "gruppe": "Cellebiologi"
+        },
+        {
+          "nr": 4,
+          "tittel": "Cellemembranen og cellekommunikasjon",
+          "undertema": [
+            "Membranens oppbygning og fluid mosaikk-modellen",
+            "Passiv transport: diffusjon, osmose og fasilitert diffusjon",
+            "Aktiv transport og ionepumper",
+            "Endocytose og eksocytose",
+            "Reseptorer og signaloverføring",
+            "Cellekontakter"
+          ],
+          "gruppe": "Cellebiologi"
+        },
+        {
+          "nr": 5,
+          "tittel": "Celledeling, vekst og utvikling",
+          "undertema": [
+            "Cellesyklus og regulering",
+            "Mitose",
+            "Meiose og genetisk variasjon",
+            "Ukontrollert celledeling og kreft",
+            "Differensiering: fra celle til vev og organ",
+            "Vekst og utvikling hos planter og mennesket"
+          ],
+          "gruppe": "Cellebiologi"
+        },
+        {
+          "nr": 6,
+          "tittel": "Næringsopptak og energiomsetning",
+          "undertema": [
+            "Autotrofe og heterotrofe organismer",
+            "Fotosyntesen i hovedtrekk",
+            "Aerob celleånding",
+            "Anaerob celleånding og gjæring",
+            "Næringsstoffer og fordøyelse hos mennesket",
+            "Tarmfloraen"
+          ],
+          "gruppe": "Livsprosesser"
+        },
+        {
+          "nr": 7,
+          "tittel": "Gassutveksling, transport og utskilling",
+          "undertema": [
+            "Gassutveksling hos planter, dyr og mennesket",
+            "Transport i planter: vedvev, silvev og transpirasjon",
+            "Sirkulasjonssystemer hos dyr",
+            "Hjertet, blodårene og blodet",
+            "Ekskresjon og nitrogenholdig avfall",
+            "Nyrene og væskebalansen"
+          ],
+          "gruppe": "Livsprosesser"
+        },
+        {
+          "nr": 8,
+          "tittel": "Regulering og homeostase",
+          "undertema": [
+            "Homeostase og negativ tilbakekopling",
+            "Nervecellen, aksjonspotensial og synapser",
+            "Sentralt og perifert nervesystem",
+            "Hormonsystemet",
+            "Blodsukker- og temperaturregulering",
+            "Livsstilens betydning for reguleringen",
+            "Tropismer og bevegelse"
+          ],
+          "gruppe": "Livsprosesser"
+        },
+        {
+          "nr": 9,
+          "tittel": "Mikrober, sykdom og immunforsvar",
+          "undertema": [
+            "Bakterier, virus, sopp og parasitter",
+            "Smitteveier, epidemier og zoonoser",
+            "Det medfødte immunforsvaret",
+            "Det tilpassede immunforsvaret",
+            "Vaksiner og flokkimmunitet",
+            "Antibiotika og resistens"
+          ],
+          "gruppe": "Helse og økologi"
+        },
+        {
+          "nr": 10,
+          "tittel": "Økologi og bærekraftig forvaltning",
+          "undertema": [
+            "Abiotiske og biotiske faktorer",
+            "Økosystem, habitat og nisje",
+            "Næringskjeder, næringsnett og energistrøm",
+            "Tre nivåer av biologisk mangfold",
+            "Naturens egenverdi og etikk",
+            "Klimaendringer og arealbruk",
+            "Naturforvaltning i Norge"
+          ],
+          "gruppe": "Helse og økologi"
+        }
       ]
     }
   ]

@@ -42,7 +42,7 @@
       },
       {
         "tittel": "Kinetisk energi og arbeidssetningen",
-        "html": "<p>Et legeme i bevegelse har <strong>kinetisk energi</strong>, også kalt bevegelsesenergi:</p>$$E_k = \\frac{1}{2}mv^{2}$$<p>Massen står i første potens, men farten er <em>kvadrert</em>. Dobler du farten, blir den kinetiske energien fire ganger så stor. Det er hele forklaringen på at bremselengden vokser så dramatisk med farten, og på at fartsgrenser utenfor skoler faktisk har stor effekt.</p><p>Sammenhengen mellom arbeid og kinetisk energi kalles <strong>arbeidssetningen</strong>:</p>$$W_{\\text{tot}} = \\Delta E_k = \\frac{1}{2}mv^{2} - \\frac{1}{2}mv_0^{2}$$<p>Her er $W_{\\text{tot}}$ summen av arbeidet fra <em>alle</em> kreftene som virker. Setningen sier: er nettoarbeidet positivt, øker farten; er det negativt, avtar farten; er det null, er farten konstant.</p><p>Arbeidssetningen er ofte en snarvei. Skal du finne sluttfarten til en kasse som dyttes over et gulv, kan du regne ut arbeidet fra dragkraften og fra friksjonen, legge dem sammen og sette summen lik $\\Delta E_k$ — uten å gå via akselerasjon og bevegelseslikninger. Legg merke til at energi ikke har retning: du trenger ingen vektorer, bare riktige fortegn på arbeidene.</p><p>Enhetene stemmer: $\\text{kg}\\cdot(\\text{m/s})^2 = \\text{kg}\\,\\text{m}^2/\\text{s}^2 = \\text{N}\\cdot\\text{m} = \\text{J}$.</p>"
+        "html": "<p>Et legeme i bevegelse har <strong>kinetisk energi</strong>, også kalt bevegelsesenergi:</p>$$E_k = \\frac{1}{2}mv^{2}$$<p>Massen står i første potens, men farten er <em>kvadrert</em>. Dobler du farten, blir den kinetiske energien fire ganger så stor. Det er hele forklaringen på at bremselengden vokser så dramatisk med farten, og på at fartsgrenser utenfor skoler faktisk har stor betydning.</p><p>Sammenhengen mellom arbeid og kinetisk energi kalles <strong>arbeidssetningen</strong>:</p>$$W_{\\text{tot}} = \\Delta E_k = \\frac{1}{2}mv^{2} - \\frac{1}{2}mv_0^{2}$$<p>Her er $W_{\\text{tot}}$ summen av arbeidet fra <em>alle</em> kreftene som virker. Setningen sier: er nettoarbeidet positivt, øker farten; er det negativt, avtar farten; er det null, er farten konstant.</p><p>Arbeidssetningen er ofte en snarvei. Skal du finne sluttfarten til en kasse som dyttes over et gulv, kan du regne ut arbeidet fra dragkraften og fra friksjonen, legge dem sammen og sette summen lik $\\Delta E_k$ — uten å gå via akselerasjon og bevegelseslikninger. Legg merke til at energi ikke har retning: du trenger ingen vektorer, bare riktige fortegn på arbeidene.</p><p>Enhetene stemmer: $\\text{kg}\\cdot(\\text{m/s})^2 = \\text{kg}\\,\\text{m}^2/\\text{s}^2 = \\text{N}\\cdot\\text{m} = \\text{J}$.</p>"
       },
       {
         "tittel": "Potensiell energi og valg av nullnivå",
@@ -100,7 +100,7 @@
 
     "tips": [
       "Tegn figur og merk nullnivået før du skriver en eneste likning. Legg nullnivået i det laveste punktet, så blir $E_p = 0$ der og likningen kortere.",
-      "Spør deg: trenger jeg tida? Nei betyr energimetoden, ja betyr bevegelseslikningene. Energimetoden virker også når kraften eller banen ikke er konstant, og der stopper bevegelseslikningene.",
+      "Spør deg hva oppgaven handler om: er det bare fart, høyde og strekning mellom to tilstander, er energimetoden raskest. Trenger du akselerasjonen eller tida underveis, må du bruke bevegelseslikningene — men merk at effektoppgaver er energioppgaver selv om tida er med. Energimetoden virker også når kraften eller banen ikke er konstant, og der stopper bevegelseslikningene.",
       "Sjekk om massen forkortes bort. Er oppgaven om fart i en glatt bane og massen ikke oppgitt, er det et hint om at du skal bruke $v = \\sqrt{2g\\,\\Delta h}$.",
       "Skriv alltid formel, deretter innsetting med enheter, deretter svar med enhet. Enhetene er også en feilsjekk: $\\text{N}\\cdot\\text{m} = \\text{J}$ og $\\text{J/s} = \\text{W}$.",
       "Bruk $g = 9{,}81\\,\\text{m/s}^2$ hvis ikke annet er oppgitt, regn med fulle desimaler underveis, og rund av til riktig antall gjeldende siffer først i svaret."
@@ -225,7 +225,7 @@
     { "front": "Mekanisk energi", "bak": "$E = E_k + E_p = \\frac{1}{2}mv^2 + mgh$" },
     { "front": "Når er mekanisk energi bevart?", "bak": "Når tyngdekraften er den eneste kraften som gjør arbeid, altså ingen friksjon eller luftmotstand. Da er $E_1 = E_2$." },
     { "front": "Likningen for bevaring av mekanisk energi", "bak": "$\\frac{1}{2}mv_1^2 + mgh_1 = \\frac{1}{2}mv_2^2 + mgh_2$" },
-    { "front": "Fart etter å ha falt høyden $h$ fra ro", "bak": "$v = \\sqrt{2gh}$ — uavhengig av massen og av veien ned." },
+    { "front": "Fart etter å ha falt høyden $h$ fra ro", "bak": "$v = \\sqrt{2gh}$ når vi ser bort fra friksjon og luftmotstand — uavhengig av massen og av veien ned." },
     { "front": "Hva skjer med mekanisk energi når det er friksjon?", "bak": "Den avtar: $E_2 = E_1 + W_{\\text{friksjon}}$, der friksjonsarbeidet er negativt. Tapet blir termisk energi." },
     { "front": "Effekt", "bak": "$P = \\frac{W}{t} = \\frac{\\Delta E}{\\Delta t}$, målt i watt. $1\\,\\text{W} = 1\\,\\text{J/s}$." },
     { "front": "Effekt uttrykt ved kraft og fart", "bak": "$P = F v$ når kraften virker langs bevegelsen. Nyttig ved konstant fart." },

@@ -1,20 +1,14 @@
 <!doctype html>
-<html lang="nb">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Realfag VG2 — studieverktøy</title>
-<meta name="description" content="Studieverktøy for Matematikk R1, Fysikk 1, Kjemi 1 og Biologi 1 — guider, quiz, flashcards og formelsamling.">
-<meta name="theme-color" content="#f9f9f7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="icons/icon-180.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Realfag VG2">
-<link rel="icon" href="icons/icon-192.png">
-<link rel="stylesheet" href="vendor/katex/katex.min.css">
-<style>
+<html lang="nb"><meta charset="utf-8">
+<title>Figurtest — Realfag VG2</title>
+<!-- Viser alle figurtypene med realistiske data, i lys og mørk modus.
+     Kjøres med scripts/figurtest.sh for visuell verifisering. -->
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<script src="../vendor/katex/katex.min.js"></script>
+<script src="../vendor/katex/contrib/mhchem.min.js"></script>
+<script src="../figurer.js"></script>
+<style>/* INJISERT-CSS fra index.html */
+
 /* ───────────────────────── tokens ───────────────────────── */
 :root {
   color-scheme: light;
@@ -23,10 +17,7 @@
   --page: #f9f9f7;
   --text-primary: #0b0b0b;
   --text-secondary: #52514e;
-  /* #898781 ga bare 3,2-3,5:1 mot de lyse flatene — under kravet på 4,5:1 for
-     småtekst (aksemerker, undertitler, seksjonsetiketter). Disse stegene klarer
-     4,5:1 mot page, surface-1 OG surface-2 i sin modus. */
-  --text-muted: #716f6a;
+  --text-muted: #898781;
   --grid: #e1e0d9;
   --axis: #c3c2b7;
   --border: rgba(11, 11, 11, 0.10);
@@ -57,7 +48,7 @@
     --page: #0d0d0d;
     --text-primary: #ffffff;
     --text-secondary: #c3c2b7;
-    --text-muted: #8b8984;
+    --text-muted: #898781;
     --grid: #2c2c2a;
     --axis: #383835;
     --border: rgba(255, 255, 255, 0.10);
@@ -79,7 +70,7 @@
   --page: #0d0d0d;
   --text-primary: #ffffff;
   --text-secondary: #c3c2b7;
-  --text-muted: #8b8984;
+  --text-muted: #898781;
   --grid: #2c2c2a;
   --axis: #383835;
   --border: rgba(255, 255, 255, 0.10);
@@ -186,120 +177,21 @@ nav.tabbar a[aria-current="page"] { color: var(--text-primary); }
 }
 .section-label:first-child { margin-top: 18px; }
 
-/* ── fagkort ──
-   Fargen bor i et gradientbånd og en lett tint av kortflaten. Teksten ligger
-   alltid på den nesten-hvite (nesten-svarte) tinten, aldri på båndet, så
-   kontrasten holder selv for gul og magenta. */
-.fagliste { display: grid; gap: 12px; }
+/* subject cards */
+.fagliste { display: grid; gap: 10px; }
 .fagkort {
-  display: block; text-decoration: none; position: relative; overflow: hidden;
-  padding: 0; border-color: color-mix(in srgb, var(--accent) 26%, var(--border));
-  background:
-    linear-gradient(150deg,
-      color-mix(in srgb, var(--accent) 13%, var(--surface-1)) 0%,
-      color-mix(in srgb, var(--accent) 5%, var(--surface-1)) 62%,
-      var(--surface-1) 100%);
-  transition: transform .16s cubic-bezier(.4,0,.2,1), box-shadow .16s;
+  display: block; text-decoration: none;
+  padding: 14px 16px 15px; position: relative; overflow: hidden;
 }
-.fagkort:active { transform: scale(.986); }
-.fagkort-band {
-  height: 62px; position: relative; overflow: hidden;
-  background: linear-gradient(118deg,
-    color-mix(in srgb, var(--accent) 92%, #000 8%) 0%,
-    var(--accent) 52%,
-    color-mix(in srgb, var(--accent) 74%, #fff 26%) 100%);
+.fagkort::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: var(--accent);
 }
-/* dekor: konsentriske buer i båndet, rent CSS */
-.fagkort-band::after {
-  content: ""; position: absolute; inset: -70% -10% auto auto;
-  width: 190px; height: 190px; border-radius: 50%;
-  border: 13px solid rgba(255,255,255,.15);
-  box-shadow: 0 0 0 13px rgba(255,255,255,.09);
-}
-.fagkort-emblem {
-  /* ligger på KORTET, ikke i båndet — båndet har overflow:hidden og klippet det */
-  position: absolute; left: 14px; top: 42px; z-index: 2;
-  width: 40px; height: 40px; border-radius: 12px;
-  display: grid; place-items: center;
-  background: var(--surface-1); color: var(--accent);
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
-  box-shadow: 0 2px 8px rgba(11,11,11,.13);
-}
-.fagkort-kropp { padding: 27px 16px 15px; }
 .fagkort-top { display: flex; align-items: baseline; gap: 8px; }
-.fagkort h3 { font-size: 17.5px; flex: 1; }
-.fagkort .pct { font-size: 13px; font-weight: 650; color: var(--text-secondary);
+.fagkort h3 { font-size: 17px; flex: 1; }
+.fagkort .pct { font-size: 13px; font-weight: 600; color: var(--text-secondary);
   font-variant-numeric: tabular-nums; }
 .fagkort p { font-size: 13.5px; color: var(--text-secondary); margin: 3px 0 11px; }
-.fagkort .meta { font-size: 12px; color: var(--text-muted); margin-top: 7px;
-  font-weight: 550; }
-
-/* ── faghode på kapitteloversikten ── */
-.faghode {
-  position: relative; overflow: hidden; padding: 0; margin-top: 14px;
-  border-color: color-mix(in srgb, var(--accent) 26%, var(--border));
-  background: linear-gradient(150deg,
-    color-mix(in srgb, var(--accent) 12%, var(--surface-1)) 0%,
-    var(--surface-1) 70%);
-}
-.faghode-band { height: 76px; position: relative; overflow: hidden;
-  background: linear-gradient(118deg,
-    color-mix(in srgb, var(--accent) 92%, #000 8%) 0%,
-    var(--accent) 54%,
-    color-mix(in srgb, var(--accent) 72%, #fff 28%) 100%); }
-.faghode-band::after {
-  content: ""; position: absolute; inset: -58% -14% auto auto;
-  width: 240px; height: 240px; border-radius: 50%;
-  border: 16px solid rgba(255,255,255,.14);
-  box-shadow: 0 0 0 16px rgba(255,255,255,.08);
-}
-.faghode-emblem {
-  position: absolute; left: 16px; top: 52px; z-index: 2;
-  width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
-  background: var(--surface-1); color: var(--accent);
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
-  box-shadow: 0 2px 10px rgba(11,11,11,.15);
-}
-.faghode-kropp { padding: 32px 16px 16px; }
-.faghode h2 { font-size: 21px; letter-spacing: -.02em; }
-.faghode p { font-size: 13.5px; color: var(--text-secondary); margin: 4px 0 13px; }
-.faghode .tallrad { display: flex; gap: 16px; margin-top: 11px; flex-wrap: wrap; }
-.faghode .tallrad div { font-size: 12.5px; color: var(--text-muted); font-weight: 550; }
-.faghode .tallrad b { display: block; font-size: 19px; color: var(--text-primary);
-  font-weight: 680; letter-spacing: -.02em; }
-
-/* ── temagruppe-skille i kapittellista ── */
-.gruppe-label {
-  display: flex; align-items: center; gap: 9px;
-  font-size: 11.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
-  color: var(--text-secondary); margin: 20px 0 9px;
-}
-.gruppe-label::before {
-  content: ""; width: 16px; height: 3px; border-radius: 2px;
-  background: var(--accent); flex: none;
-}
-.gruppe-label::after {
-  content: ""; flex: 1; height: 1px; background: var(--grid);
-}
-
-/* ── ringmåler ── */
-.ringmaler { display: block; flex: none; }
-.hero-ring { display: flex; align-items: center; gap: 16px; }
-.hero-ring .midt { position: relative; display: grid; place-items: center; }
-.hero-ring .midt .tall {
-  position: absolute; font-size: 22px; font-weight: 700; letter-spacing: -.02em;
-  font-variant-numeric: tabular-nums;
-}
-.fagpiller { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
-.fagpille {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: 12px; font-weight: 600; padding: 4px 10px 4px 8px;
-  border-radius: 999px; text-decoration: none;
-  background: color-mix(in srgb, var(--accent) 13%, var(--surface-2));
-  border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
-  color: var(--text-primary);
-}
-.fagpille .mono-tall { color: var(--text-secondary); font-weight: 550; }
 
 /* progress meter — fill = subject hue, track = same hue washed */
 .meter { height: 8px; border-radius: 999px; background: var(--track, var(--grid)); overflow: hidden; }
@@ -452,48 +344,9 @@ ul.punkter li:last-child { margin-bottom: 0; }
 .begrep dt { font-weight: 620; font-size: 15px; margin-bottom: 2px; }
 .begrep dd { margin: 0; font-size: 14.5px; color: var(--text-secondary); }
 
-/* ── fargekodede innholdsbokser ──
-   Fargen forteller HVA du leser: gjennomgått eksempel, feilfelle eller
-   prøvetips. Ikon + overskrift står alltid der, så fargen er aldri det eneste
-   signalet. Statusfargene er de reserverte, og teksten er nøytral ink. */
-.boks { border-radius: var(--r-md); padding: 13px 15px; margin: 12px 0;
-  border: 1px solid var(--border); border-left-width: 3px; }
-.boks-hode {
-  display: flex; align-items: center; gap: 7px; margin-bottom: 8px;
-  font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-}
-.boks-hode svg { width: 15px; height: 15px; flex: none; }
-.boks.feil {
-  background: color-mix(in srgb, var(--critical) 7%, var(--surface-1));
-  border-color: color-mix(in srgb, var(--critical) 24%, var(--border));
-  border-left-color: var(--critical);
-}
-.boks.feil .boks-hode { color: var(--critical); }
-.boks.tips {
-  background: color-mix(in srgb, var(--good) 8%, var(--surface-1));
-  border-color: color-mix(in srgb, var(--good) 26%, var(--border));
-  border-left-color: var(--good);
-}
-.boks.tips .boks-hode { color: var(--good-text); }
-.boks ul.punkter li::before { background: currentColor; opacity: .55; }
-.boks.feil ul.punkter { color: var(--critical); }
-.boks.tips ul.punkter { color: var(--good-text); }
-.boks ul.punkter li { color: var(--text-primary); }
-
 /* eksempel */
-.eksempel {
-  border-left: 3px solid var(--accent); padding: 12px 0 12px 14px; margin: 16px 0;
-  background: linear-gradient(90deg,
-    color-mix(in srgb, var(--accent) 7%, transparent), transparent 60%);
-  border-radius: 0 var(--r-md) var(--r-md) 0;
-}
-.eksempel > h4 { font-size: 14.5px; margin: 0 0 6px; display: flex;
-  align-items: center; gap: 7px; }
-.eksempel > h4 .nr {
-  flex: none; width: 20px; height: 20px; border-radius: 6px; display: grid;
-  place-items: center; font-size: 11.5px; font-weight: 700;
-  background: var(--accent); color: #fff;
-}
+.eksempel { border-left: 3px solid var(--accent); padding-left: 14px; margin: 14px 0; }
+.eksempel > h4 { font-size: 14.5px; margin: 0 0 6px; }
 .eksempel .oppg { color: var(--text-primary); }
 .losning-btn {
   border: 1px solid var(--border-strong); background: var(--surface-1);
@@ -754,7 +607,7 @@ mark { background: color-mix(in srgb, var(--warning) 45%, transparent); color: i
 .figur-svg .f-boks-txt { font-size: 12px; font-weight: 600; fill: var(--text-primary); }
 .figur-svg .f-boks-note { font-size: 10.5px; fill: var(--text-secondary); }
 .figur-svg .f-flytnr { fill: var(--f-strek); }
-.figur-svg .f-flytnr-txt { font-size: 11.5px; font-weight: 700; fill: #fff; }
+.figur-svg .f-flytnr-txt { font-size: 11.5px; font-weight: 700; fill: var(--surface-1); }
 .figur-svg .f-tilbake { fill: none; stroke: var(--text-muted); stroke-width: 1.6; stroke-dasharray: 5 4; }
 .figur-svg .f-tilbake-pil { stroke: var(--text-muted); stroke-width: 1.6; fill: var(--text-muted); }
 .figur-svg .f-tilbake-txt { font-size: 10.5px; fill: var(--text-muted); font-weight: 550; }
@@ -809,23 +662,182 @@ details.tabellvisning td:last-child, details.tabellvisning th:last-child {
   * { transition: none !important; animation: none !important; }
   .kort { transition: none !important; }
 }
-</style>
-</head>
-<body>
-<div class="app">
-  <header class="top">
-    <div class="wrap top-inner" id="topbar"></div>
-  </header>
-  <main class="wrap" id="visning">
-    <div class="laster">Laster …</div>
-  </main>
-</div>
-<nav class="tabbar" id="tabbar"></nav>
 
-<script src="vendor/katex/katex.min.js" defer></script>
-<script src="vendor/katex/contrib/mhchem.min.js" defer></script>
-<script src="vendor/katex/contrib/auto-render.min.js" defer></script>
-<script src="figurer.js" defer></script>
-<script src="app.js" defer></script>
+/* slutt */
+  body { margin: 0; font: 15px/1.5 system-ui, sans-serif; }
+  .kol { display: flex; align-items: flex-start; }
+  .side { width: 393px; padding: 14px; box-sizing: border-box; }
+  h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em;
+       color: var(--text-muted); margin: 16px 0 4px; }
+  .feil { background: #fee; color: #900; padding: 8px; border-radius: 6px;
+          font: 12px/1.4 monospace; white-space: pre-wrap; }
+  #status { position: fixed; right: 8px; top: 8px; z-index: 9;
+            background: #000; color: #0f0; font: 12px monospace; padding: 6px 10px; border-radius: 6px; }
+</style>
+<body>
+<div id="status">…</div>
+<div class="kol"><div class="side" id="lys"></div></div>
+<script>
+const FIGURER = [
+  ["matematikk", {
+    type: "graf", tittel: "Tangenten til f i x = 1",
+    forklaring: "Tangenten har stigningstall f'(1) = 0 og berører grafen i bunnpunktet.",
+    xmin: -1.5, xmax: 3.5, ymin: -2, ymax: 4,
+    kurver: [{ uttrykk: "x^2-2*x", navn: "f", farge: 1 }],
+    linjer: [{ fra: [-0.5, -1], til: [2.5, -1], navn: "tangent", farge: 2 }],
+    punkter: [{ x: 1, y: -1, navn: "(1, −1)", hjelpelinjer: true }],
+  }],
+  ["matematikk", {
+    type: "fortegnslinje", tittel: "Fortegnslinje for f'(x) = 3x² − 3",
+    forklaring: "f er voksende der f' er positiv, altså for x < −1 og x > 1.",
+    xmin: -2.4, xmax: 2.4,
+    linjer: [
+      { navn: "x − 1", nullpunkt: [1], fortegn: ["-", "+"] },
+      { navn: "x + 1", nullpunkt: [-1], fortegn: ["-", "+"] },
+    ],
+    resultat: { navn: "f'(x)", nullpunkt: [-1, 1], fortegn: ["+", "-", "+"] },
+  }],
+  ["matematikk", {
+    type: "vektor", tittel: "Arealet utspent av to vektorer",
+    forklaring: "Arealet av parallellogrammet er |det(a, b)| = |3·3 − 1·(−1)| = 10.",
+    xmin: -1.5, xmax: 5, ymin: -1.5, ymax: 4.5,
+    vektorer: [
+      { fra: [0, 0], til: [3, 1], navn: "a", farge: 1 },
+      { fra: [0, 0], til: [-1, 3], navn: "b", farge: 2 },
+    ],
+    parallellogram: [0, 1],
+    vinkel: { mellom: [0, 1], navn: "α" },
+  }],
+  ["matematikk", {
+    type: "tallinje", tittel: "Definisjonsmengden til f(x) = √(x − 1)",
+    forklaring: "Uttrykket under rottegnet må være null eller positivt, så Df = [1, →⟩.",
+    min: -2, max: 6,
+    intervaller: [{ fra: 1, til: 6, lukket: [true, false], navn: "Df", farge: 1 }],
+    punkter: [{ verdi: 1, navn: "1" }],
+  }],
+  ["fysikk", {
+    type: "vektor", tittel: "Kraftdiagram for en kloss på skråplan",
+    forklaring: "Tyngden deles i én komponent langs planet og én normalt på det.",
+    xmin: -2.6, xmax: 2.6, ymin: -2.8, ymax: 2.2, rutenett: false,
+    kropp: { x: 0, y: 0, form: "boks", navn: "m" },
+    vektorer: [
+      { fra: [0, 0], til: [0, -2.2], navn: "G", farge: 1 },
+      { fra: [0, 0], til: [1.5, 1.1], navn: "N", farge: 2 },
+      { fra: [0, 0], til: [-1.4, 0.95], navn: "R", farge: 3 },
+    ],
+  }],
+  ["fysikk", {
+    type: "graf", tittel: "Fartsgraf for en bil som akselererer og bremser",
+    forklaring: "Arealet under grafen er kjørt lengde. Stigningstallet er akselerasjonen.",
+    xmin: 0, xmax: 16, ymin: 0, ymax: 30, xlabel: "t (s)", ylabel: "v (m/s)",
+    linjer: [
+      { fra: [0, 0], til: [8, 25], navn: "a > 0", farge: 1, stiplet: false },
+      { fra: [8, 25], til: [12, 25], farge: 1, stiplet: false },
+      { fra: [12, 25], til: [16, 0], navn: "a < 0", farge: 2, stiplet: false },
+    ],
+    punkter: [{ x: 8, y: 25, navn: "25 m/s" }],
+  }],
+  ["fysikk", {
+    type: "nivaaer", tittel: "Energinivåene i hydrogenatomet",
+    forklaring: "Overgangen fra n = 3 til n = 2 sender ut et foton med energi 1,89 eV.",
+    enhet: "E (eV)", min: -14, max: 0.6, desimaler: 2,
+    nivaaer: [
+      { verdi: -13.6, navn: "n = 1 (grunntilstand)", grunn: true },
+      { verdi: -3.4, navn: "n = 2" },
+      { verdi: -1.51, navn: "n = 3" },
+      { verdi: -0.85, navn: "n = 4" },
+      { verdi: 0, navn: "n = ∞ (fritt elektron)" },
+    ],
+    overganger: [
+      { fra: 2, til: 1, navn: "Hα", farge: 2, x: 0 },
+      { fra: 1, til: 0, navn: "Lyman α", farge: 1, x: 1 },
+    ],
+  }],
+  ["kjemi", {
+    type: "graf", tittel: "Titreringskurve: sterk syre titrert med sterk base",
+    forklaring: "Ekvivalenspunktet ligger ved pH 7, der stoffmengdene er like store.",
+    xmin: 0, xmax: 50, ymin: 0, ymax: 14, xlabel: "V base (mL)", ylabel: "pH",
+    kurver: [{ uttrykk: "7+6.2*tanh((x-25)/1.6)", navn: "pH", farge: 1 }],
+    punkter: [{ x: 25, y: 7, navn: "ekvivalenspunkt", hjelpelinjer: true }],
+    asymptoter: [{ retning: "horisontal", verdi: 13, navn: "pH → 13" }],
+  }],
+  ["kjemi", {
+    type: "nivaaer", tittel: "Energidiagram for en eksoterm reaksjon",
+    forklaring: "Aktiveringsenergien må tilføres før reaksjonen kan gå, men produktene ligger lavere enn reaktantene.",
+    enhet: "E (kJ/mol)", min: -60, max: 130,
+    nivaaer: [
+      { verdi: 0, navn: "reaktanter", grunn: true },
+      { verdi: 110, navn: "overgangstilstand" },
+      { verdi: -45, navn: "produkter" },
+    ],
+    overganger: [
+      { fra: 0, til: 1, navn: "Ea", farge: 2, x: 0 },
+      { fra: 0, til: 2, navn: "ΔH < 0", farge: 3, x: 2 },
+    ],
+  }],
+  ["kjemi", {
+    type: "flyt", tittel: "Slik regner du støkiometri",
+    forklaring: "Alle støkiometriske beregninger går gjennom mol. Balanser alltid likningen først.",
+    retning: "ned",
+    steg: [
+      { tekst: "Balansér reaksjonslikningen", note: "koeffisientene gir forholdet" },
+      { tekst: "Masse → mol", note: "n = m / M" },
+      { tekst: "Bruk molforholdet", note: "fra koeffisientene" },
+      { tekst: "Mol → masse eller volum", note: "m = n · M   eller   V = n · Vm" },
+    ],
+  }],
+  ["biologi", {
+    type: "flyt", tittel: "Regulering av blodsukker",
+    forklaring: "Negativ tilbakekopling: resultatet av responsen demper det som utløste den.",
+    retning: "ned",
+    steg: [
+      { tekst: "Blodsukkeret stiger etter et måltid" },
+      { tekst: "Betacellene i pankreas skiller ut insulin" },
+      { tekst: "Cellene tar opp glukose, lever lagrer glykogen" },
+      { tekst: "Blodsukkeret synker mot normalverdien" },
+    ],
+    tilbakekopling: { fra: 3, til: 0, tekst: "negativ tilbakekopling" },
+  }],
+  ["biologi", {
+    type: "syklus", tittel: "Cellesyklusen", senter: "Cellesyklus",
+    forklaring: "Interfasen (G1, S, G2) tar mesteparten av tiden; selve mitosen er kort.",
+    faser: [
+      { navn: "G1", note: "vekst og vanlig aktivitet" },
+      { navn: "S", note: "DNA kopieres" },
+      { navn: "G2", note: "forberedelse til deling" },
+      { navn: "M", note: "mitose og cytokinese" },
+    ],
+  }],
+  ["biologi", {
+    type: "stolper", tittel: "Energi som går videre i næringskjeden",
+    forklaring: "Bare rundt en tidel av energien går videre til neste nivå. Derfor er kjedene korte.",
+    enhet: "kJ per m² per år",
+    data: [
+      { navn: "Produsenter", verdi: 20000 },
+      { navn: "Førstehånds­forbrukere", verdi: 2000 },
+      { navn: "Andrehånds­forbrukere", verdi: 200 },
+      { navn: "Tredjehånds­forbrukere", verdi: 20 },
+    ],
+  }],
+];
+
+let feil = 0, antall = 0;
+const q = new URLSearchParams(location.search).get("theme");
+if (q === "dark" || q === "light") document.documentElement.dataset.theme = q;
+for (const mal of ["lys"]) {
+  const vert = document.getElementById(mal);
+  vert.innerHTML = FIGURER.map(([fag, f]) => {
+    let h = "";
+    try { h = window.VG2Figur.figurHTML(f, fag); }
+    catch (e) { h = `<div class="feil">KRASJ ${f.type}: ${e.message}</div>`; }
+    if (!h) { h = `<div class="feil">TOM ${f.type} — figuren ble ikke tegnet</div>`; }
+    if (mal === "lys") { antall++; if (h.includes("feil")) feil++; }
+    return `<h2>${f.type} · ${fag}</h2>${h}`;
+  }).join("");
+}
+document.getElementById("status").textContent =
+  feil === 0 ? `FIGUR-OK ${antall} figurer` : `FIGUR-FEIL ${feil} av ${antall}`;
+document.title = feil === 0 ? "FIGUR-OK" : "FIGUR-FEIL";
+</script>
 </body>
 </html>

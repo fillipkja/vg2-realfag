@@ -44,6 +44,32 @@ const IKON = {
 const svg = (navn, str = 20) =>
   `<svg viewBox="0 0 24 24" width="${str}" height="${str}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IKON[navn]}</svg>`;
 
+/* Fagemblemer — ett gjenkjennelig motiv per fag: parabel med akser for R1,
+   bølge og kastebane for fysikk, kolbe med molekyl for kjemi, celle med blad
+   for biologi. Rene streker, så de virker i alle størrelser og begge moduser. */
+const EMBLEM = {
+  matematikk: '<path d="M4 20V4"/><path d="M4 20h16"/><path d="M6 18c2.6 0 3.4-11 7-11s4.4 11 7 11" stroke-width="2.1"/>',
+  fysikk: '<path d="M3 14c2.2 0 2.2-6 4.4-6s2.2 6 4.4 6 2.2-6 4.4-6S18.8 14 21 14" stroke-width="2.1"/><circle cx="7.4" cy="8" r="1.6" fill="currentColor" stroke="none"/><path d="M3 20h18"/>',
+  kjemi: '<path d="M10 3h4v5l5.2 9.2A2 2 0 0 1 17.5 20h-11a2 2 0 0 1-1.7-2.8L10 8z"/><path d="M6.6 14h10.8"/><circle cx="10" cy="16.6" r="1.3" fill="currentColor" stroke="none"/><circle cx="14.2" cy="17.4" r="1.1" fill="currentColor" stroke="none"/>',
+  biologi: '<ellipse cx="12" cy="12" rx="8.6" ry="7"/><circle cx="10" cy="11" r="2.4"/><path d="M15 15.4c1.9-.5 3-1.7 3.4-3.6-2 .1-3.3.8-4 2"/>',
+};
+const emblem = (fagId, str = 22) =>
+  `<svg viewBox="0 0 24 24" width="${str}" height="${str}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${EMBLEM[fagId] || ""}</svg>`;
+
+/* Ringmåler for én prosentverdi — brukes til samlet fremdrift på forsiden. */
+function ring(pst, str = 84, tykk = 9) {
+  const r = (str - tykk) / 2, c = 2 * Math.PI * r;
+  const del = (Math.max(0, Math.min(100, pst)) / 100) * c;
+  return `<svg class="ringmaler" viewBox="0 0 ${str} ${str}" width="${str}" height="${str}"
+      role="img" aria-label="${pst} prosent av pensum gjennomgått">
+    <circle cx="${str / 2}" cy="${str / 2}" r="${r}" fill="none" stroke="var(--grid)" stroke-width="${tykk}"/>
+    ${del > 0.5 ? `<circle cx="${str / 2}" cy="${str / 2}" r="${r}" fill="none"
+      stroke="var(--text-primary)" stroke-width="${tykk}" stroke-linecap="round"
+      stroke-dasharray="${del} ${c - del}"
+      transform="rotate(-90 ${str / 2} ${str / 2})"/>` : ""}
+  </svg>`;
+}
+
 /* ─────────────────────────── tilstand ─────────────────────────── */
 
 const S = {
@@ -125,6 +151,13 @@ function rens(html) {
   };
   gaGjennom(mal.content);
   return mal.innerHTML;
+}
+
+/* Figur fra data → SVG. Tom streng hvis figuren mangler eller er ugyldig,
+   slik at et kapittel aldri velter av en dårlig figur. */
+function figur(f, fagId) {
+  if (!f || !window.VG2Figur) return "";
+  return window.VG2Figur.figurHTML(f, fagId);
 }
 
 /* Tabeller i fagstoffet kan bli bredere enn skjermen. Pakk dem i en ramme og
@@ -299,10 +332,17 @@ function visHjem(el) {
   const forfalt = forfalteKort();
 
   el.innerHTML = `
-    <div class="card hero" style="margin-top:16px">
-      <div class="fig">${tot}<small>%</small></div>
-      <div class="lbl">av pensum gjennomgått<br>
-        <b>${ferdige}</b> av <b>${antKap}</b> kapitler er ferdige</div>
+    <div class="card hero hero-ring" style="margin-top:16px">
+      <div class="midt">${ring(tot, 88, 10)}<span class="tall">${tot} %</span></div>
+      <div class="lbl" style="min-width:150px">av pensum gjennomgått<br>
+        <b>${ferdige}</b> av <b>${antKap}</b> kapitler er ferdige
+        <div class="fagpiller">
+          ${S.fag.map((f) => `<a class="fagpille" href="#/fag/${f.id}"
+            style="--accent:${FAGFARGE[f.id]}">
+            <i class="dot" style="--accent:${FAGFARGE[f.id]}"></i>${esc(f.kort)}
+            <span class="mono-tall">${fagProsent(f.id)} %</span></a>`).join("")}
+        </div>
+      </div>
     </div>
 
     ${sistKap ? `
@@ -336,11 +376,16 @@ function visHjem(el) {
       ${S.fag.map((f) => {
         const p = fagProsent(f.id);
         const a = FAGFARGE[f.id];
+        const ferd = f.kapitler.filter((k) => kapProsent(f.id, k.nr) === 100).length;
         return `<a class="card fagkort" href="#/fag/${f.id}"
           style="--accent:${a};--track:color-mix(in srgb, ${a} 18%, var(--grid))">
-          <div class="fagkort-top"><h3>${esc(f.navn)}</h3><span class="pct">${p} %</span></div>
-          <p>${esc(f.beskrivelse)}</p>
-          ${meter(p, f.id)}
+          <div class="fagkort-band"></div><span class="fagkort-emblem">${emblem(f.id, 23)}</span>
+          <div class="fagkort-kropp">
+            <div class="fagkort-top"><h3>${esc(f.navn)}</h3><span class="pct">${p} %</span></div>
+            <p>${esc(f.beskrivelse)}</p>
+            ${meter(p, f.id)}
+            <div class="meta">${ferd} av ${f.kapitler.length} kapitler ferdige</div>
+          </div>
         </a>`;
       }).join("")}
     </div>
@@ -389,37 +434,56 @@ function visFag(el, fagId) {
         <i class="dot" style="--accent:${FAGFARGE[x.id]}"></i>${esc(x.kort)}</a>`).join("")}
     </div>
 
-    <div class="card" style="padding:14px 16px;--accent:${a};--track:color-mix(in srgb, ${a} 18%, var(--grid))">
-      <div class="rad" style="margin-bottom:9px">
-        <span style="font-size:13.5px;color:var(--text-secondary);font-weight:550">Fremdrift i faget</span>
-        <span class="spacer"></span>
-        <span class="pct mono-tall" style="font-size:14px;font-weight:620">${fagProsent(fagId)} %</span>
+    <div class="card faghode" style="--accent:${a};--track:color-mix(in srgb, ${a} 18%, var(--grid))">
+      <div class="faghode-band"></div><span class="faghode-emblem">${emblem(fagId, 27)}</span>
+      <div class="faghode-kropp">
+        <h2>${esc(f.navn)}</h2>
+        <p>${esc(f.beskrivelse)}</p>
+        ${meter(fagProsent(fagId), fagId)}
+        <div class="tallrad">
+          <div><b>${fagProsent(fagId)} %</b>gjennomgått</div>
+          <div><b>${f.kapitler.filter((k) => kapProsent(fagId, k.nr) === 100).length}/${f.kapitler.length}</b>kapitler ferdige</div>
+          ${FORMELFAG.includes(fagId)
+            ? `<div style="align-self:flex-end"><a class="chip" href="#/formler/${fagId}">${svg("formel", 13)} Formler</a></div>`
+            : ""}
+        </div>
       </div>
-      ${meter(fagProsent(fagId), fagId)}
     </div>
-
-    ${FORMELFAG.includes(fagId) ? `<div class="chips">
-      <a class="chip" href="#/formler/${fagId}">${svg("formel", 14)} Formelsamling</a>
-    </div>` : ""}
 
     ${f.kildenote ? `<div class="notat" style="margin-top:12px">${esc(f.kildenote)}</div>` : ""}
 
-    <div class="section-label">Kapitler</div>
-    <div class="kaplist">
-      ${f.kapitler.map((k) => {
-        const p = kapProsent(fagId, k.nr);
-        return `<a class="card kapkort${p === 100 ? " ferdig" : ""}" href="#/kap/${fagId}/${k.nr}"
-            style="--accent:${a};--track:color-mix(in srgb, ${a} 18%, var(--grid))">
-          <span class="kapnum">${p === 100 ? svg("hake", 16) : k.nr}</span>
-          <span class="kapbody">
-            <h4>${esc(k.tittel)}</h4>
-            <div class="undertema">${esc((k.undertema || []).join(" · "))}</div>
-            ${p > 0 && p < 100 ? `<div style="margin-top:7px">${meter(p, fagId, true)}</div>` : ""}
-          </span>
-          <span class="chev">${svg("fram", 16)}</span>
-        </a>`;
-      }).join("")}
-    </div>`;
+    ${(() => {
+      /* kapitlene grupperes etter tema, slik lærebøkene deler dem inn */
+      const grupper = [];
+      for (const k of f.kapitler) {
+        const g = k.gruppe || "Kapitler";
+        if (!grupper.length || grupper[grupper.length - 1].navn !== g) {
+          grupper.push({ navn: g, kap: [] });
+        }
+        grupper[grupper.length - 1].kap.push(k);
+      }
+      return grupper.map((gr) => `
+        <div class="gruppe-label" style="--accent:${a}">${esc(gr.navn)}</div>
+        <div class="kaplist">
+          ${gr.kap.map((k) => {
+            const p = kapProsent(fagId, k.nr);
+            return `<a class="card kapkort${p === 100 ? " ferdig" : ""}" href="#/kap/${fagId}/${k.nr}"
+                style="--accent:${a};--track:color-mix(in srgb, ${a} 18%, var(--grid))">
+              <span class="kapnum">${p === 100 ? svg("hake", 16) : k.nr}</span>
+              <span class="kapbody">
+                <h4>${esc(k.tittel)}</h4>
+                <div class="undertema">${esc((k.undertema || []).join(" · "))}</div>
+                ${p > 0 && p < 100 ? `<div style="margin-top:7px">${meter(p, fagId, true)}</div>` : ""}
+              </span>
+              <span class="kapstat">
+                ${p === 100 ? `<span class="badge ok">${svg("hake", 11)} Ferdig</span>`
+                  : p > 0 ? `<span class="badge mono-tall">${p} %</span>` : ""}
+              </span>
+              <span class="chev">${svg("fram", 16)}</span>
+            </a>`;
+          }).join("")}
+        </div>`).join("");
+    })()}`;
 }
 
 /* ─────────────────────────── visning: kapittel ─────────────────────────── */
@@ -485,6 +549,7 @@ function visKompakt(vert, fagId, nr, d) {
     <div class="section-label">Det viktigste</div>
     <div class="card blokk">
       <ul class="punkter">${d.kompakt.punkter.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
+      ${figur(d.kompakt.figur, fagId)}
     </div>
 
     ${formler.length ? `
@@ -514,28 +579,32 @@ function visGrundig(vert, fagId, nr, d) {
   vert.innerHTML = `
     <p style="color:var(--text-secondary);font-size:14.5px;margin:16px 0 4px">${esc(d.intro)}</p>
 
-    ${g.seksjoner.map((s, i) => `
+    ${g.seksjoner.map((s) => `
       <div class="section-label">${esc(s.tittel)}</div>
-      <div class="card blokk"><div class="prose">${rens(s.html)}</div></div>`).join("")}
+      <div class="card blokk">
+        <div class="prose">${rens(s.html)}</div>
+        ${figur(s.figur, fagId)}
+      </div>`).join("")}
 
     <div class="section-label">Gjennomgåtte eksempler</div>
     <div class="card blokk">
       ${g.eksempler.map((e, i) => `
         <div class="eksempel">
-          <h4>Eksempel ${i + 1}: ${esc(e.tittel)}</h4>
+          <h4><span class="nr">${i + 1}</span>${esc(e.tittel)}</h4>
           <div class="prose oppg">${rens(e.oppgave)}</div>
+          ${figur(e.figur, fagId)}
           <button class="losning-btn" data-los="${i}" aria-expanded="false">Vis løsning</button>
           <div class="losning prose" id="los-${i}" hidden>${rens(e.losning)}</div>
         </div>`).join("")}
     </div>
 
-    <div class="section-label">Vanlige feil</div>
-    <div class="card blokk">
+    <div class="boks feil">
+      <div class="boks-hode">${svg("kryss", 15)} Vanlige feil</div>
       <ul class="punkter">${g.vanligeFeil.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
     </div>
 
-    <div class="section-label">Tips til prøven</div>
-    <div class="card blokk">
+    <div class="boks tips">
+      <div class="boks-hode">${svg("hake", 15)} Tips til prøven</div>
       <ul class="punkter">${g.tips.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
     </div>
 

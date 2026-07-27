@@ -166,8 +166,14 @@ const lager = () => {
 
   d = await bytt("/");
   await vent(600);
-  const heroTekst = d.querySelector(".hero .fig")?.textContent || "";
+  const heroTekst = d.querySelector(".hero-ring .tall")?.textContent || "";
   ok("forsiden viser samlet fremdrift over 0 %", parseInt(heroTekst, 10) > 0, heroTekst.trim());
+  ok("ringmåleren tegner en bue når fremdriften er over 0",
+     (d.querySelectorAll(".ringmaler circle").length || 0) === 2,
+     `${d.querySelectorAll(".ringmaler circle").length} sirkler`);
+  ok("hvert fag har et emblem på forsiden",
+     d.querySelectorAll(".fagkort-emblem svg").length === 4,
+     `${d.querySelectorAll(".fagkort-emblem svg").length} emblemer`);
   ok("forsiden viser «Fortsett der du var»",
      /Fortsett der du var/.test(d.body.textContent));
 
@@ -178,6 +184,10 @@ const lager = () => {
   ok("kapittel 3 er markert ferdig", d.querySelector(".kapkort.ferdig") !== null);
   ok("alle 8 kapitler listes", d.querySelectorAll(".kapkort").length === 8,
      `${d.querySelectorAll(".kapkort").length} kapitler`);
+  ok("kapitlene er delt i temagrupper", d.querySelectorAll(".gruppe-label").length >= 3,
+     `${d.querySelectorAll(".gruppe-label").length} grupper`);
+  ok("faghodet har emblem og gradientbånd",
+     !!d.querySelector(".faghode-emblem svg") && !!d.querySelector(".faghode-band"));
   d = await bytt("/sok");
   const inn = d.querySelector("#sokinput");
   ok("søkefeltet finnes", inn !== null);

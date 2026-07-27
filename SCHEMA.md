@@ -98,6 +98,103 @@ med to sifre (`01`, `02`, …). `nr` og `tittel` må stemme med `data/fag.json`.
 }
 ```
 
+## Figurer
+
+Figurer er **data, ikke bilder**: appen tegner dem som SVG. De skalerer, virker
+offline og følger lys/mørk modus. Farger settes av appen — du oppgir aldri farge
+som hex, bare eventuelt serienummeret `farge: 1 | 2 | 3`.
+
+En figur kan legges tre steder:
+
+| Plassering | Felt | Bruk |
+|---|---|---|
+| Sammendraget | `kompakt.figur` | **én** figur som oppsummerer kapittelet visuelt |
+| En teoriseksjon | `grundig.seksjoner[i].figur` | figuren som forklarer nettopp den seksjonen |
+| Et eksempel | `grundig.eksempler[i].figur` | figuren oppgaven refererer til |
+
+Alle figurer tar `type` (påkrevd), `tittel` og `forklaring` (én til to setninger
+som sier hva eleven skal se — ikke gjenta tittelen).
+
+**Legg bare inn en figur der den faktisk forklarer noe.** En figur som bare
+pynter er verre enn ingen figur. Sikt på 2–5 figurer per kapittel.
+
+### `graf` — koordinatsystem med funksjoner
+```json
+{ "type": "graf", "tittel": "…", "forklaring": "…",
+  "xmin": -2, "xmax": 4, "ymin": -3, "ymax": 6,
+  "xlabel": "t (s)", "ylabel": "v (m/s)",
+  "kurver": [{ "uttrykk": "x^2-2*x", "navn": "f", "farge": 1 }],
+  "linjer": [{ "fra": [0,0], "til": [3,3], "navn": "tangent", "farge": 2, "stiplet": false }],
+  "punkter": [{ "x": 1, "y": -1, "navn": "(1, −1)", "hjelpelinjer": true }],
+  "asymptoter": [{ "retning": "vertikal", "verdi": 2, "navn": "x = 2" }],
+  "omraade": { "uttrykk": "x^2", "fra": 0, "til": 2 } }
+```
+`uttrykk` tolkes av en egen parser: `+ - * / ^`, parenteser, variabelen `x`,
+konstantene `pi` og `e`, og funksjonene `sin cos tan asin acos atan sinh cosh
+tanh exp ln log lg sqrt abs floor ceil`. Bruk `*` eksplisitt (`2*x`, ikke `2x`).
+`ymin`/`ymax` kan utelates — da regnes de ut. Maks 3 kurver.
+
+### `fortegnslinje` — norsk fortegnslinje
+```json
+{ "type": "fortegnslinje", "tittel": "…", "forklaring": "…",
+  "xmin": -3, "xmax": 3,
+  "linjer": [{ "navn": "x − 1", "nullpunkt": [1], "fortegn": ["-", "+"] }],
+  "resultat": { "navn": "f'(x)", "nullpunkt": [-1, 1], "fortegn": ["+", "-", "+"] } }
+```
+`fortegn` har alltid ett element mer enn `nullpunkt`. Heltrukken strek = positiv,
+stiplet = negativ, ring i nullpunktene.
+
+### `vektor` — vektorer og kraftdiagram
+```json
+{ "type": "vektor", "tittel": "…", "forklaring": "…",
+  "xmin": -1, "xmax": 5, "ymin": -1, "ymax": 4, "rutenett": true,
+  "vektorer": [{ "fra": [0,0], "til": [3,1], "navn": "a", "farge": 1 }],
+  "parallellogram": [0, 1],
+  "vinkel": { "mellom": [0,1], "navn": "α" },
+  "kropp": { "x": 0, "y": 0, "form": "boks", "navn": "m" },
+  "underlag": { "y": 0 } }
+```
+Sett `kropp` (og gjerne `rutenett: false`) for et frilegemediagram i fysikk.
+
+### `tallinje` — definisjonsmengder og intervaller
+```json
+{ "type": "tallinje", "tittel": "…", "min": -3, "max": 6,
+  "intervaller": [{ "fra": 1, "til": 6, "lukket": [true, false], "navn": "Df", "farge": 1 }],
+  "punkter": [{ "verdi": 1, "navn": "1", "fylt": true }] }
+```
+
+### `flyt` — prosess eller framgangsmåte
+```json
+{ "type": "flyt", "tittel": "…", "forklaring": "…", "retning": "ned",
+  "steg": [{ "tekst": "Balansér likningen", "note": "koeffisientene gir forholdet" }],
+  "tilbakekopling": { "fra": 3, "til": 0, "tekst": "negativ tilbakekopling" } }
+```
+`retning`: `"ned"` (2–6 steg) eller `"hoyre"` (2–4 steg). `tilbakekopling` gir
+sløyfen tilbake — perfekt for homeostase. Hold `tekst` under ~40 tegn.
+
+### `syklus` — rundgang med 3–6 faser
+```json
+{ "type": "syklus", "tittel": "Cellesyklusen", "senter": "Cellesyklus",
+  "faser": [{ "navn": "G1", "note": "vekst og vanlig aktivitet" }] }
+```
+`navn` skal være kort (≤ 6 tegn), `note` under ~30 tegn.
+
+### `nivaaer` — energinivåer og energidiagram
+```json
+{ "type": "nivaaer", "tittel": "…", "enhet": "E (eV)", "desimaler": 2,
+  "nivaaer": [{ "verdi": -13.6, "navn": "n = 1", "grunn": true }],
+  "overganger": [{ "fra": 2, "til": 1, "navn": "Hα", "farge": 2, "x": 0 }] }
+```
+`fra`/`til` er indekser i `nivaaer`. `x` (0, 1, 2 …) sprer pilene sidelengs.
+Brukes både til atomfysikk og til entalpidiagram i termokjemi.
+
+### `stolper` — søylediagram, én serie
+```json
+{ "type": "stolper", "tittel": "…", "enhet": "kJ per m² per år",
+  "data": [{ "navn": "Produsenter", "verdi": 20000 }] }
+```
+2–6 søyler. Lange navn roteres automatisk.
+
 ## Kvalitetskrav til innholdet
 
 - Faglig korrekt. Kontroller alle formler, tall og fasitsvar to ganger.
